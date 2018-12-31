@@ -12,50 +12,50 @@ sealed trait AnimationStates extends js.Object
 @js.native
 object AnimationStates extends js.Object {
   /**
-       * The contents of the collapse is not rendered, the collapse height is 0,
-       * and the body Y is at -height (so that the bottom of the body is at Y=0).
-       */
+    * The contents of the collapse is not rendered, the collapse height is 0,
+    * and the body Y is at -height (so that the bottom of the body is at Y=0).
+    */
   @js.native
   sealed trait CLOSED
     extends atBlueprintjsCoreLib.libEsmComponentsCollapseCollapseMod.AnimationStates
   
   /**
-       * Height is set to 0 and the body Y is at -height. Both of these properties
-       * are transformed, and then after the animation is complete, the state
-       * changes to CLOSED.
-       */
+    * Height is set to 0 and the body Y is at -height. Both of these properties
+    * are transformed, and then after the animation is complete, the state
+    * changes to CLOSED.
+    */
   @js.native
   sealed trait CLOSING
     extends atBlueprintjsCoreLib.libEsmComponentsCollapseCollapseMod.AnimationStates
   
   /**
-       * Height has been changed from auto to the measured height of the body to
-       * prepare for the closing animation in CLOSING.
-       */
+    * Height has been changed from auto to the measured height of the body to
+    * prepare for the closing animation in CLOSING.
+    */
   @js.native
   sealed trait CLOSING_START
     extends atBlueprintjsCoreLib.libEsmComponentsCollapseCollapseMod.AnimationStates
   
   /**
-       * The collapse height is set to auto, and the body Y is set to 0 (so the
-       * element can be seen as normal).
-       */
+    * The collapse height is set to auto, and the body Y is set to 0 (so the
+    * element can be seen as normal).
+    */
   @js.native
   sealed trait OPEN
     extends atBlueprintjsCoreLib.libEsmComponentsCollapseCollapseMod.AnimationStates
   
   /**
-       * Animation begins, height is set to auto. This is all animated, and on
-       * complete, the state changes to OPEN.
-       */
+    * Animation begins, height is set to auto. This is all animated, and on
+    * complete, the state changes to OPEN.
+    */
   @js.native
   sealed trait OPENING
     extends atBlueprintjsCoreLib.libEsmComponentsCollapseCollapseMod.AnimationStates
   
   /**
-       * The body is re-rendered, height is set to the measured body height and
-       * the body Y is set to 0.
-       */
+    * The body is re-rendered, height is set to the measured body height and
+    * the body Y is set to 0.
+    */
   @js.native
   sealed trait OPEN_START
     extends atBlueprintjsCoreLib.libEsmComponentsCollapseCollapseMod.AnimationStates

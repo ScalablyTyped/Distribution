@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class MapLimits protected () extends js.Object {
   /**
-                   * Creates a new MapLimits instance.
-                   * @param {Entities.Data.Vec3D} lowerLimit
-                   * @param {Entities.Data.Vec3D} higherLimit
-                   */
+    * Creates a new MapLimits instance.
+    * @param {Entities.Data.Vec3D} lowerLimit
+    * @param {Entities.Data.Vec3D} higherLimit
+    */
   def this(lowerLimit: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.DataNs.Vec3D, higherLimit: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.DataNs.Vec3D) = this()
   /** @type {Entities.Data.Vec3D} Returns the higher coordinates limit of the virtual environment along the X,Y,Z axes. */
   var higherLimit: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.DataNs.Vec3D = js.native

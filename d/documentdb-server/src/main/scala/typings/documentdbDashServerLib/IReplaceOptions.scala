@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Options associated with a replace operation. */
-
 trait IReplaceOptions extends js.Object {
   /**
   	 * The entity tag associated with the resource.

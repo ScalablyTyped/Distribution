@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Axis extends js.Object {
   var axis: canvasjsLib.canvasjsMod.CanvasJSNs.ChartAxisYOptions
   var chart: canvasjsLib.canvasjsMod.CanvasJSNs.Chart

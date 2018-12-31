@@ -9,27 +9,22 @@ import scala.scalajs.js.annotation._
 @js.native
 class ActionContext () extends js.Object {
   /**
-       * Data service. available only if fetch plugin is added
-       */
+    * Data service. available only if fetch plugin is added
+    */
   var service: js.UndefOr[fluxibleLib.Anon_Update] = js.native
   /**
-       * Dispatches a payload to all registered callbacks.
-       * @param action Action name
-       * @param payload
-       */
+    * Dispatches a payload to all registered callbacks.
+    * @param action Action name
+    * @param payload
+    */
   def dispatch(action: java.lang.String): scala.Unit = js.native
-  /**
-       * Dispatches a payload to all registered callbacks.
-       * @param action Action name
-       * @param payload
-       */
   def dispatch(action: java.lang.String, payload: js.Any): scala.Unit = js.native
   /**
-       * Proxy function to execute action
-       * @param action function that will be executed
-       * @param payload
-       * @param callback
-       */
+    * Proxy function to execute action
+    * @param action function that will be executed
+    * @param payload
+    * @param callback
+    */
   def executeAction(
     action: js.Function3[
       /* context */ this.type, 
@@ -38,12 +33,6 @@ class ActionContext () extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /**
-       * Proxy function to execute action
-       * @param action function that will be executed
-       * @param payload
-       * @param callback
-       */
   def executeAction(
     action: js.Function3[
       /* context */ this.type, 
@@ -53,12 +42,6 @@ class ActionContext () extends js.Object {
     ],
     payload: js.Any
   ): scala.Unit = js.native
-  /**
-       * Proxy function to execute action
-       * @param action function that will be executed
-       * @param payload
-       * @param callback
-       */
   def executeAction(
     action: js.Function3[
       /* context */ this.type, 
@@ -70,8 +53,8 @@ class ActionContext () extends js.Object {
     callback: js.Any
   ): scala.Unit = js.native
   /**
-       * Getter for store from dispatcher
-       */
+    * Getter for store from dispatcher
+    */
   def getStore[T /* <: fluxibleLib.addonsBaseStoreMod.namespaced[js.Object] */](store: fluxibleLib.Anon_Dispatcher[T]): T = js.native
 }
 

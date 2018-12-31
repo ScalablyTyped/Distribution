@@ -228,9 +228,6 @@ trait SearchBar extends View {
   			 * Shows or hides the cancel button.
   			 */
   def setShowCancel(showCancel: scala.Boolean): scala.Unit = js.native
-  /**
-  			 * Shows or hides the cancel button.
-  			 */
   def setShowCancel(showCancel: scala.Boolean, animated: js.Any): scala.Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.SearchBar.style> property.

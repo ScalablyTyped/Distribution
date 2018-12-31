@@ -12,7 +12,6 @@ class Update protected ()
   extends massiveLib.massiveMod.massiveNs.Update {
   /** Represents an UPDATE query. */
   def this(source: massiveLib.massiveMod.massiveNs.Readable, changes: massiveLib.massiveMod.massiveNs.AnyObject[_], criteria: massiveLib.massiveMod.massiveNs.AnyObject[_]) = this()
-  /** Represents an UPDATE query. */
   def this(source: massiveLib.massiveMod.massiveNs.Readable, changes: massiveLib.massiveMod.massiveNs.AnyObject[_], criteria: massiveLib.massiveMod.massiveNs.AnyObject[_], options: massiveLib.massiveMod.massiveNs.ResultProcessingOptions with massiveLib.massiveMod.massiveNs.PersistenceUpdateDocOptions) = this()
   /** Format this object into a SQL SELECT. */
   /* CompleteClass */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPrettyPrint extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -19,9 +18,9 @@ trait Anon_AccesstokenPrettyPrint extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The client version making the call.
-                   * Schema: `domain/type/version` (e.g., `google.com/intellij/v1`).
-                   */
+    * The client version making the call.
+    * Schema: `domain/type/version` (e.g., `google.com/intellij/v1`).
+    */
   var clientVersion: js.UndefOr[java.lang.String] = js.undefined
   /** ID of the debuggee where the breakpoint is to be set. */
   var debuggeeId: java.lang.String

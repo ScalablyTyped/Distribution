@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiggerOptions extends js.Object {
   var corridorLength: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined
   var dugPercentage: js.UndefOr[scala.Double] = js.undefined

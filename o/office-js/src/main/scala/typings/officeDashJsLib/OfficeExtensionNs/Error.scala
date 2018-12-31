@@ -22,10 +22,10 @@ class Error () extends js.Object {
   /** Stack trace, if applicable. */
   var stack: java.lang.String = js.native
   /**
-           * Trace messages (if any) that were added via a `context.trace()` invocation before calling `context.sync()`. 
-           * If there was an error, this contains all trace messages that were executed before the error occurred. 
-           * These messages can help you monitor the program execution sequence and detect the case of the error.
-           */
+    * Trace messages (if any) that were added via a `context.trace()` invocation before calling `context.sync()`. 
+    * If there was an error, this contains all trace messages that were executed before the error occurred. 
+    * These messages can help you monitor the program execution sequence and detect the case of the error.
+    */
   var traceMessages: js.Array[java.lang.String] = js.native
 }
 

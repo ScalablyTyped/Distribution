@@ -19,17 +19,17 @@ abstract class HidInputReport () extends js.Object {
   var id: scala.Double = js.native
   /** Retrieves the recently transitioned Boolean controls for the given HID device. */
   var transitionedBooleanControls: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[HidBooleanControl] = js.native
-   /* unmapped type *//**
-                   * Retrieves the Boolean control described by the controlDescription parameter and found in the given input report.
-                   * @param controlDescription A HidBooleanControlDescription object.
-                   * @return A HidBooleanControl object.
-                   */
+   /* unmapped type */ /**
+    * Retrieves the Boolean control described by the controlDescription parameter and found in the given input report.
+    * @param controlDescription A HidBooleanControlDescription object.
+    * @return A HidBooleanControl object.
+    */
   def getBooleanControlByDescription(controlDescription: HidBooleanControlDescription): HidBooleanControl = js.native
-   /* unmapped type *//**
-                   * Retrieves the numeric control described by the controlDescription parameter and found in the given input report.
-                   * @param controlDescription A HidNumericControlDescription object.
-                   * @return A HidNumericControl object.
-                   */
+   /* unmapped type */ /**
+    * Retrieves the numeric control described by the controlDescription parameter and found in the given input report.
+    * @param controlDescription A HidNumericControlDescription object.
+    * @return A HidNumericControl object.
+    */
   def getNumericControlByDescription(controlDescription: HidNumericControlDescription): HidNumericControl = js.native
 }
 

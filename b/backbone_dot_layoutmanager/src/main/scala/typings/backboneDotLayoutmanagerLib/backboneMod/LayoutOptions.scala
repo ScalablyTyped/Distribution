@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LayoutOptions[TModel /* <: backboneLib.backboneMod.Model */]
   extends backboneLib.backboneMod.BackboneNs.ViewOptions[TModel] {
   var template: js.UndefOr[java.lang.String] = js.undefined

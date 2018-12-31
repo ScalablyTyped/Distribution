@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OverlayProps extends js.Object {
   var animationDuration: js.UndefOr[scala.Double] = js.undefined
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined

@@ -11,14 +11,14 @@ package object zookeeperLib {
     /* rc */ scala.Double, 
     /* error */ java.lang.String, 
     /* acl */ js.Array[ACL], 
-    /* stat */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Stat */ /* stat */ js.Any, 
     scala.Unit
   ]
   type child2_callback = js.Function4[
     /* rc */ scala.Double, 
     /* error */ java.lang.String, 
     /* children */ js.Array[java.lang.String], 
-    /* stat */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Stat */ /* stat */ js.Any, 
     scala.Unit
   ]
   type watch_callback = js.Function3[

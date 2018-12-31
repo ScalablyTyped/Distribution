@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GlobalEventHandlersEventMap extends js.Object {
   var abort: UIEvent
   var animationcancel: AnimationEvent

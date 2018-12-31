@@ -40,13 +40,13 @@ object flatbuffersNs extends js.Object {
   @js.native
   object Builder extends js.Object {
     /**
-           * Doubles the size of the backing ByteBuffer and copies the old data towards
-           * the end of the new buffer (since we build the buffer backwards).
-           *
-           * @param bb The current buffer with the existing data
-           * @returns A new byte buffer with the old data copied
-           * to it. The data is located at the end of the buffer.
-           */
+      * Doubles the size of the backing ByteBuffer and copies the old data towards
+      * the end of the new buffer (since we build the buffer backwards).
+      *
+      * @param bb The current buffer with the existing data
+      * @returns A new byte buffer with the old data copied
+      * to it. The data is located at the end of the buffer.
+      */
     def growByteBuffer(bb: flatbuffersLib.flatbuffersMod.Global.flatbuffersNs.ByteBuffer): flatbuffersLib.flatbuffersMod.Global.flatbuffersNs.ByteBuffer = js.native
   }
   

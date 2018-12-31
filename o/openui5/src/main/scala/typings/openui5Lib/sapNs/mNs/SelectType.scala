@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait SelectType extends js.Object
 
 /**
-     * Enumeration for different Select types.
-    */
+  * Enumeration for different Select types.
+  */
 @JSGlobal("sap.m.SelectType")
 @js.native
 object SelectType extends js.Object {

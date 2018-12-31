@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Notification extends js.Object {
   /** An optional list of additional attributes to attach to each Cloud PubSub message published for this notification subscription. */
   var custom_attributes: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined

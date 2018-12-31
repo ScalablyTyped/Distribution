@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Disapproval extends js.Object {
   /** Additional details about the reason for disapproval. */
   var details: js.UndefOr[js.Array[java.lang.String]] = js.undefined

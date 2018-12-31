@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class HolographicSpaceCameraAddedEventArgs () extends js.Object {
   var camera: js.Any = js.native
-   /* unmapped type */var getDeferral: js.Any = js.native
+   /* unmapped type */ var getDeferral: js.Any = js.native
 }
 

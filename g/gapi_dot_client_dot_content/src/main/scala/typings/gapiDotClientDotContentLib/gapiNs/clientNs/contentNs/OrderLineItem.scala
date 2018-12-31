@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrderLineItem extends js.Object {
   /** Cancellations of the line item. */
   var cancellations: js.UndefOr[js.Array[OrderCancellation]] = js.undefined

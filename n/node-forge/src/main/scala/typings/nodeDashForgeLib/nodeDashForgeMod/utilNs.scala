@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("node-forge", "util")
 @js.native
 object utilNs extends js.Object {
-  
   trait ArrayBufferView extends js.Object {
     var buffer: stdLib.ArrayBuffer
     var byteLength: scala.Double

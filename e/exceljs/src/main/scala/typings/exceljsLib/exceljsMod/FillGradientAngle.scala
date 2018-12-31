@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FillGradientAngle extends js.Object {
   /**
   	 * For 'angle' gradient, specifies the direction of the gradient. 0 is from the left to the right.

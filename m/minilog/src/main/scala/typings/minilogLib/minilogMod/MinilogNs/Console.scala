@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Console extends Transform {
   //Only available on client
   var color: Transform
@@ -17,8 +16,8 @@ trait Console extends Transform {
   var formatNpm: Transform
   var formatWithStack: Transform
   /**
-          * List of available formatters
-          */
+    * List of available formatters
+    */
   var formatters: js.Array[java.lang.String]
   var minilog: Transform
 }

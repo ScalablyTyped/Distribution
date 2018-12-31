@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICartesian extends ISeries {
   /** [Config Option] (String/String[]) */
   var axis: js.UndefOr[js.Any] = js.undefined

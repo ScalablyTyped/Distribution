@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Id extends js.Object {
   var Algorithm: java.lang.String
   var Encoding: java.lang.String

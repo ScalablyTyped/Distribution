@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SharedTextFieldProps extends js.Object {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var block: js.UndefOr[scala.Boolean] = js.undefined
@@ -32,12 +31,12 @@ trait SharedTextFieldProps extends js.Object {
   var paddedBlock: js.UndefOr[scala.Boolean] = js.undefined
   var passwordIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var passwordIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var passwordIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var passwordInitiallyVisible: js.UndefOr[scala.Boolean] = js.undefined
   var pattern: js.UndefOr[java.lang.String] = js.undefined

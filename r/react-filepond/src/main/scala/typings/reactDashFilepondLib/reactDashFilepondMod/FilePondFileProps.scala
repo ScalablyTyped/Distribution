@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilePondFileProps extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   var origin: js.UndefOr[reactDashFilepondLib.FilePondOrigin] = js.undefined

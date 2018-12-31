@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RemarketingAudience extends js.Object {
   /** Account ID to which this remarketing audience belongs. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined

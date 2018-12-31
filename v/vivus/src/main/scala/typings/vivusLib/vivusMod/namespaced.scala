@@ -9,40 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced protected () extends Vivus {
   /**
-       * @param element The DOM element, or the ID of a DOM element, to interact with.
-       * @param options
-       * @param callback Callback to call at the end of the animation
-       */
+    * @param element The DOM element, or the ID of a DOM element, to interact with.
+    * @param options
+    * @param callback Callback to call at the end of the animation
+    */
   def this(element: java.lang.String) = this()
-  /**
-       * @param element The DOM element, or the ID of a DOM element, to interact with.
-       * @param options
-       * @param callback Callback to call at the end of the animation
-       */
   def this(element: stdLib.HTMLElement) = this()
-  /**
-       * @param element The DOM element, or the ID of a DOM element, to interact with.
-       * @param options
-       * @param callback Callback to call at the end of the animation
-       */
   def this(element: java.lang.String, options: vivusLib.vivusMod.VivusNs.VivusOptions) = this()
-  /**
-       * @param element The DOM element, or the ID of a DOM element, to interact with.
-       * @param options
-       * @param callback Callback to call at the end of the animation
-       */
   def this(element: stdLib.HTMLElement, options: vivusLib.vivusMod.VivusNs.VivusOptions) = this()
-  /**
-       * @param element The DOM element, or the ID of a DOM element, to interact with.
-       * @param options
-       * @param callback Callback to call at the end of the animation
-       */
   def this(element: java.lang.String, options: vivusLib.vivusMod.VivusNs.VivusOptions, callback: js.Function1[/* vivusInstance */ Vivus, scala.Unit]) = this()
-  /**
-       * @param element The DOM element, or the ID of a DOM element, to interact with.
-       * @param options
-       * @param callback Callback to call at the end of the animation
-       */
   def this(element: stdLib.HTMLElement, options: vivusLib.vivusMod.VivusNs.VivusOptions, callback: js.Function1[/* vivusInstance */ Vivus, scala.Unit]) = this()
 }
 

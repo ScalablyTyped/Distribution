@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Node extends js.Object {
   val anchor: java.lang.String | scala.Null
   val comment: java.lang.String | scala.Null

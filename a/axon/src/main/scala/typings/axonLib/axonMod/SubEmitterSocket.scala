@@ -20,7 +20,7 @@ class SubEmitterSocket () extends js.Object {
   def connect(port: ConnectionPort, host: js.Function0[scala.Unit]): Socket = js.native
   def connect(port: ConnectionPort, host: js.Function0[scala.Unit], fn: js.Function0[scala.Unit]): Socket = js.native
   def off(event: java.lang.String): SubEmitterSocket = js.native
-  def on(event: java.lang.String, fn: js.Function1[/* repeated */js.Any, scala.Unit]): SubEmitterSocket = js.native
+  def on(event: java.lang.String, fn: js.Function1[/* repeated */ js.Any, scala.Unit]): SubEmitterSocket = js.native
   def onmessage(): js.Function1[/* args */ nodeLib.Buffer | js.Array[nodeLib.Buffer], scala.Unit] = js.native
 }
 

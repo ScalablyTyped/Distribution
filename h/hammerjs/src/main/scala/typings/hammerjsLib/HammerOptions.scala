@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HammerOptions extends js.Object {
   var cssProps: js.UndefOr[CssProps] = js.undefined
   var domEvents: js.UndefOr[scala.Boolean] = js.undefined

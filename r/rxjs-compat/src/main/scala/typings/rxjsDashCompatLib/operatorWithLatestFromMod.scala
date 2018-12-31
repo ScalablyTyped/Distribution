@@ -15,11 +15,11 @@ object operatorWithLatestFromMod extends js.Object {
   def withLatestFrom[T, R](
     `this`: rxjsLib.rxjsMod.Observable[T],
     array: js.Array[rxjsLib.internalTypesMod.ObservableInput[_]],
-    project: js.Function1[/* repeated */js.Any, R]
+    project: js.Function1[/* repeated */ js.Any, R]
   ): rxjsLib.rxjsMod.Observable[R] = js.native
   def withLatestFrom[T, R](
     `this`: rxjsLib.rxjsMod.Observable[T],
-    observables: (rxjsLib.internalTypesMod.ObservableInput[_] | (js.Function1[/* repeated */js.Any, R]))*
+    observables: (rxjsLib.internalTypesMod.ObservableInput[_] | (js.Function1[/* repeated */ js.Any, R]))*
   ): rxjsLib.rxjsMod.Observable[R] = js.native
   def withLatestFrom[T, R](`this`: rxjsLib.rxjsMod.Observable[T], project: js.Function1[/* v1 */ T, R]): rxjsLib.rxjsMod.Observable[R] = js.native
   def withLatestFrom[T, T2](`this`: rxjsLib.rxjsMod.Observable[T], v2: rxjsLib.internalTypesMod.ObservableInput[T2]): rxjsLib.rxjsMod.Observable[js.Tuple2[T, T2]] = js.native

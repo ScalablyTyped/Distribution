@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PrintPageDescription extends js.Object {
   var dpiX: scala.Double
   var dpiY: scala.Double

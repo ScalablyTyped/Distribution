@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MailComposer extends js.Object {
   def addHeader(name: java.lang.String, value: java.lang.String): scala.Unit
   def pipe(stream: js.Any): scala.Unit

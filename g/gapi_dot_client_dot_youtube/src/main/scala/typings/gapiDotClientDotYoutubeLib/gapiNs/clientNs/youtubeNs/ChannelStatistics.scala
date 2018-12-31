@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChannelStatistics extends js.Object {
   /** The number of comments for the channel. */
   var commentCount: js.UndefOr[java.lang.String] = js.undefined

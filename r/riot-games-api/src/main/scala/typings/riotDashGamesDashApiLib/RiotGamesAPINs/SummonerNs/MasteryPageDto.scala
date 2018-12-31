@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MasteryPageDto extends js.Object {
   var current: scala.Boolean
   var id: scala.Double

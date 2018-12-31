@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BooksAnnotationsRange extends js.Object {
   /** The offset from the ending position. */
   var endOffset: js.UndefOr[java.lang.String] = js.undefined

@@ -106,7 +106,7 @@ trait MQuery extends js.Object {
     callback: js.Function2[/* elementOfArray */ T, /* indexInArray */ js.UndefOr[scala.Double], U]
   ): MQueryResultSet[U] = js.native
   def proxy(context: js.Any, name: java.lang.String, args: js.Any*): js.Any = js.native
-  def proxy(fn: js.Function1[/* repeated */js.Any, _], context: js.Any, args: js.Any*): js.Function1[/* repeated */js.Any, _] = js.native
+  def proxy(fn: js.Function1[/* repeated */ js.Any, _], context: js.Any, args: js.Any*): js.Function1[/* repeated */ js.Any, _] = js.native
   def ready(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def removeData(element: stdLib.HTMLElement): MQueryResultSetElements = js.native
   def removeData(element: stdLib.HTMLElement, name: java.lang.String): MQueryResultSetElements = js.native
@@ -128,6 +128,6 @@ trait MQuery extends js.Object {
     fn: js.Function2[/* elementOfArray */ T, /* indexInArray */ js.UndefOr[scala.Double], scala.Boolean],
     context: js.Any
   ): scala.Boolean = js.native
-  def throttle[T /* <: js.Function1[/* repeated */js.Any, _] */](fn: T, interval: scala.Double, shouldOverrideThrottle: scala.Boolean): T = js.native
+  def throttle[T /* <: js.Function1[/* repeated */ js.Any, _] */](fn: T, interval: scala.Double, shouldOverrideThrottle: scala.Boolean): T = js.native
 }
 

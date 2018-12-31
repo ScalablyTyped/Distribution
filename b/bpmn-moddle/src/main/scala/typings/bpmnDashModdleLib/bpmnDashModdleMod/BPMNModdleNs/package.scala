@@ -43,7 +43,7 @@ package object BPMNModdleNs {
   type DiagramElement = TypeDerived
   // tslint:disable-next-line:no-empty-interface
   type Edge = TypeDerived
-  type ElementType = /* LimitUnionLength: was union type with length 163 */java.lang.String
+  type ElementType = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 163 */ java.lang.String
   // tslint:disable-next-line:no-empty-interface
   type EndEvent = ThrowEvent
   // tslint:disable-next-line:no-empty-interface

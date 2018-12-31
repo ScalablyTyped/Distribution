@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-   * @summary Interface for Language detector options.
-   * @interface
-   */
-
+  * @summary Interface for Language detector options.
+  * @interface
+  */
 trait LanguageDetectorOptions extends js.Object {
   var caches: js.UndefOr[js.Array[java.lang.String] | scala.Boolean] = js.undefined
   var cookieDomain: js.UndefOr[java.lang.String] = js.undefined

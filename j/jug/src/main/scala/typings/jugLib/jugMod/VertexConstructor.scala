@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Vertex constructor function.
- */
+  * Vertex constructor function.
+  */
 @js.native
 trait VertexConstructor
   extends org.scalablytyped.runtime.Instantiable0[Vertex]

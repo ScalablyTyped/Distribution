@@ -15,11 +15,9 @@ class XMLNamespaces protected () extends js.Object {
   var `Word.XMLNamespaces_typekey`: XMLNamespaces = js.native
   /** @param boolean [InstallForAllUsers=false] */
   def Add(Path: java.lang.String, NamespaceURI: js.Any, Alias: js.Any): XMLNamespace = js.native
-  /** @param boolean [InstallForAllUsers=false] */
   def Add(Path: java.lang.String, NamespaceURI: js.Any, Alias: js.Any, InstallForAllUsers: scala.Boolean): XMLNamespace = js.native
   /** @param boolean [InstallForAllUsers=false] */
   def InstallManifest(Path: java.lang.String): scala.Unit = js.native
-  /** @param boolean [InstallForAllUsers=false] */
   def InstallManifest(Path: java.lang.String, InstallForAllUsers: scala.Boolean): scala.Unit = js.native
   def Item(Index: js.Any): XMLNamespace = js.native
 }

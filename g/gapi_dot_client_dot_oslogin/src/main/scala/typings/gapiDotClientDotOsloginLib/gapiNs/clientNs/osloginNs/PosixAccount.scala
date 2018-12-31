@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PosixAccount extends js.Object {
   /** The GECOS (user information) entry for this account. */
   var gecos: js.UndefOr[java.lang.String] = js.undefined
@@ -18,9 +17,9 @@ trait PosixAccount extends js.Object {
   /** The path to the logic shell for this account. */
   var shell: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * System identifier for which account the username or uid applies to.
-               * By default, the empty value is used.
-               */
+    * System identifier for which account the username or uid applies to.
+    * By default, the empty value is used.
+    */
   var systemId: js.UndefOr[java.lang.String] = js.undefined
   /** The user ID. */
   var uid: js.UndefOr[java.lang.String] = js.undefined

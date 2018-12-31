@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RevokedCertificate extends js.Object {
   var crlEntryExtensions: pkijsLib.srcExtensionsMod.default
   var revocationDate: pkijsLib.srcTimeMod.default

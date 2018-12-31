@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class DeviceManufacturerNotificationTrigger protected () extends js.Object {
   /**
-                   * Initializes a new instance of the DeviceManufacturerNotificationTrigger class.
-                   * @param triggerQualifier An app-defined string that qualifies the trigger.
-                   * @param oneShot Whether the trigger is used only once.
-                   */
+    * Initializes a new instance of the DeviceManufacturerNotificationTrigger class.
+    * @param triggerQualifier An app-defined string that qualifies the trigger.
+    * @param oneShot Whether the trigger is used only once.
+    */
   def this(triggerQualifier: java.lang.String, oneShot: scala.Boolean) = this()
   /** Gets whether the trigger is used only once. */
   var oneShot: scala.Boolean = js.native

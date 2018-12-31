@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RadialGaugeOptions extends js.Object {
   var gaugeArea: js.UndefOr[RadialGaugeGaugeArea] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined

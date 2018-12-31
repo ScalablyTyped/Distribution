@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShippingsettingsCustomBatchResponseEntry extends js.Object {
   /** The ID of the request entry to which this entry responds. */
   var batchId: js.UndefOr[scala.Double] = js.undefined

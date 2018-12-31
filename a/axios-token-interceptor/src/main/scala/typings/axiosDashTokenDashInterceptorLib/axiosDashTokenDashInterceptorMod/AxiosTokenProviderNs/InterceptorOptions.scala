@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Interfaces
-
 trait InterceptorOptions extends js.Object {
   var getToken: js.UndefOr[js.Function0[java.lang.String | js.Promise[java.lang.String]]] = js.undefined
   var header: js.UndefOr[java.lang.String] = js.undefined

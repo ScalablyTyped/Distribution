@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeaderProps extends js.Object {
   /**
-       * default: 1
-       */
+    * default: 1
+    */
   var headerNumberOfLines: js.UndefOr[scala.Double] = js.undefined
   var headerRef: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var headerStyle: js.UndefOr[

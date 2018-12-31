@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMap[K, V] extends IIterable[IKeyValuePair[K, V]] {
   var size: scala.Double
   def clear(): scala.Unit

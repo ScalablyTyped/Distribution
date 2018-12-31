@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("monaco-editor", "languages")
 @js.native
 object languagesNs extends js.Object {
-  
   trait CodeAction extends js.Object {
     var command: js.UndefOr[Command] = js.undefined
     var diagnostics: js.UndefOr[js.Array[monacoDashEditorLib.monacoDashEditorMod.editorNs.IMarkerData]] = js.undefined
@@ -17,25 +16,23 @@ object languagesNs extends js.Object {
     var title: java.lang.String
   }
   
-  
   trait CodeActionContext extends js.Object {
     /**
-             * An array of diagnostics.
-             *
-             * @readonly
-             */
+      * An array of diagnostics.
+      *
+      * @readonly
+      */
     val markers: js.Array[monacoDashEditorLib.monacoDashEditorMod.editorNs.IMarkerData]
     /**
-             * Requested kind of actions to return.
-             */
+      * Requested kind of actions to return.
+      */
     val only: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait CodeActionProvider extends js.Object {
     /**
-             * Provide commands for the given document and range.
-             */
+      * Provide commands for the given document and range.
+      */
     def provideCodeActions(
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       range: monacoDashEditorLib.monacoDashEditorMod.Range,
@@ -43,7 +40,6 @@ object languagesNs extends js.Object {
       token: monacoDashEditorLib.monacoDashEditorMod.CancellationToken
     ): (js.Array[Command | CodeAction]) | (monacoDashEditorLib.monacoDashEditorMod.Thenable[js.Array[Command | CodeAction]])
   }
-  
   
   trait CodeLensProvider extends js.Object {
     var onDidChange: js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.IEvent[this.type]] = js.undefined
@@ -61,7 +57,6 @@ object languagesNs extends js.Object {
     ): ProviderResult[js.Array[ICodeLensSymbol]]
   }
   
-  
   trait Command extends js.Object {
     var arguments: js.UndefOr[js.Array[_]] = js.undefined
     var id: java.lang.String
@@ -69,108 +64,105 @@ object languagesNs extends js.Object {
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait CommentRule extends js.Object {
     /**
-             * The block comment character pair, like `/ * block comment *&#47;`
-             */
+      * The block comment character pair, like `/ * block comment *&#47;`
+      */
     var blockComment: js.UndefOr[CharacterPair | scala.Null] = js.undefined
     /**
-             * The line comment token, like `// this is a comment`
-             */
+      * The line comment token, like `// this is a comment`
+      */
     var lineComment: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   }
   
-  
   trait CompletionContext extends js.Object {
     /**
-             * Character that triggered the completion item provider.
-             *
-             * `undefined` if provider was not triggered by a character.
-             */
+      * Character that triggered the completion item provider.
+      *
+      * `undefined` if provider was not triggered by a character.
+      */
     var triggerCharacter: js.UndefOr[java.lang.String] = js.undefined
     /**
-             * How the completion was triggered.
-             */
+      * How the completion was triggered.
+      */
     var triggerKind: CompletionTriggerKind
   }
   
-  
   trait CompletionItem extends js.Object {
     /**
-             * An optional array of additional text edits that are applied when
-             * selecting this completion. Edits must not overlap with the main edit
-             * nor with themselves.
-             */
+      * An optional array of additional text edits that are applied when
+      * selecting this completion. Edits must not overlap with the main edit
+      * nor with themselves.
+      */
     var additionalTextEdits: js.UndefOr[js.Array[monacoDashEditorLib.monacoDashEditorMod.editorNs.ISingleEditOperation]] = js.undefined
     /**
-             * A command that should be run upon acceptance of this item.
-             */
+      * A command that should be run upon acceptance of this item.
+      */
     var command: js.UndefOr[Command] = js.undefined
     /**
-             * An optional set of characters that when pressed while this completion is active will accept it first and
-             * then type that character. *Note* that all commit characters should have `length=1` and that superfluous
-             * characters will be ignored.
-             */
+      * An optional set of characters that when pressed while this completion is active will accept it first and
+      * then type that character. *Note* that all commit characters should have `length=1` and that superfluous
+      * characters will be ignored.
+      */
     var commitCharacters: js.UndefOr[js.Array[java.lang.String]] = js.undefined
     /**
-             * A human-readable string with additional information
-             * about this item, like type or symbol information.
-             */
+      * A human-readable string with additional information
+      * about this item, like type or symbol information.
+      */
     var detail: js.UndefOr[java.lang.String] = js.undefined
     /**
-             * A human-readable string that represents a doc-comment.
-             */
+      * A human-readable string that represents a doc-comment.
+      */
     var documentation: js.UndefOr[java.lang.String | monacoDashEditorLib.monacoDashEditorMod.IMarkdownString] = js.undefined
     /**
-             * A string that should be used when filtering a set of
-             * completion items. When `falsy` the [label](#CompletionItem.label)
-             * is used.
-             */
+      * A string that should be used when filtering a set of
+      * completion items. When `falsy` the [label](#CompletionItem.label)
+      * is used.
+      */
     var filterText: js.UndefOr[java.lang.String] = js.undefined
     /**
-             * A string or snippet that should be inserted in a document when selecting
-             * this completion.
-             * is used.
-             */
+      * A string or snippet that should be inserted in a document when selecting
+      * this completion.
+      * is used.
+      */
     var insertText: java.lang.String
     /**
-             * Addition rules (as bitmask) that should be applied when inserting
-             * this completion.
-             */
+      * Addition rules (as bitmask) that should be applied when inserting
+      * this completion.
+      */
     var insertTextRules: js.UndefOr[CompletionItemInsertTextRule] = js.undefined
     /**
-             * The kind of this completion item. Based on the kind
-             * an icon is chosen by the editor.
-             */
+      * The kind of this completion item. Based on the kind
+      * an icon is chosen by the editor.
+      */
     var kind: CompletionItemKind
     /**
-             * The label of this completion item. By default
-             * this is also the text that is inserted when selecting
-             * this completion.
-             */
+      * The label of this completion item. By default
+      * this is also the text that is inserted when selecting
+      * this completion.
+      */
     var label: java.lang.String
     /**
-             * Select this item when showing. *Note* that only one completion item can be selected and
-             * that the editor decides which item that is. The rule is that the *first* item of those
-             * that match best is selected.
-             */
+      * Select this item when showing. *Note* that only one completion item can be selected and
+      * that the editor decides which item that is. The rule is that the *first* item of those
+      * that match best is selected.
+      */
     var preselect: js.UndefOr[scala.Boolean] = js.undefined
     /**
-             * A range of text that should be replaced by this completion item.
-             *
-             * Defaults to a range from the start of the [current word](#TextDocument.getWordRangeAtPosition) to the
-             * current position.
-             *
-             * *Note:* The range must be a [single line](#Range.isSingleLine) and it must
-             * [contain](#Range.contains) the position at which completion has been [requested](#CompletionItemProvider.provideCompletionItems).
-             */
+      * A range of text that should be replaced by this completion item.
+      *
+      * Defaults to a range from the start of the [current word](#TextDocument.getWordRangeAtPosition) to the
+      * current position.
+      *
+      * *Note:* The range must be a [single line](#Range.isSingleLine) and it must
+      * [contain](#Range.contains) the position at which completion has been [requested](#CompletionItemProvider.provideCompletionItems).
+      */
     var range: js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.IRange] = js.undefined
     /**
-             * A string that should be used when comparing this item
-             * with other items. When `falsy` the [label](#CompletionItem.label)
-             * is used.
-             */
+      * A string that should be used when comparing this item
+      * with other items. When `falsy` the [label](#CompletionItem.label)
+      * is used.
+      */
     var sortText: js.UndefOr[java.lang.String] = js.undefined
   }
   
@@ -180,14 +172,13 @@ object languagesNs extends js.Object {
   @js.native
   sealed trait CompletionItemKind extends js.Object
   
-  
   trait CompletionItemProvider extends js.Object {
     /**
-             * Given a completion item fill in more data, like [doc-comment](#CompletionItem.documentation)
-             * or [details](#CompletionItem.detail).
-             *
-             * The editor will only resolve a completion item once.
-             */
+      * Given a completion item fill in more data, like [doc-comment](#CompletionItem.documentation)
+      * or [details](#CompletionItem.detail).
+      *
+      * The editor will only resolve a completion item once.
+      */
     var resolveCompletionItem: js.UndefOr[
         js.Function4[
           /* model */ monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel, 
@@ -199,8 +190,8 @@ object languagesNs extends js.Object {
       ] = js.undefined
     var triggerCharacters: js.UndefOr[js.Array[java.lang.String]] = js.undefined
     /**
-             * Provide completion items for the given position and document.
-             */
+      * Provide completion items for the given position and document.
+      */
     def provideCompletionItems(
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       position: monacoDashEditorLib.monacoDashEditorMod.Position,
@@ -208,7 +199,6 @@ object languagesNs extends js.Object {
       token: monacoDashEditorLib.monacoDashEditorMod.CancellationToken
     ): ProviderResult[CompletionList]
   }
-  
   
   trait CompletionList extends js.Object {
     var dispose: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -219,7 +209,6 @@ object languagesNs extends js.Object {
   @js.native
   sealed trait CompletionTriggerKind extends js.Object
   
-  
   trait DefinitionLink extends js.Object {
     var origin: js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.IRange] = js.undefined
     var range: monacoDashEditorLib.monacoDashEditorMod.IRange
@@ -227,11 +216,10 @@ object languagesNs extends js.Object {
     var uri: monacoDashEditorLib.monacoDashEditorMod.Uri
   }
   
-  
   trait DefinitionProvider extends js.Object {
     /**
-             * Provide the definition of the symbol at the given position and document.
-             */
+      * Provide the definition of the symbol at the given position and document.
+      */
     def provideDefinition(
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       position: monacoDashEditorLib.monacoDashEditorMod.Position,
@@ -239,30 +227,28 @@ object languagesNs extends js.Object {
     ): ProviderResult[Definition | js.Array[DefinitionLink]]
   }
   
-  
   trait DocumentColorProvider extends js.Object {
     /**
-             * Provide the string representations for a color.
-             */
+      * Provide the string representations for a color.
+      */
     def provideColorPresentations(
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       colorInfo: IColorInformation,
       token: monacoDashEditorLib.monacoDashEditorMod.CancellationToken
     ): ProviderResult[js.Array[IColorPresentation]]
     /**
-             * Provides the color ranges for a specific model.
-             */
+      * Provides the color ranges for a specific model.
+      */
     def provideDocumentColors(
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       token: monacoDashEditorLib.monacoDashEditorMod.CancellationToken
     ): ProviderResult[js.Array[IColorInformation]]
   }
   
-  
   trait DocumentFormattingEditProvider extends js.Object {
     /**
-             * Provide formatting edits for a whole document.
-             */
+      * Provide formatting edits for a whole document.
+      */
     def provideDocumentFormattingEdits(
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       options: FormattingOptions,
@@ -270,27 +256,25 @@ object languagesNs extends js.Object {
     ): ProviderResult[js.Array[TextEdit]]
   }
   
-  
   trait DocumentHighlight extends js.Object {
     /**
-             * The highlight kind, default is [text](#DocumentHighlightKind.Text).
-             */
+      * The highlight kind, default is [text](#DocumentHighlightKind.Text).
+      */
     var kind: DocumentHighlightKind
     /**
-             * The range this highlight applies to.
-             */
+      * The range this highlight applies to.
+      */
     var range: monacoDashEditorLib.monacoDashEditorMod.IRange
   }
   
   @js.native
   sealed trait DocumentHighlightKind extends js.Object
   
-  
   trait DocumentHighlightProvider extends js.Object {
     /**
-             * Provide a set of document highlights, like all occurrences of a variable or
-             * all exit-points of a function.
-             */
+      * Provide a set of document highlights, like all occurrences of a variable or
+      * all exit-points of a function.
+      */
     def provideDocumentHighlights(
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       position: monacoDashEditorLib.monacoDashEditorMod.Position,
@@ -298,15 +282,14 @@ object languagesNs extends js.Object {
     ): ProviderResult[js.Array[DocumentHighlight]]
   }
   
-  
   trait DocumentRangeFormattingEditProvider extends js.Object {
     /**
-             * Provide formatting edits for a range in a document.
-             *
-             * The given range is a hint and providers can decide to format a smaller
-             * or larger range. Often this is done by adjusting the start and end
-             * of the range to full syntax nodes.
-             */
+      * Provide formatting edits for a range in a document.
+      *
+      * The given range is a hint and providers can decide to format a smaller
+      * or larger range. Often this is done by adjusting the start and end
+      * of the range to full syntax nodes.
+      */
     def provideDocumentRangeFormattingEdits(
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       range: monacoDashEditorLib.monacoDashEditorMod.Range,
@@ -314,7 +297,6 @@ object languagesNs extends js.Object {
       token: monacoDashEditorLib.monacoDashEditorMod.CancellationToken
     ): ProviderResult[js.Array[TextEdit]]
   }
-  
   
   trait DocumentSymbol extends js.Object {
     var children: js.UndefOr[js.Array[DocumentSymbol]] = js.undefined
@@ -326,94 +308,87 @@ object languagesNs extends js.Object {
     var selectionRange: monacoDashEditorLib.monacoDashEditorMod.IRange
   }
   
-  
   trait DocumentSymbolProvider extends js.Object {
     var displayName: js.UndefOr[java.lang.String] = js.undefined
     /**
-             * Provide symbol information for the given document.
-             */
+      * Provide symbol information for the given document.
+      */
     def provideDocumentSymbols(
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       token: monacoDashEditorLib.monacoDashEditorMod.CancellationToken
     ): ProviderResult[js.Array[DocumentSymbol]]
   }
   
-  
   trait EncodedTokensProvider extends js.Object {
     /**
-             * The initial state of a language. Will be the state passed in to tokenize the first line.
-             */
+      * The initial state of a language. Will be the state passed in to tokenize the first line.
+      */
     def getInitialState(): IState
     /**
-             * Tokenize a line given the state at the beginning of the line.
-             */
+      * Tokenize a line given the state at the beginning of the line.
+      */
     def tokenizeEncoded(line: java.lang.String, state: IState): IEncodedLineTokens
   }
   
-  
   trait EnterAction extends js.Object {
     /**
-             * Describes text to be appended after the new line and after the indentation.
-             */
+      * Describes text to be appended after the new line and after the indentation.
+      */
     var appendText: js.UndefOr[java.lang.String] = js.undefined
     /**
-             * Describe what to do with the indentation.
-             */
+      * Describe what to do with the indentation.
+      */
     var indentAction: IndentAction
     /**
-             * Describe whether to outdent current line.
-             */
+      * Describe whether to outdent current line.
+      */
     var outdentCurrentLine: js.UndefOr[scala.Boolean] = js.undefined
     /**
-             * Describes the number of characters to remove from the new line's indentation.
-             */
+      * Describes the number of characters to remove from the new line's indentation.
+      */
     var removeText: js.UndefOr[scala.Double] = js.undefined
   }
   
-  
   trait FoldingContext extends js.Object
-  
   
   trait FoldingMarkers extends js.Object {
     var end: stdLib.RegExp
     var start: stdLib.RegExp
   }
   
-  
   trait FoldingRange extends js.Object {
     /**
-             * The one-based end line of the range to fold. The folded area ends with the line's last character.
-             */
+      * The one-based end line of the range to fold. The folded area ends with the line's last character.
+      */
     var end: scala.Double
     /**
-             * Describes the [Kind](#FoldingRangeKind) of the folding range such as [Comment](#FoldingRangeKind.Comment) or
-             * [Region](#FoldingRangeKind.Region). The kind is used to categorize folding ranges and used by commands
-             * like 'Fold all comments'. See
-             * [FoldingRangeKind](#FoldingRangeKind) for an enumeration of standardized kinds.
-             */
+      * Describes the [Kind](#FoldingRangeKind) of the folding range such as [Comment](#FoldingRangeKind.Comment) or
+      * [Region](#FoldingRangeKind.Region). The kind is used to categorize folding ranges and used by commands
+      * like 'Fold all comments'. See
+      * [FoldingRangeKind](#FoldingRangeKind) for an enumeration of standardized kinds.
+      */
     var kind: js.UndefOr[FoldingRangeKind] = js.undefined
     /**
-             * The one-based start line of the range to fold. The folded area starts after the line's last character.
-             */
+      * The one-based start line of the range to fold. The folded area starts after the line's last character.
+      */
     var start: scala.Double
   }
   
   @js.native
   class FoldingRangeKind protected () extends js.Object {
     /**
-             * Creates a new [FoldingRangeKind](#FoldingRangeKind).
-             *
-             * @param value of the kind.
-             */
+      * Creates a new [FoldingRangeKind](#FoldingRangeKind).
+      *
+      * @param value of the kind.
+      */
     def this(value: java.lang.String) = this()
     var value: java.lang.String = js.native
   }
   
-  
   trait FoldingRangeProvider extends js.Object {
     /**
-             * Provides the color ranges for a specific model.
-             */
+      * Provides the color ranges for a specific model.
+      */
     def provideFoldingRanges(
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       context: FoldingContext,
@@ -421,54 +396,50 @@ object languagesNs extends js.Object {
     ): ProviderResult[js.Array[FoldingRange]]
   }
   
-  
   trait FoldingRules extends js.Object {
     /**
-             * Region markers used by the language.
-             */
+      * Region markers used by the language.
+      */
     var markers: js.UndefOr[FoldingMarkers] = js.undefined
     /**
-             * Used by the indentation based strategy to decide whether empty lines belong to the previous or the next block.
-             * A language adheres to the off-side rule if blocks in that language are expressed by their indentation.
-             * See [wikipedia](https://en.wikipedia.org/wiki/Off-side_rule) for more information.
-             * If not set, `false` is used and empty lines belong to the previous block.
-             */
+      * Used by the indentation based strategy to decide whether empty lines belong to the previous or the next block.
+      * A language adheres to the off-side rule if blocks in that language are expressed by their indentation.
+      * See [wikipedia](https://en.wikipedia.org/wiki/Off-side_rule) for more information.
+      * If not set, `false` is used and empty lines belong to the previous block.
+      */
     var offSide: js.UndefOr[scala.Boolean] = js.undefined
   }
   
-  
   trait FormattingOptions extends js.Object {
     /**
-             * Prefer spaces over tabs.
-             */
+      * Prefer spaces over tabs.
+      */
     var insertSpaces: scala.Boolean
     /**
-             * Size of a tab in spaces.
-             */
+      * Size of a tab in spaces.
+      */
     var tabSize: scala.Double
   }
   
-  
   trait Hover extends js.Object {
     /**
-             * The contents of this hover.
-             */
+      * The contents of this hover.
+      */
     var contents: js.Array[monacoDashEditorLib.monacoDashEditorMod.IMarkdownString]
     /**
-             * The range to which this hover applies. When missing, the
-             * editor will use the range at the current position or the
-             * current position itself.
-             */
+      * The range to which this hover applies. When missing, the
+      * editor will use the range at the current position or the
+      * current position itself.
+      */
     var range: js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.IRange] = js.undefined
   }
   
-  
   trait HoverProvider extends js.Object {
     /**
-             * Provide a hover for the given position and document. Multiple hovers at the same
-             * position will be merged by the editor. A hover can have a range which defaults
-             * to the word range at the position when omitted.
-             */
+      * Provide a hover for the given position and document. Multiple hovers at the same
+      * position will be merged by the editor. A hover can have a range which defaults
+      * to the word range at the position when omitted.
+      */
     def provideHover(
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       position: monacoDashEditorLib.monacoDashEditorMod.Position,
@@ -476,22 +447,18 @@ object languagesNs extends js.Object {
     ): ProviderResult[Hover]
   }
   
-  
   trait IAutoClosingPair extends js.Object {
     var close: java.lang.String
     var open: java.lang.String
   }
   
-  
   trait IAutoClosingPairConditional extends IAutoClosingPair {
     var notIn: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   }
   
-  
   trait IBracketElectricCharacterContribution extends js.Object {
     var docComment: js.UndefOr[IDocComment] = js.undefined
   }
-  
   
   trait ICodeLensSymbol extends js.Object {
     var command: js.UndefOr[Command] = js.undefined
@@ -499,156 +466,148 @@ object languagesNs extends js.Object {
     var range: monacoDashEditorLib.monacoDashEditorMod.IRange
   }
   
-  
   trait IColor extends js.Object {
     /**
-             * The alpha component in the range [0-1].
-             */
+      * The alpha component in the range [0-1].
+      */
     val alpha: scala.Double
     /**
-             * The blue component in the range [0-1].
-             */
+      * The blue component in the range [0-1].
+      */
     val blue: scala.Double
     /**
-             * The green component in the range [0-1].
-             */
+      * The green component in the range [0-1].
+      */
     val green: scala.Double
     /**
-             * The red component in the range [0-1].
-             */
+      * The red component in the range [0-1].
+      */
     val red: scala.Double
   }
   
-  
   trait IColorInformation extends js.Object {
     /**
-             * The color represented in this range.
-             */
+      * The color represented in this range.
+      */
     var color: IColor
     /**
-             * The range within the model.
-             */
+      * The range within the model.
+      */
     var range: monacoDashEditorLib.monacoDashEditorMod.IRange
   }
   
-  
   trait IColorPresentation extends js.Object {
     /**
-             * An optional array of additional [text edits](#TextEdit) that are applied when
-             * selecting this color presentation.
-             */
+      * An optional array of additional [text edits](#TextEdit) that are applied when
+      * selecting this color presentation.
+      */
     var additionalTextEdits: js.UndefOr[js.Array[TextEdit]] = js.undefined
     /**
-             * The label of this color presentation. It will be shown on the color
-             * picker header. By default this is also the text that is inserted when selecting
-             * this color presentation.
-             */
+      * The label of this color presentation. It will be shown on the color
+      * picker header. By default this is also the text that is inserted when selecting
+      * this color presentation.
+      */
     var label: java.lang.String
     /**
-             * An [edit](#TextEdit) which is applied to a document when selecting
-             * this presentation for the color.
-             */
+      * An [edit](#TextEdit) which is applied to a document when selecting
+      * this presentation for the color.
+      */
     var textEdit: js.UndefOr[TextEdit] = js.undefined
   }
   
-  
   trait IDocComment extends js.Object {
     /**
-             * The string that appears on the last line and closes the doc comment (e.g. ' * /').
-             */
+      * The string that appears on the last line and closes the doc comment (e.g. ' * /').
+      */
     var close: java.lang.String
     /**
-             * The string that starts a doc comment (e.g. '/ **')
-             */
+      * The string that starts a doc comment (e.g. '/ **')
+      */
     var open: java.lang.String
   }
   
-  
   trait IEncodedLineTokens extends js.Object {
     /**
-             * The tokenization end state.
-             * A pointer will be held to this and the object should not be modified by the tokenizer after the pointer is returned.
-             */
+      * The tokenization end state.
+      * A pointer will be held to this and the object should not be modified by the tokenizer after the pointer is returned.
+      */
     var endState: IState
     /**
-             * The tokens on the line in a binary, encoded format. Each token occupies two array indices. For token i:
-             *  - at offset 2*i => startIndex
-             *  - at offset 2*i + 1 => metadata
-             * Meta data is in binary format:
-             * - -------------------------------------------
-             *     3322 2222 2222 1111 1111 1100 0000 0000
-             *     1098 7654 3210 9876 5432 1098 7654 3210
-             * - -------------------------------------------
-             *     bbbb bbbb bfff ffff ffFF FTTT LLLL LLLL
-             * - -------------------------------------------
-             *  - L = EncodedLanguageId (8 bits): Use `getEncodedLanguageId` to get the encoded ID of a language.
-             *  - T = StandardTokenType (3 bits): Other = 0, Comment = 1, String = 2, RegEx = 4.
-             *  - F = FontStyle (3 bits): None = 0, Italic = 1, Bold = 2, Underline = 4.
-             *  - f = foreground ColorId (9 bits)
-             *  - b = background ColorId (9 bits)
-             *  - The color value for each colorId is defined in IStandaloneThemeData.customTokenColors:
-             * e.g colorId = 1 is stored in IStandaloneThemeData.customTokenColors[1]. Color id = 0 means no color,
-             * id = 1 is for the default foreground color, id = 2 for the default background.
-             */
+      * The tokens on the line in a binary, encoded format. Each token occupies two array indices. For token i:
+      *  - at offset 2*i => startIndex
+      *  - at offset 2*i + 1 => metadata
+      * Meta data is in binary format:
+      * - -------------------------------------------
+      *     3322 2222 2222 1111 1111 1100 0000 0000
+      *     1098 7654 3210 9876 5432 1098 7654 3210
+      * - -------------------------------------------
+      *     bbbb bbbb bfff ffff ffFF FTTT LLLL LLLL
+      * - -------------------------------------------
+      *  - L = EncodedLanguageId (8 bits): Use `getEncodedLanguageId` to get the encoded ID of a language.
+      *  - T = StandardTokenType (3 bits): Other = 0, Comment = 1, String = 2, RegEx = 4.
+      *  - F = FontStyle (3 bits): None = 0, Italic = 1, Bold = 2, Underline = 4.
+      *  - f = foreground ColorId (9 bits)
+      *  - b = background ColorId (9 bits)
+      *  - The color value for each colorId is defined in IStandaloneThemeData.customTokenColors:
+      * e.g colorId = 1 is stored in IStandaloneThemeData.customTokenColors[1]. Color id = 0 means no color,
+      * id = 1 is for the default foreground color, id = 2 for the default background.
+      */
     var tokens: stdLib.Uint32Array
   }
   
-  
   trait IExpandedMonarchLanguageAction extends js.Object {
     /**
-             * @open or @close
-             */
+      * @open or @close
+      */
     var bracket: js.UndefOr[java.lang.String] = js.undefined
     /**
-             * map from string to ILanguageAction
-             */
+      * map from string to ILanguageAction
+      */
     var cases: js.UndefOr[js.Object] = js.undefined
     /**
-             * go back n characters in the stream
-             */
+      * go back n characters in the stream
+      */
     var goBack: js.UndefOr[scala.Double] = js.undefined
     /**
-             * array of actions for each parenthesized match group
-             */
+      * array of actions for each parenthesized match group
+      */
     var group: js.UndefOr[js.Array[IMonarchLanguageAction]] = js.undefined
     /**
-             * log a message to the browser console window
-             */
+      * log a message to the browser console window
+      */
     var log: js.UndefOr[java.lang.String] = js.undefined
     /**
-             * the next state to push, or "@push", "@pop", "@popall"
-             */
+      * the next state to push, or "@push", "@pop", "@popall"
+      */
     var next: js.UndefOr[java.lang.String] = js.undefined
     /**
-             * switch to embedded language (using the mimetype) or get out using "@pop"
-             */
+      * switch to embedded language (using the mimetype) or get out using "@pop"
+      */
     var nextEmbedded: js.UndefOr[java.lang.String] = js.undefined
     /**
-             * switch to this state
-             */
+      * switch to this state
+      */
     var switchTo: js.UndefOr[java.lang.String] = js.undefined
     /**
-             * token class (ie. css class) (or "@brackets" or "@rematch")
-             */
+      * token class (ie. css class) (or "@brackets" or "@rematch")
+      */
     var token: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait IExpandedMonarchLanguageRule extends js.Object {
     /**
-             * action to take on match
-             */
+      * action to take on match
+      */
     var action: js.UndefOr[IMonarchLanguageAction] = js.undefined
     /**
-             * or an include rule. include all rules from the included state
-             */
+      * or an include rule. include all rules from the included state
+      */
     var include: js.UndefOr[java.lang.String] = js.undefined
     /**
-             * match tokens
-             */
+      * match tokens
+      */
     var regex: js.UndefOr[java.lang.String | stdLib.RegExp] = js.undefined
   }
-  
   
   trait ILanguageExtensionPoint extends js.Object {
     var aliases: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -661,85 +620,78 @@ object languagesNs extends js.Object {
     var mimetypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   }
   
-  
   trait ILineTokens extends js.Object {
     /**
-             * The tokenization end state.
-             * A pointer will be held to this and the object should not be modified by the tokenizer after the pointer is returned.
-             */
+      * The tokenization end state.
+      * A pointer will be held to this and the object should not be modified by the tokenizer after the pointer is returned.
+      */
     var endState: IState
     /**
-             * The list of tokens on the line.
-             */
+      * The list of tokens on the line.
+      */
     var tokens: js.Array[IToken]
   }
-  
   
   trait ILink extends js.Object {
     var range: monacoDashEditorLib.monacoDashEditorMod.IRange
     var url: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait IMonarchLanguage extends js.Object {
     /**
-             * for example [['{','}','delimiter.curly']]
-             */
+      * for example [['{','}','delimiter.curly']]
+      */
     var brackets: js.UndefOr[js.Array[IMonarchLanguageBracket]] = js.undefined
     /**
-             * if no match in the tokenizer assign this token class (default 'source')
-             */
+      * if no match in the tokenizer assign this token class (default 'source')
+      */
     var defaultToken: js.UndefOr[java.lang.String] = js.undefined
     /**
-             * is the language case insensitive?
-             */
+      * is the language case insensitive?
+      */
     var ignoreCase: js.UndefOr[scala.Boolean] = js.undefined
     /**
-             * start symbol in the tokenizer (by default the first entry is used)
-             */
+      * start symbol in the tokenizer (by default the first entry is used)
+      */
     var start: js.UndefOr[java.lang.String] = js.undefined
     /**
-             * attach this to every token class (by default '.' + name)
-             */
+      * attach this to every token class (by default '.' + name)
+      */
     var tokenPostfix: js.UndefOr[java.lang.String] = js.undefined
     /**
-             * map from string to ILanguageRule[]
-             */
+      * map from string to ILanguageRule[]
+      */
     var tokenizer: org.scalablytyped.runtime.StringDictionary[js.Array[IMonarchLanguageRule]]
   }
   
-  
   trait IMonarchLanguageBracket extends js.Object {
     /**
-             * closing bracket
-             */
+      * closing bracket
+      */
     var close: java.lang.String
     /**
-             * open bracket
-             */
+      * open bracket
+      */
     var open: java.lang.String
     /**
-             * token class
-             */
+      * token class
+      */
     var token: java.lang.String
   }
-  
   
   trait IState extends js.Object {
     def equals(other: IState): scala.Boolean
   }
-  
   
   trait IToken extends js.Object {
     var scopes: java.lang.String
     var startIndex: scala.Double
   }
   
-  
   trait ImplementationProvider extends js.Object {
     /**
-             * Provide the implementation of the symbol at the given position and document.
-             */
+      * Provide the implementation of the symbol at the given position and document.
+      */
     def provideImplementation(
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       position: monacoDashEditorLib.monacoDashEditorMod.Position,
@@ -750,82 +702,79 @@ object languagesNs extends js.Object {
   @js.native
   sealed trait IndentAction extends js.Object
   
-  
   trait IndentationRule extends js.Object {
     /**
-             * If a line matches this pattern, then all the lines after it should be unindented once (until another rule matches).
-             */
+      * If a line matches this pattern, then all the lines after it should be unindented once (until another rule matches).
+      */
     var decreaseIndentPattern: stdLib.RegExp
     /**
-             * If a line matches this pattern, then all the lines after it should be indented once (until another rule matches).
-             */
+      * If a line matches this pattern, then all the lines after it should be indented once (until another rule matches).
+      */
     var increaseIndentPattern: stdLib.RegExp
     /**
-             * If a line matches this pattern, then **only the next line** after it should be indented once.
-             */
+      * If a line matches this pattern, then **only the next line** after it should be indented once.
+      */
     var indentNextLinePattern: js.UndefOr[stdLib.RegExp] = js.undefined
     /**
-             * If a line matches this pattern, then its indentation should not be changed and it should not be evaluated against the other rules.
-             */
+      * If a line matches this pattern, then its indentation should not be changed and it should not be evaluated against the other rules.
+      */
     var unIndentedLinePattern: js.UndefOr[stdLib.RegExp] = js.undefined
   }
   
-  
   trait LanguageConfiguration extends js.Object {
     /**
-             * **Deprecated** Do not use.
-             *
-             * @deprecated Will be replaced by a better API soon.
-             */
+      * **Deprecated** Do not use.
+      *
+      * @deprecated Will be replaced by a better API soon.
+      */
     var __electricCharacterSupport: js.UndefOr[IBracketElectricCharacterContribution] = js.undefined
     /**
-             * Defines what characters must be after the cursor for bracket or quote autoclosing to occur when using the \'languageDefined\' autoclosing setting.
-             *
-             * This is typically the set of characters which can not start an expression, such as whitespace, closing brackets, non-unary operators, etc.
-             */
+      * Defines what characters must be after the cursor for bracket or quote autoclosing to occur when using the \'languageDefined\' autoclosing setting.
+      *
+      * This is typically the set of characters which can not start an expression, such as whitespace, closing brackets, non-unary operators, etc.
+      */
     var autoCloseBefore: js.UndefOr[java.lang.String] = js.undefined
     /**
-             * The language's auto closing pairs. The 'close' character is automatically inserted with the
-             * 'open' character is typed. If not set, the configured brackets will be used.
-             */
+      * The language's auto closing pairs. The 'close' character is automatically inserted with the
+      * 'open' character is typed. If not set, the configured brackets will be used.
+      */
     var autoClosingPairs: js.UndefOr[js.Array[IAutoClosingPairConditional]] = js.undefined
     /**
-             * The language's brackets.
-             * This configuration implicitly affects pressing Enter around these brackets.
-             */
+      * The language's brackets.
+      * This configuration implicitly affects pressing Enter around these brackets.
+      */
     var brackets: js.UndefOr[js.Array[CharacterPair]] = js.undefined
     /**
-             * The language's comment settings.
-             */
+      * The language's comment settings.
+      */
     var comments: js.UndefOr[CommentRule] = js.undefined
     /**
-             * The language's folding rules.
-             */
+      * The language's folding rules.
+      */
     var folding: js.UndefOr[FoldingRules] = js.undefined
     /**
-             * The language's indentation settings.
-             */
+      * The language's indentation settings.
+      */
     var indentationRules: js.UndefOr[IndentationRule] = js.undefined
     /**
-             * The language's rules to be evaluated when pressing Enter.
-             */
+      * The language's rules to be evaluated when pressing Enter.
+      */
     var onEnterRules: js.UndefOr[js.Array[OnEnterRule]] = js.undefined
     /**
-             * The language's surrounding pairs. When the 'open' character is typed on a selection, the
-             * selected string is surrounded by the open and close characters. If not set, the autoclosing pairs
-             * settings will be used.
-             */
+      * The language's surrounding pairs. When the 'open' character is typed on a selection, the
+      * selected string is surrounded by the open and close characters. If not set, the autoclosing pairs
+      * settings will be used.
+      */
     var surroundingPairs: js.UndefOr[js.Array[IAutoClosingPair]] = js.undefined
     /**
-             * The language's word definition.
-             * If the language supports Unicode identifiers (e.g. JavaScript), it is preferable
-             * to provide a word definition that uses exclusion of known separators.
-             * e.g.: A regex that matches anything except known separators (and dot is allowed to occur in a floating point number):
-             *   /(-?\d*\.\d\w*)|([^\`\~\!\@\#\%\^\&\*\(\)\-\=\+\[\{\]\}\\\|\;\:\'\"\,\.\<\>\/\?\s]+)/g
-             */
+      * The language's word definition.
+      * If the language supports Unicode identifiers (e.g. JavaScript), it is preferable
+      * to provide a word definition that uses exclusion of known separators.
+      * e.g.: A regex that matches anything except known separators (and dot is allowed to occur in a floating point number):
+      *   /(-?\d*\.\d\w*)|([^\`\~\!\@\#\%\^\&\*\(\)\-\=\+\[\{\]\}\\\|\;\:\'\"\,\.\<\>\/\?\s]+)/g
+      */
     var wordPattern: js.UndefOr[stdLib.RegExp] = js.undefined
   }
-  
   
   trait LinkProvider extends js.Object {
     var resolveLink: js.UndefOr[
@@ -841,48 +790,45 @@ object languagesNs extends js.Object {
     ): ProviderResult[js.Array[ILink]]
   }
   
-  
   trait Location extends js.Object {
     /**
-             * The document range of this locations.
-             */
+      * The document range of this locations.
+      */
     var range: monacoDashEditorLib.monacoDashEditorMod.IRange
     /**
-             * The resource identifier of this location.
-             */
+      * The resource identifier of this location.
+      */
     var uri: monacoDashEditorLib.monacoDashEditorMod.Uri
   }
   
-  
   trait OnEnterRule extends js.Object {
     /**
-             * The action to execute.
-             */
+      * The action to execute.
+      */
     var action: EnterAction
     /**
-             * This rule will only execute if the text after the cursor matches this regular expression.
-             */
+      * This rule will only execute if the text after the cursor matches this regular expression.
+      */
     var afterText: js.UndefOr[stdLib.RegExp] = js.undefined
     /**
-             * This rule will only execute if the text before the cursor matches this regular expression.
-             */
+      * This rule will only execute if the text before the cursor matches this regular expression.
+      */
     var beforeText: stdLib.RegExp
     /**
-             * This rule will only execute if the text above the this line matches this regular expression.
-             */
+      * This rule will only execute if the text above the this line matches this regular expression.
+      */
     var oneLineAboveText: js.UndefOr[stdLib.RegExp] = js.undefined
   }
-  
   
   trait OnTypeFormattingEditProvider extends js.Object {
     var autoFormatTriggerCharacters: js.Array[java.lang.String]
     /**
-             * Provide formatting edits after a character has been typed.
-             *
-             * The given position and character should hint to the provider
-             * what range the position to expand to, like find the matching `{`
-             * when `}` has been entered.
-             */
+      * Provide formatting edits after a character has been typed.
+      *
+      * The given position and character should hint to the provider
+      * what range the position to expand to, like find the matching `{`
+      * when `}` has been entered.
+      */
     def provideOnTypeFormattingEdits(
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       position: monacoDashEditorLib.monacoDashEditorMod.Position,
@@ -892,33 +838,30 @@ object languagesNs extends js.Object {
     ): ProviderResult[js.Array[TextEdit]]
   }
   
-  
   trait ParameterInformation extends js.Object {
     /**
-             * The human-readable doc-comment of this signature. Will be shown
-             * in the UI but can be omitted.
-             */
+      * The human-readable doc-comment of this signature. Will be shown
+      * in the UI but can be omitted.
+      */
     var documentation: js.UndefOr[java.lang.String | monacoDashEditorLib.monacoDashEditorMod.IMarkdownString] = js.undefined
     /**
-             * The label of this signature. Will be shown in
-             * the UI.
-             */
+      * The label of this signature. Will be shown in
+      * the UI.
+      */
     var label: java.lang.String | (js.Tuple2[scala.Double, scala.Double])
   }
   
-  
   trait ReferenceContext extends js.Object {
     /**
-             * Include the declaration of the current symbol.
-             */
+      * Include the declaration of the current symbol.
+      */
     var includeDeclaration: scala.Boolean
   }
   
-  
   trait ReferenceProvider extends js.Object {
     /**
-             * Provide a set of project-wide references for the given position and document.
-             */
+      * Provide a set of project-wide references for the given position and document.
+      */
     def provideReferences(
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       position: monacoDashEditorLib.monacoDashEditorMod.Position,
@@ -927,17 +870,14 @@ object languagesNs extends js.Object {
     ): ProviderResult[js.Array[Location]]
   }
   
-  
   trait Rejection extends js.Object {
     var rejectReason: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait RenameLocation extends js.Object {
     var range: monacoDashEditorLib.monacoDashEditorMod.IRange
     var text: java.lang.String
   }
-  
   
   trait RenameProvider extends js.Object {
     var resolveRenameLocation: js.UndefOr[
@@ -956,13 +896,11 @@ object languagesNs extends js.Object {
     ): ProviderResult[WorkspaceEdit with Rejection]
   }
   
-  
   trait ResourceFileEdit extends js.Object {
     var newUri: monacoDashEditorLib.monacoDashEditorMod.Uri
     var oldUri: monacoDashEditorLib.monacoDashEditorMod.Uri
     var options: monacoDashEditorLib.Anon_IgnoreIfNotExists
   }
-  
   
   trait ResourceTextEdit extends js.Object {
     var edits: js.Array[TextEdit]
@@ -970,22 +908,20 @@ object languagesNs extends js.Object {
     var resource: monacoDashEditorLib.monacoDashEditorMod.Uri
   }
   
-  
   trait SignatureHelp extends js.Object {
     /**
-             * The active parameter of the active signature.
-             */
+      * The active parameter of the active signature.
+      */
     var activeParameter: scala.Double
     /**
-             * The active signature.
-             */
+      * The active signature.
+      */
     var activeSignature: scala.Double
     /**
-             * One or more signatures.
-             */
+      * One or more signatures.
+      */
     var signatures: js.Array[SignatureInformation]
   }
-  
   
   trait SignatureHelpContext extends js.Object {
     val isRetrigger: scala.Boolean
@@ -993,13 +929,12 @@ object languagesNs extends js.Object {
     val triggerReason: SignatureHelpTriggerReason
   }
   
-  
   trait SignatureHelpProvider extends js.Object {
     val signatureHelpRetriggerCharacters: js.UndefOr[js.Array[java.lang.String]] = js.undefined
     val signatureHelpTriggerCharacters: js.UndefOr[js.Array[java.lang.String]] = js.undefined
     /**
-             * Provide help for the signature at the given position and document.
-             */
+      * Provide help for the signature at the given position and document.
+      */
     def provideSignatureHelp(
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       position: monacoDashEditorLib.monacoDashEditorMod.Position,
@@ -1011,51 +946,47 @@ object languagesNs extends js.Object {
   @js.native
   sealed trait SignatureHelpTriggerReason extends js.Object
   
-  
   trait SignatureInformation extends js.Object {
     /**
-             * The human-readable doc-comment of this signature. Will be shown
-             * in the UI but can be omitted.
-             */
+      * The human-readable doc-comment of this signature. Will be shown
+      * in the UI but can be omitted.
+      */
     var documentation: js.UndefOr[java.lang.String | monacoDashEditorLib.monacoDashEditorMod.IMarkdownString] = js.undefined
     /**
-             * The label of this signature. Will be shown in
-             * the UI.
-             */
+      * The label of this signature. Will be shown in
+      * the UI.
+      */
     var label: java.lang.String
     /**
-             * The parameters of this signature.
-             */
+      * The parameters of this signature.
+      */
     var parameters: js.Array[ParameterInformation]
   }
   
   @js.native
   sealed trait SymbolKind extends js.Object
   
-  
   trait TokensProvider extends js.Object {
     /**
-             * The initial state of a language. Will be the state passed in to tokenize the first line.
-             */
+      * The initial state of a language. Will be the state passed in to tokenize the first line.
+      */
     def getInitialState(): IState
     /**
-             * Tokenize a line given the state at the beginning of the line.
-             */
+      * Tokenize a line given the state at the beginning of the line.
+      */
     def tokenize(line: java.lang.String, state: IState): ILineTokens
   }
   
-  
   trait TypeDefinitionProvider extends js.Object {
     /**
-             * Provide the type definition of the symbol at the given position and document.
-             */
+      * Provide the type definition of the symbol at the given position and document.
+      */
     def provideTypeDefinition(
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       position: monacoDashEditorLib.monacoDashEditorMod.Position,
       token: monacoDashEditorLib.monacoDashEditorMod.CancellationToken
     ): ProviderResult[Definition | js.Array[DefinitionLink]]
   }
-  
   
   trait WorkspaceEdit extends js.Object {
     var edits: js.UndefOr[js.Array[ResourceTextEdit | ResourceFileEdit]] = js.undefined
@@ -1090,16 +1021,16 @@ object languagesNs extends js.Object {
   @js.native
   object CompletionItemInsertTextRule extends js.Object {
     /**
-             * `insertText` is a snippet.
-             */
+      * `insertText` is a snippet.
+      */
     @js.native
     sealed trait InsertAsSnippet
       extends monacoDashEditorLib.monacoDashEditorMod.languagesNs.CompletionItemInsertTextRule
     
     /**
-             * Adjust whitespace/indentation of multiline insert texts to
-             * match the current line indentation.
-             */
+      * Adjust whitespace/indentation of multiline insert texts to
+      * match the current line indentation.
+      */
     @js.native
     sealed trait KeepWhitespace
       extends monacoDashEditorLib.monacoDashEditorMod.languagesNs.CompletionItemInsertTextRule
@@ -1276,22 +1207,22 @@ object languagesNs extends js.Object {
   @js.native
   object DocumentHighlightKind extends js.Object {
     /**
-             * Read-access of a symbol, like reading a variable.
-             */
+      * Read-access of a symbol, like reading a variable.
+      */
     @js.native
     sealed trait Read
       extends monacoDashEditorLib.monacoDashEditorMod.languagesNs.DocumentHighlightKind
     
     /**
-             * A textual occurrence.
-             */
+      * A textual occurrence.
+      */
     @js.native
     sealed trait Text
       extends monacoDashEditorLib.monacoDashEditorMod.languagesNs.DocumentHighlightKind
     
     /**
-             * Write-access of a symbol, like writing to a variable.
-             */
+      * Write-access of a symbol, like writing to a variable.
+      */
     @js.native
     sealed trait Write
       extends monacoDashEditorLib.monacoDashEditorMod.languagesNs.DocumentHighlightKind
@@ -1308,48 +1239,48 @@ object languagesNs extends js.Object {
   @js.native
   object FoldingRangeKind extends js.Object {
     /**
-             * Kind for folding range representing a comment. The value of the kind is 'comment'.
-             */
+      * Kind for folding range representing a comment. The value of the kind is 'comment'.
+      */
     val Comment: monacoDashEditorLib.monacoDashEditorMod.languagesNs.FoldingRangeKind = js.native
     /**
-             * Kind for folding range representing a import. The value of the kind is 'imports'.
-             */
+      * Kind for folding range representing a import. The value of the kind is 'imports'.
+      */
     val Imports: monacoDashEditorLib.monacoDashEditorMod.languagesNs.FoldingRangeKind = js.native
     /**
-             * Kind for folding range representing regions (for example marked by `#region`, `#endregion`).
-             * The value of the kind is 'region'.
-             */
+      * Kind for folding range representing regions (for example marked by `#region`, `#endregion`).
+      * The value of the kind is 'region'.
+      */
     val Region: monacoDashEditorLib.monacoDashEditorMod.languagesNs.FoldingRangeKind = js.native
   }
   
   @js.native
   object IndentAction extends js.Object {
     /**
-             * Insert new line and indent once (relative to the previous line's indentation).
-             */
+      * Insert new line and indent once (relative to the previous line's indentation).
+      */
     @js.native
     sealed trait Indent
       extends monacoDashEditorLib.monacoDashEditorMod.languagesNs.IndentAction
     
     /**
-             * Insert two new lines:
-             *  - the first one indented which will hold the cursor
-             *  - the second one at the same indentation level
-             */
+      * Insert two new lines:
+      *  - the first one indented which will hold the cursor
+      *  - the second one at the same indentation level
+      */
     @js.native
     sealed trait IndentOutdent
       extends monacoDashEditorLib.monacoDashEditorMod.languagesNs.IndentAction
     
     /**
-             * Insert new line and copy the previous line's indentation.
-             */
+      * Insert new line and copy the previous line's indentation.
+      */
     @js.native
     sealed trait None
       extends monacoDashEditorLib.monacoDashEditorMod.languagesNs.IndentAction
     
     /**
-             * Insert new line and outdent once (relative to the previous line's indentation).
-             */
+      * Insert new line and outdent once (relative to the previous line's indentation).
+      */
     @js.native
     sealed trait Outdent
       extends monacoDashEditorLib.monacoDashEditorMod.languagesNs.IndentAction
@@ -1526,7 +1457,6 @@ object languagesNs extends js.Object {
   @JSName("css")
   @js.native
   object cssNs extends js.Object {
-    
     trait DiagnosticsOptions extends js.Object {
       val lint: js.UndefOr[monacoDashEditorLib.Anon_ZeroUnits] = js.undefined
       val validate: js.UndefOr[scala.Boolean] = js.undefined
@@ -1548,10 +1478,8 @@ object languagesNs extends js.Object {
   @JSName("html")
   @js.native
   object htmlNs extends js.Object {
-    
     trait CompletionConfiguration
       extends /* provider */ org.scalablytyped.runtime.StringDictionary[scala.Boolean]
-    
     
     trait HTMLFormatConfiguration extends js.Object {
       val contentUnformatted: java.lang.String
@@ -1576,15 +1504,14 @@ object languagesNs extends js.Object {
       def setOptions(options: Options): scala.Unit = js.native
     }
     
-    
     trait Options extends js.Object {
       /**
-               * If set, comments are tolerated. If set to false, syntax errors will be emitted for comments.
-               */
+        * If set, comments are tolerated. If set to false, syntax errors will be emitted for comments.
+        */
       val format: js.UndefOr[HTMLFormatConfiguration] = js.undefined
       /**
-               * A list of known schemas and/or associations of schemas to file names.
-               */
+        * A list of known schemas and/or associations of schemas to file names.
+        */
       val suggest: js.UndefOr[CompletionConfiguration] = js.undefined
     }
     
@@ -1596,23 +1523,22 @@ object languagesNs extends js.Object {
   @JSName("json")
   @js.native
   object jsonNs extends js.Object {
-    
     trait DiagnosticsOptions extends js.Object {
       /**
-               * If set, comments are tolerated. If set to false, syntax errors will be emitted for comments.
-               */
+        * If set, comments are tolerated. If set to false, syntax errors will be emitted for comments.
+        */
       val allowComments: js.UndefOr[scala.Boolean] = js.undefined
       /**
-               *  If set, the schema service would load schema content on-demand with 'fetch' if available
-               */
+        *  If set, the schema service would load schema content on-demand with 'fetch' if available
+        */
       val enableSchemaRequest: js.UndefOr[scala.Boolean] = js.undefined
       /**
-               * A list of known schemas and/or associations of schemas to file names.
-               */
+        * A list of known schemas and/or associations of schemas to file names.
+        */
       val schemas: js.UndefOr[js.Array[monacoDashEditorLib.Anon_Uri]] = js.undefined
       /**
-               * If set, the validator will be enabled and perform syntax validation as well as schema based validation.
-               */
+        * If set, the validator will be enabled and perform syntax validation as well as schema based validation.
+        */
       val validate: js.UndefOr[scala.Boolean] = js.undefined
     }
     
@@ -1630,7 +1556,6 @@ object languagesNs extends js.Object {
   @JSName("typescript")
   @js.native
   object typescriptNs extends js.Object {
-    
     trait CompilerOptions
       extends /* option */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[CompilerOptionsValue]] {
       var allowJs: js.UndefOr[scala.Boolean] = js.undefined
@@ -1710,7 +1635,6 @@ object languagesNs extends js.Object {
       var types: js.UndefOr[js.Array[java.lang.String]] = js.undefined
     }
     
-    
     trait DiagnosticsOptions extends js.Object {
       var noSemanticValidation: js.UndefOr[scala.Boolean] = js.undefined
       var noSyntaxValidation: js.UndefOr[scala.Boolean] = js.undefined
@@ -1722,50 +1646,39 @@ object languagesNs extends js.Object {
     @js.native
     trait LanguageServiceDefaults extends js.Object {
       /**
-               * Add an additional source file to the language service. Use this
-               * for typescript (definition) files that won't be loaded as editor
-               * document, like `jquery.d.ts`.
-               *
-               * @param content The file content
-               * @param filePath An optional file path
-               * @returns A disposable which will remove the file from the
-               * language service upon disposal.
-               */
+        * Add an additional source file to the language service. Use this
+        * for typescript (definition) files that won't be loaded as editor
+        * document, like `jquery.d.ts`.
+        *
+        * @param content The file content
+        * @param filePath An optional file path
+        * @returns A disposable which will remove the file from the
+        * language service upon disposal.
+        */
       def addExtraLib(content: java.lang.String): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
-      /**
-               * Add an additional source file to the language service. Use this
-               * for typescript (definition) files that won't be loaded as editor
-               * document, like `jquery.d.ts`.
-               *
-               * @param content The file content
-               * @param filePath An optional file path
-               * @returns A disposable which will remove the file from the
-               * language service upon disposal.
-               */
       def addExtraLib(content: java.lang.String, filePath: java.lang.String): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
       /**
-               * Set TypeScript compiler options.
-               */
+        * Set TypeScript compiler options.
+        */
       def setCompilerOptions(options: CompilerOptions): scala.Unit = js.native
       /**
-               * Configure whether syntactic and/or semantic validation should
-               * be performed
-               */
+        * Configure whether syntactic and/or semantic validation should
+        * be performed
+        */
       def setDiagnosticsOptions(options: DiagnosticsOptions): scala.Unit = js.native
       /**
-               * Configure if all existing models should be eagerly sync'd
-               * to the worker on start or restart.
-               */
+        * Configure if all existing models should be eagerly sync'd
+        * to the worker on start or restart.
+        */
       def setEagerModelSync(value: scala.Boolean): scala.Unit = js.native
       /**
-               * Configure when the worker shuts down. By default that is 2mins.
-               *
-               * @param value The maximum idle time in milliseconds. Values less than one
-               * mean never shut down.
-               */
+        * Configure when the worker shuts down. By default that is 2mins.
+        *
+        * @param value The maximum idle time in milliseconds. Values less than one
+        * mean never shut down.
+        */
       def setMaximumWorkerIdleTime(value: scala.Double): scala.Unit = js.native
     }
-    
     
     trait MapLike[T]
       extends /* index */ org.scalablytyped.runtime.StringDictionary[T]

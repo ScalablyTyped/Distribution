@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimelineOptions extends js.Object {
   var avoidOverlappingGridLines: js.UndefOr[scala.Boolean] = js.undefined
   var backgroundColor: js.UndefOr[js.Any] = js.undefined

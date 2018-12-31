@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MetagameConfig extends js.Object {
   /** Current version of the metagame configuration data. When this data is updated, the version number will be increased by one. */
   var currentVersion: js.UndefOr[scala.Double] = js.undefined

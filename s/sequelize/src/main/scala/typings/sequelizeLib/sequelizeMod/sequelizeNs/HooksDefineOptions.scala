@@ -12,14 +12,13 @@ import scala.scalajs.js.annotation._
 //  https://github.com/sequelize/sequelize/blob/v3.4.1/lib/hooks.js
 //
 /**
-     * Options for Sequelize.define. We mostly duplicate the Hooks here, since there is no way to combine the two
-     * interfaces.
-     *
-     * beforeValidate, afterValidate, beforeBulkCreate, beforeBulkDestroy, beforeBulkUpdate, beforeCreate,
-     * beforeDestroy, beforeSave, beforeUpdate, afterCreate, afterDestroy, afterSave, afterUpdate, afterBulkCreate,
-     * afterBulkDestroy and afterBulkUpdate.
-     */
-
+  * Options for Sequelize.define. We mostly duplicate the Hooks here, since there is no way to combine the two
+  * interfaces.
+  *
+  * beforeValidate, afterValidate, beforeBulkCreate, beforeBulkDestroy, beforeBulkUpdate, beforeCreate,
+  * beforeDestroy, beforeSave, beforeUpdate, afterCreate, afterDestroy, afterSave, afterUpdate, afterBulkCreate,
+  * afterBulkDestroy and afterBulkUpdate.
+  */
 trait HooksDefineOptions[TInstance] extends js.Object {
   var afterBulkCreate: js.UndefOr[
     js.Function3[

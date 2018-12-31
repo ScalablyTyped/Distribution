@@ -36,10 +36,10 @@ trait Workspace extends js.Object {
   /** Create a new text editor. */
   def buildTextEditor(params: js.Object): TextEditor = js.native
   /**
-       *  Creates a new item that corresponds to the provided URI.
-       *  If no URI is given, or no registered opener can open the URI, a new empty TextEditor
-       *  will be created.
-       */
+    *  Creates a new item that corresponds to the provided URI.
+    *  If no URI is given, or no registered opener can open the URI, a new empty TextEditor
+    *  will be created.
+    */
   def createItemForURI(uri: java.lang.String): js.Promise[js.Object | TextEditor] = js.native
   /** Get the active Pane. */
   def getActivePane(): Pane = js.native
@@ -83,45 +83,41 @@ trait Workspace extends js.Object {
   def getTextEditors(): js.Array[TextEditor] = js.native
   /** Get an Array of all the panel items at the top of the editor window. */
   def getTopPanels(): js.Array[Panel[js.Object]] = js.native
-  /**
-       *  Search the workspace for items matching the given URI and hide them.
-       *  Returns a boolean indicating whether any items were found (and hidden).
-       */
   def hide(itemOrURI: java.lang.String): scala.Boolean = js.native
   /**
-       *  Search the workspace for items matching the given URI and hide them.
-       *  Returns a boolean indicating whether any items were found (and hidden).
-       */
+    *  Search the workspace for items matching the given URI and hide them.
+    *  Returns a boolean indicating whether any items were found (and hidden).
+    */
   def hide(itemOrURI: js.Object): scala.Boolean = js.native
   /** Returns a boolean that is true if object is a TextEditor. */
-  def isTextEditor(`object`: js.Object): /* is TextEditor */scala.Boolean = js.native
+  def isTextEditor(`object`: js.Object): /* is atom.atom.TextEditor */ scala.Boolean = js.native
   /**
-       *  Invoke the given callback with the current active pane and when the
-       *  active pane changes.
-       */
+    *  Invoke the given callback with the current active pane and when the
+    *  active pane changes.
+    */
   def observeActivePane(callback: js.Function1[/* pane */ Pane, scala.Unit]): Disposable = js.native
   /**
-       *  Invoke the given callback with the current active pane item and with all
-       *  future active pane items in the workspace.
-       */
+    *  Invoke the given callback with the current active pane item and with all
+    *  future active pane items in the workspace.
+    */
   def observeActivePaneItem(callback: js.Function1[/* item */ js.Object, scala.Unit]): Disposable = js.native
   /**
-       *  Invoke the given callback with the current active text editor (if any), with all
-       *  future active text editors, and when there is no longer an active text editor.
-       */
+    *  Invoke the given callback with the current active text editor (if any), with all
+    *  future active text editors, and when there is no longer an active text editor.
+    */
   def observeActiveTextEditor(callback: js.Function1[/* editor */ js.UndefOr[TextEditor], scala.Unit]): Disposable = js.native
   /**
-       *  Invoke the given callback with all current and future panes items in the
-       *  workspace.
-       */
+    *  Invoke the given callback with all current and future panes items in the
+    *  workspace.
+    */
   def observePaneItems(callback: js.Function1[/* item */ js.Object, scala.Unit]): Disposable = js.native
   /** Invoke the given callback with all current and future panes in the workspace. */
   def observePanes(callback: js.Function1[/* pane */ Pane, scala.Unit]): Disposable = js.native
   // Event Subscription
   /**
-       *  Invoke the given callback with all current and future text editors in
-       *  the workspace.
-       */
+    *  Invoke the given callback with all current and future text editors in
+    *  the workspace.
+    */
   def observeTextEditors(callback: js.Function1[/* editor */ TextEditor, scala.Unit]): Disposable = js.native
   /** Invoke the given callback when a pane is added to the workspace. */
   def onDidAddPane(callback: js.Function1[/* event */ atomLib.Anon_Pane, scala.Unit]): Disposable = js.native
@@ -134,63 +130,52 @@ trait Workspace extends js.Object {
   /** Invoke the given callback when the active pane item changes. */
   def onDidChangeActivePaneItem(callback: js.Function1[/* item */ js.Object, scala.Unit]): Disposable = js.native
   /**
-       *  Invoke the given callback when a text editor becomes the active text editor and
-       *  when there is no longer an active text editor.
-       */
+    *  Invoke the given callback when a text editor becomes the active text editor and
+    *  when there is no longer an active text editor.
+    */
   def onDidChangeActiveTextEditor(callback: js.Function1[/* editor */ js.UndefOr[TextEditor], scala.Unit]): Disposable = js.native
   /** Invoke the given callback when a pane is destroyed in the workspace. */
   def onDidDestroyPane(callback: js.Function1[/* event */ atomLib.Anon_Pane, scala.Unit]): Disposable = js.native
   /** Invoke the given callback when a pane item is destroyed. */
   def onDidDestroyPaneItem(callback: js.Function1[/* event */ PaneItemObservedEvent, scala.Unit]): Disposable = js.native
   /**
-       *  Invoke the given callback whenever an item is opened. Unlike ::onDidAddPaneItem,
-       *  observers will be notified for items that are already present in the workspace
-       *  when they are reopened.
-       */
+    *  Invoke the given callback whenever an item is opened. Unlike ::onDidAddPaneItem,
+    *  observers will be notified for items that are already present in the workspace
+    *  when they are reopened.
+    */
   def onDidOpen(callback: js.Function1[/* event */ PaneItemOpenedEvent, scala.Unit]): Disposable = js.native
   /** Invoke the given callback when the active pane item stops changing. */
   def onDidStopChangingActivePaneItem(callback: js.Function1[/* item */ js.Object, scala.Unit]): Disposable = js.native
   /** Invoke the given callback before a pane is destroyed in the workspace. */
   def onWillDestroyPane(callback: js.Function1[/* event */ atomLib.Anon_Pane, scala.Unit]): Disposable = js.native
   /**
-       *  Invoke the given callback when a pane item is about to be destroyed,
-       *  before the user is prompted to save it.
-       *  @param callback The function to be called before pane items are destroyed.
-       *      If this function returns a Promise, then the item will not be destroyed
-       *      until the promise resolves.
-       */
+    *  Invoke the given callback when a pane item is about to be destroyed,
+    *  before the user is prompted to save it.
+    *  @param callback The function to be called before pane items are destroyed.
+    *      If this function returns a Promise, then the item will not be destroyed
+    *      until the promise resolves.
+    */
   def onWillDestroyPaneItem(callback: js.Function1[/* event */ PaneItemObservedEvent, scala.Unit | js.Promise[scala.Unit]]): Disposable = js.native
   /**
-       *  Opens the given URI in Atom asynchronously. If the URI is already open,
-       *  the existing item for that URI will be activated. If no URI is given, or
-       *  no registered opener can open the URI, a new empty TextEditor will be created.
-       */
+    *  Opens the given URI in Atom asynchronously. If the URI is already open,
+    *  the existing item for that URI will be activated. If no URI is given, or
+    *  no registered opener can open the URI, a new empty TextEditor will be created.
+    */
   def open(): js.Promise[TextEditor] = js.native
   // Opening
   /**
-       *  Opens the given URI in Atom asynchronously. If the URI is already open,
-       *  the existing item for that URI will be activated. If no URI is given, or
-       *  no registered opener can open the URI, a new empty TextEditor will be created.
-       */
+    *  Opens the given URI in Atom asynchronously. If the URI is already open,
+    *  the existing item for that URI will be activated. If no URI is given, or
+    *  no registered opener can open the URI, a new empty TextEditor will be created.
+    */
   def open(uri: java.lang.String): js.Promise[js.Object] = js.native
-  // Opening
-  /**
-       *  Opens the given URI in Atom asynchronously. If the URI is already open,
-       *  the existing item for that URI will be activated. If no URI is given, or
-       *  no registered opener can open the URI, a new empty TextEditor will be created.
-       */
   def open(uri: java.lang.String, options: WorkspaceOpenOptions): js.Promise[js.Object] = js.native
   /**
-       *  Opens the given item in Atom asynchronously. If the item is already open,
-       *  the existing item will be activated. If no item is given, a new empty TextEditor
-       *  will be created.
-       */
+    *  Opens the given item in Atom asynchronously. If the item is already open,
+    *  the existing item will be activated. If no item is given, a new empty TextEditor
+    *  will be created.
+    */
   def open[T /* <: ViewModel */](item: T): js.Promise[T] = js.native
-  /**
-       *  Opens the given item in Atom asynchronously. If the item is already open,
-       *  the existing item will be activated. If no item is given, a new empty TextEditor
-       *  will be created.
-       */
   def open[T /* <: ViewModel */](item: T, options: WorkspaceOpenOptions): js.Promise[T] = js.native
   /** Get the first pane container that contains the given item. */
   def paneContainerForItem(item: js.Object): js.UndefOr[Dock | WorkspaceCenter] = js.native
@@ -201,14 +186,14 @@ trait Workspace extends js.Object {
   /** Get the first Pane with an item for the given URI. */
   def paneForURI(uri: java.lang.String): js.UndefOr[Pane] = js.native
   /**
-       *  Returns the Panel associated with the given item or null when the item
-       *  has no panel.
-       */
+    *  Returns the Panel associated with the given item or null when the item
+    *  has no panel.
+    */
   def panelForItem[T](item: T): Panel[T] | scala.Null = js.native
   /**
-       *  Asynchronously reopens the last-closed item's URI if it hasn't already
-       *  been reopened.
-       */
+    *  Asynchronously reopens the last-closed item's URI if it hasn't already
+    *  been reopened.
+    */
   def reopenItem(): js.Promise[js.UndefOr[js.Object]] = js.native
   /** Performs a replace across all the specified files in the project. */
   def replace(
@@ -226,17 +211,12 @@ trait Workspace extends js.Object {
     options: WorkspaceScanOptions,
     iterator: js.Function1[/* result */ ScandalResult, scala.Unit]
   ): CancellablePromise[java.lang.String | scala.Null] = js.native
-  /**
-       *  Search the workspace for items matching the given URI. If any are found,
-       *  hide them. Otherwise, open the URL.
-       *  Returns a Promise that resolves when the item is shown or hidden.
-       */
   def toggle(itemOrURI: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       *  Search the workspace for items matching the given URI. If any are found,
-       *  hide them. Otherwise, open the URL.
-       *  Returns a Promise that resolves when the item is shown or hidden.
-       */
+    *  Search the workspace for items matching the given URI. If any are found,
+    *  hide them. Otherwise, open the URL.
+    *  Returns a Promise that resolves when the item is shown or hidden.
+    */
   def toggle(itemOrURI: js.Object): js.Promise[scala.Unit] = js.native
 }
 

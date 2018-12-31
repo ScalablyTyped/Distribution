@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SerailizedComponent[T] extends js.Object {
   var bounces: scala.Double
   var delay: scala.Double

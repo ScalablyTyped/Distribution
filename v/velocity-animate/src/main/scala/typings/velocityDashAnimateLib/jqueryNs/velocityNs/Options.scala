@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends CommonOptions {
   var easing: js.UndefOr[Easing] = js.undefined
   var loop: js.UndefOr[scala.Double | scala.Boolean] = js.undefined

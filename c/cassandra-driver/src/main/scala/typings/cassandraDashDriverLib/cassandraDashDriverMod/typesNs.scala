@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("cassandra-driver", "types")
 @js.native
 object typesNs extends js.Object {
-  
   trait BigDecimal extends js.Object {
     def add(other: BigDecimal): BigDecimal
     def compare(other: BigDecimal): scala.Double
@@ -32,7 +31,6 @@ object typesNs extends js.Object {
     def toBuffer(value: BigDecimal): nodeLib.Buffer = js.native
   }
   
-  
   trait Duration extends js.Object {
     def equals(other: Duration): scala.Boolean
     def toBuffer(): nodeLib.Buffer
@@ -49,7 +47,6 @@ object typesNs extends js.Object {
     def fromBuffer(buffer: nodeLib.Buffer): Duration = js.native
     def fromString(input: java.lang.String): Duration = js.native
   }
-  
   
   trait InetAddress extends js.Object {
     var length: scala.Double
@@ -116,7 +113,6 @@ object typesNs extends js.Object {
     def toBuffer(value: Integer): nodeLib.Buffer = js.native
   }
   
-  
   trait LocalDate extends js.Object {
     var _value: scala.Double
     var day: scala.Double
@@ -137,7 +133,6 @@ object typesNs extends js.Object {
     def now(): LocalDate = js.native
     def utcNow(): LocalDate = js.native
   }
-  
   
   trait LocalTime extends js.Object {
     var hour: scala.Double
@@ -163,7 +158,6 @@ object typesNs extends js.Object {
     def now(): LocalTime = js.native
     def now(nanoseconds: scala.Double): LocalTime = js.native
   }
-  
   
   trait ResultSet extends js.Object {
     var columns: js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
@@ -221,7 +215,6 @@ object typesNs extends js.Object {
           Row
         ]
   
-  
   trait TimeUuid extends Uuid {
     def getDate(): stdLib.Date
     def getDatePrecision(): cassandraDashDriverLib.Anon_Date
@@ -269,7 +262,6 @@ object typesNs extends js.Object {
     def now(nodeId: nodeLib.Buffer, clockId: nodeLib.Buffer): TimeUuid = js.native
   }
   
-  
   trait Tuple extends js.Object {
     var elements: js.Array[_]
     var length: scala.Double
@@ -283,7 +275,6 @@ object typesNs extends js.Object {
     extends org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, Tuple] {
     def fromArray(elements: js.Array[_]): Tuple = js.native
   }
-  
   
   trait Uuid extends js.Object {
     var buffer: nodeLib.Buffer
@@ -310,10 +301,8 @@ object typesNs extends js.Object {
   @js.native
   sealed trait distance extends js.Object
   
-  
   trait responseErrorCodes
     extends /* key */ org.scalablytyped.runtime.StringDictionary[scala.Double]
-  
   
   trait unset extends js.Object {
     var unset: scala.Boolean

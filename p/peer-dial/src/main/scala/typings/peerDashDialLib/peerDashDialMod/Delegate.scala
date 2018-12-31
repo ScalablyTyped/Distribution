@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Delegate extends js.Object {
   def getApp(appName: java.lang.String): App
   def launchApp(

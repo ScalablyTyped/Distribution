@@ -13,7 +13,6 @@ trait Web3ProviderEngine
   def send(payload: ethereumDashProtocolLib.ethereumDashProtocolMod.JSONRPCRequestPayload): scala.Unit = js.native
   // start block polling
   def start(): scala.Unit = js.native
-  // start block polling
   def start(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   // stop block polling
   def stop(): scala.Unit = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Score[T] extends js.Object {
   var _explanation: js.UndefOr[elasticsearchLib.elasticsearchMod.Explanation] = js.undefined
   var _id: java.lang.String

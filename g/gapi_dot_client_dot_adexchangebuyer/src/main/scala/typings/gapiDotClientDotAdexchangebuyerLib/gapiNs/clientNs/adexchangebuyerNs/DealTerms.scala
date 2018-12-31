@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DealTerms extends js.Object {
   /** Visibilty of the URL in bid requests. */
   var brandingType: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Indicates that this ExternalDealId exists under at least two different AdxInventoryDeals. Currently, the only case that the same ExternalDealId will
-               * exist is programmatic cross sell case.
-               */
+    * Indicates that this ExternalDealId exists under at least two different AdxInventoryDeals. Currently, the only case that the same ExternalDealId will
+    * exist is programmatic cross sell case.
+    */
   var crossListedExternalDealIdType: js.UndefOr[java.lang.String] = js.undefined
   /** Description for the proposed terms of the deal. */
   var description: js.UndefOr[java.lang.String] = js.undefined

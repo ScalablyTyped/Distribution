@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Border extends js.Object {
   /** The color of the ad background. */
   var background: js.UndefOr[java.lang.String] = js.undefined

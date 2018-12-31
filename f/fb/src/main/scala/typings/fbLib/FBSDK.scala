@@ -29,7 +29,6 @@ trait FBSDK extends js.Object {
   def getAuthResponse(): js.Object = js.native
   /* Allows you to determine if a user is logged in to Facebook and has authenticated your app */
   def getLoginStatus(handler: js.Function1[/* fbResponseObject */ fbLib.FBNs.LoginStatusResponse, _]): scala.Unit = js.native
-  /* Allows you to determine if a user is logged in to Facebook and has authenticated your app */
   def getLoginStatus(
     handler: js.Function1[/* fbResponseObject */ fbLib.FBNs.LoginStatusResponse, _],
     force: scala.Boolean
@@ -38,7 +37,6 @@ trait FBSDK extends js.Object {
   def init(fbInitObject: FBInitParams): scala.Unit = js.native
   /* Calling FB.login prompts the user to authenticate your application using the Login Dialog. */
   def login(handler: js.Function1[/* fbResponseObject */ fbLib.FBNs.LoginStatusResponse, _]): scala.Unit = js.native
-  /* Calling FB.login prompts the user to authenticate your application using the Login Dialog. */
   def login(
     handler: js.Function1[/* fbResponseObject */ fbLib.FBNs.LoginStatusResponse, _],
     params: FBLoginOptions

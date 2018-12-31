@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Interval extends js.Object {
   // Optional. Use polling.
   var interval: js.UndefOr[scala.Double] = js.undefined

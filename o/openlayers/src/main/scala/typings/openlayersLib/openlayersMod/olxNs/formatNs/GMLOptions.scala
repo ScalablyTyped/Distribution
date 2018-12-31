@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GMLOptions extends js.Object {
   var curve: js.UndefOr[scala.Boolean] = js.undefined
   var featureNS: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String] | java.lang.String] = js.undefined

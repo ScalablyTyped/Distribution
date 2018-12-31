@@ -13,7 +13,6 @@ trait IStream extends js.Object {
     stream: js.Any,
     receiver: js.Function3[/* index */ scala.Double, /* data */ js.Array[_], /* delay */ scala.Double, _]
   ): js.Promise[TStreamReadResult] = js.native
-  // API: http://vitaly-t.github.io/spex/stream.html#.read
   def read(
     stream: js.Any,
     receiver: js.Function3[/* index */ scala.Double, /* data */ js.Array[_], /* delay */ scala.Double, _],

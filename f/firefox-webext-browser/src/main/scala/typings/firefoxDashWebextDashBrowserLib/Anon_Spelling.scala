@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Spelling extends js.Object {
   var QFB: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionURL] = js.undefined
   var addons: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionURL] = js.undefined

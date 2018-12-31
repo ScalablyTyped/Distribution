@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AvgObjSize extends js.Object {
   var avgObjSize: scala.Double
   var capped: scala.Boolean

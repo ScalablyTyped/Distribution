@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FullscreenButtonViewModel extends js.Object {
   var command: Command
   var fullscreenElement: stdLib.Element

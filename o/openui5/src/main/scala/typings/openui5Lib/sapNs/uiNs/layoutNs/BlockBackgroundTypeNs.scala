@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object BlockBackgroundTypeNs extends js.Object {
   /**
-           * Background is transparent
-          */
+    * Background is transparent
+    */
   var Default: js.Any = js.native
   /**
-           * Background is with predefined light colors
-          */
+    * Background is with predefined light colors
+    */
   var Light: js.Any = js.native
 }
 

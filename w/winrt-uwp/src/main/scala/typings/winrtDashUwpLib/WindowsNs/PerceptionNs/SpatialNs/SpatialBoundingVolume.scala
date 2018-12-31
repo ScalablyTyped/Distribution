@@ -13,8 +13,8 @@ abstract class SpatialBoundingVolume () extends js.Object
 @js.native
 object SpatialBoundingVolume extends js.Object {
   var fromBox: js.Any = js.native
-   /* unmapped type */var fromFrustum: js.Any = js.native
-   /* unmapped type */var fromOrientedBox: js.Any = js.native
-   /* unmapped type */var fromSphere: js.Any = js.native
+   /* unmapped type */ var fromFrustum: js.Any = js.native
+   /* unmapped type */ var fromOrientedBox: js.Any = js.native
+   /* unmapped type */ var fromSphere: js.Any = js.native
 }
 

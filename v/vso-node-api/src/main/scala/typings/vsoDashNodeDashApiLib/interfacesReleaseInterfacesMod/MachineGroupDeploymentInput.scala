@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MachineGroupDeploymentInput extends DeploymentInput {
   var deploymentHealthOption: java.lang.String
   var healthPercent: scala.Double

@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class TimeTrigger protected () extends js.Object {
   /**
-                   * Initializes a new instance of a time event trigger.
-                   * @param freshnessTime Specifies the number of minutes to wait before scheduling the background task. The system schedules the task within 15 minutes after freshnessTime elapses. If the OneShot property is false, freshnessTime specifies the interval between recurring tasks.
-                   * @param oneShot True if the time event trigger will be used once; false if it will be used each time freshnessTime elapses.
-                   */
+    * Initializes a new instance of a time event trigger.
+    * @param freshnessTime Specifies the number of minutes to wait before scheduling the background task. The system schedules the task within 15 minutes after freshnessTime elapses. If the OneShot property is false, freshnessTime specifies the interval between recurring tasks.
+    * @param oneShot True if the time event trigger will be used once; false if it will be used each time freshnessTime elapses.
+    */
   def this(freshnessTime: scala.Double, oneShot: scala.Boolean) = this()
   /** Gets the interval of a time event trigger. */
   var freshnessTime: scala.Double = js.native

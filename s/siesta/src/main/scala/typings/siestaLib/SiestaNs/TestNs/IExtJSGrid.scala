@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @mixin
-         */
+  * @mixin
+  */
 @js.native
 trait IExtJSGrid extends js.Object {
   def getCell(panel: js.Any, row: scala.Double, column: scala.Double): stdLib.HTMLElement = js.native

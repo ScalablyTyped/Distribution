@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModalKnockoutBindingHandler
   extends knockoutLib.KnockoutBindingHandler[js.Any, js.Any, js.Any] {
   var defaults: KnockstrapModalDefaults

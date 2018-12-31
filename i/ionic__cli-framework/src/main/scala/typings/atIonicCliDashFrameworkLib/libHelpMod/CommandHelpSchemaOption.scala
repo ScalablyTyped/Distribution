@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommandHelpSchemaOption extends js.Object {
   val aliases: js.Array[java.lang.String]
   val default: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined

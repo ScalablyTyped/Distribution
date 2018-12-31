@@ -18,8 +18,8 @@ trait ChaiJestSnapshot extends js.Object {
   /** Set snapshot file name */
   def setFilename(filename: java.lang.String): scala.Unit = js.native
   /**
-       * Set snapshot test name
-       */
+    * Set snapshot test name
+    */
   def setTestName(testname: java.lang.String): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnItemSelectedListener extends js.Object {
   def onItemSelected(
     parent: androiduixLib.androidNs.widgetNs.AdapterView[_],

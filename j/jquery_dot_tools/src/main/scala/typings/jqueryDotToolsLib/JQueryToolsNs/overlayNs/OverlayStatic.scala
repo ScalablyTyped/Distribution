@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OverlayStatic extends js.Object {
   def addEffect(
     effectName: java.lang.String,

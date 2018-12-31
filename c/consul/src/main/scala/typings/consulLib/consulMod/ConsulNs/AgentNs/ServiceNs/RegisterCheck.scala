@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RegisterCheck extends js.Object {
   var http: js.UndefOr[java.lang.String] = js.undefined
   var interval: js.UndefOr[java.lang.String] = js.undefined

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class MediaProtectionServiceCompletion () extends js.Object {
   /**
-                   * Indicates whether a protection service has completed successfully.
-                   * @param success Indicates the successful completion of a protection service.
-                   */
+    * Indicates whether a protection service has completed successfully.
+    * @param success Indicates the successful completion of a protection service.
+    */
   def complete(success: scala.Boolean): scala.Unit = js.native
 }
 

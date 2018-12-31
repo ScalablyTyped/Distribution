@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @experimental
-         */
-
+  * @experimental
+  */
 trait EntryPreview extends js.Object {
   /**
-               * Preview of the key. Specified for map-like collection entries.
-               */
+    * Preview of the key. Specified for map-like collection entries.
+    */
   var key: js.UndefOr[ObjectPreview] = js.undefined
   /**
-               * Preview of the value.
-               */
+    * Preview of the value.
+    */
   var value: ObjectPreview
 }
 

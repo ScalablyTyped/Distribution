@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched if error happened during instant message modification
 		*/
-
 trait MessageNotModified extends js.Object {
   /**
   			*	Message new content

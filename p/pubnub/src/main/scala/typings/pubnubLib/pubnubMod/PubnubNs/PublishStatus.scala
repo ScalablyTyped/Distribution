@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PublishStatus extends js.Object {
    // see Pubnub.Operations
   var category: java.lang.String

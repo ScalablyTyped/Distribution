@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LeadingMarginSpan extends ParagraphStyle {
   def drawLeadingMargin(
     c: androiduixLib.androidNs.graphicsNs.Canvas,

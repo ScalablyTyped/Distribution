@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThreatMatchesResource extends js.Object {
   /** Finds the threat entries that match the Safe Browsing lists. */
   def find(request: gapiDotClientDotSafebrowsingLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[FindThreatMatchesResponse]

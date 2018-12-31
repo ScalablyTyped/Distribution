@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://docs.couchdb.org/en/latest/api/ddoc/views.html#get--db-_design-ddoc-_view-view
-
 trait DocumentViewResponse[V, D] extends js.Object {
   // Offset where the document list started.
   var offset: scala.Double

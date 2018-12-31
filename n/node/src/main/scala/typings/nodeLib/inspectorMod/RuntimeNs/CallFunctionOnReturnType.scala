@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CallFunctionOnReturnType extends js.Object {
   /**
-               * Exception details.
-               */
+    * Exception details.
+    */
   var exceptionDetails: js.UndefOr[ExceptionDetails] = js.undefined
   /**
-               * Call result.
-               */
+    * Call result.
+    */
   var result: RemoteObject
 }
 

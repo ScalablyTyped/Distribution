@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MinMax extends js.Object {
   var max: scala.Double
   var mid: js.UndefOr[scala.Double] = js.undefined

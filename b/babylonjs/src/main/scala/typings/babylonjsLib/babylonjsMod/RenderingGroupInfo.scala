@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * This class is used by the onRenderingGroupObservable
-     */
+  * This class is used by the onRenderingGroupObservable
+  */
 @JSImport("babylonjs", "RenderingGroupInfo")
 @js.native
 class RenderingGroupInfo ()

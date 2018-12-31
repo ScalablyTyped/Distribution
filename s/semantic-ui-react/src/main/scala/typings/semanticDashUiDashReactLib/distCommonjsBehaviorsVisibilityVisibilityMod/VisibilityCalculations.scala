@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VisibilityCalculations extends js.Object {
   var bottomPassed: scala.Boolean
   var bottomVisible: scala.Boolean

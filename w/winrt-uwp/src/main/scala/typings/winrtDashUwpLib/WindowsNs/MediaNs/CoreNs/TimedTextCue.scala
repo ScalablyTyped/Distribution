@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a text cue in a TimedMetadataTrack . */
 @JSGlobal("Windows.Media.Core.TimedTextCue")
 @js.native
+/** Initializes a new instance of the TimedTextCue class. */
 class TimedTextCue () extends js.Object {
   /** Gets or sets the TimedTextRegion of the cue, which defines the style of the rendering area for the cue. */
   var cueRegion: TimedTextRegion = js.native

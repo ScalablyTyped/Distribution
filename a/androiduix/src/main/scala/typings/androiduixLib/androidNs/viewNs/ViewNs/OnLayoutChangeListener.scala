@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnLayoutChangeListener extends js.Object {
   def onLayoutChange(
     v: androiduixLib.androidNs.viewNs.View,

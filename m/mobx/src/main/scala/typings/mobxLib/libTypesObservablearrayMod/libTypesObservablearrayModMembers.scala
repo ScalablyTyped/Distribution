@@ -32,6 +32,6 @@ object libTypesObservablearrayModMembers extends js.Object {
     name: java.lang.String,
     owned: scala.Boolean
   ): IObservableArray[T] = js.native
-  def isObservableArray(thing: js.Any): /* is IObservableArray */scala.Boolean = js.native
+  def isObservableArray(thing: js.Any): /* is mobx.mobx/lib/types/observablearray.IObservableArray<any> */ scala.Boolean = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ModelViewUpcastAlso extends js.Object {
   var model: java.lang.String | js.Object
   var upcastAlso: js.UndefOr[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapBoxZoomEvent
   extends MapboxEvent[stdLib.MouseEvent] {
   var boxZoomBounds: LngLatBounds

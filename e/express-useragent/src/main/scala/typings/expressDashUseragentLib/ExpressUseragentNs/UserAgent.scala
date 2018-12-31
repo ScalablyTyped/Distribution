@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserAgent extends js.Object {
   var browser: java.lang.String
   var geoIp: js.Any

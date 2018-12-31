@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootstrapPopupControlEventMap extends ControlEventMap {
   var afterResizing: PopupWindowEventArgs
   var beforeResizing: PopupWindowEventArgs

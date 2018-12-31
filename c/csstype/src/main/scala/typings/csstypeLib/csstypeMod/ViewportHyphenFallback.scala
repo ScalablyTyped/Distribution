@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ViewportHyphenFallback[TLength] extends js.Object {
   var `-ms-height`: js.UndefOr[
     csstypeLib.ViewportHeightProperty[TLength] | js.Array[csstypeLib.ViewportHeightProperty[TLength]]

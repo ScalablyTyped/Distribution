@@ -14,17 +14,15 @@ trait Cursor extends js.Object {
   def clearSelection(): scala.Unit = js.native
   // Comparing to another cursor
   /**
-       *  Compare this cursor's buffer position to another cursor's buffer position.
-       *  See Point::compare for more details.
-       */
+    *  Compare this cursor's buffer position to another cursor's buffer position.
+    *  See Point::compare for more details.
+    */
   def compare(otherCursor: Cursor): scala.Double = js.native
   /** Retrieves the buffer position of where the current word starts. */
   def getBeginningOfCurrentWordBufferPosition(): Point = js.native
-  /** Retrieves the buffer position of where the current word starts. */
   def getBeginningOfCurrentWordBufferPosition(options: atomLib.Anon_IncludeNonWordCharacters): Point = js.native
   /** Retrieves the buffer position of where the next word starts. */
   def getBeginningOfNextWordBufferPosition(): Point = js.native
-  /** Retrieves the buffer position of where the next word starts. */
   def getBeginningOfNextWordBufferPosition(options: atomLib.Anon_WordRegex): Point = js.native
   /** Returns the cursor's current buffer column. */
   def getBufferColumn(): scala.Double = js.native
@@ -36,52 +34,40 @@ trait Cursor extends js.Object {
   def getCurrentBufferLine(): java.lang.String = js.native
   /** Returns the buffer Range for the current line. */
   def getCurrentLineBufferRange(): Range = js.native
-  /** Returns the buffer Range for the current line. */
   def getCurrentLineBufferRange(options: atomLib.Anon_IncludeNewline): Range = js.native
   /**
-       *  Retrieves the range for the current paragraph.
-       *  A paragraph is defined as a block of text surrounded by empty lines or comments.
-       */
+    *  Retrieves the range for the current paragraph.
+    *  A paragraph is defined as a block of text surrounded by empty lines or comments.
+    */
   def getCurrentParagraphBufferRange(): Range = js.native
   /** Returns the buffer Range occupied by the word located under the cursor. */
   def getCurrentWordBufferRange(): Range = js.native
-  /** Returns the buffer Range occupied by the word located under the cursor. */
   def getCurrentWordBufferRange(options: atomLib.Anon_WordRegex): Range = js.native
   /** Returns the characters preceding the cursor in the current word. */
   def getCurrentWordPrefix(): java.lang.String = js.native
   /** Retrieves the buffer position of where the current word ends. */
   def getEndOfCurrentWordBufferPosition(): Point = js.native
-  /** Retrieves the buffer position of where the current word ends. */
   def getEndOfCurrentWordBufferPosition(options: atomLib.Anon_IncludeNonWordCharactersWordRegex): Point = js.native
   /** Returns the indentation level of the current line. */
   def getIndentLevel(): scala.Double = js.native
   // Cursor Position Details
   /**
-       *  Returns the underlying DisplayMarker for the cursor. Useful with overlay
-       *  Decorations.
-       */
+    *  Returns the underlying DisplayMarker for the cursor. Useful with overlay
+    *  Decorations.
+    */
   def getMarker(): DisplayMarker = js.native
   /**
-       *  Returns buffer position of the next word boundary. It might be on the current
-       *  word, or the previous word.
-       */
+    *  Returns buffer position of the next word boundary. It might be on the current
+    *  word, or the previous word.
+    */
   def getNextWordBoundaryBufferPosition(): Point = js.native
-  /**
-       *  Returns buffer position of the next word boundary. It might be on the current
-       *  word, or the previous word.
-       */
   def getNextWordBoundaryBufferPosition(options: atomLib.Anon_WordRegex): Point = js.native
   // Local Positions and Ranges
   /**
-       *  Returns buffer position of previous word boundary. It might be on the current
-       *  word, or the previous word.
-       */
+    *  Returns buffer position of previous word boundary. It might be on the current
+    *  word, or the previous word.
+    */
   def getPreviousWordBoundaryBufferPosition(): Point = js.native
-  // Local Positions and Ranges
-  /**
-       *  Returns buffer position of previous word boundary. It might be on the current
-       *  word, or the previous word.
-       */
   def getPreviousWordBoundaryBufferPosition(options: atomLib.Anon_WordRegex): Point = js.native
   /** Retrieves the scope descriptor for the cursor's current position. */
   def getScopeDescriptor(): ScopeDescriptor = js.native
@@ -92,9 +78,9 @@ trait Cursor extends js.Object {
   /** Returns the cursor's current screen row. */
   def getScreenRow(): scala.Double = js.native
   /**
-       *  Returns true if this cursor has no non-whitespace characters before its
-       *  current position.
-       */
+    *  Returns true if this cursor has no non-whitespace characters before its
+    *  current position.
+    */
   def hasPrecedingCharactersOnLine(): scala.Boolean = js.native
   /** Returns whether the cursor is at the start of a line. */
   def isAtBeginningOfLine(): scala.Boolean = js.native
@@ -104,38 +90,31 @@ trait Cursor extends js.Object {
   def isBetweenWordAndNonWord(): scala.Boolean = js.native
   /** Returns whether this cursor is between a word's start and end. */
   def isInsideWord(): scala.Boolean = js.native
-  /** Returns whether this cursor is between a word's start and end. */
   def isInsideWord(options: atomLib.Anon_WordRegex): scala.Boolean = js.native
   /**
-       *  Identifies if this cursor is the last in the TextEditor.
-       *  "Last" is defined as the most recently added cursor.
-       */
+    *  Identifies if this cursor is the last in the TextEditor.
+    *  "Last" is defined as the most recently added cursor.
+    */
   def isLastCursor(): scala.Boolean = js.native
   /**
-       *  Identifies if the cursor is surrounded by whitespace.
-       *  "Surrounded" here means that the character directly before and after the cursor
-       *  are both whitespace.
-       */
+    *  Identifies if the cursor is surrounded by whitespace.
+    *  "Surrounded" here means that the character directly before and after the cursor
+    *  are both whitespace.
+    */
   def isSurroundedByWhitespace(): scala.Boolean = js.native
   /** Returns the visibility of the cursor. */
   def isVisible(): scala.Boolean = js.native
   /** Moves the cursor down one screen row. */
   def moveDown(): scala.Unit = js.native
-  /** Moves the cursor down one screen row. */
   def moveDown(rowCount: scala.Double): scala.Unit = js.native
-  /** Moves the cursor down one screen row. */
   def moveDown(rowCount: scala.Double, options: atomLib.Anon_MoveToEndOfSelection): scala.Unit = js.native
   /** Moves the cursor left one screen column. */
   def moveLeft(): scala.Unit = js.native
-  /** Moves the cursor left one screen column. */
   def moveLeft(columnCount: scala.Double): scala.Unit = js.native
-  /** Moves the cursor left one screen column. */
   def moveLeft(columnCount: scala.Double, options: atomLib.Anon_MoveToEndOfSelection): scala.Unit = js.native
   /** Moves the cursor right one screen column. */
   def moveRight(): scala.Unit = js.native
-  /** Moves the cursor right one screen column. */
   def moveRight(columnCount: scala.Double): scala.Unit = js.native
-  /** Moves the cursor right one screen column. */
   def moveRight(columnCount: scala.Double, options: atomLib.Anon_MoveToEndOfSelection): scala.Unit = js.native
   /** Moves the cursor to the beginning of the buffer line. */
   def moveToBeginningOfLine(): scala.Unit = js.native
@@ -172,11 +151,7 @@ trait Cursor extends js.Object {
   // Moving the Cursor
   /** Moves the cursor up one screen row. */
   def moveUp(): scala.Unit = js.native
-  // Moving the Cursor
-  /** Moves the cursor up one screen row. */
   def moveUp(rowCount: scala.Double): scala.Unit = js.native
-  // Moving the Cursor
-  /** Moves the cursor up one screen row. */
   def moveUp(rowCount: scala.Double, options: atomLib.Anon_MoveToEndOfSelection): scala.Unit = js.native
   // Event Subscription
   /** Calls your callback when the cursor has been moved. */
@@ -187,13 +162,10 @@ trait Cursor extends js.Object {
   def onDidDestroy(callback: js.Function0[scala.Unit]): Disposable = js.native
   /** Moves a cursor to a given buffer position. */
   def setBufferPosition(bufferPosition: PointCompatible): scala.Unit = js.native
-  /** Moves a cursor to a given buffer position. */
   def setBufferPosition(bufferPosition: PointCompatible, options: atomLib.Anon_Autoscroll): scala.Unit = js.native
   // Managing Cursor Position
   /** Moves a cursor to a given screen position. */
   def setScreenPosition(screenPosition: PointCompatible): scala.Unit = js.native
-  // Managing Cursor Position
-  /** Moves a cursor to a given screen position. */
   def setScreenPosition(screenPosition: PointCompatible, options: atomLib.Anon_Autoscroll): scala.Unit = js.native
   // Visibility
   /** Sets whether the cursor is visible. */
@@ -202,11 +174,9 @@ trait Cursor extends js.Object {
   def skipLeadingWhitespace(): scala.Unit = js.native
   /** Get the RegExp used by the cursor to determine what a "subword" is. */
   def subwordRegExp(): stdLib.RegExp = js.native
-  /** Get the RegExp used by the cursor to determine what a "subword" is. */
   def subwordRegExp(options: atomLib.Anon_Backwards): stdLib.RegExp = js.native
   /** Get the RegExp used by the cursor to determine what a "word" is. */
   def wordRegExp(): stdLib.RegExp = js.native
-  /** Get the RegExp used by the cursor to determine what a "word" is. */
   def wordRegExp(options: atomLib.Anon_IncludeNonWordCharactersBoolean): stdLib.RegExp = js.native
 }
 

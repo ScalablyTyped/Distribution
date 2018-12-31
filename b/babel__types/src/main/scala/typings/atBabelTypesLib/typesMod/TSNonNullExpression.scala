@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TSNonNullExpression extends BaseNode {
   var expression: Expression
   @JSName("type")

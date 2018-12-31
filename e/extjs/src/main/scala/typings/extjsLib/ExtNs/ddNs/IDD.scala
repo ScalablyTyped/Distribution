@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDD extends IDragDrop {
   /** [Method] Sets the element to the location of the mousedown or click event maintaining the cursor location relative to the loc
   		* @param el HTMLElement the element to move

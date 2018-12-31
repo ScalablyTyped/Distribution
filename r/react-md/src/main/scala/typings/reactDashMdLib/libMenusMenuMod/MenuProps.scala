@@ -5,43 +5,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MenuProps
   extends BaseMenuProps
      with // for the `component` prop until refactored out
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
-     * @deprecated
-     * */
+    * @deprecated
+    * */
   var autoclose: js.UndefOr[scala.Boolean] = js.undefined
   var cascading: js.UndefOr[scala.Boolean] = js.undefined
   var cascadingAnchor: js.UndefOr[reactDashMdLib.libHelpersLayoverMod.LayoverAnchor] = js.undefined
   var cascadingZDepth: js.UndefOr[scala.Double] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     * */
+    * @deprecated
+    * */
   var close: js.UndefOr[js.Function] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   /**
-     * @deprecated
-     * */
+    * @deprecated
+    * */
   var contained: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * @deprecated
-     * */
+    * @deprecated
+    * */
   var expanderIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     * */
+    * @deprecated
+    * */
   var expanderIconClassName: js.UndefOr[java.lang.String] = js.undefined
   /**
-     * @deprecated
-     * */
+    * @deprecated
+    * */
   var isOpen: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * @deprecated
-     * */
+    * @deprecated
+    * */
   var limitHeight: js.UndefOr[scala.Boolean] = js.undefined
   var onContextMenu: js.UndefOr[
     js.Function1[

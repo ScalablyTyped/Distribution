@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnchorProps extends js.Object {
   var affix: js.UndefOr[scala.Boolean] = js.undefined
   var bounds: js.UndefOr[scala.Double] = js.undefined

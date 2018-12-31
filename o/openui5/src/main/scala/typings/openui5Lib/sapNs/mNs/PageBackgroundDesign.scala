@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait PageBackgroundDesign extends js.Object
 
 /**
-     * Available Page Background Design.
-    */
+  * Available Page Background Design.
+  */
 @JSGlobal("sap.m.PageBackgroundDesign")
 @js.native
 object PageBackgroundDesign extends js.Object {

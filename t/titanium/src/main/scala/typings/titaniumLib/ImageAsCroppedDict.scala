@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object used to specify options for [imageAsCropped](Titanium.Blob.imageAsCropped).
- */
-
+  * Simple object used to specify options for [imageAsCropped](Titanium.Blob.imageAsCropped).
+  */
 trait ImageAsCroppedDict extends js.Object {
   /**
   	 * Height to crop this image to.

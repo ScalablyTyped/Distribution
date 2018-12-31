@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Input extends js.Object {
   var encoding: js.UndefOr[java.lang.String] = js.undefined
   var input: js.UndefOr[nodeLib.Buffer | java.lang.String] = js.undefined

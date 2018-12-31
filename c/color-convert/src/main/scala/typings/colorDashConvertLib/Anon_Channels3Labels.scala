@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Channels3Labels extends js.Object {
   val channels: colorDashConvertLib.colorDashConvertLibNumbers.`3`
   val labels: js.Tuple3[

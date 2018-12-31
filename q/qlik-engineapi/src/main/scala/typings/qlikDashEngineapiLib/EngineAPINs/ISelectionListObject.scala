@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * SelectionListObject...
-     */
+  * SelectionListObject...
+  */
 /**
-     * SelectionListObject width extend GenericObject
-     */
+  * SelectionListObject width extend GenericObject
+  */
 @js.native
 trait ISelectionListObject extends IGenericObjectPrototype[IGenericSelectionListProperties, IGenericSelectionListLayout] {
   var qBackCount: scala.Double = js.native

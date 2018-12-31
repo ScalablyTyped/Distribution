@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DEVICE extends js.Object {
   var CONSOLE: java.lang.String
   var EMBEDDED: java.lang.String

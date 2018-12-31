@@ -12,22 +12,22 @@ sealed trait TestRunPublishContext extends js.Object
 @js.native
 object TestRunPublishContext extends js.Object {
   /**
-       * Run is published for any Context.
-       */
+    * Run is published for any Context.
+    */
   @js.native
   sealed trait All
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.TestRunPublishContext
   
   /**
-       * Run is published for Build Context.
-       */
+    * Run is published for Build Context.
+    */
   @js.native
   sealed trait Build
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.TestRunPublishContext
   
   /**
-       * Run is published for Release Context.
-       */
+    * Run is published for Release Context.
+    */
   @js.native
   sealed trait Release
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.TestRunPublishContext

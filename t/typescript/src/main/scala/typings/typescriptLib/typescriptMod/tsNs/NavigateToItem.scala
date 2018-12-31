@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigateToItem extends js.Object {
   var containerKind: ScriptElementKind
   var containerName: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TreeListColumnMenu extends js.Object {
   var columns: js.UndefOr[scala.Boolean] = js.undefined
   var filterable: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootstrapChartElementClickEventArgs extends BootstrapChartElementActionEventArgs {
   val jQueryEvent: js.Any
 }

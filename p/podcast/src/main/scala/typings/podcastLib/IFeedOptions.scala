@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFeedOptions extends js.Object {
   var author: java.lang.String
   var categories: js.UndefOr[js.Array[java.lang.String]] = js.undefined

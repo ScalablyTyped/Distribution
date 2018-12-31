@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OSNotification extends js.Object {
   var adm_big_picture: js.UndefOr[java.lang.String] = js.undefined
   var adm_group: js.UndefOr[java.lang.String] = js.undefined

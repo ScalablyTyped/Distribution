@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TelNumber extends js.Object {
   /**
   			 * 国标收货地址第二级地址

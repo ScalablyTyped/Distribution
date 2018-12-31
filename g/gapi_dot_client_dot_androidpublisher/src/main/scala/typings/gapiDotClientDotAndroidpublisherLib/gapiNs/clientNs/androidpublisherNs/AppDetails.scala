@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AppDetails extends js.Object {
   /** The user-visible support email for this app. */
   var contactEmail: js.UndefOr[java.lang.String] = js.undefined

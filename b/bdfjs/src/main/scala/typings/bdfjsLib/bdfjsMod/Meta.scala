@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Meta extends js.Object {
   var boundingBox: BoundingBox
   var name: java.lang.String

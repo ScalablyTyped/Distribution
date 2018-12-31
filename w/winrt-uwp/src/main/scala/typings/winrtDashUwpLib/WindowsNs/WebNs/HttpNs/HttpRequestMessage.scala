@@ -8,12 +8,13 @@ import scala.scalajs.js.annotation._
 /** Represents an HTTP request message including headers. */
 @JSGlobal("Windows.Web.Http.HttpRequestMessage")
 @js.native
+/** Initializes a new instance of the HttpRequestMessage class. */
 class HttpRequestMessage () extends js.Object {
   /**
-                   * Initializes a new instance of the HttpRequestMessage class with an HTTP method and a request Uri .
-                   * @param method The HTTP method to perform
-                   * @param uri The Uri to request.
-                   */
+    * Initializes a new instance of the HttpRequestMessage class with an HTTP method and a request Uri .
+    * @param method The HTTP method to perform
+    * @param uri The Uri to request.
+    */
   def this(method: HttpMethod, uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri) = this()
   /** Gets or sets the HTTP content to send to the server on the HttpRequestMessage object. */
   var content: IHttpContent = js.native

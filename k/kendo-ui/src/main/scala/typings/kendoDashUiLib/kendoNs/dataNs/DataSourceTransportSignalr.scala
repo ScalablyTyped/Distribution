@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataSourceTransportSignalr extends js.Object {
   var client: js.UndefOr[DataSourceTransportSignalrClient] = js.undefined
   var hub: js.UndefOr[js.Any] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISeriesList extends js.Object {
   var chart: IChart
   var items: js.Array[ISeries]

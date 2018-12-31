@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BlazyOptions extends js.Object {
   var breakpoints: js.UndefOr[js.Array[Breakpoint]] = js.undefined
   var container: js.UndefOr[java.lang.String] = js.undefined

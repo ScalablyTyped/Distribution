@@ -53,10 +53,10 @@ abstract class DeviceWatcher () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[DeviceWatcher, DeviceInformationUpdate]
   ): scala.Unit = js.native
   /**
-                   * Gets a DeviceWatcherTrigger object monitoring for changes to the list of devices.
-                   * @param requestedEventKinds A list of the specific updates you want to monitor.
-                   * @return The watcher trigger to monitor for the specified changes.
-                   */
+    * Gets a DeviceWatcherTrigger object monitoring for changes to the list of devices.
+    * @param requestedEventKinds A list of the specific updates you want to monitor.
+    * @return The watcher trigger to monitor for the specified changes.
+    */
   def getBackgroundTrigger(
     requestedEventKinds: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[DeviceWatcherEventKind]
   ): winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.DeviceWatcherTrigger = js.native

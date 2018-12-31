@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Content picker dialog options object
-    */
-
+  * Content picker dialog options object
+  */
 trait IContentPickerOptions extends js.Object {
   /*callback function*/
   var callback: angularLib.angularMod.Global.Function

@@ -15,13 +15,9 @@ trait SeriesCollection extends js.Object {
   def apply(Index: scala.Double): Series = js.native
   /** @param Rowcol [Rowcol=-4105] */
   def Add(Source: Range): Series = js.native
-  /** @param Rowcol [Rowcol=-4105] */
   def Add(Source: Range, Rowcol: XlRowCol): Series = js.native
-  /** @param Rowcol [Rowcol=-4105] */
   def Add(Source: Range, Rowcol: XlRowCol, SeriesLabels: scala.Boolean): Series = js.native
-  /** @param Rowcol [Rowcol=-4105] */
   def Add(Source: Range, Rowcol: XlRowCol, SeriesLabels: scala.Boolean, CategoryLabels: scala.Boolean): Series = js.native
-  /** @param Rowcol [Rowcol=-4105] */
   def Add(
     Source: Range,
     Rowcol: XlRowCol,
@@ -37,20 +33,15 @@ trait SeriesCollection extends js.Object {
   def NewSeries(): Series = js.native
   /** @param Rowcol [Rowcol=-4105] */
   def Paste(): js.Any = js.native
-  /** @param Rowcol [Rowcol=-4105] */
   def Paste(Rowcol: XlRowCol): js.Any = js.native
-  /** @param Rowcol [Rowcol=-4105] */
   def Paste(Rowcol: XlRowCol, SeriesLabels: scala.Boolean): js.Any = js.native
-  /** @param Rowcol [Rowcol=-4105] */
   def Paste(Rowcol: XlRowCol, SeriesLabels: scala.Boolean, CategoryLabels: scala.Boolean): js.Any = js.native
-  /** @param Rowcol [Rowcol=-4105] */
   def Paste(
     Rowcol: XlRowCol,
     SeriesLabels: scala.Boolean,
     CategoryLabels: scala.Boolean,
     Replace: scala.Boolean
   ): js.Any = js.native
-  /** @param Rowcol [Rowcol=-4105] */
   def Paste(
     Rowcol: XlRowCol,
     SeriesLabels: scala.Boolean,

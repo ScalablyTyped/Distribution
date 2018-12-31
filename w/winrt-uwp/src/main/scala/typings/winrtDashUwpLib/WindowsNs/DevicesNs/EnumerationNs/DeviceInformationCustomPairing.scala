@@ -23,25 +23,25 @@ abstract class DeviceInformationCustomPairing () extends js.Object {
     ev: DevicePairingRequestedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[DeviceInformationCustomPairing]
   ): scala.Unit = js.native
   /**
-                   * Attempts to pair the device.
-                   * @param pairingKindsSupported The different pairing kinds supported by this DeviceInformation object.
-                   * @return The result of the pairing action.
-                   */
+    * Attempts to pair the device.
+    * @param pairingKindsSupported The different pairing kinds supported by this DeviceInformation object.
+    * @return The result of the pairing action.
+    */
   def pairAsync(pairingKindsSupported: DevicePairingKinds): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[DevicePairingResult] = js.native
   /**
-                   * Attempts to pair a device using a minimum protection level.
-                   * @param pairingKindsSupported The different pairing kinds supported by this DeviceInformation object.
-                   * @param minProtectionLevel The minimum protection level this DeviceInformation object requires in order to pair.
-                   * @return The result of the pairing action.
-                   */
+    * Attempts to pair a device using a minimum protection level.
+    * @param pairingKindsSupported The different pairing kinds supported by this DeviceInformation object.
+    * @param minProtectionLevel The minimum protection level this DeviceInformation object requires in order to pair.
+    * @return The result of the pairing action.
+    */
   def pairAsync(pairingKindsSupported: DevicePairingKinds, minProtectionLevel: DevicePairingProtectionLevel): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[DevicePairingResult] = js.native
   /**
-                   * Attempts to pair a device using a minimum protection level and custom settings.
-                   * @param pairingKindsSupported The different pairing kinds supported by this DeviceInformation object.
-                   * @param minProtectionLevel The minimum protection level this DeviceInformation object requires in order to pair.
-                   * @param devicePairingSettings The custom device pairing settings.
-                   * @return The result of the pairing action.
-                   */
+    * Attempts to pair a device using a minimum protection level and custom settings.
+    * @param pairingKindsSupported The different pairing kinds supported by this DeviceInformation object.
+    * @param minProtectionLevel The minimum protection level this DeviceInformation object requires in order to pair.
+    * @param devicePairingSettings The custom device pairing settings.
+    * @return The result of the pairing action.
+    */
   def pairAsync(
     pairingKindsSupported: DevicePairingKinds,
     minProtectionLevel: DevicePairingProtectionLevel,

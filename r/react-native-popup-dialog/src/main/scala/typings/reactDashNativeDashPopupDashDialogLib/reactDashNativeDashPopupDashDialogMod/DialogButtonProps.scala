@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DialogButtonProps extends js.Object {
   var activeOpacity: js.UndefOr[scala.Double] = js.undefined
   var align: js.UndefOr[AlignTypes] = js.undefined

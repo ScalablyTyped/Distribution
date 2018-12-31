@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RGBHSB extends js.Object {
   var b: scala.Double
   var error: scala.Boolean

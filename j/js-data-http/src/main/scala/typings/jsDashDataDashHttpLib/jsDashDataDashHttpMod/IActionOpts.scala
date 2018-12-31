@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IActionOpts extends js.Object {
   var adapter: js.UndefOr[java.lang.String] = js.undefined
   var pathname: js.UndefOr[java.lang.String] = js.undefined

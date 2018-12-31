@@ -207,21 +207,21 @@ object viewNs extends js.Object {
     def isBefore(node: Node): scala.Boolean = js.native
     def isSimilar(otherElement: Node): scala.Boolean = js.native
     @JSName("is")
-    def is_attributeElement(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.attributeElement): /* is AttributeElement */scala.Boolean = js.native
+    def is_attributeElement(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.attributeElement): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.view.AttributeElement */ scala.Boolean = js.native
     @JSName("is")
-    def is_containerElement(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.containerElement): /* is ContainerElement */scala.Boolean = js.native
+    def is_containerElement(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.containerElement): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.view.ContainerElement */ scala.Boolean = js.native
     @JSName("is")
-    def is_documentFragment(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.documentFragment): /* is DocumentFragment */scala.Boolean = js.native
+    def is_documentFragment(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.documentFragment): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.view.DocumentFragment */ scala.Boolean = js.native
     @JSName("is")
-    def is_element(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.element): /* is Element */scala.Boolean = js.native
+    def is_element(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.element): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.view.Element */ scala.Boolean = js.native
     @JSName("is")
-    def is_emptyElement(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.emptyElement): /* is EmptyElement */scala.Boolean = js.native
+    def is_emptyElement(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.emptyElement): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.view.EmptyElement */ scala.Boolean = js.native
     @JSName("is")
-    def is_text(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.text): /* is Text */scala.Boolean = js.native
+    def is_text(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.text): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.view.Text */ scala.Boolean = js.native
     @JSName("is")
-    def is_textProxy(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.textProxy): /* is TextProxy */scala.Boolean = js.native
+    def is_textProxy(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.textProxy): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.view.TextProxy */ scala.Boolean = js.native
     @JSName("is")
-    def is_uiElement(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.uiElement): /* is UIElement */scala.Boolean = js.native
+    def is_uiElement(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.uiElement): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.view.UIElement */ scala.Boolean = js.native
     def toJSON(): js.Object = js.native
   }
   
@@ -270,7 +270,7 @@ object viewNs extends js.Object {
     def getAncestors(options: atCkeditorCkeditor5DashEngineLib.Anon_ParentFirstIncludeSelf): js.Array[Text | Element | DocumentFragment] = js.native
     def is(`type`: java.lang.String): scala.Boolean = js.native
     @JSName("is")
-    def is_textProxy(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.textProxy): /* is TextProxy */scala.Boolean = js.native
+    def is_textProxy(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.textProxy): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.view.TextProxy */ scala.Boolean = js.native
   }
   
   // engine/view/treewalker
@@ -288,7 +288,6 @@ object viewNs extends js.Object {
     def next(): TreeWalkerValue = js.native
     def skip(skip: js.Function1[/* treeWalkerValue */ TreeWalkerValue, scala.Boolean]): scala.Unit = js.native
   }
-  
   
   trait TreeWalkerValue extends js.Object {
     var item: Item
@@ -311,8 +310,8 @@ object viewNs extends js.Object {
     protected def this(name: java.lang.String, attrs: stdLib.Iterable[js.Tuple2[java.lang.String, java.lang.String]], children: stdLib.Iterable[Node]) = this()
     protected def this(name: java.lang.String, attrs: stdLib.Map[java.lang.String, java.lang.String], children: Node) = this()
     protected def this(name: java.lang.String, attrs: stdLib.Map[java.lang.String, java.lang.String], children: stdLib.Iterable[Node]) = this()
-    def render(domDocument: Document): stdLib.HTMLElement = js.native
-    def toDomElement(domDocument: Document): stdLib.HTMLElement = js.native
+    def render(domDocument: /*TODO: globals.*/ Document): stdLib.HTMLElement = js.native
+    def toDomElement(domDocument: /*TODO: globals.*/ Document): stdLib.HTMLElement = js.native
   }
   
   // engine/view/upcastwriter
@@ -331,14 +330,13 @@ object viewNs extends js.Object {
   def NBSP_FILLER(): scala.Unit = js.native
   // engine/view/placeholder
   def attachPlaceholder(view: View, element: Element, placeholderText: java.lang.String): scala.Unit = js.native
-  // engine/view/placeholder
   def attachPlaceholder(view: View, element: Element, placeholderText: java.lang.String, checkFunction: js.Function): scala.Unit = js.native
   def detachPlaceholder(view: View, element: Element): scala.Unit = js.native
   def getDataWithoutFiller(domText: Text): java.lang.String = js.native
   def injectQuirksHandling(view: View): scala.Unit = js.native
-  def isBlockFiller(domNode: Node, blockFiller: js.Function): scala.Boolean = js.native
-  def isInlineFiller(domText: Text): scala.Boolean = js.native
-  def startsWithFiller(domNode: Text): scala.Boolean = js.native
+  def isBlockFiller(domNode: /*TODO globals.*/ Node, blockFiller: js.Function): scala.Boolean = js.native
+  def isInlineFiller(domText: /*TODO globals.*/ Text): scala.Boolean = js.native
+  def startsWithFiller(domNode: /*TODO globals.*/ Text): scala.Boolean = js.native
   // engine/view/attributeelement
   @js.native
   object AttributeElement extends js.Object {
@@ -398,14 +396,12 @@ object viewNs extends js.Object {
     @js.native
     class MouseObserver () extends DomEventObserver
     
-    
     trait MutatedChildren extends js.Object {
       var newChildren: js.Array[atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Node]
       var node: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Element
       var oldChildren: js.Array[atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Node]
       var `type`: java.lang.String
     }
-    
     
     trait MutatedText extends js.Object {
       var newText: java.lang.String

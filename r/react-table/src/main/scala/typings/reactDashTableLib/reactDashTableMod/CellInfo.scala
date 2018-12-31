@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick) */ 
-trait CellInfo extends RowInfo {
+- Lifted 1 members from Set(std.Pick<react-table.react-table.ControlledStateOverrideProps, 'resized'>) */ trait CellInfo extends RowInfo {
   /* resolved array of classes for the cell */
   var classes: js.Array[java.lang.String]
   /* the cell's column */

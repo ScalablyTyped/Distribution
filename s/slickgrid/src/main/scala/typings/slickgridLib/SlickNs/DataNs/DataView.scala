@@ -19,9 +19,6 @@ class DataView[T /* <: slickgridLib.SlickNs.SlickData */] ()
   			* @param level Optional level to collapse.  If not specified, applies to all levels.
   			**/
   def collapseAllGroups(): scala.Unit = js.native
-  /**
-  			* @param level Optional level to collapse.  If not specified, applies to all levels.
-  			**/
   def collapseAllGroups(level: scala.Double): scala.Unit = js.native
   /**
   			* @param varArgs Either a Slick.Group's "groupingKey" property, or a
@@ -36,9 +33,6 @@ class DataView[T /* <: slickgridLib.SlickNs.SlickData */] ()
   			* @param level Optional level to collapse.  If not specified, applies to all levels.
   			**/
   def expandAllGroups(): scala.Unit = js.native
-  /**
-  			* @param level Optional level to collapse.  If not specified, applies to all levels.
-  			**/
   def expandAllGroups(level: scala.Double): scala.Unit = js.native
   /**
   			* @param varArgs Either a Slick.Group's "groupingKey" property, or a

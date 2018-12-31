@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Adds event-related methods to the control.
-    **/
+  * Adds event-related methods to the control.
+  **/
 @JSGlobal("WinJS.UI.DOMEventMixin")
 @js.native
 object DOMEventMixinNs extends js.Object {

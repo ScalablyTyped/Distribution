@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GraphNode extends Leaf {
   var fixed: scala.Boolean
   var fixedWeight: js.UndefOr[scala.Double] = js.undefined

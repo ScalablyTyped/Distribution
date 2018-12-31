@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Image extends GraphModel {
   var created_at: java.lang.String
   var id: java.lang.String | scala.Double

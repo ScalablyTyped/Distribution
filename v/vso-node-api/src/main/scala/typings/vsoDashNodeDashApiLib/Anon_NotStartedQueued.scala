@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NotStartedQueued extends js.Object {
   var canceled: scala.Double
   var inProgress: scala.Double

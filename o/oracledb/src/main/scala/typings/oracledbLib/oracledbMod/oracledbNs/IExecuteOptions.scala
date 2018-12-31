@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IExecuteOptions extends js.Object {
   /**
   		 * Transaction should auto commit after each statement?

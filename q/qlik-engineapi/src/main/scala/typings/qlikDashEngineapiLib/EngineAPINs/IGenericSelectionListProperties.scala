@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * GenericSelectionListProperties width extend GenericObjectProperties
-     */
-
+  * GenericSelectionListProperties width extend GenericObjectProperties
+  */
 trait IGenericSelectionListProperties extends IGenericObjectProperties {
   @JSName("qInfo")
   var qInfo_IGenericSelectionListProperties: IGenericSelectionNxInfo

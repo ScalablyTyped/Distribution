@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CharsOptions extends js.Object {
   var bottom: java.lang.String
   var `bottom-left`: java.lang.String

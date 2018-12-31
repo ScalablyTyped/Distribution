@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GrammarOptions extends js.Object {
   var fileTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var firstLineMatch: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomEditorProps[TRow /* <: js.Object */, K /* <: java.lang.String */]
   extends EditableAttrs
      with /**
@@ -15,7 +14,7 @@ trait CustomEditorProps[TRow /* <: js.Object */, K /* <: java.lang.String */]
   /**
   	 * Default value for the editor cell.
   	 */
-  var defaultValue: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TRow))),List()),Left(TsIdentSimple(K))) */js.Any
+  var defaultValue: /* import warning: ImportType.apply Failed type conversion: TRow[K] */ js.Any
   /**
   	 * The row data for the cell being edited.
   	 */

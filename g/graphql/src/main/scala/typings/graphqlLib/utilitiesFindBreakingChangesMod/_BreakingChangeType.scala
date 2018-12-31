@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // @internal
-
 trait _BreakingChangeType extends js.Object {
   var ARG_CHANGED_KIND: graphqlLib.graphqlLibStrings.ARG_CHANGED_KIND
   var ARG_REMOVED: graphqlLib.graphqlLibStrings.ARG_REMOVED

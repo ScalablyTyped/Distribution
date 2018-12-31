@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICompositeElementLite
   extends extjsLib.ExtNs.IBase {
   /** [Method] Adds elements to this Composite object

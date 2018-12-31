@@ -66,18 +66,12 @@ object reportersNs extends js.Object {
   class Progress protected ()
     extends jqueryDotAjaxfileLib.MochaNs.reportersNs.Progress {
     /**
-                 * @param options.open String used to indicate the start of the progress bar.
-                 * @param options.complete String used to indicate a complete test on the progress bar.
-                 * @param options.incomplete String used to indicate an incomplete test on the progress bar.
-                 * @param options.close String used to indicate the end of the progress bar.
-                 */
+      * @param options.open String used to indicate the start of the progress bar.
+      * @param options.complete String used to indicate a complete test on the progress bar.
+      * @param options.incomplete String used to indicate an incomplete test on the progress bar.
+      * @param options.close String used to indicate the end of the progress bar.
+      */
     def this(runner: jqueryDotAjaxfileLib.MochaNs.IRunner) = this()
-    /**
-                 * @param options.open String used to indicate the start of the progress bar.
-                 * @param options.complete String used to indicate a complete test on the progress bar.
-                 * @param options.incomplete String used to indicate an incomplete test on the progress bar.
-                 * @param options.close String used to indicate the end of the progress bar.
-                 */
     def this(runner: jqueryDotAjaxfileLib.MochaNs.IRunner, options: jqueryDotAjaxfileLib.Anon_Complete) = this()
   }
   

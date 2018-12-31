@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * returns page title
-                   */
+    * returns page title
+    */
   def determineTitle(tabArray: js.Array[_]): java.lang.String
 }
 

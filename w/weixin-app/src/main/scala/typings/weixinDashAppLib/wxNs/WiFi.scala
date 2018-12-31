@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WiFi extends js.Object {
   /** Wi-Fi 的BSSID */
   var BSSID: java.lang.String

@@ -10,9 +10,14 @@ import scala.scalajs.js.annotation._
 	* @brief x509 证书请求对象
 	* @detail X509Req 对象属于 crypto 模块，创建：,```JavaScript,var k = new crypto.X509Req();,```
 	*/
-
 @JSGlobal("Class_X509Req")
 @js.native
+/**
+	 * 
+	 * @brief X509Req 构造函数
+	 * 
+	 * 
+	 */
 class Class_X509Req () extends Class__object {
   /**
   	 * 
@@ -26,17 +31,6 @@ class Class_X509Req () extends Class__object {
   	 * 
   	 */
   def this(subject: java.lang.String, key: Class_PKey) = this()
-  /**
-  	 * 
-  	 * @brief X509Req 构造函数，根据给定的信息创建一个证书请求
-  	 * 
-  	 * @param subject 证书的主题可分辨名称
-  	 * @param key 证书的公钥
-  	 * @param hash 证书摘要算法，缺省为 hash.SHA1
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def this(subject: java.lang.String, key: Class_PKey, hash: scala.Double) = this()
   /**
   	 * class prop 
@@ -127,29 +121,6 @@ class Class_X509Req () extends Class__object {
   	 * @async
   	 */
   def sign(issuer: java.lang.String, key: Class_PKey): Class_X509Cert = js.native
-  /**
-  	 * 
-  	 * @brief 签名当前证书请求为正式证书
-  	 * 
-  	 * opts 接收的字段如下：
-  	 * ```JavaScript
-  	 * {
-  	 * ca: false,      // 证书为 ca，缺省为 false
-  	 * pathlen: -1,    // 证书深度，缺省为 -1
-  	 * notBefore: "",  // 证书生效时间，缺省为当前时间
-  	 * notAfter: "",   // 证书失效时间，缺省为 notBefore 后一年
-  	 * usage: "",      // 证书使用范围，接收：digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment, keyAgreement, keyCertSign, cRLSign
-  	 * type: ""        // 证书 Netscape 证书类型，接收：client, server, email, objsign, reserved, sslCA, emailCA, objCA
-  	 * }
-  	 * ```
-  	 * @param issuer 签名机构的可分辨名称
-  	 * @param key 签名机构的私钥
-  	 * @param opts 其他可选参数
-  	 * @return 返回签名后的正式证书
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def sign(issuer: java.lang.String, key: Class_PKey, opts: js.Object): Class_X509Cert = js.native
 }
 

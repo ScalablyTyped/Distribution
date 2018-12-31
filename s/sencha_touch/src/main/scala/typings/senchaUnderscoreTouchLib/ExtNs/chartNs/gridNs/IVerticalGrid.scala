@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVerticalGrid
   extends senchaUnderscoreTouchLib.ExtNs.drawNs.spriteNs.ISprite {
   /** [Method] Render method

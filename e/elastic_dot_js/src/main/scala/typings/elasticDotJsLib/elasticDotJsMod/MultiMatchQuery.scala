@@ -10,14 +10,10 @@ import scala.scalajs.js.annotation._
 class MultiMatchQuery protected ()
   extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.MultiMatchQuery {
   /*
-       A Query that allow to more easily build a MatchQuery
-       over multiple fields
-       */
+    A Query that allow to more easily build a MatchQuery
+    over multiple fields
+    */
   def this(fields: java.lang.String, qstr: java.lang.String) = this()
-  /*
-       A Query that allow to more easily build a MatchQuery
-       over multiple fields
-       */
   def this(fields: js.Array[java.lang.String], qstr: java.lang.String) = this()
 }
 

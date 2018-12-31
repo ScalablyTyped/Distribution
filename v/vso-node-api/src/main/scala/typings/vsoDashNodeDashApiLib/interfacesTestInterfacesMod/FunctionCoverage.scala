@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FunctionCoverage extends js.Object {
   var `class`: java.lang.String
   var name: java.lang.String

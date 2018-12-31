@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RoutesResource extends js.Object {
   /** Deletes the specified Route resource. */
   def delete(

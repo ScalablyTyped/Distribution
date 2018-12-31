@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Emote extends js.Object {
   var chatID: java.lang.String
   var from: java.lang.String

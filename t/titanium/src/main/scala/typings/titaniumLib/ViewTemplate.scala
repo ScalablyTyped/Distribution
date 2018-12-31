@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Template that represents a view subcomponent of an <ItemTemplate>.
- */
-
+  * Template that represents a view subcomponent of an <ItemTemplate>.
+  */
 trait ViewTemplate extends js.Object {
   /**
   	 * View's ID (or set of IDs) used for data binding. This value must be unique.

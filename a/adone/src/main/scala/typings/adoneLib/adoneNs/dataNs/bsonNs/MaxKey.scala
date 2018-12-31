@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * Represents BSON MaxKey type
-             */
+  * Represents BSON MaxKey type
+  */
 @JSGlobal("adone.data.bson.MaxKey")
 @js.native
 class MaxKey ()

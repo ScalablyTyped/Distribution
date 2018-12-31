@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CertifiedDevice extends js.Object {
   var automaticGainControl: js.UndefOr[scala.Boolean] = js.undefined
   var echoCancellation: js.UndefOr[scala.Boolean] = js.undefined

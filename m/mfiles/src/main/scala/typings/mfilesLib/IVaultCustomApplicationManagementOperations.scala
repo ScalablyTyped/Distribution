@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultCustomApplicationManagementOperations extends js.Object {
   def DownloadCustomApplicationBlock(DownloadID: scala.Double, BlockSize: scala.Double, Offset: scala.Double): js.Array[scala.Double]
   def DownloadCustomApplicationBlockBegin(ApplicationID: java.lang.String): IFileDownloadSession

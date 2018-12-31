@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrderFilter extends js.Object {
   var amount: js.UndefOr[scala.Double] = js.undefined
   var created: js.UndefOr[scala.Double] = js.undefined

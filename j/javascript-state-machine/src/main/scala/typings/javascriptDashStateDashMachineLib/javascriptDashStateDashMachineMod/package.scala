@@ -17,7 +17,7 @@ package object javascriptDashStateDashMachineMod {
     /* ex */ js.UndefOr[stdLib.Error], 
     scala.Unit
   ]
-  type StateMachineEvent = js.Function1[/* repeated */js.Any, scala.Unit]
+  type StateMachineEvent = js.Function1[/* repeated */ js.Any, scala.Unit]
   type StateMachineIs = js.Function1[/* state */ java.lang.String, scala.Boolean]
   type StateMachineIsFinished = js.Function1[/* state */ java.lang.String, scala.Boolean]
   type StateMachineTransitions = js.Function0[js.Array[java.lang.String]]

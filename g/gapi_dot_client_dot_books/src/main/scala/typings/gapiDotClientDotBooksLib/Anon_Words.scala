@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Words extends js.Object {
   /** The source, url and attribution for this dictionary data. */
   var source: js.UndefOr[Anon_Attribution] = js.undefined

@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Interface containing an array of animations
-     */
-
+  * Interface containing an array of animations
+  */
 trait IAnimatable extends js.Object {
   /**
-           * Array of animations
-           */
+    * Array of animations
+    */
   var animations: js.Array[Animation]
 }
 

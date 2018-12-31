@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotificationOptions extends js.Object {
   var allowHideAfter: js.UndefOr[scala.Double] = js.undefined
   var animation: js.UndefOr[js.Any | scala.Boolean] = js.undefined

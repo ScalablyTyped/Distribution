@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DockerContainerStatsProcessesData extends js.Object {
   var command: java.lang.String
   var elapsed: java.lang.String

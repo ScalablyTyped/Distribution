@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ComponentRelation[D, P] extends js.Object {
   /** 关系生命周期函数，当关系在页面节点树中发生改变时触发，触发时机在组件moved生命周期之后 */
   var linkChanged: js.UndefOr[js.Function1[/* target */ Component[D, P], scala.Unit]] = js.undefined

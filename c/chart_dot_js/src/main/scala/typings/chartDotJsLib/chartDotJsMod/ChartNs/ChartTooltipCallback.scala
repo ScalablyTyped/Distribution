@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartTooltipCallback extends js.Object {
   var afterBody: js.UndefOr[
     js.Function2[

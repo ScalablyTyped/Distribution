@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SuperChatEventSnippet extends js.Object {
   /** The purchase amount, in micros of the purchase currency. e.g., 1 is represented as 1000000. */
   var amountMicros: js.UndefOr[java.lang.String] = js.undefined

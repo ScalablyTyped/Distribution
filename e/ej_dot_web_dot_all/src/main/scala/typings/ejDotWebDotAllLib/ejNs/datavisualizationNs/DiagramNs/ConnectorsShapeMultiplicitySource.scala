@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectorsShapeMultiplicitySource extends js.Object {
   /** Defines the source label to connector. Applicable, if the connector is of type &quot;UML&quot;
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var lowerBounds: js.UndefOr[scala.Double] = js.undefined
   /** Defines the source label to connector. Applicable, if the connector is of type &quot;UML&quot;
-               * @Default {true}
-               */
+    * @Default {true}
+    */
   var optional: js.UndefOr[scala.Boolean] = js.undefined
   /** Defines the source label to connector. Applicable, if the connector is of type &quot;UML&quot;
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var upperBounds: js.UndefOr[scala.Double] = js.undefined
 }
 

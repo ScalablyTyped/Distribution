@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISencha
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Checks if the current user is able to make payments

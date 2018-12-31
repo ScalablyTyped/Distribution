@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestPoint extends js.Object {
   var assignedTo: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
   var automated: scala.Boolean

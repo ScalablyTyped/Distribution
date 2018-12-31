@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Search members
-     */
-
+  * Search members
+  */
 trait ISearchMember extends js.Object {
   var editorPath: java.lang.String
   var id: scala.Double

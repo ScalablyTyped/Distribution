@@ -10,25 +10,25 @@ import scala.scalajs.js.annotation._
 @js.native
 class Geocircle protected () extends js.Object {
   /**
-                   * Create a geographic circle object for the given position and radius.
-                   * @param position The geographic position of the new circle.
-                   * @param radius The radius of the new circle, in meters.
-                   */
+    * Create a geographic circle object for the given position and radius.
+    * @param position The geographic position of the new circle.
+    * @param radius The radius of the new circle, in meters.
+    */
   def this(position: BasicGeoposition, radius: scala.Double) = this()
   /**
-                   * Create a geographic circle object for the given position, radius and altitude reference system.
-                   * @param position The geographic position of the new circle.
-                   * @param radius The radius of the new circle, in meters.
-                   * @param altitudeReferenceSystem The altitude reference system of the new circle.
-                   */
+    * Create a geographic circle object for the given position, radius and altitude reference system.
+    * @param position The geographic position of the new circle.
+    * @param radius The radius of the new circle, in meters.
+    * @param altitudeReferenceSystem The altitude reference system of the new circle.
+    */
   def this(position: BasicGeoposition, radius: scala.Double, altitudeReferenceSystem: AltitudeReferenceSystem) = this()
   /**
-                   * Create a geographic circle object for the given position, radius, altitude reference system, and spatial reference id.
-                   * @param position The geographic position of the new circle.
-                   * @param radius The radius of the new circle, in meters.
-                   * @param altitudeReferenceSystem The altitude reference system of the new circle.
-                   * @param spatialReferenceId The spatial reference Id of the new circle.
-                   */
+    * Create a geographic circle object for the given position, radius, altitude reference system, and spatial reference id.
+    * @param position The geographic position of the new circle.
+    * @param radius The radius of the new circle, in meters.
+    * @param altitudeReferenceSystem The altitude reference system of the new circle.
+    * @param spatialReferenceId The spatial reference Id of the new circle.
+    */
   def this(position: BasicGeoposition, radius: scala.Double, altitudeReferenceSystem: AltitudeReferenceSystem, spatialReferenceId: scala.Double) = this()
   /** The altitude reference system of the geographic circle. */
   var altitudeReferenceSystem: AltitudeReferenceSystem = js.native

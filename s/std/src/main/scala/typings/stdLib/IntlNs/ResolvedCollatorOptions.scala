@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResolvedCollatorOptions extends js.Object {
   var caseFirst: java.lang.String
   var collation: java.lang.String

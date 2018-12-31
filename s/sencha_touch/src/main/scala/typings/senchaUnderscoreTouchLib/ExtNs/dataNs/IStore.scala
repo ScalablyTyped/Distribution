@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStore
   extends senchaUnderscoreTouchLib.ExtNs.IEvented {
   /** [Method] Adds Model instance to the Store

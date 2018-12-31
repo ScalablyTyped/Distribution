@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IObjectTypeTargetsForBrowsing extends js.Object {
   val Count: scala.Double
   def Add(Index: scala.Double, ObjectTypeTargetForBrowsing: IObjectTypeTargetForBrowsing): scala.Unit

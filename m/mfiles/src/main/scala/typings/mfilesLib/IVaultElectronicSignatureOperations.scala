@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultElectronicSignatureOperations extends js.Object {
   def AddEmptySignature(ObjVer: IObjVer, SignatureIdentifier: java.lang.String): IObjectVersionAndProperties
   def AddEmptySignatures(ObjVer: IObjVer): IObjectVersionAndProperties

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PhononAjaxObject extends js.Object {
   var contentType: js.UndefOr[java.lang.String] = js.undefined
   var crossDomain: js.UndefOr[scala.Boolean] = js.undefined

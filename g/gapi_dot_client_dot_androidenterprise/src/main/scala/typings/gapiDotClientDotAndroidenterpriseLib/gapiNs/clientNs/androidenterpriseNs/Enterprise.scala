@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Enterprise extends js.Object {
   /** Admins of the enterprise. This is only supported for enterprises created via the EMM-initiated flow. */
   var administrator: js.UndefOr[js.Array[Administrator]] = js.undefined

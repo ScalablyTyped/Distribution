@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IScheduledJob extends js.Object {
   val BackupVaultJob: IBackupJob
   var Enabled: scala.Boolean

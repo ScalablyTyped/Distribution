@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Type extends js.Object {
   /** Industry specific volume identifier. */
   var identifier: js.UndefOr[java.lang.String] = js.undefined

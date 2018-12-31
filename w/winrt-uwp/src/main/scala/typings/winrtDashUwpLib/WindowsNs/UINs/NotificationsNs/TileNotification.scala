@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class TileNotification protected () extends js.Object {
   /**
-                   * Creates and initializes a new instance of the TileNotification object for use with a TileUpdater .
-                   * @param content The object that provides the content for the tile notification.
-                   */
+    * Creates and initializes a new instance of the TileNotification object for use with a TileUpdater .
+    * @param content The object that provides the content for the tile notification.
+    */
   def this(content: winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument) = this()
   /** Gets the XML description of the notification content, which you can then manipulate to alter the notification. */
   var content: winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument = js.native

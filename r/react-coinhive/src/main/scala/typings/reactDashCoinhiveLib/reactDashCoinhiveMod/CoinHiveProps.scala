@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CoinHiveProps extends js.Object {
   var autoThreads: js.UndefOr[scala.Boolean] = js.undefined
   var onInit: js.UndefOr[js.Function1[/* callback */ js.Any, scala.Unit]] = js.undefined

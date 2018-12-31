@@ -12,29 +12,29 @@ sealed trait SubscriptionPermissions extends js.Object
 @js.native
 object SubscriptionPermissions extends js.Object {
   /**
-       * delete subscription
-       */
+    * delete subscription
+    */
   @js.native
   sealed trait Delete
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionPermissions
   
   /**
-       * update subscription
-       */
+    * update subscription
+    */
   @js.native
   sealed trait Edit
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionPermissions
   
   /**
-       * None
-       */
+    * None
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionPermissions
   
   /**
-       * full view of description, filters, etc. Not limited.
-       */
+    * full view of description, filters, etc. Not limited.
+    */
   @js.native
   sealed trait View
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionPermissions

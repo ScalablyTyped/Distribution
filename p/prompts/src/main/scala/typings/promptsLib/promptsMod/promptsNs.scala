@@ -8,13 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("prompts", "prompts")
 @js.native
 object promptsNs extends js.Object {
-  
   trait Choice extends js.Object {
     var disable: js.UndefOr[scala.Boolean] = js.undefined
     var title: java.lang.String
     var value: java.lang.String
   }
-  
   
   trait Options extends js.Object {
     var onCancel: js.UndefOr[
@@ -29,7 +27,6 @@ object promptsNs extends js.Object {
         ]
       ] = js.undefined
   }
-  
   
   trait PromptObject[T /* <: java.lang.String */] extends js.Object {
     var active: js.UndefOr[java.lang.String] = js.undefined

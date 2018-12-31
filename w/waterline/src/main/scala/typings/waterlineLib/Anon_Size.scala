@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Size[T] extends js.Object {
   var columnName: js.UndefOr[java.lang.String] = js.undefined
   var defaultsTo: js.UndefOr[T | waterlineLib.waterlineMod.WaterlineNs.DefaultsToFn[T]] = js.undefined

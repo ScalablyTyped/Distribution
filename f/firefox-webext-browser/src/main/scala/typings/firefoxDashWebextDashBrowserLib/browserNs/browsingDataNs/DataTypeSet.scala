@@ -6,12 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** A set of data types. Missing data types are interpreted as `false`. */
-
 trait DataTypeSet extends js.Object {
   /**
-           * The browser's cache. Note: when removing data, this clears the _entire_ cache: it is not limited to the
-           * range you specify.
-           */
+    * The browser's cache. Note: when removing data, this clears the _entire_ cache: it is not limited to the
+    * range you specify.
+    */
   var cache: js.UndefOr[scala.Boolean] = js.undefined
   /** The browser's cookies. */
   var cookies: js.UndefOr[scala.Boolean] = js.undefined

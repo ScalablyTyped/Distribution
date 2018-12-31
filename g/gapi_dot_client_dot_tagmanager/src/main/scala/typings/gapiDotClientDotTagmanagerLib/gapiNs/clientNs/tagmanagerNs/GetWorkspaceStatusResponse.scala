@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetWorkspaceStatusResponse extends js.Object {
   /** The merge conflict after sync. */
   var mergeConflict: js.UndefOr[js.Array[MergeConflict]] = js.undefined

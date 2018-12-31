@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BrowserEventObj extends js.Object {
   /** Emitted when puppeteer gets disconnected from the browser instance. */
   var disconnected: js.UndefOr[scala.Nothing]

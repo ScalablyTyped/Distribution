@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_KeyBindingCommand extends js.Object {
   var html: js.UndefOr[scala.Boolean] = js.undefined
   var keyBindingCommand: js.UndefOr[java.lang.String] = js.undefined

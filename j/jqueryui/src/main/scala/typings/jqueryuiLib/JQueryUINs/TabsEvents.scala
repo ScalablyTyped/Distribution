@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TabsEvents extends js.Object {
   var activate: js.UndefOr[TabsEvent[TabsActivationUIParams]] = js.undefined
   var beforeActivate: js.UndefOr[TabsEvent[TabsActivationUIParams]] = js.undefined

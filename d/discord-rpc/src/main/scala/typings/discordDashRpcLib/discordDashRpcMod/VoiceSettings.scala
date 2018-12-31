@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VoiceSettings extends js.Object {
   var automaticGainControl: scala.Boolean
   var deaf: scala.Boolean

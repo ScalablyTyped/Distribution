@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StoreDefinition
   extends /* propertyName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var getInitialState: js.UndefOr[js.Function] = js.undefined

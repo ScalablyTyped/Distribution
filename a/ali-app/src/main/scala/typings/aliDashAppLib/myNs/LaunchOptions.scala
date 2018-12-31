@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LaunchOptions extends js.Object {
   /**
   		 * 打开小程序的路径

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait Xbox360Button extends js.Object
 
 /**
-     * Defines supported buttons for XBox360 compatible gamepads
-     */
+  * Defines supported buttons for XBox360 compatible gamepads
+  */
 @JSGlobal("BABYLON.Xbox360Button")
 @js.native
 object Xbox360Button extends js.Object {

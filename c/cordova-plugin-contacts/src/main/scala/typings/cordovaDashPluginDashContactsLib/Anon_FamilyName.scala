@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FamilyName extends js.Object {
   var addresses: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.addresses
   var birthday: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.birthday

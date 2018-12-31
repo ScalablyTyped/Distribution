@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InputByType extends js.Object {
   var array: js.Array[scala.Double]
   var arraybuffer: stdLib.ArrayBuffer

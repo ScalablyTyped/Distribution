@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITab
   extends senchaUnderscoreTouchLib.ExtNs.IButton {
   /** [Config Option] (Boolean) */

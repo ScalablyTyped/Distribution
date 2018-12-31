@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WriteError extends js.Object {
   //Write concern error code.
   var code: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGAnimatedPreserveAspectRatio extends js.Object {
   val animVal: SVGPreserveAspectRatio
   val baseVal: SVGPreserveAspectRatio

@@ -18,15 +18,15 @@ class SelectionZone ()
   var _onClick: js.Any = js.native
   var _onContextMenu: js.Any = js.native
   /**
-       * In multi selection, if you double click within an item's root (but not within the invoke element or input elements),
-       * we should execute the invoke handler.
-       */
+    * In multi selection, if you double click within an item's root (but not within the invoke element or input elements),
+    * we should execute the invoke handler.
+    */
   var _onDoubleClick: js.Any = js.native
   /**
-       * When we focus an item, for single/multi select scenarios, we should try to select it immediately
-       * as long as the focus did not originate from a mouse down/touch event. For those cases, we handle them
-       * specially.
-       */
+    * When we focus an item, for single/multi select scenarios, we should try to select it immediately
+    * as long as the focus did not originate from a mouse down/touch event. For those cases, we handle them
+    * specially.
+    */
   var _onFocus: js.Any = js.native
   var _onKeyDown: js.Any = js.native
   var _onKeyDownCapture: js.Any = js.native
@@ -54,18 +54,18 @@ class SelectionZone ()
   /* private */ def _shouldAutoSelect(element: js.Any): js.Any = js.native
   /* private */ def _tryClearOnEmptyClick(ev: js.Any): js.Any = js.native
   /**
-       * We need to track the modifier key states so that when focus events occur, which do not contain
-       * modifier states in the Event object, we know how to behave.
-       */
+    * We need to track the modifier key states so that when focus events occur, which do not contain
+    * modifier states in the Event object, we know how to behave.
+    */
   /* private */ def _updateModifiers(ev: js.Any): js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MSelectionZone(): scala.Unit = js.native
   /**
-       * In some cases, the consuming scenario requires to set focus on a row without having SelectionZone
-       * react to the event. Note that focus events in IE \<= 11 will occur asynchronously after .focus() has
-       * been called on an element, so we need a flag to store the idea that we will bypass the "next"
-       * focus event that occurs. This method does that.
-       */
+    * In some cases, the consuming scenario requires to set focus on a row without having SelectionZone
+    * react to the event. Note that focus events in IE \<= 11 will occur asynchronously after .focus() has
+    * been called on an element, so we need a flag to store the idea that we will bypass the "next"
+    * focus event that occurs. This method does that.
+    */
   def ignoreNextFocus(): scala.Unit = js.native
 }
 

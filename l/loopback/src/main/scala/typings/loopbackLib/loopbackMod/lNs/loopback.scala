@@ -22,30 +22,29 @@ import scala.scalajs.js.annotation._
 // interface Router extends core.Router { }
 // interface Send extends core.Send { }
 /**
-       * LoopBack core module. It provides static properties and
-       * methods to create models and data sources. The module itself is a function
-       * that creates loopback `app`. For example:
-       *
-       * ```js
-       * var loopback = require('loopback');
-       * var app = loopback();
-       * ```
-       *
-       * @property {string} version Version of LoopBack framework.  Static read-only property.
-       * @property {string} mime
-       * @property {boolean} isBrowser True if running in a browser environment; false otherwise.  Static read-only property.
-       * @property {boolean} isServer True if running in a server environment; false otherwise.  Static read-only property.
-       * @property {Registry} registry The global `Registry` object.
-       * @property {string} faviconFile Path to a default favicon shipped with LoopBack.
-       * Use as follows: `app.use(require('serve-favicon')(loopback.faviconFile));`
-       * @class loopback
-       * @header loopback
-       */
-
+  * LoopBack core module. It provides static properties and
+  * methods to create models and data sources. The module itself is a function
+  * that creates loopback `app`. For example:
+  *
+  * ```js
+  * var loopback = require('loopback');
+  * var app = loopback();
+  * ```
+  *
+  * @property {string} version Version of LoopBack framework.  Static read-only property.
+  * @property {string} mime
+  * @property {boolean} isBrowser True if running in a browser environment; false otherwise.  Static read-only property.
+  * @property {boolean} isServer True if running in a server environment; false otherwise.  Static read-only property.
+  * @property {Registry} registry The global `Registry` object.
+  * @property {string} faviconFile Path to a default favicon shipped with LoopBack.
+  * Use as follows: `app.use(require('serve-favicon')(loopback.faviconFile));`
+  * @class loopback
+  * @header loopback
+  */
 trait loopback extends js.Object {
   /** Path to a default favicon shipped with LoopBack.
-               * Use as follows: `app.use(require('serve-favicon')(loopback.faviconFile));`
-               */
+    * Use as follows: `app.use(require('serve-favicon')(loopback.faviconFile));`
+    */
   var faviconFile: java.lang.String
   /** True if running in a browser environment; false otherwise.  Static read-only property. */
   var isBrowser: scala.Boolean

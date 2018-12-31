@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavbarProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libNavbarMod.Navbar] {
   var brand: js.UndefOr[js.Any] = js.undefined

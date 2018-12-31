@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SingularAnimationOptionsBase extends js.Object {
   /** The duration of the animation in milliseconds. */
   var duration: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TooltipProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libTooltipMod.Tooltip] {
   // Optional

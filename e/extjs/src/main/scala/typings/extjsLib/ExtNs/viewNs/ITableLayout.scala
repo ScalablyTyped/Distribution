@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITableLayout
   extends extjsLib.ExtNs.layoutNs.componentNs.IAuto {
   /** [Method] Called before any calculation cycles to prepare for layout

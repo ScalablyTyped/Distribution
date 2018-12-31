@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreativeCustomEvent extends js.Object {
   /** Unique ID of this event used by DDM Reporting and Data Transfer. This is a read-only field. */
   var advertiserCustomEventId: js.UndefOr[java.lang.String] = js.undefined

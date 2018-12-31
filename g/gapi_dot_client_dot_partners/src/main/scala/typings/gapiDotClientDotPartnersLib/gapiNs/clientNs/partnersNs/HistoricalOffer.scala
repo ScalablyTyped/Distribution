@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HistoricalOffer extends js.Object {
   /** Client's AdWords page URL. */
   var adwordsUrl: js.UndefOr[java.lang.String] = js.undefined

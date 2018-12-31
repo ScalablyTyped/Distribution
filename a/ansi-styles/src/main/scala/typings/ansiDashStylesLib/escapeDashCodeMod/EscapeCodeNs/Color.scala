@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Color extends js.Object {
   var black: CodePair
   var blue: CodePair
@@ -13,8 +12,8 @@ trait Color extends js.Object {
   var cyan: CodePair
   var cyanBright: CodePair
   /**
-           * bright black
-           */
+    * bright black
+    */
   var gray: CodePair
   var green: CodePair
   var greenBright: CodePair

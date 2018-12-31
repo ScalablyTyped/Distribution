@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IShimmeredDetailsListProps
   extends officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.IDetailsListProps {
   /** Placeholder renderer */

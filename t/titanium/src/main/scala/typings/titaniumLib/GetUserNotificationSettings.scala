@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Dictionary object of parameters used to register the application with local notifications using
- * the <Titanium.App.iOS.registerUserNotificationSettings> method.
- */
-
+  * Dictionary object of parameters used to register the application with local notifications using
+  * the <Titanium.App.iOS.registerUserNotificationSettings> method.
+  */
 trait GetUserNotificationSettings extends js.Object {
   /**
   	 * The current alert settings.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var pollPeriod: js.UndefOr[scala.Double] = js.undefined
   var retries: js.UndefOr[scala.Double] = js.undefined

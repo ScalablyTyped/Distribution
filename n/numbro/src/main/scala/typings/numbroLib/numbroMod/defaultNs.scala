@@ -11,7 +11,7 @@ object defaultNs extends js.Object {
   val version: java.lang.String = js.native
   def defaultCurrencyFormat(newFormat: java.lang.String): js.Object = js.native
   def defaultFormat(): js.Object = js.native
-  def isNumbro(value: js.Any): /* is Numbro */scala.Boolean = js.native
+  def isNumbro(value: js.Any): /* is numbro.numbro.numbro.Numbro */ scala.Boolean = js.native
   def language(): java.lang.String = js.native
   def languageData(): numbroLib.numbroMod.numbroNs.NumbroLanguage = js.native
   def languageData(tag: java.lang.String): numbroLib.numbroMod.numbroNs.NumbroLanguage = js.native

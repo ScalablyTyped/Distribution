@@ -37,8 +37,8 @@ object webservicesNs extends js.Object {
   }
   
   /**
-       * Interfaces and instance classes for types from the Mendix sub meta model `WebServices`.
-       */
+    * Interfaces and instance classes for types from the Mendix sub meta model `WebServices`.
+    */
   @js.native
   abstract class DataMember protected ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.webservicesNs.DataMember {
@@ -50,8 +50,8 @@ object webservicesNs extends js.Object {
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.webservicesNs.HeaderAuthentication
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/consumed-web-services relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/consumed-web-services relevant section in reference guide}
+    */
   @js.native
   class ImportedWebService protected ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.webservicesNs.ImportedWebService {
@@ -71,8 +71,8 @@ object webservicesNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/published-app-services relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/published-app-services relevant section in reference guide}
+    */
   @js.native
   class PublishedAppService protected ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.webservicesNs.PublishedAppService {
@@ -104,8 +104,8 @@ object webservicesNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/published-web-services relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/published-web-services relevant section in reference guide}
+    */
   @js.native
   class PublishedWebService protected ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.webservicesNs.PublishedWebService {
@@ -135,8 +135,8 @@ object webservicesNs extends js.Object {
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.webservicesNs.SoapVersion
   
   /**
-       * In version 6.7.0: introduced
-       */
+    * In version 6.7.0: introduced
+    */
   @js.native
   class SystemIdDataAttribute protected ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.webservicesNs.SystemIdDataAttribute {
@@ -144,8 +144,8 @@ object webservicesNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/published-web-services relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/published-web-services relevant section in reference guide}
+    */
   @js.native
   class VersionedService protected ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.webservicesNs.VersionedService {
@@ -176,16 +176,16 @@ object webservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new DataAssociation instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new DataAssociation instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataAssociation = js.native
     /**
-             * Creates and returns a new DataAssociation instance in the SDK and on the server.
-             * The new DataAssociation will be automatically stored in the 'childMembers' property
-             * of the parent DataEntityBase element passed as argument.
-             */
+      * Creates and returns a new DataAssociation instance in the SDK and on the server.
+      * The new DataAssociation will be automatically stored in the 'childMembers' property
+      * of the parent DataEntityBase element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataEntityBase): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataAssociation = js.native
   }
   
@@ -194,16 +194,16 @@ object webservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new DataAttribute instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new DataAttribute instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataAttribute = js.native
     /**
-             * Creates and returns a new DataAttribute instance in the SDK and on the server.
-             * The new DataAttribute will be automatically stored in the 'childMembers' property
-             * of the parent DataEntityBase element passed as argument.
-             */
+      * Creates and returns a new DataAttribute instance in the SDK and on the server.
+      * The new DataAttribute will be automatically stored in the 'childMembers' property
+      * of the parent DataEntityBase element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataEntityBase): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataAttribute = js.native
   }
   
@@ -212,28 +212,28 @@ object webservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new DataEntity instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new DataEntity instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataEntity = js.native
     /**
-             * Creates and returns a new DataEntity instance in the SDK and on the server.
-             * The new DataEntity will be automatically stored in the 'childMembers' property
-             * of the parent DataEntityBase element passed as argument.
-             */
+      * Creates and returns a new DataEntity instance in the SDK and on the server.
+      * The new DataEntity will be automatically stored in the 'childMembers' property
+      * of the parent DataEntityBase element passed as argument.
+      */
     def createInDataEntityBaseUnderChildMembers(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataEntityBase): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataEntity = js.native
     /**
-             * Creates and returns a new DataEntity instance in the SDK and on the server.
-             * The new DataEntity will be automatically stored in the 'dataEntity' property
-             * of the parent PublishedParameter element passed as argument.
-             */
+      * Creates and returns a new DataEntity instance in the SDK and on the server.
+      * The new DataEntity will be automatically stored in the 'dataEntity' property
+      * of the parent PublishedParameter element passed as argument.
+      */
     def createInPublishedParameterUnderDataEntity(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedParameter): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataEntity = js.native
     /**
-             * Creates and returns a new DataEntity instance in the SDK and on the server.
-             * The new DataEntity will be automatically stored in the 'dataEntity' property
-             * of the parent PublishedResource element passed as argument.
-             */
+      * Creates and returns a new DataEntity instance in the SDK and on the server.
+      * The new DataEntity will be automatically stored in the 'dataEntity' property
+      * of the parent PublishedResource element passed as argument.
+      */
     def createInPublishedResourceUnderDataEntity(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedResource): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataEntity = js.native
   }
   
@@ -244,8 +244,8 @@ object webservicesNs extends js.Object {
   }
   
   /**
-       * Interfaces and instance classes for types from the Mendix sub meta model `WebServices`.
-       */
+    * Interfaces and instance classes for types from the Mendix sub meta model `WebServices`.
+    */
   @js.native
   object DataMember extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -260,16 +260,16 @@ object webservicesNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/consumed-web-services relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/consumed-web-services relevant section in reference guide}
+    */
   @js.native
   object ImportedWebService extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates a new ImportedWebService unit in the SDK and on the server.
-             * Expects one argument, the projects.IFolderBase in which this unit is contained.
-             */
+      * Creates a new ImportedWebService unit in the SDK and on the server.
+      * Expects one argument, the projects.IFolderBase in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.ImportedWebService = js.native
   }
   
@@ -278,16 +278,16 @@ object webservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new OperationInfo instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new OperationInfo instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.OperationInfo = js.native
     /**
-             * Creates and returns a new OperationInfo instance in the SDK and on the server.
-             * The new OperationInfo will be automatically stored in the 'operations' property
-             * of the parent ServiceInfo element passed as argument.
-             */
+      * Creates and returns a new OperationInfo instance in the SDK and on the server.
+      * The new OperationInfo will be automatically stored in the 'operations' property
+      * of the parent ServiceInfo element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.ServiceInfo): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.OperationInfo = js.native
   }
   
@@ -296,36 +296,36 @@ object webservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new PartEncoding instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new PartEncoding instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PartEncoding = js.native
     /**
-             * Creates and returns a new PartEncoding instance in the SDK and on the server.
-             * The new PartEncoding will be automatically stored in the 'requestBodyPartEncodings' property
-             * of the parent OperationInfo element passed as argument.
-             */
+      * Creates and returns a new PartEncoding instance in the SDK and on the server.
+      * The new PartEncoding will be automatically stored in the 'requestBodyPartEncodings' property
+      * of the parent OperationInfo element passed as argument.
+      */
     def createInOperationInfoUnderRequestBodyPartEncodings(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.OperationInfo): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PartEncoding = js.native
     /**
-             * Creates and returns a new PartEncoding instance in the SDK and on the server.
-             * The new PartEncoding will be automatically stored in the 'requestHeaderPartEncoding' property
-             * of the parent OperationInfo element passed as argument.
-             */
+      * Creates and returns a new PartEncoding instance in the SDK and on the server.
+      * The new PartEncoding will be automatically stored in the 'requestHeaderPartEncoding' property
+      * of the parent OperationInfo element passed as argument.
+      */
     def createInOperationInfoUnderRequestHeaderPartEncoding(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.OperationInfo): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PartEncoding = js.native
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/published-app-services relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/published-app-services relevant section in reference guide}
+    */
   @js.native
   object PublishedAppService extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates a new PublishedAppService unit in the SDK and on the server.
-             * Expects one argument, the projects.IFolderBase in which this unit is contained.
-             */
+      * Creates a new PublishedAppService unit in the SDK and on the server.
+      * Expects one argument, the projects.IFolderBase in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedAppService = js.native
   }
   
@@ -334,16 +334,16 @@ object webservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new PublishedOperation instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new PublishedOperation instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedOperation = js.native
     /**
-             * Creates and returns a new PublishedOperation instance in the SDK and on the server.
-             * The new PublishedOperation will be automatically stored in the 'operations' property
-             * of the parent VersionedService element passed as argument.
-             */
+      * Creates and returns a new PublishedOperation instance in the SDK and on the server.
+      * The new PublishedOperation will be automatically stored in the 'operations' property
+      * of the parent VersionedService element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.VersionedService): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedOperation = js.native
   }
   
@@ -352,16 +352,16 @@ object webservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new PublishedParameter instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new PublishedParameter instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedParameter = js.native
     /**
-             * Creates and returns a new PublishedParameter instance in the SDK and on the server.
-             * The new PublishedParameter will be automatically stored in the 'parameters' property
-             * of the parent PublishedOperation element passed as argument.
-             */
+      * Creates and returns a new PublishedParameter instance in the SDK and on the server.
+      * The new PublishedParameter will be automatically stored in the 'parameters' property
+      * of the parent PublishedOperation element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedOperation): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedParameter = js.native
   }
   
@@ -378,16 +378,16 @@ object webservicesNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/published-web-services relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/published-web-services relevant section in reference guide}
+    */
   @js.native
   object PublishedWebService extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates a new PublishedWebService unit in the SDK and on the server.
-             * Expects one argument, the projects.IFolderBase in which this unit is contained.
-             */
+      * Creates a new PublishedWebService unit in the SDK and on the server.
+      * Expects one argument, the projects.IFolderBase in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedWebService = js.native
   }
   
@@ -396,16 +396,16 @@ object webservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new RpcMessagePartElement instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new RpcMessagePartElement instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.RpcMessagePartElement = js.native
     /**
-             * Creates and returns a new RpcMessagePartElement instance in the SDK and on the server.
-             * The new RpcMessagePartElement will be automatically stored in the 'messagePartElements' property
-             * of the parent RpcOperationElement element passed as argument.
-             */
+      * Creates and returns a new RpcMessagePartElement instance in the SDK and on the server.
+      * The new RpcMessagePartElement will be automatically stored in the 'messagePartElements' property
+      * of the parent RpcOperationElement element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.RpcOperationElement): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.RpcMessagePartElement = js.native
   }
   
@@ -414,28 +414,28 @@ object webservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new RpcOperationElement instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new RpcOperationElement instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.RpcOperationElement = js.native
     /**
-             * Creates and returns a new RpcOperationElement instance in the SDK and on the server.
-             * The new RpcOperationElement will be automatically stored in the 'requestBodyRpcElement' property
-             * of the parent OperationInfo element passed as argument.
-             */
+      * Creates and returns a new RpcOperationElement instance in the SDK and on the server.
+      * The new RpcOperationElement will be automatically stored in the 'requestBodyRpcElement' property
+      * of the parent OperationInfo element passed as argument.
+      */
     def createInOperationInfoUnderRequestBodyRpcElement(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.OperationInfo): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.RpcOperationElement = js.native
     /**
-             * Creates and returns a new RpcOperationElement instance in the SDK and on the server.
-             * The new RpcOperationElement will be automatically stored in the 'requestHeaderRpcElement' property
-             * of the parent OperationInfo element passed as argument.
-             */
+      * Creates and returns a new RpcOperationElement instance in the SDK and on the server.
+      * The new RpcOperationElement will be automatically stored in the 'requestHeaderRpcElement' property
+      * of the parent OperationInfo element passed as argument.
+      */
     def createInOperationInfoUnderRequestHeaderRpcElement(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.OperationInfo): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.RpcOperationElement = js.native
     /**
-             * Creates and returns a new RpcOperationElement instance in the SDK and on the server.
-             * The new RpcOperationElement will be automatically stored in the 'responseBodyRpcElement' property
-             * of the parent OperationInfo element passed as argument.
-             */
+      * Creates and returns a new RpcOperationElement instance in the SDK and on the server.
+      * The new RpcOperationElement will be automatically stored in the 'responseBodyRpcElement' property
+      * of the parent OperationInfo element passed as argument.
+      */
     def createInOperationInfoUnderResponseBodyRpcElement(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.OperationInfo): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.RpcOperationElement = js.native
   }
   
@@ -444,16 +444,16 @@ object webservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new ServiceInfo instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new ServiceInfo instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.ServiceInfo = js.native
     /**
-             * Creates and returns a new ServiceInfo instance in the SDK and on the server.
-             * The new ServiceInfo will be automatically stored in the 'services' property
-             * of the parent WsdlDescription element passed as argument.
-             */
+      * Creates and returns a new ServiceInfo instance in the SDK and on the server.
+      * The new ServiceInfo will be automatically stored in the 'services' property
+      * of the parent WsdlDescription element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.WsdlDescription): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.ServiceInfo = js.native
   }
   
@@ -464,47 +464,47 @@ object webservicesNs extends js.Object {
   }
   
   /**
-       * In version 6.7.0: introduced
-       */
+    * In version 6.7.0: introduced
+    */
   @js.native
   object SystemIdDataAttribute extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new SystemIdDataAttribute instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new SystemIdDataAttribute instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.SystemIdDataAttribute = js.native
     /**
-             * Creates and returns a new SystemIdDataAttribute instance in the SDK and on the server.
-             * The new SystemIdDataAttribute will be automatically stored in the 'childMembers' property
-             * of the parent DataEntityBase element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.7.0 and higher
-             */
+      * Creates and returns a new SystemIdDataAttribute instance in the SDK and on the server.
+      * The new SystemIdDataAttribute will be automatically stored in the 'childMembers' property
+      * of the parent DataEntityBase element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.7.0 and higher
+      */
     def createIn(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataEntityBase): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.SystemIdDataAttribute = js.native
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/published-web-services relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/published-web-services relevant section in reference guide}
+    */
   @js.native
   object VersionedService extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new VersionedService instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new VersionedService instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.VersionedService = js.native
     /**
-             * Creates and returns a new VersionedService instance in the SDK and on the server.
-             * The new VersionedService will be automatically stored in the 'versionedServices' property
-             * of the parent PublishedServiceBase element passed as argument.
-             */
+      * Creates and returns a new VersionedService instance in the SDK and on the server.
+      * The new VersionedService will be automatically stored in the 'versionedServices' property
+      * of the parent PublishedServiceBase element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedServiceBase): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.VersionedService = js.native
   }
   
@@ -513,22 +513,22 @@ object webservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new WsdlDescription instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new WsdlDescription instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.WsdlDescription = js.native
     /**
-             * Creates and returns a new WsdlDescription instance in the SDK and on the server.
-             * The new WsdlDescription will be automatically stored in the 'wsdlDescription' property
-             * of the parent ImportedWebService element passed as argument.
-             */
+      * Creates and returns a new WsdlDescription instance in the SDK and on the server.
+      * The new WsdlDescription will be automatically stored in the 'wsdlDescription' property
+      * of the parent ImportedWebService element passed as argument.
+      */
     def createInImportedWebServiceUnderWsdlDescription(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.ImportedWebService): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.WsdlDescription = js.native
     /**
-             * Creates and returns a new WsdlDescription instance in the SDK and on the server.
-             * The new WsdlDescription will be automatically stored in the 'wsdlDescription' property
-             * of the parent appservices.Msd element passed as argument.
-             */
+      * Creates and returns a new WsdlDescription instance in the SDK and on the server.
+      * The new WsdlDescription will be automatically stored in the 'wsdlDescription' property
+      * of the parent appservices.Msd element passed as argument.
+      */
     def createInMsdUnderWsdlDescription(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.Msd): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.WsdlDescription = js.native
   }
   
@@ -537,16 +537,16 @@ object webservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new WsdlEntry instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new WsdlEntry instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.WsdlEntry = js.native
     /**
-             * Creates and returns a new WsdlEntry instance in the SDK and on the server.
-             * The new WsdlEntry will be automatically stored in the 'wsdlEntries' property
-             * of the parent WsdlDescription element passed as argument.
-             */
+      * Creates and returns a new WsdlEntry instance in the SDK and on the server.
+      * The new WsdlEntry will be automatically stored in the 'wsdlEntries' property
+      * of the parent WsdlDescription element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.WsdlDescription): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.WsdlEntry = js.native
   }
   

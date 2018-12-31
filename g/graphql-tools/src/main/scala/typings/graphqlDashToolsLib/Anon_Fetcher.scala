@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Fetcher extends js.Object {
   var createResolver: js.UndefOr[
     js.Function1[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAuto extends IComponent {
   /** [Method] Called to perform the calculations for this layout
   		* @param ownerContext Object

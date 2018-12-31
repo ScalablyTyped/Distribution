@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcrtpcodecparameters
-
 trait RTCRtpCodecParameters extends js.Object {
   //clockRate: number;
   var channels: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProgressProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var format: js.UndefOr[
@@ -23,8 +22,8 @@ trait ProgressProps extends js.Object {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var showInfo: js.UndefOr[scala.Boolean] = js.undefined
   var size: js.UndefOr[ProgressSize] = js.undefined
-  var status: /* import warning: Failed type conversion: TsTypeLookup(TsTypeTuple(List(TsTypeLiteral(TsLiteralString(normal)), TsTypeLiteral(TsLiteralString(exception)), TsTypeLiteral(TsLiteralString(active)), TsTypeLiteral(TsLiteralString(success)))),Left(TsIdentSimple(number))) */js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeTuple(List(TsTypeLiteral(TsLiteralString(normal)), TsTypeLiteral(TsLiteralString(exception)), TsTypeLiteral(TsLiteralString(active)), TsTypeLiteral(TsLiteralString(success)))),Left(TsIdentSimple(number))) */js.Any
+  var status: /* import warning: ImportType.apply Failed type conversion: ['normal', 'exception', 'active', 'success'][number] */ js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: ['normal', 'exception', 'active', 'success'][number] */ js.Any
   ] = js.undefined
   var strokeColor: js.UndefOr[java.lang.String] = js.undefined
   var strokeLinecap: js.UndefOr[java.lang.String] = js.undefined

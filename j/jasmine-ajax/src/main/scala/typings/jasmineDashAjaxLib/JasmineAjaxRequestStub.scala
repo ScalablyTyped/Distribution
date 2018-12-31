@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JasmineAjaxRequestStub extends js.Object {
   var data: js.UndefOr[java.lang.String] = js.undefined
   var method: js.UndefOr[java.lang.String] = js.undefined

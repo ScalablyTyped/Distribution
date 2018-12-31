@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlowChar extends js.Object {
   var char: yamlLib.yamlLibStrings.`{` | yamlLib.yamlLibStrings.`}` | yamlLib.yamlLibStrings.`[` | yamlLib.yamlLibStrings.`]` | yamlLib.yamlLibStrings.`,` | yamlLib.yamlLibStrings.`?` | yamlLib.yamlLibStrings.`:`
   var offset: scala.Double

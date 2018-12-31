@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ServerMethodConfigurationObject extends js.Object {
   /**
-       * the method function.
-       */
+    * the method function.
+    */
   @JSName("method")
   var method_Original: ServerMethod = js.native
   /**
-       * the method name.
-       */
+    * the method name.
+    */
   var name: java.lang.String = js.native
   /**
-       * (optional) settings.
-       */
+    * (optional) settings.
+    */
   var options: js.UndefOr[ServerMethodOptions] = js.native
   /**
-       * the method function.
-       */
+    * the method function.
+    */
   def method(args: js.Any*): js.Promise[_] = js.native
 }
 

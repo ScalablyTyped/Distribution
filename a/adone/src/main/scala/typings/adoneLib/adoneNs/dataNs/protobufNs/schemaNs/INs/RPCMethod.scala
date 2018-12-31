@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RPCMethod extends js.Object {
   var client_streaming: scala.Boolean
   var input_type: java.lang.String | scala.Null

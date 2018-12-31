@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // not complete definition of network inspection
 // info which is returned by list / inspect
-
 trait NetworkInspectInfo extends js.Object {
   var Attachable: scala.Boolean
   var Created: java.lang.String

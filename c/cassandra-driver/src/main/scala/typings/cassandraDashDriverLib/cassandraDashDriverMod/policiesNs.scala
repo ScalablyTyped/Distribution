@@ -11,7 +11,6 @@ object policiesNs extends js.Object {
   @JSName("addressResolution")
   @js.native
   object addressResolutionNs extends js.Object {
-    
     trait AddressTranslator extends js.Object {
       def translate(
         address: java.lang.String,
@@ -19,7 +18,6 @@ object policiesNs extends js.Object {
         callback: cassandraDashDriverLib.cassandraDashDriverMod.Callback
       ): scala.Unit
     }
-    
     
     trait EC2MultiRegionTranslator extends AddressTranslator {
       def logError(address: java.lang.String, err: nodeLib.Error): scala.Unit
@@ -35,7 +33,6 @@ object policiesNs extends js.Object {
   @JSName("loadBalancing")
   @js.native
   object loadBalancingNs extends js.Object {
-    
     trait DCAwareRoundRobinPolicy extends LoadBalancingPolicy {
       var localHostsArray: js.Array[cassandraDashDriverLib.cassandraDashDriverMod.Host]
       var remoteHostsArray: js.Array[cassandraDashDriverLib.cassandraDashDriverMod.Host]
@@ -50,7 +47,6 @@ object policiesNs extends js.Object {
               /* usedHostsPerRemoteDc */ scala.Double, 
               DCAwareRoundRobinPolicy
             ]
-    
     
     trait LoadBalancingPolicy extends js.Object {
       def getDistance(host: cassandraDashDriverLib.cassandraDashDriverMod.Host): cassandraDashDriverLib.cassandraDashDriverMod.typesNs.distance
@@ -107,7 +103,6 @@ object policiesNs extends js.Object {
               ExponentialReconnectionPolicy
             ]
     
-    
     trait ReconnectionPolicy extends js.Object {
       def newSchedule(): cassandraDashDriverLib.Anon_Next
     }
@@ -121,18 +116,15 @@ object policiesNs extends js.Object {
   @JSName("retry")
   @js.native
   object retryNs extends js.Object {
-    
     trait DecisionInfo extends js.Object {
       var consistency: scala.Double
       var decision: scala.Double
     }
     
-    
     trait RequestInfo extends js.Object {
       var nbRetry: scala.Double
       var request: js.Any
     }
-    
     
     trait RetryPolicy extends js.Object {
       def onReadTimeout(
@@ -224,7 +216,6 @@ object policiesNs extends js.Object {
   @JSName("timestampGeneration")
   @js.native
   object timestampGenerationNs extends js.Object {
-    
     trait MonotonicTimestampGenerator extends TimestampGenerator {
       def getDate(): scala.Double
     }
@@ -238,7 +229,6 @@ object policiesNs extends js.Object {
               /* minLogInterval */ scala.Double, 
               MonotonicTimestampGeneratorStatic
             ]
-    
     
     trait TimestampGenerator extends js.Object {
       def next(client: cassandraDashDriverLib.cassandraDashDriverMod.Client): scala.Null | scala.Double | longLib.longMod.namespaced

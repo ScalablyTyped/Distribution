@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISimpleListItem
   extends senchaUnderscoreTouchLib.ExtNs.IComponent {
   /** [Method] Returns the value of disclosure

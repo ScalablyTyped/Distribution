@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BatchGetValuesByDataFilterResponse extends js.Object {
   /** The ID of the spreadsheet the data was retrieved from. */
   var spreadsheetId: js.UndefOr[java.lang.String] = js.undefined

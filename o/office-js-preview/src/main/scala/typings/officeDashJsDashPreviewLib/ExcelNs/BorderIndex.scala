@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait BorderIndex extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.1]
-     */
+  * [Api set: ExcelApi 1.1]
+  */
 @JSGlobal("Excel.BorderIndex")
 @js.native
 object BorderIndex extends js.Object {

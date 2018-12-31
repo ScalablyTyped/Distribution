@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Badge extends js.Object {
   /** 需要飘红的选项的索引，从0开始 */
   var index: scala.Double

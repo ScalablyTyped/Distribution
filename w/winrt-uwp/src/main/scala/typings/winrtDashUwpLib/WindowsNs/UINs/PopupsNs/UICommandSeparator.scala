@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a command separator in a context menu. */
 @JSGlobal("Windows.UI.Popups.UICommandSeparator")
 @js.native
+/** Creates a new instance of the UICommandSeparator class. */
 class UICommandSeparator () extends js.Object {
   /** Gets or sets the identifier of the command separator. */
   var id: js.Any = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class HeadPose () extends js.Object {
   var forwardDirection: js.Any = js.native
-   /* unmapped type */var position: js.Any = js.native
-   /* unmapped type */var upDirection: js.Any = js.native
+   /* unmapped type */ var position: js.Any = js.native
+   /* unmapped type */ var upDirection: js.Any = js.native
 }
 

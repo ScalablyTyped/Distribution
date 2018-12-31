@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BagDescriptor extends js.Object {
   /** Provides the commercial name for an optional service. */
   var commercialName: js.UndefOr[java.lang.String] = js.undefined

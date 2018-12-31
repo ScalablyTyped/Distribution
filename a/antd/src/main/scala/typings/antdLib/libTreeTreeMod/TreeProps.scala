@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TreeProps extends js.Object {
   /** 是否自动展开父节点 */
   var autoExpandParent: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Review extends js.Object {
   var body: java.lang.String
   var commitSha: java.lang.String

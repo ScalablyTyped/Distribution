@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaneListItemShiftedEvent extends js.Object {
   /** A number indicating where the item is located. */
   var index: scala.Double

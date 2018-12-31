@@ -11,13 +11,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("BotUser")
 @js.native
 class BotUser () extends User {
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/BotUser.html#method_sendPostMessage
-  		 */
   def sendPostMessage(topic: java.lang.String, text: java.lang.String, receivingUser: User): scala.Unit = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/BotUser.html#method_sendPrivateMessage
-  		 */
   def sendPrivateMessage(message: java.lang.String, users: js.Array[User]): scala.Unit = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/BotUser.html#method_sendPublicActionMessage
@@ -27,13 +21,7 @@ class BotUser () extends User {
   		 * @see https://developer.knuddels.de/docs/classes/BotUser.html#method_sendPublicMessage
   		 */
   def sendPublicMessage(message: java.lang.String): scala.Unit = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/BotUser.html#method_transferKnuddel
-  		 */
   def transferKnuddel(receivingUserOrAccount: KnuddelAccount, knuddelAmount: KnuddelAmount): scala.Unit = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/BotUser.html#method_transferKnuddel
-  		 */
   def transferKnuddel(
     receivingUserOrAccount: KnuddelAccount,
     knuddelAmount: KnuddelAmount,
@@ -43,9 +31,6 @@ class BotUser () extends User {
   		 * @see https://developer.knuddels.de/docs/classes/BotUser.html#method_transferKnuddel
   		 */
   def transferKnuddel(receivingUserOrAccount: User, knuddelAmount: KnuddelAmount): scala.Unit = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/BotUser.html#method_transferKnuddel
-  		 */
   def transferKnuddel(
     receivingUserOrAccount: User,
     knuddelAmount: KnuddelAmount,

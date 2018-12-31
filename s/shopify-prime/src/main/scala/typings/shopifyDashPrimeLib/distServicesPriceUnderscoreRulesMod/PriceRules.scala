@@ -11,36 +11,32 @@ class PriceRules protected ()
   extends shopifyDashPrimeLib.distInfrastructureMod.BaseService {
   def this(shopDomain: java.lang.String, accessToken: java.lang.String) = this()
   /**
-       * The API is currently restricted to what the Shopify Discounts admin section offers. Note that for
-       * a price rule to be accessible via the admin section of Shopify, you will need to create a
-       * discount code as well.
-       */
+    * The API is currently restricted to what the Shopify Discounts admin section offers. Note that for
+    * a price rule to be accessible via the admin section of Shopify, you will need to create a
+    * discount code as well.
+    */
   def create(PriceRule: shopifyDashPrimeLib.distModelsPriceUnderscoreRuleMod.PriceRule): js.Promise[shopifyDashPrimeLib.distModelsPriceUnderscoreRuleMod.PriceRule] = js.native
   /**
-       * Deletes the Price Rule with the given id.
-       */
+    * Deletes the Price Rule with the given id.
+    */
   def delete(id: scala.Double): js.Promise[scala.Unit] = js.native
   /**
-       * Retrieves the Price Rule with the given id.
-       * @param options Options for filtering the results.
-       */
+    * Retrieves the Price Rule with the given id.
+    * @param options Options for filtering the results.
+    */
   def get(id: scala.Double): js.Promise[shopifyDashPrimeLib.distModelsPriceUnderscoreRuleMod.PriceRule] = js.native
   /**
-       * Gets a list of up to 250 of the shop's Price Rules.
-       * @param options Options for filtering the results.
-       */
+    * Gets a list of up to 250 of the shop's Price Rules.
+    * @param options Options for filtering the results.
+    */
   def list(): js.Promise[js.Array[shopifyDashPrimeLib.distModelsPriceUnderscoreRuleMod.PriceRule]] = js.native
-  /**
-       * Gets a list of up to 250 of the shop's Price Rules.
-       * @param options Options for filtering the results.
-       */
   def list(
     options: shopifyDashPrimeLib.distOptionsBaseMod.ListOptions with shopifyDashPrimeLib.distOptionsBaseMod.FieldOptions
   ): js.Promise[js.Array[shopifyDashPrimeLib.distModelsPriceUnderscoreRuleMod.PriceRule]] = js.native
   /**
-       * Updates the Price Rule with the given id.
-       * @param tag The updated Price Rule.
-       */
+    * Updates the Price Rule with the given id.
+    * @param tag The updated Price Rule.
+    */
   def update(id: scala.Double, PriceRule: shopifyDashPrimeLib.distModelsPriceUnderscoreRuleMod.PriceRule): js.Promise[shopifyDashPrimeLib.distModelsPriceUnderscoreRuleMod.PriceRule] = js.native
 }
 

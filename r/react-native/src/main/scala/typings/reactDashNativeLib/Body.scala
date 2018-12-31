@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Body extends js.Object {
   val bodyUsed: scala.Boolean
   def arrayBuffer(): js.Promise[stdLib.ArrayBuffer]

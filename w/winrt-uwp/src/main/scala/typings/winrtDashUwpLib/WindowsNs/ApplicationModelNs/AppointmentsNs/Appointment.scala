@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents an appointment in a calendar. This class is used when an app is activated using the AppointmentsProvider value for ActivationKind , as a value for AppointmentInformation properties. */
 @JSGlobal("Windows.ApplicationModel.Appointments.Appointment")
 @js.native
+/** Initializes a new instance of the Appointment class. */
 class Appointment () extends js.Object {
   /** Gets or sets a Boolean value that indicates whether the appointment will last all day. The default is FALSE for won't last all day. */
   var allDay: scala.Boolean = js.native

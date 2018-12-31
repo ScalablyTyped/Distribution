@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISyndicationGenerator extends js.Object {
   var text: java.lang.String
   var uri: winrtLib.WindowsNs.FoundationNs.Uri

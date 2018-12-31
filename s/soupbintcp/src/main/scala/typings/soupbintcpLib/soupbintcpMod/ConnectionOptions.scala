@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionOptions extends js.Object {
   var heartbeatPacketType: PacketType
   var keepAliveMillis: js.UndefOr[scala.Double] = js.undefined

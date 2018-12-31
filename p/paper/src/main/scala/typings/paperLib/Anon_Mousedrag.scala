@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Mousedrag extends js.Object {
   var click: js.UndefOr[
     js.Function1[/* event */ paperLib.paperNs.MouseEvent, scala.Unit | scala.Boolean]

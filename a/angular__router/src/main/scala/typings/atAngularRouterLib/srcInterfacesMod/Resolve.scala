@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Resolve[T] extends js.Object {
   def resolve(
     route: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot,

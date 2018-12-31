@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParsedQuery[TContext] extends js.Object {
   var context: TContext
   var extensions: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
@@ -14,7 +13,7 @@ trait Anon_ParsedQuery[TContext] extends js.Object {
   var persistedQueryRegister: js.UndefOr[scala.Boolean] = js.undefined
   var queryString: js.UndefOr[java.lang.String] = js.undefined
   var request: apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request
-  var requestContext: js.Any
+  var requestContext: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify GraphQLRequestContext<TContext> */ js.Any
   var variables: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
 }
 

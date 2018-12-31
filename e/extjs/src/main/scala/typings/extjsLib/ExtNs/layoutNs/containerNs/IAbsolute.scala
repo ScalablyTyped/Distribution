@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAbsolute extends IAnchor {
   /** [Config Option] (Boolean) */
   var ignoreOnContentChange: js.UndefOr[scala.Boolean] = js.undefined

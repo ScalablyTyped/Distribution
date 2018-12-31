@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSPage extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.page | sketchappLib.sketchappLibStrings.layer
   var attributedString: SketchMSAttributedString

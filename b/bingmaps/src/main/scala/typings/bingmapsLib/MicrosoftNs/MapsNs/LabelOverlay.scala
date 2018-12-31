@@ -12,9 +12,9 @@ sealed trait LabelOverlay extends js.Object
 @js.native
 object LabelOverlay extends js.Object {
   /**
-          * Map labels are hidden. Note that this will have no effect on road maps unless the allowHidingLabelsOfRoad map option
-          * is set to true.
-          */
+    * Map labels are hidden. Note that this will have no effect on road maps unless the allowHidingLabelsOfRoad map option
+    * is set to true.
+    */
   @js.native
   sealed trait hidden
     extends bingmapsLib.MicrosoftNs.MapsNs.LabelOverlay

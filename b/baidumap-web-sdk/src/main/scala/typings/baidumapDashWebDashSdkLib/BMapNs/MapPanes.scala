@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapPanes extends js.Object {
   var floatPane: js.UndefOr[stdLib.HTMLElement] = js.undefined
   var floatShadow: js.UndefOr[stdLib.HTMLElement] = js.undefined

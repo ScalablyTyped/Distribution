@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OutlinedTextFieldProps extends BaseTextFieldProps {
   var InputProps: js.UndefOr[
     stdLib.Partial[atMaterialDashUiCoreLib.outlinedinputOutlinedInputMod.OutlinedInputProps]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImagePickerIOSStatic extends js.Object {
   def canRecordVideos(callback: js.Function1[/* value */ scala.Boolean, scala.Unit]): scala.Unit
   def canUseCamera(callback: js.Function1[/* value */ scala.Boolean, scala.Unit]): scala.Unit

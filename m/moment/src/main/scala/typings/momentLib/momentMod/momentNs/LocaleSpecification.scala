@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocaleSpecification
   extends // Allow anything: in general any property that is passed as locale spec is
 // put in the locale object so it can be used by locale functions

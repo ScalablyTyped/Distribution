@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ProcessType extends js.Object {
   var ConnectedServiceKind: Anon_EnumValuesAnonCustomChef
   var Process: js.Any

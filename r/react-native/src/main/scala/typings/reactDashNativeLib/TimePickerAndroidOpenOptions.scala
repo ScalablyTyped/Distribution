@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimePickerAndroidOpenOptions extends js.Object {
   var hour: js.UndefOr[scala.Double] = js.undefined
   var is24Hour: js.UndefOr[scala.Boolean] = js.undefined

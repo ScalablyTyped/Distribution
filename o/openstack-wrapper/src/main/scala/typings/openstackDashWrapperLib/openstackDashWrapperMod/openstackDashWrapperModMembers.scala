@@ -13,7 +13,7 @@ object openstackDashWrapperModMembers extends js.Object {
     password: java.lang.String,
     project_id: java.lang.String,
     keystone_url: java.lang.String,
-    cb: js.Function1[/* repeated */js.Any, _]
+    cb: js.Function1[/* repeated */ js.Any, _]
   ): scala.Unit = js.native
 }
 

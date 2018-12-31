@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRest extends IAjax {
   /** [Config Option] (Boolean) */
   var appendId: js.UndefOr[scala.Boolean] = js.undefined

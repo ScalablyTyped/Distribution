@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpreadsheetPdf extends js.Object {
   var area: js.UndefOr[java.lang.String] = js.undefined
   var author: js.UndefOr[java.lang.String] = js.undefined

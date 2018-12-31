@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RoughEaseConfig extends js.Object {
   var clamp: js.UndefOr[scala.Boolean] = js.undefined
   var points: js.UndefOr[scala.Double] = js.undefined

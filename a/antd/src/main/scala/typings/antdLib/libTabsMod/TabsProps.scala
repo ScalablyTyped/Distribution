@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TabsProps extends js.Object {
   var activeKey: js.UndefOr[java.lang.String] = js.undefined
   var animated: js.UndefOr[scala.Boolean | antdLib.Anon_InkBar] = js.undefined

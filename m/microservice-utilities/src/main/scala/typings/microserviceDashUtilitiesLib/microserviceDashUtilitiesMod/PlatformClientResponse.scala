@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlatformClientResponse[T] extends js.Object {
   var config: js.Object
   var data: js.UndefOr[T] = js.undefined

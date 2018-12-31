@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait strings
   extends atMaterialBaseLib.foundationMod.MDCStrings {
   var FRAME_SELECTOR: atMaterialTabsLib.atMaterialTabsLibStrings.`DOTmdc-tab-bar-scroller__scroll-frame`

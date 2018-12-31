@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScheduleLocalNotificationDetails extends js.Object {
   var alertAction: java.lang.String
   var alertBody: java.lang.String

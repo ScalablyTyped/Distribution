@@ -8,18 +8,19 @@ import scala.scalajs.js.annotation._
 /** Represents the category of a feed or an item. This class encapsulates information in the /rss/channel/item/category element in RSS 2.0 or the atom:category element in Atom 1.0. */
 @JSGlobal("Windows.Web.Syndication.SyndicationCategory")
 @js.native
+/** Creates a SyndicationCategory object. */
 class SyndicationCategory () extends js.Object {
   /**
-                   * Creates a SyndicationCategory object with the specified term property.
-                   * @param term A string that identifies the category. This parameter represents the required term attribute on atom:category or the text content of the category element in RSS 2.0.
-                   */
+    * Creates a SyndicationCategory object with the specified term property.
+    * @param term A string that identifies the category. This parameter represents the required term attribute on atom:category or the text content of the category element in RSS 2.0.
+    */
   def this(term: java.lang.String) = this()
   /**
-                   * Creates SyndicationCategory object with the specified property values.
-                   * @param term A string that identifies the category.
-                   * @param scheme The scheme of the category.
-                   * @param label A label for display in end-user applications.
-                   */
+    * Creates SyndicationCategory object with the specified property values.
+    * @param term A string that identifies the category.
+    * @param scheme The scheme of the category.
+    * @param label A label for display in end-user applications.
+    */
   def this(term: java.lang.String, scheme: java.lang.String, label: java.lang.String) = this()
   /** Gets the list of custom attributes of the element. */
   var attributeExtensions: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[SyndicationAttribute] = js.native
@@ -42,10 +43,10 @@ class SyndicationCategory () extends js.Object {
   /** Gets or sets a string that identifies the category. This property represents the required term attribute on atom:category or the text content of the category element in RSS 2.0. */
   var term: java.lang.String = js.native
   /**
-                   * Generates the DOM object that represents this element, all the attributes and child elements including foreign markups. The only formats accepted by this method are Atom 1.0 and RSS 2.0.
-                   * @param format The format of the data.
-                   * @return The DOM object that represents this element, and all the attributes and child elements, including foreign markups.
-                   */
+    * Generates the DOM object that represents this element, all the attributes and child elements including foreign markups. The only formats accepted by this method are Atom 1.0 and RSS 2.0.
+    * @param format The format of the data.
+    * @return The DOM object that represents this element, and all the attributes and child elements, including foreign markups.
+    */
   def getXmlDocument(format: SyndicationFormat): winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument = js.native
 }
 

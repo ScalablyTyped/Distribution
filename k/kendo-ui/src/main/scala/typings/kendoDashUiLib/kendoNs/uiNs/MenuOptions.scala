@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MenuOptions extends js.Object {
   var activate: js.UndefOr[js.Function1[/* e */ MenuActivateEvent, scala.Unit]] = js.undefined
   var animation: js.UndefOr[scala.Boolean | MenuAnimation] = js.undefined

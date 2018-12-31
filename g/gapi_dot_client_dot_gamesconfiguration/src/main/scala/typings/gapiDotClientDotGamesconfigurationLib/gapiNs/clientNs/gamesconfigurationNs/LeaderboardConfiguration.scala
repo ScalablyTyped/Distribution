@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LeaderboardConfiguration extends js.Object {
   /** The draft data of the leaderboard. */
   var draft: js.UndefOr[LeaderboardConfigurationDetail] = js.undefined
@@ -20,11 +19,11 @@ trait LeaderboardConfiguration extends js.Object {
   /** Minimum score that can be posted to this leaderboard. */
   var scoreMin: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The type of the leaderboard.
-               * Possible values are:
-               * - "LARGER_IS_BETTER" - Larger scores posted are ranked higher.
-               * - "SMALLER_IS_BETTER" - Smaller scores posted are ranked higher.
-               */
+    * The type of the leaderboard.
+    * Possible values are:
+    * - "LARGER_IS_BETTER" - Larger scores posted are ranked higher.
+    * - "SMALLER_IS_BETTER" - Smaller scores posted are ranked higher.
+    */
   var scoreOrder: js.UndefOr[java.lang.String] = js.undefined
   /** The token for this resource. */
   var token: js.UndefOr[java.lang.String] = js.undefined

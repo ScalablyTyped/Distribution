@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FieldList_FldListDragOver_Parameter extends js.Object {
   val SourceCtlName: java.lang.String
   val SourceFieldList: scala.Double

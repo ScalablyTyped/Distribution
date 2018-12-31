@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CSSBeautifyOptions extends js.Object {
   var end_with_newline: js.UndefOr[scala.Boolean] = js.undefined
   var eol: js.UndefOr[java.lang.String] = js.undefined

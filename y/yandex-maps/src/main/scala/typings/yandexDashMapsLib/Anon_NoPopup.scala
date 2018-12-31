@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NoPopup extends js.Object {
   var adjustMapMargin: js.UndefOr[scala.Boolean] = js.undefined
   var boundedBy: js.UndefOr[js.Array[js.Array[scala.Double]]] = js.undefined

@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class MidiControlChangeMessage protected () extends js.Object {
   /**
-                   * Creates a new MidiControlChangeMessage object.
-                   * @param channel The channel from 0-15 that this message applies to.
-                   * @param controller The controller from 0-127 to receive this message.
-                   * @param controlValue The value from 0-127 to apply to the controller .
-                   */
+    * Creates a new MidiControlChangeMessage object.
+    * @param channel The channel from 0-15 that this message applies to.
+    * @param controller The controller from 0-127 to receive this message.
+    * @param controlValue The value from 0-127 to apply to the controller .
+    */
   def this(channel: scala.Double, controller: scala.Double, controlValue: scala.Double) = this()
   /** Gets the channel from 0-15 that this message applies to. */
   var channel: scala.Double = js.native

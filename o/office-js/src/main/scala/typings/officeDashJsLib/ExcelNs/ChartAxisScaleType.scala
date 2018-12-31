@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ChartAxisScaleType extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.7]
-     */
+  * [Api set: ExcelApi 1.7]
+  */
 @JSGlobal("Excel.ChartAxisScaleType")
 @js.native
 object ChartAxisScaleType extends js.Object {

@@ -5,6 +5,7 @@
 //                 AntiMoron <https://github.com/AntiMoron>
 //                 Liveangela <https://github.com/liveangela>
 //                 Ovilia <https://github.com/Ovilia>
+//                 Roman <https://github.com/iRON5>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 ```

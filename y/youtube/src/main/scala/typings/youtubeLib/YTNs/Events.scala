@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Events extends js.Object {
   /**
   		 * Event fired to indicate thath the player has loaded, or unloaded, a module

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShellTask extends js.Object {
   /** The shell command to run. */
   var command: js.UndefOr[java.lang.String] = js.undefined

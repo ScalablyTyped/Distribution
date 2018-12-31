@@ -6,65 +6,64 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Condition that must evaluate to true
-     */
-
+  * Condition that must evaluate to true
+  */
 trait ElementDefinitionConstraint extends Element {
   /**
-           * Contains extended information for property 'expression'.
-           */
+    * Contains extended information for property 'expression'.
+    */
   var _expression: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'human'.
-           */
+    * Contains extended information for property 'human'.
+    */
   var _human: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'key'.
-           */
+    * Contains extended information for property 'key'.
+    */
   var _key: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'requirements'.
-           */
+    * Contains extended information for property 'requirements'.
+    */
   var _requirements: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'severity'.
-           */
+    * Contains extended information for property 'severity'.
+    */
   var _severity: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'source'.
-           */
+    * Contains extended information for property 'source'.
+    */
   var _source: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'xpath'.
-           */
+    * Contains extended information for property 'xpath'.
+    */
   var _xpath: js.UndefOr[Element] = js.undefined
   /**
-           * FHIRPath expression of constraint
-           */
+    * FHIRPath expression of constraint
+    */
   var expression: java.lang.String
   /**
-           * Human description of constraint
-           */
+    * Human description of constraint
+    */
   var human: java.lang.String
   /**
-           * Target of 'condition' reference above
-           */
+    * Target of 'condition' reference above
+    */
   var key: id
   /**
-           * Why this constraint is necessary or appropriate
-           */
+    * Why this constraint is necessary or appropriate
+    */
   var requirements: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * error | warning
-           */
+    * error | warning
+    */
   var severity: code
   /**
-           * Reference to original source of constraint
-           */
+    * Reference to original source of constraint
+    */
   var source: js.UndefOr[uri] = js.undefined
   /**
-           * XPath expression of constraint
-           */
+    * XPath expression of constraint
+    */
   var xpath: js.UndefOr[java.lang.String] = js.undefined
 }
 

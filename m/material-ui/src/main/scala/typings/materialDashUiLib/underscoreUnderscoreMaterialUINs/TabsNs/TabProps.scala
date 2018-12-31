@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TabProps
   extends materialDashUiLib.underscoreUnderscoreMaterialUINs.SharedEnhancedButtonProps[Tab] {
   var buttonStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

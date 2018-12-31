@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GooglePrivacyDlpV2beta1RiskAnalysisOperationResult extends js.Object {
   var categoricalStatsResult: js.UndefOr[GooglePrivacyDlpV2beta1CategoricalStatsResult] = js.undefined
   var kAnonymityResult: js.UndefOr[GooglePrivacyDlpV2beta1KAnonymityResult] = js.undefined

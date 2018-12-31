@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TargetHttpProxiesResource extends js.Object {
   /** Deletes the specified TargetHttpProxy resource. */
   def delete(

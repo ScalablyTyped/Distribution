@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Argument extends js.Object {
   var default: ValueDescription
   /** A list of extended attributes. */

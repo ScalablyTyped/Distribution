@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapLayerDefaults extends js.Object {
   var bing: js.UndefOr[MapLayerDefaultsBing] = js.undefined
   var bubble: js.UndefOr[MapLayerDefaultsBubble] = js.undefined

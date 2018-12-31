@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReplaceRetWithRet extends js.Object {
   var in: js.Function1[/* collection */ js.Any, ReplaceExpression]
   var `in_`: js.Function1[/* collection */ js.Any, ReplaceExpression]

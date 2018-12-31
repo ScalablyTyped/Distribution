@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JNotifyOptions extends js.Object {
   var disappearTime: js.UndefOr[scala.Double] = js.undefined
   var permanent: js.UndefOr[scala.Boolean] = js.undefined

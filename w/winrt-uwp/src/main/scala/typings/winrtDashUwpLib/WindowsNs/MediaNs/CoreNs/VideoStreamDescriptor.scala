@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class VideoStreamDescriptor protected () extends js.Object {
   /**
-                   * Creates an instance of the VideoEncodingProperties class using the specified video encoding.
-                   * @param encodingProperties The encoding properties for the video stream.
-                   */
+    * Creates an instance of the VideoEncodingProperties class using the specified video encoding.
+    * @param encodingProperties The encoding properties for the video stream.
+    */
   def this(encodingProperties: winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.VideoEncodingProperties) = this()
   /** Gets the encoding properties on the video stream. */
   var encodingProperties: winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.VideoEncodingProperties = js.native

@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * A Panel is a GraphObject that holds other GraphObjects as its elements.
-    * A Panel is responsible for sizing and positioning its elements.
-    * Every Panel has a .type and establishes its own coordinate system. The .type of a Panel
-    * determines how it will size and arrange its elements.
-    */
+  * A Panel is a GraphObject that holds other GraphObjects as its elements.
+  * A Panel is responsible for sizing and positioning its elements.
+  * Every Panel has a .type and establishes its own coordinate system. The .type of a Panel
+  * determines how it will size and arrange its elements.
+  */
 @js.native
 trait Panel extends GraphObject {
   /**This read-only property returns the number of columns in this Panel if it is of .type Panel.Table.*/
@@ -68,93 +68,87 @@ trait Panel extends GraphObject {
   /**Gets or sets how a .Viewbox panel will resize its content.*/
   var viewboxStretch: EnumValue = js.native
   /**
-          * Adds a GraphObject to the end of this Panel's list of elements, visually in front of all of the other elements.
-          * @param {GraphObject} element A GraphObject.
-          */
+    * Adds a GraphObject to the end of this Panel's list of elements, visually in front of all of the other elements.
+    * @param {GraphObject} element A GraphObject.
+    */
   def add(element: GraphObject): scala.Unit = js.native
   /**
-          * Returns the GraphObject in this Panel's list of elements at the specified index.
-          * @param {number} idx a zero-based index
-          */
+    * Returns the GraphObject in this Panel's list of elements at the specified index.
+    * @param {number} idx a zero-based index
+    */
   def elt(idx: scala.Double): GraphObject = js.native
   /**
-          * Returns the cell at a given x-coordinate in local coordinates.
-          * @param {number} x
-          */
+    * Returns the cell at a given x-coordinate in local coordinates.
+    * @param {number} x
+    */
   def findColumnForLocalX(x: scala.Double): scala.Double = js.native
   /**
-          * Return the Panel that was made for a particular data object in this panel's itemArray.
-          * If this returns a Panel, its data property will be the argument data object.
-          */
+    * Return the Panel that was made for a particular data object in this panel's itemArray.
+    * If this returns a Panel, its data property will be the argument data object.
+    */
   def findItemPanelForData(data: js.Object): Panel = js.native
   /**
-          * Returns the first immediate child element with GraphObject.isPanelMain set to true,
-          * or if there is no such child element, just the first element.
-          */
+    * Returns the first immediate child element with GraphObject.isPanelMain set to true,
+    * or if there is no such child element, just the first element.
+    */
   def findMainElement(): GraphObject = js.native
   /**
-          * Search the visual tree starting at this Panel for a GraphObject whose GraphObject.name is the given name.
-          * @param {string} name The name to search for, using a case-sensitive string comparison.
-          */
+    * Search the visual tree starting at this Panel for a GraphObject whose GraphObject.name is the given name.
+    * @param {string} name The name to search for, using a case-sensitive string comparison.
+    */
   def findObject(name: java.lang.String): GraphObject = js.native
   /**
-          * Returns the row at a given y-coordinate in local coordinates.
-          * @param {number} y
-          */
+    * Returns the row at a given y-coordinate in local coordinates.
+    * @param {number} y
+    */
   def findRowForLocalY(y: scala.Double): scala.Double = js.native
   /**
-          * Gets the RowColumnDefinition for a particular column in this Table Panel.
-          * @param {number} idx the non-negative zero-based integer column index.
-          */
+    * Gets the RowColumnDefinition for a particular column in this Table Panel.
+    * @param {number} idx the non-negative zero-based integer column index.
+    */
   def getColumnDefinition(idx: scala.Double): RowColumnDefinition = js.native
   /**
-          * Gets the RowColumnDefinition for a particular row in this Table Panel.
-          * @param {number} idx the non-negative zero-based integer row index.
-          */
+    * Gets the RowColumnDefinition for a particular row in this Table Panel.
+    * @param {number} idx the non-negative zero-based integer row index.
+    */
   def getRowDefinition(idx: scala.Double): RowColumnDefinition = js.native
   /**
-          * Adds a GraphObject to the Panel's list of elements at the specified index.
-          * @param {number} index
-          * @param {GraphObject} element A GraphObject.
-          */
+    * Adds a GraphObject to the Panel's list of elements at the specified index.
+    * @param {number} index
+    * @param {GraphObject} element A GraphObject.
+    */
   def insertAt(index: scala.Double, element: GraphObject): scala.Unit = js.native
   /**
-          * Create and add new GraphObjects corresponding to and bound to the data in the .itemArray, after removing all existing elements from this Panel.
-          */
+    * Create and add new GraphObjects corresponding to and bound to the data in the .itemArray, after removing all existing elements from this Panel.
+    */
   def rebuildItemElements(): scala.Unit = js.native
   /**
-          * Removes a GraphObject from this Panel's list of elements.
-          * @param {GraphObject} element A GraphObject.
-          */
+    * Removes a GraphObject from this Panel's list of elements.
+    * @param {GraphObject} element A GraphObject.
+    */
   def remove(element: GraphObject): scala.Unit = js.native
   /**
-          * Removes an GraphObject from this Panel's list of elements at the specified index.
-          * @param {number} idx
-          */
+    * Removes an GraphObject from this Panel's list of elements at the specified index.
+    * @param {number} idx
+    */
   def removeAt(idx: scala.Double): scala.Unit = js.native
   /**
-          * Removes the RowColumnDefinition for a particular row in this Table Panel.
-          * @param {number} idx the non-negative zero-based integer row index.
-          */
+    * Removes the RowColumnDefinition for a particular row in this Table Panel.
+    * @param {number} idx the non-negative zero-based integer row index.
+    */
   def removeColumnDefinition(idx: scala.Double): scala.Unit = js.native
   /**
-          * Removes the RowColumnDefinition for a particular row in this Table Panel.
-          * @param {number} idx the non-negative zero-based integer row index.
-          */
+    * Removes the RowColumnDefinition for a particular row in this Table Panel.
+    * @param {number} idx the non-negative zero-based integer row index.
+    */
   def removeRowDefinition(idx: scala.Double): scala.Unit = js.native
   /**
-          * Re-evaluate all data bindings on this panel, in order to assign new property values to the GraphObjects in this visual tree based on this this object's .data property values.
-          * @param {string=} srcprop An optional source data property name:
-          *   when provided, only evaluates those Bindings that use that particular property;
-          *   when not provided or when it is the empty string, all bindings are evaluated.
-          */
+    * Re-evaluate all data bindings on this panel, in order to assign new property values to the GraphObjects in this visual tree based on this this object's .data property values.
+    * @param {string=} srcprop An optional source data property name:
+    *   when provided, only evaluates those Bindings that use that particular property;
+    *   when not provided or when it is the empty string, all bindings are evaluated.
+    */
   def updateTargetBindings(): scala.Unit = js.native
-  /**
-          * Re-evaluate all data bindings on this panel, in order to assign new property values to the GraphObjects in this visual tree based on this this object's .data property values.
-          * @param {string=} srcprop An optional source data property name:
-          *   when provided, only evaluates those Bindings that use that particular property;
-          *   when not provided or when it is the empty string, all bindings are evaluated.
-          */
   def updateTargetBindings(srcprop: java.lang.String): scala.Unit = js.native
 }
 

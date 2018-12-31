@@ -11,28 +11,28 @@ class Tag protected () extends js.Object {
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, value: java.lang.String) = this()
   /**
-       * The tag full name. When the original tag used the short name, `name` will return the full name.
-       */
+    * The tag full name. When the original tag used the short name, `name` will return the full name.
+    */
   var name: java.lang.String = js.native
   /**
-       * The original tag name that was used to construct the tag.
-       */
+    * The original tag name that was used to construct the tag.
+    */
   var originalName: java.lang.String = js.native
   /**
-       * The tag value
-       */
+    * The tag value
+    */
   var value: java.lang.String | scala.Null = js.native
   /**
-       * Checks whether the tag value is a non-empty string.
-       */
+    * Checks whether the tag value is a non-empty string.
+    */
   def hasValue(): scala.Boolean = js.native
   /**
-       * Checks whether the tag is either a standard meta tag or a custom meta directive (`{x_some_name}`)
-       */
+    * Checks whether the tag is either a standard meta tag or a custom meta directive (`{x_some_name}`)
+    */
   def isMetaTag(): scala.Boolean = js.native
   /**
-       * Checks whether the tag is usually rendered inline. It currently only applies to comment tags.
-       */
+    * Checks whether the tag is usually rendered inline. It currently only applies to comment tags.
+    */
   def isRenderable(): scala.Boolean = js.native
 }
 

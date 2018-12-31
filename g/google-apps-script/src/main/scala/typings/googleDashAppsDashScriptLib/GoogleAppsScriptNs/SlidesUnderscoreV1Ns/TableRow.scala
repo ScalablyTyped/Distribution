@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableRow extends js.Object {
   // Height of a row.
   var row_height: Dimension

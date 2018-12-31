@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateValuesResponse extends js.Object {
   /** The spreadsheet the updates were applied to. */
   var spreadsheetId: js.UndefOr[java.lang.String] = js.undefined
@@ -14,10 +13,10 @@ trait UpdateValuesResponse extends js.Object {
   /** The number of columns where at least one cell in the column was updated. */
   var updatedColumns: js.UndefOr[scala.Double] = js.undefined
   /**
-               * The values of the cells after updates were applied.
-               * This is only included if the request's `includeValuesInResponse` field
-               * was `true`.
-               */
+    * The values of the cells after updates were applied.
+    * This is only included if the request's `includeValuesInResponse` field
+    * was `true`.
+    */
   var updatedData: js.UndefOr[ValueRange] = js.undefined
   /** The range (in A1 notation) that updates were applied to. */
   var updatedRange: js.UndefOr[java.lang.String] = js.undefined

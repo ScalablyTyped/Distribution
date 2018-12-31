@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SkillsRequestObject extends js.Object {
   var attempts: js.UndefOr[NumberRequest] = js.undefined
   var limit_number: js.UndefOr[scala.Double] = js.undefined

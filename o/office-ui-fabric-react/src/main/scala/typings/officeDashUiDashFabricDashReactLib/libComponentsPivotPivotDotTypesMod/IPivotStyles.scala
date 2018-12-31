@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPivotStyles extends js.Object {
   var count: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   var icon: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
@@ -13,8 +12,8 @@ trait IPivotStyles extends js.Object {
   var linkContent: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   var linkIsSelected: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   /**
-       * Style for the root element.
-       */
+    * Style for the root element.
+    */
   var root: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   var text: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
 }

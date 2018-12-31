@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CalendarsResource extends js.Object {
   /** Clears a primary calendar. This operation deletes all events associated with the primary calendar of an account. */
   def clear(request: gapiDotClientDotCalendarLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

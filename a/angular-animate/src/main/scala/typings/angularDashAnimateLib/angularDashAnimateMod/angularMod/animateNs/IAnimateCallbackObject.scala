@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAnimateCallbackObject extends js.Object {
   var addClass: js.UndefOr[
     js.Function4[

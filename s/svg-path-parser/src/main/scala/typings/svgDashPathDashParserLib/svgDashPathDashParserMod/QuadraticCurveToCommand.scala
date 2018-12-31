@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QuadraticCurveToCommand extends js.Object {
   var code: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.q | svgDashPathDashParserLib.svgDashPathDashParserLibStrings.Q
   var command: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.`quadratic curveto`

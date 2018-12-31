@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WitRequest extends js.Object {
   var context: js.UndefOr[WitContext] = js.undefined
   var entities: js.UndefOr[js.Array[WitEntity]] = js.undefined

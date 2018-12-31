@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBaseHttpAdapter extends IBaseAdapter {
   var basePath: js.UndefOr[java.lang.String] = js.undefined
   var forceTrailingSlash: js.UndefOr[scala.Boolean] = js.undefined

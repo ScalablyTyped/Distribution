@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditorProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var formats: js.UndefOr[js.Array[_]] = js.undefined

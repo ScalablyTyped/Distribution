@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_StepsToIncrement extends js.Object {
   /** The ID of the achievement used by this method. */
   var achievementId: java.lang.String
@@ -22,14 +21,14 @@ trait Anon_StepsToIncrement extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * A randomly generated numeric ID for each request specified by the caller. This number is used at the server to ensure that the request is handled
-                   * correctly across retries.
-                   */
+    * A randomly generated numeric ID for each request specified by the caller. This number is used at the server to ensure that the request is handled
+    * correctly across retries.
+    */
   var requestId: js.UndefOr[java.lang.String] = js.undefined
   /** The number of steps to increment. */
   var stepsToIncrement: scala.Double

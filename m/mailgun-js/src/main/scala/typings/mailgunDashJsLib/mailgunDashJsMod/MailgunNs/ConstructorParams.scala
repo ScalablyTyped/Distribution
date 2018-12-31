@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConstructorParams extends js.Object {
   var apiKey: java.lang.String
   var domain: java.lang.String

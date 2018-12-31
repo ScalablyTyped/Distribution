@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlatformReflectionCapabilities extends js.Object {
   /**
-       * Return a list of annotations declared on the class
-       */
+    * Return a list of annotations declared on the class
+    */
   def annotations(`type`: atAngularCoreLib.srcTypeMod.Type[_]): js.Array[_]
   def factory(`type`: atAngularCoreLib.srcTypeMod.Type[_]): js.Function
   def getter(name: java.lang.String): atAngularCoreLib.srcReflectionTypesMod.GetterFn
@@ -19,12 +18,12 @@ trait PlatformReflectionCapabilities extends js.Object {
   def isReflectionEnabled(): scala.Boolean
   def method(name: java.lang.String): atAngularCoreLib.srcReflectionTypesMod.MethodFn
   /**
-       * Return a list of annotations/types for constructor parameters
-       */
+    * Return a list of annotations/types for constructor parameters
+    */
   def parameters(`type`: atAngularCoreLib.srcTypeMod.Type[_]): js.Array[js.Array[_]]
   /**
-       * Return a object literal which describes the annotations on Class fields/properties.
-       */
+    * Return a object literal which describes the annotations on Class fields/properties.
+    */
   def propMetadata(typeOrFunc: atAngularCoreLib.srcTypeMod.Type[_]): org.scalablytyped.runtime.StringDictionary[js.Array[_]]
   def resolveEnum(enumIdentifier: js.Any, name: java.lang.String): js.Any
   def resolveIdentifier(

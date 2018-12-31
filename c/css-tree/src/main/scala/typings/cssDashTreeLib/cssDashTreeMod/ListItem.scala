@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListItem[TData] extends js.Object {
   var data: TData
   var next: ListItem[TData] | scala.Null

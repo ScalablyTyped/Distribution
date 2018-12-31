@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("aws-sdk", "ECSCredentials")
 @js.native
+/**
+  * Represents credentials received.
+  * @param {object} options - Override the default (1s) timeout period.
+  */
 class ECSCredentials ()
   extends awsDashSdkLib.libCoreMod.ECSCredentials {
-  /**
-           * Represents credentials received.
-           * @param {object} options - Override the default (1s) timeout period.
-           */
   def this(options: awsDashSdkLib.libCredentialsEcsUnderscoreCredentialsMod.ECSCredentialsOptions) = this()
 }
 

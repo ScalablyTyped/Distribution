@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * Position property
 	 */
-
 trait PositionAdjust extends js.Object {
   var method: js.UndefOr[java.lang.String] = js.undefined
   var mouse: js.UndefOr[scala.Boolean] = js.undefined

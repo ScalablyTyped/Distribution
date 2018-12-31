@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BlogPerUserInfo extends js.Object {
   /** ID of the Blog resource */
   var blogId: js.UndefOr[java.lang.String] = js.undefined

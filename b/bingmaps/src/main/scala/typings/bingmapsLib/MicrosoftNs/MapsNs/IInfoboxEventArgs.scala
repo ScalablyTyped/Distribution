@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IInfoboxEventArgs extends js.Object {
   /** The event that occurred. **/
   var eventName: java.lang.String

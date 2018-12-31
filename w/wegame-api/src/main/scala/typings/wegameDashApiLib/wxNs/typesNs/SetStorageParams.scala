@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SetStorageParams extends js.Object {
   var complete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var data: js.Any

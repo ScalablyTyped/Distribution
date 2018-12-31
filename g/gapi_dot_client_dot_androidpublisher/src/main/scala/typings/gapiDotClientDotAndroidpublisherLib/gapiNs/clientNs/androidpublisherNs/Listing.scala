@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Listing extends js.Object {
   /** Full description of the app; this may be up to 4000 characters in length. */
   var fullDescription: js.UndefOr[java.lang.String] = js.undefined

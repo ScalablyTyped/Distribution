@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents the info about a significant other for a contact. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactSignificantOther")
 @js.native
+/** Initializes a new instance of a ContactSignificantOther class. */
 class ContactSignificantOther () extends js.Object {
   /** Gets and sets the description of a significant other for a contact. The maximum string length for the description is 512 characters. */
   var description: java.lang.String = js.native

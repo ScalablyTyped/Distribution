@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Classes extends js.Object {
   var afterOpen: java.lang.String
   var base: java.lang.String

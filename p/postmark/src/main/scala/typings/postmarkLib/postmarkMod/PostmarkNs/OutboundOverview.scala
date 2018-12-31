@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // outbound overview
-
 trait OutboundOverview extends js.Object {
   var BounceRate: scala.Double
   var Bounced: scala.Double

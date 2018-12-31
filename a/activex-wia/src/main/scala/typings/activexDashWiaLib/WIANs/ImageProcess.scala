@@ -18,8 +18,6 @@ class ImageProcess protected () extends js.Object {
   var `WIA.ImageProcess_typekey`: ImageProcess = js.native
   /** Takes the specified ImageFile and returns the new ImageFile with all the filters applied on success */
   def Apply(Source: ImageFile): ImageFile = js.native
-  /** Returns the specified item in the collection either by position or name */
-  /** A collection of all available filters */
   def FilterInfos(Index: java.lang.String): FilterInfo = js.native
   /** Returns the specified item in the collection either by position or name */
   /** A collection of all available filters */

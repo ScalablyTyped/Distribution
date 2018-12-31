@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICustomString extends ICustomControl {
   var defaultValue: java.lang.String
   var expression: ExpressionType

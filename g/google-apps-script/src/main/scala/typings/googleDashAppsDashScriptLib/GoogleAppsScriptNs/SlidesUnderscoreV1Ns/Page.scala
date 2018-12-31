@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Page extends js.Object {
   // The object ID for this page. Object IDs used by
   // Page and PageElement share the same namespace.

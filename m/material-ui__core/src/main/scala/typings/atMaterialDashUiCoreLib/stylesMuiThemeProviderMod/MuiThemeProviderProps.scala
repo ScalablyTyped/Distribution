@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MuiThemeProviderProps extends js.Object {
   var children: reactLib.reactMod.ReactNs.ReactNode
   var disableStylesGeneration: js.UndefOr[scala.Boolean] = js.undefined

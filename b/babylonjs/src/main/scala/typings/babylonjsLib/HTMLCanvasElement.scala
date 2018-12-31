@@ -14,7 +14,6 @@ trait HTMLCanvasElement extends js.Object {
   var webkitRequestPointerLock: js.UndefOr[js.Function0[scala.Unit]] = js.native
   /** Capture Stream method defined by some browsers */
   def captureStream(): stdLib.MediaStream = js.native
-  /** Capture Stream method defined by some browsers */
   def captureStream(fps: scala.Double): stdLib.MediaStream = js.native
   def requestPointerLock(): scala.Unit = js.native
 }

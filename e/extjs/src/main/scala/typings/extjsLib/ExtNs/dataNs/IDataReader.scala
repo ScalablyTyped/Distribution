@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDataReader
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Method] Takes a raw response object as passed to the read method and returns the useful data segment from it

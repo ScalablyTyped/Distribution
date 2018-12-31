@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FunctionOptions extends js.Object {
   var behavior: js.UndefOr[
     nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.IMMUTABLE | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.STABLE | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.VOLATILE

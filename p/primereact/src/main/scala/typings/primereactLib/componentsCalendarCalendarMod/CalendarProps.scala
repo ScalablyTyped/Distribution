@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CalendarProps extends js.Object {
   var appendTo: js.UndefOr[js.Any] = js.undefined
   var autoZIndex: js.UndefOr[scala.Boolean] = js.undefined
@@ -38,11 +37,11 @@ trait CalendarProps extends js.Object {
   var onFocus: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
   var onInput: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
   var onSelect: js.UndefOr[
-    js.Function1[/* e */ primereactLib.Anon_OriginalEventValueEventDate_182695810, scala.Unit]
+    js.Function1[/* e */ primereactLib.Anon_OriginalEventValueEventDate_641908380, scala.Unit]
   ] = js.undefined
   var onTodayButtonClick: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
   var onViewDateChange: js.UndefOr[
-    js.Function1[/* e */ primereactLib.Anon_OriginalEventValueEventDate_182695810, scala.Unit]
+    js.Function1[/* e */ primereactLib.Anon_OriginalEventValueEventDate_641908380, scala.Unit]
   ] = js.undefined
   var panelClassName: js.UndefOr[java.lang.String] = js.undefined
   var panelStyle: js.UndefOr[js.Object] = js.undefined

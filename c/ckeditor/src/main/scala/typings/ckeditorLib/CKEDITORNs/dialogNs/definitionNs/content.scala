@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait content extends js.Object {
   var accessKey: js.UndefOr[java.lang.String] = js.undefined
   var elements: js.UndefOr[js.Array[uiElement]] = js.undefined

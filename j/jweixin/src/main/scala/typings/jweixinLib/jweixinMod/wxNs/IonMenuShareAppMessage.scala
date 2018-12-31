@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IonMenuShareAppMessage extends BaseParams {
   		// 分享类型,music、video或link，不填默认为link
   var dataUrl: js.UndefOr[java.lang.String] = js.undefined

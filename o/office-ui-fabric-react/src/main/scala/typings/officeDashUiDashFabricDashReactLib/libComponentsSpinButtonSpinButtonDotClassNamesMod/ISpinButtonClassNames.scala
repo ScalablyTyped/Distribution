@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISpinButtonClassNames extends js.Object {
   var arrowBox: java.lang.String
   var icon: java.lang.String

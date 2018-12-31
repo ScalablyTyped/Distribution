@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObjectMeta extends js.Object {
    // object last modified GMT date, e.g.: 2015-02-19T08:39:44.000Z
   var etag: java.lang.String

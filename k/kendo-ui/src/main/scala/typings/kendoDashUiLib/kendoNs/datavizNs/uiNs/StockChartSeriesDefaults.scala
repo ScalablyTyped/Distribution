@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StockChartSeriesDefaults extends js.Object {
   var area: js.UndefOr[js.Any] = js.undefined
   var border: js.UndefOr[StockChartSeriesDefaultsBorder] = js.undefined

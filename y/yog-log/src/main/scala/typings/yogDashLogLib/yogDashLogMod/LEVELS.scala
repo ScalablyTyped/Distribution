@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LEVELS extends js.Object {
   // 访问日志
   var `0`: yogDashLogLib.yogDashLogLibStrings.ACCESS

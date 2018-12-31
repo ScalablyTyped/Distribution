@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * Helper object for generating large-format notifications that include a lot of text.
 		 */
-
 trait BigTextStyle
   extends titaniumLib.TitaniumNs.Proxy {
   /**

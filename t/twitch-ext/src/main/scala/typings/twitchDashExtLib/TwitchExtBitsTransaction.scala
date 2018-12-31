@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TwitchExtBitsTransaction extends js.Object {
   /**
   	 * Display name of the user who executed the Bits in Extensions transaction.

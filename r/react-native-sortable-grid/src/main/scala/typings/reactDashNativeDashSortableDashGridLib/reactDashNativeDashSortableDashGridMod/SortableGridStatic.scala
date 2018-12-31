@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait SortableGridStatic
   extends reactLib.reactMod.ReactNs.ClassicComponentClass[SortableGridProps] {
   /**
-       * Calling this will toggle item deletion mode on/off.
-       */
+    * Calling this will toggle item deletion mode on/off.
+    */
   def toggleDeleteMode(): reactDashNativeDashSortableDashGridLib.Anon_DeleteModeOn = js.native
 }
 

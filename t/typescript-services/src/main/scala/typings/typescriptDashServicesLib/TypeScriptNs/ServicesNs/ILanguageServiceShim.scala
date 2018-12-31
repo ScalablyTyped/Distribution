@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILanguageServiceShim extends IShim {
   var languageService: ILanguageService
   def cleanupSemanticCache(): scala.Unit

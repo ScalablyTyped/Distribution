@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITooltipStatus extends js.Object {
   /** if the tooltip has been destroyed */
   var destroyed: scala.Boolean

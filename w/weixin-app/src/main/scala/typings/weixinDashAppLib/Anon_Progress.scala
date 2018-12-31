@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Progress extends js.Object {
   /** 下载进度百分比 */
   var progress: scala.Double

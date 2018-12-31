@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PhotoCapabilities extends js.Object {
   val fillLightMode: js.Array[FillLightMode]
   val imageHeight: MediaSettingsRange

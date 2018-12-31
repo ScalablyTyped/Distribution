@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JsonStyle extends js.Object {
   /** True if input has a comment token. */
   var has_comments: scala.Boolean

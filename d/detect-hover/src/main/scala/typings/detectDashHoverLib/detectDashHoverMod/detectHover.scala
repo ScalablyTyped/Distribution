@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait detectHover extends js.Object {
   var anyHover: scala.Boolean
   var anyNone: scala.Boolean

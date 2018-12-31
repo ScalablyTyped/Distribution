@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Correction extends js.Object {
   /** The contexts for the correction. */
   var contexts: js.UndefOr[js.Array[ServingContext]] = js.undefined

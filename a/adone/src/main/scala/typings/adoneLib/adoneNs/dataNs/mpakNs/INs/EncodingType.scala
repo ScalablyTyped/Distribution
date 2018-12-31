@@ -8,26 +8,26 @@ import scala.scalajs.js.annotation._
 @js.native
 trait EncodingType extends js.Object {
   /**
-                       * Check function
-                       */
+    * Check function
+    */
   @JSName("check")
   var check_Original: EncodeCheckFunction = js.native
   /**
-                       * Encode function
-                       */
+    * Encode function
+    */
   @JSName("encode")
   var encode_Original: EncodeFunction = js.native
   /**
-                       * Value type
-                       */
+    * Value type
+    */
   var `type`: Type = js.native
   /**
-                       * Check function
-                       */
+    * Check function
+    */
   def check(x: js.Any): scala.Boolean = js.native
   /**
-                       * Encode function
-                       */
+    * Encode function
+    */
   def encode(x: js.Any): adoneLib.adoneNs.collectionNs.ByteArray = js.native
 }
 

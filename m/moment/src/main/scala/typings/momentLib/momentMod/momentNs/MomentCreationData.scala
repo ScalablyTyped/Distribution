@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MomentCreationData extends js.Object {
   var format: js.UndefOr[MomentFormatSpecification] = js.undefined
   var input: MomentInput

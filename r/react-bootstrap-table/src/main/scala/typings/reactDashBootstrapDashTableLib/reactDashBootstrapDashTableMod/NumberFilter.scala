@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NumberFilter extends js.Object {
   /**
   	 * Default value for the filter.

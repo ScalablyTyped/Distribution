@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileListResource extends js.Object {
   var etag: java.lang.String
   var incompleteSearch: scala.Boolean

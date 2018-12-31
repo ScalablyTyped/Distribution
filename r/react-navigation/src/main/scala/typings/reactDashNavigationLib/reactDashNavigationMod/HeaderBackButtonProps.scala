@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeaderBackButtonProps extends js.Object {
   var onPress: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var pressColorAndroid: js.UndefOr[java.lang.String] = js.undefined

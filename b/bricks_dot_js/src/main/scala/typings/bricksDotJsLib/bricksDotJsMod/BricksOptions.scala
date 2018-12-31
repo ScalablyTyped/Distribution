@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BricksOptions extends js.Object {
   var container: stdLib.Node | java.lang.String
   var packed: java.lang.String

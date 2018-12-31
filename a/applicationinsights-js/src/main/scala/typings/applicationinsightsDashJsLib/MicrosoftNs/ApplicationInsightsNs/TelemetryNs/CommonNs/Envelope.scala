@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 class Envelope protected ()
   extends applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.IEnvelope {
   /**
-           * Constructs a new instance of telemetry data.
-           */
+    * Constructs a new instance of telemetry data.
+    */
   def this(data: applicationinsightsDashJsLib.MicrosoftNs.TelemetryNs.Base, name: java.lang.String) = this()
   /**
-           * The set of fields for a serializeable object.
-           * This defines the serialization order and a value of true/false
-           * for each field defines whether the field is required or not.
-           */
+    * The set of fields for a serializeable object.
+    * This defines the serialization order and a value of true/false
+    * for each field defines whether the field is required or not.
+    */
   /* CompleteClass */
   override var aiDataContract: js.Any = js.native
   /* CompleteClass */

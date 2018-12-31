@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Media model
-     */
-
+  * Media model
+  */
 trait IMediaModel extends js.Object
 

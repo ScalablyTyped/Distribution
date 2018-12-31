@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Accuracy extends js.Object {
   var micros: scala.Double
   var millis: scala.Double

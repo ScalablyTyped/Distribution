@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InappproductsListResponse extends js.Object {
   var inappproduct: js.UndefOr[js.Array[InAppProduct]] = js.undefined
   /** Identifies what kind of resource this is. Value: the fixed string "androidpublisher#inappproductsListResponse". */

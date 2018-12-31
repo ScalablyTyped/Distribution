@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Primaryclanid extends js.Object {
   var avatar: java.lang.String
   var avatarfull: java.lang.String

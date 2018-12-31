@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LinksOneHopMustContain extends js.Object {
   var linksOneHopDoesNotContain: scala.Double
   var linksOneHopMayContain: scala.Double

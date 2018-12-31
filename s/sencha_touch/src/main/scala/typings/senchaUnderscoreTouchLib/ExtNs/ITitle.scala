@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITitle extends IComponent {
   /** [Method] Returns the value of title
   		* @returns String

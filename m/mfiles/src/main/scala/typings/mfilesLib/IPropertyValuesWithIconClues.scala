@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPropertyValuesWithIconClues extends js.Object {
   val IconClues: IPropertyValueIconClues
   val ObjVer: IObjVer

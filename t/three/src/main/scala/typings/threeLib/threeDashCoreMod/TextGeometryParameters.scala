@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextGeometryParameters extends js.Object {
   var bevelEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var bevelSegments: js.UndefOr[scala.Double] = js.undefined

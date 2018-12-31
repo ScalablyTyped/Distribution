@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Path extends js.Object {
   var existing: atBabelTraverseLib.traverseMod.Binding
   var identifier: atBabelTypesLib.typesMod.Identifier

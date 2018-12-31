@@ -49,14 +49,6 @@ trait IgPivotGridMethods extends js.Object {
   	 * @param shouldUpdate A flag indicating whether the data source should be updated after the expand.
   	 */
   def collapseTupleMember(tupleLocation: java.lang.String, tupleIndex: scala.Double, memberIndex: scala.Double): scala.Boolean = js.native
-  /**
-  	 * Collapses a member from the data source and returns true if the collapse succeeds. If the data source has a pending update, the method will return false. Note that igPivotGrid to will display the expanded result after the data source is updated.
-  	 *
-  	 * @param tupleLocation The name of the parent axis - 'columnAxis' or 'rowAxis'.
-  	 * @param tupleIndex The index of the containing tuple. This index should correspond to the position of the tuple in the original unsorted result of the data source.
-  	 * @param memberIndex The index of the member in the tuple. This index should correspond to the position of the member in the original unsorted result of the data source.
-  	 * @param shouldUpdate A flag indicating whether the data source should be updated after the expand.
-  	 */
   def collapseTupleMember(
     tupleLocation: java.lang.String,
     tupleIndex: scala.Double,
@@ -79,14 +71,6 @@ trait IgPivotGridMethods extends js.Object {
   	 * @param shouldUpdate A flag indicating whether the data source should be updated after the expand.
   	 */
   def expandTupleMember(tupleLocation: java.lang.String, tupleIndex: scala.Double, memberIndex: scala.Double): scala.Boolean = js.native
-  /**
-  	 * Expands a member from the data source and returns true if the expand succeeds. If the data source has a pending update, the method will return false. Note that igPivotGrid to will display the expanded result after the data source is updated.
-  	 *
-  	 * @param tupleLocation The name of the parent axis - 'columnAxis' or 'rowAxis'.
-  	 * @param tupleIndex The index of the containing tuple. This index should correspond to the position of the tuple in the original unsorted result of the data source.
-  	 * @param memberIndex The index of the member in the tuple. This index should correspond to the position of the member in the original unsorted result of the data source.
-  	 * @param shouldUpdate A flag indicating whether the data source should be updated after the expand.
-  	 */
   def expandTupleMember(
     tupleLocation: java.lang.String,
     tupleIndex: scala.Double,

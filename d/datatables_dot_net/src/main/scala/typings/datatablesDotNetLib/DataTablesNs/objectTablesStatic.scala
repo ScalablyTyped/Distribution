@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait objectTablesStatic extends js.Object {
   /**
-           * Return a DataTables API instance for the selected tables (true) or an array (false).
-           */
+    * Return a DataTables API instance for the selected tables (true) or an array (false).
+    */
   var api: scala.Boolean
   /**
-           * Get only visible tables (true) or all tables regardless of visibility (false).
-           */
+    * Get only visible tables (true) or all tables regardless of visibility (false).
+    */
   var visible: scala.Boolean
 }
 

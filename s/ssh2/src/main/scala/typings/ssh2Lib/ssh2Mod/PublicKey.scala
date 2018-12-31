@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PublicKey extends js.Object {
   /** The name of the key algorithm. */
   var algo: java.lang.String

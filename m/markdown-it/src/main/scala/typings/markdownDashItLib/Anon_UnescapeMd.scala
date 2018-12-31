@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_UnescapeMd extends js.Object {
   def arrayReplaceAt(src: js.Array[_], pos: scala.Double, newElements: js.Array[_]): js.Array[_]
   def assign(obj: js.Any): js.Any

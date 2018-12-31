@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OptionData extends js.Object {
   var default: js.UndefOr[java.lang.String | scala.Double | scala.Boolean] = js.undefined
   var describe: java.lang.String

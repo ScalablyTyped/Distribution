@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MemoizeMap[T, U] extends js.Object {
   var clear: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   def delete(key: T): scala.Unit

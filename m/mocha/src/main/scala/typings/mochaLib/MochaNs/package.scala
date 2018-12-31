@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation._
 
 package object MochaNs {
   /**
-       * Async callback function used for tests and hooks.
-       */
+    * Async callback function used for tests and hooks.
+    */
   type AsyncFunc = js.ThisFunction0[/* this */ Context, js.Thenable[js.Any]]
   type Done = js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit]
   /**
-       * Callback function used for tests and hooks.
-       */
+    * Callback function used for tests and hooks.
+    */
   type Func = js.ThisFunction1[/* this */ Context, /* done */ Done, scala.Unit]
   /** @deprecated use `Mocha.Stats` instead. */
   type IStats = Stats
   type Interface = mochaLib.mochaLibStrings.bdd | mochaLib.mochaLibStrings.tdd | mochaLib.mochaLibStrings.qunit | mochaLib.mochaLibStrings.exports
   /**
-       * [bdd, tdd] Describe a "suite" with the given `title` and callback `fn` containing
-       * nested suites. Indicates this suite should not be executed.
-       *
-       * - _Only available when invoked via the mocha CLI._
-       *
-       * @returns [bdd] `Suite`
-       * @returns [tdd] `void`
-       */
+    * [bdd, tdd] Describe a "suite" with the given `title` and callback `fn` containing
+    * nested suites. Indicates this suite should not be executed.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    *
+    * @returns [bdd] `Suite`
+    * @returns [tdd] `void`
+    */
   type PendingSuiteFunction = js.Function2[
     /* title */ java.lang.String, 
     /* fn */ js.ThisFunction0[/* this */ Suite, scala.Unit], 

@@ -9,19 +9,19 @@ import scala.scalajs.js.annotation._
 sealed trait ChartSeriesBy extends js.Object
 
 /**
-     *
-     * Specifies whether the series are by rows or by columns. On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; on Excel Online, "auto" will simply default to "columns".
-     *
-     * [Api set: ExcelApi 1.1]
-     */
+  *
+  * Specifies whether the series are by rows or by columns. On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; on Excel Online, "auto" will simply default to "columns".
+  *
+  * [Api set: ExcelApi 1.1]
+  */
 @JSGlobal("Excel.ChartSeriesBy")
 @js.native
 object ChartSeriesBy extends js.Object {
   /**
-           *
-           * On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; on Excel Online, "auto" will simply default to "columns".
-           *
-           */
+    *
+    * On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; on Excel Online, "auto" will simply default to "columns".
+    *
+    */
   @js.native
   sealed trait auto
     extends officeDashJsDashPreviewLib.ExcelNs.ChartSeriesBy

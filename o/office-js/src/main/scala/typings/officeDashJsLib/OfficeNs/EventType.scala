@@ -9,266 +9,266 @@ import scala.scalajs.js.annotation._
 sealed trait EventType extends js.Object
 
 /**
-     * Specifies the kind of event that was raised. Returned by the `type` property of an *EventArgs object.
-     * 
-     * Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and 
-     * `Office.EventType.ViewSelectionChanged` event types.
-     * 
-     * <table>BindingDataChanged and BindingSelectionChanged hosts</td><td>Access, Excel, Word</td></tr></table>
-     *
-     * @remarks
-     * 
-     * **Support details**
-     * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
-     * An empty cell indicates that the Office host application doesn't support this enumeration.
-     * 
-     * For more information about Office host application and server requirements, see 
-     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-     * 
-     * *Supported hosts, by platform*
-     *  <table>
-     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-     *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-     *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
-     *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
-     *  </table>
-     */
+  * Specifies the kind of event that was raised. Returned by the `type` property of an *EventArgs object.
+  * 
+  * Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and 
+  * `Office.EventType.ViewSelectionChanged` event types.
+  * 
+  * <table>BindingDataChanged and BindingSelectionChanged hosts</td><td>Access, Excel, Word</td></tr></table>
+  *
+  * @remarks
+  * 
+  * **Support details**
+  * 
+  * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+  * An empty cell indicates that the Office host application doesn't support this enumeration.
+  * 
+  * For more information about Office host application and server requirements, see 
+  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+  * 
+  * *Supported hosts, by platform*
+  *  <table>
+  *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+  *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+  *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+  *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
+  *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
+  *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+  *  </table>
+  */
 @JSGlobal("Office.EventType")
 @js.native
 object EventType extends js.Object {
   /**
-           * A Document.ActiveViewChanged event was raised.
-           * 
-           * **Support details**
-           * 
-           * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
-           * An empty cell indicates that the Office host application doesn't support this enumeration.
-           * 
-           * For more information about Office host application and server requirements, see 
-           * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-           * 
-           * *Supported hosts, by platform*
-           *  <table>
-           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *  </table>
-           */
+    * A Document.ActiveViewChanged event was raised.
+    * 
+    * **Support details**
+    * 
+    * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+    * An empty cell indicates that the Office host application doesn't support this enumeration.
+    * 
+    * For more information about Office host application and server requirements, see 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+    * 
+    * *Supported hosts, by platform*
+    *  <table>
+    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+    *  </table>
+    */
   @js.native
   sealed trait ActiveViewChanged
     extends officeDashJsLib.OfficeNs.EventType
   
   /**
-           * Triggers when any date or time of the selected appointment or series is changed in Outlook.
-           * 
-           * [Api set: Mailbox 1.7]
-           */
+    * Triggers when any date or time of the selected appointment or series is changed in Outlook.
+    * 
+    * [Api set: Mailbox 1.7]
+    */
   @js.native
   sealed trait AppointmentTimeChanged
     extends officeDashJsLib.OfficeNs.EventType
   
   /**
-           * Triggers when an attachment is added to or removed from an item.
-           * 
-           * [Api set: Mailbox Preview]
-           * 
-           * @beta
-           */
+    * Triggers when an attachment is added to or removed from an item.
+    * 
+    * [Api set: Mailbox Preview]
+    * 
+    * @beta
+    */
   @js.native
   sealed trait AttachmentsChanged
     extends officeDashJsLib.OfficeNs.EventType
   
   /**
-           * Occurs when data within the binding is changed. 
-           * To add an event handler for the BindingDataChanged event of a binding, use the addHandlerAsync method of the Binding object. 
-           * The event handler receives an argument of type {@link Office.BindingDataChangedEventArgs}.
-           * 
-           * @remarks
-           * 
-           * **Support details**
-           * 
-           * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
-           * An empty cell indicates that the Office host application doesn't support this enumeration.
-           * 
-           * For more information about Office host application and server requirements, see 
-           * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-           * 
-           * *Supported hosts, by platform*
-           *  <table>
-           *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-           *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *  </table>
-           */
+    * Occurs when data within the binding is changed. 
+    * To add an event handler for the BindingDataChanged event of a binding, use the addHandlerAsync method of the Binding object. 
+    * The event handler receives an argument of type {@link Office.BindingDataChangedEventArgs}.
+    * 
+    * @remarks
+    * 
+    * **Support details**
+    * 
+    * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+    * An empty cell indicates that the Office host application doesn't support this enumeration.
+    * 
+    * For more information about Office host application and server requirements, see 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+    * 
+    * *Supported hosts, by platform*
+    *  <table>
+    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
+    *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+    *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+    *  </table>
+    */
   @js.native
   sealed trait BindingDataChanged
     extends officeDashJsLib.OfficeNs.EventType
   
   /**
-           * Occurs when the selection is changed within the binding. To add an event handler for the BindingSelectionChanged event of a binding, use 
-           * the addHandlerAsync method of the Binding object. The event handler receives an argument of type {@link Office.BindingSelectionChangedEventArgs}.
-           * 
-           * @remarks
-           * 
-           * **Support details**
-           * 
-           * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
-           * An empty cell indicates that the Office host application doesn't support this enumeration.
-           * 
-           * For more information about Office host application and server requirements, see 
-           * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-           * 
-           * *Supported hosts, by platform*
-           *  <table>
-           *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-           *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *  </table>
-           */
+    * Occurs when the selection is changed within the binding. To add an event handler for the BindingSelectionChanged event of a binding, use 
+    * the addHandlerAsync method of the Binding object. The event handler receives an argument of type {@link Office.BindingSelectionChangedEventArgs}.
+    * 
+    * @remarks
+    * 
+    * **Support details**
+    * 
+    * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+    * An empty cell indicates that the Office host application doesn't support this enumeration.
+    * 
+    * For more information about Office host application and server requirements, see 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+    * 
+    * *Supported hosts, by platform*
+    *  <table>
+    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
+    *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+    *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+    *  </table>
+    */
   @js.native
   sealed trait BindingSelectionChanged
     extends officeDashJsLib.OfficeNs.EventType
   
   /**
-           * Triggers when Dialog has an event, such as dialog closed or dialog navigation failed.
-           */
+    * Triggers when Dialog has an event, such as dialog closed or dialog navigation failed.
+    */
   @js.native
   sealed trait DialogEventReceived
     extends officeDashJsLib.OfficeNs.EventType
   
   /**
-           * Triggers when Dialog sends a message via MessageParent.
-           */
+    * Triggers when Dialog sends a message via MessageParent.
+    */
   @js.native
   sealed trait DialogMessageReceived
     extends officeDashJsLib.OfficeNs.EventType
   
   /**
-           * Triggers when a document-level selection happens.
-           * 
-           * **Support details**
-           * 
-           * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
-           * An empty cell indicates that the Office host application doesn't support this enumeration.
-           * 
-           * For more information about Office host application and server requirements, see 
-           * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-           * 
-           * *Supported hosts, by platform*
-           *  <table>
-           *   <tr><th>                        </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-           *   <tr><td><strong> Word  </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
-           *  </table>
-           */
+    * Triggers when a document-level selection happens.
+    * 
+    * **Support details**
+    * 
+    * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+    * An empty cell indicates that the Office host application doesn't support this enumeration.
+    * 
+    * For more information about Office host application and server requirements, see 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+    * 
+    * *Supported hosts, by platform*
+    *  <table>
+    *   <tr><th>                        </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+    *   <tr><td><strong> Excel </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
+    *   <tr><td><strong> Word  </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
+    *  </table>
+    */
   @js.native
   sealed trait DocumentSelectionChanged
     extends officeDashJsLib.OfficeNs.EventType
   
   /**
-           * Triggers when a different Outlook item is selected for viewing while the task pane is pinned.
-           * 
-           * [Api set: Mailbox 1.5]
-           */
+    * Triggers when a different Outlook item is selected for viewing while the task pane is pinned.
+    * 
+    * [Api set: Mailbox 1.5]
+    */
   @js.native
   sealed trait ItemChanged
     extends officeDashJsLib.OfficeNs.EventType
   
   /**
-           * Triggers when a customXmlPart node is deleted.
-           */
+    * Triggers when a customXmlPart node is deleted.
+    */
   @js.native
   sealed trait NodeDeleted
     extends officeDashJsLib.OfficeNs.EventType
   
   /**
-           * Triggers when a customXmlPart node is inserted.
-           */
+    * Triggers when a customXmlPart node is inserted.
+    */
   @js.native
   sealed trait NodeInserted
     extends officeDashJsLib.OfficeNs.EventType
   
   /**
-           * Triggers when a customXmlPart node is replaced.
-           */
+    * Triggers when a customXmlPart node is replaced.
+    */
   @js.native
   sealed trait NodeReplaced
     extends officeDashJsLib.OfficeNs.EventType
   
   /**
-           * Triggers when the OfficeTheme is changed in Outlook.
-           * 
-           * [Api set: Mailbox Preview]
-           * 
-           * @beta
-           */
+    * Triggers when the OfficeTheme is changed in Outlook.
+    * 
+    * [Api set: Mailbox Preview]
+    * 
+    * @beta
+    */
   @js.native
   sealed trait OfficeThemeChanged
     extends officeDashJsLib.OfficeNs.EventType
   
   /**
-           * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook.
-           * 
-           * [Api set: Mailbox 1.7]
-           */
+    * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook.
+    * 
+    * [Api set: Mailbox 1.7]
+    */
   @js.native
   sealed trait RecipientsChanged
     extends officeDashJsLib.OfficeNs.EventType
   
   /**
-           * Triggers when the recurrence pattern of the selected series is changed in Outlook.
-           * 
-           * [Api set: Mailbox 1.7]
-           */
+    * Triggers when the recurrence pattern of the selected series is changed in Outlook.
+    * 
+    * [Api set: Mailbox 1.7]
+    */
   @js.native
   sealed trait RecurrenceChanged
     extends officeDashJsLib.OfficeNs.EventType
   
   /**
-           * Triggers when a Resource selection happens in Project.
-           */
+    * Triggers when a Resource selection happens in Project.
+    */
   @js.native
   sealed trait ResourceSelectionChanged
     extends officeDashJsLib.OfficeNs.EventType
   
   /**
-           * A Settings.settingsChanged event was raised.
-           * 
-           * **Support details**
-           * 
-           * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-           * An empty cell indicates that the Office host application doesn't support this method.
-           * 
-           * For more information about Office host application and server requirements, see 
-           * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-           * 
-           * *Supported hosts, by platform*
-           *  <table>
-           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *  </table>
-           */
+    * A Settings.settingsChanged event was raised.
+    * 
+    * **Support details**
+    * 
+    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+    * An empty cell indicates that the Office host application doesn't support this method.
+    * 
+    * For more information about Office host application and server requirements, see 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+    * 
+    * *Supported hosts, by platform*
+    *  <table>
+    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+    *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
+    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+    *  </table>
+    */
   @js.native
   sealed trait SettingsChanged
     extends officeDashJsLib.OfficeNs.EventType
   
   /**
-           * Triggers when a Task selection happens in Project.
-           */
+    * Triggers when a Task selection happens in Project.
+    */
   @js.native
   sealed trait TaskSelectionChanged
     extends officeDashJsLib.OfficeNs.EventType
   
   /**
-           * Triggers when a View selection happens in Project.
-           */
+    * Triggers when a View selection happens in Project.
+    */
   @js.native
   sealed trait ViewSelectionChanged
     extends officeDashJsLib.OfficeNs.EventType

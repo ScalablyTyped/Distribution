@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArrowFunctionExpression extends BaseFunction {
   var expression: scala.Boolean
   @JSName("type")

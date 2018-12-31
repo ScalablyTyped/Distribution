@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DigestInfo extends js.Object {
   var digest: asn1jsLib.asn1jsMod.OctetString
   var digestAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default

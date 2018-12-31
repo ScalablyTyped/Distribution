@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Text extends NodeBase {
   var text: java.lang.String
   @JSName("type")

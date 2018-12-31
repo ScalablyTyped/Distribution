@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InputTypesBoolean extends js.Object {
   var color: scala.Boolean
   var date: scala.Boolean

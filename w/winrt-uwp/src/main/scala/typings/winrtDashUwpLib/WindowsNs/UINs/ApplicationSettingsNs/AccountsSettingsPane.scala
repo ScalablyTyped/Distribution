@@ -35,9 +35,9 @@ abstract class AccountsSettingsPane () extends js.Object {
 @js.native
 object AccountsSettingsPane extends js.Object {
   /**
-                   * Gets an AccountsSettingsPane object that is associated with the current app view (that is, with CoreWindow ).
-                   * @return The account settings pane.
-                   */
+    * Gets an AccountsSettingsPane object that is associated with the current app view (that is, with CoreWindow ).
+    * @return The account settings pane.
+    */
   def getForCurrentView(): winrtDashUwpLib.WindowsNs.UINs.ApplicationSettingsNs.AccountsSettingsPane = js.native
   /** Displays the account settings pane. */
   def show(): scala.Unit = js.native

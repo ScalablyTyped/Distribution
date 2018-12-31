@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArrowHeadOptions extends js.Object {
   var headAngle: js.UndefOr[scala.Double] = js.undefined
   var pathOptions: js.UndefOr[leafletLib.leafletMod.PathOptions] = js.undefined

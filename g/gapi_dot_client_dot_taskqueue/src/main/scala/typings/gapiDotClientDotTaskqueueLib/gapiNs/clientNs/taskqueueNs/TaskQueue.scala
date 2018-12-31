@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaskQueue extends js.Object {
   /** ACLs that are applicable to this TaskQueue object. */
   var acl: js.UndefOr[gapiDotClientDotTaskqueueLib.Anon_ProducerEmails] = js.undefined

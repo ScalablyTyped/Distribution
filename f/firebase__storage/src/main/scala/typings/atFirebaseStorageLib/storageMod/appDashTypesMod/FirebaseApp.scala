@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FirebaseApp extends js.Object {
   var storage: js.UndefOr[
     js.Function1[

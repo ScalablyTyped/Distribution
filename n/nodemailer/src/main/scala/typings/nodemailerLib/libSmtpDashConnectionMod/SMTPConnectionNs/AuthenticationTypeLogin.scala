@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AuthenticationTypeLogin extends Credentials {
   /** indicates the authetication type, defaults to ‘login’, other option is ‘oauth2’ */
   var `type`: js.UndefOr[

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ButtonType extends js.Object
 
 /**
-     * Different types for a button (predefined types)
-    */
+  * Different types for a button (predefined types)
+  */
 @JSGlobal("sap.m.ButtonType")
 @js.native
 object ButtonType extends js.Object {

@@ -16,7 +16,7 @@ trait BLECentralPluginStatic extends js.Object {
   def disconnect(device_id: java.lang.String, success: js.Function0[_]): scala.Unit = js.native
   def disconnect(device_id: java.lang.String, success: js.Function0[_], failure: js.Function0[_]): scala.Unit = js.native
   /* Enable Bluetooth on the device.
-             [iOS] enable is not supported on iOS. */
+    [iOS] enable is not supported on iOS. */
   def enable(success: js.Function0[_], failure: js.Function0[_]): scala.Unit = js.native
   /* Calls the success callback when the peripheral is connected and the failure callback when not connected. */
   def isConnected(device_id: java.lang.String, success: js.Function0[_]): scala.Unit = js.native
@@ -55,7 +55,7 @@ trait BLECentralPluginStatic extends js.Object {
     failure: js.Function0[_]
   ): scala.Unit = js.native
   /* Opens the Bluetooth settings for the operating systems.
-             [iOS] showBluetoothSettings is not supported on iOS. */
+    [iOS] showBluetoothSettings is not supported on iOS. */
   def showBluetoothSettings(): scala.Unit = js.native
   def showBluetoothSettings(success: js.Function0[_]): scala.Unit = js.native
   def showBluetoothSettings(success: js.Function0[_], failure: js.Function0[_]): scala.Unit = js.native
@@ -134,7 +134,7 @@ trait BLECentralPluginStatic extends js.Object {
     failure: js.Function0[_]
   ): scala.Unit = js.native
   /* Writes data to a characteristic without a response from the peripheral. You are not notified if the write fails in the BLE stack. 
-          The success callback is be called when the characteristic is written.*/
+    The success callback is be called when the characteristic is written.*/
   def writeWithoutResponse(
     device_id: java.lang.String,
     service_uuid: java.lang.String,

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Location extends js.Object {
   var location: js.UndefOr[
     d3pieLib.d3pieLibStrings.`top-center` | d3pieLib.d3pieLibStrings.`top-left` | d3pieLib.d3pieLibStrings.`pie-center`

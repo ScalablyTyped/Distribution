@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictPopupProps
   extends semanticDashUiDashReactLib.distCommonjsAddonsPortalPortalMod.StrictPortalProps {
   /** An element type to render as (string or function). */
@@ -47,11 +46,11 @@ trait StrictPopupProps
     ])
   ] = js.undefined
   /**
-     * Called when a close event happens.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called when a close event happens.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   @JSName("onClose")
   var onClose_StrictPopupProps: js.UndefOr[
     js.Function2[
@@ -61,19 +60,19 @@ trait StrictPopupProps
     ]
   ] = js.undefined
   /**
-     * Called when the portal is mounted on the DOM.
-     *
-     * @param {null}
-     * @param {object} data - All props.
-     */
+    * Called when the portal is mounted on the DOM.
+    *
+    * @param {null}
+    * @param {object} data - All props.
+    */
   @JSName("onMount")
   var onMount_StrictPopupProps: js.UndefOr[js.Function2[/* nothing */ scala.Null, /* data */ PopupProps, scala.Unit]] = js.undefined
   /**
-     * Called when an open event happens.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called when an open event happens.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   @JSName("onOpen")
   var onOpen_StrictPopupProps: js.UndefOr[
     js.Function2[
@@ -83,11 +82,11 @@ trait StrictPopupProps
     ]
   ] = js.undefined
   /**
-     * Called when the portal is unmounted from the DOM.
-     *
-     * @param {null}
-     * @param {object} data - All props.
-     */
+    * Called when the portal is unmounted from the DOM.
+    *
+    * @param {null}
+    * @param {object} data - All props.
+    */
   @JSName("onUnmount")
   var onUnmount_StrictPopupProps: js.UndefOr[js.Function2[/* nothing */ scala.Null, /* data */ PopupProps, scala.Unit]] = js.undefined
   /** Position for the popover. */

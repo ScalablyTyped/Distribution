@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Flight extends js.Object {
   /** Inventory item flight end date. */
   var endDate: js.UndefOr[java.lang.String] = js.undefined

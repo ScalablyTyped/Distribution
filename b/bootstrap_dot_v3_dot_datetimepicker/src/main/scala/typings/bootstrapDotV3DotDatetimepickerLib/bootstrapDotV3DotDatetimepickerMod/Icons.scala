@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Icons extends js.Object {
   /** default: "glyphicon glyphicon-trash" */
   var clear: js.UndefOr[java.lang.String] = js.undefined

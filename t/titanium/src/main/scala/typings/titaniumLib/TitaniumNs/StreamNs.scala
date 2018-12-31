@@ -74,9 +74,6 @@ object StreamNs extends js.Object {
     handler: js.Function1[/* param0 */ titaniumLib.PumpCallbackArgs, _],
     maxChunkSize: scala.Double
   ): scala.Unit = js.native
-  /**
-  		 * Reads data from input stream and passes it to a handler method.
-  		 */
   def pump(
     inputStream: titaniumLib.TitaniumNs.IOStream,
     handler: js.Function1[/* param0 */ titaniumLib.PumpCallbackArgs, _],
@@ -87,26 +84,17 @@ object StreamNs extends js.Object {
   		 * Asynchronously reads data from an [IOStream](Titanium.IOStream) into a buffer.
   		 */
   def read(sourceStream: titaniumLib.TitaniumNs.IOStream, buffer: titaniumLib.TitaniumNs.Buffer): scala.Unit = js.native
-  /**
-  		 * Asynchronously reads data from an [IOStream](Titanium.IOStream) into a buffer.
-  		 */
   def read(
     sourceStream: titaniumLib.TitaniumNs.IOStream,
     buffer: titaniumLib.TitaniumNs.Buffer,
     offset: scala.Double
   ): scala.Unit = js.native
-  /**
-  		 * Asynchronously reads data from an [IOStream](Titanium.IOStream) into a buffer.
-  		 */
   def read(
     sourceStream: titaniumLib.TitaniumNs.IOStream,
     buffer: titaniumLib.TitaniumNs.Buffer,
     offset: scala.Double,
     length: scala.Double
   ): scala.Unit = js.native
-  /**
-  		 * Asynchronously reads data from an [IOStream](Titanium.IOStream) into a buffer.
-  		 */
   def read(
     sourceStream: titaniumLib.TitaniumNs.IOStream,
     buffer: titaniumLib.TitaniumNs.Buffer,
@@ -118,13 +106,7 @@ object StreamNs extends js.Object {
   		 * Reads all data from the specified [IOStream](Titanium.IOStream).
   		 */
   def readAll(sourceStream: titaniumLib.TitaniumNs.IOStream): titaniumLib.TitaniumNs.Buffer | scala.Unit = js.native
-  /**
-  		 * Reads all data from the specified [IOStream](Titanium.IOStream).
-  		 */
   def readAll(sourceStream: titaniumLib.TitaniumNs.IOStream, buffer: titaniumLib.TitaniumNs.Buffer): titaniumLib.TitaniumNs.Buffer | scala.Unit = js.native
-  /**
-  		 * Reads all data from the specified [IOStream](Titanium.IOStream).
-  		 */
   def readAll(
     sourceStream: titaniumLib.TitaniumNs.IOStream,
     buffer: titaniumLib.TitaniumNs.Buffer,
@@ -150,26 +132,17 @@ object StreamNs extends js.Object {
   		 * Asynchronously writes data from a buffer to an [IOStream](Titanium.IOStream).
   		 */
   def write(outputStream: titaniumLib.TitaniumNs.IOStream, buffer: titaniumLib.TitaniumNs.Buffer): scala.Unit = js.native
-  /**
-  		 * Asynchronously writes data from a buffer to an [IOStream](Titanium.IOStream).
-  		 */
   def write(
     outputStream: titaniumLib.TitaniumNs.IOStream,
     buffer: titaniumLib.TitaniumNs.Buffer,
     offset: scala.Double
   ): scala.Unit = js.native
-  /**
-  		 * Asynchronously writes data from a buffer to an [IOStream](Titanium.IOStream).
-  		 */
   def write(
     outputStream: titaniumLib.TitaniumNs.IOStream,
     buffer: titaniumLib.TitaniumNs.Buffer,
     offset: scala.Double,
     length: scala.Double
   ): scala.Unit = js.native
-  /**
-  		 * Asynchronously writes data from a buffer to an [IOStream](Titanium.IOStream).
-  		 */
   def write(
     outputStream: titaniumLib.TitaniumNs.IOStream,
     buffer: titaniumLib.TitaniumNs.Buffer,
@@ -185,9 +158,6 @@ object StreamNs extends js.Object {
     outputStream: titaniumLib.TitaniumNs.IOStream,
     maxChunkSize: scala.Double
   ): scala.Unit = js.native
-  /**
-  		 * Writes all data from an input stream to an output stream.
-  		 */
   def writeStream(
     inputStream: titaniumLib.TitaniumNs.IOStream,
     outputStream: titaniumLib.TitaniumNs.IOStream,

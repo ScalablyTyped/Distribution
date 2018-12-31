@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GenericStackedDatum[D] extends js.Object {
   var axisValue: D
   var offset: scala.Double

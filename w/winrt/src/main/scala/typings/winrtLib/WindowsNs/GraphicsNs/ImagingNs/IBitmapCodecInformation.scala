@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBitmapCodecInformation extends js.Object {
   var codecId: java.lang.String
   var fileExtensions: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String]

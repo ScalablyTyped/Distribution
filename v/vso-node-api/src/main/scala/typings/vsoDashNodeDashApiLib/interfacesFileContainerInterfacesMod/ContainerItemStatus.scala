@@ -12,15 +12,15 @@ sealed trait ContainerItemStatus extends js.Object
 @js.native
 object ContainerItemStatus extends js.Object {
   /**
-       * Item is created.
-       */
+    * Item is created.
+    */
   @js.native
   sealed trait Created
     extends vsoDashNodeDashApiLib.interfacesFileContainerInterfacesMod.ContainerItemStatus
   
   /**
-       * Item is a file pending for upload.
-       */
+    * Item is a file pending for upload.
+    */
   @js.native
   sealed trait PendingUpload
     extends vsoDashNodeDashApiLib.interfacesFileContainerInterfacesMod.ContainerItemStatus

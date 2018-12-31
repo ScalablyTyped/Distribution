@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BottomTabNavigatorConfig
   extends NavigationBottomTabRouterConfig
      with TabViewConfig {

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait State extends js.Object
 
 /**
-             * The state types of an Reader. Possible states are:
-             */
+  * The state types of an Reader. Possible states are:
+  */
 @JSGlobal("H.data.AbstractReader.State")
 @js.native
 object State extends js.Object {

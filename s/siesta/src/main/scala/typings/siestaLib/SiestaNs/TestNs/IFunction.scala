@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @mixin
-         */
+  * @mixin
+  */
 @js.native
 trait IFunction extends js.Object {
   def isCalled(fn: java.lang.String, host: js.Any, desc: java.lang.String): scala.Unit = js.native

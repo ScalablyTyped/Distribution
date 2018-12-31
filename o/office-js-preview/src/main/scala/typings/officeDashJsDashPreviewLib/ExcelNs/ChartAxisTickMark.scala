@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ChartAxisTickMark extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.7]
-     */
+  * [Api set: ExcelApi 1.7]
+  */
 @JSGlobal("Excel.ChartAxisTickMark")
 @js.native
 object ChartAxisTickMark extends js.Object {

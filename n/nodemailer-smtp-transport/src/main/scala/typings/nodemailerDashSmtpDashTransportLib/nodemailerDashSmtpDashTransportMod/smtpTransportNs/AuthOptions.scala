@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AuthOptions extends js.Object {
   /** is the access token for the user. Required only if refreshToken is not available and there is no token refresh callback specified */
   var accessToken: js.UndefOr[java.lang.String] = js.undefined

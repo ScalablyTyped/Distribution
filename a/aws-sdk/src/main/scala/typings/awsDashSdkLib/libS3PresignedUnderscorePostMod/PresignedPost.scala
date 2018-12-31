@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class PresignedPost () extends js.Object {
   /**
-       * The fields that must be included as hidden inputs on the form.
-       */
+    * The fields that must be included as hidden inputs on the form.
+    */
   var fields: awsDashSdkLib.libS3PresignedUnderscorePostMod.PresignedPostNs.Fields = js.native
   /**
-       * The URL that should be used as the action of the form.
-       */
+    * The URL that should be used as the action of the form.
+    */
   var url: java.lang.String = js.native
 }
 

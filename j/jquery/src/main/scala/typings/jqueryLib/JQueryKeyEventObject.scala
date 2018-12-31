@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * @deprecated ​ Deprecated. Use \`{@link JQuery.Event }\`.
- */
+  * @deprecated ​ Deprecated. Use \`{@link JQuery.Event }\`.
+  */
 @js.native
 trait JQueryKeyEventObject extends JQueryInputEventObject {
   /** @deprecated */

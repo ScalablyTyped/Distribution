@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ExplicitPartialRight extends js.Object {
   // catch-all
-  def apply(args: js.Any*): LoDashExplicitWrapper[js.Function1[/* repeated */_, _]] = js.native
+  def apply(args: js.Any*): LoDashExplicitWrapper[js.Function1[/* repeated */ _, _]] = js.native
   // arity 0
   def apply[R](`this`: LoDashExplicitWrapper[Function0[R]]): LoDashExplicitWrapper[Function0[R]] = js.native
   def apply[T1, R](`this`: LoDashExplicitWrapper[Function1[T1, R]], arg1: T1): LoDashExplicitWrapper[Function0[R]] = js.native

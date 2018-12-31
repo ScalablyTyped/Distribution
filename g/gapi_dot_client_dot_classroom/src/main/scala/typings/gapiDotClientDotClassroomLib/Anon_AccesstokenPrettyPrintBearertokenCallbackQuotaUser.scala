@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUser extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -35,13 +34,13 @@ trait Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUser extends js.Object 
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Identifier of the profile to return. The identifier can be one of the
-                   * following:
-                   *
-                   * &#42; the numeric identifier for the user
-                   * &#42; the email address of the user
-                   * &#42; the string literal `"me"`, indicating the requesting user
-                   */
+    * Identifier of the profile to return. The identifier can be one of the
+    * following:
+    *
+    * &#42; the numeric identifier for the user
+    * &#42; the email address of the user
+    * &#42; the string literal `"me"`, indicating the requesting user
+    */
   var userId: java.lang.String
 }
 

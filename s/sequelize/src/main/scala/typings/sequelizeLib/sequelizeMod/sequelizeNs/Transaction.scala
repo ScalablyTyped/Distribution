@@ -12,26 +12,25 @@ import scala.scalajs.js.annotation._
 //  https://github.com/sequelize/sequelize/blob/v3.4.1/lib/transaction.js
 //
 /**
-     * The transaction object is used to identify a running transaction. It is created by calling
-     * `Sequelize.transaction()`.
-     *
-     * To run a query under a transaction, you should pass the transaction in the options object.
-     */
-
+  * The transaction object is used to identify a running transaction. It is created by calling
+  * `Sequelize.transaction()`.
+  *
+  * To run a query under a transaction, you should pass the transaction in the options object.
+  */
 trait Transaction extends js.Object {
   /**
-           * Possible options for row locking. Used in conjuction with `find` calls:
-           *
-           * @see TransactionStatic
-           */
+    * Possible options for row locking. Used in conjuction with `find` calls:
+    *
+    * @see TransactionStatic
+    */
   var LOCK: TransactionLock
   /**
-           * Commit the transaction
-           */
+    * Commit the transaction
+    */
   def commit(): bluebirdLib.bluebirdMod.namespaced[scala.Unit]
   /**
-           * Rollback (abort) the transaction
-           */
+    * Rollback (abort) the transaction
+    */
   def rollback(): bluebirdLib.bluebirdMod.namespaced[scala.Unit]
 }
 

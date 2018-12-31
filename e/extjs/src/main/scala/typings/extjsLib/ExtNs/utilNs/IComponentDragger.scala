@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IComponentDragger
   extends extjsLib.ExtNs.ddNs.IDragTracker {
   /** [Config Option] (Boolean) */

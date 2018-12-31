@@ -13,8 +13,8 @@ trait System extends js.Object {
   var clearScreen: js.UndefOr[js.Function0[scala.Unit]] = js.native
   var clearTimeout: js.UndefOr[js.Function1[/* timeoutId */ js.Any, scala.Unit]] = js.native
   /**
-           * A good implementation is node.js' `crypto.createHash`. (https://nodejs.org/api/crypto.html#crypto_crypto_createhash_algorithm)
-           */
+    * A good implementation is node.js' `crypto.createHash`. (https://nodejs.org/api/crypto.html#crypto_crypto_createhash_algorithm)
+    */
   var createHash: js.UndefOr[js.Function1[/* data */ java.lang.String, java.lang.String]] = js.native
   /** This must be cryptographically secure. Only implement this method using `crypto.createHash("sha256")`. */
   var createSHA256Hash: js.UndefOr[js.Function1[/* data */ java.lang.String, java.lang.String]] = js.native
@@ -27,9 +27,9 @@ trait System extends js.Object {
   var setModifiedTime: js.UndefOr[js.Function2[/* path */ java.lang.String, /* time */ stdLib.Date, scala.Unit]] = js.native
   var setTimeout: js.UndefOr[
     js.Function3[
-      /* callback */ js.Function1[/* repeated */js.Any, scala.Unit], 
+      /* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], 
       /* ms */ scala.Double, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       _
     ]
   ] = js.native
@@ -43,9 +43,9 @@ trait System extends js.Object {
     ]
   ] = js.native
   /**
-           * @pollingInterval - this parameter is used in polling-based watchers and ignored in watchers that
-           * use native OS file watching
-           */
+    * @pollingInterval - this parameter is used in polling-based watchers and ignored in watchers that
+    * use native OS file watching
+    */
   var watchFile: js.UndefOr[
     js.Function3[
       /* path */ java.lang.String, 

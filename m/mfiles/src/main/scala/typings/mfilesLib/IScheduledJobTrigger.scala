@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IScheduledJobTrigger extends js.Object {
   var BeginDay: scala.Double
   var BeginMonth: scala.Double

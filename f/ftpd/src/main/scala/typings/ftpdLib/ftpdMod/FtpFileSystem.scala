@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FtpFileSystem extends js.Object {
   /**
-       * if useReadFile option is not set or is false
-       */
+    * if useReadFile option is not set or is false
+    */
   var createReadStream: js.UndefOr[
     js.Function2[
       /* path */ java.lang.String, 
@@ -18,8 +18,8 @@ trait FtpFileSystem extends js.Object {
     ]
   ] = js.native
   /**
-       * if useWriteFile option is not set or is false
-       */
+    * if useWriteFile option is not set or is false
+    */
   var createWriteStream: js.UndefOr[
     js.Function2[
       /* path */ java.lang.String, 
@@ -79,8 +79,8 @@ trait FtpFileSystem extends js.Object {
     scala.Unit
   ]) = js.native
   /**
-       * if useReadFile option is set to 'true'
-       */
+    * if useReadFile option is set to 'true'
+    */
   var readFile: js.UndefOr[
     (js.Function3[
       /* filename */ java.lang.String, 
@@ -104,8 +104,8 @@ trait FtpFileSystem extends js.Object {
     ])
   ] = js.native
   /**
-       * if useWriteFile option is set to 'true'
-       */
+    * if useWriteFile option is set to 'true'
+    */
   var writeFile: js.UndefOr[
     (js.Function3[
       /* filename */ java.lang.String, 
@@ -152,12 +152,9 @@ trait FtpFileSystem extends js.Object {
     callback: js.Function1[/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException], scala.Unit]
   ): scala.Unit = js.native
   /**
-       * specific object properties: { mode, isDirectory(), size, mtime }
-       */
+    * specific object properties: { mode, isDirectory(), size, mtime }
+    */
   def stat(path: java.lang.String): scala.Unit = js.native
-  /**
-       * specific object properties: { mode, isDirectory(), size, mtime }
-       */
   def stat(
     path: java.lang.String,
     callback: js.Function2[

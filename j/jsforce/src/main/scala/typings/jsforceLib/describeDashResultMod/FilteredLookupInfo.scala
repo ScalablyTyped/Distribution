@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilteredLookupInfo extends js.Object {
   var controllingFields: js.Array[java.lang.String]
   var dependent: scala.Boolean

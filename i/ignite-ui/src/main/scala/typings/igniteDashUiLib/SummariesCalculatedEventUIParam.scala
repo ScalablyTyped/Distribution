@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SummariesCalculatedEventUIParam extends js.Object {
   /**
   	 * Gets the data for calculated summaries.

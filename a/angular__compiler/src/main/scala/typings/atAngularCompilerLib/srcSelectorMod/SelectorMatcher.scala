@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 class SelectorMatcher[T] () extends js.Object {
   var _addPartial: js.Any = js.native
   /**
-       * Add an object that can be found later on by calling `match`.
-       * @param cssSelector A css selector
-       * @param callbackCtxt An opaque object that will be given to the callback of the `match` function
-       */
+    * Add an object that can be found later on by calling `match`.
+    * @param cssSelector A css selector
+    * @param callbackCtxt An opaque object that will be given to the callback of the `match` function
+    */
   var _addSelectable: js.Any = js.native
   var _addTerminal: js.Any = js.native
   var _attrValueMap: js.Any = js.native
@@ -25,21 +25,14 @@ class SelectorMatcher[T] () extends js.Object {
   var _listContexts: js.Any = js.native
   def addSelectables(cssSelectors: js.Array[CssSelector]): scala.Unit = js.native
   def addSelectables(cssSelectors: js.Array[CssSelector], callbackCtxt: T): scala.Unit = js.native
-  /**
-       * Find the objects that have been added via `addSelectable`
-       * whose css selector is contained in the given css selector.
-       * @param cssSelector A css selector
-       * @param matchedCallback This callback will be called with the object handed into `addSelectable`
-       * @return boolean true if a match was found
-      */
   def `match`(cssSelector: CssSelector): scala.Boolean = js.native
   /**
-       * Find the objects that have been added via `addSelectable`
-       * whose css selector is contained in the given css selector.
-       * @param cssSelector A css selector
-       * @param matchedCallback This callback will be called with the object handed into `addSelectable`
-       * @return boolean true if a match was found
-      */
+    * Find the objects that have been added via `addSelectable`
+    * whose css selector is contained in the given css selector.
+    * @param cssSelector A css selector
+    * @param matchedCallback This callback will be called with the object handed into `addSelectable`
+    * @return boolean true if a match was found
+    */
   def `match`(
     cssSelector: CssSelector,
     matchedCallback: js.Function2[/* c */ CssSelector, /* a */ T, scala.Unit]

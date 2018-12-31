@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HttpRequestRejected extends js.Object {
   var body: java.lang.String
   var headers: js.UndefOr[js.Array[_]] = js.undefined

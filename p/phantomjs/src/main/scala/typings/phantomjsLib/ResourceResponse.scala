@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResourceResponse extends js.Object {
   var bodySize: scala.Double
   var contentType: js.UndefOr[java.lang.String] = js.undefined

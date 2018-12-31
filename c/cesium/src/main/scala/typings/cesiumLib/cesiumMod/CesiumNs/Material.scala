@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Material extends js.Object {
   var materials: js.Any
   var shaderSource: java.lang.String

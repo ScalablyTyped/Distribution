@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait $JestEnvironment extends js.Object {
   var fakeTimers: FakeTimers
   var global: Global

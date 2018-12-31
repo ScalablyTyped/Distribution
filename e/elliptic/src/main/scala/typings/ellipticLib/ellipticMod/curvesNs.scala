@@ -14,14 +14,15 @@ object curvesNs extends js.Object {
     var g: js.Any = js.native
     var hash: js.Any = js.native
      // ?
-    var n: js.UndefOr[js.Any | scala.Null] = js.native
+    var n: js.UndefOr[
+        (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any) | scala.Null
+      ] = js.native
     var `type`: java.lang.String = js.native
   }
   
   @JSName("PresetCurve")
   @js.native
   object PresetCurveNs extends js.Object {
-    
     trait Options extends js.Object {
       var a: java.lang.String
       var b: java.lang.String

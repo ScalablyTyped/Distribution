@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ReplyMarkupReplyToMessage extends js.Object {
   var foursquareId: js.UndefOr[java.lang.String] = js.undefined
   var notification: js.UndefOr[scala.Boolean] = js.undefined

@@ -12,7 +12,7 @@ object languageVisitorModMembers extends js.Object {
   def getVisitFn(
     visitor: Visitor[
       _, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(any))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(any))),List())))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: any[keyof any] */ js.Any
     ],
     kind: java.lang.String,
     isLeaving: scala.Boolean
@@ -21,14 +21,14 @@ object languageVisitorModMembers extends js.Object {
     root: graphqlLib.languageAstMod.ASTNode,
     visitor: Visitor[
       graphqlLib.languageAstMod.ASTKindToNode, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List())))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: graphql.graphql/language/ast.ASTKindToNode[keyof graphql.graphql/language/ast.ASTKindToNode] */ js.Any
     ]
   ): js.Any = js.native
   def visit(
     root: graphqlLib.languageAstMod.ASTNode,
     visitor: Visitor[
       graphqlLib.languageAstMod.ASTKindToNode, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List())))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: graphql.graphql/language/ast.ASTKindToNode[keyof graphql.graphql/language/ast.ASTKindToNode] */ js.Any
     ],
     visitorKeys: VisitorKeyMap[graphqlLib.languageAstMod.ASTKindToNode]
   ): js.Any = js.native
@@ -36,22 +36,22 @@ object languageVisitorModMembers extends js.Object {
     visitors: js.Array[
       Visitor[
         graphqlLib.languageAstMod.ASTKindToNode, 
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List())))) */js.Any
+        /* import warning: ImportType.apply Failed type conversion: graphql.graphql/language/ast.ASTKindToNode[keyof graphql.graphql/language/ast.ASTKindToNode] */ js.Any
       ]
     ]
   ): Visitor[
     graphqlLib.languageAstMod.ASTKindToNode, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List())))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: graphql.graphql/language/ast.ASTKindToNode[keyof graphql.graphql/language/ast.ASTKindToNode] */ js.Any
   ] = js.native
   def visitWithTypeInfo(
     typeInfo: graphqlLib.utilitiesTypeInfoMod.TypeInfo,
     visitor: Visitor[
       graphqlLib.languageAstMod.ASTKindToNode, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List())))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: graphql.graphql/language/ast.ASTKindToNode[keyof graphql.graphql/language/ast.ASTKindToNode] */ js.Any
     ]
   ): Visitor[
     graphqlLib.languageAstMod.ASTKindToNode, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List())))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: graphql.graphql/language/ast.ASTKindToNode[keyof graphql.graphql/language/ast.ASTKindToNode] */ js.Any
   ] = js.native
 }
 

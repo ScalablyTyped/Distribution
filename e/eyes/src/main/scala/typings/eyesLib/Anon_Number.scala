@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Number extends js.Object {
   /** Overall base style applied to everything */
   var all: js.UndefOr[java.lang.String] = js.undefined

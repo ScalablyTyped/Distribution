@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Address extends js.Object {
   /** Valid email address */
   var email: java.lang.String

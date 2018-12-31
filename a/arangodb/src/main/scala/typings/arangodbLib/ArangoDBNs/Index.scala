@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Index[T /* <: js.Object */] extends js.Object {
   var code: scala.Double
   var deduplicate: scala.Boolean

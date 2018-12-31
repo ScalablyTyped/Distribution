@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_GO extends js.Object {
   var GH: screepsLib.screepsLibStrings.GH2O
   var GO: screepsLib.screepsLibStrings.GHO2

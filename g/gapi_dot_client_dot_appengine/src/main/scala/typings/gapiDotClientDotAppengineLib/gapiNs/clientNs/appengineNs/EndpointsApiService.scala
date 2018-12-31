@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EndpointsApiService extends js.Object {
   /** Endpoints service configuration id as specified by the Service Management API. For example "2016-09-19r1" */
   var configId: js.UndefOr[java.lang.String] = js.undefined

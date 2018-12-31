@@ -15,20 +15,12 @@ trait ICanvasAnimation[T] extends js.Object {
   	 * @param object Object to center
   	 */
   def fxCenterObjectH(`object`: Object): T = js.native
-  /**
-  	 * Centers object horizontally with animation.
-  	 * @param object Object to center
-  	 */
   def fxCenterObjectH(`object`: Object, callbacks: Callbacks): T = js.native
   /**
   	 * Centers object vertically with animation.
   	 * @param object Object to center
   	 */
   def fxCenterObjectV(`object`: Object): T = js.native
-  /**
-  	 * Centers object vertically with animation.
-  	 * @param object Object to center
-  	 */
   def fxCenterObjectV(`object`: Object, callbacks: Callbacks): T = js.native
   /**
   	 * Same as `fabric.Canvas#remove` but animated

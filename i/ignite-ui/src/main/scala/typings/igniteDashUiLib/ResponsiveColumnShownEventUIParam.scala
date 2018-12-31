@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResponsiveColumnShownEventUIParam extends js.Object {
   /**
   	 * Gets the shown column index. Has a value only if the column's key is a number.

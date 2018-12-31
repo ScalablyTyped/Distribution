@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Cdata extends js.Object {
   def append(text: java.lang.String): Text
   def detach(): Content

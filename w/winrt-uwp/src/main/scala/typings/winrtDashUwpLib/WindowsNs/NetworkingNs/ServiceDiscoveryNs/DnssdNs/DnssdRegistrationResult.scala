@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Encapsulates detailed information about the result of an attempt to register a service instance using DNS-SD. */
 @JSGlobal("Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationResult")
 @js.native
+/** Constructor. */
 class DnssdRegistrationResult () extends js.Object {
   /** Indicates whether the instance name was changed in the course of the registration process. */
   var hasInstanceNameChanged: scala.Boolean = js.native

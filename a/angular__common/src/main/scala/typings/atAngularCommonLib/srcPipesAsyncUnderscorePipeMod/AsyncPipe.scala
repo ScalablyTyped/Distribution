@@ -22,9 +22,9 @@ class AsyncPipe protected ()
   var _subscription: js.Any = js.native
   var _updateLatestValue: js.Any = js.native
   /**
-       * A callback method that performs custom clean-up, invoked immediately
-       * after a directive, pipe, or service instance is destroyed.
-       */
+    * A callback method that performs custom clean-up, invoked immediately
+    * after a directive, pipe, or service instance is destroyed.
+    */
   /* CompleteClass */
   override def ngOnDestroy(): scala.Unit = js.native
   /* CompleteClass */

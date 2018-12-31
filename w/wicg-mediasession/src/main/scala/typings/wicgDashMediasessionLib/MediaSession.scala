@@ -11,7 +11,6 @@ trait MediaSession extends js.Object {
   var metadata: MediaMetadata | scala.Null = js.native
   // Current media session playback state.
   var playbackState: MediaSessionPlaybackState = js.native
-  // Set/Unset actions handlers.
   def setActionHandler(action: MediaSessionAction): scala.Unit = js.native
   // Set/Unset actions handlers.
   def setActionHandler(action: MediaSessionAction, listener: js.Function0[scala.Unit]): scala.Unit = js.native

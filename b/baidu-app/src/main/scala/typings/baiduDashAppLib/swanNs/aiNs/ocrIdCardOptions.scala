@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * 用户向服务请求识别身份证，身份证识别包括正面和背面。
 		 */
-
 trait ocrIdCardOptions
   extends baiduDashAppLib.swanNs.BaseOptions[js.Any, js.Any] {
    // 图片资源地址

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Duration extends js.Object {
   var columns: js.UndefOr[js.Array[c3Lib.c3Mod.PrimitiveArray]] = js.undefined
   var done: js.UndefOr[js.Function0[_]] = js.undefined

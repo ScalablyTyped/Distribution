@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait App extends js.Object {
   var association: js.UndefOr[scala.Null | AppAssociation] = js.undefined
   var id: java.lang.String

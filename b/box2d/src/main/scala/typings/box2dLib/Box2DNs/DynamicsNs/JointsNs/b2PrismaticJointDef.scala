@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Dynamics.Joints.b2PrismaticJointDef")
 @js.native
+/**
+		* Constructor.
+		**/
 class b2PrismaticJointDef () extends b2JointDef {
   /**
   		* Enable/disable the joint limit.

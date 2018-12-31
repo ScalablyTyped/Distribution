@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DigestValidateOptions extends js.Object {
   var cnonce: java.lang.String
   var nc: scala.Double

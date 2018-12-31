@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BuildSummary extends js.Object {
   var build: XamlBuildReference
   var finishTime: stdLib.Date

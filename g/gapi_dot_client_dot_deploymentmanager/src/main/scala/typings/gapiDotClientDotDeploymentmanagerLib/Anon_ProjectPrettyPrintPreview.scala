@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ProjectPrettyPrintPreview extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -18,18 +17,18 @@ trait Anon_ProjectPrettyPrintPreview extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * If set to true, creates a deployment and creates "shell" resources but does not actually instantiate these resources. This allows you to preview what
-                   * your deployment looks like. After previewing a deployment, you can deploy your resources by making a request with the update() method or you can use
-                   * the cancelPreview() method to cancel the preview altogether. Note that the deployment will still exist after you cancel the preview and you must
-                   * separately delete this deployment if you want to remove it.
-                   */
+    * If set to true, creates a deployment and creates "shell" resources but does not actually instantiate these resources. This allows you to preview what
+    * your deployment looks like. After previewing a deployment, you can deploy your resources by making a request with the update() method or you can use
+    * the cancelPreview() method to cancel the preview altogether. Note that the deployment will still exist after you cancel the preview and you must
+    * separately delete this deployment if you want to remove it.
+    */
   var preview: js.UndefOr[scala.Boolean] = js.undefined
   /** The project ID for this request. */
   var project: java.lang.String
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[java.lang.String] = js.undefined

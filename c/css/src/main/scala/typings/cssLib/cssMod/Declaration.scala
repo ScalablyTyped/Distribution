@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Declaration extends Node {
   /** The property name, trimmed from whitespace and comments. May not be empty. */
   var property: js.UndefOr[java.lang.String] = js.undefined

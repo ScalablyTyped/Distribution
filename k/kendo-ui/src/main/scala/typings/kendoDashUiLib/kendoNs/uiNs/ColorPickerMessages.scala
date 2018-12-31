@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColorPickerMessages extends js.Object {
   @JSName("apply")
   var apply: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableLocale extends js.Object {
   var emptyText: js.UndefOr[
     reactLib.reactMod.ReactNs.ReactNode | js.Function0[reactLib.reactMod.ReactNs.ReactNode]

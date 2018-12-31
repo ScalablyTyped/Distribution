@@ -19,12 +19,12 @@ class LocalSimpleStringBlock ()
   /* CompleteClass */
   override var warnings: js.Array[java.lang.String] = js.native
   /**
-           * Convertion for the block to JSON object
-           * 
-           * @returns {JsonLocalBaseBlock}
-           * 
-           * @memberOf LocalBaseBlock
-           */
+    * Convertion for the block to JSON object
+    * 
+    * @returns {JsonLocalBaseBlock}
+    * 
+    * @memberOf LocalBaseBlock
+    */
   /* CompleteClass */
   override def toJSON(): asn1jsLib.asn1jsMod.Asn1jsNs.JsonLocalBaseBlock = js.native
 }

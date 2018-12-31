@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PageInfo extends js.Object {
   var endCursor: js.UndefOr[java.lang.String | scala.Null]
   var hasNextPage: scala.Boolean

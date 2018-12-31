@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var abide: js.UndefOr[AbideOptions] = js.undefined
   var accordion: js.UndefOr[AccordionOptions] = js.undefined

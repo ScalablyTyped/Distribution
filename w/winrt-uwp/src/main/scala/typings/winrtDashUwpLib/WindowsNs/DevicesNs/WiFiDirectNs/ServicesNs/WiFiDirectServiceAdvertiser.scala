@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class WiFiDirectServiceAdvertiser protected () extends js.Object {
   /**
-                       * Creates an instance of the WiFiDirectServiceAdvertiser class. To start advertising a Wi-Fi Direct Service, create an instance of this class, set its properties appropriately for your service, and then call its Start method.
-                       * @param serviceName The name of the service to be advertised. Service names are UTF-8 strings no more than 255 characters long. It is recommended that names use reverse domain name notation, where the service owner's DNS name (such as "contoso.com") is reversed and used as the beginning of the service name (such as "com.contoso.serviceX"). This convention is intended to make it easy to choose unique service names. Service names that start with "org.wi-fi.wfds" are reserved for use by the Wi-Fi Alliance, and you may not use such names for your service.
-                       */
+    * Creates an instance of the WiFiDirectServiceAdvertiser class. To start advertising a Wi-Fi Direct Service, create an instance of this class, set its properties appropriately for your service, and then call its Start method.
+    * @param serviceName The name of the service to be advertised. Service names are UTF-8 strings no more than 255 characters long. It is recommended that names use reverse domain name notation, where the service owner's DNS name (such as "contoso.com") is reversed and used as the beginning of the service name (such as "com.contoso.serviceX"). This convention is intended to make it easy to choose unique service names. Service names that start with "org.wi-fi.wfds" are reserved for use by the Wi-Fi Alliance, and you may not use such names for your service.
+    */
   def this(serviceName: java.lang.String) = this()
   /** Gets a value that describes the current status of the advertisement. */
   var advertisementStatus: WiFiDirectServiceAdvertisementStatus = js.native
@@ -62,17 +62,17 @@ class WiFiDirectServiceAdvertiser protected () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[WiFiDirectServiceAdvertiser, WiFiDirectServiceSessionRequestedEventArgs]
   ): scala.Unit = js.native
   /**
-                       * Accepts a session request without requiring a PIN.
-                       * @param deviceInfo Describes the device to be connected. Pass in the WiFiDirectServiceSessionRequestedEventArgs.DeviceInformation property value.
-                       * @return An asynchronous connection operation. On successful completion, returns an object that describes the session that has been created.
-                       */
+    * Accepts a session request without requiring a PIN.
+    * @param deviceInfo Describes the device to be connected. Pass in the WiFiDirectServiceSessionRequestedEventArgs.DeviceInformation property value.
+    * @return An asynchronous connection operation. On successful completion, returns an object that describes the session that has been created.
+    */
   def connectAsync(deviceInfo: winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DeviceInformation): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[WiFiDirectServiceSession] = js.native
   /**
-                       * Accepts a session request by connecting with the given PIN.
-                       * @param deviceInfo Describes the device to be connected. Pass in the WiFiDirectServiceSessionRequestedEventArgs.DeviceInformation property value.
-                       * @param pin The PIN to be used to configure the session.
-                       * @return An asynchronous connection operation. On successful completion, returns an object that describes the session that has been created.
-                       */
+    * Accepts a session request by connecting with the given PIN.
+    * @param deviceInfo Describes the device to be connected. Pass in the WiFiDirectServiceSessionRequestedEventArgs.DeviceInformation property value.
+    * @param pin The PIN to be used to configure the session.
+    * @return An asynchronous connection operation. On successful completion, returns an object that describes the session that has been created.
+    */
   def connectAsync(
     deviceInfo: winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DeviceInformation,
     pin: java.lang.String

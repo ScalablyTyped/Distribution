@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataViewMetadataColumn extends js.Object {
   /** The aggregates computed for this column, if any. */
   var aggregates: js.UndefOr[DataViewColumnAggregates] = js.undefined
@@ -22,10 +21,10 @@ trait DataViewMetadataColumn extends js.Object {
   /** The name of the containing group. */
   var groupName: js.UndefOr[PrimitiveValue] = js.undefined
   /**
-           * The set of expressions that define the identity for instances of this grouping field.
-           * This must be a subset of the items in the DataViewScopeIdentity in the grouped items result.
-           * This property is undefined for measure fields, as well as for grouping fields in DSR generated prior to the CY16SU08 or SU09 timeframe.
-           */
+    * The set of expressions that define the identity for instances of this grouping field.
+    * This must be a subset of the items in the DataViewScopeIdentity in the grouped items result.
+    * This property is undefined for measure fields, as well as for grouping fields in DSR generated prior to the CY16SU08 or SU09 timeframe.
+    */
   var identityExprs: js.UndefOr[
     js.Array[
       powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.dataNs.ISQExpr

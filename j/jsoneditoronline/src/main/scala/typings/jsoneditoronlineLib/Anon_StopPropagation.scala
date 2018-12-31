@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_StopPropagation extends js.Object {
   def addEventListener(
     element: stdLib.HTMLElement,

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Reply message received from watch app.
- */
-
+  * Reply message received from watch app.
+  */
 trait MessageReply extends js.Object {
   /**
   	 * Error code. Returns 0 if `success` is `true`.

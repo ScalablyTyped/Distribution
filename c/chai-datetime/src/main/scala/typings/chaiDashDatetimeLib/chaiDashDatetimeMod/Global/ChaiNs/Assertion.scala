@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Assertion extends js.Object {
   def afterDate(date: chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date): Assertion
   def afterTime(date: chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date): Assertion

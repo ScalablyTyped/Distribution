@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEditableTextState extends js.Object {
   /** Pixel height of the input, measured from span size */
   var inputHeight: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RequestMetadataexperimentIdsAccesstokenRequestMetadatauserOverridesuserId extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -27,12 +26,12 @@ trait Anon_RequestMetadataexperimentIdsAccesstokenRequestMetadatauserOverridesus
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Comma-separated list of fields to order by, e.g.: "foo,bar,baz".
-                   * Use "foo desc" to sort descending.
-                   * List of valid field names is: name, offer_code, expiration_time, status,
-                   * last_modified_time, sender_name, creation_time, country_code,
-                   * offer_type.
-                   */
+    * Comma-separated list of fields to order by, e.g.: "foo,bar,baz".
+    * Use "foo desc" to sort descending.
+    * List of valid field names is: name, offer_code, expiration_time, status,
+    * last_modified_time, sender_name, creation_time, country_code,
+    * offer_type.
+    */
   var orderBy: js.UndefOr[java.lang.String] = js.undefined
   /** Maximum number of rows to return per page. */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
@@ -51,16 +50,16 @@ trait Anon_RequestMetadataexperimentIdsAccesstokenRequestMetadatauserOverridesus
   /** Google Partners session ID. */
   var `requestMetadata.partnersSessionId`: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Identifier to indicate where the traffic comes from.
-                   * An identifier has multiple letters created by a team which redirected the
-                   * traffic to us.
-                   */
+    * Identifier to indicate where the traffic comes from.
+    * An identifier has multiple letters created by a team which redirected the
+    * traffic to us.
+    */
   var `requestMetadata.trafficSource.trafficSourceId`: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Second level identifier to indicate where the traffic comes from.
-                   * An identifier has multiple letters created by a team which redirected the
-                   * traffic to us.
-                   */
+    * Second level identifier to indicate where the traffic comes from.
+    * An identifier has multiple letters created by a team which redirected the
+    * traffic to us.
+    */
   var `requestMetadata.trafficSource.trafficSubId`: js.UndefOr[java.lang.String] = js.undefined
   /** IP address to use instead of the user's geo-located IP address. */
   var `requestMetadata.userOverrides.ipAddress`: js.UndefOr[java.lang.String] = js.undefined

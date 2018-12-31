@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableList extends js.Object {
   /** List of all requested tables. */
   var items: js.UndefOr[js.Array[Table]] = js.undefined

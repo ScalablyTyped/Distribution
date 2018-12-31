@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RenderOptions extends js.Object {
   var autoViewport: js.UndefOr[scala.Boolean] = js.undefined
   var highlightMode: js.UndefOr[HighlightModes] = js.undefined

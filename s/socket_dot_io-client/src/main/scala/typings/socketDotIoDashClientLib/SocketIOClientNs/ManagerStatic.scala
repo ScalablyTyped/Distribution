@@ -10,10 +10,7 @@ import scala.scalajs.js.annotation._
 	 */
 @js.native
 trait ManagerStatic
-  extends /**
-		 * @see default constructor
-		 */
-org.scalablytyped.runtime.Instantiable2[/* uri */ java.lang.String, /* opts */ ConnectOpts, Manager]
+  extends org.scalablytyped.runtime.Instantiable2[/* uri */ java.lang.String, /* opts */ ConnectOpts, Manager]
      with /**
 		 * @see default constructor
 		 */
@@ -30,12 +27,6 @@ org.scalablytyped.runtime.Instantiable1[(/* opts */ ConnectOpts) | (/* uri */ ja
   		 * @return A Manager
   		 */
   def apply(uri: java.lang.String): Manager = js.native
-  /**
-  		 * Creates a new Manager
-  		 * @param uri The URI that we're connecting to (e.g. http://localhost:4000)
-  		 * @param opts Any connection options that we want to use (and pass to engine.io)
-  		 * @return A Manager
-  		 */
   def apply(uri: java.lang.String, opts: ConnectOpts): Manager = js.native
 }
 

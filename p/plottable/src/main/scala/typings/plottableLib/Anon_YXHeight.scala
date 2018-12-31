@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_YXHeight extends js.Object {
   var height: js.Any
   var width: js.Any

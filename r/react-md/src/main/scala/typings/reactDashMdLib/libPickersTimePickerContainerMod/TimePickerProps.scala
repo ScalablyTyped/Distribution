@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimePickerProps
   extends reactDashMdLib.libPickersMod.BasePickerProps {
   var defaultTimeMode: js.UndefOr[

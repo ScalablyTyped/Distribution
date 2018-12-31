@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents field schema in a list view. */
-
 trait FieldSchema_InView extends FieldSchema {
   /** Either "TRUE" or "FALSE" */
   var CalloutMenu: java.lang.String
@@ -20,7 +19,7 @@ trait FieldSchema_InView extends FieldSchema {
   /** Either "TRUE" or "FALSE" */
   var GridActiveAndReadOnly: java.lang.String
   /** Set to "TRUE" for fields that comply to the following Xpath query:
-              ViewFields/FieldRef[@Explicit='TRUE'] | Query/GroupBy/FieldRef[not(@Name=ViewFields/FieldRef/@Name)] */
+    ViewFields/FieldRef[@Explicit='TRUE'] | Query/GroupBy/FieldRef[not(@Name=ViewFields/FieldRef/@Name)] */
   var GroupField: java.lang.String
   /** Guid of the field */
   var ID: java.lang.String
@@ -34,7 +33,7 @@ trait FieldSchema_InView extends FieldSchema {
   var css: java.lang.String
   var fieldRenderer: js.Any
   /** Specifies if the field contains list item menu.
-              Corresponds to ViewFields/FieldRef/@ListItemMenu attribute. Either "TRUE" or "FALSE" and might be missing. */
+    Corresponds to ViewFields/FieldRef/@ListItemMenu attribute. Either "TRUE" or "FALSE" and might be missing. */
   var listItemMenu: java.lang.String
 }
 

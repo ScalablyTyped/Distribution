@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExecuteSpecsOptions extends js.Object {
   var growl: js.UndefOr[scala.Boolean] = js.undefined
   var includeStackTrace: js.UndefOr[scala.Boolean] = js.undefined

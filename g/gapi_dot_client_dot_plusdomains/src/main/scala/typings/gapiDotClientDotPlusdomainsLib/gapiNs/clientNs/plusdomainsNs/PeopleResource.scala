@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PeopleResource extends js.Object {
   /** Get a person's profile. */
   def get(request: gapiDotClientDotPlusdomainsLib.Anon_PrettyPrintQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[Person]

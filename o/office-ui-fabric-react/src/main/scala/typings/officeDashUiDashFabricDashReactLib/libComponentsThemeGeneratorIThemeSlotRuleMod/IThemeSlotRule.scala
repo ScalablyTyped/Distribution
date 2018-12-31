@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IThemeSlotRule extends js.Object {
   var asShade: js.UndefOr[officeDashUiDashFabricDashReactLib.libUtilitiesColorShadesMod.Shade] = js.undefined
   var color: js.UndefOr[officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor] = js.undefined

@@ -1,0 +1,12 @@
+package typings
+package atPulumiAwsLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_ScopeDescription extends js.Object {
+  var scopeDescription: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  var scopeName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+}
+

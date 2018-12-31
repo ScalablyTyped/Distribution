@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PrefixHost extends js.Object {
   var db: js.UndefOr[scala.Double] = js.undefined
   var host: js.UndefOr[java.lang.String] = js.undefined

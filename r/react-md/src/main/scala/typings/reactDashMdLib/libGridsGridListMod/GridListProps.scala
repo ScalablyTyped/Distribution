@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(reactDashMdLib.libGridsCellMod.CellProps because Would inherit conflicting mutable fields List(onBlur, onDragStart, onMouseLeave, onDrag, onTouchStart, onKeyDown, style, onDragLeave, onDrop, onDragExit, onDragOver, onDragEnd, onMouseUp, onTouchEnd, onKeyUp, onMouseMove, onMouseOver, onTouchCancel, className, onMouseOut, onFocus, onDragEnter, onTouchMove, onMouseEnter, onMouseDown, onClick, children, component))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(reactDashMdLib.libGridsCellMod.CellProps because Would inherit conflicting mutable fields List(children, className, component, onBlur, onClick, onDrag, onDragEnd, onDragEnter, onDragExit, onDragLeave, onDragOver, onDragStart, onDrop, onFocus, onKeyDown, onKeyUp, onMouseDown, onMouseEnter, onMouseLeave, onMouseMove, onMouseOut, onMouseOver, onMouseUp, onTouchCancel, onTouchEnd, onTouchMove, onTouchStart, style))*/
 trait GridListProps
   extends reactDashMdLib.libGridsGridMod.GridProps {
   var cellClassName: js.UndefOr[java.lang.String] = js.undefined

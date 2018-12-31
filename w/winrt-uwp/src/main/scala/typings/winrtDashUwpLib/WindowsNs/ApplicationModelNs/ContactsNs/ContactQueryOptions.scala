@@ -8,17 +8,18 @@ import scala.scalajs.js.annotation._
 /** Used to specify the query options when searching for contacts. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactQueryOptions")
 @js.native
+/** Initializes a new instance of the ContactQueryOptions class. */
 class ContactQueryOptions () extends js.Object {
   /**
-                   * Initializes a new instance of the ContactQueryOptions class.
-                   * @param text The text to match in the search operation.
-                   */
+    * Initializes a new instance of the ContactQueryOptions class.
+    * @param text The text to match in the search operation.
+    */
   def this(text: java.lang.String) = this()
   /**
-                   * Initializes a new instance of the ContactQueryOptions class.
-                   * @param text The text to match in the search operation.
-                   * @param fields Specifies which contact fields to search for a match.
-                   */
+    * Initializes a new instance of the ContactQueryOptions class.
+    * @param text The text to match in the search operation.
+    * @param fields Specifies which contact fields to search for a match.
+    */
   def this(text: java.lang.String, fields: ContactQuerySearchFields) = this()
   /** Gets a list to which you can add ContactAnnotationList.Id values for which to search. */
   var annotationListIds: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[java.lang.String] = js.native

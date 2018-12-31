@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IComposite extends ISprite {
   /** [Method] Adds a sprite to the composite
   		* @param sprite Object

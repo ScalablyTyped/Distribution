@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Icon extends js.Object {
   var ascent: scala.Double
   var descent: scala.Double

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait Style extends js.Object
 
 /**
-     * [Api set: WordApi]
-     */
+  * [Api set: WordApi]
+  */
 @JSGlobal("Word.Style")
 @js.native
 object Style extends js.Object {
@@ -507,19 +507,19 @@ object Style extends js.Object {
     extends officeDashJsDashPreviewLib.WordNs.Style
   
   /**
-           *
-           * Reset character and paragraph style to default.
-           *
-           */
+    *
+    * Reset character and paragraph style to default.
+    *
+    */
   @js.native
   sealed trait normal
     extends officeDashJsDashPreviewLib.WordNs.Style
   
   /**
-           *
-           * Mixed styles or other style not in this list.
-           *
-           */
+    *
+    * Mixed styles or other style not in this list.
+    *
+    */
   @js.native
   sealed trait other
     extends officeDashJsDashPreviewLib.WordNs.Style
@@ -577,91 +577,91 @@ object Style extends js.Object {
     extends officeDashJsDashPreviewLib.WordNs.Style
   
   /**
-           *
-           * Table-of-content level 1.
-           *
-           */
+    *
+    * Table-of-content level 1.
+    *
+    */
   @js.native
   sealed trait toc1
     extends officeDashJsDashPreviewLib.WordNs.Style
   
   /**
-           *
-           * Table-of-content level 2.
-           *
-           */
+    *
+    * Table-of-content level 2.
+    *
+    */
   @js.native
   sealed trait toc2
     extends officeDashJsDashPreviewLib.WordNs.Style
   
   /**
-           *
-           * Table-of-content level 3.
-           *
-           */
+    *
+    * Table-of-content level 3.
+    *
+    */
   @js.native
   sealed trait toc3
     extends officeDashJsDashPreviewLib.WordNs.Style
   
   /**
-           *
-           * Table-of-content level 4.
-           *
-           */
+    *
+    * Table-of-content level 4.
+    *
+    */
   @js.native
   sealed trait toc4
     extends officeDashJsDashPreviewLib.WordNs.Style
   
   /**
-           *
-           * Table-of-content level 5.
-           *
-           */
+    *
+    * Table-of-content level 5.
+    *
+    */
   @js.native
   sealed trait toc5
     extends officeDashJsDashPreviewLib.WordNs.Style
   
   /**
-           *
-           * Table-of-content level 6.
-           *
-           */
+    *
+    * Table-of-content level 6.
+    *
+    */
   @js.native
   sealed trait toc6
     extends officeDashJsDashPreviewLib.WordNs.Style
   
   /**
-           *
-           * Table-of-content level 7.
-           *
-           */
+    *
+    * Table-of-content level 7.
+    *
+    */
   @js.native
   sealed trait toc7
     extends officeDashJsDashPreviewLib.WordNs.Style
   
   /**
-           *
-           * Table-of-content level 8.
-           *
-           */
+    *
+    * Table-of-content level 8.
+    *
+    */
   @js.native
   sealed trait toc8
     extends officeDashJsDashPreviewLib.WordNs.Style
   
   /**
-           *
-           * Table-of-content level 9.
-           *
-           */
+    *
+    * Table-of-content level 9.
+    *
+    */
   @js.native
   sealed trait toc9
     extends officeDashJsDashPreviewLib.WordNs.Style
   
   /**
-           *
-           * Table-of-content heading.
-           *
-           */
+    *
+    * Table-of-content heading.
+    *
+    */
   @js.native
   sealed trait tocHeading
     extends officeDashJsDashPreviewLib.WordNs.Style

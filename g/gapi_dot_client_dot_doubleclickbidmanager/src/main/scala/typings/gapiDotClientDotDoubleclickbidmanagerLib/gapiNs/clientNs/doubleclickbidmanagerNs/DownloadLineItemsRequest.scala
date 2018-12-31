@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DownloadLineItemsRequest extends js.Object {
   /** File specification (column names, types, order) in which the line items will be returned. Default to EWF. */
   var fileSpec: js.UndefOr[java.lang.String] = js.undefined

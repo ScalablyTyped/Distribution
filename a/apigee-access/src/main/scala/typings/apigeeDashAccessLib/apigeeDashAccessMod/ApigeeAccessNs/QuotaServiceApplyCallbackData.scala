@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QuotaServiceApplyCallbackData extends js.Object {
   var allowed: scala.Double
   var expiryTime: scala.Double

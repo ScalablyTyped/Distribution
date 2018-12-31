@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadTaskSnapshot extends js.Object {
   var bytesTransferred: scala.Double
   var metadata: FullMetadata

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OperationOption[TProps, TData, TGraphQLVariables, TChildProps] extends js.Object {
   var alias: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined

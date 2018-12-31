@@ -6,15 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-   * Represent a single page in the PDF document
-   */
-
+  * Represent a single page in the PDF document
+  */
 trait PDFPage extends js.Object {
   var annotations: js.Any
   var content: PDFKitReference
   /**
-       * The page dictionnary
-       */
+    * The page dictionnary
+    */
   var dictionary: PDFKitReference
   var document: PDFDocument
   var ext_gstates: js.Any

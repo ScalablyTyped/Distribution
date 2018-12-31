@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Duration extends js.Object {
   var complex: scala.Double
   var enteringScreen: scala.Double

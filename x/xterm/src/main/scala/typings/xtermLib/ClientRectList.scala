@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientRectList
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[ClientRect] {
   val length: scala.Double

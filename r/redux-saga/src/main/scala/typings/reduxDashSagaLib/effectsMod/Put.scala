@@ -20,16 +20,13 @@ trait Put extends js.Object {
     action: reduxDashSagaLib.reduxDashSagaMod.END
   ): ChannelPutEffect[T | reduxDashSagaLib.reduxDashSagaMod.END] = js.native
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   def sync[A /* <: reduxLib.reduxMod.Action[_] */](action: A): PutEffect[A] = js.native
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   def sync[T](channel: reduxDashSagaLib.reduxDashSagaMod.Channel[T], action: T): ChannelPutEffect[T | reduxDashSagaLib.reduxDashSagaMod.END] = js.native
-  /**
-     * @deprecated
-     */
   def sync[T](
     channel: reduxDashSagaLib.reduxDashSagaMod.Channel[T],
     action: reduxDashSagaLib.reduxDashSagaMod.END

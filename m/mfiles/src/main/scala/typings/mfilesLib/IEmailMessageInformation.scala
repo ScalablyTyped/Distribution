@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEmailMessageInformation extends js.Object {
   var Cc: IStrings
   var From: java.lang.String

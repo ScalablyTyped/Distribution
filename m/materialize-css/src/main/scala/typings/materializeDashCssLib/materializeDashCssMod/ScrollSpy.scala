@@ -14,27 +14,21 @@ class ScrollSpy ()
 @js.native
 object ScrollSpy extends js.Object {
   /**
-           * Get Instance
-           */
+    * Get Instance
+    */
   def getInstance(elem: stdLib.Element): materializeDashCssLib.MNs.ScrollSpy = js.native
   /**
-           * Init ScrollSpies
-           */
+    * Init ScrollSpies
+    */
   def init(els: materializeDashCssLib.MElements): js.Array[materializeDashCssLib.MNs.ScrollSpy] = js.native
-  /**
-           * Init ScrollSpies
-           */
   def init(
     els: materializeDashCssLib.MElements,
     options: stdLib.Partial[materializeDashCssLib.MNs.ScrollSpyOptions]
   ): js.Array[materializeDashCssLib.MNs.ScrollSpy] = js.native
   /**
-           * Init ScrollSpy
-           */
+    * Init ScrollSpy
+    */
   def init(els: stdLib.Element): materializeDashCssLib.MNs.ScrollSpy = js.native
-  /**
-           * Init ScrollSpy
-           */
   def init(els: stdLib.Element, options: stdLib.Partial[materializeDashCssLib.MNs.ScrollSpyOptions]): materializeDashCssLib.MNs.ScrollSpy = js.native
 }
 

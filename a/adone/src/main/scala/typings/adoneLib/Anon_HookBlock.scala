@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_HookBlock extends js.Object {
   var block: adoneLib.adoneNs.shaniNs.INs.Block
   var hook: adoneLib.adoneNs.shaniNs.INs.Hook

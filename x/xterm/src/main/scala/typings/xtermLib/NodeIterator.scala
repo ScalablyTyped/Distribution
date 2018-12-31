@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodeIterator extends js.Object {
   val filter: NodeFilter | scala.Null
   val pointerBeforeReferenceNode: scala.Boolean

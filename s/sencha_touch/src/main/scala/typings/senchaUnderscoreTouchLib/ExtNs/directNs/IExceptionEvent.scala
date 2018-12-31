@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IExceptionEvent extends IRemotingEvent {
   /** [Method] Returns the value of error
   		* @returns Object

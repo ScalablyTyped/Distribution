@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GoogleAuthProvider_Instance extends AuthProvider {
   def addScope(scope: java.lang.String): AuthProvider
   def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): AuthProvider

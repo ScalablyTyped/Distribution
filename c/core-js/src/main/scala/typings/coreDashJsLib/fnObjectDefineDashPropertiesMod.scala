@@ -8,5 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/object/define-properties", JSImport.Namespace)
 @js.native
 object fnObjectDefineDashPropertiesMod
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[
+      js.Function2[/* o */ js.Any, /* properties */ stdLib.PropertyDescriptorMap, js.Any]
+    ]
 

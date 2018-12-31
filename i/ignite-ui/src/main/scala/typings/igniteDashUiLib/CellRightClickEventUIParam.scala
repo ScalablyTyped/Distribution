@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CellRightClickEventUIParam extends js.Object {
   /**
   	 * Gets a reference to cell DOM element.

@@ -47,7 +47,7 @@ trait Anon_Path extends js.Object {
   def path(affixes: java.lang.String, defaultPrefix: java.lang.String): java.lang.String = js.native
   def path(affixes: tempLib.tempMod.tempNs.AffixOptions): java.lang.String = js.native
   def path(affixes: tempLib.tempMod.tempNs.AffixOptions, defaultPrefix: java.lang.String): java.lang.String = js.native
-  def track(): /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(temp), TsIdentModule(None,List(temp)), TsIdentNamespace(temp)))) */js.Any = js.native
-  def track(value: scala.Boolean): /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(temp), TsIdentModule(None,List(temp)), TsIdentNamespace(temp)))) */js.Any = js.native
+  def track(): /* import warning: ImportType.apply Failed type conversion: typeof temp.temp.temp */ js.Any = js.native
+  def track(value: scala.Boolean): /* import warning: ImportType.apply Failed type conversion: typeof temp.temp.temp */ js.Any = js.native
 }
 

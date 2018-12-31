@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_GuardianId extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -33,12 +32,12 @@ trait Anon_GuardianId extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The student whose guardian is to be deleted. One of the following:
-                   *
-                   * &#42; the numeric identifier for the user
-                   * &#42; the email address of the user
-                   * &#42; the string literal `"me"`, indicating the requesting user
-                   */
+    * The student whose guardian is to be deleted. One of the following:
+    *
+    * &#42; the numeric identifier for the user
+    * &#42; the email address of the user
+    * &#42; the string literal `"me"`, indicating the requesting user
+    */
   var studentId: java.lang.String
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

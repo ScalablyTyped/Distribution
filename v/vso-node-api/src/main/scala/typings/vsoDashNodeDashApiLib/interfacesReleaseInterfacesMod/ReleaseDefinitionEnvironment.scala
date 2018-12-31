@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReleaseDefinitionEnvironment extends js.Object {
   var badgeUrl: java.lang.String
   var conditions: js.Array[Condition]

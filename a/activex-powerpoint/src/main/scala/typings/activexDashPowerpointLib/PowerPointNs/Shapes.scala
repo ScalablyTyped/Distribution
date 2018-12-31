@@ -25,57 +25,22 @@ class Shapes protected () extends js.Object {
   ): Shape = js.native
   def AddCanvas(Left: scala.Double, Top: scala.Double, Width: scala.Double, Height: scala.Double): Shape = js.native
   /**
-           * @param Office.XlChartType [Type=-1]
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
+    * @param Office.XlChartType [Type=-1]
+    * @param number [Left=-1]
+    * @param number [Top=-1]
+    * @param number [Width=-1]
+    * @param number [Height=-1]
+    */
   def AddChart(): Shape = js.native
-  /**
-           * @param Office.XlChartType [Type=-1]
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddChart(Type: activexDashOfficeLib.OfficeNs.XlChartType): Shape = js.native
-  /**
-           * @param Office.XlChartType [Type=-1]
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddChart(Type: activexDashOfficeLib.OfficeNs.XlChartType, Left: scala.Double): Shape = js.native
-  /**
-           * @param Office.XlChartType [Type=-1]
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddChart(Type: activexDashOfficeLib.OfficeNs.XlChartType, Left: scala.Double, Top: scala.Double): Shape = js.native
-  /**
-           * @param Office.XlChartType [Type=-1]
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddChart(
     Type: activexDashOfficeLib.OfficeNs.XlChartType,
     Left: scala.Double,
     Top: scala.Double,
     Width: scala.Double
   ): Shape = js.native
-  /**
-           * @param Office.XlChartType [Type=-1]
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddChart(
     Type: activexDashOfficeLib.OfficeNs.XlChartType,
     Left: scala.Double,
@@ -84,39 +49,15 @@ class Shapes protected () extends js.Object {
     Height: scala.Double
   ): Shape = js.native
   /**
-           * @param number [Left=1.25]
-           * @param number [Top=1.25]
-           * @param number [Width=145.25]
-           * @param number [Height=145.25]
-           */
+    * @param number [Left=1.25]
+    * @param number [Top=1.25]
+    * @param number [Width=145.25]
+    * @param number [Height=145.25]
+    */
   def AddComment(): Shape = js.native
-  /**
-           * @param number [Left=1.25]
-           * @param number [Top=1.25]
-           * @param number [Width=145.25]
-           * @param number [Height=145.25]
-           */
   def AddComment(Left: scala.Double): Shape = js.native
-  /**
-           * @param number [Left=1.25]
-           * @param number [Top=1.25]
-           * @param number [Width=145.25]
-           * @param number [Height=145.25]
-           */
   def AddComment(Left: scala.Double, Top: scala.Double): Shape = js.native
-  /**
-           * @param number [Left=1.25]
-           * @param number [Top=1.25]
-           * @param number [Width=145.25]
-           * @param number [Height=145.25]
-           */
   def AddComment(Left: scala.Double, Top: scala.Double, Width: scala.Double): Shape = js.native
-  /**
-           * @param number [Left=1.25]
-           * @param number [Top=1.25]
-           * @param number [Width=145.25]
-           * @param number [Height=145.25]
-           */
   def AddComment(Left: scala.Double, Top: scala.Double, Width: scala.Double, Height: scala.Double): Shape = js.native
   def AddConnector(
     Type: activexDashOfficeLib.OfficeNs.MsoConnectorType,
@@ -142,39 +83,15 @@ class Shapes protected () extends js.Object {
   ): Shape = js.native
   def AddLine(BeginX: scala.Double, BeginY: scala.Double, EndX: scala.Double, EndY: scala.Double): Shape = js.native
   /**
-           * @param number [Left=0]
-           * @param number [Top=0]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
+    * @param number [Left=0]
+    * @param number [Top=0]
+    * @param number [Width=-1]
+    * @param number [Height=-1]
+    */
   def AddMediaObject(FileName: java.lang.String): Shape = js.native
-  /**
-           * @param number [Left=0]
-           * @param number [Top=0]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddMediaObject(FileName: java.lang.String, Left: scala.Double): Shape = js.native
-  /**
-           * @param number [Left=0]
-           * @param number [Top=0]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddMediaObject(FileName: java.lang.String, Left: scala.Double, Top: scala.Double): Shape = js.native
-  /**
-           * @param number [Left=0]
-           * @param number [Top=0]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddMediaObject(FileName: java.lang.String, Left: scala.Double, Top: scala.Double, Width: scala.Double): Shape = js.native
-  /**
-           * @param number [Left=0]
-           * @param number [Top=0]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddMediaObject(
     FileName: java.lang.String,
     Left: scala.Double,
@@ -183,13 +100,13 @@ class Shapes protected () extends js.Object {
     Height: scala.Double
   ): Shape = js.native
   /**
-           * @param Office.MsoTriState [LinkToFile=0]
-           * @param Office.MsoTriState [SaveWithDocument=-1]
-           * @param number [Left=0]
-           * @param number [Top=0]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
+    * @param Office.MsoTriState [LinkToFile=0]
+    * @param Office.MsoTriState [SaveWithDocument=-1]
+    * @param number [Left=0]
+    * @param number [Top=0]
+    * @param number [Width=-1]
+    * @param number [Height=-1]
+    */
   def AddMediaObject2(
     FileName: java.lang.String,
     LinkToFile: js.UndefOr[activexDashOfficeLib.OfficeNs.MsoTriState],
@@ -200,39 +117,15 @@ class Shapes protected () extends js.Object {
     Height: js.UndefOr[scala.Double]
   ): Shape = js.native
   /**
-           * @param number [Left=0]
-           * @param number [Top=0]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
+    * @param number [Left=0]
+    * @param number [Top=0]
+    * @param number [Width=-1]
+    * @param number [Height=-1]
+    */
   def AddMediaObjectFromEmbedTag(EmbedTag: java.lang.String): Shape = js.native
-  /**
-           * @param number [Left=0]
-           * @param number [Top=0]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddMediaObjectFromEmbedTag(EmbedTag: java.lang.String, Left: scala.Double): Shape = js.native
-  /**
-           * @param number [Left=0]
-           * @param number [Top=0]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddMediaObjectFromEmbedTag(EmbedTag: java.lang.String, Left: scala.Double, Top: scala.Double): Shape = js.native
-  /**
-           * @param number [Left=0]
-           * @param number [Top=0]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddMediaObjectFromEmbedTag(EmbedTag: java.lang.String, Left: scala.Double, Top: scala.Double, Width: scala.Double): Shape = js.native
-  /**
-           * @param number [Left=0]
-           * @param number [Top=0]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddMediaObjectFromEmbedTag(
     EmbedTag: java.lang.String,
     Left: scala.Double,
@@ -241,18 +134,18 @@ class Shapes protected () extends js.Object {
     Height: scala.Double
   ): Shape = js.native
   /**
-           * @param number [Left=0]
-           * @param number [Top=0]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           * @param string [ClassName='']
-           * @param string [FileName='']
-           * @param Office.MsoTriState [DisplayAsIcon=0]
-           * @param string [IconFileName='']
-           * @param number [IconIndex=0]
-           * @param string [IconLabel='']
-           * @param Office.MsoTriState [Link=0]
-           */
+    * @param number [Left=0]
+    * @param number [Top=0]
+    * @param number [Width=-1]
+    * @param number [Height=-1]
+    * @param string [ClassName='']
+    * @param string [FileName='']
+    * @param Office.MsoTriState [DisplayAsIcon=0]
+    * @param string [IconFileName='']
+    * @param number [IconIndex=0]
+    * @param string [IconLabel='']
+    * @param Office.MsoTriState [Link=0]
+    */
   def AddOLEObject(
     Left: js.UndefOr[scala.Double],
     Top: js.UndefOr[scala.Double],
@@ -267,9 +160,9 @@ class Shapes protected () extends js.Object {
     Link: js.UndefOr[activexDashOfficeLib.OfficeNs.MsoTriState]
   ): Shape = js.native
   /**
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
+    * @param number [Width=-1]
+    * @param number [Height=-1]
+    */
   def AddPicture(
     FileName: java.lang.String,
     LinkToFile: activexDashOfficeLib.OfficeNs.MsoTriState,
@@ -277,10 +170,6 @@ class Shapes protected () extends js.Object {
     Left: scala.Double,
     Top: scala.Double
   ): Shape = js.native
-  /**
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddPicture(
     FileName: java.lang.String,
     LinkToFile: activexDashOfficeLib.OfficeNs.MsoTriState,
@@ -289,10 +178,6 @@ class Shapes protected () extends js.Object {
     Top: scala.Double,
     Width: scala.Double
   ): Shape = js.native
-  /**
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddPicture(
     FileName: java.lang.String,
     LinkToFile: activexDashOfficeLib.OfficeNs.MsoTriState,
@@ -303,39 +188,15 @@ class Shapes protected () extends js.Object {
     Height: scala.Double
   ): Shape = js.native
   /**
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
+    * @param number [Left=-1]
+    * @param number [Top=-1]
+    * @param number [Width=-1]
+    * @param number [Height=-1]
+    */
   def AddPlaceholder(Type: PpPlaceholderType): Shape = js.native
-  /**
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddPlaceholder(Type: PpPlaceholderType, Left: scala.Double): Shape = js.native
-  /**
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddPlaceholder(Type: PpPlaceholderType, Left: scala.Double, Top: scala.Double): Shape = js.native
-  /**
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddPlaceholder(Type: PpPlaceholderType, Left: scala.Double, Top: scala.Double, Width: scala.Double): Shape = js.native
-  /**
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddPlaceholder(
     Type: PpPlaceholderType,
     Left: scala.Double,
@@ -352,44 +213,20 @@ class Shapes protected () extends js.Object {
     Height: scala.Double
   ): Shape = js.native
   /**
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
+    * @param number [Left=-1]
+    * @param number [Top=-1]
+    * @param number [Width=-1]
+    * @param number [Height=-1]
+    */
   def AddSmartArt(Layout: activexDashOfficeLib.OfficeNs.SmartArtLayout): Shape = js.native
-  /**
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddSmartArt(Layout: activexDashOfficeLib.OfficeNs.SmartArtLayout, Left: scala.Double): Shape = js.native
-  /**
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddSmartArt(Layout: activexDashOfficeLib.OfficeNs.SmartArtLayout, Left: scala.Double, Top: scala.Double): Shape = js.native
-  /**
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddSmartArt(
     Layout: activexDashOfficeLib.OfficeNs.SmartArtLayout,
     Left: scala.Double,
     Top: scala.Double,
     Width: scala.Double
   ): Shape = js.native
-  /**
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddSmartArt(
     Layout: activexDashOfficeLib.OfficeNs.SmartArtLayout,
     Left: scala.Double,
@@ -398,32 +235,14 @@ class Shapes protected () extends js.Object {
     Height: scala.Double
   ): Shape = js.native
   /**
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
+    * @param number [Left=-1]
+    * @param number [Top=-1]
+    * @param number [Width=-1]
+    * @param number [Height=-1]
+    */
   def AddTable(NumRows: scala.Double, NumColumns: scala.Double): Shape = js.native
-  /**
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddTable(NumRows: scala.Double, NumColumns: scala.Double, Left: scala.Double): Shape = js.native
-  /**
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddTable(NumRows: scala.Double, NumColumns: scala.Double, Left: scala.Double, Top: scala.Double): Shape = js.native
-  /**
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddTable(
     NumRows: scala.Double,
     NumColumns: scala.Double,
@@ -431,12 +250,6 @@ class Shapes protected () extends js.Object {
     Top: scala.Double,
     Width: scala.Double
   ): Shape = js.native
-  /**
-           * @param number [Left=-1]
-           * @param number [Top=-1]
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddTable(
     NumRows: scala.Double,
     NumColumns: scala.Double,
@@ -467,13 +280,13 @@ class Shapes protected () extends js.Object {
   def Item(Index: js.Any): Shape = js.native
   def Paste(): ShapeRange = js.native
   /**
-           * @param PowerPoint.PpPasteDataType [DataType=0]
-           * @param Office.MsoTriState [DisplayAsIcon=0]
-           * @param string [IconFileName='']
-           * @param number [IconIndex=0]
-           * @param string [IconLabel='']
-           * @param Office.MsoTriState [Link=0]
-           */
+    * @param PowerPoint.PpPasteDataType [DataType=0]
+    * @param Office.MsoTriState [DisplayAsIcon=0]
+    * @param string [IconFileName='']
+    * @param number [IconIndex=0]
+    * @param string [IconLabel='']
+    * @param Office.MsoTriState [Link=0]
+    */
   def PasteSpecial(
     DataType: js.UndefOr[PpPasteDataType],
     DisplayAsIcon: js.UndefOr[activexDashOfficeLib.OfficeNs.MsoTriState],

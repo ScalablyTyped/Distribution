@@ -13,8 +13,8 @@ object operatorDistinctUntilKeyChangedMod extends js.Object {
     `this`: rxjsLib.rxjsMod.Observable[T],
     key: K,
     compare: js.Function2[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) *//* x */ js.Any, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) *//* y */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[K] */ /* x */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[K] */ /* y */ js.Any, 
       scala.Boolean
     ]
   ): rxjsLib.rxjsMod.Observable[T] = js.native

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Status of a client connected to a social network.
-
 trait ClientState extends js.Object {
   var clientId: java.lang.String
   var status: java.lang.String

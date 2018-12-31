@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LineBackgroundSpan extends ParagraphStyle {
   def drawBackground(
     c: androiduixLib.androidNs.graphicsNs.Canvas,

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GravityEnum extends js.Object {
   var center: scala.Double
   var centre: scala.Double

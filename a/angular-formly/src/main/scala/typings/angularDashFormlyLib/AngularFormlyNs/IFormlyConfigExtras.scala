@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFormlyConfigExtras extends js.Object {
   var apiCheckInstance: js.Any
   var defaultHideDirective: java.lang.String

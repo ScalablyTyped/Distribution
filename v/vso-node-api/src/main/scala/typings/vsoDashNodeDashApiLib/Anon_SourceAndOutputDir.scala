@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SourceAndOutputDir extends js.Object {
   var allBuildDir: scala.Double
   var source: scala.Double

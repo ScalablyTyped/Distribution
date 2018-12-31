@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReleaseReference extends js.Object {
   var definitionId: scala.Double
   var environmentDefinitionId: scala.Double

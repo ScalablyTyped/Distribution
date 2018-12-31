@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LivePlayerContext extends js.Object {
   /** 退出全屏 */
   def exitFullScreen(options: BaseOptions[_, _]): scala.Unit

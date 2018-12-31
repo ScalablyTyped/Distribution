@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ViewOptions extends js.Object {
   var afterShow: js.UndefOr[js.Function1[/* e */ ViewAfterShowEvent, scala.Unit]] = js.undefined
   var beforeHide: js.UndefOr[js.Function1[/* e */ ViewBeforeHideEvent, scala.Unit]] = js.undefined

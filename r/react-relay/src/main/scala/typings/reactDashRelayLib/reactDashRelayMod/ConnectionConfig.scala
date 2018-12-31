@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionConfig[P] extends js.Object {
   var direction: js.UndefOr[
     reactDashRelayLib.reactDashRelayLibStrings.backward | reactDashRelayLib.reactDashRelayLibStrings.forward

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Configuration extends js.Object {
   var audio_remote: js.UndefOr[stdLib.HTMLElement] = js.undefined
   var bandwidth: js.UndefOr[sipmlLib.Anon_Audio] = js.undefined

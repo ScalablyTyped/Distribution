@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Ingverb extends js.Object {
   def abbreviation(): java.lang.String
   def adjective(): java.lang.String

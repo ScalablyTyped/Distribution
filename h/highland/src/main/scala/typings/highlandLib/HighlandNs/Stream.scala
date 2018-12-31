@@ -823,65 +823,48 @@ trait Stream[R]
   		 * _([{a: 1}]).toNodeStream({objectMode: true})
   		 */
   def toNodeStream(): nodeLib.NodeJSNs.ReadableStream = js.native
-  /**
-  		 * Converts the stream to a node Readable Stream for use in methods
-  		 * or pipes that depend on the native stream type.
-  		 *
-  		 * The options parameter can be an object passed into the [`Readable`
-  		 * constructor](http://nodejs.org/api/stream.html#stream_class_stream_readable).
-  		 *
-  		 * @id toNodeStream
-  		 * @section Consumption
-  		 * @name Stream.toNodeStream(options)
-  		 * @param {Object} options - (optional) [`Readable` constructor](http://nodejs.org/api/stream.html#stream_class_stream_readable) options
-  		 * @api public
-  		 *
-  		 * _(fs.createReadStream('./abc')).toNodeStream()
-  		 * _(fs.createReadStream('./abc')).toNodeStream({objectMode: false})
-  		 * _([{a: 1}]).toNodeStream({objectMode: true})
-  		 */
   def toNodeStream(options: js.Object): nodeLib.NodeJSNs.ReadableStream = js.native
   /**
-       * Converts the result of a stream to Promise.
-       *
-       * If the stream contains a single value, it will return
-       * with the single item emitted by the stream (if present).
-       * If the stream is empty, `undefined` will be returned.
-       * If an error is encountered in the stream, this function will stop
-       * consumption and call `cb` with the error.
-       * If the stream contains more than one item, it will stop consumption
-       * and reject with an error.
-       *
-       * @id toPromise
-       * @section Consumption
-       * @name Stream.toPromise(PromiseCtor)
-       * @param {Function} PromiseCtor - Promises/A+ compliant constructor
-       * @api public
-       *
-       * _([1, 2, 3, 4]).collect().toPromise(Promise).then(function (result) {
-       *     // parameter result will be [1,2,3,4]
-       * });
-       */
+    * Converts the result of a stream to Promise.
+    *
+    * If the stream contains a single value, it will return
+    * with the single item emitted by the stream (if present).
+    * If the stream is empty, `undefined` will be returned.
+    * If an error is encountered in the stream, this function will stop
+    * consumption and call `cb` with the error.
+    * If the stream contains more than one item, it will stop consumption
+    * and reject with an error.
+    *
+    * @id toPromise
+    * @section Consumption
+    * @name Stream.toPromise(PromiseCtor)
+    * @param {Function} PromiseCtor - Promises/A+ compliant constructor
+    * @api public
+    *
+    * _([1, 2, 3, 4]).collect().toPromise(Promise).then(function (result) {
+    *     // parameter result will be [1,2,3,4]
+    * });
+    */
   def toPromise(promiseConstructor: stdLib.PromiseConstructor): js.Thenable[R] = js.native
   /**
-       * Filters out all duplicate values from the stream and keeps only the first
-       * occurence of each value, using === to define equality.
-       *
-       * @id uniq
-       * @section Streams
-       * @name Stream.uniq()
-       * @api public
-       */
+    * Filters out all duplicate values from the stream and keeps only the first
+    * occurence of each value, using === to define equality.
+    *
+    * @id uniq
+    * @section Streams
+    * @name Stream.uniq()
+    * @api public
+    */
   def uniq(): Stream[R] = js.native
   /**
-       * Filters out all duplicate values from the stream and keeps only the first
-       * occurence of each value, using the provided function to define equality.
-       *
-       * @id uniqBy
-       * @section Streams
-       * @name Stream.uniqBy()
-       * @api public
-       */
+    * Filters out all duplicate values from the stream and keeps only the first
+    * occurence of each value, using the provided function to define equality.
+    *
+    * @id uniqBy
+    * @section Streams
+    * @name Stream.uniqBy()
+    * @api public
+    */
   def uniqBy(f: js.Function2[/* a */ R, /* b */ R, scala.Boolean]): Stream[R] = js.native
   /**
   		 * A convenient form of filter, which returns all objects from a Stream

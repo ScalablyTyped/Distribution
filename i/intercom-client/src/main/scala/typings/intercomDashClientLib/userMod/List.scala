@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait List extends js.Object {
   var pages: intercomDashClientLib.Anon_Next
   var total_count: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActivityContentDetailsSocial extends js.Object {
   /** The author of the social network post. */
   var author: js.UndefOr[java.lang.String] = js.undefined

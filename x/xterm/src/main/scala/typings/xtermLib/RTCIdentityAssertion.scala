@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RTCIdentityAssertion extends js.Object {
   var idp: java.lang.String
   var name: java.lang.String

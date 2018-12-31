@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProductDetail extends js.Object {
   /** The name of the attribute. */
   var attributeName: js.UndefOr[java.lang.String] = js.undefined

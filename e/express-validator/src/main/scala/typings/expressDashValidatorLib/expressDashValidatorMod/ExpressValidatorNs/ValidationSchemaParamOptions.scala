@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ValidationSchemaParamOptions extends js.Object {
   var contains: js.UndefOr[ValidatorSchemaOptions] = js.undefined
   // Additional Validators provided by validator.js

@@ -15,7 +15,6 @@ trait Iconv
   def end(input: nodeLib.Buffer, encoding: java.lang.String): scala.Unit = js.native
   // copy from stream.Stream
   def pipe[T /* <: nodeLib.NodeJSNs.WritableStream */](destination: T): T = js.native
-  // copy from stream.Stream
   def pipe[T /* <: nodeLib.NodeJSNs.WritableStream */](destination: T, options: iconvLib.Anon_End): T = js.native
   def write(input: nodeLib.Buffer, encoding: java.lang.String): scala.Boolean = js.native
 }

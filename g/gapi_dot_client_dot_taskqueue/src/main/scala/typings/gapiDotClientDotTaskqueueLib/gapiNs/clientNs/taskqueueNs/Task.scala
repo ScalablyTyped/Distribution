@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Task extends js.Object {
   /** Time (in seconds since the epoch) at which the task was enqueued. */
   var enqueueTimestamp: js.UndefOr[java.lang.String] = js.undefined

@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Participants in producing the report
-     */
-
+  * Participants in producing the report
+  */
 trait DiagnosticReportPerformer extends BackboneElement {
   /**
-           * Practitioner or Organization  participant
-           */
+    * Practitioner or Organization  participant
+    */
   var actor: Reference
   /**
-           * Type of performer
-           */
+    * Type of performer
+    */
   var role: js.UndefOr[CodeableConcept] = js.undefined
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClassSelector extends CssNodeCommon {
   var name: java.lang.String
   @JSName("type")

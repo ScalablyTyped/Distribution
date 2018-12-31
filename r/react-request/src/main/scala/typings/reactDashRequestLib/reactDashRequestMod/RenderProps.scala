@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RenderProps[T] extends js.Object {
   var data: T | scala.Null
   var error: stdLib.Error | scala.Null

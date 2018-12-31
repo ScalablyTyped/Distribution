@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(typescriptDashServicesLib.TypeScriptNs.ICallExpression because Would inherit conflicting mutable fields List(_start, _end))*/
+/* RemoveMultipleInheritance: Dropped parents List(typescriptDashServicesLib.TypeScriptNs.ICallExpression because Would inherit conflicting mutable fields List(_end, _start))*/
 @JSGlobal("TypeScript.InvocationExpression")
 @js.native
 class InvocationExpression protected () extends AST {

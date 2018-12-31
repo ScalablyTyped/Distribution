@@ -11,9 +11,9 @@ class ActionSequence protected ()
   extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.ActionSequence {
   // region Constructors
   /**
-     * @param {!WebDriver} driver The driver instance to use.
-     * @constructor
-     */
+    * @param {!WebDriver} driver The driver instance to use.
+    * @constructor
+    */
   def this(driver: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver) = this()
 }
 

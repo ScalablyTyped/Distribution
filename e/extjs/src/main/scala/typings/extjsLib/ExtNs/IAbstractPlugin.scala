@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAbstractPlugin extends IBase {
   /** [Method] Creates clone of the plugin
   		* @param overrideCfg Object Additional config for the derived plugin.

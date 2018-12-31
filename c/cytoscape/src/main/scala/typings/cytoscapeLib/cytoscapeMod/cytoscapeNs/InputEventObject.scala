@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InputEventObject extends AbstractEventObject {
   /** originalEvent : the original user input device event object */
   var originalEvent: EventObject

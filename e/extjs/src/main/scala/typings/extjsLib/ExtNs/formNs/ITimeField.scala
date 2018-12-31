@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITimeField
   extends extjsLib.ExtNs.formNs.fieldNs.IComboBox {
   /** [Config Option] (String) */

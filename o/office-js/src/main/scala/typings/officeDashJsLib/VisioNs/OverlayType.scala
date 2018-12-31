@@ -9,28 +9,28 @@ import scala.scalajs.js.annotation._
 sealed trait OverlayType extends js.Object
 
 /**
-     *
-     * Represents the type of the overlay.
-     *
-     * [Api set:  1.1]
-     */
+  *
+  * Represents the type of the overlay.
+  *
+  * [Api set:  1.1]
+  */
 @JSGlobal("Visio.OverlayType")
 @js.native
 object OverlayType extends js.Object {
   /**
-           *
-           * image
-           *
-           */
+    *
+    * image
+    *
+    */
   @js.native
   sealed trait image
     extends officeDashJsLib.VisioNs.OverlayType
   
   /**
-           *
-           * text
-           *
-           */
+    *
+    * text
+    *
+    */
   @js.native
   sealed trait text
     extends officeDashJsLib.VisioNs.OverlayType

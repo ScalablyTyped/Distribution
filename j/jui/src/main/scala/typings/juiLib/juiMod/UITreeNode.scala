@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UITreeNode extends js.Object {
   /** List of child nodes of a specified node */
   var children: js.UndefOr[js.Array[UITreeNode]] = js.undefined

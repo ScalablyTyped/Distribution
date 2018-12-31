@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IWaitForConfig extends js.Object {
   var callback: js.Function
   var interval: js.UndefOr[scala.Double] = js.undefined

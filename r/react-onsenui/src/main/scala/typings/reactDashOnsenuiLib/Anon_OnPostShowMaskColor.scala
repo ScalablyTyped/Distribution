@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnPostShowMaskColor extends js.Object {
   var animation: js.UndefOr[java.lang.String] = js.undefined
   var animationOptions: js.UndefOr[js.Object] = js.undefined

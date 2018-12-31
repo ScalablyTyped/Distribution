@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Action extends js.Object {
   var meta: js.UndefOr[Meta] = js.undefined
   var navKey: js.UndefOr[Nullable[java.lang.String]] = js.undefined

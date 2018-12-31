@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Built_in_variablesResource extends js.Object {
   /** Creates one or more GTM Built-In Variables. */
   def create(request: gapiDotClientDotTagmanagerLib.Anon_ParentPrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[CreateBuiltInVariableResponse]

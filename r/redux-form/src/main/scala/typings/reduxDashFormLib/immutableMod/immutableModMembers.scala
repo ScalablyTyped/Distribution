@@ -26,11 +26,11 @@ object immutableModMembers extends js.Object {
   val isSubmitting: reduxDashFormLib.libSelectorsMod.BooleanSelector[js.Object] = js.native
   val isValid: reduxDashFormLib.libSelectorsMod.BooleanSelector[js.Object] = js.native
   val reducer: reduxDashFormLib.libReducerMod.FormReducer = js.native
-  def formValueSelector[State](form: java.lang.String): js.Function2[/* state */ State, /* repeated */java.lang.String, _] = js.native
+  def formValueSelector[State](form: java.lang.String): js.Function2[/* state */ State, /* repeated */ java.lang.String, _] = js.native
   def formValueSelector[State](
     form: java.lang.String,
     getFormState: js.Function1[/* state */ State, reduxDashFormLib.libReducerMod.FormStateMap]
-  ): js.Function2[/* state */ State, /* repeated */java.lang.String, _] = js.native
+  ): js.Function2[/* state */ State, /* repeated */ java.lang.String, _] = js.native
   def reduxForm[FormData, P, ErrorType](config: reduxDashFormLib.libReduxFormMod.ConfigProps[FormData, P, ErrorType]): reduxDashFormLib.libReduxFormMod.FormDecorator[
     FormData, 
     P, 

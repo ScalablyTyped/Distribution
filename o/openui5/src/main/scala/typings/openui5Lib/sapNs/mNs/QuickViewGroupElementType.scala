@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait QuickViewGroupElementType extends js.Object
 
 /**
-     * QuickViewGroupElement is a combination of one label and another control (Link or Text) associated to
-     * this label
-    */
+  * QuickViewGroupElement is a combination of one label and another control (Link or Text) associated to
+  * this label
+  */
 @JSGlobal("sap.m.QuickViewGroupElementType")
 @js.native
 object QuickViewGroupElementType extends js.Object {

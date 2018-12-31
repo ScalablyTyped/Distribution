@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INumber
   extends senchaUnderscoreTouchLib.ExtNs.fieldNs.IText {
   /** [Method] Returns the value of maxValue

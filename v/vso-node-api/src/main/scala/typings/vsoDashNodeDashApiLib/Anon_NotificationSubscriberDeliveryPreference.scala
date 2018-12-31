@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NotificationSubscriberDeliveryPreference extends js.Object {
   var ActorNotificationReason: js.Any
   var BatchNotificationOperation: js.Any

@@ -15,7 +15,7 @@ class Default () extends js.Object {
   var on: js.Function2[/* types */ js.Any, /* handler */ js.Any, _] = js.native
   var one: js.Function2[/* types */ js.Any, /* handler */ js.Any, _] = js.native
   var q: js.Any = js.native
-  var trigger: js.Function2[/* types */ js.Any, /* repeated */js.Any, _] = js.native
+  var trigger: js.Function2[/* types */ js.Any, /* repeated */ js.Any, _] = js.native
   var triggerWith: js.Function3[/* types */ js.Any, /* context */ js.Any, /* args */ js.Any, _] = js.native
   def canRunNext(): js.Any = js.native
   def getIsIdle(): scala.Boolean = js.native

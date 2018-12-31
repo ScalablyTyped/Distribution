@@ -12,18 +12,16 @@ object DynamsoftNs extends js.Object {
   @js.native
   object LibNs extends js.Object {
     /*ignored
-            Addon_Events  Addon_Sendback_Events  AttachAndShowImage  BIO  DOM  DynamicLoadAddonFuns  DynamicWebTwain  EnumMouseButton
-            Errors  Events  IntToColorStr  LS  OnGetImageByURL  OnGetImageFromServer  Path  ProgressBar  UI  Uri
-            addEventListener  ajax  all  appendMessage  appendRichMessage  aryControlLoadImage  attachAddon  attachProperty
-            base64  bio  cancelFrome  clearMessage  closeAll  closeProgress  colorStrToInt  config  css  currentStyle
-            debug*/
-    
+      Addon_Events  Addon_Sendback_Events  AttachAndShowImage  BIO  DOM  DynamicLoadAddonFuns  DynamicWebTwain  EnumMouseButton
+      Errors  Events  IntToColorStr  LS  OnGetImageByURL  OnGetImageFromServer  Path  ProgressBar  UI  Uri
+      addEventListener  ajax  all  appendMessage  appendRichMessage  aryControlLoadImage  attachAddon  attachProperty
+      base64  bio  cancelFrome  clearMessage  closeAll  closeProgress  colorStrToInt  config  css  currentStyle
+      debug*/
     var detect: dwtLib.Anon_Ssl = js.native
     /*ignored
-            detectButton  dialog  dialogShowStatus  dlgProgress  dlgRef  drawBoxBorder  drawImageWithHermite
-            each  empty  endsWith
-            */
-    
+      detectButton  dialog  dialogShowStatus  dlgProgress  dlgRef  drawBoxBorder  drawImageWithHermite
+      each  empty  endsWith
+      */
     var env: dwtLib.Anon_StrChromeVersion = js.native
   }
   
@@ -40,9 +38,8 @@ object DynamsoftNs extends js.Object {
     var IfUseActiveXForIE10Plus: scala.Boolean = js.native
     var JSVersion: java.lang.String = js.native
     /*ignored
-            OnWebTwainReady
-            */
-    
+      OnWebTwainReady
+      */
     var PluginVersion: java.lang.String = js.native
     var ProductKey: java.lang.String = js.native
     var ResourcesPath: java.lang.String = js.native
@@ -58,7 +55,7 @@ object DynamsoftNs extends js.Object {
       port: java.lang.String,
       portSSL: java.lang.String,
       successFn: js.Function1[/* dwtObject */ dwtLib.WebTwain, scala.Unit],
-      failurefn: js.Function1[/* repeated */js.Any, scala.Unit]
+      failurefn: js.Function1[/* repeated */ js.Any, scala.Unit]
     ): scala.Unit = js.native
     def CreateDWTObject(
       newObjID: java.lang.String,
@@ -66,7 +63,7 @@ object DynamsoftNs extends js.Object {
       port: java.lang.String,
       portSSL: scala.Double,
       successFn: js.Function1[/* dwtObject */ dwtLib.WebTwain, scala.Unit],
-      failurefn: js.Function1[/* repeated */js.Any, scala.Unit]
+      failurefn: js.Function1[/* repeated */ js.Any, scala.Unit]
     ): scala.Unit = js.native
     def CreateDWTObject(
       newObjID: java.lang.String,
@@ -74,7 +71,7 @@ object DynamsoftNs extends js.Object {
       port: scala.Double,
       portSSL: java.lang.String,
       successFn: js.Function1[/* dwtObject */ dwtLib.WebTwain, scala.Unit],
-      failurefn: js.Function1[/* repeated */js.Any, scala.Unit]
+      failurefn: js.Function1[/* repeated */ js.Any, scala.Unit]
     ): scala.Unit = js.native
     def CreateDWTObject(
       newObjID: java.lang.String,
@@ -82,7 +79,7 @@ object DynamsoftNs extends js.Object {
       port: scala.Double,
       portSSL: scala.Double,
       successFn: js.Function1[/* dwtObject */ dwtLib.WebTwain, scala.Unit],
-      failurefn: js.Function1[/* repeated */js.Any, scala.Unit]
+      failurefn: js.Function1[/* repeated */ js.Any, scala.Unit]
     ): scala.Unit = js.native
     def CreateDWTObject(
       newObjID: java.lang.String,
@@ -90,7 +87,7 @@ object DynamsoftNs extends js.Object {
       port: java.lang.String,
       portSSL: java.lang.String,
       successFn: js.Function1[/* dwtObject */ dwtLib.WebTwain, scala.Unit],
-      failurefn: js.Function1[/* repeated */js.Any, scala.Unit]
+      failurefn: js.Function1[/* repeated */ js.Any, scala.Unit]
     ): scala.Unit = js.native
     def CreateDWTObject(
       newObjID: java.lang.String,
@@ -98,7 +95,7 @@ object DynamsoftNs extends js.Object {
       port: java.lang.String,
       portSSL: scala.Double,
       successFn: js.Function1[/* dwtObject */ dwtLib.WebTwain, scala.Unit],
-      failurefn: js.Function1[/* repeated */js.Any, scala.Unit]
+      failurefn: js.Function1[/* repeated */ js.Any, scala.Unit]
     ): scala.Unit = js.native
     def CreateDWTObject(
       newObjID: java.lang.String,
@@ -106,7 +103,7 @@ object DynamsoftNs extends js.Object {
       port: scala.Double,
       portSSL: java.lang.String,
       successFn: js.Function1[/* dwtObject */ dwtLib.WebTwain, scala.Unit],
-      failurefn: js.Function1[/* repeated */js.Any, scala.Unit]
+      failurefn: js.Function1[/* repeated */ js.Any, scala.Unit]
     ): scala.Unit = js.native
     def CreateDWTObject(
       newObjID: java.lang.String,
@@ -114,23 +111,22 @@ object DynamsoftNs extends js.Object {
       port: scala.Double,
       portSSL: scala.Double,
       successFn: js.Function1[/* dwtObject */ dwtLib.WebTwain, scala.Unit],
-      failurefn: js.Function1[/* repeated */js.Any, scala.Unit]
+      failurefn: js.Function1[/* repeated */ js.Any, scala.Unit]
     ): scala.Unit = js.native
     def CreateDWTObject(
       newObjID: java.lang.String,
       successFn: js.Function1[/* dwtObject */ dwtLib.WebTwain, scala.Unit],
-      failurefn: js.Function1[/* repeated */js.Any, scala.Unit]
+      failurefn: js.Function1[/* repeated */ js.Any, scala.Unit]
     ): scala.Unit = js.native
     def DeleteDWTObject(objID: java.lang.String): scala.Unit = js.native
     def GetWebTwain(cid: java.lang.String): dwtLib.WebTwain = js.native
     def Load(): scala.Unit = js.native
     /*ignored
-            OnWebTwainInitMessage  OnWebTwainNeedUpgrade  OnWebTwainNeedUpgradeWebJavascript  OnWebTwainNotFound  OnWebTwainOldPluginNotAllowed
-            */
-    
+      OnWebTwainInitMessage  OnWebTwainNeedUpgrade  OnWebTwainNeedUpgradeWebJavascript  OnWebTwainNotFound  OnWebTwainOldPluginNotAllowed
+      */
     def OnWebTwainPostExecute(): scala.Unit = js.native
     def OnWebTwainPreExecute(): scala.Unit = js.native
-    def RegisterEvent(event: java.lang.String, fn: js.Function1[/* repeated */js.Any, scala.Unit]): scala.Unit = js.native
+    def RegisterEvent(event: java.lang.String, fn: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
     def RemoveAllAuthorizations(): scala.Unit = js.native
     def ShowDialog(
       _dialogWidth: scala.Double,

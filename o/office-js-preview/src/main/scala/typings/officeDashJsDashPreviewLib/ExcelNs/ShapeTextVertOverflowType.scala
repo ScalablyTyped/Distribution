@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait ShapeTextVertOverflowType extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.ShapeTextVertOverflowType")
 @js.native
 object ShapeTextVertOverflowType extends js.Object {

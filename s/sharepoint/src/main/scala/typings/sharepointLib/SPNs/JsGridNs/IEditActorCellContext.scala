@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line: interface-name
-
 trait IEditActorCellContext extends js.Object {
   var cellExpandSpace: sharepointLib.Anon_Bottom
   var column: ColumnInfo

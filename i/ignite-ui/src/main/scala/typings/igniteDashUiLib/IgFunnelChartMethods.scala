@@ -106,12 +106,6 @@ trait IgFunnelChartMethods extends js.Object {
   	 * @return array|object If parameter is undefined, then array of selected indexes is returned. Otherwise, it returns reference to igFunnelChart.
   	 */
   def selectedSliceIndexes(): js.Array[_] = js.native
-  /**
-  	 * Gets sets array of indexes of selected slices.
-  	 *
-  	 * @param selection Array or selected slice indexes.
-  	 * @return array|object If parameter is undefined, then array of selected indexes is returned. Otherwise, it returns reference to igFunnelChart.
-  	 */
   def selectedSliceIndexes(selection: js.Array[_]): js.Array[_] = js.native
   /**
   	 * Gets array of selected slice items.
@@ -120,12 +114,6 @@ trait IgFunnelChartMethods extends js.Object {
   	 * @return array|object If parameter is undefined, then array of selected items is returned. Otherwise, it returns reference to igFunnelChart.
   	 */
   def selectedSliceItems(): js.Array[_] = js.native
-  /**
-  	 * Gets array of selected slice items.
-  	 *
-  	 * @param selection Array or selected slice items.
-  	 * @return array|object If parameter is undefined, then array of selected items is returned. Otherwise, it returns reference to igFunnelChart.
-  	 */
   def selectedSliceItems(selection: js.Array[_]): js.Array[_] = js.native
   /**
   	 * Updates an item in the data source and notifies the chart.

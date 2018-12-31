@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DerivedDataObject
   extends /* p */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var _index: scala.Double

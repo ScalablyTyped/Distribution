@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeyboardHandler extends js.Object {
   def disable(): scala.Unit
   def enable(): scala.Unit

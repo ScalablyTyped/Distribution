@@ -6,30 +6,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Creates a new model with defined attributes. A client id (cid) is
-     * automatically generated and assigned for you.
-     *
-     * <p>You won't normally call this method directly.  It is recommended that
-     * you use a subclass of <code>Parse.Object</code> instead, created by calling
-     * <code>extend</code>.</p>
-     *
-     * <p>However, if you don't want to use a subclass, or aren't sure which
-     * subclass is appropriate, you can use this form:<pre>
-     *     var object = new Parse.Object("ClassName");
-     * </pre>
-     * That is basically equivalent to:<pre>
-     *     var MyClass = Parse.Object.extend("ClassName");
-     *     var object = new MyClass();
-     * </pre></p>
-     *
-     * @param {Object} attributes The initial set of data to store in the object.
-     * @param {Object} options The options for this object instance.
-     * @see Parse.Object.extend
-     *
-     * @class
-     *
-     * Creates a new model with defined attributes.
-     */
+  * Creates a new model with defined attributes. A client id (cid) is
+  * automatically generated and assigned for you.
+  *
+  * <p>You won't normally call this method directly.  It is recommended that
+  * you use a subclass of <code>Parse.Object</code> instead, created by calling
+  * <code>extend</code>.</p>
+  *
+  * <p>However, if you don't want to use a subclass, or aren't sure which
+  * subclass is appropriate, you can use this form:<pre>
+  *     var object = new Parse.Object("ClassName");
+  * </pre>
+  * That is basically equivalent to:<pre>
+  *     var MyClass = Parse.Object.extend("ClassName");
+  *     var object = new MyClass();
+  * </pre></p>
+  *
+  * @param {Object} attributes The initial set of data to store in the object.
+  * @param {Object} options The options for this object instance.
+  * @see Parse.Object.extend
+  *
+  * @class
+  *
+  * Creates a new model with defined attributes.
+  */
 @JSImport("parse/react-native", "Object")
 @js.native
 class Object ()
@@ -41,30 +41,30 @@ class Object ()
 }
 
 /**
-     * Creates a new model with defined attributes. A client id (cid) is
-     * automatically generated and assigned for you.
-     *
-     * <p>You won't normally call this method directly.  It is recommended that
-     * you use a subclass of <code>Parse.Object</code> instead, created by calling
-     * <code>extend</code>.</p>
-     *
-     * <p>However, if you don't want to use a subclass, or aren't sure which
-     * subclass is appropriate, you can use this form:<pre>
-     *     var object = new Parse.Object("ClassName");
-     * </pre>
-     * That is basically equivalent to:<pre>
-     *     var MyClass = Parse.Object.extend("ClassName");
-     *     var object = new MyClass();
-     * </pre></p>
-     *
-     * @param {Object} attributes The initial set of data to store in the object.
-     * @param {Object} options The options for this object instance.
-     * @see Parse.Object.extend
-     *
-     * @class
-     *
-     * Creates a new model with defined attributes.
-     */
+  * Creates a new model with defined attributes. A client id (cid) is
+  * automatically generated and assigned for you.
+  *
+  * <p>You won't normally call this method directly.  It is recommended that
+  * you use a subclass of <code>Parse.Object</code> instead, created by calling
+  * <code>extend</code>.</p>
+  *
+  * <p>However, if you don't want to use a subclass, or aren't sure which
+  * subclass is appropriate, you can use this form:<pre>
+  *     var object = new Parse.Object("ClassName");
+  * </pre>
+  * That is basically equivalent to:<pre>
+  *     var MyClass = Parse.Object.extend("ClassName");
+  *     var object = new MyClass();
+  * </pre></p>
+  *
+  * @param {Object} attributes The initial set of data to store in the object.
+  * @param {Object} options The options for this object instance.
+  * @see Parse.Object.extend
+  *
+  * @class
+  *
+  * Creates a new model with defined attributes.
+  */
 @JSImport("parse/react-native", "Object")
 @js.native
 object Object extends js.Object {

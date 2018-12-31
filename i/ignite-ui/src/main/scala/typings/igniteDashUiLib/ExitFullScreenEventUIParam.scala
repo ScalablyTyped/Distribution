@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExitFullScreenEventUIParam extends js.Object {
   /**
   	 * Get the url of the playing video.

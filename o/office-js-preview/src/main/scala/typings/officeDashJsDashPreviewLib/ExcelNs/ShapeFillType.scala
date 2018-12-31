@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait ShapeFillType extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.ShapeFillType")
 @js.native
 object ShapeFillType extends js.Object {

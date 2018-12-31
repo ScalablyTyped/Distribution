@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeapInfo extends js.Object {
   var does_zap_garbage: DoesZapCodeSpaceFlag
   var heap_size_limit: scala.Double

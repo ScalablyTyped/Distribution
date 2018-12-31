@@ -15,10 +15,10 @@ abstract class WebError () extends js.Object
 @js.native
 object WebError extends js.Object {
   /**
-               * Gets a WebErrorStatus value based on an error encountered by a web service operation.
-               * @param hresult The error encountered by a web service operation represented as an hResult.
-               * @return The error status value for a web service operation.
-               */
+    * Gets a WebErrorStatus value based on an error encountered by a web service operation.
+    * @param hresult The error encountered by a web service operation represented as an hResult.
+    * @return The error status value for a web service operation.
+    */
   def getStatus(hresult: scala.Double): winrtDashUwpLib.WindowsNs.WebNs.WebErrorStatus = js.native
 }
 

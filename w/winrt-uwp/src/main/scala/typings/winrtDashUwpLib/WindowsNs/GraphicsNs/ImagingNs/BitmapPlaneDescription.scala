@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Defines the format of a bitmap plane. */
-
 trait BitmapPlaneDescription extends js.Object {
   /** The height of the plane, in pixels. */
   var height: scala.Double

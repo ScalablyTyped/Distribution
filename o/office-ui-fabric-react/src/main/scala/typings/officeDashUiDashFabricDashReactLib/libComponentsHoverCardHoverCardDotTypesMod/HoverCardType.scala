@@ -12,15 +12,15 @@ sealed trait HoverCardType extends js.Object
 @js.native
 object HoverCardType extends js.Object {
   /**
-       * File card consisting of two parts: compact and expanded. Has some default sizes if not specified.
-       */
+    * File card consisting of two parts: compact and expanded. Has some default sizes if not specified.
+    */
   @js.native
   sealed trait expanding
     extends officeDashUiDashFabricDashReactLib.libComponentsHoverCardHoverCardDotTypesMod.HoverCardType
   
   /**
-       * Plain card consisting of one part responsive to the size of content.
-       */
+    * Plain card consisting of one part responsive to the size of content.
+    */
   @js.native
   sealed trait plain
     extends officeDashUiDashFabricDashReactLib.libComponentsHoverCardHoverCardDotTypesMod.HoverCardType

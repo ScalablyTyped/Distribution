@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CursorPositionParameters extends js.Object {
   /** ID of the candidate to select. */
   var candidateID: scala.Double

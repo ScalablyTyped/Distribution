@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class RoomSettings protected () extends js.Object {
   /**
-               * Creates a new RoomSettings instance.
-               * @param {string} name The name of the Room to be created.
-               */
+    * Creates a new RoomSettings instance.
+    * @param {string} name The name of the Room to be created.
+    */
   def this(name: java.lang.String) = this()
   /** @type {RoomEvents} Sets the flags indicating which events related to the Room are dispatched by the SmartFox client. */
   var events: RoomEvents = js.native

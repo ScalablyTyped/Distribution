@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AttachmentsResource extends js.Object {
   /** Deletes an attachment from a timeline item. */
   def delete(request: gapiDotClientDotMirrorLib.Anon_PrettyPrintQuotaUserKeyAttachmentId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

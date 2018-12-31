@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadFileItem extends js.Object {
   // Name of file
   var filename: java.lang.String

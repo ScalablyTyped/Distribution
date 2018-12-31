@@ -32,9 +32,7 @@ class ShellFolderView protected () extends js.Object {
   def FilterView(bstrFilterText: java.lang.String): scala.Unit = js.native
   /** Show items menu and return command selected */
   def PopupItemMenu(pfi: ShellFolderItem): java.lang.String = js.native
-  /** Show items menu and return command selected */
   def PopupItemMenu(pfi: ShellFolderItem, vx: js.Any): java.lang.String = js.native
-  /** Show items menu and return command selected */
   def PopupItemMenu(pfi: ShellFolderItem, vx: js.Any, vy: js.Any): java.lang.String = js.native
   /** Select the item */
   def SelectItem(pvfi: ShellFolderItem, dwFlags: ShellFolderViewSelectItem): scala.Unit = js.native

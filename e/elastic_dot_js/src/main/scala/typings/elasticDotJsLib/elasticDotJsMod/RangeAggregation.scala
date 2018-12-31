@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class RangeAggregation protected ()
   extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.RangeAggregation {
   /*
-       Aggregation that enables the user to define a set of ranges that each
-       represent a bucket.
-       */
+    Aggregation that enables the user to define a set of ranges that each
+    represent a bucket.
+    */
   def this(name: java.lang.String) = this()
 }
 

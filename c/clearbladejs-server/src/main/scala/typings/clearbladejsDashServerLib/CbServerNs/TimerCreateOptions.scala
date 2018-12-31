@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimerCreateOptions extends js.Object {
   var description: js.UndefOr[java.lang.String] = js.undefined
   var frequency: js.UndefOr[scala.Double] = js.undefined

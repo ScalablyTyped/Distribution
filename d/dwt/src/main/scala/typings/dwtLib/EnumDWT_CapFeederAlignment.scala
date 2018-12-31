@@ -13,8 +13,8 @@ sealed trait EnumDWT_CapFeederAlignment extends js.Object
 @js.native
 object EnumDWT_CapFeederAlignment extends js.Object {
   /** The alignment is centered. This means that the paper will be fed in the middle of the ICAP_PHYSICALWIDTH of the
-       *  device. If this is set, then the Application should calculate any frames with a left offset of zero.
-       */
+    *  device. If this is set, then the Application should calculate any frames with a left offset of zero.
+    */
   @js.native
   sealed trait TWFA_CENTER
     extends dwtLib.EnumDWT_CapFeederAlignment

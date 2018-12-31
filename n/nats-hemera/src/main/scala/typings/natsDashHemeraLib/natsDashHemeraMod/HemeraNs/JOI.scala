@@ -25,7 +25,7 @@ trait JOI extends js.Object {
   def compile(schema: SchemaLike): Schema = js.native
   def date(): DateSchema = js.native
   def func(): FunctionSchema = js.native
-  def isRef(ref: js.Any): /* is Reference */scala.Boolean = js.native
+  def isRef(ref: js.Any): /* is nats-hemera.nats-hemera.Hemera.Reference */ scala.Boolean = js.native
   def `lazy`(cb: js.Function0[Schema]): AnySchema = js.native
   def number(): NumberSchema = js.native
   def `object`(): ObjectSchema = js.native

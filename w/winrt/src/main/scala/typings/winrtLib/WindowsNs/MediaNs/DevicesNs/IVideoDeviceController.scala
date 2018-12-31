@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVideoDeviceController extends IMediaDeviceController {
   var backlightCompensation: MediaDeviceControl
   var brightness: MediaDeviceControl

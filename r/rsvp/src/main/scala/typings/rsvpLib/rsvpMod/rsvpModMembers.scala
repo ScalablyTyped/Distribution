@@ -18,60 +18,23 @@ object rsvpModMembers extends js.Object {
     /* label */ js.UndefOr[/* label */ java.lang.String], 
     rsvpLib.rsvpMod.RSVPNs.Promise[js.Object]
   ] = js.native
-  val all: js.Any = js.native
-  val allSettled: js.Function2[
-    /* entries */ js.Array[rsvpLib.rsvpMod.RSVPNs.Arg[js.Any]], 
-    /* label */ js.UndefOr[java.lang.String], 
-    rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[rsvpLib.rsvpMod.RSVPNs.PromiseState[js.Any]]]
-  ] = js.native
-  val asap: js.Function2[
-    /* callback */ js.Function1[/* callbackArg */ js.Any, js.Any], 
-    /* arg */ js.Any, 
-    scala.Unit
-  ] = js.native
-  val async: js.Any = js.native
-  val cast: js.Any = js.native
-  val configure: js.Function2[/* name */ java.lang.String, /* value */ js.Any, scala.Unit] = js.native
-  val defer: js.Function1[/* label */ js.UndefOr[java.lang.String], rsvpLib.rsvpMod.RSVPNs.Deferred[js.Any]] = js.native
-  val denodeify: js.Function2[
-    /* nodeFunc */ js.Function2[
-      /* arg1 */ js.Any, 
-      /* callback */ js.Function2[/* err */ js.Any, /* data */ js.Any, scala.Unit], 
-      scala.Unit
-    ], 
-    /* options */ js.Array[java.lang.String], 
-    js.Function1[
-      /* arg1 */ js.Any, 
-      rsvpLib.rsvpMod.RSVPNs.Promise[rsvpLib.rsvpLibStrings.denodeify with js.Any]
-    ]
-  ] = js.native
-  val filter: js.Function3[
-    /* entries */ js.Array[rsvpLib.rsvpMod.RSVPNs.Arg[js.Any]], 
-    /* filterFn */ js.Function1[/* item */ js.Any, scala.Boolean], 
-    /* label */ js.UndefOr[java.lang.String], 
-    rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[js.Any]]
-  ] = js.native
-  val hash: js.Function2[
-    /* object */ rsvpLib.rsvpLibStrings.hash with js.Any, 
-    /* label */ js.UndefOr[java.lang.String], 
-    rsvpLib.rsvpMod.RSVPNs.Promise[js.Any]
-  ] = js.native
-  val hashSettled: js.Function2[
-    /* object */ rsvpLib.rsvpLibStrings.hashSettled with js.Any, 
-    /* label */ js.UndefOr[java.lang.String], 
-    rsvpLib.rsvpMod.RSVPNs.Promise[rsvpLib.rsvpLibStrings.hashSettled with js.Any]
-  ] = js.native
-  val map: js.Function3[
-    /* entries */ js.Array[rsvpLib.rsvpMod.RSVPNs.Arg[js.Any]], 
-    /* mapFn */ js.Function1[/* item */ js.Any, js.Any], 
-    /* label */ js.UndefOr[java.lang.String], 
-    rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[_] with rsvpLib.Anon_Length]
-  ] = js.native
-  val off: js.Any = js.native
-  val on: js.Any = js.native
-  val race: js.Any = js.native
-  val reject: js.Any = js.native
-  val resolve: js.Any = js.native
+  val all: rsvpLib.Anon_Values = js.native
+  val allSettled: rsvpLib.Anon_EntriesLabel = js.native
+  val asap: rsvpLib.Anon_Callback = js.native
+  val async: rsvpLib.Anon_Callback = js.native
+  val cast: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Promise.cast */ js.Any = js.native
+  val configure: rsvpLib.Anon_Name = js.native
+  val defer: rsvpLib.Anon_Label = js.native
+  val denodeify: rsvpLib.Anon_NodeFunc = js.native
+  val filter: rsvpLib.Anon_EntriesFilterFn = js.native
+  val hash: rsvpLib.Anon_Object = js.native
+  val hashSettled: rsvpLib.Anon_ObjectLabel = js.native
+  val map: rsvpLib.Anon_Entries = js.native
+  val off: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EventTarget.off */ js.Any = js.native
+  val on: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EventTarget.on */ js.Any = js.native
+  val race: rsvpLib.Anon_ValuesT = js.native
+  val reject: rsvpLib.Anon_Reason = js.native
+  val resolve: rsvpLib.Anon_Value = js.native
   val rethrow: js.Function1[/* reason */ js.Any, scala.Unit] = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateItemOptions extends js.Object {
   var AttributeUpdates: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeUpdates] = js.undefined
   var ConditionExpression: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ConditionExpression] = js.undefined

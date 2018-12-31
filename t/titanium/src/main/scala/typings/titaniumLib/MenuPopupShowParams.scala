@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Dictionary of options for showing a menu popup with <Titanium.UI.iOS.MenuPopup.show>.
- */
-
+  * Dictionary of options for showing a menu popup with <Titanium.UI.iOS.MenuPopup.show>.
+  */
 trait MenuPopupShowParams extends js.Object {
   /**
   	 * Determines whether the menu popup should be opened or closed animated.

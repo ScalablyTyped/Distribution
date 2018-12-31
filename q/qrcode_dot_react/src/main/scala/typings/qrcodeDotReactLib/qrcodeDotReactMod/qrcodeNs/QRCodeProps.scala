@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QRCodeProps extends js.Object {
   var bgColor: js.UndefOr[java.lang.String] = js.undefined
   var fgColor: js.UndefOr[java.lang.String] = js.undefined

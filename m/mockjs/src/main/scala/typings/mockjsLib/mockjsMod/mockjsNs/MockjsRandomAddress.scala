@@ -11,11 +11,9 @@ import scala.scalajs.js.annotation._
 trait MockjsRandomAddress extends js.Object {
   // Random.city
   def city(): S = js.native
-  // Random.city
   def city(prefix: B): S = js.native
   // Random.county
   def county(): S = js.native
-  // Random.county
   def county(prefix: B): S = js.native
   // Random.province
   def province(): S = js.native
@@ -23,7 +21,6 @@ trait MockjsRandomAddress extends js.Object {
   def region(): S = js.native
   // Random.zip
   def zip(): S = js.native
-  // Random.zip
   def zip(prefix: B): S = js.native
 }
 

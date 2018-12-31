@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GoogleCloudVideointelligenceV1beta1_VideoSegment extends js.Object {
   /** End offset in microseconds (inclusive). Unset means 0. */
   var endTimeOffset: js.UndefOr[java.lang.String] = js.undefined

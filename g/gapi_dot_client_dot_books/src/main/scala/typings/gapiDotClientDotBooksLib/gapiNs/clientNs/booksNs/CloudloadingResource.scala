@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CloudloadingResource extends js.Object {
   def addBook(request: gapiDotClientDotBooksLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[BooksCloudloadingResource]
   /** Remove the book and its contents */

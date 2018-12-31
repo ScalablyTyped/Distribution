@@ -52,43 +52,43 @@ trait AtomEnvironment extends js.Object {
   /** Close the current window. */
   def close(): scala.Unit = js.native
   /**
-       *  A flexible way to open a dialog akin to an alert dialog. If a callback
-       *  is provided, then the confirmation will work asynchronously, which is
-       *  recommended.
-       *
-       *  If the dialog is closed (via `Esc` key or `X` in the top corner) without
-       *  selecting a button the first button will be clicked unless a "Cancel" or "No"
-       *  button is provided.
-       *
-       *  Returns the chosen button index number if the buttons option was an array.
-       */
+    *  A flexible way to open a dialog akin to an alert dialog. If a callback
+    *  is provided, then the confirmation will work asynchronously, which is
+    *  recommended.
+    *
+    *  If the dialog is closed (via `Esc` key or `X` in the top corner) without
+    *  selecting a button the first button will be clicked unless a "Cancel" or "No"
+    *  button is provided.
+    *
+    *  Returns the chosen button index number if the buttons option was an array.
+    */
   def confirm(options: atomLib.Anon_Message): scala.Unit = js.native
   /**
-       *  A flexible way to open a dialog akin to an alert dialog. If a callback
-       *  is provided, then the confirmation will work asynchronously, which is
-       *  recommended.
-       *
-       *  If the dialog is closed (via `Esc` key or `X` in the top corner) without
-       *  selecting a button the first button will be clicked unless a "Cancel" or "No"
-       *  button is provided.
-       *
-       *  Returns the chosen button index number if the buttons option was an array.
-       */
+    *  A flexible way to open a dialog akin to an alert dialog. If a callback
+    *  is provided, then the confirmation will work asynchronously, which is
+    *  recommended.
+    *
+    *  If the dialog is closed (via `Esc` key or `X` in the top corner) without
+    *  selecting a button the first button will be clicked unless a "Cancel" or "No"
+    *  button is provided.
+    *
+    *  Returns the chosen button index number if the buttons option was an array.
+    */
   def confirm(options: atomLib.Anon_MessageButtons): scala.Double = js.native
   /**
-       *  A flexible way to open a dialog akin to an alert dialog. If a callback
-       *  is provided, then the confirmation will work asynchronously, which is
-       *  recommended.
-       *
-       *  If the dialog is closed (via `Esc` key or `X` in the top corner) without
-       *  selecting a button the first button will be clicked unless a "Cancel" or "No"
-       *  button is provided.
-       *
-       *  Returns the chosen button index number if the buttons option was an array.
-       *  @param response The index of the button that was clicked.
-       *  @param checkboxChecked The checked state of the checkbox if `checkboxLabel` was set.
-       *  Otherwise false.
-       */
+    *  A flexible way to open a dialog akin to an alert dialog. If a callback
+    *  is provided, then the confirmation will work asynchronously, which is
+    *  recommended.
+    *
+    *  If the dialog is closed (via `Esc` key or `X` in the top corner) without
+    *  selecting a button the first button will be clicked unless a "Cancel" or "No"
+    *  button is provided.
+    *
+    *  Returns the chosen button index number if the buttons option was an array.
+    *  @param response The index of the button that was clicked.
+    *  @param checkboxChecked The checked state of the checkbox if `checkboxLabel` was set.
+    *  Otherwise false.
+    */
   def confirm(
     options: ConfirmationOptions,
     callback: js.Function2[/* response */ scala.Double, /* checkboxChecked */ scala.Boolean, scala.Unit]
@@ -106,9 +106,9 @@ trait AtomEnvironment extends js.Object {
   /** Get the position of current window. */
   def getPosition(): atomLib.Anon_Y = js.native
   /**
-       *  Gets the release channel of the Atom application.
-       *  Returns the release channel, which can be 'dev', 'beta', or 'stable'.
-       */
+    *  Gets the release channel of the Atom application.
+    *  Returns the release channel, which can be 'dev', 'beta', or 'stable'.
+    */
   def getReleaseChannel(): atomLib.atomLibStrings.dev | atomLib.atomLibStrings.beta | atomLib.atomLibStrings.stable = js.native
   /** Get the size of current window. */
   def getSize(): atomLib.Anon_Height = js.native
@@ -137,15 +137,13 @@ trait AtomEnvironment extends js.Object {
   /** Invoke the given callback whenever there is an unhandled error. */
   def onDidThrowError(callback: js.Function1[/* event */ ExceptionThrownEvent, scala.Unit]): Disposable = js.native
   /**
-       *  Invoke the given callback when there is an unhandled error, but before
-       *  the devtools pop open.
-       */
+    *  Invoke the given callback when there is an unhandled error, but before
+    *  the devtools pop open.
+    */
   def onWillThrowError(callback: js.Function1[/* event */ PreventableExceptionThrownEvent, scala.Unit]): Disposable = js.native
   // Managing the Atom Window
   /** Open a new Atom window using the given options. */
   def open(): scala.Unit = js.native
-  // Managing the Atom Window
-  /** Open a new Atom window using the given options. */
   def open(params: atomLib.Anon_PathsToOpen): scala.Unit = js.native
   // Managing the Dev Tools
   /** Open the dev tools for the current window. */
@@ -169,9 +167,9 @@ trait AtomEnvironment extends js.Object {
   /** Toggle the full screen state of the current window. */
   def toggleFullScreen(): scala.Unit = js.native
   /**
-       *  Invoke the given callback as soon as the shell environment is loaded (or
-       *  immediately if it was already loaded).
-       */
+    *  Invoke the given callback as soon as the shell environment is loaded (or
+    *  immediately if it was already loaded).
+    */
   def whenShellEnvironmentLoaded(callback: js.Function0[scala.Unit]): Disposable = js.native
 }
 

@@ -15,10 +15,10 @@ abstract class SocketError () extends js.Object
 @js.native
 object SocketError extends js.Object {
   /**
-                   * Gets a SocketErrorStatus value based on an error encountered by a socket operation.
-                   * @param hresult The error encountered by a socket operation represented as an HRESULT.
-                   * @return The socket error status value for a socket operation.
-                   */
+    * Gets a SocketErrorStatus value based on an error encountered by a socket operation.
+    * @param hresult The error encountered by a socket operation represented as an HRESULT.
+    * @return The socket error status value for a socket operation.
+    */
   def getStatus(hresult: scala.Double): winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.SocketErrorStatus = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColourspaceEnum extends js.Object {
   var `b-w`: java.lang.String
   var bw: java.lang.String

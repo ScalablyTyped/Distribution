@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISplitter
   extends extjsLib.ExtNs.IComponent {
   /** [Config Option] (Boolean) */

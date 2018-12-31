@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Frame extends js.Object {
   var data_length: scala.Double
   var data_offset: scala.Double

@@ -116,14 +116,6 @@ trait Toastr
   	 * Get or create a container.
   	 */
   def getContainer(): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
-  /**
-  		 * Get the container by options.containerId.
-  		 *
-  		 * @param options Option values for the container
-  		 */
-  /**
-  	 * Get or create a container.
-  	 */
   def getContainer(options: ToastrOptions): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
   /**
   		 * Get the container by options.containerId.

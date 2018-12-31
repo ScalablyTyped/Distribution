@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait config extends js.Object {
   var connectionTimeout: js.UndefOr[scala.Double] = js.undefined
   var database: java.lang.String

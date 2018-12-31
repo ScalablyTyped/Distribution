@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerOptions extends js.Object {
   var ca: js.UndefOr[
     java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer])

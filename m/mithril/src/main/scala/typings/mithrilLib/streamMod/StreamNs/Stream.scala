@@ -29,7 +29,6 @@ trait Stream[T] extends js.Object {
   def map_U[U](f: js.Function1[/* current */ T, Stream[U] | U]): Stream[U] = js.native
   /** This method is functionally identical to stream. It exists to conform to Fantasy Land's Applicative specification. */
   def of(): Stream[T] = js.native
-  /** This method is functionally identical to stream. It exists to conform to Fantasy Land's Applicative specification. */
   def of(`val`: T): Stream[T] = js.native
   /** When a stream is passed as the argument to JSON.stringify(), the value of the stream is serialized. */
   def toJSON(): java.lang.String = js.native

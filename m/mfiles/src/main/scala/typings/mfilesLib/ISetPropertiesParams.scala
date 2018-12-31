@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISetPropertiesParams extends js.Object {
   var AccessControlListEnforcingMode: mfilesLib.MFilesNs.MFACLEnforcingMode
   var AccessControlListProvidedForEnforcing: IAccessControlList

@@ -6,29 +6,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     *
-     * Provides information about the content control that raised an event.
-     *
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-
+  *
+  * Provides information about the content control that raised an event.
+  *
+  * [Api set: WordApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 trait ContentControlEventArgs extends js.Object {
   /**
-           *
-           * The object that raised the event. Load this object to get its properties.
-           *
-           * [Api set: WordApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * The object that raised the event. Load this object to get its properties.
+    *
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var contentControl: ContentControl
   /**
-           *
-           * The event type. See Word.EventType for details.
-           *
-           * [Api set: WordApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * The event type. See Word.EventType for details.
+    *
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var eventType: EventType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlDeleted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlSelectionChanged | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlDataChanged | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlAdded
 }
 

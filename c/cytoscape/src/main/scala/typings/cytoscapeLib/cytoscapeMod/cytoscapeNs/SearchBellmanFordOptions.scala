@@ -6,22 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * http://js.cytoscape.org/#eles.bellmanFord
-     */
-
+  * http://js.cytoscape.org/#eles.bellmanFord
+  */
 trait SearchBellmanFordOptions extends js.Object {
   /**
-           * Indicating whether the algorithm should only go along
-           * edges from source to target (default false).
-           */
+    * Indicating whether the algorithm should only go along
+    * edges from source to target (default false).
+    */
   var directed: scala.Boolean
   /**
-           * The root node (selector or collection) where the search starts.
-           */
+    * The root node (selector or collection) where the search starts.
+    */
   var root: js.Any
   /**
-           * A function that returns the positive numeric weight for this edge.
-           */
+    * A function that returns the positive numeric weight for this edge.
+    */
   var weight: js.UndefOr[WeightFn] = js.undefined
 }
 

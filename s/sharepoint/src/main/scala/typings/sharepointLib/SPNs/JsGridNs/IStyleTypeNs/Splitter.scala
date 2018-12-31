@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Splitter
   extends sharepointLib.SPNs.JsGridNs.IStyleType {
   var backgroundColor: js.Any

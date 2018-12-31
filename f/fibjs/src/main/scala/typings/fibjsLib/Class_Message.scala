@@ -10,9 +10,14 @@ import scala.scalajs.js.annotation._
 	* @brief 基础消息对象
 	* @detail Message 对象兼容于 mq 各个模块，可用于构建自定义消息处理系统，创建方法：,```JavaScript,var mq = require("mq");,var m = new mq.Message();,```
 	*/
-
 @JSGlobal("Class_Message")
 @js.native
+/**
+	 * 
+	 * @brief 消息对象构造函数
+	 * 
+	 * 
+	 */
 class Class_Message () extends Class__object {
   /**
   	 * class prop 
@@ -146,15 +151,6 @@ class Class_Message () extends Class__object {
   	 * @async
   	 */
   def read(): Class_Buffer = js.native
-  /**
-  	 * 
-  	 * @brief 从流内读取指定大小的数据，此方法为 body 相应方法的别名
-  	 * @param bytes 指定要读取的数据量，缺省为读取随机大小的数据块，读出的数据尺寸取决于设备
-  	 * @return 返回从流内读取的数据，若无数据可读，或者连接中断，则返回 null
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def read(bytes: scala.Double): Class_Buffer = js.native
   /**
   	 * 

@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick, @material-ui/core.@material-ui/core.StandardProps) */ 
-trait ButtonProps
+- Lifted 3 members from Set(std.Pick<@material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps, std.Exclude<keyof @material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps, 'classes' | 'component'>>, @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps, @material-ui/core.@material-ui/core/Button/Button.ButtonClassKey, 'component'>) */ trait ButtonProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ButtonClassKey] {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[atMaterialDashUiCoreLib.coreMod.PropTypesNs.Color] = js.undefined

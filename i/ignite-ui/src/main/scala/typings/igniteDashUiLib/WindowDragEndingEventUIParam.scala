@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WindowDragEndingEventUIParam extends js.Object {
   /**
   	 * Gets reference to the igZoombar.

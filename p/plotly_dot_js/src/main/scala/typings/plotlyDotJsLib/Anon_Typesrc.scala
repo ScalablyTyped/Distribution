@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Typesrc extends js.Object {
   var color: plotlyDotJsLib.plotlyDotJsMod.Color
   var colorsrc: js.Any

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShellNameSpace_FavoritesSelectionChange_Parameter extends js.Object {
   val cItems: scala.Double
   val cVisits: scala.Double

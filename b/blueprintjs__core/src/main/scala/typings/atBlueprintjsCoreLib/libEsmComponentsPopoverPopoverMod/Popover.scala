@@ -20,10 +20,10 @@ class Popover ()
   var isMouseInTargetOrPopover: js.Any = js.native
   var lostFocusOnSamePage: js.Any = js.native
   /**
-       * DOM element that contains the popover.
-       * When `usePortal={true}`, this element will be portaled outside the usual DOM flow,
-       * so this reference can be very useful for testing.
-       */
+    * DOM element that contains the popover.
+    * When `usePortal={true}`, this element will be portaled outside the usual DOM flow,
+    * so this reference can be very useful for testing.
+    */
   var popoverElement: reactLib.HTMLElement = js.native
   var popperScheduleUpdate: js.Any = js.native
   var refHandlers: js.Any = js.native
@@ -47,13 +47,13 @@ class Popover ()
   /* private */ def isElementInPopover(element: js.Any): js.Any = js.native
   /* private */ def isHoverInteractionKind(): js.Any = js.native
   /**
-       * Instance method to instruct the `Popover` to recompute its position.
-       *
-       * This method should only be used if you are updating the target in a way
-       * that does not cause it to re-render, such as changing its _position_
-       * without changing its _size_ (since `Popover` already repositions when it
-       * detects a resize).
-       */
+    * Instance method to instruct the `Popover` to recompute its position.
+    *
+    * This method should only be used if you are updating the target in a way
+    * that does not cause it to re-render, such as changing its _position_
+    * without changing its _size_ (since `Popover` already repositions when it
+    * detects a resize).
+    */
   def reposition(): scala.Unit = js.native
   /* private */ def setOpenState(isOpen: js.Any): js.Any = js.native
   /* private */ def setOpenState(isOpen: js.Any, e: js.Any): js.Any = js.native

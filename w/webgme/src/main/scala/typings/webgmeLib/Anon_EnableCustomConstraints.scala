@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EnableCustomConstraints extends js.Object {
   // GmeClasses.Core;
   /**
-               * If true will enable validation (which takes place on the server) 
-               * of custom constraints defined in the meta nodes.
-               *   config.core.enableCustomConstraints = false;
-               */
+    * If true will enable validation (which takes place on the server) 
+    * of custom constraints defined in the meta nodes.
+    *   config.core.enableCustomConstraints = false;
+    */
   var enableCustomConstraints: scala.Boolean
 }
 

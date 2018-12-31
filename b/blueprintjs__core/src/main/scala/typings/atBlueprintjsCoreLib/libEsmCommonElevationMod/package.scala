@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libEsmCommonElevationMod {
-  type Elevation = /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibraryScoped(blueprintjs,Some(core)), TsIdentSimple(Anon_TWO))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentLibraryScoped(blueprintjs,Some(core)), TsIdentSimple(Anon_TWO))),List())))) */js.Any
+  type Elevation = atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`0` | atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`1` | atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`2` | atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`3` | atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`4`
 }

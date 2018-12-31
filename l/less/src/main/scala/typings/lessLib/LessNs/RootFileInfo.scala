@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // https://github.com/less/less.js/blob/master/lib/less/import-manager.js#L10
-
 trait RootFileInfo extends js.Object {
   /** path to the current file, absolute */
   var currentDirectory: java.lang.String

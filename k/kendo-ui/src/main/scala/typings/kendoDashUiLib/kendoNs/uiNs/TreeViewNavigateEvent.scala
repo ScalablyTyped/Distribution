@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TreeViewNavigateEvent extends TreeViewEvent {
   var node: js.UndefOr[stdLib.Element] = js.undefined
 }

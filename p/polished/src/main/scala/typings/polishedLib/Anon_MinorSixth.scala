@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MinorSixth extends js.Object {
   var augFourth: polishedLib.polishedLibNumbers.`1DOT414`
   var doubleOctave: polishedLib.polishedLibNumbers.`4`

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object fastifyDashCorsModMembers extends js.Object {
   /**
-   * fastify-cors enables the use of CORS in a Fastify application.
-   */
+    * fastify-cors enables the use of CORS in a Fastify application.
+    */
   def apply(): scala.Unit = js.native
 }
 

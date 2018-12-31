@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Auth0 extends js.Object {
   var auth: Auth
   var webAuth: WebAuth

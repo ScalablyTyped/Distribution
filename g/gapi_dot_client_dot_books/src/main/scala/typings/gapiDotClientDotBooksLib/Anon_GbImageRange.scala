@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_GbImageRange extends js.Object {
   /** Range in CFI format for this annotation sent by client. */
   var cfiRange: js.UndefOr[gapiDotClientDotBooksLib.gapiNs.clientNs.booksNs.BooksAnnotationsRange] = js.undefined

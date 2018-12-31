@@ -21,11 +21,11 @@ class Polygon protected ()
   var shared: openjscadLib.CSGNs.PolygonNs.Shared = js.native
   var vertices: js.Array[Vertex] = js.native
   /**
-              *
-              * @param walls Array of wall polygons
-              * @param bottom Bottom polygon
-              * @param top Top polygon
-              */
+    *
+    * @param walls Array of wall polygons
+    * @param bottom Bottom polygon
+    * @param top Top polygon
+    */
   /* private */ def _addWalls(walls: js.Any, bottom: js.Any, top: js.Any, bFlipped: js.Any): js.Any = js.native
   def boundingBox(): js.Array[Vector3D] = js.native
   def boundingSphere(): js.Any = js.native
@@ -38,14 +38,14 @@ class Polygon protected ()
   def projectToOrthoNormalBasis(orthobasis: OrthoNormalBasis): openjscadLib.CAG = js.native
   def setColor(args: js.Any): Polygon = js.native
   /**
-              * Creates solid from slices (CSG.Polygon) by generating walls
-              * @param {Object} options Solid generating options
-              *  - numslices {Number} Number of slices to be generated
-              *  - callback(t, slice) {Function} Callback function generating slices.
-              *          arguments: t = [0..1], slice = [0..numslices - 1]
-              *          return: CSG.Polygon or null to skip
-              *  - loop {Boolean} no flats, only walls, it's used to generate solids like a tor
-              */
+    * Creates solid from slices (CSG.Polygon) by generating walls
+    * @param {Object} options Solid generating options
+    *  - numslices {Number} Number of slices to be generated
+    *  - callback(t, slice) {Function} Callback function generating slices.
+    *          arguments: t = [0..1], slice = [0..numslices - 1]
+    *          return: CSG.Polygon or null to skip
+    *  - loop {Boolean} no flats, only walls, it's used to generate solids like a tor
+    */
   def solidFromSlices(options: js.Any): openjscadLib.CSG = js.native
 }
 

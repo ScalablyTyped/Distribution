@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Xs extends js.Object {
   var large: java.lang.String
   var lg: java.lang.String

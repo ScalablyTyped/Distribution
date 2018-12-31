@@ -630,7 +630,6 @@ class MediaPlayer protected () extends js.Object {
   		**/
   var width: java.lang.String = js.native
   /* Methods */
-  
   /**
   		* Adds the specified CSS class to the host element.
   		* @param name The name of the class to add. Multiple classes can be added using space-delimited names.
@@ -644,13 +643,6 @@ class MediaPlayer protected () extends js.Object {
   		* @param capture true to initiate capture, otherwise false.
   		**/
   def addEventListener(`type`: java.lang.String, listener: js.Function): scala.Unit = js.native
-  /**
-  		* Adds an event listener for the MediaPlayer events.
-  		* //TODO
-  		* @param type The type (name) of the event. You can use any of the following: "".
-  		* @param listener The listener to invoke when the event is raised.
-  		* @param capture true to initiate capture, otherwise false.
-  		**/
   def addEventListener(`type`: java.lang.String, listener: js.Function, capture: scala.Boolean): scala.Unit = js.native
   /**
   		* Create a new TextTrack object to add to an HTML5 video.
@@ -659,19 +651,7 @@ class MediaPlayer protected () extends js.Object {
   		* @param language String The BCP47 language tag of the track. For example "en" for English or "fr" for French
   		**/
   def addTextTrack(kind: java.lang.String): scala.Unit = js.native
-  /**
-  		* Create a new TextTrack object to add to an HTML5 video.
-  		* @param kind String The type of text track
-  		* @param label String A user readable title for a text track
-  		* @param language String The BCP47 language tag of the track. For example "en" for English or "fr" for French
-  		**/
   def addTextTrack(kind: java.lang.String, label: java.lang.String): scala.Unit = js.native
-  /**
-  		* Create a new TextTrack object to add to an HTML5 video.
-  		* @param kind String The type of text track
-  		* @param label String A user readable title for a text track
-  		* @param language String The BCP47 language tag of the track. For example "en" for English or "fr" for French
-  		**/
   def addTextTrack(kind: java.lang.String, label: java.lang.String, language: java.lang.String): scala.Unit = js.native
   /**
   		* Raises the audioinvoked event used to indicate that an audio selection dialog should be presented to the user (usually in the form of a flyout).

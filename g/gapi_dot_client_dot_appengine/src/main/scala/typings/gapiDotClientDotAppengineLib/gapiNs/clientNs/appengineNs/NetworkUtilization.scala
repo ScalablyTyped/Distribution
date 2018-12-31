@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NetworkUtilization extends js.Object {
   /** Target bytes received per second. */
   var targetReceivedBytesPerSecond: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DirectorySiteSettings extends js.Object {
   /** Whether this directory site has disabled active view creatives. */
   var activeViewOptOut: js.UndefOr[scala.Boolean] = js.undefined

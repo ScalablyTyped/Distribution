@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * http://js.cytoscape.org/#events/event-object
-     */
-
+  * http://js.cytoscape.org/#events/event-object
+  */
 trait AbstractEventObject extends js.Object {
   /** a reference to the corresponding core Core */
   var cy: Core

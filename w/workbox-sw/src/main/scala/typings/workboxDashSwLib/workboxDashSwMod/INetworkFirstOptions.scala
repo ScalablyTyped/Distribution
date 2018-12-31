@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * ===== NetworkFirst strategy =====
- */
-
-
+  * ===== NetworkFirst strategy =====
+  */
 trait INetworkFirstOptions extends ICacheFirstOptions {
   var networkTimeoutSeconds: scala.Double
 }

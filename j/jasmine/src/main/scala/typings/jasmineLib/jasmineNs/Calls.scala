@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Calls extends js.Object {
   /** By chaining the spy with calls.all(), will return the context (the this) and arguments passed all calls **/
   def all(): js.Array[CallInfo]

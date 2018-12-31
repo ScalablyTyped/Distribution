@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPanelService extends js.Object {
   var absPosition: angularDashMaterialLib.Anon_RIGHT
   var animation: angularDashMaterialLib.Anon_FADE

@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 sealed trait ChartTextHorizontalAlignment extends js.Object
 
 /**
-     *
-     * Represents the horizontal alignment for the specified object.
-     *
-     * [Api set: ExcelApi 1.7]
-     */
+  *
+  * Represents the horizontal alignment for the specified object.
+  *
+  * [Api set: ExcelApi 1.7]
+  */
 @JSGlobal("Excel.ChartTextHorizontalAlignment")
 @js.native
 object ChartTextHorizontalAlignment extends js.Object {

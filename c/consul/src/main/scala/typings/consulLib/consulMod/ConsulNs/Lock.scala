@@ -10,12 +10,12 @@ trait Lock
   extends nodeLib.NodeJSNs.EventEmitter {
   var consul: Consul = js.native
   /**
-           * Acquire lock
-           */
+    * Acquire lock
+    */
   def acquire(): scala.Unit = js.native
   /**
-           * Release lock
-           */
+    * Release lock
+    */
   def release(): scala.Unit = js.native
 }
 

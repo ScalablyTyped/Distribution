@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // A request to login to a specific network as a specific agent
-
 trait LoginRequest extends js.Object {
   // Name of the application connecting to the network. Other logins with
   // the same agent field will be listed as having status |ONLINE|, where

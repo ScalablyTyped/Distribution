@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Configuration.
-     * @interface
-     */
-
+  * Configuration.
+  * @interface
+  */
 trait Configuration extends js.Object {
   var level: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var name: java.lang.String

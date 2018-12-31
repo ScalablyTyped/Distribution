@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CoverageSummary extends js.Object {
   var branches: Totals
   var functions: Totals

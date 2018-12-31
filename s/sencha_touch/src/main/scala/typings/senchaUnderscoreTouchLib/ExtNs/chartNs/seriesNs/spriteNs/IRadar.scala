@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRadar extends IPolar {
   /** [Method] Render method
   		* @param surface Object

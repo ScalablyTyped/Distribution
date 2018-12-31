@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileSystem extends js.Object {
   var lstat: js.UndefOr[
     js.Function2[

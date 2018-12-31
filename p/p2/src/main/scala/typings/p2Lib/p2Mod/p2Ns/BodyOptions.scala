@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BodyOptions extends js.Object {
   var angle: js.UndefOr[scala.Double] = js.undefined
   var angularForce: js.UndefOr[scala.Double] = js.undefined

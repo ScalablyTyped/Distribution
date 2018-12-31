@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EAPProperties extends js.Object {
   var AnonymousIdentity: js.UndefOr[java.lang.String] = js.undefined
   /** @since Chrome 60. */

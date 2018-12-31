@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RulePlain extends CssNodeCommon {
   var block: BlockPlain
   var prelude: SelectorListPlain | Raw

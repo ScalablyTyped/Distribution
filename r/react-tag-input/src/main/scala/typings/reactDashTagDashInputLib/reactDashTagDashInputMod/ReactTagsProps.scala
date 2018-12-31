@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactTagsProps extends js.Object {
   var allowDeleteFromEmptyInput: js.UndefOr[scala.Boolean] = js.undefined
   var allowDragDrop: js.UndefOr[scala.Boolean] = js.undefined

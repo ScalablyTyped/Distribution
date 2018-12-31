@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FooterData extends js.Object {
   /**
   	 * Text alignment for the data in this footer.

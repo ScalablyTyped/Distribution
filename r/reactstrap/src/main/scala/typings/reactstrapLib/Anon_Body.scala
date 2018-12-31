@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Body extends js.Object {
   var block: js.UndefOr[scala.Boolean] = js.undefined
   var body: js.UndefOr[scala.Boolean] = js.undefined

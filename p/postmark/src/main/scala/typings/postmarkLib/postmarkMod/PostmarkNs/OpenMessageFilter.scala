@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OpenMessageFilter extends BaseFilter {
   var city: js.UndefOr[java.lang.String] = js.undefined
   var client_company: js.UndefOr[java.lang.String] = js.undefined

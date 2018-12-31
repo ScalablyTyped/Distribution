@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CircleMarkerOptions extends js.Object {
   /**
   			 * Whether you can click the circle marker.

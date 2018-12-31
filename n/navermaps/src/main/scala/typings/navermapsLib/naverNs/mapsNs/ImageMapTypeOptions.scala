@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageMapTypeOptions extends js.Object {
   var darktheme: js.UndefOr[scala.Boolean] = js.undefined
   var getTileUrl: js.UndefOr[js.Function0[_]] = js.undefined

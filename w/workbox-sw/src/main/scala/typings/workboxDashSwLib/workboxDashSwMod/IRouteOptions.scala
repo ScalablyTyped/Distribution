@@ -27,6 +27,8 @@ trait IRouteOptions extends js.Object {
   /**
   	 * This is a function that should take a URL and return an array of alternative URL's that should be checked for precache matches.
   	 */
-  def urlManipulation(context: js.Any): js.Array[stdLib.URL] = js.native
+  def urlManipulation(
+    context: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify IURLContext */ js.Any
+  ): js.Array[stdLib.URL] = js.native
 }
 

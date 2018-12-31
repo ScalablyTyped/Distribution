@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataSourceChangeEvent extends DataSourceEvent {
   var action: js.UndefOr[java.lang.String] = js.undefined
   var field: js.UndefOr[java.lang.String] = js.undefined

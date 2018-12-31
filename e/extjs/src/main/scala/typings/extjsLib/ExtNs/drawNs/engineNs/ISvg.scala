@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISvg
   extends extjsLib.ExtNs.drawNs.ISurface {
   /** [Method] Insert or move a given sprite s element to the correct place in the DOM list for its zIndex

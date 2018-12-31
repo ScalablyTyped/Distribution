@@ -20,19 +20,19 @@ abstract class AudioFrameOutputNode () extends js.Object {
   /** Closes the audio frame output node. */
   def close(): scala.Unit = js.native
   /**
-                   * Disables all effects in the EffectDefinitions list with the specified effect definition.
-                   * @param definition The effect definition of the effects to disable.
-                   */
+    * Disables all effects in the EffectDefinitions list with the specified effect definition.
+    * @param definition The effect definition of the effects to disable.
+    */
   def disableEffectsByDefinition(definition: winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition): scala.Unit = js.native
   /**
-                   * Enables all effects in the EffectDefinitions list with the specified effect definition.
-                   * @param definition The effect definition of the effects to enable.
-                   */
+    * Enables all effects in the EffectDefinitions list with the specified effect definition.
+    * @param definition The effect definition of the effects to enable.
+    */
   def enableEffectsByDefinition(definition: winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition): scala.Unit = js.native
   /**
-                   * Gets an audio frame containing all of the data accumulated by this node since the previous call to GetFrame. If GetFrame has not yet been called, the audio frame will contain all of the data accumulated since the node was created.
-                   * @return An AudioFrame object representing the frame.
-                   */
+    * Gets an audio frame containing all of the data accumulated by this node since the previous call to GetFrame. If GetFrame has not yet been called, the audio frame will contain all of the data accumulated since the node was created.
+    * @return An AudioFrame object representing the frame.
+    */
   def getFrame(): winrtDashUwpLib.WindowsNs.MediaNs.AudioFrame = js.native
   /** Resets the audio frame output node. */
   def reset(): scala.Unit = js.native

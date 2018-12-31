@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISyndicationErrorStatics extends js.Object {
   def getStatus(hresult: scala.Double): SyndicationErrorStatus
 }

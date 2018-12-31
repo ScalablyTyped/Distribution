@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 // Note: karma-webpack will set publicPath for us, so it is optional here.
 // Unfortuantely, Typescript doesn't let you overload properties, so
 // the entire definition is duplicated here.
-
 trait KarmaWebpackMiddlewareOptions extends js.Object {
   var error: js.UndefOr[Logger] = js.undefined
   var filename: js.UndefOr[java.lang.String] = js.undefined

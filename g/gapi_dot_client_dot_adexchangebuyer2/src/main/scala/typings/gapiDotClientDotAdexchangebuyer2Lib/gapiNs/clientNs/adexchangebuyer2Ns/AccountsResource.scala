@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountsResource extends js.Object {
   var clients: ClientsResource
   var creatives: CreativesResource

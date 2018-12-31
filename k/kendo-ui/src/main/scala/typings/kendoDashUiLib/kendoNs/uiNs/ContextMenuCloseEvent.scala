@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContextMenuCloseEvent extends ContextMenuEvent {
   var event: js.UndefOr[kendoDashUiLib.JQueryEventObject] = js.undefined
   var item: js.UndefOr[stdLib.Element] = js.undefined

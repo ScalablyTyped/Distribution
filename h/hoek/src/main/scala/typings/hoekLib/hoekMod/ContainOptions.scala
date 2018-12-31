@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContainOptions extends js.Object {
   /** Perform a deep comparison of the values? */
   var deep: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadTask extends js.Object {
   var arch: builderDashUtilLib.outArchMod.Arch | scala.Null
   var file: java.lang.String

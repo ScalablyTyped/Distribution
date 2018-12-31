@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CityData extends js.Object {
   /** The IATA character ID of a city. For example, for Boston this is BOS. */
   var code: js.UndefOr[java.lang.String] = js.undefined

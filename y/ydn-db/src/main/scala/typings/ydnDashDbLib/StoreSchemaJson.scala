@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StoreSchemaJson extends js.Object {
   var autoIncrement: js.UndefOr[scala.Boolean] = js.undefined
   var dispatchEvents: js.UndefOr[scala.Boolean] = js.undefined

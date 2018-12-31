@@ -5,39 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TfvcChangesetSearchCriteria extends js.Object {
   /**
-       * Alias or display name of user who made the changes
-       */
+    * Alias or display name of user who made the changes
+    */
   var author: java.lang.String
   /**
-       * Whether or not to follow renames for the given item being queried
-       */
+    * Whether or not to follow renames for the given item being queried
+    */
   var followRenames: scala.Boolean
   /**
-       * If provided, only include changesets created after this date (string) Think of a better name for this.
-       */
+    * If provided, only include changesets created after this date (string) Think of a better name for this.
+    */
   var fromDate: java.lang.String
   /**
-       * If provided, only include changesets after this changesetID
-       */
+    * If provided, only include changesets after this changesetID
+    */
   var fromId: scala.Double
   /**
-       * Whether to include the _links field on the shallow references
-       */
+    * Whether to include the _links field on the shallow references
+    */
   var includeLinks: scala.Boolean
   /**
-       * Path of item to search under
-       */
+    * Path of item to search under
+    */
   var itemPath: java.lang.String
   /**
-       * If provided, only include changesets created before this date (string) Think of a better name for this.
-       */
+    * If provided, only include changesets created before this date (string) Think of a better name for this.
+    */
   var toDate: java.lang.String
   /**
-       * If provided, a version descriptor for the latest change list to include
-       */
+    * If provided, a version descriptor for the latest change list to include
+    */
   var toId: scala.Double
 }
 

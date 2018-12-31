@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 abstract class ControlContainer ()
   extends atAngularFormsLib.srcDirectivesAbstractUnderscoreControlUnderscoreDirectiveMod.AbstractControlDirective {
   /**
-       * @description
-       * The top-level form directive for the control.
-       */
+    * @description
+    * The top-level form directive for the control.
+    */
   val formDirective: atAngularFormsLib.srcDirectivesFormUnderscoreInterfaceMod.Form | scala.Null = js.native
   /**
-       * @description
-       * The name for the control
-       */
+    * @description
+    * The name for the control
+    */
   var name: java.lang.String = js.native
 }
 

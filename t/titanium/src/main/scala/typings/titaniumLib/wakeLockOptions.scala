@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Parameter for wakeLock
- */
-
+  * Parameter for wakeLock
+  */
 trait wakeLockOptions extends js.Object {
   /**
   	 * Wake lock level and flag. See [PowerManager.newWakeLock in the Android API Reference](https://developer.android.com/reference/android/os/PowerManager.html#newWakeLock(int,%20java.lang.String))

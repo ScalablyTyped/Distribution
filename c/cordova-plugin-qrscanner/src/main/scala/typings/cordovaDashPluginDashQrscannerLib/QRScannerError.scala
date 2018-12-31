@@ -29,7 +29,6 @@ import scala.scalajs.js.annotation._
 *    7 | `LIGHT_UNAVAILABLE`         | The device light is unavailable because it doesn't exist or is otherwise unable to be configured.
 *    8 | `OPEN_SETTINGS_UNAVAILABLE` | The device is unable to open settings.
 */
-
 trait QRScannerError extends js.Object {
   /**
     * A simple message describing this QRScannerError.

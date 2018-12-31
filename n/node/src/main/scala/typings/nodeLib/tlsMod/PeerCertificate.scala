@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PeerCertificate extends js.Object {
   var exponent: java.lang.String
   var ext_key_usage: js.Array[java.lang.String]

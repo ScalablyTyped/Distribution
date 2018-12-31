@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class Double protected ()
   extends bsonLib.bsonMod.Double {
   /**
-       * @param value The number we want to represent as a double.
-       */
+    * @param value The number we want to represent as a double.
+    */
   def this(value: scala.Double) = this()
 }
 

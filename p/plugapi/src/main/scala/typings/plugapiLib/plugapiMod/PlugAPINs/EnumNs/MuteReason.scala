@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MuteReason extends js.Object {
   var NEGATIVE_ATTITUDE: scala.Double
   var OFFENSIVE_LANGUAGE: scala.Double

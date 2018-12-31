@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "Constants")
 @js.native
 object ConstantsNs extends js.Object {
-  
   trait Manifest
     extends /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
     var android: js.UndefOr[expoLib.Anon_Config] = js.undefined
@@ -43,7 +42,6 @@ object ConstantsNs extends js.Object {
     var splash: js.UndefOr[expoLib.Anon_ResizeMode] = js.undefined
     var version: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait Platform extends js.Object {
     var android: js.UndefOr[expoLib.Anon_VersionCode] = js.undefined

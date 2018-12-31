@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait CellPaddingLocation extends js.Object
 
 /**
-     * [Api set: WordApi]
-     */
+  * [Api set: WordApi]
+  */
 @JSGlobal("Word.CellPaddingLocation")
 @js.native
 object CellPaddingLocation extends js.Object {

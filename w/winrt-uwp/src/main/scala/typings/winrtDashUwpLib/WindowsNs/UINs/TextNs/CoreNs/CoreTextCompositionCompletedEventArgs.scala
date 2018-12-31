@@ -14,9 +14,9 @@ abstract class CoreTextCompositionCompletedEventArgs () extends js.Object {
   /** Gets a value that indicates whether the operation is canceled. */
   var isCanceled: scala.Boolean = js.native
   /**
-                       * Requests that the operation be delayed. Call this method if your text input control is hosted on a worker thread rather than on the UI thread.
-                       * @return A Deferral object.
-                       */
+    * Requests that the operation be delayed. Call this method if your text input control is hosted on a worker thread rather than on the UI thread.
+    * @return A Deferral object.
+    */
   def getDeferral(): winrtDashUwpLib.WindowsNs.FoundationNs.Deferral = js.native
 }
 

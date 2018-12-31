@@ -25,8 +25,8 @@ class ObservableObject () extends js.Object {
 @js.native
 object ObservableObject extends js.Object {
   /** Property names that your row couldn't have:
-       * "propertyChangedListeners", "notifyPropertyChanged", "onPropertyChanged", "toJSON", "makeObservable", "_forget"
-       */
+    * "propertyChangedListeners", "notifyPropertyChanged", "onPropertyChanged", "toJSON", "makeObservable", "_forget"
+    */
   var RESERVED_PROPERTY_NAMES: js.Array[java.lang.String] = js.native
 }
 

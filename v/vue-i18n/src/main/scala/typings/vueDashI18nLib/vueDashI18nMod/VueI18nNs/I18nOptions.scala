@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line:interface-name
-
 trait I18nOptions extends js.Object {
   var dateTimeFormats: js.UndefOr[DateTimeFormats] = js.undefined
   var fallbackLocale: js.UndefOr[Locale] = js.undefined

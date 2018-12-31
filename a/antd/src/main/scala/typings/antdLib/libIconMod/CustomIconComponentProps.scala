@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomIconComponentProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var fill: java.lang.String

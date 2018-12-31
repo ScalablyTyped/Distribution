@@ -15,13 +15,13 @@ abstract class CachedFileUpdater () extends js.Object
 @js.native
 object CachedFileUpdater extends js.Object {
   /**
-                   * Configures update policies for a local file.
-                   * @param file The local file.
-                   * @param contentId A unique identifier for the local file.
-                   * @param readMode A value that specifies whether Windows will request updates before the local file is read by other apps.
-                   * @param writeMode A value that specifies whether other apps can write to the local file and, if so, whether Windows will request updates after the local file is written.
-                   * @param options A value that specifies additional circumstances and behaviors for when Windows requests updates.
-                   */
+    * Configures update policies for a local file.
+    * @param file The local file.
+    * @param contentId A unique identifier for the local file.
+    * @param readMode A value that specifies whether Windows will request updates before the local file is read by other apps.
+    * @param writeMode A value that specifies whether other apps can write to the local file and, if so, whether Windows will request updates after the local file is written.
+    * @param options A value that specifies additional circumstances and behaviors for when Windows requests updates.
+    */
   def setUpdateInformation(
     file: winrtDashUwpLib.WindowsNs.StorageNs.IStorageFile,
     contentId: java.lang.String,

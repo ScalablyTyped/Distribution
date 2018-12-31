@@ -14,10 +14,10 @@ abstract class ImageScannerAutoConfiguration () extends js.Object {
   /** Gets or sets the current file transfer format for image data acquisition from the device to the client app. */
   var format: ImageScannerFormat = js.native
   /**
-                   * Determines if the input scanner supports the specified file format.
-                   * @param value The file type.
-                   * @return True if the specified file type is supported; otherwise False.
-                   */
+    * Determines if the input scanner supports the specified file format.
+    * @param value The file type.
+    * @return True if the specified file type is supported; otherwise False.
+    */
   def isFormatSupported(value: ImageScannerFormat): scala.Boolean = js.native
 }
 

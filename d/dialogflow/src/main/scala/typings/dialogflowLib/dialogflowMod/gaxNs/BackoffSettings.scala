@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BackoffSettings extends js.Object {
   var initialRetryDelayMillis: scala.Double
   var initialRpcTimeoutMillis: scala.Double

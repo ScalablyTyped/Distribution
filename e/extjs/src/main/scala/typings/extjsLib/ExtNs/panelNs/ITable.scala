@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.gridNs.lockingNs.ILockable because Would inherit conflicting mutable fields List(statics, uses, mixins, config, extend, inheritableStatics, alias, alternateClassName, requires, singleton, callSuper, self, getInitialConfig, callParent, callOverridden, initConfig))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.gridNs.lockingNs.ILockable because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
 trait ITable extends IPanel {
   /** [Method] Invoked after the Panel is Collapsed  */
   @JSName("afterCollapse")

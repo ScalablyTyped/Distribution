@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @since Chrome 39. */
-
 trait DeviceFilter extends js.Object {
   /** Device product ID, only checked only if the vendor ID matches. */
   var productId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined

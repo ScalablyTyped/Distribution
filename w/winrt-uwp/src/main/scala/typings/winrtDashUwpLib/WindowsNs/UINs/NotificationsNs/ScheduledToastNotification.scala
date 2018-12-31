@@ -10,18 +10,18 @@ import scala.scalajs.js.annotation._
 @js.native
 class ScheduledToastNotification protected () extends js.Object {
   /**
-                   * Creates and initializes a new instance of a ScheduledToastNotification that will be displayed only once.
-                   * @param content The XML that defines the toast notification content.
-                   * @param deliveryTime The date and time that Windows should display the toast notification. You must call AddToSchedule before this time.
-                   */
+    * Creates and initializes a new instance of a ScheduledToastNotification that will be displayed only once.
+    * @param content The XML that defines the toast notification content.
+    * @param deliveryTime The date and time that Windows should display the toast notification. You must call AddToSchedule before this time.
+    */
   def this(content: winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument, deliveryTime: stdLib.Date) = this()
   /**
-                   * Creates and initializes a new instance of a recurring ScheduledToastNotification .
-                   * @param content The XML that defines the toast notification content.
-                   * @param deliveryTime The date and time that Windows should first display the toast notification. You must call AddToSchedule before this time.
-                   * @param snoozeInterval The amount of time between occurrences of the notification. To be valid, this value must be no less than 60 seconds and no more than 60 minutes.
-                   * @param maximumSnoozeCount The maximum number of times to display this notification. Valid values range from 1 to 5.
-                   */
+    * Creates and initializes a new instance of a recurring ScheduledToastNotification .
+    * @param content The XML that defines the toast notification content.
+    * @param deliveryTime The date and time that Windows should first display the toast notification. You must call AddToSchedule before this time.
+    * @param snoozeInterval The amount of time between occurrences of the notification. To be valid, this value must be no less than 60 seconds and no more than 60 minutes.
+    * @param maximumSnoozeCount The maximum number of times to display this notification. Valid values range from 1 to 5.
+    */
   def this(content: winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument, deliveryTime: stdLib.Date, snoozeInterval: scala.Double, maximumSnoozeCount: scala.Double) = this()
   /** Gets the XML that defines this scheduled toast notification. */
   var content: winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument = js.native

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveMultipleInheritance: Dropped parents List(leafletLib.leafletMod.LocateOptions because Would inherit conflicting mutable fields List(maxZoom), leafletLib.leafletMod.MapOptions because Would inherit conflicting mutable fields List(maxZoom))*/
-
 trait MapProps
   extends leafletLib.leafletMod.FitBoundsOptions
      with MapEvents {

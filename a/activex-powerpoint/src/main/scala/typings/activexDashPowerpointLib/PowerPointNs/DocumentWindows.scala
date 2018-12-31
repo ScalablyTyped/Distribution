@@ -14,7 +14,6 @@ class DocumentWindows protected () extends js.Object {
   var `PowerPoint.DocumentWindows_typekey`: DocumentWindows = js.native
   /** @param PowerPoint.PpArrangeStyle [arrangeStyle=1] */
   def Arrange(): scala.Unit = js.native
-  /** @param PowerPoint.PpArrangeStyle [arrangeStyle=1] */
   def Arrange(arrangeStyle: PpArrangeStyle): scala.Unit = js.native
   def Item(Index: scala.Double): DocumentWindow = js.native
 }

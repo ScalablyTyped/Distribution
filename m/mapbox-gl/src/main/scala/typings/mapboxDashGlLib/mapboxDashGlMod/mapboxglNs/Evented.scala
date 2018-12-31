@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 trait Evented extends js.Object {
   // https://github.com/mapbox/mapbox-gl-js/issues/6522
   def fire(`type`: java.lang.String): this.type = js.native
-  // https://github.com/mapbox/mapbox-gl-js/issues/6522
   def fire(`type`: java.lang.String, properties: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   def off(): this.type = js.native
   def off(`type`: java.lang.String): this.type = js.native

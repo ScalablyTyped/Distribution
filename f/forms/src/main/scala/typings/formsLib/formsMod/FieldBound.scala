@@ -14,9 +14,9 @@ trait FieldBound extends Field {
   /** The raw value from the request data. */
   var value: js.Any = js.native
   /**
-       * Checks if the field is required and whether it is empty. Then runs the validator functions in order until one fails or they all pass.
-       * If a validator fails, the resulting message is stored in the field's error attribute.
-       */
+    * Checks if the field is required and whether it is empty. Then runs the validator functions in order until one fails or they all pass.
+    * If a validator fails, the resulting message is stored in the field's error attribute.
+    */
   def validate(form: Form, callback: js.Function2[/* err */ java.lang.String, /* field */ Field, scala.Unit]): scala.Unit = js.native
 }
 

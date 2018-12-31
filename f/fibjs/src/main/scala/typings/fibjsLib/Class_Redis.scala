@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 	* @brief Redis 数据库客户端对象
 	* @detail 用以创建和管理 Redis 数据库，创建方法：,```JavaScript,var db = require("db");,var test = new db.openRedis("redis-server");,```
 	*/
-
 @JSGlobal("Class_Redis")
 @js.native
 class Class_Redis () extends Class__object {
@@ -46,27 +45,7 @@ class Class_Redis () extends Class__object {
   	 * 
   	 */
   def bitcount(key: Class_Buffer): scala.Double = js.native
-  /**
-  	 * 
-  	 * @brief 计算给定字符串中，被设置为 1 的比特位的数量
-  	 * @param key 指定要计算的 key
-  	 * @param start 指定要计算的起始字节，可以使用负数值，-1 表示最后一个字节，而 -2 表示倒数第二个字节，以此类推
-  	 * @param end 指定要计算的结束字节，可以使用负数值，-1 表示最后一个字节，而 -2 表示倒数第二个字节，以此类推
-  	 * @return 被设置为 1 的位的数量
-  	 * 
-  	 * 
-  	 */
   def bitcount(key: Class_Buffer, start: scala.Double): scala.Double = js.native
-  /**
-  	 * 
-  	 * @brief 计算给定字符串中，被设置为 1 的比特位的数量
-  	 * @param key 指定要计算的 key
-  	 * @param start 指定要计算的起始字节，可以使用负数值，-1 表示最后一个字节，而 -2 表示倒数第二个字节，以此类推
-  	 * @param end 指定要计算的结束字节，可以使用负数值，-1 表示最后一个字节，而 -2 表示倒数第二个字节，以此类推
-  	 * @return 被设置为 1 的位的数量
-  	 * 
-  	 * 
-  	 */
   def bitcount(key: Class_Buffer, start: scala.Double, end: scala.Double): scala.Double = js.native
   /**
   	 * 
@@ -95,15 +74,6 @@ class Class_Redis () extends Class__object {
   	 * 
   	 */
   def decr(key: Class_Buffer): scala.Double = js.native
-  /**
-  	 * 
-  	 * @brief 将 key 所储存的值减去减量
-  	 * @param key 指定要修改的 key
-  	 * @param num 指定要减去的数值
-  	 * @return 减去 num 之后，key 的值
-  	 * 
-  	 * 
-  	 */
   def decr(key: Class_Buffer, num: scala.Double): scala.Double = js.native
   /**
   	 * 
@@ -237,15 +207,6 @@ class Class_Redis () extends Class__object {
   	 * 
   	 */
   def incr(key: Class_Buffer): scala.Double = js.native
-  /**
-  	 * 
-  	 * @brief 将 key 所储存的值加上增量
-  	 * @param key 指定要修改的 key
-  	 * @param num 指定要加上的数值
-  	 * @return 加上 num 之后，key 的值
-  	 * 
-  	 * 
-  	 */
   def incr(key: Class_Buffer, num: scala.Double): scala.Double = js.native
   /**
   	 * 
@@ -374,15 +335,6 @@ class Class_Redis () extends Class__object {
   	 * 
   	 */
   def restore(key: Class_Buffer, data: Class_Buffer): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 反序列化给定的序列化值，并将它和给定的 key 关联
-  	 * @param key 指定要反序列化的 key
-  	 * @param data 指定要反序列化的数据
-  	 * @param ttl 以毫秒为单位为 key 设置生存时间；如果 ttl 为 0 ，那么不设置生存时间
-  	 * 
-  	 * 
-  	 */
   def restore(key: Class_Buffer, data: Class_Buffer, ttl: scala.Double): scala.Unit = js.native
   /**
   	 * 
@@ -394,15 +346,6 @@ class Class_Redis () extends Class__object {
   	 * 
   	 */
   def set(key: Class_Buffer, value: Class_Buffer): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 将字符串值 value 关联到 key，如果 key 已经持有其他值， SET 就覆写旧值，无视类型
-  	 * @param key 指定要关联的 key
-  	 * @param value 指定要关联的数据
-  	 * @param ttl 以毫秒为单位为 key 设置生存时间；如果 ttl 为 0 ，那么不设置生存时间
-  	 * 
-  	 * 
-  	 */
   def set(key: Class_Buffer, value: Class_Buffer, ttl: scala.Double): scala.Unit = js.native
   /**
   	 * 
@@ -425,15 +368,6 @@ class Class_Redis () extends Class__object {
   	 * 
   	 */
   def setNX(key: Class_Buffer, value: Class_Buffer): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 将 key 的值设为 value ，当且仅当 key 不存在。若给定的 key 已经存在，则 SETNX 不做任何动作。
-  	 * @param key 指定要关联的 key
-  	 * @param value 指定要关联的数据
-  	 * @param ttl 以毫秒为单位为 key 设置生存时间；如果 ttl 为 0 ，那么不设置生存时间
-  	 * 
-  	 * 
-  	 */
   def setNX(key: Class_Buffer, value: Class_Buffer, ttl: scala.Double): scala.Unit = js.native
   /**
   	 * 
@@ -456,15 +390,6 @@ class Class_Redis () extends Class__object {
   	 * 
   	 */
   def setXX(key: Class_Buffer, value: Class_Buffer): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 将 key 的值设为 value，只在键已经存在时，才对键进行设置操作。
-  	 * @param key 指定要关联的 key
-  	 * @param value 指定要关联的数据
-  	 * @param ttl 以毫秒为单位为 key 设置生存时间；如果 ttl 为 0 ，那么不设置生存时间
-  	 * 
-  	 * 
-  	 */
   def setXX(key: Class_Buffer, value: Class_Buffer, ttl: scala.Double): scala.Unit = js.native
   /**
   	 * 

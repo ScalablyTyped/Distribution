@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Operations extends js.Object {
   var PNAccessManagerAudit: java.lang.String
   var PNAccessManagerGrant: java.lang.String

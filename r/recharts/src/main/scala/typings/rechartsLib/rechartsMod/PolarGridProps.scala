@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial) */ 
-trait PolarGridProps extends js.Object {
+- Lifted 1 members from Set(std.Partial<recharts.recharts.PresentationAttributes<number, number>>) */ trait PolarGridProps extends js.Object {
   var cx: js.UndefOr[scala.Double] = js.undefined
   var cy: js.UndefOr[scala.Double] = js.undefined
   var gridType: js.UndefOr[rechartsLib.rechartsLibStrings.polygon | rechartsLib.rechartsLibStrings.circle] = js.undefined

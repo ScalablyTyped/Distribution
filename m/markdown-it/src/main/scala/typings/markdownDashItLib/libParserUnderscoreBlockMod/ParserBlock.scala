@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParserBlock extends js.Object {
   var ruler: markdownDashItLib.libMod.MarkdownItNs.RulerBlock
   def parse(

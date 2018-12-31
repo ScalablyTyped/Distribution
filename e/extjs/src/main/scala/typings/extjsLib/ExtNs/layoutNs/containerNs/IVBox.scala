@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVBox extends IBox {
   /** [Config Option] (String) */
   var align: js.UndefOr[java.lang.String] = js.undefined

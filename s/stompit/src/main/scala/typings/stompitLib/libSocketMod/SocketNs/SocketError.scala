@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SocketError
   extends nodeLib.Error {
   def isApplicationError(): scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LicenseAssignment extends js.Object {
   /** ETag of the resource. */
   var etags: js.UndefOr[java.lang.String] = js.undefined

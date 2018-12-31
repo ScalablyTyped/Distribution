@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NightwatchKeys extends js.Object {
   /** The numpad add (+) key. */
   var ADD: java.lang.String

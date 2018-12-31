@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * MailParser Attachment object.
- */
-
+  * MailParser Attachment object.
+  */
 trait AttachmentStream extends AttachmentCommon {
   /**
   	 * A Buffer that contains the attachment contents.

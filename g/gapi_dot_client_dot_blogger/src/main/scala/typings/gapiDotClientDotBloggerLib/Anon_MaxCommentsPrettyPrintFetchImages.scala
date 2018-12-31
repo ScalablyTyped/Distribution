@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MaxCommentsPrettyPrintFetchImages extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -30,9 +29,9 @@ trait Anon_MaxCommentsPrettyPrintFetchImages extends js.Object {
   /** Whether a publish action should be performed when the post is updated (default: false). */
   var publish: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** Whether a revert action should be performed when the post is updated (default: false). */
   var revert: js.UndefOr[scala.Boolean] = js.undefined

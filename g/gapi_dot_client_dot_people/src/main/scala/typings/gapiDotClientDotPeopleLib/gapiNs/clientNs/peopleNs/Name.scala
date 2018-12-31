@@ -5,18 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Name extends js.Object {
   /**
-               * The read-only display name formatted according to the locale specified by
-               * the viewer's account or the `Accept-Language` HTTP header.
-               */
+    * The read-only display name formatted according to the locale specified by
+    * the viewer's account or the `Accept-Language` HTTP header.
+    */
   var displayName: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The read-only display name with the last name first formatted according to
-               * the locale specified by the viewer's account or the
-               * `Accept-Language` HTTP header.
-               */
+    * The read-only display name with the last name first formatted according to
+    * the locale specified by the viewer's account or the
+    * `Accept-Language` HTTP header.
+    */
   var displayNameLastFirst: js.UndefOr[java.lang.String] = js.undefined
   /** The family name. */
   var familyName: js.UndefOr[java.lang.String] = js.undefined

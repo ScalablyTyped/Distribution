@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DynamicLibrary extends js.Object {
   /** Close library, returns the result of the `dlclose` system function. */
   def close(): scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NameAccesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -23,14 +22,14 @@ trait Anon_NameAccesstoken extends js.Object {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The list of field paths in the mask. See Document.fields for a field
-                   * path syntax reference.
-                   */
+    * The list of field paths in the mask. See Document.fields for a field
+    * path syntax reference.
+    */
   var `mask.fieldPaths`: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The resource name of the Document to get. In the format:
-                   * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
-                   */
+    * The resource name of the Document to get. In the format:
+    * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
+    */
   var name: java.lang.String
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
@@ -41,9 +40,9 @@ trait Anon_NameAccesstoken extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Reads the version of the document at the given time.
-                   * This may not be older than 60 seconds.
-                   */
+    * Reads the version of the document at the given time.
+    * This may not be older than 60 seconds.
+    */
   var readTime: js.UndefOr[java.lang.String] = js.undefined
   /** Reads the document in a transaction. */
   var transaction: js.UndefOr[java.lang.String] = js.undefined

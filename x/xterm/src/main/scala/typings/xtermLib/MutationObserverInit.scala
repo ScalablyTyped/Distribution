@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MutationObserverInit extends js.Object {
   var attributeFilter: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var attributeOldValue: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeploymentManualInterventionPendingEvent extends js.Object {
   var deployment: Deployment
   var emailRecipients: js.Array[java.lang.String]

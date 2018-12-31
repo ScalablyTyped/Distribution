@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITfIdfTokenMetadata extends js.Object {
   @JSName("$numDocumentOccurrences")
   var $numDocumentOccurrences: scala.Double

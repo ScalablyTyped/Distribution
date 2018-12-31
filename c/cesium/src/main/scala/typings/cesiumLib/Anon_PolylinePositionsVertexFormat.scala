@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PolylinePositionsVertexFormat extends js.Object {
   var cornerType: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.CornerType] = js.undefined
   var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined

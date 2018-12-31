@@ -17,10 +17,6 @@ trait ITooltipsterInstance
   		 * DOM). The `callback` function argument is optional.
   		 */
   def close(): scala.Unit = js.native
-  /**
-  		 * Closes the tooltip. When the animation is over, its HTML element is destroyed (definitely removed from the 
-  		 * DOM). The `callback` function argument is optional.
-  		 */
   def close(callback: TooltipsterStandardCallbackFunction): scala.Unit = js.native
   /**
   		 * Returns a tooltip's current content. If the selector matches multiple origins, only the value of the first 
@@ -81,10 +77,6 @@ trait ITooltipsterInstance
   		 * is called when the opening animation has ended
   		 */
   def open(): ITooltipsterInstance = js.native
-  /**
-  		 * Opens the tooltip. The `callback` function argument is optional (see its input signature) and, if provided, 
-  		 * is called when the opening animation has ended
-  		 */
   def open(callback: TooltipsterStandardCallbackFunction): ITooltipsterInstance = js.native
   /**
   		 * Returns the value of an option.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeviceSpecificParameterObject extends js.Object {
   var context_uri: js.UndefOr[java.lang.String] = js.undefined
   var device_id: js.UndefOr[java.lang.String] = js.undefined

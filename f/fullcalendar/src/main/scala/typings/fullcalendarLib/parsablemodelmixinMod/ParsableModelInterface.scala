@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParsableModelInterface extends js.Object {
   def applyManualStandardProps(rawProps: js.Any): js.Any
   def applyMiscProps(rawProps: js.Any): js.Any

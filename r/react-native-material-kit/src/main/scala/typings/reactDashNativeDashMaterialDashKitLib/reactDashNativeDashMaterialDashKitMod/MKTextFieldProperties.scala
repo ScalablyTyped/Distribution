@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveMultipleInheritance: Dropped parents List(reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.FloatingLabelProperties because Would inherit conflicting mutable fields List(allowFontScaling))*/
-
 trait MKTextFieldProperties
   extends reactDashNativeLib.reactDashNativeMod.TextInputProps {
   var additionalInputProps: js.UndefOr[reactDashNativeLib.reactDashNativeMod.TextInputProps] = js.undefined

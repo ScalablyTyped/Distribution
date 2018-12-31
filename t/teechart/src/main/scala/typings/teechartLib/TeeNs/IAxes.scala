@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAxes extends js.Object {
   var bottom: IAxis
   var chart: IChart

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MDCFormFieldAdapter extends js.Object {
   def activateInputRipple(): scala.Unit
   def deactivateInputRipple(): scala.Unit

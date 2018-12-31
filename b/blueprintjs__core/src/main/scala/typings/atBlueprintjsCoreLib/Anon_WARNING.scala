@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_WARNING extends js.Object {
   var DANGER: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.danger
   var NONE: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.none

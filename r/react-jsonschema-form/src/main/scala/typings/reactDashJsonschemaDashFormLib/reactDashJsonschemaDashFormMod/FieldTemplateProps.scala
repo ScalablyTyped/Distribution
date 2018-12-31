@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FieldTemplateProps extends js.Object {
   var children: reactLib.reactMod.ReactNs.ReactElement[_]
   var classNames: java.lang.String

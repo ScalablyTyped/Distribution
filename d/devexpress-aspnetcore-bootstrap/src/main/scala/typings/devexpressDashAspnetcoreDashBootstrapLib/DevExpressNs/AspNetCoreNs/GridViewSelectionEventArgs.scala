@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridViewSelectionEventArgs extends ProcessingModeEventArgs {
   val isAllRecordsOnPage: scala.Boolean
   val isChangedOnServer: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(cytoscapeLib.cytoscapeMod.cytoscapeNs.ExportStringOptions because Would inherit conflicting mutable fields List(scale, full, bg, maxWidth, maxHeight))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(cytoscapeLib.cytoscapeMod.cytoscapeNs.ExportStringOptions because Would inherit conflicting mutable fields List(bg, full, maxHeight, maxWidth, scale))*/
 trait ExportJpgStringOptions extends ExportJpgOptions
 

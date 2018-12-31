@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * A list item is an individual item in a list section.
 		 */
-
 trait ListItem
   extends titaniumLib.TitaniumNs.Proxy {
   /**

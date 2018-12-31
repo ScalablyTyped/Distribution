@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tsutils/util", JSImport.Namespace)
 @js.native
 object utilModMembers extends js.Object {
-  def canHaveJsDoc(node: typescriptLib.typescriptMod.tsNs.Node): /* is HasJSDoc */scala.Boolean = js.native
+  def canHaveJsDoc(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.HasJSDoc */ scala.Boolean = js.native
   def collectVariableUsage(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile): stdLib.Map[typescriptLib.typescriptMod.tsNs.Identifier, tsutilsLib.utilUsageMod.VariableInfo] = js.native
   def convertAst(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile): tsutilsLib.utilConvertDashAstMod.ConvertedAst = js.native
   def endsControlFlow(statement: typescriptLib.typescriptMod.tsNs.BlockLike): scala.Boolean = js.native
@@ -121,7 +121,7 @@ object utilModMembers extends js.Object {
     node: typescriptLib.typescriptMod.tsNs.Expression,
     options: tsutilsLib.utilUtilMod.SideEffectOptions
   ): scala.Boolean = js.native
-  def isAmbientModuleBlock(node: typescriptLib.typescriptMod.tsNs.Node): /* is ModuleBlock */scala.Boolean = js.native
+  def isAmbientModuleBlock(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.ModuleBlock */ scala.Boolean = js.native
   def isAssignmentKind(kind: typescriptLib.typescriptMod.tsNs.SyntaxKind): scala.Boolean = js.native
   def isBlockScopeBoundary(node: typescriptLib.typescriptMod.tsNs.Node): scala.Boolean = js.native
   def isBlockScopedVariableDeclaration(declaration: typescriptLib.typescriptMod.tsNs.VariableDeclaration): scala.Boolean = js.native
@@ -135,11 +135,11 @@ object utilModMembers extends js.Object {
     options: typescriptLib.typescriptMod.tsNs.CompilerOptions,
     option: tsutilsLib.tsutilsLibStrings.stripInternal
   ): scala.Boolean = js.native
-  def isEmptyObjectType(`type`: typescriptLib.typescriptMod.tsNs.Type): /* is ObjectType */scala.Boolean = js.native
+  def isEmptyObjectType(`type`: typescriptLib.typescriptMod.tsNs.Type): /* is typescript.typescript.ts.ObjectType */ scala.Boolean = js.native
   def isExpressionValueUsed(node: typescriptLib.typescriptMod.tsNs.Expression): scala.Boolean = js.native
   def isFalsyType(`type`: typescriptLib.typescriptMod.tsNs.Type): scala.Boolean = js.native
   def isFunctionScopeBoundary(node: typescriptLib.typescriptMod.tsNs.Node): scala.Boolean = js.native
-  def isFunctionWithBody(node: typescriptLib.typescriptMod.tsNs.Node): /* is FunctionLikeDeclaration */scala.Boolean = js.native
+  def isFunctionWithBody(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.FunctionLikeDeclaration */ scala.Boolean = js.native
   def isJsDocKind(kind: typescriptLib.typescriptMod.tsNs.SyntaxKind): scala.Boolean = js.native
   def isModfierFlagSet(node: typescriptLib.typescriptMod.tsNs.Node, flag: typescriptLib.typescriptMod.tsNs.ModifierFlags): scala.Boolean = js.native
   def isModifierFlagSet(

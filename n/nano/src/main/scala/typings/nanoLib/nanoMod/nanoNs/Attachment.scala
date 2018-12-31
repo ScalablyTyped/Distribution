@@ -46,7 +46,6 @@ trait Attachment extends js.Object {
     att: scala.Null,
     contenttype: java.lang.String
   ): js.Promise[DocumentInsertResponse] = js.native
-  // NodeJS.WritableStream
   def insert(
     docname: java.lang.String,
     attname: java.lang.String,

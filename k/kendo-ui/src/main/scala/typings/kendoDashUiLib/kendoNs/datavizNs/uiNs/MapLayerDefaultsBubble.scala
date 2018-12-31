@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapLayerDefaultsBubble extends js.Object {
   var attribution: js.UndefOr[java.lang.String] = js.undefined
   var maxSize: js.UndefOr[scala.Double] = js.undefined

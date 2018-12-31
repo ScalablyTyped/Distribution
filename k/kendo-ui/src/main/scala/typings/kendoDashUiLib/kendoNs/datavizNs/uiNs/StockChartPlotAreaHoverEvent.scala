@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StockChartPlotAreaHoverEvent extends StockChartEvent {
   var category: js.UndefOr[js.Any] = js.undefined
   var element: js.UndefOr[js.Any] = js.undefined

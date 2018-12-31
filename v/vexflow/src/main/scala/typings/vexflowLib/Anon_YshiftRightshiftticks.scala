@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_YshiftRightshiftticks extends js.Object {
   var height: scala.Double
   var left_shift_ticks: scala.Double

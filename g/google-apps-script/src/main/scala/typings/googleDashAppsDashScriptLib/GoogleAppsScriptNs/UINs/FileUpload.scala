@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileUpload extends js.Object {
   def addChangeHandler(handler: Handler): FileUpload
   def addStyleDependentName(styleName: java.lang.String): FileUpload

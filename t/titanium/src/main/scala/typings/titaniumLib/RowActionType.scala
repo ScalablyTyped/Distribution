@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Represents the custom edit action for a ListItem.
- */
-
+  * Represents the custom edit action for a ListItem.
+  */
 trait RowActionType extends js.Object {
   /**
   	 * The background color of the row action.

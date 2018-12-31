@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class PhraseSuggester protected ()
   extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.PhraseSuggester {
   /*
-       A suggester that suggests entire corrected phrases.
-       */
+    A suggester that suggests entire corrected phrases.
+    */
   def this(name: java.lang.String) = this()
 }
 

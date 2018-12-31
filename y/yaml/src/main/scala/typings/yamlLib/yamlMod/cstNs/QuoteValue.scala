@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QuoteValue extends Node {
   val strValue: scala.Null | java.lang.String | yamlLib.Anon_Str
   @JSName("type")

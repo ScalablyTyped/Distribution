@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGBoundingBoxOptions extends js.Object {
   var clipped: js.UndefOr[scala.Boolean] = js.undefined
   var fill: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RollOutput extends js.Object {
   var calculations: js.Array[scala.Double]
   var input: RollObject

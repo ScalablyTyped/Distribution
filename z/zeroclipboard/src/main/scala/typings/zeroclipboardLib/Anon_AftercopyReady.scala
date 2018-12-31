@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AftercopyReady extends js.Object {
   var aftercopy: js.UndefOr[
     js.Array[

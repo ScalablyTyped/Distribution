@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IIDRange extends js.Object {
   var MaxID: scala.Double
   var MaxID_32bit: java.lang.String

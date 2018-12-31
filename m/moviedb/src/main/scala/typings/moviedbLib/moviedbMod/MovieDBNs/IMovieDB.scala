@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMovieDB extends js.Object {
   def movieImages(
     options: InfoOptions,

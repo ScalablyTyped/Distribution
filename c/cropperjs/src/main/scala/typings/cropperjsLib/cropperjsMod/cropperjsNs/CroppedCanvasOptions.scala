@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CroppedCanvasOptions extends js.Object {
   /**
-           * a color to fill any alpha values in the output canvas
-           */
+    * a color to fill any alpha values in the output canvas
+    */
   var fillColor: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * the destination height of the output canvas
-           */
+    * the destination height of the output canvas
+    */
   var height: js.UndefOr[scala.Double] = js.undefined
   /**
-           * image smoothing
-           */
+    * image smoothing
+    */
   var imageSmoothingEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var imageSmoothingQuality: js.UndefOr[
     cropperjsLib.cropperjsLibStrings.low | cropperjsLib.cropperjsLibStrings.medium | cropperjsLib.cropperjsLibStrings.high
@@ -27,8 +26,8 @@ trait CroppedCanvasOptions extends js.Object {
   var minHeight: js.UndefOr[scala.Double] = js.undefined
   var minWidth: js.UndefOr[scala.Double] = js.undefined
   /**
-           * the destination width of the output canvas
-           */
+    * the destination width of the output canvas
+    */
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * Represents an attribute of an [Element](Titanium.XML.Element).
 		 */
-
 trait Attr
   extends titaniumLib.TitaniumNs.Proxy {
   /**

@@ -15,9 +15,9 @@ class FogExp2 protected () extends IFog {
   /* CompleteClass */
   override var color: Color = js.native
   /**
-       * Defines how fast the fog will grow dense.
-       * Default is 0.00025.
-       */
+    * Defines how fast the fog will grow dense.
+    * Default is 0.00025.
+    */
   var density: scala.Double = js.native
   /* CompleteClass */
   override var name: java.lang.String = js.native

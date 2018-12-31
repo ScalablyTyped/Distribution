@@ -27,7 +27,6 @@ class URL protected () extends js.Object {
 }
 
 // Output of `url.parse`
-
 trait Url extends UrlObjectCommon {
   var port: js.UndefOr[java.lang.String] = js.undefined
   var query: js.UndefOr[java.lang.String | scala.Null | nodeLib.querystringMod.ParsedUrlQuery] = js.undefined

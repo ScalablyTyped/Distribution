@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BuildServer extends js.Object {
   var agents: js.Array[BuildAgentReference]
   var controller: XamlBuildControllerReference

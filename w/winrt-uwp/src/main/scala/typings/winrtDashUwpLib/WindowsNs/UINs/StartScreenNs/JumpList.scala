@@ -14,9 +14,9 @@ abstract class JumpList () extends js.Object {
   /** Gets or sets the current type of the system managed jump list group. */
   var systemGroupKind: JumpListSystemGroupKind = js.native
   /**
-                   * Asynchronously saves changes to the jump list and its items.
-                   * @return Returns an IAsyncAction object that is used to control the asynchronous operation. If the system does not support jump lists, the SaveAsync method has no effect and future calls to LoadCurrentAsync will produce an empty jump list. An app can check for this case using the IsSupported method.
-                   */
+    * Asynchronously saves changes to the jump list and its items.
+    * @return Returns an IAsyncAction object that is used to control the asynchronous operation. If the system does not support jump lists, the SaveAsync method has no effect and future calls to LoadCurrentAsync will produce an empty jump list. An app can check for this case using the IsSupported method.
+    */
   def saveAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 
@@ -25,14 +25,14 @@ abstract class JumpList () extends js.Object {
 @js.native
 object JumpList extends js.Object {
   /**
-                   * Gets a value that indicates whether the system supports jump lists.
-                   * @return A boolean value that is True if jump lists are supported. Otherwise, False.
-                   */
+    * Gets a value that indicates whether the system supports jump lists.
+    * @return A boolean value that is True if jump lists are supported. Otherwise, False.
+    */
   def isSupported(): scala.Boolean = js.native
   /**
-                   * Asynchronously retrieves the current jump list and its items.
-                   * @return When this method completes successfully, it returns the current JumpList . If the system does not support jump lists, this method returns an empty jump list and the SaveAsync method has no effect. Apps can check for this case using the isSupported method.
-                   */
+    * Asynchronously retrieves the current jump list and its items.
+    * @return When this method completes successfully, it returns the current JumpList . If the system does not support jump lists, this method returns an empty jump list and the SaveAsync method has no effect. Apps can check for this case using the isSupported method.
+    */
   def loadCurrentAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.UINs.StartScreenNs.JumpList] = js.native
 }
 

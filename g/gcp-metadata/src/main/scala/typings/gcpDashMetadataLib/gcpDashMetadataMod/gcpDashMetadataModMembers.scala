@@ -10,9 +10,7 @@ import scala.scalajs.js.annotation._
 object gcpDashMetadataModMembers extends js.Object {
   val BASE_PATH: /* /computeMetadata/v1 */ java.lang.String = js.native
   val BASE_URL: java.lang.String = js.native
-  val HEADERS: stdLib.Readonly[
-    /* import warning: Failed type conversion: TsTypeObject(List(TsMemberIndex(NoComments,false,Default,IndexingSingle(TsQIdent(List(TsIdentSimple(HEADER_NAME)))),false,TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List())))) */js.Any
-  ] = js.native
+  val HEADERS: stdLib.Readonly[/* import warning: ImportType.apply Failed type conversion: {indexed} */ js.Any] = js.native
   val HEADER_NAME: /* Metadata-Flavor */ java.lang.String = js.native
   val HEADER_VALUE: /* Google */ java.lang.String = js.native
   val HOST_ADDRESS: /* http://metadata.google.internal */ java.lang.String = js.native

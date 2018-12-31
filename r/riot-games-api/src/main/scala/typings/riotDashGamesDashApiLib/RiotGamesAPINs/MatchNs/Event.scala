@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Event extends js.Object {
   var ascendedType: java.lang.String
   var assistingParticipantIds: js.Array[scala.Double]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParseError extends js.Object {
   var CancelError: org.scalablytyped.runtime.Instantiable0[gotLib.gotMod.CancelError]
   var HTTPError: org.scalablytyped.runtime.Instantiable0[gotLib.gotMod.HTTPError]

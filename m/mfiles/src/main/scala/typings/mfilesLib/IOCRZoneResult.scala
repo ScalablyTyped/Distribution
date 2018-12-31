@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOCRZoneResult extends js.Object {
   val Confidence: scala.Double
   val DimensionUnit: mfilesLib.MFilesNs.MFOCRDimensionUnit

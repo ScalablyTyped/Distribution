@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IColumnProperties extends js.Object {
   var array: js.UndefOr[scala.Boolean] = js.undefined
   var auto_increment: js.UndefOr[scala.Boolean] = js.undefined

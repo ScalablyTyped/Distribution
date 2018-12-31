@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMethod extends js.Object {
   /** Method options */
   var options: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined

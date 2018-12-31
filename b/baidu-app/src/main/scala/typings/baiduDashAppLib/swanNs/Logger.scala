@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // #endregion
 // #region 接口
-
 trait Logger extends js.Object {
   /**
   		 * 写debug日志，参数同log方法

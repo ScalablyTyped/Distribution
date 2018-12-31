@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait ShapeTextVerticalAlignType extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.ShapeTextVerticalAlignType")
 @js.native
 object ShapeTextVerticalAlignType extends js.Object {

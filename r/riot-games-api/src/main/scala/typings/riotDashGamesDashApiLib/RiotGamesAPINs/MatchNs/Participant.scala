@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Participant extends js.Object {
   var championId: scala.Double
   var highestAchievedSeasonTier: java.lang.String

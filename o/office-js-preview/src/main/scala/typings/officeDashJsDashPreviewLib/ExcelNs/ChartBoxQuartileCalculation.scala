@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 sealed trait ChartBoxQuartileCalculation extends js.Object
 
 /**
-     *
-     * Represents the quartile calculation type of chart series layout, only applicable in Box & Whisker chart.
-     *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  *
+  * Represents the quartile calculation type of chart series layout, only applicable in Box & Whisker chart.
+  *
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.ChartBoxQuartileCalculation")
 @js.native
 object ChartBoxQuartileCalculation extends js.Object {

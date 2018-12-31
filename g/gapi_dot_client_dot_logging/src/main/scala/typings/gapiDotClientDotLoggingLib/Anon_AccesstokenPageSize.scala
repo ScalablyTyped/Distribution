@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPageSize extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -25,14 +24,14 @@ trait Anon_AccesstokenPageSize extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Optional. The maximum number of results to return from this request. Non-positive values are ignored. The presence of nextPageToken in the response
-                   * indicates that more results might be available.
-                   */
+    * Optional. The maximum number of results to return from this request. Non-positive values are ignored. The presence of nextPageToken in the response
+    * indicates that more results might be available.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * Optional. If present, then retrieve the next batch of results from the preceding call to this method. pageToken must be the value of nextPageToken from
-                   * the previous response. The values of other method parameters should be identical to those in the previous call.
-                   */
+    * Optional. If present, then retrieve the next batch of results from the preceding call to this method. pageToken must be the value of nextPageToken from
+    * the previous response. The values of other method parameters should be identical to those in the previous call.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

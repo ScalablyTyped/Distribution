@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NgDevModePerfCounters extends js.Object {
   var firstTemplatePass: scala.Double
   var rendererAddClass: scala.Double

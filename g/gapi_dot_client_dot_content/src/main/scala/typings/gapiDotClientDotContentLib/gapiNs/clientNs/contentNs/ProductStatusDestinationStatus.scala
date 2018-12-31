@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProductStatusDestinationStatus extends js.Object {
   /** The destination's approval status. */
   var approvalStatus: js.UndefOr[java.lang.String] = js.undefined

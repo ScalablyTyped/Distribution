@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Dds extends js.Object {
   var format: threeLib.threeDashCoreMod.CompressedPixelFormat
   var height: scala.Double

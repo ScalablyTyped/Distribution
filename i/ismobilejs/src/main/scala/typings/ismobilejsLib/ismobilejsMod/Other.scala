@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Other extends js.Object {
   var blackberry: scala.Boolean
   var blackberry_10: scala.Boolean

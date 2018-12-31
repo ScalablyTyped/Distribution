@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IScriptTagProxy
   extends senchaUnderscoreTouchLib.ExtNs.dataNs.proxyNs.IServer {
   /** [Method] Aborts the current server request if one is currently running  */

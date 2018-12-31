@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait plupload_queue_progress extends js.Object {
   var bytesPerSec: scala.Double
   var failed: scala.Double

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ProviderI2cConnectionSettings () extends js.Object {
   var busSpeed: js.Any = js.native
-   /* unmapped type */var sharingMode: js.Any = js.native
-   /* unmapped type */var slaveAddress: js.Any = js.native
+   /* unmapped type */ var sharingMode: js.Any = js.native
+   /* unmapped type */ var slaveAddress: js.Any = js.native
 }
 

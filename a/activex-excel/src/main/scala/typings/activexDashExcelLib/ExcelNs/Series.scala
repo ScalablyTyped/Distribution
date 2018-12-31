@@ -94,13 +94,9 @@ class Series protected () extends js.Object {
   def Trendlines(Index: scala.Double): Trendline = js.native
   /** @param Type [Type=2] */
   def _ApplyDataLabels(): js.Any = js.native
-  /** @param Type [Type=2] */
   def _ApplyDataLabels(Type: XlDataLabelsType): js.Any = js.native
-  /** @param Type [Type=2] */
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any): js.Any = js.native
-  /** @param Type [Type=2] */
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any): js.Any = js.native
-  /** @param Type [Type=2] */
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
 }
 

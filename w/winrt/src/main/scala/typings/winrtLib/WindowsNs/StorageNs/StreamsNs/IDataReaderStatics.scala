@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDataReaderStatics extends js.Object {
   def fromBuffer(buffer: IBuffer): DataReader
 }

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class InstalledClassicAppInfo () extends js.Object {
   var displayName: js.Any = js.native
-   /* unmapped type */var displayVersion: js.Any = js.native
+   /* unmapped type */ var displayVersion: js.Any = js.native
 }
 

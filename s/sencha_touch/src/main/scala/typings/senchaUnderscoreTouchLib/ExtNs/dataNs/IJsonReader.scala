@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IJsonReader
   extends senchaUnderscoreTouchLib.ExtNs.dataNs.readerNs.IReader {
   /** [Method] Returns the value of record

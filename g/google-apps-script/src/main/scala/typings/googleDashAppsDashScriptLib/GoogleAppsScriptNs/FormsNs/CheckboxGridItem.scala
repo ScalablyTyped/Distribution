@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CheckboxGridItem extends js.Object {
   def clearValidation(): CheckboxGridItem
   def createResponse(responses: js.Array[js.Array[java.lang.String]]): ItemResponse

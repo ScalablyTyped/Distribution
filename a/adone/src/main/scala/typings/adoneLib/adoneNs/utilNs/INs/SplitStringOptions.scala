@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SplitStringOptions extends js.Object {
   var braces: js.UndefOr[js.Object | scala.Boolean] = js.undefined
   var keepDoubleQuotes: js.UndefOr[scala.Boolean] = js.undefined

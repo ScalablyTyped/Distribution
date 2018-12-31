@@ -6,28 +6,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface for updating data on the ChartAxisTitle object, for use in "chartAxisTitle.set({ ... })". */
-
 trait ChartAxisTitleUpdateData extends js.Object {
   /**
-              *
-              * Represents the formatting of chart axis title.
-              *
-              * [Api set: ExcelApi 1.1]
-              */
+    *
+    * Represents the formatting of chart axis title.
+    *
+    * [Api set: ExcelApi 1.1]
+    */
   var format: js.UndefOr[ChartAxisTitleFormatUpdateData] = js.undefined
   /**
-               *
-               * Represents the axis title.
-               *
-               * [Api set: ExcelApi 1.1]
-               */
+    *
+    * Represents the axis title.
+    *
+    * [Api set: ExcelApi 1.1]
+    */
   var text: js.UndefOr[java.lang.String] = js.undefined
   /**
-               *
-               * A boolean that specifies the visibility of an axis title.
-               *
-               * [Api set: ExcelApi 1.1]
-               */
+    *
+    * A boolean that specifies the visibility of an axis title.
+    *
+    * [Api set: ExcelApi 1.1]
+    */
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 

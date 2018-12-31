@@ -13,37 +13,24 @@ class SpriteSheetUtils () extends js.Object
 @js.native
 object SpriteSheetUtils extends js.Object {
   /**
-           * @deprecated
-           */
+    * @deprecated
+    */
   def addFlippedFrames(spriteSheet: easeljsLib.createjsNs.SpriteSheet): scala.Unit = js.native
-  /**
-           * @deprecated
-           */
   def addFlippedFrames(spriteSheet: easeljsLib.createjsNs.SpriteSheet, horizontal: scala.Boolean): scala.Unit = js.native
-  /**
-           * @deprecated
-           */
   def addFlippedFrames(spriteSheet: easeljsLib.createjsNs.SpriteSheet, horizontal: scala.Boolean, vertical: scala.Boolean): scala.Unit = js.native
-  /**
-           * @deprecated
-           */
   def addFlippedFrames(
     spriteSheet: easeljsLib.createjsNs.SpriteSheet,
     horizontal: scala.Boolean,
     vertical: scala.Boolean,
     both: scala.Boolean
   ): scala.Unit = js.native
-   // deprecated
   def extractFrame(spriteSheet: easeljsLib.createjsNs.SpriteSheet, frameOrAnimation: java.lang.String): stdLib.HTMLImageElement = js.native
    // deprecated
   def extractFrame(spriteSheet: easeljsLib.createjsNs.SpriteSheet, frameOrAnimation: scala.Double): stdLib.HTMLImageElement = js.native
   /**
-           * @deprecated
-           */
+    * @deprecated
+    */
   def mergeAlpha(rgbImage: stdLib.HTMLImageElement, alphaImage: stdLib.HTMLImageElement): stdLib.HTMLCanvasElement = js.native
-  /**
-           * @deprecated
-           */
   def mergeAlpha(
     rgbImage: stdLib.HTMLImageElement,
     alphaImage: stdLib.HTMLImageElement,

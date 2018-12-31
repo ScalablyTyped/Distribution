@@ -23,103 +23,74 @@ class Autofill protected ()
   var _onInputChanged: js.Any = js.native
   var _onKeyDown: js.Any = js.native
   /**
-       * Updates the current input value as well as getting a new display value.
-       * @param newValue The new value from the input
-       */
+    * Updates the current input value as well as getting a new display value.
+    * @param newValue The new value from the input
+    */
   var _updateValue: js.Any = js.native
   var _value: js.Any = js.native
   /**
-       * The current index of the cursor in the input area. Returns -1 if the input element
-       * is not ready.
-       */
+    * The current index of the cursor in the input area. Returns -1 if the input element
+    * is not ready.
+    */
   /* CompleteClass */
   override var cursorLocation: scala.Double | scala.Null = js.native
   /**
-       * The current input element.
-       */
+    * The current input element.
+    */
   /* CompleteClass */
   override var inputElement: reactLib.HTMLInputElement | scala.Null = js.native
   /**
-       * A boolean for whether or not there is a value selected in the input area.
-       */
+    * A boolean for whether or not there is a value selected in the input area.
+    */
   /* CompleteClass */
   override var isValueSelected: scala.Boolean = js.native
   /**
-       * the current index of where the selection ends. Returns -1 if the input element
-       * is not ready.
-       */
+    * the current index of where the selection ends. Returns -1 if the input element
+    * is not ready.
+    */
   /* CompleteClass */
   override var selectionEnd: scala.Double | scala.Null = js.native
   /**
-       * The current index of where the selection starts. Returns -1 if the input element
-       * is not ready.
-       */
+    * The current index of where the selection starts. Returns -1 if the input element
+    * is not ready.
+    */
   /* CompleteClass */
   override var selectionStart: scala.Double | scala.Null = js.native
   /**
-       * The current text value that the user has entered.
-       */
+    * The current text value that the user has entered.
+    */
   /* CompleteClass */
   override var value: java.lang.String = js.native
   /* private */ def _doesTextStartWith(text: js.Any, startWith: js.Any): js.Any = js.native
   /* private */ def _getCurrentInputValue(): js.Any = js.native
   /* private */ def _getCurrentInputValue(ev: js.Any): js.Any = js.native
   /**
-       * Returns a string that should be used as the display value.
-       * It evaluates this based on whether or not the suggested value starts with the input value
-       * and whether or not autofill is enabled.
-       * @param inputValue the value that the input currently has.
-       * @param suggestedDisplayValue the possible full value
-       */
+    * Returns a string that should be used as the display value.
+    * It evaluates this based on whether or not the suggested value starts with the input value
+    * and whether or not autofill is enabled.
+    * @param inputValue the value that the input currently has.
+    * @param suggestedDisplayValue the possible full value
+    */
   /* private */ def _getDisplayValue(inputValue: js.Any): js.Any = js.native
-  /**
-       * Returns a string that should be used as the display value.
-       * It evaluates this based on whether or not the suggested value starts with the input value
-       * and whether or not autofill is enabled.
-       * @param inputValue the value that the input currently has.
-       * @param suggestedDisplayValue the possible full value
-       */
   /* private */ def _getDisplayValue(inputValue: js.Any, suggestedDisplayValue: js.Any): js.Any = js.native
   /* private */ def _notifyInputChange(newValue: js.Any): js.Any = js.native
   /**
-       * Attempts to enable autofill. Whether or not autofill is enabled depends on the input value,
-       * whether or not any text is selected, and only if the new input value is longer than the old input value.
-       * Autofill should never be set to true if the value is composing. Once compositionEnd is called, then
-       * it should be completed.
-       * See https://developer.mozilla.org/en-US/docs/Web/API/CompositionEvent for more information on composition.
-       * @param newValue
-       * @param oldValue
-       * @param isComposing if true then the text is actively being composed and it has not completed.
-       * @param isComposed if the text is a composed text value.
-       */
+    * Attempts to enable autofill. Whether or not autofill is enabled depends on the input value,
+    * whether or not any text is selected, and only if the new input value is longer than the old input value.
+    * Autofill should never be set to true if the value is composing. Once compositionEnd is called, then
+    * it should be completed.
+    * See https://developer.mozilla.org/en-US/docs/Web/API/CompositionEvent for more information on composition.
+    * @param newValue
+    * @param oldValue
+    * @param isComposing if true then the text is actively being composed and it has not completed.
+    * @param isComposed if the text is a composed text value.
+    */
   /* private */ def _tryEnableAutofill(newValue: js.Any, oldValue: js.Any): js.Any = js.native
-  /**
-       * Attempts to enable autofill. Whether or not autofill is enabled depends on the input value,
-       * whether or not any text is selected, and only if the new input value is longer than the old input value.
-       * Autofill should never be set to true if the value is composing. Once compositionEnd is called, then
-       * it should be completed.
-       * See https://developer.mozilla.org/en-US/docs/Web/API/CompositionEvent for more information on composition.
-       * @param newValue
-       * @param oldValue
-       * @param isComposing if true then the text is actively being composed and it has not completed.
-       * @param isComposed if the text is a composed text value.
-       */
   /* private */ def _tryEnableAutofill(newValue: js.Any, oldValue: js.Any, isComposing: js.Any): js.Any = js.native
-  /**
-       * Attempts to enable autofill. Whether or not autofill is enabled depends on the input value,
-       * whether or not any text is selected, and only if the new input value is longer than the old input value.
-       * Autofill should never be set to true if the value is composing. Once compositionEnd is called, then
-       * it should be completed.
-       * See https://developer.mozilla.org/en-US/docs/Web/API/CompositionEvent for more information on composition.
-       * @param newValue
-       * @param oldValue
-       * @param isComposing if true then the text is actively being composed and it has not completed.
-       * @param isComposed if the text is a composed text value.
-       */
   /* private */ def _tryEnableAutofill(newValue: js.Any, oldValue: js.Any, isComposing: js.Any, isComposed: js.Any): js.Any = js.native
   /**
-       * Clear all text in the input. Sets value to '';
-       */
+    * Clear all text in the input. Sets value to '';
+    */
   /* CompleteClass */
   override def clear(): scala.Unit = js.native
   @JSName("componentDidUpdate")
@@ -129,8 +100,8 @@ class Autofill protected ()
     nextProps: officeDashUiDashFabricDashReactLib.libComponentsAutofillAutofillDotTypesMod.IAutofillProps
   ): scala.Unit = js.native
   /**
-       * Focus the input element.
-       */
+    * Focus the input element.
+    */
   /* CompleteClass */
   override def focus(): scala.Unit = js.native
 }

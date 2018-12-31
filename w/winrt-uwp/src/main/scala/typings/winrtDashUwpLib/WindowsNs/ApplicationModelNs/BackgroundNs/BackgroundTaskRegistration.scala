@@ -52,9 +52,9 @@ abstract class BackgroundTaskRegistration () extends js.Object {
     listener: BackgroundTaskProgressEventHandler
   ): scala.Unit = js.native
   /**
-                   * Cancels the registration of a registered background task.
-                   * @param cancelTask True if currently running instances of this background task should be canceled. If this parameter is false, currently running instances are allowed to finish. Canceled instances receive a Canceled event with a cancellation reason of Abort.
-                   */
+    * Cancels the registration of a registered background task.
+    * @param cancelTask True if currently running instances of this background task should be canceled. If this parameter is false, currently running instances are allowed to finish. Canceled instances receive a Canceled event with a cancellation reason of Abort.
+    */
   def unregister(cancelTask: scala.Boolean): scala.Unit = js.native
 }
 

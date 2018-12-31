@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Transaction extends js.Object {
   var expiresAt: stdLib.Date
   var expiresIn: stdLib.Date | scala.Double

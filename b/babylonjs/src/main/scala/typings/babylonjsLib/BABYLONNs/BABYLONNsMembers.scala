@@ -11,51 +11,40 @@ object BABYLONNsMembers extends js.Object {
   /** @hidden */
   var CollisionWorker: java.lang.String = js.native
   /**
-       * Constant used to define the minimal number value in Babylon.js
-       * @ignorenaming
-       */
+    * Constant used to define the minimal number value in Babylon.js
+    * @ignorenaming
+    */
   val Epsilon: /* 0.001 */ scala.Double = js.native
   /**
-       * Constant used to convert a value to gamma space
-       * @ignorenaming
-       */
+    * Constant used to convert a value to gamma space
+    * @ignorenaming
+    */
   val ToGammaSpace: scala.Double = js.native
   /**
-       * Constant used to convert a value to linear space
-       * @ignorenaming
-       */
+    * Constant used to convert a value to linear space
+    * @ignorenaming
+    */
   val ToLinearSpace: /* 2.2 */ scala.Double = js.native
   /** @hidden */
   var WorkerIncluded: scala.Boolean = js.native
   /**
-       * Use this className as a decorator on a given class definition to add it a name and optionally its module.
-       * You can then use the Tools.getClassName(obj) on an instance to retrieve its class name.
-       * This method is the only way to get it done in all cases, even if the .js file declaring the class is minified
-       * @param name The name of the class, case should be preserved
-       * @param module The name of the Module hosting the class, optional, but strongly recommended to specify if possible. Case should be preserved.
-       */
+    * Use this className as a decorator on a given class definition to add it a name and optionally its module.
+    * You can then use the Tools.getClassName(obj) on an instance to retrieve its class name.
+    * This method is the only way to get it done in all cases, even if the .js file declaring the class is minified
+    * @param name The name of the class, case should be preserved
+    * @param module The name of the Module hosting the class, optional, but strongly recommended to specify if possible. Case should be preserved.
+    */
   def className(name: java.lang.String): js.Function1[/* target */ js.Object, scala.Unit] = js.native
-  /**
-       * Use this className as a decorator on a given class definition to add it a name and optionally its module.
-       * You can then use the Tools.getClassName(obj) on an instance to retrieve its class name.
-       * This method is the only way to get it done in all cases, even if the .js file declaring the class is minified
-       * @param name The name of the class, case should be preserved
-       * @param module The name of the Module hosting the class, optional, but strongly recommended to specify if possible. Case should be preserved.
-       */
   def className(name: java.lang.String, module: java.lang.String): js.Function1[/* target */ js.Object, scala.Unit] = js.native
   def expandToProperty(callback: java.lang.String): js.Function2[/* target */ js.Any, /* propertyKey */ java.lang.String, scala.Unit] = js.native
   def expandToProperty(callback: java.lang.String, targetKey: Nullable[java.lang.String]): js.Function2[/* target */ js.Any, /* propertyKey */ java.lang.String, scala.Unit] = js.native
   def serialize(): js.Function2[/* target */ js.Any, /* propertyKey */ java.lang.String | js.Symbol, scala.Unit] = js.native
   def serialize(sourceName: java.lang.String): js.Function2[/* target */ js.Any, /* propertyKey */ java.lang.String | js.Symbol, scala.Unit] = js.native
   /**
-       * Decorator used to define property that can be serialized as reference to a camera
-       * @param sourceName defines the name of the property to decorate
-       */
+    * Decorator used to define property that can be serialized as reference to a camera
+    * @param sourceName defines the name of the property to decorate
+    */
   def serializeAsCameraReference(): js.Function2[/* target */ js.Any, /* propertyKey */ java.lang.String | js.Symbol, scala.Unit] = js.native
-  /**
-       * Decorator used to define property that can be serialized as reference to a camera
-       * @param sourceName defines the name of the property to decorate
-       */
   def serializeAsCameraReference(sourceName: java.lang.String): js.Function2[/* target */ js.Any, /* propertyKey */ java.lang.String | js.Symbol, scala.Unit] = js.native
   def serializeAsColor3(): js.Function2[/* target */ js.Any, /* propertyKey */ java.lang.String | js.Symbol, scala.Unit] = js.native
   def serializeAsColor3(sourceName: java.lang.String): js.Function2[/* target */ js.Any, /* propertyKey */ java.lang.String | js.Symbol, scala.Unit] = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait POSITIONS_TYPES extends js.Object {
   var bottom: reapopLib.BOTTOM
   var bottomCenter: reapopLib.BOTTOM_CENTER

@@ -13,18 +13,18 @@ class BPClient protected () extends js.Object {
   var port: scala.Double = js.native
   def isWaitEnabled(): js.Promise[js.Object] = js.native
   /**
-       * Toggle whether waiting for Angular is enabled.
-       *
-       * @param enabled Whether or not to enable waiting for angular.
-       * @returns {Promise<T>}
-       */
+    * Toggle whether waiting for Angular is enabled.
+    *
+    * @param enabled Whether or not to enable waiting for angular.
+    * @returns {Promise<T>}
+    */
   def setWaitEnabled(enabled: scala.Boolean): js.Promise[_] = js.native
   /**
-       * Set the selector used to find the root element of the Angular application to wait for. See
-       * AngularWaitBarrier for more details.
-       *
-       * @param selector A selector, or empty string to wait for all Angular apps.
-       */
+    * Set the selector used to find the root element of the Angular application to wait for. See
+    * AngularWaitBarrier for more details.
+    *
+    * @param selector A selector, or empty string to wait for all Angular apps.
+    */
   def setWaitParams(rootSelector: java.lang.String): js.Promise[_] = js.native
 }
 

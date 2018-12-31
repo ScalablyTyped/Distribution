@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * sortable
- */
-
+  * sortable
+  */
 @js.native
 trait SortEvent
   extends stdLib.Event {

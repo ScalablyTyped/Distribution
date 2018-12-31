@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Partsize extends js.Object {
   var compressedSize: scala.Double
   var disknum: scala.Double

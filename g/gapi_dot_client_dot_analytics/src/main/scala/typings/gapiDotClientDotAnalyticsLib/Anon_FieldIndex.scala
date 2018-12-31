@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FieldIndex extends js.Object {
   /** Determines if the filter is case sensitive. */
   var caseSensitive: js.UndefOr[scala.Boolean] = js.undefined

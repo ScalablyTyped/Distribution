@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetAllDetails extends js.Object {
   /** Optional. Restricts the retrieved cookies to those whose domains match or are subdomains of this one.  */
   var domain: js.UndefOr[java.lang.String] = js.undefined

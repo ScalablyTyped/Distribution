@@ -16,28 +16,28 @@ class TimePicker protected () extends Widget {
   @JSName("model")
   var model_TimePicker: ejDotWebDotAllLib.ejNs.TimePickerNs.Model = js.native
   /** Allows you to disable the TimePicker.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def disable(): scala.Unit = js.native
   /** Allows you to enable the TimePicker.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def enable(): scala.Unit = js.native
   /** It returns the current time value.
-           * @returns {string}
-           */
+    * @returns {string}
+    */
   def getValue(): java.lang.String = js.native
   /** This method will hide the TimePicker control popup.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def hide(): scala.Unit = js.native
   /** Updates the current system time in TimePicker.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def setCurrentTime(): scala.Unit = js.native
   /** This method will show the TimePicker control popup.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def show(): scala.Unit = js.native
 }
 

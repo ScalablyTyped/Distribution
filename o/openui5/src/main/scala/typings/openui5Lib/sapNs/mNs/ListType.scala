@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ListType extends js.Object
 
 /**
-     * Defines the visual indication and behaviour of the list items.
-    */
+  * Defines the visual indication and behaviour of the list items.
+  */
 @JSGlobal("sap.m.ListType")
 @js.native
 object ListType extends js.Object {

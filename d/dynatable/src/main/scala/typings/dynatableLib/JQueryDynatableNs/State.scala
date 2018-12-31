@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait State extends js.Object {
   /** Set up a listener for popstate event on window */
   def init(): scala.Unit
   /**
-           * Check if pushState option is true, and if browser supports it
-           *
-           * @return A boolean
-           */
+    * Check if pushState option is true, and if browser supports it
+    *
+    * @return A boolean
+    */
   def initOnLoad(): scala.Boolean
   /**
-           * Handler for the popstate event
-           *
-           * @param event The native popstate event
-           */
+    * Handler for the popstate event
+    *
+    * @param event The native popstate event
+    */
   def pop(event: stdLib.Event): scala.Unit
   /**
-           * Update the URL data using pushState
-           *
-           * @param data An object with the parameters we want to push
-           */
+    * Update the URL data using pushState
+    *
+    * @param data An object with the parameters we want to push
+    */
   def push(data: js.Object): scala.Unit
 }
 

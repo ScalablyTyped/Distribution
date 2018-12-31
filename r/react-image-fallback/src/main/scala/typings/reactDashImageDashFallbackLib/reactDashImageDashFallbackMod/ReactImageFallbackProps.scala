@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactImageFallbackProps extends js.Object {
   var fallbackImage: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] | js.Array[java.lang.String] | js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]
   var initialImage: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined

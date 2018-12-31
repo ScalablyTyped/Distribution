@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait parsedDSN extends js.Object {
   var host: java.lang.String
   var path: java.lang.String

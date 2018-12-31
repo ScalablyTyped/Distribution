@@ -12,12 +12,12 @@ object tlsModMembers extends js.Object {
   val CLIENT_RENEG_WINDOW: scala.Double = js.native
   val DEFAULT_ECDH_CURVE: java.lang.String = js.native
   /*
-       * Verifies the certificate `cert` is issued to host `host`.
-       * @host The hostname to verify the certificate against
-       * @cert PeerCertificate representing the peer's certificate
-       *
-       * Returns Error object, populating it with the reason, host and cert on failure.  On success, returns undefined.
-       */
+    * Verifies the certificate `cert` is issued to host `host`.
+    * @host The hostname to verify the certificate against
+    * @cert PeerCertificate representing the peer's certificate
+    *
+    * Returns Error object, populating it with the reason, host and cert on failure.  On success, returns undefined.
+    */
   def checkServerIdentity(host: java.lang.String, cert: PeerCertificate): js.UndefOr[nodeLib.Error] = js.native
   def connect(options: ConnectionOptions): TLSSocket = js.native
   def connect(options: ConnectionOptions, secureConnectListener: js.Function0[scala.Unit]): TLSSocket = js.native

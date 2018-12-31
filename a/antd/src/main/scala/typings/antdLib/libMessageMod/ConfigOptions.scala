@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConfigOptions extends js.Object {
   var duration: js.UndefOr[scala.Double] = js.undefined
   var getContainer: js.UndefOr[js.Function0[reactLib.HTMLElement]] = js.undefined

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Decorated target
-     */
+  * Decorated target
+  */
 /* RemoveMultipleInheritance: Dropped parents List(angularDashEsLib.angularDashEsMod.MethodDecorator because Would inherit conflicting mutable fields List(length))*/
 @js.native
 trait ngESDecorator extends ClassDecorator {

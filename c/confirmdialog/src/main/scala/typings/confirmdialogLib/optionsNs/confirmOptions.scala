@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait confirmOptions extends js.Object {
   var autoClose: js.UndefOr[java.lang.String] = js.undefined
   var backgroundDismiss: js.UndefOr[js.Any] = js.undefined

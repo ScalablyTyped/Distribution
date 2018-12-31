@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Hide extends js.Object {
   /** Dismiss the splash screen. */
   def hide(): scala.Unit

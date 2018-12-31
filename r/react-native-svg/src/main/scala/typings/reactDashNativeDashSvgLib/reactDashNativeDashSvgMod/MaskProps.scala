@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MaskProps extends CommonPathProps {
   var height: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
   @JSName("id")

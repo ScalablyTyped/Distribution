@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- *  The WebAssembly Web API defines extensions to the JavaScript API made
- *  available specifically in web browsers. See [WebAssembly Web
- *  API](https://www.w3.org/TR/wasm-web-api-1/) for more information.
- */
+  *  The WebAssembly Web API defines extensions to the JavaScript API made
+  *  available specifically in web browsers. See [WebAssembly Web
+  *  API](https://www.w3.org/TR/wasm-web-api-1/) for more information.
+  */
 @JSGlobal("WebAssembly")
 @js.native
 object WebAssemblyNs extends js.Object {

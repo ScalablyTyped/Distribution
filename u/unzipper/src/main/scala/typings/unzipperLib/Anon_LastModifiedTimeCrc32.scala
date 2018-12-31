@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LastModifiedTimeCrc32 extends js.Object {
   var buffer: js.Function1[/* password */ js.UndefOr[java.lang.String], js.Promise[nodeLib.Buffer]]
   var comment: java.lang.String

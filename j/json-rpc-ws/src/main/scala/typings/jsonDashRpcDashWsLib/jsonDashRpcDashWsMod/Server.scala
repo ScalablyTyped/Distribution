@@ -10,20 +10,14 @@ import scala.scalajs.js.annotation._
 class Server[TConnection /* <: Connection */] () extends Base[TConnection] {
   var server: wsLib.wsMod.Server = js.native
   /**
-       * Start the server
-       */
+    * Start the server
+    */
   def start(): scala.Unit = js.native
-  /**
-       * Start the server
-       */
   def start(options: wsLib.wsMod.WebSocketNs.ServerOptions): scala.Unit = js.native
-  /**
-       * Start the server
-       */
   def start(options: wsLib.wsMod.WebSocketNs.ServerOptions, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
-       * Stop the server
-       */
+    * Stop the server
+    */
   def stop(): scala.Unit = js.native
 }
 

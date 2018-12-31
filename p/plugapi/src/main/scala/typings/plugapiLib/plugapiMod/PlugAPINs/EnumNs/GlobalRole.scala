@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GlobalRole extends js.Object {
   var ADMIN: scala.Double
   var AMBASSADOR: scala.Double

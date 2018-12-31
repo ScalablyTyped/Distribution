@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a 3D Manufacturing Format (3MF) component that's applied to the object definition with a matrix transform. */
 @JSGlobal("Windows.Graphics.Printing3D.Printing3DComponentWithMatrix")
 @js.native
+/** Creates an instance of the Printing3DComponentWithMatrix class. */
 class Printing3DComponentWithMatrix () extends js.Object {
   /** Gets or sets the 3D Manufacturing Format (3MF) primitive component that's applied to the object definition with a matrix transform. */
   var component: Printing3DComponent = js.native

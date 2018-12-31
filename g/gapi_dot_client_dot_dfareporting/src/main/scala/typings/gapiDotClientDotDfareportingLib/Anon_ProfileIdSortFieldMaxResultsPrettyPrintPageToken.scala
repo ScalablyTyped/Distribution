@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ProfileIdSortFieldMaxResultsPrettyPrintPageToken extends js.Object {
   /** This search filter is no longer supported and will have no effect on the results returned. */
   var acceptsInStreamVideoPlacements: js.UndefOr[scala.Boolean] = js.undefined
@@ -40,15 +39,15 @@ trait Anon_ProfileIdSortFieldMaxResultsPrettyPrintPageToken extends js.Object {
   /** User profile ID associated with this request. */
   var profileId: java.lang.String
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Allows searching for objects by name, ID or keyName. Wildcards (&#42;) are allowed. For example, "site&#42;2015" will return objects with names like "site June
-                   * 2015", "site April 2015", or simply "site 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For
-                   * example, a search string of "site" will match objects with name "my site", "site 2015", or simply "site".
-                   */
+    * Allows searching for objects by name, ID or keyName. Wildcards (&#42;) are allowed. For example, "site&#42;2015" will return objects with names like "site June
+    * 2015", "site April 2015", or simply "site 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For
+    * example, a search string of "site" will match objects with name "my site", "site 2015", or simply "site".
+    */
   var searchString: js.UndefOr[java.lang.String] = js.undefined
   /** Field by which to sort the list. */
   var sortField: js.UndefOr[java.lang.String] = js.undefined

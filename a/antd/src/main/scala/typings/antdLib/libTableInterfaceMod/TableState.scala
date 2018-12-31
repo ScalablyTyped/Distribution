@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableState[T] extends js.Object {
   var filters: TableStateFilters
   var pagination: antdLib.libPaginationPaginationMod.PaginationConfig

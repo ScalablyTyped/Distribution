@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait State extends js.Object
 
 /**
-             * This enumeration holds the state an info bubble can have.
-             */
+  * This enumeration holds the state an info bubble can have.
+  */
 @JSGlobal("H.ui.InfoBubble.State")
 @js.native
 object State extends js.Object {

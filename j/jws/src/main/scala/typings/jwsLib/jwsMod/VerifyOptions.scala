@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VerifyOptions extends js.Object {
   var algorithm: js.UndefOr[Algorithm | nodeLib.Buffer | nodeLib.streamMod.Readable] = js.undefined
   var encoding: js.UndefOr[java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable] = js.undefined

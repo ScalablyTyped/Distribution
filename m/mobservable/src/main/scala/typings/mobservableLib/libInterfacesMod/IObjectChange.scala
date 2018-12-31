@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IObjectChange[T, R] extends js.Object {
   var name: java.lang.String
   var `object`: R

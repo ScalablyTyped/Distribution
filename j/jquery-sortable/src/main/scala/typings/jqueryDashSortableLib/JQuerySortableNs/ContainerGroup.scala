@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContainerGroup extends js.Object {
   @JSName("$document")
   var $document: jqueryDashSortableLib.JQuery

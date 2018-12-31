@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KnockstrapProgressDefaults extends js.Object {
   var animated: scala.Boolean
   var css: java.lang.String

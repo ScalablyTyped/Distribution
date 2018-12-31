@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClockViewModel extends js.Object {
   var canAnimate: scala.Boolean
   var clock: Clock

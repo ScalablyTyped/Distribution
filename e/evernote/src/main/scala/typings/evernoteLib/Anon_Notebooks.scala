@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Notebooks extends js.Object {
   var containingNotebooks: js.UndefOr[js.Array[evernoteLib.evernoteMod.EvernoteNs.NotebookDescriptor]] = js.undefined
   var notebooks: js.UndefOr[js.Array[evernoteLib.evernoteMod.EvernoteNs.Notebook]] = js.undefined

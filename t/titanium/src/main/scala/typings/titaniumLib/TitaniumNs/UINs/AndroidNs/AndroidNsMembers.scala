@@ -404,33 +404,21 @@ object AndroidNsMembers extends js.Object {
   			 * Creates and returns an instance of <Titanium.UI.Android.CardView>.
   			 */
   def createCardView(): CardView = js.native
-  /**
-  			 * Creates and returns an instance of <Titanium.UI.Android.CardView>.
-  			 */
   def createCardView(parameters: js.Any): CardView = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.Android.DrawerLayout>.
   			 */
   def createDrawerLayout(): DrawerLayout = js.native
-  /**
-  			 * Creates and returns an instance of <Titanium.UI.Android.DrawerLayout>.
-  			 */
   def createDrawerLayout(parameters: js.Any): DrawerLayout = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.Android.ProgressIndicator>.
   			 */
   def createProgressIndicator(): ProgressIndicator = js.native
-  /**
-  			 * Creates and returns an instance of <Titanium.UI.Android.ProgressIndicator>.
-  			 */
   def createProgressIndicator(parameters: js.Any): ProgressIndicator = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.Android.SearchView>.
   			 */
   def createSearchView(): SearchView = js.native
-  /**
-  			 * Creates and returns an instance of <Titanium.UI.Android.SearchView>.
-  			 */
   def createSearchView(parameters: js.Any): SearchView = js.native
   /**
   			 * Fires a synthesized event to any registered listeners.

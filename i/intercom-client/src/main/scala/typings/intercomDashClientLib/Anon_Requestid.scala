@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Requestid extends js.Object {
   var errors: js.Array[Anon_Code]
   var request_id: java.lang.String

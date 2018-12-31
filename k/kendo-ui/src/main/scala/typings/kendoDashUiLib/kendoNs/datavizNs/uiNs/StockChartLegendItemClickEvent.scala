@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StockChartLegendItemClickEvent extends StockChartEvent {
   var element: js.UndefOr[js.Any] = js.undefined
   var pointIndex: js.UndefOr[scala.Double] = js.undefined

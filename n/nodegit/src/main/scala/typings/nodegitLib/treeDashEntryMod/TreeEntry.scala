@@ -21,16 +21,16 @@ class TreeEntry () extends js.Object {
   def isTree(): scala.Boolean = js.native
   def name(): java.lang.String = js.native
   /**
-       * Retrieve the SHA for this TreeEntry. Alias for sha
-       */
+    * Retrieve the SHA for this TreeEntry. Alias for sha
+    */
   def oid(): java.lang.String = js.native
   /**
-       * Returns the path for this entry.
-       */
+    * Returns the path for this entry.
+    */
   def path(): java.lang.String = js.native
   /**
-       * Retrieve the SHA for this TreeEntry.
-       */
+    * Retrieve the SHA for this TreeEntry.
+    */
   def sha(): java.lang.String = js.native
   def toObject(repo: nodegitLib.repositoryMod.Repository): js.Object = js.native
   def `type`(): scala.Double = js.native

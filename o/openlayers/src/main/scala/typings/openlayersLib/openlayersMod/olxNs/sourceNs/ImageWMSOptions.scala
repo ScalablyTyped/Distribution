@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageWMSOptions extends js.Object {
   var attributions: js.UndefOr[openlayersLib.openlayersMod.AttributionLike] = js.undefined
   var crossOrigin: js.UndefOr[java.lang.String] = js.undefined

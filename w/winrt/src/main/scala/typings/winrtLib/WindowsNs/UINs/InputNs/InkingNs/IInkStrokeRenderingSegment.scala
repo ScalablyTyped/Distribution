@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IInkStrokeRenderingSegment extends js.Object {
   var bezierControlPoint1: winrtLib.WindowsNs.FoundationNs.Point
   var bezierControlPoint2: winrtLib.WindowsNs.FoundationNs.Point

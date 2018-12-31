@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait NumberType extends js.Object
 
 /**
-     * [Api set: OneNoteApi 1.1]
-     */
+  * [Api set: OneNoteApi 1.1]
+  */
 @JSGlobal("OneNote.NumberType")
 @js.native
 object NumberType extends js.Object {

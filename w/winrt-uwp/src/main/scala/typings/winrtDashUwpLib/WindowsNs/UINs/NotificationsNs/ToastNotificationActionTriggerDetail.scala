@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ToastNotificationActionTriggerDetail () extends js.Object {
   var argument: js.Any = js.native
-   /* unmapped type */var userInput: js.Any = js.native
+   /* unmapped type */ var userInput: js.Any = js.native
 }
 

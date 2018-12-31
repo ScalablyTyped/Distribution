@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick, @material-ui/core.@material-ui/core.StandardProps) */ 
-trait BaseTextFieldProps
+- Lifted 3 members from Set(std.Pick<@material-ui/core.@material-ui/core/FormControl.FormControlProps, std.Exclude<keyof @material-ui/core.@material-ui/core/FormControl.FormControlProps, 'classes' | 'onChange' | 'defaultValue'>>, @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/FormControl.FormControlProps, @material-ui/core.@material-ui/core/TextField/TextField.TextFieldClassKey, 'onChange' | 'defaultValue'>) */ trait BaseTextFieldProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TextFieldClassKey] {
   var FormHelperTextProps: js.UndefOr[
     stdLib.Partial[atMaterialDashUiCoreLib.formhelpertextFormHelperTextMod.FormHelperTextProps]

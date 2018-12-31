@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPrettyPrintBearertoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -31,9 +30,9 @@ trait Anon_AccesstokenPrettyPrintBearertoken extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * REQUIRED: The resource for which policy is being specified. Format is
-                   * `datasets/<dataset ID>`.
-                   */
+    * REQUIRED: The resource for which policy is being specified. Format is
+    * `datasets/<dataset ID>`.
+    */
   var resource: java.lang.String
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

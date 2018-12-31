@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Decimal128 protected () extends js.Object {
   /**
-       * @param bytes A buffer containing the raw Decimal128 bytes.
-       */
+    * @param bytes A buffer containing the raw Decimal128 bytes.
+    */
   def this(bytes: nodeLib.Buffer) = this()
   /** A buffer containing the raw Decimal128 bytes. */
   val bytes: nodeLib.Buffer = js.native

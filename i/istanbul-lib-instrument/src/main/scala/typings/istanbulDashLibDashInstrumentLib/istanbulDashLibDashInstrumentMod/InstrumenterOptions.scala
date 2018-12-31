@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InstrumenterOptions extends js.Object {
   var autoWrap: scala.Boolean
   var compact: scala.Boolean

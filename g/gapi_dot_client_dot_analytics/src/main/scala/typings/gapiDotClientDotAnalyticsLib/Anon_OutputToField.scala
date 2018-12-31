@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OutputToField extends js.Object {
   /** Indicates if the filter expressions are case sensitive. */
   var caseSensitive: js.UndefOr[scala.Boolean] = js.undefined

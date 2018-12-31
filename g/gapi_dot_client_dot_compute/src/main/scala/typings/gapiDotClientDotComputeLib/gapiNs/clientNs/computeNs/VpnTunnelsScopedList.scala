@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VpnTunnelsScopedList extends js.Object {
   /** List of vpn tunnels contained in this scope. */
   var vpnTunnels: js.UndefOr[js.Array[VpnTunnel]] = js.undefined

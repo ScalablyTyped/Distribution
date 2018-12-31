@@ -25,7 +25,6 @@ class Documents protected () extends js.Object {
   ): Document = js.native
   /** @param string [PostID=''] */
   def AddBlogDocument(ProviderID: java.lang.String, PostURL: java.lang.String, BlogName: java.lang.String): Document = js.native
-  /** @param string [PostID=''] */
   def AddBlogDocument(
     ProviderID: java.lang.String,
     PostURL: java.lang.String,

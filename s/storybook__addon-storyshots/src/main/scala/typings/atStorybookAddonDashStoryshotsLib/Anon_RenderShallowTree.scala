@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RenderShallowTree extends js.Object {
   var context: atStorybookAddonDashStoryshotsLib.addonDashStoryshotsMod.StoryContext
   var renderShallowTree: atStorybookAddonDashStoryshotsLib.addonDashStoryshotsMod.RenderTree

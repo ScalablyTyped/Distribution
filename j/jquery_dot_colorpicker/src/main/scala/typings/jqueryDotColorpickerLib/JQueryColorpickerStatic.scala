@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQueryColorpickerStatic extends js.Object {
   var Color: Anon_R
   var limits: org.scalablytyped.runtime.StringDictionary[js.Function1[/* color */ js.Any, scala.Unit]]

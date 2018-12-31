@@ -68,11 +68,6 @@ trait IgMaskEditorMethods extends js.Object {
   	 * @param newValue New mask editor value.
   	 */
   def value(): java.lang.String = js.native
-  /**
-  	 * Gets/Sets mask editor value.
-  	 *
-  	 * @param newValue New mask editor value.
-  	 */
   def value(newValue: java.lang.String): java.lang.String = js.native
 }
 

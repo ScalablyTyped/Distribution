@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DocumentMode extends js.Object {
   var Browser: java.lang.String
   var `Browser-Height`: scala.Double

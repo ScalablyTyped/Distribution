@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeveloperComment extends js.Object {
   /** The last time at which this comment was updated. */
   var lastModified: js.UndefOr[Timestamp] = js.undefined

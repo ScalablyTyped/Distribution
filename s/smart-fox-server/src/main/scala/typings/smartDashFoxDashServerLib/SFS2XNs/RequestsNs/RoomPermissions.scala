@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("SFS2X.Requests.RoomPermissions")
 @js.native
+/**
+  * Creates a new RoomPermissions instance.
+  */
 class RoomPermissions () extends js.Object {
   /** @type {boolean} Sets whether changing the Room name after its creation is allowed or not. */
   var allowNameChange: scala.Boolean = js.native

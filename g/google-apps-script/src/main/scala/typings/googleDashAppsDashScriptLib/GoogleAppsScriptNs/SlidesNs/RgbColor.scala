@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RgbColor extends js.Object {
   def asHexString(): java.lang.String
   def getBlue(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer

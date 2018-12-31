@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Body extends js.Object {
   val body: ReadableStream[stdLib.Uint8Array] | scala.Null
   val bodyUsed: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnProps[T] extends js.Object {
   var align: js.UndefOr[
     antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.center

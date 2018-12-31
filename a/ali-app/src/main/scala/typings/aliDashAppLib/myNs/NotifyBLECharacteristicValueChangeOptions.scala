@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotifyBLECharacteristicValueChangeOptions
   extends BaseOptions[js.Any, js.Any] {
   /**

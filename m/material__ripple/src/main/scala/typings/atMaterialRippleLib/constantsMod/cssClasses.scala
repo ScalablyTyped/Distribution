@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait cssClasses
   extends atMaterialBaseLib.foundationMod.MDCStrings {
   var BG_FOCUSED: atMaterialRippleLib.atMaterialRippleLibStrings.`mdc-ripple-upgraded--background-focused`

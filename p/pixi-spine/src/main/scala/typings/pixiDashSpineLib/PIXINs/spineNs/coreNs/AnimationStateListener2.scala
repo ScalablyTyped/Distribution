@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnimationStateListener2 extends js.Object {
   var complete: js.UndefOr[js.Function1[/* entry */ TrackEntry, scala.Unit]] = js.undefined
   var dispose: js.UndefOr[js.Function1[/* entry */ TrackEntry, scala.Unit]] = js.undefined

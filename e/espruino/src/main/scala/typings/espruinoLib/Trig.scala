@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Trig
   extends /**
-     * 
-     * @return  
-     */
+  * 
+  * @return  
+  */
 org.scalablytyped.runtime.Instantiable0[Trig]
 

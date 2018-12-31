@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RepliesResource extends js.Object {
   /** Creates a new reply to a comment. */
   def create(request: gapiDotClientDotDriveLib.Anon_FileIdPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Reply]

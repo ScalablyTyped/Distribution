@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VideoProps extends js.Object {
   var isLooping: js.UndefOr[scala.Boolean] = js.undefined
   var isMuted: js.UndefOr[scala.Boolean] = js.undefined

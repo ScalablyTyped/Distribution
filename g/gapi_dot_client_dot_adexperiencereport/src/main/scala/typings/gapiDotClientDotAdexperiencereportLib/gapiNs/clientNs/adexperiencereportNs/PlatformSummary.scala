@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlatformSummary extends js.Object {
   /** The status of the site reviewed for the Better Ads Standards. */
   var betterAdsStatus: js.UndefOr[java.lang.String] = js.undefined

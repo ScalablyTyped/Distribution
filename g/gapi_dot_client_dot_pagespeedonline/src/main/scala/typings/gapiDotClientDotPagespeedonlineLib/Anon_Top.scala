@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Top extends js.Object {
   /** The height of the rect. */
   var height: js.UndefOr[scala.Double] = js.undefined

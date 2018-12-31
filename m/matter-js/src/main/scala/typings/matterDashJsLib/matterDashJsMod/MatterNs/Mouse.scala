@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Mouse extends js.Object {
   var absolute: IMousePoint
   var button: scala.Double

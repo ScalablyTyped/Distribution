@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * PDFKit data
-    */
+  * PDFKit data
+  */
 @js.native
 trait PDFData
   extends org.scalablytyped.runtime.Instantiable1[/* data */ js.Array[js.Any], PDFData] {

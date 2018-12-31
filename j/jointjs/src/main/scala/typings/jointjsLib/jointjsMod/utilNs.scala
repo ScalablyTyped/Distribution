@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jointjs", "util")
 @js.native
 object utilNs extends js.Object {
-  
   trait DOMJSONDocument extends js.Object {
     var fragment: stdLib.DocumentFragment
     var groupSelectors: org.scalablytyped.runtime.StringDictionary[js.Array[underscoreLib.underscoreMod.Global.Element]]
@@ -132,7 +131,7 @@ object utilNs extends js.Object {
   def merge(destinationObject: js.Object, sourceObject: js.Object, customizer: CustomizerFunction): js.Object = js.native
   def merge(
     destinationObject: js.Object,
-    /* import warning: Dropping repeated marker of param TsIdentSimple(sourceObjectsOptionalFinalCustomizer) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(SourceObjectsOptionalFinalCustomizer))),List())) is not an array type */sourceObjectsOptionalFinalCustomizer: SourceObjectsOptionalFinalCustomizer
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param sourceObjectsOptionalFinalCustomizer because its type SourceObjectsOptionalFinalCustomizer is not an array type */ sourceObjectsOptionalFinalCustomizer: SourceObjectsOptionalFinalCustomizer
   ): js.Object = js.native
   def mixin(destinationObject: js.Object, sourceObjects: js.Object*): js.Object = js.native
   def nextFrame(callback: js.Function0[scala.Unit]): scala.Double = js.native
@@ -229,7 +228,6 @@ object utilNs extends js.Object {
   @JSName("filter")
   @js.native
   object filterNs extends js.Object {
-    
     trait FilterArgumentsMap extends js.Object {
       var blur: jointjsLib.Anon_Y
       var brightness: jointjsLib.Anon_Amount
@@ -255,13 +253,15 @@ object utilNs extends js.Object {
     var outline: FilterFunction[jointjsLib.jointjsLibStrings.outline] = js.native
     var saturate: FilterFunction[jointjsLib.jointjsLibStrings.saturate] = js.native
     var sepia: FilterFunction[jointjsLib.jointjsLibStrings.sepia] = js.native
-    type FilterFunction[K /* <: jointjsLib.jointjsLibStrings.outline | jointjsLib.jointjsLibStrings.highlight | jointjsLib.jointjsLibStrings.blur | jointjsLib.jointjsLibStrings.dropShadow | jointjsLib.jointjsLibStrings.grayscale | jointjsLib.jointjsLibStrings.sepia | jointjsLib.jointjsLibStrings.saturate | jointjsLib.jointjsLibStrings.hueRotate | jointjsLib.jointjsLibStrings.invert | jointjsLib.jointjsLibStrings.brightness | jointjsLib.jointjsLibStrings.contrast */] = js.Function1[/* args */ js.Any, java.lang.String]
+    type FilterFunction[K /* <: jointjsLib.jointjsLibStrings.outline | jointjsLib.jointjsLibStrings.highlight | jointjsLib.jointjsLibStrings.blur | jointjsLib.jointjsLibStrings.dropShadow | jointjsLib.jointjsLibStrings.grayscale | jointjsLib.jointjsLibStrings.sepia | jointjsLib.jointjsLibStrings.saturate | jointjsLib.jointjsLibStrings.hueRotate | jointjsLib.jointjsLibStrings.invert | jointjsLib.jointjsLibStrings.brightness | jointjsLib.jointjsLibStrings.contrast */] = js.Function1[
+        /* import warning: ImportType.apply Failed type conversion: jointjs.jointjs.util.filter.FilterArgumentsMap[K] */ /* args */ js.Any, 
+        java.lang.String
+      ]
   }
   
   @JSName("format")
   @js.native
   object formatNs extends js.Object {
-    
     trait NumberLocale extends js.Object {
       var currency: js.Tuple2[java.lang.String, java.lang.String]
       var decimal: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPollingProvider extends IJsonProvider {
   /** [Config Option] (Object) */
   var baseParams: js.UndefOr[js.Any] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Device extends js.Object {
   /** The name of the foreign device. */
   var deviceName: java.lang.String

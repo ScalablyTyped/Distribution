@@ -56,22 +56,22 @@ abstract class ImageScannerFlatbedConfiguration () extends js.Object {
   /** Gets or sets the origin coordinates (horizontal and vertical) and dimensions (width and height) of the selected scan area, in inches. This property is ignored when the AutoCroppingMode property is not Disabled. */
   var selectedScanRegion: winrtDashUwpLib.WindowsNs.FoundationNs.Rect = js.native
   /**
-                   * Returns whether the scanner's Flatbed supports the specified ImageScannerAutoCroppingMode .
-                   * @param value The auto crop mode of the image to scan.
-                   * @return Indicates whether the device supports value mode.
-                   */
+    * Returns whether the scanner's Flatbed supports the specified ImageScannerAutoCroppingMode .
+    * @param value The auto crop mode of the image to scan.
+    * @return Indicates whether the device supports value mode.
+    */
   def isAutoCroppingModeSupported(value: ImageScannerAutoCroppingMode): scala.Boolean = js.native
   /**
-                   * Returns whether the scanner's Flatbed can scan and transfer images in the specified color mode.
-                   * @param value The color mode.
-                   * @return Indicates whether the scanner can scan images in value mode.
-                   */
+    * Returns whether the scanner's Flatbed can scan and transfer images in the specified color mode.
+    * @param value The color mode.
+    * @return Indicates whether the scanner can scan images in value mode.
+    */
   def isColorModeSupported(value: ImageScannerColorMode): scala.Boolean = js.native
   /**
-                   * Determines whether the scanner's Flatbed supports the specified file format or not.
-                   * @param value The file type.
-                   * @return Indicates whether the specified file type is supported.
-                   */
+    * Determines whether the scanner's Flatbed supports the specified file format or not.
+    * @param value The file type.
+    * @return Indicates whether the specified file type is supported.
+    */
   def isFormatSupported(value: ImageScannerFormat): scala.Boolean = js.native
 }
 

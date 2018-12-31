@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShippingSettings extends js.Object {
   /** The ID of the account to which these account shipping settings belong. Ignored upon update, always present in get request responses. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined

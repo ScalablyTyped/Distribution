@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AlexaObject[T /* <: Request */] extends Handler[T] {
   var _callback: js.Any
   var _context: js.Any

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait strings
   extends atMaterialBaseLib.foundationMod.MDCStrings {
   var ACTION_ITEM_SELECTOR: atMaterialTopDashAppDashBarLib.atMaterialTopDashAppDashBarLibStrings.`DOTmdc-top-app-bar__action-item`

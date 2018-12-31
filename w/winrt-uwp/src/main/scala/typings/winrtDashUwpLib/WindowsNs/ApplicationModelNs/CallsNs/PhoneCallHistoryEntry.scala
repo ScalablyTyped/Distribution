@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** A collection of information about a phone call for the call history. */
 @JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryEntry")
 @js.native
+/** Creates a new PhoneCallHistoryEntry object. */
 class PhoneCallHistoryEntry () extends js.Object {
   /** Gets or sets the address book information for this phone call. */
   var address: PhoneCallHistoryEntryAddress = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListInstancesResponse extends js.Object {
   /** The instances belonging to the requested version. */
   var instances: js.UndefOr[js.Array[Instance]] = js.undefined

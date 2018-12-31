@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserData extends js.Object {
   var command: java.lang.String
   var date: java.lang.String

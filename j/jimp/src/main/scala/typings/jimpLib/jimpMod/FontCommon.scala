@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FontCommon extends js.Object {
   var alphaChnl: scala.Double
   var base: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PeerSessionDiagnostics extends js.Object {
   /** Connected time in milliseconds. */
   var connectedTimestampMillis: js.UndefOr[java.lang.String] = js.undefined

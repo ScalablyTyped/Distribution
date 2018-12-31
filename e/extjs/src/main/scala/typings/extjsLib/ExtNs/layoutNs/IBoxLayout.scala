@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBoxLayout
   extends extjsLib.ExtNs.layoutNs.containerNs.IContainer {
   /** [Method] This method is called to re cache our understanding of flexes

@@ -55,33 +55,23 @@ trait App extends js.Object {
   def getSnapshot(elem: stdLib.HTMLElement, id: java.lang.String): js.Promise[_] = js.native
   // getList(type: ListTypes, callback): Promise<any>;
   def getobject(): js.Promise[_] = js.native
-  // getList(type: ListTypes, callback): Promise<any>;
   def getobject(elem: java.lang.String): js.Promise[_] = js.native
-  // getList(type: ListTypes, callback): Promise<any>;
   def getobject(elem: java.lang.String, id: java.lang.String): js.Promise[_] = js.native
-  // getList(type: ListTypes, callback): Promise<any>;
   def getobject(elem: java.lang.String, id: java.lang.String, options: qlikLib.Anon_NoSelections): js.Promise[_] = js.native
-  // getList(type: ListTypes, callback): Promise<any>;
   def getobject(elem: stdLib.HTMLElement): js.Promise[_] = js.native
-  // getList(type: ListTypes, callback): Promise<any>;
   def getobject(elem: stdLib.HTMLElement, id: java.lang.String): js.Promise[_] = js.native
-  // getList(type: ListTypes, callback): Promise<any>;
   def getobject(elem: stdLib.HTMLElement, id: java.lang.String, options: qlikLib.Anon_NoSelections): js.Promise[_] = js.native
   def getobjectProperties(id: java.lang.String): js.Promise[_] = js.native
-  // getList(type: ListTypes, callback): Promise<any>;
   @JSName("getobject")
   def getobject_CurrentSelections(elem: java.lang.String, id: qlikLib.qlikLibStrings.CurrentSelections): js.Promise[_] = js.native
-  // getList(type: ListTypes, callback): Promise<any>;
   @JSName("getobject")
   def getobject_CurrentSelections(
     elem: java.lang.String,
     id: qlikLib.qlikLibStrings.CurrentSelections,
     options: qlikLib.Anon_NoSelections
   ): js.Promise[_] = js.native
-  // getList(type: ListTypes, callback): Promise<any>;
   @JSName("getobject")
   def getobject_CurrentSelections(elem: stdLib.HTMLElement, id: qlikLib.qlikLibStrings.CurrentSelections): js.Promise[_] = js.native
-  // getList(type: ListTypes, callback): Promise<any>;
   @JSName("getobject")
   def getobject_CurrentSelections(
     elem: stdLib.HTMLElement,
@@ -96,10 +86,6 @@ trait App extends js.Object {
   // selectAssociations
   // selectionState(state?: string): QSelectionState;
   def unlockAll(): js.Promise[_] = js.native
-  // searchResults(qTerms: any[], qPage)
-  // searchSuggest(qTerms: any[], qOptions: { qSearchFields: any[] }, ): Promise<any>;
-  // selectAssociations
-  // selectionState(state?: string): QSelectionState;
   def unlockAll(state: java.lang.String): js.Promise[_] = js.native
 }
 

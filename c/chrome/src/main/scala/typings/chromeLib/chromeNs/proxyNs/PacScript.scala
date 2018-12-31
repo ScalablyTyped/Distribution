@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PacScript extends js.Object {
   /** Optional. A PAC script. */
   var data: js.UndefOr[java.lang.String] = js.undefined

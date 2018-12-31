@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Animatable extends js.Object {
   var animationBegin: js.UndefOr[scala.Double] = js.undefined
   var animationDuration: js.UndefOr[scala.Double] = js.undefined

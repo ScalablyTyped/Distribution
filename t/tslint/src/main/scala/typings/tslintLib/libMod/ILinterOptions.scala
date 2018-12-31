@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILinterOptions extends js.Object {
   var fix: scala.Boolean
   var formatter: js.UndefOr[

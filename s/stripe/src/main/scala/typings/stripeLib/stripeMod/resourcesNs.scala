@@ -97,69 +97,69 @@ object resourcesNs extends js.Object {
     extends stripeLib.stripeMod.StripeNs.resourcesNs.Products
   
   /**
-           * @deprecated
-           */
+    * @deprecated
+    */
   @js.native
   class RecipientCards ()
     extends stripeLib.stripeMod.StripeNs.resourcesNs.RecipientCards {
     /**
-                 * @deprecated
-                 */
+      * @deprecated
+      */
     /* CompleteClass */
     override def create(): scala.Unit = js.native
-    //options: IDataOptions
+    // options: IDataOptions
     /**
-                 * @deprecated
-                 */
+      * @deprecated
+      */
     /* CompleteClass */
     override def del(id: java.lang.String): scala.Unit = js.native
     /**
-                 * @deprecated
-                 */
+      * @deprecated
+      */
     /* CompleteClass */
     override def list(): scala.Unit = js.native
     /**
-                 * @deprecated
-                 */
+      * @deprecated
+      */
     /* CompleteClass */
     override def retrieve(id: java.lang.String): scala.Unit = js.native
     /**
-                 * @deprecated
-                 */
+      * @deprecated
+      */
     /* CompleteClass */
     override def update(id: java.lang.String): scala.Unit = js.native
   }
   
   /**
-           * @deprecated
-           */
+    * @deprecated
+    */
   @js.native
   class Recipients ()
     extends stripeLib.stripeMod.StripeNs.resourcesNs.Recipients {
     /**
-                 * @deprecated
-                 */
+      * @deprecated
+      */
     /* CompleteClass */
     override def create(): scala.Unit = js.native
-    //options: IDataOptions
+    // options: IDataOptions
     /**
-                 * @deprecated
-                 */
+      * @deprecated
+      */
     /* CompleteClass */
     override def del(id: java.lang.String): scala.Unit = js.native
     /**
-                 * @deprecated
-                 */
+      * @deprecated
+      */
     /* CompleteClass */
     override def list(): scala.Unit = js.native
     /**
-                 * @deprecated
-                 */
+      * @deprecated
+      */
     /* CompleteClass */
     override def retrieve(id: java.lang.String): scala.Unit = js.native
     /**
-                 * @deprecated
-                 */
+      * @deprecated
+      */
     /* CompleteClass */
     override def update(id: java.lang.String): scala.Unit = js.native
   }

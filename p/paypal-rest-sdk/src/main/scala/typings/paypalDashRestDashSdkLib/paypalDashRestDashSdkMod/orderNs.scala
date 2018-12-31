@@ -14,7 +14,6 @@ object orderNs extends js.Object {
   def capture(id: java.lang.String, data: js.Any, config: js.Any, cb: js.Any): scala.Unit = js.native
   // function void(id: string, config: any, cb?: any): void;
   def get(id: java.lang.String, config: js.Any): scala.Unit = js.native
-  // function void(id: string, config: any, cb?: any): void;
   def get(id: java.lang.String, config: js.Any, cb: js.Any): scala.Unit = js.native
 }
 

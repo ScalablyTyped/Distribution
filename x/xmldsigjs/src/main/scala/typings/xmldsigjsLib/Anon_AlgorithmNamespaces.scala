@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AlgorithmNamespaces extends js.Object {
   var AlgorithmNamespaces: Anon_XmlDsigBase64Transform
   var AttributeNames: Anon_Id

@@ -11,9 +11,9 @@ class DashboardObject () extends js.Object {
   /** Gets the Dashboard object that contains this object. */
   def getDashboard(): Dashboard = js.native
   /**
-           * Gets what the object represents, which is an enum with the following values:
-           * BLANK, WORKSHEET, QUICK_FILTER, PARAMETER_CONTROL, PAGE_FILTER, LEGEND, TITLE, TEXT, IMAGE, WEB_PAGE.
-           */
+    * Gets what the object represents, which is an enum with the following values:
+    * BLANK, WORKSHEET, QUICK_FILTER, PARAMETER_CONTROL, PAGE_FILTER, LEGEND, TITLE, TEXT, IMAGE, WEB_PAGE.
+    */
   def getObjectType(): DashboardObjectType = js.native
   /** Gets the coordinates relative to the top-left corner of the dashboard of the object. */
   def getPosition(): Point = js.native

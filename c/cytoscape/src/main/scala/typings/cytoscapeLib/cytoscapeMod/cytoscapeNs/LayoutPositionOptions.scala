@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * http://js.cytoscape.org/#collection/layout
-     */
-
+  * http://js.cytoscape.org/#collection/layout
+  */
 trait LayoutPositionOptions extends js.Object {
   // whether to animate changes to the layout
   var animate: js.UndefOr[scala.Boolean] = js.undefined

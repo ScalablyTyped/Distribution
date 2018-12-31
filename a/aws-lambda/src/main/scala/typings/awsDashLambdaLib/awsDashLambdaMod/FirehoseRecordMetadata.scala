@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FirehoseRecordMetadata extends js.Object {
   var approximateArrivalTimestamp: java.lang.String
   var partitionKey: java.lang.String

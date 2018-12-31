@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_UrlPattern extends js.Object {
   var handler: swDashPrecacheLib.swDashPrecacheMod.Handler
   var method: js.UndefOr[swDashPrecacheLib.swDashPrecacheMod.Method] = js.undefined

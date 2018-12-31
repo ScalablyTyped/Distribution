@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait AreaCheckboxEvent
   extends stdLib.Event {
   /**
-           * The state of the checkbox
-           */
+    * The state of the checkbox
+    */
   var checked: scala.Boolean = js.native
   /**
-           * The checked item
-           */
+    * The checked item
+    */
   var item: SeriesObject | PointObject = js.native
 }
 

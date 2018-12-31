@@ -16,25 +16,25 @@ class TagCloud protected () extends Widget {
   @JSName("model")
   var model_TagCloud: ejDotWebDotAllLib.ejNs.TagCloudNs.Model = js.native
   /** Inserts a new item into the TagCloud
-           * @param {string} Insert new item into the TagCloud
-           * @returns {void}
-           */
+    * @param {string} Insert new item into the TagCloud
+    * @returns {void}
+    */
   def insert(name: java.lang.String): scala.Unit = js.native
   /** Inserts a new item into the TagCloud at a particular position.
-           * @param {string} Inserts a new item into the TagCloud
-           * @param {number} Inserts a new item into the TagCloud with the specified position
-           * @returns {void}
-           */
+    * @param {string} Inserts a new item into the TagCloud
+    * @param {number} Inserts a new item into the TagCloud with the specified position
+    * @returns {void}
+    */
   def insertAt(name: java.lang.String, position: scala.Double): scala.Unit = js.native
   /** Removes the item from the TagCloud based on the name. It removes all the tags which have the corresponding name
-           * @param {string} name of the tag.
-           * @returns {void}
-           */
+    * @param {string} name of the tag.
+    * @returns {void}
+    */
   def remove(name: java.lang.String): scala.Unit = js.native
   /** Removes the item from the TagCloud based on the position. It removes the tags from the the corresponding position only.
-           * @param {number} position of tag item.
-           * @returns {void}
-           */
+    * @param {number} position of tag item.
+    * @returns {void}
+    */
   def removeAt(position: scala.Double): scala.Unit = js.native
 }
 

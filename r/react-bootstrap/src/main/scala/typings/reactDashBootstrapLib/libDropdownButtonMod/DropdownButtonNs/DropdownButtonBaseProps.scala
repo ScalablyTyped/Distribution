@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DropdownButtonBaseProps
   extends reactDashBootstrapLib.libDropdownMod.DropdownNs.DropdownBaseProps {
   var block: js.UndefOr[scala.Boolean] = js.undefined

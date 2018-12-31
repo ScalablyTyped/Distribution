@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OTHER extends js.Object {
   var DEVICE: chromeDashAppsLib.chromeDashAppsLibStrings.device
   var ENDPOINT: chromeDashAppsLib.chromeDashAppsLibStrings.endpoint

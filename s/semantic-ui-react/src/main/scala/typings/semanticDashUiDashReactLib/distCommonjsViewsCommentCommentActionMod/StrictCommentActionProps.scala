@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictCommentActionProps extends js.Object {
   /** Style as the currently active action. */
   var active: js.UndefOr[scala.Boolean] = js.undefined

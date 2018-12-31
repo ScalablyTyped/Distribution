@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Opts extends js.Object {
   var compact: js.UndefOr[scala.Boolean] = js.undefined
   var es6: js.UndefOr[scala.Boolean] = js.undefined

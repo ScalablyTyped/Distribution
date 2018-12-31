@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Context extends js.Object {
   var AudioPlayer: js.UndefOr[AudioPlayer] = js.undefined
   var System: js.UndefOr[System] = js.undefined

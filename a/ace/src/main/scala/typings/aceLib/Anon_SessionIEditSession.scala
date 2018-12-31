@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_SessionIEditSession
   extends /**
-         * Creates a new `Selection` object.
-         * @param session The session to use
-        **/
+  * Creates a new `Selection` object.
+  * @param session The session to use
+  **/
 org.scalablytyped.runtime.Instantiable1[/* session */ aceLib.AceAjaxNs.IEditSession, aceLib.AceAjaxNs.Selection]
 

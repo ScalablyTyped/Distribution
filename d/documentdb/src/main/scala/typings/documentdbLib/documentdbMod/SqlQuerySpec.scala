@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SqlQuerySpec extends js.Object {
   /** The array of SqlParameters. */
   var parameters: js.Array[SqlParameter]

@@ -130,20 +130,15 @@ trait Range extends js.Object {
   def AddComment(Text: java.lang.String): Comment = js.native
   /** @param ReferenceStyle [ReferenceStyle=1] */
   def Address(): java.lang.String = js.native
-  /** @param ReferenceStyle [ReferenceStyle=1] */
   def Address(RowAbsolute: scala.Boolean): java.lang.String = js.native
-  /** @param ReferenceStyle [ReferenceStyle=1] */
   def Address(RowAbsolute: scala.Boolean, ColumnAbsolute: scala.Boolean): java.lang.String = js.native
-  /** @param ReferenceStyle [ReferenceStyle=1] */
   def Address(RowAbsolute: scala.Boolean, ColumnAbsolute: scala.Boolean, ReferenceStyle: XlReferenceStyle): java.lang.String = js.native
-  /** @param ReferenceStyle [ReferenceStyle=1] */
   def Address(
     RowAbsolute: scala.Boolean,
     ColumnAbsolute: scala.Boolean,
     ReferenceStyle: XlReferenceStyle,
     External: scala.Boolean
   ): java.lang.String = js.native
-  /** @param ReferenceStyle [ReferenceStyle=1] */
   def Address(
     RowAbsolute: scala.Boolean,
     ColumnAbsolute: scala.Boolean,
@@ -153,20 +148,15 @@ trait Range extends js.Object {
   ): java.lang.String = js.native
   /** @param ReferenceStyle [ReferenceStyle=1] */
   def AddressLocal(): java.lang.String = js.native
-  /** @param ReferenceStyle [ReferenceStyle=1] */
   def AddressLocal(RowAbsolute: scala.Boolean): java.lang.String = js.native
-  /** @param ReferenceStyle [ReferenceStyle=1] */
   def AddressLocal(RowAbsolute: scala.Boolean, ColumnAbsolute: scala.Boolean): java.lang.String = js.native
-  /** @param ReferenceStyle [ReferenceStyle=1] */
   def AddressLocal(RowAbsolute: scala.Boolean, ColumnAbsolute: scala.Boolean, ReferenceStyle: XlReferenceStyle): java.lang.String = js.native
-  /** @param ReferenceStyle [ReferenceStyle=1] */
   def AddressLocal(
     RowAbsolute: scala.Boolean,
     ColumnAbsolute: scala.Boolean,
     ReferenceStyle: XlReferenceStyle,
     External: scala.Boolean
   ): java.lang.String = js.native
-  /** @param ReferenceStyle [ReferenceStyle=1] */
   def AddressLocal(
     RowAbsolute: scala.Boolean,
     ColumnAbsolute: scala.Boolean,
@@ -200,20 +190,16 @@ trait Range extends js.Object {
   def AutoComplete(String: java.lang.String): java.lang.String = js.native
   /** @param Type [Type=0] */
   def AutoFill(Destination: Range): js.Any = js.native
-  /** @param Type [Type=0] */
   def AutoFill(Destination: Range, Type: XlAutoFillType): js.Any = js.native
   /** @param Operator [Operator=1] */
   def AutoFilter(Field: scala.Double, Criteria1: java.lang.String): js.Any = js.native
-  /** @param Operator [Operator=1] */
   def AutoFilter(Field: scala.Double, Criteria1: java.lang.String, Operator: XlAutoFilterOperator): js.Any = js.native
-  /** @param Operator [Operator=1] */
   def AutoFilter(
     Field: scala.Double,
     Criteria1: java.lang.String,
     Operator: XlAutoFilterOperator,
     Criteria2: java.lang.String
   ): js.Any = js.native
-  /** @param Operator [Operator=1] */
   def AutoFilter(
     Field: scala.Double,
     Criteria1: java.lang.String,
@@ -234,34 +220,14 @@ trait Range extends js.Object {
   ): js.Any = js.native
   def AutoOutline(): js.Any = js.native
   /**
-           * @param Weight [Weight=2]
-           * @param ColorIndex [ColorIndex=-4105]
-           */
+    * @param Weight [Weight=2]
+    * @param ColorIndex [ColorIndex=-4105]
+    */
   def BorderAround(): js.Any = js.native
-  /**
-           * @param Weight [Weight=2]
-           * @param ColorIndex [ColorIndex=-4105]
-           */
   def BorderAround(LineStyle: XlLineStyle): js.Any = js.native
-  /**
-           * @param Weight [Weight=2]
-           * @param ColorIndex [ColorIndex=-4105]
-           */
   def BorderAround(LineStyle: XlLineStyle, Weight: XlBorderWeight): js.Any = js.native
-  /**
-           * @param Weight [Weight=2]
-           * @param ColorIndex [ColorIndex=-4105]
-           */
   def BorderAround(LineStyle: XlLineStyle, Weight: XlBorderWeight, ColorIndex: XlColorIndex): js.Any = js.native
-  /**
-           * @param Weight [Weight=2]
-           * @param ColorIndex [ColorIndex=-4105]
-           */
   def BorderAround(LineStyle: XlLineStyle, Weight: XlBorderWeight, ColorIndex: XlColorIndex, Color: scala.Double): js.Any = js.native
-  /**
-           * @param Weight [Weight=2]
-           * @param ColorIndex [ColorIndex=-4105]
-           */
   def BorderAround(
     LineStyle: XlLineStyle,
     Weight: XlBorderWeight,
@@ -269,10 +235,6 @@ trait Range extends js.Object {
     Color: scala.Double,
     ThemeColor: XlThemeColor
   ): js.Any = js.native
-  /**
-           * @param Weight [Weight=2]
-           * @param ColorIndex [ColorIndex=-4105]
-           */
   def BorderAround(
     LineStyle: XlLineStyle,
     Weight: XlBorderWeight,
@@ -344,19 +306,11 @@ trait Range extends js.Object {
     MaxColumns: scala.Double
   ): scala.Double = js.native
   /**
-           * @param Appearance [Appearance=1]
-           * @param Format [Format=-4147]
-           */
+    * @param Appearance [Appearance=1]
+    * @param Format [Format=-4147]
+    */
   def CopyPicture(): js.Any = js.native
-  /**
-           * @param Appearance [Appearance=1]
-           * @param Format [Format=-4147]
-           */
   def CopyPicture(Appearance: XlPictureAppearance): js.Any = js.native
-  /**
-           * @param Appearance [Appearance=1]
-           * @param Format [Format=-4147]
-           */
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): js.Any = js.native
   def CreateNames(): js.Any = js.native
   def CreateNames(Top: scala.Boolean): js.Any = js.native
@@ -365,13 +319,9 @@ trait Range extends js.Object {
   def CreateNames(Top: scala.Boolean, Left: scala.Boolean, Bottom: scala.Boolean, Right: scala.Boolean): js.Any = js.native
   /** @param Appearance [Appearance=1] */
   def CreatePublisher(Edition: js.Any): js.Any = js.native
-  /** @param Appearance [Appearance=1] */
   def CreatePublisher(Edition: js.Any, Appearance: XlPictureAppearance): js.Any = js.native
-  /** @param Appearance [Appearance=1] */
   def CreatePublisher(Edition: js.Any, Appearance: XlPictureAppearance, ContainsPICT: js.Any): js.Any = js.native
-  /** @param Appearance [Appearance=1] */
   def CreatePublisher(Edition: js.Any, Appearance: XlPictureAppearance, ContainsPICT: js.Any, ContainsBIFF: js.Any): js.Any = js.native
-  /** @param Appearance [Appearance=1] */
   def CreatePublisher(
     Edition: js.Any,
     Appearance: XlPictureAppearance,
@@ -379,7 +329,6 @@ trait Range extends js.Object {
     ContainsBIFF: js.Any,
     ContainsRTF: js.Any
   ): js.Any = js.native
-  /** @param Appearance [Appearance=1] */
   def CreatePublisher(
     Edition: js.Any,
     Appearance: XlPictureAppearance,
@@ -397,34 +346,14 @@ trait Range extends js.Object {
   def Cut(): js.Any = js.native
   def Cut(Destination: Range): js.Any = js.native
   /**
-           * @param Type [Type=-4132]
-           * @param Date [Date=1]
-           * @param Step [Step=1]
-           */
+    * @param Type [Type=-4132]
+    * @param Date [Date=1]
+    * @param Step [Step=1]
+    */
   def DataSeries(Rowcol: XlRowCol): js.Any = js.native
-  /**
-           * @param Type [Type=-4132]
-           * @param Date [Date=1]
-           * @param Step [Step=1]
-           */
   def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType): js.Any = js.native
-  /**
-           * @param Type [Type=-4132]
-           * @param Date [Date=1]
-           * @param Step [Step=1]
-           */
   def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: XlDataSeriesDate): js.Any = js.native
-  /**
-           * @param Type [Type=-4132]
-           * @param Date [Date=1]
-           * @param Step [Step=1]
-           */
   def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: XlDataSeriesDate, Step: scala.Double): js.Any = js.native
-  /**
-           * @param Type [Type=-4132]
-           * @param Date [Date=1]
-           * @param Step [Step=1]
-           */
   def DataSeries(
     Rowcol: XlRowCol,
     Type: XlDataSeriesType,
@@ -432,11 +361,6 @@ trait Range extends js.Object {
     Step: scala.Double,
     Stop: scala.Double
   ): js.Any = js.native
-  /**
-           * @param Type [Type=-4132]
-           * @param Date [Date=1]
-           * @param Step [Step=1]
-           */
   def DataSeries(
     Rowcol: XlRowCol,
     Type: XlDataSeriesType,
@@ -460,14 +384,10 @@ trait Range extends js.Object {
   def Dirty(): scala.Unit = js.native
   def DiscardChanges(): scala.Unit = js.native
   /**
-           * @param Appearance [Appearance=1]
-           * @param ChartSize [ChartSize=1]
-           */
+    * @param Appearance [Appearance=1]
+    * @param ChartSize [ChartSize=1]
+    */
   def EditionOptions(Type: XlEditionType, Option: XlEditionOptionsOption, Name: js.Any, Reference: js.Any): js.Any = js.native
-  /**
-           * @param Appearance [Appearance=1]
-           * @param ChartSize [ChartSize=1]
-           */
   def EditionOptions(
     Type: XlEditionType,
     Option: XlEditionOptionsOption,
@@ -475,10 +395,6 @@ trait Range extends js.Object {
     Reference: js.Any,
     Appearance: XlPictureAppearance
   ): js.Any = js.native
-  /**
-           * @param Appearance [Appearance=1]
-           * @param ChartSize [ChartSize=1]
-           */
   def EditionOptions(
     Type: XlEditionType,
     Option: XlEditionOptionsOption,
@@ -487,10 +403,6 @@ trait Range extends js.Object {
     Appearance: XlPictureAppearance,
     ChartSize: XlPictureAppearance
   ): js.Any = js.native
-  /**
-           * @param Appearance [Appearance=1]
-           * @param ChartSize [ChartSize=1]
-           */
   def EditionOptions(
     Type: XlEditionType,
     Option: XlEditionOptionsOption,
@@ -588,29 +500,13 @@ trait Range extends js.Object {
   def Parse(ParseLine: java.lang.String): js.Any = js.native
   def Parse(ParseLine: java.lang.String, Destination: Range): js.Any = js.native
   /**
-           * @param Paste [Paste=-4104]
-           * @param Operation [Operation=-4142]
-           */
+    * @param Paste [Paste=-4104]
+    * @param Operation [Operation=-4142]
+    */
   def PasteSpecial(): js.Any = js.native
-  /**
-           * @param Paste [Paste=-4104]
-           * @param Operation [Operation=-4142]
-           */
   def PasteSpecial(Paste: XlPasteType): js.Any = js.native
-  /**
-           * @param Paste [Paste=-4104]
-           * @param Operation [Operation=-4142]
-           */
   def PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation): js.Any = js.native
-  /**
-           * @param Paste [Paste=-4104]
-           * @param Operation [Operation=-4142]
-           */
   def PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: scala.Boolean): js.Any = js.native
-  /**
-           * @param Paste [Paste=-4104]
-           * @param Operation [Operation=-4142]
-           */
   def PasteSpecial(
     Paste: XlPasteType,
     Operation: XlPasteSpecialOperation,
@@ -644,7 +540,6 @@ trait Range extends js.Object {
   def Range(Cell1: java.lang.String, Cell2: java.lang.String): Range = js.native
   /** @param Header [Header=2] */
   def RemoveDuplicates(Columns: activexDashInteropLib.SafeArray[scala.Double]): scala.Unit = js.native
-  /** @param Header [Header=2] */
   def RemoveDuplicates(Columns: activexDashInteropLib.SafeArray[scala.Double], Header: XlYesNoGuess): scala.Unit = js.native
   def RemoveSubtotal(): js.Any = js.native
   def Replace(
@@ -707,17 +602,6 @@ trait Range extends js.Object {
   def ShowPrecedents(): js.Any = js.native
   def ShowPrecedents(Remove: scala.Boolean): js.Any = js.native
   def SmartTags(Index: js.Any): SmartTag = js.native
-  /**
-           * @param Order1 [Order1=1]
-           * @param Order2 [Order2=1]
-           * @param Order3 [Order3=1]
-           * @param Header [Header=2]
-           * @param Orientation [Orientation=2]
-           * @param SortMethod [SortMethod=1]
-           * @param DataOption1 [DataOption1=0]
-           * @param DataOption2 [DataOption2=0]
-           * @param DataOption3 [DataOption3=0]
-           */
   def Sort(
     Key1: Range,
     Order1: js.UndefOr[XlSortOrder],
@@ -736,16 +620,16 @@ trait Range extends js.Object {
     DataOption3: js.UndefOr[XlSortDataOption]
   ): js.Any = js.native
   /**
-           * @param Order1 [Order1=1]
-           * @param Order2 [Order2=1]
-           * @param Order3 [Order3=1]
-           * @param Header [Header=2]
-           * @param Orientation [Orientation=2]
-           * @param SortMethod [SortMethod=1]
-           * @param DataOption1 [DataOption1=0]
-           * @param DataOption2 [DataOption2=0]
-           * @param DataOption3 [DataOption3=0]
-           */
+    * @param Order1 [Order1=1]
+    * @param Order2 [Order2=1]
+    * @param Order3 [Order3=1]
+    * @param Header [Header=2]
+    * @param Orientation [Orientation=2]
+    * @param SortMethod [SortMethod=1]
+    * @param DataOption1 [DataOption1=0]
+    * @param DataOption2 [DataOption2=0]
+    * @param DataOption3 [DataOption3=0]
+    */
   def Sort(
     Key1: java.lang.String,
     Order1: js.UndefOr[XlSortOrder],
@@ -764,16 +648,16 @@ trait Range extends js.Object {
     DataOption3: js.UndefOr[XlSortDataOption]
   ): js.Any = js.native
   /**
-           * @param SortMethod [SortMethod=1]
-           * @param Order1 [Order1=1]
-           * @param Order2 [Order2=1]
-           * @param Order3 [Order3=1]
-           * @param Header [Header=2]
-           * @param Orientation [Orientation=2]
-           * @param DataOption1 [DataOption1=0]
-           * @param DataOption2 [DataOption2=0]
-           * @param DataOption3 [DataOption3=0]
-           */
+    * @param SortMethod [SortMethod=1]
+    * @param Order1 [Order1=1]
+    * @param Order2 [Order2=1]
+    * @param Order3 [Order3=1]
+    * @param Header [Header=2]
+    * @param Orientation [Orientation=2]
+    * @param DataOption1 [DataOption1=0]
+    * @param DataOption2 [DataOption2=0]
+    * @param DataOption3 [DataOption3=0]
+    */
   def SortSpecial(
     SortMethod: js.UndefOr[XlSortMethod],
     Key1: js.UndefOr[Range | java.lang.String],
@@ -799,7 +683,6 @@ trait Range extends js.Object {
   def SpecialCells(Type: XlCellType, Value: XlSpecialCellsValue): Range = js.native
   /** @param Format [Format=-4158] */
   def SubscribeTo(Edition: java.lang.String): js.Any = js.native
-  /** @param Format [Format=-4158] */
   def SubscribeTo(Edition: java.lang.String, Format: XlSubscribeToFormat): js.Any = js.native
   /** @param SummaryBelowData [SummaryBelowData=1] */
   def Subtotal(
@@ -809,7 +692,6 @@ trait Range extends js.Object {
     Replace: scala.Boolean,
     PageBreaks: scala.Boolean
   ): js.Any = js.native
-  /** @param SummaryBelowData [SummaryBelowData=1] */
   def Subtotal(
     GroupBy: scala.Double,
     Function: XlConsolidationFunction,
@@ -822,9 +704,9 @@ trait Range extends js.Object {
   def Table(RowInput: Range): js.Any = js.native
   def Table(RowInput: Range, ColumnInput: Range): js.Any = js.native
   /**
-           * @param DataType [DataType=1]
-           * @param TextQualifier [TextQualifier=1]
-           */
+    * @param DataType [DataType=1]
+    * @param TextQualifier [TextQualifier=1]
+    */
   def TextToColumns(
     Destination: Range,
     DataType: js.UndefOr[XlTextParsingType],
@@ -845,55 +727,26 @@ trait Range extends js.Object {
   def Ungroup(): js.Any = js.native
   // tslint:disable-next-line: ban-types
   def Value(): js.Any = js.native
-  // tslint:disable-next-line: ban-types
   def Value(RangeValueDataType: XlRangeValueDataType): js.Any = js.native
   /**
-           * @param Weight [Weight=2]
-           * @param ColorIndex [ColorIndex=-4105]
-           */
+    * @param Weight [Weight=2]
+    * @param ColorIndex [ColorIndex=-4105]
+    */
   def _BorderAround(LineStyle: js.Any): js.Any = js.native
-  /**
-           * @param Weight [Weight=2]
-           * @param ColorIndex [ColorIndex=-4105]
-           */
   def _BorderAround(LineStyle: js.Any, Weight: XlBorderWeight): js.Any = js.native
-  /**
-           * @param Weight [Weight=2]
-           * @param ColorIndex [ColorIndex=-4105]
-           */
   def _BorderAround(LineStyle: js.Any, Weight: XlBorderWeight, ColorIndex: XlColorIndex): js.Any = js.native
-  /**
-           * @param Weight [Weight=2]
-           * @param ColorIndex [ColorIndex=-4105]
-           */
   def _BorderAround(LineStyle: js.Any, Weight: XlBorderWeight, ColorIndex: XlColorIndex, Color: js.Any): js.Any = js.native
   def _Default(): js.Any = js.native
   def _Default(RowIndex: js.Any): js.Any = js.native
   def _Default(RowIndex: js.Any, ColumnIndex: js.Any): js.Any = js.native
   /**
-           * @param Paste [Paste=-4104]
-           * @param Operation [Operation=-4142]
-           */
+    * @param Paste [Paste=-4104]
+    * @param Operation [Operation=-4142]
+    */
   def _PasteSpecial(): js.Any = js.native
-  /**
-           * @param Paste [Paste=-4104]
-           * @param Operation [Operation=-4142]
-           */
   def _PasteSpecial(Paste: XlPasteType): js.Any = js.native
-  /**
-           * @param Paste [Paste=-4104]
-           * @param Operation [Operation=-4142]
-           */
   def _PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation): js.Any = js.native
-  /**
-           * @param Paste [Paste=-4104]
-           * @param Operation [Operation=-4142]
-           */
   def _PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: js.Any): js.Any = js.native
-  /**
-           * @param Paste [Paste=-4104]
-           * @param Operation [Operation=-4142]
-           */
   def _PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: js.Any, Transpose: js.Any): js.Any = js.native
   def _PrintOut(
     From: js.UndefOr[js.Any],

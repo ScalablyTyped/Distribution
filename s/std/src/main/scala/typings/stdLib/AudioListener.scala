@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AudioListener extends js.Object {
   val forwardX: AudioParam
   val forwardY: AudioParam

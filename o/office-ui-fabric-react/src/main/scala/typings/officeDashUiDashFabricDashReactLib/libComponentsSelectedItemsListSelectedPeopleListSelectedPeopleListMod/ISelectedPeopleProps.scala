@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISelectedPeopleProps
   extends officeDashUiDashFabricDashReactLib.libComponentsSelectedItemsListBaseSelectedItemsListDotTypesMod.IBaseSelectedItemsListProps[IExtendedPersonaProps] {
   var copyMenuItemText: js.UndefOr[java.lang.String] = js.undefined

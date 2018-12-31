@@ -16,10 +16,10 @@ abstract class CompositeVideoFrameContext () extends js.Object {
   /** Gets the list of Direct3D surfaces to be used in an overlay operation. */
   var surfacesToOverlay: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtDashUwpLib.WindowsNs.GraphicsNs.DirectXNs.Direct3D11Ns.IDirect3DSurface] = js.native
   /**
-                   * Gets a MediaOverlay object for the provided Direct3D surface.
-                   * @param surfaceToOverlay The Direct3D surface.
-                   * @return The created MediaOverlay object.
-                   */
+    * Gets a MediaOverlay object for the provided Direct3D surface.
+    * @param surfaceToOverlay The Direct3D surface.
+    * @return The created MediaOverlay object.
+    */
   def getOverlayForSurface(surfaceToOverlay: winrtDashUwpLib.WindowsNs.GraphicsNs.DirectXNs.Direct3D11Ns.IDirect3DSurface): winrtDashUwpLib.WindowsNs.MediaNs.EditingNs.MediaOverlay = js.native
 }
 

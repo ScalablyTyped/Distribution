@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Lookup[T] extends Clonable[Lookup[T]] {
   def add(serviceIdentifier: ServiceIdentifier[_], value: T): scala.Unit
   def get(serviceIdentifier: ServiceIdentifier[_]): js.Array[T]

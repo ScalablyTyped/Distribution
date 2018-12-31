@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RecurrenceSpecObjLit extends js.Object {
   /**
-       * Day of the month.
-       */
+    * Day of the month.
+    */
   var date: js.UndefOr[RecurrenceSegment] = js.undefined
   var dayOfWeek: js.UndefOr[RecurrenceSegment] = js.undefined
   var hour: js.UndefOr[RecurrenceSegment] = js.undefined

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait FilterDatetimeSpecificity extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.2]
-     */
+  * [Api set: ExcelApi 1.2]
+  */
 @JSGlobal("Excel.FilterDatetimeSpecificity")
 @js.native
 object FilterDatetimeSpecificity extends js.Object {

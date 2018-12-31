@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TimeSpent extends js.Object {
   // A ratio of output size to input size (e.g. 25% if content was reduced from 100 bytes to 75 bytes)
   var efficiency: scala.Double

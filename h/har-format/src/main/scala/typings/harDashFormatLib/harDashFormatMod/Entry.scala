@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Entry extends js.Object {
   /** _non-standard_  */
   var _all_end: js.UndefOr[scala.Double | java.lang.String | scala.Null] = js.undefined
@@ -168,43 +167,43 @@ trait Entry extends js.Object {
   /**  A comment provided by the user or the application */
   var comment: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Unique ID of the parent TCP/IP connection, can be the client or server
-       * port number.
-       *
-       * Note that a port number doesn't have to be unique identifier
-       * in cases where the port is shared for more connections.
-       *
-       * If the port isn't available for the application, any other unique
-       * connection ID can be used instead (e.g. connection index). Leave out
-       * this field if the application doesn't support this info.
-       */
+    * Unique ID of the parent TCP/IP connection, can be the client or server
+    * port number.
+    *
+    * Note that a port number doesn't have to be unique identifier
+    * in cases where the port is shared for more connections.
+    *
+    * If the port isn't available for the application, any other unique
+    * connection ID can be used instead (e.g. connection index). Leave out
+    * this field if the application doesn't support this info.
+    */
   var connection: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Reference to the parent page. Leave out this field if the application
-       * does not support grouping by pages.
-       */
+    * Reference to the parent page. Leave out this field if the application
+    * does not support grouping by pages.
+    */
   var pageref: js.UndefOr[java.lang.String] = js.undefined
   /** Detailed info about the request. */
   var request: Request
   /** Detailed info about the response. */
   var response: Response
   /**
-       * IP address of the server that was connected
-       * (result of DNS resolution).
-       */
+    * IP address of the server that was connected
+    * (result of DNS resolution).
+    */
   var serverIPAddress: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Date and time stamp of the request start
-       *
-       * (ISO 8601 - `YYYY-MM-DDThh:mm:ss.sTZD`).
-       */
+    * Date and time stamp of the request start
+    *
+    * (ISO 8601 - `YYYY-MM-DDThh:mm:ss.sTZD`).
+    */
   var startedDateTime: java.lang.String
   /**
-       * Total elapsed time of the request in milliseconds.
-       *
-       * This is the sum of all timings available in the timings object
-       * (i.e. not including `-1` values).
-       */
+    * Total elapsed time of the request in milliseconds.
+    *
+    * This is the sum of all timings available in the timings object
+    * (i.e. not including `-1` values).
+    */
   var time: scala.Double
   /** Detailed timing info about request/response round trip. */
   var timings: Timings

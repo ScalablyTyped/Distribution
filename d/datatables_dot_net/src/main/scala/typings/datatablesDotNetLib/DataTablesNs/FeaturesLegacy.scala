@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FeaturesLegacy extends js.Object {
   var bAutoWidth: scala.Boolean
   var bDeferRender: scala.Boolean

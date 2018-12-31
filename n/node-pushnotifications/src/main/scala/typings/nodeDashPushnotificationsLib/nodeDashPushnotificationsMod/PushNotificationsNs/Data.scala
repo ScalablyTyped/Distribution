@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Data extends js.Object {
   /** apn and gcm for ios */
   var action: js.UndefOr[java.lang.String] = js.undefined
@@ -55,9 +54,9 @@ trait Data extends js.Object {
   /** apn */
   var mutableContent: js.UndefOr[scala.Double] = js.undefined
   /**
-           * gcm, apn. Supported values are 'high' or 'normal' (gcm). Will be translated to 10 and 5 for apn. Defaults
-           * to 'high'
-           */
+    * gcm, apn. Supported values are 'high' or 'normal' (gcm). Will be translated to 10 and 5 for apn. Defaults
+    * to 'high'
+    */
   var priority: js.UndefOr[java.lang.String] = js.undefined
   /** gcm for android */
   var restrictedPackageName: js.UndefOr[java.lang.String] = js.undefined

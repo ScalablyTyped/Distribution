@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GoogleCloudMlV1__PredictionOutput extends js.Object {
   /** The number of data instances which resulted in errors. */
   var errorCount: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRadio extends ICheckbox {
   /** [Method] If this radio is part of a group it will return the selected value
   		* @returns String

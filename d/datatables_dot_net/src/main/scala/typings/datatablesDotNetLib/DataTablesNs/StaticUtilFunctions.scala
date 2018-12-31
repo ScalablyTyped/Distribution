@@ -8,24 +8,18 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StaticUtilFunctions extends js.Object {
   /**
-           * Escape special characters in a regular expression string. Since: 1.10.4
-           *
-           * @param str String to escape
-           */
+    * Escape special characters in a regular expression string. Since: 1.10.4
+    *
+    * @param str String to escape
+    */
   def escapeRegex(str: java.lang.String): java.lang.String = js.native
   /**
-           * Throttle the calls to a method to reduce call frequency. Since: 1.10.3
-           *
-           * @param fn Function
-           * @param period ms
-           */
+    * Throttle the calls to a method to reduce call frequency. Since: 1.10.3
+    *
+    * @param fn Function
+    * @param period ms
+    */
   def throttle(fn: FunctionThrottle): js.Function0[scala.Unit] = js.native
-  /**
-           * Throttle the calls to a method to reduce call frequency. Since: 1.10.3
-           *
-           * @param fn Function
-           * @param period ms
-           */
   def throttle(fn: FunctionThrottle, period: scala.Double): js.Function0[scala.Unit] = js.native
 }
 

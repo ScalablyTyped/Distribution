@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TinySliderInfo extends js.Object {
   var cloneCount: scala.Double
   var container: reactLib.HTMLElement

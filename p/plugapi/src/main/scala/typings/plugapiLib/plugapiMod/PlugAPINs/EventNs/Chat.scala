@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Chat extends js.Object {
   var from: plugapiLib.plugapiMod.PlugAPINs.UserNs.User
   var id: java.lang.String

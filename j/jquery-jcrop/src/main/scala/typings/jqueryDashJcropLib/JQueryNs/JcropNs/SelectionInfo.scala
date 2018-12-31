@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectionInfo extends js.Object {
   var h: scala.Double
   var w: scala.Double

@@ -9,22 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object promiseNsMembers extends js.Object {
   /**
-           * Executes a function after promise fulfillment
-           *
-           * @returns the original promise
-           */
+    * Executes a function after promise fulfillment
+    *
+    * @returns the original promise
+    */
   def _finally[T](promise: js.Promise[T]): js.Promise[T] = js.native
-  /**
-           * Executes a function after promise fulfillment
-           *
-           * @returns the original promise
-           */
-  def _finally[T](promise: js.Promise[T], onFinally: js.Function1[/* repeated */js.Any, scala.Unit]): js.Promise[T] = js.native
+  def _finally[T](promise: js.Promise[T], onFinally: js.Function1[/* repeated */ js.Any, scala.Unit]): js.Promise[T] = js.native
   def callbackify[R](fn: js.Function0[js.Promise[R]]): js.Function1[
     /* callback */ js.Function2[/* err */ js.UndefOr[js.Any], /* result */ js.UndefOr[R], scala.Unit], 
     js.Promise[R]
   ] = js.native
-  def callbackify[R](fn: js.Function1[/* repeated */js.Any, js.Promise[R]]): js.Function1[/* repeated */js.Any, js.Promise[R]] = js.native
+  def callbackify[R](fn: js.Function1[/* repeated */ js.Any, js.Promise[R]]): js.Function1[/* repeated */ js.Any, js.Promise[R]] = js.native
   def callbackify[T1, T2, R](fn: js.Function2[/* a */ T1, /* b */ T2, js.Promise[R]]): js.Function3[
     /* a */ T1, 
     /* b */ T2, 
@@ -59,11 +54,11 @@ object promiseNsMembers extends js.Object {
     promise: js.Promise[T],
     callback: js.Function2[/* err */ js.UndefOr[js.Any], /* value */ js.UndefOr[T], scala.Unit]
   ): js.Promise[T] = js.native
-  def promisify(fn: js.Function1[/* repeated */js.Any, scala.Unit]): js.Function1[/* repeated */js.Any, js.Promise[_]] = js.native
+  def promisify(fn: js.Function1[/* repeated */ js.Any, scala.Unit]): js.Function1[/* repeated */ js.Any, js.Promise[_]] = js.native
   def promisify(
-    fn: js.Function1[/* repeated */js.Any, scala.Unit],
+    fn: js.Function1[/* repeated */ js.Any, scala.Unit],
     options: adoneLib.adoneNs.promiseNs.INs.PromisifyOptions
-  ): js.Function1[/* repeated */js.Any, js.Promise[_]] = js.native
+  ): js.Function1[/* repeated */ js.Any, js.Promise[_]] = js.native
   def promisify[T](
     fn: js.Function2[
       /* a */ T, 

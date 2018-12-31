@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IsVisible extends js.Object {
   /** Modal has been opened state. */
   var hasBeenOpened: js.UndefOr[scala.Boolean] = js.undefined

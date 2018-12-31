@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GradientRule extends js.Object {
   /** The final interpolation point. */
   var maxpoint: js.UndefOr[InterpolationPoint] = js.undefined

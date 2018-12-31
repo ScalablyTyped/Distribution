@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICalendarConfig extends js.Object {
   var allDateFormats: angularDashBootstrapDashCalendarLib.Anon_Moment
   var dateFormats: IDateFormats

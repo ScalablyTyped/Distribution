@@ -12,16 +12,16 @@ sealed trait DetailsListLayoutMode extends js.Object
 @js.native
 object DetailsListLayoutMode extends js.Object {
   /**
-       * Lets the user resize columns and makes not attempt to fit them.
-       */
+    * Lets the user resize columns and makes not attempt to fit them.
+    */
   @js.native
   sealed trait fixedColumns
     extends officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.DetailsListLayoutMode
   
   /**
-       * Manages which columns are visible, tries to size them according to their min/max rules and drops
-       * off columns that can't fit and have isCollapsible set.
-       */
+    * Manages which columns are visible, tries to size them according to their min/max rules and drops
+    * off columns that can't fit and have isCollapsible set.
+    */
   @js.native
   sealed trait justified
     extends officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.DetailsListLayoutMode

@@ -17,12 +17,12 @@ class Barcode protected ()
   @JSName("model")
   var model_Barcode: ejDotWebDotAllLib.ejNs.Model = js.native
   /** To disable the barcode
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def disable(): scala.Unit = js.native
   /** To enable the barcode
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def enable(): scala.Unit = js.native
 }
 

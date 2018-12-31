@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	*	VoxImplant login options
 	*/
-
 trait LoginOptions extends js.Object {
   /**
   		*	If set to false Web SDK can be used only for ACD status management

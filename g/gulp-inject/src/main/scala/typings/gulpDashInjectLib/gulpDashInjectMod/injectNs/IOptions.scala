@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOptions extends js.Object {
   var addPrefix: js.UndefOr[java.lang.String] = js.undefined
   var addRootSlash: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotificationStatisticsQueryConditions extends js.Object {
   var endDate: stdLib.Date
   var hitCountMinimum: scala.Double

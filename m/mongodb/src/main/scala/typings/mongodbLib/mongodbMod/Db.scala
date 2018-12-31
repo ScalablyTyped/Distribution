@@ -44,10 +44,10 @@ class Db protected ()
   def command(command: js.Object): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#command */
   def command(command: js.Object, callback: MongoCallback[_]): scala.Unit = js.native
-  def command(command: js.Object, options: mongodbLib.Anon_ReadPreferenceString_114210322): js.Promise[_] = js.native
+  def command(command: js.Object, options: mongodbLib.Anon_ReadPreferenceString_23433833): js.Promise[_] = js.native
   def command(
     command: js.Object,
-    options: mongodbLib.Anon_ReadPreferenceString_114210322,
+    options: mongodbLib.Anon_ReadPreferenceString_23433833,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
   def createCollection[TSchema](name: java.lang.String): js.Promise[Collection[TSchema]] = js.native
@@ -70,7 +70,6 @@ class Db protected ()
     callback: MongoCallback[_]
   ): scala.Unit = js.native
   def createIndex(name: java.lang.String, fieldOrSpec: js.Object): js.Promise[_] = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#createIndex */
   def createIndex(name: java.lang.String, fieldOrSpec: js.Object, callback: MongoCallback[_]): scala.Unit = js.native
   def createIndex(name: java.lang.String, fieldOrSpec: js.Object, options: IndexOptions): js.Promise[_] = js.native
   def createIndex(name: java.lang.String, fieldOrSpec: js.Object, options: IndexOptions, callback: MongoCallback[_]): scala.Unit = js.native
@@ -92,9 +91,7 @@ class Db protected ()
   def indexInformation(name: java.lang.String, options: mongodbLib.Anon_ReadPreferenceFull, callback: MongoCallback[_]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#listCollections */
   def listCollections(): CommandCursor = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#listCollections */
   def listCollections(filter: js.Object): CommandCursor = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#listCollections */
   def listCollections(filter: js.Object, options: mongodbLib.Anon_NameOnly): CommandCursor = js.native
   def profilingInfo(): js.Promise[scala.Unit] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#profilingInfo */

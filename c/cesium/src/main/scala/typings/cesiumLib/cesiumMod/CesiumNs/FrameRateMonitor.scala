@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FrameRateMonitor extends js.Object {
   var lastFramesPerSecond: scala.Double
   var lowFrameRate: Event

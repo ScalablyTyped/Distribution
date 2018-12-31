@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SafeRequire extends js.Object {
   var HTML: js.UndefOr[scala.Boolean] = js.undefined
   var action: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetPublishListResult extends js.Object {
   // 描述
   var description: java.lang.String

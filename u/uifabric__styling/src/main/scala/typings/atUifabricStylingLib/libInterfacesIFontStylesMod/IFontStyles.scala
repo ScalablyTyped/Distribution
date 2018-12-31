@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFontStyles extends js.Object {
   var large: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle
   var medium: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle

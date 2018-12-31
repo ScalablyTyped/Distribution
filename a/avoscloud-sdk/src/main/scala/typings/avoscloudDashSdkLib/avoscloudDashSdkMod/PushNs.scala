@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Contains functions to deal with Push in AV
-     * @name AV.Push
-     * @namespace
-     */
+  * Contains functions to deal with Push in AV
+  * @name AV.Push
+  * @namespace
+  */
 @JSImport("avoscloud-sdk", "Push")
 @js.native
 object PushNs extends js.Object {

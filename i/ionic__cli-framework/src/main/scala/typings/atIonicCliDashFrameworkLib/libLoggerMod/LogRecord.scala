@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LogRecord extends js.Object {
   var format: js.UndefOr[scala.Boolean] = js.undefined
   var level: js.UndefOr[LoggerLevelWeight] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Expect extends js.Object {
   var not: Expect
   def toBe(arg: js.Any): scala.Unit

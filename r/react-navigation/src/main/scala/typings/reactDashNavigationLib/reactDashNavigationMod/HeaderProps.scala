@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeaderProps extends NavigationTransitionProps {
   var mode: HeaderMode
   var router: NavigationRouter[NavigationState, NavigationStackScreenOptions]

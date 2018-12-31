@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListData_InView extends js.Object {
   var FilterFields: java.lang.String
   var FilterLink: java.lang.String

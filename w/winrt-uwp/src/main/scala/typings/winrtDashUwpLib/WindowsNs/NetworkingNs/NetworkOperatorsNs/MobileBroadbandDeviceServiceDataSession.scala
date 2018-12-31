@@ -40,10 +40,10 @@ abstract class MobileBroadbandDeviceServiceDataSession () extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-                   * Starts an asynchronous operation on a mobile broadband device service to write data to the data session.
-                   * @param value The data to be submitted as part of the write operation.
-                   * @return An asynchronous operation that returns the result of the write operation.
-                   */
+    * Starts an asynchronous operation on a mobile broadband device service to write data to the data session.
+    * @param value The data to be submitted as part of the write operation.
+    * @return An asynchronous operation that returns the result of the write operation.
+    */
   def writeDataAsync(value: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

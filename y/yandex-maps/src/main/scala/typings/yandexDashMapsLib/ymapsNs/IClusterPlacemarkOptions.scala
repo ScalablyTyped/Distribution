@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IClusterPlacemarkOptions extends js.Object {
   var balloonContentLayout: js.UndefOr[
     yandexDashMapsLib.yandexDashMapsLibStrings.`cluster#balloonTwoColumns` | yandexDashMapsLib.yandexDashMapsLibStrings.`cluster#balloonCarousel` | yandexDashMapsLib.yandexDashMapsLibStrings.`cluster#balloonAccordion` | java.lang.String | IClassConstructor[ILayout]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectMenuOptions extends js.Object {
   var corners: js.UndefOr[scala.Boolean] = js.undefined
   var hidePlaceholderMenuItems: scala.Boolean

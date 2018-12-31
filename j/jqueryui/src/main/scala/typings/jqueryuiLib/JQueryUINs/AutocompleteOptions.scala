@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Autocomplete //////////////////////////////////////////////////
-
 trait AutocompleteOptions extends AutocompleteEvents {
   var appendTo: js.UndefOr[js.Any] = js.undefined
    //Selector;

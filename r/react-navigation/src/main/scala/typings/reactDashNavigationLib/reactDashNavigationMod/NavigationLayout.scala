@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigationLayout extends js.Object {
   var height: AnimatedValue
   var initHeight: scala.Double

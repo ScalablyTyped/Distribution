@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait BarColor extends js.Object
 
 /**
-       * Configuration options for the colors of a progress bar
-      */
+  * Configuration options for the colors of a progress bar
+  */
 @JSGlobal("sap.ui.core.BarColor")
 @js.native
 object BarColor extends js.Object {

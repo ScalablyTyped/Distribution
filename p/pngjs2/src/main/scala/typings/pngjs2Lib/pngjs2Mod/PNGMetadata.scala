@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PNGMetadata extends js.Object {
   var alpha: scala.Boolean
   var color: scala.Boolean

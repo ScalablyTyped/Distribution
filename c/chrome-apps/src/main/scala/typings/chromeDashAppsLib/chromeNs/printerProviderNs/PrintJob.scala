@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PrintJob extends js.Object {
   /** The document content type. Supported formats are 'application/pdf' and 'image/pwg-raster'. */
   var contentType: java.lang.String

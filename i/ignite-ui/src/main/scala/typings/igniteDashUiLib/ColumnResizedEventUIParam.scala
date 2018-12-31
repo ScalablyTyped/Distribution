@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnResizedEventUIParam extends js.Object {
   /**
   	 * Gets the resized column index.

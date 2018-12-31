@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ZonesResource extends js.Object {
   var clusters: ClustersResource
   var operations: OperationsResource

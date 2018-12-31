@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPropertyValueStatics extends js.Object {
   def createBoolean(value: scala.Boolean): js.Any
   def createBooleanArray(value: js.Array[scala.Boolean]): js.Any

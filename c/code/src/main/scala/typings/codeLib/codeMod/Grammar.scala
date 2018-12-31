@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Grammar[T] extends js.Object {
   /** Connecting word. */
   var a: AssertionChain[T]

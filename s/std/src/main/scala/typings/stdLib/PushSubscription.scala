@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PushSubscription extends js.Object {
   val endpoint: java.lang.String
   val expirationTime: scala.Double | scala.Null

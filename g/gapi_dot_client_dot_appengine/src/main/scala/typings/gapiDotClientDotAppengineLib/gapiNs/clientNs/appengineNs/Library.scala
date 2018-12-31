@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Library extends js.Object {
   /** Name of the library. Example: "django". */
   var name: js.UndefOr[java.lang.String] = js.undefined

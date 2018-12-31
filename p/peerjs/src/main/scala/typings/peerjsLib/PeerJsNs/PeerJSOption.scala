@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PeerJSOption extends js.Object {
   var config: js.UndefOr[webrtcLib.RTCPeerConnectionConfig] = js.undefined
   var debug: js.UndefOr[scala.Double] = js.undefined

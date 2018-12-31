@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CheckIsSoterEnrolledInDeviceOptions
   extends BaseOptions[js.Any, js.Any] {
   var checkAuthMode: AuthModes

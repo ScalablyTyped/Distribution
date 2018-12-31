@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AppToolbarButtonView extends js.Object {
   var destroyed: scala.Boolean
   def close(): scala.Unit

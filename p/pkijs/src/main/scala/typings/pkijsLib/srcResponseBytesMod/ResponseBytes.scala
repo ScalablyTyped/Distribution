@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResponseBytes extends js.Object {
   var response: asn1jsLib.asn1jsMod.OctetString
   var responseType: java.lang.String

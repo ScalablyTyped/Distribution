@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region 芝麻认证 https://docs.alipay.com/mini/api/zm-service
-
 trait StartZMVerifyOptions
   extends BaseOptions[js.Any, js.Any] {
   var bizNo: java.lang.String

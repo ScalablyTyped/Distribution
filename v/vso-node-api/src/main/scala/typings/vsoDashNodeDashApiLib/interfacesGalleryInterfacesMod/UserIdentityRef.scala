@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserIdentityRef extends js.Object {
   /**
-       * User display name
-       */
+    * User display name
+    */
   var displayName: java.lang.String
   /**
-       * User VSID
-       */
+    * User VSID
+    */
   var id: java.lang.String
 }
 

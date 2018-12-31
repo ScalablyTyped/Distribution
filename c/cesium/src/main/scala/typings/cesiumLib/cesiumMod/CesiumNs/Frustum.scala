@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Frustum extends js.Object {
   var far: scala.Double
   var near: scala.Double

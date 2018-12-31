@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStaticCanvasOptions extends js.Object {
   /**
   	 * Indicates whether the browser can be scrolled when using a touchscreen and dragging on the canvas

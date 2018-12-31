@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SignupUrl extends js.Object {
   /** The name of the resource. This must be included in the create enterprise request at the end of the signup flow. */
   var name: js.UndefOr[java.lang.String] = js.undefined

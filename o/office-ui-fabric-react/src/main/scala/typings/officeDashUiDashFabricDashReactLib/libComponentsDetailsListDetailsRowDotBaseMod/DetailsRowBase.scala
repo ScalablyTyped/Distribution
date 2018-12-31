@@ -28,17 +28,17 @@ class DetailsRowBase protected ()
   /* private */ def _onSelectionChanged(): js.Any = js.native
   /* private */ def _onToggleSelection(): js.Any = js.native
   /**
-       * update isDropping state based on the input value, which is used to change style during drag and drop
-       *
-       * when change to true, that means drag enter. we will add default dropping class name
-       * or the custom dropping class name (return result from onDragEnter) to the root elemet.
-       *
-       * when change to false, that means drag leave. we will remove the dropping class name from root element.
-       *
-       * @private
-       * @param newValue - New isDropping state value
-       * @param event - The event trigger dropping state change which can be dragenter, dragleave etc
-       */
+    * update isDropping state based on the input value, which is used to change style during drag and drop
+    *
+    * when change to true, that means drag enter. we will add default dropping class name
+    * or the custom dropping class name (return result from onDragEnter) to the root elemet.
+    *
+    * when change to false, that means drag leave. we will remove the dropping class name from root element.
+    *
+    * @private
+    * @param newValue - New isDropping state value
+    * @param event - The event trigger dropping state change which can be dragenter, dragleave etc
+    */
   /* private */ def _updateDroppingState(newValue: js.Any, event: js.Any): js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MDetailsRowBase(): scala.Unit = js.native
@@ -55,11 +55,11 @@ class DetailsRowBase protected ()
   def focus(): scala.Boolean = js.native
   def focus(forceIntoFirstElement: scala.Boolean): scala.Boolean = js.native
   /**
-       * measure cell at index. and call the call back with the measured cell width when finish measure
-       *
-       * @param index - The cell index
-       * @param onMeasureDone - The call back function when finish measure
-       */
+    * measure cell at index. and call the call back with the measured cell width when finish measure
+    *
+    * @param index - The cell index
+    * @param onMeasureDone - The call back function when finish measure
+    */
   def measureCell(index: scala.Double, onMeasureDone: js.Function1[/* width */ scala.Double, scala.Unit]): scala.Unit = js.native
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MDetailsRowBase(

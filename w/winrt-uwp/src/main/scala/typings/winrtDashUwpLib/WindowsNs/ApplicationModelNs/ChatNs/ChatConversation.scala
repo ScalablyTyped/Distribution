@@ -35,39 +35,39 @@ abstract class ChatConversation () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[ChatConversation, RemoteParticipantComposingChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Asynchronously deletes all of the messages in the ChatConversation and the conversation itself.
-                   * @return An async action that indicates when the delete has completed.
-                   */
+    * Asynchronously deletes all of the messages in the ChatConversation and the conversation itself.
+    * @return An async action that indicates when the delete has completed.
+    */
   def deleteAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Gets the ChatMessageReader for this ChatConversation .
-                   * @return The ChatMessageReader for this ChatConversation .
-                   */
+    * Gets the ChatMessageReader for this ChatConversation .
+    * @return The ChatMessageReader for this ChatConversation .
+    */
   def getMessageReader(): ChatMessageReader = js.native
   /**
-                   * Asynchronously marks all the messages in the conversation as read.
-                   * @return An async action indicating that the operation has completed.
-                   */
+    * Asynchronously marks all the messages in the conversation as read.
+    * @return An async action indicating that the operation has completed.
+    */
   def markMessagesAsReadAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Asynchronously marks all the messages in the conversation before the specified DateTime as read.
-                   * @param value Mark all messages before this DateTime as read.
-                   * @return An async action indicating that the operation has completed.
-                   */
+    * Asynchronously marks all the messages in the conversation before the specified DateTime as read.
+    * @param value Mark all messages before this DateTime as read.
+    * @return An async action indicating that the operation has completed.
+    */
   def markMessagesAsReadAsync(value: stdLib.Date): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Call this to indicate that the local participant has started or has completed typing.
-                   * @param transportId Specifies the ChatMessageTransport to use.
-                   * @param participantAddress The address of the remote participant.
-                   * @param isComposing TRUE if the local participant is typing, otherwise FALSE.
-                   */
+    * Call this to indicate that the local participant has started or has completed typing.
+    * @param transportId Specifies the ChatMessageTransport to use.
+    * @param participantAddress The address of the remote participant.
+    * @param isComposing TRUE if the local participant is typing, otherwise FALSE.
+    */
   def notifyLocalParticipantComposing(transportId: java.lang.String, participantAddress: java.lang.String, isComposing: scala.Boolean): scala.Unit = js.native
   /**
-                   * Locally triggers the event that indicates that a remote participant is typing.
-                   * @param transportId Specifies the ChatMessageTransport to use.
-                   * @param participantAddress The address of the remote participant.
-                   * @param isComposing TRUE if the remote participant is typing, otherwise FALSE.
-                   */
+    * Locally triggers the event that indicates that a remote participant is typing.
+    * @param transportId Specifies the ChatMessageTransport to use.
+    * @param participantAddress The address of the remote participant.
+    * @param isComposing TRUE if the remote participant is typing, otherwise FALSE.
+    */
   def notifyRemoteParticipantComposing(transportId: java.lang.String, participantAddress: java.lang.String, isComposing: scala.Boolean): scala.Unit = js.native
   /** Occurs when the remote user has started or finished typing. */
   def onremoteparticipantcomposingchanged(
@@ -80,9 +80,9 @@ abstract class ChatConversation () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[ChatConversation, RemoteParticipantComposingChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Asynchronously saves the ChatConversation .
-                   * @return An async action indicating that the operation has completed.
-                   */
+    * Asynchronously saves the ChatConversation .
+    * @return An async action indicating that the operation has completed.
+    */
   def saveAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

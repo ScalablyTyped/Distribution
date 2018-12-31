@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TouchIDError extends js.Object {
   var details: js.Any
   var message: java.lang.String

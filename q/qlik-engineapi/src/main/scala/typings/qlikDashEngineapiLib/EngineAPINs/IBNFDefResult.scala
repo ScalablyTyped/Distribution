@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * IBNFDefResult
-     */
-
+  * IBNFDefResult
+  */
 trait IBNFDefResult extends js.Object {
   /**
-           * Description of the scripting language grammar.
-           */
+    * Description of the scripting language grammar.
+    */
   var qBnfDefs: js.Array[IBNFDef]
   /**
-           * A string hash of the BNF definition.
-           */
+    * A string hash of the BNF definition.
+    */
   var qBnfHash: java.lang.String
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RasterBandStatistics extends js.Object {
   var max: scala.Double
   var mean: scala.Double

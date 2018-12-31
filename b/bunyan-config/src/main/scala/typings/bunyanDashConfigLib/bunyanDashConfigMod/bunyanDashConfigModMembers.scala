@@ -9,16 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object bunyanDashConfigModMembers extends js.Object {
   /**
-       * Constructor.
-       * @param {Configuration} [jsonConfig] A JSON configuration.
-       * @return {LoggerOptions} A logger options.
-       */
+    * Constructor.
+    * @param {Configuration} [jsonConfig] A JSON configuration.
+    * @return {LoggerOptions} A logger options.
+    */
   def apply(): bunyanLib.bunyanMod.LoggerNs.LoggerOptions = js.native
-  /**
-       * Constructor.
-       * @param {Configuration} [jsonConfig] A JSON configuration.
-       * @return {LoggerOptions} A logger options.
-       */
   def apply(jsonConfig: Configuration): bunyanLib.bunyanMod.LoggerNs.LoggerOptions = js.native
 }
 

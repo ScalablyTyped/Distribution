@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileReaderEventMap extends js.Object {
   var abort: ProgressEvent
   var error: ProgressEvent

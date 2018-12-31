@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrderDeliveryDetails extends js.Object {
   /** The delivery address */
   var address: js.UndefOr[OrderAddress] = js.undefined

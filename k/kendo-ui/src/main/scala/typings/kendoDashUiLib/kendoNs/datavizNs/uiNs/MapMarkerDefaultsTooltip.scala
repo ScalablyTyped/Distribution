@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapMarkerDefaultsTooltip extends js.Object {
   var animation: js.UndefOr[MapMarkerDefaultsTooltipAnimation] = js.undefined
   var autoHide: js.UndefOr[scala.Boolean] = js.undefined

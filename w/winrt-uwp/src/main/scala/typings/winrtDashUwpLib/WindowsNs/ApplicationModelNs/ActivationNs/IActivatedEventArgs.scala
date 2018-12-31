@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides common properties for all activation types. */
-
 trait IActivatedEventArgs extends js.Object {
   /** Gets the reason that this app is being activated. */
   var kind: ActivationKind

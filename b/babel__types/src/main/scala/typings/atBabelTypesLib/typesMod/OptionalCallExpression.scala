@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OptionalCallExpression extends BaseNode {
   var arguments: js.Array[Expression | SpreadElement | JSXNamespacedName]
   var callee: Expression

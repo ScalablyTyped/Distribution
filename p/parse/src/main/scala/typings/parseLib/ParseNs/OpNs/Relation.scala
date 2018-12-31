@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Relation
   extends parseLib.ParseNs.IBaseObject {
   var removed: js.Array[parseLib.ParseNs.Object]

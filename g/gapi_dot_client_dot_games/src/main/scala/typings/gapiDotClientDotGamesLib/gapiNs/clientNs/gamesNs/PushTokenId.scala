@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PushTokenId extends js.Object {
   /** A push token ID for iOS devices. */
   var ios: js.UndefOr[gapiDotClientDotGamesLib.Anon_Apnsenvironment] = js.undefined

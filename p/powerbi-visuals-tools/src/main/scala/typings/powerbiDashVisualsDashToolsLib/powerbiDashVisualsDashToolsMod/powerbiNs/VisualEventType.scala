@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait VisualEventType extends js.Object
 
 /**
-     * Defines various events Visuals can notify the host on.
-     */
+  * Defines various events Visuals can notify the host on.
+  */
 @JSImport("powerbi-visuals-tools/powerbi", "VisualEventType")
 @js.native
 object VisualEventType extends js.Object {

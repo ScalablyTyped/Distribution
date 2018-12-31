@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices")
 @js.native
 object appservicesNs extends js.Object {
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IAppServiceAction because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IAppServiceAction because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class AppServiceAction protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     /**
-             * In version 7.9.0: introduced
-             */
+      * In version 7.9.0: introduced
+      */
     var actionReturnType: mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.DataType = js.native
     var caption: java.lang.String = js.native
     val containerAsConsumedAppService: ConsumedAppService = js.native
@@ -29,15 +29,15 @@ object appservicesNs extends js.Object {
     val parameters: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[AppServiceActionParameter] = js.native
     val qualifiedName: java.lang.String | scala.Null = js.native
     /**
-             * The value of this property is conceptually of type dataTypes.LegacyDataType.
-             *
-             * In version 7.9.0: deleted
-             */
+      * The value of this property is conceptually of type dataTypes.LegacyDataType.
+      *
+      * In version 7.9.0: deleted
+      */
     var returnType: java.lang.String = js.native
     var returnTypeCanBeEmpty: scala.Boolean = js.native
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IAppServiceActionParameter because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IAppServiceActionParameter because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class AppServiceActionParameter protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
@@ -48,15 +48,15 @@ object appservicesNs extends js.Object {
     var model_AppServiceActionParameter: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     var name: java.lang.String = js.native
     /**
-             * In version 7.9.0: introduced
-             */
+      * In version 7.9.0: introduced
+      */
     var parameterType: mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.DataType = js.native
     val qualifiedName: java.lang.String | scala.Null = js.native
     /**
-             * The value of this property is conceptually of type dataTypes.LegacyDataType.
-             *
-             * In version 7.9.0: deleted
-             */
+      * The value of this property is conceptually of type dataTypes.LegacyDataType.
+      *
+      * In version 7.9.0: deleted
+      */
     var `type`: java.lang.String = js.native
   }
   
@@ -65,9 +65,9 @@ object appservicesNs extends js.Object {
     extends mendixmodelsdkLib.distSdkInternalMod.AbstractEnum
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/consumed-app-services relevant section in reference guide}
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IConsumedAppService because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * See: {@link https://docs.mendix.com/refguide7/consumed-app-services relevant section in reference guide}
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IConsumedAppService because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class ConsumedAppService protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
@@ -86,8 +86,8 @@ object appservicesNs extends js.Object {
   }
   
   /**
-       * Interfaces and instance classes for types from the Mendix sub meta model `AppServices`.
-       */
+    * Interfaces and instance classes for types from the Mendix sub meta model `AppServices`.
+    */
   @js.native
   trait IAppServiceAction
     extends mendixmodelsdkLib.distSdkInternalElementsMod.IElement
@@ -110,8 +110,8 @@ object appservicesNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/consumed-app-services relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/consumed-app-services relevant section in reference guide}
+    */
   @js.native
   trait IConsumedAppService
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.IDocument {
@@ -273,8 +273,8 @@ object appservicesNs extends js.Object {
     var returnTypeCanBeEmpty: scala.Boolean = js.native
     var returnTypeSpecification: java.lang.String = js.native
     /**
-             * In version 6.1.0: deleted
-             */
+      * In version 6.1.0: deleted
+      */
     var systemEntityType: java.lang.String = js.native
   }
   
@@ -289,8 +289,8 @@ object appservicesNs extends js.Object {
     var model_MsdMicroflowParameter: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     var name: java.lang.String = js.native
     /**
-             * In version 6.1.0: deleted
-             */
+      * In version 6.1.0: deleted
+      */
     var systemEntityType: java.lang.String = js.native
     var `type`: java.lang.String = js.native
     var typeSpecification: java.lang.String = js.native
@@ -322,16 +322,16 @@ object appservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenAppservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new AppServiceAction instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new AppServiceAction instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceAction = js.native
     /**
-             * Creates and returns a new AppServiceAction instance in the SDK and on the server.
-             * The new AppServiceAction will be automatically stored in the 'actions' property
-             * of the parent ConsumedAppService element passed as argument.
-             */
+      * Creates and returns a new AppServiceAction instance in the SDK and on the server.
+      * The new AppServiceAction will be automatically stored in the 'actions' property
+      * of the parent ConsumedAppService element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.ConsumedAppService): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceAction = js.native
   }
   
@@ -340,16 +340,16 @@ object appservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenAppservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new AppServiceActionParameter instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new AppServiceActionParameter instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceActionParameter = js.native
     /**
-             * Creates and returns a new AppServiceActionParameter instance in the SDK and on the server.
-             * The new AppServiceActionParameter will be automatically stored in the 'parameters' property
-             * of the parent AppServiceAction element passed as argument.
-             */
+      * Creates and returns a new AppServiceActionParameter instance in the SDK and on the server.
+      * The new AppServiceActionParameter will be automatically stored in the 'parameters' property
+      * of the parent AppServiceAction element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceAction): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceActionParameter = js.native
   }
   
@@ -361,16 +361,16 @@ object appservicesNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/consumed-app-services relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/consumed-app-services relevant section in reference guide}
+    */
   @js.native
   object ConsumedAppService extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenAppservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates a new ConsumedAppService unit in the SDK and on the server.
-             * Expects one argument, the projects.IFolderBase in which this unit is contained.
-             */
+      * Creates a new ConsumedAppService unit in the SDK and on the server.
+      * Expects one argument, the projects.IFolderBase in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.ConsumedAppService = js.native
   }
   
@@ -379,16 +379,16 @@ object appservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenAppservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new Msd instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new Msd instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.Msd = js.native
     /**
-             * Creates and returns a new Msd instance in the SDK and on the server.
-             * The new Msd will be automatically stored in the 'msd' property
-             * of the parent ConsumedAppService element passed as argument.
-             */
+      * Creates and returns a new Msd instance in the SDK and on the server.
+      * The new Msd will be automatically stored in the 'msd' property
+      * of the parent ConsumedAppService element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.ConsumedAppService): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.Msd = js.native
   }
   
@@ -397,22 +397,22 @@ object appservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenAppservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new MsdAssociation instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new MsdAssociation instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdAssociation = js.native
     /**
-             * Creates and returns a new MsdAssociation instance in the SDK and on the server.
-             * The new MsdAssociation will be automatically stored in the 'associationByContract' property
-             * of the parent webservices.DataAssociation element passed as argument.
-             */
+      * Creates and returns a new MsdAssociation instance in the SDK and on the server.
+      * The new MsdAssociation will be automatically stored in the 'associationByContract' property
+      * of the parent webservices.DataAssociation element passed as argument.
+      */
     def createInDataAssociationUnderAssociationByContract(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataAssociation): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdAssociation = js.native
     /**
-             * Creates and returns a new MsdAssociation instance in the SDK and on the server.
-             * The new MsdAssociation will be automatically stored in the 'associations' property
-             * of the parent MsdDomainModel element passed as argument.
-             */
+      * Creates and returns a new MsdAssociation instance in the SDK and on the server.
+      * The new MsdAssociation will be automatically stored in the 'associations' property
+      * of the parent MsdDomainModel element passed as argument.
+      */
     def createInMsdDomainModelUnderAssociations(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdDomainModel): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdAssociation = js.native
   }
   
@@ -421,22 +421,22 @@ object appservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenAppservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new MsdAttribute instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new MsdAttribute instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdAttribute = js.native
     /**
-             * Creates and returns a new MsdAttribute instance in the SDK and on the server.
-             * The new MsdAttribute will be automatically stored in the 'attributeByContract' property
-             * of the parent webservices.DataAttribute element passed as argument.
-             */
+      * Creates and returns a new MsdAttribute instance in the SDK and on the server.
+      * The new MsdAttribute will be automatically stored in the 'attributeByContract' property
+      * of the parent webservices.DataAttribute element passed as argument.
+      */
     def createInDataAttributeUnderAttributeByContract(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataAttribute): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdAttribute = js.native
     /**
-             * Creates and returns a new MsdAttribute instance in the SDK and on the server.
-             * The new MsdAttribute will be automatically stored in the 'attributes' property
-             * of the parent MsdEntity element passed as argument.
-             */
+      * Creates and returns a new MsdAttribute instance in the SDK and on the server.
+      * The new MsdAttribute will be automatically stored in the 'attributes' property
+      * of the parent MsdEntity element passed as argument.
+      */
     def createInMsdEntityUnderAttributes(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEntity): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdAttribute = js.native
   }
   
@@ -445,16 +445,16 @@ object appservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenAppservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new MsdDomainModel instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new MsdDomainModel instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdDomainModel = js.native
     /**
-             * Creates and returns a new MsdDomainModel instance in the SDK and on the server.
-             * The new MsdDomainModel will be automatically stored in the 'domainModel' property
-             * of the parent Msd element passed as argument.
-             */
+      * Creates and returns a new MsdDomainModel instance in the SDK and on the server.
+      * The new MsdDomainModel will be automatically stored in the 'domainModel' property
+      * of the parent Msd element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.Msd): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdDomainModel = js.native
   }
   
@@ -463,16 +463,16 @@ object appservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenAppservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new MsdEntity instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new MsdEntity instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEntity = js.native
     /**
-             * Creates and returns a new MsdEntity instance in the SDK and on the server.
-             * The new MsdEntity will be automatically stored in the 'entities' property
-             * of the parent MsdDomainModel element passed as argument.
-             */
+      * Creates and returns a new MsdEntity instance in the SDK and on the server.
+      * The new MsdEntity will be automatically stored in the 'entities' property
+      * of the parent MsdDomainModel element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdDomainModel): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEntity = js.native
   }
   
@@ -481,16 +481,16 @@ object appservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenAppservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new MsdEnumeration instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new MsdEnumeration instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEnumeration = js.native
     /**
-             * Creates and returns a new MsdEnumeration instance in the SDK and on the server.
-             * The new MsdEnumeration will be automatically stored in the 'enumerations' property
-             * of the parent MsdEnumerationContainer element passed as argument.
-             */
+      * Creates and returns a new MsdEnumeration instance in the SDK and on the server.
+      * The new MsdEnumeration will be automatically stored in the 'enumerations' property
+      * of the parent MsdEnumerationContainer element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEnumerationContainer): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEnumeration = js.native
   }
   
@@ -499,22 +499,22 @@ object appservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenAppservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new MsdEnumerationContainer instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new MsdEnumerationContainer instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEnumerationContainer = js.native
     /**
-             * Creates and returns a new MsdEnumerationContainer instance in the SDK and on the server.
-             * The new MsdEnumerationContainer will be automatically stored in the 'enumerations' property
-             * of the parent Msd element passed as argument.
-             */
+      * Creates and returns a new MsdEnumerationContainer instance in the SDK and on the server.
+      * The new MsdEnumerationContainer will be automatically stored in the 'enumerations' property
+      * of the parent Msd element passed as argument.
+      */
     def createInMsdUnderEnumerations(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.Msd): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEnumerationContainer = js.native
     /**
-             * Creates and returns a new MsdEnumerationContainer instance in the SDK and on the server.
-             * The new MsdEnumerationContainer will be automatically stored in the 'enumerationsByContract' property
-             * of the parent webservices.VersionedService element passed as argument.
-             */
+      * Creates and returns a new MsdEnumerationContainer instance in the SDK and on the server.
+      * The new MsdEnumerationContainer will be automatically stored in the 'enumerationsByContract' property
+      * of the parent webservices.VersionedService element passed as argument.
+      */
     def createInVersionedServiceUnderEnumerationsByContract(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.VersionedService): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEnumerationContainer = js.native
   }
   
@@ -523,16 +523,16 @@ object appservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenAppservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new MsdEnumerationValue instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new MsdEnumerationValue instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEnumerationValue = js.native
     /**
-             * Creates and returns a new MsdEnumerationValue instance in the SDK and on the server.
-             * The new MsdEnumerationValue will be automatically stored in the 'values' property
-             * of the parent MsdEnumeration element passed as argument.
-             */
+      * Creates and returns a new MsdEnumerationValue instance in the SDK and on the server.
+      * The new MsdEnumerationValue will be automatically stored in the 'values' property
+      * of the parent MsdEnumeration element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEnumeration): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEnumerationValue = js.native
   }
   
@@ -541,16 +541,16 @@ object appservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenAppservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new MsdMetadata instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new MsdMetadata instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdMetadata = js.native
     /**
-             * Creates and returns a new MsdMetadata instance in the SDK and on the server.
-             * The new MsdMetadata will be automatically stored in the 'metadata' property
-             * of the parent Msd element passed as argument.
-             */
+      * Creates and returns a new MsdMetadata instance in the SDK and on the server.
+      * The new MsdMetadata will be automatically stored in the 'metadata' property
+      * of the parent Msd element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.Msd): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdMetadata = js.native
   }
   
@@ -559,16 +559,16 @@ object appservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenAppservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new MsdMicroflow instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new MsdMicroflow instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdMicroflow = js.native
     /**
-             * Creates and returns a new MsdMicroflow instance in the SDK and on the server.
-             * The new MsdMicroflow will be automatically stored in the 'microflows' property
-             * of the parent MsdMetadata element passed as argument.
-             */
+      * Creates and returns a new MsdMicroflow instance in the SDK and on the server.
+      * The new MsdMicroflow will be automatically stored in the 'microflows' property
+      * of the parent MsdMetadata element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdMetadata): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdMicroflow = js.native
   }
   
@@ -577,22 +577,22 @@ object appservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenAppservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new MsdMicroflowParameter instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new MsdMicroflowParameter instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdMicroflowParameter = js.native
     /**
-             * Creates and returns a new MsdMicroflowParameter instance in the SDK and on the server.
-             * The new MsdMicroflowParameter will be automatically stored in the 'parameters' property
-             * of the parent MsdMicroflow element passed as argument.
-             */
+      * Creates and returns a new MsdMicroflowParameter instance in the SDK and on the server.
+      * The new MsdMicroflowParameter will be automatically stored in the 'parameters' property
+      * of the parent MsdMicroflow element passed as argument.
+      */
     def createInMsdMicroflowUnderParameters(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdMicroflow): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdMicroflowParameter = js.native
     /**
-             * Creates and returns a new MsdMicroflowParameter instance in the SDK and on the server.
-             * The new MsdMicroflowParameter will be automatically stored in the 'parameterByContract' property
-             * of the parent webservices.PublishedParameter element passed as argument.
-             */
+      * Creates and returns a new MsdMicroflowParameter instance in the SDK and on the server.
+      * The new MsdMicroflowParameter will be automatically stored in the 'parameterByContract' property
+      * of the parent webservices.PublishedParameter element passed as argument.
+      */
     def createInPublishedParameterUnderParameterByContract(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedParameter): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdMicroflowParameter = js.native
   }
   
@@ -601,16 +601,16 @@ object appservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenAppservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new MsdText instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new MsdText instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdText = js.native
     /**
-             * Creates and returns a new MsdText instance in the SDK and on the server.
-             * The new MsdText will be automatically stored in the 'translations' property
-             * of the parent MsdEnumerationValue element passed as argument.
-             */
+      * Creates and returns a new MsdText instance in the SDK and on the server.
+      * The new MsdText will be automatically stored in the 'translations' property
+      * of the parent MsdEnumerationValue element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEnumerationValue): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdText = js.native
   }
   
@@ -619,16 +619,16 @@ object appservicesNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenAppservicesMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new MsdVersion instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new MsdVersion instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdVersion = js.native
     /**
-             * Creates and returns a new MsdVersion instance in the SDK and on the server.
-             * The new MsdVersion will be automatically stored in the 'version' property
-             * of the parent Msd element passed as argument.
-             */
+      * Creates and returns a new MsdVersion instance in the SDK and on the server.
+      * The new MsdVersion will be automatically stored in the 'version' property
+      * of the parent Msd element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.Msd): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdVersion = js.native
   }
   

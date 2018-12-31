@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InstantExperiencesAdsDialogParams extends DialogParams {
   var business_id: java.lang.String
   var canvas_id: js.UndefOr[java.lang.String] = js.undefined

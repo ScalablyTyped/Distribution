@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait _InputManager extends js.Object {
   /**
-   * A list of common keyCodes
-   */
+    * A list of common keyCodes
+    */
   var KEYS: athenajsLib.Anon_CTRL = js.native
   /**
-   * List of common pad buttons
-   */
+    * List of common pad buttons
+    */
   var PAD_BUTTONS: athenajsLib.Anon_RIGHTANALOGUESTICK = js.native
   var axes: JSObject = js.native
   // virtual joystick instance
@@ -34,22 +34,22 @@ trait _InputManager extends js.Object {
   var recording: scala.Boolean = js.native
   def clearEvents(): scala.Unit = js.native
   /**
-       * Returns an object with the state of all keys
-       */
+    * Returns an object with the state of all keys
+    */
   def getAllKeysStatus(): JSObject = js.native
   def getKeyStatus(key: java.lang.String, latch: scala.Boolean): scala.Boolean = js.native
   /**
-   * Initializes the InputManager with a reference to the game.
-   *
-   * This method prepares the InputManager by reseting keyboard states/handlers and
-   * set current inputMode
-   *
-   */
+    * Initializes the InputManager with a reference to the game.
+    *
+    * This method prepares the InputManager by reseting keyboard states/handlers and
+    * set current inputMode
+    *
+    */
   def init(): scala.Unit = js.native
   /**
-       * Install callback that gets called when a key is pressed/released
-       *
-       */
+    * Install callback that gets called when a key is pressed/released
+    *
+    */
   def installKeyCallback(
     key: java.lang.String,
     event: java.lang.String,
@@ -60,32 +60,32 @@ trait _InputManager extends js.Object {
   def isKeyDown(key: scala.Double): scala.Boolean = js.native
   def isKeyDown(key: scala.Double, latch: scala.Boolean): scala.Boolean = js.native
   /**
-   * Sets next key states using recorded events
-   *
-   * TODO: add an optional callback to be called at the end of the playback
-   * so that demo can be looped.
-   */
+    * Sets next key states using recorded events
+    *
+    * TODO: add an optional callback to be called at the end of the playback
+    * so that demo can be looped.
+    */
   def nextRecordedEvents(): scala.Unit = js.native
   /**
-   * After events have been reccorded they can be played back using this method.
-   */
+    * After events have been reccorded they can be played back using this method.
+    */
   def playRecordedEvents(): scala.Unit = js.native
   def removeKeyCallback(key: java.lang.String, event: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
-   * Saves current event state onto the recordedEvents stack
-   */
+    * Saves current event state onto the recordedEvents stack
+    */
   /**
-   * Changes input mode
-   *
-   */
+    * Changes input mode
+    *
+    */
   def setInputMode(mode: java.lang.String): scala.Unit = js.native
   /**
-   * Starts recording input events. They are stored into `InputManager.recordedEvents`
-   */
+    * Starts recording input events. They are stored into `InputManager.recordedEvents`
+    */
   def startRecordingEvents(): scala.Unit = js.native
   /**
-   * Stops recording events.
-   */
+    * Stops recording events.
+    */
   def stopRecordingEvents(): scala.Unit = js.native
 }
 

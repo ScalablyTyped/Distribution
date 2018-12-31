@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("bitcore-lib", "Networks")
 @js.native
 object NetworksNs extends js.Object {
-  
   trait Network extends js.Object {
     val alias: java.lang.String
     val name: java.lang.String

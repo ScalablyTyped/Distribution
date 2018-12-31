@@ -22,8 +22,8 @@ object PropertyType extends js.Object {
   /** Register a custom property type, where display and edit controls, and also widgets, are derived from the specified parent property type. */
   def RegisterNewDerivedCustomPropType(propType: sharepointLib.SPNs.JsGridNs.IPropertyType, baseTypeName: java.lang.String): scala.Unit = js.native
   /** Lookup property type factory, based on SP.JsGrid.PropertyType.LookupTable class.
-                  displayCtrlName should be one of the following: SP.JsGrid.DisplayControl.Type.Image, SP.JsGrid.DisplayControl.Type.ImageText or SP.JsGrid.DisplayControl.Type.Text
-               */
+    displayCtrlName should be one of the following: SP.JsGrid.DisplayControl.Type.Image, SP.JsGrid.DisplayControl.Type.ImageText or SP.JsGrid.DisplayControl.Type.Text
+    */
   def RegisterNewLookupPropType(
     id: java.lang.String,
     items: js.Array[_],

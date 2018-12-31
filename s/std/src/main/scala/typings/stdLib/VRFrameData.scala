@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VRFrameData extends js.Object {
   val leftProjectionMatrix: Float32Array
   val leftViewMatrix: Float32Array

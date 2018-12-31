@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents app content and properties that can be added to the ContentIndexer . */
-
 trait IIndexableContent extends js.Object {
   /** Gets or sets the identifier for the content properties in the IIndexableContent object. Changes to the actual representation of the item in the index can be made using the ContentIndexer class. */
   var id: java.lang.String

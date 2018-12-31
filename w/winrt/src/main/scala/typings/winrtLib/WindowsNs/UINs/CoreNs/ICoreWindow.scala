@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICoreWindow extends js.Object {
   var automationHostProvider: js.Any
   var bounds: winrtLib.WindowsNs.FoundationNs.Rect

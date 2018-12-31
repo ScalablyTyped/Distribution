@@ -5,17 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OutgoingMessage extends js.Object {
   /**
-               * Message data to send to the server.
-               *
-               * Case-insensitive goog. and google,
-               * as well as case-sensitive collapse_key
-               * are disallowed as key prefixes.
-               *
-               * Sum of all key/value pairs should not exceed gcm.MAX_MESSAGE_SIZE.
-               **/
+    * Message data to send to the server.
+    *
+    * Case-insensitive goog. and google,
+    * as well as case-sensitive collapse_key
+    * are disallowed as key prefixes.
+    *
+    * Sum of all key/value pairs should not exceed gcm.MAX_MESSAGE_SIZE.
+    **/
   var data: IGCMDataSend
   /** The ID of the server to send the message to as assigned by Google API Console. */
   var destinationId: java.lang.String

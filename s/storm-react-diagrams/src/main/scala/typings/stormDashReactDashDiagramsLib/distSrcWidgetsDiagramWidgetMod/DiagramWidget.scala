@@ -23,8 +23,8 @@ class DiagramWidget protected ()
   def drawSelectionBox(): reactLib.reactMod.Global.JSXNs.Element = js.native
   def fireAction(): scala.Unit = js.native
   /**
-       * Gets a model and element under the mouse cursor
-       */
+    * Gets a model and element under the mouse cursor
+    */
   def getMouseElement(event: js.Any): stormDashReactDashDiagramsLib.Anon_Model = js.native
   def onKeyUp(event: js.Any): scala.Unit = js.native
   def onKeyUpPointer(`this`: stdLib.Window, ev: reactLib.KeyboardEvent): scala.Unit = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OverviewMapControlOptions extends js.Object {
   var anchor: js.UndefOr[ControlAnchor] = js.undefined
   var isOpen: js.UndefOr[scala.Boolean] = js.undefined

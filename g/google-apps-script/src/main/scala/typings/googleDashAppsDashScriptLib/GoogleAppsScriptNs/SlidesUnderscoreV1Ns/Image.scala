@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Image extends js.Object {
   // An URL to an image with a default lifetime of 30 minutes.
   // This URL is tagged with the account of the requester. Anyone with the URL

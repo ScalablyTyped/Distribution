@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PanoramaOptions extends js.Object {
   var aroundControl: scala.Boolean
   var aroundControlOptions: AroundControlOptions

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListBoxItem extends js.Object {
   /** list of childItems */
   var childItems: js.UndefOr[js.Array[java.lang.String | ListBoxItem]] = js.undefined

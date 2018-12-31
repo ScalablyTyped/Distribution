@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SourceImageOptions extends js.Object {
   var attributions: js.UndefOr[AttributionLike] = js.undefined
   var extent: js.UndefOr[Extent] = js.undefined

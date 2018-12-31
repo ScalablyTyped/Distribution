@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiagramListener
   extends stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseListener[js.Any] {
   var gridUpdated: js.UndefOr[

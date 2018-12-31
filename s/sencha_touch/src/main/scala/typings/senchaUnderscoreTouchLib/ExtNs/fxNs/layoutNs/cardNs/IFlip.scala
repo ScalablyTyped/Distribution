@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFlip extends IStyle {
   /** [Method] Returns the value of duration
   		* @returns Number

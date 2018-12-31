@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RightProjection[A, B] extends js.Object {
   var self: js.Any
   def exists(f: js.Function1[/* b */ B, scala.Boolean]): scala.Boolean

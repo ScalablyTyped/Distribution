@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Group extends js.Object {
   val active: scala.Boolean
   val attributes: js.UndefOr[js.Any] = js.undefined

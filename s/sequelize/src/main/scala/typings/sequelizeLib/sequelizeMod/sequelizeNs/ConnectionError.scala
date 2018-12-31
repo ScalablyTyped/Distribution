@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ConnectionError
   extends BaseError
      with /**
-         * A base class for all connection related errors.
-         */
+  * A base class for all connection related errors.
+  */
 org.scalablytyped.runtime.Instantiable1[/* parent */ nodeLib.Error, ConnectionError]
 

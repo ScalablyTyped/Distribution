@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAccessControlList extends js.Object {
   val AutomaticComponents: IAccessControlListComponentContainer
   val CheckedOutToUserID: scala.Double

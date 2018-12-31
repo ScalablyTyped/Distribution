@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Manifest extends js.Object {
   var author: java.lang.String
   var configuration: js.UndefOr[org.scalablytyped.runtime.StringDictionary[ConfigurationDefinition]] = js.undefined

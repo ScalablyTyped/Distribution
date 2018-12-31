@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICandleStick extends IAggregative {
   /** [Config Option] (Number) */
   var barWidth: js.UndefOr[scala.Double] = js.undefined

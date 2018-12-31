@@ -289,7 +289,6 @@ object v2Ns extends js.Object {
     ): js.Promise[js.Array[dialogflowLib.dialogflowMod.SessionEntityType]] = js.native
     // TODO: add streaming calls
     def listSessionEntityTypes(request: dialogflowLib.dialogflowMod.ListSessionEntityTypesRequest): js.Promise[js.Array[js.Array[dialogflowLib.dialogflowMod.SessionEntityType]]] = js.native
-    // TODO: add streaming calls
     def listSessionEntityTypes(
       request: dialogflowLib.dialogflowMod.ListSessionEntityTypesRequest,
       options: dialogflowLib.dialogflowMod.gaxNs.CallOptions

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SortableEvents extends js.Object {
   var activate: js.UndefOr[SortableEvent] = js.undefined
   var beforeStop: js.UndefOr[SortableEvent] = js.undefined

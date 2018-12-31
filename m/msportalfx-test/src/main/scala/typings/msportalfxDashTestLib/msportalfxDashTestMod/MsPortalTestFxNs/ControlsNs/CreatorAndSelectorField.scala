@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreatorAndSelectorField extends FormElement {
   def clickCreateNew(): qLib.qMod.QNs.Promise[CreatorAndSelectorField]
   def enterNewValue(var_args: java.lang.String*): qLib.qMod.QNs.Promise[CreatorAndSelectorField]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodeRefFieldsOptions extends js.Object {
   /** 是否返回节点dataset */
   var dataset: js.UndefOr[scala.Boolean] = js.undefined

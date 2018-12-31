@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(reactDashMdLib.libTextFieldsTextFieldMod.SharedTextFieldProps because Would inherit conflicting mutable fields List(fullWidth, block))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(reactDashMdLib.libTextFieldsTextFieldMod.SharedTextFieldProps because Would inherit conflicting mutable fields List(block, fullWidth))*/
 trait SharedSelectFieldProps
   extends reactDashMdLib.libMenusMenuMod.BaseMenuProps {
   var defaultValue: js.UndefOr[scala.Double | java.lang.String] = js.undefined

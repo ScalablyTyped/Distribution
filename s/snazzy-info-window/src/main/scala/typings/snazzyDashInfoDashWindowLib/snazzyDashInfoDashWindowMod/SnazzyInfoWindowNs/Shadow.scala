@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Shadow extends js.Object {
   var blur: js.UndefOr[java.lang.String] = js.undefined
   var color: java.lang.String

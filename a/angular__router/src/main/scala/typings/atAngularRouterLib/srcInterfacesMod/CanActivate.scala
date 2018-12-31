@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CanActivate extends js.Object {
   def canActivate(
     route: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot,

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NgAnalyzedFile extends js.Object {
   var directives: js.Array[atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol]
   var exportsNonSourceFiles: scala.Boolean

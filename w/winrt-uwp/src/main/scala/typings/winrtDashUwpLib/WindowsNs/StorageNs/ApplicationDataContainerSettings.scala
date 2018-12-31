@@ -23,33 +23,33 @@ abstract class ApplicationDataContainerSettings () extends js.Object {
   /** Removes all related application settings. */
   def clear(): scala.Unit = js.native
   /**
-               * Retrieves an iterator to enumerate the settings in the settings container.
-               * @return The iterator.
-               */
+    * Retrieves an iterator to enumerate the settings in the settings container.
+    * @return The iterator.
+    */
   def first(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterator[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IKeyValuePair[_, _]] = js.native
   /**
-               * Returns a read-only snapshot of the contents of the settings container.
-               * @return The view of the settings container.
-               */
+    * Returns a read-only snapshot of the contents of the settings container.
+    * @return The view of the settings container.
+    */
   def getView(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, _] = js.native
   /**
-               * Determines whether there is an application setting with the specified key.
-               * @param key The key.
-               * @return True if the key is found; otherwise false.
-               */
+    * Determines whether there is an application setting with the specified key.
+    * @param key The key.
+    * @return True if the key is found; otherwise false.
+    */
   def hasKey(key: java.lang.String): scala.Boolean = js.native
   /**
-               * Inserts or replaces an application setting.
-               * @param key The key of the setting to insert or replace.
-               * @param value The setting value.
-               * @return True if an item with the specified key is an existing item and was replaced; otherwise, false.
-               */
+    * Inserts or replaces an application setting.
+    * @param key The key of the setting to insert or replace.
+    * @param value The setting value.
+    * @return True if an item with the specified key is an existing item and was replaced; otherwise, false.
+    */
   def insert(key: java.lang.String, value: js.Any): scala.Boolean = js.native
   /**
-               * Retrieves the specified application setting.
-               * @param key The key of the setting.
-               * @return The application setting.
-               */
+    * Retrieves the specified application setting.
+    * @param key The key of the setting.
+    * @return The application setting.
+    */
   def lookup(key: java.lang.String): js.Any = js.native
   /** Occurs when the map changes. */
   def onmapchanged(
@@ -58,10 +58,10 @@ abstract class ApplicationDataContainerSettings () extends js.Object {
     ])
   ): scala.Unit = js.native
   /**
-               * Removes a specific item from the ApplicationDataContainerSettings .
-               * @param key The key of the item to remove.
-               * @return true if the item was removed, otherwise false.
-               */
+    * Removes a specific item from the ApplicationDataContainerSettings .
+    * @param key The key of the item to remove.
+    * @return true if the item was removed, otherwise false.
+    */
   def remove(key: java.lang.String): scala.Boolean = js.native
   def removeEventListener(`type`: java.lang.String, listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]): scala.Unit = js.native
   @JSName("removeEventListener")
@@ -70,9 +70,9 @@ abstract class ApplicationDataContainerSettings () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.MapChangedEventHandler[java.lang.String, _]
   ): scala.Unit = js.native
   /**
-               * Removes the specified application setting.
-               * @param key The key of the setting.
-               */
+    * Removes the specified application setting.
+    * @param key The key of the setting.
+    */
   @JSName("remove")
   def remove_Unit(key: java.lang.String): scala.Unit = js.native
 }

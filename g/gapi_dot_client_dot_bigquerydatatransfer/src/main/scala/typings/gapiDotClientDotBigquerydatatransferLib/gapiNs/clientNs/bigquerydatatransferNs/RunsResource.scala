@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RunsResource extends js.Object {
   var transferLogs: TransferLogsResource
   /** Deletes the specified transfer run. */

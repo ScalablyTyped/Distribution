@@ -28,25 +28,25 @@ abstract class UploadOperation () extends js.Object {
   /** Gets the group that this upload operation belongs to. */
   var transferGroup: BackgroundTransferGroup = js.native
   /**
-                   * Returns an asynchronous operation that can be used to monitor progress and completion of the attached upload. Calling this method allows an app to attach upload operations that were started in a previous app instance.
-                   * @return Upload operation with callback.
-                   */
+    * Returns an asynchronous operation that can be used to monitor progress and completion of the attached upload. Calling this method allows an app to attach upload operations that were started in a previous app instance.
+    * @return Upload operation with callback.
+    */
   def attachAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[UploadOperation, UploadOperation] = js.native
   /**
-                   * Gets the response information.
-                   * @return Contains the data returned by a server response.
-                   */
+    * Gets the response information.
+    * @return Contains the data returned by a server response.
+    */
   def getResponseInformation(): ResponseInformation = js.native
   /**
-                   * Gets the partially uploaded response at the specified location.
-                   * @param position The position at which to start reading.
-                   * @return The result stream.
-                   */
+    * Gets the partially uploaded response at the specified location.
+    * @param position The position at which to start reading.
+    * @return The result stream.
+    */
   def getResultStreamAt(position: scala.Double): winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IInputStream = js.native
   /**
-                   * Starts an asynchronous upload operation.
-                   * @return An asynchronous upload operation that includes progress updates.
-                   */
+    * Starts an asynchronous upload operation.
+    * @return An asynchronous upload operation that includes progress updates.
+    */
   def startAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[UploadOperation, UploadOperation] = js.native
 }
 

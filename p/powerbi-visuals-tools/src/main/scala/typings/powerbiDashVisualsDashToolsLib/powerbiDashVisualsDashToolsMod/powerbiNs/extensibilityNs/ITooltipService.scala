@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITooltipService extends js.Object {
   def enabled(): scala.Boolean
   def hide(options: TooltipHideOptions): scala.Unit

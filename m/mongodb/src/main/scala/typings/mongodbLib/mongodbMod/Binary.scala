@@ -10,14 +10,10 @@ import scala.scalajs.js.annotation._
 class Binary protected ()
   extends bsonLib.bsonMod.Binary {
   /**
-       * @param buffer A buffer object containing the binary data
-       * @param subType Binary data subtype
-       */
+    * @param buffer A buffer object containing the binary data
+    * @param subType Binary data subtype
+    */
   def this(buffer: nodeLib.Buffer) = this()
-  /**
-       * @param buffer A buffer object containing the binary data
-       * @param subType Binary data subtype
-       */
   def this(buffer: nodeLib.Buffer, subType: scala.Double) = this()
 }
 

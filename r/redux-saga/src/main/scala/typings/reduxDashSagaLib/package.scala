@@ -27,7 +27,7 @@ package object reduxDashSagaLib {
     /* arg5 */ T5, 
     /* arg6 */ T6, 
     /* arg7 */ js.Any, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     js.Any
   ]
   type Saga0 = js.Function0[nodeLib.Iterator[js.Any]]
@@ -50,9 +50,15 @@ package object reduxDashSagaLib {
     /* arg4 */ T4, 
     /* arg5 */ T5, 
     /* arg6 */ T6, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     nodeLib.Iterator[js.Any]
   ]
-  type Subscribe[T] = js.Function1[/* cb */ js.Function1[/* input */ T | js.Any, scala.Unit], Unsubscribe]
+  type Subscribe[T] = js.Function1[
+    /* cb */ js.Function1[
+      /* input */ T | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify END */ js.Any), 
+      scala.Unit
+    ], 
+    Unsubscribe
+  ]
   type Unsubscribe = js.Function0[scala.Unit]
 }

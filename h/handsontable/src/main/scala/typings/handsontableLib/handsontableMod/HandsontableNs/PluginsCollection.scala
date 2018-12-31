@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Plugin collection, map for getPlugin method
-
 trait PluginsCollection extends js.Object {
   var autoColumnSize: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.AutoColumnSize
   var autoRowSize: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.AutoRowSize

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait XhrResponse extends js.Object {
   var body: js.Object | java.lang.String
   var headers: XhrHeaders

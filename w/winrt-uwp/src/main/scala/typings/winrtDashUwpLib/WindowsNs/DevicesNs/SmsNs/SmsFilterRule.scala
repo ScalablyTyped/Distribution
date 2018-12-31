@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class SmsFilterRule protected () extends js.Object {
   /**
-                   * Creates a new, empty SmsFilterRule .
-                   * @param messageType An enumeration value specifying the message type that will match this rule.
-                   */
+    * Creates a new, empty SmsFilterRule .
+    * @param messageType An enumeration value specifying the message type that will match this rule.
+    */
   def this(messageType: SmsMessageType) = this()
   /** A list of broadcast channels that match this rule. */
   var broadcastChannels: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[scala.Double] = js.native

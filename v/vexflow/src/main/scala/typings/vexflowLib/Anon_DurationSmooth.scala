@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DurationSmooth extends js.Object {
   var duration: java.lang.String
   var font: js.UndefOr[Anon_Weight] = js.undefined

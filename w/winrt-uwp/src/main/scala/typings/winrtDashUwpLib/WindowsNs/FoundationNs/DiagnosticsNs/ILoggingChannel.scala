@@ -16,28 +16,28 @@ trait ILoggingChannel
   /** Gets the name of the current LoggingChannel . */
   var name: java.lang.String = js.native
   /**
-                   * Logs a message to the current LoggingChannel .
-                   * @param eventString The message to log.
-                   */
+    * Logs a message to the current LoggingChannel .
+    * @param eventString The message to log.
+    */
   def logMessage(eventString: java.lang.String): scala.Unit = js.native
   /**
-                   * Logs a message to the current LoggingChannel with the specified LoggingLevel .
-                   * @param eventString The message to log.
-                   * @param level The logging level.
-                   */
+    * Logs a message to the current LoggingChannel with the specified LoggingLevel .
+    * @param eventString The message to log.
+    * @param level The logging level.
+    */
   def logMessage(eventString: java.lang.String, level: LoggingLevel): scala.Unit = js.native
   /**
-                   * Logs data to the current LoggingChannel .
-                   * @param value1 The string to associate with value2.
-                   * @param value2 The value to associate with value1.
-                   */
+    * Logs data to the current LoggingChannel .
+    * @param value1 The string to associate with value2.
+    * @param value2 The value to associate with value1.
+    */
   def logValuePair(value1: java.lang.String, value2: scala.Double): scala.Unit = js.native
   /**
-                   * Logs data to the current LoggingChannel with the specified LoggingLevel .
-                   * @param value1 The string to associate with value2.
-                   * @param value2 The value to associate with value1.
-                   * @param level The logging level.
-                   */
+    * Logs data to the current LoggingChannel with the specified LoggingLevel .
+    * @param value1 The string to associate with value2.
+    * @param value2 The value to associate with value1.
+    * @param level The logging level.
+    */
   def logValuePair(value1: java.lang.String, value2: scala.Double, level: LoggingLevel): scala.Unit = js.native
 }
 

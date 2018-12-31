@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InlineQueryResultCachedAudio extends InlineQueryResultBase {
   var audio_file_id: java.lang.String
   var caption: js.UndefOr[java.lang.String] = js.undefined

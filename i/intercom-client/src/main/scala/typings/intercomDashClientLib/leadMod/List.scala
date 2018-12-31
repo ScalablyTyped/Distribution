@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait List extends js.Object {
   var contacts: js.Array[Lead]
   var pages: intercomDashClientLib.Anon_Next

@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.formNs.fieldNs.IField because Would inherit conflicting mutable fields List(statics, uses, mixins, config, extend, inheritableStatics, alias, alternateClassName, requires, singleton, callSuper, self, getInitialConfig, callParent, callOverridden, initConfig, disabled))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.formNs.fieldNs.IField because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, disabled, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
 trait IHtmlEditor
   extends extjsLib.ExtNs.formNs.IFieldContainer {
   /** [Config Option] (String/Array/Ext.XTemplate) */

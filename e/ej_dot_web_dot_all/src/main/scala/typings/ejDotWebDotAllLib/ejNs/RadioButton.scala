@@ -16,12 +16,12 @@ class RadioButton protected () extends Widget {
   @JSName("model")
   var model_RadioButton: ejDotWebDotAllLib.ejNs.RadioButtonNs.Model = js.native
   /** To disable the RadioButton
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def disable(): scala.Unit = js.native
   /** To enable the RadioButton
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def enable(): scala.Unit = js.native
 }
 

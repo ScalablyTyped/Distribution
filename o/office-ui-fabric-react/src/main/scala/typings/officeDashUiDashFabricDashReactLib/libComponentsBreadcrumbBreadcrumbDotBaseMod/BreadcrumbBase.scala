@@ -20,17 +20,17 @@ class BreadcrumbBase protected ()
   var _onRenderBreadcrumb: js.Any = js.native
   var _onRenderItem: js.Any = js.native
   /**
-       * Validate incoming props
-       * @param props Props to validate
-       */
+    * Validate incoming props
+    * @param props Props to validate
+    */
   /* private */ def _validateProps(props: js.Any): js.Any = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MBreadcrumbBase(
     nextProps: officeDashUiDashFabricDashReactLib.libComponentsBreadcrumbBreadcrumbDotTypesMod.IBreadcrumbProps
   ): scala.Unit = js.native
   /**
-       * Sets focus to the first breadcrumb link.
-       */
+    * Sets focus to the first breadcrumb link.
+    */
   def focus(): scala.Unit = js.native
 }
 

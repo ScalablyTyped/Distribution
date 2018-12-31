@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FeatureSet extends HasZM {
    // optional
   var displayFieldName: js.UndefOr[java.lang.String] = js.undefined

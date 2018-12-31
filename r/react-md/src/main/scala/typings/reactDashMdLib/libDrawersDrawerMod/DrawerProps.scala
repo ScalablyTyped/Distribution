@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DrawerProps
   extends SharedDrawerProps
      with // for the `component` prop until refactored out
@@ -18,8 +17,8 @@ trait DrawerProps
   var mobileMinWidth: js.UndefOr[scala.Double] = js.undefined
   var mobileType: js.UndefOr[MobileDrawerType] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var onVisibilityToggle: js.UndefOr[
     js.Function2[
       /* visible */ scala.Boolean, 

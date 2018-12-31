@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 * An object representing the current status of QRScanner.
 */
-
 trait QRScannerStatus extends js.Object {
   /**
     * On iOS and Android 6.0+, camera access is granted at runtime by the user (by

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TrainedmodelsResource extends js.Object {
   /** Get analysis of the model and the data the model was trained on. */
   def analyze(request: gapiDotClientDotPredictionLib.Anon_Project): gapiDotClientLib.gapiNs.clientNs.Request[Analyze]

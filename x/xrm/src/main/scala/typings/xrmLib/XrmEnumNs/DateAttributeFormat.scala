@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait DateAttributeFormat extends js.Object
 
 /**
-     * Constant Enum: Date attribute formats for Attributes.Attribute.getFormat(), used by {@link Attributes.DateAttribute DateAttribute}.
-     * @see {@link Xrm.Attributes.DateAttributeFormat}
-     */
+  * Constant Enum: Date attribute formats for Attributes.Attribute.getFormat(), used by {@link Attributes.DateAttribute DateAttribute}.
+  * @see {@link Xrm.Attributes.DateAttributeFormat}
+  */
 @JSGlobal("XrmEnum.DateAttributeFormat")
 @js.native
 object DateAttributeFormat extends js.Object {

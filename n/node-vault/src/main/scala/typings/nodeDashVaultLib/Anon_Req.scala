@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Req extends js.Object {
   var query: js.UndefOr[nodeDashVaultLib.nodeDashVaultMod.NodeVaultNs.Option] = js.undefined
   var req: js.UndefOr[nodeDashVaultLib.nodeDashVaultMod.NodeVaultNs.Option] = js.undefined

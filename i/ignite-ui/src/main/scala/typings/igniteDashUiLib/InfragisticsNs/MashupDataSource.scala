@@ -46,11 +46,6 @@ class MashupDataSource protected () extends js.Object {
   	 * @param id Id of the transaction to commit. If no id is specified, will commit all transactions to the data source.
   	 */
   def commit(): scala.Unit = js.native
-  /**
-  	 * Update the data source with every transaction from the log
-  	 *
-  	 * @param id Id of the transaction to commit. If no id is specified, will commit all transactions to the data source.
-  	 */
   def commit(id: scala.Double): scala.Unit = js.native
   /**
   	 * Returns all of the bound data, without taking into account local paging, sorting, filtering, etc.
@@ -66,11 +61,6 @@ class MashupDataSource protected () extends js.Object {
   	 * @param ds
   	 */
   def dataSource(): js.Object = js.native
-  /**
-  	 * Gets/sets the dataSource setting. If no parameter is specified, returns settings.dataSource
-  	 *
-  	 * @param ds
-  	 */
   def dataSource(ds: js.Object): js.Object = js.native
   /**
   	 * Returns summaries data
@@ -93,11 +83,6 @@ class MashupDataSource protected () extends js.Object {
   	 * @param fields a field has the following format: {key: 'fieldKey', dataType: 'string/number/date' }
   	 */
   def fields(): js.Object = js.native
-  /**
-  	 * Sets a list of fields to the data source. If no parameter is specified, just returns the already existing list of fields
-  	 *
-  	 * @param fields a field has the following format: {key: 'fieldKey', dataType: 'string/number/date' }
-  	 */
   def fields(fields: js.Object): js.Object = js.native
   /**
   	 * Filters the data source locally. Remote filtering can be performed by just calling dataBind() and
@@ -129,12 +114,6 @@ class MashupDataSource protected () extends js.Object {
   	 * @param fields an array of fields that will be searched.
   	 */
   def filterByText(expression: java.lang.String): scala.Unit = js.native
-  /**
-  	 * Filters the data source locally by text. If "fields" parameter is set search is performed only in the listed fields otherwise all fields are searched.
-  	 *
-  	 * @param expression a text to search for. Multiple search texts should be separated by space. When multiple search texts are provided all of them should be presented in the search fields (bool logic "and" is applied).
-  	 * @param fields an array of fields that will be searched.
-  	 */
   def filterByText(expression: java.lang.String, fields: js.Array[_]): scala.Unit = js.native
   /**
   	 * Gets/sets a list of filtering settings
@@ -142,11 +121,6 @@ class MashupDataSource protected () extends js.Object {
   	 * @param f object holding all filtering settings. See settings.filtering
   	 */
   def filterSettings(): scala.Unit = js.native
-  /**
-  	 * Gets/sets a list of filtering settings
-  	 *
-  	 * @param f object holding all filtering settings. See settings.filtering
-  	 */
   def filterSettings(f: js.Object): scala.Unit = js.native
   /**
   	 * Returns filtered data if local filtering is applied. If filtering is not applied OR type of filtering is remote returns undefined.
@@ -160,21 +134,7 @@ class MashupDataSource protected () extends js.Object {
   	 * @param objPath Not used in $.ig.DataSource
   	 */
   def findRecordByKey(key: js.Object): js.Object = js.native
-  /**
-  	 * Returns a record by a specified key (requires that primaryKey is set in the settings)
-  	 *
-  	 * @param key Primary key of the record
-  	 * @param ds the data source in which to search for the record. When not set it will use the current data source.
-  	 * @param objPath Not used in $.ig.DataSource
-  	 */
   def findRecordByKey(key: js.Object, ds: java.lang.String): js.Object = js.native
-  /**
-  	 * Returns a record by a specified key (requires that primaryKey is set in the settings)
-  	 *
-  	 * @param key Primary key of the record
-  	 * @param ds the data source in which to search for the record. When not set it will use the current data source.
-  	 * @param objPath Not used in $.ig.DataSource
-  	 */
   def findRecordByKey(key: js.Object, ds: java.lang.String, objPath: java.lang.String): js.Object = js.native
   /**
   	 * Gets a cell value from the record by the specified fieldName. If there's a mapper defined for the field, the resolved by the mapper value will be returned.
@@ -225,11 +185,6 @@ class MashupDataSource protected () extends js.Object {
   	 * @param exprs array of sorting expressions. If not set check expressions defined in sorting settings
   	 */
   def isGroupByApplied(): scala.Boolean = js.native
-  /**
-  	 * Check whether grouping is applied for the specified sorting expressions.
-  	 *
-  	 * @param exprs array of sorting expressions. If not set check expressions defined in sorting settings
-  	 */
   def isGroupByApplied(exprs: js.Array[_]): scala.Boolean = js.native
   /**
   	 * Check whether the specified gorupby record is collapsed
@@ -257,11 +212,6 @@ class MashupDataSource protected () extends js.Object {
   	 * @param index the page index. If none is specified, returns the current page index.
   	 */
   def pageIndex(): scala.Double = js.native
-  /**
-  	 * Gets /sets the current page index. If an index is passed as a parameter, the data source is re-bound.
-  	 *
-  	 * @param index the page index. If none is specified, returns the current page index.
-  	 */
   def pageIndex(index: scala.Double): scala.Double = js.native
   /**
   	 * Gets /sets the page size and rebinds the data source if a parameter is specified. If no parameter is passed, returns the current page size
@@ -269,11 +219,6 @@ class MashupDataSource protected () extends js.Object {
   	 * @param s the page size.
   	 */
   def pageSize(): scala.Double = js.native
-  /**
-  	 * Gets /sets the page size and rebinds the data source if a parameter is specified. If no parameter is passed, returns the current page size
-  	 *
-  	 * @param s the page size.
-  	 */
   def pageSize(s: scala.Double): scala.Double = js.native
   /**
   	 * For internal use
@@ -287,11 +232,6 @@ class MashupDataSource protected () extends js.Object {
   	 * @param p object holding all paging settings. See settings.paging
   	 */
   def pagingSettings(): js.Object = js.native
-  /**
-  	 * Gets/sets a list of paging settings
-  	 *
-  	 * @param p object holding all paging settings. See settings.paging
-  	 */
   def pagingSettings(p: js.Object): js.Object = js.native
   /**
   	 * Returns a list of all transaction objects that are pending to be committed or rolled back to the data source
@@ -303,11 +243,6 @@ class MashupDataSource protected () extends js.Object {
   	 * @param value the page index that should be persisted. If none is specified, returns the current page index that should be persisted.
   	 */
   def persistedPageIndex(): scala.Double = js.native
-  /**
-  	 * Gets /sets the page index that should be persisted. For now ONLY when filtering is applied and call explicitly DataBind.
-  	 *
-  	 * @param value the page index that should be persisted. If none is specified, returns the current page index that should be persisted.
-  	 */
   def persistedPageIndex(value: scala.Double): scala.Double = js.native
   /**
   	 * Sets the page index to be equal to the previous page index and rebinds the data source
@@ -345,11 +280,6 @@ class MashupDataSource protected () extends js.Object {
   	 * @param id Record Id to find transactions for. If no id is specified, will rollback all transactions to the data source.
   	 */
   def rollback(): scala.Unit = js.native
-  /**
-  	 * Clears the transaction log without updating anything in the data source
-  	 *
-  	 * @param id Record Id to find transactions for. If no id is specified, will rollback all transactions to the data source.
-  	 */
   def rollback(id: js.Object): scala.Unit = js.native
   /**
   	 * Posts to the settings.updateUrl using $.ajax, by serializing the changes as url params
@@ -365,19 +295,7 @@ class MashupDataSource protected () extends js.Object {
   	 * @param t type of the data source. See settings.type
   	 */
   def schema(): scala.Unit = js.native
-  /**
-  	 * Gets/sets the schema definition.
-  	 *
-  	 * @param s a schema object
-  	 * @param t type of the data source. See settings.type
-  	 */
   def schema(s: js.Object): scala.Unit = js.native
-  /**
-  	 * Gets/sets the schema definition.
-  	 *
-  	 * @param s a schema object
-  	 * @param t type of the data source. See settings.type
-  	 */
   def schema(s: js.Object, t: java.lang.String): scala.Unit = js.native
   /**
   	 * Sets a cell value for the cell denoted by rowId and colId. Creates a transaction for the update operation and returns it
@@ -406,11 +324,6 @@ class MashupDataSource protected () extends js.Object {
   	 * @param s object holding all sorting settings. See settings.sorting
   	 */
   def sortSettings(): js.Object = js.native
-  /**
-  	 * Gets/sets a list of paging settings
-  	 *
-  	 * @param s object holding all sorting settings. See settings.sorting
-  	 */
   def sortSettings(s: js.Object): js.Object = js.native
   /**
   	 * Parses the string and returns an evaluated JSON object
@@ -434,25 +347,7 @@ class MashupDataSource protected () extends js.Object {
   	 * @param dsObj data source object - usually contains information about data records and metadata(holds info about summaries)
   	 */
   def summariesResponse(): js.Object = js.native
-  /**
-  	 * Applicable only when the data source is bound to remote data.
-  	 * Gets or sets summaries data.
-  	 * If key or dsObj are not set then returns summaries data.
-  	 * Takes summary data from passed argument dsObj(using argument key)
-  	 *
-  	 * @param key response key to take summary data(for example "Metadata.Summaries")
-  	 * @param dsObj data source object - usually contains information about data records and metadata(holds info about summaries)
-  	 */
   def summariesResponse(key: java.lang.String): js.Object = js.native
-  /**
-  	 * Applicable only when the data source is bound to remote data.
-  	 * Gets or sets summaries data.
-  	 * If key or dsObj are not set then returns summaries data.
-  	 * Takes summary data from passed argument dsObj(using argument key)
-  	 *
-  	 * @param key response key to take summary data(for example "Metadata.Summaries")
-  	 * @param dsObj data source object - usually contains information about data records and metadata(holds info about summaries)
-  	 */
   def summariesResponse(key: java.lang.String, dsObj: js.Object): js.Object = js.native
   /**
   	 * Gets/sets a list of summaries settings.
@@ -460,11 +355,6 @@ class MashupDataSource protected () extends js.Object {
   	 * @param s object holding all summaries settings. See settings.summaries
   	 */
   def summariesSettings(): scala.Unit = js.native
-  /**
-  	 * Gets/sets a list of summaries settings.
-  	 *
-  	 * @param s object holding all summaries settings. See settings.summaries
-  	 */
   def summariesSettings(s: js.Object): scala.Unit = js.native
   /**
   	 * Converts a HTML TABLE dom element to a JavaScript array of objects that contain the records data
@@ -496,57 +386,9 @@ class MashupDataSource protected () extends js.Object {
   	 * @param context
   	 */
   def totalRecordsCount(): scala.Double = js.native
-  /**
-  	 * Applicable only when the data source is bound to remote data.
-  	 * Gets / sets the total number of records in the data source.
-  	 * If data binding is remote, and there's paging or filtering enabled,
-  	 * the actual total number of records may not
-  	 * match the number of records that exists on the client
-  	 *
-  	 * @param count the total number of records
-  	 * @param key
-  	 * @param dsObj
-  	 * @param context
-  	 */
   def totalRecordsCount(count: scala.Double): scala.Double = js.native
-  /**
-  	 * Applicable only when the data source is bound to remote data.
-  	 * Gets / sets the total number of records in the data source.
-  	 * If data binding is remote, and there's paging or filtering enabled,
-  	 * the actual total number of records may not
-  	 * match the number of records that exists on the client
-  	 *
-  	 * @param count the total number of records
-  	 * @param key
-  	 * @param dsObj
-  	 * @param context
-  	 */
   def totalRecordsCount(count: scala.Double, key: js.Object): scala.Double = js.native
-  /**
-  	 * Applicable only when the data source is bound to remote data.
-  	 * Gets / sets the total number of records in the data source.
-  	 * If data binding is remote, and there's paging or filtering enabled,
-  	 * the actual total number of records may not
-  	 * match the number of records that exists on the client
-  	 *
-  	 * @param count the total number of records
-  	 * @param key
-  	 * @param dsObj
-  	 * @param context
-  	 */
   def totalRecordsCount(count: scala.Double, key: js.Object, dsObj: js.Object): scala.Double = js.native
-  /**
-  	 * Applicable only when the data source is bound to remote data.
-  	 * Gets / sets the total number of records in the data source.
-  	 * If data binding is remote, and there's paging or filtering enabled,
-  	 * the actual total number of records may not
-  	 * match the number of records that exists on the client
-  	 *
-  	 * @param count the total number of records
-  	 * @param key
-  	 * @param dsObj
-  	 * @param context
-  	 */
   def totalRecordsCount(count: scala.Double, key: js.Object, dsObj: js.Object, context: js.Object): scala.Double = js.native
   /**
   	 * Returns the accumulated transaction log as a string. The purpose of this is to be passed to URLs or used conveniently
@@ -568,12 +410,6 @@ class MashupDataSource protected () extends js.Object {
   	 * @return json|xml|unknown|array|function|htmlTableString|htmlTableId|htmlTableDom|invalid|remoteUrl|empty
   	 */
   def `type`(): java.lang.String = js.native
-  /**
-  	 * Gets/sets the type of the dataSource. If no parameter is specified, returns settings.type
-  	 *
-  	 * @param t
-  	 * @return json|xml|unknown|array|function|htmlTableString|htmlTableId|htmlTableDom|invalid|remoteUrl|empty
-  	 */
   def `type`(t: js.Object): java.lang.String = js.native
   /**
   	 * Updates a record in the datasource. Creates a transaction that can be committed / rolled back

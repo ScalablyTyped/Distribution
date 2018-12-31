@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSRect extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.rect
   var constrainProportions: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Request extends js.Object {
   var Client: Anon_Version
   var Environment: Anon_DocumentMode

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigationResetActionPayload extends js.Object {
   var actions: js.Array[NavigationNavigateAction]
   var index: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AssertionResult extends js.Object {
   var ancestorTitles: js.Array[java.lang.String]
   var duration: js.UndefOr[scala.Double] = js.undefined

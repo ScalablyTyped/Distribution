@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jointjs", "anchors")
 @js.native
 object anchorsNs extends js.Object {
-  
   trait AnchorArgumentsMap
     extends /* key */ org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]] {
     var bottom: BBoxAnchorArguments
@@ -25,31 +24,27 @@ object anchorsNs extends js.Object {
     var topRight: BBoxAnchorArguments
   }
   
-  
   trait BBoxAnchorArguments extends RotateAnchorArguments {
     var dx: js.UndefOr[scala.Double | java.lang.String] = js.undefined
     var dy: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   }
   
-  
   trait GenericAnchorJSON[K /* <: AnchorType */] extends js.Object {
-    var args: js.UndefOr[js.Any] = js.undefined
+    var args: /* import warning: ImportType.apply Failed type conversion: jointjs.jointjs.anchors.AnchorArgumentsMap[K] */ js.UndefOr[
+        /* import warning: ImportType.apply Failed type conversion: jointjs.jointjs.anchors.AnchorArgumentsMap[K] */ js.Any
+      ] = js.undefined
     var name: K
   }
-  
   
   trait MidSideAnchorArguments
     extends RotateAnchorArguments
        with PaddingAnchorArguments
   
-  
   trait ModelCenterAnchorArguments extends js.Object
-  
   
   trait PaddingAnchorArguments extends js.Object {
     var padding: js.UndefOr[scala.Double] = js.undefined
   }
-  
   
   trait RotateAnchorArguments extends js.Object {
     var rotate: js.UndefOr[scala.Boolean] = js.undefined
@@ -74,9 +69,9 @@ object anchorsNs extends js.Object {
     /* endView */ jointjsLib.jointjsMod.diaNs.CellView, 
     /* endMagnet */ stdLib.SVGElement, 
     /* anchorReference */ jointjsLib.jointjsMod.gNs.Point | stdLib.SVGElement, 
-    /* opt */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: jointjs.jointjs.anchors.AnchorArgumentsMap[K] */ /* opt */ js.Any, 
     jointjsLib.jointjsMod.gNs.Point
   ]
-  type GenericAnchorArguments[K /* <: AnchorType */] = js.Any
+  type GenericAnchorArguments[K /* <: AnchorType */] = /* import warning: ImportType.apply Failed type conversion: jointjs.jointjs.anchors.AnchorArgumentsMap[K] */ js.Any
 }
 

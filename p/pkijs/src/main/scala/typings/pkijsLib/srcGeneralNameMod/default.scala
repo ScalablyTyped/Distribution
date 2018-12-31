@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation._
 class default () extends GeneralName {
   def this(params: js.Any) = this()
   /**
-           * value type - from a tagged value (0 for "otherName", 1 for "rfc822Name" etc.)
-           * 
-           * @type {number}
-           * @memberOf GeneralName
-           */
+    * value type - from a tagged value (0 for "otherName", 1 for "rfc822Name" etc.)
+    * 
+    * @type {number}
+    * @memberOf GeneralName
+    */
   /* CompleteClass */
   override var `type`: scala.Double = js.native
   /**
-           * asn1js object having GENERAL_NAME value (type depends on "type" value)
-           * 
-           * @type {*}
-           * @memberOf GeneralName
-           */
+    * asn1js object having GENERAL_NAME value (type depends on "type" value)
+    * 
+    * @type {*}
+    * @memberOf GeneralName
+    */
   /* CompleteClass */
   override var value: js.Any = js.native
   /* CompleteClass */
@@ -37,10 +37,10 @@ class default () extends GeneralName {
 @js.native
 object default extends js.Object {
   /**
-           * Compare values with default values for all class members
-           * @param {string} memberName String name for a class member
-           * @param {*} memberValue Value to compare with default value
-           */
+    * Compare values with default values for all class members
+    * @param {string} memberName String name for a class member
+    * @param {*} memberValue Value to compare with default value
+    */
   def compareWithDefault(memberName: java.lang.String, memberValue: js.Any): scala.Boolean = js.native
   def defaultValues(memberName: java.lang.String): js.Any = js.native
   def schema(): js.Any = js.native

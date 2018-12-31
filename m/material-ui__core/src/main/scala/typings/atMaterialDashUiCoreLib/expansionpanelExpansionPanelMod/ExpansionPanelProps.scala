@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick, @material-ui/core.@material-ui/core.StandardProps) */ 
-trait ExpansionPanelProps
+- Lifted 3 members from Set(std.Pick<@material-ui/core.@material-ui/core/Paper.PaperProps, std.Exclude<keyof @material-ui/core.@material-ui/core/Paper.PaperProps, 'classes' | 'onChange'>>, @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/Paper.PaperProps, @material-ui/core.@material-ui/core/ExpansionPanel/ExpansionPanel.ExpansionPanelClassKey, 'onChange'>) */ trait ExpansionPanelProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ExpansionPanelClassKey] {
   var CollapseProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.collapseCollapseMod.CollapseProps]] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined

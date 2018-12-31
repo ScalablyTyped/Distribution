@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DayPickerProps extends js.Object {
   var canChangeMonth: js.UndefOr[scala.Boolean] = js.undefined
   var captionElement: js.UndefOr[

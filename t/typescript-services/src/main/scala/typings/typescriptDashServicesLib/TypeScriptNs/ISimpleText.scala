@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISimpleText extends js.Object {
   def charCodeAt(index: scala.Double): scala.Double
   def copyTo(

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AuthCodeGrantResult extends js.Object {
   var authorizationCode: java.lang.String
   var error: js.Any

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SecuritySchemeObject extends js.Object {
   var authorizationUrl: java.lang.String
   var description: js.UndefOr[java.lang.String] = js.undefined

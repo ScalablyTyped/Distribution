@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 sealed trait VisualInteractivityAction extends js.Object
 
 /**
-     * Defines actions to be taken by the visual in response to a selection.
-     *
-     * An undefined/null VisualInteractivityAction should be treated as Selection,
-     * as that is the default action.
-     */
+  * Defines actions to be taken by the visual in response to a selection.
+  *
+  * An undefined/null VisualInteractivityAction should be treated as Selection,
+  * as that is the default action.
+  */
 @JSImport("powerbi-visuals-tools/powerbi", "VisualInteractivityAction")
 @js.native
 object VisualInteractivityAction extends js.Object {

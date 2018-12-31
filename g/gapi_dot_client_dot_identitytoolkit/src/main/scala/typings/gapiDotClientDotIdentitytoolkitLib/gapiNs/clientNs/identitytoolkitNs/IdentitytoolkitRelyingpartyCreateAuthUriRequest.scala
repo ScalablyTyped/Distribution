@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IdentitytoolkitRelyingpartyCreateAuthUriRequest extends js.Object {
   /** The app ID of the mobile app, base64(CERT_SHA1):PACKAGE_NAME for Android, BUNDLE_ID for iOS. */
   var appId: js.UndefOr[java.lang.String] = js.undefined
@@ -18,9 +17,9 @@ trait IdentitytoolkitRelyingpartyCreateAuthUriRequest extends js.Object {
   /** The URI to which the IDP redirects the user after the federated login flow. */
   var continueUri: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The query parameter that client can customize by themselves in auth url. The following parameters are reserved for server so that they cannot be
-               * customized by clients: client_id, response_type, scope, redirect_uri, state, oauth_token.
-               */
+    * The query parameter that client can customize by themselves in auth url. The following parameters are reserved for server so that they cannot be
+    * customized by clients: client_id, response_type, scope, redirect_uri, state, oauth_token.
+    */
   var customParameter: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
   /** The hosted domain to restrict sign-in to accounts at that domain for Google Apps hosted accounts. */
   var hostedDomain: js.UndefOr[java.lang.String] = js.undefined
@@ -35,9 +34,9 @@ trait IdentitytoolkitRelyingpartyCreateAuthUriRequest extends js.Object {
   /** The native app package for OTA installation. */
   var otaApp: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The IdP ID. For white listed IdPs it's a short domain name e.g. google.com, aol.com, live.net and yahoo.com. For other OpenID IdPs it's the OP
-               * identifier.
-               */
+    * The IdP ID. For white listed IdPs it's a short domain name e.g. google.com, aol.com, live.net and yahoo.com. For other OpenID IdPs it's the OP
+    * identifier.
+    */
   var providerId: js.UndefOr[java.lang.String] = js.undefined
   /** The session_id passed by client. */
   var sessionId: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IndicesGetTemplateParams extends GenericParams {
   var flatSettings: js.UndefOr[scala.Boolean] = js.undefined
   var local: js.UndefOr[scala.Boolean] = js.undefined

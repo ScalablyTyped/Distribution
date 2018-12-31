@@ -21,9 +21,9 @@ object ltxModMembers extends js.Object {
   def equal(a: ltxLib.libElementMod.Element, b: ltxLib.libElementMod.Element): scala.Boolean = js.native
   def escapeXML(s: java.lang.String): java.lang.String = js.native
   def escapeXMLText(s: java.lang.String): java.lang.String = js.native
-  def isElement(el: js.Any): /* is Element */scala.Boolean = js.native
-  def isNode(el: js.Any): /* is Node */scala.Boolean = js.native
-  def isText(el: js.Any): /* is string */scala.Boolean = js.native
+  def isElement(el: js.Any): /* is ltx.ltx/lib/Element.Element */ scala.Boolean = js.native
+  def isNode(el: js.Any): /* is ltx.ltx/lib/Element.Node */ scala.Boolean = js.native
+  def isText(el: js.Any): /* is string */ scala.Boolean = js.native
   def nameEqual(a: ltxLib.libElementMod.Element, b: ltxLib.libElementMod.Element): scala.Boolean = js.native
   def parse(data: java.lang.String): ltxLib.libElementMod.Element = js.native
   def parse(data: java.lang.String, options: ltxLib.libParserMod.Parser): ltxLib.libElementMod.Element = js.native

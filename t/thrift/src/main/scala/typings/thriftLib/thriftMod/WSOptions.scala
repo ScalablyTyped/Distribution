@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WSOptions extends js.Object {
   var headers: HttpHeaders
   var host: java.lang.String

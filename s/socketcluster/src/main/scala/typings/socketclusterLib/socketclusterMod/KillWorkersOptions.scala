@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KillWorkersOptions extends js.Object {
   // Shut down the workers immediately without waiting for termination timeout.
   var immediate: js.UndefOr[scala.Boolean] = js.undefined

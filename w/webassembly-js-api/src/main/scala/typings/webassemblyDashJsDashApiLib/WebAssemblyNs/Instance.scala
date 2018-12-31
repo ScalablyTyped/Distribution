@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * WebAssembly.Instance
-     */
+  * WebAssembly.Instance
+  */
 @JSGlobal("WebAssembly.Instance")
 @js.native
 class Instance protected () extends js.Object {

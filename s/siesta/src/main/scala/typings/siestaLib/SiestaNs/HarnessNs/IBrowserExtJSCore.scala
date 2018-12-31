@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @mixin
-         */
-
+  * @mixin
+  */
 trait IBrowserExtJSCore extends js.Object {
   var coverageUnit: java.lang.String
   var excludeCoverageUnits: stdLib.RegExp

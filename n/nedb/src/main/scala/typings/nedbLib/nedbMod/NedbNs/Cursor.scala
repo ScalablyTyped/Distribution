@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Cursor[T] extends js.Object {
   def exec(callback: js.Function2[/* err */ stdLib.Error, /* documents */ js.Array[T], scala.Unit]): scala.Unit
   def limit(n: scala.Double): Cursor[T]

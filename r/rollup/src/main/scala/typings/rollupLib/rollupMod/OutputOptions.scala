@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OutputOptions extends js.Object {
   var amd: js.UndefOr[rollupLib.Anon_Define] = js.undefined
   var assetFileNames: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProjectsResource extends js.Object {
   /** Returns the email address of the service account for your project used for interactions with Google Cloud KMS. */
   def getServiceAccount(request: gapiDotClientDotBigqueryLib.Anon_PrettyPrintProjectIdQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[GetServiceAccountResponse]

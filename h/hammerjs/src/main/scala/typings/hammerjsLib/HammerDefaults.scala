@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HammerDefaults extends HammerOptions {
   @JSName("cssProps")
   var cssProps_HammerDefaults: CssProps

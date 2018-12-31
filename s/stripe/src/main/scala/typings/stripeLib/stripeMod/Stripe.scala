@@ -39,12 +39,12 @@ trait Stripe extends js.Object {
   var plans: stripeLib.stripeMod.StripeNs.resourcesNs.Plans = js.native
   var products: stripeLib.stripeMod.StripeNs.resourcesNs.Products = js.native
   /**
-       * @deprecated
-       */
+    * @deprecated
+    */
   var recipientCards: stripeLib.stripeMod.StripeNs.resourcesNs.RecipientCards = js.native
   /**
-       * @deprecated
-       */
+    * @deprecated
+    */
   var recipients: stripeLib.stripeMod.StripeNs.resourcesNs.Recipients = js.native
   var refunds: stripeLib.stripeMod.StripeNs.resourcesNs.Refunds = js.native
   var resources: stripeLib.Anon_BitcoinReceivers = js.native

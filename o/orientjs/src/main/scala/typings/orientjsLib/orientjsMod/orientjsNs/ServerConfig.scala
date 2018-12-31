@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerConfig extends js.Object {
   var host: java.lang.String
   var password: js.UndefOr[java.lang.String] = js.undefined

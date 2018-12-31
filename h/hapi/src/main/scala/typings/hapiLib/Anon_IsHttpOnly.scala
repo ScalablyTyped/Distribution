@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IsHttpOnly extends js.Object {
   var encoding: js.UndefOr[
     hapiLib.hapiLibStrings.none | hapiLib.hapiLibStrings.base64 | hapiLib.hapiLibStrings.base64json | hapiLib.hapiLibStrings.form | hapiLib.hapiLibStrings.iron

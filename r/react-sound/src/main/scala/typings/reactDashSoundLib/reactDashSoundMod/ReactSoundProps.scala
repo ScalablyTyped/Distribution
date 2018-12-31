@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactSoundProps extends js.Object {
   var autoLoad: js.UndefOr[scala.Boolean] = js.undefined
   var loop: js.UndefOr[scala.Boolean] = js.undefined

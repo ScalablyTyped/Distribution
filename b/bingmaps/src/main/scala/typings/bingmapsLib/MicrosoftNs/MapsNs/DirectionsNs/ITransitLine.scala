@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITransitLine extends js.Object {
   /** The short name for the transit line. */
   var abbreviatedName: java.lang.String

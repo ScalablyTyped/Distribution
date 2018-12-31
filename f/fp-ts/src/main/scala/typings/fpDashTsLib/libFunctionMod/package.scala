@@ -103,5 +103,5 @@ package object libFunctionMod {
   type Kleisli[F, A, B] = js.Function1[/* a */ A, fpDashTsLib.libHKTMod.HKT[F, B]]
   type Lazy[A] = js.Function0[A]
   type Predicate[A] = js.Function1[/* a */ A, scala.Boolean]
-  type Refinement[A, B /* <: A */] = js.Function1[/* a */ A, /* is B */scala.Boolean]
+  type Refinement[A, B /* <: A */] = js.Function1[/* a */ A, /* is B */ scala.Boolean]
 }

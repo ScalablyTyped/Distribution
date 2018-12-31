@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkspaceProposalHistoryStatusChange extends js.Object {
   /** The new proposal status after that status change. */
   var newStatus: js.UndefOr[java.lang.String] = js.undefined

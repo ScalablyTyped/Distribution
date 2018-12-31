@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BookmarkTreeNode extends js.Object {
   /** Optional. An ordered list of children of this node.  */
   var children: js.UndefOr[js.Array[BookmarkTreeNode]] = js.undefined
@@ -22,10 +21,10 @@ trait BookmarkTreeNode extends js.Object {
   /** The text displayed for the node. */
   var title: java.lang.String
   /**
-           * Optional.
-            * Since Chrome 37.
-           * Indicates the reason why this node is unmodifiable. The managed value indicates that this node was configured by the system administrator or by the custodian of a supervised user. Omitted if the node can be modified by the user and the extension (default).
-           */
+    * Optional.
+    * Since Chrome 37.
+    * Indicates the reason why this node is unmodifiable. The managed value indicates that this node was configured by the system administrator or by the custodian of a supervised user. Omitted if the node can be modified by the user and the extension (default).
+    */
   var unmodifiable: js.UndefOr[js.Any] = js.undefined
   /** Optional. The URL navigated to when a user clicks the bookmark. Omitted for folders.   */
   var url: js.UndefOr[java.lang.String] = js.undefined

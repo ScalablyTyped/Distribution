@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMenu extends ISheet {
   /** [Method] Only fire the hide event if it is initialized */
   var doSetHidden: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

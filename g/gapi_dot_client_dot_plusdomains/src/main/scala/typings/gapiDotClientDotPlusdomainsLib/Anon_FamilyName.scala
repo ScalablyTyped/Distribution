@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FamilyName extends js.Object {
   /** The family name (last name) of this person. */
   var familyName: js.UndefOr[java.lang.String] = js.undefined

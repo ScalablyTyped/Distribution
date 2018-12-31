@@ -9,50 +9,50 @@ import scala.scalajs.js.annotation._
 trait BaseResponse
   extends koaLib.koaMod.ContextDelegatedResponse {
   /**
-           * Return response header.
-           */
+    * Return response header.
+    */
   var header: js.Any = js.native
   /**
-           * Return response header, alias as response.header
-           */
+    * Return response header, alias as response.header
+    */
   var headers: js.Any = js.native
   /**
-           * Return the request socket.
-           *
-           * @return {Connection}
-           * @api public
-           */
+    * Return the request socket.
+    *
+    * @return {Connection}
+    * @api public
+    */
   var socket: nodeLib.netMod.Socket = js.native
   /**
-           * Return response header.
-           *
-           * Examples:
-           *
-           *     this.get('Content-Type');
-           *     // => "text/plain"
-           *
-           *     this.get('content-type');
-           *     // => "text/plain"
-           */
+    * Return response header.
+    *
+    * Examples:
+    *
+    *     this.get('Content-Type');
+    *     // => "text/plain"
+    *
+    *     this.get('content-type');
+    *     // => "text/plain"
+    */
   def get(field: java.lang.String): java.lang.String = js.native
   /**
-           * Inspect implementation.
-           */
+    * Inspect implementation.
+    */
   def inspect(): js.Any = js.native
   /**
-           * Check whether the response is one of the listed types.
-           * Pretty much the same as `this.request.is()`.
-           *
-           * @param {String|Array} types...
-           * @return {String|false}
-           * @api public
-           */
+    * Check whether the response is one of the listed types.
+    * Pretty much the same as `this.request.is()`.
+    *
+    * @param {String|Array} types...
+    * @return {String|false}
+    * @api public
+    */
   // is(): string;
   def is(types: java.lang.String*): java.lang.String = js.native
   def is(types: js.Array[java.lang.String]): java.lang.String = js.native
   /**
-           * Return JSON representation.
-           */
+    * Return JSON representation.
+    */
   def toJSON(): js.Any = js.native
 }
 

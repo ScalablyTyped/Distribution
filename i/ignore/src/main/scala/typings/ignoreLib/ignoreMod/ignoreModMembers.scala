@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ignoreModMembers extends js.Object {
   /**
-   * Creates new ignore manager.
-   */
+    * Creates new ignore manager.
+    */
   def default(): Ignore = js.native
 }
 

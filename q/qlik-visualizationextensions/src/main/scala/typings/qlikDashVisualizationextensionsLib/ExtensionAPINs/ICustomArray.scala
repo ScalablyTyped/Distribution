@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICustomArray extends ICustomControl {
   var addTranslation: java.lang.String
   var allowAdd: scala.Boolean

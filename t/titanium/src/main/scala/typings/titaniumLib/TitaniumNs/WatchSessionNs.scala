@@ -156,9 +156,6 @@ object WatchSessionNs extends js.Object {
   		 * Sends a message to the apple watch.
   		 */
   def sendMessage(message: js.Any): scala.Unit = js.native
-  /**
-  		 * Sends a message to the apple watch.
-  		 */
   def sendMessage(message: js.Any, reply: js.Function1[/* param0 */ titaniumLib.MessageReply, _]): scala.Unit = js.native
   /**
   		 * Sets the value of the <Titanium.WatchSession.bubbleParent> property.

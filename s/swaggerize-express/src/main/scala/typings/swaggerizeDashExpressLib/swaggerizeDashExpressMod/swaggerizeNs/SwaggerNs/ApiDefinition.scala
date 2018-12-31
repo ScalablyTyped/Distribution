@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ApiDefinition extends js.Object {
   var basePath: js.UndefOr[java.lang.String] = js.undefined
   var consumes: js.UndefOr[MimeTypes] = js.undefined

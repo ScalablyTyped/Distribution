@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Cells extends js.Object {
   var canvasSize: js.UndefOr[scala.Double] = js.undefined
   var cells: js.UndefOr[scala.Double] = js.undefined

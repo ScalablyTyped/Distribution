@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   @JSName("$ref")
   var $ref: js.UndefOr[swaggerDashParserLib.Anon_External] = js.undefined

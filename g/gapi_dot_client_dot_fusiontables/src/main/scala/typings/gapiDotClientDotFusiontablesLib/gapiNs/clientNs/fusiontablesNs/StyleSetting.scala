@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StyleSetting extends js.Object {
   /**
-               * The kind of item this is. A StyleSetting contains the style definitions for points, lines, and polygons in a table. Since a table can have any one or
-               * all of them, a style definition can have point, line and polygon style definitions.
-               */
+    * The kind of item this is. A StyleSetting contains the style definitions for points, lines, and polygons in a table. Since a table can have any one or
+    * all of them, a style definition can have point, line and polygon style definitions.
+    */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /** Style definition for points in the table. */
   var markerOptions: js.UndefOr[PointStyle] = js.undefined

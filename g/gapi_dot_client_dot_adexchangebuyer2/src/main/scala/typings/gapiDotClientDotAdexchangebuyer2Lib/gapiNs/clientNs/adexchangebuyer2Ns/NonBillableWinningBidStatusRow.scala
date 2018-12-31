@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NonBillableWinningBidStatusRow extends js.Object {
   /** The number of bids with the specified status. */
   var bidCount: js.UndefOr[MetricValue] = js.undefined

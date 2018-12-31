@@ -6,14 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Provides data for the MinimizationStateChanged event.
- */
-
+  * Provides data for the MinimizationStateChanged event.
+  */
 trait ASPxClientRibbonMinimizationStateEventArgs extends ASPxClientEventArgs {
   /**
-       * Returns the value indicating the new ribbon state.
-       * Value: The integer value indicating the ribbon minimization state.
-       */
+    * Returns the value indicating the new ribbon state.
+    * Value: The integer value indicating the ribbon minimization state.
+    */
   var ribbonState: scala.Double
 }
 

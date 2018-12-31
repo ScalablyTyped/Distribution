@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserUpdate extends js.Object {
   var avatarID: java.lang.String
   var curatorPoints: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlashSymbolItem extends js.Object {
   var scalingGrid: scala.Boolean
   var scalingGridRect: FlashRectangle

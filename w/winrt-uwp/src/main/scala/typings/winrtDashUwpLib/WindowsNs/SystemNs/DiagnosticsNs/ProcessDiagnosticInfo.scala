@@ -30,14 +30,14 @@ abstract class ProcessDiagnosticInfo () extends js.Object {
 @js.native
 object ProcessDiagnosticInfo extends js.Object {
   /**
-                   * Gets the ProcessDiagnosticInfo for the currently running process.
-                   * @return The ProcessDiagnosticInfo for the currently running process.
-                   */
+    * Gets the ProcessDiagnosticInfo for the currently running process.
+    * @return The ProcessDiagnosticInfo for the currently running process.
+    */
   def getForCurrentProcess(): winrtDashUwpLib.WindowsNs.SystemNs.DiagnosticsNs.ProcessDiagnosticInfo = js.native
   /**
-                   * Gets a list of ProcessDiagnosticInfo objects for all running processes.
-                   * @return A list of ProcessDiagnosticInfo objects for all running processes.
-                   */
+    * Gets a list of ProcessDiagnosticInfo objects for all running processes.
+    * @return A list of ProcessDiagnosticInfo objects for all running processes.
+    */
   def getForProcesses(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtDashUwpLib.WindowsNs.SystemNs.DiagnosticsNs.ProcessDiagnosticInfo] = js.native
 }
 

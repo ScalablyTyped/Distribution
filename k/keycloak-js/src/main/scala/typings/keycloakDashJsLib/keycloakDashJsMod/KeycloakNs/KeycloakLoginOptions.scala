@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeycloakLoginOptions extends js.Object {
   /**
   		 * If value is `'register'` then user is redirected to registration page,
@@ -25,13 +24,13 @@ trait KeycloakLoginOptions extends js.Object {
   var idpHint: js.UndefOr[java.lang.String] = js.undefined
   /**
   		 * Specifies the desired Keycloak locale for the UI.  This differs from
-                   * the locale param in that it tells the Keycloak server to set a cookie and update
-                   * the user's profile to a new preferred locale.
+    * the locale param in that it tells the Keycloak server to set a cookie and update
+    * the user's profile to a new preferred locale.
   		 */
   var kcLocale: js.UndefOr[java.lang.String] = js.undefined
   /**
   		 * Sets the 'ui_locales' query param in compliance with section 3.1.2.1
-                   * of the OIDC 1.0 specification.
+    * of the OIDC 1.0 specification.
   		 */
   var locale: js.UndefOr[java.lang.String] = js.undefined
   /**

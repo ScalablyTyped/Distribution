@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Dimension
-     */
-
+  * Dimension
+  */
 trait IDimension extends js.Object {
   var height: scala.Double
   var width: scala.Double

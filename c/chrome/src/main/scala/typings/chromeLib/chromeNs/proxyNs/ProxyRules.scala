@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProxyRules extends js.Object {
   /** Optional. List of servers to connect to without a proxy server. */
   var bypassList: js.UndefOr[js.Array[java.lang.String]] = js.undefined

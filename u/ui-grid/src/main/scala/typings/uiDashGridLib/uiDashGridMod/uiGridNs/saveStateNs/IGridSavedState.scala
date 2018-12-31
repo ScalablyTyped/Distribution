@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGridSavedState extends js.Object {
   var columns: js.UndefOr[js.Array[ISavedColumn]] = js.undefined
   var grouping: uiDashGridLib.uiDashGridMod.uiGridNs.groupingNs.IGridGroupingConfiguration

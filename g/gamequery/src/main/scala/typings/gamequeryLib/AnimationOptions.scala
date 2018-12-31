@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnimationOptions extends js.Object {
   var delta: js.UndefOr[scala.Double] = js.undefined
   var distance: js.UndefOr[scala.Double] = js.undefined

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("virtual-dom/vnode/is-thunk", JSImport.Namespace)
 @js.native
 object vnodeIsDashThunkMod extends js.Object {
-  def apply(vTree: virtualDashDomLib.VirtualDOMNs.VTree): /* is Thunk */scala.Boolean = js.native
+  def apply(vTree: virtualDashDomLib.VirtualDOMNs.VTree): /* is virtual-dom.VirtualDOM.Thunk */ scala.Boolean = js.native
 }
 

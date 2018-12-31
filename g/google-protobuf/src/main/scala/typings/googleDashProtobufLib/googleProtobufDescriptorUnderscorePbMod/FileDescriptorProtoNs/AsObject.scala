@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AsObject extends js.Object {
   var dependencyList: js.Array[java.lang.String]
   var enumTypeList: js.Array[

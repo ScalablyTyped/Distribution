@@ -24,7 +24,6 @@ trait SCClientSocket
   var state: socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.States = js.native
   // Perform client-initiated authentication by providing an encrypted token string.
   def authenticate(signedAuthToken: java.lang.String): scala.Unit = js.native
-  // Perform client-initiated authentication by providing an encrypted token string.
   def authenticate(
     signedAuthToken: java.lang.String,
     callback: js.Function2[

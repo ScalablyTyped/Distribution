@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CustomArray extends js.Object {
   var custom: js.Array[chartmogulDashNodeLib.chartmogulDashNodeMod.CustomerNs.NewCustomAttributes]
 }

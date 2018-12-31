@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WheelOption extends js.Object {
   var adjustTime: scala.Double
   var rotate: scala.Double

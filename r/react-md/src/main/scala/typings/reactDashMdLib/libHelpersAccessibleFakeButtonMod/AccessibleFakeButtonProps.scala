@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccessibleFakeButtonProps
   extends // for the `component` prop until refactored out
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {

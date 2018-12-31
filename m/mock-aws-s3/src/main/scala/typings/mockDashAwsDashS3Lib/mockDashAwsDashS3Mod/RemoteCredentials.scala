@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "RemoteCredentials")
 @js.native
+/**
+  * Represents credentials received.
+  * @param {object} options - Override the default (1s) timeout period.
+  */
 class RemoteCredentials ()
   extends awsDashSdkLib.awsDashSdkMod.RemoteCredentials {
-  /**
-           * Represents credentials received.
-           * @param {object} options - Override the default (1s) timeout period.
-           */
   def this(options: awsDashSdkLib.libCredentialsRemoteUnderscoreCredentialsMod.RemoteCredentialsOptions) = this()
 }
 

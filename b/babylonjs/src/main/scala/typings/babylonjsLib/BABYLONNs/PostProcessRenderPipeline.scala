@@ -6,21 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * PostProcessRenderPipeline
-     * @see https://doc.babylonjs.com/how_to/how_to_use_postprocessrenderpipeline
-     */
+  * PostProcessRenderPipeline
+  * @see https://doc.babylonjs.com/how_to/how_to_use_postprocessrenderpipeline
+  */
 @JSGlobal("BABYLON.PostProcessRenderPipeline")
 @js.native
 class PostProcessRenderPipeline protected () extends js.Object {
   /**
-           * Initializes a PostProcessRenderPipeline
-           * @param engine engine to add the pipeline to
-           * @param name name of the pipeline
-           */
+    * Initializes a PostProcessRenderPipeline
+    * @param engine engine to add the pipeline to
+    * @param name name of the pipeline
+    */
   def this(engine: Engine, name: java.lang.String) = this()
   /**
-           * @hidden
-           */
+    * @hidden
+    */
   var _cameras: js.Array[Camera] = js.native
   /** @hidden */
   var _name: java.lang.String = js.native
@@ -28,8 +28,8 @@ class PostProcessRenderPipeline protected () extends js.Object {
   var _renderEffectsForIsolatedPass: js.Any = js.native
   var engine: js.Any = js.native
   /**
-           * If all the render effects in the pipeline are support
-           */
+    * If all the render effects in the pipeline are support
+    */
   val isSupported: scala.Boolean = js.native
   /** @hidden */
   def _attachCameras(cameras: Camera, unique: scala.Boolean): scala.Unit = js.native
@@ -53,18 +53,18 @@ class PostProcessRenderPipeline protected () extends js.Object {
   /** @hidden */
   def _update(): scala.Unit = js.native
   /**
-           * Adds an effect to the pipeline
-           * @param renderEffect the effect to add
-           */
+    * Adds an effect to the pipeline
+    * @param renderEffect the effect to add
+    */
   def addEffect(renderEffect: PostProcessRenderEffect): scala.Unit = js.native
   /**
-           * Disposes of the pipeline
-           */
+    * Disposes of the pipeline
+    */
   def dispose(): scala.Unit = js.native
   /**
-           * "PostProcessRenderPipeline"
-           * @returns "PostProcessRenderPipeline"
-           */
+    * "PostProcessRenderPipeline"
+    * @returns "PostProcessRenderPipeline"
+    */
   def getClassName(): java.lang.String = js.native
 }
 

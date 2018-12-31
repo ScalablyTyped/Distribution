@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait History extends js.Object {
   /** The mailbox sequence ID. */
   var id: js.UndefOr[java.lang.String] = js.undefined
@@ -14,9 +13,9 @@ trait History extends js.Object {
   /** Labels removed from messages in this history record. */
   var labelsRemoved: js.UndefOr[js.Array[HistoryLabelRemoved]] = js.undefined
   /**
-               * List of messages changed in this history record. The fields for specific change types, such as messagesAdded may duplicate messages in this field. We
-               * recommend using the specific change-type fields instead of this.
-               */
+    * List of messages changed in this history record. The fields for specific change types, such as messagesAdded may duplicate messages in this field. We
+    * recommend using the specific change-type fields instead of this.
+    */
   var messages: js.UndefOr[js.Array[Message]] = js.undefined
   /** Messages added to the mailbox in this history record. */
   var messagesAdded: js.UndefOr[js.Array[HistoryMessageAdded]] = js.undefined

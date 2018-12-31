@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "Signer")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class Signer ()
   extends awsDashSdkLib.awsDashSdkMod.Signer {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsSignerMod.SignerNs.ClientConfiguration) = this()
 }
 

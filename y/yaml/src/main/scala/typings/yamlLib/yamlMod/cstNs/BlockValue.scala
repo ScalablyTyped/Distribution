@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BlockValue extends Node {
   var blockIndent: scala.Double | scala.Null
   var chomping: yamlLib.yamlLibStrings.CLIP | yamlLib.yamlLibStrings.KEEP | yamlLib.yamlLibStrings.STRIP

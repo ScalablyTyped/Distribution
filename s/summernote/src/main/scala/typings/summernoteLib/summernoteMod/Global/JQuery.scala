@@ -21,7 +21,6 @@ trait JQuery extends js.Object {
   def summernote(options: summernoteLib.summernoteMod.Global.SummernoteNs.Options): JQuery = js.native
   @JSName("summernote")
   def summernote_backColor(command: summernoteLib.summernoteLibStrings.backColor, color: java.lang.String): JQuery = js.native
-  // Font style API
   @JSName("summernote")
   def summernote_bold(fontStyle: summernoteLib.summernoteLibStrings.bold): JQuery = js.native
   @JSName("summernote")
@@ -33,7 +32,6 @@ trait JQuery extends js.Object {
     command: summernoteLib.summernoteLibStrings.createLink,
     options: summernoteLib.summernoteMod.Global.SummernoteNs.CreateLinkOptions
   ): JQuery = js.native
-  // Basic API
   @JSName("summernote")
   def summernote_createRange(command: summernoteLib.summernoteLibStrings.createRange): JQuery = js.native
   @JSName("summernote")
@@ -55,14 +53,12 @@ trait JQuery extends js.Object {
   // Insertion API
   @JSName("summernote")
   def summernote_editorinsertImage(command: summernoteLib.summernoteLibStrings.editorDOTinsertImage, url: java.lang.String): JQuery = js.native
-  // Insertion API
   @JSName("summernote")
   def summernote_editorinsertImage(
     command: summernoteLib.summernoteLibStrings.editorDOTinsertImage,
     url: java.lang.String,
     filename: java.lang.String
   ): JQuery = js.native
-  // Insertion API
   @JSName("summernote")
   def summernote_editorinsertImage(
     command: summernoteLib.summernoteLibStrings.editorDOTinsertImage,
@@ -138,17 +134,14 @@ trait JQuery extends js.Object {
   def summernote_formatPara(command: summernoteLib.summernoteLibStrings.formatPara): JQuery = js.native
   @JSName("summernote")
   def summernote_indent(command: summernoteLib.summernoteLibStrings.indent): JQuery = js.native
-  // Insertion API
   @JSName("summernote")
   def summernote_insertImage(command: summernoteLib.summernoteLibStrings.insertImage, url: java.lang.String): JQuery = js.native
-  // Insertion API
   @JSName("summernote")
   def summernote_insertImage(
     command: summernoteLib.summernoteLibStrings.insertImage,
     url: java.lang.String,
     filename: java.lang.String
   ): JQuery = js.native
-  // Insertion API
   @JSName("summernote")
   def summernote_insertImage(
     command: summernoteLib.summernoteLibStrings.insertImage,
@@ -173,7 +166,6 @@ trait JQuery extends js.Object {
   def summernote_justifyCenter(command: summernoteLib.summernoteLibStrings.justifyCenter): JQuery = js.native
   @JSName("summernote")
   def summernote_justifyFull(command: summernoteLib.summernoteLibStrings.justifyFull): JQuery = js.native
-  // Paragraph API
   @JSName("summernote")
   def summernote_justifyLeft(command: summernoteLib.summernoteLibStrings.justifyLeft): JQuery = js.native
   @JSName("summernote")

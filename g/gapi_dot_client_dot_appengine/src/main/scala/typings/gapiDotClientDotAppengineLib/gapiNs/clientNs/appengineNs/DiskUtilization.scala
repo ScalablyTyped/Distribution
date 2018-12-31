@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiskUtilization extends js.Object {
   /** Target bytes read per second. */
   var targetReadBytesPerSecond: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Alpha extends js.Object {
   var alpha: js.UndefOr[scala.Double | cesiumLib.cesiumMod.CesiumNs.ImageryLayerNs.ValueFunc] = js.undefined
   var brightness: js.UndefOr[scala.Double | cesiumLib.cesiumMod.CesiumNs.ImageryLayerNs.ValueFunc] = js.undefined

@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion "SettingsLegacy"
 //#region "ext internal"
-
 trait ExtSettings extends js.Object {
   var aTypes: js.Array[_]
   var afnFiltering: js.Array[_]
@@ -33,8 +32,8 @@ trait ExtSettings extends js.Object {
   var search: js.Array[_]
   var selector: js.Object
   /**
-           * Type based plug-ins.
-           */
+    * Type based plug-ins.
+    */
   var `type`: ExtTypeSettings
   def fnVersionCheck(version: java.lang.String): java.lang.String
 }

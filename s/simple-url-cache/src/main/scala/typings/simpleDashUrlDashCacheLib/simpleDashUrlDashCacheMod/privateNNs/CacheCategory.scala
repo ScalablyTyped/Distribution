@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CacheCategory extends js.Object {
   /* private */ def getCacheCategory(): java.lang.String
   def getCategory(): java.lang.String

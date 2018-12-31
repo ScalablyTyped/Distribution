@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Printing3DCompositeMaterialGroup protected () extends js.Object {
   /**
-                   * Creates an instance of the Printing3DCompositeMaterialGroup class.
-                   * @param MaterialGroupId The identifier (ID) of the composite material group; a value greater than zero.
-                   */
+    * Creates an instance of the Printing3DCompositeMaterialGroup class.
+    * @param MaterialGroupId The identifier (ID) of the composite material group; a value greater than zero.
+    */
   def this(MaterialGroupId: scala.Double) = this()
   /** Gets an list of mixtures that define individual composite materials. Each mixture is defined by listing the proportion of the overall mixture for each base material (values between 0 and 1), where the proportion values are specified in the same order as the base materials in MaterialIndices . */
   var composites: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[Printing3DCompositeMaterial] = js.native

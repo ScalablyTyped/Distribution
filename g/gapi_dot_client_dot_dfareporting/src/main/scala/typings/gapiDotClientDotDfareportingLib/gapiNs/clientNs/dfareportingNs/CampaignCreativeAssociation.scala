@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CampaignCreativeAssociation extends js.Object {
   /** ID of the creative associated with the campaign. This is a required field. */
   var creativeId: js.UndefOr[java.lang.String] = js.undefined

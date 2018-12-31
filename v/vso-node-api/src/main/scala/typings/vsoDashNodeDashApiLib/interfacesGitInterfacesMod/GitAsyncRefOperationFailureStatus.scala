@@ -12,71 +12,71 @@ sealed trait GitAsyncRefOperationFailureStatus extends js.Object
 @js.native
 object GitAsyncRefOperationFailureStatus extends js.Object {
   /**
-       * Async operation was not found
-       */
+    * Async operation was not found
+    */
   @js.native
   sealed trait AsyncOperationNotFound
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitAsyncRefOperationFailureStatus
   
   /**
-       * The ref update request could not be completed because the user lacks the permission to create a branch
-       */
+    * The ref update request could not be completed because the user lacks the permission to create a branch
+    */
   @js.native
   sealed trait CreateBranchPermissionRequired
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitAsyncRefOperationFailureStatus
   
   /**
-       * Git object is too large to materialize into memory
-       */
+    * Git object is too large to materialize into memory
+    */
   @js.native
   sealed trait GitObjectTooLarge
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitAsyncRefOperationFailureStatus
   
   /**
-       * Indicates that the ref update request could not be completed because the ref name presented in the request was not valid.
-       */
+    * Indicates that the ref update request could not be completed because the ref name presented in the request was not valid.
+    */
   @js.native
   sealed trait InvalidRefName
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitAsyncRefOperationFailureStatus
   
   /**
-       * No status
-       */
+    * No status
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitAsyncRefOperationFailureStatus
   
   /**
-       * Identity who authorized the operation was not found
-       */
+    * Identity who authorized the operation was not found
+    */
   @js.native
   sealed trait OperationIndentityNotFound
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitAsyncRefOperationFailureStatus
   
   /**
-       * Unexpected failure
-       */
+    * Unexpected failure
+    */
   @js.native
   sealed trait Other
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitAsyncRefOperationFailureStatus
   
   /**
-       * The ref update could not be completed because, in case-insensitive mode, the ref name conflicts with an existing, differently-cased ref name.
-       */
+    * The ref update could not be completed because, in case-insensitive mode, the ref name conflicts with an existing, differently-cased ref name.
+    */
   @js.native
   sealed trait RefNameConflict
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitAsyncRefOperationFailureStatus
   
   /**
-       * Target branch was deleted after Git async operation started
-       */
+    * Target branch was deleted after Git async operation started
+    */
   @js.native
   sealed trait TargetBranchDeleted
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitAsyncRefOperationFailureStatus
   
   /**
-       * The ref update request could not be completed because the user lacks write permissions required to write this ref
-       */
+    * The ref update request could not be completed because the user lacks write permissions required to write this ref
+    */
   @js.native
   sealed trait WritePermissionRequired
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitAsyncRefOperationFailureStatus

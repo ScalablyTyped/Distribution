@@ -37,7 +37,7 @@ package object KnexNs {
   // QueryBuilder
   //
   type QueryCallback = js.ThisFunction1[/* this */ QueryBuilder, /* builder */ QueryBuilder, scala.Unit]
-  type QueryCallbackWithArgs = js.ThisFunction2[/* this */ QueryBuilder, /* builder */ QueryBuilder, /* repeated */js.Any, scala.Unit]
+  type QueryCallbackWithArgs = js.ThisFunction2[/* this */ QueryBuilder, /* builder */ QueryBuilder, /* repeated */ js.Any, scala.Unit]
   type Table = js.Function1[
     /* tableName */ knexLib.TableName | knexLib.knexMod.Identifier | js.Function | Raw, 
     QueryBuilder

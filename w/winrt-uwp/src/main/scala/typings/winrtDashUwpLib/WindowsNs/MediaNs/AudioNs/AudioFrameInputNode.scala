@@ -41,34 +41,34 @@ abstract class AudioFrameInputNode () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[AudioFrameInputNode, FrameInputNodeQuantumStartedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Adds an audio frame to the audio frame input node.
-                   * @param frame An AudioFrame object representing the frame.
-                   */
+    * Adds an audio frame to the audio frame input node.
+    * @param frame An AudioFrame object representing the frame.
+    */
   def addFrame(frame: winrtDashUwpLib.WindowsNs.MediaNs.AudioFrame): scala.Unit = js.native
   /**
-                   * Adds an outgoing connection to the audio frame input node.
-                   * @param destination The destination node for the connection.
-                   */
+    * Adds an outgoing connection to the audio frame input node.
+    * @param destination The destination node for the connection.
+    */
   def addOutgoingConnection(destination: IAudioNode): scala.Unit = js.native
   /**
-                   * Adds an outgoing connection with gain to the audio frame input node.
-                   * @param destination The destination node for the connection.
-                   * @param gain A value indicating the gain associated with the connection.
-                   */
+    * Adds an outgoing connection with gain to the audio frame input node.
+    * @param destination The destination node for the connection.
+    * @param gain A value indicating the gain associated with the connection.
+    */
   def addOutgoingConnection(destination: IAudioNode, gain: scala.Double): scala.Unit = js.native
   /** Closes the audio frame input node. */
   def close(): scala.Unit = js.native
   /**
-                   * Disables all effects in the EffectDefinitions list with the specified effect definition.
-                   * @param definition The effect definition of the effects to disable.
-                   */
+    * Disables all effects in the EffectDefinitions list with the specified effect definition.
+    * @param definition The effect definition of the effects to disable.
+    */
   def disableEffectsByDefinition(definition: winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition): scala.Unit = js.native
   /** Removes queued frames from the audio frame input node. */
   def discardQueuedFrames(): scala.Unit = js.native
   /**
-                   * Enables all effects in the EffectDefinitions list with the specified effect definition.
-                   * @param definition The effect definition of the effects to enable.
-                   */
+    * Enables all effects in the EffectDefinitions list with the specified effect definition.
+    * @param definition The effect definition of the effects to enable.
+    */
   def enableEffectsByDefinition(definition: winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition): scala.Unit = js.native
   /** Notifies of a completed audio frame that has been submitted to the graph with a call to AddFrame . */
   def onaudioframecompleted(ev: AudioFrameCompletedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[AudioFrameInputNode]): scala.Unit = js.native
@@ -88,9 +88,9 @@ abstract class AudioFrameInputNode () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[AudioFrameInputNode, FrameInputNodeQuantumStartedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Removes an outgoing connection from the audio frame input node.
-                   * @param destination The destination for the outgoing connection.
-                   */
+    * Removes an outgoing connection from the audio frame input node.
+    * @param destination The destination for the outgoing connection.
+    */
   def removeOutgoingConnection(destination: IAudioNode): scala.Unit = js.native
   /** Resets the audio frame input node. */
   def reset(): scala.Unit = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Accesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -21,31 +20,31 @@ trait Anon_Accesstoken extends js.Object {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * If set to true, also system-managed jobs will be returned; otherwise only
-                   * user-created jobs will be returned. System-managed jobs can neither be
-                   * modified nor deleted.
-                   */
+    * If set to true, also system-managed jobs will be returned; otherwise only
+    * user-created jobs will be returned. System-managed jobs can neither be
+    * modified nor deleted.
+    */
   var includeSystemManaged: js.UndefOr[scala.Boolean] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The content owner's external ID on which behalf the user is acting on. If
-                   * not set, the user is acting for himself (his own channel).
-                   */
+    * The content owner's external ID on which behalf the user is acting on. If
+    * not set, the user is acting for himself (his own channel).
+    */
   var onBehalfOfContentOwner: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Requested page size. Server may return fewer jobs than requested.
-                   * If unspecified, server will pick an appropriate default.
-                   */
+    * Requested page size. Server may return fewer jobs than requested.
+    * If unspecified, server will pick an appropriate default.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * A token identifying a page of results the server should return. Typically,
-                   * this is the value of
-                   * ListReportTypesResponse.next_page_token
-                   * returned in response to the previous call to the `ListJobs` method.
-                   */
+    * A token identifying a page of results the server should return. Typically,
+    * this is the value of
+    * ListReportTypesResponse.next_page_token
+    * returned in response to the previous call to the `ListJobs` method.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

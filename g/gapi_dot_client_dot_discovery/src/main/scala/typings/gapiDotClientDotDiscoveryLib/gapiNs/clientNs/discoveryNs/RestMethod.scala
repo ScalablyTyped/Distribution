@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RestMethod extends js.Object {
   /** Description of this method. */
   var description: js.UndefOr[java.lang.String] = js.undefined
@@ -18,9 +17,9 @@ trait RestMethod extends js.Object {
   /** Media upload parameters. */
   var mediaUpload: js.UndefOr[gapiDotClientDotDiscoveryLib.Anon_Protocols] = js.undefined
   /**
-               * Ordered list of required parameters, serves as a hint to clients on how to structure their method signatures. The array is ordered such that the
-               * "most-significant" parameter appears first.
-               */
+    * Ordered list of required parameters, serves as a hint to clients on how to structure their method signatures. The array is ordered such that the
+    * "most-significant" parameter appears first.
+    */
   var parameterOrder: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Details for all parameters in this method. */
   var parameters: js.UndefOr[stdLib.Record[java.lang.String, JsonSchema]] = js.undefined

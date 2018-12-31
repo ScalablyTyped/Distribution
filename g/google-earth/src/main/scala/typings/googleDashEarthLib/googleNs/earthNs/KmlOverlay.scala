@@ -9,26 +9,26 @@ import scala.scalajs.js.annotation._
 @js.native
 class KmlOverlay () extends KmlFeature {
   /**
-       * Specifies the color values.
-       */
+    * Specifies the color values.
+    */
   def getColor(): KmlColor = js.native
   /**
-       * Defines the stacking order for the images in overlapping overlays.
-       * Overlays with higher drawOrder values are drawn on top of overlays with lower drawOrder values.
-       */
+    * Defines the stacking order for the images in overlapping overlays.
+    * Overlays with higher drawOrder values are drawn on top of overlays with lower drawOrder values.
+    */
   def getDrawOrder(): scala.Double = js.native
   /**
-       * Defines the image associated with the Overlay.
-       */
+    * Defines the image associated with the Overlay.
+    */
   def getIcon(): KmlIcon = js.native
   /**
-       * Defines the stacking order for the images in overlapping overlays.
-       * Overlays with higher drawOrder values are drawn on top of overlays with lower drawOrder values.
-       */
+    * Defines the stacking order for the images in overlapping overlays.
+    * Overlays with higher drawOrder values are drawn on top of overlays with lower drawOrder values.
+    */
   def setDrawOrder(drawOrder: scala.Double): scala.Unit = js.native
   /**
-       * Defines the image associated with the Overlay.
-       */
+    * Defines the image associated with the Overlay.
+    */
   def setIcon(icon: KmlIcon): scala.Unit = js.native
 }
 

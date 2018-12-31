@@ -9,44 +9,44 @@ import scala.scalajs.js.annotation._
 sealed trait HeaderFooterState extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.HeaderFooterState")
 @js.native
 object HeaderFooterState extends js.Object {
   /**
-           *
-           * Only one general header/footer is used for all pages printed.
-           *
-           */
+    *
+    * Only one general header/footer is used for all pages printed.
+    *
+    */
   @js.native
   sealed trait default
     extends officeDashJsDashPreviewLib.ExcelNs.HeaderFooterState
   
   /**
-           *
-           * There is a separate first page header/footer, and a general header/footer used for all other pages.
-           *
-           */
+    *
+    * There is a separate first page header/footer, and a general header/footer used for all other pages.
+    *
+    */
   @js.native
   sealed trait firstAndDefault
     extends officeDashJsDashPreviewLib.ExcelNs.HeaderFooterState
   
   /**
-           *
-           * There is a separate first page header/footer, then there is a separate header/footer for odd and even pages.
-           *
-           */
+    *
+    * There is a separate first page header/footer, then there is a separate header/footer for odd and even pages.
+    *
+    */
   @js.native
   sealed trait firstOddAndEven
     extends officeDashJsDashPreviewLib.ExcelNs.HeaderFooterState
   
   /**
-           *
-           * There is a different header/footer for odd and even pages.
-           *
-           */
+    *
+    * There is a different header/footer for odd and even pages.
+    *
+    */
   @js.native
   sealed trait oddAndEven
     extends officeDashJsDashPreviewLib.ExcelNs.HeaderFooterState

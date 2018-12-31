@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait gettextCatalog extends js.Object {
   /** The default language, in which you're application is written. This defaults to English and it's generally a bad idea to use anything else: if your language has different pluralization rules you'll end up with incorrect translations. Deprecated
-         * @deprecreated
-         */
+    * @deprecreated
+    */
   var baseLanguage: java.lang.String = js.native
   //////////////
   /// Fields ///
@@ -28,9 +28,7 @@ trait gettextCatalog extends js.Object {
   def getCurrentLanguage(): java.lang.String = js.native
   /** Translate a plural string with the given context. */
   def getPlural(n: scala.Double, string: java.lang.String, stringPlural: java.lang.String): java.lang.String = js.native
-  /** Translate a plural string with the given context. */
   def getPlural(n: scala.Double, string: java.lang.String, stringPlural: java.lang.String, scope: js.Any): java.lang.String = js.native
-  /** Translate a plural string with the given context. */
   def getPlural(
     n: scala.Double,
     string: java.lang.String,
@@ -39,22 +37,12 @@ trait gettextCatalog extends js.Object {
     context: java.lang.String
   ): java.lang.String = js.native
   /** Translate a string with the given scope. Uses Angular.JS interpolation, so something like this will do what you expect:
-         * var hello = gettextCatalog.getString("Hello {{name}}!", { name: "Ruben" });
-         * // var hello will be "Hallo Ruben!" in Dutch.
-         * The scope parameter is optional: pass null (or don't pass anything) if you're not using it: this skips interpolation and is a lot faster.
-         */
+    * var hello = gettextCatalog.getString("Hello {{name}}!", { name: "Ruben" });
+    * // var hello will be "Hallo Ruben!" in Dutch.
+    * The scope parameter is optional: pass null (or don't pass anything) if you're not using it: this skips interpolation and is a lot faster.
+    */
   def getString(string: java.lang.String): java.lang.String = js.native
-  /** Translate a string with the given scope. Uses Angular.JS interpolation, so something like this will do what you expect:
-         * var hello = gettextCatalog.getString("Hello {{name}}!", { name: "Ruben" });
-         * // var hello will be "Hallo Ruben!" in Dutch.
-         * The scope parameter is optional: pass null (or don't pass anything) if you're not using it: this skips interpolation and is a lot faster.
-         */
   def getString(string: java.lang.String, scope: js.Any): java.lang.String = js.native
-  /** Translate a string with the given scope. Uses Angular.JS interpolation, so something like this will do what you expect:
-         * var hello = gettextCatalog.getString("Hello {{name}}!", { name: "Ruben" });
-         * // var hello will be "Hallo Ruben!" in Dutch.
-         * The scope parameter is optional: pass null (or don't pass anything) if you're not using it: this skips interpolation and is a lot faster.
-         */
   def getString(string: java.lang.String, scope: js.Any, context: java.lang.String): java.lang.String = js.native
   /** Get the correct pluralized (but untranslated) string for the value of n. */
   def getStringForm(string: java.lang.String, n: scala.Double): java.lang.String = js.native
@@ -66,11 +54,11 @@ trait gettextCatalog extends js.Object {
   /** Sets the current language and makes sure that all translations get updated correctly. */
   def setCurrentLanguage(lang: java.lang.String): scala.Unit = js.native
   /** Processes an object of string definitions. More details https://angular-gettext.rocketeer.be/dev-guide/manual-setstrings/
-         * @param language A language code.
-         * @param strings A dictionary of strings. The format of this dictionary is:
-         *                   - Keys: Singular English strings (as defined in the source files)
-         *                   - Values: Either a single string for signular-only strings or an array of plural forms.
-         */
+    * @param language A language code.
+    * @param strings A dictionary of strings. The format of this dictionary is:
+    *                   - Keys: Singular English strings (as defined in the source files)
+    *                   - Values: Either a single string for signular-only strings or an array of plural forms.
+    */
   def setStrings(
     language: java.lang.String,
     strings: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]

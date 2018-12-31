@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDirectionsStepWarning extends js.Object {
   /** Where the warning starts. */
   var origin: java.lang.String

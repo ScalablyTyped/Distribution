@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactMarkdownProps extends js.Object {
   val allowNode: js.UndefOr[
     js.Function3[

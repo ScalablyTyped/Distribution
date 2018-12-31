@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEvent extends js.Object {
   def allowMapEvent(): scala.Unit
   def callMethod(name: java.lang.String): scala.Unit

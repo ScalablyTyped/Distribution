@@ -33,20 +33,12 @@ trait ResultSet
   			 * and casts it to the specified type (String, Integer, Float or Double.)
   			 */
   def field(index: scala.Double): java.lang.String | scala.Double | titaniumLib.TitaniumNs.Blob = js.native
-  /**
-  			 * Retrieves the value for the specified field in the current row,
-  			 * and casts it to the specified type (String, Integer, Float or Double.)
-  			 */
   def field(index: scala.Double, `type`: scala.Double): java.lang.String | scala.Double | titaniumLib.TitaniumNs.Blob = js.native
   /**
   			 * Retrieves the value for the specified field in the current row,
   			 * and casts it to the specified type (String, Integer, Float or Double.)
   			 */
   def fieldByName(name: java.lang.String): java.lang.String | scala.Double | titaniumLib.TitaniumNs.Blob = js.native
-  /**
-  			 * Retrieves the value for the specified field in the current row,
-  			 * and casts it to the specified type (String, Integer, Float or Double.)
-  			 */
   def fieldByName(name: java.lang.String, `type`: scala.Double): java.lang.String | scala.Double | titaniumLib.TitaniumNs.Blob = js.native
   /**
   			 * Returns the field name for the specified field index.

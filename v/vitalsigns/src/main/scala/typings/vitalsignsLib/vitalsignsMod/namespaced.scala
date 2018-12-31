@@ -6,16 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * VitalSigns instance.
-     */
+  * VitalSigns instance.
+  */
 @JSImport("vitalsigns", JSImport.Namespace)
 @js.native
+/**
+  * Constructor.
+  * @constructors
+  * @param {Options} [options] Options.
+  */
 class namespaced () extends VitalSigns {
-  /**
-           * Constructor.
-           * @constructors
-           * @param {Options} [options] Options.
-           */
   def this(options: vitalsignsLib.vitalsignsMod.vitalsignsNs.Options) = this()
 }
 

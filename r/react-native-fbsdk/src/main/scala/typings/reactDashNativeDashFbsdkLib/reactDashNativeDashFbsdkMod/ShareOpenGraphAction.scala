@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class ShareOpenGraphAction protected () extends ShareOpenGraphValueContainer {
   def this(actionType: java.lang.String) = this()
   /**
-       * The action type.
-       */
+    * The action type.
+    */
   var actionType: java.lang.String = js.native
 }
 

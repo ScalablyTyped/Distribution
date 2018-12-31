@@ -21,7 +21,7 @@ trait LodashFlatMap extends js.Object {
   def apply[T, TResult](iteratee: js.Function1[/* value */ T, lodashLib.lodashMod.underscoreNs.Many[TResult]]): js.Array[TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       lodashLib.lodashMod.underscoreNs.Many[TResult]
     ],
     collection: T

@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalHexBlockParams because Would inherit conflicting mutable fields List(warnings, blockLength, error, valueBeforeDecode))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalHexBlockParams because Would inherit conflicting mutable fields List(blockLength, error, valueBeforeDecode, warnings))*/
 trait LocalBitStringValueBlockParams extends LocalConstructedValueBlockParams {
   var isConstructed: js.UndefOr[scala.Boolean] = js.undefined
   var unusedBits: js.UndefOr[scala.Double] = js.undefined

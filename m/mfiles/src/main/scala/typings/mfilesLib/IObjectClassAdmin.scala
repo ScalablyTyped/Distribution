@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IObjectClassAdmin extends js.Object {
   val AdditionalClassInfo: IAdditionalClassInfo
   var AssociatedPropertyDefs: IAssociatedPropertyDefs

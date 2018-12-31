@@ -18,20 +18,20 @@ class JSDOM () extends js.Object {
   val virtualConsole: VirtualConsole = js.native
   val window: DOMWindow = js.native
   /**
-       * The nodeLocation() method will find where a DOM node is within the source document, returning the parse5 location info for the node.
-       */
-  def nodeLocation(node: stdLib.Node): js.Any | scala.Null = js.native
+    * The nodeLocation() method will find where a DOM node is within the source document, returning the parse5 location info for the node.
+    */
+  def nodeLocation(node: stdLib.Node): (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify MarkupData.ElementLocation */ js.Any) | scala.Null = js.native
   def reconfigure(settings: ReconfigureSettings): scala.Unit = js.native
   /**
-       * The built-in vm module of Node.js allows you to create Script instances,
-       * which can be compiled ahead of time and then run multiple times on a given "VM context".
-       * Behind the scenes, a jsdom Window is indeed a VM context.
-       * To get access to this ability, use the runVMScript() method.
-       */
+    * The built-in vm module of Node.js allows you to create Script instances,
+    * which can be compiled ahead of time and then run multiple times on a given "VM context".
+    * Behind the scenes, a jsdom Window is indeed a VM context.
+    * To get access to this ability, use the runVMScript() method.
+    */
   def runVMScript(script: nodeLib.vmMod.Script): scala.Unit = js.native
   /**
-       * The serialize() method will return the HTML serialization of the document, including the doctype.
-       */
+    * The serialize() method will return the HTML serialization of the document, including the doctype.
+    */
   def serialize(): java.lang.String = js.native
 }
 

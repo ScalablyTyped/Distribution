@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkItemTypeFieldModel extends js.Object {
   var allowGroups: scala.Boolean
   var defaultValue: java.lang.String

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @since Chrome 57
-         */
-
+  * @since Chrome 57
+  */
 trait TouchCalibrationPair extends js.Object {
   /** The coordinates of the display point. */
   var displayPoint: Point

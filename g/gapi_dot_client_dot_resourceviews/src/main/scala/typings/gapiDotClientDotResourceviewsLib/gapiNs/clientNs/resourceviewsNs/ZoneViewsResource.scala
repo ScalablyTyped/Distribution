@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ZoneViewsResource extends js.Object {
   /** Add resources to the view. */
   def addResources(request: gapiDotClientDotResourceviewsLib.Anon_ProjectPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Operation]

@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 sealed trait ChartMapAreaLevel extends js.Object
 
 /**
-     *
-     * Represents the mapping level of chart series, only applicable in RegionMap chart.
-     *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  *
+  * Represents the mapping level of chart series, only applicable in RegionMap chart.
+  *
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.ChartMapAreaLevel")
 @js.native
 object ChartMapAreaLevel extends js.Object {

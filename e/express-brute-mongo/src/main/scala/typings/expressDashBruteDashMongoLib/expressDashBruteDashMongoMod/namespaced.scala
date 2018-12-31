@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * @summary MongoDB store adapter.
- */
+  * @summary MongoDB store adapter.
+  */
 @JSImport("express-brute-mongo", JSImport.Namespace)
 @js.native
 class namespaced protected () extends MongoStore {

@@ -35,17 +35,11 @@ trait ListSection
   			 * Appends the data entries to the end of the list section.
   			 */
   def appendItems(dataItems: js.Array[titaniumLib.ListDataItem]): scala.Unit = js.native
-  /**
-  			 * Appends the data entries to the end of the list section.
-  			 */
   def appendItems(dataItems: js.Array[titaniumLib.ListDataItem], animation: titaniumLib.ListViewAnimationProperties): scala.Unit = js.native
   /**
   			 * Removes count entries from the list section at the specified index.
   			 */
   def deleteItemsAt(itemIndex: scala.Double, count: scala.Double): scala.Unit = js.native
-  /**
-  			 * Removes count entries from the list section at the specified index.
-  			 */
   def deleteItemsAt(itemIndex: scala.Double, count: scala.Double, animation: titaniumLib.ListViewAnimationProperties): scala.Unit = js.native
   /**
   			 * Gets the value of the <Titanium.UI.ListSection.footerTitle> property.
@@ -75,9 +69,6 @@ trait ListSection
   			 * Inserts data entries to the list section at the specified index.
   			 */
   def insertItemsAt(itemIndex: scala.Double, dataItems: js.Array[titaniumLib.ListDataItem]): scala.Unit = js.native
-  /**
-  			 * Inserts data entries to the list section at the specified index.
-  			 */
   def insertItemsAt(
     itemIndex: scala.Double,
     dataItems: js.Array[titaniumLib.ListDataItem],
@@ -88,10 +79,6 @@ trait ListSection
   			 * then inserts data entries to the list section at the same index.
   			 */
   def replaceItemsAt(index: scala.Double, count: scala.Double, dataItems: js.Array[titaniumLib.ListDataItem]): scala.Unit = js.native
-  /**
-  			 * Removes count entries from the list section at the specified index,
-  			 * then inserts data entries to the list section at the same index.
-  			 */
   def replaceItemsAt(
     index: scala.Double,
     count: scala.Double,
@@ -118,17 +105,11 @@ trait ListSection
   			 * Sets the data entries in the list section.
   			 */
   def setItems(dataItems: js.Array[titaniumLib.ListDataItem]): scala.Unit = js.native
-  /**
-  			 * Sets the data entries in the list section.
-  			 */
   def setItems(dataItems: js.Array[titaniumLib.ListDataItem], animation: titaniumLib.ListViewAnimationProperties): scala.Unit = js.native
   /**
   			 * Updates an item at the specified index.
   			 */
   def updateItemAt(index: scala.Double, dataItem: titaniumLib.ListDataItem): scala.Unit = js.native
-  /**
-  			 * Updates an item at the specified index.
-  			 */
   def updateItemAt(
     index: scala.Double,
     dataItem: titaniumLib.ListDataItem,

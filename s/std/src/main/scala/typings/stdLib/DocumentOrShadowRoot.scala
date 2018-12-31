@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DocumentOrShadowRoot extends js.Object {
   val activeElement: Element | scala.Null
   /**
-       * Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document.
-       */
+    * Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document.
+    */
   val styleSheets: StyleSheetList
   def caretPositionFromPoint(x: scala.Double, y: scala.Double): CaretPosition | scala.Null
   /** @deprecated */

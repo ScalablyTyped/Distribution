@@ -18,8 +18,8 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** The volume of a device's audible alarm. Note that this control affects the volume of all alarms;
-       *  no specific volume control for individual types of alarms is provided.
-       */
+    *  no specific volume control for individual types of alarms is provided.
+    */
   @js.native
   sealed trait CAP_ALARMVOLUME
     extends dwtLib.EnumDWT_Cap
@@ -30,16 +30,16 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** If TRUE, the Source will automatically feed the next page from the document feeder after the
-       *  number of frames negotiated for capture from each page are acquired. CAP_FEEDERENABLED
-       *  must be TRUE to use this capability.
-       */
+    *  number of frames negotiated for capture from each page are acquired. CAP_FEEDERENABLED
+    *  must be TRUE to use this capability.
+    */
   @js.native
   sealed trait CAP_AUTOFEED
     extends dwtLib.EnumDWT_Cap
   
   /** The number of images to automatically capture. This does not refer to the number of images to
-       *  be sent to the Application, use CAP_XFERCOUNT for that.
-       */
+    *  be sent to the Application, use CAP_XFERCOUNT for that.
+    */
   @js.native
   sealed trait CAP_AUTOMATICCAPTURE
     extends dwtLib.EnumDWT_Cap
@@ -50,13 +50,13 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** This capability is intended to boost the performance of a Source. The fundamental assumption
-       *  behind AutoScan is that the device is able to capture the number of images indicated by the
-       *  value of CAP_XFERCOUNT without waiting for the Application to request the image transfers.
-       *  This is only possible if the device has internal buffers capable of caching the images it captures.
-       *  The default behavior is undefined, because some high volume devices are incapable of anything
-       *  but CAP_AUTOSCAN being equal to TRUE. However, if a Source supports FALSE, it should use it
-       *  as the mandatory default, since this best describes the behavior of pre-1.8 TWAIN Applications.
-       */
+    *  behind AutoScan is that the device is able to capture the number of images indicated by the
+    *  value of CAP_XFERCOUNT without waiting for the Application to request the image transfers.
+    *  This is only possible if the device has internal buffers capable of caching the images it captures.
+    *  The default behavior is undefined, because some high volume devices are incapable of anything
+    *  but CAP_AUTOSCAN being equal to TRUE. However, if a Source supports FALSE, it should use it
+    *  as the mandatory default, since this best describes the behavior of pre-1.8 TWAIN Applications.
+    */
   @js.native
   sealed trait CAP_AUTOSCAN
     extends dwtLib.EnumDWT_Cap
@@ -102,11 +102,11 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** If TRUE, the Source will eject the current page being acquired from and will leave the feeder
-       *  acquire area empty.
-       *  If CAP_AUTOFEED is TRUE, a fresh page will be advanced.
-       *  CAP_FEEDERENABLED must equal TRUE to use this capability.
-       *  This capability must have been negotiated as an extended capability to be used in States 5 and 6.
-       */
+    *  acquire area empty.
+    *  If CAP_AUTOFEED is TRUE, a fresh page will be advanced.
+    *  CAP_FEEDERENABLED must equal TRUE to use this capability.
+    *  This capability must have been negotiated as an extended capability to be used in States 5 and 6.
+    */
   @js.native
   sealed trait CAP_CLEARPAGE
     extends dwtLib.EnumDWT_Cap
@@ -121,31 +121,31 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** If TRUE, the physical hardware (e.g., scanner, digital camera, image database, etc.) that
-       *  represents the image source is attached, powered on, and communicating.
-       */
+    *  represents the image source is attached, powered on, and communicating.
+    */
   @js.native
   sealed trait CAP_DEVICEONLINE
     extends dwtLib.EnumDWT_Cap
   
   /** The date and time of the device's clock.
-       *  Managed in the form "YYYY/MM/DD HH:mm:SS:sss" where YYYY is the year, MM is the
-       *  numerical month, DD is the numerical day, HH is the hour, mm is the minute, SS is the second,
-       *  and sss is the millisecond.
-       */
+    *  Managed in the form "YYYY/MM/DD HH:mm:SS:sss" where YYYY is the year, MM is the
+    *  numerical month, DD is the numerical day, HH is the hour, mm is the minute, SS is the second,
+    *  and sss is the millisecond.
+    */
   @js.native
   sealed trait CAP_DEVICETIMEDATE
     extends dwtLib.EnumDWT_Cap
   
   /** This indicates whether the scanner supports duplex. If so, it further indicates whether one-path
-       *  or two-path duplex is supported.
-       */
+    *  or two-path duplex is supported.
+    */
   @js.native
   sealed trait CAP_DUPLEX
     extends dwtLib.EnumDWT_Cap
   
   /** The user can set the duplex option to be TRUE or FALSE. If TRUE, the scanner scans both sides
-       *  of a paper; otherwise, the scanner will scan only one side of the image.
-       */
+    *  of a paper; otherwise, the scanner will scan only one side of the image.
+    */
   @js.native
   sealed trait CAP_DUPLEXENABLED
     extends dwtLib.EnumDWT_Cap
@@ -156,9 +156,9 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** Allows the application to specify the starting endorser / imprinter number. All other endorser/
-       *  imprinter properties should be handled through the data source's user interface.
-       *  The user can set the starting number for the endorser.
-       */
+    *  imprinter properties should be handled through the data source's user interface.
+    *  The user can set the starting number for the endorser.
+    */
   @js.native
   sealed trait CAP_ENDORSER
     extends dwtLib.EnumDWT_Cap
@@ -169,24 +169,24 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** Helps the Application determine any special actions it may need to take when negotiating
-       *  frames with the Source. Allowed values are listed in <see cref="TWCapFeederAlignment"/>.
-       *  TWFA_NONE: The alignment is free-floating. Applications should assume
-       *  that the origin for frames is on the left.
-       *  TWFA_LEFT: The alignment is to the left.
-       *  TWFA_CENTER: The alignment is centered. This means that the paper will
-       *  be fed in the middle of the ICAP_PHYSICALWIDTH of the
-       *  device. If this is set, then the Application should calculate
-       *  any frames with a left offset of zero.
-       *  TWFA_RIGHT: The alignment is to the right.
-       */
+    *  frames with the Source. Allowed values are listed in <see cref="TWCapFeederAlignment"/>.
+    *  TWFA_NONE: The alignment is free-floating. Applications should assume
+    *  that the origin for frames is on the left.
+    *  TWFA_LEFT: The alignment is to the left.
+    *  TWFA_CENTER: The alignment is centered. This means that the paper will
+    *  be fed in the middle of the ICAP_PHYSICALWIDTH of the
+    *  device. If this is set, then the Application should calculate
+    *  any frames with a left offset of zero.
+    *  TWFA_RIGHT: The alignment is to the right.
+    */
   @js.native
   sealed trait CAP_FEEDERALIGNMENT
     extends dwtLib.EnumDWT_Cap
   
   /** If TRUE, Source must acquire data from the document feeder acquire area and other feeder
-       *  capabilities can be used. If FALSE, Source must acquire data from the non-feeder acquire area
-       *  and no other feeder capabilities can be used.
-       */
+    *  capabilities can be used. If FALSE, Source must acquire data from the non-feeder acquire area
+    *  and no other feeder capabilities can be used.
+    */
   @js.native
   sealed trait CAP_FEEDERENABLED
     extends dwtLib.EnumDWT_Cap
@@ -197,8 +197,8 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** TWFO_FIRSTPAGEFIRST if the feeder starts with the top of the first page.
-       *  TWFO_LASTPAGEFIRST is the feeder starts with the top of the last page.
-       */
+    *  TWFO_LASTPAGEFIRST is the feeder starts with the top of the last page.
+    */
   @js.native
   sealed trait CAP_FEEDERORDER
     extends dwtLib.EnumDWT_Cap
@@ -214,30 +214,30 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** If TRUE, the Source will eject the current page and advance the next page in the document feeder
-       *  into the feeder acquire area.
-       *  If CAP_AUTOFEED is TRUE, the same action just described will occur and CAP_AUTOFEED will
-       *  remain active.
-       *  CAP_FEEDERENABLED must equal TRUE to use this capability.
-       *  This capability must have been negotiated as an extended capability to be used in States 5 and 6.
-       */
+    *  into the feeder acquire area.
+    *  If CAP_AUTOFEED is TRUE, the same action just described will occur and CAP_AUTOFEED will
+    *  remain active.
+    *  CAP_FEEDERENABLED must equal TRUE to use this capability.
+    *  This capability must have been negotiated as an extended capability to be used in States 5 and 6.
+    */
   @js.native
   sealed trait CAP_FEEDPAGE
     extends dwtLib.EnumDWT_Cap
   
   /** If TRUE, the Source will display a progress indicator during acquisition and transfer, regardless
-       *  of whether the Source's user interface is active. If FALSE, the progress indicator will be
-       *  suppressed if the Source's user interface is inactive.
-       *  The Source will continue to display device-specific instructions and error messages even with
-       *  the Source user interface and progress indicators turned off.
-       */
+    *  of whether the Source's user interface is active. If FALSE, the progress indicator will be
+    *  suppressed if the Source's user interface is inactive.
+    *  The Source will continue to display device-specific instructions and error messages even with
+    *  the Source user interface and progress indicators turned off.
+    */
   @js.native
   sealed trait CAP_INDICATORS
     extends dwtLib.EnumDWT_Cap
   
   /** Allows Application and Source to identify which languages they have in common for the exchange of string data,
-       *  and to select the language of the internal UI. Since the TWLG_xxxx codes include language and country data, there is no separate
-       *  capability for selecting the country.
-       */
+    *  and to select the language of the internal UI. Since the TWLG_xxxx codes include language and country data, there is no separate
+    *  capability for selecting the country.
+    */
   @js.native
   sealed trait CAP_LANGUAGE
     extends dwtLib.EnumDWT_Cap
@@ -268,10 +268,10 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** CapGet() returns the current list of available printer devices, along with the one currently being used for negotiation.
-       *  CapSet() selects the current device for negotiation, and optionally constrains the list.
-       *  Top/Bottom refers to duplex devices, and indicates if the printer is writing on the top or the bottom of the sheet of paper.
-       *  Simplex devices use the top settings. Before/After indicates whether printing occurs before or after the sheet of paper has been scanned.
-       */
+    *  CapSet() selects the current device for negotiation, and optionally constrains the list.
+    *  Top/Bottom refers to duplex devices, and indicates if the printer is writing on the top or the bottom of the sheet of paper.
+    *  Simplex devices use the top settings. Before/After indicates whether printing occurs before or after the sheet of paper has been scanned.
+    */
   @js.native
   sealed trait CAP_PRINTER
     extends dwtLib.EnumDWT_Cap
@@ -287,20 +287,20 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** Specifies the appropriate current CAP_PRINTER device mode.
-       *  Note:
-       *  • TWPM_SINGLESTRING specifies that the printed text will consist of a single string.
-       *  • TWPM _MULTISTRING specifies that the printed text will consist of an enumerated list of
-       *  strings to be printed in order.
-       *  • TWPM _COMPOUNDSTRING specifies that the printed string will consist of a compound of a
-       *  String followed by a value followed by a suffix string.
-       */
+    *  Note:
+    *  • TWPM_SINGLESTRING specifies that the printed text will consist of a single string.
+    *  • TWPM _MULTISTRING specifies that the printed text will consist of an enumerated list of
+    *  strings to be printed in order.
+    *  • TWPM _COMPOUNDSTRING specifies that the printed string will consist of a compound of a
+    *  String followed by a value followed by a suffix string.
+    */
   @js.native
   sealed trait CAP_PRINTERMODE
     extends dwtLib.EnumDWT_Cap
   
   /** Specifies the string(s) that are to be used in the string component when the current
-       *  CAP_PRINTER device is enabled.
-       */
+    *  CAP_PRINTER device is enabled.
+    */
   @js.native
   sealed trait CAP_PRINTERSTRING
     extends dwtLib.EnumDWT_Cap
@@ -311,19 +311,19 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** Indicates whether the physical hardware (e.g. scanner, digital camera) is capable of acquiring
-       *  multiple images of the same page without changes to the physical registration of that page.
-       */
+    *  multiple images of the same page without changes to the physical registration of that page.
+    */
   @js.native
   sealed trait CAP_REACQUIREALLOWED
     extends dwtLib.EnumDWT_Cap
   
   /** If TRUE, the Source will return the current page to the input side of the document feeder and
-       *  feed the last page from the output side of the feeder back into the acquisition area.
-       *  If CAP_AUTOFEED is TRUE, automatic feeding will continue after all negotiated frames from this
-       *  page are acquired.
-       *  CAP_FEEDERENABLED must equal TRUE to use this capability.
-       *  This capability must have been negotiated as an extended capability to be used in States 5 and 6.
-       */
+    *  feed the last page from the output side of the feeder back into the acquisition area.
+    *  If CAP_AUTOFEED is TRUE, automatic feeding will continue after all negotiated frames from this
+    *  page are acquired.
+    *  CAP_FEEDERENABLED must equal TRUE to use this capability.
+    *  This capability must have been negotiated as an extended capability to be used in States 5 and 6.
+    */
   @js.native
   sealed trait CAP_REWINDPAGE
     extends dwtLib.EnumDWT_Cap
@@ -334,43 +334,43 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** A string containing the serial number of the currently selected device in the Source. Multiple
-       *  devices may all report the same serial number.
-       */
+    *  devices may all report the same serial number.
+    */
   @js.native
   sealed trait CAP_SERIALNUMBER
     extends dwtLib.EnumDWT_Cap
   
   /** Returns a list of all the capabilities for which the Source will answer inquiries. Does not indicate
-       *  which capabilities the Source will allow to be set by the application. Some capabilities can only
-       *  be set if certain setup work has been done so the Source cannot globally answer which
-       *  capabilities are "set-able."
-       */
+    *  which capabilities the Source will allow to be set by the application. Some capabilities can only
+    *  be set if certain setup work has been done so the Source cannot globally answer which
+    *  capabilities are "set-able."
+    */
   @js.native
   sealed trait CAP_SUPPORTEDCAPS
     extends dwtLib.EnumDWT_Cap
   
   /** Returns a list of all the capabilities for which the Source will answer inquiries. Does not indicate
-       *  which capabilities the Source will allow to be set by the application. Some capabilities can only
-       *  be set if certain setup work has been done so the Source cannot globally answer which
-       *  capabilities are "set-able."
-       */
+    *  which capabilities the Source will allow to be set by the application. Some capabilities can only
+    *  be set if certain setup work has been done so the Source cannot globally answer which
+    *  capabilities are "set-able."
+    */
   @js.native
   sealed trait CAP_SUPPORTEDCAPSEXT
     extends dwtLib.EnumDWT_Cap
   
   /** Allows an application to request the delivery of thumbnail representations for the set of images
-       *  that are to be delivered.
-       *  Setting CAP_THUMBNAILSENABLED to TRUE turns on thumbnail mode. Images transferred
-       *  thereafter will be sent at thumbnail size (exact thumbnail size is determined by the Data Source).
-       *  Setting this capability to FALSE turns thumbnail mode off and returns full size images.
-       */
+    *  that are to be delivered.
+    *  Setting CAP_THUMBNAILSENABLED to TRUE turns on thumbnail mode. Images transferred
+    *  thereafter will be sent at thumbnail size (exact thumbnail size is determined by the Data Source).
+    *  Setting this capability to FALSE turns thumbnail mode off and returns full size images.
+    */
   @js.native
   sealed trait CAP_THUMBNAILSENABLED
     extends dwtLib.EnumDWT_Cap
   
   /** For automatic capture, this value selects the number of milliseconds before the first picture is to
-       *  be taken, or the first image is to be scanned.
-       */
+    *  be taken, or the first image is to be scanned.
+    */
   @js.native
   sealed trait CAP_TIMEBEFOREFIRSTCAPTURE
     extends dwtLib.EnumDWT_Cap
@@ -381,18 +381,18 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** The date and time the image was acquired.
-       *  Stored in the form "YYYY/MM/DD HH:mm:SS.sss" where YYYY is the year, MM is the
-       *  numerical month, DD is the numerical day, HH is the hour, mm is the minute, SS is the second,
-       *  and sss is the millisecond.
-       */
+    *  Stored in the form "YYYY/MM/DD HH:mm:SS.sss" where YYYY is the year, MM is the
+    *  numerical month, DD is the numerical day, HH is the hour, mm is the minute, SS is the second,
+    *  and sss is the millisecond.
+    */
   @js.native
   sealed trait CAP_TIMEDATE
     extends dwtLib.EnumDWT_Cap
   
   /** If TRUE, indicates that this Source supports acquisition with the UI disabled; i.e.,
-       *  TW_USERINTERFACE's ShowUI field can be set to FALSE. If FALSE, indicates that this Source
-       *  can only support acquisition with the UI enabled.
-       */
+    *  TW_USERINTERFACE's ShowUI field can be set to FALSE. If FALSE, indicates that this Source
+    *  can only support acquisition with the UI enabled.
+    */
   @js.native
   sealed trait CAP_UICONTROLLABLE
     extends dwtLib.EnumDWT_Cap
@@ -408,16 +408,16 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** Use this capability to have the Source discard blank images. The Application never sees these
-       *  images during the scanning session.
-       *  TWBP_DISABLE – this must be the default state for the Source. It indicates that all images will
-       *  be delivered to the Application, none of them will be discarded.
-       *  TWBP_AUTO – if this is used, then the Source will decide if an image is blank or not and discard
-       *  as appropriate.
-       *  If the specified value is a positive number in the range 0 to 231–1, then this capability will use it
-       *  as the byte size cutoff point to identify which images are to be discarded. If the size of the image
-       *  is less than or equal to this value, then it will be discarded. If the size of the image is greater
-       *  than this value, then it will be kept so that it can be transferred to the Application.
-       */
+    *  images during the scanning session.
+    *  TWBP_DISABLE – this must be the default state for the Source. It indicates that all images will
+    *  be delivered to the Application, none of them will be discarded.
+    *  TWBP_AUTO – if this is used, then the Source will decide if an image is blank or not and discard
+    *  as appropriate.
+    *  If the specified value is a positive number in the range 0 to 231–1, then this capability will use it
+    *  as the byte size cutoff point to identify which images are to be discarded. If the size of the image
+    *  is less than or equal to this value, then it will be discarded. If the size of the image is greater
+    *  than this value, then it will be kept so that it can be transferred to the Application.
+    */
   @js.native
   sealed trait ICAP_AUTODISCARDBLANKPAGES
     extends dwtLib.EnumDWT_Cap
@@ -453,8 +453,8 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** When TRUE this capability depends on intelligent features within the Source to automatically
-       *  rotate the image to the correct position.
-       */
+    *  rotate the image to the correct position.
+    */
   @js.native
   sealed trait ICAP_AUTOMATICROTATE
     extends dwtLib.EnumDWT_Cap
@@ -495,24 +495,24 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** Specifies the pixel bit depths for the Current value of ICAP_PIXELTYPE. For example, when
-       *  using ICAP_PIXELTYPE:TWPT_GRAY, this capability specifies whether this is 8-bit gray or 4-bit gray.
-       *  This depth applies to all the data channels (for instance, the R, G, and B channels will all have
-       *  this same bit depth for RGB data).
-       */
+    *  using ICAP_PIXELTYPE:TWPT_GRAY, this capability specifies whether this is 8-bit gray or 4-bit gray.
+    *  This depth applies to all the data channels (for instance, the R, G, and B channels will all have
+    *  this same bit depth for RGB data).
+    */
   @js.native
   sealed trait ICAP_BITDEPTH
     extends dwtLib.EnumDWT_Cap
   
   /** Specifies the Reduction Method the Source should use to reduce the bit depth of the data. Most
-       *  commonly used with ICAP_PIXELTYPE:TWPT_BW to reduce gray data to black and white.
-       */
+    *  commonly used with ICAP_PIXELTYPE:TWPT_BW to reduce gray data to black and white.
+    */
   @js.native
   sealed trait ICAP_BITDEPTHREDUCTION
     extends dwtLib.EnumDWT_Cap
   
   /** Specifies how the bytes in an image are filled by the Source. TWBO_MSBFIRST indicates that the leftmost bit in the byte (usually bit 7) is
-       *  the byte's Most Significant Bit.
-       */
+    *  the byte's Most Significant Bit.
+    */
   @js.native
   sealed trait ICAP_BITORDER
     extends dwtLib.EnumDWT_Cap
@@ -528,10 +528,10 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** Used for CCITT Group 3 2-dimensional compression. The 'K' factor indicates how often the
-       *  new compression baseline should be re-established. A value of 2 or 4 is common in facsimile
-       *  communication. A value of zero in this field will indicate an infinite K factor—the baseline is
-       *  only calculated at the beginning of the transfer.
-       */
+    *  new compression baseline should be re-established. A value of 2 or 4 is common in facsimile
+    *  communication. A value of zero in this field will indicate an infinite K factor—the baseline is
+    *  only calculated at the beginning of the transfer.
+    */
   @js.native
   sealed trait ICAP_CCITTKFACTOR
     extends dwtLib.EnumDWT_Cap
@@ -542,11 +542,11 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** Allows the application and Source to identify which compression schemes they have in
-       *  common for Buffered Memory and File transfers.
-       *  Note for File transfers:
-       *  Since only certain file formats support compression, this capability must be negotiated after
-       *  setting the desired file format with ICAP_IMAGEFILEFORMAT.
-       */
+    *  common for Buffered Memory and File transfers.
+    *  Note for File transfers:
+    *  Since only certain file formats support compression, this capability must be negotiated after
+    *  setting the desired file format with ICAP_IMAGEFILEFORMAT.
+    */
   @js.native
   sealed trait ICAP_COMPRESSION
     extends dwtLib.EnumDWT_Cap
@@ -567,8 +567,8 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** Allows the application to query the data source to see if it supports extended image attribute capabilities,
-       *  such as Barcode Recognition, Shaded Area Detection and Removal, Skew detection and Removal, and so on.
-       */
+    *  such as Barcode Recognition, Shaded Area Detection and Removal, Skew detection and Removal, and so on.
+    */
   @js.native
   sealed trait ICAP_EXTIMAGEINFO
     extends dwtLib.EnumDWT_Cap
@@ -579,8 +579,8 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** Describes the color characteristic of the subtractive filter applied to the image data. Multiple
-       *  filters may be applied to a single acquisition.
-       */
+    *  filters may be applied to a single acquisition.
+    */
   @js.native
   sealed trait ICAP_FILTER
     extends dwtLib.EnumDWT_Cap
@@ -591,16 +591,16 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** For devices that support flash. CapSet() selects the flash to be used (if any). CapGet() reports the current setting.
-       *  This capability replaces ICAP_FLASHUSED, which is only able to negotiate the flash being on or off.
-       */
+    *  This capability replaces ICAP_FLASHUSED, which is only able to negotiate the flash being on or off.
+    */
   @js.native
   sealed trait ICAP_FLASHUSED2
     extends dwtLib.EnumDWT_Cap
   
   /** Flip rotation is used to properly orient images that flip orientation every other image.
-       *  TWFR_BOOK The images to be scanned are viewed in book form, flipping each page from left to right or right to left.
-       *  TWFR_FANFOLD The images to be scanned are viewed in fanfold paper style, flipping each page up or down.
-       */
+    *  TWFR_BOOK The images to be scanned are viewed in book form, flipping each page from left to right or right to left.
+    *  TWFR_FANFOLD The images to be scanned are viewed in fanfold paper style, flipping each page up or down.
+    */
   @js.native
   sealed trait ICAP_FLIPROTATION
     extends dwtLib.EnumDWT_Cap
@@ -621,9 +621,9 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** Specifies which value in an image should be interpreted as the lightest "highlight." All values
-       *  "lighter" than this value will be clipped to this value. Whether lighter values are smaller or
-       *  larger can be determined by examining the Current value of ICAP_PIXELFLAVOR.
-       */
+    *  "lighter" than this value will be clipped to this value. Whether lighter values are smaller or
+    *  larger can be determined by examining the Current value of ICAP_PIXELFLAVOR.
+    */
   @js.native
   sealed trait ICAP_HIGHLIGHT
     extends dwtLib.EnumDWT_Cap
@@ -634,17 +634,17 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** Informs the application which file formats the Source can generate (CapGet()). Tells the Source which file formats the application can handle (CapSet()).
-       *  TWFF_TIFF Used for document
-       *  TWFF_PICT Native Macintosh
-       *  TWFF_BMP Native Microsoft
-       *  TWFF_XBM Used for document
-       *  TWFF_JFIF Wrapper for JPEG
-       *  TWFF_FPX FlashPix, used with digital
-       *  TWFF_TIFFMULTI Multi-page TIFF files
-       *  TWFF_PNG An image format standard intended for use on the web, replaces GIF
-       *  TWFF_SPIFF A standard from JPEG, intended to replace JFIF, also supports JBIG
-       *  TWFF_EXIF File format for use with digital cameras.
-       */
+    *  TWFF_TIFF Used for document
+    *  TWFF_PICT Native Macintosh
+    *  TWFF_BMP Native Microsoft
+    *  TWFF_XBM Used for document
+    *  TWFF_JFIF Wrapper for JPEG
+    *  TWFF_FPX FlashPix, used with digital
+    *  TWFF_TIFFMULTI Multi-page TIFF files
+    *  TWFF_PNG An image format standard intended for use on the web, replaces GIF
+    *  TWFF_SPIFF A standard from JPEG, intended to replace JFIF, also supports JBIG
+    *  TWFF_EXIF File format for use with digital cameras.
+    */
   @js.native
   sealed trait ICAP_IMAGEFILEFORMAT
     extends dwtLib.EnumDWT_Cap
@@ -665,8 +665,8 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** Allows the application and Source to agree upon a common set of color descriptors that are
-       *  made available by the Source. This ICAP is only useful for JPEG-compressed buffered memory image transfers.
-       */
+    *  made available by the Source. This ICAP is only useful for JPEG-compressed buffered memory image transfers.
+    */
   @js.native
   sealed trait ICAP_JPEGPIXELTYPE
     extends dwtLib.EnumDWT_Cap
@@ -692,8 +692,8 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** The maximum number of frames the Source can provide or the application can accept per page.
-       *  This is a bounding capability only. It does not establish current or future behavior.
-       */
+    *  This is a bounding capability only. It does not establish current or future behavior.
+    */
   @js.native
   sealed trait ICAP_MAXFRAMES
     extends dwtLib.EnumDWT_Cap
@@ -714,23 +714,23 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** Defines which edge of the "paper" the image's "top" is aligned with. This information is used to adjust the frames to match the
-       *  scanning orientation of the paper. For instance, if an ICAP_SUPPORTEDSIZE of TWSS_ISOA4 has been negotiated,
-       *  and ICAP_ORIENTATION is set to TWOR_LANDSCAPE, then the Source must rotate the frame it downloads to the scanner to reflect the
-       *  orientation of the paper. Please note that setting ICAP_ORIENTATION does not affect the values reported by ICAP_FRAMES;
-       *  it just causes the Source to use them in a different way. The upper-left of the image is defined as the location where both the primary and
-       *  secondary scans originate. (The X axis is the primary scan direction and the Y axis is the secondary scan direction.)
-       *  For a flatbed scanner, the light bar moves in the secondary scan direction. For a handheld scanner, the scanner is drug in the
-       *  secondary scan direction. For a digital camera, the secondary direction is the vertical axis when the viewed image is considered upright.
-       */
+    *  scanning orientation of the paper. For instance, if an ICAP_SUPPORTEDSIZE of TWSS_ISOA4 has been negotiated,
+    *  and ICAP_ORIENTATION is set to TWOR_LANDSCAPE, then the Source must rotate the frame it downloads to the scanner to reflect the
+    *  orientation of the paper. Please note that setting ICAP_ORIENTATION does not affect the values reported by ICAP_FRAMES;
+    *  it just causes the Source to use them in a different way. The upper-left of the image is defined as the location where both the primary and
+    *  secondary scans originate. (The X axis is the primary scan direction and the Y axis is the secondary scan direction.)
+    *  For a flatbed scanner, the light bar moves in the secondary scan direction. For a handheld scanner, the scanner is drug in the
+    *  secondary scan direction. For a digital camera, the secondary direction is the vertical axis when the viewed image is considered upright.
+    */
   @js.native
   sealed trait ICAP_ORIENTATION
     extends dwtLib.EnumDWT_Cap
   
   /** Overscan is used to scan outside of the boundaries described by ICAP_FRAMES, and is used to help acquire image data that
-       *  may be lost because of skewing.
-       *  This is primarily of use for transport scanners which rely on edge detection to begin scanning.
-       *  If overscan is supported, then the device is capable of scanning in the inter-document gap to get the skewed image information.
-       */
+    *  may be lost because of skewing.
+    *  This is primarily of use for transport scanners which rely on edge detection to begin scanning.
+    *  If overscan is supported, then the device is capable of scanning in the inter-document gap to get the skewed image information.
+    */
   @js.native
   sealed trait ICAP_OVERSCAN
     extends dwtLib.EnumDWT_Cap
@@ -781,8 +781,8 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** Used only for CCITT data compression. Specifies whether the compressed codes' pixel "sense"
-       *  will be inverted from the Current value of ICAP_PIXELFLAVOR prior to transfer.
-       */
+    *  will be inverted from the Current value of ICAP_PIXELFLAVOR prior to transfer.
+    */
   @js.native
   sealed trait ICAP_PIXELFLAVORCODES
     extends dwtLib.EnumDWT_Cap
@@ -793,23 +793,23 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** Allows the application and Source to identify which color data formats are available. There are
-       *  two options, "planar" and "chunky."
-       */
+    *  two options, "planar" and "chunky."
+    */
   @js.native
   sealed trait ICAP_PLANARCHUNKY
     extends dwtLib.EnumDWT_Cap
   
   /** How the Source can/should rotate the scanned image data prior to transfer. This doesn't use
-       *  ICAP_UNITS. It is always measured in degrees. Any applied value is additive with any
-       *  rotation specified in ICAP_ORIENTATION.
-       */
+    *  ICAP_UNITS. It is always measured in degrees. Any applied value is additive with any
+    *  rotation specified in ICAP_ORIENTATION.
+    */
   @js.native
   sealed trait ICAP_ROTATION
     extends dwtLib.EnumDWT_Cap
   
   /** Specifies which value in an image should be interpreted as the darkest "shadow." All values
-       *  "darker" than this value will be clipped to this value.
-       */
+    *  "darker" than this value will be clipped to this value.
+    */
   @js.native
   sealed trait ICAP_SHADOW
     extends dwtLib.EnumDWT_Cap
@@ -830,16 +830,16 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** For devices that support fixed frame sizes.
-       *  Defined sizes match typical page sizes. This specifies the size(s) the Source can/should use to acquire image data.
-       */
+    *  Defined sizes match typical page sizes. This specifies the size(s) the Source can/should use to acquire image data.
+    */
   @js.native
   sealed trait ICAP_SUPPORTEDSIZES
     extends dwtLib.EnumDWT_Cap
   
   /** Specifies the dividing line between black and white. This is the value the Source will use to
-       *  threshold, if needed, when ICAP_PIXELTYPE:TWPT_BW.
-       *  The value is normalized so there are no units of measure associated with this ICAP.
-       */
+    *  threshold, if needed, when ICAP_PIXELTYPE:TWPT_BW.
+    *  The value is normalized so there are no units of measure associated with this ICAP.
+    */
   @js.native
   sealed trait ICAP_THRESHOLD
     extends dwtLib.EnumDWT_Cap
@@ -855,16 +855,16 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** If TRUE the Source will issue a MSG_XFERREADY before starting the scan.
-       *  Note: The Source may need to scan the image before initiating the transfer. This is the case if
-       *  the scanned image is rotated or merged with another scanned image.
-       */
+    *  Note: The Source may need to scan the image before initiating the transfer. This is the case if
+    *  the scanned image is rotated or merged with another scanned image.
+    */
   @js.native
   sealed trait ICAP_UNDEFINEDIMAGESIZE
     extends dwtLib.EnumDWT_Cap
   
   /** Unless a quantity is dimensionless or uses a specified unit of measure, ICAP_UNITS determines
-       *  the unit of measure for all quantities.
-       */
+    *  the unit of measure for all quantities.
+    */
   @js.native
   sealed trait ICAP_UNITS
     extends dwtLib.EnumDWT_Cap
@@ -875,22 +875,22 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** The native optical resolution along the X-axis of the device being controlled by the Source. Most
-       *  devices will respond with a single value (TW_ONEVALUE).
-       *  This is NOT a list of all resolutions that can be generated by the device. Rather, this is the
-       *  resolution of the device's optics. Measured in units of pixels per unit as defined by
-       *  ICAP_UNITS (pixels per TWUN_PIXELS yields dimensionless data).
-       */
+    *  devices will respond with a single value (TW_ONEVALUE).
+    *  This is NOT a list of all resolutions that can be generated by the device. Rather, this is the
+    *  resolution of the device's optics. Measured in units of pixels per unit as defined by
+    *  ICAP_UNITS (pixels per TWUN_PIXELS yields dimensionless data).
+    */
   @js.native
   sealed trait ICAP_XNATIVERESOLUTION
     extends dwtLib.EnumDWT_Cap
   
   /** All the X-axis resolutions the Source can provide.
-       *  Measured in units of pixels per unit as defined by ICAP_UNITS (pixels per TWUN_PIXELS
-       *  yields dimensionless data). That is, when the units are TWUN_PIXELS, both
-       *  ICAP_XRESOLUTION and ICAP_YRESOLUTION shall report 1 pixel/pixel. Some data sources
-       *  like to report the actual number of pixels that the device reports, but that response is more
-       *  appropriate in ICAP_PHYSICALHEIGHT and ICAP_PHYSICALWIDTH.
-       */
+    *  Measured in units of pixels per unit as defined by ICAP_UNITS (pixels per TWUN_PIXELS
+    *  yields dimensionless data). That is, when the units are TWUN_PIXELS, both
+    *  ICAP_XRESOLUTION and ICAP_YRESOLUTION shall report 1 pixel/pixel. Some data sources
+    *  like to report the actual number of pixels that the device reports, but that response is more
+    *  appropriate in ICAP_PHYSICALHEIGHT and ICAP_PHYSICALWIDTH.
+    */
   @js.native
   sealed trait ICAP_XRESOLUTION
     extends dwtLib.EnumDWT_Cap
@@ -901,27 +901,27 @@ object EnumDWT_Cap extends js.Object {
     extends dwtLib.EnumDWT_Cap
   
   /** The native optical resolution along the Y-axis of the device being controlled by the Source.
-       *  Measured in units of pixels per unit as defined by ICAP_UNITS (pixels per TWUN_PIXELS
-       *  yields dimensionless data).
-       */
+    *  Measured in units of pixels per unit as defined by ICAP_UNITS (pixels per TWUN_PIXELS
+    *  yields dimensionless data).
+    */
   @js.native
   sealed trait ICAP_YNATIVERESOLUTION
     extends dwtLib.EnumDWT_Cap
   
   /** All the Y-axis resolutions the Source can provide.
-       *  Measured in units of pixels per unit as defined by ICAP_UNITS (pixels per TWUN_PIXELS
-       *  yields dimensionless data). That is, when the units are TWUN_PIXELS, both
-       *  ICAP_XRESOLUTION and ICAP_YRESOLUTION shall report 1 pixel/pixel. Some data sources
-       *  like to report the actual number of pixels that the device reports, but that response is more
-       *  appropriate in ICAP_PHYSICALHEIGHT and ICAP_PHYSICALWIDTH.
-       */
+    *  Measured in units of pixels per unit as defined by ICAP_UNITS (pixels per TWUN_PIXELS
+    *  yields dimensionless data). That is, when the units are TWUN_PIXELS, both
+    *  ICAP_XRESOLUTION and ICAP_YRESOLUTION shall report 1 pixel/pixel. Some data sources
+    *  like to report the actual number of pixels that the device reports, but that response is more
+    *  appropriate in ICAP_PHYSICALHEIGHT and ICAP_PHYSICALWIDTH.
+    */
   @js.native
   sealed trait ICAP_YRESOLUTION
     extends dwtLib.EnumDWT_Cap
   
   /** All the Y-axis scaling values available. A value of '1.0' is equivalent to 100% scaling. Do not use values less than or equal to zero.
-       *  There are no units inherent with this data as it is normalized to 1.0 being "unscaled."
-       */
+    *  There are no units inherent with this data as it is normalized to 1.0 being "unscaled."
+    */
   @js.native
   sealed trait ICAP_YSCALING
     extends dwtLib.EnumDWT_Cap

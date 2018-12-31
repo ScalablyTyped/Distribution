@@ -9,80 +9,53 @@ import scala.scalajs.js.annotation._
 @js.native
 class Virtual () extends js.Object {
   /**
-       * Object with cached slides HTML elements
-       */
+    * Object with cached slides HTML elements
+    */
   var cache: js.Object = js.native
   /**
-       * Index of first rendered slide
-       */
+    * Index of first rendered slide
+    */
   var from: scala.Double = js.native
   /**
-       * Array with slide items passed by virtual.slides parameter
-       */
+    * Array with slide items passed by virtual.slides parameter
+    */
   var slides: js.Array[_] = js.native
   /**
-       * Index of last rendered slide
-       */
+    * Index of last rendered slide
+    */
   var to: scala.Double = js.native
-  /*
-       * Methods
-       */
-  
-  /**
-       * Add new slides to the end. slides could be HTMLElement or HTML string with new slide or array
-       * with such slides, for example:
-       *
-       * @example
-       * mySwiper.appendSlide('<div class="swiper-slide">Slide 10"</div>')
-       * mySwiper.appendSlide([
-       *   '<div class="swiper-slide">Slide 10"</div>',
-       *   '<div class="swiper-slide">Slide 11"</div>'
-       * ]);
-       */
   def appendSlide(slide: java.lang.String): scala.Unit = js.native
   /*
-       * Methods
-       */
-  
+    * Methods
+    */
   /**
-       * Add new slides to the end. slides could be HTMLElement or HTML string with new slide or array
-       * with such slides, for example:
-       *
-       * @example
-       * mySwiper.appendSlide('<div class="swiper-slide">Slide 10"</div>')
-       * mySwiper.appendSlide([
-       *   '<div class="swiper-slide">Slide 10"</div>',
-       *   '<div class="swiper-slide">Slide 11"</div>'
-       * ]);
-       */
+    * Add new slides to the end. slides could be HTMLElement or HTML string with new slide or array
+    * with such slides, for example:
+    *
+    * @example
+    * mySwiper.appendSlide('<div class="swiper-slide">Slide 10"</div>')
+    * mySwiper.appendSlide([
+    *   '<div class="swiper-slide">Slide 10"</div>',
+    *   '<div class="swiper-slide">Slide 11"</div>'
+    * ]);
+    */
   def appendSlide(slide: stdLib.HTMLElement): scala.Unit = js.native
-  /**
-       * Add new slides to the beginning. slides could be HTMLElement or HTML string with new slide or
-       * array with such slides, for example:
-       *
-       * @example
-       * mySwiper.prependSlide('<div class="swiper-slide">Slide 0"</div>')
-       * mySwiper.prependSlide([
-       * '<div class="swiper-slide">Slide 1"</div>',
-       * '<div class="swiper-slide">Slide 2"</div>'
-       * ]);
-       */
   def prependSlide(slide: java.lang.String): scala.Unit = js.native
   /**
-       * Add new slides to the beginning. slides could be HTMLElement or HTML string with new slide or
-       * array with such slides, for example:
-       *
-       * @example
-       * mySwiper.prependSlide('<div class="swiper-slide">Slide 0"</div>')
-       * mySwiper.prependSlide([
-       * '<div class="swiper-slide">Slide 1"</div>',
-       * '<div class="swiper-slide">Slide 2"</div>'
-       * ]);
-       */
+    * Add new slides to the beginning. slides could be HTMLElement or HTML string with new slide or
+    * array with such slides, for example:
+    *
+    * @example
+    * mySwiper.prependSlide('<div class="swiper-slide">Slide 0"</div>')
+    * mySwiper.prependSlide([
+    * '<div class="swiper-slide">Slide 1"</div>',
+    * '<div class="swiper-slide">Slide 2"</div>'
+    * ]);
+    */
   def prependSlide(slide: stdLib.HTMLElement): scala.Unit = js.native
   /**
-       * Update virutal slides state
-       */
+    * Update virutal slides state
+    */
   def update(): scala.Unit = js.native
 }
 

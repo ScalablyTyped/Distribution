@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IServerVaultManagementOperations extends js.Object {
   def AttachVault(VaultProperties: IVaultProperties, UpdateAttachmentGUID: scala.Boolean): IVaultProperties
   def AttachVaultWithOptions(VaultProperties: IVaultProperties, Options: IAttachVaultOptions): IVaultProperties

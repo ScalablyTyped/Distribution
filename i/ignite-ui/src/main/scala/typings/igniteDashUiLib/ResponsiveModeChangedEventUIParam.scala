@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResponsiveModeChangedEventUIParam extends js.Object {
   /**
   	 * Gets the newly assumed mode.

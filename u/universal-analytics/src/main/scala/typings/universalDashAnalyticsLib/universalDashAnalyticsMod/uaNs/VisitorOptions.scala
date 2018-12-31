@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VisitorOptions extends js.Object {
   var batchSize: js.UndefOr[scala.Double] = js.undefined
   var cid: js.UndefOr[java.lang.String] = js.undefined

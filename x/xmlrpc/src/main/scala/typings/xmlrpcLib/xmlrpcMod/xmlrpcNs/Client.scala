@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Client extends js.Object {
   var cookies: js.UndefOr[xmlrpcLib.xmlrpcMod.Cookies] = js.undefined
   var headersProcessors: xmlrpcLib.Anon_Processors

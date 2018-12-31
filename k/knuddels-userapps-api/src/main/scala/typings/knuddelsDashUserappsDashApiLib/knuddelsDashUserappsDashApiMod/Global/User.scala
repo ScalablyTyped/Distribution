@@ -80,9 +80,6 @@ class User () extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/User.html#method_getProfileLink
   		 */
   def getProfileLink(): java.lang.String = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/User.html#method_getProfileLink
-  		 */
   def getProfileLink(displayText: java.lang.String): java.lang.String = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/User.html#method_getProfilePhoto
@@ -158,9 +155,6 @@ class User () extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/User.html#method_isInTeam
   		 */
   def isInTeam(teamName: java.lang.String): scala.Boolean = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/User.html#method_isInTeam
-  		 */
   def isInTeam(teamName: java.lang.String, subTeamName: java.lang.String): scala.Boolean = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/User.html#method_isLikingChannel

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SUCCESS extends js.Object {
   var FAILURE: chromeDashAppsLib.chromeDashAppsLibStrings.failure
   var IN_USE: chromeDashAppsLib.chromeDashAppsLibStrings.in_use

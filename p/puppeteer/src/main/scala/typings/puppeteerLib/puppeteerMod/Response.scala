@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Response extends js.Object {
   /** Promise which resolves to a buffer with response body. */
   def buffer(): js.Promise[nodeLib.Buffer]
@@ -18,9 +17,9 @@ trait Response extends js.Object {
   /** An object with HTTP headers associated with the response. All header names are lower-case. */
   def headers(): Headers
   /**
-     * Promise which resolves to a JSON representation of response body.
-     * @throws This method will throw if the response body is not parsable via `JSON.parse`.
-     */
+    * Promise which resolves to a JSON representation of response body.
+    * @throws This method will throw if the response body is not parsable via `JSON.parse`.
+    */
   def json(): js.Promise[_]
   /** Contains a boolean stating whether the response was successful (status in the range 200-299) or not. */
   def ok(): scala.Boolean

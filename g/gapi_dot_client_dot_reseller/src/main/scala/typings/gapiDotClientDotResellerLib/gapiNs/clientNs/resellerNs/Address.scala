@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Address extends js.Object {
   /** A customer's physical address. An address can be composed of one to three lines. The addressline2 and addressLine3 are optional. */
   var addressLine1: js.UndefOr[java.lang.String] = js.undefined
@@ -16,9 +15,9 @@ trait Address extends js.Object {
   /** The customer contact's name. This is required. */
   var contactName: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * For countryCode information, see the ISO 3166 country code elements. Verify that country is approved for resale of Google products. This property is
-               * required when creating a new customer.
-               */
+    * For countryCode information, see the ISO 3166 country code elements. Verify that country is approved for resale of Google products. This property is
+    * required when creating a new customer.
+    */
   var countryCode: js.UndefOr[java.lang.String] = js.undefined
   /** Identifies the resource as a customer address. Value: customers#address */
   var kind: js.UndefOr[java.lang.String] = js.undefined

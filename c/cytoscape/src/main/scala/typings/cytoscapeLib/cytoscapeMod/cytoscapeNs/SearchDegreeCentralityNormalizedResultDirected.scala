@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SearchDegreeCentralityNormalizedResultDirected extends js.Object {
   /** the normalised indegree centrality of the specified node */
   def indegree(node: NodeSingular): js.Any

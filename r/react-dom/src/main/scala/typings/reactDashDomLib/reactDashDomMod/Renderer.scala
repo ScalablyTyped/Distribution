@@ -66,8 +66,6 @@ trait Renderer extends js.Object {
     container: reactLib.Element,
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
-  // Deprecated(render): The return value is deprecated.
-  // In future releases the render function's return type will be void.
   def apply[T /* <: reactLib.Element */](element: reactLib.reactMod.ReactNs.DOMElement[reactLib.reactMod.ReactNs.DOMAttributes[T], T]): T = js.native
   // Deprecated(render): The return value is deprecated.
   // In future releases the render function's return type will be void.
@@ -75,15 +73,11 @@ trait Renderer extends js.Object {
     element: reactLib.reactMod.ReactNs.DOMElement[reactLib.reactMod.ReactNs.DOMAttributes[T], T],
     container: reactLib.Element
   ): T = js.native
-  // Deprecated(render): The return value is deprecated.
-  // In future releases the render function's return type will be void.
   def apply[T /* <: reactLib.Element */](
     element: reactLib.reactMod.ReactNs.DOMElement[reactLib.reactMod.ReactNs.DOMAttributes[T], T],
     container: reactLib.Element,
     callback: js.Function0[scala.Unit]
   ): T = js.native
-  // Deprecated(render): The return value is deprecated.
-  // In future releases the render function's return type will be void.
   def apply[T /* <: reactLib.Element */](
     element: reactLib.reactMod.ReactNs.DOMElement[reactLib.reactMod.ReactNs.DOMAttributes[T], T],
     container: scala.Null,

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait InputScale extends js.Object
 
 /**
-         * Set of possible values for the inputScale option.
-         * The input scale is required for proper heat map blending. If the input scale is not linear, then the TilePoint.value is converted to linear scale before calculating the sum or average.
-         */
+  * Set of possible values for the inputScale option.
+  * The input scale is required for proper heat map blending. If the input scale is not linear, then the TilePoint.value is converted to linear scale before calculating the sum or average.
+  */
 @JSGlobal("H.datalens.HeatmapLayer.InputScale")
 @js.native
 object InputScale extends js.Object {

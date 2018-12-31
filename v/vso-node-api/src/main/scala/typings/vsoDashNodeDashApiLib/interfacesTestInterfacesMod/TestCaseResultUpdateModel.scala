@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestCaseResultUpdateModel extends js.Object {
   var associatedWorkItems: js.Array[scala.Double]
   var automatedTestTypeId: java.lang.String

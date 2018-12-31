@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GooglePrivacyDlpV2beta1Finding extends js.Object {
   /** Timestamp when finding was detected. */
   var createTime: js.UndefOr[java.lang.String] = js.undefined

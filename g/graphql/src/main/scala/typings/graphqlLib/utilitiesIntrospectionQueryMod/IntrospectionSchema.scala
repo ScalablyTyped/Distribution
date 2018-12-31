@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IntrospectionSchema extends js.Object {
   val directives: js.Array[IntrospectionDirective]
   val mutationType: graphqlLib.tsutilsMaybeMod.Maybe[IntrospectionNamedTypeRef[IntrospectionObjectType]]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Debt extends js.Object {
   var available: scala.Double
   var blocked: js.UndefOr[scala.Double] = js.undefined

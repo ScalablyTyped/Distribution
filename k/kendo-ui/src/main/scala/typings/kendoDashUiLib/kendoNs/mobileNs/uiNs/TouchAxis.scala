@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TouchAxis extends js.Object {
   var client: js.UndefOr[scala.Double] = js.undefined
   var delta: js.UndefOr[scala.Double] = js.undefined

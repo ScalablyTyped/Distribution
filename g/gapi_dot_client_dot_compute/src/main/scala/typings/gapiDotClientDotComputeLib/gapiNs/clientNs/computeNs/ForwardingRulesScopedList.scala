@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ForwardingRulesScopedList extends js.Object {
   /** List of forwarding rules contained in this scope. */
   var forwardingRules: js.UndefOr[js.Array[ForwardingRule]] = js.undefined

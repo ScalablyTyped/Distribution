@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var delayAfter: js.UndefOr[scala.Double] = js.undefined
   var delayMs: js.UndefOr[scala.Double] = js.undefined

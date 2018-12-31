@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_YMin extends js.Object {
   var xMax: scala.Double
   var xMin: scala.Double

@@ -28,7 +28,7 @@ trait LevelUpConstructor
         abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractLevelDOWN[js.Any, js.Any]
       ]
     ] {
-  var errors: js.Any = js.native
+  var errors: /*typeof levelerrors*/ js.Any = js.native
   def apply[DB /* <: abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractLevelDOWN[_, _] */](db: DB): LevelUp[DB] = js.native
   def apply[DB /* <: abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractLevelDOWN[_, _] */](db: DB, cb: abstractDashLeveldownLib.abstractDashLeveldownMod.ErrorCallback): LevelUp[DB] = js.native
   def apply[DB /* <: abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractLevelDOWN[_, _] */](db: DB, options: js.Any): LevelUp[DB] = js.native

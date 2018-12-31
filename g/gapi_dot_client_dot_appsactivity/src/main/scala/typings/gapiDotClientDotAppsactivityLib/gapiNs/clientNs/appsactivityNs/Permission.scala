@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Permission extends js.Object {
   /** The name of the user or group the permission applies to. */
   var name: js.UndefOr[java.lang.String] = js.undefined

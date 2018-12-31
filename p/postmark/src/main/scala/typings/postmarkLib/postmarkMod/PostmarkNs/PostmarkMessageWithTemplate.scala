@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PostmarkMessageWithTemplate extends js.Object {
   var Bcc: js.UndefOr[java.lang.String] = js.undefined
   var Cc: js.UndefOr[java.lang.String] = js.undefined

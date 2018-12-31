@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnInfo extends js.Object {
   var qApprMaxGlyphCount: scala.Double
   var qAttrDimInfo: js.Array[NxAttrDimInfo]

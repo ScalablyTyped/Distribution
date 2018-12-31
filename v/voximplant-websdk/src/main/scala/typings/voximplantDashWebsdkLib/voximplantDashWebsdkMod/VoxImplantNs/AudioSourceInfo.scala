@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	*	Audio recording device info
 	*/
-
 trait AudioSourceInfo extends js.Object {
   /**
   		*	Device id that can be used to choose audio recording device

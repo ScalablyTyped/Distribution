@@ -28,9 +28,7 @@ class LoadItem () extends js.Object {
 @JSGlobal("createjs.LoadItem")
 @js.native
 object LoadItem extends js.Object {
-  // methods
   def create(value: java.lang.String): js.Object | preloadjsLib.createjsNs.LoadItem = js.native
-  // methods
   def create(value: js.Object): js.Object | preloadjsLib.createjsNs.LoadItem = js.native
   // methods
   def create(value: preloadjsLib.createjsNs.LoadItem): js.Object | preloadjsLib.createjsNs.LoadItem = js.native

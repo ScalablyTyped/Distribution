@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 class XmlAttributeText protected ()
   extends xmlcreateLib.libNodesXmlAttributeTextMod.default {
   /**
-       * Initializes a new instance of the {@link XmlAttributeText} class.
-       *
-       * @param text Text.
-       */
+    * Initializes a new instance of the {@link XmlAttributeText} class.
+    *
+    * @param text Text.
+    */
   def this(text: java.lang.String) = this()
 }
 

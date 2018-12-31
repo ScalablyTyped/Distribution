@@ -96,13 +96,7 @@ trait Blob extends Proxy {
   		 * Returns a thumbnail version of the underlying image, optionally with a border and rounded corners.
   		 */
   def imageAsThumbnail(size: scala.Double): Blob = js.native
-  /**
-  		 * Returns a thumbnail version of the underlying image, optionally with a border and rounded corners.
-  		 */
   def imageAsThumbnail(size: scala.Double, borderSize: scala.Double): Blob = js.native
-  /**
-  		 * Returns a thumbnail version of the underlying image, optionally with a border and rounded corners.
-  		 */
   def imageAsThumbnail(size: scala.Double, borderSize: scala.Double, cornerRadius: scala.Double): Blob = js.native
   /**
   		 * Returns a copy of the underlying image with an added alpha channel.
@@ -112,9 +106,6 @@ trait Blob extends Proxy {
   		 * Returns a copy of the underlying image with rounded corners added.
   		 */
   def imageWithRoundedCorner(cornerSize: scala.Double): Blob = js.native
-  /**
-  		 * Returns a copy of the underlying image with rounded corners added.
-  		 */
   def imageWithRoundedCorner(cornerSize: scala.Double, borderSize: scala.Double): Blob = js.native
   /**
   		 * Returns a copy of the underlying image with an added transparent border.

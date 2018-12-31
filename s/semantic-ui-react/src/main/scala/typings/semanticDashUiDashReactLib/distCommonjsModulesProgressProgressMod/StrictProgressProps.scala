@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictProgressProps extends js.Object {
   /** A progress bar can show activity. */
   var active: js.UndefOr[scala.Boolean] = js.undefined

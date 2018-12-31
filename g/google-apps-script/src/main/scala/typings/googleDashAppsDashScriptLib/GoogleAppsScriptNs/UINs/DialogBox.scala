@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DialogBox extends js.Object {
   def add(widget: Widget): DialogBox
   def addAutoHidePartner(partner: Component): DialogBox

@@ -24,13 +24,7 @@ object GeometryUtilNs extends js.Object {
   		 * Returns a readable area string in yards or metric
   		 */
   def readableArea(area: scala.Double): java.lang.String = js.native
-  /**
-  		 * Returns a readable area string in yards or metric
-  		 */
   def readableArea(area: scala.Double, isMetric: scala.Boolean): java.lang.String = js.native
-  /**
-  		 * Returns a readable area string in yards or metric
-  		 */
   def readableArea(
     area: scala.Double,
     isMetric: scala.Boolean,
@@ -41,30 +35,14 @@ object GeometryUtilNs extends js.Object {
   		 * The value will be rounded as defined by the precision option object.
   		 */
   def readableDistance(distance: scala.Double): java.lang.String = js.native
-  /**
-  		 * Converts metric distance to distance string.
-  		 * The value will be rounded as defined by the precision option object.
-  		 */
   def readableDistance(distance: scala.Double, isMetric: scala.Boolean): java.lang.String = js.native
-  /**
-  		 * Converts metric distance to distance string.
-  		 * The value will be rounded as defined by the precision option object.
-  		 */
   def readableDistance(distance: scala.Double, isMetric: scala.Boolean, isFeet: scala.Boolean): java.lang.String = js.native
-  /**
-  		 * Converts metric distance to distance string.
-  		 * The value will be rounded as defined by the precision option object.
-  		 */
   def readableDistance(
     distance: scala.Double,
     isMetric: scala.Boolean,
     isFeet: scala.Boolean,
     isNauticalMile: scala.Boolean
   ): java.lang.String = js.native
-  /**
-  		 * Converts metric distance to distance string.
-  		 * The value will be rounded as defined by the precision option object.
-  		 */
   def readableDistance(
     distance: scala.Double,
     isMetric: scala.Boolean,

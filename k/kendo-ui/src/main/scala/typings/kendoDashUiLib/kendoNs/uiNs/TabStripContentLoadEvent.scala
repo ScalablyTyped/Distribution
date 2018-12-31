@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TabStripContentLoadEvent extends TabStripEvent {
   var contentElement: js.UndefOr[stdLib.Element] = js.undefined
   var item: js.UndefOr[stdLib.Element] = js.undefined

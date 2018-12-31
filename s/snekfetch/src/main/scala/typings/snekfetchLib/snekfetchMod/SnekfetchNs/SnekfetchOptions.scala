@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SnekfetchOptions extends js.Object {
   var agent: js.UndefOr[nodeLib.httpMod.Agent | scala.Boolean] = js.undefined
   var data: js.UndefOr[js.Object | java.lang.String | nodeLib.Buffer] = js.undefined

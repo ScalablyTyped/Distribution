@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class SpeechRecognitionListConstraint protected () extends js.Object {
   /**
-                   * Creates an instance of the SpeechRecognitionListConstraint class from an array of words or phrases.
-                   * @param commands A string array of words or phrases that make up the constraint.
-                   */
+    * Creates an instance of the SpeechRecognitionListConstraint class from an array of words or phrases.
+    * @param commands A string array of words or phrases that make up the constraint.
+    */
   def this(commands: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String]) = this()
   /**
-                   * Creates an instance of the SpeechRecognitionListConstraint class from an array of words or phrases and a tag.
-                   * @param commands A string array of words or phrases that make up the constraint.
-                   * @param tag The tag to assign to the constraint.
-                   */
+    * Creates an instance of the SpeechRecognitionListConstraint class from an array of words or phrases and a tag.
+    * @param commands A string array of words or phrases that make up the constraint.
+    * @param tag The tag to assign to the constraint.
+    */
   def this(commands: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], tag: java.lang.String) = this()
   /** Gets the array of words or phrases that make up the constraint. */
   var commands: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[java.lang.String] = js.native

@@ -36,12 +36,12 @@ class ConstantPool () extends js.Object {
   def getLiteralFactory(literal: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.LiteralMapExpr): atAngularCompilerLib.Anon_LiteralFactoryArguments = js.native
   def propertyNameOf(kind: DefinitionKind): java.lang.String = js.native
   /**
-       * Produce a unique name.
-       *
-       * The name might be unique among different prefixes if any of the prefixes end in
-       * a digit so the prefix should be a constant string (not based on user input) and
-       * must not end in a digit.
-       */
+    * Produce a unique name.
+    *
+    * The name might be unique among different prefixes if any of the prefixes end in
+    * a digit so the prefix should be a constant string (not based on user input) and
+    * must not end in a digit.
+    */
   def uniqueName(prefix: java.lang.String): java.lang.String = js.native
 }
 

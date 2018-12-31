@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICommandName extends js.Object {
   var ACCEPT_ALERT: java.lang.String
   var ADD_COOKIE: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Defaulttitle extends js.Object {
   /** Icon */
   var default_icon: java.lang.String
@@ -16,8 +15,8 @@ trait Anon_Defaulttitle extends js.Object {
     js.Array[chromeDashAppsLib.chromeDashAppsLibStrings.read] | js.Array[java.lang.String]
   ] = js.undefined
   /**
-                   * To match all files, use 'filesystem:*.*'
-                   */
+    * To match all files, use 'filesystem:*.*'
+    */
   var file_filters: js.Array[java.lang.String]
   /** Handler id */
   var id: java.lang.String

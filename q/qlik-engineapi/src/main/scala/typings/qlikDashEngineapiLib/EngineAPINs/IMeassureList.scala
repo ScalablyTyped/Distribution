@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * IMeassureList
-     */
-
+  * IMeassureList
+  */
 trait IMeassureList extends js.Object {
   var qItems: js.Array[IMeassureListItemLayout]
 }

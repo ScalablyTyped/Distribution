@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PreviousMap extends js.Object {
   var annotation: java.lang.String
   var consumerCache: js.Any

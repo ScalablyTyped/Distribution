@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Configuration options */
-
 trait Options extends js.Object {
   /** Path to custom CSS file, relative to current directory. */
   var cssPath: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WSConnectOptions extends js.Object {
   var headers: js.UndefOr[HttpHeaders] = js.undefined
   var path: js.UndefOr[java.lang.String] = js.undefined

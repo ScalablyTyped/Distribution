@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IdentitytoolkitRelyingpartyUploadAccountRequest extends js.Object {
   /** Whether allow overwrite existing account when user local_id exists. */
   var allowOverwrite: js.UndefOr[scala.Boolean] = js.undefined

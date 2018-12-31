@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RenderDates extends js.Object {
   /** Sets the end limit of the custom date range.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var end: js.UndefOr[js.Any] = js.undefined
   /** Sets the start of custom date range to be rendered in the Schedule.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var start: js.UndefOr[js.Any] = js.undefined
 }
 

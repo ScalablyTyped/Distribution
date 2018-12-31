@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TStreamReadResult extends js.Object {
   var calls: scala.Double
   var duration: scala.Double

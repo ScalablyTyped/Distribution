@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StateMachineEventDef extends js.Object {
   var from: js.Any
   var name: java.lang.String

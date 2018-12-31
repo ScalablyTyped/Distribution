@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class AllJoynServiceInfoRemovedEventArgs protected () extends js.Object {
   /**
-                   * Generates an object containing information about an advertising app that is no longer available.
-                   * @param uniqueName The unique app name.
-                   */
+    * Generates an object containing information about an advertising app that is no longer available.
+    * @param uniqueName The unique app name.
+    */
   def this(uniqueName: java.lang.String) = this()
   /** The unique bus name of the advertising app that is no longer available. */
   var uniqueName: java.lang.String = js.native

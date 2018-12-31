@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DbConfig extends js.Object {
   var db: js.UndefOr[java.lang.String] = js.undefined
   var hosts: js.UndefOr[java.lang.String] = js.undefined

@@ -54,20 +54,20 @@ object PeerFinder extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-                   * Connects to a peer discovered by a call to the FindAllPeersAsync method.
-                   * @param peerInformation A peer information object representing the peer to connect to.
-                   * @return An asynchronous operation for connecting to a remote peer using the supplied StreamSocket object.
-                   */
+    * Connects to a peer discovered by a call to the FindAllPeersAsync method.
+    * @param peerInformation A peer information object representing the peer to connect to.
+    * @return An asynchronous operation for connecting to a remote peer using the supplied StreamSocket object.
+    */
   def connectAsync(peerInformation: winrtDashUwpLib.WindowsNs.NetworkingNs.ProximityNs.PeerInformation): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.StreamSocket] = js.native
   /**
-                   * Creates a new instance of a PeerWatcher object for dynamic discovery of peer apps.
-                   * @return An instance of a PeerWatcher object for dynamic discovery of peer apps.
-                   */
+    * Creates a new instance of a PeerWatcher object for dynamic discovery of peer apps.
+    * @return An instance of a PeerWatcher object for dynamic discovery of peer apps.
+    */
   def createWatcher(): winrtDashUwpLib.WindowsNs.NetworkingNs.ProximityNs.PeerWatcher = js.native
   /**
-                   * Asynchronously browses for peer devices that are running the same app within wireless range.
-                   * @return The asynchronous operation for browsing for peer devices that are running your app.
-                   */
+    * Asynchronously browses for peer devices that are running the same app within wireless range.
+    * @return The asynchronous operation for browsing for peer devices that are running your app.
+    */
   def findAllPeersAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /** Occurs when a remote peer requests a connection using the ConnectAsync method. */
   def onconnectionrequested(
@@ -94,9 +94,9 @@ object PeerFinder extends js.Object {
   /** Makes an app discoverable to remote peers. */
   def start(): scala.Unit = js.native
   /**
-                   * Makes an app discoverable to remote peers.
-                   * @param peerMessage The message to deliver to the proximate device.
-                   */
+    * Makes an app discoverable to remote peers.
+    * @param peerMessage The message to deliver to the proximate device.
+    */
   def start(peerMessage: java.lang.String): scala.Unit = js.native
   /** Stops advertising for a peer connection. */
   def stop(): scala.Unit = js.native

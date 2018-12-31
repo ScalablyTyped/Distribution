@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQueryRatyOptions extends js.Object {
   var cancel: js.UndefOr[scala.Boolean] = js.undefined
   var cancelClass: js.UndefOr[java.lang.String] = js.undefined

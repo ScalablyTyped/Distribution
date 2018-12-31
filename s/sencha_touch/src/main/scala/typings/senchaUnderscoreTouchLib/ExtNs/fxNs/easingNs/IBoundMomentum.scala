@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBoundMomentum extends IAbstract {
   /** [Config Option] (Object) */
   var bounce: js.UndefOr[js.Any] = js.undefined

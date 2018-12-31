@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * An object that is used to describe the recurrence pattern for a recurring event.
 		 */
-
 trait RecurrenceRule
   extends titaniumLib.TitaniumNs.Proxy {
   /**

@@ -11,8 +11,6 @@ object bodyDashParserModMembers extends js.Object {
   // for docs go to https://github.com/expressjs/body-parser/tree/1.16.0#body-parser
   // @deprecated
   def apply(): connectLib.connectMod.createServerNs.NextHandleFunction = js.native
-  // for docs go to https://github.com/expressjs/body-parser/tree/1.16.0#body-parser
-  // @deprecated
   def apply(
     options: bodyDashParserLib.bodyDashParserMod.bodyParserNs.OptionsJson with bodyDashParserLib.bodyDashParserMod.bodyParserNs.OptionsText with bodyDashParserLib.bodyDashParserMod.bodyParserNs.OptionsUrlencoded
   ): connectLib.connectMod.createServerNs.NextHandleFunction = js.native

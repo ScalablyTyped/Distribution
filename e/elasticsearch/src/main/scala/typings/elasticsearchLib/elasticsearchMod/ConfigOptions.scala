@@ -5,10 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConfigOptions extends js.Object {
   var apiVersion: js.UndefOr[java.lang.String] = js.undefined
-  var connectionClass: js.UndefOr[java.lang.String | js.Any] = js.undefined
+  var connectionClass: js.UndefOr[
+    java.lang.String | (org.scalablytyped.runtime.Instantiable2[
+      /* host */ js.Any, 
+      /* config */ js.Any, 
+      elasticsearchLib.srcLibConnectorsHttpMod.namespaced
+    ])
+  ] = js.undefined
   var createNodeAgent: js.UndefOr[js.Any] = js.undefined
   var deadTimeout: js.UndefOr[scala.Double] = js.undefined
   var defer: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

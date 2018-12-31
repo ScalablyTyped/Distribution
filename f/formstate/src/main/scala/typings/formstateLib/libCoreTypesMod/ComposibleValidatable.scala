@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ComposibleValidatable[TValue] extends Validatable[TValue] {
   /** Used to tell the parent about validation */
   @JSName("on$ChangeAfterValidation")

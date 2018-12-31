@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataTableProps
   extends reactDashMdLib.libMod.Props {
   var baseId: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
@@ -13,12 +12,12 @@ trait DataTableProps
   var checkboxLabelTemplate: js.UndefOr[java.lang.String | template] = js.undefined
   var checkedIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var checkedIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var checkedIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var defaultSelectedRows: js.UndefOr[js.Array[scala.Boolean]] = js.undefined
@@ -37,12 +36,12 @@ trait DataTableProps
   var indeterminate: js.UndefOr[scala.Boolean] = js.undefined
   var indeterminateIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var indeterminateIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var indeterminateIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var onRowToggle: js.UndefOr[
     js.Function4[
@@ -60,12 +59,12 @@ trait DataTableProps
   var tableStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var uncheckedIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var uncheckedIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var uncheckedIconClassName: js.UndefOr[java.lang.String] = js.undefined
 }
 

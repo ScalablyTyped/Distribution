@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InputValuesError extends js.Object {
   /**
-       * The error message.
-       */
+    * The error message.
+    */
   var message: java.lang.String
 }
 

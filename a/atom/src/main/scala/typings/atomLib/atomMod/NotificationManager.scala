@@ -9,25 +9,19 @@ import scala.scalajs.js.annotation._
 trait NotificationManager extends js.Object {
   /** Add an error notification. */
   def addError(message: java.lang.String): Notification = js.native
-  /** Add an error notification. */
   def addError(message: java.lang.String, options: ErrorNotificationOptions): Notification = js.native
   /** Add a fatal error notification. */
   def addFatalError(message: java.lang.String): Notification = js.native
-  /** Add a fatal error notification. */
   def addFatalError(message: java.lang.String, options: ErrorNotificationOptions): Notification = js.native
   /** Add an informational notification. */
   def addInfo(message: java.lang.String): Notification = js.native
-  /** Add an informational notification. */
   def addInfo(message: java.lang.String, options: NotificationOptions): Notification = js.native
   // Adding Notifications
   /** Add a success notification. */
   def addSuccess(message: java.lang.String): Notification = js.native
-  // Adding Notifications
-  /** Add a success notification. */
   def addSuccess(message: java.lang.String, options: NotificationOptions): Notification = js.native
   /** Add a warning notification. */
   def addWarning(message: java.lang.String): Notification = js.native
-  /** Add a warning notification. */
   def addWarning(message: java.lang.String, options: NotificationOptions): Notification = js.native
   // Managing Notifications
   /** Clear all the notifications. */

@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region 系统信息 https://docs.alipay.com/mini/api/system-info
-
 trait SystemInfo extends js.Object {
   /**
   		 * 当前运行的客户端，当前是支付宝则有效值是"alipay"

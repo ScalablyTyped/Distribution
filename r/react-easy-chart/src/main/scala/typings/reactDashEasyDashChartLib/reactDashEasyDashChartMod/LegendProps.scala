@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LegendProps extends js.Object {
   /** Override the color of the items */
   var config: js.UndefOr[js.Array[reactDashEasyDashChartLib.Anon_Color]] = js.undefined

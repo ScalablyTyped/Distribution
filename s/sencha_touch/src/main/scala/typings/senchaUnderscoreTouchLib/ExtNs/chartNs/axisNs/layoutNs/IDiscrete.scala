@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDiscrete extends ILayout {
   /** [Method] Processes the data of the series bound to the axis  */
   @JSName("processData")

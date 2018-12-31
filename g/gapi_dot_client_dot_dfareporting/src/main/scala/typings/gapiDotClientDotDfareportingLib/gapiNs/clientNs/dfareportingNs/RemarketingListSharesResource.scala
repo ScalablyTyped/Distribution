@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RemarketingListSharesResource extends js.Object {
   /** Gets one remarketing list share by remarketing list ID. */
   def get(request: gapiDotClientDotDfareportingLib.Anon_ProfileIdPrettyPrintRemarketingListId): gapiDotClientLib.gapiNs.clientNs.Request[RemarketingListShare]

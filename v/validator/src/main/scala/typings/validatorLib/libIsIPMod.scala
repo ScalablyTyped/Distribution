@@ -8,5 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("validator/lib/isIP", JSImport.Namespace)
 @js.native
 object libIsIPMod
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[
+      js.Function2[/* str */ java.lang.String, /* version */ js.UndefOr[scala.Double], scala.Boolean]
+    ]
 

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait Priority extends js.Object
 
 /**
-       * Priorities for general use.
-      */
+  * Priorities for general use.
+  */
 @JSGlobal("sap.ui.core.Priority")
 @js.native
 object Priority extends js.Object {

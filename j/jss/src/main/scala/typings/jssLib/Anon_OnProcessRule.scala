@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnProcessRule extends js.Object {
   def onChangeValue(value: js.Any, prop: java.lang.String, rule: jssLib.jssMod.Rule): js.Any
   def onCreateRule(name: java.lang.String, style: jssLib.cssMod.Style, options: jssLib.jssMod.RuleOptions): jssLib.jssMod.Rule

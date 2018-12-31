@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShowTabBarOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 是否需要动画效果，默认无 */

@@ -17,10 +17,10 @@ abstract class AbstractModel protected ()
 object AbstractModel extends js.Object {
   var readImpl: js.Any = js.native
   /**
-       * Instantiates a new working copy that can communicate with the server for sending and receiving documents.
-       * Reading a working copy will automatically fetch all unit interfaces for this working copy and invoke callback,
-       * or call the errorHandler if this fails.
-       */
+    * Instantiates a new working copy that can communicate with the server for sending and receiving documents.
+    * Reading a working copy will automatically fetch all unit interfaces for this working copy and invoke callback,
+    * or call the errorHandler if this fails.
+    */
   def read[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashModelMod.IAbstractModel */, CT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashModelMod.AbstractModel with IT */](
     client: mendixmodelsdkLib.distSdkInternalModelDashServerDashClientMod.IModelServerClient,
     workingCopyId: java.lang.String,

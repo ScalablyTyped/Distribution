@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IWrapperOptions extends js.Object {
   var apiCheck: js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[angularLib.angularMod.Global.Function]

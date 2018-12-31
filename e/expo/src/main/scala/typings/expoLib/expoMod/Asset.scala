@@ -35,15 +35,11 @@ class Asset protected () extends js.Object {
 object Asset extends js.Object {
   /** Returns the `Expo.Asset` instance representing an asset given its module. */
   def fromModule(module: expoLib.expoMod.RequireSource): expoLib.expoMod.Asset = js.native
-  /**
-       * A helper that wraps `Expo.Asset.fromModule(module).downloadAsync` for convenience.
-       * @param moduleIds An array of `require('path/to/file')`. Can also be just one module without an Array.
-       */
   def loadAsync(module: expoLib.expoMod.RequireSource): js.Promise[scala.Unit] = js.native
   /**
-       * A helper that wraps `Expo.Asset.fromModule(module).downloadAsync` for convenience.
-       * @param moduleIds An array of `require('path/to/file')`. Can also be just one module without an Array.
-       */
+    * A helper that wraps `Expo.Asset.fromModule(module).downloadAsync` for convenience.
+    * @param moduleIds An array of `require('path/to/file')`. Can also be just one module without an Array.
+    */
   def loadAsync(module: js.Array[expoLib.expoMod.RequireSource]): js.Promise[scala.Unit] = js.native
 }
 

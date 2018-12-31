@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SortableContainerProps extends js.Object {
   var axis: js.UndefOr[Axis] = js.undefined
   var distance: js.UndefOr[scala.Double] = js.undefined

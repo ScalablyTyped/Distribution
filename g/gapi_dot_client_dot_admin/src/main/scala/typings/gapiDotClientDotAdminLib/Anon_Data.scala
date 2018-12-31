@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Data extends js.Object {
   /** Machine readable code / warning type. */
   var code: js.UndefOr[java.lang.String] = js.undefined

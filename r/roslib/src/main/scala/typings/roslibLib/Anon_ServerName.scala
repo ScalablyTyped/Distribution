@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ServerName extends js.Object {
   var actionName: java.lang.String
   var ros: roslibLib.roslibMod.ROSLIBNs.Ros

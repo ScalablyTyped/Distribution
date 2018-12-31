@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object datasetsNs extends js.Object {
   /**
-       * See: {@link https://docs.mendix.com/refguide7/data-sets relevant section in reference guide}
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.IDataSet because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * See: {@link https://docs.mendix.com/refguide7/data-sets relevant section in reference guide}
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.IDataSet because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class DataSet protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
@@ -36,18 +36,18 @@ object datasetsNs extends js.Object {
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     /**
-             * In version 7.9.0: introduced
-             */
+      * In version 7.9.0: introduced
+      */
     var columnType: mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.DataType = js.native
     val containerAsJavaDataSetSource: JavaDataSetSource = js.native
     @JSName("model")
     var model_DataSetColumn: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     var name: java.lang.String = js.native
     /**
-             * The value of this property is conceptually of type dataTypes.LegacyDataType.
-             *
-             * In version 7.9.0: deleted
-             */
+      * The value of this property is conceptually of type dataTypes.LegacyDataType.
+      *
+      * In version 7.9.0: deleted
+      */
     var `type`: java.lang.String = js.native
   }
   
@@ -94,13 +94,13 @@ object datasetsNs extends js.Object {
   class DataSetObjectConstraint protected () extends DataSetParameterConstraint {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     /**
-             * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
-             */
+      * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
+      */
     var constraint: java.lang.String = js.native
     var name: java.lang.String = js.native
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.IDataSetParameter because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.IDataSetParameter because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class DataSetParameter protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
@@ -111,19 +111,19 @@ object datasetsNs extends js.Object {
     var model_DataSetParameter: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     var name: java.lang.String = js.native
     /**
-             * In version 7.9.0: introduced
-             */
+      * In version 7.9.0: introduced
+      */
     var parameterType: mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.DataType = js.native
     /**
-             * In version 7.9.0: introduced
-             */
+      * In version 7.9.0: introduced
+      */
     var parameterTypeIsRange: scala.Boolean = js.native
     val qualifiedName: java.lang.String | scala.Null = js.native
     /**
-             * The value of this property is conceptually of type dataTypes.LegacyDataType.
-             *
-             * In version 7.9.0: deleted
-             */
+      * The value of this property is conceptually of type dataTypes.LegacyDataType.
+      *
+      * In version 7.9.0: deleted
+      */
     var `type`: java.lang.String = js.native
   }
   
@@ -165,11 +165,11 @@ object datasetsNs extends js.Object {
     extends mendixmodelsdkLib.distSdkInternalMod.AbstractEnum
   
   /**
-       * Interfaces and instance classes for types from the Mendix sub meta model `DataSets`.
-       */
+    * Interfaces and instance classes for types from the Mendix sub meta model `DataSets`.
+    */
   /**
-       * See: {@link https://docs.mendix.com/refguide7/data-sets relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/data-sets relevant section in reference guide}
+    */
   @js.native
   trait IDataSet
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.IDocument {
@@ -197,22 +197,22 @@ object datasetsNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var ignoreErrorsInQuery: scala.Boolean = js.native
     /**
-             * The value of this property is conceptually of type oql.OqlQuery.
-             */
+      * The value of this property is conceptually of type oql.OqlQuery.
+      */
     var query: java.lang.String = js.native
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/data-sets relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/data-sets relevant section in reference guide}
+    */
   @js.native
   object DataSet extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDatasetsMod.StructureVersionInfo = js.native
     /**
-             * Creates a new DataSet unit in the SDK and on the server.
-             * Expects one argument, the projects.IFolderBase in which this unit is contained.
-             */
+      * Creates a new DataSet unit in the SDK and on the server.
+      * Expects one argument, the projects.IFolderBase in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSet = js.native
   }
   
@@ -221,16 +221,16 @@ object datasetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDatasetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new DataSetAccess instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new DataSetAccess instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetAccess = js.native
     /**
-             * Creates and returns a new DataSetAccess instance in the SDK and on the server.
-             * The new DataSetAccess will be automatically stored in the 'dataSetAccess' property
-             * of the parent DataSet element passed as argument.
-             */
+      * Creates and returns a new DataSetAccess instance in the SDK and on the server.
+      * The new DataSetAccess will be automatically stored in the 'dataSetAccess' property
+      * of the parent DataSet element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSet): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetAccess = js.native
   }
   
@@ -239,16 +239,16 @@ object datasetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDatasetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new DataSetColumn instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new DataSetColumn instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetColumn = js.native
     /**
-             * Creates and returns a new DataSetColumn instance in the SDK and on the server.
-             * The new DataSetColumn will be automatically stored in the 'columns' property
-             * of the parent JavaDataSetSource element passed as argument.
-             */
+      * Creates and returns a new DataSetColumn instance in the SDK and on the server.
+      * The new DataSetColumn will be automatically stored in the 'columns' property
+      * of the parent JavaDataSetSource element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.JavaDataSetSource): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetColumn = js.native
   }
   
@@ -257,16 +257,16 @@ object datasetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDatasetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new DataSetConstraintAccess instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new DataSetConstraintAccess instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetConstraintAccess = js.native
     /**
-             * Creates and returns a new DataSetConstraintAccess instance in the SDK and on the server.
-             * The new DataSetConstraintAccess will be automatically stored in the 'constraintAccessList' property
-             * of the parent DataSetParameterAccess element passed as argument.
-             */
+      * Creates and returns a new DataSetConstraintAccess instance in the SDK and on the server.
+      * The new DataSetConstraintAccess will be automatically stored in the 'constraintAccessList' property
+      * of the parent DataSetParameterAccess element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameterAccess): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetConstraintAccess = js.native
   }
   
@@ -275,16 +275,16 @@ object datasetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDatasetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new DataSetDateTimeConstraint instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new DataSetDateTimeConstraint instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetDateTimeConstraint = js.native
     /**
-             * Creates and returns a new DataSetDateTimeConstraint instance in the SDK and on the server.
-             * The new DataSetDateTimeConstraint will be automatically stored in the 'constraints' property
-             * of the parent DataSetParameter element passed as argument.
-             */
+      * Creates and returns a new DataSetDateTimeConstraint instance in the SDK and on the server.
+      * The new DataSetDateTimeConstraint will be automatically stored in the 'constraints' property
+      * of the parent DataSetParameter element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetDateTimeConstraint = js.native
   }
   
@@ -293,16 +293,16 @@ object datasetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDatasetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new DataSetModuleRoleAccess instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new DataSetModuleRoleAccess instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetModuleRoleAccess = js.native
     /**
-             * Creates and returns a new DataSetModuleRoleAccess instance in the SDK and on the server.
-             * The new DataSetModuleRoleAccess will be automatically stored in the 'moduleRoleAccessList' property
-             * of the parent DataSetAccess element passed as argument.
-             */
+      * Creates and returns a new DataSetModuleRoleAccess instance in the SDK and on the server.
+      * The new DataSetModuleRoleAccess will be automatically stored in the 'moduleRoleAccessList' property
+      * of the parent DataSetAccess element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetAccess): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetModuleRoleAccess = js.native
   }
   
@@ -311,16 +311,16 @@ object datasetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDatasetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new DataSetNumericConstraint instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new DataSetNumericConstraint instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetNumericConstraint = js.native
     /**
-             * Creates and returns a new DataSetNumericConstraint instance in the SDK and on the server.
-             * The new DataSetNumericConstraint will be automatically stored in the 'constraints' property
-             * of the parent DataSetParameter element passed as argument.
-             */
+      * Creates and returns a new DataSetNumericConstraint instance in the SDK and on the server.
+      * The new DataSetNumericConstraint will be automatically stored in the 'constraints' property
+      * of the parent DataSetParameter element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetNumericConstraint = js.native
   }
   
@@ -329,16 +329,16 @@ object datasetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDatasetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new DataSetObjectConstraint instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new DataSetObjectConstraint instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetObjectConstraint = js.native
     /**
-             * Creates and returns a new DataSetObjectConstraint instance in the SDK and on the server.
-             * The new DataSetObjectConstraint will be automatically stored in the 'constraints' property
-             * of the parent DataSetParameter element passed as argument.
-             */
+      * Creates and returns a new DataSetObjectConstraint instance in the SDK and on the server.
+      * The new DataSetObjectConstraint will be automatically stored in the 'constraints' property
+      * of the parent DataSetParameter element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetObjectConstraint = js.native
   }
   
@@ -347,16 +347,16 @@ object datasetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDatasetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new DataSetParameter instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new DataSetParameter instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter = js.native
     /**
-             * Creates and returns a new DataSetParameter instance in the SDK and on the server.
-             * The new DataSetParameter will be automatically stored in the 'parameters' property
-             * of the parent DataSet element passed as argument.
-             */
+      * Creates and returns a new DataSetParameter instance in the SDK and on the server.
+      * The new DataSetParameter will be automatically stored in the 'parameters' property
+      * of the parent DataSet element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSet): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter = js.native
   }
   
@@ -365,16 +365,16 @@ object datasetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDatasetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new DataSetParameterAccess instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new DataSetParameterAccess instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameterAccess = js.native
     /**
-             * Creates and returns a new DataSetParameterAccess instance in the SDK and on the server.
-             * The new DataSetParameterAccess will be automatically stored in the 'parameterAccessList' property
-             * of the parent DataSetModuleRoleAccess element passed as argument.
-             */
+      * Creates and returns a new DataSetParameterAccess instance in the SDK and on the server.
+      * The new DataSetParameterAccess will be automatically stored in the 'parameterAccessList' property
+      * of the parent DataSetModuleRoleAccess element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetModuleRoleAccess): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameterAccess = js.native
   }
   
@@ -415,16 +415,16 @@ object datasetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDatasetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new JavaDataSetSource instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new JavaDataSetSource instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.JavaDataSetSource = js.native
     /**
-             * Creates and returns a new JavaDataSetSource instance in the SDK and on the server.
-             * The new JavaDataSetSource will be automatically stored in the 'source' property
-             * of the parent DataSet element passed as argument.
-             */
+      * Creates and returns a new JavaDataSetSource instance in the SDK and on the server.
+      * The new JavaDataSetSource will be automatically stored in the 'source' property
+      * of the parent DataSet element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSet): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.JavaDataSetSource = js.native
   }
   
@@ -433,16 +433,16 @@ object datasetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDatasetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new OqlDataSetSource instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new OqlDataSetSource instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.OqlDataSetSource = js.native
     /**
-             * Creates and returns a new OqlDataSetSource instance in the SDK and on the server.
-             * The new OqlDataSetSource will be automatically stored in the 'source' property
-             * of the parent DataSet element passed as argument.
-             */
+      * Creates and returns a new OqlDataSetSource instance in the SDK and on the server.
+      * The new OqlDataSetSource will be automatically stored in the 'source' property
+      * of the parent DataSet element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSet): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.OqlDataSetSource = js.native
   }
   

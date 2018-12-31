@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RouterOptions extends js.Object {
   var change: js.UndefOr[js.Function1[/* e */ RouterChangeEvent, scala.Unit]] = js.undefined
   var hashBang: js.UndefOr[scala.Boolean] = js.undefined

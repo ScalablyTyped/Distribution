@@ -12,15 +12,15 @@ sealed trait TimelineIterationStatusCode extends js.Object
 @js.native
 object TimelineIterationStatusCode extends js.Object {
   /**
-       * This iteration overlaps with another iteration, no data is returned for this iteration.
-       */
+    * This iteration overlaps with another iteration, no data is returned for this iteration.
+    */
   @js.native
   sealed trait IsOverlapping
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.TimelineIterationStatusCode
   
   /**
-       * No error - iteration data is good.
-       */
+    * No error - iteration data is good.
+    */
   @js.native
   sealed trait OK
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.TimelineIterationStatusCode

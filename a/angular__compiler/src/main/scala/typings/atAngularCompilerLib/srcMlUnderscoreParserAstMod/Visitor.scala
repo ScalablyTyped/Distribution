@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Visitor extends js.Object {
   var visit: js.UndefOr[js.Function2[/* node */ Node, /* context */ js.Any, _]] = js.undefined
   def visitAttribute(attribute: Attribute, context: js.Any): js.Any

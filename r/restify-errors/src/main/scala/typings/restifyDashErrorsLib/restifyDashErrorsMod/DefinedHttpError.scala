@@ -15,9 +15,7 @@ class DefinedHttpError () extends HttpError {
   // tslint:disable-next-line unified-signatures
   def this(printf: java.lang.String, args: js.Any*) = this()
   def this(priorErr: js.Any, options: RestifyHttpErrorOptions) = this()
-  // tslint:disable-next-line unified-signatures
   def this(options: RestifyHttpErrorOptions, printf: java.lang.String, args: js.Any*) = this()
-  // tslint:disable-next-line unified-signatures
   def this(priorErr: js.Any, printf: java.lang.String, args: js.Any*) = this()
   def this(priorErr: js.Any, options: RestifyHttpErrorOptions, printf: java.lang.String, args: js.Any*) = this()
 }

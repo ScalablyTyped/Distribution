@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RectangleOptions extends SimpleShapeOptions {
   /**
   			 * Whether to use the metric measurement system or imperial

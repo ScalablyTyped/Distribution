@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IParticleOptions extends js.Object {
   var collisionGroup: js.UndefOr[scala.Double] = js.undefined
   var collisionMask: js.UndefOr[scala.Double] = js.undefined

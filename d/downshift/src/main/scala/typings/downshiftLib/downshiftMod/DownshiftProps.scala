@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DownshiftProps[Item] extends js.Object {
   var children: js.UndefOr[ChildrenFunction[Item]] = js.undefined
   var defaultHighlightedIndex: js.UndefOr[scala.Double | scala.Null] = js.undefined

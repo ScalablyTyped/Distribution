@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GeographyTypeDescriptor extends js.Object {
   val address: js.UndefOr[scala.Boolean] = js.undefined
   val city: js.UndefOr[scala.Boolean] = js.undefined

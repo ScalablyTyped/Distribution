@@ -20,7 +20,6 @@ class GUIController () extends js.Object {
   def name(s: java.lang.String): GUIController = js.native
   // Controller
   def onChange(): GUIController = js.native
-  // Controller
   def onChange(value: js.Any): GUIController = js.native
   def onFinishChange(): GUIController = js.native
   def onFinishChange(value: js.Any): GUIController = js.native

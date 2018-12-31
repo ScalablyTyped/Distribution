@@ -38,10 +38,10 @@ abstract class PrintTaskOptions () extends js.Object {
   /** Gets or sets the staple option for the print task. */
   var staple: PrintStaple = js.native
   /**
-                   * Retrieves the physical dimensions of the printed page.
-                   * @param jobPageNumber The page number.
-                   * @return The page description data.
-                   */
+    * Retrieves the physical dimensions of the printed page.
+    * @param jobPageNumber The page number.
+    * @return The page description data.
+    */
   def getPageDescription(jobPageNumber: scala.Double): PrintPageDescription = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocaleMessages extends js.Object {
   var addDescription: java.lang.String
   var addEdge: java.lang.String

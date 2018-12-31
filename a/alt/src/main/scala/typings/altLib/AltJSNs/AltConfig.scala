@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AltConfig extends js.Object {
-  var batchingFunction: js.UndefOr[js.Function1[/* callback */ js.Function1[/* repeated */js.Any, _], scala.Unit]] = js.undefined
+  var batchingFunction: js.UndefOr[js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, _], scala.Unit]] = js.undefined
   var deserialize: js.UndefOr[
     js.Function1[
       /* deserializeFn */ js.Function1[/* serialData */ java.lang.String, js.Object], 

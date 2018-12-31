@@ -15,17 +15,17 @@ abstract class HidOutputReport () extends js.Object {
   var getNumericControl: js.Any = js.native
   /** Retrieves the identifier associated with a given output report. */
   var id: scala.Double = js.native
-   /* unmapped type *//**
-                   * Retrieves the boolean control associated with the given controlDescription.
-                   * @param controlDescription Describes the Boolean control.
-                   * @return A HidBooleanControl object.
-                   */
+   /* unmapped type */ /**
+    * Retrieves the boolean control associated with the given controlDescription.
+    * @param controlDescription Describes the Boolean control.
+    * @return A HidBooleanControl object.
+    */
   def getBooleanControlByDescription(controlDescription: HidBooleanControlDescription): HidBooleanControl = js.native
-   /* unmapped type *//**
-                   * Retrieves the numeric control associated with the given controlDescription.
-                   * @param controlDescription Describes the numeric control.
-                   * @return A HidNumericControl object.
-                   */
+   /* unmapped type */ /**
+    * Retrieves the numeric control associated with the given controlDescription.
+    * @param controlDescription Describes the numeric control.
+    * @return A HidNumericControl object.
+    */
   def getNumericControlByDescription(controlDescription: HidNumericControlDescription): HidNumericControl = js.native
 }
 

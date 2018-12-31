@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FailedKeybindingMatch extends js.Object {
   /** The DOM element that was the target of the most recent keyboard event. */
   var keyboardEventTarget: stdLib.Element

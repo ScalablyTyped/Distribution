@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Html2CanvasOptions extends js.Object {
   /** Whether to allow cross-origin images to taint the canvas */
   var allowTaint: js.UndefOr[scala.Boolean] = js.undefined

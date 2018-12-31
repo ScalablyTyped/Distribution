@@ -23,30 +23,18 @@ object Format extends js.Object {
   		* @returns Object Returns the result of calling the overridden method
   		*/
   def callOverridden(): js.Any = js.native
-  /** [Method] Call the original method that was previously overridden with override  This method is deprecated as callParent does
-  		* @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
-  		* @returns Object Returns the result of calling the overridden method
-  		*/
   def callOverridden(args: js.Any): js.Any = js.native
   /** [Method] Call the parent method of the current method
   		* @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
   		* @returns Object Returns the result of calling the parent method
   		*/
   def callParent(): js.Any = js.native
-  /** [Method] Call the parent method of the current method
-  		* @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
-  		* @returns Object Returns the result of calling the parent method
-  		*/
   def callParent(args: js.Any): js.Any = js.native
   /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
   		* @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
   		* @returns Object Returns the result of calling the superclass method
   		*/
   def callSuper(): js.Any = js.native
-  /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
-  		* @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
-  		* @returns Object Returns the result of calling the superclass method
-  		*/
   def callSuper(args: js.Any): js.Any = js.native
   /** [Method] Parse a value into a formatted date using the specified format pattern
   		* @param value String/Date The value to format. Strings must conform to the format expected by the JavaScript Date object's parse() method.
@@ -54,17 +42,7 @@ object Format extends js.Object {
   		* @returns String The formatted date string.
   		*/
   def date(): java.lang.String = js.native
-  /** [Method] Parse a value into a formatted date using the specified format pattern
-  		* @param value String/Date The value to format. Strings must conform to the format expected by the JavaScript Date object's parse() method.
-  		* @param format String Any valid date format string.
-  		* @returns String The formatted date string.
-  		*/
   def date(value: js.Any): java.lang.String = js.native
-  /** [Method] Parse a value into a formatted date using the specified format pattern
-  		* @param value String/Date The value to format. Strings must conform to the format expected by the JavaScript Date object's parse() method.
-  		* @param format String Any valid date format string.
-  		* @returns String The formatted date string.
-  		*/
   def date(value: js.Any, format: java.lang.String): java.lang.String = js.native
   /** [Method]  */
   def destroy(): scala.Unit = js.native
@@ -75,46 +53,20 @@ object Format extends js.Object {
   		* @returns String The converted text.
   		*/
   def ellipsis(): java.lang.String = js.native
-  /** [Method] Truncate a string and add an ellipsis  to the end if it exceeds the specified length
-  		* @param value String The string to truncate.
-  		* @param length Number The maximum length to allow before truncating.
-  		* @param word Boolean True to try to find a common word break.
-  		* @returns String The converted text.
-  		*/
   def ellipsis(value: java.lang.String): java.lang.String = js.native
-  /** [Method] Truncate a string and add an ellipsis  to the end if it exceeds the specified length
-  		* @param value String The string to truncate.
-  		* @param length Number The maximum length to allow before truncating.
-  		* @param word Boolean True to try to find a common word break.
-  		* @returns String The converted text.
-  		*/
   def ellipsis(value: java.lang.String, length: scala.Double): java.lang.String = js.native
-  /** [Method] Truncate a string and add an ellipsis  to the end if it exceeds the specified length
-  		* @param value String The string to truncate.
-  		* @param length Number The maximum length to allow before truncating.
-  		* @param word Boolean True to try to find a common word break.
-  		* @returns String The converted text.
-  		*/
   def ellipsis(value: java.lang.String, length: scala.Double, word: scala.Boolean): java.lang.String = js.native
   /** [Method] Escapes the passed string for  and
   		* @param string String The string to escape.
   		* @returns String The escaped string.
   		*/
   def escape(): java.lang.String = js.native
-  /** [Method] Escapes the passed string for  and
-  		* @param string String The string to escape.
-  		* @returns String The escaped string.
-  		*/
   def escape(string: java.lang.String): java.lang.String = js.native
   /** [Method] Escapes the passed string for use in a regular expression
   		* @param str String
   		* @returns String
   		*/
   def escapeRegex(): java.lang.String = js.native
-  /** [Method] Escapes the passed string for use in a regular expression
-  		* @param str String
-  		* @returns String
-  		*/
   def escapeRegex(str: java.lang.String): java.lang.String = js.native
   /** [Method] Allows you to define a tokenized string and pass an arbitrary number of arguments to replace the tokens
   		* @param string String The tokenized string to be formatted.
@@ -127,40 +79,24 @@ object Format extends js.Object {
   		* @returns Object/Mixed
   		*/
   def getInitialConfig(): js.Any = js.native
-  /** [Method] Returns the initial configuration passed to constructor
-  		* @param name String When supplied, value for particular configuration option is returned, otherwise the full config object is returned.
-  		* @returns Object/Mixed
-  		*/
   def getInitialConfig(name: java.lang.String): js.Any = js.native
   /** [Method] Convert certain characters  amp lt and from their HTML character equivalents
   		* @param value String The string to decode.
   		* @returns String The decoded text.
   		*/
   def htmlDecode(): java.lang.String = js.native
-  /** [Method] Convert certain characters  amp lt and from their HTML character equivalents
-  		* @param value String The string to decode.
-  		* @returns String The decoded text.
-  		*/
   def htmlDecode(value: java.lang.String): java.lang.String = js.native
   /** [Method] Convert certain characters  amp lt and to their HTML character equivalents for literal display in web pages
   		* @param value String The string to encode.
   		* @returns String The encoded text.
   		*/
   def htmlEncode(): java.lang.String = js.native
-  /** [Method] Convert certain characters  amp lt and to their HTML character equivalents for literal display in web pages
-  		* @param value String The string to encode.
-  		* @returns String The encoded text.
-  		*/
   def htmlEncode(value: java.lang.String): java.lang.String = js.native
   /** [Method] Initialize configuration for this class
   		* @param instanceConfig Object
   		* @returns Object mixins The mixin prototypes as key - value pairs
   		*/
   def initConfig(): js.Any = js.native
-  /** [Method] Initialize configuration for this class
-  		* @param instanceConfig Object
-  		* @returns Object mixins The mixin prototypes as key - value pairs
-  		*/
   def initConfig(instanceConfig: js.Any): js.Any = js.native
   /** [Method] Pads the left side of a string with a specified character
   		* @param string String The original string.
@@ -169,26 +105,8 @@ object Format extends js.Object {
   		* @returns String The padded string.
   		*/
   def leftPad(): java.lang.String = js.native
-  /** [Method] Pads the left side of a string with a specified character
-  		* @param string String The original string.
-  		* @param size Number The total length of the output string.
-  		* @param char String The character with which to pad the original string.
-  		* @returns String The padded string.
-  		*/
   def leftPad(string: java.lang.String): java.lang.String = js.native
-  /** [Method] Pads the left side of a string with a specified character
-  		* @param string String The original string.
-  		* @param size Number The total length of the output string.
-  		* @param char String The character with which to pad the original string.
-  		* @returns String The padded string.
-  		*/
   def leftPad(string: java.lang.String, size: scala.Double): java.lang.String = js.native
-  /** [Method] Pads the left side of a string with a specified character
-  		* @param string String The original string.
-  		* @param size Number The total length of the output string.
-  		* @param char String The character with which to pad the original string.
-  		* @returns String The padded string.
-  		*/
   def leftPad(string: java.lang.String, size: scala.Double, char: java.lang.String): java.lang.String = js.native
   /** [Method] Get the reference to the class from which this object was instantiated
   		* @returns Ext.Class
@@ -201,36 +119,14 @@ object Format extends js.Object {
   		* @returns String The new value
   		*/
   def toggle(): java.lang.String = js.native
-  /** [Method] Utility function that allows you to easily switch a string between two alternating values
-  		* @param string String The current string
-  		* @param value String The value to compare to the current string
-  		* @param other String The new value to use if the string already equals the first value passed in
-  		* @returns String The new value
-  		*/
   def toggle(string: java.lang.String): java.lang.String = js.native
-  /** [Method] Utility function that allows you to easily switch a string between two alternating values
-  		* @param string String The current string
-  		* @param value String The value to compare to the current string
-  		* @param other String The new value to use if the string already equals the first value passed in
-  		* @returns String The new value
-  		*/
   def toggle(string: java.lang.String, value: java.lang.String): java.lang.String = js.native
-  /** [Method] Utility function that allows you to easily switch a string between two alternating values
-  		* @param string String The current string
-  		* @param value String The value to compare to the current string
-  		* @param other String The new value to use if the string already equals the first value passed in
-  		* @returns String The new value
-  		*/
   def toggle(string: java.lang.String, value: java.lang.String, other: java.lang.String): java.lang.String = js.native
   /** [Method] Trims whitespace from either end of a string leaving spaces within the string intact
   		* @param string String The string to escape
   		* @returns String The trimmed string
   		*/
   def trim(): java.lang.String = js.native
-  /** [Method] Trims whitespace from either end of a string leaving spaces within the string intact
-  		* @param string String The string to escape
-  		* @returns String The trimmed string
-  		*/
   def trim(string: java.lang.String): java.lang.String = js.native
 }
 

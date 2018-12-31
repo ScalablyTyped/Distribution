@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParentAccesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -25,21 +24,21 @@ trait Anon_ParentAccesstoken extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Optional limit on the number of CryptoKeys to include in the
-                   * response.  Further CryptoKeys can subsequently be obtained by
-                   * including the ListCryptoKeysResponse.next_page_token in a subsequent
-                   * request.  If unspecified, the server will pick an appropriate default.
-                   */
+    * Optional limit on the number of CryptoKeys to include in the
+    * response.  Further CryptoKeys can subsequently be obtained by
+    * including the ListCryptoKeysResponse.next_page_token in a subsequent
+    * request.  If unspecified, the server will pick an appropriate default.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * Optional pagination token, returned earlier via
-                   * ListCryptoKeysResponse.next_page_token.
-                   */
+    * Optional pagination token, returned earlier via
+    * ListCryptoKeysResponse.next_page_token.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Required. The resource name of the KeyRing to list, in the format
-                   * `projects/&#42;/locations/&#42;/keyRings/&#42;`.
-                   */
+    * Required. The resource name of the KeyRing to list, in the format
+    * `projects/&#42;/locations/&#42;/keyRings/&#42;`.
+    */
   var parent: java.lang.String
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

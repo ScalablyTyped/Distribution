@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EndInstallTypes extends InstallTypes {
   val installSuccess: scala.Boolean
   @JSName("kind")

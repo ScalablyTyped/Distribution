@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObserveCallbacks extends js.Object {
   var added: js.UndefOr[js.Function1[/* document */ js.Object, scala.Unit]] = js.undefined
   var addedAt: js.UndefOr[

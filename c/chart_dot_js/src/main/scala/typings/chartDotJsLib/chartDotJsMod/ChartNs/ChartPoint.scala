@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartPoint extends js.Object {
   var r: js.UndefOr[scala.Double] = js.undefined
   var t: js.UndefOr[scala.Double | java.lang.String | stdLib.Date] = js.undefined

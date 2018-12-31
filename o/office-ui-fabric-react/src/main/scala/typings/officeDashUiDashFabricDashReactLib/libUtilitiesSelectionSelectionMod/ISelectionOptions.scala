@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISelectionOptions extends js.Object {
   var canSelectItem: js.UndefOr[
     js.Function2[

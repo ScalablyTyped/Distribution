@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RegionOptions extends js.Object {
   var axis: js.UndefOr[java.lang.String] = js.undefined
   var `class`: js.UndefOr[java.lang.String] = js.undefined

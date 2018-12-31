@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModelMapReduceOption[T, Key, Val] extends js.Object {
   /** finalize function */
   @JSName("finalize")

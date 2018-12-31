@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TypeDataObjectIdEVENTRESERVECONTROLLER extends js.Object {
   var data: Anon_AmountNumber
   var objectId: java.lang.String

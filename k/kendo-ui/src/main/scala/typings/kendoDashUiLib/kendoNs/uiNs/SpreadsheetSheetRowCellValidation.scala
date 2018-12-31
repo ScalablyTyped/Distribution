@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpreadsheetSheetRowCellValidation extends js.Object {
   var allowNulls: js.UndefOr[scala.Boolean] = js.undefined
   var comparerType: js.UndefOr[java.lang.String] = js.undefined

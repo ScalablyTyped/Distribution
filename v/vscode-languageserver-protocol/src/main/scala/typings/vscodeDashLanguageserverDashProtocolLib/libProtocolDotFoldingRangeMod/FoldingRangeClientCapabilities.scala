@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FoldingRangeClientCapabilities extends js.Object {
   /**
-       * The text document client capabilities
-       */
+    * The text document client capabilities
+    */
   var textDocument: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_FoldingRange] = js.undefined
 }
 

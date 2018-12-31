@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class SpatialManipulationCompletedEventArgs () extends js.Object {
   var interactionSourceKind: js.Any = js.native
-   /* unmapped type */var tryGetCumulativeDelta: js.Any = js.native
+   /* unmapped type */ var tryGetCumulativeDelta: js.Any = js.native
 }
 

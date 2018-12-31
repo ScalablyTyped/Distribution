@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InstanceConfigsResource extends js.Object {
   /** Gets information about a particular instance configuration. */
   def get(request: gapiDotClientDotSpannerLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[InstanceConfig]

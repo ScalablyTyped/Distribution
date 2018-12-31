@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConsoleRunnerOptions extends js.Object {
    // true|false,
   // [2.x] Apartment for running tests (Default is MTA).

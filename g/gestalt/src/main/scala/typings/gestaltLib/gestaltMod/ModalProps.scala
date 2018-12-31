@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModalProps extends js.Object {
   var accessibilityCloseLabel: java.lang.String
   var accessibilityModalLabel: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FloodlightActivityDynamicTag extends js.Object {
   /** ID of this dynamic tag. This is a read-only, auto-generated field. */
   var id: js.UndefOr[java.lang.String] = js.undefined

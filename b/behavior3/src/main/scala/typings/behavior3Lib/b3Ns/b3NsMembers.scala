@@ -18,11 +18,11 @@ object b3NsMembers extends js.Object {
   val SUCCESS: scala.Double = js.native
   val VERSION: java.lang.String = js.native
   /**
-       * This function is used to create unique IDs for trees and nodes.
-       *
-       * (consult http://www.ietf.org/rfc/rfc4122.txt).
-       *
-       */
+    * This function is used to create unique IDs for trees and nodes.
+    *
+    * (consult http://www.ietf.org/rfc/rfc4122.txt).
+    *
+    */
   def createUUID(): java.lang.String = js.native
 }
 

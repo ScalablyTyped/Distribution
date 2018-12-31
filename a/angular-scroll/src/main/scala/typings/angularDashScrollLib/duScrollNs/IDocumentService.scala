@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Extends the angular.element object returned by the $document sercive with a few jQuery like functions.
-     * see https://github.com/oblador/angular-scroll#angularelement-scroll-api
-     */
+  * Extends the angular.element object returned by the $document sercive with a few jQuery like functions.
+  * see https://github.com/oblador/angular-scroll#angularelement-scroll-api
+  */
 @js.native
 trait IDocumentService
   extends angularLib.angularMod.angularNs.IDocumentService {

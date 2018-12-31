@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultScheduledJobManagementOperations extends js.Object {
   def AddScheduledJob(ScheduledJob: IScheduledJob): scala.Double
   def CancelScheduledJob(ID: scala.Double): scala.Unit

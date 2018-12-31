@@ -5,31 +5,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TypeFilter extends Filter {
   /*
-       The type of ejs object.  For internal use only.
-       */
+    The type of ejs object.  For internal use only.
+    */
   def _type(): java.lang.String
   /*
-       Enable or disable caching of the filter
-       */
+    Enable or disable caching of the filter
+    */
   def cache(trueFalse: scala.Boolean): TypeFilter
   /*
-       Sets the cache key.
-       */
+    Sets the cache key.
+    */
   def cacheKey(key: java.lang.String): TypeFilter
   /*
-       Sets the filter name.
-       */
+    Sets the filter name.
+    */
   def name(name: java.lang.String): TypeFilter
   /*
-       Returns the filter object.
-       */
+    Returns the filter object.
+    */
   def toJSON(): TypeFilter
   /*
-       Sets the type
-       */
+    Sets the type
+    */
   def `type`(`type`: java.lang.String): TypeFilter
 }
 

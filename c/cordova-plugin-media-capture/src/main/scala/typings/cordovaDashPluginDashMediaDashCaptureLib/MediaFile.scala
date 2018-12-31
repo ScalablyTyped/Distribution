@@ -19,16 +19,11 @@ trait MediaFile extends js.Object {
   /** The file's mime type */
   var `type`: java.lang.String = js.native
   /**
-       * Retrieves format information about the media capture file.
-       * @param successCallback Invoked with a MediaFileData object when successful.
-       * @param errorCallback   Invoked if the attempt fails, this function. 
-       */
+    * Retrieves format information about the media capture file.
+    * @param successCallback Invoked with a MediaFileData object when successful.
+    * @param errorCallback   Invoked if the attempt fails, this function. 
+    */
   def getFormatData(successCallback: js.Function1[/* data */ MediaFileData, scala.Unit]): scala.Unit = js.native
-  /**
-       * Retrieves format information about the media capture file.
-       * @param successCallback Invoked with a MediaFileData object when successful.
-       * @param errorCallback   Invoked if the attempt fails, this function. 
-       */
   def getFormatData(
     successCallback: js.Function1[/* data */ MediaFileData, scala.Unit],
     errorCallback: js.Function0[scala.Unit]

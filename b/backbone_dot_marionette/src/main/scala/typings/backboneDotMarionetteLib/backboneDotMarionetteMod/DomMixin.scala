@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DomMixin extends js.Object {
   var appendChildren: js.Any
   var beforeEl: js.Any

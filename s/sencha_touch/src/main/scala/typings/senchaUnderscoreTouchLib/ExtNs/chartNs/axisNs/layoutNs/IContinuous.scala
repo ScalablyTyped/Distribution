@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IContinuous extends ILayout {
   /** [Method] Returns the value of adjustMaximumByMajorUnit
   		* @returns Boolean

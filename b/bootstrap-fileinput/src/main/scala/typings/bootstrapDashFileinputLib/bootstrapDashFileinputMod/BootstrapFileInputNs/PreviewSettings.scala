@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PreviewSettings extends js.Object {
   var audio: js.UndefOr[bootstrapDashFileinputLib.Anon_Height] = js.undefined
   var flash: js.UndefOr[bootstrapDashFileinputLib.Anon_Height] = js.undefined

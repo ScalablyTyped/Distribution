@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PayDialogParams extends js.Object {
    // "pay"
   var action: java.lang.String

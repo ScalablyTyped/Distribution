@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Unchecked extends js.Object {
   var added: scala.Double
   var fileDeleted: scala.Boolean

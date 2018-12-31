@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BluetoothCharacteristicProperties extends js.Object {
   val authenticatedSignedWrites: scala.Boolean
   val broadcast: scala.Boolean

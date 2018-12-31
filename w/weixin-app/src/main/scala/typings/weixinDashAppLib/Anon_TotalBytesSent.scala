@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TotalBytesSent extends js.Object {
   /** 上传进度百分比 */
   var progress: scala.Double

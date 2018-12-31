@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class FormState[TValue /* <: formstateLib.libCoreFormStateMod.ValidatableMapOrArray */] protected ()
   extends formstateLib.libCoreFormStateMod.FormState[TValue] {
   def this(/**
-           * SubItems can be any Validatable
-           */
+    * SubItems can be any Validatable
+    */
   $: TValue) = this()
 }
 

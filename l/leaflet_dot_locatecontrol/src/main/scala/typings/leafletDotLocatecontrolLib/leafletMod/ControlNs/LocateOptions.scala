@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocateOptions extends js.Object {
   var cacheLocation: js.UndefOr[scala.Boolean] = js.undefined
   var circlePadding: js.UndefOr[js.Array[scala.Double]] = js.undefined

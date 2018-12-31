@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CardProps
   extends reactDashMdLib.libMod.Props {
   var animate: js.UndefOr[scala.Boolean] = js.undefined
@@ -14,12 +13,12 @@ trait CardProps
   var expanded: js.UndefOr[scala.Boolean] = js.undefined
   var expanderIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var expanderIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var expanderIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var expanderTooltipDelay: js.UndefOr[scala.Double] = js.undefined
   var expanderTooltipLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

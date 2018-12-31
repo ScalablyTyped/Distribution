@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkflowRuleOptions extends js.Object {
   var expression: java.lang.String
   var filter_friendly_name: js.UndefOr[java.lang.String] = js.undefined

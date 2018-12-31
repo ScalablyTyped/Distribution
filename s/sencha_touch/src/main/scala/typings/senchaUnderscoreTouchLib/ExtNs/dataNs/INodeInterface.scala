@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INodeInterface
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Insert node s as the last child node of this node

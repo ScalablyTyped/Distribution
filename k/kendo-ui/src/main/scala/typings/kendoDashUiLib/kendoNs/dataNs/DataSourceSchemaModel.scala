@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataSourceSchemaModel
   extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var fields: js.UndefOr[js.Any] = js.undefined

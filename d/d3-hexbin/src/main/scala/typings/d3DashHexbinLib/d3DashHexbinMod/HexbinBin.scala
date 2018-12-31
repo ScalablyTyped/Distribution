@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait HexbinBin[T]
   extends stdLib.Array[T] {
   /**
-       * The x-coordinate of the center of the associated bin’s hexagon.
-       */
+    * The x-coordinate of the center of the associated bin’s hexagon.
+    */
   var x: scala.Double = js.native
   /**
-       * The y-coordinate of the center of the associated bin’s hexagon.
-       */
+    * The y-coordinate of the center of the associated bin’s hexagon.
+    */
   var y: scala.Double = js.native
 }
 

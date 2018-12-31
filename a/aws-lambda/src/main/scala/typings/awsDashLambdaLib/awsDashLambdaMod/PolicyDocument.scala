@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PolicyDocument extends js.Object {
   var Id: js.UndefOr[java.lang.String] = js.undefined
   var Statement: js.Array[Statement]

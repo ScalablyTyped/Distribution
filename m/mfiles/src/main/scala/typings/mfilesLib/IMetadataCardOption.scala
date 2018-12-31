@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMetadataCardOption extends js.Object {
   val Events: IEvents
   def GetExplanation(): java.lang.String

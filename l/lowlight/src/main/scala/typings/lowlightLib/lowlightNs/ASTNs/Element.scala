@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Element
   extends lowlightLib.lowlightNs.ASTNs.UnistNs.Parent {
   var properties: Properties

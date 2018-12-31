@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectParam extends js.Object {
   var domEvent: js.Any
   var item: js.Any

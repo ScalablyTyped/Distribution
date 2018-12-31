@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick) */ 
-trait InputProps[TSuggestion]
+- Lifted 1 members from Set(std.Pick<react.react.InputHTMLAttributes<any>, {typemapped, typemapped, indexed, indexed}[keyof react.react.InputHTMLAttributes<any>]>) */ trait InputProps[TSuggestion]
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var onBlur: js.UndefOr[
     js.Function2[

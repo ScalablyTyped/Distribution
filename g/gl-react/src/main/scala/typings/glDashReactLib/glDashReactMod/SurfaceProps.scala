@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SurfaceProps extends js.Object {
   var children: js.UndefOr[js.Any] = js.undefined
   var onLoad: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

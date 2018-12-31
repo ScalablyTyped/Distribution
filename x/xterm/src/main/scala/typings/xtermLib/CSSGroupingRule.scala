@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CSSGroupingRule extends CSSRule {
   val cssRules: CSSRuleList
   def deleteRule(index: scala.Double): scala.Unit

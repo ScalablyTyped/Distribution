@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Publish extends js.Object {
   var BCC: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var CC: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined

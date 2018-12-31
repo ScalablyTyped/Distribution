@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Editors extends js.Object {
   var AutocompleteEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Autocomplete]
   var BaseEditor: org.scalablytyped.runtime.Instantiable6[

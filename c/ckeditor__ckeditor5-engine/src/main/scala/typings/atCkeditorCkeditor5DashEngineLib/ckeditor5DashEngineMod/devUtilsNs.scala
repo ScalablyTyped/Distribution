@@ -20,7 +20,6 @@ object devUtilsNs extends js.Object {
   def enableEngineDebug(_logger: atCkeditorCkeditor5DashEngineLib.Anon_Log): DebugPlugin = js.native
   // engine/dev-utils/view
   def getData(view: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.View): java.lang.String = js.native
-  // engine/dev-utils/view
   def getData(
     view: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.View,
     options: atCkeditorCkeditor5DashEngineLib.Anon_WithoutSelectionShowType

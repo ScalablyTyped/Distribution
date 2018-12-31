@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 //#endregion "callback-functions"
 //#region "language-settings"
 // these are all optional
-
 trait LanguageSettings extends js.Object {
   var aria: js.UndefOr[LanguageAriaSettings] = js.undefined
   var emptyTable: js.UndefOr[java.lang.String] = js.undefined

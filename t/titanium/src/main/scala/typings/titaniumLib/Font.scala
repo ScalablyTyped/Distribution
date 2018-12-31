@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * An abstract datatype for specifying a text font.
- */
-
+  * An abstract datatype for specifying a text font.
+  */
 trait Font extends js.Object {
   /**
   	 * Specifies the font family or specific font to use.

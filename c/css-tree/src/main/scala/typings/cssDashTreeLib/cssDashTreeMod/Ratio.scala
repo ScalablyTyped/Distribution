@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Ratio extends CssNodeCommon {
   var left: java.lang.String
   var right: java.lang.String

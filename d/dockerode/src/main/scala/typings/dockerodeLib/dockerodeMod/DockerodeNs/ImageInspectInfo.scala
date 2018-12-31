@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageInspectInfo extends js.Object {
   var Architecture: java.lang.String
   var Author: java.lang.String

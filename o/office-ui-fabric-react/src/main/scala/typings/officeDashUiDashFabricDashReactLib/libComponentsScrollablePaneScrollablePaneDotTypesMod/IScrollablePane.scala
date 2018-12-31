@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IScrollablePane extends js.Object {
   /** Triggers a layout update for the pane. */
   def forceLayoutUpdate(): scala.Unit

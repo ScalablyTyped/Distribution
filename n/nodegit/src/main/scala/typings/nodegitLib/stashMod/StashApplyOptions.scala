@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StashApplyOptions extends js.Object {
   var checkoutOptions: js.UndefOr[nodegitLib.checkoutDashOptionsMod.CheckoutOptions] = js.undefined
   var flags: js.UndefOr[scala.Double] = js.undefined

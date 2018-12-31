@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JdbcResultSetMetaData extends js.Object {
   def getCatalogName(column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): java.lang.String
   def getColumnClassName(column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): java.lang.String

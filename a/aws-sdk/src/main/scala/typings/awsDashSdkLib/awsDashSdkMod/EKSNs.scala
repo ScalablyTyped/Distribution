@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object EKSNs extends js.Object {
   @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Types ()
     extends awsDashSdkLib.clientsAllMod.EKSNs.Types {
-    /**
-       * Constructs a service object. This object has one method for each API operation.
-       */
     def this(options: awsDashSdkLib.clientsEksMod.EKSNs.ClientConfiguration) = this()
   }
   

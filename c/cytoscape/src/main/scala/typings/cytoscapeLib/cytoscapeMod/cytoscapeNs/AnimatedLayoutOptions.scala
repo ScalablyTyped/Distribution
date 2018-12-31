@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnimatedLayoutOptions extends js.Object {
   // whether to transition the node positions
   var animate: js.UndefOr[scala.Boolean] = js.undefined

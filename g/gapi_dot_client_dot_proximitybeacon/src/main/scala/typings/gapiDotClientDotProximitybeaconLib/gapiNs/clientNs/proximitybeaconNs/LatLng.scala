@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LatLng extends js.Object {
   /** The latitude in degrees. It must be in the range [-90.0, +90.0]. */
   var latitude: js.UndefOr[scala.Double] = js.undefined

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Identifies the Human Interface Device (HID) usage details for the input device. */
-
 trait PointerDeviceUsage extends js.Object {
   /** The maximum logical value for Usage. */
   var maxLogical: scala.Double

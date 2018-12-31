@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IncludeNotes extends js.Object {
   var includeExpunged: js.UndefOr[scala.Boolean] = js.undefined
   var includeLinkedNotebooks: js.UndefOr[scala.Boolean] = js.undefined

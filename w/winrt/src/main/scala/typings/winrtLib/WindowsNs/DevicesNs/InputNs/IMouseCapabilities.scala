@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMouseCapabilities extends js.Object {
   var horizontalWheelPresent: scala.Double
   var mousePresent: scala.Double

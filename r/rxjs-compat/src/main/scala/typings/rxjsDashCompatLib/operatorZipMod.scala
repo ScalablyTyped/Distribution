@@ -18,7 +18,7 @@ object operatorZipMod extends js.Object {
   def zipProto[T, TOther, R](
     `this`: rxjsLib.rxjsMod.Observable[T],
     array: js.Array[rxjsLib.internalTypesMod.ObservableInput[TOther]],
-    project: js.Function2[/* v1 */ T, /* repeated */TOther, R]
+    project: js.Function2[/* v1 */ T, /* repeated */ TOther, R]
   ): rxjsLib.rxjsMod.Observable[R] = js.native
   def zipProto[T, T2, R](
     `this`: rxjsLib.rxjsMod.Observable[T],
@@ -84,7 +84,7 @@ object operatorZipMod extends js.Object {
   @JSName("zipProto")
   def zipProto_TR[T, R](
     `this`: rxjsLib.rxjsMod.Observable[T],
-    observables: (rxjsLib.internalTypesMod.ObservableInput[T] | (js.Function1[/* repeated */T, R]))*
+    observables: (rxjsLib.internalTypesMod.ObservableInput[T] | (js.Function1[/* repeated */ T, R]))*
   ): rxjsLib.rxjsMod.Observable[R] = js.native
 }
 

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 abstract class AbstractGrantType protected ()
   extends oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.AbstractGrantType {
   /**
-           * Instantiates AbstractGrantType using the supplied options.
-           *
-           */
+    * Instantiates AbstractGrantType using the supplied options.
+    *
+    */
   def this(options: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.TokenOptions) = this()
 }
 

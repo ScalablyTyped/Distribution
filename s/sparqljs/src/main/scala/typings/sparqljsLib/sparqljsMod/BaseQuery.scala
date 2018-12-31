@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseQuery extends js.Object {
   var base: js.UndefOr[java.lang.String] = js.undefined
   var prefixes: org.scalablytyped.runtime.StringDictionary[java.lang.String]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Notification extends js.Object {
   var allowHTML: js.UndefOr[scala.Boolean] = js.undefined
   var buttons: js.UndefOr[js.Array[Button]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Proxy extends js.Object {
   var anonymityLevel: js.UndefOr[AnonymityLevel] = js.undefined
   var country: java.lang.String

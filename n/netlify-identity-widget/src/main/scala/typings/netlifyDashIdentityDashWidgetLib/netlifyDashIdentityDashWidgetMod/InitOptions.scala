@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InitOptions extends js.Object {
   // Absolute url to endpoint. ONLY USE IN SPECIAL CASES!
   // e.g. https://www.example.com/.netlify/functions/identity

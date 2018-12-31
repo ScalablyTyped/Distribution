@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LocationServiceData extends js.Object {
   var ConnectionData: js.Any
   var InheritLevel: Anon_EnumValuesAnonDeployment

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DateItem extends js.Object {
   def createResponse(response: stdLib.Date): ItemResponse
   def duplicate(): DateItem

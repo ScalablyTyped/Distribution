@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PathToStart extends js.Object {
   var end: Anon_Y
   var pathToEnd: js.Array[js.Array[scala.Double]]

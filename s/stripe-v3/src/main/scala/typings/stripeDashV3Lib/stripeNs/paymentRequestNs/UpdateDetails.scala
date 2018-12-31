@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateDetails extends js.Object {
   var displayItems: js.UndefOr[js.Array[DisplayItem]] = js.undefined
   var shippingOptions: js.UndefOr[js.Array[ShippingOption]] = js.undefined

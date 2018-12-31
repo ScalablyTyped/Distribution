@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // ELangSearch
-
 trait IELangSearchDefaults extends IELangBaseDefaults {
   var expressionsLabel: java.lang.String
   var expressionsTooltip: java.lang.String

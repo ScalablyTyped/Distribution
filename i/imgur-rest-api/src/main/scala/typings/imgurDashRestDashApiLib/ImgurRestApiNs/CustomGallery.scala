@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomGallery extends js.Object {
   var account_url: java.lang.String
   var item_count: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccessToken extends js.Object {
   var access_token: java.lang.String
   var expires_in: scala.Double

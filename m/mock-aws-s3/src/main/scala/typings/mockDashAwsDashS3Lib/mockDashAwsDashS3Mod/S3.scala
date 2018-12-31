@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "S3")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class S3 ()
   extends awsDashSdkLib.awsDashSdkMod.S3 {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsS3Mod.S3Ns.ClientConfiguration) = this()
 }
 

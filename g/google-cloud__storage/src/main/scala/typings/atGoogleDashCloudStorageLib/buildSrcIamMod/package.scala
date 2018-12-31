@@ -22,12 +22,12 @@ package object buildSrcIamMod {
   type SetPolicyResponse = js.Tuple2[Policy, requestLib.requestMod.requestNs.Response]
   type TestIamPermissionsCallback = js.Function3[
     /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-    /* acl */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[scala.Boolean] | scala.Null], 
+    /* acl */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Boolean] | scala.Null], 
     /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
     scala.Unit
   ]
   type TestIamPermissionsResponse = js.Tuple2[
-    ScalablyTyped.runtime.StringDictionary[scala.Boolean], 
+    org.scalablytyped.runtime.StringDictionary[scala.Boolean], 
     requestLib.requestMod.requestNs.Response
   ]
 }

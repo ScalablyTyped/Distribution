@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IsMobile extends js.Object {
   var isWebXRAvailable: scala.Boolean
   def PolyfillControls(object3D: threeLib.threeMod.Object3D): scala.Unit

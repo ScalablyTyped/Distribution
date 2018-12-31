@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class HttpRequest protected ()
   extends awsDashSdkLib.libHttpUnderscoreRequestMod.HttpRequest {
   /**
-       * Constructs HttpRequest object with provided endpoint and region
-       */
+    * Constructs HttpRequest object with provided endpoint and region
+    */
   def this(endpoint: awsDashSdkLib.libEndpointMod.Endpoint, region: java.lang.String) = this()
 }
 

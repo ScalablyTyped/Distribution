@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileDescriptor extends js.Object {
   var fd: js.UndefOr[java.lang.String] = js.undefined
   var info: FileDescriptorInfo

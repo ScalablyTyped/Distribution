@@ -8,13 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DataTypeSmallInt extends DataTypeAbstractNumber[DataTypeSmallInt] {
   /**
-           * Length of the number field.
-           */
+    * Length of the number field.
+    */
   def apply(): DataTypeSmallInt = js.native
   def apply(length: scala.Double): DataTypeSmallInt = js.native
-  /**
-           * Length of the number field.
-           */
   def apply(options: sequelizeLib.Anon_Length): DataTypeSmallInt = js.native
 }
 

@@ -16,21 +16,21 @@ class Parser protected () extends js.Object {
   var lexerState: js.UndefOr[LexerState] = js.native
   var options: ParserOptions = js.native
   /**
-       * An array of possible parsings. Each element is the thing returned by your grammar.
-       *
-       * Note that this is undefined before the first feed() call.
-       * It isn't typed as `any[] | undefined` to spare you the null checks when it's definitely an array.
-       */
+    * An array of possible parsings. Each element is the thing returned by your grammar.
+    *
+    * Note that this is undefined before the first feed() call.
+    * It isn't typed as `any[] | undefined` to spare you the null checks when it's definitely an array.
+    */
   var results: js.Array[_] = js.native
   /**
-       * The Parser object can be fed data in parts with .feed(data).
-       * You can then find an array of parsings with the .results property.
-       * If results is empty, then there are no parsings.
-       * If results contains multiple values, then that combination is ambiguous.
-       *
-       * @throws If there are no possible parsings, nearley will throw an error
-       * whose offset property is the index of the offending token.
-       */
+    * The Parser object can be fed data in parts with .feed(data).
+    * You can then find an array of parsings with the .results property.
+    * If results is empty, then there are no parsings.
+    * If results contains multiple values, then that combination is ambiguous.
+    *
+    * @throws If there are no possible parsings, nearley will throw an error
+    * whose offset property is the index of the offending token.
+    */
   def feed(chunk: java.lang.String): this.type = js.native
   def finish(): js.Array[_] = js.native
   def restore(column: nearleyLib.Anon_Key): scala.Unit = js.native

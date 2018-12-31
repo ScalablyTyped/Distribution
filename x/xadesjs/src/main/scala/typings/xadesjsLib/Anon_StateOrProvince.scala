@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_StateOrProvince extends js.Object {
   var AllDataObjectsTimeStamp: java.lang.String
   var AllSignedDataObjects: java.lang.String

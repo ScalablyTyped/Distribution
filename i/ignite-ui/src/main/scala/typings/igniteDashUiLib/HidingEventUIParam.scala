@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HidingEventUIParam extends js.Object {
   /**
   	 * Gets the current content displayed in the popover as a string.

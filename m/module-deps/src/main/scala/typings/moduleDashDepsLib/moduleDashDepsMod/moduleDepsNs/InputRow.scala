@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InputRow extends js.Object {
   var entry: js.UndefOr[scala.Boolean] = js.undefined
   var expose: java.lang.String

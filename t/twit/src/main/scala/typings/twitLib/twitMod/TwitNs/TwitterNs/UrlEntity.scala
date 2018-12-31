@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UrlEntity extends js.Object {
   var display_url: java.lang.String
   var expanded_url: java.lang.String

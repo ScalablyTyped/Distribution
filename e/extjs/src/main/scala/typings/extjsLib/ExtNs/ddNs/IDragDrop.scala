@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDragDrop
   extends extjsLib.ExtNs.IBase {
   /** [Method] Lets you specify a css class of elements that will not initiate a drag

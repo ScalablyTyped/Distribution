@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataParams extends js.Object {
   var data: OptionData
    // TODO: must be data source

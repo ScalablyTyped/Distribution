@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RenderContext_FieldInForm extends RenderContext_Form {
   var CurrentFieldSchema: FieldSchema_InForm
   var CurrentFieldValue: js.Any

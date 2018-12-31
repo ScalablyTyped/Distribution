@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ExtendApply extends js.Object {
   @JSName("apply")
   var apply: hapiLib.hapiLibNumbers.`true`

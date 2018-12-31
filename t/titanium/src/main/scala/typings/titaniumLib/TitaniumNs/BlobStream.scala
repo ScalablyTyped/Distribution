@@ -26,25 +26,13 @@ trait BlobStream extends Proxy {
   		 * Reads data from this stream into a buffer.
   		 */
   def read(buffer: Buffer): scala.Double = js.native
-  /**
-  		 * Reads data from this stream into a buffer.
-  		 */
   def read(buffer: Buffer, offset: scala.Double): scala.Double = js.native
-  /**
-  		 * Reads data from this stream into a buffer.
-  		 */
   def read(buffer: Buffer, offset: scala.Double, length: scala.Double): scala.Double = js.native
   /**
   		 * Writes data from a buffer to this stream.
   		 */
   def write(buffer: Buffer): scala.Double = js.native
-  /**
-  		 * Writes data from a buffer to this stream.
-  		 */
   def write(buffer: Buffer, offset: scala.Double): scala.Double = js.native
-  /**
-  		 * Writes data from a buffer to this stream.
-  		 */
   def write(buffer: Buffer, offset: scala.Double, length: scala.Double): scala.Double = js.native
 }
 

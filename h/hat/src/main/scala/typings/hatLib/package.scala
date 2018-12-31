@@ -9,6 +9,6 @@ package object hatLib {
     /* bits */ js.UndefOr[scala.Double], 
     /* base */ js.UndefOr[scala.Double], 
     /* expandBy */ js.UndefOr[scala.Double], 
-    js.Any
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Rack */ js.Any
   ]
 }

@@ -35,14 +35,10 @@ class TextStream protected () extends js.Object {
   /** Write a number of blank lines to the stream */
   def WriteBlankLines(Lines: scala.Double): scala.Unit = js.native
   /**
-           * Write a string and an end of line to the stream
-           * @param string [Text='']
-           */
+    * Write a string and an end of line to the stream
+    * @param string [Text='']
+    */
   def WriteLine(): scala.Unit = js.native
-  /**
-           * Write a string and an end of line to the stream
-           * @param string [Text='']
-           */
   def WriteLine(Text: java.lang.String): scala.Unit = js.native
 }
 

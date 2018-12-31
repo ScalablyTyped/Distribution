@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TSMappedType extends Node {
   var optional: scala.Boolean | scala.Null
   var readonly: scala.Boolean | scala.Null

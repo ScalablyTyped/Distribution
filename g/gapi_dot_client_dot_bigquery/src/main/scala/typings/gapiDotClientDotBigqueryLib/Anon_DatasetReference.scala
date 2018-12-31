@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DatasetReference extends js.Object {
   /** The dataset reference. Use this property to access specific parts of the dataset's ID, such as project ID or dataset ID. */
   var datasetReference: js.UndefOr[gapiDotClientDotBigqueryLib.gapiNs.clientNs.bigqueryNs.DatasetReference] = js.undefined

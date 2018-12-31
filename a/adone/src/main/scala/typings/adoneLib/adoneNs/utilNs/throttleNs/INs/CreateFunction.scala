@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateFunction extends js.Object {
   def apply[R](fn: js.Function0[js.Promise[R] | R]): js.Promise[R] = js.native
-  def apply[R](fn: js.Function1[/* repeated */js.Any, js.Promise[R] | R], args: js.Any*): js.Promise[R] = js.native
+  def apply[R](fn: js.Function1[/* repeated */ js.Any, js.Promise[R] | R], args: js.Any*): js.Promise[R] = js.native
   def apply[T1, R](fn: js.Function1[/* a */ T1, js.Promise[R] | R], a: T1): js.Promise[R] = js.native
   def apply[T1, T2, R](fn: js.Function2[/* a */ T1, /* b */ T2, js.Promise[R] | R], a: T1, b: T2): js.Promise[R] = js.native
   def apply[T1, T2, T3, R](fn: js.Function3[/* a */ T1, /* b */ T2, /* c */ T3, js.Promise[R] | R], a: T1, b: T2, c: T3): js.Promise[R] = js.native

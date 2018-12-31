@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SuiteUpdateModel extends js.Object {
   var defaultConfigurations: js.Array[ShallowReference]
   var defaultTesters: js.Array[ShallowReference]

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("chartmogul-node", "Invoice")
 @js.native
 object InvoiceNs extends js.Object {
-  
   trait Invoice extends js.Object {
     var currency: js.UndefOr[java.lang.String] = js.undefined
     var customer_uuid: js.UndefOr[java.lang.String] = js.undefined
@@ -21,13 +20,11 @@ object InvoiceNs extends js.Object {
     var uuid: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait Invoices
     extends chartmogulDashNodeLib.commonMod.Cursor {
     var customer_uuid: js.UndefOr[java.lang.String] = js.undefined
     var invoices: js.Array[Invoice]
   }
-  
   
   trait LineItem extends js.Object {
     var account_code: js.UndefOr[java.lang.String] = js.undefined
@@ -50,14 +47,12 @@ object InvoiceNs extends js.Object {
     var uuid: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait ListInvoicesParams
     extends chartmogulDashNodeLib.commonMod.CursorParams {
     var customer_uuid: js.UndefOr[java.lang.String] = js.undefined
     var data_source_uuid: js.UndefOr[java.lang.String] = js.undefined
     var external_id: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait Transaction extends js.Object {
     var date: js.UndefOr[java.lang.String] = js.undefined

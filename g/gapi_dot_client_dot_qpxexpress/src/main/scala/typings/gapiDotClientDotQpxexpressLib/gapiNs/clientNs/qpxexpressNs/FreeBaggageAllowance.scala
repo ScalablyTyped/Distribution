@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FreeBaggageAllowance extends js.Object {
   /** A representation of a type of bag, such as an ATPCo subcode, Commercial Name, or other description. */
   var bagDescriptor: js.UndefOr[js.Array[BagDescriptor]] = js.undefined

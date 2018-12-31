@@ -12,17 +12,17 @@ sealed trait writeFlags extends js.Object
 @js.native
 object writeFlags extends js.Object {
   /**
-       * Hint that the write may be buffered and need not go out on the wire
-       * immediately. GRPC is free to buffer the message until the next non-buffered
-       * write, or until writes_done, but it need not buffer completely or at all.
-       */
+    * Hint that the write may be buffered and need not go out on the wire
+    * immediately. GRPC is free to buffer the message until the next non-buffered
+    * write, or until writes_done, but it need not buffer completely or at all.
+    */
   @js.native
   sealed trait BUFFER_HINT
     extends grpcLib.grpcMod.writeFlags
   
   /**
-       * Force compression to be disabled for a particular write
-       */
+    * Force compression to be disabled for a particular write
+    */
   @js.native
   sealed trait NO_COMPRESS
     extends grpcLib.grpcMod.writeFlags

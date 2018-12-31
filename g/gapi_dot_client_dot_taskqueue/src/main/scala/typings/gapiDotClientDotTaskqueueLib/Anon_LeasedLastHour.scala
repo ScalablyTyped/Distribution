@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LeasedLastHour extends js.Object {
   /** Number of tasks leased in the last hour. */
   var leasedLastHour: js.UndefOr[java.lang.String] = js.undefined

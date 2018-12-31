@@ -13,39 +13,21 @@ class ConfigurableMap () extends js.Object
 @js.native
 object ConfigurableMap extends js.Object {
   /**
-           * A static function that loads a map using a JSON configuraiton file.
-           * @param element The parent element of the map as a CSS selector string or HTMLElement.
-           * @param configFileUrl The Url to download the JSON configuration file from. This should JSON file should contain a IConfigurableMapOptions object.
-           * @param withCredentials Creates the config file request with the setwithcredentials property.
-           * @param requestHeaders Set of headers that need to be added to config file request.
-           * @param callback Callback that is triggered when the map loads successfully.
-           * @param errorCallback Callback that is triggered when an error occurs when loading the map.
-           */
+    * A static function that loads a map using a JSON configuraiton file.
+    * @param element The parent element of the map as a CSS selector string or HTMLElement.
+    * @param configFileUrl The Url to download the JSON configuration file from. This should JSON file should contain a IConfigurableMapOptions object.
+    * @param withCredentials Creates the config file request with the setwithcredentials property.
+    * @param requestHeaders Set of headers that need to be added to config file request.
+    * @param callback Callback that is triggered when the map loads successfully.
+    * @param errorCallback Callback that is triggered when an error occurs when loading the map.
+    */
   def createFromConfig(element: java.lang.String, configFileUrl: java.lang.String, withCredentials: scala.Boolean): scala.Unit = js.native
-  /**
-           * A static function that loads a map using a JSON configuraiton file.
-           * @param element The parent element of the map as a CSS selector string or HTMLElement.
-           * @param configFileUrl The Url to download the JSON configuration file from. This should JSON file should contain a IConfigurableMapOptions object.
-           * @param withCredentials Creates the config file request with the setwithcredentials property.
-           * @param requestHeaders Set of headers that need to be added to config file request.
-           * @param callback Callback that is triggered when the map loads successfully.
-           * @param errorCallback Callback that is triggered when an error occurs when loading the map.
-           */
   def createFromConfig(
     element: java.lang.String,
     configFileUrl: java.lang.String,
     withCredentials: scala.Boolean,
     requestHeaders: bingmapsLib.MicrosoftNs.MapsNs.IDictionary[java.lang.String]
   ): scala.Unit = js.native
-  /**
-           * A static function that loads a map using a JSON configuraiton file.
-           * @param element The parent element of the map as a CSS selector string or HTMLElement.
-           * @param configFileUrl The Url to download the JSON configuration file from. This should JSON file should contain a IConfigurableMapOptions object.
-           * @param withCredentials Creates the config file request with the setwithcredentials property.
-           * @param requestHeaders Set of headers that need to be added to config file request.
-           * @param callback Callback that is triggered when the map loads successfully.
-           * @param errorCallback Callback that is triggered when an error occurs when loading the map.
-           */
   def createFromConfig(
     element: java.lang.String,
     configFileUrl: java.lang.String,
@@ -53,15 +35,6 @@ object ConfigurableMap extends js.Object {
     requestHeaders: bingmapsLib.MicrosoftNs.MapsNs.IDictionary[java.lang.String],
     callback: js.Function1[/* map */ bingmapsLib.MicrosoftNs.MapsNs.Map, scala.Unit]
   ): scala.Unit = js.native
-  /**
-           * A static function that loads a map using a JSON configuraiton file.
-           * @param element The parent element of the map as a CSS selector string or HTMLElement.
-           * @param configFileUrl The Url to download the JSON configuration file from. This should JSON file should contain a IConfigurableMapOptions object.
-           * @param withCredentials Creates the config file request with the setwithcredentials property.
-           * @param requestHeaders Set of headers that need to be added to config file request.
-           * @param callback Callback that is triggered when the map loads successfully.
-           * @param errorCallback Callback that is triggered when an error occurs when loading the map.
-           */
   def createFromConfig(
     element: java.lang.String,
     configFileUrl: java.lang.String,
@@ -70,40 +43,13 @@ object ConfigurableMap extends js.Object {
     callback: js.Function1[/* map */ bingmapsLib.MicrosoftNs.MapsNs.Map, scala.Unit],
     errorCallback: js.Function1[/* errorMsg */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
-  /**
-           * A static function that loads a map using a JSON configuraiton file.
-           * @param element The parent element of the map as a CSS selector string or HTMLElement.
-           * @param configFileUrl The Url to download the JSON configuration file from. This should JSON file should contain a IConfigurableMapOptions object.
-           * @param withCredentials Creates the config file request with the setwithcredentials property.
-           * @param requestHeaders Set of headers that need to be added to config file request.
-           * @param callback Callback that is triggered when the map loads successfully.
-           * @param errorCallback Callback that is triggered when an error occurs when loading the map.
-           */
   def createFromConfig(element: stdLib.HTMLElement, configFileUrl: java.lang.String, withCredentials: scala.Boolean): scala.Unit = js.native
-  /**
-           * A static function that loads a map using a JSON configuraiton file.
-           * @param element The parent element of the map as a CSS selector string or HTMLElement.
-           * @param configFileUrl The Url to download the JSON configuration file from. This should JSON file should contain a IConfigurableMapOptions object.
-           * @param withCredentials Creates the config file request with the setwithcredentials property.
-           * @param requestHeaders Set of headers that need to be added to config file request.
-           * @param callback Callback that is triggered when the map loads successfully.
-           * @param errorCallback Callback that is triggered when an error occurs when loading the map.
-           */
   def createFromConfig(
     element: stdLib.HTMLElement,
     configFileUrl: java.lang.String,
     withCredentials: scala.Boolean,
     requestHeaders: bingmapsLib.MicrosoftNs.MapsNs.IDictionary[java.lang.String]
   ): scala.Unit = js.native
-  /**
-           * A static function that loads a map using a JSON configuraiton file.
-           * @param element The parent element of the map as a CSS selector string or HTMLElement.
-           * @param configFileUrl The Url to download the JSON configuration file from. This should JSON file should contain a IConfigurableMapOptions object.
-           * @param withCredentials Creates the config file request with the setwithcredentials property.
-           * @param requestHeaders Set of headers that need to be added to config file request.
-           * @param callback Callback that is triggered when the map loads successfully.
-           * @param errorCallback Callback that is triggered when an error occurs when loading the map.
-           */
   def createFromConfig(
     element: stdLib.HTMLElement,
     configFileUrl: java.lang.String,
@@ -111,15 +57,6 @@ object ConfigurableMap extends js.Object {
     requestHeaders: bingmapsLib.MicrosoftNs.MapsNs.IDictionary[java.lang.String],
     callback: js.Function1[/* map */ bingmapsLib.MicrosoftNs.MapsNs.Map, scala.Unit]
   ): scala.Unit = js.native
-  /**
-           * A static function that loads a map using a JSON configuraiton file.
-           * @param element The parent element of the map as a CSS selector string or HTMLElement.
-           * @param configFileUrl The Url to download the JSON configuration file from. This should JSON file should contain a IConfigurableMapOptions object.
-           * @param withCredentials Creates the config file request with the setwithcredentials property.
-           * @param requestHeaders Set of headers that need to be added to config file request.
-           * @param callback Callback that is triggered when the map loads successfully.
-           * @param errorCallback Callback that is triggered when an error occurs when loading the map.
-           */
   def createFromConfig(
     element: stdLib.HTMLElement,
     configFileUrl: java.lang.String,

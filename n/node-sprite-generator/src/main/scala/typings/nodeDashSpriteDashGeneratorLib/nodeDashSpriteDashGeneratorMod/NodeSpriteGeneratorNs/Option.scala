@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Option extends js.Object {
   var compositor: js.UndefOr[BuiltinCompositors | Compositor] = js.undefined
   var compositorOptions: js.UndefOr[CompositorOption] = js.undefined

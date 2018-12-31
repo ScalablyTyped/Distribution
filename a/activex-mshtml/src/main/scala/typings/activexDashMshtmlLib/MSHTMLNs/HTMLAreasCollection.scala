@@ -23,7 +23,6 @@ trait HTMLAreasCollection extends js.Object {
   def namedItem(name: java.lang.String): js.Any = js.native
   /** @param index [index=-1] */
   def remove(): scala.Unit = js.native
-  /** @param index [index=-1] */
   def remove(index: scala.Double): scala.Unit = js.native
   def tags(tagName: js.Any): js.Any = js.native
   def urns(urn: js.Any): js.Any = js.native

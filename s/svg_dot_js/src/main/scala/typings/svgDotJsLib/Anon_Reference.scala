@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Reference extends js.Object {
   var delimiter: stdLib.RegExp
   var dots: stdLib.RegExp

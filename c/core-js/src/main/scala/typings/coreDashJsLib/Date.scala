@@ -12,20 +12,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Date extends js.Object {
   /**
-       * Non-standard.
-       */
+    * Non-standard.
+    */
   def format(template: java.lang.String): java.lang.String = js.native
-  /**
-       * Non-standard.
-       */
   def format(template: java.lang.String, locale: java.lang.String): java.lang.String = js.native
   /**
-       * Non-standard.
-       */
+    * Non-standard.
+    */
   def formatUTC(template: java.lang.String): java.lang.String = js.native
-  /**
-       * Non-standard.
-       */
   def formatUTC(template: java.lang.String, locale: java.lang.String): java.lang.String = js.native
 }
 

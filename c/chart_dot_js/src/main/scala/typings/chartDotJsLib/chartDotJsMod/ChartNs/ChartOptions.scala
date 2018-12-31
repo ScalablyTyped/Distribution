@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartOptions extends js.Object {
   var animation: js.UndefOr[ChartAnimationOptions] = js.undefined
   var aspectRatio: js.UndefOr[scala.Double] = js.undefined

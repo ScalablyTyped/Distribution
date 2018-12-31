@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConcatFromOptionsBuilder extends js.Object {
   /** Create and concatenate readable streams from paths and pipe to markdown-pdf. */
   def paths(paths: js.Array[java.lang.String], opts: js.Any): ToOptionsBuilder

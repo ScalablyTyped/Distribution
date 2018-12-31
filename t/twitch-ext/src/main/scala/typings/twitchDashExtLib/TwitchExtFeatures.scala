@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * @see TwitchExt.features
- */
-
+  * @see TwitchExt.features
+  */
 trait TwitchExtFeatures extends TwitchExtFeatureFlags {
   /**
   	 * This function enables you to receive real-time updates to changes of the features object.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Limit extends js.Object {
   /** return the raw object instead of the Mongoose Model */
   var lean: js.UndefOr[scala.Boolean] = js.undefined

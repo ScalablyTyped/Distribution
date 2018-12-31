@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 sealed trait ChartAxisTimeUnit extends js.Object
 
 /**
-     *
-     * Specifies the unit of time for chart axes and data series.
-     *
-     * [Api set: ExcelApi 1.7]
-     */
+  *
+  * Specifies the unit of time for chart axes and data series.
+  *
+  * [Api set: ExcelApi 1.7]
+  */
 @JSGlobal("Excel.ChartAxisTimeUnit")
 @js.native
 object ChartAxisTimeUnit extends js.Object {

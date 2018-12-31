@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("validator/lib/isMD5", JSImport.Namespace)
 @js.native
 object libIsMD5Mod
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[js.Function1[/* str */ java.lang.String, scala.Boolean]]
 

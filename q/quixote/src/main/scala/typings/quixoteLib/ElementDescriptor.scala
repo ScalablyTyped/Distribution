@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Element positions and sizes are available on all QElement instances.
-
 trait ElementDescriptor extends js.Object {
   // The bottom edge of the element
   var bottom: js.UndefOr[PositionDescriptor] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CanSelect extends js.Object {
   /** Whether there are any rows in the list selected */
   var anySelected: js.UndefOr[scala.Boolean] = js.undefined

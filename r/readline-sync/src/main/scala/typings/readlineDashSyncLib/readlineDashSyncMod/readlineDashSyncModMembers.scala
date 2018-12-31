@@ -28,40 +28,40 @@ object readlineDashSyncModMembers extends js.Object {
   def prompt(options: BasicOptions): java.lang.String = js.native
   def promptCL(): js.Array[java.lang.String] = js.native
   def promptCL(
-    commandHandler: js.Function2[/* command */ java.lang.String, /* repeated */java.lang.String, scala.Unit]
+    commandHandler: js.Function2[/* command */ java.lang.String, /* repeated */ java.lang.String, scala.Unit]
   ): js.Array[java.lang.String] = js.native
   def promptCL(
-    commandHandler: js.Function2[/* command */ java.lang.String, /* repeated */java.lang.String, scala.Unit],
+    commandHandler: js.Function2[/* command */ java.lang.String, /* repeated */ java.lang.String, scala.Unit],
     options: BasicOptions
   ): js.Array[java.lang.String] = js.native
   def promptCL(
-    commandHandler: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */java.lang.String, scala.Unit]]
+    commandHandler: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ java.lang.String, scala.Unit]]
   ): js.Array[java.lang.String] = js.native
   def promptCL(
-    commandHandler: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */java.lang.String, scala.Unit]],
+    commandHandler: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ java.lang.String, scala.Unit]],
     options: BasicOptions
   ): js.Array[java.lang.String] = js.native
   def promptCLLoop(): scala.Unit = js.native
   def promptCLLoop(
     commandHandler: js.Function2[
       /* command */ java.lang.String, 
-      /* repeated */java.lang.String, 
+      /* repeated */ java.lang.String, 
       scala.Boolean | scala.Unit
     ]
   ): scala.Unit = js.native
   def promptCLLoop(
     commandHandler: js.Function2[
       /* command */ java.lang.String, 
-      /* repeated */java.lang.String, 
+      /* repeated */ java.lang.String, 
       scala.Boolean | scala.Unit
     ],
     options: BasicOptions
   ): scala.Unit = js.native
   def promptCLLoop(
-    commandHandler: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */java.lang.String, scala.Boolean | scala.Unit]]
+    commandHandler: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ java.lang.String, scala.Boolean | scala.Unit]]
   ): scala.Unit = js.native
   def promptCLLoop(
-    commandHandler: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */java.lang.String, scala.Boolean | scala.Unit]],
+    commandHandler: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ java.lang.String, scala.Boolean | scala.Unit]],
     options: BasicOptions
   ): scala.Unit = js.native
   def promptLoop(inputHandler: js.Function1[/* value */ java.lang.String, scala.Boolean]): scala.Unit = js.native

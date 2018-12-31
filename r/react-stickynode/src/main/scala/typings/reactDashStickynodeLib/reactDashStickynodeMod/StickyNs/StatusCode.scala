@@ -21,9 +21,9 @@ object StatusCode extends js.Object {
     extends reactDashStickynodeLib.reactDashStickynodeMod.StickyNs.StatusCode
   
   /**
-           * The released status, located at somewhere on document, but not
-           * default one.
-           */
+    * The released status, located at somewhere on document, but not
+    * default one.
+    */
   @js.native
   sealed trait STATUS_RELEASED
     extends reactDashStickynodeLib.reactDashStickynodeMod.StickyNs.StatusCode

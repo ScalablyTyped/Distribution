@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILayerStyleProps extends js.Object {
   /**
-       * Accept custom classNames
-       */
+    * Accept custom classNames
+    */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Check if Host
-       */
+    * Check if Host
+    */
   var isNotHost: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Accept theme prop.
-       */
+    * Accept theme prop.
+    */
   var theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme
 }
 

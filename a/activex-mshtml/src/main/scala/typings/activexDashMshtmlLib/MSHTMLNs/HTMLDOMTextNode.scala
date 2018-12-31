@@ -61,7 +61,6 @@ class HTMLDOMTextNode protected () extends js.Object {
   def removeEventListener(`type`: java.lang.String, listener: js.Any, useCapture: scala.Boolean): scala.Unit = js.native
   /** @param fDeep [fDeep=false] */
   def removeNode(): IHTMLDOMNode = js.native
-  /** @param fDeep [fDeep=false] */
   def removeNode(fDeep: scala.Boolean): IHTMLDOMNode = js.native
   def replaceChild(newChild: IHTMLDOMNode, oldChild: IHTMLDOMNode): IHTMLDOMNode = js.native
   def replaceData(offset: scala.Double, Count: scala.Double, bstrstring: java.lang.String): scala.Unit = js.native

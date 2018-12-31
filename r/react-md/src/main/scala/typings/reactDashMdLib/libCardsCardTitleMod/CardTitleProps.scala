@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CardTitleProps
   extends reactDashMdLib.libMod.Props {
   var avatar: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined

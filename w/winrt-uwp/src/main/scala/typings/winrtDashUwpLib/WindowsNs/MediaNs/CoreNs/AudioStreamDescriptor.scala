@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class AudioStreamDescriptor protected () extends js.Object {
   /**
-                   * Creates an instance of AudioStreamDescriptor class using the specified AudioEncodingProperties .
-                   * @param encodingProperties The encoding properties for the audio stream.
-                   */
+    * Creates an instance of AudioStreamDescriptor class using the specified AudioEncodingProperties .
+    * @param encodingProperties The encoding properties for the audio stream.
+    */
   def this(encodingProperties: winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.AudioEncodingProperties) = this()
   /** The encoding properties of the stream. */
   var encodingProperties: winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.AudioEncodingProperties = js.native

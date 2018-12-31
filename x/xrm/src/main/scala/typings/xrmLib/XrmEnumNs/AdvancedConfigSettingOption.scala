@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait AdvancedConfigSettingOption extends js.Object
 
 /**
-     * Constant Enum: Settings for {@link GlobalContext.getAdvancedConfigSetting globalContext.getAdvancedConfigSetting(setting)}
-     */
+  * Constant Enum: Settings for {@link GlobalContext.getAdvancedConfigSetting globalContext.getAdvancedConfigSetting(setting)}
+  */
 @JSGlobal("XrmEnum.AdvancedConfigSettingOption")
 @js.native
 object AdvancedConfigSettingOption extends js.Object {

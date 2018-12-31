@@ -19,7 +19,6 @@ object conversionNs extends js.Object {
     def register(groupName: java.lang.String, dispatchers: js.Array[DowncastDispatcher | UpcastDispatcher]): scala.Unit = js.native
   }
   
-  
   trait ConverterDefinition extends js.Object {
     var converterPriority: atCkeditorCkeditor5DashUtilsLib.ckeditor5DashUtilsMod.PriorityString
     var model: js.Any
@@ -32,7 +31,6 @@ object conversionNs extends js.Object {
   class DowncastDispatcher () extends js.Object
   
   // engine/conversion/downcast-converters
-  
   trait HighlightDescriptor extends js.Object {
     var attributes: js.Object
     var classes: java.lang.String | js.Array[java.lang.String]
@@ -130,7 +128,6 @@ object conversionNs extends js.Object {
   // engine/conversion/viewconsumable
   @js.native
   class ViewConsumable () extends js.Object
-  
   
   trait ViewConversionApi extends js.Object
   

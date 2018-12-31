@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITetherOptions extends js.Object {
   var attachment: java.lang.String
   var bodyElement: js.UndefOr[stdLib.HTMLElement] = js.undefined

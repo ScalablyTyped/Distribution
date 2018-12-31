@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Accesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -31,35 +30,35 @@ trait Anon_Accesstoken extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The resource name for the person, assigned by the server. An ASCII string
-                   * with a max length of 27 characters, in the form of
-                   * `people/`<var>person_id</var>.
-                   */
+    * The resource name for the person, assigned by the server. An ASCII string
+    * with a max length of 27 characters, in the form of
+    * `people/`<var>person_id</var>.
+    */
   var resourceName: java.lang.String
   /**
-                   * &#42;&#42;Required.&#42;&#42; A field mask to restrict which fields on the person are
-                   * updated. Valid values are:
-                   *
-                   * &#42; addresses
-                   * &#42; biographies
-                   * &#42; birthdays
-                   * &#42; braggingRights
-                   * &#42; emailAddresses
-                   * &#42; events
-                   * &#42; genders
-                   * &#42; imClients
-                   * &#42; interests
-                   * &#42; locales
-                   * &#42; names
-                   * &#42; nicknames
-                   * &#42; occupations
-                   * &#42; organizations
-                   * &#42; phoneNumbers
-                   * &#42; relations
-                   * &#42; residences
-                   * &#42; skills
-                   * &#42; urls
-                   */
+    * &#42;&#42;Required.&#42;&#42; A field mask to restrict which fields on the person are
+    * updated. Valid values are:
+    *
+    * &#42; addresses
+    * &#42; biographies
+    * &#42; birthdays
+    * &#42; braggingRights
+    * &#42; emailAddresses
+    * &#42; events
+    * &#42; genders
+    * &#42; imClients
+    * &#42; interests
+    * &#42; locales
+    * &#42; names
+    * &#42; nicknames
+    * &#42; occupations
+    * &#42; organizations
+    * &#42; phoneNumbers
+    * &#42; relations
+    * &#42; residences
+    * &#42; skills
+    * &#42; urls
+    */
   var updatePersonFields: js.UndefOr[java.lang.String] = js.undefined
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

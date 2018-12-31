@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActiveXObjectNameMap extends js.Object {
   var `DOCSITE.DocSiteControl`: activexDashOutlookLib.OutlookNs._DocSiteControl
   var `Outlook.Application`: activexDashOutlookLib.OutlookNs.Application

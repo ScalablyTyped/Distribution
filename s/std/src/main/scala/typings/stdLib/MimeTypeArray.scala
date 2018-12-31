@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MimeTypeArray
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[Plugin] {
   @JSName(org.scalablytyped.runtime.Symbol.iterator)

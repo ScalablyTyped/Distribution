@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Flash9Options extends js.Object {
   var isMovieStar: js.UndefOr[soundmanager2Lib.soundmanager2LibNumbers.`true` | scala.Null] = js.undefined
   var onbufferchange: js.UndefOr[js.Function0[scala.Unit] | scala.Null] = js.undefined

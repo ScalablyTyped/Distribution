@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatepickerViewDate extends js.Object {
   /** Day of the month starting with 1 */
   var day: scala.Double

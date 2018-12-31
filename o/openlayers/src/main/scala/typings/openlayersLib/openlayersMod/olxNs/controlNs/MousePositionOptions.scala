@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MousePositionOptions extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var coordinateFormat: js.UndefOr[openlayersLib.openlayersMod.CoordinateFormatType] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Field extends js.Object {
   /** Optional maximum number of files per field to accept. */
   var maxCount: js.UndefOr[scala.Double] = js.undefined

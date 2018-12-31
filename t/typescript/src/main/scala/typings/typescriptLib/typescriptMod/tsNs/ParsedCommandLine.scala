@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Either a parsed command line or a parsed tsconfig.json */
-
 trait ParsedCommandLine extends js.Object {
   var compileOnSave: js.UndefOr[scala.Boolean] = js.undefined
   var errors: js.Array[Diagnostic]

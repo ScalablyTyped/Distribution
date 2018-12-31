@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DisplacementFilterUniforms extends js.Object {
   var filterMatrix: pixiDotJsLib.PIXINs.Matrix
   var mapSampler: pixiDotJsLib.PIXINs.Texture

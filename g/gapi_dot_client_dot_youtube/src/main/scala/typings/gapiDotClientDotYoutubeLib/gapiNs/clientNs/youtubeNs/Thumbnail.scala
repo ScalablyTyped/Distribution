@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Thumbnail extends js.Object {
   /** (Optional) Height of the thumbnail image. */
   var height: js.UndefOr[scala.Double] = js.undefined

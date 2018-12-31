@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * Represents BSON MinKey type
-             */
+  * Represents BSON MinKey type
+  */
 @JSGlobal("adone.data.bson.MinKey")
 @js.native
 class MinKey ()

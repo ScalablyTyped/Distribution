@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GraphQLRequestContext[TContext] extends js.Object {
   val cache: apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache
   val context: TContext

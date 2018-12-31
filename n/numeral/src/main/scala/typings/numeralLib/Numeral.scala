@@ -25,10 +25,6 @@ trait Numeral extends js.Object {
   	 * it will simply return the current global locale key.
   	 */
   def locale(): java.lang.String = js.native
-  /**
-  	 * This function sets the current locale.  If no arguments are passed in,
-  	 * it will simply return the current global locale key.
-  	 */
   def locale(key: java.lang.String): java.lang.String = js.native
   /**
   	 * This function provides access to the loaded locale data.  If
@@ -38,13 +34,6 @@ trait Numeral extends js.Object {
   	 * @param key Locale key, e.g 'es' for a spanish locale definition
   	 */
   def localeData(): NumeralJSLocale = js.native
-  /**
-  	 * This function provides access to the loaded locale data.  If
-  	 * no arguments are passed in, it will simply return the current
-  	 * global locale object.
-  	 *
-  	 * @param key Locale key, e.g 'es' for a spanish locale definition
-  	 */
   def localeData(key: java.lang.String): NumeralJSLocale = js.native
   def multiply(value: js.Any): Numeral = js.native
   def nullFormat(format: java.lang.String): scala.Unit = js.native
@@ -56,13 +45,6 @@ trait Numeral extends js.Object {
   	 * @param value The locale definition or the format definitiion
   	 */
   def register(what: RegisterType, key: java.lang.String, value: NumeralJSLocale): NumeralJSLocale | NumeralJsFormat = js.native
-  /**
-  	 * Registers a language definition or a custom format definition.
-  	 *
-  	 * @param what Allowed values are: either 'format' or 'locale'
-  	 * @param key The key of the registerd type, e.g. 'de' for a german locale definition
-  	 * @param value The locale definition or the format definitiion
-  	 */
   def register(what: RegisterType, key: java.lang.String, value: NumeralJsFormat): NumeralJSLocale | NumeralJsFormat = js.native
   def set(value: js.Any): Numeral = js.native
   def subtract(value: js.Any): Numeral = js.native

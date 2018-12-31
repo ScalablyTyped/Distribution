@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Paragraph extends Parent {
   @JSName("children")
   var children_Paragraph: js.Array[PhrasingContent]

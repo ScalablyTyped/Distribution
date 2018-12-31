@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParentAccesstokenPageSize extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -21,46 +20,46 @@ trait Anon_ParentAccesstokenPageSize extends js.Object {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * An expression for filtering the results of the request. Filter rules are
-                   * case insensitive. The fields eligible for filtering are:
-                   *
-                   * &#42; name
-                   * &#42; display_name
-                   * &#42; labels.key where key is the name of a label
-                   *
-                   * Some examples of using filters are:
-                   *
-                   * &#42; name:&#42; --> The instance has a name.
-                   * &#42; name:Howl --> The instance's name contains the string "howl".
-                   * &#42; name:HOWL --> Equivalent to above.
-                   * &#42; NAME:howl --> Equivalent to above.
-                   * &#42; labels.env:&#42; --> The instance has the label "env".
-                   * &#42; labels.env:dev --> The instance has the label "env" and the value of
-                   * the label contains the string "dev".
-                   * &#42; name:howl labels.env:dev --> The instance's name contains "howl" and
-                   * it has the label "env" with its value
-                   * containing "dev".
-                   */
+    * An expression for filtering the results of the request. Filter rules are
+    * case insensitive. The fields eligible for filtering are:
+    *
+    * &#42; name
+    * &#42; display_name
+    * &#42; labels.key where key is the name of a label
+    *
+    * Some examples of using filters are:
+    *
+    * &#42; name:&#42; --> The instance has a name.
+    * &#42; name:Howl --> The instance's name contains the string "howl".
+    * &#42; name:HOWL --> Equivalent to above.
+    * &#42; NAME:howl --> Equivalent to above.
+    * &#42; labels.env:&#42; --> The instance has the label "env".
+    * &#42; labels.env:dev --> The instance has the label "env" and the value of
+    * the label contains the string "dev".
+    * &#42; name:howl labels.env:dev --> The instance's name contains "howl" and
+    * it has the label "env" with its value
+    * containing "dev".
+    */
   var filter: js.UndefOr[java.lang.String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Number of instances to be returned in the response. If 0 or less, defaults
-                   * to the server's maximum allowed page size.
-                   */
+    * Number of instances to be returned in the response. If 0 or less, defaults
+    * to the server's maximum allowed page size.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * If non-empty, `page_token` should contain a
-                   * next_page_token from a
-                   * previous ListInstancesResponse.
-                   */
+    * If non-empty, `page_token` should contain a
+    * next_page_token from a
+    * previous ListInstancesResponse.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Required. The name of the project for which a list of instances is
-                   * requested. Values are of the form `projects/<project>`.
-                   */
+    * Required. The name of the project for which a list of instances is
+    * requested. Values are of the form `projects/<project>`.
+    */
   var parent: java.lang.String
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

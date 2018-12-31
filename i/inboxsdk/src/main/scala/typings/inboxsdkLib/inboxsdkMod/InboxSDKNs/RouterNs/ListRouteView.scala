@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListRouteView extends RouteView {
   def addCollapsibleSection(options: SectionDescriptor): CollapsibleSectionView
   // addCollapsibleSection(options: Stream<SectionDescriptor>): CollapsibleSectionView;

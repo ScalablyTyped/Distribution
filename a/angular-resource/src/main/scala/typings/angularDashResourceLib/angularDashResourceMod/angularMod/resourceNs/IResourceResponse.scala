@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IResourceResponse extends js.Object {
   var config: js.Any
   var data: js.Any

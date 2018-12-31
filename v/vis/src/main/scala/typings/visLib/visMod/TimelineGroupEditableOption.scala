@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimelineGroupEditableOption extends js.Object {
   var add: js.UndefOr[scala.Boolean] = js.undefined
   var order: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_STANDARD extends js.Object {
   var CLASS: chromeDashAppsLib.chromeDashAppsLibStrings.`class`
   var RESERVED: chromeDashAppsLib.chromeDashAppsLibStrings.reserved

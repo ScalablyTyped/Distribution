@@ -6,14 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    */
+  */
 @JSImport("go", "LinkingTool")
 @js.native
+/**
+  * You do not normally need to create an instance of this tool because one already exists as the ToolManager.linkingTool, which you can modify.
+  */
 class LinkingTool ()
   extends goLib.goMod.goNs.LinkingTool
 
 /**
-    */
+  */
 @JSImport("go", "LinkingTool")
 @js.native
 object LinkingTool extends js.Object {

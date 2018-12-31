@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BorderlessConstructorOptions extends js.Object {
   var colAligns: js.UndefOr[
     js.Array[

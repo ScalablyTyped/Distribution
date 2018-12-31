@@ -12,10 +12,10 @@ class namespaced () extends Modal
 @JSImport("react-bootstrap/lib/Modal", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {
-  var Body: js.Any = js.native
-  var Dialog: js.Any = js.native
-  var Footer: js.Any = js.native
-  var Header: js.Any = js.native
-  var Title: js.Any = js.native
+  var Body: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libModalBodyMod.namespaced] = js.native
+  var Dialog: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libModalDialogMod.namespaced] = js.native
+  var Footer: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libModalFooterMod.namespaced] = js.native
+  var Header: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libModalHeaderMod.namespaced] = js.native
+  var Title: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libModalTitleMod.namespaced] = js.native
 }
 

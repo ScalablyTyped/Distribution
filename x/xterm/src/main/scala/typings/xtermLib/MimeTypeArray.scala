@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MimeTypeArray
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[Plugin] {
   val length: scala.Double

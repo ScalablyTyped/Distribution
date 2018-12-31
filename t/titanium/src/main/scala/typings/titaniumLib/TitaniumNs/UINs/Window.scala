@@ -263,9 +263,6 @@ trait Window extends View {
   			 * Closes the window.
   			 */
   def close(): scala.Unit = js.native
-  /**
-  			 * Closes the window.
-  			 */
   def close(params: js.Any): scala.Unit = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Window.activity> property.
@@ -511,9 +508,6 @@ trait Window extends View {
   			 * Hides the navigation bar.
   			 */
   def hideNavBar(): scala.Unit = js.native
-  /**
-  			 * Hides the navigation bar.
-  			 */
   def hideNavBar(options: js.Any): scala.Unit = js.native
   /**
   			 * Hides the tab bar. Must be called before opening the window.
@@ -523,9 +517,6 @@ trait Window extends View {
   			 * Makes the bottom toolbar invisible.
   			 */
   def hideToolbar(): scala.Unit = js.native
-  /**
-  			 * Makes the bottom toolbar invisible.
-  			 */
   def hideToolbar(options: js.Any): scala.Unit = js.native
   /**
   			 * Callback function that overrides the default behavior when the user presses the **Back**
@@ -536,9 +527,6 @@ trait Window extends View {
   			 * Opens the window.
   			 */
   def open(): scala.Unit = js.native
-  /**
-  			 * Opens the window.
-  			 */
   def open(params: titaniumLib.openWindowParams): scala.Unit = js.native
   /**
   			 * Clears all added shared elements.
@@ -755,9 +743,6 @@ trait Window extends View {
   			 * Sets the value of the <Titanium.UI.Window.toolbar> property.
   			 */
   def setToolbar(items: js.Array[_]): scala.Unit = js.native
-  /**
-  			 * Sets the array of items to show in the window's toolbar.
-  			 */
   def setToolbar(items: js.Array[_], params: titaniumLib.windowToolbarParam): scala.Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Window.transitionAnimation> property.
@@ -787,17 +772,11 @@ trait Window extends View {
   			 * Makes the navigation bar visible.
   			 */
   def showNavBar(): scala.Unit = js.native
-  /**
-  			 * Makes the navigation bar visible.
-  			 */
   def showNavBar(options: js.Any): scala.Unit = js.native
   /**
   			 * Makes the bottom toolbar visible.
   			 */
   def showToolbar(): scala.Unit = js.native
-  /**
-  			 * Makes the bottom toolbar visible.
-  			 */
   def showToolbar(options: js.Any): scala.Unit = js.native
 }
 

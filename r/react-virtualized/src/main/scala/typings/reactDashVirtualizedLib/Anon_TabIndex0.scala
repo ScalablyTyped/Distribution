@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TabIndex0 extends js.Object {
   var `aria-label`: reactDashVirtualizedLib.reactDashVirtualizedLibStrings.grid
   var `aria-readonly`: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`true`

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RNFetchBlobResponseInfo extends js.Object {
   var headers: js.Any
   var respType: reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobLibStrings.text | reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobLibStrings.blob | reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobLibStrings.Empty | reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobLibStrings.json

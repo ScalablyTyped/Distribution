@@ -26,11 +26,11 @@ class DefaultLinkWidget protected ()
   def generateLink(path: java.lang.String, extraProps: js.Any, id: scala.Double): reactLib.reactMod.Global.JSXNs.Element = js.native
   def generatePoint(pointIndex: scala.Double): reactLib.reactMod.Global.JSXNs.Element = js.native
   /**
-       * Smart routing is only applicable when all conditions below are true:
-       * - smart routing is set to true on the engine
-       * - current link is between two nodes (not between a node and an empty point)
-       * - no custom points exist along the line
-       */
+    * Smart routing is only applicable when all conditions below are true:
+    * - smart routing is set to true on the engine
+    * - current link is between two nodes (not between a node and an empty point)
+    * - no custom points exist along the line
+    */
   def isSmartRoutingApplicable(): scala.Boolean = js.native
 }
 

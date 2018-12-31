@@ -105,16 +105,16 @@ abstract class CoreTextEditContext () extends js.Object {
   /** Notifies the text input server that the layout of text inside the text input control has changed. */
   def notifyLayoutChanged(): scala.Unit = js.native
   /**
-                       * Notifies the text input server about any change that the text input control needs to make to the selection range. This is important in order to keep the internal state of the control and the internal state of the server synchronized.
-                       * @param selection The range of selection currently in effect.
-                       */
+    * Notifies the text input server about any change that the text input control needs to make to the selection range. This is important in order to keep the internal state of the control and the internal state of the server synchronized.
+    * @param selection The range of selection currently in effect.
+    */
   def notifySelectionChanged(selection: CoreTextRange): scala.Unit = js.native
   /**
-                       * Notifies the text input server about any change that the text input control needs to make to the text. This is important in order to keep the internal state of the control and the internal state of the server synchronized. Since a change to the text is also likely to affect the selection range, the method takes the selection range as a parameter.
-                       * @param modifiedRange The range of text to replace, in terms of the state the text buffer is in prior to this text change.
-                       * @param newLength The length of the text that should replace modifiedRange.
-                       * @param newSelection The range of selection in effect after the text change.
-                       */
+    * Notifies the text input server about any change that the text input control needs to make to the text. This is important in order to keep the internal state of the control and the internal state of the server synchronized. Since a change to the text is also likely to affect the selection range, the method takes the selection range as a parameter.
+    * @param modifiedRange The range of text to replace, in terms of the state the text buffer is in prior to this text change.
+    * @param newLength The length of the text that should replace modifiedRange.
+    * @param newSelection The range of selection in effect after the text change.
+    */
   def notifyTextChanged(modifiedRange: CoreTextRange, newLength: scala.Double, newSelection: CoreTextRange): scala.Unit = js.native
   /** Occurs when composition has completed. */
   def oncompositioncompleted(

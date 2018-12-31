@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MonitoredResourceDescriptorsResource extends js.Object {
   /** Lists the descriptors for monitored resource types used by Stackdriver Logging. */
   def list(request: gapiDotClientDotLoggingLib.Anon_AccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListMonitoredResourceDescriptorsResponse]

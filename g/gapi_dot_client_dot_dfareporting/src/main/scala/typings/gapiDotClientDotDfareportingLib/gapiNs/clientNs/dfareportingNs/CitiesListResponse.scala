@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CitiesListResponse extends js.Object {
   /** City collection. */
   var cities: js.UndefOr[js.Array[City]] = js.undefined

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Provides a way to tag existing user contacts with additional information, specifying that your app can perform some SupportedOperations for this particular contact. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactAnnotation")
 @js.native
+/** Initializes a new instance of the ContactAnnotation class. */
 class ContactAnnotation () extends js.Object {
   /** Gets the ID for the parent ContactAnnotationList that this ContactAnnotation is contained within. */
   var annotationListId: java.lang.String = js.native

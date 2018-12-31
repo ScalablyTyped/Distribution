@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SymbolLayout extends js.Object {
   var `icon-allow-overlap`: js.UndefOr[scala.Boolean | StyleFunction] = js.undefined
   var `icon-anchor`: js.UndefOr[Anchor | StyleFunction | Expression] = js.undefined

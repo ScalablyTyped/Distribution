@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaletteOptions extends js.Object {
   var action: js.UndefOr[stdLib.Partial[TypeAction]] = js.undefined
   var background: js.UndefOr[stdLib.Partial[TypeBackground]] = js.undefined

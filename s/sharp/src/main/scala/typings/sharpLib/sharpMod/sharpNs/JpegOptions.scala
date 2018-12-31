@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JpegOptions extends OutputOptions {
   /** Set to '4:4:4' to prevent chroma subsampling when quality <= 90 (optional, default '4:2:0') */
   var chromaSubsampling: js.UndefOr[java.lang.String] = js.undefined

@@ -22,31 +22,33 @@ object angularjsModMembers extends js.Object {
   val forEach: js.Any = js.native
   val fromJson: js.Any = js.native
   val hostRegex: stdLib.RegExp = js.native
-  val inArray: js.Function1[/* array */ js.Array[js.Any], js.Function1[/* obj */ js.Any, scala.Boolean]] = js.native
+  val inArray: atUirouterCoreLib.Anon_ArrayObj = js.native
   val isDefined: atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any] = js.native
   val isNullOrUndefined: atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any] = js.native
   var mapObj: js.Function3[
     /* collection */ org.scalablytyped.runtime.StringDictionary[js.Any], 
     /* callback */ atUirouterCoreLib.libCommonCommonMod.Mapper[js.Any, js.Any], 
-    /* target */ js.UndefOr[js.Any], 
+    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof collection */ /* target */ js.UndefOr[
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof collection */ js.Any
+    ], 
     org.scalablytyped.runtime.StringDictionary[js.Any]
   ] = js.native
   val propEq: js.Function = js.native
-  val pushTo: js.Function1[/* arr */ js.Array[js.Any], js.Function1[/* val */ js.Any, js.Any]] = js.native
-  val removeFrom: js.Function1[/* array */ js.Array[js.Any], js.Function1[/* obj */ js.Any, js.Array[js.Any]]] = js.native
+  val pushTo: atUirouterCoreLib.Anon_Arr = js.native
+  val removeFrom: atUirouterCoreLib.Anon_Array = js.native
   var resolvePolicies: atUirouterCoreLib.Anon_When = js.native
   val root: js.Any = js.native
   val services: atUirouterCoreLib.libCommonCoreservicesMod.CoreServices = js.native
   val toJson: js.Any = js.native
   /**
-   * The [[Trace]] singleton
-   *
-   * #### Example:
-   * ```js
-   * import {trace} from "@uirouter/core";
-   * trace.enable(1, 5);
-   * ```
-   */
+    * The [[Trace]] singleton
+    *
+    * #### Example:
+    * ```js
+    * import {trace} from "@uirouter/core";
+    * trace.enable(1, 5);
+    * ```
+    */
   val trace: atUirouterCoreLib.libCommonTraceMod.Trace = js.native
   def _extend(
     toObj: atUirouterCoreLib.libCommonCommonMod.Obj,
@@ -128,17 +130,17 @@ object angularjsModMembers extends js.Object {
   def inherit(parent: atUirouterCoreLib.libCommonCommonMod.Obj, extra: atUirouterCoreLib.libCommonCommonMod.Obj): js.Any = js.native
   def invoke(fnName: java.lang.String): js.Function = js.native
   def invoke(fnName: java.lang.String, args: js.Array[_]): js.Function = js.native
-  def is[T](ctor: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]): js.Function1[/* obj */ js.Any, /* is T */scala.Boolean] = js.native
-  def isArray(arg: js.Any): /* is Array */scala.Boolean = js.native
-  def isDate(x: js.Any): /* is Date */scala.Boolean = js.native
-  def isFunction(x: js.Any): /* is Function */scala.Boolean = js.native
+  def is[T](ctor: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]): js.Function1[/* obj */ js.Any, /* is T */ scala.Boolean] = js.native
+  def isArray(arg: js.Any): /* is std.Array<any> */ scala.Boolean = js.native
+  def isDate(x: js.Any): /* is std.Date */ scala.Boolean = js.native
+  def isFunction(x: js.Any): /* is std.Function */ scala.Boolean = js.native
   def isInjectable(`val`: js.Any): scala.Boolean = js.native
   def isNull(o: js.Any): scala.Boolean = js.native
-  def isNumber(x: js.Any): /* is number */scala.Boolean = js.native
+  def isNumber(x: js.Any): /* is number */ scala.Boolean = js.native
   def isObject(x: js.Any): scala.Boolean = js.native
-  def isPromise(x: js.Any): /* is Promise */scala.Boolean = js.native
-  def isRegExp(x: js.Any): /* is RegExp */scala.Boolean = js.native
-  def isString(x: js.Any): /* is string */scala.Boolean = js.native
+  def isPromise(x: js.Any): /* is std.Promise<any> */ scala.Boolean = js.native
+  def isRegExp(x: js.Any): /* is std.RegExp */ scala.Boolean = js.native
+  def isString(x: js.Any): /* is string */ scala.Boolean = js.native
   def isUndefined(x: js.Any): scala.Boolean = js.native
   def joinNeighborsR(acc: js.Array[_], x: js.Any): js.Array[_] = js.native
   def kebobString(camelCase: java.lang.String): java.lang.String = js.native
@@ -167,7 +169,7 @@ object angularjsModMembers extends js.Object {
   def map[T, U](
     collection: js.Array[T],
     callback: atUirouterCoreLib.libCommonCommonMod.Mapper[T, U],
-    target: js.Any
+    target: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof collection */ js.Any
   ): js.Array[U] = js.native
   def map[T, U](
     collection: org.scalablytyped.runtime.StringDictionary[T],
@@ -176,7 +178,7 @@ object angularjsModMembers extends js.Object {
   def map[T, U](
     collection: org.scalablytyped.runtime.StringDictionary[T],
     callback: atUirouterCoreLib.libCommonCommonMod.Mapper[T, U],
-    target: js.Any
+    target: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof collection */ js.Any
   ): org.scalablytyped.runtime.StringDictionary[U] = js.native
   def matchState(
     state: atUirouterCoreLib.libStateStateObjectMod.StateObject,

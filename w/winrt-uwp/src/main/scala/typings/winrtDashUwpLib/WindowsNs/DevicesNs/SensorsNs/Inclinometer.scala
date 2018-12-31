@@ -29,9 +29,9 @@ abstract class Inclinometer () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[Inclinometer, InclinometerReadingChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Gets the current inclinometer reading.
-                   * @return The current inclinometer reading.
-                   */
+    * Gets the current inclinometer reading.
+    * @return The current inclinometer reading.
+    */
   def getCurrentReading(): InclinometerReading = js.native
   /** Occurs each time the inclinometer reports a new sensor reading. */
   def onreadingchanged(ev: InclinometerReadingChangedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[Inclinometer]): scala.Unit = js.native
@@ -48,14 +48,14 @@ abstract class Inclinometer () extends js.Object {
 @js.native
 object Inclinometer extends js.Object {
   /**
-                   * Returns the default inclinometer.
-                   * @return The default inclinometer or null if no inclinometers are found.
-                   */
+    * Returns the default inclinometer.
+    * @return The default inclinometer or null if no inclinometers are found.
+    */
   def getDefault(): winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.Inclinometer = js.native
   /**
-                   * Returns the default inclinometer.
-                   * @return The default inclinometer or null if no inclinometers are found.
-                   */
+    * Returns the default inclinometer.
+    * @return The default inclinometer or null if no inclinometers are found.
+    */
   def getDefaultForRelativeReadings(): winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.Inclinometer = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Config extends js.Object {
   var agent: js.UndefOr[nodeLib.httpMod.Agent] = js.undefined
   var auth: js.UndefOr[java.lang.String] = js.undefined
@@ -82,12 +81,12 @@ trait Config extends js.Object {
   var preserveHeaderKeyCase: js.UndefOr[scala.Boolean] = js.undefined
   var protocolRewrite: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * @deprecated
-       */
+    * @deprecated
+    */
   var proxyHost: js.UndefOr[js.Any] = js.undefined
   /**
-       * @deprecated
-       */
+    * @deprecated
+    */
   var proxyTable: js.UndefOr[js.Any] = js.undefined
   var proxyTimeout: js.UndefOr[scala.Double] = js.undefined
   var router: js.UndefOr[

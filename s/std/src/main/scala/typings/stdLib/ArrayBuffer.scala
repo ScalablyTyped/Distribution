@@ -14,18 +14,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ArrayBuffer extends js.Object {
   /**
-        * Read-only. The length of the ArrayBuffer (in bytes).
-        */
+    * Read-only. The length of the ArrayBuffer (in bytes).
+    */
   val byteLength: scala.Double = js.native
   @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
   val toStringTag: java.lang.String = js.native
   /**
-        * Returns a section of an ArrayBuffer.
-        */
+    * Returns a section of an ArrayBuffer.
+    */
   def slice(begin: scala.Double): ArrayBuffer = js.native
-  /**
-        * Returns a section of an ArrayBuffer.
-        */
   def slice(begin: scala.Double, end: scala.Double): ArrayBuffer = js.native
 }
 

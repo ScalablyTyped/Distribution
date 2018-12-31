@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CC3000
   extends /**
-     * 
-     * @return  
-     */
+  * 
+  * @return  
+  */
 org.scalablytyped.runtime.Instantiable0[CC3000]
 

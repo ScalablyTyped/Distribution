@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PrimaryYAxisRange extends js.Object {
   /** Interval for the range.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var interval: js.UndefOr[scala.Double] = js.undefined
   /** Maximum value of the axis range.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var max: js.UndefOr[scala.Double] = js.undefined
   /** Minimum value of the axis range.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var min: js.UndefOr[scala.Double] = js.undefined
 }
 

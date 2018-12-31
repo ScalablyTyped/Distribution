@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object electronDashWindowDashStateModMembers extends js.Object {
   /*
-   * Load the previous state with fallback to defaults
-   */
+    * Load the previous state with fallback to defaults
+    */
   def apply(
     opts: electronDashWindowDashStateLib.electronDashWindowDashStateMod.ElectronWindowStateNs.WindowStateKeeperOptions
   ): electronDashWindowDashStateLib.electronDashWindowDashStateMod.ElectronWindowStateNs.WindowState = js.native

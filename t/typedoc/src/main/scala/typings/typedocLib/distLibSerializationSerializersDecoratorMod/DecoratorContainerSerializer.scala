@@ -11,7 +11,7 @@ class DecoratorContainerSerializer ()
   extends typedocLib.distLibSerializationComponentsMod.SerializerComponent[
       typedocLib.distLibSerializationSerializersModelsDecoratorDashWrapperMod.DecoratorWrapper
     ] {
-  var serializeGroup: js.Any = js.native
+  var serializeGroup: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DecoratorContainerSerializer.serializeGroup */ js.Any = js.native
   @JSName("serializeGroupSymbol")
   var serializeGroupSymbol_DecoratorContainerSerializer: org.scalablytyped.runtime.Instantiable1[
     /* decorator */ typedocLib.distLibModelsReflectionsAbstractMod.Decorator, 

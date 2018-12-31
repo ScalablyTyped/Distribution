@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITextArea extends IText {
   /** [Config Option] (Number) */
   var cols: js.UndefOr[scala.Double] = js.undefined

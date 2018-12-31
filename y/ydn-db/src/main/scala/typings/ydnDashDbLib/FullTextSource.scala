@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FullTextSource extends js.Object {
   var keyPath: java.lang.String
   var storeName: java.lang.String

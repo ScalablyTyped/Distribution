@@ -22,10 +22,10 @@ abstract class NetworkOperatorNotificationEventDetails () extends js.Object {
   /** Gets an SMS message for the mobile broadband account that received the notification. */
   var smsMessage: winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.ISmsMessage = js.native
   /**
-                   * Used to indicate if tethering is permitted for a device. If it is not, a reason can be provided.
-                   * @param allow true if tethering is permitted; otherwise, false.
-                   * @param entitlementFailureReason The reason tethering is not permitted.
-                   */
+    * Used to indicate if tethering is permitted for a device. If it is not, a reason can be provided.
+    * @param allow true if tethering is permitted; otherwise, false.
+    * @param entitlementFailureReason The reason tethering is not permitted.
+    */
   def authorizeTethering(allow: scala.Boolean, entitlementFailureReason: java.lang.String): scala.Unit = js.native
 }
 

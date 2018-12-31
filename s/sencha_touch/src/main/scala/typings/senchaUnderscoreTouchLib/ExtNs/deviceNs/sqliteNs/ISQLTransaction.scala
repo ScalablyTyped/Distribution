@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISQLTransaction
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Executes an SQL statement

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodeRefFieldsValue extends js.Object {
   var dataset: baiduDashAppLib.Anon_Dataset
   var id: baiduDashAppLib.Anon_Id

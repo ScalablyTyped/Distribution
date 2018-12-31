@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryOpts[TGraphQLVariables] extends js.Object {
   var client: js.UndefOr[apolloDashClientLib.apolloDashClientMod.default[_]] = js.undefined
   var context: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined

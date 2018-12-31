@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConversionResource extends js.Object {
   /** Retrieves a list of conversions from a DoubleClick Search engine account. */
   def get(request: gapiDotClientDotDoubleclicksearchLib.Anon_EndDate): gapiDotClientLib.gapiNs.clientNs.Request[ConversionList]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TriggerOptionsEn extends js.Object {
   var condition: js.UndefOr[java.lang.String] = js.undefined
   var constraint: js.UndefOr[scala.Boolean] = js.undefined

@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class QueueItem protected () extends js.Object {
   /**
-           * @param {!chrome.cast.media.MediaInfo} mediaInfo
-           * @constructor
-           * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueItem
-           */
+    * @param {!chrome.cast.media.MediaInfo} mediaInfo
+    * @constructor
+    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueItem
+    */
   def this(mediaInfo: MediaInfo) = this()
   var activeTrackIds: js.Array[stdLib.Number] = js.native
   var autoplay: scala.Boolean = js.native

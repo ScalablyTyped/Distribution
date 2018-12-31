@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMessageBox extends ISheet {
   /** [Method] Displays a standard read only message box with an OK button comparable to the basic JavaScript alert prompt
   		* @param title String The title bar text.

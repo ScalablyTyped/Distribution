@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MaxFreeSockets extends js.Object {
   var freeSocketKeepAliveTimeout: js.UndefOr[scala.Double] = js.undefined
   var keepAliveMsecs: js.UndefOr[scala.Double] = js.undefined

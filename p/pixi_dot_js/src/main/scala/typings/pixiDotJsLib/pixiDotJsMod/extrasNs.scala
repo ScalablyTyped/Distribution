@@ -88,9 +88,7 @@ object extrasNs extends js.Object {
     def fromFrame(frameId: java.lang.String, width: scala.Double): pixiDotJsLib.PIXINs.extrasNs.TilingSprite = js.native
     def fromFrame(frameId: java.lang.String, width: scala.Double, height: scala.Double): pixiDotJsLib.PIXINs.extrasNs.TilingSprite = js.native
     def fromImage(imageId: java.lang.String): pixiDotJsLib.PIXINs.extrasNs.TilingSprite = js.native
-    // if you remove the next line, the class will break. https://github.com/pixijs/pixi-typescript/issues/96
     def fromImage(imageId: java.lang.String, crossorigin: scala.Boolean): pixiDotJsLib.PIXINs.Sprite = js.native
-    // if you remove the next line, the class will break. https://github.com/pixijs/pixi-typescript/issues/96
     def fromImage(imageId: java.lang.String, crossorigin: scala.Boolean, scaleMode: scala.Double): pixiDotJsLib.PIXINs.Sprite = js.native
     def fromImage(imageId: java.lang.String, width: scala.Double): pixiDotJsLib.PIXINs.extrasNs.TilingSprite = js.native
     def fromImage(imageId: java.lang.String, width: scala.Double, height: scala.Double): pixiDotJsLib.PIXINs.extrasNs.TilingSprite = js.native

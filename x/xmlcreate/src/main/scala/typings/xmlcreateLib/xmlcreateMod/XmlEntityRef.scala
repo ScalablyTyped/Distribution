@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 class XmlEntityRef protected ()
   extends xmlcreateLib.libNodesXmlEntityRefMod.default {
   /**
-       * Initializes a new instance of the {@link XmlEntityRef} class.
-       *
-       * @param entity The entity to be referenced.
-       */
+    * Initializes a new instance of the {@link XmlEntityRef} class.
+    *
+    * @param entity The entity to be referenced.
+    */
   def this(entity: java.lang.String) = this()
 }
 

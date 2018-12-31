@@ -7,106 +7,30 @@ import scala.scalajs.js.annotation._
 
 @JSImport("log4javascript", "PopUpAppender")
 @js.native
+/**
+	 * Constructor
+	 * @param lazyInit Set this to true to open the pop-up only when the first log message reaches the appender. Otherwise, the
+	 * pop-up window opens as soon as the appender is created. If not specified, defaults to false.
+	 * @param initiallyMinimized Whether the console window should start off hidden / minimized. If not specified, defaults to false.
+	 * @param useDocumentWrite Specifies how the console window is created. By default, the console window is created dynamically
+	 * using document's write method. This has the advantage of keeping all the code in one single JavaScript file. However,
+	 * if your page sets document.domain then the browser prevents script access to a window unless it too has the same value
+	 * set for document.domain. To get round this issue, you can set useDocumentWrite to false and log4javascript will instead
+	 * use the external HTML file console.html (or console_uncompressed.html if you're using an uncompressed version of
+	 * log4javascript.js), which must be placed in the same directory as your log4javascript.js file.
+	 * Note that if useDocumentWrite is set to true, the old pop-up window will always be closed and a new one created whenever
+	 * the page is refreshed, even if setUseOldPopUp(true) has been called.
+	 * In general it's simpler to use the document.write method, so unless your page needs to set document.domain,
+	 * useDocumentWrite should be set to true.
+	 * If not specified, defaults to true.
+	 * @param width The outer width in pixels of the pop-up window. If not specified, defaults to 600.
+	 * @param height The outer height in pixels of the pop-up window. If not specified, defaults to 400.
+	 */
 class PopUpAppender () extends Appender {
-  /**
-  	 * Constructor
-  	 * @param lazyInit Set this to true to open the pop-up only when the first log message reaches the appender. Otherwise, the
-  	 * pop-up window opens as soon as the appender is created. If not specified, defaults to false.
-  	 * @param initiallyMinimized Whether the console window should start off hidden / minimized. If not specified, defaults to false.
-  	 * @param useDocumentWrite Specifies how the console window is created. By default, the console window is created dynamically
-  	 * using document's write method. This has the advantage of keeping all the code in one single JavaScript file. However,
-  	 * if your page sets document.domain then the browser prevents script access to a window unless it too has the same value
-  	 * set for document.domain. To get round this issue, you can set useDocumentWrite to false and log4javascript will instead
-  	 * use the external HTML file console.html (or console_uncompressed.html if you're using an uncompressed version of
-  	 * log4javascript.js), which must be placed in the same directory as your log4javascript.js file.
-  	 * Note that if useDocumentWrite is set to true, the old pop-up window will always be closed and a new one created whenever
-  	 * the page is refreshed, even if setUseOldPopUp(true) has been called.
-  	 * In general it's simpler to use the document.write method, so unless your page needs to set document.domain,
-  	 * useDocumentWrite should be set to true.
-  	 * If not specified, defaults to true.
-  	 * @param width The outer width in pixels of the pop-up window. If not specified, defaults to 600.
-  	 * @param height The outer height in pixels of the pop-up window. If not specified, defaults to 400.
-  	 */
   def this(lazyInit: scala.Boolean) = this()
-  /**
-  	 * Constructor
-  	 * @param lazyInit Set this to true to open the pop-up only when the first log message reaches the appender. Otherwise, the
-  	 * pop-up window opens as soon as the appender is created. If not specified, defaults to false.
-  	 * @param initiallyMinimized Whether the console window should start off hidden / minimized. If not specified, defaults to false.
-  	 * @param useDocumentWrite Specifies how the console window is created. By default, the console window is created dynamically
-  	 * using document's write method. This has the advantage of keeping all the code in one single JavaScript file. However,
-  	 * if your page sets document.domain then the browser prevents script access to a window unless it too has the same value
-  	 * set for document.domain. To get round this issue, you can set useDocumentWrite to false and log4javascript will instead
-  	 * use the external HTML file console.html (or console_uncompressed.html if you're using an uncompressed version of
-  	 * log4javascript.js), which must be placed in the same directory as your log4javascript.js file.
-  	 * Note that if useDocumentWrite is set to true, the old pop-up window will always be closed and a new one created whenever
-  	 * the page is refreshed, even if setUseOldPopUp(true) has been called.
-  	 * In general it's simpler to use the document.write method, so unless your page needs to set document.domain,
-  	 * useDocumentWrite should be set to true.
-  	 * If not specified, defaults to true.
-  	 * @param width The outer width in pixels of the pop-up window. If not specified, defaults to 600.
-  	 * @param height The outer height in pixels of the pop-up window. If not specified, defaults to 400.
-  	 */
   def this(lazyInit: scala.Boolean, initiallyMinimized: scala.Boolean) = this()
-  /**
-  	 * Constructor
-  	 * @param lazyInit Set this to true to open the pop-up only when the first log message reaches the appender. Otherwise, the
-  	 * pop-up window opens as soon as the appender is created. If not specified, defaults to false.
-  	 * @param initiallyMinimized Whether the console window should start off hidden / minimized. If not specified, defaults to false.
-  	 * @param useDocumentWrite Specifies how the console window is created. By default, the console window is created dynamically
-  	 * using document's write method. This has the advantage of keeping all the code in one single JavaScript file. However,
-  	 * if your page sets document.domain then the browser prevents script access to a window unless it too has the same value
-  	 * set for document.domain. To get round this issue, you can set useDocumentWrite to false and log4javascript will instead
-  	 * use the external HTML file console.html (or console_uncompressed.html if you're using an uncompressed version of
-  	 * log4javascript.js), which must be placed in the same directory as your log4javascript.js file.
-  	 * Note that if useDocumentWrite is set to true, the old pop-up window will always be closed and a new one created whenever
-  	 * the page is refreshed, even if setUseOldPopUp(true) has been called.
-  	 * In general it's simpler to use the document.write method, so unless your page needs to set document.domain,
-  	 * useDocumentWrite should be set to true.
-  	 * If not specified, defaults to true.
-  	 * @param width The outer width in pixels of the pop-up window. If not specified, defaults to 600.
-  	 * @param height The outer height in pixels of the pop-up window. If not specified, defaults to 400.
-  	 */
   def this(lazyInit: scala.Boolean, initiallyMinimized: scala.Boolean, useDocumentWrite: scala.Boolean) = this()
-  /**
-  	 * Constructor
-  	 * @param lazyInit Set this to true to open the pop-up only when the first log message reaches the appender. Otherwise, the
-  	 * pop-up window opens as soon as the appender is created. If not specified, defaults to false.
-  	 * @param initiallyMinimized Whether the console window should start off hidden / minimized. If not specified, defaults to false.
-  	 * @param useDocumentWrite Specifies how the console window is created. By default, the console window is created dynamically
-  	 * using document's write method. This has the advantage of keeping all the code in one single JavaScript file. However,
-  	 * if your page sets document.domain then the browser prevents script access to a window unless it too has the same value
-  	 * set for document.domain. To get round this issue, you can set useDocumentWrite to false and log4javascript will instead
-  	 * use the external HTML file console.html (or console_uncompressed.html if you're using an uncompressed version of
-  	 * log4javascript.js), which must be placed in the same directory as your log4javascript.js file.
-  	 * Note that if useDocumentWrite is set to true, the old pop-up window will always be closed and a new one created whenever
-  	 * the page is refreshed, even if setUseOldPopUp(true) has been called.
-  	 * In general it's simpler to use the document.write method, so unless your page needs to set document.domain,
-  	 * useDocumentWrite should be set to true.
-  	 * If not specified, defaults to true.
-  	 * @param width The outer width in pixels of the pop-up window. If not specified, defaults to 600.
-  	 * @param height The outer height in pixels of the pop-up window. If not specified, defaults to 400.
-  	 */
   def this(lazyInit: scala.Boolean, initiallyMinimized: scala.Boolean, useDocumentWrite: scala.Boolean, width: scala.Double) = this()
-  /**
-  	 * Constructor
-  	 * @param lazyInit Set this to true to open the pop-up only when the first log message reaches the appender. Otherwise, the
-  	 * pop-up window opens as soon as the appender is created. If not specified, defaults to false.
-  	 * @param initiallyMinimized Whether the console window should start off hidden / minimized. If not specified, defaults to false.
-  	 * @param useDocumentWrite Specifies how the console window is created. By default, the console window is created dynamically
-  	 * using document's write method. This has the advantage of keeping all the code in one single JavaScript file. However,
-  	 * if your page sets document.domain then the browser prevents script access to a window unless it too has the same value
-  	 * set for document.domain. To get round this issue, you can set useDocumentWrite to false and log4javascript will instead
-  	 * use the external HTML file console.html (or console_uncompressed.html if you're using an uncompressed version of
-  	 * log4javascript.js), which must be placed in the same directory as your log4javascript.js file.
-  	 * Note that if useDocumentWrite is set to true, the old pop-up window will always be closed and a new one created whenever
-  	 * the page is refreshed, even if setUseOldPopUp(true) has been called.
-  	 * In general it's simpler to use the document.write method, so unless your page needs to set document.domain,
-  	 * useDocumentWrite should be set to true.
-  	 * If not specified, defaults to true.
-  	 * @param width The outer width in pixels of the pop-up window. If not specified, defaults to 600.
-  	 * @param height The outer height in pixels of the pop-up window. If not specified, defaults to 400.
-  	 */
   def this(lazyInit: scala.Boolean, initiallyMinimized: scala.Boolean, useDocumentWrite: scala.Boolean, width: scala.Double, height: scala.Double) = this()
   /**
   	 * Adds a function with the name specified to the list of functions available on the command line. This feature may be used

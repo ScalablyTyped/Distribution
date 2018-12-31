@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITooltipEvent extends js.Object {
   var event: jqueryLib.JQueryEventObject
   var instance: ITooltipsterInstance

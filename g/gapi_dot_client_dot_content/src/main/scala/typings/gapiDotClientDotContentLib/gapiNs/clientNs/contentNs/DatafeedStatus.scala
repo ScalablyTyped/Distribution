@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatafeedStatus extends js.Object {
   /** The country for which the status is reported, represented as a  CLDR territory code. */
   var country: js.UndefOr[java.lang.String] = js.undefined

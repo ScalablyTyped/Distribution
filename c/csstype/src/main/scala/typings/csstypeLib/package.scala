@@ -41,14 +41,14 @@ package object csstypeLib {
   type FontWeightAbsolute = csstypeLib.csstypeLibStrings.bold | csstypeLib.csstypeLibStrings.normal | scala.Double
   type GenericFamily = csstypeLib.csstypeLibStrings.cursive | csstypeLib.csstypeLibStrings.fantasy | csstypeLib.csstypeLibStrings.monospace | csstypeLib.csstypeLibStrings.`sans-serif` | csstypeLib.csstypeLibStrings.serif
   type GeometryBox = Box | csstypeLib.csstypeLibStrings.`fill-box` | csstypeLib.csstypeLibStrings.`margin-box` | csstypeLib.csstypeLibStrings.`stroke-box` | csstypeLib.csstypeLibStrings.`view-box`
-  type GlobalsNumber = js.Any | scala.Double
-  type GlobalsString = js.Any | java.lang.String
+  type GlobalsNumber = (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Globals */ js.Any) | scala.Double
+  type GlobalsString = (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Globals */ js.Any) | java.lang.String
   type GridLine = csstypeLib.csstypeLibStrings.auto | java.lang.String | scala.Double
   type LineStyle = csstypeLib.csstypeLibStrings.dashed | csstypeLib.csstypeLibStrings.dotted | csstypeLib.csstypeLibStrings.double | csstypeLib.csstypeLibStrings.groove | csstypeLib.csstypeLibStrings.hidden | csstypeLib.csstypeLibStrings.inset | csstypeLib.csstypeLibStrings.none | csstypeLib.csstypeLibStrings.outset | csstypeLib.csstypeLibStrings.ridge | csstypeLib.csstypeLibStrings.solid
   type LineWidth[TLength] = TLength | csstypeLib.csstypeLibStrings.medium | csstypeLib.csstypeLibStrings.thick | csstypeLib.csstypeLibStrings.thin
   type MaskLayer[TLength] = Position[TLength] | RepeatStyle | GeometryBox | CompositingOperator | MaskingMode | csstypeLib.csstypeLibStrings.`no-clip` | csstypeLib.csstypeLibStrings.none | java.lang.String
   type MaskingMode = csstypeLib.csstypeLibStrings.alpha | csstypeLib.csstypeLibStrings.luminance | csstypeLib.csstypeLibStrings.`match-source`
-  type NamedColor = /* LimitUnionLength: was union type with length 149 */java.lang.String
+  type NamedColor = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ java.lang.String
   type PageBleedProperty[TLength] = TLength | csstypeLib.csstypeLibStrings.auto
   type PageMarksProperty = csstypeLib.csstypeLibStrings.crop | csstypeLib.csstypeLibStrings.cross | csstypeLib.csstypeLibStrings.none | java.lang.String
   type Paint = Color | csstypeLib.csstypeLibStrings.child | csstypeLib.csstypeLibStrings.`context-fill` | csstypeLib.csstypeLibStrings.`context-stroke` | csstypeLib.csstypeLibStrings.none | java.lang.String

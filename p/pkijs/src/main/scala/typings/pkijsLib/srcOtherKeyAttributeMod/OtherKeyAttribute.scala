@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OtherKeyAttribute extends js.Object {
   var keyAttr: js.Any
   var keyAttrId: java.lang.String

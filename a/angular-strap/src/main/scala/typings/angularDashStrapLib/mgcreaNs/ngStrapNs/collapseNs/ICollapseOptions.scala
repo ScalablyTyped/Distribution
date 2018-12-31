@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICollapseOptions extends js.Object {
   var activeClass: js.UndefOr[java.lang.String] = js.undefined
   var allowMultiple: js.UndefOr[scala.Boolean] = js.undefined

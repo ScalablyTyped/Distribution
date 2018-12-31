@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Selection extends js.Object {
   /**  The character index of the end position of the selection */
   var end: scala.Double

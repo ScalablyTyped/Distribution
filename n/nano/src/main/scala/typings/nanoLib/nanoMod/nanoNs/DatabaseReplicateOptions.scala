@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://docs.couchdb.org/en/latest/api/server/common.html#post--_replicate
-
 trait DatabaseReplicateOptions extends js.Object {
   // Cancels the replication
   var cancel: js.UndefOr[scala.Boolean] = js.undefined

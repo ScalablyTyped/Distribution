@@ -7,20 +7,15 @@ import scala.scalajs.js.annotation._
 
 @JSImport("fabric/fabric-impl", "Group")
 @js.native
+/**
+	 * Constructor
+	 * @param objects Group objects
+	 * @param [options] Options object
+	 */
 class Group ()
   extends Object
      with ICollection[Group] {
-  /**
-  	 * Constructor
-  	 * @param objects Group objects
-  	 * @param [options] Options object
-  	 */
   def this(items: js.Array[_]) = this()
-  /**
-  	 * Constructor
-  	 * @param objects Group objects
-  	 * @param [options] Options object
-  	 */
   def this(items: js.Array[_], options: IObjectOptions) = this()
   def activateAllObjects(): Group = js.native
   /**
@@ -66,11 +61,11 @@ class Group ()
   	 */
   def setObjectsCoords(): Group = js.native
   /**
-       * make a group an active selection, remove the group from canvas
-       * the group has to be on canvas for this to work.
-       * @return {fabric.ActiveSelection} thisArg
-       * @chainable
-       */
+    * make a group an active selection, remove the group from canvas
+    * the group has to be on canvas for this to work.
+    * @return {fabric.ActiveSelection} thisArg
+    * @chainable
+    */
   def toActiveSelection(): ActiveSelection = js.native
   /**
   	 * Returns svg representation of an instance
@@ -78,11 +73,6 @@ class Group ()
   	 * @return svg representation of an instance
   	 */
   def toSVG(): java.lang.String = js.native
-  /**
-  	 * Returns svg representation of an instance
-  	 * @param [reviver] Method for further parsing of svg representation.
-  	 * @return svg representation of an instance
-  	 */
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 

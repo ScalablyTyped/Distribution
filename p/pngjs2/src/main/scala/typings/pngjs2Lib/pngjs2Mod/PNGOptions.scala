@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PNGOptions extends js.Object {
   var checkCRC: js.UndefOr[scala.Boolean] = js.undefined
   var colorType: js.UndefOr[scala.Double] = js.undefined

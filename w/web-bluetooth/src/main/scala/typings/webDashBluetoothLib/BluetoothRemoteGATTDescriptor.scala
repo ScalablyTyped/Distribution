@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BluetoothRemoteGATTDescriptor extends js.Object {
   val characteristic: BluetoothRemoteGATTCharacteristic
   val uuid: java.lang.String

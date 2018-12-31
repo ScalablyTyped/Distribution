@@ -5,6 +5,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EmailAuthProvider_Instance extends AuthProvider
 

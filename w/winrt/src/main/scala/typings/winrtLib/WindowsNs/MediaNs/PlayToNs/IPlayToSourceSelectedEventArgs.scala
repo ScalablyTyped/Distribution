@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPlayToSourceSelectedEventArgs extends js.Object {
   var friendlyName: java.lang.String
   var icon: winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStreamWithContentType

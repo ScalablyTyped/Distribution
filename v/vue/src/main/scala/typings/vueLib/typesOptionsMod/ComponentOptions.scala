@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ComponentOptions[V /* <: vueLib.typesVueMod.Vue */, Data, Methods, Computed, PropsDef, Props] extends js.Object {
   var activated: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var beforeCreate: js.UndefOr[js.ThisFunction0[/* this */ V, scala.Unit]] = js.undefined

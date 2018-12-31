@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TypeAcquisition
   extends /* option */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[js.Array[java.lang.String] | scala.Boolean]] {
   var enable: js.UndefOr[scala.Boolean] = js.undefined

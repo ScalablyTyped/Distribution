@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FieldInfo extends js.Object {
   var BacklogConfiguration: js.Any
   var Board: js.Any

@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("chrome.cast.media.MusicTrackMediaMetadata")
 @js.native
+/**
+  * @constructor
+  * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.MusicTrackMediaMetadata
+  */
 class MusicTrackMediaMetadata () extends js.Object {
   var albumArtist: java.lang.String = js.native
   var albumName: java.lang.String = js.native

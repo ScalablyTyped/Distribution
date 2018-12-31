@@ -12,29 +12,29 @@ sealed trait BuiltInArgNames extends js.Object
 @js.native
 object BuiltInArgNames extends js.Object {
   /**
-       * Confirmation argument.
-       */
+    * Confirmation argument.
+    */
   @js.native
   sealed trait CONFIRMATION
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.BuiltInArgNames
   
   /**
-       * DateTime argument.
-       */
+    * DateTime argument.
+    */
   @js.native
   sealed trait DATETIME
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.BuiltInArgNames
   
   /**
-       * Delivery address value argument.
-       */
+    * Delivery address value argument.
+    */
   @js.native
   sealed trait DELIVERY_ADDRESS_VALUE
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.BuiltInArgNames
   
   /**
-       * Flag representing finality of NO_INPUT intent.
-       */
+    * Flag representing finality of NO_INPUT intent.
+    */
   @js.native
   sealed trait IS_FINAL_REPROMPT
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.BuiltInArgNames
@@ -50,29 +50,29 @@ object BuiltInArgNames extends js.Object {
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.BuiltInArgNames
   
   /**
-       * New surface value argument.
-       */
+    * New surface value argument.
+    */
   @js.native
   sealed trait NEW_SURFACE
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.BuiltInArgNames
   
   /**
-       * Option selected argument.
-       */
+    * Option selected argument.
+    */
   @js.native
   sealed trait OPTION
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.BuiltInArgNames
   
   /**
-       * Permission granted argument.
-       */
+    * Permission granted argument.
+    */
   @js.native
   sealed trait PERMISSION_GRANTED
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.BuiltInArgNames
   
   /**
-       * Place value argument.
-       */
+    * Place value argument.
+    */
   @js.native
   sealed trait PLACE
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.BuiltInArgNames
@@ -83,29 +83,29 @@ object BuiltInArgNames extends js.Object {
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.BuiltInArgNames
   
   /**
-       * Reprompt count for consecutive NO_INPUT intents.
-       */
+    * Reprompt count for consecutive NO_INPUT intents.
+    */
   @js.native
   sealed trait REPROMPT_COUNT
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.BuiltInArgNames
   
   /**
-       * Sign in status argument.
-       */
+    * Sign in status argument.
+    */
   @js.native
   sealed trait SIGN_IN
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.BuiltInArgNames
   
   /**
-       * Transactions decision argument.
-       */
+    * Transactions decision argument.
+    */
   @js.native
   sealed trait TRANSACTION_DECISION_VALUE
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.BuiltInArgNames
   
   /**
-       * Transaction requirements check result argument.
-       */
+    * Transaction requirements check result argument.
+    */
   @js.native
   sealed trait TRANSACTION_REQ_CHECK_RESULT
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.BuiltInArgNames

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaDimensions extends js.Object {
   def getFullMediaDimensions(): Dimensions
   def getPreviewMediaDimensions(): Dimensions

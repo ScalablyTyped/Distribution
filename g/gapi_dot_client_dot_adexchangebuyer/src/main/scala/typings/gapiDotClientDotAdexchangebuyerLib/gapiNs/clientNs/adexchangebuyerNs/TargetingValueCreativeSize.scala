@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TargetingValueCreativeSize extends js.Object {
   /** For video size type, the list of companion sizes. */
   var companionSizes: js.UndefOr[js.Array[TargetingValueSize]] = js.undefined

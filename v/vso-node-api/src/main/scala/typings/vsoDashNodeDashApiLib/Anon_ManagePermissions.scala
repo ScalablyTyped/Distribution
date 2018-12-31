@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ManagePermissions extends js.Object {
   var edit: scala.Double
   var manage: scala.Double

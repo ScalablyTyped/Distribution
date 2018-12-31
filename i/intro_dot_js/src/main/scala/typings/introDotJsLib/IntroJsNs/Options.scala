@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var disableInteraction: js.UndefOr[scala.Boolean] = js.undefined
   var doneLabel: js.UndefOr[java.lang.String] = js.undefined

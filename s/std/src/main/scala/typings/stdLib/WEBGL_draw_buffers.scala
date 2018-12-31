@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WEBGL_draw_buffers extends js.Object {
   val COLOR_ATTACHMENT0_WEBGL: GLenum
   val COLOR_ATTACHMENT10_WEBGL: GLenum

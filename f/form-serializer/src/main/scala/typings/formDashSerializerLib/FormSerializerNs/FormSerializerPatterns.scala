@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FormSerializerPatterns extends js.Object {
   var fixed: stdLib.RegExp
   var key: stdLib.RegExp

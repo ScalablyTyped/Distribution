@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AdSupportIOSStatic extends js.Object {
   def getAdvertisingId(
     onSuccess: js.Function1[/* deviceId */ java.lang.String, scala.Unit],

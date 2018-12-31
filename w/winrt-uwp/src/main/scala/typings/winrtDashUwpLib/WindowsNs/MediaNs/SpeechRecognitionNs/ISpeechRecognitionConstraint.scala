@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a constraint for a SpeechRecognizer object. */
-
 trait ISpeechRecognitionConstraint extends js.Object {
   /** Gets or sets whether the constraint can be used by the SpeechRecognizer object to perform recognition. */
   var isEnabled: scala.Boolean

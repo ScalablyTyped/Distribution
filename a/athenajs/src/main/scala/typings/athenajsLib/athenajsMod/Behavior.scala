@@ -17,9 +17,9 @@ class Behavior protected () extends js.Object {
   var vx: scala.Double = js.native
   var vy: scala.Double = js.native
   /**
-       * Returns current mapEvent
-       *
-       */
+    * Returns current mapEvent
+    *
+    */
   def getMapEvent(): MapEvent = js.native
   def onUpdate(timestamp: scala.Double): scala.Unit = js.native
   def reset(): scala.Unit = js.native

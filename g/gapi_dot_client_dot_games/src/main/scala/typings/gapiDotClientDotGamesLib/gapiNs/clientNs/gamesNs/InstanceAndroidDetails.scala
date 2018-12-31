@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InstanceAndroidDetails extends js.Object {
   /** Flag indicating whether the anti-piracy check is enabled. */
   var enablePiracyCheck: js.UndefOr[scala.Boolean] = js.undefined

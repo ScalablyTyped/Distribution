@@ -32,8 +32,6 @@ class CanvasRenderer ()
   // setClearColor(color: string, opacity?: number): void;
   // setClearColor(color: number, opacity?: number): void;
   def setClearColorHex(hex: scala.Double): scala.Unit = js.native
-  // setClearColor(color: string, opacity?: number): void;
-  // setClearColor(color: number, opacity?: number): void;
   def setClearColorHex(hex: scala.Double, alpha: scala.Double): scala.Unit = js.native
   def setFaceCulling(): scala.Unit = js.native
   def setPixelRatio(value: scala.Double): scala.Unit = js.native

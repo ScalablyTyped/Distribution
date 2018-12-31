@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DirectionFirsty extends js.Object {
   var direction: scala.Double
   var first_x: scala.Double

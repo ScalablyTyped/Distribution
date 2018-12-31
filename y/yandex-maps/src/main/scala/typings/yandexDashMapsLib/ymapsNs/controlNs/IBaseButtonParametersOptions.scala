@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBaseButtonParametersOptions extends js.Object {
   var adjustMapMargin: js.UndefOr[scala.Boolean] = js.undefined
   var float: js.UndefOr[

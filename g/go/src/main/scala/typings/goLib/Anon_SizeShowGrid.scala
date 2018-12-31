@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SizeShowGrid extends js.Object {
   var background: js.UndefOr[goLib.goMod.goNs.BrushLike] = js.undefined
   var details: js.UndefOr[js.Any] = js.undefined

@@ -20,7 +20,6 @@ class XMLSchemaReferences protected () extends js.Object {
   var `Word.XMLSchemaReferences_typekey`: XMLSchemaReferences = js.native
   /** @param boolean [InstallForAllUsers=false] */
   def Add(NamespaceURI: js.Any, Alias: js.Any, FileName: js.Any): XMLSchemaReference = js.native
-  /** @param boolean [InstallForAllUsers=false] */
   def Add(NamespaceURI: js.Any, Alias: js.Any, FileName: js.Any, InstallForAllUsers: scala.Boolean): XMLSchemaReference = js.native
   def Item(Index: js.Any): XMLSchemaReference = js.native
   def Validate(): scala.Unit = js.native

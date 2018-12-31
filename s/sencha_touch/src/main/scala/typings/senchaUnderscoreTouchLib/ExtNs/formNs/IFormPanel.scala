@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFormPanel
   extends senchaUnderscoreTouchLib.ExtNs.IPanel {
   /** [Config Option] (Object) */

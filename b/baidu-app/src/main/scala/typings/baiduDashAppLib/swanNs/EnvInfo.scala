@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EnvInfo extends js.Object {
   var appKey: java.lang.String
   	// 智能小程序 App Key	2.0.28

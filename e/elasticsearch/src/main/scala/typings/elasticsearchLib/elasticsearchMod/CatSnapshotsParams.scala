@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CatSnapshotsParams extends GenericParams {
   var format: java.lang.String
   var h: js.UndefOr[NameList] = js.undefined

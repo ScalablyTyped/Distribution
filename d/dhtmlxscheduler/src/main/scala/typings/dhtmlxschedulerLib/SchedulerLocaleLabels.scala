@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SchedulerLocaleLabels extends js.Object {
   var confirm_closing: java.lang.String
   var confirm_deleting: java.lang.String

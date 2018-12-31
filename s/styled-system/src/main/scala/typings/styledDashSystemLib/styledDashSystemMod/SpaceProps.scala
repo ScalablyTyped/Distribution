@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpaceProps[TLength] extends js.Object {
   /** Margin on top, left, bottom and right */
   var m: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginProperty[TLength]]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TargetIndexSourceParentMapUniqueKey extends js.Object {
   // 移除的位置
   var sourceIndex: scala.Double

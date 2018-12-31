@@ -5,38 +5,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICollectionObserverSplice[T, K] extends js.Object {
   /* ArrayObserverSplice */
   /**
-     * Number of items added to the collection.
-     */
+    * Number of items added to the collection.
+    */
   var addedCount: scala.Double
   /**
-     * The position at which the items were added.
-     */
+    * The position at which the items were added.
+    */
   var index: scala.Double
   /**
-     * The key of the Map item that was changed.
-     */
+    * The key of the Map item that was changed.
+    */
   var key: K
   /* End ArrayObserverSplice */
   /**
-     * The observed Set or Map after the change.
-     */
+    * The observed Set or Map after the change.
+    */
   var `object`: stdLib.Set[T] | (stdLib.Map[K, T])
   /**
-     * The value of the Map item prior to the change.
-     */
+    * The value of the Map item prior to the change.
+    */
   var oldValue: T
   /**
-     * A collection of items that were removed from the collection.
-     */
+    * A collection of items that were removed from the collection.
+    */
   var removed: js.Array[T]
   /**
-     * The type of change that has taken place. Valid options are "add", "delete", and "update".
-     * "update" is invalid for Set.
-     */
+    * The type of change that has taken place. Valid options are "add", "delete", and "update".
+    * "update" is invalid for Set.
+    */
   var `type`: aureliaDashBindingLib.aureliaDashBindingLibStrings.add | aureliaDashBindingLib.aureliaDashBindingLibStrings.delete | aureliaDashBindingLib.aureliaDashBindingLibStrings.update
   /**
     * The Set value that was either added or removed.

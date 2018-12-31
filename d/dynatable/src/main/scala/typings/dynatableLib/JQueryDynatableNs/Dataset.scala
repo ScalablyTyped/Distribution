@@ -5,112 +5,111 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Dataset extends js.Object {
   /**
-           * Enable the `ajax` mode
-           *
-           * @default false
-           */
+    * Enable the `ajax` mode
+    *
+    * @default false
+    */
   var ajax: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * Defining the `cache` setting for the jQuery's ajax call...
-           * true or false for dataType 'script' and 'jsonp'
-           *
-           * @default null
-           * @see http://api.jquery.com/jQuery.ajax
-           */
+    * Defining the `cache` setting for the jQuery's ajax call...
+    * true or false for dataType 'script' and 'jsonp'
+    *
+    * @default null
+    * @see http://api.jquery.com/jQuery.ajax
+    */
   var ajaxCache: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * The type of data that you're expecting back from the server.
-           * If none is specified, jQuery will try to infer it based on the MIME type of the response...
-           *
-           * @enum('xml', 'html', 'script', 'json', 'jsonp', 'text')
-           * @default 'json'
-           * @see http://api.jquery.com/jQuery.ajax
-           */
+    * The type of data that you're expecting back from the server.
+    * If none is specified, jQuery will try to infer it based on the MIME type of the response...
+    *
+    * @enum('xml', 'html', 'script', 'json', 'jsonp', 'text')
+    * @default 'json'
+    * @see http://api.jquery.com/jQuery.ajax
+    */
   var ajaxDataType: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Defining the `method` setting for the jQuery's ajax call...
-           * The HTTP method to use for the request (e.g. "POST", "GET", "PUT").
-           *
-           * @enum('GET', 'POST')
-           * @default 'GET'
-           * @todo Check if other methods could be used... ('GET', 'PUT', 'HEAD', 'POST', 'PATCH', 'TRACE', 'DELETE', 'CONNECT', 'OPTIONS', 'IS_AWARE', 'IS_EAGER', 'PROPFIND', 'IS_OPTIONAL', 'IS_REQUIRED', 'IS_CONSTRUCTOR', 'IS_INSTANTIATOR')
-           */
+    * Defining the `method` setting for the jQuery's ajax call...
+    * The HTTP method to use for the request (e.g. "POST", "GET", "PUT").
+    *
+    * @enum('GET', 'POST')
+    * @default 'GET'
+    * @todo Check if other methods could be used... ('GET', 'PUT', 'HEAD', 'POST', 'PATCH', 'TRACE', 'DELETE', 'CONNECT', 'OPTIONS', 'IS_AWARE', 'IS_EAGER', 'PROPFIND', 'IS_OPTIONAL', 'IS_REQUIRED', 'IS_CONSTRUCTOR', 'IS_INSTANTIATOR')
+    */
   var ajaxMethod: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Send the ajax request automatically
-           *
-           * @default false
-           */
+    * Send the ajax request automatically
+    *
+    * @default false
+    */
   var ajaxOnLoad: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * A string containing the URL to which the request is sent.
-           *
-           * @default null
-           */
+    * A string containing the URL to which the request is sent.
+    *
+    * @default null
+    */
   var ajaxUrl: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * The page represented in the for the current dataset
-           *
-           * @default null
-           */
+    * The page represented in the for the current dataset
+    *
+    * @default null
+    */
   var page: js.UndefOr[scala.Double] = js.undefined
   /**
-           * The default number of items loaded per page
-           *
-           * @default 10
-           */
+    * The default number of items loaded per page
+    *
+    * @default 10
+    */
   var perPageDefault: js.UndefOr[scala.Double] = js.undefined
   /**
-           * The default options available in the perPage menu built by dynatable
-           *
-           * @default [10,20,50,100]
-           */
+    * The default options available in the perPage menu built by dynatable
+    *
+    * @default [10,20,50,100]
+    */
   var perPageOptions: js.UndefOr[js.Array[scala.Double]] = js.undefined
   /**
-           * Object describing the current request's filtering
-           *
-           * @default {}
-           */
+    * Object describing the current request's filtering
+    *
+    * @default {}
+    */
   var queries: js.UndefOr[js.Object] = js.undefined
   /**
-           * Name of the property in the dataset that contains the total number of records for the current query
-           *
-           * @default null
-           */
+    * Name of the property in the dataset that contains the total number of records for the current query
+    *
+    * @default null
+    */
   var queryRecordCount: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * The core data (generated or loaded by dynatable)
-           *
-           * @default null
-           */
+    * The core data (generated or loaded by dynatable)
+    *
+    * @default null
+    */
   var records: js.UndefOr[js.Any] = js.undefined
   /**
-           * The sorting types (generated by dynatable)
-           * It will hosts the type of object to sort (string, number, etc.)
-           *
-           * @default {}
-           */
+    * The sorting types (generated by dynatable)
+    * It will hosts the type of object to sort (string, number, etc.)
+    *
+    * @default {}
+    */
   var sortTypes: js.UndefOr[js.Object] = js.undefined
   /**
-           * Object describing the current request's sorting
-           *
-           * @default {}
-           */
+    * Object describing the current request's sorting
+    *
+    * @default {}
+    */
   var sorts: js.UndefOr[js.Object] = js.undefined
   /**
-           * The sorting keys (generated by dynatable)
-           *
-           * @default null
-           */
+    * The sorting keys (generated by dynatable)
+    *
+    * @default null
+    */
   var sortsKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-           * Name of the property in the dataset that contains the total number of records
-           *
-           * @default null
-           */
+    * Name of the property in the dataset that contains the total number of records
+    *
+    * @default null
+    */
   var totalRecordCount: js.UndefOr[java.lang.String] = js.undefined
 }
 

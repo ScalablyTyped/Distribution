@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Operation extends js.Object {
   /**
-               * [Output only] An optional identifier specified by the client when the mutation was initiated. Must be unique for all operation resources in the
-               * project.
-               */
+    * [Output only] An optional identifier specified by the client when the mutation was initiated. Must be unique for all operation resources in the
+    * project.
+    */
   var clientOperationId: js.UndefOr[java.lang.String] = js.undefined
   /** [Output Only] The time that this operation was requested, in RFC3339 text format. */
   var creationTimestamp: js.UndefOr[java.lang.String] = js.undefined
@@ -33,10 +32,10 @@ trait Operation extends js.Object {
   /** [Output only] Type of the operation. Operations include insert, update, and delete. */
   var operationType: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * [Output only] An optional progress indicator that ranges from 0 to 100. There is no requirement that this be linear or support any granularity of
-               * operations. This should not be used to guess at when the operation will be complete. This number should be monotonically increasing as the operation
-               * progresses.
-               */
+    * [Output only] An optional progress indicator that ranges from 0 to 100. There is no requirement that this be linear or support any granularity of
+    * operations. This should not be used to guess at when the operation will be complete. This number should be monotonically increasing as the operation
+    * progresses.
+    */
   var progress: js.UndefOr[scala.Double] = js.undefined
   /** [Output Only] URL of the region where the operation resides. Only available when performing regional operations. */
   var region: js.UndefOr[java.lang.String] = js.undefined

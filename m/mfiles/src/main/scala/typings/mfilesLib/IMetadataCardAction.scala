@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMetadataCardAction extends js.Object {
   val Events: IEvents
   def Activate(): scala.Unit

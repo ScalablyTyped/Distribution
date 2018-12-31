@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EightColorScheme extends ColorScheme {
   var `3`: js.Tuple3[java.lang.String, java.lang.String, java.lang.String]
   var `4`: js.Tuple4[java.lang.String, java.lang.String, java.lang.String, java.lang.String]

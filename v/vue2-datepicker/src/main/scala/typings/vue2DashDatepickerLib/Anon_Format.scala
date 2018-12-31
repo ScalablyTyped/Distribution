@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Format extends js.Object {
   var clearable: js.UndefOr[scala.Boolean] = js.undefined
   var confirm: js.UndefOr[scala.Boolean] = js.undefined

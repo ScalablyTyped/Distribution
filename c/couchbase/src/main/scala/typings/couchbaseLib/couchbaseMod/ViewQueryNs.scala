@@ -18,20 +18,20 @@ object ViewQueryNs extends js.Object {
   sealed trait Update extends js.Object
   
   /**
-       * Enumeration for specifying on_error behaviour.
-       */
+    * Enumeration for specifying on_error behaviour.
+    */
   @js.native
   object ErrorMode extends js.Object {
     /**
-             * Continues querying when an error occurs.
-             */
+      * Continues querying when an error occurs.
+      */
     @js.native
     sealed trait CONTINUE
       extends couchbaseLib.couchbaseMod.ViewQueryNs.ErrorMode
     
     /**
-             * Stops and errors query when an error occurs.
-             */
+      * Stops and errors query when an error occurs.
+      */
     @js.native
     sealed trait STOP
       extends couchbaseLib.couchbaseMod.ViewQueryNs.ErrorMode
@@ -43,20 +43,20 @@ object ViewQueryNs extends js.Object {
   }
   
   /**
-       * Enumeration for specifying view result ordering.
-       */
+    * Enumeration for specifying view result ordering.
+    */
   @js.native
   object Order extends js.Object {
     /**
-             * Orders with lower values first and higher values last.
-             */
+      * Orders with lower values first and higher values last.
+      */
     @js.native
     sealed trait ASCENDING
       extends couchbaseLib.couchbaseMod.ViewQueryNs.Order
     
     /**
-             * Orders with higher values first and lower values last.
-             */
+      * Orders with higher values first and lower values last.
+      */
     @js.native
     sealed trait DESCENDING
       extends couchbaseLib.couchbaseMod.ViewQueryNs.Order
@@ -68,27 +68,27 @@ object ViewQueryNs extends js.Object {
   }
   
   /**
-       * Enumeration for specifying view update semantics.
-       */
+    * Enumeration for specifying view update semantics.
+    */
   @js.native
   object Update extends js.Object {
     /**
-             * Forces the view to be indexed after the results of this query has been fetched.
-             */
+      * Forces the view to be indexed after the results of this query has been fetched.
+      */
     @js.native
     sealed trait AFTER
       extends couchbaseLib.couchbaseMod.ViewQueryNs.Update
     
     /**
-             * Causes the view to be fully indexed before results are retrieved.
-             */
+      * Causes the view to be fully indexed before results are retrieved.
+      */
     @js.native
     sealed trait BEFORE
       extends couchbaseLib.couchbaseMod.ViewQueryNs.Update
     
     /**
-             * Allows the index to stay in whatever state it is already in prior retrieval of the query results.
-             */
+      * Allows the index to stay in whatever state it is already in prior retrieval of the query results.
+      */
     @js.native
     sealed trait NONE
       extends couchbaseLib.couchbaseMod.ViewQueryNs.Update

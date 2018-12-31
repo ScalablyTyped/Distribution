@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(postmanDashCollectionLib.postmanDashCollectionMod.CertificateDefinition because Would inherit conflicting mutable fields List(description, name, disabled, id))*/
+/* RemoveMultipleInheritance: Dropped parents List(postmanDashCollectionLib.postmanDashCollectionMod.CertificateDefinition because Would inherit conflicting mutable fields List(description, disabled, id, name))*/
 @JSImport("postman-collection", "Certificate")
 @js.native
 class Certificate protected () extends Property[CertificateDefinition] {

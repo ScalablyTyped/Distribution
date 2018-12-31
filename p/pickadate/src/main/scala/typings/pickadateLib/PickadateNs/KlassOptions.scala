@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // KlassOptions shared between date and time pickers
-
 trait KlassOptions extends js.Object {
    // default 'picker__input'
   var active: js.UndefOr[java.lang.String] = js.undefined

@@ -76,7 +76,6 @@ class ListObject protected () extends js.Object {
   def Unlist(): scala.Unit = js.native
   /** @param iConflictType [iConflictType=0] */
   def UpdateChanges(): scala.Unit = js.native
-  /** @param iConflictType [iConflictType=0] */
   def UpdateChanges(iConflictType: XlListConflict): scala.Unit = js.native
 }
 

@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FormLayout extends js.Object {
   /**
-       * Gets and sets extensions list
-       */
+    * Gets and sets extensions list
+    */
   var extensions: js.Array[Extension]
   /**
-       * Top level tabs of the layout.
-       */
+    * Top level tabs of the layout.
+    */
   var pages: js.Array[Page]
   /**
-       * Headers controls of the layout.
-       */
+    * Headers controls of the layout.
+    */
   var systemControls: js.Array[Control]
 }
 

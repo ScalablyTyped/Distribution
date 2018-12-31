@@ -21,74 +21,74 @@ abstract class HttpCacheDirectiveHeaderValueCollection ()
   /** Gets the number of HttpNameValueHeaderValue objects in the collection. */
   var size: scala.Double = js.native
   /**
-                       * Adds a new HttpNameValueHeaderValue item to the end of the collection.
-                       * @param value The HttpNameValueHeaderValue object to append.
-                       */
+    * Adds a new HttpNameValueHeaderValue item to the end of the collection.
+    * @param value The HttpNameValueHeaderValue object to append.
+    */
   def append(value: HttpNameValueHeaderValue): scala.Unit = js.native
   /** Removes all objects from the collection. */
   def clear(): scala.Unit = js.native
   /**
-                       * Retrieves an iterator to the first HttpNameValueHeaderValue item in the collection.
-                       * @return An object that can be used to enumerate the HttpNameValueHeaderValue items in the collection. The iterator points to the first HttpNameValueHeaderValue item in the HttpCacheDirectiveHeaderValueCollection .
-                       */
+    * Retrieves an iterator to the first HttpNameValueHeaderValue item in the collection.
+    * @return An object that can be used to enumerate the HttpNameValueHeaderValue items in the collection. The iterator points to the first HttpNameValueHeaderValue item in the HttpCacheDirectiveHeaderValueCollection .
+    */
   def first(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterator[HttpNameValueHeaderValue] = js.native
   /**
-                       * Returns the HttpNameValueHeaderValue at the specified index in the collection.
-                       * @param index The zero-based index of a specified item in the HttpCacheDirectiveHeaderValueCollection .
-                       * @return The HttpNameValueHeaderValue at the specified index in the HttpCacheDirectiveHeaderValueCollection .
-                       */
+    * Returns the HttpNameValueHeaderValue at the specified index in the collection.
+    * @param index The zero-based index of a specified item in the HttpCacheDirectiveHeaderValueCollection .
+    * @return The HttpNameValueHeaderValue at the specified index in the HttpCacheDirectiveHeaderValueCollection .
+    */
   def getAt(index: scala.Double): HttpNameValueHeaderValue = js.native
   /**
-                       * Retrieves the HttpNameValueHeaderValue items that start at the specified index in the collection.
-                       * @param startIndex The zero-based index of the start of the HttpNameValueHeaderValue items in the HttpCacheDirectiveHeaderValueCollection .
-                       */
+    * Retrieves the HttpNameValueHeaderValue items that start at the specified index in the collection.
+    * @param startIndex The zero-based index of the start of the HttpNameValueHeaderValue items in the HttpCacheDirectiveHeaderValueCollection .
+    */
   def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_ItemsReturnValueHttpNameValueHeaderValue = js.native
   /**
-                       * Returns an immutable view of the HttpCacheDirectiveHeaderValueCollection .
-                       * @return The view of the HttpCacheDirectiveHeaderValueCollection .
-                       */
+    * Returns an immutable view of the HttpCacheDirectiveHeaderValueCollection .
+    * @return The view of the HttpCacheDirectiveHeaderValueCollection .
+    */
   def getView(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[HttpNameValueHeaderValue] = js.native
   def indexOf(value: HttpNameValueHeaderValue, extra: js.Any*): winrtDashUwpLib.Anon_Index = js.native
   /**
-                       * Retrieves the index of an HttpNameValueHeaderValue in the collection.
-                       * @param value The HttpNameValueHeaderValue to find in the HttpCacheDirectiveHeaderValueCollection .
-                       */
+    * Retrieves the index of an HttpNameValueHeaderValue in the collection.
+    * @param value The HttpNameValueHeaderValue to find in the HttpCacheDirectiveHeaderValueCollection .
+    */
   @JSName("indexOf")
   def indexOf_Anon_Index(value: HttpNameValueHeaderValue): winrtDashUwpLib.Anon_Index = js.native
   /**
-                       * Inserts an HttpNameValueHeaderValue into the collection at the specified index.
-                       * @param index The zero-based index at which value should be inserted.
-                       * @param value The object to insert into the collection.
-                       */
+    * Inserts an HttpNameValueHeaderValue into the collection at the specified index.
+    * @param index The zero-based index at which value should be inserted.
+    * @param value The object to insert into the collection.
+    */
   def insertAt(index: scala.Double, value: HttpNameValueHeaderValue): scala.Unit = js.native
   /**
-                       * Parses and adds an entry to the HttpCacheDirectiveHeaderValueCollection .
-                       * @param input The entry to add.
-                       */
+    * Parses and adds an entry to the HttpCacheDirectiveHeaderValueCollection .
+    * @param input The entry to add.
+    */
   def parseAdd(input: java.lang.String): scala.Unit = js.native
   /**
-                       * Removes the entry at the specified index from the HttpCacheDirectiveHeaderValueCollection .
-                       * @param index The index of the entry to remove.
-                       */
+    * Removes the entry at the specified index from the HttpCacheDirectiveHeaderValueCollection .
+    * @param index The index of the entry to remove.
+    */
   def removeAt(index: scala.Double): scala.Unit = js.native
   /** Removes the last HttpNameValueHeaderValue item from the collection. */
   def removeAtEnd(): scala.Unit = js.native
   /**
-                       * Replaces all the HttpNameValueHeaderValue items in the collection with the specified HttpNameValueHeaderValue items.
-                       * @param items The collection of HttpNameValueHeaderValue items to add to the collection.
-                       */
+    * Replaces all the HttpNameValueHeaderValue items in the collection with the specified HttpNameValueHeaderValue items.
+    * @param items The collection of HttpNameValueHeaderValue items to add to the collection.
+    */
   def replaceAll(items: HttpNameValueHeaderValue): scala.Unit = js.native
   /**
-                       * Sets the HttpNameValueHeaderValue at the specified index in the collection.
-                       * @param index The zero-based index at which to set the HttpNameValueHeaderValue .
-                       * @param value The item to set.
-                       */
+    * Sets the HttpNameValueHeaderValue at the specified index in the collection.
+    * @param index The zero-based index at which to set the HttpNameValueHeaderValue .
+    * @param value The item to set.
+    */
   def setAt(index: scala.Double, value: HttpNameValueHeaderValue): scala.Unit = js.native
   /**
-                       * Tries to parse and add the specified item to the HttpCacheDirectiveHeaderValueCollection .
-                       * @param input The item to parse and add.
-                       * @return true if the item successfully parsed and was added; otherwise false.
-                       */
+    * Tries to parse and add the specified item to the HttpCacheDirectiveHeaderValueCollection .
+    * @param input The item to parse and add.
+    * @return true if the item successfully parsed and was added; otherwise false.
+    */
   def tryParseAdd(input: java.lang.String): scala.Boolean = js.native
 }
 

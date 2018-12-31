@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimePickerOptions extends js.Object {
   var end: java.lang.String
   var start: java.lang.String

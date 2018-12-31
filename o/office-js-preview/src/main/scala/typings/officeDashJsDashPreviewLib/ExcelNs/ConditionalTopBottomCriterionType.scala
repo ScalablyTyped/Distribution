@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 sealed trait ConditionalTopBottomCriterionType extends js.Object
 
 /**
-     *
-     * Represents the criteria for the above/below average conditional format type.
-     *
-     * [Api set: ExcelApi 1.6]
-     */
+  *
+  * Represents the criteria for the above/below average conditional format type.
+  *
+  * [Api set: ExcelApi 1.6]
+  */
 @JSGlobal("Excel.ConditionalTopBottomCriterionType")
 @js.native
 object ConditionalTopBottomCriterionType extends js.Object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PixelRendering extends js.Object {
   var coordRendering: js.UndefOr[
     yandexDashMapsLib.yandexDashMapsLibStrings.shortestPath | yandexDashMapsLib.yandexDashMapsLibStrings.straightPath

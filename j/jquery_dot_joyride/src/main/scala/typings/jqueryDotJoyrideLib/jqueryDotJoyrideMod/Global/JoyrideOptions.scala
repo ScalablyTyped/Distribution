@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JoyrideOptions extends js.Object {
   /**
   		 * true or false - false tour starts when restart called

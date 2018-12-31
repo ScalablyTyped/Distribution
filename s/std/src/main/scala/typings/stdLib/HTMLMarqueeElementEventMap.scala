@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HTMLMarqueeElementEventMap extends HTMLElementEventMap {
   var bounce: Event
   var finish: Event

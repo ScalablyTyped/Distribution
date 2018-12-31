@@ -51,7 +51,7 @@ object NormalizedMessage extends js.Object {
   ): scala.Double = js.native
   def createFromDiagnostic(diagnostic: typescriptLib.typescriptMod.tsNs.Diagnostic): forkDashTsDashCheckerDashWebpackDashPluginLib.libNormalizedMessageMod.NormalizedMessage = js.native
   def createFromJSON(json: forkDashTsDashCheckerDashWebpackDashPluginLib.libNormalizedMessageMod.NormalizedMessageJson): forkDashTsDashCheckerDashWebpackDashPluginLib.libNormalizedMessageMod.NormalizedMessage = js.native
-  def createFromLint(lint: js.Any): forkDashTsDashCheckerDashWebpackDashPluginLib.libNormalizedMessageMod.NormalizedMessage = js.native
+  def createFromLint(lint: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify RuleFailure */ js.Any): forkDashTsDashCheckerDashWebpackDashPluginLib.libNormalizedMessageMod.NormalizedMessage = js.native
   def deduplicate(
     messages: js.Array[
       forkDashTsDashCheckerDashWebpackDashPluginLib.libNormalizedMessageMod.NormalizedMessage

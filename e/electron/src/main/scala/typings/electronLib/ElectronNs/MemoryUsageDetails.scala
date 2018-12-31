@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MemoryUsageDetails extends js.Object {
   // Docs: http://electronjs.org/docs/api/structures/memory-usage-details
   var count: scala.Double

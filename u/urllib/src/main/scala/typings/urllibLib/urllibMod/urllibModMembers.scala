@@ -31,10 +31,10 @@ object urllibModMembers extends js.Object {
   def request(url: nodeLib.urlMod.URL, callback: Callback): scala.Unit = js.native
   def request(url: nodeLib.urlMod.URL, options: RequestOptions): js.Promise[_] = js.native
   def request(url: nodeLib.urlMod.URL, options: RequestOptions, callback: Callback): scala.Unit = js.native
-  def requestThunk(url: java.lang.String): js.Function1[/* callback */ js.Function1[/* repeated */js.Any, scala.Unit], scala.Unit] = js.native
-  def requestThunk(url: java.lang.String, options: RequestOptions): js.Function1[/* callback */ js.Function1[/* repeated */js.Any, scala.Unit], scala.Unit] = js.native
-  def requestThunk(url: nodeLib.urlMod.URL): js.Function1[/* callback */ js.Function1[/* repeated */js.Any, scala.Unit], scala.Unit] = js.native
-  def requestThunk(url: nodeLib.urlMod.URL, options: RequestOptions): js.Function1[/* callback */ js.Function1[/* repeated */js.Any, scala.Unit], scala.Unit] = js.native
+  def requestThunk(url: java.lang.String): js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], scala.Unit] = js.native
+  def requestThunk(url: java.lang.String, options: RequestOptions): js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], scala.Unit] = js.native
+  def requestThunk(url: nodeLib.urlMod.URL): js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], scala.Unit] = js.native
+  def requestThunk(url: nodeLib.urlMod.URL, options: RequestOptions): js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], scala.Unit] = js.native
   def requestWithCallback(url: java.lang.String, callback: Callback): scala.Unit = js.native
   def requestWithCallback(url: java.lang.String, options: RequestOptions, callback: Callback): scala.Unit = js.native
   def requestWithCallback(url: nodeLib.urlMod.URL, callback: Callback): scala.Unit = js.native

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("fabric/fabric-impl", "Color")
 @js.native
+/**
+	 * Color class
+	 * The purpose of Color is to abstract and encapsulate common color operations;
+	 * @param color optional in hex or rgb(a) format
+	 */
 class Color () extends js.Object {
-  /**
-  	 * Color class
-  	 * The purpose of Color is to abstract and encapsulate common color operations;
-  	 * @param color optional in hex or rgb(a) format
-  	 */
   def this(color: java.lang.String) = this()
   /**
   	 * Gets value of alpha channel for this color
@@ -22,9 +22,6 @@ class Color () extends js.Object {
   	 * Returns source of this color (where source is an array representation; ex: [200, 200, 100, 1])
   	 */
   def getSource(): js.Array[scala.Double] = js.native
-  /**
-  	 * Overlays color with another color
-  	 */
   def overlayWith(otherColor: Color): Color = js.native
   /**
   	 * Overlays color with another color

@@ -8,50 +8,51 @@ import scala.scalajs.js.annotation._
 /** Represents a property set of BitmapTypedValue objects. */
 @JSGlobal("Windows.Graphics.Imaging.BitmapPropertySet")
 @js.native
+/** Creates and initializes a new instance of the bitmap property set. */
 class BitmapPropertySet () extends js.Object {
   /** Gets the number of items contained in the property set. */
   var size: scala.Double = js.native
   /** Removes all items from the property set. */
   def clear(): scala.Unit = js.native
   /**
-                   * Returns an iterator to enumerate the items in the property set.
-                   * @return The iterator. The current position of the iterator is index 0, or the end of the property set if the property set is empty.
-                   */
+    * Returns an iterator to enumerate the items in the property set.
+    * @return The iterator. The current position of the iterator is index 0, or the end of the property set if the property set is empty.
+    */
   def first(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterator[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IKeyValuePair[_, _]] = js.native
   /**
-                   * Gets an immutable view of the property set.
-                   * @return The immutable view.
-                   */
+    * Gets an immutable view of the property set.
+    * @return The immutable view.
+    */
   def getView(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, BitmapTypedValue] = js.native
   /**
-                   * Indicates whether the property set has an item with the specified key.
-                   * @param key The key.
-                   * @return True if the property set has an item with the specified key; otherwise, false.
-                   */
+    * Indicates whether the property set has an item with the specified key.
+    * @param key The key.
+    * @return True if the property set has an item with the specified key; otherwise, false.
+    */
   def hasKey(key: java.lang.String): scala.Boolean = js.native
   /**
-                   * Adds an item to the property set.
-                   * @param key The key to insert.
-                   * @param value The value to insert.
-                   * @return True if the method replaces a value that already exists for the key; false if this is a new key.
-                   */
+    * Adds an item to the property set.
+    * @param key The key to insert.
+    * @param value The value to insert.
+    * @return True if the method replaces a value that already exists for the key; false if this is a new key.
+    */
   def insert(key: java.lang.String, value: BitmapTypedValue): scala.Boolean = js.native
   /**
-                   * Retrieves the value for the specified key.
-                   * @param key The key.
-                   * @return The value, if an item with the specified key exists; otherwise, null.
-                   */
+    * Retrieves the value for the specified key.
+    * @param key The key.
+    * @return The value, if an item with the specified key exists; otherwise, null.
+    */
   def lookup(key: java.lang.String): BitmapTypedValue = js.native
   /**
-                   * Removes a specific item from the BitmapPropertySet .
-                   * @param key The key of the item to remove.
-                   * @return true if the item was removed, otherwise false.
-                   */
+    * Removes a specific item from the BitmapPropertySet .
+    * @param key The key of the item to remove.
+    * @return true if the item was removed, otherwise false.
+    */
   def remove(key: java.lang.String): scala.Boolean = js.native
   /**
-                   * Removes an item from the property set.
-                   * @param key The key.
-                   */
+    * Removes an item from the property set.
+    * @param key The key.
+    */
   @JSName("remove")
   def remove_Unit(key: java.lang.String): scala.Unit = js.native
 }

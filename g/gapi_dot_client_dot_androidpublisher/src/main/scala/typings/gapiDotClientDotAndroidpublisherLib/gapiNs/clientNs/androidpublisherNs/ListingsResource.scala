@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListingsResource extends js.Object {
   /** Deletes the specified localized store listing from an edit. */
   def delete(

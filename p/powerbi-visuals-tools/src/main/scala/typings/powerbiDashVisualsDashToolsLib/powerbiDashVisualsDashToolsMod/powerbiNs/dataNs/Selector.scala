@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Defines a selector for content, including data-, metadata, and user-defined repetition. */
-
 trait Selector extends js.Object {
   /** Data-bound repetition selection. */
   var data: js.UndefOr[js.Array[DataRepetitionSelector]] = js.undefined

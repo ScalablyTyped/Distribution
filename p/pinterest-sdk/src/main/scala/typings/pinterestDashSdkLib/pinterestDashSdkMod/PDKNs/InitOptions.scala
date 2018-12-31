@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InitOptions extends js.Object {
   /** Your application ID from developer.pinterest.com */
   var appId: js.UndefOr[java.lang.String] = js.undefined

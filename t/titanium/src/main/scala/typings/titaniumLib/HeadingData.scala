@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object holding compass heading data.
- */
-
+  * Simple object holding compass heading data.
+  */
 trait HeadingData extends js.Object {
   /**
   	 * Accuracy of the compass heading, in platform-specific units.

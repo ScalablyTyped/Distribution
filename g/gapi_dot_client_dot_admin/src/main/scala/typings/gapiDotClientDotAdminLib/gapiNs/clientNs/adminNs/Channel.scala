@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Channel extends js.Object {
   /** The address where notifications are delivered for this channel. */
   var address: js.UndefOr[java.lang.String] = js.undefined

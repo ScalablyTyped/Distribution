@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContactName extends js.Object {
   var familyName: java.lang.String
   var formatted: java.lang.String

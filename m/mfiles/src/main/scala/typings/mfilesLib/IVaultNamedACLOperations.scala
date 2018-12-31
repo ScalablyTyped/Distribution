@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultNamedACLOperations extends js.Object {
   def AddNamedACLAdmin(NamedACLAdmin: INamedACLAdmin): INamedACLAdmin
   def GetMatchingNamedACLForAccessControlList(

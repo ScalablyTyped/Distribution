@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CurrencyNumberFormatOptions
   extends stdLib.IntlNs.NumberFormatOptions {
    // Obligatory if style is 'currency'

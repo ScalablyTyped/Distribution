@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MSFIDOCredentialAssertion extends MSAssertion {
   val algorithm: java.lang.String | Algorithm
   val attestation: js.Any

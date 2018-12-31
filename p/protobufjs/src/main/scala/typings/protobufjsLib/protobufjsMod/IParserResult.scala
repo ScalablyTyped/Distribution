@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IParserResult extends js.Object {
   /** Imports, if any */
   var imports: js.UndefOr[js.Array[java.lang.String]]

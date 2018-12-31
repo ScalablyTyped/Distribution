@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RadialBarChartProps
   extends CategoricalChartWrapper[rechartsLib.rechartsLibStrings.radial] {
   var cx: js.UndefOr[java.lang.String | scala.Double] = js.undefined

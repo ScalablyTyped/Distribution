@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait W2UI
   extends // morally, [s: string]<T extends W2Common>: T;
 /* s */ org.scalablytyped.runtime.StringDictionary[js.Any]

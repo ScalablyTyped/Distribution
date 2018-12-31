@@ -16,8 +16,8 @@ class DirectiveResolver protected () extends js.Object {
   var _reflector: js.Any = js.native
   def isDirective(`type`: atAngularCompilerLib.srcCoreMod.Type): scala.Boolean = js.native
   /**
-       * Return {@link Directive} for a given `Type`.
-       */
+    * Return {@link Directive} for a given `Type`.
+    */
   def resolve(`type`: atAngularCompilerLib.srcCoreMod.Type): atAngularCompilerLib.srcCoreMod.Directive = js.native
   def resolve(
     `type`: atAngularCompilerLib.srcCoreMod.Type,

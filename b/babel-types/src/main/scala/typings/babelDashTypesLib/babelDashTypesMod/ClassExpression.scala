@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClassExpression extends Node {
   var body: ClassBody
   var decorators: js.UndefOr[js.Array[Decorator]] = js.undefined

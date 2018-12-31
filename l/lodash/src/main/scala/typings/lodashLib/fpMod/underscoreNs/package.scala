@@ -10,18 +10,18 @@ package object underscoreNs {
   type LodashAdd1x2 = js.Function1[/* augend */ scala.Double, scala.Double]
   type LodashAfter1x1[TFunc] = js.Function1[/* n */ scala.Double, TFunc]
   type LodashAfter1x2 = js.Function1[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    js.Function1[/* repeated */js.Any, js.Any]
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    js.Function1[/* repeated */ js.Any, js.Any]
   ]
   type LodashApply = js.Function1[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    js.Function1[/* repeated */js.Any, js.Any]
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    js.Function1[/* repeated */ js.Any, js.Any]
   ]
   type LodashAry1x1 = js.Function1[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    js.Function1[/* repeated */js.Any, js.Any]
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    js.Function1[/* repeated */ js.Any, js.Any]
   ]
-  type LodashAry1x2 = js.Function1[/* n */ scala.Double, js.Function1[/* repeated */js.Any, js.Any]]
+  type LodashAry1x2 = js.Function1[/* n */ scala.Double, js.Function1[/* repeated */ js.Any, js.Any]]
   type LodashAssign1x1[TObject] = js.Function1[/* source */ js.Any, TObject with js.Any]
   type LodashAssign1x2[TSource] = js.Function1[/* object */ js.Any, js.Any with TSource]
   type LodashAssignAllWith1x1 = js.Function1[/* args */ js.Array[js.Any], js.Any]
@@ -51,31 +51,27 @@ package object underscoreNs {
   type LodashAt1x2[T] = js.Function1[/* props */ lodashLib.lodashMod.underscoreNs.PropertyPath, js.Array[T]]
   type LodashAt2x1[T] = js.Function1[
     /* object */ js.UndefOr[T | scala.Null], 
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ]
   type LodashAt2x2[T] = js.Function1[
     /* props */ lodashLib.lodashMod.underscoreNs.Many[java.lang.String], 
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ]
-  type LodashAttempt = js.Function1[/* func */ js.Function1[/* repeated */js.Any, js.Any], js.Any | stdLib.Error]
+  type LodashAttempt = js.Function1[/* func */ js.Function1[/* repeated */ js.Any, js.Any], js.Any | stdLib.Error]
   type LodashBefore1x1[TFunc] = js.Function1[/* n */ scala.Double, TFunc]
   type LodashBefore1x2 = js.Function1[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    js.Function1[/* repeated */js.Any, js.Any]
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    js.Function1[/* repeated */ js.Any, js.Any]
   ]
-  type LodashBind1x1 = js.Function1[/* thisArg */ js.Any, js.Function1[/* repeated */js.Any, js.Any]]
+  type LodashBind1x1 = js.Function1[/* thisArg */ js.Any, js.Function1[/* repeated */ js.Any, js.Any]]
   type LodashBind1x2 = js.Function1[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    js.Function1[/* repeated */js.Any, js.Any]
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    js.Function1[/* repeated */ js.Any, js.Any]
   ]
   type LodashBindAll1x1 = js.Function1[/* object */ js.Any, js.Any]
   type LodashBindAll1x2[T] = js.Function1[/* methodNames */ lodashLib.lodashMod.underscoreNs.Many[java.lang.String], T]
-  type LodashBindKey1x1 = js.Function1[/* key */ java.lang.String, js.Function1[/* repeated */js.Any, js.Any]]
-  type LodashBindKey1x2 = js.Function1[/* object */ js.Object, js.Function1[/* repeated */js.Any, js.Any]]
+  type LodashBindKey1x1 = js.Function1[/* key */ java.lang.String, js.Function1[/* repeated */ js.Any, js.Any]]
+  type LodashBindKey1x2 = js.Function1[/* object */ js.Object, js.Function1[/* repeated */ js.Any, js.Any]]
   type LodashCamelCase = js.Function1[/* string */ java.lang.String, java.lang.String]
   type LodashCapitalize = js.Function1[/* string */ java.lang.String, java.lang.String]
   type LodashCastArray = js.Function1[/* value */ lodashLib.lodashMod.underscoreNs.Many[js.Any], js.Array[js.Any]]
@@ -135,9 +131,7 @@ package object underscoreNs {
     lodashLib.lodashMod.underscoreNs.Dictionary[scala.Double]
   ]
   type LodashCountBy2x2[T] = js.Function1[
-    /* iteratee */ lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ], 
+    /* iteratee */ lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any], 
     lodashLib.lodashMod.underscoreNs.Dictionary[scala.Double]
   ]
   type LodashCreate = js.Function1[/* prototype */ js.Object, js.Object]
@@ -158,7 +152,7 @@ package object underscoreNs {
     /* arity */ scala.Double, 
     lodashLib.lodashMod.underscoreNs.CurriedFunction5[T1, T2, T3, T4, T5, R]
   ]
-  type LodashCurryN6x2 = js.Function1[/* arity */ scala.Double, js.Function1[/* repeated */js.Any, js.Any]]
+  type LodashCurryN6x2 = js.Function1[/* arity */ scala.Double, js.Function1[/* repeated */ js.Any, js.Any]]
   type LodashCurryRightN1x2[T1, R] = js.Function1[
     /* arity */ scala.Double, 
     lodashLib.lodashMod.underscoreNs.RightCurriedFunction1[T1, R]
@@ -179,10 +173,10 @@ package object underscoreNs {
     /* arity */ scala.Double, 
     lodashLib.lodashMod.underscoreNs.RightCurriedFunction5[T1, T2, T3, T4, T5, R]
   ]
-  type LodashCurryRightN6x2 = js.Function1[/* arity */ scala.Double, js.Function1[/* repeated */js.Any, js.Any]]
+  type LodashCurryRightN6x2 = js.Function1[/* arity */ scala.Double, js.Function1[/* repeated */ js.Any, js.Any]]
   type LodashDebounce1x1 = js.Function1[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    (js.Function1[/* repeated */js.Any, _]) with lodashLib.lodashMod.underscoreNs.Cancelable
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    (js.Function1[/* repeated */ js.Any, _]) with lodashLib.lodashMod.underscoreNs.Cancelable
   ]
   type LodashDebounce1x2[T] = js.Function1[/* wait */ scala.Double, T with lodashLib.lodashMod.underscoreNs.Cancelable]
   type LodashDeburr = js.Function1[/* string */ java.lang.String, java.lang.String]
@@ -194,11 +188,11 @@ package object underscoreNs {
   type LodashDefaultsDeep1x2 = js.Function1[/* sources */ js.Any, js.Any]
   type LodashDefaultsDeepAll = js.Function1[/* object */ js.Array[js.Any], js.Any]
   type LodashDefer = js.Function2[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    /* repeated */js.Any, 
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    /* repeated */ js.Any, 
     scala.Double
   ]
-  type LodashDelay1x1 = js.Function1[/* func */ js.Function1[/* repeated */js.Any, js.Any], scala.Double]
+  type LodashDelay1x1 = js.Function1[/* func */ js.Function1[/* repeated */ js.Any, js.Any], scala.Double]
   type LodashDelay1x2 = js.Function1[/* wait */ scala.Double, scala.Double]
   type LodashDifference1x1[T] = js.Function1[/* values */ lodashLib.lodashMod.underscoreNs.List[T], js.Array[T]]
   type LodashDifference1x2[T] = js.Function1[
@@ -261,7 +255,7 @@ package object underscoreNs {
   ]
   type LodashEvery2x2[T] = js.Function1[
     /* predicate */ lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ], 
     scala.Boolean
@@ -318,9 +312,7 @@ package object underscoreNs {
   type LodashFindFrom3x5[S] = js.Function1[/* fromIndex */ scala.Double, js.UndefOr[S]]
   type LodashFindFrom4x5[T] = js.Function1[
     /* fromIndex */ scala.Double, 
-    js.UndefOr[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ]
   type LodashFindIndex1x1[T] = js.Function1[
     /* array */ js.UndefOr[lodashLib.lodashMod.underscoreNs.List[T] | scala.Null], 
@@ -341,9 +333,7 @@ package object underscoreNs {
   ]
   type LodashFindKey1x1[T] = js.Function1[/* object */ js.UndefOr[js.Object | scala.Null], js.UndefOr[java.lang.String]]
   type LodashFindKey1x2[T] = js.Function1[
-    /* predicate */ lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ], 
+    /* predicate */ lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any], 
     js.UndefOr[java.lang.String]
   ]
   type LodashFindLast1x1[T, S] = js.Function1[
@@ -365,9 +355,7 @@ package object underscoreNs {
   type LodashFindLastFrom3x5[S] = js.Function1[/* fromIndex */ scala.Double, js.UndefOr[S]]
   type LodashFindLastFrom4x5[T] = js.Function1[
     /* fromIndex */ scala.Double, 
-    js.UndefOr[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ]
   type LodashFindLastIndex1x1[T] = js.Function1[
     /* array */ js.UndefOr[lodashLib.lodashMod.underscoreNs.List[T] | scala.Null], 
@@ -388,9 +376,7 @@ package object underscoreNs {
   ]
   type LodashFindLastKey1x1[T] = js.Function1[/* object */ js.UndefOr[js.Object | scala.Null], js.UndefOr[java.lang.String]]
   type LodashFindLastKey1x2[T] = js.Function1[
-    /* predicate */ lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ], 
+    /* predicate */ lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any], 
     js.UndefOr[java.lang.String]
   ]
   type LodashFlatMap1x1[T, TResult] = js.Function1[
@@ -404,7 +390,7 @@ package object underscoreNs {
   type LodashFlatMap2x1[T, TResult] = js.Function1[/* collection */ js.UndefOr[T | scala.Null], js.Array[TResult]]
   type LodashFlatMap2x2[T] = js.Function1[
     /* iteratee */ js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       lodashLib.lodashMod.underscoreNs.Many[js.Any]
     ], 
     js.Array[js.Any]
@@ -425,7 +411,7 @@ package object underscoreNs {
   type LodashFlatMapDeep2x1[T, TResult] = js.Function1[/* collection */ js.UndefOr[T | scala.Null], js.Array[TResult]]
   type LodashFlatMapDeep2x2[T] = js.Function1[
     /* iteratee */ js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       lodashLib.lodashMod.underscoreNs.ListOfRecursiveArraysOrValues[js.Any] | js.Any
     ], 
     js.Array[js.Any]
@@ -448,7 +434,7 @@ package object underscoreNs {
   type LodashFlatMapDepth2x5[TResult] = js.Function1[/* depth */ scala.Double, js.Array[TResult]]
   type LodashFlatMapDepth2x6[T] = js.Function1[
     /* iteratee */ js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       lodashLib.lodashMod.underscoreNs.ListOfRecursiveArraysOrValues[js.Any] | js.Any
     ], 
     js.Array[js.Any]
@@ -477,8 +463,8 @@ package object underscoreNs {
   ]
   type LodashFlattenDepth1x2[T] = js.Function1[/* depth */ scala.Double, js.Array[T]]
   type LodashFlip = js.Function1[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    js.Function1[/* repeated */js.Any, js.Any]
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    js.Function1[/* repeated */ js.Any, js.Any]
   ]
   type LodashFloor = js.Function1[/* n */ scala.Double, scala.Double]
   type LodashForEach1x2[T] = js.Function1[/* iteratee */ js.Function1[/* value */ T, js.Any], js.Array[T]]
@@ -492,7 +478,7 @@ package object underscoreNs {
   ]
   type LodashForEach4x2[T] = js.Function1[
     /* iteratee */ js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       js.Any
     ], 
     T
@@ -502,7 +488,7 @@ package object underscoreNs {
   type LodashForEach7x2[T, TList] = js.Function1[/* iteratee */ js.Function1[/* value */ T, js.Any], TList]
   type LodashForEach8x2[T] = js.Function1[
     /* iteratee */ js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       js.Any
     ], 
     js.UndefOr[T | scala.Null]
@@ -518,7 +504,7 @@ package object underscoreNs {
   ]
   type LodashForEachRight4x2[T] = js.Function1[
     /* iteratee */ js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       js.Any
     ], 
     T
@@ -528,63 +514,63 @@ package object underscoreNs {
   type LodashForEachRight7x2[T, TList] = js.Function1[/* iteratee */ js.Function1[/* value */ T, js.Any], TList]
   type LodashForEachRight8x2[T] = js.Function1[
     /* iteratee */ js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       js.Any
     ], 
     js.UndefOr[T | scala.Null]
   ]
   type LodashForIn1x2[T] = js.Function1[
     /* iteratee */ js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       js.Any
     ], 
     T
   ]
   type LodashForIn2x2[T] = js.Function1[
     /* iteratee */ js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       js.Any
     ], 
     js.UndefOr[T | scala.Null]
   ]
   type LodashForInRight1x2[T] = js.Function1[
     /* iteratee */ js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       js.Any
     ], 
     T
   ]
   type LodashForInRight2x2[T] = js.Function1[
     /* iteratee */ js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       js.Any
     ], 
     js.UndefOr[T | scala.Null]
   ]
   type LodashForOwn1x2[T] = js.Function1[
     /* iteratee */ js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       js.Any
     ], 
     T
   ]
   type LodashForOwn2x2[T] = js.Function1[
     /* iteratee */ js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       js.Any
     ], 
     js.UndefOr[T | scala.Null]
   ]
   type LodashForOwnRight1x2[T] = js.Function1[
     /* iteratee */ js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       js.Any
     ], 
     T
   ]
   type LodashForOwnRight2x2[T] = js.Function1[
     /* iteratee */ js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       js.Any
     ], 
     js.UndefOr[T | scala.Null]
@@ -593,12 +579,12 @@ package object underscoreNs {
   type LodashFunctionsIn = js.Function1[/* object */ js.Any, js.Array[java.lang.String]]
   type LodashGet1x2[TObject] = js.Function1[
     /* path */ java.lang.String | js.Array[java.lang.String], 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
   ]
   type LodashGet2x2[TObject] = js.Function1[
     /* path */ java.lang.String | js.Array[java.lang.String], 
     js.UndefOr[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
     ]
   ]
   type LodashGet3x2[T] = js.Function1[/* path */ scala.Double, T]
@@ -610,15 +596,15 @@ package object underscoreNs {
   type LodashGet6x2 = js.Function1[/* path */ lodashLib.lodashMod.underscoreNs.PropertyPath, js.Any]
   type LodashGetOr1x3[TObject, TKey /* <: java.lang.String */, TDefault] = js.Function1[
     /* object */ js.UndefOr[TObject | scala.Null], 
-    (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault
+    (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault
   ]
   type LodashGetOr1x5[TObject, TDefault] = js.Function1[
     /* path */ java.lang.String | js.Array[java.lang.String], 
-    (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault
+    (/* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any) | TDefault
   ]
   type LodashGetOr1x6[TObject, TKey /* <: java.lang.String */] = js.Function1[
     /* defaultValue */ js.Any, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ]
   type LodashGetOr2x3[TDefault] = js.Function1[
     /* object */ js.UndefOr[lodashLib.lodashMod.underscoreNs.NumericDictionary[js.Any] | scala.Null], 
@@ -641,13 +627,9 @@ package object underscoreNs {
     lodashLib.lodashMod.underscoreNs.Dictionary[js.Array[T]]
   ]
   type LodashGroupBy2x2[T] = js.Function1[
-    /* iteratee */ lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ], 
+    /* iteratee */ lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any], 
     lodashLib.lodashMod.underscoreNs.Dictionary[
-      js.Array[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-      ]
+      js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
     ]
   ]
   type LodashGt1x1 = js.Function1[/* other */ js.Any, scala.Boolean]
@@ -727,9 +709,7 @@ package object underscoreNs {
     lodashLib.lodashMod.underscoreNs.Dictionary[js.Array[java.lang.String]]
   ]
   type LodashInvertBy2x2[T] = js.Function1[
-    /* interatee */ lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ], 
+    /* interatee */ lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any], 
     lodashLib.lodashMod.underscoreNs.Dictionary[js.Array[java.lang.String]]
   ]
   type LodashInvoke1x1 = js.Function1[/* object */ js.Any, js.Any]
@@ -743,12 +723,12 @@ package object underscoreNs {
   type LodashInvokeArgsMap2x5[TResult] = js.Function1[/* args */ js.Array[js.Any], js.Array[TResult]]
   type LodashInvokeMap1x1 = js.Function1[/* collection */ js.UndefOr[js.Object | scala.Null], js.Array[js.Any]]
   type LodashInvokeMap2x1[TResult] = js.Function1[/* collection */ js.UndefOr[js.Object | scala.Null], js.Array[TResult]]
-  type LodashIsArguments = js.Function1[/* value */ js.Any, /* is IArguments */scala.Boolean]
-  type LodashIsArray = js.Function1[/* value */ js.Any, /* is Array */scala.Boolean]
-  type LodashIsArrayBuffer = js.Function1[/* value */ js.Any, /* is ArrayBuffer */scala.Boolean]
-  type LodashIsBoolean = js.Function1[/* value */ js.Any, /* is boolean */scala.Boolean]
+  type LodashIsArguments = js.Function1[/* value */ js.Any, /* is std.IArguments */ scala.Boolean]
+  type LodashIsArray = js.Function1[/* value */ js.Any, /* is std.Array<any> */ scala.Boolean]
+  type LodashIsArrayBuffer = js.Function1[/* value */ js.Any, /* is std.ArrayBuffer */ scala.Boolean]
+  type LodashIsBoolean = js.Function1[/* value */ js.Any, /* is boolean */ scala.Boolean]
   type LodashIsBuffer = js.Function1[/* value */ js.Any, scala.Boolean]
-  type LodashIsDate = js.Function1[/* value */ js.Any, /* is Date */scala.Boolean]
+  type LodashIsDate = js.Function1[/* value */ js.Any, /* is std.Date */ scala.Boolean]
   type LodashIsElement = js.Function1[/* value */ js.Any, scala.Boolean]
   type LodashIsEmpty = js.Function1[/* value */ js.Any, scala.Boolean]
   type LodashIsEqual1x1 = js.Function1[/* other */ js.Any, scala.Boolean]
@@ -756,12 +736,12 @@ package object underscoreNs {
   type LodashIsEqualWith1x3 = js.Function1[/* other */ js.Any, scala.Boolean]
   type LodashIsEqualWith1x5 = js.Function1[/* value */ js.Any, scala.Boolean]
   type LodashIsEqualWith1x6 = js.Function1[/* customizer */ lodashLib.lodashMod.underscoreNs.IsEqualCustomizer, scala.Boolean]
-  type LodashIsError = js.Function1[/* value */ js.Any, /* is Error */scala.Boolean]
+  type LodashIsError = js.Function1[/* value */ js.Any, /* is std.Error */ scala.Boolean]
   type LodashIsFinite = js.Function1[/* value */ js.Any, scala.Boolean]
   type LodashIsFunction = js.Function1[/* value */ js.Any, scala.Boolean]
   type LodashIsInteger = js.Function1[/* value */ js.Any, scala.Boolean]
   type LodashIsLength = js.Function1[/* value */ js.Any, scala.Boolean]
-  type LodashIsMap = js.Function1[/* value */ js.Any, /* is Map */scala.Boolean]
+  type LodashIsMap = js.Function1[/* value */ js.Any, /* is lodash.lodash.Global.Map<any, any> */ scala.Boolean]
   type LodashIsMatch1x1 = js.Function1[/* object */ js.Object, scala.Boolean]
   type LodashIsMatch1x2 = js.Function1[/* source */ js.Object, scala.Boolean]
   type LodashIsMatchWith1x3 = js.Function1[/* object */ js.Object, scala.Boolean]
@@ -773,20 +753,23 @@ package object underscoreNs {
   type LodashIsNaN = js.Function1[/* value */ js.Any, scala.Boolean]
   type LodashIsNative = js.Function1[/* value */ js.Any, scala.Boolean]
   type LodashIsNil = js.Function1[/* value */ js.Any, scala.Boolean]
-  type LodashIsNull = js.Function1[/* value */ js.Any, /* is null */scala.Boolean]
-  type LodashIsNumber = js.Function1[/* value */ js.Any, /* is number */scala.Boolean]
+  type LodashIsNull = js.Function1[/* value */ js.Any, /* is null */ scala.Boolean]
+  type LodashIsNumber = js.Function1[/* value */ js.Any, /* is number */ scala.Boolean]
   type LodashIsObject = js.Function1[/* value */ js.Any, scala.Boolean]
   type LodashIsObjectLike = js.Function1[/* value */ js.Any, scala.Boolean]
   type LodashIsPlainObject = js.Function1[/* value */ js.Any, scala.Boolean]
-  type LodashIsRegExp = js.Function1[/* value */ js.Any, /* is RegExp */scala.Boolean]
+  type LodashIsRegExp = js.Function1[/* value */ js.Any, /* is std.RegExp */ scala.Boolean]
   type LodashIsSafeInteger = js.Function1[/* value */ js.Any, scala.Boolean]
-  type LodashIsSet = js.Function1[/* value */ js.Any, /* is Set */scala.Boolean]
-  type LodashIsString = js.Function1[/* value */ js.Any, /* is string */scala.Boolean]
+  type LodashIsSet = js.Function1[/* value */ js.Any, /* is lodash.lodash.Global.Set<any> */ scala.Boolean]
+  type LodashIsString = js.Function1[/* value */ js.Any, /* is string */ scala.Boolean]
   type LodashIsSymbol = js.Function1[/* value */ js.Any, scala.Boolean]
   type LodashIsTypedArray = js.Function1[/* value */ js.Any, scala.Boolean]
-  type LodashIsUndefined = js.Function1[/* value */ js.Any, /* is undefined */scala.Boolean]
-  type LodashIsWeakMap = js.Function1[/* value */ js.Any, /* is WeakMap */scala.Boolean]
-  type LodashIsWeakSet = js.Function1[/* value */ js.Any, /* is WeakSet */scala.Boolean]
+  type LodashIsUndefined = js.Function1[/* value */ js.Any, /* is undefined */ scala.Boolean]
+  type LodashIsWeakMap = js.Function1[
+    /* value */ js.Any, 
+    /* is lodash.lodash.Global.WeakMap<object, any> */ scala.Boolean
+  ]
+  type LodashIsWeakSet = js.Function1[/* value */ js.Any, /* is lodash.lodash.Global.WeakSet<object> */ scala.Boolean]
   type LodashJoin1x1 = js.Function1[
     /* array */ js.UndefOr[lodashLib.lodashMod.underscoreNs.List[js.Any] | scala.Null], 
     java.lang.String
@@ -803,12 +786,10 @@ package object underscoreNs {
   ]
   type LodashKeyBy2x2[T] = js.Function1[
     /* iteratee */ lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       lodashLib.lodashMod.underscoreNs.PropertyName
     ], 
-    lodashLib.lodashMod.underscoreNs.Dictionary[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ]
   type LodashKeys = js.Function1[/* object */ js.Any, js.Array[java.lang.String]]
   type LodashKeysIn = js.Function1[/* object */ js.Any, js.Array[java.lang.String]]
@@ -842,7 +823,7 @@ package object underscoreNs {
   type LodashMap3x1[T, TResult] = js.Function1[/* collection */ js.UndefOr[T | scala.Null], js.Array[TResult]]
   type LodashMap3x2[T] = js.Function1[
     /* iteratee */ js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       js.Any
     ], 
     js.Array[js.Any]
@@ -851,9 +832,7 @@ package object underscoreNs {
     /* collection */ js.UndefOr[
       lodashLib.lodashMod.underscoreNs.List[T] | lodashLib.lodashMod.underscoreNs.Dictionary[T] | lodashLib.lodashMod.underscoreNs.NumericDictionary[T] | scala.Null
     ], 
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
   ]
   type LodashMap5x1 = js.Function1[
     /* collection */ js.UndefOr[
@@ -878,14 +857,12 @@ package object underscoreNs {
   type LodashMapKeys2x1 = js.Function1[
     /* object */ js.UndefOr[js.Object | scala.Null], 
     lodashLib.lodashMod.underscoreNs.Dictionary[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(object))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(object))),List())))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: object[keyof object] */ js.Any
     ]
   ]
   type LodashMapKeys2x2[T] = js.Function1[
     /* iteratee */ lodashLib.lodashMod.underscoreNs.ValueIteratee[java.lang.String], 
-    lodashLib.lodashMod.underscoreNs.Dictionary[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ]
   type LodashMapValues1x1[TResult] = js.Function1[
     /* obj */ js.UndefOr[java.lang.String | scala.Null], 
@@ -909,9 +886,7 @@ package object underscoreNs {
     /* obj */ js.UndefOr[
       lodashLib.lodashMod.underscoreNs.Dictionary[T] | lodashLib.lodashMod.underscoreNs.NumericDictionary[T] | scala.Null
     ], 
-    lodashLib.lodashMod.underscoreNs.Dictionary[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(TKey))) */js.Any
-    ]
+    lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any]
   ]
   type LodashMatchesProperty1x1 = js.Function1[/* srcValue */ js.Any, js.Function1[/* value */ js.Any, scala.Boolean]]
   type LodashMatchesProperty1x2 = js.Function1[
@@ -937,8 +912,8 @@ package object underscoreNs {
   ]
   type LodashMeanBy1x2[T] = js.Function1[/* iteratee */ lodashLib.lodashMod.underscoreNs.ValueIteratee[T], scala.Double]
   type LodashMemoize = js.Function1[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    (js.Function1[/* repeated */js.Any, _]) with lodashLib.lodashMod.underscoreNs.MemoizedFunction
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    (js.Function1[/* repeated */ js.Any, _]) with lodashLib.lodashMod.underscoreNs.MemoizedFunction
   ]
   type LodashMerge1x1[TObject] = js.Function1[/* source */ js.Any, TObject with js.Any]
   type LodashMerge1x2[TSource] = js.Function1[/* object */ js.Any, js.Any with TSource]
@@ -969,15 +944,15 @@ package object underscoreNs {
   type LodashMinBy1x2[T] = js.Function1[/* iteratee */ lodashLib.lodashMod.underscoreNs.ValueIteratee[T], js.UndefOr[T]]
   type LodashMultiply1x1 = js.Function1[/* multiplicand */ scala.Double, scala.Double]
   type LodashMultiply1x2 = js.Function1[/* multiplier */ scala.Double, scala.Double]
-  type LodashNoConflict = js.Function0[js.Object]
-  type LodashNoop = js.Function1[/* repeated */js.Any, scala.Unit]
+  type LodashNoConflict = js.Function0[lodashLib.lodashMod.underscoreNs.LoDashStatic]
+  type LodashNoop = js.Function1[/* repeated */ js.Any, scala.Unit]
   type LodashNow = js.Function0[scala.Double]
   type LodashNth1x1 = js.Function1[
     /* array */ js.UndefOr[lodashLib.lodashMod.underscoreNs.List[js.Any] | scala.Null], 
     js.UndefOr[js.Any]
   ]
   type LodashNth1x2[T] = js.Function1[/* n */ scala.Double, js.UndefOr[T]]
-  type LodashNthArg = js.Function1[/* n */ scala.Double, js.Function1[/* repeated */js.Any, js.Any]]
+  type LodashNthArg = js.Function1[/* n */ scala.Double, js.Function1[/* repeated */ js.Any, js.Any]]
   type LodashOmit1x2[T] = js.Function1[
     /* paths */ lodashLib.lodashMod.underscoreNs.Many[lodashLib.lodashMod.underscoreNs.PropertyName], 
     T
@@ -995,14 +970,12 @@ package object underscoreNs {
     lodashLib.lodashMod.underscoreNs.NumericDictionary[T]
   ]
   type LodashOmitBy3x2[T] = js.Function1[
-    /* predicate */ lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ], 
+    /* predicate */ lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any], 
     lodashLib.lodashMod.underscoreNs.PartialObject[T]
   ]
   type LodashOnce = js.Function1[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    js.Function1[/* repeated */js.Any, js.Any]
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    js.Function1[/* repeated */ js.Any, js.Any]
   ]
   type LodashOrderBy1x5[T] = js.Function1[
     /* orders */ lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lodashLib.lodashLibStrings.asc | lodashLib.lodashLibStrings.desc], 
@@ -1018,50 +991,42 @@ package object underscoreNs {
   ]
   type LodashOrderBy3x5[T] = js.Function1[
     /* orders */ lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lodashLib.lodashLibStrings.asc | lodashLib.lodashLibStrings.desc], 
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ]
   type LodashOrderBy3x6[T] = js.Function1[
     /* iteratees */ (lodashLib.lodashMod.underscoreNs.Many[
       js.Function1[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+        /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
         lodashLib.lodashMod.underscoreNs.NotVoid
       ]
     ]) | (lodashLib.lodashMod.underscoreNs.Many[
-      lodashLib.lodashMod.underscoreNs.ValueIteratee[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-      ]
+      lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
     ]), 
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ]
   type LodashOrderBy4x5[T] = js.Function1[
     /* orders */ lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lodashLib.lodashLibStrings.asc | lodashLib.lodashLibStrings.desc], 
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ]
   type LodashOver = js.Function1[
-    /* iteratees */ lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */js.Any, js.Any]], 
-    js.Function1[/* repeated */js.Any, js.Array[js.Any]]
+    /* iteratees */ lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ js.Any, js.Any]], 
+    js.Function1[/* repeated */ js.Any, js.Array[js.Any]]
   ]
   type LodashOverArgs1x1 = js.Function1[
-    /* transforms */ lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */js.Any, js.Any]], 
-    js.Function1[/* repeated */js.Any, js.Any]
+    /* transforms */ lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ js.Any, js.Any]], 
+    js.Function1[/* repeated */ js.Any, js.Any]
   ]
   type LodashOverArgs1x2 = js.Function1[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    js.Function1[/* repeated */js.Any, js.Any]
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    js.Function1[/* repeated */ js.Any, js.Any]
   ]
   type LodashOverEvery = js.Function1[
-    /* predicates */ lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */js.Any, scala.Boolean]], 
-    js.Function1[/* repeated */js.Any, scala.Boolean]
+    /* predicates */ lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ js.Any, scala.Boolean]], 
+    js.Function1[/* repeated */ js.Any, scala.Boolean]
   ]
   type LodashOverSome = js.Function1[
-    /* predicates */ lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */js.Any, scala.Boolean]], 
-    js.Function1[/* repeated */js.Any, scala.Boolean]
+    /* predicates */ lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ js.Any, scala.Boolean]], 
+    js.Function1[/* repeated */ js.Any, scala.Boolean]
   ]
   type LodashPad1x1 = js.Function1[/* string */ java.lang.String, java.lang.String]
   type LodashPad1x2 = js.Function1[/* length */ scala.Double, java.lang.String]
@@ -1113,10 +1078,10 @@ package object underscoreNs {
     /* func */ lodashLib.lodashMod.underscoreNs.Function4[T1, T2, T3, T4, js.Any], 
     lodashLib.lodashMod.underscoreNs.Function0[js.Any]
   ]
-  type LodashPartial27x1 = js.Function1[/* args */ js.Array[js.Any], js.Function1[/* repeated */js.Any, js.Any]]
+  type LodashPartial27x1 = js.Function1[/* args */ js.Array[js.Any], js.Function1[/* repeated */ js.Any, js.Any]]
   type LodashPartial27x2 = js.Function1[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    js.Function1[/* repeated */js.Any, js.Any]
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    js.Function1[/* repeated */ js.Any, js.Any]
   ]
   type LodashPartialRight10x2[T2, T3] = js.Function1[
     /* func */ lodashLib.lodashMod.underscoreNs.Function3[js.Any, T2, T3, js.Any], 
@@ -1191,10 +1156,10 @@ package object underscoreNs {
     /* func */ lodashLib.lodashMod.underscoreNs.Function4[T1, T2, T3, T4, js.Any], 
     lodashLib.lodashMod.underscoreNs.Function0[js.Any]
   ]
-  type LodashPartialRight27x1 = js.Function1[/* args */ js.Array[js.Any], js.Function1[/* repeated */js.Any, js.Any]]
+  type LodashPartialRight27x1 = js.Function1[/* args */ js.Array[js.Any], js.Function1[/* repeated */ js.Any, js.Any]]
   type LodashPartialRight27x2 = js.Function1[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    js.Function1[/* repeated */js.Any, js.Any]
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    js.Function1[/* repeated */ js.Any, js.Any]
   ]
   type LodashPartialRight2x2[T1] = js.Function1[
     /* func */ lodashLib.lodashMod.underscoreNs.Function2[T1, js.Any, js.Any], 
@@ -1237,26 +1202,20 @@ package object underscoreNs {
     js.Tuple2[js.Array[T], js.Array[T]]
   ]
   type LodashPartition2x2[T] = js.Function1[
-    /* callback */ lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ], 
+    /* callback */ lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any], 
     js.Tuple2[
-      js.Array[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-      ], 
-      js.Array[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-      ]
+      js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any], 
+      js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
     ]
   ]
   type LodashPath1x2[TObject] = js.Function1[
     /* path */ java.lang.String | js.Array[java.lang.String], 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
   ]
   type LodashPath2x2[TObject] = js.Function1[
     /* path */ java.lang.String | js.Array[java.lang.String], 
     js.UndefOr[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
     ]
   ]
   type LodashPath3x2[T] = js.Function1[/* path */ scala.Double, T]
@@ -1268,15 +1227,15 @@ package object underscoreNs {
   type LodashPath6x2 = js.Function1[/* path */ lodashLib.lodashMod.underscoreNs.PropertyPath, js.Any]
   type LodashPathOr1x3[TObject, TKey /* <: java.lang.String */, TDefault] = js.Function1[
     /* object */ js.UndefOr[TObject | scala.Null], 
-    (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault
+    (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault
   ]
   type LodashPathOr1x5[TObject, TDefault] = js.Function1[
     /* path */ java.lang.String | js.Array[java.lang.String], 
-    (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault
+    (/* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any) | TDefault
   ]
   type LodashPathOr1x6[TObject, TKey /* <: java.lang.String */] = js.Function1[
     /* defaultValue */ js.Any, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ]
   type LodashPathOr2x3[TDefault] = js.Function1[
     /* object */ js.UndefOr[lodashLib.lodashMod.underscoreNs.NumericDictionary[js.Any] | scala.Null], 
@@ -1304,19 +1263,17 @@ package object underscoreNs {
     lodashLib.lodashMod.underscoreNs.PartialDeep[T]
   ]
   type LodashPickBy5x2[T] = js.Function1[
-    /* predicate */ lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ], 
+    /* predicate */ lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any], 
     lodashLib.lodashMod.underscoreNs.PartialObject[T]
   ]
   type LodashProp1x2[TObject] = js.Function1[
     /* path */ java.lang.String | js.Array[java.lang.String], 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
   ]
   type LodashProp2x2[TObject] = js.Function1[
     /* path */ java.lang.String | js.Array[java.lang.String], 
     js.UndefOr[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
     ]
   ]
   type LodashProp3x2[T] = js.Function1[/* path */ scala.Double, T]
@@ -1328,15 +1285,15 @@ package object underscoreNs {
   type LodashProp6x2 = js.Function1[/* path */ lodashLib.lodashMod.underscoreNs.PropertyPath, js.Any]
   type LodashPropOr1x3[TObject, TKey /* <: java.lang.String */, TDefault] = js.Function1[
     /* object */ js.UndefOr[TObject | scala.Null], 
-    (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault
+    (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault
   ]
   type LodashPropOr1x5[TObject, TDefault] = js.Function1[
     /* path */ java.lang.String | js.Array[java.lang.String], 
-    (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault
+    (/* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any) | TDefault
   ]
   type LodashPropOr1x6[TObject, TKey /* <: java.lang.String */] = js.Function1[
     /* defaultValue */ js.Any, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ]
   type LodashPropOr2x3[TDefault] = js.Function1[
     /* object */ js.UndefOr[lodashLib.lodashMod.underscoreNs.NumericDictionary[js.Any] | scala.Null], 
@@ -1352,12 +1309,12 @@ package object underscoreNs {
   type LodashPropOr4x6 = js.Function1[/* defaultValue */ js.Any, js.Any]
   type LodashProperty1x2[TObject] = js.Function1[
     /* path */ java.lang.String | js.Array[java.lang.String], 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
   ]
   type LodashProperty2x2[TObject] = js.Function1[
     /* path */ java.lang.String | js.Array[java.lang.String], 
     js.UndefOr[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
     ]
   ]
   type LodashProperty3x2[T] = js.Function1[/* path */ scala.Double, T]
@@ -1369,12 +1326,12 @@ package object underscoreNs {
   type LodashProperty6x2 = js.Function1[/* path */ lodashLib.lodashMod.underscoreNs.PropertyPath, js.Any]
   type LodashPropertyOf1x2[TObject] = js.Function1[
     /* path */ java.lang.String | js.Array[java.lang.String], 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
   ]
   type LodashPropertyOf2x2[TObject] = js.Function1[
     /* path */ java.lang.String | js.Array[java.lang.String], 
     js.UndefOr[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
     ]
   ]
   type LodashPropertyOf3x2[T] = js.Function1[/* path */ scala.Double, T]
@@ -1456,12 +1413,12 @@ package object underscoreNs {
   type LodashRangeStepRight1x5 = js.Function1[/* end */ scala.Double, js.Array[scala.Double]]
   type LodashRangeStepRight1x6 = js.Function1[/* start */ scala.Double, js.Array[scala.Double]]
   type LodashRearg1x1 = js.Function1[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    js.Function1[/* repeated */js.Any, js.Any]
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    js.Function1[/* repeated */ js.Any, js.Any]
   ]
   type LodashRearg1x2 = js.Function1[
     /* indexes */ lodashLib.lodashMod.underscoreNs.Many[scala.Double], 
-    js.Function1[/* repeated */js.Any, js.Any]
+    js.Function1[/* repeated */ js.Any, js.Any]
   ]
   type LodashReduce1x3[T, TResult] = js.Function1[
     /* collection */ js.UndefOr[js.Array[T] | lodashLib.lodashMod.underscoreNs.List[T] | scala.Null], 
@@ -1481,7 +1438,7 @@ package object underscoreNs {
   type LodashReduce3x5[TResult] = js.Function1[/* accumulator */ TResult, TResult]
   type LodashReduce3x6[T, TResult] = js.Function1[
     /* callback */ lodashLib.lodashMod.underscoreNs.MemoIteratorCapped[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ], 
     TResult
@@ -1504,7 +1461,7 @@ package object underscoreNs {
   type LodashReduceRight3x5[TResult] = js.Function1[/* accumulator */ TResult, TResult]
   type LodashReduceRight3x6[T, TResult] = js.Function1[
     /* callback */ lodashLib.lodashMod.underscoreNs.MemoIteratorCappedRight[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ], 
     TResult
@@ -1527,12 +1484,10 @@ package object underscoreNs {
   ]
   type LodashReject3x2[T] = js.Function1[
     /* predicate */ lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ], 
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ]
   type LodashRemove1x1[T] = js.Function1[/* array */ lodashLib.lodashMod.underscoreNs.List[T], js.Array[T]]
   type LodashRemove1x2[T] = js.Function1[/* predicate */ lodashLib.lodashMod.underscoreNs.ValueIteratee[T], js.Array[T]]
@@ -1545,14 +1500,14 @@ package object underscoreNs {
   ]
   type LodashReplace1x6 = js.Function1[/* pattern */ stdLib.RegExp | java.lang.String, java.lang.String]
   type LodashRest = js.Function1[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    js.Function1[/* repeated */js.Any, js.Any]
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    js.Function1[/* repeated */ js.Any, js.Any]
   ]
   type LodashRestFrom1x1 = js.Function1[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    js.Function1[/* repeated */js.Any, js.Any]
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    js.Function1[/* repeated */ js.Any, js.Any]
   ]
-  type LodashRestFrom1x2 = js.Function1[/* start */ scala.Double, js.Function1[/* repeated */js.Any, js.Any]]
+  type LodashRestFrom1x2 = js.Function1[/* start */ scala.Double, js.Function1[/* repeated */ js.Any, js.Any]]
   type LodashResult1x1 = js.Function1[/* object */ js.Any, js.Any]
   type LodashResult1x2 = js.Function1[/* path */ lodashLib.lodashMod.underscoreNs.PropertyPath, js.Any]
   type LodashReverse = js.Function1[
@@ -1564,9 +1519,7 @@ package object underscoreNs {
   type LodashSampleSize1x2[T] = js.Function1[/* n */ scala.Double, js.Array[T]]
   type LodashSampleSize2x2[T] = js.Function1[
     /* n */ scala.Double, 
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ]
   type LodashSet1x5[T] = js.Function1[/* value */ js.Any, T]
   type LodashSet1x6[T] = js.Function1[/* path */ lodashLib.lodashMod.underscoreNs.PropertyPath, T]
@@ -1597,7 +1550,7 @@ package object underscoreNs {
   ]
   type LodashSome2x2[T] = js.Function1[
     /* predicate */ lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ], 
     scala.Boolean
@@ -1612,13 +1565,9 @@ package object underscoreNs {
   ]
   type LodashSortBy2x2[T] = js.Function1[
     /* iteratees */ lodashLib.lodashMod.underscoreNs.Many[
-      lodashLib.lodashMod.underscoreNs.ValueIteratee[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-      ]
+      lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
     ], 
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ]
   type LodashSortedIndex1x1[T] = js.Function1[
     /* array */ js.UndefOr[lodashLib.lodashMod.underscoreNs.List[T] | scala.Null], 
@@ -1664,14 +1613,14 @@ package object underscoreNs {
   type LodashSplit1x1 = js.Function1[/* string */ java.lang.String, js.Array[java.lang.String]]
   type LodashSplit1x2 = js.Function1[/* separator */ stdLib.RegExp | java.lang.String, js.Array[java.lang.String]]
   type LodashSpread = js.Function1[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    js.Function1[/* repeated */js.Any, js.Any]
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    js.Function1[/* repeated */ js.Any, js.Any]
   ]
   type LodashSpreadFrom1x1 = js.Function1[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    js.Function1[/* repeated */js.Any, js.Any]
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    js.Function1[/* repeated */ js.Any, js.Any]
   ]
-  type LodashSpreadFrom1x2[TResult] = js.Function1[/* start */ scala.Double, js.Function1[/* repeated */js.Any, TResult]]
+  type LodashSpreadFrom1x2[TResult] = js.Function1[/* start */ scala.Double, js.Function1[/* repeated */ js.Any, TResult]]
   type LodashStartCase = js.Function1[/* string */ java.lang.String, java.lang.String]
   type LodashStartsWith1x1 = js.Function1[/* string */ java.lang.String, scala.Boolean]
   type LodashStartsWith1x2 = js.Function1[/* target */ java.lang.String, scala.Boolean]
@@ -1722,8 +1671,8 @@ package object underscoreNs {
   type LodashTap1x2[T] = js.Function1[/* interceptor */ js.Function1[/* value */ T, scala.Unit], T]
   type LodashTemplate = js.Function1[/* string */ java.lang.String, lodashLib.lodashMod.underscoreNs.TemplateExecutor]
   type LodashThrottle1x1 = js.Function1[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    (js.Function1[/* repeated */js.Any, _]) with lodashLib.lodashMod.underscoreNs.Cancelable
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    (js.Function1[/* repeated */ js.Any, _]) with lodashLib.lodashMod.underscoreNs.Cancelable
   ]
   type LodashThrottle1x2[T] = js.Function1[/* wait */ scala.Double, T with lodashLib.lodashMod.underscoreNs.Cancelable]
   type LodashThru1x1[T, TResult] = js.Function1[/* value */ T, TResult]
@@ -1786,11 +1735,11 @@ package object underscoreNs {
   type LodashTruncate1x1 = js.Function1[/* string */ java.lang.String, java.lang.String]
   type LodashTruncate1x2 = js.Function1[/* options */ lodashLib.lodashMod.underscoreNs.TruncateOptions, java.lang.String]
   type LodashUnapply = js.Function1[
-    /* func */ js.Function1[/* repeated */js.Any, js.Any], 
-    js.Function1[/* repeated */js.Any, js.Any]
+    /* func */ js.Function1[/* repeated */ js.Any, js.Any], 
+    js.Function1[/* repeated */ js.Any, js.Any]
   ]
   type LodashUnary = js.Function1[
-    /* func */ js.Function2[/* arg1 */ js.Any, /* repeated */js.Any, js.Any], 
+    /* func */ js.Function2[/* arg1 */ js.Any, /* repeated */ js.Any, js.Any], 
     js.Function1[/* arg1 */ js.Any, js.Any]
   ]
   type LodashUnescape = js.Function1[/* string */ java.lang.String, java.lang.String]
@@ -1849,7 +1798,7 @@ package object underscoreNs {
     ], 
     js.Array[TResult]
   ]
-  type LodashUnzipWith1x2[T] = js.Function1[/* iteratee */ js.Function1[/* repeated */T, js.Any], js.Array[js.Any]]
+  type LodashUnzipWith1x2[T] = js.Function1[/* iteratee */ js.Function1[/* repeated */ T, js.Any], js.Array[js.Any]]
   type LodashUpdate1x3 = js.Function1[/* object */ js.Object, js.Any]
   type LodashUpdate1x5 = js.Function1[/* updater */ js.Function1[/* value */ js.Any, js.Any], js.Any]
   type LodashUpdate1x6 = js.Function1[/* path */ lodashLib.lodashMod.underscoreNs.PropertyPath, js.Any]
@@ -1865,8 +1814,8 @@ package object underscoreNs {
   ]
   type LodashWithout1x2[T] = js.Function1[/* values */ js.Array[T], js.Array[T]]
   type LodashWords = js.Function1[/* string */ java.lang.String, js.Array[java.lang.String]]
-  type LodashWrap1x1[T, TArgs, TResult] = js.Function1[/* value */ T, js.Function1[/* repeated */TArgs, TResult]]
-  type LodashWrap2x1[T, TResult] = js.Function1[/* value */ T, js.Function1[/* repeated */js.Any, TResult]]
+  type LodashWrap1x1[T, TArgs, TResult] = js.Function1[/* value */ T, js.Function1[/* repeated */ TArgs, TResult]]
+  type LodashWrap2x1[T, TResult] = js.Function1[/* value */ T, js.Function1[/* repeated */ js.Any, TResult]]
   type LodashXor1x1[T] = js.Function1[
     /* arrays */ js.UndefOr[lodashLib.lodashMod.underscoreNs.List[T] | scala.Null], 
     js.Array[T]

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait StageStatus extends js.Object
 
 /**
-     * Constant Enum: Status for {@link ProcessFlow.Stage.getStatus Stage.getStatus()}.
-     * @see {@link ProcessFlow.StageStatus}
-     */
+  * Constant Enum: Status for {@link ProcessFlow.Stage.getStatus Stage.getStatus()}.
+  * @see {@link ProcessFlow.StageStatus}
+  */
 @JSGlobal("XrmEnum.StageStatus")
 @js.native
 object StageStatus extends js.Object {

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @mixin
-         */
-
+  * @mixin
+  */
 trait IExtJSCore extends js.Object {
   def Ext(): js.Any
   def clickCQ(selector: java.lang.String, root: js.Any, callback: js.Function): js.Any

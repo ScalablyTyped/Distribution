@@ -9,17 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class ModifierValueHistory protected ()
   extends mendixmodelsdkLib.distSdkInternalVersionDashChecksMod.ModifierValueHistory {
-  /**
-       * defaultFallback indiciates whether the absence of a lifecycle yields true or false
-       */
   def this(lifecycle: js.UndefOr[scala.Nothing], defaultFallback: scala.Boolean) = this()
   /**
-       * defaultFallback indiciates whether the absence of a lifecycle yields true or false
-       */
+    * defaultFallback indiciates whether the absence of a lifecycle yields true or false
+    */
   def this(lifecycle: mendixmodelsdkLib.distSdkInternalVersionDashChecksMod.IModifierValueHistory, defaultFallback: scala.Boolean) = this()
-  /**
-       * defaultFallback indiciates whether the absence of a lifecycle yields true or false
-       */
   def this(lifecycle: scala.Null, defaultFallback: scala.Boolean) = this()
 }
 

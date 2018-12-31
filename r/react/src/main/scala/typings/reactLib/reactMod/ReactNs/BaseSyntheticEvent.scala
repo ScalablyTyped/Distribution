@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 // Event System
 // ----------------------------------------------------------------------
 // TODO: change any to unknown when moving to TS v3
-
 trait BaseSyntheticEvent[E, C, T] extends js.Object {
   var bubbles: scala.Boolean
   var cancelable: scala.Boolean

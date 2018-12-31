@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IUserOrUserGroupIDEx extends js.Object {
   val IndirectProperty: IIndirectPropertyID
   val UserOrGroupID: scala.Double

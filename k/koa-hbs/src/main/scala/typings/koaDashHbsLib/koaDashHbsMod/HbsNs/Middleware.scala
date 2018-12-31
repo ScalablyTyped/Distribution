@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Middleware extends js.Object {
   var blockHelperName: js.UndefOr[java.lang.String] = js.undefined
   var contentHelperName: js.UndefOr[java.lang.String] = js.undefined

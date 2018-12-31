@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeaderProps extends js.Object {
   var accessibilityLevel: js.UndefOr[
     gestaltLib.gestaltLibNumbers.`1` | gestaltLib.gestaltLibNumbers.`2` | gestaltLib.gestaltLibNumbers.`3` | gestaltLib.gestaltLibNumbers.`4` | gestaltLib.gestaltLibNumbers.`5` | gestaltLib.gestaltLibNumbers.`6`

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IndexDocumentParams[T] extends GenericParams {
   @JSName("body")
   var body_IndexDocumentParams: T

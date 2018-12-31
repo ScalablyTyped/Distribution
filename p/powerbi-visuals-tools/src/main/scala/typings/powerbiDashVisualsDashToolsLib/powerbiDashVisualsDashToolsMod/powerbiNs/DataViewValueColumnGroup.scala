@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataViewValueColumnGroup extends js.Object {
   var identity: js.UndefOr[DataViewScopeIdentity] = js.undefined
   var name: js.UndefOr[PrimitiveValue] = js.undefined

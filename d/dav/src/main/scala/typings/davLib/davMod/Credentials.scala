@@ -10,44 +10,44 @@ import scala.scalajs.js.annotation._
 class Credentials () extends js.Object {
   def this(options: CredentialsOptions) = this()
   /**
-       * oauth access token.
-       */
+    * oauth access token.
+    */
   var accessToken: java.lang.String = js.native
   /**
-       * oauth code.
-       */
+    * oauth code.
+    */
   var authorizationCode: java.lang.String = js.native
   /**
-       * oauth client id.
-       */
+    * oauth client id.
+    */
   var clientId: java.lang.String = js.native
   /**
-       * oauth client secret.
-       */
+    * oauth client secret.
+    */
   var clientSecret: java.lang.String = js.native
   /**
-       * unix time for access token expiration.
-       */
+    * unix time for access token expiration.
+    */
   var expiration: scala.Double = js.native
   /**
-       * plaintext password for calendar user.
-       */
+    * plaintext password for calendar user.
+    */
   var password: java.lang.String = js.native
   /**
-       * oauth redirect url.
-       */
+    * oauth redirect url.
+    */
   var redirectUrl: java.lang.String = js.native
   /**
-       * oauth refresh token.
-       */
+    * oauth refresh token.
+    */
   var refreshToken: java.lang.String = js.native
   /**
-       * oauth token url.
-       */
+    * oauth token url.
+    */
   var tokenUrl: java.lang.String = js.native
   /**
-       * username (perhaps email) for calendar user.
-       */
+    * username (perhaps email) for calendar user.
+    */
   var username: java.lang.String = js.native
 }
 

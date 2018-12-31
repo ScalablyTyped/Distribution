@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InitOptions extends js.Object {
   /** Called after drawing the empty calendar, and before filling it with data. */
   var afterLoad: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -56,7 +55,6 @@ trait InitOptions extends js.Object {
   			 * Data used to fill the calendar. Default: ""
   			 * String is interpreted as a URL to an API, which should be returning the data used to fill the calendar.
   			 */
-  
   var data: js.UndefOr[java.lang.String | js.Object] = js.undefined
   /**
   			 * Engine used to parse the data. Default: json

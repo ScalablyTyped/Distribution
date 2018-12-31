@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Tap extends js.Object {
   var context: scala.Boolean
   var fn: js.Function

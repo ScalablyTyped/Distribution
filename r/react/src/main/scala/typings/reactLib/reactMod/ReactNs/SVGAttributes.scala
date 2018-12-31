@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation._
 //   - "number | string"
 //   - "string"
 //   - union of string literals
-
 trait SVGAttributes[T] extends DOMAttributes[T] {
   // SVG Specific attributes
   var accentHeight: js.UndefOr[scala.Double | java.lang.String] = js.undefined

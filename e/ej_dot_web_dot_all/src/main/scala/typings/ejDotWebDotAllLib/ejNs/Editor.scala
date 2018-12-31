@@ -16,16 +16,16 @@ class Editor protected () extends Widget {
   @JSName("model")
   var model_Editor: ejDotWebDotAllLib.ejNs.EditorNs.Model = js.native
   /** To disable the corresponding Editors
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def disable(): scala.Unit = js.native
   /** To enable the corresponding Editors
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def enable(): scala.Unit = js.native
   /** To get value from corresponding Editors
-           * @returns {number}
-           */
+    * @returns {number}
+    */
   def getValue(): scala.Double = js.native
 }
 

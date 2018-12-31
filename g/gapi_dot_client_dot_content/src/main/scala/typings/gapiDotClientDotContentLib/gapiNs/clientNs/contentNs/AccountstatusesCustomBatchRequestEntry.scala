@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountstatusesCustomBatchRequestEntry extends js.Object {
   /** The ID of the (sub-)account whose status to get. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined

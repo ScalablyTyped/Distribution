@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDropdownMenuOptions extends js.Object {
   var alignment: js.UndefOr[java.lang.String] = js.undefined
   var autoclose: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridCellProps extends js.Object {
   var columnIndex: scala.Double
   var isScrolling: scala.Boolean

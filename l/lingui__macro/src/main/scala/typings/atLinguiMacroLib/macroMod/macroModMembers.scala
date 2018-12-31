@@ -26,7 +26,7 @@ object macroModMembers extends js.Object {
   def select(id: java.lang.String, config: atLinguiMacroLib.selectMod.SelectProps): java.lang.String = js.native
   def selectOrdinal(config: atLinguiMacroLib.selectMod.PluralProps): java.lang.String = js.native
   def selectOrdinal(id: java.lang.String, config: atLinguiMacroLib.selectMod.PluralProps): java.lang.String = js.native
-  def t(id: java.lang.String): js.Function2[/* strings */ stdLib.TemplateStringsArray, /* repeated */js.Any, java.lang.String] = js.native
+  def t(id: java.lang.String): js.Function2[/* strings */ stdLib.TemplateStringsArray, /* repeated */ js.Any, java.lang.String] = js.native
   def t(strings: stdLib.TemplateStringsArray, values: js.Any*): java.lang.String = js.native
 }
 

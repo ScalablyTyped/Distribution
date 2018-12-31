@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDateLocaleProvider extends js.Object {
   var dates: js.Array[java.lang.String]
   var days: js.Array[java.lang.String]

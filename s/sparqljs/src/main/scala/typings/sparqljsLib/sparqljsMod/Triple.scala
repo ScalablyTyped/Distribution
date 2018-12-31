@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Triple extends js.Object {
   var `object`: Term
   var predicate: PropertyPath | Term

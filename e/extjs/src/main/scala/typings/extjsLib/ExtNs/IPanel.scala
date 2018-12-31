@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPanel
   extends extjsLib.ExtNs.panelNs.IAbstractPanel {
   /** [Method] Add tools to this panel

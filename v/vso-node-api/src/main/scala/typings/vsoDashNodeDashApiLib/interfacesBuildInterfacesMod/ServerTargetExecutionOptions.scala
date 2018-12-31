@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerTargetExecutionOptions extends js.Object {
   /**
-       * The type.
-       */
+    * The type.
+    */
   var `type`: scala.Double
 }
 

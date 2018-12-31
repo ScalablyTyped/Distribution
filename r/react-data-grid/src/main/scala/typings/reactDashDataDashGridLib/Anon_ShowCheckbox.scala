@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShowCheckbox[T] extends js.Object {
   var enableShiftSelect: js.UndefOr[scala.Boolean] = js.undefined
   var onRowsDeselected: js.UndefOr[

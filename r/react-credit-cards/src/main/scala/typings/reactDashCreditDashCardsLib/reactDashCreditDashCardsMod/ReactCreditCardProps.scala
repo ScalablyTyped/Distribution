@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactCreditCardProps extends js.Object {
   var acceptedCards: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var callback: js.UndefOr[

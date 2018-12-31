@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageProps extends BoxProps {
   var alt: js.UndefOr[java.lang.String] = js.undefined
   var borderRadius: js.UndefOr[scala.Double | java.lang.String] = js.undefined

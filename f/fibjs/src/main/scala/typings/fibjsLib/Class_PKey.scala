@@ -10,9 +10,14 @@ import scala.scalajs.js.annotation._
 	* @brief 不对称加密算法对象
 	* @detail PKey 对象属于 crypto 模块，创建：,```JavaScript,var k = new crypto.PKey();,```
 	*/
-
 @JSGlobal("Class_PKey")
 @js.native
+/**
+	 * 
+	 * @brief PKey 构造函数
+	 * 
+	 * 
+	 */
 class Class_PKey () extends Class__object {
   /**
   	 * 
@@ -85,25 +90,7 @@ class Class_PKey () extends Class__object {
   	 * 
   	 */
   def this(pemKey: java.lang.String) = this()
-  /**
-  	 * 
-  	 * @brief 通过 DER 格式的密钥构造 PKey
-  	 * @param DerKey DER 格式的密钥
-  	 * @param password 解密密码
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def this(DerKey: Class_Buffer, password: java.lang.String) = this()
-  /**
-  	 * 
-  	 * @brief 通过 PEM 格式的密钥构造 PKey
-  	 * @param pemKey PEM 格式的密钥
-  	 * @param password 解密密码
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def this(pemKey: java.lang.String, password: java.lang.String) = this()
   /**
   	 * class prop 
@@ -193,14 +180,6 @@ class Class_PKey () extends Class__object {
   	 * @async
   	 */
   def genEcKey(): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 生成一个 EC 私钥
-  	 * @param curve 指定预置椭圆曲线，可选值为："secp521r1", "brainpoolP512r1", "secp384r1", "brainpoolP384r1", "secp256r1", "secp256k1", "brainpoolP256r1", "secp224r1", "secp224k1", "secp192r1", "secp192k1"
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def genEcKey(curve: java.lang.String): scala.Unit = js.native
   /**
   	 * 
@@ -221,15 +200,6 @@ class Class_PKey () extends Class__object {
   	 * 
   	 */
   def importFile(filename: java.lang.String): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 加载一个 PEM/DER 格式的密钥文件
-  	 * @param filename 密钥文件名
-  	 * @param password 解密密码
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def importFile(filename: java.lang.String, password: java.lang.String): scala.Unit = js.native
   /**
   	 * 
@@ -241,15 +211,6 @@ class Class_PKey () extends Class__object {
   	 * 
   	 */
   def importKey(DerKey: Class_Buffer): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 加载一个 DER 格式的密钥
-  	 * @param DerKey DER 格式的密钥
-  	 * @param password 解密密码
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def importKey(DerKey: Class_Buffer, password: java.lang.String): scala.Unit = js.native
   /**
   	 * 
@@ -312,15 +273,6 @@ class Class_PKey () extends Class__object {
   	 * 
   	 */
   def importKey(pemKey: java.lang.String): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 加载一个 PEM 格式的密钥
-  	 * @param pemKey PEM 格式的密钥
-  	 * @param password 解密密码
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def importKey(pemKey: java.lang.String, password: java.lang.String): scala.Unit = js.native
   /**
   	 * 
@@ -342,16 +294,6 @@ class Class_PKey () extends Class__object {
   	 * @async
   	 */
   def sign(data: Class_Buffer): Class_Buffer = js.native
-  /**
-  	 * 
-  	 * @brief 使用当前算法密码私钥签名数据
-  	 * @param data 指定要签名的数据
-  	 * @param alg 指定要签名的算法, 默认0. 支持算法: 0=NONE,1=MD2,2=MD4,3=MD5,4=SHA1,5=SHA224,6=SHA256,7=SHA384,8=SHA512,9=RIPEMD160
-  	 * @return 返回签名后的数据
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def sign(data: Class_Buffer, alg: scala.Double): Class_Buffer = js.native
   /**
   	 * 
@@ -365,17 +307,6 @@ class Class_PKey () extends Class__object {
   	 * @async
   	 */
   def verify(data: Class_Buffer, sign: Class_Buffer): scala.Boolean = js.native
-  /**
-  	 * 
-  	 * @brief 使用当前算法密码公钥验证数据
-  	 * @param data 指定要验证的数据
-  	 * @param sign 指定要验证的签名
-  	 * @param alg 指定要签名的算法, 默认0. 支持算法: 0=NONE,1=MD2,2=MD4,3=MD5,4=SHA1,5=SHA224,6=SHA256,7=SHA384,8=SHA512,9=RIPEMD160
-  	 * @return 返回验证后的结果
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def verify(data: Class_Buffer, sign: Class_Buffer, alg: scala.Double): scala.Boolean = js.native
 }
 

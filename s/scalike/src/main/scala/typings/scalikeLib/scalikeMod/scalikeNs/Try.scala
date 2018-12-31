@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Try[A] extends js.Object {
   var isFailure: scala.Boolean
   var isSuccess: scala.Boolean

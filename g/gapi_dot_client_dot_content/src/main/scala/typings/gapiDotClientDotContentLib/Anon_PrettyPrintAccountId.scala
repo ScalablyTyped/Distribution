@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PrettyPrintAccountId extends js.Object {
   /** The ID of the account whose website is claimed. */
   var accountId: java.lang.String
@@ -20,16 +19,16 @@ trait Anon_PrettyPrintAccountId extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Only available to selected merchants. When set to True, this flag removes any existing claim on the requested website by another account and replaces
-                   * it with a claim from this account.
-                   */
+    * Only available to selected merchants. When set to True, this flag removes any existing claim on the requested website by another account and replaces
+    * it with a claim from this account.
+    */
   var overwrite: js.UndefOr[scala.Boolean] = js.undefined
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[java.lang.String] = js.undefined

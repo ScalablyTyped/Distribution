@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "MethodOptions")
 @js.native
 object MethodOptionsNs extends js.Object {
-  
   trait AsObject extends js.Object {
     var deprecated: js.UndefOr[scala.Boolean] = js.undefined
     var idempotencyLevel: js.UndefOr[IdempotencyLevel] = js.undefined

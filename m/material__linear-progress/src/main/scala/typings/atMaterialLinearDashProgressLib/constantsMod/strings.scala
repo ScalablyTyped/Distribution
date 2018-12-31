@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait strings
   extends atMaterialBaseLib.foundationMod.MDCStrings {
   var BUFFER_SELECTOR: atMaterialLinearDashProgressLib.atMaterialLinearDashProgressLibStrings.`DOTmdc-linear-progress__buffer`

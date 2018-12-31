@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapEvents extends js.Object {
   var onautopanstart: js.UndefOr[js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit]] = js.undefined
   var onbaselayerchange: js.UndefOr[js.Function1[/* event */ leafletLib.leafletMod.LayersControlEvent, scala.Unit]] = js.undefined

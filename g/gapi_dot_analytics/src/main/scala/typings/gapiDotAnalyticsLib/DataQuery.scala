@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataQuery extends js.Object {
   var `30daysAgo`: js.UndefOr[java.lang.String] = js.undefined
   var dimensions: js.UndefOr[java.lang.String] = js.undefined

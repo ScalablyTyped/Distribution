@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatabasesListResponse extends js.Object {
   /** List of database resources in the instance. */
   var items: js.UndefOr[js.Array[Database]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SwipeOptions extends js.Object {
   var auto: js.UndefOr[scala.Double] = js.undefined
   var callback: js.UndefOr[

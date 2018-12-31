@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResultObject
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var bounds: js.UndefOr[leafletLib.leafletMod.LatLngBoundsExpression] = js.undefined

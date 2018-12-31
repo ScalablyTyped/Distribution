@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DevtoolModuleFilenameTemplateInfo extends js.Object {
   var absoluteResourcePath: java.lang.String
   var allLoaders: js.Array[_]

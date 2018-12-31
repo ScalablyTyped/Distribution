@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NetworkN extends js.Object {
   var input: js.UndefOr[nodeLib.Buffer] = js.undefined
   var m: js.UndefOr[scala.Double] = js.undefined

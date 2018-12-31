@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Accesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -27,10 +26,10 @@ trait Anon_Accesstoken extends js.Object {
   /** Requested page size. Defaults to 5000. */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * A token identifying a page of results to return. This should be a
-                   * `next_page_token` value returned from a previous `ListServices`
-                   * call. If unspecified, the first page of results is returned.
-                   */
+    * A token identifying a page of results to return. This should be a
+    * `next_page_token` value returned from a previous `ListServices`
+    * call. If unspecified, the first page of results is returned.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

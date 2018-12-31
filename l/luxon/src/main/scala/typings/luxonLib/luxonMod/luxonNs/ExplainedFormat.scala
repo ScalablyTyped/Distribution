@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExplainedFormat extends js.Object {
   var input: java.lang.String
   var invalidReason: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Queryable[T] extends js.Object {
   def delete(): ModifyingQuery
   def select[U](nodes: js.Any*): Query[U]

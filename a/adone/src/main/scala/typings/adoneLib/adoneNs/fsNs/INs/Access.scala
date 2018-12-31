@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Access extends js.Object {
   var execute: scala.Boolean
   var read: scala.Boolean

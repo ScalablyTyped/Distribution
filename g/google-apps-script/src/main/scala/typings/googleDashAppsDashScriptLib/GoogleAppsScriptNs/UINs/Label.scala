@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Label extends js.Object {
   def addClickHandler(handler: Handler): Label
   def addMouseDownHandler(handler: Handler): Label

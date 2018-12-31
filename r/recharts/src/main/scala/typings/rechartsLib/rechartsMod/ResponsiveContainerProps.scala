@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResponsiveContainerProps extends js.Object {
   var aspect: js.UndefOr[scala.Double] = js.undefined
   var children: reactLib.reactMod.ReactNs.ReactNode

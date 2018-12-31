@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait File extends js.Object {
   /** The date range for which the file has report data. The date range will always be the absolute date range for which the report is run. */
   var dateRange: js.UndefOr[DateRange] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_KeepTargetDeleteSource extends js.Object {
   var keepSourceDeleteTarget: scala.Double
   var keepSourceRenameTarget: scala.Double

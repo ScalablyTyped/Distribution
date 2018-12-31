@@ -13,8 +13,8 @@ package object select2Mod {
   type JQueryEventHandlerBase[TContext, T] = js.ThisFunction2[
     /* this */ TContext, 
     /* t */ T, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     scala.Unit | select2Lib.select2LibNumbers.`false`
   ]
-  type Sub[O /* <: java.lang.String */, D /* <: java.lang.String */] = js.Any
+  type Sub[O /* <: java.lang.String */, D /* <: java.lang.String */] = /* import warning: ImportType.apply Failed type conversion: {typemapped}[O] */ js.Any
 }

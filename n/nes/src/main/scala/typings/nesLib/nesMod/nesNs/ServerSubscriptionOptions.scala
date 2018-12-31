@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerSubscriptionOptions extends js.Object {
   var auth: js.UndefOr[scala.Boolean | ServerSubscriptionOptionsAuthOptions] = js.undefined
   var filter: js.UndefOr[

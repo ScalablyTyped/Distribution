@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Menu //////////////////////////////////////////////////
-
 trait MenuOptions extends MenuEvents {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var icons: js.UndefOr[js.Any] = js.undefined

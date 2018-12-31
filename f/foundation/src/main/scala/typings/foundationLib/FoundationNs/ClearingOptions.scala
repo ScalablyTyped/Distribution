@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://foundation.zurb.com/docs/components/clearing.html#optional-javascript-configuration
-
 trait ClearingOptions extends js.Object {
   var close_selectors: js.UndefOr[java.lang.String] = js.undefined
   var init: js.UndefOr[scala.Boolean] = js.undefined

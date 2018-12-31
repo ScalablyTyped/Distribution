@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RowsMethods extends js.Object {
   /**
-         * Deselect a row
-         */
+    * Deselect a row
+    */
   def deselect(): Api
   /**
-         * Select multiple rows
-         */
+    * Select multiple rows
+    */
   def select(): Api
 }
 

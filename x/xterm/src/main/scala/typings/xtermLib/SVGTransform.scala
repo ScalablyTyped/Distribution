@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGTransform extends js.Object {
   val SVG_TRANSFORM_MATRIX: scala.Double
   val SVG_TRANSFORM_ROTATE: scala.Double

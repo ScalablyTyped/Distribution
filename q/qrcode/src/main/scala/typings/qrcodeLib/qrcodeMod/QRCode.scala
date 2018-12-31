@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QRCode extends js.Object {
   /**
-       * Error Correction Level
-       */
+    * Error Correction Level
+    */
   var errorCorrectionLevel: scala.Double
   /**
-       * Calculated Mask pattern
-       */
+    * Calculated Mask pattern
+    */
   var maskPattern: js.Any
   /**
-       * Bitmatrix class with modules data
-       */
+    * Bitmatrix class with modules data
+    */
   var modules: js.Any
   /**
-       * Generated segments
-       */
+    * Generated segments
+    */
   var segments: js.Array[QRCodeSegment]
   /**
-       * Calculated QR Code version
-       */
+    * Calculated QR Code version
+    */
   var version: scala.Double
 }
 

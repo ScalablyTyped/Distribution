@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 class namespaced protected () extends BunyanFormatWritable {
   /** Creates a writable stream that formats bunyan records written to it. */
   def this(options: bunyanDashFormatLib.bunyanDashFormatMod.BunyanFormatWritableNs.Options) = this()
-  /** Creates a writable stream that formats bunyan records written to it. */
   def this(options: bunyanDashFormatLib.bunyanDashFormatMod.BunyanFormatWritableNs.Options, output: nodeLib.streamMod.Writable) = this()
 }
 

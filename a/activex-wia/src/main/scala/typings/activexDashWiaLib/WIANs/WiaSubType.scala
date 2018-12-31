@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait WiaSubType extends js.Object
 
 /**
-     * The WiaSubType enumeration specifies more detail about the property value. Use the SubType property on the Property object to obtain these values for
-     * the property.
-     */
+  * The WiaSubType enumeration specifies more detail about the property value. Use the SubType property on the Property object to obtain these values for
+  * the property.
+  */
 @JSGlobal("WIA.WiaSubType")
 @js.native
 object WiaSubType extends js.Object {

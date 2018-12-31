@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHashTable[T] extends js.Object {
   def add(key: java.lang.String, data: T): scala.Boolean
   def addOrUpdate(key: java.lang.String, data: T): scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FindRequest[Content /* <: js.Object */] extends js.Object {
   /** Defines a list of fields that you want to receive. If omitted, you get the full documents. */
   var fields: js.UndefOr[js.Array[java.lang.String]] = js.undefined

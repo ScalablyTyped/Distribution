@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DialogOptions extends js.Object {
   var closeBtn: js.UndefOr[java.lang.String] = js.undefined
   var closeBtnText: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionOptions extends js.Object {
   var authMechanism: js.UndefOr[java.lang.String] = js.undefined
   var clientProperties: js.UndefOr[amqpLib.Anon_Capabilities] = js.undefined

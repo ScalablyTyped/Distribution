@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class IOControlCode protected () extends js.Object {
   /**
-                   * The control code.
-                   * @param deviceType The device type.
-                   * @param function The device function.
-                   * @param accessMode The access mode.
-                   * @param bufferingMethod The buffering method.
-                   */
+    * The control code.
+    * @param deviceType The device type.
+    * @param function The device function.
+    * @param accessMode The access mode.
+    * @param bufferingMethod The buffering method.
+    */
   def this(deviceType: scala.Double, func: scala.Double, accessMode: IOControlAccessMode, bufferingMethod: IOControlBufferingMethod) = this()
   /** The access mode. */
   var accessMode: IOControlAccessMode = js.native

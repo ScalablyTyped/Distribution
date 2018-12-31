@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Context object passed to events and hook functions. */
-
 trait EventData extends js.Object {
   /** The node that this call applies to (`null` for tree events) */
   var node: FancytreeNode
@@ -18,7 +17,7 @@ trait EventData extends js.Object {
   /** (only for postProcess event) Original ajax response */
   var response: js.Any
   /** (output parameter) Event handlers can return values back to the
-            * caller. Used by `lazyLoad`, `postProcess`, ... */
+    * caller. Used by `lazyLoad`, `postProcess`, ... */
   var result: js.Any
   /** (only for click and dblclick events) 'title' | 'prefix' | 'expander' | 'checkbox' | 'icon' */
   var targetType: java.lang.String

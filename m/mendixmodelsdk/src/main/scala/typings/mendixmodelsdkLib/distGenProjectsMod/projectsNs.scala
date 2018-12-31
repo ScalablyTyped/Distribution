@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("mendixmodelsdk/dist/gen/projects", "projects")
 @js.native
 object projectsNs extends js.Object {
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IDocument because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IDocument because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   abstract class Document protected () extends ModuleDocument {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: IFolderBase) = this()
@@ -19,16 +19,16 @@ object projectsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://world.mendix.com/display/howto50/Add+documents+to+a+module relevant section in reference guide}
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolder because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded, documents, folders))*/
+    * See: {@link https://world.mendix.com/display/howto50/Add+documents+to+a+module relevant section in reference guide}
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolder because Would inherit conflicting mutable fields List(documents, folders, id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class Folder protected () extends FolderBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: IFolderBase) = this()
     var name: java.lang.String = js.native
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   abstract class FolderBase protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.StructuralUnit {
@@ -50,13 +50,11 @@ object projectsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://world.mendix.com/display/howto50/Add+documents+to+a+module relevant section in reference guide}
-       */
-  
+    * See: {@link https://world.mendix.com/display/howto50/Add+documents+to+a+module relevant section in reference guide}
+    */
   trait IFolder extends IFolderBase {
     var name: java.lang.String
   }
-  
   
   trait IFolderBase
     extends mendixmodelsdkLib.distSdkInternalUnitsMod.IAbstractUnit {
@@ -69,35 +67,34 @@ object projectsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/modules relevant section in reference guide}
-       */
-  
+    * See: {@link https://docs.mendix.com/refguide7/modules relevant section in reference guide}
+    */
   trait IModule extends IFolderBase {
     var appStoreGuid: java.lang.String
     var appStoreVersion: java.lang.String
     var appStoreVersionGuid: java.lang.String
     /**
-             * This property is required and cannot be set to null.
-             */
+      * This property is required and cannot be set to null.
+      */
     var domainModel: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IDomainModel
     var fromAppStore: scala.Boolean
     /**
-             * This property is required and cannot be set to null.
-             */
+      * This property is required and cannot be set to null.
+      */
     var moduleSecurity: mendixmodelsdkLib.distGenSecurityMod.securityNs.IModuleSecurity
     var name: java.lang.String
     /**
-             * The index of where this Module appears in the project.
-             * This property is <em>required</em>, and of type double.
-             * Also, its value needs to be unique among its siblings (meaning, in code: <tt>containerAsProject.modules</tt>) in the project.
-             * In other words: <tt>containerAsProject.modules.map(m => m.sortedIndex)</tt> (TS syntax) needs to be a list with unique values.
-             */
+      * The index of where this Module appears in the project.
+      * This property is <em>required</em>, and of type double.
+      * Also, its value needs to be unique among its siblings (meaning, in code: <tt>containerAsProject.modules</tt>) in the project.
+      * In other words: <tt>containerAsProject.modules.map(m => m.sortedIndex)</tt> (TS syntax) needs to be a list with unique values.
+      */
     var sortIndex: scala.Double
   }
   
   /**
-       * Interfaces and instance classes for types from the Mendix sub meta model `Projects`.
-       */
+    * Interfaces and instance classes for types from the Mendix sub meta model `Projects`.
+    */
   @js.native
   trait IModuleDocument
     extends mendixmodelsdkLib.distSdkInternalUnitsMod.IModelUnit {
@@ -113,9 +110,8 @@ object projectsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
-       */
-  
+    * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
+    */
   trait IProject
     extends mendixmodelsdkLib.distSdkInternalUnitsMod.IAbstractUnit {
     var isSystemProject: scala.Boolean
@@ -123,8 +119,8 @@ object projectsNs extends js.Object {
     val model_IProject: mendixmodelsdkLib.distGenBaseDashModelMod.IModel
     var modules: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[IModule]
     /**
-             * This property is required and cannot be set to null.
-             */
+      * This property is required and cannot be set to null.
+      */
     var projectConversion: IProjectConversion
     var projectDocuments: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[IProjectDocument]
   }
@@ -143,8 +139,8 @@ object projectsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
+    */
   @js.native
   trait IProjectDocument
     extends mendixmodelsdkLib.distSdkInternalUnitsMod.IModelUnit {
@@ -159,9 +155,9 @@ object projectsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/modules relevant section in reference guide}
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IModule because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded, documents, folders))*/
+    * See: {@link https://docs.mendix.com/refguide7/modules relevant section in reference guide}
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IModule because Would inherit conflicting mutable fields List(documents, folders, id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class Module protected () extends FolderBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: IProject) = this()
@@ -173,15 +169,15 @@ object projectsNs extends js.Object {
     var moduleSecurity: mendixmodelsdkLib.distGenSecurityMod.securityNs.IModuleSecurity = js.native
     var name: java.lang.String = js.native
     /**
-             * The index of where this Module appears in the project.
-             * This property is <em>required</em>, and of type double.
-             * Also, its value needs to be unique among its siblings (meaning, in code: <tt>containerAsProject.modules</tt>) in the project.
-             * In other words: <tt>containerAsProject.modules.map(m => m.sortedIndex)</tt> (TS syntax) needs to be a list with unique values.
-             */
+      * The index of where this Module appears in the project.
+      * This property is <em>required</em>, and of type double.
+      * Also, its value needs to be unique among its siblings (meaning, in code: <tt>containerAsProject.modules</tt>) in the project.
+      * In other words: <tt>containerAsProject.modules.map(m => m.sortedIndex)</tt> (TS syntax) needs to be a list with unique values.
+      */
     var sortIndex: scala.Double = js.native
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IModuleDocument because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IModuleDocument because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   abstract class ModuleDocument protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.ModelUnit {
@@ -204,9 +200,9 @@ object projectsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class Project protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.StructuralUnit {
@@ -219,7 +215,7 @@ object projectsNs extends js.Object {
     val projectDocuments: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[IProjectDocument] = js.native
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProjectConversion because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProjectConversion because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class ProjectConversion protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.ModelUnit {
@@ -231,9 +227,9 @@ object projectsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProjectDocument because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProjectDocument because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   abstract class ProjectDocument protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.ModelUnit {
@@ -250,16 +246,16 @@ object projectsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://world.mendix.com/display/howto50/Add+documents+to+a+module relevant section in reference guide}
-       */
+    * See: {@link https://world.mendix.com/display/howto50/Add+documents+to+a+module relevant section in reference guide}
+    */
   @js.native
   object Folder extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenProjectsMod.StructureVersionInfo = js.native
     /**
-             * Creates a new Folder unit in the SDK and on the server.
-             * Expects one argument, the IFolderBase in which this unit is contained.
-             */
+      * Creates a new Folder unit in the SDK and on the server.
+      * Expects one argument, the IFolderBase in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenProjectsMod.projectsNs.Folder = js.native
   }
   
@@ -270,16 +266,16 @@ object projectsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/modules relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/modules relevant section in reference guide}
+    */
   @js.native
   object Module extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenProjectsMod.StructureVersionInfo = js.native
     /**
-             * Creates a new Module unit in the SDK and on the server.
-             * Expects one argument, the IProject in which this unit is contained.
-             */
+      * Creates a new Module unit in the SDK and on the server.
+      * Expects one argument, the IProject in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject): mendixmodelsdkLib.distGenProjectsMod.projectsNs.Module = js.native
   }
   
@@ -294,22 +290,22 @@ object projectsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenProjectsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new OneTimeConversionMarker instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new OneTimeConversionMarker instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenProjectsMod.projectsNs.OneTimeConversionMarker = js.native
     /**
-             * Creates and returns a new OneTimeConversionMarker instance in the SDK and on the server.
-             * The new OneTimeConversionMarker will be automatically stored in the 'markers' property
-             * of the parent ProjectConversion element passed as argument.
-             */
+      * Creates and returns a new OneTimeConversionMarker instance in the SDK and on the server.
+      * The new OneTimeConversionMarker will be automatically stored in the 'markers' property
+      * of the parent ProjectConversion element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.ProjectConversion): mendixmodelsdkLib.distGenProjectsMod.projectsNs.OneTimeConversionMarker = js.native
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
+    */
   @js.native
   object Project extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -321,15 +317,15 @@ object projectsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenProjectsMod.StructureVersionInfo = js.native
     /**
-             * Creates a new ProjectConversion unit in the SDK and on the server.
-             * Expects one argument, the IProject in which this unit is contained.
-             */
+      * Creates a new ProjectConversion unit in the SDK and on the server.
+      * Expects one argument, the IProject in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject): mendixmodelsdkLib.distGenProjectsMod.projectsNs.ProjectConversion = js.native
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
+    */
   @js.native
   object ProjectDocument extends js.Object {
     var structureTypeName: java.lang.String = js.native

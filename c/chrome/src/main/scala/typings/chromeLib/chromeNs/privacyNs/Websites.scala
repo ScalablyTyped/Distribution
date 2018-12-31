@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Websites extends js.Object {
   var hyperlinkAuditingEnabled: chromeLib.chromeNs.typesNs.ChromeSetting
   /** @since Chrome 21. */

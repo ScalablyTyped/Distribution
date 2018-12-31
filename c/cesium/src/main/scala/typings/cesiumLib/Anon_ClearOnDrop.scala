@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ClearOnDrop extends js.Object {
   var clampToGround: js.UndefOr[scala.Boolean] = js.undefined
   var clearOnDrop: js.UndefOr[scala.Boolean] = js.undefined

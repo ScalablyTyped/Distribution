@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PowerManagementEvent extends js.Object {
   /** For BATTERY_LEVEL_COLLECTED events, the battery level as a percentage. */
   var batteryLevel: js.UndefOr[scala.Double] = js.undefined

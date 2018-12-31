@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://docs.couchdb.org/en/latest/api/database/common.html#get--db
-
 trait DatabaseGetResponse extends js.Object {
   // Set to true if the database compaction routine is operating on this database.
   var compact_running: scala.Boolean

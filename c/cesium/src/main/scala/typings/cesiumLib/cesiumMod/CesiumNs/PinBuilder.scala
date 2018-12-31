@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PinBuilder extends js.Object {
   def fromColor(color: Color, size: scala.Double): stdLib.HTMLCanvasElement
   def fromMakiIconId(id: java.lang.String, color: Color, size: scala.Double): stdLib.HTMLCanvasElement | js.Promise[stdLib.HTMLCanvasElement]

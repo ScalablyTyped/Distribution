@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ValueComponent extends BaseComponent {
   def getMenuItemDescriptor(): js.Object
   def getMultipleSelectElement(): MultipleSelectUI

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Following 2 interfaces are part of jsonschema package.
-
 trait JsonschemaError extends js.Object {
   var argument: js.Any
   var instance: js.Any

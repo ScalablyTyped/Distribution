@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CarrierData extends js.Object {
   /** The IATA designator of a carrier (airline, etc). For example, for American Airlines, the code is AA. */
   var code: js.UndefOr[java.lang.String] = js.undefined

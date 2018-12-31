@@ -5,35 +5,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkItemQueryResult extends js.Object {
   /**
-       * The date the query was run in the context of.
-       */
+    * The date the query was run in the context of.
+    */
   var asOf: stdLib.Date
   /**
-       * The columns of the query.
-       */
+    * The columns of the query.
+    */
   var columns: js.Array[WorkItemFieldReference]
   /**
-       * The result type
-       */
+    * The result type
+    */
   var queryResultType: QueryResultType
   /**
-       * The type of the query
-       */
+    * The type of the query
+    */
   var queryType: QueryType
   /**
-       * The sort columns of the query.
-       */
+    * The sort columns of the query.
+    */
   var sortColumns: js.Array[WorkItemQuerySortColumn]
   /**
-       * The work item links returned by the query.
-       */
+    * The work item links returned by the query.
+    */
   var workItemRelations: js.Array[WorkItemLink]
   /**
-       * The work items returned by the query.
-       */
+    * The work items returned by the query.
+    */
   var workItems: js.Array[WorkItemReference]
 }
 

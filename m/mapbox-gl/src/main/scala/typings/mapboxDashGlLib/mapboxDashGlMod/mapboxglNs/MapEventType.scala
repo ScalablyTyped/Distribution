@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapEventType extends js.Object {
   var boxzoomcancel: MapBoxZoomEvent
   var boxzoomend: MapBoxZoomEvent

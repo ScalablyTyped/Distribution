@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_GetMaxHeightFromTargetRectangle extends js.Object {
   var _calculateActualBeakWidthInPixels: js.Function1[/* beakWidth */ scala.Double, scala.Double]
   var _finalizePositionData: js.Function3[

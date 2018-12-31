@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ApplicationVerifyResponse extends js.Object {
   /** An alternate ID that was once used for the player that was issued the auth token used in this request. (This field is not normally populated.) */
   var alternate_player_id: js.UndefOr[java.lang.String] = js.undefined

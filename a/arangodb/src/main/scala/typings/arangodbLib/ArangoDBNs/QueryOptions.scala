@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryOptions extends js.Object {
   var cache: js.UndefOr[scala.Boolean] = js.undefined
   var count: js.UndefOr[scala.Boolean] = js.undefined

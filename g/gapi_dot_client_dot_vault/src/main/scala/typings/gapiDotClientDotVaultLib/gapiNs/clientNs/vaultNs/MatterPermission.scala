@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MatterPermission extends js.Object {
   /** The account id, as provided by <a href="https://developers.google.com/admin-sdk/">Admin SDK</a>. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined

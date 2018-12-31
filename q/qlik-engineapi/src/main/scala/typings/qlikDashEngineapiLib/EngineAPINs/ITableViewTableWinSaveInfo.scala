@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * TableViewTableWinSaveInfo...
-     */
-
+  * TableViewTableWinSaveInfo...
+  */
 trait ITableViewTableWinSaveInfo extends js.Object {
   /**
-           * Table name.
-           */
+    * Table name.
+    */
   var qCaption: java.lang.String
   /**
-           * Information about the position of the table.
-           */
+    * Information about the position of the table.
+    */
   var qPos: IRect
 }
 

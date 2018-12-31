@@ -13,10 +13,10 @@ sealed trait SettingKey extends js.Object
 @js.native
 object SettingKey extends js.Object {
   /**
-           * The state of the **Use check boxes to select items** option. This option is enabled automatically when the system has a pen input device configured.
-           *
-           * _Windows Vista and later_
-           */
+    * The state of the **Use check boxes to select items** option. This option is enabled automatically when the system has a pen input device configured.
+    *
+    * _Windows Vista and later_
+    */
   @js.native
   sealed trait SSF_AUTOCHECKSELECT
     extends activexDashShellLib.Shell32Ns.SettingKey
@@ -52,10 +52,10 @@ object SettingKey extends js.Object {
     extends activexDashShellLib.Shell32Ns.SettingKey
   
   /**
-           * The state of display name display in the Windows Explorer list view. If this option is active, icons are displayed in the list view, but display names are not.
-           *
-           * _Windows Vista and later_
-           */
+    * The state of display name display in the Windows Explorer list view. If this option is active, icons are displayed in the list view, but display names are not.
+    *
+    * _Windows Vista and later_
+    */
   @js.native
   sealed trait SSF_ICONSONLY
     extends activexDashShellLib.Shell32Ns.SettingKey
@@ -121,18 +121,18 @@ object SettingKey extends js.Object {
     extends activexDashShellLib.Shell32Ns.SettingKey
   
   /**
-           * The state of the **Hidden files and folders** option. In Windows Vista and later, this is equivalent to `SSF_SHOWALLOBJECTS`. In versions of Windows before Windows Vista, this value
-           * referred to the state of the **Do not show hidden files and folders** option.
-           */
+    * The state of the **Hidden files and folders** option. In Windows Vista and later, this is equivalent to `SSF_SHOWALLOBJECTS`. In versions of Windows before Windows Vista, this value
+    * referred to the state of the **Do not show hidden files and folders** option.
+    */
   @js.native
   sealed trait SSF_SHOWSYSFILES
     extends activexDashShellLib.Shell32Ns.SettingKey
   
   /**
-           * The state of the **Display file icon on thumbnails** option. If this option is active, a file type overlay is applied when a file supplies a thumbnail representation.
-           *
-           * _Windows Vista and later_
-           */
+    * The state of the **Display file icon on thumbnails** option. If this option is active, a file type overlay is applied when a file supplies a thumbnail representation.
+    *
+    * _Windows Vista and later_
+    */
   @js.native
   sealed trait SSF_SHOWTYPEOVERLAY
     extends activexDashShellLib.Shell32Ns.SettingKey

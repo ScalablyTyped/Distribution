@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShowCancel extends js.Object {
   var cancelColor: js.UndefOr[java.lang.String] = js.undefined
   var cancelText: js.UndefOr[java.lang.String] = js.undefined

@@ -12,43 +12,43 @@ sealed trait ReviewPatchOperation extends js.Object
 @js.native
 object ReviewPatchOperation extends js.Object {
   /**
-       * Submit an admin response
-       */
+    * Submit an admin response
+    */
   @js.native
   sealed trait AdminResponseForReview
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ReviewPatchOperation
   
   /**
-       * Delete an Admin Reply
-       */
+    * Delete an Admin Reply
+    */
   @js.native
   sealed trait DeleteAdminReply
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ReviewPatchOperation
   
   /**
-       * Delete Publisher Reply
-       */
+    * Delete Publisher Reply
+    */
   @js.native
   sealed trait DeletePublisherReply
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ReviewPatchOperation
   
   /**
-       * Flag a review
-       */
+    * Flag a review
+    */
   @js.native
   sealed trait FlagReview
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ReviewPatchOperation
   
   /**
-       * Submit a reply for a review
-       */
+    * Submit a reply for a review
+    */
   @js.native
   sealed trait ReplyToReview
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ReviewPatchOperation
   
   /**
-       * Update an existing review
-       */
+    * Update an existing review
+    */
   @js.native
   sealed trait UpdateReview
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ReviewPatchOperation

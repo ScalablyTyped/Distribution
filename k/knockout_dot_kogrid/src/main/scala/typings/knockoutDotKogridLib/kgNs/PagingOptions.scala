@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PagingOptions extends js.Object {
   /** currentPage: the uhm... current page. */
   var currentPage: js.UndefOr[knockoutLib.KnockoutObservable[scala.Double]] = js.undefined

@@ -47,9 +47,9 @@ trait Liftoff
     child: nodeLib.NodeJSNs.Process
   ): scala.Boolean = js.native
   /**
-       * Launches your application with provided options, builds an environment,
-       * and invokes your callback, passing the calculated environment as the first argument.
-       */
+    * Launches your application with provided options, builds an environment,
+    * and invokes your callback, passing the calculated environment as the first argument.
+    */
   def launch(
     opts: liftoffLib.liftoffMod.LiftoffNs.LaunchOptions,
     callback: js.ThisFunction1[
@@ -188,10 +188,8 @@ trait Liftoff
    // tslint:disable-line:ban-types
   @JSName("rawListeners")
   def rawListeners_require(event: liftoffLib.liftoffLibStrings.require): js.Array[js.Function] = js.native
-   // tslint:disable-line:ban-types
   @JSName("rawListeners")
   def rawListeners_requireFail(event: liftoffLib.liftoffLibStrings.requireFail): js.Array[js.Function] = js.native
-   // tslint:disable-line:ban-types
   @JSName("rawListeners")
   def rawListeners_respawn(event: liftoffLib.liftoffLibStrings.respawn): js.Array[js.Function] = js.native
   @JSName("removeAllListeners")

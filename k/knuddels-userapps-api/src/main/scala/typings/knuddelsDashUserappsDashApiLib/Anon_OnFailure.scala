@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnFailure extends js.Object {
   var onFailure: js.UndefOr[
     js.Function2[

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Collision.b2ContactID")
 @js.native
+/**
+		* Creates a new Contact ID.
+		**/
 class b2ContactID () extends js.Object {
   /**
   		* ID Key

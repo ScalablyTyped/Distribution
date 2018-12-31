@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ColorProvider extends js.Object {
   /**
-           * Capabilities specific to the colorProvider
-           */
+    * Capabilities specific to the colorProvider
+    */
   var colorProvider: js.UndefOr[Anon_DynamicRegistrationBoolean] = js.undefined
 }
 

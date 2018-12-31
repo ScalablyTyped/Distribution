@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NetChecksiteData extends js.Object {
   var ms: scala.Double
   var ok: scala.Boolean

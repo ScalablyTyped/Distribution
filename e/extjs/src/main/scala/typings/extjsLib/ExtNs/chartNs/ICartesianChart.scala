@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICartesianChart
   extends extjsLib.ExtNs.chartNs.seriesNs.ISeries {
   /** [Config Option] (String/String[]) */

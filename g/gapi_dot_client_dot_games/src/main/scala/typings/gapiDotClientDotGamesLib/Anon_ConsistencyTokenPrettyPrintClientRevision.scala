@@ -5,18 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ConsistencyTokenPrettyPrintClientRevision extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The revision of the client SDK used by your application. Format:
-                   * [PLATFORM_TYPE]:[VERSION_NUMBER]. Possible values of PLATFORM_TYPE are:
-                   *
-                   * - "ANDROID" - Client is running the Android SDK.
-                   * - "IOS" - Client is running the iOS SDK.
-                   * - "WEB_APP" - Client is running as a Web App.
-                   */
+    * The revision of the client SDK used by your application. Format:
+    * [PLATFORM_TYPE]:[VERSION_NUMBER]. Possible values of PLATFORM_TYPE are:
+    *
+    * - "ANDROID" - Client is running the Android SDK.
+    * - "IOS" - Client is running the iOS SDK.
+    * - "WEB_APP" - Client is running as a Web App.
+    */
   var clientRevision: java.lang.String
   /** The last-seen mutation timestamp. */
   var consistencyToken: js.UndefOr[java.lang.String] = js.undefined
@@ -29,9 +28,9 @@ trait Anon_ConsistencyTokenPrettyPrintClientRevision extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[java.lang.String] = js.undefined

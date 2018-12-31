@@ -50,9 +50,6 @@ trait Topic extends js.Object {
   // https://googlecloudplatform.github.io/google-cloud-node/#/docs/pubsub/0.14.1/pubsub/topic?method=get
   def get(): js.Promise[js.Array[_]] = js.native
   def get(callback: atGoogleDashCloudPubsubLib.pubsubMod.PubSubNs.TopicNs.GetCallback): scala.Unit = js.native
-  // NOTE: The documentation in the link is incomplete; the function takes a callback
-  // as second argument (in the source):
-  // https://googlecloudplatform.github.io/google-cloud-node/#/docs/pubsub/0.14.1/pubsub/topic?method=get
   def get(gaxOpts: atGoogleDashCloudPubsubLib.pubsubMod.PubSubNs.GAXNs.CallOptions): js.Promise[js.Array[_]] = js.native
   def get(
     gaxOpts: atGoogleDashCloudPubsubLib.pubsubMod.PubSubNs.GAXNs.CallOptions,
@@ -74,7 +71,6 @@ trait Topic extends js.Object {
   ): scala.Unit = js.native
   // Note: The documention lists the parameter as 'query', when it probably should be 'options'.
   def getSubscriptionsStream(): nodeLib.streamMod.Duplex = js.native
-  // Note: The documention lists the parameter as 'query', when it probably should be 'options'.
   def getSubscriptionsStream(options: atGoogleDashCloudPubsubLib.pubsubMod.PubSubNs.TopicNs.GetSubscriptionsOptions): nodeLib.streamMod.Duplex = js.native
   def publisher(): Publisher = js.native
   def publisher(options: atGoogleDashCloudPubsubLib.pubsubMod.PubSubNs.TopicNs.PublisherOptions): Publisher = js.native

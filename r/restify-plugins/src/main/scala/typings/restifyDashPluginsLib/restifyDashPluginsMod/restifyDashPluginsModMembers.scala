@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object restifyDashPluginsModMembers extends js.Object {
   def acceptParser(accepts: js.Array[java.lang.String]): restifyLib.restifyMod.RequestHandler = js.native
-  def auditLogger(options: AuditLoggerOptions): js.Function1[/* repeated */js.Any, scala.Unit] = js.native
+  def auditLogger(options: AuditLoggerOptions): js.Function1[/* repeated */ js.Any, scala.Unit] = js.native
   def authorizationParser(): restifyLib.restifyMod.RequestHandler = js.native
   def authorizationParser(options: js.Any): restifyLib.restifyMod.RequestHandler = js.native
   def bodyParser(): js.Array[restifyLib.restifyMod.RequestHandler] = js.native
@@ -25,7 +25,7 @@ object restifyDashPluginsModMembers extends js.Object {
   def jsonBodyParser(): js.Array[restifyLib.restifyMod.RequestHandler] = js.native
   def jsonBodyParser(options: restifyDashPluginsLib.Anon_Reviver): js.Array[restifyLib.restifyMod.RequestHandler] = js.native
   def jsonp(): restifyLib.restifyMod.RequestHandler = js.native
-  def metrics(opts: restifyDashPluginsLib.Anon_Server, callback: js.Function1[/* options */ MetricsCallback, _]): js.Function1[/* repeated */js.Any, scala.Unit] = js.native
+  def metrics(opts: restifyDashPluginsLib.Anon_Server, callback: js.Function1[/* options */ MetricsCallback, _]): js.Function1[/* repeated */ js.Any, scala.Unit] = js.native
   def multipartBodyParser(): restifyLib.restifyMod.RequestHandler = js.native
   def multipartBodyParser(options: MultipartBodyParser): restifyLib.restifyMod.RequestHandler = js.native
   def oauth2TokenParser(): restifyLib.restifyMod.RequestHandler = js.native

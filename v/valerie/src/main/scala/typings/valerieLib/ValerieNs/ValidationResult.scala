@@ -18,7 +18,6 @@ trait ValidationResult extends js.Object {
   var state: js.Any = js.native
   	//a message from the activity
   def `new`(state: js.Any): ValidationResult = js.native
-  	//a message from the activity
   def `new`(state: js.Any, message: java.lang.String): ValidationResult = js.native
 }
 

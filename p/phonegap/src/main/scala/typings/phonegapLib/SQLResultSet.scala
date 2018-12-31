@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SQLResultSet extends js.Object {
   var insertId: scala.Double
   var rows: SQLResultSetRowList

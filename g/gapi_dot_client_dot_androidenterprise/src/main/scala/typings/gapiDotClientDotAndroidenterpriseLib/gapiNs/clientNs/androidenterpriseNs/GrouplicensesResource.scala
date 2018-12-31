@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GrouplicensesResource extends js.Object {
   /** Retrieves details of an enterprise's group license for a product. */
   def get(request: gapiDotClientDotAndroidenterpriseLib.Anon_EnterpriseIdPrettyPrintGroupLicenseId): gapiDotClientLib.gapiNs.clientNs.Request[GroupLicense]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommonMessageFields extends js.Object {
   var deliveryTag: scala.Double
   var exchange: java.lang.String

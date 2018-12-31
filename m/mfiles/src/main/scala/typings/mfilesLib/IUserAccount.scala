@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IUserAccount extends js.Object {
   var AccessControlList: IAccessControlList
   var Enabled: scala.Boolean

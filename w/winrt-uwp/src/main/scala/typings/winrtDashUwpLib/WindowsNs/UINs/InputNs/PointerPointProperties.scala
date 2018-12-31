@@ -55,18 +55,18 @@ abstract class PointerPointProperties () extends js.Object {
   var ytilt: scala.Double = js.native
   var zdistance: js.Any = js.native
   /**
-                   * Gets the Human Interface Device (HID) usage value of the raw input.
-                   * @param usagePage The HID usage page of the pointer device.
-                   * @param usageId Indicates a usage in a usage page.
-                   * @return The extended usage of the raw input pointer.
-                   */
+    * Gets the Human Interface Device (HID) usage value of the raw input.
+    * @param usagePage The HID usage page of the pointer device.
+    * @param usageId Indicates a usage in a usage page.
+    * @return The extended usage of the raw input pointer.
+    */
   def getUsageValue(usagePage: scala.Double, usageId: scala.Double): scala.Double = js.native
   /**
-                   * Gets a value that indicates whether the input data from the pointer device contains the specified Human Interface Device (HID) usage information.
-                   * @param usagePage The HID usage page of the pointer device.
-                   * @param usageId Indicates a usage in a usage page.
-                   * @return True if the input data includes usage information; otherwise false.
-                   */
+    * Gets a value that indicates whether the input data from the pointer device contains the specified Human Interface Device (HID) usage information.
+    * @param usagePage The HID usage page of the pointer device.
+    * @param usageId Indicates a usage in a usage page.
+    * @return True if the input data includes usage information; otherwise false.
+    */
   def hasUsage(usagePage: scala.Double, usageId: scala.Double): scala.Boolean = js.native
 }
 

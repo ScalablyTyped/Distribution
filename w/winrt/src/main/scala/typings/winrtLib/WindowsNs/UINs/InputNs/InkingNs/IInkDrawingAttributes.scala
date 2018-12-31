@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IInkDrawingAttributes extends js.Object {
   var color: winrtLib.WindowsNs.UINs.Color
   var fitToCurve: scala.Boolean

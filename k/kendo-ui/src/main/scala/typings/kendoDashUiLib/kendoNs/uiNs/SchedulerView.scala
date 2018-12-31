@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SchedulerView extends js.Object {
   var allDayEventTemplate: js.UndefOr[java.lang.String | js.Function] = js.undefined
   var allDaySlot: js.UndefOr[scala.Boolean] = js.undefined

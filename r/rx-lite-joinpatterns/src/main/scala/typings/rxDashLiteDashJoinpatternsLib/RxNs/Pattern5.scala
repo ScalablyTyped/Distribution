@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Pattern5[T1, T2, T3, T4, T5] extends js.Object {
   def and[T6](other: Observable[T6]): Pattern6[T1, T2, T3, T4, T5, T6]
   def thenDo[TR](

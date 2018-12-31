@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebGmeGlobal extends js.Object {
   var GitHubVersion: js.UndefOr[java.lang.String] = js.undefined
   var KeyboardManager: js.UndefOr[KeyboardManager] = js.undefined

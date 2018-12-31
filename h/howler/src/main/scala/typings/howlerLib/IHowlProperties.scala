@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHowlProperties extends js.Object {
   var autoplay: js.UndefOr[scala.Boolean] = js.undefined
   var format: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.undefined

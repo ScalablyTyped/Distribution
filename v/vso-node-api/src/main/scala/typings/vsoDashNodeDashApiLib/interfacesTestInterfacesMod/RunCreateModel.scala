@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RunCreateModel extends js.Object {
   var automated: scala.Boolean
   var build: ShallowReference

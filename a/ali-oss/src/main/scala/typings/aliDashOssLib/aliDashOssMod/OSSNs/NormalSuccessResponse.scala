@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NormalSuccessResponse extends js.Object {
   // response headers
   var headers: js.Object

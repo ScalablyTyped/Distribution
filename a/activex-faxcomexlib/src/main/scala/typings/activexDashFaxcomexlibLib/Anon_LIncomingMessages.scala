@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LIncomingMessages extends js.Object {
   val lIncomingMessages: scala.Double
   val lOutgoingMessages: scala.Double

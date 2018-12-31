@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var attributeNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var authenticationErrorTimeout: js.UndefOr[scala.Double] = js.undefined

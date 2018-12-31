@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridsterDraggable extends js.Object {
   var distance: js.UndefOr[scala.Double] = js.undefined
   var drag: js.UndefOr[js.Function2[/* event */ stdLib.Event, /* ui */ GridsterUi, scala.Unit]] = js.undefined

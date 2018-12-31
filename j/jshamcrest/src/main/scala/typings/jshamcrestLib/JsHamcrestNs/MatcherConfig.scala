@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Defines the configurable methods for declaring a new matcher using JsHamcrest.SimpleMatcher.
-     */
+  * Defines the configurable methods for declaring a new matcher using JsHamcrest.SimpleMatcher.
+  */
 @js.native
 trait MatcherConfig extends js.Object {
   @JSName("describeTo")

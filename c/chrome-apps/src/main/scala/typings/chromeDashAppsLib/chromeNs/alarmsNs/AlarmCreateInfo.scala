@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AlarmCreateInfo extends js.Object {
   /** Length of time in minutes after which the onAlarm event should fire.  */
   var delayInMinutes: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGPathSegLinetoVerticalAbs extends SVGPathSeg {
   var y: scala.Double
 }

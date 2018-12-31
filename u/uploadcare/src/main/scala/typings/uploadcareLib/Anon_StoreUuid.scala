@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_StoreUuid extends js.Object {
   var remove: js.Function2[
     /* uuid */ java.lang.String, 

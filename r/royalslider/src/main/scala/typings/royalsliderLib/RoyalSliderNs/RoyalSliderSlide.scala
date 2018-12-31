@@ -5,71 +5,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RoyalSliderSlide extends js.Object {
   /**
-           * TODO
-           */
+    * TODO
+    */
   var appendOnLoaded: scala.Boolean
   /**
-           * slide element
-           */
+    * slide element
+    */
   var content: royalsliderLib.JQuery
   /**
-           * TODO
-           */
+    * TODO
+    */
   var contentAdded: scala.Boolean
   /**
-           * slide element wrapper
-           */
+    * slide element wrapper
+    */
   var holder: royalsliderLib.JQuery
   /**
-           * slide index
-           */
+    * slide index
+    */
   var id: scala.Double
   /**
-           * TODO
-           */
+    * TODO
+    */
   var images: scala.Null
   /**
-           * TODO
-           */
+    * TODO
+    */
   var isAdded: scala.Boolean
   /**
-           * TODO
-           */
+    * TODO
+    */
   var isAppended: scala.Boolean
   /**
-           * TODO
-           */
+    * TODO
+    */
   var isBig: scala.Boolean
   /**
-           * TODO
-           */
+    * TODO
+    */
   var isLoaded: scala.Boolean
   /**
-           * TODO
-           */
+    * TODO
+    */
   var isLoading: scala.Boolean
   /**
-           * TODO
-           */
+    * TODO
+    */
   var isRendered: scala.Boolean
   /**
-           * TODO
-           */
+    * TODO
+    */
   var loadedTriggered: scala.Boolean
   /**
-           * TODO
-           */
+    * TODO
+    */
   var positionSet: scala.Boolean
   /**
-           * TODO
-           */
+    * TODO
+    */
   var sizeReady: scala.Boolean
   /**
-           * TODO
-           */
+    * TODO
+    */
   var thumbnail: java.lang.String
 }
 

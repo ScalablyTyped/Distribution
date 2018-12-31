@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAccessControlEntryData extends js.Object {
   var AttachObjectsPermission: mfilesLib.MFilesNs.MFPermission
   var ChangePermissionsPermission: mfilesLib.MFilesNs.MFPermission

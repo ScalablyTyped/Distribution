@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMediaProtectionManager extends js.Object {
   var oncomponentloadfailed: js.Any
   var onrebootneeded: js.Any

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TabBarTopProps extends js.Object {
   var activeTintColor: java.lang.String
   var allowFontScaling: scala.Boolean

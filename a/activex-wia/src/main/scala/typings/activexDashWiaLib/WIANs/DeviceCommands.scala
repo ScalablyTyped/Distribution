@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * The DeviceCommands object is a collection of all the supported DeviceCommands for an imaging device. See the Commands property of a Device or Item
-     * object for more details on determining the collection of supported device commands.
-     */
+  * The DeviceCommands object is a collection of all the supported DeviceCommands for an imaging device. See the Commands property of a Device or Item
+  * object for more details on determining the collection of supported device commands.
+  */
 @js.native
 trait DeviceCommands extends js.Object {
   /** Returns the number of members in the collection */

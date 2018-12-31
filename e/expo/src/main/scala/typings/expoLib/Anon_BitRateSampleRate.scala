@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BitRateSampleRate extends js.Object {
   var audioEncoder: scala.Double
   var bitRate: js.UndefOr[scala.Double] = js.undefined

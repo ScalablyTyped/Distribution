@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReleaseRevision extends js.Object {
   var changeDetails: java.lang.String
   var changeType: java.lang.String

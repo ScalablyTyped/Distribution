@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILine extends ICartesian {
   /** [Method] Draws the series for the current chart  */
   var drawSeries: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

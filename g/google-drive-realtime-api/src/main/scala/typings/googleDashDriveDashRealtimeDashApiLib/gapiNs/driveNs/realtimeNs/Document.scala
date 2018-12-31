@@ -25,9 +25,6 @@ class Document () extends js.Object {
   // Even if you add the same handler multiple times using the same type then it will only be called once when
   // the event is dispatched.
   def addEventListener(`type`: java.lang.String, listener: GoogEventHandler): scala.Unit = js.native
-  // Adds an event listener to the event target. The same handler can only be added once per the type.
-  // Even if you add the same handler multiple times using the same type then it will only be called once when
-  // the event is dispatched.
   def addEventListener(`type`: java.lang.String, listener: GoogEventHandler, opt_capture: scala.Boolean): scala.Unit = js.native
   // Closes the document and disconnects from the server.
   // After this function is called, event listeners will no longer fire and attempts to access the document, model,
@@ -45,8 +42,6 @@ class Document () extends js.Object {
   // Removes an event listener from the event target. The handler must be the same object as the one added.
   // If the handler has not been added then nothing is done.
   def removeEventListener(`type`: java.lang.String, listener: GoogEventHandler): scala.Unit = js.native
-  // Removes an event listener from the event target. The handler must be the same object as the one added.
-  // If the handler has not been added then nothing is done.
   def removeEventListener(`type`: java.lang.String, listener: GoogEventHandler, opt_capture: scala.Boolean): scala.Unit = js.native
   // Saves a copy of this document to a new file. After this function is called, all changes to this document no
   // longer affect the old document and are instead saved to the new file.

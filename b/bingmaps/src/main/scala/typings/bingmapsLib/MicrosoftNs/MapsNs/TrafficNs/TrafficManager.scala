@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class TrafficManager protected () extends js.Object {
   /**
-          * @constructor
-          * @requires The Microsoft.Maps.Traffic module.
-          * @param map A map instnce to attach the traffic manager to.
-          */
+    * @constructor
+    * @requires The Microsoft.Maps.Traffic module.
+    * @param map A map instnce to attach the traffic manager to.
+    */
   def this(map: bingmapsLib.MicrosoftNs.MapsNs.Map) = this()
   /** Hides all traffic data. */
   def hide(): scala.Unit = js.native
@@ -23,9 +23,9 @@ class TrafficManager protected () extends js.Object {
   /** Hides the traffic legend. */
   def hideLegend(): scala.Unit = js.native
   /**
-          * Sets the options for the traffic manager.
-          * @param options The options for the traffic manager.
-          */
+    * Sets the options for the traffic manager.
+    * @param options The options for the traffic manager.
+    */
   def setOptions(options: ITrafficOptions): scala.Unit = js.native
   /** Displays all traffic data. */
   def show(): scala.Unit = js.native

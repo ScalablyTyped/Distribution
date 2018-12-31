@@ -11,11 +11,9 @@ trait Chance extends Seeded {
   var set_Original: Setter = js.native
   // Location
   def address(): java.lang.String = js.native
-  // Location
   def address(opts: Options): java.lang.String = js.native
   // Person
   def age(): scala.Double = js.native
-  // Person
   def age(opts: Options): scala.Double = js.native
   def altitude(): scala.Double = js.native
   def altitude(opts: Options): scala.Double = js.native
@@ -25,13 +23,11 @@ trait Chance extends Seeded {
   def android_id(): java.lang.String = js.native
   // Mobile
   def animal(): java.lang.String = js.native
-  // Mobile
   def animal(opts: Options): java.lang.String = js.native
   def apple_token(): java.lang.String = js.native
   def areacode(): java.lang.String = js.native
   // Web
   def avatar(): java.lang.String = js.native
-  // Web
   def avatar(opts: Options): java.lang.String = js.native
   def bb_pin(): java.lang.String = js.native
   def birthday(): stdLib.Date | java.lang.String = js.native
@@ -40,13 +36,11 @@ trait Chance extends Seeded {
   def birthday_Date(): stdLib.Date = js.native
   // Basics
   def bool(): scala.Boolean = js.native
-  // Basics
   def bool(opts: Options): scala.Boolean = js.native
   // Helpers
   def capitalize(str: java.lang.String): java.lang.String = js.native
   // Finance
   def cc(): java.lang.String = js.native
-  // Finance
   def cc(opts: Options): java.lang.String = js.native
   def cc_type(): java.lang.String = js.native
   def cc_type(opts: Options): java.lang.String | CreditCardType = js.native
@@ -151,17 +145,16 @@ trait Chance extends Seeded {
   def pad(num: scala.Double, width: scala.Double, padChar: java.lang.String): java.lang.String = js.native
   // Text
   def paragraph(): java.lang.String = js.native
-  // Text
   def paragraph(opts: Options): java.lang.String = js.native
   def phone(): java.lang.String = js.native
   def phone(opts: Options): java.lang.String = js.native
   /**
-           * @deprecated Use pickone
-           */
+    * @deprecated Use pickone
+    */
   def pick[T](arr: js.Array[T]): T = js.native
   /**
-           * @deprecated Use pickset
-           */
+    * @deprecated Use pickset
+    */
   def pick[T](arr: js.Array[T], count: scala.Double): js.Array[T] = js.native
   def pickone[T](arr: js.Array[T]): T = js.native
   def pickset[T](arr: js.Array[T]): js.Array[T] = js.native

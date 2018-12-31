@@ -8,18 +8,15 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "FileSystem")
 @js.native
 object FileSystemNs extends js.Object {
-  
   trait DownloadOptions extends js.Object {
     var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
     var md5: js.UndefOr[scala.Boolean] = js.undefined
   }
   
-  
   trait DownloadProgressData extends js.Object {
     var totalBytesExpectedToWrite: scala.Double
     var totalBytesWritten: scala.Double
   }
-  
   
   trait DownloadResult extends js.Object {
     var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
@@ -38,7 +35,6 @@ object FileSystemNs extends js.Object {
     def resumeAsync(): js.Promise[DownloadResult] = js.native
     def savable(): PauseResult = js.native
   }
-  
   
   trait PauseResult extends js.Object {
     var fileUri: java.lang.String

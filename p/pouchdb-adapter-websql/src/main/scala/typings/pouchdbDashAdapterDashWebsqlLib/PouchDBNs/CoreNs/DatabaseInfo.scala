@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatabaseInfo extends js.Object {
   var sqlite_plugin: js.UndefOr[scala.Boolean] = js.undefined
   var websql_encoding: js.UndefOr[

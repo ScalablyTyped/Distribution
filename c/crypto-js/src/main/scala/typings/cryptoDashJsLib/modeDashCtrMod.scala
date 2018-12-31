@@ -8,5 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("crypto-js/mode-ctr", JSImport.Namespace)
 @js.native
 object modeDashCtrMod
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mode.CTR */ js.Any
+    ]
 

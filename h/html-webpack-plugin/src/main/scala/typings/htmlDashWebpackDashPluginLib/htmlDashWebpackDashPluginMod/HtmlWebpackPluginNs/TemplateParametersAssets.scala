@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TemplateParametersAssets extends js.Object {
   /** Will contain all css files */
   var css: js.Array[java.lang.String]

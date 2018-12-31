@@ -14,12 +14,12 @@ class Toast ()
 @js.native
 object Toast extends js.Object {
   /**
-           * dismiss all toasts
-           */
+    * dismiss all toasts
+    */
   def dismissAll(): scala.Unit = js.native
   /**
-           * Get Instance
-           */
+    * Get Instance
+    */
   def getInstance(elem: stdLib.Element): materializeDashCssLib.MNs.Toast = js.native
 }
 

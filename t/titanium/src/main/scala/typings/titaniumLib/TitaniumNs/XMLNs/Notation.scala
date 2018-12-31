@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * Represents a notation declared in the DTD.  Implements the [DOM Level 2 API](https://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-5431D1B9) on Android and iOS.
 		 */
-
 trait Notation
   extends titaniumLib.TitaniumNs.Proxy {
   /**

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Snippet extends js.Object {
   /** The language of the information url and description. */
   var lang: js.UndefOr[java.lang.String] = js.undefined

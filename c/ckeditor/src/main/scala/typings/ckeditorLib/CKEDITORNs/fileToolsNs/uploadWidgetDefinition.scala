@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait uploadWidgetDefinition
   extends ckeditorLib.CKEDITORNs.pluginsNs.widgetNs.definition {
   var additionalRequestParameters: js.Any

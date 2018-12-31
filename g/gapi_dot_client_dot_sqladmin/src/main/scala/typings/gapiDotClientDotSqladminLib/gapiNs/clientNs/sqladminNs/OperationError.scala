@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OperationError extends js.Object {
   /** Identifies the specific error that occurred. */
   var code: js.UndefOr[java.lang.String] = js.undefined

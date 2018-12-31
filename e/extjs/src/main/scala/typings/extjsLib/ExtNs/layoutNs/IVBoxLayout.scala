@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVBoxLayout
   extends extjsLib.ExtNs.layoutNs.containerNs.IBox {
   /** [Config Option] (String) */

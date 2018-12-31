@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CalendarsUpdateParameters extends js.Object {
   var calendarId: java.lang.String
   // Calendars resource

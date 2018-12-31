@@ -16,7 +16,7 @@ object libUtilsUtilsModMembers extends js.Object {
   def createInstanceofPredicate[T](
     name: java.lang.String,
     clazz: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]
-  ): js.Function1[/* x */ js.Any, /* is T */scala.Boolean] = js.native
+  ): js.Function1[/* x */ js.Any, /* is T */ scala.Boolean] = js.native
   def deprecated(msg: java.lang.String): scala.Boolean = js.native
   def deprecated(thing: java.lang.String, replacement: java.lang.String): scala.Boolean = js.native
   def fail(message: java.lang.String): scala.Nothing = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Projection extends js.Object {
   /** Whether to display jobs owned by all users in the project. Default false */
   var allUsers: js.UndefOr[scala.Boolean] = js.undefined
@@ -28,9 +27,9 @@ trait Anon_Projection extends js.Object {
   /** Restrict information returned to a set of selected fields */
   var projection: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** Filter for job state */
   var stateFilter: js.UndefOr[java.lang.String] = js.undefined

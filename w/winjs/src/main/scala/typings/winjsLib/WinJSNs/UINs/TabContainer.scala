@@ -6,54 +6,47 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Prevents a DOM sub-tree from receiving tab navigations and focus.
-    **/
+  * Prevents a DOM sub-tree from receiving tab navigations and focus.
+  **/
 @JSGlobal("WinJS.UI.TabContainer")
 @js.native
 class TabContainer protected () extends js.Object {
   //#region Constructors
   /**
-           * Creates a new TabContainer.
-           * @constructor
-           * @param element The DOM element that hosts the TabContainer control.
-           * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties.
-          **/
+    * Creates a new TabContainer.
+    * @constructor
+    * @param element The DOM element that hosts the TabContainer control.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties.
+    **/
   def this(element: stdLib.HTMLElement) = this()
-  //#region Constructors
-  /**
-           * Creates a new TabContainer.
-           * @constructor
-           * @param element The DOM element that hosts the TabContainer control.
-           * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties.
-          **/
   def this(element: stdLib.HTMLElement, options: js.Any) = this()
   //#endregion Methods
   //#region Properties
   /**
-           * Gets or sets the child DOM element that receives tab focus.
-          **/
+    * Gets or sets the child DOM element that receives tab focus.
+    **/
   var childFocus: stdLib.HTMLElement = js.native
   /**
-           * Gets or sets the tab index of this container.
-          **/
+    * Gets or sets the tab index of this container.
+    **/
   var tabIndex: scala.Double = js.native
   //#endregion Constructors
   //#region Methods
   /**
-           * Releases resources held by this TabContainer. Call this method when the TabContainer is no longer needed. After calling this method, the TabContainer becomes unusable.
-          **/
+    * Releases resources held by this TabContainer. Call this method when the TabContainer is no longer needed. After calling this method, the TabContainer becomes unusable.
+    **/
   def dispose(): scala.Unit = js.native
 }
 
 /**
-     * Prevents a DOM sub-tree from receiving tab navigations and focus.
-    **/
+  * Prevents a DOM sub-tree from receiving tab navigations and focus.
+  **/
 @JSGlobal("WinJS.UI.TabContainer")
 @js.native
 object TabContainer extends js.Object {
   /**
-           * Indicates that the object is compatibile with declarative processing.
-          **/
+    * Indicates that the object is compatibile with declarative processing.
+    **/
   var supportedForProcessing: scala.Boolean = js.native
 }
 

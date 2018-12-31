@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObserveChanges extends Base {
   var observer: DataObserver | scala.Unit
 }

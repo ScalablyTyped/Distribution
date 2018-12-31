@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Reference to:
-     * * https://github.com/less/less.js/blob/master/bin/lessc
-     * * http://lesscss.org/usage/#less-options
-     *
-     * @interface Options
-     */
-
+  * Reference to:
+  * * https://github.com/less/less.js/blob/master/bin/lessc
+  * * http://lesscss.org/usage/#less-options
+  *
+  * @interface Options
+  */
 trait Options extends js.Object {
   /** @deprecated If false, No color in compiling. */
   var color: js.UndefOr[scala.Boolean] = js.undefined

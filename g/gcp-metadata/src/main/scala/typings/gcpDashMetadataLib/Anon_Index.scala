@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Index
   extends /* index */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[js.Object | java.lang.String]] {
   var property: js.UndefOr[java.lang.String] = js.undefined

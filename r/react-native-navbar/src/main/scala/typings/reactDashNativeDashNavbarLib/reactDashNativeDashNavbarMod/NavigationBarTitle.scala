@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigationBarTitle extends js.Object {
   var ellipsizeMode: js.UndefOr[
     reactDashNativeDashNavbarLib.reactDashNativeDashNavbarLibStrings.head | reactDashNativeDashNavbarLib.reactDashNativeDashNavbarLibStrings.middle | reactDashNativeDashNavbarLib.reactDashNativeDashNavbarLibStrings.tail | reactDashNativeDashNavbarLib.reactDashNativeDashNavbarLibStrings.clip

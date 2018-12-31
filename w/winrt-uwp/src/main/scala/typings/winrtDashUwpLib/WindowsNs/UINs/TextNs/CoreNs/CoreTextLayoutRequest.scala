@@ -16,9 +16,9 @@ abstract class CoreTextLayoutRequest () extends js.Object {
   /** Gets a value that indicates the range of text whose bounding box is being requested by the text input server. The server populates this property before raising the event. */
   var range: CoreTextRange = js.native
   /**
-                       * Requests that the layout request operation be delayed. Call this method if your text input control is hosted on a worker thread rather than on the UI thread.
-                       * @return A Deferral object.
-                       */
+    * Requests that the layout request operation be delayed. Call this method if your text input control is hosted on a worker thread rather than on the UI thread.
+    * @return A Deferral object.
+    */
   def getDeferral(): winrtDashUwpLib.WindowsNs.FoundationNs.Deferral = js.native
 }
 

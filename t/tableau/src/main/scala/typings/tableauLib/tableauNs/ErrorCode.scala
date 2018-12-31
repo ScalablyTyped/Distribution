@@ -57,9 +57,9 @@ object ErrorCode extends js.Object {
     extends tableauLib.tableauNs.ErrorCode
   
   /**
-           * Either a filter operation was attempted on a field that does not exist in the data source,
-           * or the value supplied in the filter operation is the wrong data type or format.
-           */
+    * Either a filter operation was attempted on a field that does not exist in the data source,
+    * or the value supplied in the filter operation is the wrong data type or format.
+    */
   @js.native
   sealed trait INVALID_FILTER_FIELDNAME_OR_VALUE
     extends tableauLib.tableauNs.ErrorCode
@@ -95,9 +95,9 @@ object ErrorCode extends js.Object {
     extends tableauLib.tableauNs.ErrorCode
   
   /**
-           * A behavior other than SheetSizeBehavior.AUTOMATIC was specified in
-           * Sheet.changeSizeAsync() when the sheet is a Worksheet instance.
-           */
+    * A behavior other than SheetSizeBehavior.AUTOMATIC was specified in
+    * Sheet.changeSizeAsync() when the sheet is a Worksheet instance.
+    */
   @js.native
   sealed trait INVALID_SIZE_BEHAVIOR_ON_WORKSHEET
     extends tableauLib.tableauNs.ErrorCode
@@ -121,9 +121,9 @@ object ErrorCode extends js.Object {
     extends tableauLib.tableauNs.ErrorCode
   
   /**
-           * Either or both of the minSize or maxSize fields is missing in
-           * Sheet.changeSizeAsync() when specifying SheetSizeBehavior.RANGE.
-           */
+    * Either or both of the minSize or maxSize fields is missing in
+    * Sheet.changeSizeAsync() when specifying SheetSizeBehavior.RANGE.
+    */
   @js.native
   sealed trait MISSING_MINMAX_SIZE
     extends tableauLib.tableauNs.ErrorCode

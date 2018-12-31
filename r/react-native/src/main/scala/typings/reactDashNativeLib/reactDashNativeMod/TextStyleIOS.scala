@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextStyleIOS extends ViewStyle {
   var letterSpacing: js.UndefOr[scala.Double] = js.undefined
   var textDecorationColor: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITextFieldExpression extends js.Object {
   /** Checks whether the value of the field begins with the specified substring */
   def BeginsWith(value: java.lang.String): IExpression

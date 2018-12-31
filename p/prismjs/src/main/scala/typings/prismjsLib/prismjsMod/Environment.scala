@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Environment extends js.Object {
   var attributes: js.UndefOr[js.Any] = js.undefined
   var classes: js.UndefOr[js.Array[java.lang.String]] = js.undefined

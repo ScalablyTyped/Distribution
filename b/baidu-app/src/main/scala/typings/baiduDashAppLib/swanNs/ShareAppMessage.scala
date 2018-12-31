@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // 开放接口-----分享
-
 trait ShareAppMessage
   extends BaseOptions[js.Any, js.Any] {
   /**

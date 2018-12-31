@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object OpsWorksNs extends js.Object {
   @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Types ()
     extends awsDashSdkLib.clientsAllMod.OpsWorksNs.Types {
-    /**
-       * Constructs a service object. This object has one method for each API operation.
-       */
     def this(options: awsDashSdkLib.clientsOpsworksMod.OpsWorksNs.ClientConfiguration) = this()
   }
   

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait File extends js.Object {
   var bucketName: java.lang.String
   var chunkSize: scala.Double

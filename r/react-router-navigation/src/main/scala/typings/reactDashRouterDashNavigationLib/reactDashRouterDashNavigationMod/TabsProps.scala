@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TabsProps extends TabBarProps {
   var configureTransition: js.UndefOr[
     js.Function2[

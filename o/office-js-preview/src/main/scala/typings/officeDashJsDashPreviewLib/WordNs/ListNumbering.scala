@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ListNumbering extends js.Object
 
 /**
-     * [Api set: WordApi]
-     */
+  * [Api set: WordApi]
+  */
 @JSGlobal("Word.ListNumbering")
 @js.native
 object ListNumbering extends js.Object {

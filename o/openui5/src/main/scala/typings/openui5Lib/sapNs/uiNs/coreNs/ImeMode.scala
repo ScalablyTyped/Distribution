@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait ImeMode extends js.Object
 
 /**
-       * State of the Input Method Editor (IME) for the control.Depending on its value, it allows users to
-       * enter and edit for example Chinese characters.
-      */
+  * State of the Input Method Editor (IME) for the control.Depending on its value, it allows users to
+  * enter and edit for example Chinese characters.
+  */
 @JSGlobal("sap.ui.core.ImeMode")
 @js.native
 object ImeMode extends js.Object {

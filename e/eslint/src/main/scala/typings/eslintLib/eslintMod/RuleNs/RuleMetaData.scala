@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RuleMetaData extends js.Object {
   var deprecated: js.UndefOr[scala.Boolean] = js.undefined
   var docs: js.UndefOr[eslintLib.Anon_Recommended] = js.undefined

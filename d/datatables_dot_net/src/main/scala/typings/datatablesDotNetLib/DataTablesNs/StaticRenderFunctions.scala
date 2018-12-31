@@ -8,39 +8,21 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StaticRenderFunctions extends js.Object {
   /**
-           * Will format numeric data (defined by `columns.data`) for display, retaining the original unformatted data for sorting and filtering.
-           *
-           * @param thousands Thousands grouping separator.
-           * @param decimal Decimal point indicator.
-           * @param precision Integer number of decimal points to show.
-           * @param prefix Prefix (optional).
-           * @param postfix Postfix (/suffix) (optional).
-           */
+    * Will format numeric data (defined by `columns.data`) for display, retaining the original unformatted data for sorting and filtering.
+    *
+    * @param thousands Thousands grouping separator.
+    * @param decimal Decimal point indicator.
+    * @param precision Integer number of decimal points to show.
+    * @param prefix Prefix (optional).
+    * @param postfix Postfix (/suffix) (optional).
+    */
   def number(thousands: java.lang.String, decimal: java.lang.String, precision: scala.Double): ObjectColumnRender = js.native
-  /**
-           * Will format numeric data (defined by `columns.data`) for display, retaining the original unformatted data for sorting and filtering.
-           *
-           * @param thousands Thousands grouping separator.
-           * @param decimal Decimal point indicator.
-           * @param precision Integer number of decimal points to show.
-           * @param prefix Prefix (optional).
-           * @param postfix Postfix (/suffix) (optional).
-           */
   def number(
     thousands: java.lang.String,
     decimal: java.lang.String,
     precision: scala.Double,
     prefix: java.lang.String
   ): ObjectColumnRender = js.native
-  /**
-           * Will format numeric data (defined by `columns.data`) for display, retaining the original unformatted data for sorting and filtering.
-           *
-           * @param thousands Thousands grouping separator.
-           * @param decimal Decimal point indicator.
-           * @param precision Integer number of decimal points to show.
-           * @param prefix Prefix (optional).
-           * @param postfix Postfix (/suffix) (optional).
-           */
   def number(
     thousands: java.lang.String,
     decimal: java.lang.String,
@@ -49,8 +31,8 @@ trait StaticRenderFunctions extends js.Object {
     postfix: java.lang.String
   ): ObjectColumnRender = js.native
   /**
-           * Escape HTML to help prevent XSS attacks. It has no optional parameters.
-           */
+    * Escape HTML to help prevent XSS attacks. It has no optional parameters.
+    */
   def text(): ObjectColumnRender = js.native
 }
 

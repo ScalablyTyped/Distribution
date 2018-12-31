@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // 设备-----手机联系人
-
 trait PhoneContact
   extends BaseOptions[js.Any, js.Any] {
   /** 联系地址城市 */

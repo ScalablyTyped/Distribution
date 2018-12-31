@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Tooltip //////////////////////////////////////////////////
-
 trait TooltipOptions extends TooltipEvents {
   var content: js.UndefOr[js.Any] = js.undefined
    // () or string

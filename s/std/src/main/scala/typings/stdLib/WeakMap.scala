@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WeakMap[K /* <: js.Object */, V] extends js.Object {
   @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
   val toStringTag: java.lang.String

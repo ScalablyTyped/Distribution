@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CellPosition extends Position {
   var bottom: scala.Double
   var height: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Items extends js.Object {
   var groups: js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[jointjsLib.jointjsMod.diaNs.ElementNs.PortGroup]

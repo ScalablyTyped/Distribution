@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StripePaymentResponse extends js.Object {
   var methodName: java.lang.String
   var payerEmail: js.UndefOr[java.lang.String] = js.undefined

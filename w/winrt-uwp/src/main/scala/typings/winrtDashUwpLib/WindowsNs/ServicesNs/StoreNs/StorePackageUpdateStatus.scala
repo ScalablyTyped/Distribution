@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides status info for a package that is associated with a download or installation request. */
-
 trait StorePackageUpdateStatus extends js.Object {
   /** The number of bytes that have been downloaded. */
   var packageBytesDownloaded: scala.Double

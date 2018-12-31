@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridToolbarItemClickEventArgs extends ProcessingModeEventArgs {
   val item: BootstrapMenuItem
   val toolbarIndex: scala.Double

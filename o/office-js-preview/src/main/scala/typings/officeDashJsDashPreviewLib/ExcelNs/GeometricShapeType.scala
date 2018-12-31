@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait GeometricShapeType extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.GeometricShapeType")
 @js.native
 object GeometricShapeType extends js.Object {

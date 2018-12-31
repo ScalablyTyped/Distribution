@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * The RelinkingTool allows the user to reconnect an existing Link
-    * if the Link.relinkableTo and/or Link.relinkableFrom properties are true.
-    */
+  * The RelinkingTool allows the user to reconnect an existing Link
+  * if the Link.relinkableTo and/or Link.relinkableFrom properties are true.
+  */
 @js.native
 trait RelinkingTool extends LinkingBaseTool {
   /**Gets or sets a small GraphObject that is copied as a relinking handle for the selected link path at the "from" end of the link.*/
@@ -18,18 +18,18 @@ trait RelinkingTool extends LinkingBaseTool {
   /**Gets or sets a small GraphObject that is copied as a relinking handle for the selected link path at the "to" end of the link.*/
   var toHandleArchetype: GraphObject = js.native
   /**
-          * Make a temporary link look and act like the real Link being relinked.
-          * @param {Link} reallink
-          * @param {Link} templink
-          */
+    * Make a temporary link look and act like the real Link being relinked.
+    * @param {Link} reallink
+    * @param {Link} templink
+    */
   def copyLinkProperties(reallink: Link, templink: Link): scala.Unit = js.native
   /**
-          * Modify an existing Link to connect to a new node and port.
-          * @param {Link} existinglink
-          * @param {Node} newnode the Node to connect to or from.
-          * @param {GraphObject} newport the GraphObject port to connect to or from.
-          * @param {boolean} toend If true, this modifies the link's "to" node and port; otherwise it modifies the "from" node and port.
-          */
+    * Modify an existing Link to connect to a new node and port.
+    * @param {Link} existinglink
+    * @param {Node} newnode the Node to connect to or from.
+    * @param {GraphObject} newport the GraphObject port to connect to or from.
+    * @param {boolean} toend If true, this modifies the link's "to" node and port; otherwise it modifies the "from" node and port.
+    */
   def reconnectLink(existinglink: Link, newnode: Node, newport: GraphObject, toend: scala.Boolean): scala.Boolean = js.native
 }
 

@@ -5,43 +5,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default 'animating'
-                   */
+    * @default 'animating'
+    */
   var animating: java.lang.String
   /**
-                   * @default 'disabled'
-                   */
+    * @default 'disabled'
+    */
   var disabled: java.lang.String
   /**
-                   * @default 'hidden'
-                   */
+    * @default 'hidden'
+    */
   var hidden: java.lang.String
   /**
-                   * @default 'in'
-                   */
+    * @default 'in'
+    */
   var inward: java.lang.String
   /**
-                   * @default 'loading'
-                   */
+    * @default 'loading'
+    */
   var loading: java.lang.String
   /**
-                   * @default 'looping'
-                   */
+    * @default 'looping'
+    */
   var looping: java.lang.String
   /**
-                   * @default 'out'
-                   */
+    * @default 'out'
+    */
   var outward: java.lang.String
   /**
-                   * @default 'transition'
-                   */
+    * @default 'transition'
+    */
   var transition: java.lang.String
   /**
-                   * @default 'visible'
-                   */
+    * @default 'visible'
+    */
   var visible: java.lang.String
 }
 

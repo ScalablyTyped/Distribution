@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RawRules extends js.Object {
   var begin: java.lang.String
   var end: java.lang.String

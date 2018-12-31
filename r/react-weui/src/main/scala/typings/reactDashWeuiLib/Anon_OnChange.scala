@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnChange extends js.Object {
   var files: js.Array[_]
   var lang: Anon_MaxError

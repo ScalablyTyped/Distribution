@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CalendarDay extends js.Object {
   var classes: java.lang.String
   var date: momentLib.momentMod.momentNs.Moment

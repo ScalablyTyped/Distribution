@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VueSelectWatch extends js.Object {
   def created(): scala.Unit
   def multiple(reset: scala.Boolean): scala.Unit

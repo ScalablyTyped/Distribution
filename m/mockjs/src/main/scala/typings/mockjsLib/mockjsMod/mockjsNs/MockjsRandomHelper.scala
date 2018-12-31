@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // Mockjs.Random - Helper
 // see https://github.com/nuysoft/Mock/wiki/Helper
-
 trait MockjsRandomHelper extends js.Object {
   // Random.capitalize
   def capitalize(word: S): S

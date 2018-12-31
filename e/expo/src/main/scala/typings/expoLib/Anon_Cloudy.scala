@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Cloudy extends js.Object {
   var auto: java.lang.String
   var cloudy: java.lang.String

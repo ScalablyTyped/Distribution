@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgHierarchicalGridFeature
   extends /**
 	 * Option for IgHierarchicalGridFeature

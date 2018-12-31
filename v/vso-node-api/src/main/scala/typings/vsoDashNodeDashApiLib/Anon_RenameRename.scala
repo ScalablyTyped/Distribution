@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RenameRename extends js.Object {
   var addAdd: scala.Double
   var addRename: scala.Double

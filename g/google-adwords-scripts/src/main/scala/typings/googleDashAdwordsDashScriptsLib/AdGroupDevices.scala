@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AdGroupDevices extends js.Object {
   def clearDesktopBidModifier(): scala.Unit
   def clearMobileBidModifier(): scala.Unit

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridProperties extends js.Object {
   /** The number of columns in the grid. */
   var columnCount: js.UndefOr[scala.Double] = js.undefined

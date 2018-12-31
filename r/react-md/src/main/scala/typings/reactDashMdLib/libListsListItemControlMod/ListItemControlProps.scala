@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListItemControlProps
   extends reactDashMdLib.libMod.Props
      with reactDashMdLib.libListsListItemMod.BaseListItemProps {

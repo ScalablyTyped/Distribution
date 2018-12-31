@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * We manually generated this interface by looking an resource like this:
-     * const resource = Resource(app, route, name, model);
-     * console.log(resource);
-     */
+  * We manually generated this interface by looking an resource like this:
+  * const resource = Resource(app, route, name, model);
+  * console.log(resource);
+  */
 @js.native
 trait ResourceEndpoint extends js.Object {
   var __swagger: js.Any = js.native
@@ -59,8 +59,8 @@ trait ResourceEndpoint extends js.Object {
     app: expressLib.expressMod.eNs.Application,
     method: java.lang.String,
     path: java.lang.String,
-    callback: js.Function1[/* repeated */js.Any, _],
-    last: js.Function1[/* repeated */js.Any, _],
+    callback: js.Function1[/* repeated */ js.Any, _],
+    last: js.Function1[/* repeated */ js.Any, _],
     options: js.Object
   ): js.Any = js.native
   def respond(req: Request, res: Response, next: expressLib.expressMod.eNs.NextFunction): scala.Unit = js.native

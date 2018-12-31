@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPolylineOptions extends IPrimitiveOptions {
   /** Indicates if drawn shape should be generalized based on the zoom level to improve rendering performance. Default true **/
   var generalizable: js.UndefOr[scala.Boolean] = js.undefined

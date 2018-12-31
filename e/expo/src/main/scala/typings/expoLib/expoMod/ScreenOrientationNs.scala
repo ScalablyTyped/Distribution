@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "ScreenOrientation")
 @js.native
 object ScreenOrientationNs extends js.Object {
-  
   trait Orientations extends js.Object {
     var ALL: expoLib.expoLibStrings.ALL
     var ALL_BUT_UPSIDE_DOWN: expoLib.expoLibStrings.ALL_BUT_UPSIDE_DOWN

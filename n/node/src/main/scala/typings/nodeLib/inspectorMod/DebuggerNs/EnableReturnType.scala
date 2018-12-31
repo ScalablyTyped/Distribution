@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EnableReturnType extends js.Object {
   /**
-               * Unique identifier of the debugger.
-               * @experimental
-               */
+    * Unique identifier of the debugger.
+    * @experimental
+    */
   var debuggerId: nodeLib.inspectorMod.RuntimeNs.UniqueDebuggerId
 }
 

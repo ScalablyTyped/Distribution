@@ -32,9 +32,9 @@ class PlacesService protected () extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-         * @deprecated Radar search is deprecated as of June 30, 2018. After that
-         *     time, this feature will no longer be available.
-         */
+    * @deprecated Radar search is deprecated as of June 30, 2018. After that
+    *     time, this feature will no longer be available.
+    */
   def radarSearch(
     request: RadarSearchRequest,
     callback: js.Function2[/* results */ js.Array[PlaceResult], /* status */ PlacesServiceStatus, scala.Unit]

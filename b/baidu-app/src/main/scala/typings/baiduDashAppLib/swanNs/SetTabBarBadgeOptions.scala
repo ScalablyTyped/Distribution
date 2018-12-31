@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SetTabBarBadgeOptions
   extends BaseOptions[js.Any, js.Any] {
   /**

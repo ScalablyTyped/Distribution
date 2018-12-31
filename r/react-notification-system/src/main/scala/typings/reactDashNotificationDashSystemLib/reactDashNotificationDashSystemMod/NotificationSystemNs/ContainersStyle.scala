@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContainersStyle extends js.Object {
   var DefaultStyle: reactLib.reactMod.ReactNs.CSSProperties
   var bc: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

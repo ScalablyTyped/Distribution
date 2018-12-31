@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("locks", "ReadWriteLock")
 @js.native
+/** Construct a new reader writer lock */
 class ReadWriteLock () extends js.Object {
   /** Flag indicating whether the reader writer lock is holding the read lock */
   var isReadLocked: scala.Boolean = js.native

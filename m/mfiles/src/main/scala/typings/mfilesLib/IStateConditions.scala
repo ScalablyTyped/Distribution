@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStateConditions extends js.Object {
   var PropertyConditions: scala.Boolean
   var PropertyConditionsDefinition: ISearchConditions

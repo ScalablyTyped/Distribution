@@ -48,10 +48,6 @@ object ClipboardNs extends js.Object {
   			 * data is deleted.
   			 */
   def clearData(): scala.Unit = js.native
-  /**
-  			 * Deletes data of the specified MIME type stored in the clipboard. If MIME type omitted, all
-  			 * data is deleted.
-  			 */
   def clearData(`type`: java.lang.String): scala.Unit = js.native
   /**
   			 * Deletes all text data stored in the clipboard.

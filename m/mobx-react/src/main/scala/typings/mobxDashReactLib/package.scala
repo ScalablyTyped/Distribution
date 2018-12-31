@@ -19,7 +19,7 @@ package object mobxDashReactLib {
   // ):
   // <T extends IReactComponent<P & S>(target: T) => IReactComponent<P> & IWrappedComponent<T>
   /**
-   * disposeOnUnmount
-   */
+    * disposeOnUnmount
+    */
   type Disposer = js.Function0[scala.Unit]
 }

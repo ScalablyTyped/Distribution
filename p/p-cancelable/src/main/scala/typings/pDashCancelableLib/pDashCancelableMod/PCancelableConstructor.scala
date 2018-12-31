@@ -68,7 +68,7 @@ trait PCancelableConstructor
     pDashCancelableLib.pDashCancelableMod.PCancelableNs.PCancelable[R]
   ] = js.native
   @JSName("fn")
-  def fn_RFunction1[R](userFn: js.Function1[/* repeated */js.Any, js.Thenable[R]]): js.Function1[
+  def fn_RFunction1[R](userFn: js.Function1[/* repeated */ js.Any, js.Thenable[R]]): js.Function1[
     /* args */ js.Array[_], 
     pDashCancelableLib.pDashCancelableMod.PCancelableNs.PCancelable[R]
   ] = js.native

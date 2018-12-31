@@ -11,8 +11,8 @@ class Element protected () extends Node {
   def this(doc: Document, name: java.lang.String) = this()
   def this(doc: Document, name: java.lang.String, content: java.lang.String) = this()
   /**
-       * @return The original element, not the child.
-       */
+    * @return The original element, not the child.
+    */
   def addChild(child: Element): this.type = js.native
   def addNextSibling(siblingNode: Node): Node = js.native
   def attr(attrObject: StringMap): this.type = js.native

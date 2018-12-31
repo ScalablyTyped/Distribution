@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Options to pass to `mocha.setup` in the browser.
- */
-
+  * Options to pass to `mocha.setup` in the browser.
+  */
 trait MochaSetupOptions
   extends mochaLib.MochaNs.MochaOptions {
   var fullTrace: js.UndefOr[scala.Boolean] = js.undefined

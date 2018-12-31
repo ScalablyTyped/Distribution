@@ -28,9 +28,9 @@ abstract class GetSmsMessageOperation () extends js.Object {
     asyncStatus: winrtDashUwpLib.WindowsNs.FoundationNs.AsyncStatus
   ): scala.Unit = js.native
   /**
-                   * Retrieves the result of the asynchronous SMS message retrieval operation.
-                   * @return An interface that accesses the retrieved message.
-                   */
+    * Retrieves the result of the asynchronous SMS message retrieval operation.
+    * @return An interface that accesses the retrieved message.
+    */
   def getResults(): ISmsMessage = js.native
 }
 

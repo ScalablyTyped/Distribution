@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPieChartClasses extends js.Object {
   var chartDonut: js.UndefOr[java.lang.String] = js.undefined
   var chartPie: js.UndefOr[java.lang.String] = js.undefined

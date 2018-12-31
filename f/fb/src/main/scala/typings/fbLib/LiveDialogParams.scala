@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LiveDialogParams extends js.Object {
   var broadcast_data: js.UndefOr[LiveDialogResponse] = js.undefined
   var display: java.lang.String

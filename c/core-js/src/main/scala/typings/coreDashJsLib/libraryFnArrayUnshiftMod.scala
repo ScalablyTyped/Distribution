@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/array/unshift", JSImport.Namespace)
 @js.native
 object libraryFnArrayUnshiftMod
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayItems]
 

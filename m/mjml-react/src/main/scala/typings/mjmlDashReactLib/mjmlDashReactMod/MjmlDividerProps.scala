@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MjmlDividerProps extends js.Object {
   var borderColor: js.UndefOr[csstypeLib.csstypeMod.BorderColorProperty] = js.undefined
   var borderStyle: js.UndefOr[csstypeLib.csstypeMod.BorderStyleProperty] = js.undefined

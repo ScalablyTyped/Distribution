@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebhookRequest extends js.Object {
   var originalDetectIntentRequest: js.UndefOr[js.Any] = js.undefined
   var queryResult: QueryResult

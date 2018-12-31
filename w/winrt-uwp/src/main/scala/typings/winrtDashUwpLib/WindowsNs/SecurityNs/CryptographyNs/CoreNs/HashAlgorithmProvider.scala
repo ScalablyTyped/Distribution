@@ -14,15 +14,15 @@ abstract class HashAlgorithmProvider () extends js.Object {
   /** Gets the length, in bytes, of the hash. */
   var hashLength: scala.Double = js.native
   /**
-                       * Creates a reusable CryptographicHash object.
-                       * @return Reusable hash object.
-                       */
+    * Creates a reusable CryptographicHash object.
+    * @return Reusable hash object.
+    */
   def createHash(): CryptographicHash = js.native
   /**
-                       * Hashes binary data.
-                       * @param data Data to be hashed.
-                       * @return Hashed data.
-                       */
+    * Hashes binary data.
+    * @param data Data to be hashed.
+    * @return Hashed data.
+    */
   def hashData(data: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer): winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer = js.native
 }
 
@@ -31,10 +31,10 @@ abstract class HashAlgorithmProvider () extends js.Object {
 @js.native
 object HashAlgorithmProvider extends js.Object {
   /**
-                       * Creates a HashAlgorithmProvider object and opens the specified algorithm for use.
-                       * @param algorithm Algorithm name.
-                       * @return Represents a provider that implements hash algorithms.
-                       */
+    * Creates a HashAlgorithmProvider object and opens the specified algorithm for use.
+    * @param algorithm Algorithm name.
+    * @return Represents a provider that implements hash algorithms.
+    */
   def openAlgorithm(algorithm: java.lang.String): winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CoreNs.HashAlgorithmProvider = js.native
 }
 

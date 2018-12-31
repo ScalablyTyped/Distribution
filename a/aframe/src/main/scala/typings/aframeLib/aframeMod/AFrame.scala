@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AFrame extends js.Object {
   var AComponent: Component[_, System[_]]
   var AEntity: Entity[ObjectMap[Component[_, System[_]]]]

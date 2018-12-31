@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ErrorEventObject extends js.Object {
   var detailedMessage: js.UndefOr[java.lang.String] = js.undefined
   var id: java.lang.String

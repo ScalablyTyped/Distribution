@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PoliciesResource extends js.Object {
   /** Deletes a policy. This operation is only permitted if no devices are currently referencing the policy. */
   def delete(request: gapiDotClientDotAndroidmanagementLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]

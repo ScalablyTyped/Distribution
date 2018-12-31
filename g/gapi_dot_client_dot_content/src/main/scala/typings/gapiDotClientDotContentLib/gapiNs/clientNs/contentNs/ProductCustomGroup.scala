@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProductCustomGroup extends js.Object {
   /** The sub-attributes. */
   var attributes: js.UndefOr[js.Array[ProductCustomAttribute]] = js.undefined

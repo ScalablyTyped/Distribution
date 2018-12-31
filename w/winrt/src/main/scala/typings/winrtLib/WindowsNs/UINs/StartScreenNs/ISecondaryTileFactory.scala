@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISecondaryTileFactory extends js.Object {
   def createTile(
     tileId: java.lang.String,

@@ -6,12 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Dictionary of notification data used in the array of `notifications`
- * when receiving pending or local notifications in
- * <Titanium.App.iOS.UserNotificationCenter.getPendingNotifications> and
- * <Titanium.App.iOS.UserNotificationCenter.getDeliveredNotifications>.
- */
-
+  * Dictionary of notification data used in the array of `notifications`
+  * when receiving pending or local notifications in
+  * <Titanium.App.iOS.UserNotificationCenter.getPendingNotifications> and
+  * <Titanium.App.iOS.UserNotificationCenter.getDeliveredNotifications>.
+  */
 trait UserNotificationDictionary extends js.Object {
   /**
   	 * Alert button text ('Open', by default) or home text ('Press Home to unlock', by default)

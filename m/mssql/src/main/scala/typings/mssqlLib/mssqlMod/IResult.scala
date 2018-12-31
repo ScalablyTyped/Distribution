@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IResult[T] extends js.Object {
   var output: org.scalablytyped.runtime.StringDictionary[js.Any]
   var recordset: IRecordSet[T]

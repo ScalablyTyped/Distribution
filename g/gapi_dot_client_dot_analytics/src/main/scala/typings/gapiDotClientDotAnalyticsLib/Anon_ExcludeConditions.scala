@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ExcludeConditions extends js.Object {
   /** Defines the conditions to exclude users from the audience. */
   var excludeConditions: js.UndefOr[Anon_Segment] = js.undefined

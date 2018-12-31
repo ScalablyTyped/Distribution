@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Component[P /* <: ComponentProps */] extends js.Object {
   def mount(props: P, content: js.Array[VNode]): stdLib.Element
   def patch(

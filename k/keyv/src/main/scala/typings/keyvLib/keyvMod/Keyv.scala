@@ -13,24 +13,19 @@ trait Keyv
   /** Delete all entries in the current namespace. */
   def clear(): js.Promise[scala.Unit] = js.native
   /**
-       * Deletes an entry.
-       *
-       * Returns `true` if the key existed, `false` if not.
-       */
+    * Deletes an entry.
+    *
+    * Returns `true` if the key existed, `false` if not.
+    */
   def delete(key: java.lang.String): js.Promise[scala.Boolean] = js.native
   /** Returns the value. */
   def get(key: java.lang.String): js.Promise[_] = js.native
   /**
-       * Set a value.
-       *
-       * By default keys are persistent. You can set an expiry TTL in milliseconds.
-       */
+    * Set a value.
+    *
+    * By default keys are persistent. You can set an expiry TTL in milliseconds.
+    */
   def set(key: java.lang.String, value: js.Any): js.UndefOr[js.Promise[scala.Boolean]] = js.native
-  /**
-       * Set a value.
-       *
-       * By default keys are persistent. You can set an expiry TTL in milliseconds.
-       */
   def set(key: java.lang.String, value: js.Any, ttl: scala.Double): js.UndefOr[js.Promise[scala.Boolean]] = js.native
 }
 

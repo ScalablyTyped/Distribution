@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object keyNs extends js.Object {
   /** Class that represents an OpenPGP key. Must contain a primary key. Can contain additional subkeys, signatures, user ids, user attributes.
-       */
-  
+    */
   trait Key extends js.Object {
     var primaryKey: openpgpLib.openpgpMod.packetNs.PublicKey
     def armor(): java.lang.String
@@ -27,21 +26,18 @@ object keyNs extends js.Object {
     def verifyPrimaryKey(): openpgpLib.openpgpMod.enumsNs.keyStatus
   }
   
-  
   trait KeyResult extends js.Object {
     var err: js.Array[stdLib.Error]
     var keys: js.Array[Key]
   }
   
   /** Generates a new OpenPGP key. Currently only supports RSA keys. Primary and subkey will be of same type.
-  
-          @param options
-       */
+    @param options
+    */
   def generate(options: openpgpLib.openpgpMod.KeyOptions): Key = js.native
   /** Reads an OpenPGP armored text and returns one or multiple key objects
-  
-          @param armoredText text to be parsed
-       */
+    @param armoredText text to be parsed
+    */
   def readArmored(armoredText: java.lang.String): js.Promise[KeyResult] = js.native
 }
 

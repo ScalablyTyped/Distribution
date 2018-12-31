@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Text extends js.Object {
   var autoEOL: js.UndefOr[scala.Boolean] = js.undefined
   var hAlign: js.UndefOr[

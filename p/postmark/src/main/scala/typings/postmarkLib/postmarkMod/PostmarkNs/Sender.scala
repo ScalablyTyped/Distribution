@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Sender extends js.Object {
   var BounceHookUrl: scala.Boolean
   var Color: java.lang.String

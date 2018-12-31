@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Headline extends js.Object {
   var advertiser: js.UndefOr[java.lang.String] = js.undefined
   /** The app icon, for app download ads. */

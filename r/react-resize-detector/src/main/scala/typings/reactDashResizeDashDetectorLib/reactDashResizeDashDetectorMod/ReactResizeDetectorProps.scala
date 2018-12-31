@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactResizeDetectorProps
   extends reactLib.reactMod.ReactNs.Props[ReactResizeDetector] {
   /** Trigger onResize on height change. Default: false */

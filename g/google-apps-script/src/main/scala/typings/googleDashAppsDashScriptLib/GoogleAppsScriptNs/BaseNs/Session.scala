@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Session extends js.Object {
   def getActiveUser(): User
   def getActiveUserLocale(): java.lang.String

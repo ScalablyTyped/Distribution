@@ -12,29 +12,29 @@ sealed trait VersionControlRecursionType extends js.Object
 @js.native
 object VersionControlRecursionType extends js.Object {
   /**
-       * Return specified item and all descendants
-       */
+    * Return specified item and all descendants
+    */
   @js.native
   sealed trait Full
     extends vsoDashNodeDashApiLib.interfacesTfvcInterfacesMod.VersionControlRecursionType
   
   /**
-       * Only return the specified item.
-       */
+    * Only return the specified item.
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesTfvcInterfacesMod.VersionControlRecursionType
   
   /**
-       * Return the specified item and its direct children.
-       */
+    * Return the specified item and its direct children.
+    */
   @js.native
   sealed trait OneLevel
     extends vsoDashNodeDashApiLib.interfacesTfvcInterfacesMod.VersionControlRecursionType
   
   /**
-       * Return the specified item and its direct children, as well as recursive chains of nested child folders that only contain a single folder.
-       */
+    * Return the specified item and its direct children, as well as recursive chains of nested child folders that only contain a single folder.
+    */
   @js.native
   sealed trait OneLevelPlusNestedEmptyFolders
     extends vsoDashNodeDashApiLib.interfacesTfvcInterfacesMod.VersionControlRecursionType

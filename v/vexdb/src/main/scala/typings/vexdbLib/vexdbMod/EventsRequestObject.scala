@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventsRequestObject extends js.Object {
   var city: js.UndefOr[StringRequest] = js.undefined
   var country: js.UndefOr[StringRequest] = js.undefined

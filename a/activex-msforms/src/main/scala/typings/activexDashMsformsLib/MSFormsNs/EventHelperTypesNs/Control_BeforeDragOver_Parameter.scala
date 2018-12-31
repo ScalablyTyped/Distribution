@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Control_BeforeDragOver_Parameter extends js.Object {
   val Cancel: activexDashMsformsLib.MSFormsNs.ReturnBoolean
   val Data: activexDashMsformsLib.MSFormsNs.DataObject

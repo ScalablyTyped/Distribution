@@ -6,19 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * SearchFieldDictionary...
-     */
-
+  * SearchFieldDictionary...
+  */
 trait ISearchFieldDictionary extends js.Object {
   /**
-           * Position of the field in the list of fields, starting from 0.
-           * The list of fields is defined in qResults/qFieldNames and contains the search associations.
-           */
+    * Position of the field in the list of fields, starting from 0.
+    * The list of fields is defined in qResults/qFieldNames and contains the search associations.
+    */
   var qField: scala.Double
   /**
-           * List of the matching values.
-           * The maximum number of values in this list is set by qMaxNbrFieldMatches.
-           */
+    * List of the matching values.
+    * The maximum number of values in this list is set by qMaxNbrFieldMatches.
+    */
   var qResult: js.Array[ISearchTermResult]
 }
 

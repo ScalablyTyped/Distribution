@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class SetUserVariablesRequest protected () extends js.Object {
   /**
-                   * Creates a new SetUserVariablesRequest instance.
-                   * @param {Entities.Variables.SFSUserVariable} userVariables A list of SFSUserVariable objects representing the User Variables to be set.
-                   */
+    * Creates a new SetUserVariablesRequest instance.
+    * @param {Entities.Variables.SFSUserVariable} userVariables A list of SFSUserVariable objects representing the User Variables to be set.
+    */
   def this(userVariables: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.VariablesNs.SFSUserVariable) = this()
 }
 

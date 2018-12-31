@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebProviderError protected () extends js.Object {
   /**
-                           * Initializes a new instance of the WebProviderError class.
-                           * @param errorCode The error code.
-                           * @param errorMessage The error message.
-                           */
+    * Initializes a new instance of the WebProviderError class.
+    * @param errorCode The error code.
+    * @param errorMessage The error message.
+    */
   def this(errorCode: scala.Double, errorMessage: java.lang.String) = this()
   /** Gets the error code. */
   var errorCode: scala.Double = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Task extends js.Object {
   /** Type of the resource. This is always "fusiontables#task". */
   var kind: js.UndefOr[java.lang.String] = js.undefined

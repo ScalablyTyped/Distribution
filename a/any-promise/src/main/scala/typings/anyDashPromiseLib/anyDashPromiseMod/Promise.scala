@@ -9,16 +9,11 @@ import scala.scalajs.js.annotation._
 trait Promise[R]
   extends anyDashPromiseLib.anyDashPromiseMod.PromiseNs.Thenable[R] {
   /**
-     * Sugar for promise.then(undefined, onRejected)
-     *
-     * @param onRejected called when/if "promise" rejects
-     */
+    * Sugar for promise.then(undefined, onRejected)
+    *
+    * @param onRejected called when/if "promise" rejects
+    */
   def `catch`[U](): Promise[U] = js.native
-  /**
-     * Sugar for promise.then(undefined, onRejected)
-     *
-     * @param onRejected called when/if "promise" rejects
-     */
   def `catch`[U](
     onRejected: js.Function1[/* error */ js.Any, U | anyDashPromiseLib.anyDashPromiseMod.PromiseNs.Thenable[U]]
   ): Promise[U] = js.native

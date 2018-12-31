@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDatePickerProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var date: js.UndefOr[js.Any] = js.undefined

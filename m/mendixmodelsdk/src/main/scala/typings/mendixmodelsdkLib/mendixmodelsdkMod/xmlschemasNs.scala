@@ -15,8 +15,8 @@ object xmlschemasNs extends js.Object {
   }
   
   /**
-       * In version 6.6.0: introduced
-       */
+    * In version 6.6.0: introduced
+    */
   @js.native
   class XmlElement protected ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.xmlschemasNs.XmlElement {
@@ -28,8 +28,8 @@ object xmlschemasNs extends js.Object {
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.xmlschemasNs.XmlPrimitiveType
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/xml-schemas relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/xml-schemas relevant section in reference guide}
+    */
   @js.native
   class XmlSchema protected ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.xmlschemasNs.XmlSchema {
@@ -49,35 +49,35 @@ object xmlschemasNs extends js.Object {
   }
   
   /**
-       * In version 6.6.0: introduced
-       */
+    * In version 6.6.0: introduced
+    */
   @js.native
   object XmlElement extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenXmlschemasMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new XmlElement instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new XmlElement instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.XmlElement = js.native
     /**
-             * Creates and returns a new XmlElement instance in the SDK and on the server.
-             * The new XmlElement will be automatically stored in the 'children' property
-             * of the parent mappings.Element element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.6.0 and higher
-             */
+      * Creates and returns a new XmlElement instance in the SDK and on the server.
+      * The new XmlElement will be automatically stored in the 'children' property
+      * of the parent mappings.Element element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.6.0 and higher
+      */
     def createInElementUnderChildren(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.Element): mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.XmlElement = js.native
     /**
-             * Creates and returns a new XmlElement instance in the SDK and on the server.
-             * The new XmlElement will be automatically stored in the 'elements' property
-             * of the parent jsonstructures.JsonStructure element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.6.0 and higher
-             */
+      * Creates and returns a new XmlElement instance in the SDK and on the server.
+      * The new XmlElement will be automatically stored in the 'elements' property
+      * of the parent jsonstructures.JsonStructure element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.6.0 and higher
+      */
     def createInJsonStructureUnderElements(container: mendixmodelsdkLib.distGenJsonstructuresMod.jsonstructuresNs.JsonStructure): mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.XmlElement = js.native
   }
   
@@ -98,16 +98,16 @@ object xmlschemasNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/xml-schemas relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/xml-schemas relevant section in reference guide}
+    */
   @js.native
   object XmlSchema extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenXmlschemasMod.StructureVersionInfo = js.native
     /**
-             * Creates a new XmlSchema unit in the SDK and on the server.
-             * Expects one argument, the projects.IFolderBase in which this unit is contained.
-             */
+      * Creates a new XmlSchema unit in the SDK and on the server.
+      * Expects one argument, the projects.IFolderBase in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.XmlSchema = js.native
   }
   
@@ -116,22 +116,22 @@ object xmlschemasNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenXmlschemasMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new XmlSchemaEntry instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new XmlSchemaEntry instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.XmlSchemaEntry = js.native
     /**
-             * Creates and returns a new XmlSchemaEntry instance in the SDK and on the server.
-             * The new XmlSchemaEntry will be automatically stored in the 'schemaEntries' property
-             * of the parent webservices.WsdlDescription element passed as argument.
-             */
+      * Creates and returns a new XmlSchemaEntry instance in the SDK and on the server.
+      * The new XmlSchemaEntry will be automatically stored in the 'schemaEntries' property
+      * of the parent webservices.WsdlDescription element passed as argument.
+      */
     def createInWsdlDescriptionUnderSchemaEntries(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.WsdlDescription): mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.XmlSchemaEntry = js.native
     /**
-             * Creates and returns a new XmlSchemaEntry instance in the SDK and on the server.
-             * The new XmlSchemaEntry will be automatically stored in the 'entries' property
-             * of the parent XmlSchema element passed as argument.
-             */
+      * Creates and returns a new XmlSchemaEntry instance in the SDK and on the server.
+      * The new XmlSchemaEntry will be automatically stored in the 'entries' property
+      * of the parent XmlSchema element passed as argument.
+      */
     def createInXmlSchemaUnderEntries(container: mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.XmlSchema): mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.XmlSchemaEntry = js.native
   }
   

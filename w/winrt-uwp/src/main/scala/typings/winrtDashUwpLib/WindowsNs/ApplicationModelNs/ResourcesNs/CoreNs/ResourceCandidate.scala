@@ -20,20 +20,20 @@ abstract class ResourceCandidate () extends js.Object {
   /** Gets the value of this ResourceCandidate , expressed as a string. */
   var valueAsString: java.lang.String = js.native
   /**
-                       * Returns the value of a qualifier, given its name.
-                       * @param qualifierName The name of the qualifier.
-                       * @return The value of the qualifier.
-                       */
+    * Returns the value of a qualifier, given its name.
+    * @param qualifierName The name of the qualifier.
+    * @return The value of the qualifier.
+    */
   def getQualifierValue(qualifierName: java.lang.String): java.lang.String = js.native
   /**
-                       * Asynchronously returns a StorageFile that accesses the value of this ResourceCandidate . This only works on certain types of ResourceCandidates that are files.
-                       * @return An asynchronous operation to return the requested StorageFile .
-                       */
+    * Asynchronously returns a StorageFile that accesses the value of this ResourceCandidate . This only works on certain types of ResourceCandidates that are files.
+    * @return An asynchronous operation to return the requested StorageFile .
+    */
   def getValueAsFileAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.StorageNs.StorageFile] = js.native
   /**
-                       * Asynchronously returns an IRandomAccessStream that accesses the value of this ResourceCandidate .
-                       * @return An asynchronous operation to return the requested IRandomAccessStream .
-                       */
+    * Asynchronously returns an IRandomAccessStream that accesses the value of this ResourceCandidate .
+    * @return An asynchronous operation to return the requested IRandomAccessStream .
+    */
   def getValueAsStreamAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream] = js.native
 }
 

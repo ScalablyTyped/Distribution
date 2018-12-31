@@ -9,37 +9,37 @@ import scala.scalajs.js.annotation._
 sealed trait ChartAxisCategoryType extends js.Object
 
 /**
-     *
-     * Specifies the type of the category axis.
-     *
-     * [Api set: ExcelApi 1.7]
-     */
+  *
+  * Specifies the type of the category axis.
+  *
+  * [Api set: ExcelApi 1.7]
+  */
 @JSGlobal("Excel.ChartAxisCategoryType")
 @js.native
 object ChartAxisCategoryType extends js.Object {
   /**
-           *
-           * Excel controls the axis type.
-           *
-           */
+    *
+    * Excel controls the axis type.
+    *
+    */
   @js.native
   sealed trait automatic
     extends officeDashJsLib.ExcelNs.ChartAxisCategoryType
   
   /**
-           *
-           * Axis groups data on a time scale.
-           *
-           */
+    *
+    * Axis groups data on a time scale.
+    *
+    */
   @js.native
   sealed trait dateAxis
     extends officeDashJsLib.ExcelNs.ChartAxisCategoryType
   
   /**
-           *
-           * Axis groups data by an arbitrary set of categories.
-           *
-           */
+    *
+    * Axis groups data by an arbitrary set of categories.
+    *
+    */
   @js.native
   sealed trait textAxis
     extends officeDashJsLib.ExcelNs.ChartAxisCategoryType

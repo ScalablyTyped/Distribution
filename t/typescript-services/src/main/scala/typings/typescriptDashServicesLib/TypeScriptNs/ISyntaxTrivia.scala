@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISyntaxTrivia extends js.Object {
   def fullText(): java.lang.String
   def fullWidth(): scala.Double

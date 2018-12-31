@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SearchResultsEvent extends js.Object {
   var event: js.Any
   var id: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICheckbox extends IField {
   /** [Method] Set the checked state of the checkbox to true
   		* @returns Ext.field.Checkbox This checkbox.

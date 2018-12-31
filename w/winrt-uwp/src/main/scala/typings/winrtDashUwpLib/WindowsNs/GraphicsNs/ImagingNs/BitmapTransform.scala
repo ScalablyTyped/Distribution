@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Contains transformations that can be applied to pixel data. */
 @JSGlobal("Windows.Graphics.Imaging.BitmapTransform")
 @js.native
+/** Creates a new BitmapTransform object. */
 class BitmapTransform () extends js.Object {
   /** Specifies the bounding rectangle that is used to crop the bitmap. This rectangle is defined in the coordinate space after scale, rotation, and flip are applied. */
   var bounds: BitmapBounds = js.native

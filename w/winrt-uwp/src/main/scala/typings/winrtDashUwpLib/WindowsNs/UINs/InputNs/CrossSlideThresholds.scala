@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains the distance thresholds for a CrossSliding interaction. */
-
 trait CrossSlideThresholds extends js.Object {
   /** The distance, in DIPs, from the initial point of contact until the rearrange action is initiated. */
   var rearrangeStart: scala.Double

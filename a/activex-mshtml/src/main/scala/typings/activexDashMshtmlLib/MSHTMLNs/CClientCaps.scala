@@ -26,7 +26,6 @@ class CClientCaps protected () extends js.Object {
   val width: scala.Double = js.native
   /** @param bStrVer [bStrVer=''] */
   def addComponentRequest(bstrName: java.lang.String, bstrURL: java.lang.String): scala.Unit = js.native
-  /** @param bStrVer [bStrVer=''] */
   def addComponentRequest(bstrName: java.lang.String, bstrURL: java.lang.String, bStrVer: java.lang.String): scala.Unit = js.native
   def clearComponentRequest(): scala.Unit = js.native
   def compareVersions(bstrVer1: java.lang.String, bstrVer2: java.lang.String): scala.Double = js.native
@@ -34,7 +33,6 @@ class CClientCaps protected () extends js.Object {
   def getComponentVersion(bstrName: java.lang.String, bstrURL: java.lang.String): java.lang.String = js.native
   /** @param bStrVer [bStrVer=''] */
   def isComponentInstalled(bstrName: java.lang.String, bstrURL: java.lang.String): scala.Boolean = js.native
-  /** @param bStrVer [bStrVer=''] */
   def isComponentInstalled(bstrName: java.lang.String, bstrURL: java.lang.String, bStrVer: java.lang.String): scala.Boolean = js.native
 }
 

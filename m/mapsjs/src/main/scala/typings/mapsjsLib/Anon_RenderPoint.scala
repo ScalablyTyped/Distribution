@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RenderPoint extends js.Object {
   var renderBitmap: js.UndefOr[
     js.Function4[

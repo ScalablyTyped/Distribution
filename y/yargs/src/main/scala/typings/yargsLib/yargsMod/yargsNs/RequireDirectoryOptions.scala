@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequireDirectoryOptions extends js.Object {
   var exclude: js.UndefOr[stdLib.RegExp | (js.Function1[/* pathToFile */ java.lang.String, scala.Boolean])] = js.undefined
   var extensions: js.UndefOr[js.Array[java.lang.String]] = js.undefined

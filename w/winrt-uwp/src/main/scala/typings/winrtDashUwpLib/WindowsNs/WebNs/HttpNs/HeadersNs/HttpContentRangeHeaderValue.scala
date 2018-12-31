@@ -10,22 +10,22 @@ import scala.scalajs.js.annotation._
 @js.native
 class HttpContentRangeHeaderValue protected () extends js.Object {
   /**
-                       * Initializes a new instance of the HttpContentRangeHeaderValue class with a content length.
-                       * @param length The length, in bytes, of the full content entity body.
-                       */
+    * Initializes a new instance of the HttpContentRangeHeaderValue class with a content length.
+    * @param length The length, in bytes, of the full content entity body.
+    */
   def this(length: scala.Double) = this()
   /**
-                       * Initializes a new instance of the HttpContentRangeHeaderValue class with a start and stop position.
-                       * @param from The position, in bytes, at which to start sending data.
-                       * @param to The position, in bytes, at which to stop sending data.
-                       */
+    * Initializes a new instance of the HttpContentRangeHeaderValue class with a start and stop position.
+    * @param from The position, in bytes, at which to start sending data.
+    * @param to The position, in bytes, at which to stop sending data.
+    */
   def this(from: scala.Double, to: scala.Double) = this()
   /**
-                       * Initializes a new instance of the HttpContentRangeHeaderValue class with a start and stop position and a content length.
-                       * @param from The position, in bytes, at which to start sending data.
-                       * @param to The position, in bytes, at which to stop sending data.
-                       * @param length The length, in bytes, of the full content entity body.
-                       */
+    * Initializes a new instance of the HttpContentRangeHeaderValue class with a start and stop position and a content length.
+    * @param from The position, in bytes, at which to start sending data.
+    * @param to The position, in bytes, at which to stop sending data.
+    * @param length The length, in bytes, of the full content entity body.
+    */
   def this(from: scala.Double, to: scala.Double, length: scala.Double) = this()
   /** Gets the position at which to start sending data in the Content-Range HTTP header. */
   var firstBytePosition: scala.Double = js.native
@@ -42,15 +42,15 @@ class HttpContentRangeHeaderValue protected () extends js.Object {
 @js.native
 object HttpContentRangeHeaderValue extends js.Object {
   /**
-                       * Converts a string to an HttpContentRangeHeaderValue instance.
-                       * @param input A string that represents the content range information in the Content-Range HTTP header.
-                       * @return An HttpContentRangeHeaderValue instance.
-                       */
+    * Converts a string to an HttpContentRangeHeaderValue instance.
+    * @param input A string that represents the content range information in the Content-Range HTTP header.
+    * @return An HttpContentRangeHeaderValue instance.
+    */
   def parse(input: java.lang.String): winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpContentRangeHeaderValue = js.native
   /**
-                       * Determines whether a string is valid HttpContentRangeHeaderValue information.
-                       * @param input The string to validate.
-                       */
+    * Determines whether a string is valid HttpContentRangeHeaderValue information.
+    * @param input The string to validate.
+    */
   def tryParse(input: java.lang.String): winrtDashUwpLib.Anon_ContentRangeHeaderValue = js.native
 }
 

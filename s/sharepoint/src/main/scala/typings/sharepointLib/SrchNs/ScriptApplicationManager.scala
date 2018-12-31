@@ -31,8 +31,8 @@ class ScriptApplicationManager () extends js.Object {
   def get_searchSessionID(): scala.Unit = js.native
   def initialize(): scala.Unit = js.native
   /** Puts specified hash-key address into the current page location.
-           * @param url The hash-key, e.g. '#k=test'
-           */
+    * @param url The hash-key, e.g. '#k=test'
+    */
   def navigateTo(url: java.lang.String): scala.Unit = js.native
   /** Raises the load event */
   def raiseLoadEvent(): scala.Unit = js.native
@@ -40,17 +40,11 @@ class ScriptApplicationManager () extends js.Object {
   def raisePostLoadEvent(): scala.Unit = js.native
   /** Raises the preload event */
   def raisePreLoadEvent(): scala.Unit = js.native
-  /** Registers DisplayControl, DataProvider or SearchBox in the system.
-           * After registration the controls will be correctly processed in the page search context.
-           */
   def registerClientControl(clientControl: DataProvider): scala.Unit = js.native
   /** Registers DisplayControl, DataProvider or SearchBox in the system.
-           * After registration the controls will be correctly processed in the page search context.
-           */
+    * After registration the controls will be correctly processed in the page search context.
+    */
   def registerClientControl(clientControl: DisplayControl): scala.Unit = js.native
-  /** Registers DisplayControl, DataProvider or SearchBox in the system.
-           * After registration the controls will be correctly processed in the page search context.
-           */
   def registerClientControl(clientControl: SearchBox): scala.Unit = js.native
   /** Removes handler for the load event */
   def remove_load(handlerFunction: js.Function2[/* instance */ js.Any, /* eventArgs */ js.Any, scala.Unit]): scala.Unit = js.native

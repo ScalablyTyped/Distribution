@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IChangeEvent[T] extends js.Object {
   var edit: scala.Boolean
   var errorSchema: FormValidation

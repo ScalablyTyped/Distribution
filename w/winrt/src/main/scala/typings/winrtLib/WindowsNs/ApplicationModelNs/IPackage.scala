@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPackage extends js.Object {
   var dependencies: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[Package]
   var description: java.lang.String

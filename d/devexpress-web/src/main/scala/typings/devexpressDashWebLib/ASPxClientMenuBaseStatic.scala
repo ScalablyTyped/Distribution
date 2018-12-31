@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ASPxClientMenuBaseStatic extends ASPxClientControlStatic {
   /**
-       * Returns a collection of client menu objects.
-       */
+    * Returns a collection of client menu objects.
+    */
   def GetMenuCollection(): ASPxClientMenuCollection = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MatchReference extends js.Object {
   var champion: scala.Double
   var lane: java.lang.String

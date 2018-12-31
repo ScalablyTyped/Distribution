@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageAsset extends js.Object {
   /** The height of the asset. */
   var height: js.UndefOr[scala.Double] = js.undefined

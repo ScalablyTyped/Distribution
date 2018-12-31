@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @mixin
-         */
+  * @mixin
+  */
 @js.native
 trait IExtJSObservable extends js.Object {
   def firesAtLeastNTimes(observable: js.Any, event: java.lang.String, n: scala.Double, desc: java.lang.String): scala.Unit = js.native

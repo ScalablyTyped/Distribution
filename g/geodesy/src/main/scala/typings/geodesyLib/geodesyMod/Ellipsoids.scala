@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Ellipsoids extends js.Object {
   var Airy1830: Ellipsoid
   var AiryModified: Ellipsoid

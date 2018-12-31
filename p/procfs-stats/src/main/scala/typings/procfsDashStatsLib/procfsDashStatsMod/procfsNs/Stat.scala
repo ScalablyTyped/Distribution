@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Stat extends js.Object {
   var blocked: java.lang.String
   var cguest_time: java.lang.String

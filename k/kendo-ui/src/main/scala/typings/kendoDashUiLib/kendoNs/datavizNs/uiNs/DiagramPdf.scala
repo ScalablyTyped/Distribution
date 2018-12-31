@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiagramPdf extends js.Object {
   var author: js.UndefOr[java.lang.String] = js.undefined
   var creator: js.UndefOr[java.lang.String] = js.undefined

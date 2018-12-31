@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents the base material used for manufacturing certain objects in the 3D model. */
 @JSGlobal("Windows.Graphics.Printing3D.Printing3DBaseMaterial")
 @js.native
+/** Creates an instance of the Printing3DBaseMaterial class. */
 class Printing3DBaseMaterial () extends js.Object {
   /** Gets or sets the color of the base material. */
   var color: Printing3DColorMaterial = js.native

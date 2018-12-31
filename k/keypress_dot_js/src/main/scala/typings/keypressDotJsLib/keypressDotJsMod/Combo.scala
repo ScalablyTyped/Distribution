@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Combo extends js.Object {
   var is_counting: js.UndefOr[scala.Boolean] = js.undefined
   var is_exclusive: js.UndefOr[scala.Boolean] = js.undefined

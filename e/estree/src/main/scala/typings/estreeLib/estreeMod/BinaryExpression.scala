@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BinaryExpression extends BaseNode {
   var left: estreeLib.Expression
   var operator: BinaryOperator

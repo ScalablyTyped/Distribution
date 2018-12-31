@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RedisStorageConfig
   extends simpleDashUrlDashCacheLib.simpleDashUrlDashCacheMod.privateNNs.StorageConfig {
   var db: js.UndefOr[java.lang.String] = js.undefined

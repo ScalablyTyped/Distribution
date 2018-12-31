@@ -9,49 +9,49 @@ import scala.scalajs.js.annotation._
 sealed trait WeekNumber extends js.Object
 
 /**
-         * Specifies the week of the month.
-         * 
-         * [Api set: Mailbox 1.7]
-         *
-         * @remarks
-         * <table><tr><td>
-         * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
-         * </td><td>Compose or read</td></tr></table>
-         */
+  * Specifies the week of the month.
+  * 
+  * [Api set: Mailbox 1.7]
+  *
+  * @remarks
+  * <table><tr><td>
+  * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
+  * </td><td>Compose or read</td></tr></table>
+  */
 @JSGlobal("Office.MailboxEnums.WeekNumber")
 @js.native
 object WeekNumber extends js.Object {
   /**
-               * First week of the month.
-               */
+    * First week of the month.
+    */
   @js.native
   sealed trait First
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.WeekNumber
   
   /**
-               * Fourth week of the month.
-               */
+    * Fourth week of the month.
+    */
   @js.native
   sealed trait Fourth
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.WeekNumber
   
   /**
-               * Last week of the month.
-               */
+    * Last week of the month.
+    */
   @js.native
   sealed trait Last
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.WeekNumber
   
   /**
-               * Second week of the month.
-               */
+    * Second week of the month.
+    */
   @js.native
   sealed trait Second
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.WeekNumber
   
   /**
-               * Third week of the month.
-               */
+    * Third week of the month.
+    */
   @js.native
   sealed trait Third
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.WeekNumber

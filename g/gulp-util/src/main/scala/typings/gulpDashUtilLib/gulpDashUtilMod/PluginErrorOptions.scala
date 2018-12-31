@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PluginErrorOptions extends js.Object {
   var error: js.UndefOr[nodeLib.Error] = js.undefined
   var fileName: js.UndefOr[java.lang.String] = js.undefined

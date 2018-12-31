@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILanguageFont extends js.Object {
   var fontFamily: java.lang.String
   var fontStretch: winrtLib.WindowsNs.UINs.TextNs.FontStretch

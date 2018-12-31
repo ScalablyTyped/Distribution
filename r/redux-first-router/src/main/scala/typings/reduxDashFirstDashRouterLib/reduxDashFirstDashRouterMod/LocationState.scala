@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocationState[TKeys, TState] extends js.Object {
   var hasSSR: js.UndefOr[scala.Boolean] = js.undefined
   var history: Nullable[HistoryData]

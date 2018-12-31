@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRow extends js.Object {
   var config: IRowConfig
   var cursor: java.lang.String

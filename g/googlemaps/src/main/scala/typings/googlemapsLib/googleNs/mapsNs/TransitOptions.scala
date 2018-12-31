@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransitOptions extends js.Object {
   var arrivalTime: js.UndefOr[stdLib.Date] = js.undefined
   var departureTime: js.UndefOr[stdLib.Date] = js.undefined

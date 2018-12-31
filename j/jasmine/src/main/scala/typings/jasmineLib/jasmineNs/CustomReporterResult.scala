@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomReporterResult extends js.Object {
   var description: java.lang.String
   var failedExpectations: js.UndefOr[js.Array[FailedExpectation]] = js.undefined

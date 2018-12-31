@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilterableComposition[F, G]
   extends fpDashTsLib.libCompactableMod.CompactableComposition[F, G] {
   def filter[A](

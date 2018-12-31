@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlaylistItem extends js.Object {
   /**
-               * The contentDetails object is included in the resource if the included item is a YouTube video. The object contains additional information about the
-               * video.
-               */
+    * The contentDetails object is included in the resource if the included item is a YouTube video. The object contains additional information about the
+    * video.
+    */
   var contentDetails: js.UndefOr[PlaylistItemContentDetails] = js.undefined
   /** Etag of this resource. */
   var etag: js.UndefOr[java.lang.String] = js.undefined

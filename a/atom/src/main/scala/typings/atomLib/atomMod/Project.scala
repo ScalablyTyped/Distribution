@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Project extends js.Object {
   /** Add a path to the project's list of root paths. */
   def addPath(projectPath: java.lang.String): scala.Unit
   /**
-       *  Determines whether the given path (real or symbolic) is inside the
-       *  project's directory.
-       */
+    *  Determines whether the given path (real or symbolic) is inside the
+    *  project's directory.
+    */
   def contains(pathToCheck: java.lang.String): scala.Boolean
   /** Get an Array of Directorys associated with this project. */
   def getDirectories(): js.Array[Directory]
@@ -21,20 +20,20 @@ trait Project extends js.Object {
   def getPaths(): js.Array[java.lang.String]
   // Accessing the Git Repository
   /**
-       * Get an Array of GitRepositorys associated with the project's directories.
-       *
-       * This method will be removed in 2.0 because it does synchronous I/O.
-       */
+    * Get an Array of GitRepositorys associated with the project's directories.
+    *
+    * This method will be removed in 2.0 because it does synchronous I/O.
+    */
   def getRepositories(): js.Array[GitRepository]
   /**
-       *  Access a promise that resolves when the filesystem watcher associated with a
-       *  project root directory is ready to begin receiving events.
-       */
+    *  Access a promise that resolves when the filesystem watcher associated with a
+    *  project root directory is ready to begin receiving events.
+    */
   def getWatcherPromise(projectPath: java.lang.String): js.Promise[PathWatcher]
   /**
-       *  Invoke the given callback with all current and future text buffers in
-       *  the project.
-       */
+    *  Invoke the given callback with all current and future text buffers in
+    *  the project.
+    */
   def observeBuffers(callback: js.Function1[/* buffer */ TextBuffer, scala.Unit]): Disposable
   /** Invoke the given callback with all current and future repositories in the project. */
   def observeRepositories(callback: js.Function1[/* repository */ GitRepository, scala.Unit]): Disposable
@@ -54,9 +53,9 @@ trait Project extends js.Object {
   /** Get the relative path from the project directory to the given path. */
   def relativize(fullPath: java.lang.String): java.lang.String
   /**
-       *  Get the path to the project directory that contains the given path, and
-       *  the relative path from that project directory to the given path.
-       */
+    *  Get the path to the project directory that contains the given path, and
+    *  the relative path from that project directory to the given path.
+    */
   def relativizePath(fullPath: java.lang.String): js.Tuple2[java.lang.String | scala.Null, java.lang.String]
   /** Remove a path from the project's list of root paths. */
   def removePath(projectPath: java.lang.String): scala.Unit

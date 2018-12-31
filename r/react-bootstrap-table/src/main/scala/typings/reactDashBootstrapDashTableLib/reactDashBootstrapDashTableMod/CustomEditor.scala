@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomEditor[TRow /* <: js.Object */, K /* <: java.lang.String */] extends js.Object {
   /**
   	 * Additional parameters to pass to the getElement function inside the props argument.
@@ -18,7 +17,7 @@ trait CustomEditor[TRow /* <: js.Object */, K /* <: java.lang.String */] extends
   	 */
   def getElement(
     onUpdate: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TRow))),List()),Left(TsIdentSimple(K))) *//* updatedCell */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: TRow[K] */ /* updatedCell */ js.Any, 
       scala.Unit
     ],
     props: CustomEditorProps[TRow, K]

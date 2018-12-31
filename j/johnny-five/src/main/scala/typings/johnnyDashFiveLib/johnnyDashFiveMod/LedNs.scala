@@ -26,7 +26,6 @@ object LedNs extends js.Object {
     def on(index: scala.Double): scala.Unit = js.native
   }
   
-  
   trait DigitsOption extends js.Object {
     var controller: js.UndefOr[java.lang.String] = js.undefined
     var devices: js.UndefOr[scala.Double] = js.undefined
@@ -57,7 +56,6 @@ object LedNs extends js.Object {
     def row(row: scala.Double, `val`: scala.Double): scala.Unit = js.native
   }
   
-  
   trait MatrixIC2Option extends js.Object {
     var addresses: js.UndefOr[js.Array[_]] = js.undefined
     var controller: java.lang.String
@@ -65,7 +63,6 @@ object LedNs extends js.Object {
     var isBicolor: js.UndefOr[scala.Boolean] = js.undefined
     var rotation: js.UndefOr[scala.Double] = js.undefined
   }
-  
   
   trait MatrixOption extends js.Object {
     var devices: js.UndefOr[scala.Double] = js.undefined
@@ -90,7 +87,6 @@ object LedNs extends js.Object {
     def strobe(ms: scala.Double): scala.Unit = js.native
     def toggle(): scala.Unit = js.native
   }
-  
   
   trait RGBOption extends js.Object {
     var controller: js.UndefOr[java.lang.String] = js.undefined

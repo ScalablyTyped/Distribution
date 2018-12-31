@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Environment
-
 trait FakeTimers extends js.Object {
   def advanceTimersByTime(msToRun: scala.Double): scala.Unit
   def clearAllTimers(): scala.Unit

@@ -18,14 +18,14 @@ object authNs extends js.Object {
   var PopupFlow: asanaLib.asanaMod.asanaNs.authNs.PopupFlowStatic = js.native
   var RedirectFlow: asanaLib.asanaMod.asanaNs.authNs.RedirectFlowStatic = js.native
   /**
-           * Auto-detects the type of Oauth flow to use that's appropriate to the
-           * environment.
-           *
-           * @returns {Function|null} The type of Oauth flow to use, or null if no
-           *     appropriate type could be determined.
-           * @param env
-           * @return
-           */
+    * Auto-detects the type of Oauth flow to use that's appropriate to the
+    * environment.
+    *
+    * @returns {Function|null} The type of Oauth flow to use, or null if no
+    *     appropriate type could be determined.
+    * @param env
+    * @return
+    */
   def autoDetect(env: js.Any): js.Function = js.native
 }
 

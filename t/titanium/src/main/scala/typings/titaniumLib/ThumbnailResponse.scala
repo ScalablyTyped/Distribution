@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object passed to the thumbnail callback in response to the
- * [requestThumbnailImagesAtTimes](Titanium.Media.VideoPlayer.requestThumbnailImagesAtTimes)
- * method.
- */
-
+  * Simple object passed to the thumbnail callback in response to the
+  * [requestThumbnailImagesAtTimes](Titanium.Media.VideoPlayer.requestThumbnailImagesAtTimes)
+  * method.
+  */
 trait ThumbnailResponse extends js.Object {
   /**
   	 * Error code. Returns 0 if `success` is `true`.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGAttributes extends NativeSVGAttributes {
   // CamelCase variants of native attributes
   var alignmentBaseline: js.UndefOr[js.Any] = js.undefined

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains the certificate properties of the request if it is a secure request. */
-
 trait CertificateInfo extends js.Object {
   var fingerprint: firefoxDashWebextDashBrowserLib.Anon_Sha1
   var isBuiltInRoot: scala.Boolean

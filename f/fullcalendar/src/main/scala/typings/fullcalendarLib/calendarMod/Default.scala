@@ -33,7 +33,7 @@ class Default protected () extends js.Object {
   var suggestedViewHeight: scala.Double = js.native
   var theme: fullcalendarLib.themeMod.default = js.native
   var toolbarsManager: fullcalendarLib.iteratorMod.default = js.native
-  var trigger: js.Function2[/* types */ js.Any, /* repeated */js.Any, _] = js.native
+  var trigger: js.Function2[/* types */ js.Any, /* repeated */ js.Any, _] = js.native
   var triggerWith: js.Function3[/* types */ js.Any, /* context */ js.Any, /* args */ js.Any, _] = js.native
   var view: fullcalendarLib.viewMod.default = js.native
   var viewSpecManager: fullcalendarLib.viewspecmanagerMod.default = js.native

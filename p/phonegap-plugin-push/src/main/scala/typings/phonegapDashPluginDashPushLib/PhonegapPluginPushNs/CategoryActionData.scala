@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CategoryActionData extends js.Object {
   var callback: java.lang.String
   var destructive: scala.Boolean

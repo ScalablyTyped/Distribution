@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlayerLeaderboardScoreListResponse extends js.Object {
   /** The leaderboard scores. */
   var items: js.UndefOr[js.Array[PlayerLeaderboardScore]] = js.undefined

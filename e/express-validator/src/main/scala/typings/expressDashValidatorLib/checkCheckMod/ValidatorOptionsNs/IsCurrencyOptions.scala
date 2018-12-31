@@ -6,23 +6,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-   * defaults to
-   * {
-   *   symbol: '$',
-   *   require_symbol: false,
-   *   allow_space_after_symbol: false,
-   *   symbol_after_digits: false,
-   *   allow_negatives: true,
-   *   parens_for_negatives: false,
-   *   negative_sign_before_digits: false,
-   *   negative_sign_after_digits: false,
-   *   allow_negative_sign_placeholder: false,
-   *   thousands_separator: ',',
-   *   decimal_separator: '.',
-   *   allow_space_after_digits: false
-   * }
-   */
-
+  * defaults to
+  * {
+  *   symbol: '$',
+  *   require_symbol: false,
+  *   allow_space_after_symbol: false,
+  *   symbol_after_digits: false,
+  *   allow_negatives: true,
+  *   parens_for_negatives: false,
+  *   negative_sign_before_digits: false,
+  *   negative_sign_after_digits: false,
+  *   allow_negative_sign_placeholder: false,
+  *   thousands_separator: ',',
+  *   decimal_separator: '.',
+  *   allow_space_after_digits: false
+  * }
+  */
 trait IsCurrencyOptions extends js.Object {
   var allow_decimal: js.UndefOr[scala.Boolean] = js.undefined
   var allow_negative_sign_placeholder: js.UndefOr[scala.Boolean] = js.undefined

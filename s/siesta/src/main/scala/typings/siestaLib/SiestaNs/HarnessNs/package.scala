@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object HarnessNs {
   /**
-           * @singleton
-           */
+    * @singleton
+    */
   type IHarnessNodeJS = siestaLib.SiestaNs.IHarness
 }

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait DocumentPropertyType extends js.Object
 
 /**
-     * [Api set: WordApi]
-     */
+  * [Api set: WordApi]
+  */
 @JSGlobal("Word.DocumentPropertyType")
 @js.native
 object DocumentPropertyType extends js.Object {

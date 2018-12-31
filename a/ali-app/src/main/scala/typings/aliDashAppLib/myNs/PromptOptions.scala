@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PromptOptions
   extends BaseOptions[js.Any, js.Any] {
   /** message对齐方式，可用枚举left/center/right，iOS ‘center’, android ‘left’ */

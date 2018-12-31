@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDataTransferManager extends js.Object {
   var ondatarequested: js.Any
   var ontargetapplicationchosen: js.Any

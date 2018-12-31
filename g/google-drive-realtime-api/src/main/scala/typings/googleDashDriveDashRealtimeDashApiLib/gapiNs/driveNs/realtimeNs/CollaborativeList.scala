@@ -21,7 +21,6 @@ class CollaborativeList[V] () extends CollaborativeObject {
   def get(ind: scala.Double): V = js.native
   //Returns the first index of the given value, or -1 if it cannot be found.
   def indexOf(value: V): scala.Double = js.native
-  //Returns the first index of the given value, or -1 if it cannot be found.
   def indexOf(value: V, opt_comparatorFn: js.Function2[/* x1 */ V, /* x2 */ V, scala.Boolean]): scala.Double = js.native
   //Inserts an item into the list at a given index.
   def insert(index: scala.Double, value: V): scala.Unit = js.native
@@ -29,7 +28,6 @@ class CollaborativeList[V] () extends CollaborativeObject {
   def insertAll(index: scala.Double, values: js.Array[V]): scala.Unit = js.native
   // Returns the last index of the given value, or -1 if it cannot be found.
   def lastIndexOf(value: V): scala.Double = js.native
-  // Returns the last index of the given value, or -1 if it cannot be found.
   def lastIndexOf(value: V, opt_comparatorFn: js.Function2[/* x1 */ V, /* x2 */ V, scala.Boolean]): scala.Double = js.native
   //Moves a single element in this list (at index) to immediately before destinationIndex.
   //Both indices are with respect to the position of elements before the move.

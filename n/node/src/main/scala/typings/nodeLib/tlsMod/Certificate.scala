@@ -5,31 +5,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Certificate extends js.Object {
   /**
-           * Country code.
-           */
+    * Country code.
+    */
   var C: java.lang.String
   /**
-           * Common name.
-           */
+    * Common name.
+    */
   var CN: java.lang.String
   /**
-           * Locality.
-           */
+    * Locality.
+    */
   var L: java.lang.String
   /**
-           * Organization.
-           */
+    * Organization.
+    */
   var O: java.lang.String
   /**
-           * Organizational unit.
-           */
+    * Organizational unit.
+    */
   var OU: java.lang.String
   /**
-           * Street.
-           */
+    * Street.
+    */
   var ST: java.lang.String
 }
 

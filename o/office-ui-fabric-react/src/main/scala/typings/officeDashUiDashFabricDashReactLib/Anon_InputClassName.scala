@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_InputClassName extends js.Object {
   /** Optional pickerInput className */
   var inputClassName: js.UndefOr[java.lang.String] = js.undefined

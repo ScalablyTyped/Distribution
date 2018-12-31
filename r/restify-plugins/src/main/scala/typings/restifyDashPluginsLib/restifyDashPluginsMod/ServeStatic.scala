@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServeStatic extends js.Object {
   var appendRequestPath: js.UndefOr[scala.Boolean] = js.undefined
   var charSet: js.UndefOr[java.lang.String] = js.undefined

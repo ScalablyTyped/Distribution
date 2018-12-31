@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TeamsAwards extends js.Object {
   var awards: js.Array[java.lang.String]
   var events: js.Array[java.lang.String]

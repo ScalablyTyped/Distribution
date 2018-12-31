@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Expander extends js.Object {
   var collapseOnClickOut: scala.Boolean
   var collapseOnFocusOut: scala.Boolean

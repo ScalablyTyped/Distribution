@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DisplayItem extends js.Object {
   var amount: scala.Double
   var label: java.lang.String

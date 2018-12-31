@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-   * Helper methods
-   */
+  * Helper methods
+  */
 @js.native
 trait I18n extends js.Object {
   def l(timestamp: scala.Double): java.lang.String = js.native

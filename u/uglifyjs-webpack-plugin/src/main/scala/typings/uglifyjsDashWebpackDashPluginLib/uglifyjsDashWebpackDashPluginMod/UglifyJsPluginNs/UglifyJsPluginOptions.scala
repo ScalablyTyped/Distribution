@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UglifyJsPluginOptions extends js.Object {
   var cache: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   var exclude: js.UndefOr[stdLib.RegExp | js.Array[stdLib.RegExp]] = js.undefined

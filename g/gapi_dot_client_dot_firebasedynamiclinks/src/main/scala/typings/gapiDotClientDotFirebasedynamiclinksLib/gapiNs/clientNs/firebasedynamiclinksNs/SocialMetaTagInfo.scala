@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SocialMetaTagInfo extends js.Object {
   /** A short description of the link. Optional. */
   var socialDescription: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PivotGroup extends js.Object {
   def addManualGroupingRule(groupName: java.lang.String, groupMembers: js.Array[js.Object]): PivotGroup
   def areLabelsRepeated(): scala.Boolean

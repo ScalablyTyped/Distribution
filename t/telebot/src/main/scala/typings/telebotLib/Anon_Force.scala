@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Force extends js.Object {
   var chatId: js.UndefOr[scala.Double] = js.undefined
   var disableEditMessage: js.UndefOr[scala.Boolean] = js.undefined

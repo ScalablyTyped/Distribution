@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IProvider
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Method] Clears a value from the state

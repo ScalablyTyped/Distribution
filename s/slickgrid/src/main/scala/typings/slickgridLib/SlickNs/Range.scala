@@ -17,23 +17,7 @@ class Range protected () extends js.Object {
   		* @param toCell {Integer} Optional. Ending cell. Defaults to <code>fromCell</code>.
   		**/
   def this(fromRow: scala.Double, fromCell: scala.Double) = this()
-  /**
-  		* A structure containing a range of cells.
-  		* @constructor
-  		* @param fromRow {Integer} Starting row.
-  		* @param fromCell {Integer} Starting cell.
-  		* @param toRow {Integer} Optional. Ending row. Defaults to <code>fromRow</code>.
-  		* @param toCell {Integer} Optional. Ending cell. Defaults to <code>fromCell</code>.
-  		**/
   def this(fromRow: scala.Double, fromCell: scala.Double, toRow: scala.Double) = this()
-  /**
-  		* A structure containing a range of cells.
-  		* @constructor
-  		* @param fromRow {Integer} Starting row.
-  		* @param fromCell {Integer} Starting cell.
-  		* @param toRow {Integer} Optional. Ending row. Defaults to <code>fromRow</code>.
-  		* @param toCell {Integer} Optional. Ending cell. Defaults to <code>fromCell</code>.
-  		**/
   def this(fromRow: scala.Double, fromCell: scala.Double, toRow: scala.Double, toCell: scala.Double) = this()
   /***
   		* @property fromCell

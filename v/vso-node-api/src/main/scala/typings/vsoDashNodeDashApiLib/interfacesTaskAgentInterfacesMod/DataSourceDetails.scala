@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataSourceDetails extends js.Object {
   var dataSourceName: java.lang.String
   var dataSourceUrl: java.lang.String

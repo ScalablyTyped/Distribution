@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateExpression extends BaseNode {
   var argument: Expression
   var operator: atBabelTypesLib.atBabelTypesLibStrings.`++` | atBabelTypesLib.atBabelTypesLibStrings.`--`

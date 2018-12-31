@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OperationPerDevice extends js.Object {
   /** Request to claim a device. */
   var claim: js.UndefOr[PartnerClaim] = js.undefined

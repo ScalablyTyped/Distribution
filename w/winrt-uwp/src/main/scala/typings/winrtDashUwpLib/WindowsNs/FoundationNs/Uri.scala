@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class Uri protected () extends js.Object {
   /**
-               * Initializes a new Uri object from the specified Uniform Resource Identifier (URI) string. Initializing the Uri also parses the string and populates the Uri properties that represent URI components.
-               * @param uri The string from which the new Uri object is created.
-               */
+    * Initializes a new Uri object from the specified Uniform Resource Identifier (URI) string. Initializing the Uri also parses the string and populates the Uri properties that represent URI components.
+    * @param uri The string from which the new Uri object is created.
+    */
   def this(uri: java.lang.String) = this()
   /**
-               * Initializes a new Uri by combining a base Uniform Resource Identifier (URI) and a relative URI. Initializing the Uri also parses the combined string and populates the Uri properties that represent URI components.
-               * @param baseUri The base URI.
-               * @param relativeUri The relative URI.
-               */
+    * Initializes a new Uri by combining a base Uniform Resource Identifier (URI) and a relative URI. Initializing the Uri also parses the combined string and populates the Uri properties that represent URI components.
+    * @param baseUri The base URI.
+    * @param relativeUri The relative URI.
+    */
   def this(baseUri: java.lang.String, relativeUri: java.lang.String) = this()
   /** Gets a fully canonical RFC-compliant representation of the current URI. */
   var absoluteCanonicalUri: java.lang.String = js.native
@@ -55,16 +55,16 @@ class Uri protected () extends js.Object {
   /** Gets the user name component of the Uniform Resource Identifier (URI) as stored in this Uri instance. */
   var userName: java.lang.String = js.native
   /**
-               * Adds the specified Uniform Resource Identifier (URI) to the current Uri .
-               * @param relativeUri A relative URI specified as a string. This relative path is evaluated using the host/authority of the Uri instance where this method is called.
-               * @return The combined Uri value.
-               */
+    * Adds the specified Uniform Resource Identifier (URI) to the current Uri .
+    * @param relativeUri A relative URI specified as a string. This relative path is evaluated using the host/authority of the Uri instance where this method is called.
+    * @return The combined Uri value.
+    */
   def combineUri(relativeUri: java.lang.String): Uri = js.native
   /**
-               * Determines whether the specified Uri object is equal to the current Uri object.
-               * @param pUri The Uri object to be compared.
-               * @return true if the two Uri values are the same; otherwise, false.
-               */
+    * Determines whether the specified Uri object is equal to the current Uri object.
+    * @param pUri The Uri object to be compared.
+    * @return true if the two Uri values are the same; otherwise, false.
+    */
   def equals(pUri: Uri): scala.Boolean = js.native
 }
 
@@ -73,16 +73,16 @@ class Uri protected () extends js.Object {
 @js.native
 object Uri extends js.Object {
   /**
-               * Converts a Uniform Resource Identifier (URI) string to its escaped representation.
-               * @param toEscape The string to convert.
-               * @return The escaped representation of toEscape.
-               */
+    * Converts a Uniform Resource Identifier (URI) string to its escaped representation.
+    * @param toEscape The string to convert.
+    * @return The escaped representation of toEscape.
+    */
   def escapeComponent(toEscape: java.lang.String): java.lang.String = js.native
   /**
-               * Converts the specified string by replacing any escape sequences with their unescaped representation.
-               * @param toUnescape The string to convert.
-               * @return The unescaped representation of stringToUnescape.
-               */
+    * Converts the specified string by replacing any escape sequences with their unescaped representation.
+    * @param toUnescape The string to convert.
+    * @return The unescaped representation of stringToUnescape.
+    */
   def unescapeComponent(toUnescape: java.lang.String): java.lang.String = js.native
 }
 

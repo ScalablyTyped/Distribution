@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Protocols extends js.Object {
   /** MIME Media Ranges for acceptable media uploads to this method. */
   var accept: js.UndefOr[js.Array[java.lang.String]] = js.undefined

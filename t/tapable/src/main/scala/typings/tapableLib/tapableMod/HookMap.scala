@@ -15,32 +15,32 @@ class HookMap[T1, T2, T3] protected () extends js.Object {
   def tap(
     key: js.Any,
     name: java.lang.String,
-    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */js.Any, _]
+    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, _]
   ): scala.Unit = js.native
   def tap(
     key: js.Any,
     name: Tap,
-    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */js.Any, _]
+    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, _]
   ): scala.Unit = js.native
   def tapAsync(
     key: js.Any,
     name: java.lang.String,
-    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */js.Any, scala.Unit]
+    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def tapAsync(
     key: js.Any,
     name: Tap,
-    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */js.Any, scala.Unit]
+    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def tapPromise(
     key: js.Any,
     name: java.lang.String,
-    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */js.Any, js.Promise[_]]
+    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, js.Promise[_]]
   ): scala.Unit = js.native
   def tapPromise(
     key: js.Any,
     name: Tap,
-    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */js.Any, js.Promise[_]]
+    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, js.Promise[_]]
   ): scala.Unit = js.native
 }
 

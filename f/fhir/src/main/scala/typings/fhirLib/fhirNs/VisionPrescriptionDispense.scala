@@ -6,117 +6,116 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Vision supply authorization
-     */
-
+  * Vision supply authorization
+  */
 trait VisionPrescriptionDispense extends BackboneElement {
   /**
-           * Contains extended information for property 'add'.
-           */
+    * Contains extended information for property 'add'.
+    */
   var _add: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'axis'.
-           */
+    * Contains extended information for property 'axis'.
+    */
   var _axis: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'backCurve'.
-           */
+    * Contains extended information for property 'backCurve'.
+    */
   var _backCurve: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'base'.
-           */
+    * Contains extended information for property 'base'.
+    */
   var _base: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'brand'.
-           */
+    * Contains extended information for property 'brand'.
+    */
   var _brand: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'color'.
-           */
+    * Contains extended information for property 'color'.
+    */
   var _color: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'cylinder'.
-           */
+    * Contains extended information for property 'cylinder'.
+    */
   var _cylinder: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'diameter'.
-           */
+    * Contains extended information for property 'diameter'.
+    */
   var _diameter: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'eye'.
-           */
+    * Contains extended information for property 'eye'.
+    */
   var _eye: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'power'.
-           */
+    * Contains extended information for property 'power'.
+    */
   var _power: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'prism'.
-           */
+    * Contains extended information for property 'prism'.
+    */
   var _prism: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'sphere'.
-           */
+    * Contains extended information for property 'sphere'.
+    */
   var _sphere: js.UndefOr[Element] = js.undefined
   /**
-           * Lens add
-           */
+    * Lens add
+    */
   var add: js.UndefOr[decimal] = js.undefined
   /**
-           * Lens axis
-           */
+    * Lens axis
+    */
   var axis: js.UndefOr[integer] = js.undefined
   /**
-           * Contact lens back curvature
-           */
+    * Contact lens back curvature
+    */
   var backCurve: js.UndefOr[decimal] = js.undefined
   /**
-           * up | down | in | out
-           */
+    * up | down | in | out
+    */
   var base: js.UndefOr[code] = js.undefined
   /**
-           * Brand required
-           */
+    * Brand required
+    */
   var brand: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Color required
-           */
+    * Color required
+    */
   var color: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Lens cylinder
-           */
+    * Lens cylinder
+    */
   var cylinder: js.UndefOr[decimal] = js.undefined
   /**
-           * Contact lens diameter
-           */
+    * Contact lens diameter
+    */
   var diameter: js.UndefOr[decimal] = js.undefined
   /**
-           * Lens wear duration
-           */
+    * Lens wear duration
+    */
   var duration: js.UndefOr[Quantity] = js.undefined
   /**
-           * right | left
-           */
+    * right | left
+    */
   var eye: js.UndefOr[code] = js.undefined
   /**
-           * Notes for coatings
-           */
+    * Notes for coatings
+    */
   var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   /**
-           * Contact lens power
-           */
+    * Contact lens power
+    */
   var power: js.UndefOr[decimal] = js.undefined
   /**
-           * Lens prism
-           */
+    * Lens prism
+    */
   var prism: js.UndefOr[decimal] = js.undefined
   /**
-           * Product to be supplied
-           */
+    * Product to be supplied
+    */
   var product: js.UndefOr[CodeableConcept] = js.undefined
   /**
-           * Lens sphere
-           */
+    * Lens sphere
+    */
   var sphere: js.UndefOr[decimal] = js.undefined
 }
 

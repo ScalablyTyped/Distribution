@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UnixSocket extends js.Object {
   var Flags: java.lang.String
   var Inode: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadRemoveEvent extends UploadEvent {
   var data: js.UndefOr[js.Any] = js.undefined
   var files: js.UndefOr[js.Array[_]] = js.undefined

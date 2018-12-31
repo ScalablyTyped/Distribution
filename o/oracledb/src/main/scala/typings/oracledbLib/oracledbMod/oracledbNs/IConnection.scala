@@ -81,60 +81,19 @@ trait IConnection
   		 * @returns	A Promise of a result object, containing any fetched rows, the values of any OUT and IN OUT bind variables, and the number of rows affected by the execution of DML statements.
   		 */
   def execute(sql: java.lang.String): IPromise[IExecuteReturn] = js.native
-  /**
-  		 * This call executes a SQL or PL/SQL statement. See SQL Execution for examples.
-  		 * The statement to be executed may contain IN binds, OUT or IN OUT bind values or variables, which are bound using either an object or an array.
-  		 * @param	{string} sql SQL Statement.
-  		 * @param	{Object|Array<any>} bindParams Binds Object/Array
-  		 * @param	{IExecuteOptions} options Options object
-  		 * @returns	A Promise of a result object, containing any fetched rows, the values of any OUT and IN OUT bind variables, and the number of rows affected by the execution of DML statements.
-  		 */
   def execute(sql: java.lang.String, bindParams: js.Array[_]): IPromise[IExecuteReturn] = js.native
-  /**
-  		 * This call executes a SQL or PL/SQL statement. See SQL Execution for examples.
-  		 * The statement to be executed may contain IN binds, OUT or IN OUT bind values or variables, which are bound using either an object or an array.
-  		 * A callback function returns a result object, containing any fetched rows, the values of any OUT and IN OUT bind variables, and the number of rows affected by the execution of DML statements.
-  		 * @param	{string} sql SQL Statement.
-  		 * @param	{Object|Array<any>} bindParams Binds Object/Array
-  		 * @param	{(err: any, value: IExecuteReturn) => void} callback Callback function to receive the result.
-  		 */
   def execute(
     sql: java.lang.String,
     bindParams: js.Array[_],
     callback: js.Function2[/* err */ js.Any, /* value */ IExecuteReturn, scala.Unit]
   ): scala.Unit = js.native
-  /**
-  		 * This call executes a SQL or PL/SQL statement. See SQL Execution for examples.
-  		 * The statement to be executed may contain IN binds, OUT or IN OUT bind values or variables, which are bound using either an object or an array.
-  		 * @param	{string} sql SQL Statement.
-  		 * @param	{Object|Array<any>} bindParams Binds Object/Array
-  		 * @param	{IExecuteOptions} options Options object
-  		 * @returns	A Promise of a result object, containing any fetched rows, the values of any OUT and IN OUT bind variables, and the number of rows affected by the execution of DML statements.
-  		 */
   def execute(sql: java.lang.String, bindParams: js.Array[_], options: IExecuteOptions): IPromise[IExecuteReturn] = js.native
-  /**
-  		 * This call executes a SQL or PL/SQL statement. See SQL Execution for examples.
-  		 * The statement to be executed may contain IN binds, OUT or IN OUT bind values or variables, which are bound using either an object or an array.
-  		 * A callback function returns a result object, containing any fetched rows, the values of any OUT and IN OUT bind variables, and the number of rows affected by the execution of DML statements.
-  		 * @param	{string} sql SQL Statement.
-  		 * @param	{Object|Array<any>} bindParams Binds Object/Array
-  		 * @param	{IExecuteOptions} options Options object
-  		 * @param	{(err: any, value: IExecuteReturn) => void} callback Callback function to receive the result.
-  		 */
   def execute(
     sql: java.lang.String,
     bindParams: js.Array[_],
     options: IExecuteOptions,
     callback: js.Function2[/* err */ js.Any, /* value */ IExecuteReturn, scala.Unit]
   ): scala.Unit = js.native
-  /**
-  		 * This call executes a SQL or PL/SQL statement. See SQL Execution for examples.
-  		 * The statement to be executed may contain IN binds, OUT or IN OUT bind values or variables, which are bound using either an object or an array.
-  		 * @param	{string} sql SQL Statement.
-  		 * @param	{Object|Array<any>} bindParams Binds Object/Array
-  		 * @param	{IExecuteOptions} options Options object
-  		 * @returns	A Promise of a result object, containing any fetched rows, the values of any OUT and IN OUT bind variables, and the number of rows affected by the execution of DML statements.
-  		 */
   def execute(sql: java.lang.String, bindParams: js.Object): IPromise[IExecuteReturn] = js.native
   /**
   		 * This call executes a SQL or PL/SQL statement. See SQL Execution for examples.
@@ -149,14 +108,6 @@ trait IConnection
     bindParams: js.Object,
     callback: js.Function2[/* err */ js.Any, /* value */ IExecuteReturn, scala.Unit]
   ): scala.Unit = js.native
-  /**
-  		 * This call executes a SQL or PL/SQL statement. See SQL Execution for examples.
-  		 * The statement to be executed may contain IN binds, OUT or IN OUT bind values or variables, which are bound using either an object or an array.
-  		 * @param	{string} sql SQL Statement.
-  		 * @param	{Object|Array<any>} bindParams Binds Object/Array
-  		 * @param	{IExecuteOptions} options Options object
-  		 * @returns	A Promise of a result object, containing any fetched rows, the values of any OUT and IN OUT bind variables, and the number of rows affected by the execution of DML statements.
-  		 */
   def execute(sql: java.lang.String, bindParams: js.Object, options: IExecuteOptions): IPromise[IExecuteReturn] = js.native
   /**
   		 * This call executes a SQL or PL/SQL statement. See SQL Execution for examples.
@@ -209,53 +160,9 @@ trait IConnection
   		 * @returns Readable Stream for queries.
   		 */
   def queryStream(sql: java.lang.String): nodeLib.streamMod.Readable = js.native
-  /**
-  		 * This function provides query streaming support. The parameters are the same as execute() except a callback is not used. Instead this function returns a stream used to fetch data.
-  		 * Each row is returned as a data event. Query metadata is available via a metadata event. The end event indicates the end of the query results.
-  		 * Query results must be fetched to completion to avoid resource leaks.
-  		 * The connection must remain open until the stream is completely read.
-  		 * For tuning purposes the oracledb.maxRows property can be used to size an internal buffer used by queryStream(). Note it does not limit the number of rows returned by the stream. The oracledb.prefetchRows value will also affect performance.
-  		 * @param	{string} sql SQL Statement.
-  		 * @param	{Object|Array<any>} bindParams Binds Object/Array
-  		 * @param	{IExecuteOptions} options Options object
-  		 * @returns Readable Stream for queries.
-  		 */
   def queryStream(sql: java.lang.String, bindParams: js.Array[_]): nodeLib.streamMod.Readable = js.native
-  /**
-  		 * This function provides query streaming support. The parameters are the same as execute() except a callback is not used. Instead this function returns a stream used to fetch data.
-  		 * Each row is returned as a data event. Query metadata is available via a metadata event. The end event indicates the end of the query results.
-  		 * Query results must be fetched to completion to avoid resource leaks.
-  		 * The connection must remain open until the stream is completely read.
-  		 * For tuning purposes the oracledb.maxRows property can be used to size an internal buffer used by queryStream(). Note it does not limit the number of rows returned by the stream. The oracledb.prefetchRows value will also affect performance.
-  		 * @param	{string} sql SQL Statement.
-  		 * @param	{Object|Array<any>} bindParams Binds Object/Array
-  		 * @param	{IExecuteOptions} options Options object
-  		 * @returns Readable Stream for queries.
-  		 */
   def queryStream(sql: java.lang.String, bindParams: js.Array[_], options: IExecuteOptions): nodeLib.streamMod.Readable = js.native
-  /**
-  		 * This function provides query streaming support. The parameters are the same as execute() except a callback is not used. Instead this function returns a stream used to fetch data.
-  		 * Each row is returned as a data event. Query metadata is available via a metadata event. The end event indicates the end of the query results.
-  		 * Query results must be fetched to completion to avoid resource leaks.
-  		 * The connection must remain open until the stream is completely read.
-  		 * For tuning purposes the oracledb.maxRows property can be used to size an internal buffer used by queryStream(). Note it does not limit the number of rows returned by the stream. The oracledb.prefetchRows value will also affect performance.
-  		 * @param	{string} sql SQL Statement.
-  		 * @param	{Object|Array<any>} bindParams Binds Object/Array
-  		 * @param	{IExecuteOptions} options Options object
-  		 * @returns Readable Stream for queries.
-  		 */
   def queryStream(sql: java.lang.String, bindParams: js.Object): nodeLib.streamMod.Readable = js.native
-  /**
-  		 * This function provides query streaming support. The parameters are the same as execute() except a callback is not used. Instead this function returns a stream used to fetch data.
-  		 * Each row is returned as a data event. Query metadata is available via a metadata event. The end event indicates the end of the query results.
-  		 * Query results must be fetched to completion to avoid resource leaks.
-  		 * The connection must remain open until the stream is completely read.
-  		 * For tuning purposes the oracledb.maxRows property can be used to size an internal buffer used by queryStream(). Note it does not limit the number of rows returned by the stream. The oracledb.prefetchRows value will also affect performance.
-  		 * @param	{string} sql SQL Statement.
-  		 * @param	{Object|Array<any>} bindParams Binds Object/Array
-  		 * @param	{IExecuteOptions} options Options object
-  		 * @returns Readable Stream for queries.
-  		 */
   def queryStream(sql: java.lang.String, bindParams: js.Object, options: IExecuteOptions): nodeLib.streamMod.Readable = js.native
   /**
   		 * An alias for Connection.close().

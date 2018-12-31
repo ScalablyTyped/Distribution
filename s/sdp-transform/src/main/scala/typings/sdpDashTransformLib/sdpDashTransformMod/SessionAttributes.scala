@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SessionAttributes extends SharedAttributes {
   // a=group:BUNDLE audio video
   var groups: js.UndefOr[js.Array[sdpDashTransformLib.Anon_TypeMids]] = js.undefined

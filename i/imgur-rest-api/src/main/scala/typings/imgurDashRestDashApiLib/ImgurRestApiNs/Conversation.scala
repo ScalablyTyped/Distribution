@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Conversation extends js.Object {
   var datetime: scala.Double
   var done: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WriteOptions extends js.Object {
   var addComment: js.UndefOr[scala.Boolean] = js.undefined
   @JSName("clone")

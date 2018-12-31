@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrategyOption extends js.Object {
   var authorizationURL: js.UndefOr[java.lang.String] = js.undefined
   var callbackURL: java.lang.String

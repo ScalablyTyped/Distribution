@@ -5,22 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PrimaryYAxisScrollbarSettings extends js.Object {
   /** Controls whether scrollbar has to be responsive in the chart.
-               * @Default {false}
-               */
+    * @Default {false}
+    */
   var canResize: js.UndefOr[scala.Boolean] = js.undefined
   /** The maximum number of points to be displayed in the scrollbar.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var pointsLength: js.UndefOr[scala.Double] = js.undefined
   /** Options to customize the range for the scrollbar in the axis.
-               */
+    */
   var range: js.UndefOr[PrimaryYAxisScrollbarSettingsRange] = js.undefined
   /** Specifies to enable or disable the scrollbar.
-               * @Default {false}
-               */
+    * @Default {false}
+    */
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 

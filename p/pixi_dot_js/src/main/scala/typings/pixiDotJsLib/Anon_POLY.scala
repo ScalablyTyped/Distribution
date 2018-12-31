@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_POLY extends js.Object {
   var CIRC: scala.Double
   var ELIP: scala.Double

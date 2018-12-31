@@ -19,7 +19,7 @@ object shipitModMembers extends js.Object {
   def blTask(name: java.lang.String, depsOrFn: EmptyCallback): js.Any = js.native
   def blTask(name: java.lang.String, depsOrFn: EmptyCallback, fn: js.Function0[scala.Unit]): js.Any = js.native
   def emit(name: java.lang.String): js.Any = js.native
-  def initConfig(config: js.Object): js.Any = js.native
+  def initConfig(config: js.Object): shipitLib.Anon_Task = js.native
   def local(command: java.lang.String): js.Thenable[ShipitLocal] = js.native
   def local(command: java.lang.String, options: nodeLib.childUnderscoreProcessMod.ExecOptions): js.Thenable[ShipitLocal] = js.native
   def local(
@@ -64,12 +64,12 @@ object shipitModMembers extends js.Object {
       scala.Unit
     ]
   ): js.Thenable[ShipitLocal] = js.native
-  def start(tasks: java.lang.String*): js.Any = js.native
-  def start(tasks: java.lang.String): js.Any = js.native
-  def start(tasks: js.Array[java.lang.String]): js.Any = js.native
-  def task(name: java.lang.String, depsOrFn: js.Array[java.lang.String]): js.Any = js.native
-  def task(name: java.lang.String, depsOrFn: js.Array[java.lang.String], fn: js.Function0[scala.Unit]): js.Any = js.native
-  def task(name: java.lang.String, depsOrFn: EmptyCallback): js.Any = js.native
-  def task(name: java.lang.String, depsOrFn: EmptyCallback, fn: js.Function0[scala.Unit]): js.Any = js.native
+  def start(tasks: java.lang.String*): shipitLib.Anon_Task = js.native
+  def start(tasks: java.lang.String): shipitLib.Anon_Task = js.native
+  def start(tasks: js.Array[java.lang.String]): shipitLib.Anon_Task = js.native
+  def task(name: java.lang.String, depsOrFn: js.Array[java.lang.String]): shipitLib.Anon_Task = js.native
+  def task(name: java.lang.String, depsOrFn: js.Array[java.lang.String], fn: js.Function0[scala.Unit]): shipitLib.Anon_Task = js.native
+  def task(name: java.lang.String, depsOrFn: EmptyCallback): shipitLib.Anon_Task = js.native
+  def task(name: java.lang.String, depsOrFn: EmptyCallback, fn: js.Function0[scala.Unit]): shipitLib.Anon_Task = js.native
 }
 

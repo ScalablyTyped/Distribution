@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictSearchCategoryProps extends js.Object {
   /** The item currently selected by keyboard shortcut. */
   var active: js.UndefOr[scala.Boolean] = js.undefined
@@ -20,11 +19,11 @@ trait StrictSearchCategoryProps extends js.Object {
   /** Display name. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-     * Renders the category contents.
-     *
-     * @param {object} props - The SearchCategory props object.
-     * @returns {*} - Renderable category contents.
-     */
+    * Renders the category contents.
+    *
+    * @param {object} props - The SearchCategory props object.
+    * @returns {*} - Renderable category contents.
+    */
   var renderer: js.UndefOr[
     js.Function1[/* props */ SearchCategoryProps, reactLib.reactMod.ReactNs.ReactElement[_]]
   ] = js.undefined

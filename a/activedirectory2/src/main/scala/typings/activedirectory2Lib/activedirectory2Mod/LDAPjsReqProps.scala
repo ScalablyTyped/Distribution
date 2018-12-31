@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LDAPjsReqProps extends js.Object {
   var connectionTimeout: js.UndefOr[scala.Double] = js.undefined
   var idleTimeout: js.UndefOr[scala.Double] = js.undefined

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * IGenericMeasureListProperties
-     */
-
+  * IGenericMeasureListProperties
+  */
 trait IGenericMeasureListProperties extends IGenericProperties {
   @JSName("qInfo")
   var qInfo_IGenericMeasureListProperties: IGenericMeassureListNxInfo

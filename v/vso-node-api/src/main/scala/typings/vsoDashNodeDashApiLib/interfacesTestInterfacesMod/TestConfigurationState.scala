@@ -12,15 +12,15 @@ sealed trait TestConfigurationState extends js.Object
 @js.native
 object TestConfigurationState extends js.Object {
   /**
-       * The configuration can be used for new test runs.
-       */
+    * The configuration can be used for new test runs.
+    */
   @js.native
   sealed trait Active
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.TestConfigurationState
   
   /**
-       * The configuration has been retired and should not be used for new test runs.
-       */
+    * The configuration has been retired and should not be used for new test runs.
+    */
   @js.native
   sealed trait Inactive
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.TestConfigurationState

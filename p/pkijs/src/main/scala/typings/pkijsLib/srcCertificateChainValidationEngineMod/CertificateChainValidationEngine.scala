@@ -14,16 +14,11 @@ trait CertificateChainValidationEngine extends js.Object {
   var trustedCerts: js.Array[pkijsLib.srcCertificateMod.default] = js.native
   def sort(): js.Any = js.native
   /**
-           * Major verification function for certificate chain.
-           * @param {{initialPolicySet, initialExplicitPolicy, initialPolicyMappingInhibit, initialInhibitPolicy, initialPermittedSubtreesSet, initialExcludedSubtreesSet, initialRequiredNameForms}} [parameters]
-           * @returns {PromiseLike<any>}
-           */
+    * Major verification function for certificate chain.
+    * @param {{initialPolicySet, initialExplicitPolicy, initialPolicyMappingInhibit, initialInhibitPolicy, initialPermittedSubtreesSet, initialExcludedSubtreesSet, initialRequiredNameForms}} [parameters]
+    * @returns {PromiseLike<any>}
+    */
   def verify(): js.Thenable[_] = js.native
-  /**
-           * Major verification function for certificate chain.
-           * @param {{initialPolicySet, initialExplicitPolicy, initialPolicyMappingInhibit, initialInhibitPolicy, initialPermittedSubtreesSet, initialExcludedSubtreesSet, initialRequiredNameForms}} [parameters]
-           * @returns {PromiseLike<any>}
-           */
   def verify(parameters: js.Any): js.Thenable[_] = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICandleChartClasses extends js.Object {
   var candleNegative: js.UndefOr[java.lang.String] = js.undefined
   var candlePositive: js.UndefOr[java.lang.String] = js.undefined

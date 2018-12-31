@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Accesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -21,15 +20,15 @@ trait Anon_Accesstoken extends js.Object {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * [Required] The group resource name. Written as
-                   * <code>projects/<var>projectID</var>/groups/<var>group_name</var></code>.
-                   * Call
-                   * <a href="/error-reporting/reference/rest/v1beta1/projects.groupStats/list">
-                   * <code>groupStats.list</code></a> to return a list of groups belonging to
-                   * this project.
-                   *
-                   * Example: <code>projects/my-project-123/groups/my-group</code>
-                   */
+    * [Required] The group resource name. Written as
+    * <code>projects/<var>projectID</var>/groups/<var>group_name</var></code>.
+    * Call
+    * <a href="/error-reporting/reference/rest/v1beta1/projects.groupStats/list">
+    * <code>groupStats.list</code></a> to return a list of groups belonging to
+    * this project.
+    *
+    * Example: <code>projects/my-project-123/groups/my-group</code>
+    */
   var groupName: java.lang.String
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined

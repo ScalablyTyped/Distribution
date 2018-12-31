@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait PlacementType extends js.Object
 
 /**
-     * Types for the placement of popover control.
-    */
+  * Types for the placement of popover control.
+  */
 @JSGlobal("sap.m.PlacementType")
 @js.native
 object PlacementType extends js.Object {

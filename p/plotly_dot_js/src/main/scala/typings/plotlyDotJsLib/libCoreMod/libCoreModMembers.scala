@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object libCoreModMembers extends js.Object {
   val Plots: plotlyDotJsLib.plotlyDotJsMod.StaticPlots = js.native
-  val d3: js.Any = js.native
+  val d3: plotlyDotJsLib.Anon_SchemeReds = js.native
   def addFrames(
     root: plotlyDotJsLib.plotlyDotJsMod.Root,
     frames: js.Array[stdLib.Partial[plotlyDotJsLib.plotlyDotJsMod.Frame]]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClockPickerOptions extends js.Object {
   var afterDone: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var afterHide: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

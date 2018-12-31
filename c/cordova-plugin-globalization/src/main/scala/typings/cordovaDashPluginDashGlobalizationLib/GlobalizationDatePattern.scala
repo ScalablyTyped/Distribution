@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Pattern to format and parse dates according to the client's user preferences.*/
-
 trait GlobalizationDatePattern extends js.Object {
   /* The current daylight saving time offset in seconds between the client's non-daylight saving's time zone and the client's daylight saving's time zone. */
   var dst_offset: scala.Double

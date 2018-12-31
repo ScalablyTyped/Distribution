@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class MidiSongPositionPointerMessage protected () extends js.Object {
   /**
-                   * Creates a new MidiSongPositionPointerMessage object.
-                   * @param beats The song position pointer encoded in a 14-bit value from 0-16383.
-                   */
+    * Creates a new MidiSongPositionPointerMessage object.
+    * @param beats The song position pointer encoded in a 14-bit value from 0-16383.
+    */
   def this(beats: scala.Double) = this()
   /** Gets the song position pointer encoded in a 14-bit value from 0-16383. */
   var beats: scala.Double = js.native

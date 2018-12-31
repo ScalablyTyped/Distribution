@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReadResult extends js.Object {
   var buffer: nodeLib.Buffer
   var bytesRead: scala.Double

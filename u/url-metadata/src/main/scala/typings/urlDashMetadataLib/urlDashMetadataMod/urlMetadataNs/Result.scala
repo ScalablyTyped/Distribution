@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Result extends js.Object {
   var `article:author`: js.UndefOr[java.lang.String] = js.undefined
   var `article:expiration_time`: js.UndefOr[java.lang.String] = js.undefined

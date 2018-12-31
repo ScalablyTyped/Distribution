@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Controller () extends js.Object {
   /**
-       * Pass here another Swiper instance or array with Swiper instances that should be controlled
-       * by this Swiper
-       */
+    * Pass here another Swiper instance or array with Swiper instances that should be controlled
+    * by this Swiper
+    */
   var control: js.UndefOr[swiperLib.swiperMod.default] = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Nickname extends js.Object {
   /** Metadata about the nickname. */
   var metadata: js.UndefOr[FieldMetadata] = js.undefined

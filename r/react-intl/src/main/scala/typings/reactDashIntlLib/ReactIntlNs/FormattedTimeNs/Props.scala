@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props
   extends reactDashIntlLib.ReactIntlNs.IntlComponentNs.DateTimeFormatProps {
   var children: js.UndefOr[

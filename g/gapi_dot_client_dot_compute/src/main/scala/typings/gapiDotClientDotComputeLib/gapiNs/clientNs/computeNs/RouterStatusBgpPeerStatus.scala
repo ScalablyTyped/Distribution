@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RouterStatusBgpPeerStatus extends js.Object {
   /** Routes that were advertised to the remote BGP peer */
   var advertisedRoutes: js.UndefOr[js.Array[Route]] = js.undefined

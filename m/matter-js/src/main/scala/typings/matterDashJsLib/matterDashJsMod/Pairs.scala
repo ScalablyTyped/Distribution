@@ -14,11 +14,11 @@ class Pairs ()
 @js.native
 object Pairs extends js.Object {
   /**
-           * Clears the given pairs structure.
-           * @method clear
-           * @param {pairs} pairs
-           * @return {pairs} pairs
-           */
+    * Clears the given pairs structure.
+    * @method clear
+    * @param {pairs} pairs
+    * @return {pairs} pairs
+    */
   def clear(pairs: js.Any): js.Any = js.native
 }
 

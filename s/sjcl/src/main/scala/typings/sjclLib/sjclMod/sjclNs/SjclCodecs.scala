@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SjclCodecs extends js.Object {
   var base64: SjclCodec[java.lang.String]
   var base64url: SjclCodec[java.lang.String]

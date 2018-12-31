@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains the velocities of the accumulated transformations for the current interaction. */
-
 trait ManipulationVelocities extends js.Object {
   /** The rotational velocity in degrees per millisecond. */
   var angular: scala.Double

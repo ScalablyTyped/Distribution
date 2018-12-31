@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Scope extends js.Object {
   var block: estreeLib.estreeMod.Node
   var childScopes: js.Array[Scope]

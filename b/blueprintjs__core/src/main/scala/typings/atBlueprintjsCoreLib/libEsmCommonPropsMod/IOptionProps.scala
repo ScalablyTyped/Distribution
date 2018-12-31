@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOptionProps extends IProps {
   /** Whether this option is non-interactive. */
   var disabled: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOptimizeVaultJob extends js.Object {
   var GarbageCollectFiles: scala.Boolean
   val Thorough: scala.Boolean

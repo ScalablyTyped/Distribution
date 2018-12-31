@@ -12,29 +12,29 @@ sealed trait SpinnerSize extends js.Object
 @js.native
 object SpinnerSize extends js.Object {
   /**
-       * 28px Spinner diameter
-       */
+    * 28px Spinner diameter
+    */
   @js.native
   sealed trait large
     extends officeDashUiDashFabricDashReactLib.libComponentsSpinnerSpinnerDotTypesMod.SpinnerSize
   
   /**
-       * 20px Spinner diameter
-       */
+    * 20px Spinner diameter
+    */
   @js.native
   sealed trait medium
     extends officeDashUiDashFabricDashReactLib.libComponentsSpinnerSpinnerDotTypesMod.SpinnerSize
   
   /**
-       * 16px Spinner diameter
-       */
+    * 16px Spinner diameter
+    */
   @js.native
   sealed trait small
     extends officeDashUiDashFabricDashReactLib.libComponentsSpinnerSpinnerDotTypesMod.SpinnerSize
   
   /**
-       * 12px Spinner diameter
-       */
+    * 12px Spinner diameter
+    */
   @js.native
   sealed trait xSmall
     extends officeDashUiDashFabricDashReactLib.libComponentsSpinnerSpinnerDotTypesMod.SpinnerSize

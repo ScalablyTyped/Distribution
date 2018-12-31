@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PopperProps extends js.Object {
   var eventsEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var innerRef: js.UndefOr[reactDashPopperLib.RefHandler] = js.undefined

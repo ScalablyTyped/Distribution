@@ -9,24 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object needleModMembers extends js.Object {
   /**
-   * Calling needle() directly returns a Promise.
-   *
-   * Since needle 2.0
-   * @param method Designates an HTTP verb for the request.
-   * @param data May be null when issuing an HTTP DELETE request, but you need to explicity pass it.
-   */
+    * Calling needle() directly returns a Promise.
+    *
+    * Since needle 2.0
+    * @param method Designates an HTTP verb for the request.
+    * @param data May be null when issuing an HTTP DELETE request, but you need to explicity pass it.
+    */
   def apply(
     method: needleLib.needleMod.coreNs.NeedleHttpVerbs,
     url: java.lang.String,
     data: needleLib.needleMod.coreNs.BodyData
   ): js.Promise[needleLib.needleMod.coreNs.NeedleResponse] = js.native
-  /**
-   * Calling needle() directly returns a Promise.
-   *
-   * Since needle 2.0
-   * @param method Designates an HTTP verb for the request.
-   * @param data May be null when issuing an HTTP DELETE request, but you need to explicity pass it.
-   */
   def apply(
     method: needleLib.needleMod.coreNs.NeedleHttpVerbs,
     url: java.lang.String,
@@ -34,18 +27,12 @@ object needleModMembers extends js.Object {
     options: needleLib.needleMod.coreNs.NeedleOptions
   ): js.Promise[needleLib.needleMod.coreNs.NeedleResponse] = js.native
   /**
-   * Calling needle() directly returns a Promise.
-   *
-   * Since needle 2.0
-   * @param method Designates an HTTP verb for the request.
-   */
+    * Calling needle() directly returns a Promise.
+    *
+    * Since needle 2.0
+    * @param method Designates an HTTP verb for the request.
+    */
   def apply(method: needleLib.needleMod.coreNs.NeedleReadonlyHttpVerbs, url: java.lang.String): js.Promise[needleLib.needleMod.coreNs.NeedleResponse] = js.native
-  /**
-   * Calling needle() directly returns a Promise.
-   *
-   * Since needle 2.0
-   * @param method Designates an HTTP verb for the request.
-   */
   def apply(
     method: needleLib.needleMod.coreNs.NeedleReadonlyHttpVerbs,
     url: java.lang.String,
@@ -53,28 +40,19 @@ object needleModMembers extends js.Object {
   ): js.Promise[needleLib.needleMod.coreNs.NeedleResponse] = js.native
   def defaults(options: needleLib.needleMod.needleNs.NeedleOptions): needleLib.needleMod.needleNs.NeedleOptions = js.native
   /**
-       * Issues an HTTP DELETE request.
-       */
+    * Issues an HTTP DELETE request.
+    */
   def deleteFunc(url: java.lang.String, data: needleLib.needleMod.needleNs.BodyData): needleLib.needleMod.needleNs.ReadableStream = js.native
-  /**
-       * Issues an HTTP DELETE request.
-       */
   def deleteFunc(
     url: java.lang.String,
     data: needleLib.needleMod.needleNs.BodyData,
     callback: needleLib.needleMod.needleNs.NeedleCallback
   ): needleLib.needleMod.needleNs.ReadableStream = js.native
-  /**
-       * Issues an HTTP DELETE request.
-       */
   def deleteFunc(
     url: java.lang.String,
     data: needleLib.needleMod.needleNs.BodyData,
     options: needleLib.needleMod.needleNs.NeedleOptions
   ): needleLib.needleMod.needleNs.ReadableStream = js.native
-  /**
-       * Issues an HTTP DELETE request.
-       */
   def deleteFunc(
     url: java.lang.String,
     data: needleLib.needleMod.needleNs.BodyData,

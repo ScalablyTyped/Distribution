@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimelineItem extends js.Object {
   var align: js.UndefOr[TimelineAlignType] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined

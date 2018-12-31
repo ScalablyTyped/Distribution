@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PanelGroupProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libPanelGroupMod.PanelGroup] {
   var accordion: js.UndefOr[scala.Boolean] = js.undefined

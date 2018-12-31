@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait CalendarIntervalType extends js.Object
 
 /**
-       * Type of a interval in a <code>CalendarRow</code>.
-      */
+  * Type of a interval in a <code>CalendarRow</code>.
+  */
 @JSGlobal("sap.ui.unified.CalendarIntervalType")
 @js.native
 object CalendarIntervalType extends js.Object {

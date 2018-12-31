@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSArtboard extends js.Object {
   var backgroundColor: SketchMSColor
   var frame: SketchMSRect

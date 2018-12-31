@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * Show property
 	 */
-
 trait Show extends js.Object {
   var delay: js.UndefOr[scala.Double] = js.undefined
   var effect: js.UndefOr[scala.Boolean | (js.Function1[/* offset */ js.Any, scala.Unit])] = js.undefined

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a Play To target. */
 @JSGlobal("Windows.Media.PlayTo.PlayToReceiver")
 @js.native
+/** Creates a new instance of a Play To receiver. */
 class PlayToReceiver () extends js.Object {
   /** Gets or sets the display name of the Play To target. */
   var friendlyName: java.lang.String = js.native
@@ -93,9 +94,9 @@ class PlayToReceiver () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[PlayToReceiver, VolumeChangeRequestedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Notifies the Play To receiver that the duration of the audio or video playback has changed.
-                   * @param duration The new duration of the audio or video media.
-                   */
+    * Notifies the Play To receiver that the duration of the audio or video playback has changed.
+    * @param duration The new duration of the audio or video media.
+    */
   def notifyDurationChange(duration: scala.Double): scala.Unit = js.native
   /** Notifies the Play To receiver that the audio or video playback has ended. */
   def notifyEnded(): scala.Unit = js.native
@@ -108,9 +109,9 @@ class PlayToReceiver () extends js.Object {
   /** Notifies the Play To receiver that the audio or video playback has started. */
   def notifyPlaying(): scala.Unit = js.native
   /**
-                   * Notifies the Play To receiver that the rate of the audio or video playback has changed.
-                   * @param rate The new value of the playback rate.
-                   */
+    * Notifies the Play To receiver that the rate of the audio or video playback has changed.
+    * @param rate The new value of the playback rate.
+    */
   def notifyRateChange(rate: scala.Double): scala.Unit = js.native
   /** Notifies the Play To receiver that the audio or video playback element has started at a new playback location. */
   def notifySeeked(): scala.Unit = js.native
@@ -119,15 +120,15 @@ class PlayToReceiver () extends js.Object {
   /** Notifies the Play To receiver that the audio or video playback has stopped. */
   def notifyStopped(): scala.Unit = js.native
   /**
-                   * Notifies the Play To receiver that the time location of the audio or video playback has changed.
-                   * @param currentTime The new time location of the playback.
-                   */
+    * Notifies the Play To receiver that the time location of the audio or video playback has changed.
+    * @param currentTime The new time location of the playback.
+    */
   def notifyTimeUpdate(currentTime: scala.Double): scala.Unit = js.native
   /**
-                   * Notifies the Play To receiver that the volume of the audio or video playback has changed.
-                   * @param volume The new value for the volume.
-                   * @param mute True if the volume was muted; otherwise false.
-                   */
+    * Notifies the Play To receiver that the volume of the audio or video playback has changed.
+    * @param volume The new value for the volume.
+    * @param mute True if the volume was muted; otherwise false.
+    */
   def notifyVolumeChange(volume: scala.Double, mute: scala.Boolean): scala.Unit = js.native
   /** Occurs when the time location of the playback has changed. */
   def oncurrenttimechangerequested(ev: CurrentTimeChangeRequestedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[PlayToReceiver]): scala.Unit = js.native
@@ -194,14 +195,14 @@ class PlayToReceiver () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[PlayToReceiver, VolumeChangeRequestedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Start receiving Play To commands.
-                   * @return An asynchronous handler that's called when the start operation is complete.
-                   */
+    * Start receiving Play To commands.
+    * @return An asynchronous handler that's called when the start operation is complete.
+    */
   def startAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Stop receiving Play To commands.
-                   * @return An asynchronous handler that's called when the stop operation is complete.
-                   */
+    * Stop receiving Play To commands.
+    * @return An asynchronous handler that's called when the stop operation is complete.
+    */
   def stopAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

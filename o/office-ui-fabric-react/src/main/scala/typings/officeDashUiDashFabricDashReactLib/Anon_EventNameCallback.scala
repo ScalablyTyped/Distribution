@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EventNameCallback extends js.Object {
   var callback: js.Function2[
     /* context */ officeDashUiDashFabricDashReactLib.libUtilitiesDragdropInterfacesMod.IDragDropContext, 

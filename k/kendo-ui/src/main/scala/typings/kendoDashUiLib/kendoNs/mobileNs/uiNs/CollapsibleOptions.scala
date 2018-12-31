@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CollapsibleOptions extends js.Object {
   var animation: js.UndefOr[scala.Boolean] = js.undefined
   var collapse: js.UndefOr[js.Function1[/* e */ CollapsibleEvent, scala.Unit]] = js.undefined

@@ -57,7 +57,7 @@ object pDashTryMod extends js.Object {
       /* d */ D, 
       /* e */ E, 
       /* f */ F, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       js.Promise[T] | js.Thenable[T] | T
     ],
     a: A,

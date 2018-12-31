@@ -20,14 +20,14 @@ trait IResourceService extends js.Object {
     url: java.lang.String,
     paramDefaults: js.Any,
     /** example:  {update: { method: 'PUT' }, delete: deleteDescriptor }
-               where deleteDescriptor : IActionDescriptor */
+    where deleteDescriptor : IActionDescriptor */
   actions: js.Any
   ): IResourceClass[IResource[_]] = js.native
   def apply(
     url: java.lang.String,
     paramDefaults: js.Any,
     /** example:  {update: { method: 'PUT' }, delete: deleteDescriptor }
-               where deleteDescriptor : IActionDescriptor */
+    where deleteDescriptor : IActionDescriptor */
   actions: js.Any,
     options: IResourceOptions
   ): IResourceClass[IResource[_]] = js.native

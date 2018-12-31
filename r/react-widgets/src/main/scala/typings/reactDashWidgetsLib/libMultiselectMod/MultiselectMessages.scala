@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MultiselectMessages extends js.Object {
   /**
-       * The text label for creating new tags.
-       * @default "(create new tag)"
-       */
+    * The text label for creating new tags.
+    * @default "(create new tag)"
+    */
   var createNew: js.UndefOr[
     java.lang.String | (js.Function1[/* props */ MultiselectProps, java.lang.String])
   ] = js.undefined
@@ -18,16 +17,16 @@ trait MultiselectMessages extends js.Object {
     java.lang.String | (js.Function1[/* props */ MultiselectProps, java.lang.String])
   ] = js.undefined
   /**
-       * Text to display when the the current filter does not return any results.
-       * @default "The filter returned no results"
-       */
+    * Text to display when the the current filter does not return any results.
+    * @default "The filter returned no results"
+    */
   var emptyFilter: js.UndefOr[
     java.lang.String | (js.Function1[/* props */ MultiselectProps, java.lang.String])
   ] = js.undefined
   /**
-       * Text to display when the data prop array is empty.
-       * @default "There are no items in this list"
-       */
+    * Text to display when the data prop array is empty.
+    * @default "There are no items in this list"
+    */
   var emptyList: js.UndefOr[
     java.lang.String | (js.Function1[/* props */ MultiselectProps, java.lang.String])
   ] = js.undefined

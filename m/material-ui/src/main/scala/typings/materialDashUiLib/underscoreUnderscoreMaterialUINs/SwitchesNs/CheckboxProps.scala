@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CheckboxProps extends CommonEnhancedSwitchProps[Checkbox] {
   var checkedIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[materialDashUiLib.Anon_Style]] = js.undefined
   var iconStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

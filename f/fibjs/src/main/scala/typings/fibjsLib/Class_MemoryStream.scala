@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Class_MemoryStream")
 @js.native
+/**
+	 * 
+	 * @brief MemoryStream 构造函数
+	 * 
+	 * 
+	 */
 class Class_MemoryStream () extends Class_SeekableStream {
   /**
   	 * 

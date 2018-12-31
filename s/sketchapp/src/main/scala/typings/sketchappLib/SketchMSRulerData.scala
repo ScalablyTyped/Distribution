@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSRulerData extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.rulerData
   var base: scala.Double

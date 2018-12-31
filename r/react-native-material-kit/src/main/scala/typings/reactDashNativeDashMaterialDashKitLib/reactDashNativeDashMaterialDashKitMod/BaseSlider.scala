@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseSlider
   extends reactDashNativeLib.reactDashNativeMod.ViewProps {
   var lowerTrackColor: js.UndefOr[java.lang.String] = js.undefined

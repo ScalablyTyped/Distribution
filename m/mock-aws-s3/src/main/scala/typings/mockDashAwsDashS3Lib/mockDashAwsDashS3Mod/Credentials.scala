@@ -10,26 +10,19 @@ import scala.scalajs.js.annotation._
 class Credentials protected ()
   extends awsDashSdkLib.awsDashSdkMod.Credentials {
   /**
-       * Creates a Credentials object with a given set of credential information as an options hash.
-       *
-       * @param {object} options - An option hash containing a set of credential information.
-       */
+    * Creates a Credentials object with a given set of credential information as an options hash.
+    *
+    * @param {object} options - An option hash containing a set of credential information.
+    */
   def this(options: awsDashSdkLib.libCredentialsMod.CredentialsOptions) = this()
   /**
-       * Creates a Credentials object with a given set of credential information as positional arguments.
-       *          *
-       * @param {string} accessKeyId - The AWS access key ID.
-       * @param {string} secretAccessKey - The AWS secret access key.
-       * @param {string} sessionToken - The optional AWS session token.
-       */
+    * Creates a Credentials object with a given set of credential information as positional arguments.
+    *          *
+    * @param {string} accessKeyId - The AWS access key ID.
+    * @param {string} secretAccessKey - The AWS secret access key.
+    * @param {string} sessionToken - The optional AWS session token.
+    */
   def this(accessKeyId: java.lang.String, secretAccessKey: java.lang.String) = this()
-  /**
-       * Creates a Credentials object with a given set of credential information as positional arguments.
-       *          *
-       * @param {string} accessKeyId - The AWS access key ID.
-       * @param {string} secretAccessKey - The AWS secret access key.
-       * @param {string} sessionToken - The optional AWS session token.
-       */
   def this(accessKeyId: java.lang.String, secretAccessKey: java.lang.String, sessionToken: java.lang.String) = this()
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompatibleFields extends js.Object {
   /** Contains items that are compatible to be selected for a report of type "CROSS_DIMENSION_REACH". */
   var crossDimensionReachReportCompatibleFields: js.UndefOr[CrossDimensionReachReportCompatibleFields] = js.undefined

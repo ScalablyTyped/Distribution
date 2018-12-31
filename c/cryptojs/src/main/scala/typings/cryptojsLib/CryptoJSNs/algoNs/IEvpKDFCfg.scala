@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEvpKDFCfg extends js.Object {
   //default 128/32
   var hasher: js.UndefOr[cryptojsLib.CryptoJSNs.libNs.Hasher] = js.undefined

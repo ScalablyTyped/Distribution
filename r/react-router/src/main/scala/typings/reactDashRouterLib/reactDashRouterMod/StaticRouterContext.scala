@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StaticRouterContext extends StaticContext {
   var action: js.UndefOr[
     reactDashRouterLib.reactDashRouterLibStrings.PUSH | reactDashRouterLib.reactDashRouterLibStrings.REPLACE

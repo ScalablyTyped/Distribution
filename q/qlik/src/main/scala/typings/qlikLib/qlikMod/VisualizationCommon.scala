@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VisualizationCommon extends js.Object {
   var footnote: java.lang.String
   var qHyperCubeDef: HyperCubeDef

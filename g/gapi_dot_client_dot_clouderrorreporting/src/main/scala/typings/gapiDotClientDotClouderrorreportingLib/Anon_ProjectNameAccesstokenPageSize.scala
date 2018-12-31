@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ProjectNameAccesstokenPageSize extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -35,29 +34,29 @@ trait Anon_ProjectNameAccesstokenPageSize extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * [Required] The resource name of the Google Cloud Platform project. Written
-                   * as `projects/` plus the
-                   * [Google Cloud Platform project
-                   * ID](https://support.google.com/cloud/answer/6158840).
-                   * Example: `projects/my-project-123`.
-                   */
+    * [Required] The resource name of the Google Cloud Platform project. Written
+    * as `projects/` plus the
+    * [Google Cloud Platform project
+    * ID](https://support.google.com/cloud/answer/6158840).
+    * Example: `projects/my-project-123`.
+    */
   var projectName: java.lang.String
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * [Optional] The exact value to match against
-                   * [`ServiceContext.resource_type`](/error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.resource_type).
-                   */
+    * [Optional] The exact value to match against
+    * [`ServiceContext.resource_type`](/error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.resource_type).
+    */
   var `serviceFilter.resourceType`: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * [Optional] The exact value to match against
-                   * [`ServiceContext.service`](/error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.service).
-                   */
+    * [Optional] The exact value to match against
+    * [`ServiceContext.service`](/error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.service).
+    */
   var `serviceFilter.service`: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * [Optional] The exact value to match against
-                   * [`ServiceContext.version`](/error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.version).
-                   */
+    * [Optional] The exact value to match against
+    * [`ServiceContext.version`](/error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.version).
+    */
   var `serviceFilter.version`: js.UndefOr[java.lang.String] = js.undefined
   /** Restricts the query to the specified time range. */
   var `timeRange.period`: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Rules
   extends /* x */ org.scalablytyped.runtime.StringDictionary[
       stdLib.RegExp | java.lang.String | js.Array[java.lang.String] | Rule | js.Array[Rule]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Compositor extends js.Object {
   def readImages(
     files: js.Array[java.lang.String],

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITrigger extends IText {
   /** [Config Option] (Boolean) */
   var editable: js.UndefOr[scala.Boolean] = js.undefined

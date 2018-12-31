@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StripeApplePayPaymentRequest extends js.Object {
   var billingContact: StripeApplePayPaymentContact
   var countryCode: java.lang.String

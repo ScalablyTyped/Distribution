@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AsyncTypeaheadProps[T] extends TypeaheadProps[T] {
   /* 	Delay, in milliseconds, before performing search. */
   var delay: js.UndefOr[scala.Double] = js.undefined

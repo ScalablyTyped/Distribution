@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PerfSample extends js.Object {
   /** Timestamp of collection */
   var sampleTime: js.UndefOr[Timestamp] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimeFormat extends js.Object {
   var hour: java.lang.String
   var minute: java.lang.String

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Details for each license
- */
-
+  * Details for each license
+  */
 trait LicenseDetailItem extends js.Object {
   val Browser: java.lang.String
   val EnumLicenseType: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SeasonRankingsResponseObject extends js.Object {
   var program: java.lang.String
   var season: java.lang.String

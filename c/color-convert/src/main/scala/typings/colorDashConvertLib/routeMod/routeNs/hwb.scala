@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait hwb extends js.Object {
   def ansi16(from: colorDashConvertLib.conversionsMod.HWB): colorDashConvertLib.conversionsMod.ANSI16
   def ansi256(from: colorDashConvertLib.conversionsMod.HWB): colorDashConvertLib.conversionsMod.ANSI256

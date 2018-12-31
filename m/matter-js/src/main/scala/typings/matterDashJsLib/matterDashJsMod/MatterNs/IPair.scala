@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPair extends js.Object {
   var activeContacts: js.Any
   var bodyA: Body

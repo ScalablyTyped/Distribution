@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConfigureOptions extends js.Object {
   var authorize_url: js.UndefOr[java.lang.String] = js.undefined
   var client_id: java.lang.String

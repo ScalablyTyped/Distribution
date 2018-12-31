@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SessionState extends js.Object {
   var deflateDynamicTableSize: js.UndefOr[scala.Double] = js.undefined
   var effectiveLocalWindowSize: js.UndefOr[scala.Double] = js.undefined

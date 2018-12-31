@@ -22,7 +22,6 @@ class ShellWindows protected () extends js.Object {
   ): js.Any = js.native
   /** Return the shell window for the given index */
   def Item(): js.Any = js.native
-  /** Return the shell window for the given index */
   def Item(index: js.Any): js.Any = js.native
   /** Notifies the activation */
   def OnActivated(lCookie: scala.Double, fActive: scala.Boolean): scala.Unit = js.native

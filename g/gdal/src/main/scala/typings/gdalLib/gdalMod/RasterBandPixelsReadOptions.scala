@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RasterBandPixelsReadOptions extends js.Object {
   var buffer_height: js.UndefOr[scala.Double] = js.undefined
   var buffer_width: js.UndefOr[scala.Double] = js.undefined

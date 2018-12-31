@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeploymentApprovalCompletedEvent extends js.Object {
   var approval: ReleaseApproval
   var project: ProjectReference

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserName extends js.Object {
   /** User's display name. */
   var displayName: java.lang.String

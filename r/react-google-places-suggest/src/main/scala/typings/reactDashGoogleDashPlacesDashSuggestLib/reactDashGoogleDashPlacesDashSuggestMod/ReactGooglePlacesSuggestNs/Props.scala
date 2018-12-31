@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props extends js.Object {
   var autocompletionRequest: googlemapsLib.googleNs.mapsNs.placesNs.AutocompletionRequest
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

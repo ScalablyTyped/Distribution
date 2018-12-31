@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FourRedToBlackSet
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] {
   var blackCircle: Icon

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SwipeViewOptions extends js.Object {
   var hastyPageFlip: js.UndefOr[scala.Boolean] = js.undefined
   var loop: js.UndefOr[scala.Boolean] = js.undefined

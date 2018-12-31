@@ -29,19 +29,19 @@ trait Router extends js.Object {
   var put_Original: Method = js.native
   var routes: js.Array[Spec] = js.native
   var use: (js.Function1[
-    /* repeated */koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware, 
+    /* repeated */ koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware, 
     koaDashRouterLib.koaDashRouterMod.Router
   ]) | (js.Function2[
     /* path */ java.lang.String, 
-    /* repeated */koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware, 
+    /* repeated */ koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware, 
     koaDashRouterLib.koaDashRouterMod.Router
   ]) | (js.Function2[
     /* path */ js.Array[java.lang.String], 
-    /* repeated */koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware, 
+    /* repeated */ koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware, 
     koaDashRouterLib.koaDashRouterMod.Router
   ]) | (js.Function2[
     /* path */ stdLib.RegExp, 
-    /* repeated */koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware, 
+    /* repeated */ koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware, 
     koaDashRouterLib.koaDashRouterMod.Router
   ]) = js.native
   def delete(path: java.lang.String, handlerOrConfig: js.Object, handlers: Handler*): Router = js.native

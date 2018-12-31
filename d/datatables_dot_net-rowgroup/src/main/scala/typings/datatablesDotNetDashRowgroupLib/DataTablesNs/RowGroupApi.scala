@@ -11,9 +11,6 @@ trait RowGroupApi extends js.Object {
   		 * Get the data source for the row grouping
   		 */
   def dataSrc(): scala.Double | java.lang.String = js.native
-  /**
-  		 * Set the data source for the row grouping
-  		 */
   def dataSrc(prop: java.lang.String): Api = js.native
   /**
   		 * Set the data source for the row grouping
@@ -27,9 +24,6 @@ trait RowGroupApi extends js.Object {
   		 * Enable or disable RowGroup's interaction with the table
   		 */
   def enable(): Api = js.native
-  /**
-  		 * Enable or disable RowGroup's interaction with the table
-  		 */
   def enable(enable: scala.Boolean): Api = js.native
 }
 

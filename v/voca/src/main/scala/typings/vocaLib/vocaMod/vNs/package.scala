@@ -14,7 +14,7 @@ package object vNs {
   ]
   type ReplacementFunction = js.Function2[
     /* match */ js.UndefOr[java.lang.String], 
-    /* repeated */java.lang.String, 
+    /* repeated */ java.lang.String, 
     java.lang.String
   ]
 }

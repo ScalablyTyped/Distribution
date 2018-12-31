@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Tablets extends js.Object {
   var oss: mobileDashDetectLib.mobileDashDetectMod.MobileDetectNs.MobileDetectRules
   var phones: mobileDashDetectLib.mobileDashDetectMod.MobileDetectNs.MobileDetectRules

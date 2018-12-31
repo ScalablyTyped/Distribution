@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ErrorEventInit extends EventInit {
   var colno: js.UndefOr[scala.Double] = js.undefined
   var error: js.UndefOr[js.Any] = js.undefined

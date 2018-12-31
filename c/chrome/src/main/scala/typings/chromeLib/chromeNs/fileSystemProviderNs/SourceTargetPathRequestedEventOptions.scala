@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SourceTargetPathRequestedEventOptions extends RequestedEventOptions {
   /** The source path for the operation. */
   var sourcePath: java.lang.String

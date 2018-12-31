@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SymbolIcon extends js.Object {
   var anchor: js.UndefOr[Point | PointLiteral | Position] = js.undefined
   var fillColor: js.UndefOr[java.lang.String] = js.undefined

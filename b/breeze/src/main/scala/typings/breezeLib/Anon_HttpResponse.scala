@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_HttpResponse extends js.Object {
   var entityManager: breezeLib.breezeNs.EntityManager
   var httpResponse: breezeLib.breezeNs.HttpResponse

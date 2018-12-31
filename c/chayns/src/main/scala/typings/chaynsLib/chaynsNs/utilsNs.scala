@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Utility Functions
-     * chayns.utils
-     */
+  * Utility Functions
+  * chayns.utils
+  */
 @JSGlobal("chayns.utils")
 @js.native
 object utilsNs extends js.Object {
   /**
-           * Utility Functions
-           * Miscellaneous
-           * chayns.utils
-           */
+    * Utility Functions
+    * Miscellaneous
+    * chayns.utils
+    */
   def getJwtPayload(token: java.lang.String): chaynsLib.JwtPaylod = js.native
   def isArray(parameter: js.Any): scala.Boolean = js.native
   def isBLEAdress(parameter: js.Any): scala.Boolean = js.native
@@ -28,10 +28,10 @@ object utilsNs extends js.Object {
   def isFunction(parameter: js.Any): scala.Boolean = js.native
   def isGUID(parameter: js.Any): scala.Boolean = js.native
   /**
-           * Utility Functions
-           * Check Types
-           * chayns.utils
-           */
+    * Utility Functions
+    * Check Types
+    * chayns.utils
+    */
   def isHex(parameter: js.Any, shorthand: scala.Boolean): scala.Boolean = js.native
   def isJwt(parameter: js.Any): scala.Boolean = js.native
   def isMacAdress(parameter: js.Any): scala.Boolean = js.native
@@ -58,10 +58,10 @@ object utilsNs extends js.Object {
   }
   
   /**
-           * Utility Functions
-           * Local Storage
-           * chayns.utils.ls
-           */
+    * Utility Functions
+    * Local Storage
+    * chayns.utils.ls
+    */
   @JSName("ls")
   @js.native
   object lsNs extends js.Object {

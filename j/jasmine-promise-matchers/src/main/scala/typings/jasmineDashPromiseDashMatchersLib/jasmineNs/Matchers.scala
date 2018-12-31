@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Matchers[T] extends js.Object {
   /**
   		 * Verifies that a Promise is (or has been) rejected.

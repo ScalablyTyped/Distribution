@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseOptions extends js.Object {
   var attributes: js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[

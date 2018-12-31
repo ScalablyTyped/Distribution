@@ -29,14 +29,14 @@ trait LodashReduce extends js.Object {
   ): LodashReduce2x4[T] = js.native
   def apply[T /* <: js.Object */, TResult](
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCapped[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ]
   ): LodashReduce3x1[T, TResult] = js.native
   def apply[T, TResult](callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCapped[T, TResult], accumulator: TResult): TResult = js.native
   def apply[T /* <: js.Object */, TResult](
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCapped[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ],
     accumulator: TResult,
@@ -58,7 +58,7 @@ trait LodashReduce extends js.Object {
   ): LodashReduce1x5[TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCapped[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ],
     accumulator: lodashLib.lodashMod.underscoreNs.`__`,

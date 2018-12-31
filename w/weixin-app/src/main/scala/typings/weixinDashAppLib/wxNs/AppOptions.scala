@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 	 * App 实现的接口对象
 	 * 开发者可以添加任意的函数或数据到 Object 参数中，用 this 可以访问
 	 */
-
 trait AppOptions extends js.Object {
   /**
   		 * 全局Data

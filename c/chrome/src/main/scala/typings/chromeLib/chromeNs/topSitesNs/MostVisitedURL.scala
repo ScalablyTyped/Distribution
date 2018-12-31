@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MostVisitedURL extends js.Object {
   /** The title of the page */
   var title: java.lang.String

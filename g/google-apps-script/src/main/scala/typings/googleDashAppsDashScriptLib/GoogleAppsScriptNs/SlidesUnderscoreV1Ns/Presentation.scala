@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Presentation extends js.Object {
   // The layouts in the presentation. A layout is a template that determines
   // how content is arranged and styled on the slides that inherit from that

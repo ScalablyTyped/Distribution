@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_WINDOW extends js.Object {
   var AUDIO: chromeDashAppsLib.chromeDashAppsLibStrings.audio
   var SCREEN: chromeDashAppsLib.chromeDashAppsLibStrings.screen

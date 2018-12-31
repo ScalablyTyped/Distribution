@@ -36,25 +36,25 @@ abstract class DataPackagePropertySetView () extends js.Object {
   /** Gets the text that displays as a title for the contents of the DataPackagePropertySetView object. */
   var title: java.lang.String = js.native
   /**
-                   * Returns an iterator to enumerate the items in the property set.
-                   * @return The first item in the DataPackage object.
-                   */
+    * Returns an iterator to enumerate the items in the property set.
+    * @return The first item in the DataPackage object.
+    */
   def first(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterator[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IKeyValuePair[_, _]] = js.native
   /**
-                   * Indicates whether the DataPackagePropertySetView object contains a specific property.
-                   * @param key The key.
-                   * @return True if the property set has an item with the specified key; otherwise false.
-                   */
+    * Indicates whether the DataPackagePropertySetView object contains a specific property.
+    * @param key The key.
+    * @return True if the property set has an item with the specified key; otherwise false.
+    */
   def hasKey(key: java.lang.String): scala.Boolean = js.native
   /**
-                   * Retrieves the value of a specific property.
-                   * @param key The key.
-                   * @return The value, if an item with the specified key exists. Otherwise, an error code.
-                   */
+    * Retrieves the value of a specific property.
+    * @param key The key.
+    * @return The value, if an item with the specified key exists. Otherwise, an error code.
+    */
   def lookup(key: java.lang.String): js.Any = js.native
   /**
-                   * Divides the object into two views
-                   */
+    * Divides the object into two views
+    */
   def split(): winrtDashUwpLib.Anon_SecondFirstIMapViewString = js.native
 }
 

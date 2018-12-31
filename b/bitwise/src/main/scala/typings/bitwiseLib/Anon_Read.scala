@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Read extends js.Object {
   var and: js.Function3[
     /* buffer1 */ nodeLib.Buffer, 
@@ -13,10 +12,17 @@ trait Anon_Read extends js.Object {
     /* isLooping */ js.UndefOr[scala.Boolean], 
     nodeLib.Buffer
   ]
-  var create: js.Function1[/* bits */ js.Array[_], nodeLib.Buffer]
+  var create: js.Function1[
+    /* bits */ js.Array[
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _
+    ], 
+    nodeLib.Buffer
+  ]
   var modify: js.Function3[
     /* buffer */ nodeLib.Buffer, 
-    /* bits */ js.Array[_], 
+    /* bits */ js.Array[
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _
+    ], 
     /* offset */ js.UndefOr[scala.Double], 
     scala.Unit
   ]
@@ -43,7 +49,9 @@ trait Anon_Read extends js.Object {
     /* buffer */ nodeLib.Buffer, 
     /* offset */ js.UndefOr[scala.Double], 
     /* length */ js.UndefOr[scala.Double], 
-    js.Array[_]
+    js.Array[
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _
+    ]
   ]
   var readInt: js.Function3[
     /* buffer */ nodeLib.Buffer, 

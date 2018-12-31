@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CanChangeTeamDriveBackground extends js.Object {
   /** Whether the current user can add children to folders in this Team Drive. */
   var canAddChildren: js.UndefOr[scala.Boolean] = js.undefined
@@ -16,9 +15,9 @@ trait Anon_CanChangeTeamDriveBackground extends js.Object {
   /** Whether the current user can copy files in this Team Drive. */
   var canCopy: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Whether the current user can delete this Team Drive. Attempting to delete the Team Drive may still fail if there are untrashed items inside the Team
-                   * Drive.
-                   */
+    * Whether the current user can delete this Team Drive. Attempting to delete the Team Drive may still fail if there are untrashed items inside the Team
+    * Drive.
+    */
   var canDeleteTeamDrive: js.UndefOr[scala.Boolean] = js.undefined
   /** Whether the current user can download files in this Team Drive. */
   var canDownload: js.UndefOr[scala.Boolean] = js.undefined

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("aws-sdk", "CloudWatchEvents")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class CloudWatchEvents ()
   extends awsDashSdkLib.clientsAllMod.CloudWatchEvents {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsCloudwatcheventsMod.CloudWatchEventsNs.ClientConfiguration) = this()
 }
 

@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectedRangeSettings extends js.Object {
   /** Specifies the ending range of range navigator.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var end: js.UndefOr[java.lang.String] = js.undefined
   /** Specifies the starting range of range navigator.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var start: js.UndefOr[java.lang.String] = js.undefined
 }
 

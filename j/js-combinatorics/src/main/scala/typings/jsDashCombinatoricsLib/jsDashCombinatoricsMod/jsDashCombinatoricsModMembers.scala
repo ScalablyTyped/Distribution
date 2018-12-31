@@ -23,11 +23,6 @@ object jsDashCombinatoricsModMembers extends js.Object {
   	 * When n is ommited, the length of the array is used.
   	 */
   def baseN[T](a: js.Array[T]): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IPredictableGenerator[js.Array[T]] = js.native
-  /**
-  	 * Generates n-digit "numbers" where each digit is an element in array.
-  	 * Note this "number" is in the least significant order.
-  	 * When n is ommited, the length of the array is used.
-  	 */
   def baseN[T](a: js.Array[T], n: scala.Double): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IPredictableGenerator[js.Array[T]] = js.native
   /**
   	 * Generates the combination of array with n elements, which
@@ -36,12 +31,6 @@ object jsDashCombinatoricsModMembers extends js.Object {
   	 * Somewhat slower than combination()
   	 */
   def bigCombination[T](a: js.Array[T]): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IGenerator[js.Array[T]] = js.native
-  /**
-  	 * Generates the combination of array with n elements, which
-  	 * also supports larger sets of elements.
-  	 * When n is ommited, the length of the array is used.
-  	 * Somewhat slower than combination()
-  	 */
   def bigCombination[T](a: js.Array[T], n: scala.Double): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IGenerator[js.Array[T]] = js.native
   def cartesianProduct(a: js.Array[_]*): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.ICartesianProductGenerator[js.Array[_]] = js.native
   /**
@@ -107,10 +96,6 @@ object jsDashCombinatoricsModMembers extends js.Object {
   	 * When n is ommited, the length of the array is used.
   	 */
   def combination[T](a: js.Array[T]): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IGenerator[js.Array[T]] = js.native
-  /**
-  	 * Generates the combination of array with n elements.
-  	 * When n is ommited, the length of the array is used.
-  	 */
   def combination[T](a: js.Array[T], n: scala.Double): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IGenerator[js.Array[T]] = js.native
   /**
   	 * Returns the factoradic representation of n in array, in least significant order.
@@ -126,10 +111,6 @@ object jsDashCombinatoricsModMembers extends js.Object {
   	 * When n is ommited, the length of the array is used.
   	 */
   def permutation[T](a: js.Array[T]): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IGenerator[js.Array[T]] = js.native
-  /**
-  	 * Generates the permutation of array with n elements.
-  	 * When n is ommited, the length of the array is used.
-  	 */
   def permutation[T](a: js.Array[T], n: scala.Double): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IGenerator[js.Array[T]] = js.native
   /**
   	 * Generates the permutation of the combination of n.

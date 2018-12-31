@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 /*----------------------
 		ArrayObserver
 	----------------------*/
-
-
 trait splice extends js.Object {
   /**
   		 * the number of element which were inserted

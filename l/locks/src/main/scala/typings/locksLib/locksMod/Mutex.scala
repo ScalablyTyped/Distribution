@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("locks", "Mutex")
 @js.native
+/** Construct a new mutex lock. */
 class Mutex () extends js.Object {
   /** Flag indicating whether the lock is currently taken. */
   var isLocked: scala.Boolean = js.native

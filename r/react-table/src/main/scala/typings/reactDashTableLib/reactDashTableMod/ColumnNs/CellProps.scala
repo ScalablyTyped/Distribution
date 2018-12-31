@@ -9,35 +9,32 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CellProps extends js.Object {
   /**
-           * Default: undefined
-           * A function that returns a primitive, or JSX / React Component
-           *
-           * @example 'Cell Value'
-           * @example ({data, column}) => <div>Cell Value</div>,
-           */
+    * Default: undefined
+    * A function that returns a primitive, or JSX / React Component
+    *
+    * @example 'Cell Value'
+    * @example ({data, column}) => <div>Cell Value</div>,
+    */
   var Cell: reactDashTableLib.reactDashTableMod.TableCellRenderer = js.native
   /**
-           * Set the classname of the `td` element of the column
-           * @default string
-           */
+    * Set the classname of the `td` element of the column
+    * @default string
+    */
   var className: java.lang.String = js.native
   /**
-           * @default () => ({})
-           */
+    * @default () => ({})
+    */
   @JSName("getProps")
   var getProps_Original: reactDashTableLib.reactDashTableMod.ReactTableFunction = js.native
   /**
-           * Set the style of the `td` element of the column
-           * @default {}
-           */
+    * Set the style of the `td` element of the column
+    * @default {}
+    */
   var style: js.Object = js.native
   /**
-           * @default () => ({})
-           */
+    * @default () => ({})
+    */
   def getProps(): scala.Unit = js.native
-  /**
-           * @default () => ({})
-           */
   def getProps(value: js.Any): scala.Unit = js.native
 }
 

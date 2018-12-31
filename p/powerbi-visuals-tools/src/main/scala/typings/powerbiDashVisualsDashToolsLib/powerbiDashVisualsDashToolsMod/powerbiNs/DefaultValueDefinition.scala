@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DefaultValueDefinition extends js.Object {
   var identityFieldsValues: js.UndefOr[
     js.Array[

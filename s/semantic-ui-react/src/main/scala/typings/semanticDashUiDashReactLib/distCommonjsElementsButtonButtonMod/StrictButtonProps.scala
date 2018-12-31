@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictButtonProps extends js.Object {
   /** A button can show it is currently the active user selection. */
   var active: js.UndefOr[scala.Boolean] = js.undefined
@@ -60,10 +59,10 @@ trait StrictButtonProps extends js.Object {
   /** A button can hint towards a negative consequence. */
   var negative: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * Called after user's click.
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called after user's click.
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onClick: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent], 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AvroSchemaResponseInterface extends js.Object {
   var id: scala.Double
   var schema: js.Any

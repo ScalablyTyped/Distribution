@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Object passed to the error callback when the socket enters the [ERROR](Titanium.Network.Socket.ERROR) state.
- */
-
+  * Object passed to the error callback when the socket enters the [ERROR](Titanium.Network.Socket.ERROR) state.
+  */
 trait ErrorCallbackArgs extends js.Object {
   /**
   	 * Error code. Returns a non-zero value.

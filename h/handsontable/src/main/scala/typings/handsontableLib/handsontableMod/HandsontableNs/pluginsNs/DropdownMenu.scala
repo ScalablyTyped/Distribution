@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DropdownMenu extends Base {
   var SEPARATOR: SeparatorObject
   var commandExecutor: CommandExecutor

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeclareModule extends Node {
   var body: BlockStatement
   var id: StringLiteral | Identifier

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SimpleModalOptions extends js.Object {
   /** The jQuery selector to append the elements to. For ASP.NET, use 'form'. Default: 'body'. */
   var appendTo: js.UndefOr[java.lang.String] = js.undefined

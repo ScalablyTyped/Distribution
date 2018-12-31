@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Format extends js.Object {
   var format: js.UndefOr[evernoteLib.evernoteMod.EvernoteNs.QueryFormat] = js.undefined
   var guid: js.UndefOr[java.lang.String] = js.undefined

@@ -9,58 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 class SapPcpWebSocket protected () extends WebSocket {
   /**
-             * Creates a new WebSocket connection and uses the pcp-protocol for communication.
-             * @param sUrl relative or absolute URL for WebSocket connection.
-             * @param aProtocols array of protocols as strings, a single protocol as a string.Protocol(s) should be
-             * selected from {@link sap.ui.core.ws.SapPcpWebSocket.SUPPORTED_PROTOCOLS}.
-            */
+    * Creates a new WebSocket connection and uses the pcp-protocol for communication.
+    * @param sUrl relative or absolute URL for WebSocket connection.
+    * @param aProtocols array of protocols as strings, a single protocol as a string.Protocol(s) should be
+    * selected from {@link sap.ui.core.ws.SapPcpWebSocket.SUPPORTED_PROTOCOLS}.
+    */
   def this(sUrl: java.lang.String) = this()
-  /**
-             * Creates a new WebSocket connection and uses the pcp-protocol for communication.
-             * @param sUrl relative or absolute URL for WebSocket connection.
-             * @param aProtocols array of protocols as strings, a single protocol as a string.Protocol(s) should be
-             * selected from {@link sap.ui.core.ws.SapPcpWebSocket.SUPPORTED_PROTOCOLS}.
-            */
   def this(sUrl: java.lang.String, aProtocols: js.Array[_]) = this()
-  /**
-             * Sends a message and optional pcp-header-fields using the pcp-protocol.<br><br>If the connection is
-             * not yet opened, the message will be queued and sentwhen the connection is established.
-             * @param message message to send
-             * @param oPcpFields additional pcp-fields as key-value map
-             * @returns <code>this</code> to allow method chaining
-            */
   def send(message: java.lang.String, oPcpFields: js.Any): SapPcpWebSocket = js.native
-  /**
-             * Sends a message and optional pcp-header-fields using the pcp-protocol.<br><br>If the connection is
-             * not yet opened, the message will be queued and sentwhen the connection is established.
-             * @param message message to send
-             * @param oPcpFields additional pcp-fields as key-value map
-             * @returns <code>this</code> to allow method chaining
-            */
   def send(message: js.Any): SapPcpWebSocket = js.native
-  /**
-             * Sends a message and optional pcp-header-fields using the pcp-protocol.<br><br>If the connection is
-             * not yet opened, the message will be queued and sentwhen the connection is established.
-             * @param message message to send
-             * @param oPcpFields additional pcp-fields as key-value map
-             * @returns <code>this</code> to allow method chaining
-            */
   def send(message: js.Any, oPcpFields: js.Any): SapPcpWebSocket = js.native
-  /**
-             * Sends a message and optional pcp-header-fields using the pcp-protocol.<br><br>If the connection is
-             * not yet opened, the message will be queued and sentwhen the connection is established.
-             * @param message message to send
-             * @param oPcpFields additional pcp-fields as key-value map
-             * @returns <code>this</code> to allow method chaining
-            */
   def send(message: js.Array[_]): SapPcpWebSocket = js.native
-  /**
-             * Sends a message and optional pcp-header-fields using the pcp-protocol.<br><br>If the connection is
-             * not yet opened, the message will be queued and sentwhen the connection is established.
-             * @param message message to send
-             * @param oPcpFields additional pcp-fields as key-value map
-             * @returns <code>this</code> to allow method chaining
-            */
   def send(message: js.Array[_], oPcpFields: js.Any): SapPcpWebSocket = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VerifyParams extends js.Object {
   var checkChain: js.UndefOr[scala.Boolean] = js.undefined
   var checkDate: js.UndefOr[stdLib.Date] = js.undefined

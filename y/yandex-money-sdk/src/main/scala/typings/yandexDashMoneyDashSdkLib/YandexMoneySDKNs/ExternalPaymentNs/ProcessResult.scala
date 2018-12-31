@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProcessResult extends js.Object {
   var acs_params: js.UndefOr[yandexDashMoneyDashSdkLib.Anon_Key] = js.undefined
   var acs_uri: js.UndefOr[java.lang.String] = js.undefined

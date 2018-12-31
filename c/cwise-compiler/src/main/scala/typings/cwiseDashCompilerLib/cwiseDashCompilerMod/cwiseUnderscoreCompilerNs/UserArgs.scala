@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserArgs extends js.Object {
   var args: js.Array[ArgType]
   var blockSize: scala.Double

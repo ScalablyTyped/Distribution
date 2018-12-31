@@ -12,29 +12,29 @@ sealed trait GitHistoryMode extends js.Object
 @js.native
 object GitHistoryMode extends js.Object {
   /**
-       * The history mode used by `git log --first-parent`
-       */
+    * The history mode used by `git log --first-parent`
+    */
   @js.native
   sealed trait FirstParent
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitHistoryMode
   
   /**
-       * The history mode used by `git log --full-history`
-       */
+    * The history mode used by `git log --full-history`
+    */
   @js.native
   sealed trait FullHistory
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitHistoryMode
   
   /**
-       * The history mode used by `git log --full-history --simplify-merges`
-       */
+    * The history mode used by `git log --full-history --simplify-merges`
+    */
   @js.native
   sealed trait FullHistorySimplifyMerges
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitHistoryMode
   
   /**
-       * The history mode used by `git log`. This is the default.
-       */
+    * The history mode used by `git log`. This is the default.
+    */
   @js.native
   sealed trait SimplifiedHistory
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitHistoryMode

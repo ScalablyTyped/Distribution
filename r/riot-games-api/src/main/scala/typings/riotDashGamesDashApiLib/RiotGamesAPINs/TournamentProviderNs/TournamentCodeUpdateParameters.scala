@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TournamentCodeUpdateParameters extends js.Object {
   var allowedParticipants: java.lang.String
   var mapType: java.lang.String

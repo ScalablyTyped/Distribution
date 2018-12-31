@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEvent
   extends extjsLib.ExtNs.IBase {
   /** [Method] Return the raw data for this event

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ToCurrencyOptions extends ToNumberOptions {
   var format: js.UndefOr[java.lang.String] = js.undefined
   var sign_first: js.UndefOr[scala.Boolean] = js.undefined

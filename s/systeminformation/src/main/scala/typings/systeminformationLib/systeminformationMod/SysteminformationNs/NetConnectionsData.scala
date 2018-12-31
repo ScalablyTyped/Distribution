@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NetConnectionsData extends js.Object {
   var localaddress: java.lang.String
   var localport: java.lang.String

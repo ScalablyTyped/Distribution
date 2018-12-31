@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CalendarListEntry extends js.Object {
   /**
-               * The effective access role that the authenticated user has on the calendar. Read-only. Possible values are:
-               * - "freeBusyReader" - Provides read access to free/busy information.
-               * - "reader" - Provides read access to the calendar. Private events will appear to users with reader access, but event details will be hidden.
-               * - "writer" - Provides read and write access to the calendar. Private events will appear to users with writer access, and event details will be visible.
-               *
-               * - "owner" - Provides ownership of the calendar. This role has all of the permissions of the writer role with the additional ability to see and
-               * manipulate ACLs.
-               */
+    * The effective access role that the authenticated user has on the calendar. Read-only. Possible values are:
+    * - "freeBusyReader" - Provides read access to free/busy information.
+    * - "reader" - Provides read access to the calendar. Private events will appear to users with reader access, but event details will be hidden.
+    * - "writer" - Provides read and write access to the calendar. Private events will appear to users with writer access, and event details will be visible.
+    *
+    * - "owner" - Provides ownership of the calendar. This role has all of the permissions of the writer role with the additional ability to see and
+    * manipulate ACLs.
+    */
   var accessRole: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The main color of the calendar in the hexadecimal format "#0088aa". This property supersedes the index-based colorId property. To set or change this
-               * property, you need to specify colorRgbFormat=true in the parameters of the insert, update and patch methods. Optional.
-               */
+    * The main color of the calendar in the hexadecimal format "#0088aa". This property supersedes the index-based colorId property. To set or change this
+    * property, you need to specify colorRgbFormat=true in the parameters of the insert, update and patch methods. Optional.
+    */
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The color of the calendar. This is an ID referring to an entry in the calendar section of the colors definition (see the colors endpoint). This
-               * property is superseded by the backgroundColor and foregroundColor properties and can be ignored when using these properties. Optional.
-               */
+    * The color of the calendar. This is an ID referring to an entry in the calendar section of the colors definition (see the colors endpoint). This
+    * property is superseded by the backgroundColor and foregroundColor properties and can be ignored when using these properties. Optional.
+    */
   var colorId: js.UndefOr[java.lang.String] = js.undefined
   /** The default reminders that the authenticated user has for this calendar. */
   var defaultReminders: js.UndefOr[js.Array[EventReminder]] = js.undefined
@@ -36,9 +35,9 @@ trait CalendarListEntry extends js.Object {
   /** ETag of the resource. */
   var etag: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The foreground color of the calendar in the hexadecimal format "#ffffff". This property supersedes the index-based colorId property. To set or change
-               * this property, you need to specify colorRgbFormat=true in the parameters of the insert, update and patch methods. Optional.
-               */
+    * The foreground color of the calendar in the hexadecimal format "#ffffff". This property supersedes the index-based colorId property. To set or change
+    * this property, you need to specify colorRgbFormat=true in the parameters of the insert, update and patch methods. Optional.
+    */
   var foregroundColor: js.UndefOr[java.lang.String] = js.undefined
   /** Whether the calendar has been hidden from the list. Optional. The default is False. */
   var hidden: js.UndefOr[scala.Boolean] = js.undefined

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ReadyState extends js.Object
 
 /**
-     * EventSource
-     */
+  * EventSource
+  */
 @JSGlobal("ssutils.ReadyState")
 @js.native
 object ReadyState extends js.Object {

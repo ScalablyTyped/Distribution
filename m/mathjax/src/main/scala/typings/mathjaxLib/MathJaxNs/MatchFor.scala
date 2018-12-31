@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MatchFor extends js.Object {
   /*Whether to match the font size for the HTML-CSS output.*/
   var `HTML-CSS`: js.UndefOr[scala.Boolean] = js.undefined

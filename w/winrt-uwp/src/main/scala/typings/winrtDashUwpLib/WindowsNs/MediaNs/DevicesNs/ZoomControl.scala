@@ -24,9 +24,9 @@ abstract class ZoomControl () extends js.Object {
   /** Gets or sets the zoom value to be used by the capture device. */
   var value: scala.Double = js.native
   /**
-                   * Configures the zoom control with the provided zoom settings.
-                   * @param settings The zoom settings.
-                   */
+    * Configures the zoom control with the provided zoom settings.
+    * @param settings The zoom settings.
+    */
   def configure(settings: ZoomSettings): scala.Unit = js.native
 }
 

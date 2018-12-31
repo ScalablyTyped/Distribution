@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NxInlineDimensionDef extends js.Object {
   var qActiveField: scala.Double
   var qFieldDefs: js.Array[java.lang.String]

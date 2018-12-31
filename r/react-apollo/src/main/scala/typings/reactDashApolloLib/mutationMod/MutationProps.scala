@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MutationProps[TData, TVariables] extends js.Object {
   var awaitRefetchQueries: js.UndefOr[scala.Boolean] = js.undefined
   var client: js.UndefOr[apolloDashClientLib.apolloDashClientMod.default[js.Object]] = js.undefined

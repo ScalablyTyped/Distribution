@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScriptStackTraceElement extends js.Object {
   /** The name of the function that failed. */
   var function: js.UndefOr[java.lang.String] = js.undefined

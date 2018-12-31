@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Channel extends js.Object {
   var Description: java.lang.String
   var LastModified: java.lang.String

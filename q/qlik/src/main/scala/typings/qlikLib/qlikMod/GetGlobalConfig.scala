@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetGlobalConfig extends js.Object {
   var host: java.lang.String
   var identity: java.lang.String

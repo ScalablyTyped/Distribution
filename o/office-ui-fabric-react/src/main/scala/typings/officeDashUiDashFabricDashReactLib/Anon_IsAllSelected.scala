@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IsAllSelected extends js.Object {
   var cellStyleProps: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsRowDotTypesMod.ICellStyleProps

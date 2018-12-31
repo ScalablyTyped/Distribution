@@ -12,43 +12,43 @@ sealed trait PolicyEvaluationStatus extends js.Object
 @js.native
 object PolicyEvaluationStatus extends js.Object {
   /**
-       * The policy has been fulfilled for this pull request.
-       */
+    * The policy has been fulfilled for this pull request.
+    */
   @js.native
   sealed trait Approved
     extends vsoDashNodeDashApiLib.interfacesPolicyInterfacesMod.PolicyEvaluationStatus
   
   /**
-       * The policy has encountered an unexpected error.
-       */
+    * The policy has encountered an unexpected error.
+    */
   @js.native
   sealed trait Broken
     extends vsoDashNodeDashApiLib.interfacesPolicyInterfacesMod.PolicyEvaluationStatus
   
   /**
-       * The policy does not apply to this pull request.
-       */
+    * The policy does not apply to this pull request.
+    */
   @js.native
   sealed trait NotApplicable
     extends vsoDashNodeDashApiLib.interfacesPolicyInterfacesMod.PolicyEvaluationStatus
   
   /**
-       * The policy is either queued to run, or is waiting for some event before progressing.
-       */
+    * The policy is either queued to run, or is waiting for some event before progressing.
+    */
   @js.native
   sealed trait Queued
     extends vsoDashNodeDashApiLib.interfacesPolicyInterfacesMod.PolicyEvaluationStatus
   
   /**
-       * The policy has rejected this pull request.
-       */
+    * The policy has rejected this pull request.
+    */
   @js.native
   sealed trait Rejected
     extends vsoDashNodeDashApiLib.interfacesPolicyInterfacesMod.PolicyEvaluationStatus
   
   /**
-       * The policy is currently running.
-       */
+    * The policy is currently running.
+    */
   @js.native
   sealed trait Running
     extends vsoDashNodeDashApiLib.interfacesPolicyInterfacesMod.PolicyEvaluationStatus

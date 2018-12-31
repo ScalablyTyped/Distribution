@@ -13,7 +13,7 @@ class Carousel ()
 @JSImport("react-bootstrap/lib", "Carousel")
 @js.native
 object Carousel extends js.Object {
-  var Caption: js.Any = js.native
-  var Item: js.Any = js.native
+  var Caption: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libCarouselCaptionMod.namespaced] = js.native
+  var Item: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libCarouselItemMod.namespaced] = js.native
 }
 

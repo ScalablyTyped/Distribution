@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodeRefFieldsOptions extends js.Object {
   var computedStyle: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** 是否返回节点dataset */

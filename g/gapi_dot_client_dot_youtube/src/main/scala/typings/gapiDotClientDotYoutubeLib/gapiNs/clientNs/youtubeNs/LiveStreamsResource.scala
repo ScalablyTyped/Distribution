@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LiveStreamsResource extends js.Object {
   /** Deletes a video stream. */
   def delete(request: gapiDotClientDotYoutubeLib.Anon_PrettyPrintOnBehalfOfContentOwnerChannelQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

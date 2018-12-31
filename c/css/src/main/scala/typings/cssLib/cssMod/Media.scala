@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Media extends Node {
   /** The part following @media. */
   var media: js.UndefOr[java.lang.String] = js.undefined

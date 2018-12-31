@@ -12,9 +12,9 @@ abstract class NetworkItem () extends js.Object {
   /** Gets the network ID. */
   var networkId: java.lang.String = js.native
   /**
-                   * Gets a NetworkTypes value indicating the network type for a NetworkItem .
-                   * @return The type of a network.
-                   */
+    * Gets a NetworkTypes value indicating the network type for a NetworkItem .
+    * @return The type of a network.
+    */
   def getNetworkTypes(): NetworkTypes = js.native
 }
 

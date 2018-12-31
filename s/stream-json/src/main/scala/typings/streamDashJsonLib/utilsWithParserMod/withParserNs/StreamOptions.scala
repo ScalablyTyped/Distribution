@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StreamOptions
   extends streamDashJsonLib.streamersStreamBaseMod.StreamBaseNs.StreamOptions {
   var jsonStreaming: js.UndefOr[scala.Boolean] = js.undefined

@@ -29,19 +29,19 @@ class AsyncScheduler protected ()
     ], now: js.Function0[scala.Double]) = this()
   var actions: js.Array[rxjsLib.internalSchedulerAsyncActionMod.AsyncAction[_]] = js.native
   /**
-       * A flag to indicate whether the Scheduler is currently executing a batch of
-       * queued actions.
-       * @type {boolean}
-       * @deprecated internal use only
-       */
+    * A flag to indicate whether the Scheduler is currently executing a batch of
+    * queued actions.
+    * @type {boolean}
+    * @deprecated internal use only
+    */
   var active: scala.Boolean = js.native
   /**
-       * An internal ID used to track the latest asynchronous task such as those
-       * coming from `setTimeout`, `setInterval`, `requestAnimationFrame`, and
-       * others.
-       * @type {any}
-       * @deprecated internal use only
-       */
+    * An internal ID used to track the latest asynchronous task such as those
+    * coming from `setTimeout`, `setInterval`, `requestAnimationFrame`, and
+    * others.
+    * @type {any}
+    * @deprecated internal use only
+    */
   var scheduled: js.Any = js.native
   def flush(action: rxjsLib.internalSchedulerAsyncActionMod.AsyncAction[_]): scala.Unit = js.native
 }

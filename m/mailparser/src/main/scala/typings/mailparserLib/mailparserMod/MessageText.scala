@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Text message content.
- */
-
+  * Text message content.
+  */
 trait MessageText extends js.Object {
   /**
   	 * Includes the HTML version of the message.

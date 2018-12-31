@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebApiTeam extends WebApiTeamRef {
   /**
-       * Team description
-       */
+    * Team description
+    */
   var description: java.lang.String
   /**
-       * Identity REST API Url to this team
-       */
+    * Identity REST API Url to this team
+    */
   var identityUrl: java.lang.String
 }
 

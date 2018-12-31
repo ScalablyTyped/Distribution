@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IWriter
   extends extjsLib.ExtNs.IBase {
   /** [Config Option] (String) */

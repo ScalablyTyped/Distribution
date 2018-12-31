@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Creates root node of a graph.
- */
+  * Creates root node of a graph.
+  */
 @js.native
 trait Graph extends js.Object {
   var vertex: VertexConstructor = js.native

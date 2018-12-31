@@ -36,7 +36,7 @@ object operatorLastMod extends js.Object {
       /* value */ T, 
       /* index */ scala.Double, 
       /* source */ rxjsLib.rxjsMod.Observable[T], 
-      /* is S */scala.Boolean
+      /* is S */ scala.Boolean
     ]
   ): rxjsLib.rxjsMod.Observable[S] = js.native
   @JSName("last")
@@ -46,7 +46,7 @@ object operatorLastMod extends js.Object {
       /* value */ T, 
       /* index */ scala.Double, 
       /* source */ rxjsLib.rxjsMod.Observable[T], 
-      /* is S */scala.Boolean
+      /* is S */ scala.Boolean
     ],
     defaultValue: S
   ): rxjsLib.rxjsMod.Observable[S] = js.native

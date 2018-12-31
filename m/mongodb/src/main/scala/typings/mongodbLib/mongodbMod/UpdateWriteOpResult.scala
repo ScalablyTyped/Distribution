@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateWriteOpResult extends js.Object {
   var connection: js.Any
   var matchedCount: scala.Double

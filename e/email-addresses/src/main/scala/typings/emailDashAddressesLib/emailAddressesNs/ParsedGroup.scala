@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParsedGroup extends js.Object {
   var addresses: js.Array[ParsedMailbox]
   var name: java.lang.String

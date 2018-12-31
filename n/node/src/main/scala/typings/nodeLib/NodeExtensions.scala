@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodeExtensions
   extends /* ext */ org.scalablytyped.runtime.StringDictionary[js.Function2[/* m */ NodeModule, /* filename */ java.lang.String, _]] {
   def `.js`(m: NodeModule, filename: java.lang.String): js.Any

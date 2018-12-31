@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Io extends js.Object {
   var cancelled_write_bytes: java.lang.String
   var rchar: java.lang.String

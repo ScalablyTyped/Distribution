@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IKey extends js.Object {
   var ADD: java.lang.String
   var ALT: java.lang.String
@@ -73,17 +72,17 @@ trait IKey extends js.Object {
   var UP: java.lang.String
        // alias for Windows key
   /**
-      * Simulate pressing many keys at once in a 'chord'. Takes a sequence of
-      * keys or strings, appends each of the values to a string,
-      * and adds the chord termination key ({@link Key.NULL}) and returns
-      * the resulting string.
-      *
-      * Note: when the low-level webdriver key handlers see Keys.NULL, active
-      * modifier keys (CTRL/ALT/SHIFT/etc) release via a keyup event.
-      *
-      * @param {...string} var_args The key sequence to concatenate.
-      * @return {string} The null-terminated key sequence.
-      */
+    * Simulate pressing many keys at once in a 'chord'. Takes a sequence of
+    * keys or strings, appends each of the values to a string,
+    * and adds the chord termination key ({@link Key.NULL}) and returns
+    * the resulting string.
+    *
+    * Note: when the low-level webdriver key handlers see Keys.NULL, active
+    * modifier keys (CTRL/ALT/SHIFT/etc) release via a keyup event.
+    *
+    * @param {...string} var_args The key sequence to concatenate.
+    * @return {string} The null-terminated key sequence.
+    */
   def chord(var_args: (java.lang.String | IKey)*): java.lang.String
 }
 

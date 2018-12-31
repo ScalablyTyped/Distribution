@@ -32,53 +32,53 @@ abstract class HttpResponseHeaderCollection () extends js.Object {
   /** Gets the HttpChallengeHeaderValueCollection of HttpChallengeHeaderValue objects that represent the value of a WWW-Authenticate HTTP header on an HTTP response. */
   var wwwAuthenticate: HttpChallengeHeaderValueCollection = js.native
   /**
-                       * Adds a new item to the end of the HttpResponseHeaderCollection .
-                       * @param name The name of the value to add.
-                       * @param value The item value to add.
-                       */
+    * Adds a new item to the end of the HttpResponseHeaderCollection .
+    * @param name The name of the value to add.
+    * @param value The item value to add.
+    */
   def append(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
   /** Removes all objects from the collection. */
   def clear(): scala.Unit = js.native
   /**
-                       * Retrieves an iterator to the first item in the HttpResponseHeaderCollection .
-                       * @return An object that can be used to enumerate the items in the collection. The iterator points to the first item in the HttpResponseHeaderCollection .
-                       */
+    * Retrieves an iterator to the first item in the HttpResponseHeaderCollection .
+    * @return An object that can be used to enumerate the items in the collection. The iterator points to the first item in the HttpResponseHeaderCollection .
+    */
   def first(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterator[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IKeyValuePair[_, _]] = js.native
   /**
-                       * Returns an immutable view of the HttpResponseHeaderCollection .
-                       * @return The view of the HttpResponseHeaderCollection .
-                       */
+    * Returns an immutable view of the HttpResponseHeaderCollection .
+    * @return The view of the HttpResponseHeaderCollection .
+    */
   def getView(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, java.lang.String] = js.native
   /**
-                       * Determines whether the HttpResponseHeaderCollection contains the specified key.
-                       * @param key The key associated with the item to locate.
-                       * @return true if the key is found; otherwise, false.
-                       */
+    * Determines whether the HttpResponseHeaderCollection contains the specified key.
+    * @param key The key associated with the item to locate.
+    * @return true if the key is found; otherwise, false.
+    */
   def hasKey(key: java.lang.String): scala.Boolean = js.native
   /**
-                       * Inserts or replaces an item in the HttpResponseHeaderCollection with the specified key and value.
-                       * @param key The key of the item to be inserted.
-                       * @param value The value of the item to insert.
-                       * @return true if an item with the specified key is an existing item that was replaced; otherwise false.
-                       */
+    * Inserts or replaces an item in the HttpResponseHeaderCollection with the specified key and value.
+    * @param key The key of the item to be inserted.
+    * @param value The value of the item to insert.
+    * @return true if an item with the specified key is an existing item that was replaced; otherwise false.
+    */
   def insert(key: java.lang.String, value: java.lang.String): scala.Boolean = js.native
   /**
-                       * Lookup an item in the HttpResponseHeaderCollection .
-                       * @param key The key of the item to lookup.
-                       * @return The value of the item if found.
-                       */
+    * Lookup an item in the HttpResponseHeaderCollection .
+    * @param key The key of the item to lookup.
+    * @return The value of the item if found.
+    */
   def lookup(key: java.lang.String): java.lang.String = js.native
   /**
-                       * Removes an item with a given key from the HttpResponseHeaderCollection .
-                       * @param key Key of the item to be removed.
-                       */
+    * Removes an item with a given key from the HttpResponseHeaderCollection .
+    * @param key Key of the item to be removed.
+    */
   def remove(key: java.lang.String): scala.Unit = js.native
   /**
-                       * Try to append the specified item to the HttpResponseHeaderCollection without validation.
-                       * @param name The name of the item to append.
-                       * @param value The value of the item to append.
-                       * @return true if the item was appended; otherwise false.
-                       */
+    * Try to append the specified item to the HttpResponseHeaderCollection without validation.
+    * @param name The name of the item to append.
+    * @param value The value of the item to append.
+    * @return true if the item was appended; otherwise false.
+    */
   def tryAppendWithoutValidation(name: java.lang.String, value: java.lang.String): scala.Boolean = js.native
 }
 

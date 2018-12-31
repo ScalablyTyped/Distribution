@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SimpleRadioButton extends js.Object {
   def addBlurHandler(handler: Handler): SimpleRadioButton
   def addClickHandler(handler: Handler): SimpleRadioButton

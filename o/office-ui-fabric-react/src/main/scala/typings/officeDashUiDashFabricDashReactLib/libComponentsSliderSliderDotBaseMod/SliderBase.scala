@@ -28,8 +28,8 @@ class SliderBase protected ()
   /* private */ def _getThumbStyle(vertical: js.Any, thumbOffsetPercent: js.Any): js.Any = js.native
   /* private */ def _updateValue(value: js.Any, renderedValue: js.Any): js.Any = js.native
   /**
-       * Invoked when a component is receiving new props. This method is not called for the initial render.
-       */
+    * Invoked when a component is receiving new props. This method is not called for the initial render.
+    */
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MSliderBase(newProps: officeDashUiDashFabricDashReactLib.libComponentsSliderSliderDotTypesMod.ISliderProps): scala.Unit = js.native
   /* CompleteClass */

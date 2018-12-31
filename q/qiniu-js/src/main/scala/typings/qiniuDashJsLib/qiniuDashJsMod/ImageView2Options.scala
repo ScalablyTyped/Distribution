@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageView2Options extends js.Object {
   	// 新图的图像质量，取值范围：1-100
   var format: qiniuDashJsLib.qiniuDashJsLibStrings.jpg | qiniuDashJsLib.qiniuDashJsLibStrings.gif | qiniuDashJsLib.qiniuDashJsLibStrings.png | qiniuDashJsLib.qiniuDashJsLibStrings.webp | java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodeDimensions extends js.Object {
   var bottom: scala.Double
   var height: scala.Double

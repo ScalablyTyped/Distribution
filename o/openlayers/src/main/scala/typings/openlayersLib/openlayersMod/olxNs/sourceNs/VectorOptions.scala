@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VectorOptions extends js.Object {
   var attributions: js.UndefOr[openlayersLib.openlayersMod.AttributionLike] = js.undefined
   var features: js.UndefOr[

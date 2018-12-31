@@ -10,34 +10,16 @@ import scala.scalajs.js.annotation._
 class default protected ()
   extends openlayersLib.openlayersMod.Image {
   /**
-       * @param extent Extent.
-       * @param resolution Resolution.
-       * @param pixelRatio Pixel ratio.
-       * @param attributions Attributions.
-       * @param src Image source URI.
-       * @param crossOrigin Cross origin.
-       * @param imageLoadFunction Image load function.
-       */
+    * @param extent Extent.
+    * @param resolution Resolution.
+    * @param pixelRatio Pixel ratio.
+    * @param attributions Attributions.
+    * @param src Image source URI.
+    * @param crossOrigin Cross origin.
+    * @param imageLoadFunction Image load function.
+    */
   def this(extent: openlayersLib.openlayersMod.Extent, resolution: scala.Double, pixelRatio: scala.Double, attributions: js.Array[openlayersLib.openlayersMod.Attribution], src: java.lang.String) = this()
-  /**
-       * @param extent Extent.
-       * @param resolution Resolution.
-       * @param pixelRatio Pixel ratio.
-       * @param attributions Attributions.
-       * @param src Image source URI.
-       * @param crossOrigin Cross origin.
-       * @param imageLoadFunction Image load function.
-       */
   def this(extent: openlayersLib.openlayersMod.Extent, resolution: scala.Double, pixelRatio: scala.Double, attributions: js.Array[openlayersLib.openlayersMod.Attribution], src: java.lang.String, crossOrigin: java.lang.String) = this()
-  /**
-       * @param extent Extent.
-       * @param resolution Resolution.
-       * @param pixelRatio Pixel ratio.
-       * @param attributions Attributions.
-       * @param src Image source URI.
-       * @param crossOrigin Cross origin.
-       * @param imageLoadFunction Image load function.
-       */
   def this(extent: openlayersLib.openlayersMod.Extent, resolution: scala.Double, pixelRatio: scala.Double, attributions: js.Array[openlayersLib.openlayersMod.Attribution], src: java.lang.String, crossOrigin: java.lang.String, imageLoadFunction: openlayersLib.openlayersMod.ImageLoadFunctionType) = this()
 }
 

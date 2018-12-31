@@ -6,25 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * CustomConnector...
-     */
-
+  * CustomConnector...
+  */
 trait ICustomConnector extends js.Object {
   /**
-           * Name of the custom connector as displayed in the Qlik interface.
-           */
+    * Name of the custom connector as displayed in the Qlik interface.
+    */
   var qDisplayName: java.lang.String
   /**
-           * Mode of the machine (64 or 32 bits).
-           */
+    * Mode of the machine (64 or 32 bits).
+    */
   var qMachineMode: MachineModeType
   /**
-           * Name of the parent folder that contains the custom connector file.
-           */
+    * Name of the parent folder that contains the custom connector file.
+    */
   var qParent: java.lang.String
   /**
-           * Name of the custom connector file.
-           */
+    * Name of the custom connector file.
+    */
   var qProvider: java.lang.String
 }
 

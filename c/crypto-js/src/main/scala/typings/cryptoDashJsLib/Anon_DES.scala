@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DES extends js.Object {
   var AES: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.BlockCipher
   var DES: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.BlockCipher

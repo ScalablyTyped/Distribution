@@ -16,9 +16,7 @@ import scala.scalajs.js.annotation._
 class MiniSignalBinding protected () extends js.Object {
   //tslint:disable-next-line:ban-types forbidden-types
   def this(fn: js.Function) = this()
-  //tslint:disable-next-line:ban-types forbidden-types
   def this(fn: js.Function, once: scala.Boolean) = this()
-  //tslint:disable-next-line:ban-types forbidden-types
   def this(fn: js.Function, once: scala.Boolean, thisArg: js.Any) = this()
   //tslint:disable-next-line:ban-types forbidden-types
   var _fn: js.Function = js.native

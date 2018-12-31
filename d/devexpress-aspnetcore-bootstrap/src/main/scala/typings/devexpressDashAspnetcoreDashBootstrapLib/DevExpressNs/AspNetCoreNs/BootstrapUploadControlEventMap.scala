@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootstrapUploadControlEventMap extends ControlEventMap {
   var dropZoneEnter: UploadControlDropZoneEnterEventArgs
   var dropZoneLeave: UploadControlDropZoneLeaveEventArgs

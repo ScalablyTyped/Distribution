@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IRouter extends RequestHandler {
   /**
-       * Special-cased "all" method, applying the given route `path`,
-       * middleware, and callback to _every_ HTTP method.
-       */
+    * Special-cased "all" method, applying the given route `path`,
+    * middleware, and callback to _every_ HTTP method.
+    */
   @JSName("all")
   var all_Original: IRouterMatcher[this.type] = js.native
   @JSName("checkout")
@@ -58,8 +58,8 @@ trait IRouter extends RequestHandler {
   @JSName("search")
   var search_Original: IRouterMatcher[this.type] = js.native
   /**
-       * Stack of configured routes
-       */
+    * Stack of configured routes
+    */
   var stack: js.Array[_] = js.native
   @JSName("subscribe")
   var subscribe_Original: IRouterMatcher[this.type] = js.native
@@ -72,9 +72,9 @@ trait IRouter extends RequestHandler {
   @JSName("use")
   var use_Original: IRouterHandler[this.type] with IRouterMatcher[this.type] = js.native
   /**
-       * Special-cased "all" method, applying the given route `path`,
-       * middleware, and callback to _every_ HTTP method.
-       */
+    * Special-cased "all" method, applying the given route `path`,
+    * middleware, and callback to _every_ HTTP method.
+    */
   def all(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
   def checkout(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
   def connect(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
@@ -91,39 +91,39 @@ trait IRouter extends RequestHandler {
   def notify(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
   def options(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
   /**
-       * Alternatively, you can pass only a callback, in which case you have the opportunity to alter the app.param()
-       *
-       * @deprecated since version 4.11
-       */
+    * Alternatively, you can pass only a callback, in which case you have the opportunity to alter the app.param()
+    *
+    * @deprecated since version 4.11
+    */
   def param(
     callback: js.Function2[/* name */ java.lang.String, /* matcher */ stdLib.RegExp, RequestParamHandler]
   ): this.type = js.native
   /**
-       * Map the given param placeholder `name`(s) to the given callback(s).
-       *
-       * Parameter mapping is used to provide pre-conditions to routes
-       * which use normalized placeholders. For example a _:user_id_ parameter
-       * could automatically load a user's information from the database without
-       * any additional code,
-       *
-       * The callback uses the samesignature as middleware, the only differencing
-       * being that the value of the placeholder is passed, in this case the _id_
-       * of the user. Once the `next()` function is invoked, just like middleware
-       * it will continue on to execute the route, or subsequent parameter functions.
-       *
-       *      app.param('user_id', function(req, res, next, id){
-       *        User.find(id, function(err, user){
-       *          if (err) {
-       *            next(err);
-       *          } else if (user) {
-       *            req.user = user;
-       *            next();
-       *          } else {
-       *            next(new Error('failed to load user'));
-       *          }
-       *        });
-       *      });
-       */
+    * Map the given param placeholder `name`(s) to the given callback(s).
+    *
+    * Parameter mapping is used to provide pre-conditions to routes
+    * which use normalized placeholders. For example a _:user_id_ parameter
+    * could automatically load a user's information from the database without
+    * any additional code,
+    *
+    * The callback uses the samesignature as middleware, the only differencing
+    * being that the value of the placeholder is passed, in this case the _id_
+    * of the user. Once the `next()` function is invoked, just like middleware
+    * it will continue on to execute the route, or subsequent parameter functions.
+    *
+    *      app.param('user_id', function(req, res, next, id){
+    *        User.find(id, function(err, user){
+    *          if (err) {
+    *            next(err);
+    *          } else if (user) {
+    *            req.user = user;
+    *            next();
+    *          } else {
+    *            next(new Error('failed to load user'));
+    *          }
+    *        });
+    *      });
+    */
   def param(name: java.lang.String, handler: RequestParamHandler): this.type = js.native
   def patch(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
   def post(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountWorkWorkItemModel extends js.Object {
   var assignedTo: java.lang.String
   var changedDate: stdLib.Date

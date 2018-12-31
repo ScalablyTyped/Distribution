@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDataPlanStatus extends js.Object {
   var dataLimitInMegabytes: scala.Double
   var dataPlanUsage: DataPlanUsage

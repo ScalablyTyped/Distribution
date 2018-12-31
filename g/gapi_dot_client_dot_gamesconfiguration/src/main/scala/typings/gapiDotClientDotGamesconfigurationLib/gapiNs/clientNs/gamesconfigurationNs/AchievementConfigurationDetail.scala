@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AchievementConfigurationDetail extends js.Object {
   /** Localized strings for the achievement description. */
   var description: js.UndefOr[LocalizedStringBundle] = js.undefined

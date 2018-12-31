@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHasMany extends IAssociation {
   /** [Config Option] (Boolean) */
   var autoLoad: js.UndefOr[scala.Boolean] = js.undefined

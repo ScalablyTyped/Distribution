@@ -11,668 +11,616 @@ object SdkNs extends js.Object {
   @js.native
   class AttributeBase () extends js.Object {
     /**
-                 * Gets whether the value of the attribute has changed.
-                 */
+      * Gets whether the value of the attribute has changed.
+      */
     def getIsChanged(): scala.Boolean = js.native
     /**
-                 * Gets the logical name of the attribute.
-                 */
+      * Gets the logical name of the attribute.
+      */
     def getName(): java.lang.String = js.native
     /**
-                 * Gets the value type of the attribute.
-                 */
+      * Gets the value type of the attribute.
+      */
     def getType(): ValueType = js.native
     /**
-                 * Gets the value of the attribute.
-                 * The type of value depends on the type of attribute.
-                 */
+      * Gets the value of the attribute.
+      * The type of value depends on the type of attribute.
+      */
     def getValue(): js.Any = js.native
     /**
-                 * Whether the value of the attribute is set.
-                 */
+      * Whether the value of the attribute is set.
+      */
     def isValueSet(): scala.Boolean = js.native
     /**
-                 * Sets whether the value of the attribute has changed.
-                 * @param isChanged Whether the value of the attribute has changed.
-                 */
+      * Sets whether the value of the attribute has changed.
+      * @param isChanged Whether the value of the attribute has changed.
+      */
     def setIsChanged(isChanged: scala.Boolean): scala.Unit = js.native
     /**
-                 * Sets the name of the attribute
-                 * @param name The name of the attribute.
-                 */
+      * Sets the name of the attribute
+      * @param name The name of the attribute.
+      */
     def setName(name: java.lang.String): scala.Unit = js.native
     /**
-                 * For internal use only.
-                 * @param type The type of the attribute.
-                 */
+      * For internal use only.
+      * @param type The type of the attribute.
+      */
     def setType(`type`: ValueType): scala.Unit = js.native
     /**
-                 * Sets the general value of the attribute
-                 * @param name The value of the attribute.
-                 */
+      * Sets the general value of the attribute
+      * @param name The value of the attribute.
+      */
     def setValue(value: js.Any): scala.Unit = js.native
     /// prototype methods
     /**
-                 * XML node for Attribute.
-                 */
+      * XML node for Attribute.
+      */
     def toXml(action: java.lang.String): java.lang.String = js.native
   }
   
   @js.native
   class AttributeCollection () extends Collection[AttributeBase] {
-    /**
-                 * Adds an attribute to the Attribute Collection.
-                 * @param attribute The attribute to add.
-                 * @param isChanged Override the the attribute IsChanged value.
-                 */
     def add(attribute: AttributeBase, isChanged: scala.Boolean): scala.Unit = js.native
     /**
-                 * Returns all attributes in the collection.
-                 */
+      * Returns all attributes in the collection.
+      */
     def get(): Collection[AttributeBase] = js.native
     /**
-                 * Returns the attribute with matching name.
-                 * @param attribuetName
-                 */
+      * Returns the attribute with matching name.
+      * @param attribuetName
+      */
     def get(attribuetName: java.lang.String): AttributeBase = js.native
     /**
-                 * Returns the attribute with matching index.
-                 * @param attribuetName
-                 */
+      * Returns the attribute with matching index.
+      * @param attribuetName
+      */
     def get(index: scala.Double): AttributeBase = js.native
     /**
-                 * Gets an attribute at a given index.
-                 * @param index The index.
-                 */
+      * Gets an attribute at a given index.
+      * @param index The index.
+      */
     def getAttributeByIndex(index: scala.Double): AttributeBase = js.native
     /**
-                 * Gets an attribute with a given name.
-                 * @param name The Logical name of the attribute.
-                 */
+      * Gets an attribute with a given name.
+      * @param name The Logical name of the attribute.
+      */
     def getAttributeByName(name: java.lang.String): AttributeBase = js.native
     /**
-                 * Gets the attributes in the collection.
-                  */
+      * Gets the attributes in the collection.
+      */
     def getAttributes(): Collection[AttributeBase] = js.native
     /**
-                 * Gets an array of the names of attributes in a collection.
-                 */
+      * Gets an array of the names of attributes in a collection.
+      */
     def getNames(): js.Array[java.lang.String] = js.native
     /**
-                 * The XML for an attribute collection.
-                 */
+      * The XML for an attribute collection.
+      */
     def toXml(action: java.lang.String): java.lang.String = js.native
   }
   
   @js.native
   class Boolean protected () extends AttributeBase {
     /**
-                 * A Boolean Attribute.
-                 * @param name The logical name of the attribute .
-                 * @param value The value of the managed property.
-                 */
+      * A Boolean Attribute.
+      * @param name The logical name of the attribute .
+      * @param value The value of the managed property.
+      */
     def this(name: java.lang.String) = this()
-    /**
-                 * A Boolean Attribute.
-                 * @param name The logical name of the attribute .
-                 * @param value The value of the managed property.
-                 */
     def this(name: java.lang.String, value: scala.Boolean) = this()
     /**
-                 * Sets the value of a Boolean attribute.
-                 * @param value
-                 */
+      * Sets the value of a Boolean attribute.
+      * @param value
+      */
     def setValue(value: scala.Boolean): scala.Unit = js.native
   }
   
   @js.native
   class Collection[T] protected () extends js.Object {
     /**
-                 * A Collection for a specified type.
-                 * @param type The function that specifies the type.
-                 * @param items An array of items to add to the collection.
-                 */
+      * A Collection for a specified type.
+      * @param type The function that specifies the type.
+      * @param items An array of items to add to the collection.
+      */
     def this(`type`: T) = this()
-    /**
-                 * A Collection for a specified type.
-                 * @param type The function that specifies the type.
-                 * @param items An array of items to add to the collection.
-                 */
     def this(`type`: T, items: js.Array[T]) = this()
     /**
-                 * Adds an item to the collection.
-                 * @param item An item to add to the collection.
-                 */
+      * Adds an item to the collection.
+      * @param item An item to add to the collection.
+      */
     def add(item: T): scala.Unit = js.native
     /**
-                 * Adds an array of objects to the collection.
-                 * @param items An array of items to add to the collection.
-                 */
+      * Adds an array of objects to the collection.
+      * @param items An array of items to add to the collection.
+      */
     def addRange(items: js.Array[_]): scala.Unit = js.native
     /**
-                 * Removes all items from the collection.
-                 */
+      * Removes all items from the collection.
+      */
     def clear(): scala.Unit = js.native
     /**
-                 * Returns whether an object exists within the collection.
-                 * @param item The item to search in the collection.
-                 */
+      * Returns whether an object exists within the collection.
+      * @param item The item to search in the collection.
+      */
     def contains(item: T): scala.Boolean = js.native
     /**
-                 * Returns whether an object exists within the collection.
-                 * @param predicate A comparer function which is invoked for each item of the collection.
-                 */
+      * Returns whether an object exists within the collection.
+      * @param predicate A comparer function which is invoked for each item of the collection.
+      */
     def contains(predicate: js.Function1[/* item */ T, scala.Boolean]): scala.Boolean = js.native
     /**
-                 * Applies the action contained within a delegate function.
-                 * @param fn Delegate function with parameters for item and index.
-                 */
+      * Applies the action contained within a delegate function.
+      * @param fn Delegate function with parameters for item and index.
+      */
     def forEach(fn: js.Function2[/* item */ T, /* index */ scala.Double, _]): scala.Unit = js.native
     /**
-                 * Gets the item in the collection at the specified index.
-                 * @param index The index of the item to return.
-                 */
+      * Gets the item in the collection at the specified index.
+      * @param index The index of the item to return.
+      */
     def getByIndex(index: scala.Double): T = js.native
     /**
-                 * Returns the number of items in the collection.
-                 */
+      * Returns the number of items in the collection.
+      */
     def getCount(): scala.Double = js.native
     /**
-                 * Gets the type defined for the collection.
-                 */
+      * Gets the type defined for the collection.
+      */
     def getType(): T = js.native
     /**
-                 * Removes an item from the collection.
-                 * @param item A reference to the item to be removed.
-                 */
+      * Removes an item from the collection.
+      * @param item A reference to the item to be removed.
+      */
     def remove(item: T): scala.Unit = js.native
     /**
-                 * Returns an Sdk.Collection that contains all the items of this collection that satisfy the specified predicate function.
-                 * @param predicate A predicate function that takes a collection item as argument and returns a boolean.
-                 */
+      * Returns an Sdk.Collection that contains all the items of this collection that satisfy the specified predicate function.
+      * @param predicate A predicate function that takes a collection item as argument and returns a boolean.
+      */
     def select(predicate: js.Function1[/* item */ T, scala.Boolean]): Collection[T] = js.native
     /**
-                 * Gets a copy of the array of items in the collection.
-                 */
+      * Gets a copy of the array of items in the collection.
+      */
     def toArray(): js.Array[T] = js.native
   }
   
   @js.native
   class ColumnSet protected () extends js.Object {
     /**
-                 * Specifies the attributes for which non- null values are returned from a query.
-                 * @param allColumns If Boolean true value is passed as the first parameter all columns will be included. (Not recommended for production code).
-                 */
+      * Specifies the attributes for which non- null values are returned from a query.
+      * @param allColumns If Boolean true value is passed as the first parameter all columns will be included. (Not recommended for production code).
+      */
     def this(allColumns: scala.Boolean) = this()
     /**
-                 * Specifies the attributes for which non- null values are returned from a query.
-                 * @param columns Comma separated string values for attribute logical names.
-                 */
+      * Specifies the attributes for which non- null values are returned from a query.
+      * @param columns Comma separated string values for attribute logical names.
+      */
     def this(columns: java.lang.String*) = this()
     /**
-                 * Specifies the attributes for which non- null values are returned from a query.
-                 * @param columns An array of string values.
-                 */
+      * Specifies the attributes for which non- null values are returned from a query.
+      * @param columns An array of string values.
+      */
     def this(columns: js.Array[java.lang.String]) = this()
     /**
-                 * Adds a column to the collection.
-                 * @param column The logical name of the attribute to add.
-                 */
+      * Adds a column to the collection.
+      * @param column The logical name of the attribute to add.
+      */
     def addColumn(column: java.lang.String): scala.Unit = js.native
     /**
-                 * Adds a string array of column names.
-                 * @param columns A string array of column names.
-                 */
+      * Adds a string array of column names.
+      * @param columns A string array of column names.
+      */
     def addColumns(columns: js.Array[java.lang.String]): scala.Unit = js.native
     /**
-                 * Whether all columns will be returned.
-                 */
+      * Whether all columns will be returned.
+      */
     def getAllColumns(): scala.Boolean = js.native
     /**
-                 * Gets the collection of column names.
-                 * @returns The collection of column names.
-                 */
+      * Gets the collection of column names.
+      * @returns The collection of column names.
+      */
     def getColumns(): Collection[java.lang.String] = js.native
     /**
-                 * Gets the number of columns.
-                 */
+      * Gets the number of columns.
+      */
     def getCount(): scala.Double = js.native
     /// prototype methods
     /**
-                 * Removes a column from the ColumnSet.
-                 * @param columnName The logical name of an attribute to be removed from the ColumnSet.
-                 * @param errorIfNotFound Whether to throw an error when the column to remove is not found. The default is false
-                 */
+      * Removes a column from the ColumnSet.
+      * @param columnName The logical name of an attribute to be removed from the ColumnSet.
+      * @param errorIfNotFound Whether to throw an error when the column to remove is not found. The default is false
+      */
     def removeColumn(columnName: java.lang.String): scala.Unit = js.native
-    /// prototype methods
-    /**
-                 * Removes a column from the ColumnSet.
-                 * @param columnName The logical name of an attribute to be removed from the ColumnSet.
-                 * @param errorIfNotFound Whether to throw an error when the column to remove is not found. The default is false
-                 */
     def removeColumn(columnName: java.lang.String, errorIfNotFound: scala.Boolean): scala.Unit = js.native
     /**
-                 * Sets the AllColumns property.
-                 * @params allColumns A boolean value.
-                 */
+      * Sets the AllColumns property.
+      * @params allColumns A boolean value.
+      */
     def setAllColumns(allColumns: scala.Boolean): scala.Unit = js.native
     /**
-                 * XML nodes for columnSet properties.
-                 */
+      * XML nodes for columnSet properties.
+      */
     def toValueXml(): java.lang.String = js.native
     /**
-                 * The XML node with "<d:columnSet>" as the root element.
-                 */
+      * The XML node with "<d:columnSet>" as the root element.
+      */
     def toXml(): java.lang.String = js.native
   }
   
   @js.native
   class DateTime protected () extends AttributeBase {
     /**
-                 * A DateTime Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
+      * A DateTime Attribute.
+      * @param name The logical name of the attribute.
+      * @param value The value of the attribute.
+      */
     def this(name: java.lang.String) = this()
-    /**
-                 * A DateTime Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
     def this(name: java.lang.String, value: stdLib.Date) = this()
     /**
-                 * Sets the value of a DateTime attribute.
-                 * @param value The value to set.
-                 */
+      * Sets the value of a DateTime attribute.
+      * @param value The value to set.
+      */
     def setValue(value: stdLib.Date): scala.Unit = js.native
   }
   
   @js.native
   class Decimal protected () extends AttributeBase {
     /**
-                 * A Decimal Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
+      * A Decimal Attribute.
+      * @param name The logical name of the attribute.
+      * @param value The value of the attribute.
+      */
     def this(name: java.lang.String) = this()
-    /**
-                 * A Decimal Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
     def this(name: java.lang.String, value: scala.Double) = this()
     /**
-                 * Sets the value of a Decimal attribute.
-                 * @param value The value to set.
-                 */
+      * Sets the value of a Decimal attribute.
+      * @param value The value to set.
+      */
     def setValue(value: scala.Double): scala.Unit = js.native
   }
   
   @js.native
   class Double protected () extends js.Object {
     /**
-                 * A Double Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
+      * A Double Attribute.
+      * @param name The logical name of the attribute.
+      * @param value The value of the attribute.
+      */
     def this(name: java.lang.String) = this()
-    /**
-                 * A Double Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
     def this(name: java.lang.String, value: scala.Double) = this()
     /**
-                 * Gets the value of a Double attribute.
-                 */
+      * Gets the value of a Double attribute.
+      */
     def getValue(): scala.Double = js.native
     /**
-                 * Sets the value of a Double attribute.
-                 * @param value The value to set.
-                 */
+      * Sets the value of a Double attribute.
+      * @param value The value to set.
+      */
     def setValue(value: scala.Double): scala.Unit = js.native
   }
   
   @js.native
   class Entity protected () extends js.Object {
     /**
-                 * Represents an instance of an entity (a record).
-                 * @param type The logical name of the entity.
-                 */
+      * Represents an instance of an entity (a record).
+      * @param type The logical name of the entity.
+      */
     def this(`type`: java.lang.String) = this()
     /**
-                 * Adds an attribute with an optional value to a newly instantiated Sdk.Entity
-                 * @param attribute The attribute to add
-                 * @param isChanged Whether the attribute should be considered changed, the default is true.
-                 */
+      * Adds an attribute with an optional value to a newly instantiated Sdk.Entity
+      * @param attribute The attribute to add
+      * @param isChanged Whether the attribute should be considered changed, the default is true.
+      */
     def addAttribute(attribute: AttributeBase): scala.Unit = js.native
-    /**
-                 * Adds an attribute with an optional value to a newly instantiated Sdk.Entity
-                 * @param attribute The attribute to add
-                 * @param isChanged Whether the attribute should be considered changed, the default is true.
-                 */
     def addAttribute(attribute: AttributeBase, isChanged: scala.Boolean): scala.Unit = js.native
     /**
-                 * Adds an entity to the related entities.
-                 * @param relationshipSchemaName The relationship SchemaName.
-                 * @param entity The entity to add.
-                 */
+      * Adds an entity to the related entities.
+      * @param relationshipSchemaName The relationship SchemaName.
+      * @param entity The entity to add.
+      */
     def addRelatedEntity(relationshipSchemaName: java.lang.String, entity: Entity): scala.Unit = js.native
     /**
-                 * Checks whether the entity has an attribute with the specified name.
-                 * @param The name of the attribute.
-                 */
+      * Checks whether the entity has an attribute with the specified name.
+      * @param The name of the attribute.
+      */
     def containsAttribute(name: java.lang.String): scala.Boolean = js.native
     /**
-                 * Checks whether the entity has an attribute that satisfies the specified predicate.
-                 * @param A comparer function that takes an Sdk.AttributeBase as argument and returns a boolean.
-                 */
+      * Checks whether the entity has an attribute that satisfies the specified predicate.
+      * @param A comparer function that takes an Sdk.AttributeBase as argument and returns a boolean.
+      */
     def containsAttribute(predicate: js.Function1[/* attribute */ AttributeBase, scala.Boolean]): scala.Boolean = js.native
     /**
-                 * Gets the collection of attributes for the entity.
-                 */
+      * Gets the collection of attributes for the entity.
+      */
     def getAttributes(): AttributeCollection = js.native
     /**
-                 * Gets the collection of attributes for the entity.
-                 * @param attributeName The attribute with matching name is returned.
-                 */
+      * Gets the collection of attributes for the entity.
+      * @param attributeName The attribute with matching name is returned.
+      */
     def getAttributes(attributeName: java.lang.String): AttributeBase = js.native
     /**
-                 * Gets the collection of attributes for the entity.
-                 * @param index The attribute with matching index is returned.
-                 */
+      * Gets the collection of attributes for the entity.
+      * @param index The attribute with matching index is returned.
+      */
     def getAttributes(index: scala.Double): AttributeBase = js.native
     /**
-                 * Gets the state of the entity.
-                 */
+      * Gets the state of the entity.
+      */
     def getEntityState(): EntityState = js.native
     /**
-                 * Gets the collection of formatted values for the entity attributes.
-                 */
+      * Gets the collection of formatted values for the entity attributes.
+      */
     def getFormattedValues(): FormattedValueCollection = js.native
     /**
-                 * Gets the Id of the record represented by this entity instance.
-                 */
+      * Gets the Id of the record represented by this entity instance.
+      */
     def getId(): java.lang.String = js.native
     /**
-                 * Gets the value to indicate whether data for the entity has changed.
-                 */
+      * Gets the value to indicate whether data for the entity has changed.
+      */
     def getIsChanged(): scala.Boolean = js.native
     /**
-                 * Gets a collection of related entities.
-                 */
+      * Gets a collection of related entities.
+      */
     def getRelatedEntities(): RelatedEntitiesCollection = js.native
     /**
-                 * Gets the logical name of the entity.
-                 */
+      * Gets the logical name of the entity.
+      */
     def getType(): java.lang.String = js.native
     /**
-                 * Gets the value of the specified attribute.
-                 * @param logicalName The logical name of the attribute.
-                 */
+      * Gets the value of the specified attribute.
+      * @param logicalName The logical name of the attribute.
+      */
     def getValue(logicalName: java.lang.String): js.Any = js.native
     /**
-                 * Generates properties for the entity based on metadata.
-                 */
+      * Generates properties for the entity based on metadata.
+      */
     def initializeSubClass(
       metadata: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.IEntityMetadata
     ): scala.Unit = js.native
     /**
-                 * Sets the collection of attributes for the entity.
-                 * @param attributes The collection of attributes for the entity.
-                 */
+      * Sets the collection of attributes for the entity.
+      * @param attributes The collection of attributes for the entity.
+      */
     def setAttributes(attributes: AttributeCollection): scala.Unit = js.native
     /**
-                 * Sets the state of the entity.
-                 * @param state The state of the entity.
-                 */
+      * Sets the state of the entity.
+      * @param state The state of the entity.
+      */
     def setEntityState(state: EntityState): scala.Unit = js.native
     /**
-                 * Sets the collection of formatted values for the entity attributes.
-                 * @param values" The collection of formatted values for the entity attributes.
-                 */
+      * Sets the collection of formatted values for the entity attributes.
+      * @param values" The collection of formatted values for the entity attributes.
+      */
     def setFormattedValues(values: FormattedValueCollection): scala.Unit = js.native
     /**
-                 * Sets the Id of the record represented by this entity instance.
-                 * @param id The Id of the record represented by this entity instance.
-                 * @param override Allow setting the Id property, for example when creating a new record from an existing one.
-                 */
+      * Sets the Id of the record represented by this entity instance.
+      * @param id The Id of the record represented by this entity instance.
+      * @param override Allow setting the Id property, for example when creating a new record from an existing one.
+      */
     def setId(id: java.lang.String): scala.Unit = js.native
-    /**
-                 * Sets the Id of the record represented by this entity instance.
-                 * @param id The Id of the record represented by this entity instance.
-                 * @param override Allow setting the Id property, for example when creating a new record from an existing one.
-                 */
     def setId(id: java.lang.String, `override`: scala.Boolean): scala.Unit = js.native
     /**
-                 * Sets the value to indicate whether data for the entity has changed.
-                 * @param isChanged The value to indicate whether data for the entity has changed.
-                 */
+      * Sets the value to indicate whether data for the entity has changed.
+      * @param isChanged The value to indicate whether data for the entity has changed.
+      */
     def setIsChanged(isChanged: scala.Boolean): scala.Unit = js.native
     /**
-                 * Sets a collection of related entities.
-                 * @param relatedEntities A collection of related entities.
-                 */
+      * Sets a collection of related entities.
+      * @param relatedEntities A collection of related entities.
+      */
     def setRelatedEntities(relatedEntities: RelatedEntitiesCollection): scala.Unit = js.native
     /**
-                 * Sets the logical name of the entity.
-                 * @param type The logical name of the entity.
-                 */
+      * Sets the logical name of the entity.
+      * @param type The logical name of the entity.
+      */
     def setType(`type`: java.lang.String): scala.Unit = js.native
     /**
-                 * Sets the value of the specified attribute.
-                 * @param logicalName The logical name of the attribute.
-                 * @param value The value for the attribute. Simple JavaScript types may be used for most attribute types. Sdk.EntityReference, Sdk.EntityCollection, and Sdk.BooleanManagedPropertyValue cannot use simple JavaScript types.
-                 */
+      * Sets the value of the specified attribute.
+      * @param logicalName The logical name of the attribute.
+      * @param value The value for the attribute. Simple JavaScript types may be used for most attribute types. Sdk.EntityReference, Sdk.EntityCollection, and Sdk.BooleanManagedPropertyValue cannot use simple JavaScript types.
+      */
     def setValue(logicalName: java.lang.String, value: js.Object): scala.Unit = js.native
     /**
-                 * Generates an entity reference.
-                 */
+      * Generates an entity reference.
+      */
     def toEntityReference(): EntityReference = js.native
     /**
-                 * XML definition of an the child nodes of an entity.
-                 * @param action
-                 */
+      * XML definition of an the child nodes of an entity.
+      * @param action
+      */
     def toValueXml(action: java.lang.String): java.lang.String = js.native
     /**
-                 * XML definition of an entity where the root node is <entity>.
-                 */
+      * XML definition of an entity where the root node is <entity>.
+      */
     def toXml(action: java.lang.String): java.lang.String = js.native
     /**
-                 * Returns a view of the data in an entity instance
-                 */
+      * Returns a view of the data in an entity instance
+      */
     def view(): IEntityView = js.native
   }
   
   @js.native
   class EntityCollection protected () extends js.Object {
     /**
-                 * Contains a collection of entity instances.
-                 * @param entities Initializes a new instance of the EntityCollection class setting the Sdk.Collection of Sdk.Entity objects.
-                 */
+      * Contains a collection of entity instances.
+      * @param entities Initializes a new instance of the EntityCollection class setting the Sdk.Collection of Sdk.Entity objects.
+      */
     def this(entities: Collection[Entity]) = this()
     /**
-                 * Adds an entity to the collection.
-                 * @param entity
-                 */
+      * Adds an entity to the collection.
+      * @param entity
+      */
     def addEntity(entity: Entity): scala.Unit = js.native
     /**
-                 * Gets the collection of entities.
-                 */
+      * Gets the collection of entities.
+      */
     def getEntities(): Collection[Entity] = js.native
     /**
-                 * Gets an entity in the collection.
-                 * @param id The id of the entity in the collection.
-                 */
+      * Gets an entity in the collection.
+      * @param id The id of the entity in the collection.
+      */
     def getEntity(id: Guid): Entity = js.native
     /**
-                 * Gets an entity in the collection.
-                 * @param index The index of the entity in the collection.
-                 */
+      * Gets an entity in the collection.
+      * @param index The index of the entity in the collection.
+      */
     def getEntity(index: scala.Double): Entity = js.native
     /**
-                 * Gets the logical name of the entity.
-                 */
+      * Gets the logical name of the entity.
+      */
     def getEntityName(): java.lang.String = js.native
     /**
-                 * Gets the lowest active row version value.
-                 */
+      * Gets the lowest active row version value.
+      */
     def getMinActiveRowVersion(): java.lang.String = js.native
     /**
-                 * Gets whether there are more records available.
-                 */
+      * Gets whether there are more records available.
+      */
     def getMoreRecords(): scala.Boolean = js.native
     /**
-                 * Gets the current paging information.
-                 */
+      * Gets the current paging information.
+      */
     def getPagingCookie(): java.lang.String = js.native
     /**
-                 * Gets the total number of records in the collection if ReturnTotalRecordCount was true when the query was executed.
-                 */
+      * Gets the total number of records in the collection if ReturnTotalRecordCount was true when the query was executed.
+      */
     def getTotalRecordCount(): scala.Double = js.native
     /**
-                 * Gets whether the results of the query exceeds the total record count.
-                 */
+      * Gets whether the results of the query exceeds the total record count.
+      */
     def getTotalRecordCountLimitExceeded(): scala.Boolean = js.native
     /**
-                 * Sets an item in the collection.
-                 * @param id The Sdk.Guid id of the entity in the collection.
-                 * @param value The Sdk.Entity value to set.
-                 */
+      * Sets an item in the collection.
+      * @param id The Sdk.Guid id of the entity in the collection.
+      * @param value The Sdk.Entity value to set.
+      */
     def setEntity(id: Guid, value: Entity): scala.Unit = js.native
     /**
-                 * Sets an item in the collection.
-                 * @param index The index of the entity in the collection.
-                 * @param value The Sdk.Entity value to set.
-                 */
+      * Sets an item in the collection.
+      * @param index The index of the entity in the collection.
+      * @param value The Sdk.Entity value to set.
+      */
     def setEntity(index: scala.Double, value: Entity): scala.Unit = js.native
     /**
-                 * Sets the logical name of the entity.
-                 * @param name The logical name of the entity.
-                 */
+      * Sets the logical name of the entity.
+      * @param name The logical name of the entity.
+      */
     def setEntityName(name: java.lang.String): scala.Unit = js.native
     /**
-                 * Sets the lowest active row version value.
-                 * @param minActiveRowVersion The lowest active row version value.
-                 */
+      * Sets the lowest active row version value.
+      * @param minActiveRowVersion The lowest active row version value.
+      */
     def setMinActiveRowVersion(minActiveRowVersion: java.lang.String): scala.Unit = js.native
     /**
-                 * Sets whether there are more records available.
-                 * @param moreRecords Whether there are more records available.
-                 */
+      * Sets whether there are more records available.
+      * @param moreRecords Whether there are more records available.
+      */
     def setMoreRecords(moreRecords: scala.Boolean): scala.Unit = js.native
     /**
-                 * Sets the current paging information.
-                 * @param pagingCookie The current paging information.
-                 */
+      * Sets the current paging information.
+      * @param pagingCookie The current paging information.
+      */
     def setPagingCookie(pagingCookie: java.lang.String): scala.Unit = js.native
     /**
-                 * Sets the total number of records in the collection if ReturnTotalRecordCount was true when the query was executed.
-                 * @param totalRecordCount The total number of records in the collection if ReturnTotalRecordCount was true when the query was executed.
-                 */
+      * Sets the total number of records in the collection if ReturnTotalRecordCount was true when the query was executed.
+      * @param totalRecordCount The total number of records in the collection if ReturnTotalRecordCount was true when the query was executed.
+      */
     def setTotalRecordCount(totalRecordCount: scala.Double): scala.Unit = js.native
     /**
-                 * Sets whether the results of the query exceeds the total record count.
-                 * @param totalRecordCountLimitExceeded Whether the results of the query exceeds the total record count.
-                 */
+      * Sets whether the results of the query exceeds the total record count.
+      * @param totalRecordCountLimitExceeded Whether the results of the query exceeds the total record count.
+      */
     def setTotalRecordCountLimitExceeded(totalRecordCountLimitExceeded: scala.Boolean): scala.Unit = js.native
     /**
-                 * XML definition of an the child nodes of an entity.
-                 */
+      * XML definition of an the child nodes of an entity.
+      */
     def toValueXml(): java.lang.String = js.native
     /**
-                 * Returns a view of the entity collection
-                 */
+      * Returns a view of the entity collection
+      */
     def view(): IEntityCollectionView = js.native
   }
   
   @js.native
   class EntityReference protected () extends js.Object {
     /**
-                 * Identifies a record.
-                 * @param logicalName The logical name of the entity.
-                 * @param id The id of the record.
-                 * @param name The value of the primary attribute of the entity instance. This property can contain a value or null. This property is not automatically populated unless the EntityReference object has been retrieved from the server.
-                 */
+      * Identifies a record.
+      * @param logicalName The logical name of the entity.
+      * @param id The id of the record.
+      * @param name The value of the primary attribute of the entity instance. This property can contain a value or null. This property is not automatically populated unless the EntityReference object has been retrieved from the server.
+      */
     def this(logicalName: java.lang.String, id: java.lang.String) = this()
-    /**
-                 * Identifies a record.
-                 * @param logicalName The logical name of the entity.
-                 * @param id The id of the record.
-                 * @param name The value of the primary attribute of the entity instance. This property can contain a value or null. This property is not automatically populated unless the EntityReference object has been retrieved from the server.
-                 */
     def this(logicalName: java.lang.String, id: java.lang.String, name: java.lang.String) = this()
     /**
-                 * Gets the Id value of the referenced entity.
-                 */
+      * Gets the Id value of the referenced entity.
+      */
     def getId(): java.lang.String = js.native
     /**
-                 * Gets the primary attribute value of the referenced entity.
-                 */
+      * Gets the primary attribute value of the referenced entity.
+      */
     def getName(): java.lang.String = js.native
     /**
-                 * Gets the logicalName representing the type of referenced entity.
-                 */
+      * Gets the logicalName representing the type of referenced entity.
+      */
     def getType(): java.lang.String = js.native
     /**
-                 * Sets the Id value of the entity.
-                 * @param id The Id value of the entity.
-                 */
+      * Sets the Id value of the entity.
+      * @param id The Id value of the entity.
+      */
     def setId(id: java.lang.String): scala.Unit = js.native
     /**
-                 * Sets the primary attribute value of the referenced entity.
-                 * @param name The primary attribute value of the referenced entity.
-                 */
+      * Sets the primary attribute value of the referenced entity.
+      * @param name The primary attribute value of the referenced entity.
+      */
     def setName(name: java.lang.String): scala.Unit = js.native
     /**
-                 * Sets the logicalName representing the type of referenced entity.
-                 * @param type The logicalName representing the type of referenced entity.
-                 */
+      * Sets the logicalName representing the type of referenced entity.
+      * @param type The logicalName representing the type of referenced entity.
+      */
     def setType(`type`: java.lang.String): scala.Unit = js.native
     /**
-                 * Returns the values of serialized entity reference as XML nodes.
-                 */
+      * Returns the values of serialized entity reference as XML nodes.
+      */
     def toValueXml(): java.lang.String = js.native
     /// prototype methods
     /**
-                 * Returns a serialized entity reference where the root element is <a:EntityReference>.
-                 */
+      * Returns a serialized entity reference where the root element is <a:EntityReference>.
+      */
     def toXml(): java.lang.String = js.native
     /**
-                 * Returns a view of the data in an EntityReference
-                 */
+      * Returns a view of the data in an EntityReference
+      */
     def view(): IEntityReferenceView = js.native
   }
   
   @js.native
+  /**
+    * Contains a collection of EntityReference instances.
+    * @param entityReferences Initializes a new instance of the EntityReferenceCollection class setting the Sdk.Collection of Sdk.EntityReference objects.
+    */
   class EntityReferenceCollection () extends js.Object {
-    /**
-                 * Contains a collection of EntityReference instances.
-                 * @param entityReferences Initializes a new instance of the EntityReferenceCollection class setting the Sdk.Collection of Sdk.EntityReference objects.
-                 */
     def this(entityReferences: Collection[EntityReference]) = this()
     /**
-                 * Gets the collection of entity references.
-                 */
+      * Gets the collection of entity references.
+      */
     def getEntityReferences(): Collection[EntityReference] = js.native
     /// prototype methods
     /**
-                 * Removes an entity reference to the collection.
-                 * @param entityReference The entity reference to remove.
-                 */
+      * Removes an entity reference to the collection.
+      * @param entityReference The entity reference to remove.
+      */
     def remove(entityReference: EntityReference): scala.Unit = js.native
     /**
-                 * Sets the collection of entity references.
-                 * @param entityReferences The entity references
-                 */
+      * Sets the collection of entity references.
+      * @param entityReferences The entity references
+      */
     def setEntityReferences(entityReferences: Collection[EntityReference]): scala.Unit = js.native
     /**
-                 * Returns the values of serialized entity reference collection as XML nodes.
-                 */
+      * Returns the values of serialized entity reference collection as XML nodes.
+      */
     def toValueXml(): java.lang.String = js.native
     /**
-                 * Returns a view of the data in an entity reference collection instance.
-                 */
+      * Returns a view of the data in an entity reference collection instance.
+      */
     def view(): IEntityReferenceCollectionView = js.native
   }
   
@@ -680,29 +628,29 @@ object SdkNs extends js.Object {
   class EntityState () extends js.Object
   
   /**
-           * Contains the data that is needed to convert a query in FetchXML to a QueryExpression.
-           * @param fetchXml Sets the query to convert.
-           */
+    * Contains the data that is needed to convert a query in FetchXML to a QueryExpression.
+    * @param fetchXml Sets the query to convert.
+    */
   @js.native
   class FetchXmlToQueryExpressionRequest protected () extends OrganizationRequest {
     def this(fetchXml: java.lang.String) = this()
     /**
-                 * Sets the query to convert.
-                 * @param The query to convert.
-                 */
+      * Sets the query to convert.
+      * @param The query to convert.
+      */
     def setFetchXml(value: java.lang.String): scala.Unit = js.native
   }
   
   /**
-           * Response to FetchXmlToQueryExpressionRequest.
-           * @param responseXml The response XML to the FetchXmlToQueryExpressionRequest.
-           */
+    * Response to FetchXmlToQueryExpressionRequest.
+    * @param responseXml The response XML to the FetchXmlToQueryExpressionRequest.
+    */
   @js.native
   class FetchXmlToQueryExpressionResponse protected () extends OrganizationResponse {
     def this(responseXml: java.lang.String) = this()
     /**
-                 * Gets the results of the query conversion.
-                 */
+      * Gets the results of the query conversion.
+      */
     def getQuery(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.QueryExpression = js.native
   }
   
@@ -712,24 +660,18 @@ object SdkNs extends js.Object {
   @js.native
   class Guid protected () extends AttributeBase {
     /**
-                 * A Guid Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value" The value of the attribute
-                 */
+      * A Guid Attribute.
+      * @param name The logical name of the attribute.
+      * @param value" The value of the attribute
+      */
     def this(name: java.lang.String) = this()
-    /**
-                 * A Guid Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value" The value of the attribute
-                 */
     def this(name: java.lang.String, value: java.lang.String) = this()
     /**
-                 * Sets the value of a Guid attribute.
-                 * @param value The value to set.
-                 */
+      * Sets the value of a Guid attribute.
+      * @param value The value to set.
+      */
     def setValue(value: java.lang.String): scala.Unit = js.native
   }
-  
   
   trait IEntityCollectionView extends js.Object {
     var entities: js.Array[IEntityView]
@@ -741,13 +683,11 @@ object SdkNs extends js.Object {
     var totalRecordCountLimitExceeded: scala.Boolean
   }
   
-  
   trait IEntityReferenceView extends js.Object {
     var Id: java.lang.String
     var Name: java.lang.String
     var Type: java.lang.String
   }
-  
   
   trait IEntityView extends js.Object {
     var attributes: AttributeCollection
@@ -760,127 +700,102 @@ object SdkNs extends js.Object {
   @js.native
   class Int protected () extends AttributeBase {
     /**
-                 * An Integer Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
+      * An Integer Attribute.
+      * @param name The logical name of the attribute.
+      * @param value The value of the attribute.
+      */
     def this(name: java.lang.String) = this()
-    /**
-                 * An Integer Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
     def this(name: java.lang.String, value: scala.Double) = this()
     /**
-                 * Sets the value of an Integer attribute.
-                 * @param value The value to set.
-                 */
+      * Sets the value of an Integer attribute.
+      * @param value The value to set.
+      */
     def setValue(value: scala.Double): scala.Unit = js.native
   }
   
   @js.native
   class Long protected () extends AttributeBase {
     /**
-                 * A Long Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
+      * A Long Attribute.
+      * @param name The logical name of the attribute.
+      * @param value The value of the attribute.
+      */
     def this(name: java.lang.String) = this()
-    /**
-                 * A Long Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
     def this(name: java.lang.String, value: scala.Double) = this()
     /**
-                 * Sets the value of a Long attribute.
-                 * @param value The value to set.
-                 */
+      * Sets the value of a Long attribute.
+      * @param value The value to set.
+      */
     def setValue(value: scala.Double): scala.Unit = js.native
   }
   
   @js.native
   class Lookup protected () extends AttributeBase {
     /**
-                 * A Lookup Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
+      * A Lookup Attribute.
+      * @param name The logical name of the attribute.
+      * @param value The value of the attribute.
+      */
     def this(name: java.lang.String) = this()
-    /**
-                 * A Lookup Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
     def this(name: java.lang.String, value: EntityReference) = this()
     /**
-                 * Sets the value of a Lookup attribute.
-                 * @param value The value to set.
-                 */
+      * Sets the value of a Lookup attribute.
+      * @param value The value to set.
+      */
     def setValue(value: EntityReference): scala.Unit = js.native
   }
   
   @js.native
   class Money protected () extends AttributeBase {
     /**
-                 * A Money Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
+      * A Money Attribute.
+      * @param name The logical name of the attribute.
+      * @param value The value of the attribute.
+      */
     def this(name: java.lang.String) = this()
-    /**
-                 * A Money Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
     def this(name: java.lang.String, value: scala.Double) = this()
     /**
-                 * Sets the value of a Money attribute.
-                 * @param value The value to set.
-                 */
+      * Sets the value of a Money attribute.
+      * @param value The value to set.
+      */
     def setValue(value: scala.Double): scala.Unit = js.native
   }
   
   @js.native
   class OptionSet protected () extends AttributeBase {
     /**
-                 * An OptionSet Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
+      * An OptionSet Attribute.
+      * @param name The logical name of the attribute.
+      * @param value The value of the attribute.
+      */
     def this(name: java.lang.String) = this()
-    /**
-                 * An OptionSet Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
     def this(name: java.lang.String, value: scala.Double) = this()
     /**
-                 * Sets the value of an OptionSet attribute.
-                 * @param value The value to set.
-                 */
+      * Sets the value of an OptionSet attribute.
+      * @param value The value to set.
+      */
     def setValue(value: scala.Double): scala.Unit = js.native
   }
   
   @js.native
   class OrganizationRequest () extends js.Object {
     /**
-                 * Gets the request XML.
-                 */
+      * Gets the request XML.
+      */
     def getRequestXml(): java.lang.String = js.native
     /**
-                 * Gets the response type.
-                 */
+      * Gets the response type.
+      */
     def getResponseType(): OrganizationResponse = js.native
     /**
-                 * Sets the request XML.
-                 * @param xml The request XML.
-                 */
+      * Sets the request XML.
+      * @param xml The request XML.
+      */
     def setRequestXml(xml: java.lang.String): scala.Unit = js.native
     /**
-                 * Sets the response type.
-                 * @param type A class that inherits from Sdk.OrganizationResponse.
-                 */
+      * Sets the response type.
+      * @param type A class that inherits from Sdk.OrganizationResponse.
+      */
     def setResponseType(`type`: OrganizationResponse): scala.Unit = js.native
   }
   
@@ -890,21 +805,16 @@ object SdkNs extends js.Object {
   @js.native
   class PartyList protected () extends AttributeBase {
     /**
-                 * A PartyList Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
+      * A PartyList Attribute.
+      * @param name The logical name of the attribute.
+      * @param value The value of the attribute.
+      */
     def this(name: java.lang.String) = this()
-    /**
-                 * A PartyList Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
     def this(name: java.lang.String, value: EntityCollection) = this()
     /**
-                 * Sets the value of a PartyList attribute.
-                 * @param value The value to set.
-                 */
+      * Sets the value of a PartyList attribute.
+      * @param value The value to set.
+      */
     def setValue(value: EntityCollection): scala.Unit = js.native
   }
   
@@ -912,29 +822,29 @@ object SdkNs extends js.Object {
   class Q () extends js.Object
   
   /**
-           * Contains the data that is needed to  convert a query, which is represented as a QueryExpression class, to its equivalent query, which is represented as FetchXML.
-           * @param query The query.
-           */
+    * Contains the data that is needed to  convert a query, which is represented as a QueryExpression class, to its equivalent query, which is represented as FetchXML.
+    * @param query The query.
+    */
   @js.native
   class QueryExpressionToFetchXmlRequest protected () extends OrganizationRequest {
     def this(query: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.QueryBase) = this()
     /**
-                 * Sets the query to convert.
-                 * @param query The query.
-                 * @param query
-                 */
+      * Sets the query to convert.
+      * @param query The query.
+      * @param query
+      */
     def setQuery(query: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.QueryBase): scala.Unit = js.native
   }
   
   /**
-           * Response to QueryExpressionToFetchXmlRequest.
-           */
+    * Response to QueryExpressionToFetchXmlRequest.
+    */
   @js.native
   class QueryExpressionToFetchXmlResponse protected () extends OrganizationResponse {
     def this(responseXml: java.lang.String) = this()
     /**
-                 * Gets the results of the query conversion.
-                 */
+      * Gets the results of the query conversion.
+      */
     def getFetchXml(): java.lang.String = js.native
   }
   
@@ -945,11 +855,11 @@ object SdkNs extends js.Object {
   class RelatedEntityCollection () extends EntityCollection
   
   /**
-           * Request to retrieve metadata and metadata changes.
-           * @param query The Sdk.Mdq.EntityQueryExpression that defines the query.
-           * @param clientVersionStamp The Sdk.Mdq.RetrieveMetadataChangesResponse.ServerVersionStamp value from a previous request. When included only the metadata changes since the previous request will be returned.
-           * @param deletedMetadataFilters An Sdk.Mdq.DeletedMetadataFilters enumeration value. When included the deleted metadata changes will be limited to the types defined by the enumeration.
-           */
+    * Request to retrieve metadata and metadata changes.
+    * @param query The Sdk.Mdq.EntityQueryExpression that defines the query.
+    * @param clientVersionStamp The Sdk.Mdq.RetrieveMetadataChangesResponse.ServerVersionStamp value from a previous request. When included only the metadata changes since the previous request will be returned.
+    * @param deletedMetadataFilters An Sdk.Mdq.DeletedMetadataFilters enumeration value. When included the deleted metadata changes will be limited to the types defined by the enumeration.
+    */
   @js.native
   class RetrieveMetadataChangesRequest protected () extends OrganizationRequest {
     def this(query: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.EntityQueryExpression) = this()
@@ -963,57 +873,57 @@ object SdkNs extends js.Object {
   }
   
   /**
-           * Response to RetrieveMetadataChangesRequest.
-           * @param resopnseXml The response XML.
-           */
+    * Response to RetrieveMetadataChangesRequest.
+    * @param resopnseXml The response XML.
+    */
   @js.native
   class RetrieveMetadataChangesResponse protected () extends js.Object {
     def this(responseXml: java.lang.String) = this()
     /***
-                 *
-                 */
+      *
+      */
     def getDeletedMetadata(): js.Any = js.native
     /***
-                 *
-                 */
+      *
+      */
     def getEntityMetadata(): js.Array[
         microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.IEntityMetadata
       ] = js.native
     /***
-                 *
-                 */
+      *
+      */
     def getServerVersionStamp(): java.lang.String = js.native
   }
   
   /**
-           * Contains the data that is needed to set the state of an entity record.
-           * @param entityMoniker Sets the entity.
-           * @param state Sets the state of the entity record.
-           * @param status Sets the status that corresponds to the State property.
-           */
+    * Contains the data that is needed to set the state of an entity record.
+    * @param entityMoniker Sets the entity.
+    * @param state Sets the state of the entity record.
+    * @param status Sets the status that corresponds to the State property.
+    */
   @js.native
   class SetStateRequest protected () extends OrganizationRequest {
     def this(entityMoniker: EntityReference, state: scala.Double, status: scala.Double) = this()
     /**
-                 * Sets the entity.
-                 * @param value The entity.
-                 */
+      * Sets the entity.
+      * @param value The entity.
+      */
     def setEntityMoniker(value: EntityReference): scala.Unit = js.native
     /**
-                 * Sets the state of the entity record.
-                 * @param value The state of the entity record.
-                 */
+      * Sets the state of the entity record.
+      * @param value The state of the entity record.
+      */
     def setState(value: scala.Double): scala.Unit = js.native
     /**
-                 * Sets the status that corresponds to the State property.
-                 * @param value The status that corresponds to the State property.
-                 */
+      * Sets the status that corresponds to the State property.
+      * @param value The status that corresponds to the State property.
+      */
     def setStatus(value: scala.Double): scala.Unit = js.native
   }
   
   /**
-           * Response to SetStateRequest.
-           */
+    * Response to SetStateRequest.
+    */
   @js.native
   class SetStateResponse protected () extends js.Object {
     def this(responseXml: java.lang.String) = this()
@@ -1022,21 +932,16 @@ object SdkNs extends js.Object {
   @js.native
   class String protected () extends AttributeBase {
     /**
-                 * A String Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
+      * A String Attribute.
+      * @param name The logical name of the attribute.
+      * @param value The value of the attribute.
+      */
     def this(name: java.lang.String) = this()
-    /**
-                 * A String Attribute.
-                 * @param name The logical name of the attribute.
-                 * @param value The value of the attribute.
-                 */
     def this(name: java.lang.String, value: java.lang.String) = this()
     /**
-                 * Sets the value of a String attribute.
-                 * @param value The value to set.
-                 */
+      * Sets the value of a String attribute.
+      * @param value The value to set.
+      */
     def setValue(value: java.lang.String): scala.Unit = js.native
   }
   
@@ -1046,7 +951,6 @@ object SdkNs extends js.Object {
   @JSName("Mdq")
   @js.native
   object MdqNs extends js.Object {
-    
     trait AssociatedMenuConfiguration extends js.Object {
       var Behavior: AssociatedMenuBehavior
       var Group: AssociatedMenuGroup
@@ -1061,7 +965,6 @@ object SdkNs extends js.Object {
     class AttributeQueryExpression protected () extends js.Object {
       def this(criteria: MetadataFilterExpression, properties: MetadataPropertiesExpression) = this()
     }
-    
     
     trait CascadeConfiguration extends js.Object {
       var Assign: CascadeType
@@ -1086,7 +989,6 @@ object SdkNs extends js.Object {
       def this(criteria: MetadataFilterExpression, properties: MetadataPropertiesExpression, attributeQuery: AttributeQueryExpression, relationshipQuery: RelationshipQueryExpression) = this()
       def this(criteria: MetadataFilterExpression, properties: MetadataPropertiesExpression, attributeQuery: AttributeQueryExpression, relationshipQuery: RelationshipQueryExpression, labelQuery: LabelQueryExpression) = this()
     }
-    
     
     trait IAttributeMetadata extends js.Object {
       var AttributeOf: java.lang.String
@@ -1134,7 +1036,6 @@ object SdkNs extends js.Object {
       var Targets: js.Array[java.lang.String]
       var YomiOf: js.Any
     }
-    
     
     trait IEntityMetadata extends js.Object {
       var ActivityTypeMask: scala.Double
@@ -1198,7 +1099,6 @@ object SdkNs extends js.Object {
       var SchemaName: java.lang.String
     }
     
-    
     trait Label extends js.Object {
       var LocalizedLabels: js.Array[LocalizedLabel]
       var UserLocalizedLabel: LocalizedLabel
@@ -1208,7 +1108,6 @@ object SdkNs extends js.Object {
     class LabelQueryExpression protected () extends js.Object {
       def this(languages: js.Array[scala.Double]) = this()
     }
-    
     
     trait LocalizedLabel extends js.Object {
       var HasChanged: scala.Boolean
@@ -1221,13 +1120,11 @@ object SdkNs extends js.Object {
     @js.native
     sealed trait LogicalOperator extends js.Object
     
-    
     trait ManagedProperty[T] extends js.Object {
       var CanBeChanged: scala.Boolean
       var ManagedPropertyLogicalName: java.lang.String
       var Value: T
     }
-    
     
     trait ManyToManyRelationshipMetadata extends js.Object {
       var Entity1AssociatedMenuConfiguration: AssociatedMenuConfiguration
@@ -1261,34 +1158,22 @@ object SdkNs extends js.Object {
         conditionOperator: MetadataConditionOperator,
         value: js.Any
       ): scala.Unit = js.native
-      /**
-                   * Adds a condition. This method accepts either the properties to create a new Sdk.Mdq.MetadataConditionExpression or a Sdk.Mdq.MetadataConditionExpression as the first argument.
-                   * @param propertyName The metadata property to evaluate.
-                   * @param conditionOperator The condition operator.
-                   * @param value The metadata value to evaluate.
-                   */
       def addCondition(
         propertyName: SearchableAttributeMetadataProperties,
         conditionOperator: MetadataConditionOperator,
         value: js.Object
       ): scala.Unit = js.native
       /**
-                   * Adds a condition. This method accepts either the properties to create a new Sdk.Mdq.MetadataConditionExpression or a Sdk.Mdq.MetadataConditionExpression as the first argument.
-                   * @param propertyName The metadata property to evaluate.
-                   * @param conditionOperator The condition operator.
-                   * @param value The metadata value to evaluate.
-                   */
+        * Adds a condition. This method accepts either the properties to create a new Sdk.Mdq.MetadataConditionExpression or a Sdk.Mdq.MetadataConditionExpression as the first argument.
+        * @param propertyName The metadata property to evaluate.
+        * @param conditionOperator The condition operator.
+        * @param value The metadata value to evaluate.
+        */
       def addCondition(
         propertyName: SearchableEntityMetadataProperties,
         conditionOperator: MetadataConditionOperator,
         value: js.Object
       ): scala.Unit = js.native
-      /**
-                   * Adds a condition. This method accepts either the properties to create a new Sdk.Mdq.MetadataConditionExpression or a Sdk.Mdq.MetadataConditionExpression as the first argument.
-                   * @param propertyName The metadata property to evaluate.
-                   * @param conditionOperator The condition operator.
-                   * @param value The metadata value to evaluate.
-                   */
       def addCondition(
         propertyName: SearchableRelationshipMetadataProperties,
         conditionOperator: MetadataConditionOperator,
@@ -1303,7 +1188,6 @@ object SdkNs extends js.Object {
               EntityMetadataProperties | AttributeMetadataProperties | RelationshipMetadataProperties | _
             ]) = this()
     }
-    
     
     trait OneToManyRelationshipMetadata extends js.Object {
       var AssociatedMenuConfiguration: AssociatedMenuConfiguration
@@ -1341,7 +1225,6 @@ object SdkNs extends js.Object {
     
     @js.native
     sealed trait SearchableRelationshipMetadataProperties extends js.Object
-    
     
     trait SecurityPrivilegeMetadata extends js.Object {
       var CanBeBasic: scala.Boolean
@@ -3048,12 +2931,12 @@ object SdkNs extends js.Object {
   @js.native
   object Q extends js.Object {
     /**
-                 * Creates a link between records.
-                 * @param entityName The logical name of the entity that is specified in the entityId parameter.
-                 * @param entityId The ID of the record to which the related records are associated.
-                 * @param relationship The name of the relationship to be used to create the link.
-                 * @param relatedEntities A collection of Sdk.EntityReference objects to be associated.
-                 */
+      * Creates a link between records.
+      * @param entityName The logical name of the entity that is specified in the entityId parameter.
+      * @param entityId The ID of the record to which the related records are associated.
+      * @param relationship The name of the relationship to be used to create the link.
+      * @param relatedEntities A collection of Sdk.EntityReference objects to be associated.
+      */
     def associate(
       entityName: java.lang.String,
       entityId: java.lang.String,
@@ -3063,23 +2946,23 @@ object SdkNs extends js.Object {
         ]
     ): qLib.qMod.QNs.Promise[scala.Unit] = js.native
     /**
-                 * Creates an entity record and returns a string representation of the GUID value that is the Id of the created entity.
-                 * @param entity An entity instance.
-                 */
+      * Creates an entity record and returns a string representation of the GUID value that is the Id of the created entity.
+      * @param entity An entity instance.
+      */
     def create(entity: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Entity): qLib.qMod.QNs.Promise[java.lang.String] = js.native
     /**
-                 * Deletes an entity record
-                 * @param entityName The LogicalName of the entity to delete.
-                 * @param id An ID of the record to delete.
-                 */
+      * Deletes an entity record
+      * @param entityName The LogicalName of the entity to delete.
+      * @param id An ID of the record to delete.
+      */
     def del(entityName: java.lang.String, id: java.lang.String): qLib.qMod.QNs.Promise[scala.Unit] = js.native
     /**
-                 * Removes a link between records.
-                 * @param entityName The logical name of the entity that is specified in the entityId parameter.
-                 * @param entityId The ID of the record to which the related records are disassociated.
-                 * @param relationship The name of the relationship to be used to remove the link.
-                 * @param relatedEntities A collection of Sdk.EntityReference objects to be disassociated.
-                 */
+      * Removes a link between records.
+      * @param entityName The logical name of the entity that is specified in the entityId parameter.
+      * @param entityId The ID of the record to which the related records are disassociated.
+      * @param relationship The name of the relationship to be used to remove the link.
+      * @param relatedEntities A collection of Sdk.EntityReference objects to be disassociated.
+      */
     def disassociate(
       entityName: java.lang.String,
       entityId: java.lang.String,
@@ -3089,54 +2972,54 @@ object SdkNs extends js.Object {
         ]
     ): qLib.qMod.QNs.Promise[scala.Unit] = js.native
     /**
-                 * Executes a SOAP Request using the SOAPAction Execute.
-                 * @param request A request object.
-                 */
+      * Executes a SOAP Request using the SOAPAction Execute.
+      * @param request A request object.
+      */
     def execute(request: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.OrganizationRequest): qLib.qMod.QNs.Promise[
         microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.OrganizationResponse
       ] = js.native
     /**
-                 * Retrieves an entity instance.
-                 * @param entityName The logical name of the entity to retrieve.
-                 * @param id The id of the entity to retrieve.
-                 * @param columnSet The columns of the entities to retrieve.
-                 */
+      * Retrieves an entity instance.
+      * @param entityName The logical name of the entity to retrieve.
+      * @param id The id of the entity to retrieve.
+      * @param columnSet The columns of the entities to retrieve.
+      */
     def retrieve(
       entityName: java.lang.String,
       id: java.lang.String,
       columnSet: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.ColumnSet
     ): qLib.qMod.QNs.Promise[microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Entity] = js.native
     /**
-                 * Retrieves the results of a query
-                 * @param query An Sdk.Query.FetchExpression query.
-                 */
+      * Retrieves the results of a query
+      * @param query An Sdk.Query.FetchExpression query.
+      */
     def retrieveMultiple(
       query: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.FetchExpression
     ): qLib.qMod.QNs.Promise[
         microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.EntityCollection
       ] = js.native
     /**
-                 * Retrieves the results of a query
-                 * @param query An Sdk.Query.QueryByAttribute query.
-                 */
+      * Retrieves the results of a query
+      * @param query An Sdk.Query.QueryByAttribute query.
+      */
     def retrieveMultiple(
       query: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.QueryByAttribute
     ): qLib.qMod.QNs.Promise[
         microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.EntityCollection
       ] = js.native
     /**
-                 * Retrieves the results of a query
-                 * @param query An Sdk.Query.QueryExpression query.
-                 */
+      * Retrieves the results of a query
+      * @param query An Sdk.Query.QueryExpression query.
+      */
     def retrieveMultiple(
       query: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.QueryExpression
     ): qLib.qMod.QNs.Promise[
         microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.EntityCollection
       ] = js.native
     /**
-                 * Updates an entity instance.
-                 * @param entity An entity instance to update.
-                 */
+      * Updates an entity instance.
+      * @param entity An entity instance to update.
+      */
     def update(entity: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Entity): qLib.qMod.QNs.Promise[scala.Boolean] = js.native
   }
   
@@ -3144,119 +3027,99 @@ object SdkNs extends js.Object {
   @js.native
   object QueryNs extends js.Object {
     /**
-             * Specifies Boolean values to be compared in the query.
-             * @param args An array of Boolean values.
-             */
+      * Specifies Boolean values to be compared in the query.
+      * @param args An array of Boolean values.
+      */
     @js.native
     class Booleans protected () extends ValueBase {
       def this(args: js.Array[scala.Boolean]) = this()
       /**
-                   * Returns the type of value with namespace prefix.
-                   */
+        * Returns the type of value with namespace prefix.
+        */
       def getType(): java.lang.String = js.native
       /**
-                   * Returns an Sdk.Collection of boolean values.
-                   */
+        * Returns an Sdk.Collection of boolean values.
+        */
       def getValues(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[scala.Boolean] = js.native
       /**
-                   * Specifies a Boolean value to be compared in the query.
-                   * @param setValueArgs An array of boolean values.
-                   */
+        * Specifies a Boolean value to be compared in the query.
+        * @param setValueArgs An array of boolean values.
+        */
       def setValues(setValueArgs: js.Array[scala.Boolean]): scala.Unit = js.native
     }
     
     @js.native
     class ConditionExpression protected () extends js.Object {
       /**
-                   * Contains a condition expression used to filter the results of the query.
-                   * @param name entityName The logical name of the entity in the condition expression.
-                   * @param name attributeName The logical name of the attribute in the condition expression.
-                   * @param name operator The condition operator.
-                   * @param name values The value(s) to compare.
-                   *  Use one of the following classes that inherit from Sdk.Query.ValueBase: </para>
-                   *  - Sdk.Query.Booleans </para>
-                   *  - Sdk.Query.BooleanManagedProperties </para>
-                   *  - Sdk.Query.Dates </para>
-                   *  - Sdk.Query.Decimals </para>
-                   *  - Sdk.Query.Doubles </para>
-                   *  - Sdk.Query.EntityReferences </para>
-                   *  - Sdk.Query.Guids </para>
-                   *  - Sdk.Query.Ints </para>
-                   *  - Sdk.Query.Longs </para>
-                   *  - Sdk.Query.Money </para>
-                   *  - Sdk.Query.OptionSets </para>
-                   *  - Sdk.Query.Strings </para>
-                   */
+        * Contains a condition expression used to filter the results of the query.
+        * @param name entityName The logical name of the entity in the condition expression.
+        * @param name attributeName The logical name of the attribute in the condition expression.
+        * @param name operator The condition operator.
+        * @param name values The value(s) to compare.
+        *  Use one of the following classes that inherit from Sdk.Query.ValueBase: </para>
+        *  - Sdk.Query.Booleans </para>
+        *  - Sdk.Query.BooleanManagedProperties </para>
+        *  - Sdk.Query.Dates </para>
+        *  - Sdk.Query.Decimals </para>
+        *  - Sdk.Query.Doubles </para>
+        *  - Sdk.Query.EntityReferences </para>
+        *  - Sdk.Query.Guids </para>
+        *  - Sdk.Query.Ints </para>
+        *  - Sdk.Query.Longs </para>
+        *  - Sdk.Query.Money </para>
+        *  - Sdk.Query.OptionSets </para>
+        *  - Sdk.Query.Strings </para>
+        */
       def this(entityName: java.lang.String, attributeName: java.lang.String, operator: ConditionOperator) = this()
-      /**
-                   * Contains a condition expression used to filter the results of the query.
-                   * @param name entityName The logical name of the entity in the condition expression.
-                   * @param name attributeName The logical name of the attribute in the condition expression.
-                   * @param name operator The condition operator.
-                   * @param name values The value(s) to compare.
-                   *  Use one of the following classes that inherit from Sdk.Query.ValueBase: </para>
-                   *  - Sdk.Query.Booleans </para>
-                   *  - Sdk.Query.BooleanManagedProperties </para>
-                   *  - Sdk.Query.Dates </para>
-                   *  - Sdk.Query.Decimals </para>
-                   *  - Sdk.Query.Doubles </para>
-                   *  - Sdk.Query.EntityReferences </para>
-                   *  - Sdk.Query.Guids </para>
-                   *  - Sdk.Query.Ints </para>
-                   *  - Sdk.Query.Longs </para>
-                   *  - Sdk.Query.Money </para>
-                   *  - Sdk.Query.OptionSets </para>
-                   *  - Sdk.Query.Strings </para>
-                   */
       def this(entityName: java.lang.String, attributeName: java.lang.String, operator: ConditionOperator, values: ValueBase) = this()
       /**
-                   * Returns the logical name of the attribute in the condition expression.
-                   */
+        * Returns the logical name of the attribute in the condition expression.
+        */
       def getAttributeName(): java.lang.String = js.native
       /**
-                   * Returns the logical name of the entity in the condition expression.
-                   */
+        * Returns the logical name of the entity in the condition expression.
+        */
       def getEntityName(): java.lang.String = js.native
       /**
-                   * Returns the condition operator.
-                   */
+        * Returns the condition operator.
+        */
       def getOperator(): ConditionOperator = js.native
       /**
-                   * Returns the values for the attribute.
-                   */
+        * Returns the values for the attribute.
+        */
       def getValues(): ValueBase = js.native
       /**
-                   * Sets the logical name of the attribute in the condition expression.
-                   * @param name The logical name of the attribute in the condition expression.
-                   */
+        * Sets the logical name of the attribute in the condition expression.
+        * @param name The logical name of the attribute in the condition expression.
+        */
       def setAttributeName(name: java.lang.String): scala.Unit = js.native
       /**
-                   * Sets the logical name of the entity in the condition expression.
-                   * @param name The logical name of the entity in the condition expression.
-                   */
+        * Sets the logical name of the entity in the condition expression.
+        * @param name The logical name of the entity in the condition expression.
+        */
       def setEntityName(name: java.lang.String): scala.Unit = js.native
       /**
-                   * Sets the condition operator.
-                   * @param operator The condition operator.
-                   */
+        * Sets the condition operator.
+        * @param operator The condition operator.
+        */
       def setOperator(operator: ConditionOperator): scala.Unit = js.native
       /**
-                   * Sets the values for the attribute.
-                   * @param The value(s) to compare
-                   *  Use one of the following classes that inherit from Sdk.Query.ValueBase:
-                   *  - Sdk.Query.Booleans
-                   *  - Sdk.Query.BooleanManagedProperties
-                   *  - Sdk.Query.Dates
-                   *  - Sdk.Query.Decimals
-                   *  - Sdk.Query.Doubles
-                   *  - Sdk.Query.EntityReferences
-                   *  - Sdk.Query.Guids
-                   *  - Sdk.Query.Ints
-                   *  - Sdk.Query.Longs
-                   *  - Sdk.Query.Money
-                   *  - Sdk.Query.OptionSets
-                   *  - Sdk.Query.Strings
-                   */
+        * Sets the values for the attribute.
+        * @param The value(s) to compare
+        *  Use one of the following classes that inherit from Sdk.Query.ValueBase:
+        *  - Sdk.Query.Booleans
+        *  - Sdk.Query.BooleanManagedProperties
+        *  - Sdk.Query.Dates
+        *  - Sdk.Query.Decimals
+        *  - Sdk.Query.Doubles
+        *  - Sdk.Query.EntityReferences
+        *  - Sdk.Query.Guids
+        *  - Sdk.Query.Ints
+        *  - Sdk.Query.Longs
+        *  - Sdk.Query.Money
+        *  - Sdk.Query.OptionSets
+        *  - Sdk.Query.Strings
+        */
       def setValues(values: ValueBase): scala.Unit = js.native
     }
     
@@ -3264,92 +3127,92 @@ object SdkNs extends js.Object {
     sealed trait ConditionOperator extends js.Object
     
     /**
-             * Specifies the Date values to be compared in the query.
-             * @param args An array of Date values.
-             */
+      * Specifies the Date values to be compared in the query.
+      * @param args An array of Date values.
+      */
     @js.native
     class Dates protected () extends ValueBase {
       def this(args: js.Array[stdLib.Date]) = this()
       /**
-                   * Returns the type of value with namespace prefix.
-                   */
+        * Returns the type of value with namespace prefix.
+        */
       def getType(): java.lang.String = js.native
       /**
-                   * Returns an Sdk.Collection of Date values.
-                   */
+        * Returns an Sdk.Collection of Date values.
+        */
       def getValues(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[stdLib.Date] = js.native
       /**
-                   * Specifies the Date values to be compared in the query.
-                   * @param setValueArgs An array of Date values.
-                   */
+        * Specifies the Date values to be compared in the query.
+        * @param setValueArgs An array of Date values.
+        */
       def setValues(setValueArgs: js.Array[stdLib.Date]): scala.Unit = js.native
     }
     
     /**
-             * Specifies the Decimal values to be compared in the query.
-             * @param args An array of Decimal values.
-             */
+      * Specifies the Decimal values to be compared in the query.
+      * @param args An array of Decimal values.
+      */
     @js.native
     class Decimals protected () extends ValueBase {
       def this(args: js.Array[scala.Double]) = this()
       /**
-                   * Returns the type of value with namespace prefix.
-                   */
+        * Returns the type of value with namespace prefix.
+        */
       def getType(): java.lang.String = js.native
       /**
-                   * Returns an Sdk.Collection of number values.
-                   */
+        * Returns an Sdk.Collection of number values.
+        */
       def getValues(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[scala.Double] = js.native
       /**
-                   * Specifies the Decimal values to be compared in the query.
-                   * @param setValueArgs An array of number values.
-                   */
+        * Specifies the Decimal values to be compared in the query.
+        * @param setValueArgs An array of number values.
+        */
       def setValues(setValueArgs: js.Array[scala.Double]): scala.Unit = js.native
     }
     
     /**
-             * Specifies the Double values to be compared in the query.
-             * @param args An array of Double values.
-             */
+      * Specifies the Double values to be compared in the query.
+      * @param args An array of Double values.
+      */
     @js.native
     class Doubles protected () extends ValueBase {
       def this(args: js.Array[scala.Double]) = this()
       /**
-                   * Returns the type of value with namespace prefix.
-                   */
+        * Returns the type of value with namespace prefix.
+        */
       def getType(): java.lang.String = js.native
       /**
-                   * Returns an Sdk.Collection of number values.
-                   */
+        * Returns an Sdk.Collection of number values.
+        */
       def getValues(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[scala.Double] = js.native
       /**
-                   * Specifies the Double values to be compared in the query.
-                   * @param setValueArgs An array of number values.
-                   */
+        * Specifies the Double values to be compared in the query.
+        * @param setValueArgs An array of number values.
+        */
       def setValues(setValueArgs: js.Array[scala.Double]): scala.Unit = js.native
     }
     
     /**
-             * Specifies the Sdk.EntityReference values to be compared in the query.
-             * @param args An array of Sdk.EntityReference values.
-             */
+      * Specifies the Sdk.EntityReference values to be compared in the query.
+      * @param args An array of Sdk.EntityReference values.
+      */
     @js.native
     class EntityReferences protected () extends ValueBase {
       def this(args: js.Array[
               microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.EntityReference
             ]) = this()
       /**
-                   * Returns the type of value with namespace prefix.
-                   */
+        * Returns the type of value with namespace prefix.
+        */
       def getType(): java.lang.String = js.native
       /**
-                   * Returns an Sdk.Collection of Sdk.EntityReference values.
-                   */
+        * Returns an Sdk.Collection of Sdk.EntityReference values.
+        */
       def getValues(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[scala.Double] = js.native
       /**
-                   * Specifies the Long values to be compared in the query.
-                   * @param setValueArgs An array of Sdk.EntityReference values.
-                   */
+        * Specifies the Long values to be compared in the query.
+        * @param setValueArgs An array of Sdk.EntityReference values.
+        */
       def setValues(
         setValueArgs: js.Array[
               microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.EntityReference
@@ -3360,72 +3223,52 @@ object SdkNs extends js.Object {
     @js.native
     class FetchExpression protected () extends js.Object {
       /**
-                   * @param fetchXml The FetchXml to be used in a query.
-                   */
+        * @param fetchXml The FetchXml to be used in a query.
+        */
       def this(fetchXml: java.lang.String) = this()
       /**
-                   * Gets the FetchXml to be used in a query.
-                   */
+        * Gets the FetchXml to be used in a query.
+        */
       def getFetchXml(): java.lang.String = js.native
       /**
-                   * Sets the FetchXml to be used in a query.
-                   * @param fetchXml The FetchXml to be used in a query.
-                   */
+        * Sets the FetchXml to be used in a query.
+        * @param fetchXml The FetchXml to be used in a query.
+        */
       def setFetchXml(fetchXml: java.lang.String): scala.Unit = js.native
     }
     
     /**
-             * Specifies complex condition and logical filter expressions used for filtering the results of the query.
-             * @param logicalOperator The filter operator.
-             */
+      * Specifies complex condition and logical filter expressions used for filtering the results of the query.
+      * @param logicalOperator The filter operator.
+      */
     @js.native
     class FilterExpression protected () extends js.Object {
       def this(logicalOperator: LogicalOperator) = this()
       /**
-                   * Adds a condition to the filter expression setting the attribute name, condition operator, and values.
-                   * @param entityName The entityName of the new ConditionExpression that will be instantiated using the other parameters.
-                   * @param attributeName The attribute name to use in the condition expression.
-                   * @param conditionOperator The condition operator if the first parameter is a string.
-                   * @param values The value(s) to compare.
-                   *  Use one of the following classes that
-                   *  - Sdk.Query.Booleans
-                   *  - Sdk.Query.BooleanManagedProperties
-                   *  - Sdk.Query.Dates
-                   *  - Sdk.Query.Decimals
-                   *  - Sdk.Query.Doubles
-                   *  - Sdk.Query.EntityReferences
-                   *  - Sdk.Query.Guids
-                   *  - Sdk.Query.Ints
-                   *  - Sdk.Query.Longs
-                   *  - Sdk.Query.Money
-                   *  - Sdk.Query.OptionSets
-                   *  - Sdk.Query.Strings
-                   */
+        * Adds a condition to the filter expression setting the attribute name, condition operator, and values.
+        * @param entityName The entityName of the new ConditionExpression that will be instantiated using the other parameters.
+        * @param attributeName The attribute name to use in the condition expression.
+        * @param conditionOperator The condition operator if the first parameter is a string.
+        * @param values The value(s) to compare.
+        *  Use one of the following classes that
+        *  - Sdk.Query.Booleans
+        *  - Sdk.Query.BooleanManagedProperties
+        *  - Sdk.Query.Dates
+        *  - Sdk.Query.Decimals
+        *  - Sdk.Query.Doubles
+        *  - Sdk.Query.EntityReferences
+        *  - Sdk.Query.Guids
+        *  - Sdk.Query.Ints
+        *  - Sdk.Query.Longs
+        *  - Sdk.Query.Money
+        *  - Sdk.Query.OptionSets
+        *  - Sdk.Query.Strings
+        */
       def addCondition(
         entityName: java.lang.String,
         attributeName: java.lang.String,
         conditionOperator: ConditionOperator
       ): scala.Unit = js.native
-      /**
-                   * Adds a condition to the filter expression setting the attribute name, condition operator, and values.
-                   * @param entityName The entityName of the new ConditionExpression that will be instantiated using the other parameters.
-                   * @param attributeName The attribute name to use in the condition expression.
-                   * @param conditionOperator The condition operator if the first parameter is a string.
-                   * @param values The value(s) to compare.
-                   *  Use one of the following classes that
-                   *  - Sdk.Query.Booleans
-                   *  - Sdk.Query.BooleanManagedProperties
-                   *  - Sdk.Query.Dates
-                   *  - Sdk.Query.Decimals
-                   *  - Sdk.Query.Doubles
-                   *  - Sdk.Query.EntityReferences
-                   *  - Sdk.Query.Guids
-                   *  - Sdk.Query.Ints
-                   *  - Sdk.Query.Longs
-                   *  - Sdk.Query.Money
-                   *  - Sdk.Query.OptionSets
-                   *  - Sdk.Query.Strings
-                   */
       def addCondition(
         entityName: java.lang.String,
         attributeName: java.lang.String,
@@ -3433,89 +3276,89 @@ object SdkNs extends js.Object {
         values: ValueBase
       ): scala.Unit = js.native
       /**
-                   * Adds a condition to the filter expression setting the attribute name, condition operator, and values.
-                   * @param conditionExpression The expression that will set the condition.
-                   */
+        * Adds a condition to the filter expression setting the attribute name, condition operator, and values.
+        * @param conditionExpression The expression that will set the condition.
+        */
       def addCondition(firstParam: ConditionExpression): scala.Unit = js.native
       /**
-                   * Adds a child filter to the filter expression.
-                   * @param filterExpression The filter to add.
-                   */
+        * Adds a child filter to the filter expression.
+        * @param filterExpression The filter to add.
+        */
       def addFilter(filterExpression: FilterExpression): scala.Unit = js.native
       /**
-                   * Adds a child filter to the filter expression.
-                   * @param logicalOperator Creates new FilterExpression with the specified logical operator and adds it.
-                   */
+        * Adds a child filter to the filter expression.
+        * @param logicalOperator Creates new FilterExpression with the specified logical operator and adds it.
+        */
       def addFilter(logicalOperator: LogicalOperator): scala.Unit = js.native
       /**
-                   * Returns a collection of Sdk.Query.ConditionExpression values.
-                   */
+        * Returns a collection of Sdk.Query.ConditionExpression values.
+        */
       def getConditions(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[ConditionExpression] = js.native
       /**
-                   * Gets the logical AND/OR filter operator.
-                   */
+        * Gets the logical AND/OR filter operator.
+        */
       def getFilterOperator(): LogicalOperator = js.native
       /**
-                   * Returns an Sdk.Collection of Sdk.Query.FilterExpression.
-                   */
+        * Returns an Sdk.Collection of Sdk.Query.FilterExpression.
+        */
       def getFilters(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[FilterExpression] = js.native
       /**
-                   * Gets whether the expression is part of a quick find query.
-                   */
+        * Gets whether the expression is part of a quick find query.
+        */
       def getIsQuickFindFilter(): scala.Boolean = js.native
       /**
-                   * Sets the filter operator.
-                   * @param filterOperator The filter operator.
-                   */
+        * Sets the filter operator.
+        * @param filterOperator The filter operator.
+        */
       def setFilterOperator(filterOperator: LogicalOperator): scala.Unit = js.native
       /**
-                   * Sets whether the expression is part of a quick find query.
-                   * @param isQuickFind True if the filter is part of a quick find query; otherwise, false.
-                   */
+        * Sets whether the expression is part of a quick find query.
+        * @param isQuickFind True if the filter is part of a quick find query; otherwise, false.
+        */
       def setIsQuickFindFilter(isQuickFind: scala.Boolean): scala.Unit = js.native
     }
     
     /**
-             * Specifies the Sdk.Query.Guids values to be compared in the query.
-             * @param args An array of GUID string values.
-             */
+      * Specifies the Sdk.Query.Guids values to be compared in the query.
+      * @param args An array of GUID string values.
+      */
     @js.native
     class Guids protected () extends ValueBase {
       def this(args: js.Array[java.lang.String]) = this()
       /**
-                   * Returns the type of value with namespace prefix.
-                   */
+        * Returns the type of value with namespace prefix.
+        */
       def getType(): java.lang.String = js.native
       /**
-                   * Returns an Sdk.Collection of GUID string values.
-                   */
+        * Returns an Sdk.Collection of GUID string values.
+        */
       def getValues(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[java.lang.String] = js.native
       /**
-                   * Specifies the Long values to be compared in the query.
-                   * @param setValueArgs An array of GUID string values.
-                   */
+        * Specifies the Long values to be compared in the query.
+        * @param setValueArgs An array of GUID string values.
+        */
       def setValues(setValueArgs: js.Array[java.lang.String]): scala.Unit = js.native
     }
     
     /**
-             * Specifies the Int values to be compared in the query.
-             * @param args An array of Int values.
-             */
+      * Specifies the Int values to be compared in the query.
+      * @param args An array of Int values.
+      */
     @js.native
     class Ints protected () extends ValueBase {
       def this(args: js.Array[scala.Double]) = this()
       /**
-                   * Returns the type of value with namespace prefix.
-                   */
+        * Returns the type of value with namespace prefix.
+        */
       def getType(): java.lang.String = js.native
       /**
-                   * Returns an Sdk.Collection of number values.
-                   */
+        * Returns an Sdk.Collection of number values.
+        */
       def getValues(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[scala.Double] = js.native
       /**
-                   * Specifies the Int values to be compared in the query
-                   * @param setValueArgs An array of number values.
-                   */
+        * Specifies the Int values to be compared in the query
+        * @param setValueArgs An array of number values.
+        */
       def setValues(setValueArgs: js.Array[scala.Double]): scala.Unit = js.native
     }
     
@@ -3525,113 +3368,113 @@ object SdkNs extends js.Object {
     @js.native
     class LinkEntity protected () extends js.Object {
       /**
-                   * Initializes a new instance of the Sdk.Query.LinkEntity class setting the required properties.
-                   * @param linkFromEntityName The logical name of the entity to link from.
-                   * @param linkToEntityName The logical name of the entity to link to.
-                   * @param linkFromAttributeName The name of the attribute to link from.
-                   * @param linkToAttributeName The name of the attribute to link to.
-                   * @param joinOperator The join operator.
-                   * @param entityAlias The string representing an alias for the linkToEntityName.
-                   */
+        * Initializes a new instance of the Sdk.Query.LinkEntity class setting the required properties.
+        * @param linkFromEntityName The logical name of the entity to link from.
+        * @param linkToEntityName The logical name of the entity to link to.
+        * @param linkFromAttributeName The name of the attribute to link from.
+        * @param linkToAttributeName The name of the attribute to link to.
+        * @param joinOperator The join operator.
+        * @param entityAlias The string representing an alias for the linkToEntityName.
+        */
       def this(linkFromEntityName: java.lang.String, linkToEntityName: java.lang.String, linkFromAttributeName: java.lang.String, linkToAttributeName: java.lang.String, joinOperator: JoinOperator, entityAlias: java.lang.String) = this()
       /**
-                   * Adds a linked entity.
-                   * @param linkEntity An Sdk.Query.LinkEntity to add.
-                   */
+        * Adds a linked entity.
+        * @param linkEntity An Sdk.Query.LinkEntity to add.
+        */
       def addLink(linkEntity: LinkEntity): scala.Unit = js.native
       /**
-                   * Gets the column set.
-                   */
+        * Gets the column set.
+        */
       def getColumns(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.ColumnSet = js.native
       /**
-                   * Gets the alias for the entity.
-                   */
+        * Gets the alias for the entity.
+        */
       def getEntityAlias(): java.lang.String = js.native
       /**
-                   * Gets the join operator.
-                   */
+        * Gets the join operator.
+        */
       def getJoinOperator(): JoinOperator = js.native
       /**
-                   * Gets the complex condition and logical filter expressions that filter the results of the query.
-                   */
+        * Gets the complex condition and logical filter expressions that filter the results of the query.
+        */
       def getLinkCriteria(): FilterExpression = js.native
       /**
-                   * Gets the collection of Sdk.Query.LinkEntity that define links between multiple entity types.
-                   */
+        * Gets the collection of Sdk.Query.LinkEntity that define links between multiple entity types.
+        */
       def getLinkEntities(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[LinkEntity] = js.native
       /**
-                   * Gets the logical name of the attribute of the entity that you are linking from.
-                   */
+        * Gets the logical name of the attribute of the entity that you are linking from.
+        */
       def getLinkFromAttributeName(): java.lang.String = js.native
       /**
-                   * Gets the logical name of the entity that you are linking from.
-                   */
+        * Gets the logical name of the entity that you are linking from.
+        */
       def getLinkFromEntityName(): java.lang.String = js.native
       /**
-                   * Gets the logical name of the attribute of the entity that you are linking to
-                   */
+        * Gets the logical name of the attribute of the entity that you are linking to
+        */
       def getLinkToAttributeName(): java.lang.String = js.native
       /**
-                   * Gets the logical name of the entity that you are linking to.
-                   */
+        * Gets the logical name of the entity that you are linking to.
+        */
       def getLinkToEntityName(): java.lang.String = js.native
       /**
-                   * Sets the columns to include.
-                   * @param columns Pass each attribute logical name as an argument.
-                   */
+        * Sets the columns to include.
+        * @param columns Pass each attribute logical name as an argument.
+        */
       def setColumns(columns: java.lang.String*): scala.Unit = js.native
       /**
-                   * Sets the columns to include.
-                   * @param columns An Array of attribute logical names for the columns to return.
-                   */
+        * Sets the columns to include.
+        * @param columns An Array of attribute logical names for the columns to return.
+        */
       def setColumns(columns: js.Array[java.lang.String]): scala.Unit = js.native
       /**
-                   * Sets the columns to include.
-                   * @param columns An Sdk.ColumnSet instance.
-                   */
+        * Sets the columns to include.
+        * @param columns An Sdk.ColumnSet instance.
+        */
       def setColumns(columns: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.ColumnSet): scala.Unit = js.native
       /**
-                   * Sets the alias for the entity.
-                   * @param alias The alias for the entity.
-                   */
+        * Sets the alias for the entity.
+        * @param alias The alias for the entity.
+        */
       def setEntityAlias(alias: java.lang.String): scala.Unit = js.native
       /**
-                   * Sets the join operator.
-                   * @param operator The join operator.
-                   */
+        * Sets the join operator.
+        * @param operator The join operator.
+        */
       def setJoinOperator(operator: JoinOperator): scala.Unit = js.native
       /**
-                   * Sets the complex condition and logical filter expressions that filter the results of the query.
-                   * @param criteria The complex condition and logical filter expressions that filter the results of the query.
-                   */
+        * Sets the complex condition and logical filter expressions that filter the results of the query.
+        * @param criteria The complex condition and logical filter expressions that filter the results of the query.
+        */
       def setLinkCriteria(criteria: FilterExpression): scala.Unit = js.native
       /**
-                   * Sets the logical name of the attribute of the entity that you are linking from.
-                   * @param name The logical name of the attribute of the entity that you are linking from.
-                   */
+        * Sets the logical name of the attribute of the entity that you are linking from.
+        * @param name The logical name of the attribute of the entity that you are linking from.
+        */
       def setLinkFromAttributeName(name: java.lang.String): scala.Unit = js.native
       /**
-                   * Sets the logical name of the entity that you are linking from.
-                   * @param name The logical name of the entity that you are linking from.
-                   */
+        * Sets the logical name of the entity that you are linking from.
+        * @param name The logical name of the entity that you are linking from.
+        */
       def setLinkFromEntityName(name: java.lang.String): scala.Unit = js.native
       /**
-                   * Sets the logical name of the attribute of the entity that you are linking to.
-                   * @param name The logical name of the attribute of the entity that you are linking to.
-                   */
+        * Sets the logical name of the attribute of the entity that you are linking to.
+        * @param name The logical name of the attribute of the entity that you are linking to.
+        */
       def setLinkToAttributeName(name: java.lang.String): scala.Unit = js.native
       /**
-                   * Sets the logical name of the entity that you are linking to.
-                   * @param name The logical name of the entity that you are linking to.
-                   */
+        * Sets the logical name of the entity that you are linking to.
+        * @param name The logical name of the entity that you are linking to.
+        */
       def setLinkToEntityName(name: java.lang.String): scala.Unit = js.native
       /**
-                   * Gets the serialized link entity values.
-                   */
+        * Gets the serialized link entity values.
+        */
       def toValueXml(): java.lang.String = js.native
       /**
-                   * Gets the serialized link entity.
-                   */
+        * Gets the serialized link entity.
+        */
       def toXml(): java.lang.String = js.native
     }
     
@@ -3639,68 +3482,68 @@ object SdkNs extends js.Object {
     sealed trait LogicalOperator extends js.Object
     
     /**
-             * Specifies the Long values to be compared in the query.
-             * @param args An array of Long values.
-             */
+      * Specifies the Long values to be compared in the query.
+      * @param args An array of Long values.
+      */
     @js.native
     class Longs protected () extends ValueBase {
       def this(args: js.Array[scala.Double]) = this()
       /**
-                   * Returns the type of value with namespace prefix.
-                   */
+        * Returns the type of value with namespace prefix.
+        */
       def getType(): java.lang.String = js.native
       /**
-                   * Returns an Sdk.Collection of number values.
-                   */
+        * Returns an Sdk.Collection of number values.
+        */
       def getValues(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[scala.Double] = js.native
       /**
-                   * Specifies the Long values to be compared in the query.
-                   * @param setValueArgs An array of number values.
-                   */
+        * Specifies the Long values to be compared in the query.
+        * @param setValueArgs An array of number values.
+        */
       def setValues(setValueArgs: js.Array[scala.Double]): scala.Unit = js.native
     }
     
     /**
-             * Specifies the Money values to be compared in the query.
-             * @param args An array of number values.
-             */
+      * Specifies the Money values to be compared in the query.
+      * @param args An array of number values.
+      */
     @js.native
     class Money protected () extends ValueBase {
       def this(args: js.Array[scala.Double]) = this()
       /**
-                   * Returns the type of value with namespace prefix.
-                   */
+        * Returns the type of value with namespace prefix.
+        */
       def getType(): java.lang.String = js.native
       /**
-                   * Returns an Sdk.Collection of number values.
-                   */
+        * Returns an Sdk.Collection of number values.
+        */
       def getValues(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[scala.Double] = js.native
       /**
-                   * Specifies the Money values to be compared in the query.
-                   * @param setValueArgs An array of number values.
-                   */
+        * Specifies the Money values to be compared in the query.
+        * @param setValueArgs An array of number values.
+        */
       def setValues(setValueArgs: js.Array[scala.Double]): scala.Unit = js.native
     }
     
     /**
-             * Specifies the OptionSet values to be compared in the query.
-             * @param args An array of number values.
-             */
+      * Specifies the OptionSet values to be compared in the query.
+      * @param args An array of number values.
+      */
     @js.native
     class OptionSets protected () extends ValueBase {
       def this(args: js.Array[scala.Double]) = this()
       /**
-                   * Returns the type of value with namespace prefix.
-                   */
+        * Returns the type of value with namespace prefix.
+        */
       def getType(): java.lang.String = js.native
       /**
-                   * Returns an Sdk.Collection of number values.
-                   */
+        * Returns an Sdk.Collection of number values.
+        */
       def getValues(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[scala.Double] = js.native
       /**
-                   * Specifies the OptionSet values to be compared in the query.
-                   * @param setValueArgs An array of number values.
-                   */
+        * Specifies the OptionSet values to be compared in the query.
+        * @param setValueArgs An array of number values.
+        */
       def setValues(setValueArgs: js.Array[scala.Double]): scala.Unit = js.native
     }
     
@@ -3713,184 +3556,173 @@ object SdkNs extends js.Object {
     @js.native
     class PagingInfo () extends js.Object {
       /**
-                   * Gets the number of entity instances returned per page.
-                   */
+        * Gets the number of entity instances returned per page.
+        */
       def getCount(): scala.Double = js.native
       /**
-                   * Gets the number of pages returned from the query.
-                   */
+        * Gets the number of pages returned from the query.
+        */
       def getPageNumber(): scala.Double = js.native
       /**
-                   * Gets the info used to page large result sets.
-                   */
+        * Gets the info used to page large result sets.
+        */
       def getPagingCookie(): java.lang.String = js.native
       /**
-                   * Gets whether the total number of records should be returned from the query.
-                   */
+        * Gets whether the total number of records should be returned from the query.
+        */
       def getReturnTotalRecordCount(): scala.Boolean = js.native
       /**
-                   * Sets the number of entity instances returned per page.
-                   * @param The number of entity instances returned per page
-                   */
+        * Sets the number of entity instances returned per page.
+        * @param The number of entity instances returned per page
+        */
       def setCount(count: scala.Double): scala.Unit = js.native
       /**
-                   * Sets the number of pages returned from the query.
-                   * @param The number of pages returned from the query.
-                   */
+        * Sets the number of pages returned from the query.
+        * @param The number of pages returned from the query.
+        */
       def setPageNumber(pages: scala.Double): scala.Unit = js.native
       /**
-                   * Sets the info used to page large result sets.
-                   */
+        * Sets the info used to page large result sets.
+        */
       def setPagingCookie(cookie: java.lang.String): scala.Unit = js.native
       /**
-                   * Sets whether the total number of records should be returned from the query.
-                   * @param Specifies whether the TotalRecordCount should be set when the query is executed.
-                   */
+        * Sets whether the total number of records should be returned from the query.
+        * @param Specifies whether the TotalRecordCount should be set when the query is executed.
+        */
       def setReturnTotalRecordCount(returnTotalRecordsCount: scala.Boolean): scala.Unit = js.native
       /// prototype methods
       /**
-                   * Gets the serialized paging info.
-                   *
-                  toXml():string;
-      
-                  / **
-                   * Gets the serialized paging info values.
-                   */
+        * Gets the serialized paging info.
+        *
+        toXml():string;
+        / **
+        * Gets the serialized paging info values.
+        */
       def toValueXml(): java.lang.String = js.native
     }
     
     @js.native
     class QueryBase protected () extends js.Object {
       /**
-                   * Internal Use Only.
-                   * @param type An Abstract class for different query classes to inherit from.
-                   */
+        * Internal Use Only.
+        * @param type An Abstract class for different query classes to inherit from.
+        */
       def this(`type`: java.lang.String) = this()
       /**
-                   * Adds the specified column to the column set.
-                   * @param columnName The logical name of the column to add.
-                   */
+        * Adds the specified column to the column set.
+        * @param columnName The logical name of the column to add.
+        */
       def addColumn(columnName: java.lang.String): scala.Unit = js.native
       /**
-                   * Gets the columns to include.
-                   */
+        * Gets the columns to include.
+        */
       def getColumnSet(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.ColumnSet = js.native
       /**
-                   * Gets the logical name of the entity.
-                   */
+        * Gets the logical name of the entity.
+        */
       def getEntityName(): java.lang.String = js.native
       /**
-                   * Gets an Sdk.Collection of Sdk.Query.OrderExpression instances that define the order in which the entity instances are returned from the query.
-                   */
+        * Gets an Sdk.Collection of Sdk.Query.OrderExpression instances that define the order in which the entity instances are returned from the query.
+        */
       def getOrders(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[OrderExpression] = js.native
       /**
-                   * Gets the number of pages and the number of entity instances per page returned from the query.
-                   */
+        * Gets the number of pages and the number of entity instances per page returned from the query.
+        */
       def getPageInfo(): PagingInfo = js.native
       /**
-                   *
-                   */
+        *
+        */
       def getQueryType(): java.lang.String = js.native
       /**
-                   * Gets the number of rows to be returned.
-                   */
+        * Gets the number of rows to be returned.
+        */
       def getTopCount(): scala.Double = js.native
       /**
-                   * Removes a column from the ColumnSet used by the query.
-                   * @param columnName The logical name of an attribute to be removed from the ColumnSet.
-                   * @param errorIfNotFound Whether to throw an error when the column to remove is not found. The default is false.
-                   */
+        * Removes a column from the ColumnSet used by the query.
+        * @param columnName The logical name of an attribute to be removed from the ColumnSet.
+        * @param errorIfNotFound Whether to throw an error when the column to remove is not found. The default is false.
+        */
       def removeColumn(columnName: java.lang.String): scala.Unit = js.native
-      /**
-                   * Removes a column from the ColumnSet used by the query.
-                   * @param columnName The logical name of an attribute to be removed from the ColumnSet.
-                   * @param errorIfNotFound Whether to throw an error when the column to remove is not found. The default is false.
-                   */
       def removeColumn(columnName: java.lang.String, errorIfNotFound: scala.Boolean): scala.Unit = js.native
       /**
-                   * Sets the columns to include.
-                   * @param columns Pass each attribute logical name as an argument.
-                   */
+        * Sets the columns to include.
+        * @param columns Pass each attribute logical name as an argument.
+        */
       def setColumnSet(columns: java.lang.String*): scala.Unit = js.native
       /**
-                   * Sets the columns to include.
-                   * @param columns An array of attribute logical names for the columns to return.
-                   */
+        * Sets the columns to include.
+        * @param columns An array of attribute logical names for the columns to return.
+        */
       def setColumnSet(columns: js.Array[java.lang.String]): scala.Unit = js.native
       /**
-                   * Sets the columns to include.
-                   * @param columns An Sdk.ColumnSet instance.
-                   */
+        * Sets the columns to include.
+        * @param columns An Sdk.ColumnSet instance.
+        */
       def setColumnSet(columns: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.ColumnSet): scala.Unit = js.native
       /**
-                   * Sets the logical name of the entity.
-                   * @param name The logical name of the entity.
-                   */
+        * Sets the logical name of the entity.
+        * @param name The logical name of the entity.
+        */
       def setEntityName(name: java.lang.String): scala.Unit = js.native
       /**
-                   * Sets the number of pages and the number of entity instances per page returned from the query.
-                   * @param pageInfo The number of pages and the number of entity instances per page returned from the query.
-                   */
+        * Sets the number of pages and the number of entity instances per page returned from the query.
+        * @param pageInfo The number of pages and the number of entity instances per page returned from the query.
+        */
       def setPageInfo(pageInfo: PagingInfo): scala.Unit = js.native
       /**
-                   * Sets the number of rows to be returned.
-                   * @param count The number of rows to be returned.
-                   */
+        * Sets the number of rows to be returned.
+        * @param count The number of rows to be returned.
+        */
       def setTopCount(count: scala.Double): scala.Unit = js.native
       /**
-                   * Gets the serialized QueryExpression values.
-                   */
+        * Gets the serialized QueryExpression values.
+        */
       def toValueXml(): java.lang.String = js.native
       /**
-                   * Gets the serialized QueryExpression.
-                   */
+        * Gets the serialized QueryExpression.
+        */
       def toXml(): java.lang.String = js.native
     }
     
     @js.native
     class QueryByAttribute protected () extends QueryBase {
       /**
-                   * Initializes a new instance of the QueryByAttribute class setting the entity name.
-                   * @param entityName The logical name of the entity.
-                   *
-                   */
+        * Initializes a new instance of the QueryByAttribute class setting the entity name.
+        * @param entityName The logical name of the entity.
+        *
+        */
       def this(entityName: java.lang.String) = this()
       /// prototype methods
       /**
-                   * Adds the attribute with values to include in the query.
-                   * @param attributeValue One of the classes that inherit from Sdk.AttributeBase including the value to use as criteria.
-                   */
+        * Adds the attribute with values to include in the query.
+        * @param attributeValue One of the classes that inherit from Sdk.AttributeBase including the value to use as criteria.
+        */
       def addAttributeValue(attributeValue: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.AttributeBase): scala.Unit = js.native
       /**
-                   * Adds an order to apply to the results of the query.
-                   * @param order An order expression.
-                   */
+        * Adds an order to apply to the results of the query.
+        * @param order An order expression.
+        */
       def addOrder(order: OrderExpression): scala.Unit = js.native
       /**
-                   * Gets An Sdk.Collection of Sdk.AttributeBase attributes.
-                   */
+        * Gets An Sdk.Collection of Sdk.AttributeBase attributes.
+        */
       def getAttributeValues(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[
             microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.AttributeBase
           ] = js.native
       /**
-                   * Removes an attribute with values to include in the query.
-                   * @param attributeValue One of the classes that inherit from Sdk.AttributeBase including the value to use as criteria.
-                   * @param errorIfNotFound Whether to throw an error when the attribute to remove is not found. The default is false.
-                   */
+        * Removes an attribute with values to include in the query.
+        * @param attributeValue One of the classes that inherit from Sdk.AttributeBase including the value to use as criteria.
+        * @param errorIfNotFound Whether to throw an error when the attribute to remove is not found. The default is false.
+        */
       def removeAttributeValue(attributeValue: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.AttributeBase): scala.Unit = js.native
-      /**
-                   * Removes an attribute with values to include in the query.
-                   * @param attributeValue One of the classes that inherit from Sdk.AttributeBase including the value to use as criteria.
-                   * @param errorIfNotFound Whether to throw an error when the attribute to remove is not found. The default is false.
-                   */
       def removeAttributeValue(
         attributeValue: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.AttributeBase,
         errorIfNotFound: scala.Boolean
       ): scala.Unit = js.native
       /**
-                   * Sets an Sdk.Collection of Sdk.Query.OrderExpression instances that define the order in which the entity instances are returned from the query.
-                   * @param orders An Sdk.Collection of Sdk.Query.OrderExpression instances that define the order in which the entity instances are returned from the query.
-                   */
+        * Sets an Sdk.Collection of Sdk.Query.OrderExpression instances that define the order in which the entity instances are returned from the query.
+        * @param orders An Sdk.Collection of Sdk.Query.OrderExpression instances that define the order in which the entity instances are returned from the query.
+        */
       def setOrders(
         orders: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[OrderExpression]
       ): scala.Unit = js.native
@@ -3899,30 +3731,30 @@ object SdkNs extends js.Object {
     @js.native
     class QueryExpression protected () extends QueryBase {
       /**
-                   * Initializes a new instance of the QueryExpression class setting the entity name.
-                   * @param entityName The name of the entity.
-                   */
+        * Initializes a new instance of the QueryExpression class setting the entity name.
+        * @param entityName The name of the entity.
+        */
       def this(entityName: java.lang.String) = this()
       /// prototype methods
       /**
-                   *  Contains a condition expression used to filter the results of the query.
-                   * @param entityName The logical name of the entity in the condition expression.
-                   * @param attributeName The logical name of the attribute in the condition expression.
-                   * @param operator The condition operator.
-                   * @param values The value(s) to compare. Use one of the following classes that inherit from Sdk.Query.ValueBase:
-                   *          Sdk.Query.Booleans
-                   *          Sdk.Query.BooleanManagedProperties
-                   *          Sdk.Query.Dates
-                   *          Sdk.Query.Decimals
-                   *          Sdk.Query.Doubles
-                   *          Sdk.Query.EntityReferences
-                   *          Sdk.Query.Guids
-                   *          Sdk.Query.Ints
-                   *          Sdk.Query.Longs
-                   *          Sdk.Query.Money
-                   *          Sdk.Query.OptionSets
-                   *          Sdk.Query.Strings
-                   */
+        *  Contains a condition expression used to filter the results of the query.
+        * @param entityName The logical name of the entity in the condition expression.
+        * @param attributeName The logical name of the attribute in the condition expression.
+        * @param operator The condition operator.
+        * @param values The value(s) to compare. Use one of the following classes that inherit from Sdk.Query.ValueBase:
+        *          Sdk.Query.Booleans
+        *          Sdk.Query.BooleanManagedProperties
+        *          Sdk.Query.Dates
+        *          Sdk.Query.Decimals
+        *          Sdk.Query.Doubles
+        *          Sdk.Query.EntityReferences
+        *          Sdk.Query.Guids
+        *          Sdk.Query.Ints
+        *          Sdk.Query.Longs
+        *          Sdk.Query.Money
+        *          Sdk.Query.OptionSets
+        *          Sdk.Query.Strings
+        */
       def addCondition(
         entityName: java.lang.String,
         attributeName: java.lang.String,
@@ -3930,12 +3762,12 @@ object SdkNs extends js.Object {
         values: ValueBase
       ): scala.Unit = js.native
       /**
-                   * Adds the specified link to the query expression setting the entity name to link to, the attribute name to link from and the attribute name to link to.
-                   * @param firstParam The name of entity to link from.
-                   * @param linkFromAttributeName The name of the attribute to link from.
-                   * @param linkToAttributeName The name of the attribute to link to.
-                   * @param joinOperator The join operator. The default value is Inner
-                   */
+        * Adds the specified link to the query expression setting the entity name to link to, the attribute name to link from and the attribute name to link to.
+        * @param firstParam The name of entity to link from.
+        * @param linkFromAttributeName The name of the attribute to link from.
+        * @param linkToAttributeName The name of the attribute to link to.
+        * @param joinOperator The join operator. The default value is Inner
+        */
       def addLink(
         firstParam: java.lang.String,
         linkFromAttributeName: java.lang.String,
@@ -3943,67 +3775,67 @@ object SdkNs extends js.Object {
         joinOperator: JoinOperator
       ): scala.Unit = js.native
       /**
-                   * Adds the specified link to the query expression setting the entity name to link to, the attribute name to link from and the attribute name to link to.
-                   * @param firstParam An Sdk.Query.LinkEntity instance.
-                   */
+        * Adds the specified link to the query expression setting the entity name to link to, the attribute name to link from and the attribute name to link to.
+        * @param firstParam An Sdk.Query.LinkEntity instance.
+        */
       def addLink(firstParam: LinkEntity): scala.Unit = js.native
       /**
-                   * Adds the specified order expression to the query expression.
-                   * @param attributeName The name of the attribute.
-                   * @param orderType The order, ascending or descending. Ascending is the default if not specified.
-                   */
+        * Adds the specified order expression to the query expression.
+        * @param attributeName The name of the attribute.
+        * @param orderType The order, ascending or descending. Ascending is the default if not specified.
+        */
       def addOrder(attributeName: java.lang.String, orderType: OrderType): scala.Unit = js.native
       /**
-                   * Gets the complex condition and logical filter expressions that filter the results of the query.
-                   */
+        * Gets the complex condition and logical filter expressions that filter the results of the query.
+        */
       def getCriteria(): FilterExpression = js.native
       /**
-                   * Gets whether the results of the query contain duplicate entity instances.
-                   */
+        * Gets whether the results of the query contain duplicate entity instances.
+        */
       def getDistinct(): scala.Boolean = js.native
       /**
-                   * Gets an Sdk.Collection of Sdk.Query.LinkEntity instances.
-                   */
+        * Gets an Sdk.Collection of Sdk.Query.LinkEntity instances.
+        */
       def getLinkEntities(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[LinkEntity] = js.native
       /**
-                   * Gets a value that indicates that no shared locks are issued against the data that would prohibit other transactions from modifying the data in the records returned from the query.
-                   */
+        * Gets a value that indicates that no shared locks are issued against the data that would prohibit other transactions from modifying the data in the records returned from the query.
+        */
       def getNoLock(): scala.Boolean = js.native
       /**
-                   * Sets the complex condition and logical filter expressions that filter the results of the query.
-                   * @param criteria The query condition and filter criteria.
-                   */
+        * Sets the complex condition and logical filter expressions that filter the results of the query.
+        * @param criteria The query condition and filter criteria.
+        */
       def setCriteria(criteria: FilterExpression): scala.Unit = js.native
       /**
-                   * Sets whether the results of the query contain duplicate entity instances.
-                   */
+        * Sets whether the results of the query contain duplicate entity instances.
+        */
       def setDistinct(isDistinct: scala.Boolean): scala.Unit = js.native
       /**
-                   * Sets a value that indicates that no shared locks are issued against the data that would prohibit other transactions from modifying the data in the records returned from the query.
-                   * @param isNoLock True if there are no shared locks are issued against the data that would prohibit other transactions from modifying the data in the records returned from the query; otherwise, false.
-                   */
+        * Sets a value that indicates that no shared locks are issued against the data that would prohibit other transactions from modifying the data in the records returned from the query.
+        * @param isNoLock True if there are no shared locks are issued against the data that would prohibit other transactions from modifying the data in the records returned from the query; otherwise, false.
+        */
       def setNoLock(isNoLock: scala.Boolean): scala.Unit = js.native
     }
     
     /**
-             * Specifies the String values to be compared in the query.
-             * @param args An array of String values.
-             */
+      * Specifies the String values to be compared in the query.
+      * @param args An array of String values.
+      */
     @js.native
     class Strings protected () extends ValueBase {
       def this(args: js.Array[java.lang.String]) = this()
       /**
-                   * Returns the type of value with namespace prefix.
-                   */
+        * Returns the type of value with namespace prefix.
+        */
       def getType(): java.lang.String = js.native
       /**
-                   * Returns an Sdk.Collection of String values.
-                   */
+        * Returns an Sdk.Collection of String values.
+        */
       def getValues(): microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[java.lang.String] = js.native
       /**
-                   * Specifies the String values to be compared in the query.
-                   * @param setValueArgs An array of String values.
-                   */
+        * Specifies the String values to be compared in the query.
+        * @param setValueArgs An array of String values.
+        */
       def setValues(setValueArgs: js.Array[java.lang.String]): scala.Unit = js.native
     }
     
@@ -4448,52 +4280,51 @@ object SdkNs extends js.Object {
   @js.native
   object UtilNs extends js.Object {
     /**
-             * Creates an entity from XML.
-             * @param The serialized entity returned from the SOAP service as XML.
-             */
+      * Creates an entity from XML.
+      * @param The serialized entity returned from the SOAP service as XML.
+      */
     def createEntityFromNode(node: java.lang.String): scala.Unit = js.native
     /**
-             * Formats a string with the arguments from an array.
-             * @param string The string containing placeholders for items in the array.
-             * @param args An array of strings to replace the placeholders.
-             */
+      * Formats a string with the arguments from an array.
+      * @param string The string containing placeholders for items in the array.
+      * @param args An array of strings to replace the placeholders.
+      */
     def format(string: java.lang.String, args: js.Array[java.lang.String]): java.lang.String = js.native
     /**
-             * Returns the clinent URL.
-             */
+      * Returns the clinent URL.
+      */
     def getClientUrl(): java.lang.String = js.native
     /**
-             * Verifies the parameter is a valid enum value.
-             * @param enumeration The enumeration.
-             * @param value The value to check.
-             */
-    
+      * Verifies the parameter is a valid enum value.
+      * @param enumeration The enumeration.
+      * @param value The value to check.
+      */
     /**
-             * Returns an empty GUID.
-             */
+      * Returns an empty GUID.
+      */
     def getEmptyGuid(): java.lang.String = js.native
     /**
-             *
-             */
+      *
+      */
     def getError(resp: js.Any): java.lang.String = js.native
     /**
-             *
-             */
+      *
+      */
     def getXMLHttpRequest(action: java.lang.String, async: scala.Boolean): js.Any = js.native
     /**
-             * Verifies the parameter is a string formatted as a GUID.
-             * @param value The value to check.
-             */
+      * Verifies the parameter is a string formatted as a GUID.
+      * @param value The value to check.
+      */
     def isGuid(value: java.lang.String): scala.Boolean = js.native
     /**
-             * Verifies the parameter is a string formatted as a GUID or null.
-             * @param value The value to check.
-             */
+      * Verifies the parameter is a string formatted as a GUID or null.
+      * @param value The value to check.
+      */
     def isGuidOrNull(value: java.lang.String): scala.Boolean = js.native
     /**
-             * Provides a way to override the client Url when a client-side context is not available.
-             * @param url The client URL to use instead of the default.
-             */
+      * Provides a way to override the client Url when a client-side context is not available.
+      * @param url The client URL to use instead of the default.
+      */
     def setClientUrl(url: java.lang.String): scala.Unit = js.native
   }
   

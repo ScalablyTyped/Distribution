@@ -24,8 +24,8 @@ object libValidationModMembers extends js.Object {
   def getSemigroup[L, A](SL: fpDashTsLib.libSemigroupMod.Semigroup[L], SA: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[Validation[L, A]] = js.native
   def getSetoid[L, A](SL: fpDashTsLib.libSetoidMod.Setoid[L], SA: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[Validation[L, A]] = js.native
   def getWitherable[L](ML: fpDashTsLib.libMonoidMod.Monoid[L]): fpDashTsLib.libWitherableMod.Witherable2C[URI, L] = js.native
-  def isFailure[L, A](fa: Validation[L, A]): /* is Failure */scala.Boolean = js.native
-  def isSuccess[L, A](fa: Validation[L, A]): /* is Success */scala.Boolean = js.native
+  def isFailure[L, A](fa: Validation[L, A]): /* is fp-ts.fp-ts/lib/Validation.Failure<L, A> */ scala.Boolean = js.native
+  def isSuccess[L, A](fa: Validation[L, A]): /* is fp-ts.fp-ts/lib/Validation.Success<L, A> */ scala.Boolean = js.native
   def success[L, A](a: A): Validation[L, A] = js.native
 }
 

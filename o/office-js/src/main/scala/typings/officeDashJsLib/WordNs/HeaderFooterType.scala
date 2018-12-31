@@ -9,34 +9,34 @@ import scala.scalajs.js.annotation._
 sealed trait HeaderFooterType extends js.Object
 
 /**
-     * [Api set: WordApi]
-     */
+  * [Api set: WordApi]
+  */
 @JSGlobal("Word.HeaderFooterType")
 @js.native
 object HeaderFooterType extends js.Object {
   /**
-           *
-           * Returns all headers or footers on even-numbered pages of a section.
-           *
-           */
+    *
+    * Returns all headers or footers on even-numbered pages of a section.
+    *
+    */
   @js.native
   sealed trait evenPages
     extends officeDashJsLib.WordNs.HeaderFooterType
   
   /**
-           *
-           * Returns the header or footer on the first page of a section.
-           *
-           */
+    *
+    * Returns the header or footer on the first page of a section.
+    *
+    */
   @js.native
   sealed trait firstPage
     extends officeDashJsLib.WordNs.HeaderFooterType
   
   /**
-           *
-           * Returns the header or footer on all pages of a section, with the first page or odd pages excluded if they are different.
-           *
-           */
+    *
+    * Returns the header or footer on all pages of a section, with the first page or odd pages excluded if they are different.
+    *
+    */
   @js.native
   sealed trait primary
     extends officeDashJsLib.WordNs.HeaderFooterType

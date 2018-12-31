@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBridgeIcon extends js.Object {
   var depth: java.lang.String
   var height: java.lang.String

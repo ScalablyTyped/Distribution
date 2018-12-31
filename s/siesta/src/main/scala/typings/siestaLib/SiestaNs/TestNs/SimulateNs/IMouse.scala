@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * @mixin
-             */
+  * @mixin
+  */
 @js.native
 trait IMouse extends js.Object {
   var dragDelay: scala.Double = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IObjectFileAndObjVer extends js.Object {
   val ObjVer: IObjVer
   val ObjectFile: IObjectFile

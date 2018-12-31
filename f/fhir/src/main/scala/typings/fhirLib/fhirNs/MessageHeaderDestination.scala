@@ -6,29 +6,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Message destination application(s)
-     */
-
+  * Message destination application(s)
+  */
 trait MessageHeaderDestination extends BackboneElement {
   /**
-           * Contains extended information for property 'endpoint'.
-           */
+    * Contains extended information for property 'endpoint'.
+    */
   var _endpoint: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'name'.
-           */
+    * Contains extended information for property 'name'.
+    */
   var _name: js.UndefOr[Element] = js.undefined
   /**
-           * Actual destination address or id
-           */
+    * Actual destination address or id
+    */
   var endpoint: uri
   /**
-           * Name of system
-           */
+    * Name of system
+    */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Particular delivery destination within the destination
-           */
+    * Particular delivery destination within the destination
+    */
   var target: js.UndefOr[Reference] = js.undefined
 }
 

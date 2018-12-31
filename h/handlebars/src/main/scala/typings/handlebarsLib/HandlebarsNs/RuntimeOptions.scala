@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RuntimeOptions extends js.Object {
   var blockParams: js.UndefOr[js.Array[_]] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined

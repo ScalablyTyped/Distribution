@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Grant extends js.Object {
   var __raw: java.lang.String
   var access_token: Token

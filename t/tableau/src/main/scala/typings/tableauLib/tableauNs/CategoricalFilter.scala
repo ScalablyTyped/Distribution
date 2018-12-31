@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class CategoricalFilter () extends Filter {
   /**
-           * Gets the collection of values that are currently set on the filter.
-           * This is a native JavaScript array and not a keyed collection.
-           * Note that only the first 200 values are returned.
-           */
+    * Gets the collection of values that are currently set on the filter.
+    * This is a native JavaScript array and not a keyed collection.
+    * Note that only the first 200 values are returned.
+    */
   def getAppliedValues(): js.Array[DataValue] = js.native
   /** Gets a value indicating whether the filter is exclude or include (default). */
   def getIsExcludeMode(): scala.Boolean = js.native

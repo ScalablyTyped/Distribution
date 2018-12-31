@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ZeptoEffects extends js.Object {
   /**
   	* (default false in browsers that support CSS transitions): set to true to disable all animate() transitions.

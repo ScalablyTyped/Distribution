@@ -12,50 +12,50 @@ sealed trait ExtensionPolicyFlags extends js.Object
 @js.native
 object ExtensionPolicyFlags extends js.Object {
   /**
-       * Mask that defines all permissions
-       */
+    * Mask that defines all permissions
+    */
   @js.native
   sealed trait All
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ExtensionPolicyFlags
   
   /**
-       * Permission in 1st party extensions
-       */
+    * Permission in 1st party extensions
+    */
   @js.native
   sealed trait FirstParty
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ExtensionPolicyFlags
   
   /**
-       * No permission
-       */
+    * No permission
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ExtensionPolicyFlags
   
   /**
-       * Premission in extensions that are in preview
-       */
+    * Premission in extensions that are in preview
+    */
   @js.native
   sealed trait Preview
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ExtensionPolicyFlags
   
   /**
-       * Permission on private extensions
-       */
+    * Permission on private extensions
+    */
   @js.native
   sealed trait Private
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ExtensionPolicyFlags
   
   /**
-       * Permission on public extensions
-       */
+    * Permission on public extensions
+    */
   @js.native
   sealed trait Public
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ExtensionPolicyFlags
   
   /**
-       * Premission in relased extensions
-       */
+    * Premission in relased extensions
+    */
   @js.native
   sealed trait Released
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ExtensionPolicyFlags

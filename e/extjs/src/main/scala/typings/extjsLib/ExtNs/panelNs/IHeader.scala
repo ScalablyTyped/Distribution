@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHeader
   extends extjsLib.ExtNs.containerNs.IContainer {
   /** [Method] Add a tool to the header

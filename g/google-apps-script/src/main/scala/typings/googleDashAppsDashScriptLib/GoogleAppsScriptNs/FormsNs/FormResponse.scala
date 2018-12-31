@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FormResponse extends js.Object {
   def getEditResponseUrl(): java.lang.String
   def getGradableItemResponses(): js.Array[ItemResponse]

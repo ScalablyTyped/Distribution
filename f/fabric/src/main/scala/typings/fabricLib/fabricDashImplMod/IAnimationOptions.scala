@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAnimationOptions extends js.Object {
   /**
   	 *  Value to modify the property by, default: end - start

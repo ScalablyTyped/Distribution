@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VastMediaFile extends js.Object {
   var apiFramework: js.Any
   var bitrate: scala.Double

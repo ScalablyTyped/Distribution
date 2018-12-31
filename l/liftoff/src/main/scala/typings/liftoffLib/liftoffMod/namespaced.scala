@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("liftoff", JSImport.Namespace)
 @js.native
+/**
+  * Create an instance of Liftoff to invoke your application.
+  */
 class namespaced () extends Liftoff {
-  /**
-       * Create an instance of Liftoff to invoke your application.
-       */
   def this(options: liftoffLib.liftoffMod.LiftoffNs.Options) = this()
 }
 

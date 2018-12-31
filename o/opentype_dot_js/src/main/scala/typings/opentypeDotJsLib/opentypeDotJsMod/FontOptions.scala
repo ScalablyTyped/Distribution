@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FontOptions extends js.Object {
   var ascender: scala.Double
   var copyright: js.UndefOr[java.lang.String] = js.undefined

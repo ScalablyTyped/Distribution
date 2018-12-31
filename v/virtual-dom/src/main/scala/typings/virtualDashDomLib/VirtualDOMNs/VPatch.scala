@@ -16,13 +16,12 @@ import scala.scalajs.js.annotation._
 //   REMOVE = 7,
 //   THUNK = 8
 // }
-
 trait VPatch extends js.Object {
   var patch: js.Any
   /**
-      type is set to 'VirtualPatch' on the prototype, but overridden in the
-      constructor with a number.
-      */
+    type is set to 'VirtualPatch' on the prototype, but overridden in the
+    constructor with a number.
+    */
   var `type`: scala.Double
   var vNode: VNode
   var version: java.lang.String

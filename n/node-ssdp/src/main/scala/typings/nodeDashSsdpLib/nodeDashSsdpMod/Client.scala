@@ -43,11 +43,6 @@ class Client () extends Base {
   	 * @returns promise when socket.bind is ready
   	 */
   def start(): js.Promise[scala.Unit] = js.native
-  /**
-  	 * Start the listener for multicast notifications from SSDP devices
-  	 * @param cb callback to socket.bind
-  	 * @returns promise when socket.bind is ready
-  	 */
   def start(cb: js.Function1[/* error */ nodeLib.Error, scala.Unit]): js.Promise[scala.Unit] = js.native
   /**
   	 * Close UDP socket.

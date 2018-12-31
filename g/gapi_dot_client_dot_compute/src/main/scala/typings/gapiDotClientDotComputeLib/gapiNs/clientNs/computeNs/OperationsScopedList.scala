@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OperationsScopedList extends js.Object {
   /** [Output Only] List of operations contained in this scope. */
   var operations: js.UndefOr[js.Array[Operation]] = js.undefined

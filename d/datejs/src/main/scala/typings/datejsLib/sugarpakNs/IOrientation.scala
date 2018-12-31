@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOrientation extends IAddOrientation {
   def apr(): datejsLib.Date
   def april(): datejsLib.Date

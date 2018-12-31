@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataSourceAssetCallback extends js.Object {
   var getRowData: js.UndefOr[
     js.Function3[

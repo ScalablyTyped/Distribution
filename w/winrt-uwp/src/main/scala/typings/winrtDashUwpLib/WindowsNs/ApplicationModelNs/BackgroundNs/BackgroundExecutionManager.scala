@@ -15,33 +15,33 @@ abstract class BackgroundExecutionManager () extends js.Object
 @js.native
 object BackgroundExecutionManager extends js.Object {
   /**
-                   * Gets the ability of the calling lock screen app to perform background activity and update its badge.
-                   * @return One of the enumeration values that specify the app's capabilities on the lock screen.
-                   */
+    * Gets the ability of the calling lock screen app to perform background activity and update its badge.
+    * @return One of the enumeration values that specify the app's capabilities on the lock screen.
+    */
   def getAccessStatus(): winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.BackgroundAccessStatus = js.native
   /**
-                   * Gets the ability of a specific lock screen app to perform background activity and update its badge.
-                   * @param applicationId The Package Relative Application ID (PRAID) of the app whose capabilities are being retrieved. The specified app must be in the same package as the calling app.
-                   * @return One of the enumeration values that specify the app's capabilities on the lock screen.
-                   */
+    * Gets the ability of a specific lock screen app to perform background activity and update its badge.
+    * @param applicationId The Package Relative Application ID (PRAID) of the app whose capabilities are being retrieved. The specified app must be in the same package as the calling app.
+    * @return One of the enumeration values that specify the app's capabilities on the lock screen.
+    */
   def getAccessStatus(applicationId: java.lang.String): winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.BackgroundAccessStatus = js.native
   /** Removes the calling app from the lock screen's apps list. */
   def removeAccess(): scala.Unit = js.native
   /**
-                   * Removes a specific app from the lock screen's apps list.
-                   * @param applicationId The Package Relative Application ID (PRAID) of the app to be removed from the lock screen. The specified app must be in the same package as the calling app.
-                   */
+    * Removes a specific app from the lock screen's apps list.
+    * @param applicationId The Package Relative Application ID (PRAID) of the app to be removed from the lock screen. The specified app must be in the same package as the calling app.
+    */
   def removeAccess(applicationId: java.lang.String): scala.Unit = js.native
   /**
-                   * Requests access for an app to run background tasks.
-                   * @return The object, bound to the calling app, that is used to request that the app be added to the lock screen's apps list. When the operation completes, it returns a member of the BackgroundAccessStatus enumeration that specifies the outcome.
-                   */
+    * Requests access for an app to run background tasks.
+    * @return The object, bound to the calling app, that is used to request that the app be added to the lock screen's apps list. When the operation completes, it returns a member of the BackgroundAccessStatus enumeration that specifies the outcome.
+    */
   def requestAccessAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.BackgroundAccessStatus] = js.native
   /**
-                   * Requests access for an app to run background tasks.
-                   * @param applicationId The Package Relative Application ID (PRAID) of the app to be added to the lock screen. The specified app must be in the same package as the calling app.
-                   * @return The object, bound to the app specified by applicationId, that is used to request that the app be added to the lock screen's apps list. When the operation completes, it returns a member of the BackgroundAccessStatus enumeration that specifies the outcome.
-                   */
+    * Requests access for an app to run background tasks.
+    * @param applicationId The Package Relative Application ID (PRAID) of the app to be added to the lock screen. The specified app must be in the same package as the calling app.
+    * @return The object, bound to the app specified by applicationId, that is used to request that the app be added to the lock screen's apps list. When the operation completes, it returns a member of the BackgroundAccessStatus enumeration that specifies the outcome.
+    */
   def requestAccessAsync(applicationId: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.BackgroundAccessStatus] = js.native
 }
 

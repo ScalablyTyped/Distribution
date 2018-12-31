@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait ShapeTextHorzOverflowType extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.ShapeTextHorzOverflowType")
 @js.native
 object ShapeTextHorzOverflowType extends js.Object {

@@ -9,795 +9,795 @@ import scala.scalajs.js.annotation._
 sealed trait ProjectTaskFields extends js.Object
 
 /**
-     * Specifies the task fields that are available as a parameter for the {@link Office.Document | Document}.getTaskFieldAsync method.
-     *
-     * @remarks
-     * A ProjectTaskFields constant can be used as a parameter of the {@link Office.Document | Document}.getTaskFieldAsync method.
-     *
-     * For more information about working with fields in Project, see the 
-     * {@link https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference. 
-     * In Project Help, search for Available fields.
-     * 
-     * **Support details**
-     * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
-     * An empty cell indicates that the Office host application doesn't support this enumeration.
-     * 
-     * For more information about Office host application and server requirements, see 
-     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-     * 
-     * *Supported hosts, by platform*
-     *  <table>
-     *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
-     *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                            </td></tr>
-     *  </table>
-     */
+  * Specifies the task fields that are available as a parameter for the {@link Office.Document | Document}.getTaskFieldAsync method.
+  *
+  * @remarks
+  * A ProjectTaskFields constant can be used as a parameter of the {@link Office.Document | Document}.getTaskFieldAsync method.
+  *
+  * For more information about working with fields in Project, see the 
+  * {@link https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference. 
+  * In Project Help, search for Available fields.
+  * 
+  * **Support details**
+  * 
+  * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+  * An empty cell indicates that the Office host application doesn't support this enumeration.
+  * 
+  * For more information about Office host application and server requirements, see 
+  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+  * 
+  * *Supported hosts, by platform*
+  *  <table>
+  *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
+  *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                            </td></tr>
+  *  </table>
+  */
 @JSGlobal("Office.ProjectTaskFields")
 @js.native
 object ProjectTaskFields extends js.Object {
   /**
-           * Indicates whether the task is active.
-           */
+    * Indicates whether the task is active.
+    */
   @js.native
   sealed trait Active
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The current actual cost for the task.
-           */
+    * The current actual cost for the task.
+    */
   @js.native
   sealed trait ActualCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The actual duration of the task, in minutes.
-           */
+    * The actual duration of the task, in minutes.
+    */
   @js.native
   sealed trait ActualDuration
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The actual finish date of the task.
-           */
+    * The actual finish date of the task.
+    */
   @js.native
   sealed trait ActualFinish
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The actual overtime cost for the task.
-           */
+    * The actual overtime cost for the task.
+    */
   @js.native
   sealed trait ActualOvertimeCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The actual overtime work for the task, in minutes.
-           */
+    * The actual overtime work for the task, in minutes.
+    */
   @js.native
   sealed trait ActualOvertimeWork
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The actual start date of the task.
-           */
+    * The actual start date of the task.
+    */
   @js.native
   sealed trait ActualStart
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The actual work for the task, in minutes.
-           */
+    * The actual work for the task, in minutes.
+    */
   @js.native
   sealed trait ActualWork
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget cost for the baseline task.
-           */
+    * The budget cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline10BudgetCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget work for the baseline task, in hours.
-           */
+    * The budget work for the baseline task, in hours.
+    */
   @js.native
   sealed trait Baseline10BudgetWork
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The cost for the baseline task.
-           */
+    * The cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline10Cost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The duration for the baseline task, in minutes.
-           */
+    * The duration for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline10Duration
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The finish date for the baseline task.
-           */
+    * The finish date for the baseline task.
+    */
   @js.native
   sealed trait Baseline10Finish
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The fixed cost of any non-resource expense for the baseline task.
-           */
+    * The fixed cost of any non-resource expense for the baseline task.
+    */
   @js.native
   sealed trait Baseline10FixedCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
-           * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-           */
+    * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+    * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+    */
   @js.native
   sealed trait Baseline10FixedCostAccrual
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The start date for the baseline task.
-           */
+    * The start date for the baseline task.
+    */
   @js.native
   sealed trait Baseline10Start
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The total person-hours scheduled for the baseline task, in minutes.
-           */
+    * The total person-hours scheduled for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline10Work
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget cost for the baseline task.
-           */
+    * The budget cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline1BudgetCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget work for the baseline task, in hours.
-           */
+    * The budget work for the baseline task, in hours.
+    */
   @js.native
   sealed trait Baseline1BudgetWork
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The cost for the baseline task.
-           */
+    * The cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline1Cost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The duration for the baseline task, in minutes.
-           */
+    * The duration for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline1Duration
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The finish date for the baseline task.
-           */
+    * The finish date for the baseline task.
+    */
   @js.native
   sealed trait Baseline1Finish
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The fixed cost of any non-resource expense for the baseline task.
-           */
+    * The fixed cost of any non-resource expense for the baseline task.
+    */
   @js.native
   sealed trait Baseline1FixedCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
-           * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-           */
+    * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+    * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+    */
   @js.native
   sealed trait Baseline1FixedCostAccrual
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The start date for the baseline task.
-           */
+    * The start date for the baseline task.
+    */
   @js.native
   sealed trait Baseline1Start
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The total person-hours scheduled for the baseline task, in minutes.
-           */
+    * The total person-hours scheduled for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline1Work
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget cost for the baseline task.
-           */
+    * The budget cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline2BudgetCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget work for the baseline task, in hours.
-           */
+    * The budget work for the baseline task, in hours.
+    */
   @js.native
   sealed trait Baseline2BudgetWork
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The cost for the baseline task.
-           */
+    * The cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline2Cost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The duration for the baseline task, in minutes.
-           */
+    * The duration for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline2Duration
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The finish date for the baseline task.
-           */
+    * The finish date for the baseline task.
+    */
   @js.native
   sealed trait Baseline2Finish
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The fixed cost of any non-resource expense for the baseline task.
-           */
+    * The fixed cost of any non-resource expense for the baseline task.
+    */
   @js.native
   sealed trait Baseline2FixedCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
-           * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-           */
+    * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+    * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+    */
   @js.native
   sealed trait Baseline2FixedCostAccrual
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The start date for the baseline task.
-           */
+    * The start date for the baseline task.
+    */
   @js.native
   sealed trait Baseline2Start
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The total person-hours scheduled for the baseline task, in minutes.
-           */
+    * The total person-hours scheduled for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline2Work
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget cost for the baseline task.
-           */
+    * The budget cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline3BudgetCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget work for the baseline task, in hours.
-           */
+    * The budget work for the baseline task, in hours.
+    */
   @js.native
   sealed trait Baseline3BudgetWork
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The cost for the baseline task.
-           */
+    * The cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline3Cost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The duration for the baseline task, in minutes.
-           */
+    * The duration for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline3Duration
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The finish date for the baseline task.
-           */
+    * The finish date for the baseline task.
+    */
   @js.native
   sealed trait Baseline3Finish
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The fixed cost of any non-resource expense for the baseline task.
-           */
+    * The fixed cost of any non-resource expense for the baseline task.
+    */
   @js.native
   sealed trait Baseline3FixedCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
-           * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-           */
+    * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+    * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+    */
   @js.native
   sealed trait Baseline3FixedCostAccrual
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The total person-hours scheduled for the baseline task, in minutes.
-           */
+    * The total person-hours scheduled for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline3Work
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget cost for the baseline task.
-           */
+    * The budget cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline4BudgetCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget work for the baseline task, in hours.
-           */
+    * The budget work for the baseline task, in hours.
+    */
   @js.native
   sealed trait Baseline4BudgetWork
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The cost for the baseline task.
-           */
+    * The cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline4Cost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The duration for the baseline task, in minutes.
-           */
+    * The duration for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline4Duration
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The finish date for the baseline task.
-           */
+    * The finish date for the baseline task.
+    */
   @js.native
   sealed trait Baseline4Finish
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The fixed cost of any non-resource expense for the baseline task.
-           */
+    * The fixed cost of any non-resource expense for the baseline task.
+    */
   @js.native
   sealed trait Baseline4FixedCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
-           * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-           */
+    * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+    * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+    */
   @js.native
   sealed trait Baseline4FixedCostAccrual
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The start date for the baseline task.
-           */
+    * The start date for the baseline task.
+    */
   @js.native
   sealed trait Baseline4Start
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The total person-hours scheduled for the baseline task, in minutes.
-           */
+    * The total person-hours scheduled for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline4Work
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget cost for the baseline task.
-           */
+    * The budget cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline5BudgetCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget work for the baseline task, in hours.
-           */
+    * The budget work for the baseline task, in hours.
+    */
   @js.native
   sealed trait Baseline5BudgetWork
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The cost for the baseline task.
-           */
+    * The cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline5Cost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The duration for the baseline task, in minutes.
-           */
+    * The duration for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline5Duration
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The finish date for the baseline task.
-           */
+    * The finish date for the baseline task.
+    */
   @js.native
   sealed trait Baseline5Finish
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The fixed cost of any non-resource expense for the baseline task.
-           */
+    * The fixed cost of any non-resource expense for the baseline task.
+    */
   @js.native
   sealed trait Baseline5FixedCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
-           * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-           */
+    * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+    * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+    */
   @js.native
   sealed trait Baseline5FixedCostAccrual
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The start date for the baseline task.
-           */
+    * The start date for the baseline task.
+    */
   @js.native
   sealed trait Baseline5Start
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The total person-hours scheduled for the baseline task, in minutes.
-           */
+    * The total person-hours scheduled for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline5Work
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget cost for the baseline task.
-           */
+    * The budget cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline6BudgetCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget work for the baseline task, in hours.
-           */
+    * The budget work for the baseline task, in hours.
+    */
   @js.native
   sealed trait Baseline6BudgetWork
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The cost for the baseline task.
-           */
+    * The cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline6Cost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The duration for the baseline task, in minutes.
-           */
+    * The duration for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline6Duration
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The finish date for the baseline task.
-           */
+    * The finish date for the baseline task.
+    */
   @js.native
   sealed trait Baseline6Finish
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The fixed cost of any non-resource expense for the baseline task.
-           */
+    * The fixed cost of any non-resource expense for the baseline task.
+    */
   @js.native
   sealed trait Baseline6FixedCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
-           * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-           */
+    * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+    * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+    */
   @js.native
   sealed trait Baseline6FixedCostAccrual
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The start date for the baseline task.
-           */
+    * The start date for the baseline task.
+    */
   @js.native
   sealed trait Baseline6Start
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The total person-hours scheduled for the baseline task, in minutes.
-           */
+    * The total person-hours scheduled for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline6Work
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget cost for the baseline task.
-           */
+    * The budget cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline7BudgetCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget work for the baseline task, in hours.
-           */
+    * The budget work for the baseline task, in hours.
+    */
   @js.native
   sealed trait Baseline7BudgetWork
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The cost for the baseline task.
-           */
+    * The cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline7Cost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The duration for the baseline task, in minutes.
-           */
+    * The duration for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline7Duration
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The finish date for the baseline task.
-           */
+    * The finish date for the baseline task.
+    */
   @js.native
   sealed trait Baseline7Finish
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The fixed cost of any non-resource expense for the baseline task.
-           */
+    * The fixed cost of any non-resource expense for the baseline task.
+    */
   @js.native
   sealed trait Baseline7FixedCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
-           * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-           */
+    * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+    * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+    */
   @js.native
   sealed trait Baseline7FixedCostAccrual
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The start date for the baseline task.
-           */
+    * The start date for the baseline task.
+    */
   @js.native
   sealed trait Baseline7Start
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The total person-hours scheduled for the baseline task, in minutes.
-           */
+    * The total person-hours scheduled for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline7Work
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget cost for the baseline task.
-           */
+    * The budget cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline8BudgetCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget work for the baseline task, in hours.
-           */
+    * The budget work for the baseline task, in hours.
+    */
   @js.native
   sealed trait Baseline8BudgetWork
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The cost for the baseline task.
-           */
+    * The cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline8Cost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The duration for the baseline task, in minutes.
-           */
+    * The duration for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline8Duration
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The finish date for the baseline task.
-           */
+    * The finish date for the baseline task.
+    */
   @js.native
   sealed trait Baseline8Finish
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The fixed cost of any non-resource expense for the baseline task.
-           */
+    * The fixed cost of any non-resource expense for the baseline task.
+    */
   @js.native
   sealed trait Baseline8FixedCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
-           * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-           */
+    * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+    * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+    */
   @js.native
   sealed trait Baseline8FixedCostAccrual
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The start date for the baseline task.
-           */
+    * The start date for the baseline task.
+    */
   @js.native
   sealed trait Baseline8Start
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The total person-hours scheduled for the baseline task, in minutes.
-           */
+    * The total person-hours scheduled for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline8Work
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget cost for the baseline task.
-           */
+    * The budget cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline9BudgetCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget work for the baseline task, in hours.
-           */
+    * The budget work for the baseline task, in hours.
+    */
   @js.native
   sealed trait Baseline9BudgetWork
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The cost for the baseline task.
-           */
+    * The cost for the baseline task.
+    */
   @js.native
   sealed trait Baseline9Cost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The duration for the baseline task, in minutes.
-           */
+    * The duration for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline9Duration
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The finish date for the baseline task.
-           */
+    * The finish date for the baseline task.
+    */
   @js.native
   sealed trait Baseline9Finish
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The fixed cost of any non-resource expense for the baseline task.
-           */
+    * The fixed cost of any non-resource expense for the baseline task.
+    */
   @js.native
   sealed trait Baseline9FixedCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
-           * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-           */
+    * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+    * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+    */
   @js.native
   sealed trait Baseline9FixedCostAccrual
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The start date for the baseline task.
-           */
+    * The start date for the baseline task.
+    */
   @js.native
   sealed trait Baseline9Start
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The total person-hours scheduled for the baseline task, in minutes.
-           */
+    * The total person-hours scheduled for the baseline task, in minutes.
+    */
   @js.native
   sealed trait Baseline9Work
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget cost for the baseline task.
-           */
+    * The budget cost for the baseline task.
+    */
   @js.native
   sealed trait BaselineBudgetCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget work for the baseline task, in hours.
-           */
+    * The budget work for the baseline task, in hours.
+    */
   @js.native
   sealed trait BaselineBudgetWork
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The cost for the baseline task.
-           */
+    * The cost for the baseline task.
+    */
   @js.native
   sealed trait BaselineCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The duration for the baseline task, in minutes.
-           */
+    * The duration for the baseline task, in minutes.
+    */
   @js.native
   sealed trait BaselineDuration
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The finish date for the baseline task.
-           */
+    * The finish date for the baseline task.
+    */
   @js.native
   sealed trait BaselineFinish
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The fixed cost of any non-resource expense for the baseline task.
-           */
+    * The fixed cost of any non-resource expense for the baseline task.
+    */
   @js.native
   sealed trait BaselineFixedCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
-           * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-           */
+    * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+    * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+    */
   @js.native
   sealed trait BaselineFixedCostAccrual
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The start date for the baseline task.
-           */
+    * The start date for the baseline task.
+    */
   @js.native
   sealed trait BaselineStart
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The total person-hours scheduled for the baseline task, in minutes.
-           */
+    * The total person-hours scheduled for the baseline task, in minutes.
+    */
   @js.native
   sealed trait BaselineWork
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The start date for the baseline task.
-           */
+    * The start date for the baseline task.
+    */
   @js.native
   sealed trait Basline3Start
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The budget cost for the task.
-           */
+    * The budget cost for the task.
+    */
   @js.native
   sealed trait BudgetCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
@@ -811,1214 +811,1214 @@ object ProjectTaskFields extends js.Object {
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-          * The budget work for the task, in hours.
-          */
+    * The budget work for the task, in hours.
+    */
   @js.native
   sealed trait BudgetWork
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A constraint date for the task.
-           */
+    * A constraint date for the task.
+    */
   @js.native
   sealed trait ConstraintDate
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A constraint type for the task: As Soon As Possible = 0, As Late As Possible = 1, Must Start On = 2, Must Finish On = 3, 
-           * Start No Earlier Than = 4, Start No Later Than = 5, Finish No Earlier Than = 6, Finish No Later Than = 7.
-           */
+    * A constraint type for the task: As Soon As Possible = 0, As Late As Possible = 1, Must Start On = 2, Must Finish On = 3, 
+    * Start No Earlier Than = 4, Start No Later Than = 5, Finish No Earlier Than = 6, Finish No Later Than = 7.
+    */
   @js.native
   sealed trait ConstraintType
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The total cost of the task.
-           */
+    * The total cost of the task.
+    */
   @js.native
   sealed trait Cost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A cost field of the task.
-           */
+    * A cost field of the task.
+    */
   @js.native
   sealed trait Cost1
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A cost field of the task.
-           */
+    * A cost field of the task.
+    */
   @js.native
   sealed trait Cost10
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A cost field of the task.
-           */
+    * A cost field of the task.
+    */
   @js.native
   sealed trait Cost2
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A cost field of the task.
-           */
+    * A cost field of the task.
+    */
   @js.native
   sealed trait Cost3
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A cost field of the task.
-           */
+    * A cost field of the task.
+    */
   @js.native
   sealed trait Cost4
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A cost field of the task.
-           */
+    * A cost field of the task.
+    */
   @js.native
   sealed trait Cost5
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A cost field of the task.
-           */
+    * A cost field of the task.
+    */
   @js.native
   sealed trait Cost6
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A cost field of the task.
-           */
+    * A cost field of the task.
+    */
   @js.native
   sealed trait Cost7
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A cost field of the task.
-           */
+    * A cost field of the task.
+    */
   @js.native
   sealed trait Cost8
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A cost field of the task.
-           */
+    * A cost field of the task.
+    */
   @js.native
   sealed trait Cost9
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * Indicates whether the task is on the critical path.
-           */
+    * Indicates whether the task is on the critical path.
+    */
   @js.native
   sealed trait Critical
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A date field of the task.
-           */
+    * A date field of the task.
+    */
   @js.native
   sealed trait Date1
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A date field of the task.
-           */
+    * A date field of the task.
+    */
   @js.native
   sealed trait Date10
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A date field of the task.
-           */
+    * A date field of the task.
+    */
   @js.native
   sealed trait Date2
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A date field of the task.
-           */
+    * A date field of the task.
+    */
   @js.native
   sealed trait Date3
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A date field of the task.
-           */
+    * A date field of the task.
+    */
   @js.native
   sealed trait Date4
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A date field of the task.
-           */
+    * A date field of the task.
+    */
   @js.native
   sealed trait Date5
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A date field of the task.
-           */
+    * A date field of the task.
+    */
   @js.native
   sealed trait Date6
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A date field of the task.
-           */
+    * A date field of the task.
+    */
   @js.native
   sealed trait Date7
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A date field of the task.
-           */
+    * A date field of the task.
+    */
   @js.native
   sealed trait Date8
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A date field of the task.
-           */
+    * A date field of the task.
+    */
   @js.native
   sealed trait Date9
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The deadline for a task.
-           */
+    * The deadline for a task.
+    */
   @js.native
   sealed trait Deadline
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A duration field of the task.
-           */
+    * A duration field of the task.
+    */
   @js.native
   sealed trait Duration
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A duration field of the task.
-           */
+    * A duration field of the task.
+    */
   @js.native
   sealed trait Duration1
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A duration field of the task.
-           */
+    * A duration field of the task.
+    */
   @js.native
   sealed trait Duration10
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A duration field of the task.
-           */
+    * A duration field of the task.
+    */
   @js.native
   sealed trait Duration2
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A duration field of the task.
-           */
+    * A duration field of the task.
+    */
   @js.native
   sealed trait Duration3
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A duration field of the task.
-           */
+    * A duration field of the task.
+    */
   @js.native
   sealed trait Duration4
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A duration field of the task.
-           */
+    * A duration field of the task.
+    */
   @js.native
   sealed trait Duration5
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A duration field of the task.
-           */
+    * A duration field of the task.
+    */
   @js.native
   sealed trait Duration6
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A duration field of the task.
-           */
+    * A duration field of the task.
+    */
   @js.native
   sealed trait Duration7
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A duration field of the task.
-           */
+    * A duration field of the task.
+    */
   @js.native
   sealed trait Duration8
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A duration field of the task.
-           */
+    * A duration field of the task.
+    */
   @js.native
   sealed trait Duration9
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The method for calculating earned value for the task.
-           */
+    * The method for calculating earned value for the task.
+    */
   @js.native
   sealed trait EarnedValueMethod
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The finish date of the task.
-           */
+    * The finish date of the task.
+    */
   @js.native
   sealed trait Finish
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish1
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish10
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish2
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish3
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish4
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish5
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish6
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish7
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish8
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish9
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The duration between the Early Finish and Late Finish dates for the task, in minutes.
-           */
+    * The duration between the Early Finish and Late Finish dates for the task, in minutes.
+    */
   @js.native
   sealed trait FinishSlack
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The fixed cost for the task.
-           */
+    * The fixed cost for the task.
+    */
   @js.native
   sealed trait FixedCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
-           * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-           */
+    * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+    * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+    */
   @js.native
   sealed trait FixedCostAccrual
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag1
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag10
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag11
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag12
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag13
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag14
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag15
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag16
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag17
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag18
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag19
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag2
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag20
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag3
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag4
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag5
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag6
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag7
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag8
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A Boolean flag field for the task.
-           */
+    * A Boolean flag field for the task.
+    */
   @js.native
   sealed trait Flag9
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The amount of time that the task can be delayed without delaying its successor tasks.
-           */
+    * The amount of time that the task can be delayed without delaying its successor tasks.
+    */
   @js.native
   sealed trait FreeSlack
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * Indicates whether the task has rollup subtasks.
-           */
+    * Indicates whether the task has rollup subtasks.
+    */
   @js.native
   sealed trait HasRollupSubTasks
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The index of the selected task. After the project summary task, the index of the first task in a project is 1.
-           */
+    * The index of the selected task. After the project summary task, the index of the first task in a project is 1.
+    */
   @js.native
   sealed trait ID
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * Indicates whether subtask information is rolled up to the summary task bar.
-           */
+    * Indicates whether subtask information is rolled up to the summary task bar.
+    */
   @js.native
   sealed trait IsRollup
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * Indicates whether the task is a milestone.
-           */
+    * Indicates whether the task is a milestone.
+    */
   @js.native
   sealed trait Milestone
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The name of the task.
-           */
+    * The name of the task.
+    */
   @js.native
   sealed trait Name
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The text value of the notes regarding the task.
-           */
+    * The text value of the notes regarding the task.
+    */
   @js.native
   sealed trait Notes
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number1
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number10
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number11
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number12
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number13
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number14
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number15
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number16
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number17
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number18
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number19
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number2
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number20
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number3
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number4
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number5
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number6
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number7
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number8
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A number field for the task.
-           */
+    * A number field for the task.
+    */
   @js.native
   sealed trait Number9
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The level of the task in the outline hierarchy.
-           */
+    * The level of the task in the outline hierarchy.
+    */
   @js.native
   sealed trait OutlineLevel
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * Indicates whether any assignments for a task are overallocated.
-           */
+    * Indicates whether any assignments for a task are overallocated.
+    */
   @js.native
   sealed trait Overallocated
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The overtime cost for the task.
-           */
+    * The overtime cost for the task.
+    */
   @js.native
   sealed trait OvertimeCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The overtime work for the task.
-           */
+    * The overtime work for the task.
+    */
   @js.native
   sealed trait OvertimeWork
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The percent complete status of the task.
-           */
+    * The percent complete status of the task.
+    */
   @js.native
   sealed trait PercentComplete
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The percentage of work completed for the task.
-           */
+    * The percentage of work completed for the task.
+    */
   @js.native
   sealed trait PercentWorkComplete
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The IDs of the task's predecessors.
-           */
+    * The IDs of the task's predecessors.
+    */
   @js.native
   sealed trait Predecessors
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The finish date of a task before leveling occurred.
-           */
+    * The finish date of a task before leveling occurred.
+    */
   @js.native
   sealed trait PreleveledFinish
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The start date of a task before leveling occurred.
-           */
+    * The start date of a task before leveling occurred.
+    */
   @js.native
   sealed trait PreleveledStart
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The priority of the task, with values from 0 (low) to 1000 (high). The default priority value is 500.
-           */
+    * The priority of the task, with values from 0 (low) to 1000 (high). The default priority value is 500.
+    */
   @js.native
   sealed trait Priority
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The amount of regular work for the task.
-           */
+    * The amount of regular work for the task.
+    */
   @js.native
   sealed trait RegularWork
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The remaining cost for the task.
-           */
+    * The remaining cost for the task.
+    */
   @js.native
   sealed trait RemainingCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The remaining duration for the task, in minutes.
-           */
+    * The remaining duration for the task, in minutes.
+    */
   @js.native
   sealed trait RemainingDuration
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The remaining overtime cost for the task.
-           */
+    * The remaining overtime cost for the task.
+    */
   @js.native
   sealed trait RemainingOvertimeCost
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The remaining work for the task, in minutes.
-           */
+    * The remaining work for the task, in minutes.
+    */
   @js.native
   sealed trait RemainingWork
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The names of the resources assigned to a task.
-           */
+    * The names of the resources assigned to a task.
+    */
   @js.native
   sealed trait ResourceNames
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The scheduled (as opposed to actual) duration of the task.
-           */
+    * The scheduled (as opposed to actual) duration of the task.
+    */
   @js.native
   sealed trait ScheduledDuration
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The scheduled (as opposed to actual) finish date of the task.
-           */
+    * The scheduled (as opposed to actual) finish date of the task.
+    */
   @js.native
   sealed trait ScheduledFinish
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The scheduled (as opposed to actual) start date of the task.
-           */
+    * The scheduled (as opposed to actual) start date of the task.
+    */
   @js.native
   sealed trait ScheduledStart
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The start date of the task.
-           */
+    * The start date of the task.
+    */
   @js.native
   sealed trait Start
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A start field for the task.
-           */
+    * A start field for the task.
+    */
   @js.native
   sealed trait Start1
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A start field for the task.
-           */
+    * A start field for the task.
+    */
   @js.native
   sealed trait Start10
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A start field for the task.
-           */
+    * A start field for the task.
+    */
   @js.native
   sealed trait Start2
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A start field for the task.
-           */
+    * A start field for the task.
+    */
   @js.native
   sealed trait Start3
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A start field for the task.
-           */
+    * A start field for the task.
+    */
   @js.native
   sealed trait Start4
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A start field for the task.
-           */
+    * A start field for the task.
+    */
   @js.native
   sealed trait Start5
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A start field for the task.
-           */
+    * A start field for the task.
+    */
   @js.native
   sealed trait Start6
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A start field for the task.
-           */
+    * A start field for the task.
+    */
   @js.native
   sealed trait Start7
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A start field for the task.
-           */
+    * A start field for the task.
+    */
   @js.native
   sealed trait Start8
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A start field for the task.
-           */
+    * A start field for the task.
+    */
   @js.native
   sealed trait Start9
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The duration between the Early Start and Late Start dates for the task.
-           */
+    * The duration between the Early Start and Late Start dates for the task.
+    */
   @js.native
   sealed trait StartSlack
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The status of the task: Complete = 0, on schedule = 1, late = 2, future task = 3, status not available = 4.
-           */
+    * The status of the task: Complete = 0, on schedule = 1, late = 2, future task = 3, status not available = 4.
+    */
   @js.native
   sealed trait Status
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The enterprise resource responsible for accepting or rejecting assignment progress updates for the task.
-           */
+    * The enterprise resource responsible for accepting or rejecting assignment progress updates for the task.
+    */
   @js.native
   sealed trait StatusManager
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The IDs of the task's successors.
-           */
+    * The IDs of the task's successors.
+    */
   @js.native
   sealed trait Successors
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * Indicates whether the task is a summary task.
-           */
+    * Indicates whether the task is a summary task.
+    */
   @js.native
   sealed trait Summary
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The GUID of the task calendar.
-           */
+    * The GUID of the task calendar.
+    */
   @js.native
   sealed trait TaskCalendarGUID
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The GUID of the task.
-           */
+    * The GUID of the task.
+    */
   @js.native
   sealed trait TaskGUID
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text1
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text10
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text11
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text12
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text13
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text14
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text15
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text16
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text17
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text18
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text19
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text2
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text20
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text21
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text22
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text23
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text24
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text25
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text26
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text27
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text28
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text29
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text3
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text30
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text4
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text5
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text6
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text7
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text8
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * A text field for the task.
-           */
+    * A text field for the task.
+    */
   @js.native
   sealed trait Text9
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The total slack time for the task, in minutes.
-           */
+    * The total slack time for the task, in minutes.
+    */
   @js.native
   sealed trait TotalSlack
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The way the task is calculated: Fixed units = 0, fixed duration = 1, fixed work = 2.
-           */
+    * The way the task is calculated: Fixed units = 0, fixed duration = 1, fixed work = 2.
+    */
   @js.native
   sealed trait Type
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The work breakdown structure code of the task.
-           */
+    * The work breakdown structure code of the task.
+    */
   @js.native
   sealed trait WBS
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The work breakdown structure codes of the task predecessors, separated by the list separator.
-           */
+    * The work breakdown structure codes of the task predecessors, separated by the list separator.
+    */
   @js.native
   sealed trait WBSPREDECESSORS
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The work breakdown structure codes of the task successors, separated by the list separator.
-           */
+    * The work breakdown structure codes of the task successors, separated by the list separator.
+    */
   @js.native
   sealed trait WBSSUCCESSORS
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The ID of the task in a SharePoint list, for a project that is synchronized with a SharePoint tasks list.
-           */
+    * The ID of the task in a SharePoint list, for a project that is synchronized with a SharePoint tasks list.
+    */
   @js.native
   sealed trait WSSID
     extends officeDashJsLib.OfficeNs.ProjectTaskFields
   
   /**
-           * The total person-hours scheduled for the task, in minutes.
-           */
+    * The total person-hours scheduled for the task, in minutes.
+    */
   @js.native
   sealed trait Work
     extends officeDashJsLib.OfficeNs.ProjectTaskFields

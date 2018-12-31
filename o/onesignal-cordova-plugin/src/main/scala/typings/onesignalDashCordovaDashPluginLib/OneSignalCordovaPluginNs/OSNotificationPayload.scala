@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OSNotificationPayload extends js.Object {
   var actionButtons: js.Array[OSActionButton]
   var additionalData: js.UndefOr[js.Any] = js.undefined

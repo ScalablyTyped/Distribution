@@ -35,14 +35,14 @@ class WorkflowInstanceService ()
   def publishCustomEvent(instance: WorkflowInstance, eventName: java.lang.String, payload: java.lang.String): scala.Unit = js.native
   def resumeWorkflow(instance: WorkflowInstance): scala.Unit = js.native
   /** Starts a Workflow Manager Client 1.0 instance specified by the subscription and passes the supplied parameters.
-              Returns GUID of the instance object.
-              @param payload Object that contains name-value pairs of parameter names and values to pass into the workflow instance. */
+    Returns GUID of the instance object.
+    @param payload Object that contains name-value pairs of parameter names and values to pass into the workflow instance. */
   def startWorkflow(subscription: WorkflowSubscription, payload: org.scalablytyped.runtime.StringDictionary[js.Any]): sharepointLib.SPNs.GuidResult = js.native
   /** Starts a Workflow Manager Client 1.0 instance specified by the subscription and passes the supplied parameters.
-              Returns GUID of the instance object.
-              @param subscription The subscription associated with the workflow instance.
-              @param itemId The integer id of the list item on which to start the workflow instance.
-              @param payload Object that contains name-value pairs of parameter names and values to pass into the workflow instance. */
+    Returns GUID of the instance object.
+    @param subscription The subscription associated with the workflow instance.
+    @param itemId The integer id of the list item on which to start the workflow instance.
+    @param payload Object that contains name-value pairs of parameter names and values to pass into the workflow instance. */
   def startWorkflowOnListItem(
     subscription: WorkflowSubscription,
     itemId: scala.Double,

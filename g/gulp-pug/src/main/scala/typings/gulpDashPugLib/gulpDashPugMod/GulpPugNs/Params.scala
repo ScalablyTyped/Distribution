@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Params
   extends pugLib.pugMod.Options {
   var client: js.UndefOr[scala.Boolean] = js.undefined

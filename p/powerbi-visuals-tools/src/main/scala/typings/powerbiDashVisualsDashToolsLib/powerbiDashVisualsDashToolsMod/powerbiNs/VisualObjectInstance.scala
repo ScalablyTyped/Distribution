@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VisualObjectInstance extends js.Object {
   /** (Optional) VisualObjectInstanceEnumeration category index. */
   var containerIdx: js.UndefOr[scala.Double] = js.undefined

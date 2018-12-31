@@ -48,9 +48,9 @@ object momentDashShortformatModMembers extends js.Object {
   ): momentLib.momentMod.momentNs.Duration = js.native
   def invalid(): momentLib.momentMod.momentNs.Moment = js.native
   def invalid(flags: momentLib.momentMod.momentNs.MomentParsingFlagsOpt): momentLib.momentMod.momentNs.Moment = js.native
-  def isDate(m: js.Any): /* is Date */scala.Boolean = js.native
-  def isDuration(d: js.Any): /* is Duration */scala.Boolean = js.native
-  def isMoment(m: js.Any): /* is Moment */scala.Boolean = js.native
+  def isDate(m: js.Any): /* is std.Date */ scala.Boolean = js.native
+  def isDuration(d: js.Any): /* is moment.moment.moment.Duration */ scala.Boolean = js.native
+  def isMoment(m: js.Any): /* is moment.moment.moment.Moment */ scala.Boolean = js.native
   def lang(): java.lang.String = js.native
   def lang(language: java.lang.String): java.lang.String = js.native
   def lang(language: java.lang.String, definition: momentLib.momentMod.momentNs.Locale): java.lang.String = js.native

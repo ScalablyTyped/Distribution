@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SoaRecord extends js.Object {
   var expire: scala.Double
   var hostmaster: java.lang.String

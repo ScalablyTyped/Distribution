@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IColumnDef extends js.Object {
   /** String name for filter to use on the aggregate label ('currency', 'date', etc..) defaults to cellFilter if not set. */
   var aggLabelFilter: js.UndefOr[java.lang.String] = js.undefined
@@ -45,11 +44,11 @@ trait IColumnDef extends js.Object {
   /** Set the default visiblity of the column */
   var visible: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * This can be an absolute numberor it can also be defined in percentages (20%, 30%),
-           * in weighted *s, or "auto" (which sizes the column based on data length)
-           * (much like WPF/Silverlight)/ note: "auto" only works in single page apps currently because the re-size
-           * happens on "document.ready
-           */
+    * This can be an absolute numberor it can also be defined in percentages (20%, 30%),
+    * in weighted *s, or "auto" (which sizes the column based on data length)
+    * (much like WPF/Silverlight)/ note: "auto" only works in single page apps currently because the re-size
+    * happens on "document.ready
+    */
   var width: js.UndefOr[js.Any] = js.undefined
 }
 

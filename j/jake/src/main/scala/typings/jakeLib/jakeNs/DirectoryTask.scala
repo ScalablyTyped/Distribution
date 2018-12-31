@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DirectoryTask protected () extends FileTask {
   /**
-           * @param name The name of the directory to create.
+    * @param name The name of the directory to create.
   		 */
   def this(name: java.lang.String) = this()
 }

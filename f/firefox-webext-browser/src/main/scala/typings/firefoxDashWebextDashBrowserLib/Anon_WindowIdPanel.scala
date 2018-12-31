@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_WindowIdPanel extends js.Object {
   /** The url to the html file to show in a sidebar. If set to the empty string (''), no sidebar is shown. */
   var panel: java.lang.String | scala.Null

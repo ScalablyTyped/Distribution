@@ -14,7 +14,7 @@ object operatorOnErrorResumeNextMod extends js.Object {
   ): rxjsLib.rxjsMod.Observable[R] = js.native
   def onErrorResumeNext[T, R](
     `this`: rxjsLib.rxjsMod.Observable[T],
-    observables: (rxjsLib.internalTypesMod.ObservableInput[_] | (js.Function1[/* repeated */js.Any, R]))*
+    observables: (rxjsLib.internalTypesMod.ObservableInput[_] | (js.Function1[/* repeated */ js.Any, R]))*
   ): rxjsLib.rxjsMod.Observable[R] = js.native
   def onErrorResumeNext[T, R](`this`: rxjsLib.rxjsMod.Observable[T], v: rxjsLib.internalTypesMod.ObservableInput[R]): rxjsLib.rxjsMod.Observable[R] = js.native
   def onErrorResumeNext[T, T2, T3, R](

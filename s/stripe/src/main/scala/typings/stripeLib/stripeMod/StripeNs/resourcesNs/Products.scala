@@ -9,15 +9,12 @@ import scala.scalajs.js.annotation._
 trait Products extends js.Object {
   def create(data: stripeLib.stripeMod.StripeNs.productsNs.IProductCreationOptions): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
   /**
-               * Creates a new product object.
-               */
+    * Creates a new product object.
+    */
   def create(
     data: stripeLib.stripeMod.StripeNs.productsNs.IProductCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
   ): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
-  /**
-               * Creates a new product object.
-               */
   def create(
     data: stripeLib.stripeMod.StripeNs.productsNs.IProductCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
@@ -29,12 +26,9 @@ trait Products extends js.Object {
   ): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
   def del(productId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
   /**
-               * Delete a product. Deleting a product is only possible if it has no SKUs associated with it.
-               */
+    * Delete a product. Deleting a product is only possible if it has no SKUs associated with it.
+    */
   def del(productId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
-  /**
-               * Delete a product. Deleting a product is only possible if it has no SKUs associated with it.
-               */
   def del(
     productId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
@@ -51,17 +45,14 @@ trait Products extends js.Object {
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
   ] = js.native
   /**
-               * Returns a list of your products. The products are returned sorted by creation date, with the most recently created products appearing first.
-               */
+    * Returns a list of your products. The products are returned sorted by creation date, with the most recently created products appearing first.
+    */
   def list(
     data: stripeLib.stripeMod.StripeNs.productsNs.IProductListOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
   ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
   ] = js.native
-  /**
-               * Returns a list of your products. The products are returned sorted by creation date, with the most recently created products appearing first.
-               */
   def list(
     data: stripeLib.stripeMod.StripeNs.productsNs.IProductListOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
@@ -100,18 +91,14 @@ trait Products extends js.Object {
   def retrieve(productId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
   def retrieve(productId: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptions): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
   /**
-               * Retrieves the details of an existing product. Supply the unique product ID from either a product creation request or the product
-               * list, and Stripe will return the corresponding product information.
-               */
+    * Retrieves the details of an existing product. Supply the unique product ID from either a product creation request or the product
+    * list, and Stripe will return the corresponding product information.
+    */
   def retrieve(
     productId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
   ): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
-  /**
-               * Retrieves the details of an existing product. Supply the unique product ID from either a product creation request or the product
-               * list, and Stripe will return the corresponding product information.
-               */
   def retrieve(
     productId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
@@ -135,22 +122,16 @@ trait Products extends js.Object {
   ): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
   def update(productId: java.lang.String, data: stripeLib.stripeMod.StripeNs.productsNs.IProductUpdateOptions): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
   /**
-               * Updates the specific product by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
-               *
-               * Note that a product's attributes are not editable. Instead, you would need to deactivate the existing product and create a new one
-               * with the new attribute values.
-               */
+    * Updates the specific product by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
+    *
+    * Note that a product's attributes are not editable. Instead, you would need to deactivate the existing product and create a new one
+    * with the new attribute values.
+    */
   def update(
     productId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.productsNs.IProductUpdateOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
   ): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
-  /**
-               * Updates the specific product by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
-               *
-               * Note that a product's attributes are not editable. Instead, you would need to deactivate the existing product and create a new one
-               * with the new attribute values.
-               */
   def update(
     productId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.productsNs.IProductUpdateOptions,

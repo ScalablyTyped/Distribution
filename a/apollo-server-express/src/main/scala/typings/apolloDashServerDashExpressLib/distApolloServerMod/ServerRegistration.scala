@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerRegistration extends js.Object {
   var app: expressLib.expressMod.eNs.Application
   var bodyParserConfig: js.UndefOr[bodyDashParserLib.bodyDashParserMod.bodyParserNs.OptionsJson | scala.Boolean] = js.undefined

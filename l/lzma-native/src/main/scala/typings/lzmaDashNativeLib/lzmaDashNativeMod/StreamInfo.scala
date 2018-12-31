@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StreamInfo extends js.Object {
   var blocks: scala.Double
   var checks: scala.Double

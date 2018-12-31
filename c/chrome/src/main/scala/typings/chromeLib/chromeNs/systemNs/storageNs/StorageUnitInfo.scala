@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StorageUnitInfo extends js.Object {
   /** The total amount of the storage space, in bytes. */
   var capacity: scala.Double
@@ -14,11 +13,11 @@ trait StorageUnitInfo extends js.Object {
   /** The name of the storage unit. */
   var name: java.lang.String
   /**
-           * The media type of the storage unit.
-           * fixed: The storage has fixed media, e.g. hard disk or SSD.
-           * removable: The storage is removable, e.g. USB flash drive.
-           * unknown: The storage type is unknown.
-           */
+    * The media type of the storage unit.
+    * fixed: The storage has fixed media, e.g. hard disk or SSD.
+    * removable: The storage is removable, e.g. USB flash drive.
+    * unknown: The storage type is unknown.
+    */
   var `type`: java.lang.String
 }
 

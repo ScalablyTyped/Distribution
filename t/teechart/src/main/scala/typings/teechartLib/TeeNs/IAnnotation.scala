@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAnnotation extends ITool {
   var bounds: IRectangle
   var format: IFormat

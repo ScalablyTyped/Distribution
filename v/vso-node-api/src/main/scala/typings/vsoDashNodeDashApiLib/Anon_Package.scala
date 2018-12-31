@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Package extends js.Object {
   var artifactSource: scala.Double
   var containerImage: scala.Double

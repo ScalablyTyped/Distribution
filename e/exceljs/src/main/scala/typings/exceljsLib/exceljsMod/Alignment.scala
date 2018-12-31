@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Alignment extends js.Object {
   var horizontal: js.UndefOr[
     exceljsLib.exceljsLibStrings.left | exceljsLib.exceljsLibStrings.center | exceljsLib.exceljsLibStrings.right | exceljsLib.exceljsLibStrings.fill | exceljsLib.exceljsLibStrings.justify | exceljsLib.exceljsLibStrings.centerContinuous | exceljsLib.exceljsLibStrings.distributed

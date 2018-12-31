@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SyslogConfigSetLevels extends AbstractConfigSetLevels {
   var alert: scala.Double
   var crit: scala.Double

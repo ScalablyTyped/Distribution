@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Heading extends js.Object {
   var blockquote: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeSpec
   var code_block: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeSpec

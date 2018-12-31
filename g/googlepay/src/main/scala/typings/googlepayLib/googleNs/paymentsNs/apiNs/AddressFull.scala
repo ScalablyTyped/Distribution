@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AddressFull extends AddressMin {
   var address1: java.lang.String
   var address2: java.lang.String

@@ -48,9 +48,9 @@ class styledGeometry protected () extends js.Object {
   	 */
   def getGeometry(): geometry = js.native
   /**
-       * Gets the styledGeometry's underlying geometryStyle object.
-       * @returns {geometryStyle} The underlying geometry style.
-       */
+    * Gets the styledGeometry's underlying geometryStyle object.
+    * @returns {geometryStyle} The underlying geometry style.
+    */
   def getGeometryStyle(): geometryStyle = js.native
   /**
   	 * Gets path outline color as a CSS style string.
@@ -101,9 +101,9 @@ class styledGeometry protected () extends js.Object {
   	 */
   def setFillOpacity(o: scala.Double): scala.Unit = js.native
   /**
-       * Set this styledGeometry's geometry.
-       * @param {geometry} g A new Geometry.
-       */
+    * Set this styledGeometry's geometry.
+    * @param {geometry} g A new Geometry.
+    */
   def setGeometry(g: geometry): scala.Unit = js.native
   /**
   	 * Set this styledGeometry's geometryStyle.

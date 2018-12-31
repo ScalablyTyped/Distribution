@@ -49,26 +49,26 @@ abstract class CallControl () extends js.Object {
     listener: RedialRequestedEventHandler
   ): scala.Unit = js.native
   /**
-                   * Ends the specified call.
-                   * @param callToken The unique identifier of the specified call.
-                   */
+    * Ends the specified call.
+    * @param callToken The unique identifier of the specified call.
+    */
   def endCall(callToken: scala.Double): scala.Unit = js.native
   /**
-                   * Indicates that the specified call is now active.
-                   * @param callToken The unique identifier of the specified call.
-                   */
+    * Indicates that the specified call is now active.
+    * @param callToken The unique identifier of the specified call.
+    */
   def indicateActiveCall(callToken: scala.Double): scala.Unit = js.native
   /**
-                   * Informs the device that there is an incoming call.
-                   * @param enableRinger Specifies whether the device should activate its built-in ringer.
-                   * @param callerId A numeric string that specifies the incoming caller ID. This parameter can be null, and often is for many VoIP calls.
-                   * @return A call token that uniquely identifies this call.
-                   */
+    * Informs the device that there is an incoming call.
+    * @param enableRinger Specifies whether the device should activate its built-in ringer.
+    * @param callerId A numeric string that specifies the incoming caller ID. This parameter can be null, and often is for many VoIP calls.
+    * @return A call token that uniquely identifies this call.
+    */
   def indicateNewIncomingCall(enableRinger: scala.Boolean, callerId: java.lang.String): scala.Double = js.native
   /**
-                   * Updates device indicators to indicate an outgoing call.
-                   * @return A call token that uniquely identifies this call.
-                   */
+    * Updates device indicators to indicate an outgoing call.
+    * @return A call token that uniquely identifies this call.
+    */
   def indicateNewOutgoingCall(): scala.Double = js.native
   /** Occurs when the device receives a request to answer a call. */
   def onanswerrequested(ev: winrtDashUwpLib.WindowsNs.WinRTEvent[CallControl]): scala.Unit = js.native
@@ -108,15 +108,15 @@ abstract class CallControl () extends js.Object {
 @js.native
 object CallControl extends js.Object {
   /**
-                   * Returns a CallControl class that represents the audio communications device specified by the DeviceInformation ID being passed.
-                   * @param deviceId The DeviceInformation ID of the specified audio communications device.
-                   * @return A class that represents the specified audio communications device.
-                   */
+    * Returns a CallControl class that represents the audio communications device specified by the DeviceInformation ID being passed.
+    * @param deviceId The DeviceInformation ID of the specified audio communications device.
+    * @return A class that represents the specified audio communications device.
+    */
   def fromId(deviceId: java.lang.String): winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.CallControl = js.native
   /**
-                   * Returns a CallControl class that represents the default audio communications device.
-                   * @return A class that represents the default audio communications device.
-                   */
+    * Returns a CallControl class that represents the default audio communications device.
+    * @return A class that represents the default audio communications device.
+    */
   def getDefault(): winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.CallControl = js.native
 }
 

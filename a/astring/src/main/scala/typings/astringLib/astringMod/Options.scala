@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /** generate comments if true (defaults to false) */
   var comments: js.UndefOr[scala.Boolean] = js.undefined

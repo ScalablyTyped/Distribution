@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Sticky state provider
-         */
-
+  * Sticky state provider
+  */
 trait IStickyStateProvider
   extends angularLib.angularMod.angularNs.IServiceProvider {
   def debugMode(): scala.Boolean

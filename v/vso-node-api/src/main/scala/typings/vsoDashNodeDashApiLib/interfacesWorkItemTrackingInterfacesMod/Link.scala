@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Link extends js.Object {
   /**
-       * Collection of link attributes.
-       */
+    * Collection of link attributes.
+    */
   var attributes: org.scalablytyped.runtime.StringDictionary[js.Any]
   /**
-       * Relation type.
-       */
+    * Relation type.
+    */
   var rel: java.lang.String
   /**
-       * Link url.
-       */
+    * Link url.
+    */
   var url: java.lang.String
 }
 

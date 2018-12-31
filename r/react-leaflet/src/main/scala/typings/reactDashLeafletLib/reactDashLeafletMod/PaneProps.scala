@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaneProps extends js.Object {
   var children: js.UndefOr[Children] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined

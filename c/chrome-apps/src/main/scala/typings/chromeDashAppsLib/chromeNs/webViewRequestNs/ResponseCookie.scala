@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * A specification of a cookie in HTTP Responses.
-         */
-
-
+  * A specification of a cookie in HTTP Responses.
+  */
 trait ResponseCookie extends js.Object {
   /** Value of the Domain cookie attribute. */
   var domain: js.UndefOr[java.lang.String] = js.undefined

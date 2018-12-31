@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableBodyProps
   extends reactDashMdLib.libMod.Props {
   var children: js.UndefOr[

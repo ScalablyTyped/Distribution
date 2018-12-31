@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextTrackCueList
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[TextTrackCue] {
   val length: scala.Double

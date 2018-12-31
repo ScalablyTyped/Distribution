@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MarkerProps extends BaseControlProps {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var draggable: js.UndefOr[scala.Boolean] = js.undefined

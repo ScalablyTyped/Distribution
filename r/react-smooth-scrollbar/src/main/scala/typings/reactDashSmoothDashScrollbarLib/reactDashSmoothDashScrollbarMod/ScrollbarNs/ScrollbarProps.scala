@@ -6,20 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial) */ 
-trait ScrollbarProps extends js.Object {
+- Lifted 1 members from Set(std.Partial<smooth-scrollbar.smooth-scrollbar/interfaces.ScrollbarOptions>) */ trait ScrollbarProps extends js.Object {
   /**
-           * Keep scrollbar tracks visible whether it's scrolling or not
-           * @default false
-           */
+    * Keep scrollbar tracks visible whether it's scrolling or not
+    * @default false
+    */
   var alwaysShowTracks: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * Optional class name
-           */
+    * Optional class name
+    */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Pipe to scrollbar.addListener()
-           */
+    * Pipe to scrollbar.addListener()
+    */
   var onScroll: js.UndefOr[
     js.Function2[
       /* status */ smoothDashScrollbarLib.interfacesScrollbarMod.ScrollStatus, 
@@ -28,8 +27,8 @@ trait ScrollbarProps extends js.Object {
     ]
   ] = js.undefined
   /**
-           * Optional style
-           */
+    * Optional style
+    */
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 

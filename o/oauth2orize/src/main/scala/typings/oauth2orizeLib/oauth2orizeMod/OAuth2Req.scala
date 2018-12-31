@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OAuth2Req extends js.Object {
   var clientID: java.lang.String
   var redirectURI: java.lang.String

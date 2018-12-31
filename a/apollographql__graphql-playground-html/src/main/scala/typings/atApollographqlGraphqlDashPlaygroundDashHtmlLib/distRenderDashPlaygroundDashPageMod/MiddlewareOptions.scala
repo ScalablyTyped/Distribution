@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MiddlewareOptions extends js.Object {
   var codeTheme: js.UndefOr[EditorColours] = js.undefined
   var config: js.UndefOr[js.Any] = js.undefined

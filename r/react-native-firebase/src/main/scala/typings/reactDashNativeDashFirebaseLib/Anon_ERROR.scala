@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ERROR extends js.Object {
   var AUTO_VERIFIED: java.lang.String
   var AUTO_VERIFY_TIMEOUT: java.lang.String

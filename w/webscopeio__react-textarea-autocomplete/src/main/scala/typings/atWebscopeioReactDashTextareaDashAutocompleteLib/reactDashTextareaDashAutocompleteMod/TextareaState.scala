@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextareaState[TItem] extends js.Object {
   var actualToken: java.lang.String
   var component: js.UndefOr[reactLib.reactMod.ReactNs.SFC[ItemComponentProps[TItem]]] = js.undefined

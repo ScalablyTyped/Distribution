@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CourseMaterialSet extends js.Object {
   /** Materials attached to this set. */
   var materials: js.UndefOr[js.Array[CourseMaterial]] = js.undefined

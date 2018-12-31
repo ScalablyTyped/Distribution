@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Result extends js.Object {
   /** A version of name escaped to match the npm scoped packages specification. Mostly used when making requests against a registry. When name is null, escapedName will also be null. */
   var escapedName: java.lang.String | scala.Null
@@ -30,15 +29,15 @@ trait Result extends js.Object {
   /** If a name is something like @org/module then the scope field will be set to @org. If it doesn't have a scoped name, then scope is null. */
   var scope: java.lang.String | scala.Null
   /**
-           * One of the following strings:
-           * * git - A git repo
-           * * tag - A tagged version, like "foo@latest"
-           * * version - A specific version number, like "foo@1.2.3"
-           * * range - A version range, like "foo@2.x"
-           * * file - A local .tar.gz, .tar or .tgz file.
-           * * directory - A local directory.
-           * * remote - An http url (presumably to a tgz)
-           */
+    * One of the following strings:
+    * * git - A git repo
+    * * tag - A tagged version, like "foo@latest"
+    * * version - A specific version number, like "foo@1.2.3"
+    * * range - A version range, like "foo@2.x"
+    * * file - A local .tar.gz, .tar or .tgz file.
+    * * directory - A local directory.
+    * * remote - An http url (presumably to a tgz)
+    */
   var `type`: npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.git | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.tag | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.version | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.range | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.file | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.directory | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.remote | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.alias
 }
 

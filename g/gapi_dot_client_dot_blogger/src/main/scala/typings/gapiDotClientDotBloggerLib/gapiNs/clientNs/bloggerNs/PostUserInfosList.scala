@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PostUserInfosList extends js.Object {
   /** The list of Posts with User information for the post, for this Blog. */
   var items: js.UndefOr[js.Array[PostUserInfo]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICommandCall extends js.Object {
   /**
   		 * Name of the command that needs to

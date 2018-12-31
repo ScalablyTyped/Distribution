@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MaskProps extends js.Object {
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var height: js.UndefOr[scala.Double | java.lang.String] = js.undefined

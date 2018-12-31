@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents parameters to use when building a certificate chain. */
 @JSGlobal("Windows.Security.Cryptography.Certificates.ChainBuildingParameters")
 @js.native
+/** Creates a new instance of the ChainBuildingParameters class. */
 class ChainBuildingParameters () extends js.Object {
   /** Gets or sets a value that indicates whether Authority Information Access (AIA) is enabled. */
   var authorityInformationAccessEnabled: scala.Boolean = js.native

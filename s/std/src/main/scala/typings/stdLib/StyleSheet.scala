@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StyleSheet extends js.Object {
   var disabled: scala.Boolean
   val href: java.lang.String | scala.Null

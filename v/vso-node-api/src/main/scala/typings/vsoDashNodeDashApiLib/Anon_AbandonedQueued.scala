@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AbandonedQueued extends js.Object {
   var abandoned: scala.Double
   var completed: scala.Double

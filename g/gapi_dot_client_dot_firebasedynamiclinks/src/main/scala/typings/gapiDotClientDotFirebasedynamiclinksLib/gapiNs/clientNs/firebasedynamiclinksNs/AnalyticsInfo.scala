@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnalyticsInfo extends js.Object {
   /** Google Play Campaign Measurements. */
   var googlePlayAnalytics: js.UndefOr[GooglePlayAnalytics] = js.undefined

@@ -12,34 +12,20 @@ class IAssistance protected () extends js.Object {
   /** ClearDefaultContext Method */
   def ClearDefaultContext(HelpId: java.lang.String): scala.Unit = js.native
   /**
-           * SearchHelp Method
-           * @param Scope [Scope='']
-           */
+    * SearchHelp Method
+    * @param Scope [Scope='']
+    */
   def SearchHelp(Query: java.lang.String): scala.Unit = js.native
-  /**
-           * SearchHelp Method
-           * @param Scope [Scope='']
-           */
   def SearchHelp(Query: java.lang.String, Scope: java.lang.String): scala.Unit = js.native
   /** SetDefaultContext Method */
   def SetDefaultContext(HelpId: java.lang.String): scala.Unit = js.native
   /**
-           * ShowHelp Method
-           * @param HelpId [HelpId='']
-           * @param Scope [Scope='']
-           */
+    * ShowHelp Method
+    * @param HelpId [HelpId='']
+    * @param Scope [Scope='']
+    */
   def ShowHelp(): scala.Unit = js.native
-  /**
-           * ShowHelp Method
-           * @param HelpId [HelpId='']
-           * @param Scope [Scope='']
-           */
   def ShowHelp(HelpId: java.lang.String): scala.Unit = js.native
-  /**
-           * ShowHelp Method
-           * @param HelpId [HelpId='']
-           * @param Scope [Scope='']
-           */
   def ShowHelp(HelpId: java.lang.String, Scope: java.lang.String): scala.Unit = js.native
 }
 

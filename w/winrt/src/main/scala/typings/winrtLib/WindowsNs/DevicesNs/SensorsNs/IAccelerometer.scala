@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAccelerometer extends js.Object {
   var minimumReportInterval: scala.Double
   var onreadingchanged: js.Any

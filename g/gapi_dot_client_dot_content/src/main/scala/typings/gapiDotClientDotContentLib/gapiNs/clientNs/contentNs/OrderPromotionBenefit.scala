@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrderPromotionBenefit extends js.Object {
   /** The discount in the order price when the promotion is applied. */
   var discount: js.UndefOr[Price] = js.undefined

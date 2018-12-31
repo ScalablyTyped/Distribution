@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TransitionName extends js.Object {
   var allowClear: scala.Boolean
   var disabled: scala.Boolean

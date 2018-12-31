@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CounterStyleHyphenFallback extends js.Object {
   var `additive-symbols`: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var fallback: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined

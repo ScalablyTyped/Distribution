@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebThemeOptions extends js.Object {
   var favicon: js.UndefOr[java.lang.String] = js.undefined
   var format: js.UndefOr[java.lang.String] = js.undefined

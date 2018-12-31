@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QHeader extends js.Object {
   var col: scala.Double
   var errorCode: js.UndefOr[scala.Double] = js.undefined

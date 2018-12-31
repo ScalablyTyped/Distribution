@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GanttEditable extends js.Object {
   var confirmation: js.UndefOr[scala.Boolean] = js.undefined
   var create: js.UndefOr[scala.Boolean] = js.undefined

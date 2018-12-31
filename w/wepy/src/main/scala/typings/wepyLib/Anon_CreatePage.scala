@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CreatePage extends js.Object {
   @JSName("$createApp")
   var $createApp: js.UndefOr[

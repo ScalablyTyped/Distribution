@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WmxSitemapContent extends js.Object {
   /** The number of URLs from the sitemap that were indexed (of the content type). */
   var indexed: js.UndefOr[java.lang.String] = js.undefined

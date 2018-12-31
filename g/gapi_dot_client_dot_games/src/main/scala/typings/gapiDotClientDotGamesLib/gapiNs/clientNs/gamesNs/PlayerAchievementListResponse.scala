@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlayerAchievementListResponse extends js.Object {
   /** The achievements. */
   var items: js.UndefOr[js.Array[PlayerAchievement]] = js.undefined

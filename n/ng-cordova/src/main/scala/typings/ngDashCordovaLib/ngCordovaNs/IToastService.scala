@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IToastService extends js.Object {
   def show(message: java.lang.String, duration: java.lang.String, position: java.lang.String): angularLib.angularMod.angularNs.IPromise[_]
   def showLongBottom(message: java.lang.String): angularLib.angularMod.angularNs.IPromise[_]

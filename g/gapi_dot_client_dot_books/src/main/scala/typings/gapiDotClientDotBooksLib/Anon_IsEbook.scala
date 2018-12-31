@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IsEbook extends js.Object {
   /** URL to purchase this volume on the Google Books site. (In LITE projection) */
   var buyLink: js.UndefOr[java.lang.String] = js.undefined
@@ -20,14 +19,14 @@ trait Anon_IsEbook extends js.Object {
   /** The date on which this book is available for sale. */
   var onSaleDate: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The actual selling price of the book. This is the same as the suggested retail or list price unless there are offers or discounts on this volume. (In
-                   * LITE projection.)
-                   */
+    * The actual selling price of the book. This is the same as the suggested retail or list price unless there are offers or discounts on this volume. (In
+    * LITE projection.)
+    */
   var retailPrice: js.UndefOr[Anon_CurrencyCode] = js.undefined
   /**
-                   * Whether or not this book is available for sale or offered for free in the Google eBookstore for the country listed above. Possible values are FOR_SALE,
-                   * FOR_RENTAL_ONLY, FOR_SALE_AND_RENTAL, FREE, NOT_FOR_SALE, or FOR_PREORDER.
-                   */
+    * Whether or not this book is available for sale or offered for free in the Google eBookstore for the country listed above. Possible values are FOR_SALE,
+    * FOR_RENTAL_ONLY, FOR_SALE_AND_RENTAL, FREE, NOT_FOR_SALE, or FOR_PREORDER.
+    */
   var saleability: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait I2cBusFuncs extends js.Object {
   var i2c: scala.Boolean
   var protocolMangling: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IKeyDerivationAlgorithmNamesStatics extends js.Object {
   var pbkdf2Md5: java.lang.String
   var pbkdf2Sha1: java.lang.String

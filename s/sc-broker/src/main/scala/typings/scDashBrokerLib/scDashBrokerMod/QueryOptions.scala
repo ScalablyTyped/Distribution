@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryOptions extends js.Object {
   var baseKey: js.UndefOr[fleximapLib.fleximapMod.KeyChain] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined

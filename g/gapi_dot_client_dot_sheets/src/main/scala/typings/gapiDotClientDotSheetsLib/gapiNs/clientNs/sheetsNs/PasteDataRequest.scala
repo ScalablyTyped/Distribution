@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PasteDataRequest extends js.Object {
   /** The coordinate at which the data should start being inserted. */
   var coordinate: js.UndefOr[GridCoordinate] = js.undefined

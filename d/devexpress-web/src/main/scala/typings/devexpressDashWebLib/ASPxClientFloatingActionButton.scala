@@ -21,50 +21,50 @@ trait ASPxClientFloatingActionButton extends ASPxClientControl {
   ] = js.native
   def GetActionContext(): java.lang.String = js.native
   /**
-       * 
-       * @param contextName 
-       */
+    * 
+    * @param contextName 
+    */
   def SetActionContext(contextName: java.lang.String): scala.Unit = js.native
   /**
-       * 
-       * @param contextName 
-       * @param expand 
-       */
+    * 
+    * @param contextName 
+    * @param expand 
+    */
   def SetActionContext(contextName: java.lang.String, expand: scala.Boolean): scala.Unit = js.native
   /**
-       * 
-       * @param element 
-       */
+    * 
+    * @param element 
+    */
   def SetContainerElement(element: js.Object): scala.Unit = js.native
   /**
-       * 
-       * @param id 
-       */
+    * 
+    * @param id 
+    */
   def SetContainerElementID(id: java.lang.String): scala.Unit = js.native
   /**
-       * 
-       * @param value 
-       */
+    * 
+    * @param value 
+    */
   def SetHorizontalMargin(value: scala.Double): scala.Unit = js.native
   /**
-       * 
-       * @param horizontalPosition 
-       */
+    * 
+    * @param horizontalPosition 
+    */
   def SetHorizontalPosition(horizontalPosition: ASPxClientFloatingActionButtonHorizontalPosition): scala.Unit = js.native
   /**
-       * 
-       * @param mode 
-       */
+    * 
+    * @param mode 
+    */
   def SetTextVisibilityMode(mode: ASPxClientFloatingActionButtonTextVisibilityMode): scala.Unit = js.native
   /**
-       * 
-       * @param value 
-       */
+    * 
+    * @param value 
+    */
   def SetVerticalMargin(value: scala.Double): scala.Unit = js.native
   /**
-       * 
-       * @param verticalPosition 
-       */
+    * 
+    * @param verticalPosition 
+    */
   def SetVerticalPosition(verticalPosition: ASPxClientFloatingActionButtonVerticalPosition): scala.Unit = js.native
 }
 

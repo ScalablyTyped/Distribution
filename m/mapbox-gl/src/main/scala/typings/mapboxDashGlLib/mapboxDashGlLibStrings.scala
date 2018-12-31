@@ -94,7 +94,22 @@ object mapboxDashGlLibStrings {
   sealed trait contextmenu extends js.Object
   
   @js.native
+  sealed trait data extends js.Object
+  
+  @js.native
+  sealed trait dataloading extends js.Object
+  
+  @js.native
   sealed trait dblclick extends js.Object
+  
+  @js.native
+  sealed trait drag extends js.Object
+  
+  @js.native
+  sealed trait dragend extends js.Object
+  
+  @js.native
+  sealed trait dragstart extends js.Object
   
   @js.native
   sealed trait error extends js.Object
@@ -154,6 +169,9 @@ object mapboxDashGlLibStrings {
   sealed trait linear extends js.Object
   
   @js.native
+  sealed trait load extends js.Object
+  
+  @js.native
   sealed trait lowercase extends js.Object
   
   @js.native
@@ -193,6 +211,15 @@ object mapboxDashGlLibStrings {
   sealed trait mouseup extends js.Object
   
   @js.native
+  sealed trait move extends js.Object
+  
+  @js.native
+  sealed trait moveend extends js.Object
+  
+  @js.native
+  sealed trait movestart extends js.Object
+  
+  @js.native
   sealed trait nautical extends js.Object
   
   @js.native
@@ -200,6 +227,15 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait none extends js.Object
+  
+  @js.native
+  sealed trait pitch extends js.Object
+  
+  @js.native
+  sealed trait pitchend extends js.Object
+  
+  @js.native
+  sealed trait pitchstart extends js.Object
   
   @js.native
   sealed trait point extends js.Object
@@ -211,10 +247,28 @@ object mapboxDashGlLibStrings {
   sealed trait `raster-dem` extends js.Object
   
   @js.native
+  sealed trait remove extends js.Object
+  
+  @js.native
+  sealed trait render extends js.Object
+  
+  @js.native
+  sealed trait resize extends js.Object
+  
+  @js.native
   sealed trait rgb extends js.Object
   
   @js.native
   sealed trait right extends js.Object
+  
+  @js.native
+  sealed trait rotate extends js.Object
+  
+  @js.native
+  sealed trait rotateend extends js.Object
+  
+  @js.native
+  sealed trait rotatestart extends js.Object
   
   @js.native
   sealed trait round extends js.Object
@@ -226,16 +280,31 @@ object mapboxDashGlLibStrings {
   sealed trait source extends js.Object
   
   @js.native
+  sealed trait sourcedata extends js.Object
+  
+  @js.native
+  sealed trait sourcedataloading extends js.Object
+  
+  @js.native
   sealed trait square extends js.Object
   
   @js.native
   sealed trait style extends js.Object
   
   @js.native
+  sealed trait styledata extends js.Object
+  
+  @js.native
+  sealed trait styledataloading extends js.Object
+  
+  @js.native
   sealed trait symbol extends js.Object
   
   @js.native
   sealed trait terrarium extends js.Object
+  
+  @js.native
+  sealed trait tiledataloading extends js.Object
   
   @js.native
   sealed trait tms extends js.Object
@@ -254,6 +323,9 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait touchend extends js.Object
+  
+  @js.native
+  sealed trait touchmove extends js.Object
   
   @js.native
   sealed trait touchstart extends js.Object
@@ -291,6 +363,15 @@ object mapboxDashGlLibStrings {
   @js.native
   sealed trait xyz extends js.Object
   
+  @js.native
+  sealed trait zoom extends js.Object
+  
+  @js.native
+  sealed trait zoomend extends js.Object
+  
+  @js.native
+  sealed trait zoomstart extends js.Object
+  
   def GET: GET = "GET".asInstanceOf[GET]
   def Glyphs: Glyphs = "Glyphs".asInstanceOf[Glyphs]
   def Image: Image = "Image".asInstanceOf[Image]
@@ -320,7 +401,12 @@ object mapboxDashGlLibStrings {
   def click: click = "click".asInstanceOf[click]
   def content: content = "content".asInstanceOf[content]
   def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
+  def data: data = "data".asInstanceOf[data]
+  def dataloading: dataloading = "dataloading".asInstanceOf[dataloading]
   def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
+  def drag: drag = "drag".asInstanceOf[drag]
+  def dragend: dragend = "dragend".asInstanceOf[dragend]
+  def dragstart: dragstart = "dragstart".asInstanceOf[dragstart]
   def error: error = "error".asInstanceOf[error]
   def exponential: exponential = "exponential".asInstanceOf[exponential]
   def fill: fill = "fill".asInstanceOf[fill]
@@ -340,6 +426,7 @@ object mapboxDashGlLibStrings {
   def line: line = "line".asInstanceOf[line]
   def `line-center`: `line-center` = "line-center".asInstanceOf[`line-center`]
   def linear: linear = "linear".asInstanceOf[linear]
+  def load: load = "load".asInstanceOf[load]
   def lowercase: lowercase = "lowercase".asInstanceOf[lowercase]
   def map: map = "map".asInstanceOf[map]
   def mapbox: mapbox = "mapbox".asInstanceOf[mapbox]
@@ -353,27 +440,45 @@ object mapboxDashGlLibStrings {
   def mouseout: mouseout = "mouseout".asInstanceOf[mouseout]
   def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
   def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
+  def move: move = "move".asInstanceOf[move]
+  def moveend: moveend = "moveend".asInstanceOf[moveend]
+  def movestart: movestart = "movestart".asInstanceOf[movestart]
   def nautical: nautical = "nautical".asInstanceOf[nautical]
   def nearest: nearest = "nearest".asInstanceOf[nearest]
   def none: none = "none".asInstanceOf[none]
+  def pitch: pitch = "pitch".asInstanceOf[pitch]
+  def pitchend: pitchend = "pitchend".asInstanceOf[pitchend]
+  def pitchstart: pitchstart = "pitchstart".asInstanceOf[pitchstart]
   def point: point = "point".asInstanceOf[point]
   def raster: raster = "raster".asInstanceOf[raster]
   def `raster-dem`: `raster-dem` = "raster-dem".asInstanceOf[`raster-dem`]
+  def remove: remove = "remove".asInstanceOf[remove]
+  def render: render = "render".asInstanceOf[render]
+  def resize: resize = "resize".asInstanceOf[resize]
   def rgb: rgb = "rgb".asInstanceOf[rgb]
   def right: right = "right".asInstanceOf[right]
+  def rotate: rotate = "rotate".asInstanceOf[rotate]
+  def rotateend: rotateend = "rotateend".asInstanceOf[rotateend]
+  def rotatestart: rotatestart = "rotatestart".asInstanceOf[rotatestart]
   def round: round = "round".asInstanceOf[round]
   def `same-origin`: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
   def source: source = "source".asInstanceOf[source]
+  def sourcedata: sourcedata = "sourcedata".asInstanceOf[sourcedata]
+  def sourcedataloading: sourcedataloading = "sourcedataloading".asInstanceOf[sourcedataloading]
   def square: square = "square".asInstanceOf[square]
   def style: style = "style".asInstanceOf[style]
+  def styledata: styledata = "styledata".asInstanceOf[styledata]
+  def styledataloading: styledataloading = "styledataloading".asInstanceOf[styledataloading]
   def symbol: symbol = "symbol".asInstanceOf[symbol]
   def terrarium: terrarium = "terrarium".asInstanceOf[terrarium]
+  def tiledataloading: tiledataloading = "tiledataloading".asInstanceOf[tiledataloading]
   def tms: tms = "tms".asInstanceOf[tms]
   def top: top = "top".asInstanceOf[top]
   def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
   def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
   def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
   def touchend: touchend = "touchend".asInstanceOf[touchend]
+  def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
   def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
   def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
   def vector: vector = "vector".asInstanceOf[vector]
@@ -386,5 +491,8 @@ object mapboxDashGlLibStrings {
   def wheel: wheel = "wheel".asInstanceOf[wheel]
   def width: width = "width".asInstanceOf[width]
   def xyz: xyz = "xyz".asInstanceOf[xyz]
+  def zoom: zoom = "zoom".asInstanceOf[zoom]
+  def zoomend: zoomend = "zoomend".asInstanceOf[zoomend]
+  def zoomstart: zoomstart = "zoomstart".asInstanceOf[zoomstart]
 }
 

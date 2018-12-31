@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DirectionsGeocodedWaypoint extends js.Object {
   var partial_match: scala.Boolean
   var place_id: java.lang.String

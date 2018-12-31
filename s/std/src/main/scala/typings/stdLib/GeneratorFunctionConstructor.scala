@@ -8,22 +8,22 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GeneratorFunctionConstructor
   extends /**
-     * Creates a new Generator function.
-     * @param args A list of arguments the function accepts.
-     */
+  * Creates a new Generator function.
+  * @param args A list of arguments the function accepts.
+  */
 org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ java.lang.String, GeneratorFunction] {
   /**
-       * The length of the arguments.
-       */
+    * The length of the arguments.
+    */
   val length: scala.Double = js.native
   /**
-       * Returns the name of the function.
-       */
+    * Returns the name of the function.
+    */
   val name: java.lang.String = js.native
   /**
-       * Creates a new Generator function.
-       * @param args A list of arguments the function accepts.
-       */
+    * Creates a new Generator function.
+    * @param args A list of arguments the function accepts.
+    */
   def apply(args: java.lang.String*): GeneratorFunction = js.native
 }
 

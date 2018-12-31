@@ -12,7 +12,7 @@ trait WebPage extends js.Object {
   def close(): js.Promise[scala.Unit] = js.native
   def deleteCookie(cookieName: java.lang.String): js.Promise[scala.Boolean] = js.native
   def evaluate[R](callback: js.Function0[R]): js.Promise[R] = js.native
-  def evaluate[R](callback: js.Function1[/* repeated */js.Any, R], args: js.Any*): js.Promise[R] = js.native
+  def evaluate[R](callback: js.Function1[/* repeated */ js.Any, R], args: js.Any*): js.Promise[R] = js.native
   def evaluate[T, R](callback: js.Function1[/* arg */ T, R], arg: T): js.Promise[R] = js.native
   def evaluate[T1, T2, R](callback: js.Function2[/* arg1 */ T1, /* arg2 */ T2, R], arg1: T1, arg2: T2): js.Promise[R] = js.native
   def evaluate[T1, T2, T3, R](

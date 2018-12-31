@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props extends js.Object {
   var alignOptions: js.UndefOr[java.lang.String] = js.undefined
   var blackList: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SearchResults[TDoc] extends js.Object {
   var aroundLatLng: js.UndefOr[java.lang.String] = js.undefined
   var automaticRadius: js.UndefOr[java.lang.String] = js.undefined

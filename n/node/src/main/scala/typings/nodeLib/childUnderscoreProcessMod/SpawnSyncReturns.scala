@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpawnSyncReturns[T] extends js.Object {
   var error: nodeLib.Error
   var output: js.Array[java.lang.String]

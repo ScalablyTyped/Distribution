@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * CustomErrorMessage...
-     */
-
+  * CustomErrorMessage...
+  */
 trait ICustomErrorMessage extends js.Object {
   var calcCond: java.lang.String
 }

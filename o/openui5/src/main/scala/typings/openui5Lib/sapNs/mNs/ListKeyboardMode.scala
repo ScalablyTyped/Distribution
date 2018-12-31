@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ListKeyboardMode extends js.Object
 
 /**
-     * Defines the keyboard handling behavior of the <code>sap.m.List</code> or <code>sap.m.Table</code>.
-    */
+  * Defines the keyboard handling behavior of the <code>sap.m.List</code> or <code>sap.m.Table</code>.
+  */
 @JSGlobal("sap.m.ListKeyboardMode")
 @js.native
 object ListKeyboardMode extends js.Object {

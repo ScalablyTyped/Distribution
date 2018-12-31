@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Tag extends js.Object {
   /** GTM Account ID. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined
@@ -34,9 +33,9 @@ trait Tag extends js.Object {
   /** GTM Tag's API relative path. */
   var path: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * User defined numeric priority of the tag. Tags are fired asynchronously in order of priority. Tags with higher numeric value fire first. A tag's
-               * priority can be a positive or negative value. The default value is 0.
-               */
+    * User defined numeric priority of the tag. Tags are fired asynchronously in order of priority. Tags with higher numeric value fire first. A tag's
+    * priority can be a positive or negative value. The default value is 0.
+    */
   var priority: js.UndefOr[Parameter] = js.undefined
   /** The end timestamp in milliseconds to schedule a tag. */
   var scheduleEndMs: js.UndefOr[java.lang.String] = js.undefined

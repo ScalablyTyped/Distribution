@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JCanvasSliceDef extends js.Object {
   /**
   	 * End angle in degrees from north

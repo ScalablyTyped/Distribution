@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("plottable/build/src/scales", "Category")
 @js.native
+/**
+  * A Category Scale maps strings to numbers.
+  *
+  * @constructor
+  */
 class Category ()
   extends plottableLib.buildSrcScalesCategoryScaleMod.Category
 

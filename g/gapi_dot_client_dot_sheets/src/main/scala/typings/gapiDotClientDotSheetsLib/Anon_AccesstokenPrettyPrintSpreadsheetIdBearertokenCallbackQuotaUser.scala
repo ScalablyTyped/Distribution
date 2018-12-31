@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPrettyPrintSpreadsheetIdBearertokenCallbackQuotaUser extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -21,13 +20,13 @@ trait Anon_AccesstokenPrettyPrintSpreadsheetIdBearertokenCallbackQuotaUser exten
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Determines if the update response should include the values
-                   * of the cells that were updated. By default, responses
-                   * do not include the updated values.
-                   * If the range to write was larger than than the range actually written,
-                   * the response will include all values in the requested range (excluding
-                   * trailing empty rows and columns).
-                   */
+    * Determines if the update response should include the values
+    * of the cells that were updated. By default, responses
+    * do not include the updated values.
+    * If the range to write was larger than than the range actually written,
+    * the response will include all values in the requested range (excluding
+    * trailing empty rows and columns).
+    */
   var includeValuesInResponse: js.UndefOr[scala.Boolean] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
@@ -42,16 +41,16 @@ trait Anon_AccesstokenPrettyPrintSpreadsheetIdBearertokenCallbackQuotaUser exten
   /** The A1 notation of the values to update. */
   var range: java.lang.String
   /**
-                   * Determines how dates, times, and durations in the response should be
-                   * rendered. This is ignored if response_value_render_option is
-                   * FORMATTED_VALUE.
-                   * The default dateTime render option is [DateTimeRenderOption.SERIAL_NUMBER].
-                   */
+    * Determines how dates, times, and durations in the response should be
+    * rendered. This is ignored if response_value_render_option is
+    * FORMATTED_VALUE.
+    * The default dateTime render option is [DateTimeRenderOption.SERIAL_NUMBER].
+    */
   var responseDateTimeRenderOption: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Determines how values in the response should be rendered.
-                   * The default render option is ValueRenderOption.FORMATTED_VALUE.
-                   */
+    * Determines how values in the response should be rendered.
+    * The default render option is ValueRenderOption.FORMATTED_VALUE.
+    */
   var responseValueRenderOption: js.UndefOr[java.lang.String] = js.undefined
   /** The ID of the spreadsheet to update. */
   var spreadsheetId: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IUtilDomEvent extends js.Object {
   /**
   	 * Adds an event listener to an element

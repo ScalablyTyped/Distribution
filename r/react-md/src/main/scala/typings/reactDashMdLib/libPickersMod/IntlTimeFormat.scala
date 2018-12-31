@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IntlTimeFormat extends js.Object {
   var hour: js.UndefOr[N2D] = js.undefined
   var minute: js.UndefOr[N2D] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FieldType extends js.Object {
   /** A default value, absent if there is none. */
   var default: ValueDescription | scala.Null

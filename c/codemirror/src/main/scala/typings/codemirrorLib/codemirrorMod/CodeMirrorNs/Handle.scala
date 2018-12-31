@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** The Handle used to interact with the autocomplete dialog box.*/
-
 trait Handle extends js.Object {
   var data: js.Any
   var length: scala.Double

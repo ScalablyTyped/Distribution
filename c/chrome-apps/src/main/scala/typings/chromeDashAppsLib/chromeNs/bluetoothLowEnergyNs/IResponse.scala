@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IResponse extends js.Object {
   /** If this is an error response, this should be true. */
   var isError: scala.Boolean

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents views of a data set. */
-
 trait DataView extends js.Object {
   var categorical: js.UndefOr[DataViewCategorical] = js.undefined
   var matrix: js.UndefOr[DataViewMatrix] = js.undefined

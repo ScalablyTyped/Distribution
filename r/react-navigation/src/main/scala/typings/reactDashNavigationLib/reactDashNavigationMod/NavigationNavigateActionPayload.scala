@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigationNavigateActionPayload extends js.Object {
   // The action to run inside the sub-router
   var action: js.UndefOr[NavigationNavigateAction] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotificationBacklogStatus extends js.Object {
   var channel: java.lang.String
   var maxUnprocessedNotificationAgeMs: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateOfferDialogParams extends DialogParams {
   var account_id: java.lang.String
   @JSName("display")

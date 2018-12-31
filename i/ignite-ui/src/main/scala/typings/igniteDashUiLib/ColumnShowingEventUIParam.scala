@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnShowingEventUIParam extends js.Object {
   /**
   	 * Gets the shown column index.

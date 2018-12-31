@@ -36,7 +36,7 @@ object srcRender3UtilMod extends js.Object {
   def getTNode(index: scala.Double, view: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData): atAngularCoreLib.srcRender3InterfacesNodeMod.TNode = js.native
   def hasParentInjector(parentLocation: atAngularCoreLib.srcRender3InterfacesInjectorMod.RelativeInjectorLocation): scala.Boolean = js.native
   def isComponent(tNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode): scala.Boolean = js.native
-  def isComponentDef[T](`def`: atAngularCoreLib.srcRender3InterfacesDefinitionMod.DirectiveDef[T]): /* is ComponentDef */scala.Boolean = js.native
+  def isComponentDef[T](`def`: atAngularCoreLib.srcRender3InterfacesDefinitionMod.DirectiveDef[T]): /* is @angular/core.@angular/core/src/render3/interfaces/definition.ComponentDef<T> */ scala.Boolean = js.native
   def isContentQueryHost(tNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode): scala.Boolean = js.native
   def isDifferent(a: js.Any, b: js.Any, checkNoChangesMode: scala.Boolean): scala.Boolean = js.native
   def isLContainer(value: atAngularCoreLib.srcRender3InterfacesContainerMod.LContainer): scala.Boolean = js.native

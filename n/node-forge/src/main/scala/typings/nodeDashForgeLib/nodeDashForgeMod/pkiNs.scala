@@ -35,94 +35,57 @@ object pkiNs extends js.Object {
     var validity: nodeDashForgeLib.Anon_NotAfter = js.native
     var version: scala.Double = js.native
     /**
-                 * Gets an extension by its name or id.
-                 *
-                 * @param options the name to use or an object with:
-                 *          name the name to use.
-                 *          id the id to use.
-                 *
-                 * @return the extension or null if not found.
-                 */
+      * Gets an extension by its name or id.
+      *
+      * @param options the name to use or an object with:
+      *          name the name to use.
+      *          id the id to use.
+      *
+      * @return the extension or null if not found.
+      */
     def getExtension(options: java.lang.String): js.UndefOr[js.Object] = js.native
-    /**
-                 * Gets an extension by its name or id.
-                 *
-                 * @param options the name to use or an object with:
-                 *          name the name to use.
-                 *          id the id to use.
-                 *
-                 * @return the extension or null if not found.
-                 */
     def getExtension(options: nodeDashForgeLib.Anon_Id): js.UndefOr[js.Object] = js.native
-    /**
-                 * Gets an extension by its name or id.
-                 *
-                 * @param options the name to use or an object with:
-                 *          name the name to use.
-                 *          id the id to use.
-                 *
-                 * @return the extension or null if not found.
-                 */
     def getExtension(options: nodeDashForgeLib.Anon_Name): js.UndefOr[js.Object] = js.native
     /**
-                  * Sets the extensions of this certificate.
-                  *
-                  * @param exts the array of extensions to use.
-                  */
+      * Sets the extensions of this certificate.
+      *
+      * @param exts the array of extensions to use.
+      */
     def setExtensions(exts: js.Array[_]): scala.Unit = js.native
     /**
-                  * Sets the issuer of this certificate.
-                  *
-                  * @param attrs the array of subject attributes to use.
-                  * @param uniqueId an optional a unique ID to use.
-                  */
+      * Sets the issuer of this certificate.
+      *
+      * @param attrs the array of subject attributes to use.
+      * @param uniqueId an optional a unique ID to use.
+      */
     def setIssuer(attrs: js.Array[CertificateField]): scala.Unit = js.native
-    /**
-                  * Sets the issuer of this certificate.
-                  *
-                  * @param attrs the array of subject attributes to use.
-                  * @param uniqueId an optional a unique ID to use.
-                  */
     def setIssuer(attrs: js.Array[CertificateField], uniqueId: java.lang.String): scala.Unit = js.native
     /**
-                 * Sets the subject of this certificate.
-                 *
-                 * @param attrs the array of subject attributes to use.
-                 * @param uniqueId an optional a unique ID to use.
-                 */
+      * Sets the subject of this certificate.
+      *
+      * @param attrs the array of subject attributes to use.
+      * @param uniqueId an optional a unique ID to use.
+      */
     def setSubject(attrs: js.Array[CertificateField]): scala.Unit = js.native
-    /**
-                 * Sets the subject of this certificate.
-                 *
-                 * @param attrs the array of subject attributes to use.
-                 * @param uniqueId an optional a unique ID to use.
-                 */
     def setSubject(attrs: js.Array[CertificateField], uniqueId: java.lang.String): scala.Unit = js.native
     /**
-                 * Signs this certificate using the given private key.
-                 *
-                 * @param key the private key to sign with.
-                 * @param md the message digest object to use (defaults to forge.md.sha1).
-                 */
+      * Signs this certificate using the given private key.
+      *
+      * @param key the private key to sign with.
+      * @param md the message digest object to use (defaults to forge.md.sha1).
+      */
     def sign(key: PrivateKey): scala.Unit = js.native
-    /**
-                 * Signs this certificate using the given private key.
-                 *
-                 * @param key the private key to sign with.
-                 * @param md the message digest object to use (defaults to forge.md.sha1).
-                 */
     def sign(key: PrivateKey, md: nodeDashForgeLib.nodeDashForgeMod.mdNs.MessageDigest): scala.Unit = js.native
     /**
-                 * Attempts verify the signature on the passed certificate using this
-                 * certificate's public key.
-                 *
-                 * @param child the certificate to verify.
-                 *
-                 * @return true if verified, false if not.
-                 */
+      * Attempts verify the signature on the passed certificate using this
+      * certificate's public key.
+      *
+      * @param child the certificate to verify.
+      *
+      * @return true if verified, false if not.
+      */
     def verify(child: Certificate): scala.Boolean = js.native
   }
-  
   
   trait CertificateField extends CertificateFieldOptions {
     var extensions: js.UndefOr[js.Array[_]] = js.undefined
@@ -131,19 +94,16 @@ object pkiNs extends js.Object {
     var valueTagClass: js.UndefOr[nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Class] = js.undefined
   }
   
-  
   trait CertificateFieldOptions extends js.Object {
     var name: js.UndefOr[java.lang.String] = js.undefined
     var shortName: js.UndefOr[java.lang.String] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait KeyPair extends js.Object {
     var privateKey: PrivateKey
     var publicKey: PublicKey
   }
-  
   
   trait oids
     extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
@@ -213,7 +173,6 @@ object pkiNs extends js.Object {
   @JSName("rsa")
   @js.native
   object rsaNs extends js.Object {
-    
     trait GenerateKeyPairOptions extends js.Object {
       var algorithm: js.UndefOr[java.lang.String] = js.undefined
       var bits: js.UndefOr[scala.Double] = js.undefined
@@ -223,7 +182,6 @@ object pkiNs extends js.Object {
       var workerScript: js.UndefOr[java.lang.String] = js.undefined
       var workers: js.UndefOr[scala.Double] = js.undefined
     }
-    
     
     trait KeyPair extends js.Object {
       var privateKey: PrivateKey

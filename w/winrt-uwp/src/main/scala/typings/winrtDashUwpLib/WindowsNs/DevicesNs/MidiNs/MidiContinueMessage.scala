@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a MIDI message that specifies a continue message. */
 @JSGlobal("Windows.Devices.Midi.MidiContinueMessage")
 @js.native
+/** Creates a new MidiContinueMessage object. */
 class MidiContinueMessage () extends js.Object {
   /** Gets the array of bytes associated with the MIDI message, including status byte. */
   var rawData: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer = js.native

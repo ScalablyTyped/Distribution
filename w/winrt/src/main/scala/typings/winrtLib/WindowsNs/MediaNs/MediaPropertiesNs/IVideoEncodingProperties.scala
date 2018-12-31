@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVideoEncodingProperties extends IMediaEncodingProperties {
   var bitrate: scala.Double
   var frameRate: MediaRatio

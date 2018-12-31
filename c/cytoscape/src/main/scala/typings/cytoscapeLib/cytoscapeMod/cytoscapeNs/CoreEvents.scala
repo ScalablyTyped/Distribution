@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * The principle events from the graph model.
-     *  http://js.cytoscape.org/#core/events
-     */
+  * The principle events from the graph model.
+  *  http://js.cytoscape.org/#core/events
+  */
 @js.native
 trait CoreEvents extends js.Object {
   def addListener(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler]): this.type = js.native
@@ -46,34 +46,16 @@ trait CoreEvents extends js.Object {
   def off(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler]): this.type = js.native
   def off(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
   /**
-           * Remove event handlers.
-           *  http://js.cytoscape.org/#cy.off
-           *
-           * @param events A space separated list of event names.
-           * @param selector [optional] The same selector used to bind to the events.
-           * @param handler [optional] A reference to the handler function to remove.
-           * @param eventsMap A map of event names to handler functions to remove.
-           */
+    * Remove event handlers.
+    *  http://js.cytoscape.org/#cy.off
+    *
+    * @param events A space separated list of event names.
+    * @param selector [optional] The same selector used to bind to the events.
+    * @param handler [optional] A reference to the handler function to remove.
+    * @param eventsMap A map of event names to handler functions to remove.
+    */
   def off(events: EventNames): this.type = js.native
-  /**
-           * Remove event handlers.
-           *  http://js.cytoscape.org/#cy.off
-           *
-           * @param events A space separated list of event names.
-           * @param selector [optional] The same selector used to bind to the events.
-           * @param handler [optional] A reference to the handler function to remove.
-           * @param eventsMap A map of event names to handler functions to remove.
-           */
   def off(events: EventNames, selector: Selector): this.type = js.native
-  /**
-           * Remove event handlers.
-           *  http://js.cytoscape.org/#cy.off
-           *
-           * @param events A space separated list of event names.
-           * @param selector [optional] The same selector used to bind to the events.
-           * @param handler [optional] A reference to the handler function to remove.
-           * @param eventsMap A map of event names to handler functions to remove.
-           */
   def off(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
   def on(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler]): this.type = js.native
   def on(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
@@ -83,90 +65,69 @@ trait CoreEvents extends js.Object {
     data: js.Any
   ): this.type = js.native
   /**
-           * Bind to events that occur in the graph.
-           *
-           * @param events A space separated list of event names.
-           * @param handler The handler function that is called when one of the specified events occurs.
-           * @param selector A selector to specify elements for which the handler is triggered.
-           * @param data A plain object which is passed to the handler in the event object argument.
-           * @param eventsMap A map of event names to handler functions.
-           */
-  
+    * Bind to events that occur in the graph.
+    *
+    * @param events A space separated list of event names.
+    * @param handler The handler function that is called when one of the specified events occurs.
+    * @param selector A selector to specify elements for which the handler is triggered.
+    * @param data A plain object which is passed to the handler in the event object argument.
+    * @param eventsMap A map of event names to handler functions.
+    */
   def on(events: EventNames, handler: EventHandler): this.type = js.native
   def on(events: EventNames, selector: Selector, data: js.Any, handler: EventHandler): this.type = js.native
   def on(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
   /**
-           * Bind to events that occur in the graph, and trigger the handler only once.
-           *
-           * @param eventsMap A map of event names to handler functions.
-           * @param selector A selector to specify elements for which the handler is triggered.
-           * @param data A plain object which is passed to the handler in the event object argument.
-           */
+    * Bind to events that occur in the graph, and trigger the handler only once.
+    *
+    * @param eventsMap A map of event names to handler functions.
+    * @param selector A selector to specify elements for which the handler is triggered.
+    * @param data A plain object which is passed to the handler in the event object argument.
+    */
   def one(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler]): this.type = js.native
-  /**
-           * Bind to events that occur in the graph, and trigger the handler only once.
-           *
-           * @param eventsMap A map of event names to handler functions.
-           * @param selector A selector to specify elements for which the handler is triggered.
-           * @param data A plain object which is passed to the handler in the event object argument.
-           */
   def one(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
-  /**
-           * Bind to events that occur in the graph, and trigger the handler only once.
-           *
-           * @param eventsMap A map of event names to handler functions.
-           * @param selector A selector to specify elements for which the handler is triggered.
-           * @param data A plain object which is passed to the handler in the event object argument.
-           */
   def one(
     eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler],
     selector: Selector,
     data: js.Any
   ): this.type = js.native
   /**
-           * Bind to events that occur in the graph, and trigger the handler only once.
-           *
-           * @param events A space separated list of event names.
-           * @param handler The handler function that is called when one of the specified events occurs.
-           */
+    * Bind to events that occur in the graph, and trigger the handler only once.
+    *
+    * @param events A space separated list of event names.
+    * @param handler The handler function that is called when one of the specified events occurs.
+    */
   def one(events: EventNames, handler: EventHandler): this.type = js.native
   /**
-           * Bind to events that occur in the graph, and trigger the handler only once.
-           *
-           * @param events A space separated list of event names.
-           * @param handler The handler function that is called when one of the specified events occurs.
-           * @param selector A selector to specify elements for which the handler is triggered.
-           * @param data A plain object which is passed to the handler in the event object argument.
-           */
+    * Bind to events that occur in the graph, and trigger the handler only once.
+    *
+    * @param events A space separated list of event names.
+    * @param handler The handler function that is called when one of the specified events occurs.
+    * @param selector A selector to specify elements for which the handler is triggered.
+    * @param data A plain object which is passed to the handler in the event object argument.
+    */
   def one(events: EventNames, selector: Selector, data: js.Any, handler: EventHandler): this.type = js.native
   /**
-           * Bind to events that occur in the graph, and trigger the handler only once.
-           *
-           * @param events A space separated list of event names.
-           * @param handler The handler function that is called when one of the specified events occurs.
-           * @param selector A selector to specify elements for which the handler is triggered.
-           */
+    * Bind to events that occur in the graph, and trigger the handler only once.
+    *
+    * @param events A space separated list of event names.
+    * @param handler The handler function that is called when one of the specified events occurs.
+    * @param selector A selector to specify elements for which the handler is triggered.
+    */
   def one(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
   def pon(events: EventNames): js.Promise[EventHandler] = js.native
   def pon(events: EventNames, selector: Selector): js.Promise[EventHandler] = js.native
   /**
-           * Get a promise that is resolved with the first
-           * of any of the specified events triggered on the graph.
-           * @param events A space separated list of event names.
-           * @param selector [optional] A selector to specify elements for which the handler is triggered.
-           */
+    * Get a promise that is resolved with the first
+    * of any of the specified events triggered on the graph.
+    * @param events A space separated list of event names.
+    * @param selector [optional] A selector to specify elements for which the handler is triggered.
+    */
   def promiseOn(events: EventNames): js.Promise[EventHandler] = js.native
-  /**
-           * Get a promise that is resolved with the first
-           * of any of the specified events triggered on the graph.
-           * @param events A space separated list of event names.
-           * @param selector [optional] A selector to specify elements for which the handler is triggered.
-           */
   def promiseOn(events: EventNames, selector: Selector): js.Promise[EventHandler] = js.native
   /**
-           * Run a callback as soon as the graph becomes ready. If the graph is already ready, then the callback is called immediately.
-           * @param fn The callback run as soon as the graph is ready, inside which this refers to the core (cy).
-           */
+    * Run a callback as soon as the graph becomes ready. If the graph is already ready, then the callback is called immediately.
+    * @param fn The callback run as soon as the graph is ready, inside which this refers to the core (cy).
+    */
   def ready(fn: EventHandler): this.type = js.native
   def removeListener(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler]): this.type = js.native
   def removeListener(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
@@ -174,18 +135,12 @@ trait CoreEvents extends js.Object {
   def removeListener(events: EventNames, selector: Selector): this.type = js.native
   def removeListener(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
   /**
-           * Trigger one or more events.
-           *
-           * @param events A space separated list of event names to trigger.
-           * @param extraParams [optional] An array of additional parameters to pass to the handler.
-           */
+    * Trigger one or more events.
+    *
+    * @param events A space separated list of event names to trigger.
+    * @param extraParams [optional] An array of additional parameters to pass to the handler.
+    */
   def trigger(events: EventNames): this.type = js.native
-  /**
-           * Trigger one or more events.
-           *
-           * @param events A space separated list of event names to trigger.
-           * @param extraParams [optional] An array of additional parameters to pass to the handler.
-           */
   def trigger(events: EventNames, extraParams: js.Array[_]): this.type = js.native
   def unbind(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler]): this.type = js.native
   def unbind(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native

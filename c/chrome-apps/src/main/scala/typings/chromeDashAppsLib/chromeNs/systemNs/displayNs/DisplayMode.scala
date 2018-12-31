@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @since Chrome 52
-         */
-
+  * @since Chrome 52
+  */
 trait DisplayMode extends js.Object {
   /** The display mode device scale factor. */
   var deviceScaleFactor: chromeDashAppsLib.chromeNs.integer
@@ -21,14 +20,14 @@ trait DisplayMode extends js.Object {
   /** True if the display mode is currently selected. */
   var isSelected: scala.Boolean
   /**
-               * The display mode refresh rate in hertz.
-               * @since Chrome 67
-               */
+    * The display mode refresh rate in hertz.
+    * @since Chrome 67
+    */
   var refreshRate: chromeDashAppsLib.chromeNs.double
   /**
-               * @deprecated Deprecated since Chrome 70. Use `displayZoomFactor`
-               * @description The display mode UI scale factor.
-               **/
+    * @deprecated Deprecated since Chrome 70. Use `displayZoomFactor`
+    * @description The display mode UI scale factor.
+    **/
   var uiScale: chromeDashAppsLib.chromeNs.integer
   /** The display mode width in device independent (user visible) pixels. */
   var width: chromeDashAppsLib.chromeNs.integer

@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
 sealed trait HeaderPosition extends js.Object
 
 /**
-     * Specifies the position of group headers relative to their items in a ListView.
-    **/
+  * Specifies the position of group headers relative to their items in a ListView.
+  **/
 @JSGlobal("WinJS.UI.HeaderPosition")
 @js.native
 object HeaderPosition extends js.Object {
   /**
-           * Group headers appear to the left of items.
-          **/
+    * Group headers appear to the left of items.
+    **/
   @js.native
   sealed trait left
     extends winjsLib.WinJSNs.UINs.HeaderPosition
   
   /**
-           * Group headers appear above items.
-          **/
+    * Group headers appear above items.
+    **/
   @js.native
   sealed trait top
     extends winjsLib.WinJSNs.UINs.HeaderPosition

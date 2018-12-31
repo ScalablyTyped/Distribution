@@ -14,35 +14,35 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Waveform
   extends /**
-     * 
-     * @param samples 
-     * @param options 
-     * @return  
-     */
+  * 
+  * @param samples 
+  * @param options 
+  * @return  
+  */
 org.scalablytyped.runtime.Instantiable2[/* samples */ scala.Double, /* options */ js.Any, js.Any] {
   /**
-       * <p>Will start inputting the waveform on the given pin that supports analog. If not repeating, it&#39;ll emit a <code>finish</code> event when it is done.</p>
-       * 
-       * @param output 
-       * @param freq 
-       * @param options 
-       * @url http://www.espruino.com/Reference#l_Waveform_startInput
-       */
+    * <p>Will start inputting the waveform on the given pin that supports analog. If not repeating, it&#39;ll emit a <code>finish</code> event when it is done.</p>
+    * 
+    * @param output 
+    * @param freq 
+    * @param options 
+    * @url http://www.espruino.com/Reference#l_Waveform_startInput
+    */
   def startInput(output: Pin, freq: scala.Double, options: js.Any): scala.Unit = js.native
   /**
-       * <p>Will start outputting the waveform on the given pin - the pin must have previously been initialised with analogWrite. If not repeating, it&#39;ll emit a <code>finish</code> event when it is done.</p>
-       * 
-       * @param output 
-       * @param freq 
-       * @param options 
-       * @url http://www.espruino.com/Reference#l_Waveform_startOutput
-       */
+    * <p>Will start outputting the waveform on the given pin - the pin must have previously been initialised with analogWrite. If not repeating, it&#39;ll emit a <code>finish</code> event when it is done.</p>
+    * 
+    * @param output 
+    * @param freq 
+    * @param options 
+    * @url http://www.espruino.com/Reference#l_Waveform_startOutput
+    */
   def startOutput(output: Pin, freq: scala.Double, options: js.Any): scala.Unit = js.native
   /**
-       * <p>Stop a waveform that is currently outputting</p>
-       * 
-       * @url http://www.espruino.com/Reference#l_Waveform_stop
-       */
+    * <p>Stop a waveform that is currently outputting</p>
+    * 
+    * @url http://www.espruino.com/Reference#l_Waveform_stop
+    */
   def stop(): scala.Unit = js.native
 }
 

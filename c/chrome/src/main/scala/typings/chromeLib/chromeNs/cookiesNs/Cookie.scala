@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Cookie extends js.Object {
   /** The domain of the cookie (e.g. "www.google.com", "example.com"). */
   var domain: java.lang.String

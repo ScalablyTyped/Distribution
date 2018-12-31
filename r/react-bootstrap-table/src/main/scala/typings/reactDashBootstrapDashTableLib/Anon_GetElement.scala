@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_GetElement extends js.Object {
   def getElement(
     column: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalColumnDescription[_],

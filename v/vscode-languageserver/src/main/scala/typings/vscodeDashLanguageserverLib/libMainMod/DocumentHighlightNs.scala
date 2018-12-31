@@ -9,14 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object DocumentHighlightNs extends js.Object {
   /**
-       * Create a DocumentHighlight object.
-       * @param range The range the highlight applies to.
-       */
+    * Create a DocumentHighlight object.
+    * @param range The range the highlight applies to.
+    */
   def create(range: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range): vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DocumentHighlight = js.native
-  /**
-       * Create a DocumentHighlight object.
-       * @param range The range the highlight applies to.
-       */
   def create(
     range: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range,
     kind: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DocumentHighlightKind

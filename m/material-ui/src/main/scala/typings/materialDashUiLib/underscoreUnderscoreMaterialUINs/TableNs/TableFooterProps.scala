@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableFooterProps extends js.Object {
   // <tfoot/> is element that get the 'other' properties
   var adjustForCheckbox: js.UndefOr[scala.Boolean] = js.undefined

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // text
-
 trait TextStyleOptions extends js.Object {
   var align: js.UndefOr[java.lang.String] = js.undefined
   var breakWords: js.UndefOr[scala.Boolean] = js.undefined

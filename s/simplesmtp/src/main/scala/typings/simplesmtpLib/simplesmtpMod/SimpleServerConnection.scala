@@ -28,17 +28,11 @@ trait SimpleServerConnection
   	 * Accept the message with the selected ID
   	 */
   def accept(): scala.Unit = js.native
-  /**
-  	 * Accept the message with the selected ID
-  	 */
   def accept(id: java.lang.String): scala.Unit = js.native
   /**
   	 * Reject the message with the selected message
   	 */
   def reject(): scala.Unit = js.native
-  /**
-  	 * Reject the message with the selected message
-  	 */
   def reject(reason: java.lang.String): scala.Unit = js.native
 }
 

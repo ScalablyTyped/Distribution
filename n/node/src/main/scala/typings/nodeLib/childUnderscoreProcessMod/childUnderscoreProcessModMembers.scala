@@ -9,9 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object childUnderscoreProcessModMembers extends js.Object {
   // no `options` definitely means stdout/stderr are `string`.
-  // fallback if nothing else matches. Worst case is always `string | Buffer`.
   def exec(command: java.lang.String): ChildProcess = js.native
-  // no `options` definitely means stdout/stderr are `string`.
   def exec(
     command: java.lang.String,
     callback: js.Function3[
@@ -30,7 +28,6 @@ object childUnderscoreProcessModMembers extends js.Object {
   def exec(command: java.lang.String, options: nodeLib.Anon_EncodingString with ExecOptions): ChildProcess = js.native
   // fallback if nothing else matches. Worst case is always `string | Buffer`.
   def exec(command: java.lang.String, options: nodeLib.Anon_EncodingStringNull with ExecOptions): ChildProcess = js.native
-  // fallback if nothing else matches. Worst case is always `string | Buffer`.
   def exec(
     command: java.lang.String,
     options: nodeLib.Anon_EncodingStringNull with ExecOptions,
@@ -41,7 +38,6 @@ object childUnderscoreProcessModMembers extends js.Object {
       scala.Unit
     ]
   ): ChildProcess = js.native
-  // `options` with well known `encoding` means stdout/stderr are definitely `string`.
   def exec(
     command: java.lang.String,
     options: nodeLib.Anon_EncodingBufferEncoding with ExecOptions,
@@ -52,7 +48,6 @@ object childUnderscoreProcessModMembers extends js.Object {
       scala.Unit
     ]
   ): ChildProcess = js.native
-  // `options` with `"buffer"` or `null` for `encoding` means stdout/stderr are definitely `Buffer`.
   def exec(
     command: java.lang.String,
     options: nodeLib.Anon_EncodingBuffer with ExecOptions,
@@ -63,8 +58,6 @@ object childUnderscoreProcessModMembers extends js.Object {
       scala.Unit
     ]
   ): ChildProcess = js.native
-  // `options` with an `encoding` whose type is `string` means stdout/stderr could either be `Buffer` or `string`.
-  // There is no guarantee the `encoding` is unknown as `string` is a superset of `BufferEncoding`.
   def exec(
     command: java.lang.String,
     options: nodeLib.Anon_EncodingString with ExecOptions,
@@ -75,7 +68,6 @@ object childUnderscoreProcessModMembers extends js.Object {
       scala.Unit
     ]
   ): ChildProcess = js.native
-  // fallback if nothing else matches. Worst case is always `string | Buffer`.
   def exec(
     command: java.lang.String,
     options: js.UndefOr[scala.Nothing],
@@ -88,7 +80,6 @@ object childUnderscoreProcessModMembers extends js.Object {
   ): ChildProcess = js.native
   // `options` without an `encoding` means stdout/stderr are definitely `string`.
   def exec(command: java.lang.String, options: ExecOptions): ChildProcess = js.native
-  // `options` without an `encoding` means stdout/stderr are definitely `string`.
   def exec(
     command: java.lang.String,
     options: ExecOptions,
@@ -99,7 +90,6 @@ object childUnderscoreProcessModMembers extends js.Object {
       scala.Unit
     ]
   ): ChildProcess = js.native
-  // fallback if nothing else matches. Worst case is always `string | Buffer`.
   def exec(
     command: java.lang.String,
     options: scala.Null,
@@ -110,7 +100,6 @@ object childUnderscoreProcessModMembers extends js.Object {
       scala.Unit
     ]
   ): ChildProcess = js.native
-  // fallback if nothing else matches. Worst case is always `string | Buffer`.
   def execFile(file: java.lang.String): ChildProcess = js.native
   def execFile(file: java.lang.String, args: js.Array[java.lang.String]): ChildProcess = js.native
   def execFile(
@@ -183,7 +172,6 @@ object childUnderscoreProcessModMembers extends js.Object {
       scala.Unit
     ]
   ): ChildProcess = js.native
-  // fallback if nothing else matches. Worst case is always `string | Buffer`.
   def execFile(
     file: java.lang.String,
     args: js.UndefOr[scala.Nothing],
@@ -243,7 +231,6 @@ object childUnderscoreProcessModMembers extends js.Object {
       scala.Unit
     ]
   ): ChildProcess = js.native
-  // fallback if nothing else matches. Worst case is always `string | Buffer`.
   def execFile(
     file: java.lang.String,
     args: scala.Null,
@@ -313,7 +300,6 @@ object childUnderscoreProcessModMembers extends js.Object {
       scala.Unit
     ]
   ): ChildProcess = js.native
-  // fallback if nothing else matches. Worst case is always `string | Buffer`.
   def execFile(file: java.lang.String, options: nodeLib.Anon_EncodingStringNull with ExecFileOptions): ChildProcess = js.native
   // fallback if nothing else matches. Worst case is always `string | Buffer`.
   def execFile(

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PolygonOptions extends js.Object {
   var clickable: js.UndefOr[scala.Boolean] = js.undefined
   var fillColor: js.UndefOr[java.lang.String] = js.undefined

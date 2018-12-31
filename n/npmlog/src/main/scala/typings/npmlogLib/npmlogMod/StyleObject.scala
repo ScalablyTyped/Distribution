@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StyleObject extends js.Object {
   var bell: js.UndefOr[scala.Boolean] = js.undefined
   var bg: js.UndefOr[java.lang.String] = js.undefined

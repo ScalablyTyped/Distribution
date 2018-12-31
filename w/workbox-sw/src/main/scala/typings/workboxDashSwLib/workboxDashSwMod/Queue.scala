@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A class to manage storing failed requests in IndexedDB and retrying them later.
- * All parts of the storing and replaying process are observable via callbacks.
- */
-
+  * A class to manage storing failed requests in IndexedDB and retrying them later.
+  * All parts of the storing and replaying process are observable via callbacks.
+  */
 trait Queue extends js.Object {
   val name: java.lang.String
   /**

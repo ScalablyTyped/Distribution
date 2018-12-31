@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnDragEndEventUIParam extends js.Object {
   /**
   	 * Gets the column index of the column that was being dragged.

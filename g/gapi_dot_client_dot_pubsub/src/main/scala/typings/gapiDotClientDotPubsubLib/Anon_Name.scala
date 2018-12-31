@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Name extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -23,13 +22,13 @@ trait Anon_Name extends js.Object {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The name of the topic. It must have the format
-                   * `"projects/{project}/topics/{topic}"`. `{topic}` must start with a letter,
-                   * and contain only letters (`[A-Za-z]`), numbers (`[0-9]`), dashes (`-`),
-                   * underscores (`_`), periods (`.`), tildes (`~`), plus (`+`) or percent
-                   * signs (`%`). It must be between 3 and 255 characters in length, and it
-                   * must not start with `"goog"`.
-                   */
+    * The name of the topic. It must have the format
+    * `"projects/{project}/topics/{topic}"`. `{topic}` must start with a letter,
+    * and contain only letters (`[A-Za-z]`), numbers (`[0-9]`), dashes (`-`),
+    * underscores (`_`), periods (`.`), tildes (`~`), plus (`+`) or percent
+    * signs (`%`). It must be between 3 and 255 characters in length, and it
+    * must not start with `"goog"`.
+    */
   var name: java.lang.String
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined

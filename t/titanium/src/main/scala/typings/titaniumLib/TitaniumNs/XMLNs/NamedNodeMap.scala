@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 		 * A key-value paired map that maps String objects to <Titanium.XML.Node> objects.
 		 * Implements the [DOM Level 2 API](https://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-1780488922) on Android and iOS.
 		 */
-
 trait NamedNodeMap
   extends titaniumLib.TitaniumNs.Proxy {
   /**

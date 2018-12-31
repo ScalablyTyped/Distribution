@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IText extends IField {
   /** [Config Option] (Boolean) */
   var autoCapitalize: js.UndefOr[scala.Boolean] = js.undefined

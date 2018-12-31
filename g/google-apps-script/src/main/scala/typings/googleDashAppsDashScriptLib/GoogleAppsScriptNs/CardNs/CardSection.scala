@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CardSection extends js.Object {
   def addWidget(widget: Widget): CardSection
   def setCollapsible(collapsible: scala.Boolean): CardSection

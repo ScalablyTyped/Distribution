@@ -13,8 +13,8 @@ trait Scrollbar
       js.Any
     ] {
   /**
-       * Scrollbar instance
-       */
+    * Scrollbar instance
+    */
   val scrollbar: smoothDashScrollbarLib.smoothDashScrollbarMod.default = js.native
 }
 

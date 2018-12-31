@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("oauth2orize", "grant")
 @js.native
 object grantNs extends js.Object {
-  
   trait Options extends js.Object {
     // For maximum flexibility, multiple scope spearators can optionally be
     // allowed.  This allows the server to accept clients that separate scope

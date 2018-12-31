@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebhookOptions extends js.Object {
   var attachments: js.UndefOr[js.Array[_]] = js.undefined
   var channel: js.UndefOr[java.lang.String] = js.undefined

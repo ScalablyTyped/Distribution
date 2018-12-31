@@ -34,9 +34,9 @@ object BackgroundMediaPlayer extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]
   ): scala.Unit = js.native
   /**
-                   * Returns a Boolean value indicating if other media is currently playing on the device.
-                   * @return Boolean value indicating if other media is currently playing on the device.
-                   */
+    * Returns a Boolean value indicating if other media is currently playing on the device.
+    * @return Boolean value indicating if other media is currently playing on the device.
+    */
   def isMediaPlaying(): scala.Boolean = js.native
   /** Occurs when a message is received from the background task. */
   def onmessagereceivedfrombackground(ev: js.Any with winrtDashUwpLib.WindowsNs.WinRTEvent[_]): scala.Unit = js.native
@@ -54,14 +54,14 @@ object BackgroundMediaPlayer extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]
   ): scala.Unit = js.native
   /**
-                   * Sends a message to the background media player.
-                   * @param value Set of values representing the message.
-                   */
+    * Sends a message to the background media player.
+    * @param value Set of values representing the message.
+    */
   def sendMessageToBackground(value: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.ValueSet): scala.Unit = js.native
   /**
-                   * Sends a message to the foreground task.
-                   * @param value Set of values representing the message.
-                   */
+    * Sends a message to the foreground task.
+    * @param value Set of values representing the message.
+    */
   def sendMessageToForeground(value: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.ValueSet): scala.Unit = js.native
   /** Shuts down the current background media player. */
   def shutdown(): scala.Unit = js.native

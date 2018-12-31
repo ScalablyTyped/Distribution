@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SymbolPaint extends js.Object {
   var `icon-color`: js.UndefOr[java.lang.String | StyleFunction | Expression] = js.undefined
   var `icon-color-transition`: js.UndefOr[Transition] = js.undefined

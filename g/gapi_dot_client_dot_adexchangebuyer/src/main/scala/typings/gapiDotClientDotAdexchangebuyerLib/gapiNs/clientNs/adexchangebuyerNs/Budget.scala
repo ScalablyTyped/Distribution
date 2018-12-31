@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Budget extends js.Object {
   /** The id of the account. This is required for get and update requests. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined

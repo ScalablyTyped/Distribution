@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThemeIcons extends js.Object {
   /** The dark icon to use for light themes */
   var dark: ExtensionURL

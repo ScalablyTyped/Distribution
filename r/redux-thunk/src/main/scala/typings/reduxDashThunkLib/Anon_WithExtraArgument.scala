@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_WithExtraArgument extends js.Object {
   def withExtraArgument[E](extraArgument: E): reduxDashThunkLib.reduxDashThunkMod.ThunkMiddleware[js.Object, reduxLib.reduxMod.AnyAction, E]
 }

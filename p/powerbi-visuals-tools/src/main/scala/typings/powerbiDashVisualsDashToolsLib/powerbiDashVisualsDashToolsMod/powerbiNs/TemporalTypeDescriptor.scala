@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TemporalTypeDescriptor extends js.Object {
   val day: js.UndefOr[scala.Boolean] = js.undefined
   val month: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OptimisticMutationConfig extends js.Object {
   var configs: js.UndefOr[js.Array[RelayMutationConfig]] = js.undefined
   var mutation: GraphQLTaggedNode

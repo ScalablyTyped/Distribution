@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // see http://docs.angular-formly.com/docs/field-configuration-object
-
 trait IFieldConfigurationObject extends js.Object {
   /**
   		 * Added in 6.18.0

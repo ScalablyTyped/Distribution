@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   // Treat attributes in case sensitive manner (useful for custom HTML tags)
   var caseSensitive: js.UndefOr[scala.Boolean] = js.undefined
@@ -14,9 +13,9 @@ trait Options extends js.Object {
   // Don't leave any spaces between display:inline; elements when collapsing. Must be used in conjunction with collapseWhitespace=true
   var collapseInlineTagWhitespace: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Collapse white space that contributes to text nodes in a document tree
-       * @see http://perfectionkills.com/experimenting-with-html-minifier/#collapse_whitespace
-       */
+    * Collapse white space that contributes to text nodes in a document tree
+    * @see http://perfectionkills.com/experimenting-with-html-minifier/#collapse_whitespace
+    */
   var collapseWhitespace: js.UndefOr[scala.Boolean] = js.undefined
   // Always collapse to 1 space (never remove it entirely). Must be used in conjunction with collapseWhitespace=true
   var conservativeCollapse: js.UndefOr[scala.Boolean] = js.undefined
@@ -65,36 +64,36 @@ trait Options extends js.Object {
   // Type of quote to use for attribute values (' or ")
   var quoteCharacter: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Remove quotes around attributes when possible
-       * @see http://perfectionkills.com/experimenting-with-html-minifier/#remove_attribute_quotes
-       */
+    * Remove quotes around attributes when possible
+    * @see http://perfectionkills.com/experimenting-with-html-minifier/#remove_attribute_quotes
+    */
   var removeAttributeQuotes: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Strip HTML comments
-       * @see http://perfectionkills.com/experimenting-with-html-minifier/#remove_comments
-       */
+    * Strip HTML comments
+    * @see http://perfectionkills.com/experimenting-with-html-minifier/#remove_comments
+    */
   var removeComments: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Remove all attributes with whitespace-only values
-       * @see http://perfectionkills.com/experimenting-with-html-minifier/#remove_empty_or_blank_attributes
-       */
+    * Remove all attributes with whitespace-only values
+    * @see http://perfectionkills.com/experimenting-with-html-minifier/#remove_empty_or_blank_attributes
+    */
   var removeEmptyAttributes: js.UndefOr[
     scala.Boolean | (js.Function2[/* attrName */ java.lang.String, /* tag */ java.lang.String, scala.Boolean])
   ] = js.undefined
   /**
-       * Remove all elements with empty contents
-       * @see http://perfectionkills.com/experimenting-with-html-minifier/#remove_empty_elements
-       */
+    * Remove all elements with empty contents
+    * @see http://perfectionkills.com/experimenting-with-html-minifier/#remove_empty_elements
+    */
   var removeEmptyElements: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Remove optional tags
-       * @see http://perfectionkills.com/experimenting-with-html-minifier/#remove_optional_tags
-       */
+    * Remove optional tags
+    * @see http://perfectionkills.com/experimenting-with-html-minifier/#remove_optional_tags
+    */
   var removeOptionalTags: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Remove attributes when value matches default.
-       * @see http://perfectionkills.com/experimenting-with-html-minifier/#remove_redundant_attributes
-       */
+    * Remove attributes when value matches default.
+    * @see http://perfectionkills.com/experimenting-with-html-minifier/#remove_redundant_attributes
+    */
   var removeRedundantAttributes: js.UndefOr[scala.Boolean] = js.undefined
   // Remove type="text/javascript" from script tags. Other type attribute values are left intact
   var removeScriptTypeAttributes: js.UndefOr[scala.Boolean] = js.undefined
@@ -103,31 +102,31 @@ trait Options extends js.Object {
   // Remove space between attributes whenever possible. Note that this will result in invalid HTML!
   var removeTagWhitespace: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Sort attributes by frequency
-       *
-       * Minifier options like sortAttributes and sortClassName won't impact the plain-text size
-       * of the output. However, they form long repetitive chains of characters that should improve
-       * compression ratio of gzip used in HTTP compression.
-       *
-       * @see https://github.com/kangax/html-minifier#sorting-attributes--style-classes
-       */
+    * Sort attributes by frequency
+    *
+    * Minifier options like sortAttributes and sortClassName won't impact the plain-text size
+    * of the output. However, they form long repetitive chains of characters that should improve
+    * compression ratio of gzip used in HTTP compression.
+    *
+    * @see https://github.com/kangax/html-minifier#sorting-attributes--style-classes
+    */
   var sortAttributes: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Sort style classes by frequency
-       *
-       * Minifier options like sortAttributes and sortClassName won't impact the plain-text size
-       * of the output. However, they form long repetitive chains of characters that should improve
-       * compression ratio of gzip used in HTTP compression.
-       *
-       * @see https://github.com/kangax/html-minifier#sorting-attributes--style-classes
-       */
+    * Sort style classes by frequency
+    *
+    * Minifier options like sortAttributes and sortClassName won't impact the plain-text size
+    * of the output. However, they form long repetitive chains of characters that should improve
+    * compression ratio of gzip used in HTTP compression.
+    *
+    * @see https://github.com/kangax/html-minifier#sorting-attributes--style-classes
+    */
   var sortClassName: js.UndefOr[scala.Boolean] = js.undefined
   // Trim white space around ignoreCustomFragments
   var trimCustomFragments: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Replaces the doctype with the short (HTML5) doctype
-       * @see http://perfectionkills.com/experimenting-with-html-minifier/#use_short_doctype
-       */
+    * Replaces the doctype with the short (HTML5) doctype
+    * @see http://perfectionkills.com/experimenting-with-html-minifier/#use_short_doctype
+    */
   var useShortDoctype: js.UndefOr[scala.Boolean] = js.undefined
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DraggableOption extends js.Object {
   var before: js.UndefOr[js.Function1[/* e */ js.UndefOr[DraggableEvent], scala.Boolean]] = js.undefined
   var container: js.UndefOr[java.lang.String] = js.undefined

@@ -31,12 +31,6 @@ trait IgTimePickerMethods extends js.Object {
   	 * @param matchType The rule that is applied for searching the text.
   	 */
   def findListItemIndex(text: java.lang.String): scala.Double = js.native
-  /**
-  	 * Finds index of list item by text that matches with the search parameters.
-  	 *
-  	 * @param text The text to search for in the drop down list.
-  	 * @param matchType The rule that is applied for searching the text.
-  	 */
   def findListItemIndex(text: java.lang.String, matchType: js.Object): scala.Double = js.native
   /**
   	 * Gets selected date as a date object. This method can be used when dataMode is set as either displayModeText or editModeText.
@@ -58,11 +52,6 @@ trait IgTimePickerMethods extends js.Object {
   	 * @param index The index of the item that needs to be selected.
   	 */
   def selectedListIndex(): scala.Double = js.native
-  /**
-  	 * Gets the index of the selected list item. Sets selected item by index.
-  	 *
-  	 * @param index The index of the item that needs to be selected.
-  	 */
   def selectedListIndex(index: scala.Double): scala.Double = js.native
   /**
   	 * Decreases the date or time period, depending on the current cursor position.
@@ -70,11 +59,6 @@ trait IgTimePickerMethods extends js.Object {
   	 * @param delta The decrease delta.
   	 */
   def spinDown(): scala.Unit = js.native
-  /**
-  	 * Decreases the date or time period, depending on the current cursor position.
-  	 *
-  	 * @param delta The decrease delta.
-  	 */
   def spinDown(delta: scala.Double): scala.Unit = js.native
   /**
   	 * Returns a reference to the spin down UI element of the editor.
@@ -86,11 +70,6 @@ trait IgTimePickerMethods extends js.Object {
   	 * @param delta The increase delta.
   	 */
   def spinUp(): scala.Unit = js.native
-  /**
-  	 * Increases the date or time period, depending on the current cursor position.
-  	 *
-  	 * @param delta The increase delta.
-  	 */
   def spinUp(delta: scala.Double): scala.Unit = js.native
   /**
   	 * Returns a reference to the spin up UI element of the editor.

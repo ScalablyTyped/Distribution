@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a value at the matrix intersection, used in the values property on DataViewMatrixNode (inherited from DataViewTreeNode). */
-
 trait DataViewMatrixNodeValue extends DataViewTreeNodeValue {
   var highlight: js.UndefOr[PrimitiveValue] = js.undefined
   /** The data repetition objects. */

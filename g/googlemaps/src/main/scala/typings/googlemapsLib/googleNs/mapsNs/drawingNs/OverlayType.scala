@@ -12,41 +12,41 @@ sealed trait OverlayType extends js.Object
 @js.native
 object OverlayType extends js.Object {
   /**
-         * Specifies that the DrawingManager creates circles, and that the overlay
-         * given in the overlaycomplete event is a circle.
-         */
+    * Specifies that the DrawingManager creates circles, and that the overlay
+    * given in the overlaycomplete event is a circle.
+    */
   @js.native
   sealed trait CIRCLE
     extends googlemapsLib.googleNs.mapsNs.drawingNs.OverlayType
   
   /**
-         * Specifies that the DrawingManager creates markers, and that the overlay
-         * given in the overlaycomplete event is a marker.
-         */
+    * Specifies that the DrawingManager creates markers, and that the overlay
+    * given in the overlaycomplete event is a marker.
+    */
   @js.native
   sealed trait MARKER
     extends googlemapsLib.googleNs.mapsNs.drawingNs.OverlayType
   
   /**
-         * Specifies that the DrawingManager creates polygons, and that the
-         * overlay given in the overlaycomplete event is a polygon.
-         */
+    * Specifies that the DrawingManager creates polygons, and that the
+    * overlay given in the overlaycomplete event is a polygon.
+    */
   @js.native
   sealed trait POLYGON
     extends googlemapsLib.googleNs.mapsNs.drawingNs.OverlayType
   
   /**
-         * Specifies that the DrawingManager creates polylines, and that the
-         * overlay given in the overlaycomplete event is a polyline.
-         */
+    * Specifies that the DrawingManager creates polylines, and that the
+    * overlay given in the overlaycomplete event is a polyline.
+    */
   @js.native
   sealed trait POLYLINE
     extends googlemapsLib.googleNs.mapsNs.drawingNs.OverlayType
   
   /**
-         * Specifies that the DrawingManager creates rectangles, and that the
-         * overlay given in the overlaycomplete event is a rectangle.
-         */
+    * Specifies that the DrawingManager creates rectangles, and that the
+    * overlay given in the overlaycomplete event is a rectangle.
+    */
   @js.native
   sealed trait RECTANGLE
     extends googlemapsLib.googleNs.mapsNs.drawingNs.OverlayType

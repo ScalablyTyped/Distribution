@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Consume extends js.Object {
   var arguments: js.UndefOr[js.Any] = js.undefined
   var consumerTag: js.UndefOr[java.lang.String] = js.undefined

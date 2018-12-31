@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetMoonTimes extends js.Object {
   var alwaysDown: scala.Boolean
   var alwaysUp: scala.Boolean

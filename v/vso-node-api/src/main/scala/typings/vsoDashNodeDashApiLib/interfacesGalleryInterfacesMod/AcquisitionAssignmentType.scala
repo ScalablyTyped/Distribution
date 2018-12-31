@@ -12,15 +12,15 @@ sealed trait AcquisitionAssignmentType extends js.Object
 @js.native
 object AcquisitionAssignmentType extends js.Object {
   /**
-       * Assign for all users in the account
-       */
+    * Assign for all users in the account
+    */
   @js.native
   sealed trait All
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.AcquisitionAssignmentType
   
   /**
-       * Just assign for me
-       */
+    * Just assign for me
+    */
   @js.native
   sealed trait Me
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.AcquisitionAssignmentType

@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * ===== StrategiesNamespace =====
- */
-
-
+  * ===== StrategiesNamespace =====
+  */
 trait IStrategyOptions extends js.Object {
   /**
   	 * Defining this object will add a cache expiration plugins to this strategy.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnChooserOpeningEventUIParam extends js.Object {
   /**
   	 * Gets a reference to the Column Chooser element. This is a jQuery object.

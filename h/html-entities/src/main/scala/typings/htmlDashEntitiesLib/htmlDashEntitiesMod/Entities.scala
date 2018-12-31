@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Entities extends js.Object {
   def decode(toDecode: java.lang.String): java.lang.String
   def encode(toEncode: java.lang.String): java.lang.String

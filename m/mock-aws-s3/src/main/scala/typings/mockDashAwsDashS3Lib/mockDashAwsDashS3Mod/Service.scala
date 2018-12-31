@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "Service")
 @js.native
+/**
+  * Creates a new service object with a configuration object.
+  */
 class Service ()
   extends awsDashSdkLib.awsDashSdkMod.Service {
-  /**
-       * Creates a new service object with a configuration object.
-       */
   def this(config: awsDashSdkLib.libServiceMod.ServiceConfigurationOptions) = this()
 }
 

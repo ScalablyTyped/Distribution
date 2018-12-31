@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EthernetProperties[M /* <: ManagedObject */] extends js.Object {
   /** The authentication used by the Ethernet network. Possible values are None and 8021X. */
   var Authentication: js.UndefOr[EthernetAuthenticationType | ManagedType[EthernetAuthenticationType]] = js.undefined

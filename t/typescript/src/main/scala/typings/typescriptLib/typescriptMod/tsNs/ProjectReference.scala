@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProjectReference extends js.Object {
   /** True if it is intended that this reference form a circularity */
   var circular: js.UndefOr[scala.Boolean] = js.undefined

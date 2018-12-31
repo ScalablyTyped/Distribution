@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PreserveWhitespacesExternalStylesheets extends js.Object {
   var animations: js.Array[_]
   var encapsulation: atAngularCompilerLib.srcCoreMod.ViewEncapsulation | scala.Null

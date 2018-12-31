@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Stamp extends js.Object {
   var label: js.UndefOr[js.Any] = js.undefined
   var metadata: js.UndefOr[js.Any] = js.undefined

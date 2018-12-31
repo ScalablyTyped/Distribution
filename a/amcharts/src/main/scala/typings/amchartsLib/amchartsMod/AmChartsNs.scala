@@ -117,76 +117,64 @@ object AmChartsNs extends js.Object {
     extends amchartsLib.valueaxisMod.default
   
   /**
-       * Set it to true if you have base href set for your page.
-       * This will fix rendering problems in Firefox caused by base href.
-       */
+    * Set it to true if you have base href set for your page.
+    * This will fix rendering problems in Firefox caused by base href.
+    */
   var baseHref: scala.Boolean = js.native
   /**
-       * Array of day names, used when formatting dates (if categoryAxis.parseDates is set to true)
-       * ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-       */
+    * Array of day names, used when formatting dates (if categoryAxis.parseDates is set to true)
+    * ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    */
   var dayNames: js.Array[java.lang.String] = js.native
   /**
-       * Array of month names, used when formatting dates (if categoryAxis.parseDates is set to true)
-       * [
-       * 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
-       * 'September', 'October', 'November','December'
-       * ]
-       */
+    * Array of month names, used when formatting dates (if categoryAxis.parseDates is set to true)
+    * [
+    * 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
+    * 'September', 'October', 'November','December'
+    * ]
+    */
   var monthNames: js.Array[java.lang.String] = js.native
   /**
-       * Array of short versions of day names, used when formatting dates (if categoryAxis.parseDates is set to true)
-       * ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-       */
+    * Array of short versions of day names, used when formatting dates (if categoryAxis.parseDates is set to true)
+    * ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+    */
   var shortDayNames: js.Array[java.lang.String] = js.native
   /**
-       * Array of short versions of month names, used when formatting dates (if categoryAxis.parseDates is set to true)
-       * ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-       */
+    * Array of short versions of month names, used when formatting dates (if categoryAxis.parseDates is set to true)
+    * ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    */
   var shortMonthNames: js.Array[java.lang.String] = js.native
   /**
-       * Set global used AmCharts theme.
-       */
+    * Set global used AmCharts theme.
+    */
   var theme: js.Any = js.native
   /**
-       * Object with existing themes.
-       */
+    * Object with existing themes.
+    */
   var themes: js.Any = js.native
   /**
-       * Set it to true if you want UTC time to be used instead of local time.
-       */
+    * Set it to true if you want UTC time to be used instead of local time.
+    */
   var useUTC: scala.Boolean = js.native
   /**
-       * Set a method to be called before initializing the chart.
-       * When the method is called, the chart instance is passed as an attribute.
-       * You can use this feature to preprocess chart data or do some other things you need
-       * before initializing the chart.
-       * @param handler - The method to be called.
-       * @param types - Which chart types should call this method. Defaults to all
-       * if none is passed.
-       */
+    * Set a method to be called before initializing the chart.
+    * When the method is called, the chart instance is passed as an attribute.
+    * You can use this feature to preprocess chart data or do some other things you need
+    * before initializing the chart.
+    * @param handler - The method to be called.
+    * @param types - Which chart types should call this method. Defaults to all
+    * if none is passed.
+    */
   def addInitHandler(handler: js.Function0[js.Object]): js.Any = js.native
-  /**
-       * Set a method to be called before initializing the chart.
-       * When the method is called, the chart instance is passed as an attribute.
-       * You can use this feature to preprocess chart data or do some other things you need
-       * before initializing the chart.
-       * @param handler - The method to be called.
-       * @param types - Which chart types should call this method. Defaults to all
-       * if none is passed.
-       */
   def addInitHandler(handler: js.Function0[js.Object], types: js.Array[java.lang.String]): js.Any = js.native
   /**
-       * Clears all the charts on page, removes listeners and intervals.
-       */
+    * Clears all the charts on page, removes listeners and intervals.
+    */
   def clear(): scala.Unit = js.native
   /**
-       * Create chart by params.
-       */
+    * Create chart by params.
+    */
   def makeChart(selector: java.lang.String, params: js.Any): AmChart = js.native
-  /**
-       * Create chart by params.
-       */
   def makeChart(selector: java.lang.String, params: js.Any, delay: scala.Double): AmChart = js.native
 }
 

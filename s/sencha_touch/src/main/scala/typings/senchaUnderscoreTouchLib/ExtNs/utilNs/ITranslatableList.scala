@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITranslatableList
   extends senchaUnderscoreTouchLib.ExtNs.utilNs.translatableNs.IAbstract {
   /** [Method] Returns the value of items

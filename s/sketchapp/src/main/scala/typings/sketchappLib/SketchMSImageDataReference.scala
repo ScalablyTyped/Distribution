@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSImageDataReference extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.jSONOriginalDataReference
   var _ref: java.lang.String

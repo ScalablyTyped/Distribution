@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DockerContainerData extends js.Object {
   var command: java.lang.String
   var created: scala.Double

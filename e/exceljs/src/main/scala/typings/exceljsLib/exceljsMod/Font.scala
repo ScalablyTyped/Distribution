@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Font extends js.Object {
   var bold: js.UndefOr[scala.Boolean] = js.undefined
   var charset: js.UndefOr[scala.Double] = js.undefined

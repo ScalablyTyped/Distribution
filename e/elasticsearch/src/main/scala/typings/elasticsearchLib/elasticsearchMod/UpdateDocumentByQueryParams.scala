@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateDocumentByQueryParams extends GenericParams {
   var _source: js.UndefOr[NameList] = js.undefined
   var _sourceExclude: js.UndefOr[NameList] = js.undefined

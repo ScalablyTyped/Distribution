@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IKeyMap extends IBase {
   /** [Method] Add a new binding to this KeyMap
   		* @param binding Object/Object[] A single KeyMap config or an array of configs. The following config object properties are supported:

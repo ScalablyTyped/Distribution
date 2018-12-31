@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GalleryItem extends js.Object {
   var account_id: js.UndefOr[scala.Double] = js.undefined
   var account_url: js.UndefOr[java.lang.String] = js.undefined

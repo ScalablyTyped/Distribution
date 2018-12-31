@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MousewheelOptions extends js.Object {
   var eventsTarged: js.UndefOr[SelectableElement] = js.undefined
   var forceToAxis: js.UndefOr[scala.Boolean] = js.undefined

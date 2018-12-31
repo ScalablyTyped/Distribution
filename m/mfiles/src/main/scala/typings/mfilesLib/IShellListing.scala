@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IShellListing extends js.Object {
   var AutoFitAllColumns: scala.Boolean
   var AutoFitFirstColumn: scala.Boolean

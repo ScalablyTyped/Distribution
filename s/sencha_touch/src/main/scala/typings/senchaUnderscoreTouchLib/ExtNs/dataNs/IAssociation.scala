@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAssociation
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Config Option] (String) */

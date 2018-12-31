@@ -6,49 +6,48 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         *
-         * Represents ink analysis data for an identified word formed by ink strokes.
-         *
-         * [Api set: OneNoteApi 1.1]
-         */
-
+  *
+  * Represents ink analysis data for an identified word formed by ink strokes.
+  *
+  * [Api set: OneNoteApi 1.1]
+  */
 trait InkAnalysisWordLoadOptions extends js.Object {
   @JSName("$all")
   var $all: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               *
-               * Gets the ID of the InkAnalysisWord object. Read-only.
-               *
-               * [Api set: OneNoteApi 1.1]
-               */
+    *
+    * Gets the ID of the InkAnalysisWord object. Read-only.
+    *
+    * [Api set: OneNoteApi 1.1]
+    */
   var id: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               *
-               * The id of the recognized language in this inkAnalysisWord. Read-only.
-               *
-               * [Api set: OneNoteApi 1.1]
-               */
+    *
+    * The id of the recognized language in this inkAnalysisWord. Read-only.
+    *
+    * [Api set: OneNoteApi 1.1]
+    */
   var languageId: js.UndefOr[scala.Boolean] = js.undefined
   /**
-              *
-              * Reference to the parent InkAnalysisLine.
-              *
-              * [Api set: OneNoteApi 1.1]
-              */
+    *
+    * Reference to the parent InkAnalysisLine.
+    *
+    * [Api set: OneNoteApi 1.1]
+    */
   var line: js.UndefOr[InkAnalysisLineLoadOptions] = js.undefined
   /**
-               *
-               * Weak references to the ink strokes that were recognized as part of this ink analysis word. Read-only.
-               *
-               * [Api set: OneNoteApi 1.1]
-               */
+    *
+    * Weak references to the ink strokes that were recognized as part of this ink analysis word. Read-only.
+    *
+    * [Api set: OneNoteApi 1.1]
+    */
   var strokePointers: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               *
-               * The words that were recognized in this ink word, in order of likelihood. Read-only.
-               *
-               * [Api set: OneNoteApi 1.1]
-               */
+    *
+    * The words that were recognized in this ink word, in order of likelihood. Read-only.
+    *
+    * [Api set: OneNoteApi 1.1]
+    */
   var wordAlternates: js.UndefOr[scala.Boolean] = js.undefined
 }
 

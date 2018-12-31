@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IConnectPacket extends IPacket {
   var clean: js.UndefOr[scala.Boolean] = js.undefined
   var clientId: java.lang.String

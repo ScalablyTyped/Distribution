@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Biography extends js.Object {
   /** The content type of the biography. */
   var contentType: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SectionHeaderItem extends js.Object {
   def duplicate(): SectionHeaderItem
   def getHelpText(): java.lang.String

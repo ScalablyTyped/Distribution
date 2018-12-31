@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 			 * <ListViewAnimationProperties> when invoking the ListView's `scrollToItem`, `appendSection`,
 			 * `deleteSectionAt`, `insertSectionAt` and `replaceSectionAt` methods.
 			 */
-
 trait ListViewScrollPosition
   extends titaniumLib.TitaniumNs.Proxy {
   /**

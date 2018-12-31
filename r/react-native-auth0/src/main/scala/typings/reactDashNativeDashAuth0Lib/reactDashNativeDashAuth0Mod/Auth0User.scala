@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Auth0User[T] extends js.Object {
   var created_at: java.lang.String
   var email: java.lang.String

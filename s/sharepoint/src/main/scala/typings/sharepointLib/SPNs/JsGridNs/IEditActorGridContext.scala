@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line: interface-name
-
 trait IEditActorGridContext extends js.Object {
   var RTL: js.Any
   var bLightFocus: scala.Boolean

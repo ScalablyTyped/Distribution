@@ -15,9 +15,7 @@ class ContentControls protected () extends js.Object {
   var `Word.ContentControls_typekey`: ContentControls = js.native
   /** @param Word.WdContentControlType [Type=0] */
   def Add(): ContentControl = js.native
-  /** @param Word.WdContentControlType [Type=0] */
   def Add(Type: WdContentControlType): ContentControl = js.native
-  /** @param Word.WdContentControlType [Type=0] */
   def Add(Type: WdContentControlType, Range: js.Any): ContentControl = js.native
   def Item(Index: js.Any): ContentControl = js.native
 }

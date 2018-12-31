@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IResourceCollection
   extends winrtLib.WindowsNs.WebNs.SyndicationNs.ISyndicationNode {
   var accepts: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String]

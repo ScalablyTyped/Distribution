@@ -12,15 +12,15 @@ sealed trait TokenFormat extends js.Object
 @js.native
 object TokenFormat extends js.Object {
   /**
-           * Form URL-encoded, for example `access_token=...`.
-           */
+    * Form URL-encoded, for example `access_token=...`.
+    */
   @js.native
   sealed trait FORM_URL_ENCODED
     extends googleDashAppsDashScriptDashOauth2Lib.GoogleAppsScriptOAuth2Ns.TokenFormat
   
   /**
-           * JSON format, for example `{"access_token": "..."}`.
-           */
+    * JSON format, for example `{"access_token": "..."}`.
+    */
   @js.native
   sealed trait JSON
     extends googleDashAppsDashScriptDashOauth2Lib.GoogleAppsScriptOAuth2Ns.TokenFormat

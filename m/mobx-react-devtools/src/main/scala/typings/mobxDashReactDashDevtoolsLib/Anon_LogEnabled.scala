@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LogEnabled extends js.Object {
   var graphEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var logEnabled: js.UndefOr[scala.Boolean] = js.undefined

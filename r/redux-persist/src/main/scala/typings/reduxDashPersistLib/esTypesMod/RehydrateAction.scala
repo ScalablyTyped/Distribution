@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RehydrateAction[Payload] extends js.Object {
   var err: js.UndefOr[RehydrateErrorType] = js.undefined
   var key: java.lang.String

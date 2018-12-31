@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Panel extends js.Object {
   var chart: this.type
   var date: js.UndefOr[stdLib.Date] = js.undefined

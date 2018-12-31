@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 	* @brief mongodb 数据库数据游标对象
 	* @detail 
 	*/
-
 @JSGlobal("Class_MongoCursor")
 @js.native
 class Class_MongoCursor () extends Class__object {
@@ -24,15 +23,6 @@ class Class_MongoCursor () extends Class__object {
   	 * 
   	 */
   def count(): scala.Double = js.native
-  /**
-  	 * 
-  	 * @brief 查询游标的记录总数
-  	 * @param applySkipLimit 指定是否查询 skip 和 limit 后的记录数，缺省为 false，查询全部记录数
-  	 * @return 返回记录总数
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def count(applySkipLimit: scala.Boolean): scala.Double = js.native
   /**
   	 * 

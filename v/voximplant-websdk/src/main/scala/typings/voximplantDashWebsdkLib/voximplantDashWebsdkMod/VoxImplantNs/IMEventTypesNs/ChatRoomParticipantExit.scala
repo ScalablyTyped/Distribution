@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when participant left the chat room
 		*/
-
 trait ChatRoomParticipantExit extends js.Object {
   /**
   			* User id

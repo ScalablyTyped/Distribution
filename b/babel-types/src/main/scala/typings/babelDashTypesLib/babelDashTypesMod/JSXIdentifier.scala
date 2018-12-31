@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JSXIdentifier extends Node {
   var name: java.lang.String
   @JSName("type")

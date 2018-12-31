@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options
   extends /* plugin_name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   // Action cache. Makes inbound messages idempotent.

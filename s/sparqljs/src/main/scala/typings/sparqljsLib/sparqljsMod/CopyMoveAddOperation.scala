@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CopyMoveAddOperation extends js.Object {
   var destination: GraphOrDefault
   var silent: scala.Boolean

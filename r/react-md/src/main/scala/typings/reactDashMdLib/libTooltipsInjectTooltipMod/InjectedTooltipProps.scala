@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InjectedTooltipProps extends js.Object {
   var tooltipClassName: js.UndefOr[java.lang.String] = js.undefined
   var tooltipContainerClassName: js.UndefOr[java.lang.String] = js.undefined

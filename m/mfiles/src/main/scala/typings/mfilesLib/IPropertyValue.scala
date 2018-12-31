@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPropertyValue extends js.Object {
   var PropertyDef: mfilesLib.MFilesNs.MFBuiltInPropertyDef | scala.Double
   var TypedValue: ITypedValue

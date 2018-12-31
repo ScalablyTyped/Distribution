@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TabBarBottomProps extends js.Object {
   var activeBackgroundColor: java.lang.String
   var activeTintColor: java.lang.String

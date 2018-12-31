@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SignatureReflectionContainer[TParameters] extends js.Object {
   var implementationOf: js.UndefOr[TypeObject] = js.undefined
   var inheritedFrom: js.UndefOr[TypeObject] = js.undefined

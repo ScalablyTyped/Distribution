@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BindingDef extends js.Object {
   var flags: BindingFlags
   var name: java.lang.String | scala.Null

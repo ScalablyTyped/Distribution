@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IJsonWriter
   extends extjsLib.ExtNs.dataNs.writerNs.IWriter {
   /** [Config Option] (Boolean) */

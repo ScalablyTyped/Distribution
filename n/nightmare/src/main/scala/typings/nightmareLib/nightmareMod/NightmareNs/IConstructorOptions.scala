@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IConstructorOptions extends js.Object {
   var cookiesFile: js.UndefOr[java.lang.String] = js.undefined
   var electronPath: js.UndefOr[java.lang.String] = js.undefined

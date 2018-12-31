@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeploymentStartedEvent extends js.Object {
   var environment: ReleaseEnvironment
   var project: ProjectReference

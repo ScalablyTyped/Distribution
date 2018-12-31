@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PivotTupleModel extends js.Object {
   var caption: js.UndefOr[java.lang.String] = js.undefined
   var children: js.Array[PivotTupleModel]

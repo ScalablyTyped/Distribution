@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Price extends js.Object {
   /** The price value in micros. */
   var amountMicros: js.UndefOr[scala.Double] = js.undefined

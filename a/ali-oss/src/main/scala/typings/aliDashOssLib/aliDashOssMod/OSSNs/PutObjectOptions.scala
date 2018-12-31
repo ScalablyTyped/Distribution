@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PutObjectOptions extends js.Object {
    // user meta, will send with x-oss-meta- prefix string e.g.: { uid: 123, pid: 110 }
   var callback: ObjectCallback

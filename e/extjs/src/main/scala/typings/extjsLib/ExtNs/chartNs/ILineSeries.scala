@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILineSeries
   extends extjsLib.ExtNs.chartNs.seriesNs.ICartesian {
   /** [Method] Draws the series for the current chart  */

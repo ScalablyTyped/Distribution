@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Relation
   extends avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.IBaseObject {
   var removed: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object]

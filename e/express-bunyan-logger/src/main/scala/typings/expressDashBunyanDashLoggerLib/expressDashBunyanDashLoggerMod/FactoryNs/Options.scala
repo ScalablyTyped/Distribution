@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var excludes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var format: js.UndefOr[java.lang.String | FormatFunction] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GrayMatterOption extends js.Object {
   var delims: java.lang.String
   var eval: js.UndefOr[scala.Boolean] = js.undefined

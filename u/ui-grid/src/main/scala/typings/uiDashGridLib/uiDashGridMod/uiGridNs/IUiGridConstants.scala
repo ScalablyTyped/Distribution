@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IUiGridConstants extends js.Object {
   var APOS_REGEXP: stdLib.RegExp
   var ASC: java.lang.String

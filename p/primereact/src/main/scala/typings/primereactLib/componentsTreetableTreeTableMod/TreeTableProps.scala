@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TreeTableProps extends js.Object {
   var alwaysShowPaginator: js.UndefOr[scala.Boolean] = js.undefined
   var autoLayout: js.UndefOr[scala.Boolean] = js.undefined

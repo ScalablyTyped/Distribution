@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IToSVGOptions extends js.Object {
   /**
   	 * Encoding of SVG output

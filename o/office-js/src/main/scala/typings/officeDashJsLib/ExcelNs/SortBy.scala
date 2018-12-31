@@ -9,28 +9,28 @@ import scala.scalajs.js.annotation._
 sealed trait SortBy extends js.Object
 
 /**
-     *
-     * Represents the sort direction.
-     *
-     * [Api set: ExcelApi 1.8]
-     */
+  *
+  * Represents the sort direction.
+  *
+  * [Api set: ExcelApi 1.8]
+  */
 @JSGlobal("Excel.SortBy")
 @js.native
 object SortBy extends js.Object {
   /**
-           *
-           * Ascending sort. Smallest to largest or A to Z.
-           *
-           */
+    *
+    * Ascending sort. Smallest to largest or A to Z.
+    *
+    */
   @js.native
   sealed trait ascending
     extends officeDashJsLib.ExcelNs.SortBy
   
   /**
-           *
-           * Descending sort. Largest to smallest or Z to A.
-           *
-           */
+    *
+    * Descending sort. Largest to smallest or Z to A.
+    *
+    */
   @js.native
   sealed trait descending
     extends officeDashJsLib.ExcelNs.SortBy

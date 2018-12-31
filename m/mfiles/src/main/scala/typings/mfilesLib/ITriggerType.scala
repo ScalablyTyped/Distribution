@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITriggerType extends js.Object {
   val Daily: IDailyTrigger
   val MonthlyDOW: IMonthlyDOWTrigger

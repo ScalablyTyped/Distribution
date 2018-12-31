@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ComponentsPropsList extends js.Object {
   var MuiAppBar: atMaterialDashUiCoreLib.appbarAppBarMod.AppBarProps
   var MuiAvatar: atMaterialDashUiCoreLib.avatarAvatarMod.AvatarProps

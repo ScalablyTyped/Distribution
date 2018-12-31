@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JdbcTime extends js.Object {
   def after(when: JdbcTime): scala.Boolean
   def before(when: JdbcTime): scala.Boolean

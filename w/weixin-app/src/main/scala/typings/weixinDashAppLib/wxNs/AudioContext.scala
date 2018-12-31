@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * audioContext 通过 audioId 跟一个 <audio/> 组件绑定，通过它可以操作对应的 <audio/> 组件。
 	 */
-
 trait AudioContext extends js.Object {
   /**
   		 * 暂停

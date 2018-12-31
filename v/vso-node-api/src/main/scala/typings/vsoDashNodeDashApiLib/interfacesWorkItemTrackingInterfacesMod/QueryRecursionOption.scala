@@ -12,15 +12,15 @@ sealed trait QueryRecursionOption extends js.Object
 @js.native
 object QueryRecursionOption extends js.Object {
   /**
-       * Returns work items that satisfy the target criteria, even if no work item satisfies the source and link criteria.
-       */
+    * Returns work items that satisfy the target criteria, even if no work item satisfies the source and link criteria.
+    */
   @js.native
   sealed trait ChildFirst
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.QueryRecursionOption
   
   /**
-       * Returns work items that satisfy the source, even if no linked work item satisfies the target and link criteria.
-       */
+    * Returns work items that satisfy the source, even if no linked work item satisfies the target and link criteria.
+    */
   @js.native
   sealed trait ParentFirst
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.QueryRecursionOption

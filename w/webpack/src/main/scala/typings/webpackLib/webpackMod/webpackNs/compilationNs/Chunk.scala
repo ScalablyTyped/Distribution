@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Chunk extends js.Object {
   var chunkReason: js.Any
   var debugId: scala.Double

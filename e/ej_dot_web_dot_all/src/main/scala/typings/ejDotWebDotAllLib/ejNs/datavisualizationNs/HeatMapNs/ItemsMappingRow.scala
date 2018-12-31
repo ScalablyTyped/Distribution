@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ItemsMappingRow extends js.Object {
   /** Specifies the value of the column or row.
-               */
+    */
   var displayName: js.UndefOr[java.lang.String] = js.undefined
   /** Specifies the name of the column or row.
-               */
+    */
   var propertyName: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -12,7 +12,7 @@ object DefineNs extends js.Object {
   def define(
     name: java.lang.String,
     deps: js.Array[java.lang.String],
-    `def`: js.Function1[/* repeated */js.Any, _]
+    `def`: js.Function1[/* repeated */ js.Any, _]
   ): scala.Unit = js.native
   def loadScript(
     url: java.lang.String,
@@ -22,6 +22,6 @@ object DefineNs extends js.Object {
   /** Loads script from _layouts/15/[req].js */
   def require(req: java.lang.String, callback: js.Function1[/* arg */ js.Array[_], scala.Unit]): scala.Unit = js.native
   /** Loads script from _layouts/15/[req].js */
-  def require(req: js.Array[java.lang.String], callback: js.Function1[/* repeated */js.Any, scala.Unit]): scala.Unit = js.native
+  def require(req: js.Array[java.lang.String], callback: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccounttaxCustomBatchResponseEntry extends js.Object {
   /** The retrieved or updated account tax settings. */
   var accountTax: js.UndefOr[AccountTax] = js.undefined

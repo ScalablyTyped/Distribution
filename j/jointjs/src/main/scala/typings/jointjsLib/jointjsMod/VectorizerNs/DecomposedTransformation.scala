@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DecomposedTransformation extends js.Object {
   var rotation: scala.Double
   var scaleX: scala.Double

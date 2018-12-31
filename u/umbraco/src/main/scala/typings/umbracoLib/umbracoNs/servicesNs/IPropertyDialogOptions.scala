@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Property dialog options object
-    */
-
+  * Property dialog options object
+  */
 trait IPropertyDialogOptions extends js.Object {
   /*callback function*/
   var callback: angularLib.angularMod.Global.Function

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICodeExample extends js.Object {
   var config: java.lang.String
   var description: java.lang.String

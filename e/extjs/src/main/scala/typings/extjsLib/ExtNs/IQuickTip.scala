@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IQuickTip
   extends extjsLib.ExtNs.tipNs.IToolTip {
   /** [Method] Hides a visible tip or cancels an impending show for a particular element

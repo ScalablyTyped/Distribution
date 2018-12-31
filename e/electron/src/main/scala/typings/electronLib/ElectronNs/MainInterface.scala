@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MainInterface extends CommonInterface {
   var BrowserView: org.scalablytyped.runtime.Instantiable1[/* options */ js.UndefOr[/* options */ BrowserViewConstructorOptions], BrowserView]
   var BrowserWindow: org.scalablytyped.runtime.Instantiable1[

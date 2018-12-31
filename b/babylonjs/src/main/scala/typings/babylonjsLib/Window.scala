@@ -18,15 +18,15 @@ trait Window extends js.Object {
   var VRFrameData: js.Any = js.native
   var WebGLRenderingContext: WebGLRenderingContext = js.native
   var mozIndexedDB: stdLib.IDBFactory = js.native
-  var mozURL: stdLib.Anon_Url with (/* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(URL)))) */js.Any) = js.native
+  var mozURL: Anon_Url = js.native
   var msIndexedDB: stdLib.IDBFactory = js.native
-  var msURL: stdLib.Anon_Url with (/* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(URL)))) */js.Any) = js.native
+  var msURL: Anon_Url = js.native
   var onvrdisplayconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]) | scala.Null = js.native
   var onvrdisplaydisconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]) | scala.Null = js.native
   var onvrdisplaypresentchange: (js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]) | scala.Null = js.native
   var webkitAudioContext: stdLib.AudioContext = js.native
   var webkitIndexedDB: stdLib.IDBFactory = js.native
-  var webkitURL: stdLib.Anon_Url with (/* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(URL)))) */js.Any) = js.native
+  var webkitURL: Anon_Url = js.native
   @JSName("addEventListener")
   def addEventListener_vrdisplayconnected(
     `type`: babylonjsLib.babylonjsLibStrings.vrdisplayconnected,
@@ -62,6 +62,6 @@ trait Window extends js.Object {
   ): scala.Unit = js.native
   def mozRequestAnimationFrame(callback: stdLib.FrameRequestCallback): scala.Double = js.native
   def oRequestAnimationFrame(callback: stdLib.FrameRequestCallback): scala.Double = js.native
-  def setImmediate(handler: js.Function1[/* repeated */js.Any, scala.Unit]): scala.Double = js.native
+  def setImmediate(handler: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Double = js.native
 }
 

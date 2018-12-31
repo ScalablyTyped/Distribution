@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Plugin
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[MimeType] {
   val description: java.lang.String

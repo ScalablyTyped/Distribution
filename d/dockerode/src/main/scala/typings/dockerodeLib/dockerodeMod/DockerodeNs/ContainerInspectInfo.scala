@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContainerInspectInfo extends js.Object {
   var AppArmorProfile: java.lang.String
   var Args: js.Array[java.lang.String]

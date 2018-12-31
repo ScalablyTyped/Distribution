@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Tile extends js.Object {
   /** Remove the Tile from the status bar. */
   def destroy(): scala.Unit

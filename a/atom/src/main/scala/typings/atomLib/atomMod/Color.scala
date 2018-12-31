@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Color extends js.Object {
   /** Returns a string in the form '#abcdef'. */
   def toHexString(): java.lang.String

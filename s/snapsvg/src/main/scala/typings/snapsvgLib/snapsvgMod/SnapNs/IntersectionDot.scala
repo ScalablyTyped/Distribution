@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IntersectionDot extends js.Object {
   var bez1: js.Array[scala.Double]
   var bez2: js.Array[scala.Double]

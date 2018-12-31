@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDataView
   extends extjsLib.ExtNs.viewNs.IAbstractView {
   /** [Method] Un highlights the currently highlighted item if any  */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait URLRecord extends js.Object {
   var cannotBeABaseURL: js.UndefOr[scala.Boolean] = js.undefined
   var fragment: java.lang.String | scala.Null

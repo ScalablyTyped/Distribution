@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileResource extends js.Object {
   var alternateLink: java.lang.String
   var appDataContents: scala.Boolean

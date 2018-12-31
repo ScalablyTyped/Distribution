@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Tokenizer[T] extends js.Object {
   var formatter: Formatter[T]
   var token_info_dictionary: TokenInfoDictionary

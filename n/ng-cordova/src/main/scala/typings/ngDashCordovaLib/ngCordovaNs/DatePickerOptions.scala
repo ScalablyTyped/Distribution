@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatePickerOptions extends js.Object {
   var allowFutureDates: js.UndefOr[scala.Boolean] = js.undefined
   var allowOldDates: js.UndefOr[scala.Boolean] = js.undefined

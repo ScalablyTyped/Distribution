@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VNodeData
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var args: js.UndefOr[js.Array[_]] = js.undefined

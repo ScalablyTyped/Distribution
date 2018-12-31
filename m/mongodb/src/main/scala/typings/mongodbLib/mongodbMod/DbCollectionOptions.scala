@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DbCollectionOptions extends CommonOptions {
   var pkFactory: js.UndefOr[js.Object] = js.undefined
   var raw: js.UndefOr[scala.Boolean] = js.undefined

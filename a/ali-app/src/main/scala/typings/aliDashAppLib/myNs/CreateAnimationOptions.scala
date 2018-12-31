@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateAnimationOptions extends js.Object {
   /** 动画持续时间，单位 ms，默认值 0 */
   var delay: scala.Double

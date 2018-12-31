@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Accesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -21,15 +20,15 @@ trait Anon_Accesstoken extends js.Object {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * A list of query parameters specified as JSON text in the form of
-                   * {"project_id":"my_project_id",
-                   * "job_names":["jobid1","jobid2",...],
-                   * "job_statuses":["status1","status2",...]}.
-                   * Since `job_names` and `job_statuses` support multiple values, their values
-                   * must be specified with array notation. `project_id` is required. `job_names`
-                   * and `job_statuses` are optional.  The valid values for `job_statuses` are
-                   * case-insensitive: `ENABLED`, `DISABLED`, and `DELETED`.
-                   */
+    * A list of query parameters specified as JSON text in the form of
+    * {"project_id":"my_project_id",
+    * "job_names":["jobid1","jobid2",...],
+    * "job_statuses":["status1","status2",...]}.
+    * Since `job_names` and `job_statuses` support multiple values, their values
+    * must be specified with array notation. `project_id` is required. `job_names`
+    * and `job_statuses` are optional.  The valid values for `job_statuses` are
+    * case-insensitive: `ENABLED`, `DISABLED`, and `DELETED`.
+    */
   var filter: js.UndefOr[java.lang.String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined

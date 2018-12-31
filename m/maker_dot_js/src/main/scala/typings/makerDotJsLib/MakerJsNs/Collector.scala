@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Collects items that share a common key.
-     */
+  * Collects items that share a common key.
+  */
 @JSGlobal("MakerJs.Collector")
 @js.native
 class Collector[K, T] () extends js.Object {

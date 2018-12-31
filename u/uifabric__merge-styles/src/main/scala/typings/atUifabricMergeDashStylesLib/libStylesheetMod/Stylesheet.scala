@@ -22,14 +22,14 @@ class Stylesheet () extends js.Object {
   /* private */ def _createStyleElement(): js.Any = js.native
   /* private */ def _getStyleElement(): js.Any = js.native
   /**
-       * Gets the arguments associated with a given classname which was
-       * previously registered using cacheClassName.
-       */
+    * Gets the arguments associated with a given classname which was
+    * previously registered using cacheClassName.
+    */
   def argsFromClassName(className: java.lang.String): js.UndefOr[js.Array[atUifabricMergeDashStylesLib.libIStyleMod.IStyle]] = js.native
   /**
-       * Used internally to cache information about a class which was
-       * registered with the stylesheet.
-       */
+    * Used internally to cache information about a class which was
+    * registered with the stylesheet.
+    */
   def cacheClassName(
     className: java.lang.String,
     key: java.lang.String,
@@ -37,66 +37,50 @@ class Stylesheet () extends js.Object {
     rules: js.Array[java.lang.String]
   ): scala.Unit = js.native
   /**
-       * Gets the appropriate classname given a key which was previously
-       * registered using cacheClassName.
-       */
+    * Gets the appropriate classname given a key which was previously
+    * registered using cacheClassName.
+    */
   def classNameFromKey(key: java.lang.String): js.UndefOr[java.lang.String] = js.native
   /**
-       * Generates a unique classname.
-       *
-       * @param displayName - Optional value to use as a prefix.
-       */
+    * Generates a unique classname.
+    *
+    * @param displayName - Optional value to use as a prefix.
+    */
   def getClassName(): java.lang.String = js.native
-  /**
-       * Generates a unique classname.
-       *
-       * @param displayName - Optional value to use as a prefix.
-       */
   def getClassName(displayName: java.lang.String): java.lang.String = js.native
   /**
-       * Gets all rules registered with the stylesheet; only valid when
-       * using InsertionMode.none.
-       */
+    * Gets all rules registered with the stylesheet; only valid when
+    * using InsertionMode.none.
+    */
   def getRules(): java.lang.String = js.native
-  /**
-       * Gets all rules registered with the stylesheet; only valid when
-       * using InsertionMode.none.
-       */
   def getRules(includePreservedRules: scala.Boolean): java.lang.String = js.native
   /**
-       * Inserts a css rule into the stylesheet.
-       * @param preserve - Preserves the rule beyond a reset boundary.
-       */
+    * Inserts a css rule into the stylesheet.
+    * @param preserve - Preserves the rule beyond a reset boundary.
+    */
   def insertRule(rule: java.lang.String): scala.Unit = js.native
-  /**
-       * Inserts a css rule into the stylesheet.
-       * @param preserve - Preserves the rule beyond a reset boundary.
-       */
   def insertRule(rule: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
   /**
-       * Gets the arguments associated with a given classname which was
-       * previously registered using cacheClassName.
-       */
+    * Gets the arguments associated with a given classname which was
+    * previously registered using cacheClassName.
+    */
   def insertedRulesFromClassName(className: java.lang.String): js.UndefOr[js.Array[java.lang.String]] = js.native
   /**
-       * Configures a reset callback.
-       *
-       * @param callback - A callback which will be called when the Stylesheet is reset.
-       */
+    * Configures a reset callback.
+    *
+    * @param callback - A callback which will be called when the Stylesheet is reset.
+    */
   def onReset(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
-       * Resets the internal state of the stylesheet. Only used in server
-       * rendered scenarios where we're using InsertionMode.none.
-       */
+    * Resets the internal state of the stylesheet. Only used in server
+    * rendered scenarios where we're using InsertionMode.none.
+    */
   def reset(): scala.Unit = js.native
   def resetKeys(): scala.Unit = js.native
   /**
-       * Configures the stylesheet.
-       */
+    * Configures the stylesheet.
+    */
   def setConfig(): scala.Unit = js.native
-  /**
-       * Configures the stylesheet.
-       */
   def setConfig(config: IStyleSheetConfig): scala.Unit = js.native
 }
 
@@ -104,8 +88,8 @@ class Stylesheet () extends js.Object {
 @js.native
 object Stylesheet extends js.Object {
   /**
-       * Gets the singleton instance.
-       */
+    * Gets the singleton instance.
+    */
   def getInstance(): atUifabricMergeDashStylesLib.libStylesheetMod.Stylesheet = js.native
 }
 

@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SliceInput extends js.Object {
   /**
-               * Slices with only the carriers in this alliance should be returned; do not use this field with permittedCarrier. Allowed values are ONEWORLD, SKYTEAM,
-               * and STAR.
-               */
+    * Slices with only the carriers in this alliance should be returned; do not use this field with permittedCarrier. Allowed values are ONEWORLD, SKYTEAM,
+    * and STAR.
+    */
   var alliance: js.UndefOr[java.lang.String] = js.undefined
   /** Departure date in YYYY-MM-DD format. */
   var date: js.UndefOr[java.lang.String] = js.undefined

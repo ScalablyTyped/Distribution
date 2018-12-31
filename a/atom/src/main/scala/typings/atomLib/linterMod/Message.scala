@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Message extends js.Object {
   /**
-       *  Markdown long description of the error. Accepts a callback so that you can
-       *  do things like HTTP requests.
-       */
+    *  Markdown long description of the error. Accepts a callback so that you can
+    *  do things like HTTP requests.
+    */
   var description: js.UndefOr[
     java.lang.String | (js.Function0[js.Promise[java.lang.String] | java.lang.String])
   ] = js.undefined

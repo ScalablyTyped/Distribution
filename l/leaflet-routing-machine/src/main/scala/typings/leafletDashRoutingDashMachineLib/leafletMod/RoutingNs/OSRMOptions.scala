@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OSRMOptions extends js.Object {
   var polylinePrecision: js.UndefOr[scala.Double] = js.undefined
   var profile: js.UndefOr[java.lang.String] = js.undefined

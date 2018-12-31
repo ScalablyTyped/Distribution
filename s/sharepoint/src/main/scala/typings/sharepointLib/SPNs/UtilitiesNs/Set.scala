@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SP.Utilities.Set")
 @js.native
 class Set () extends js.Object {
-  // tslint:disable-next-line: unified-signatures
   def this(items: org.scalablytyped.runtime.NumberDictionary[scala.Double]) = this()
   def this(items: org.scalablytyped.runtime.StringDictionary[scala.Double]) = this()
   /** Adds an item to the set */
@@ -26,8 +25,8 @@ class Set () extends js.Object {
   /** Returns first item in the set */
   def First(): js.Any = js.native
   /** Returns the underlying collection of items as dictionary.
-                  Items are the keys, and values are always 1.
-                  So the return value may be either { [item: string]: number } or { [item: number]: number } */
+    Items are the keys, and values are always 1.
+    So the return value may be either { [item: string]: number } or { [item: number]: number } */
   def GetCollection(): js.Any = js.native
   /** Returns a new set, that contains only items that exist both in this set and the otherSet */
   def Intersection(otherSet: Set): Set = js.native

@@ -19,7 +19,6 @@ object transportsNs extends js.Object {
     var options: HTTPTransportOptions = js.native
   }
   
-  
   trait HTTPTransportOptions extends js.Object {
     var agent: js.UndefOr[nodeLib.httpMod.Agent] = js.undefined
     var ca: js.UndefOr[java.lang.String] = js.undefined

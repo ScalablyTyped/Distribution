@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserOrOrg extends UserOrOrgSummary {
   var blog: java.lang.String
   var company: java.lang.String

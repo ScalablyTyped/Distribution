@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Procedure extends js.Object {
   var argTypes: js.Array[ArgType]
   var arrayArgs: js.Array[scala.Double]

@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(csstypeLib.csstypeMod.SvgPropertiesHyphenFallback because Would inherit conflicting mutable fields List(clip, `paint-order`, `font-stretch`, `font-style`, overflow, `unicode-bidi`, `font-variant`, `text-rendering`, `white-space`, direction, color, cursor, `font-family`, filter, `image-rendering`, `pointer-events`, `clip-path`, `line-height`, opacity, `font-size-adjust`, `writing-mode`, `word-spacing`, `font-weight`, `letter-spacing`, visibility, `font-size`, display, `text-decoration`, mask, font))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(csstypeLib.csstypeMod.SvgPropertiesHyphenFallback because Would inherit conflicting mutable fields List(clip, `clip-path`, color, cursor, direction, display, filter, font, `font-family`, `font-size`, `font-size-adjust`, `font-stretch`, `font-style`, `font-variant`, `font-weight`, `image-rendering`, `letter-spacing`, `line-height`, mask, opacity, overflow, `paint-order`, `pointer-events`, `text-decoration`, `text-rendering`, `unicode-bidi`, visibility, `white-space`, `word-spacing`, `writing-mode`))*/
 trait PropertiesHyphenFallback[TLength]
   extends StandardPropertiesHyphenFallback[TLength]
      with VendorPropertiesHyphenFallback[TLength]

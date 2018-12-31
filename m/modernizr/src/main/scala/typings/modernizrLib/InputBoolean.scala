@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InputBoolean extends js.Object {
   var autocomplete: scala.Boolean
   var autofocus: scala.Boolean

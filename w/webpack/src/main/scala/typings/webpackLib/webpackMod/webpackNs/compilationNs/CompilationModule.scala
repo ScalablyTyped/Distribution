@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompilationModule extends js.Object {
   var build: scala.Boolean
   var dependencies: scala.Boolean

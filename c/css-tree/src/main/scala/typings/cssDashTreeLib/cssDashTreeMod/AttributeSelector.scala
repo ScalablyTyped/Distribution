@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AttributeSelector extends CssNodeCommon {
   var flags: java.lang.String | scala.Null
   var matcher: java.lang.String | scala.Null

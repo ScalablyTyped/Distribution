@@ -9,19 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object fabricNs extends js.Object {
   @js.native
+  /**
+  	 * Constructor
+  	 * @param objects ActiveSelection objects
+  	 * @param [options] Options object
+  	 */
   class ActiveSelection ()
     extends fabricLib.fabricDashImplMod.ActiveSelection {
-    /**
-    	 * Constructor
-    	 * @param objects ActiveSelection objects
-    	 * @param [options] Options object
-    	 */
     def this(items: js.Array[fabricLib.fabricDashImplMod.Object]) = this()
-    /**
-    	 * Constructor
-    	 * @param objects ActiveSelection objects
-    	 * @param [options] Options object
-    	 */
     def this(items: js.Array[fabricLib.fabricDashImplMod.Object], options: fabricLib.fabricDashImplMod.IObjectOptions) = this()
   }
   
@@ -32,11 +27,6 @@ object fabricNs extends js.Object {
   @js.native
   class Canvas protected ()
     extends fabricLib.fabricDashImplMod.Canvas {
-    /**
-    	 * Constructor
-    	 * @param element <canvas> element to initialize instance on
-    	 * @param [options] Options object
-    	 */
     def this(element: java.lang.String) = this()
     /**
     	 * Constructor
@@ -44,17 +34,7 @@ object fabricNs extends js.Object {
     	 * @param [options] Options object
     	 */
     def this(element: stdLib.HTMLCanvasElement) = this()
-    /**
-    	 * Constructor
-    	 * @param element <canvas> element to initialize instance on
-    	 * @param [options] Options object
-    	 */
     def this(element: java.lang.String, options: fabricLib.fabricDashImplMod.ICanvasOptions) = this()
-    /**
-    	 * Constructor
-    	 * @param element <canvas> element to initialize instance on
-    	 * @param [options] Options object
-    	 */
     def this(element: stdLib.HTMLCanvasElement, options: fabricLib.fabricDashImplMod.ICanvasOptions) = this()
   }
   
@@ -73,13 +53,13 @@ object fabricNs extends js.Object {
     extends fabricLib.fabricDashImplMod.CircleBrush
   
   @js.native
+  /**
+  	 * Color class
+  	 * The purpose of Color is to abstract and encapsulate common color operations;
+  	 * @param color optional in hex or rgb(a) format
+  	 */
   class Color ()
     extends fabricLib.fabricDashImplMod.Color {
-    /**
-    	 * Color class
-    	 * The purpose of Color is to abstract and encapsulate common color operations;
-    	 * @param color optional in hex or rgb(a) format
-    	 */
     def this(color: java.lang.String) = this()
   }
   
@@ -90,19 +70,14 @@ object fabricNs extends js.Object {
   }
   
   @js.native
+  /**
+  	 * Constructor
+  	 * @param objects Group objects
+  	 * @param [options] Options object
+  	 */
   class Group ()
     extends fabricLib.fabricDashImplMod.Group {
-    /**
-    	 * Constructor
-    	 * @param objects Group objects
-    	 * @param [options] Options object
-    	 */
     def this(items: js.Array[_]) = this()
-    /**
-    	 * Constructor
-    	 * @param objects Group objects
-    	 * @param [options] Options object
-    	 */
     def this(items: js.Array[_], options: fabricLib.fabricDashImplMod.IObjectOptions) = this()
   }
   
@@ -115,11 +90,6 @@ object fabricNs extends js.Object {
     	 * @param [options] Options object
     	 */
     def this(text: java.lang.String) = this()
-    /**
-    	 * Constructor
-    	 * @param text Text string
-    	 * @param [options] Options object
-    	 */
     def this(text: java.lang.String, options: fabricLib.fabricDashImplMod.IITextOptions) = this()
   }
   
@@ -141,19 +111,14 @@ object fabricNs extends js.Object {
   }
   
   @js.native
+  /**
+  	 * Constructor
+  	 * @param [points] Array of points
+  	 * @param [options] Options object
+  	 */
   class Line ()
     extends fabricLib.fabricDashImplMod.Line {
-    /**
-    	 * Constructor
-    	 * @param [points] Array of points
-    	 * @param [options] Options object
-    	 */
     def this(points: js.Array[scala.Double]) = this()
-    /**
-    	 * Constructor
-    	 * @param [points] Array of points
-    	 * @param [options] Options object
-    	 */
     def this(points: js.Array[scala.Double], objObjects: fabricLib.fabricDashImplMod.IObjectOptions) = this()
   }
   
@@ -162,31 +127,16 @@ object fabricNs extends js.Object {
     extends fabricLib.fabricDashImplMod.Object
   
   @js.native
+  /**
+  	 * Constructor
+  	 * @param path Path data (sequence of coordinates and corresponding "command" tokens)
+  	 * @param [options] Options object
+  	 */
   class Path ()
     extends fabricLib.fabricDashImplMod.Path {
-    /**
-    	 * Constructor
-    	 * @param path Path data (sequence of coordinates and corresponding "command" tokens)
-    	 * @param [options] Options object
-    	 */
     def this(path: java.lang.String) = this()
-    /**
-    	 * Constructor
-    	 * @param path Path data (sequence of coordinates and corresponding "command" tokens)
-    	 * @param [options] Options object
-    	 */
     def this(path: js.Array[_]) = this()
-    /**
-    	 * Constructor
-    	 * @param path Path data (sequence of coordinates and corresponding "command" tokens)
-    	 * @param [options] Options object
-    	 */
     def this(path: java.lang.String, options: fabricLib.fabricDashImplMod.IPathOptions) = this()
-    /**
-    	 * Constructor
-    	 * @param path Path data (sequence of coordinates and corresponding "command" tokens)
-    	 * @param [options] Options object
-    	 */
     def this(path: js.Array[_], options: fabricLib.fabricDashImplMod.IPathOptions) = this()
   }
   
@@ -198,10 +148,6 @@ object fabricNs extends js.Object {
     	 * @param [options] Options object
     	 */
     def this(paths: js.Array[fabricLib.fabricDashImplMod.Path]) = this()
-    /**
-    	 * Constructor
-    	 * @param [options] Options object
-    	 */
     def this(paths: js.Array[fabricLib.fabricDashImplMod.Path], options: fabricLib.fabricDashImplMod.IObjectOptions) = this()
   }
   
@@ -234,17 +180,7 @@ object fabricNs extends js.Object {
     	 * @param [options] Options object
     	 */
     def this(points: js.Array[fabricLib.Anon_Y]) = this()
-    /**
-    	 * Constructor
-    	 * @param points Array of points
-    	 * @param [options] Options object
-    	 */
     def this(points: js.Array[fabricLib.Anon_Y], options: fabricLib.fabricDashImplMod.IObjectOptions) = this()
-    /**
-    	 * Constructor
-    	 * @param points Array of points
-    	 * @param [options] Options object
-    	 */
     def this(points: js.Array[fabricLib.Anon_Y], options: fabricLib.fabricDashImplMod.IObjectOptions, skipOffset: scala.Boolean) = this()
   }
   
@@ -258,22 +194,16 @@ object fabricNs extends js.Object {
     	 * @param [skipOffset] Whether points offsetting should be skipped
     	 */
     def this(points: js.Array[fabricLib.Anon_Y]) = this()
-    /**
-    	 * Constructor
-    	 * @param points Array of points (where each point is an object with x and y)
-    	 * @param [options] Options object
-    	 * @param [skipOffset] Whether points offsetting should be skipped
-    	 */
     def this(points: js.Array[fabricLib.Anon_Y], options: fabricLib.fabricDashImplMod.IPolylineOptions) = this()
   }
   
   @js.native
+  /**
+  	 * Constructor
+  	 * @param [options] Options object
+  	 */
   class Rect ()
     extends fabricLib.fabricDashImplMod.Rect {
-    /**
-    	 * Constructor
-    	 * @param [options] Options object
-    	 */
     def this(options: fabricLib.fabricDashImplMod.IRectOptions) = this()
   }
   
@@ -290,11 +220,6 @@ object fabricNs extends js.Object {
   @js.native
   class StaticCanvas protected ()
     extends fabricLib.fabricDashImplMod.StaticCanvas {
-    /**
-    	 * Constructor
-    	 * @param element <canvas> element to initialize instance on
-    	 * @param [options] Options object
-    	 */
     def this(element: java.lang.String) = this()
     /**
     	 * Constructor
@@ -302,17 +227,7 @@ object fabricNs extends js.Object {
     	 * @param [options] Options object
     	 */
     def this(element: stdLib.HTMLCanvasElement) = this()
-    /**
-    	 * Constructor
-    	 * @param element <canvas> element to initialize instance on
-    	 * @param [options] Options object
-    	 */
     def this(element: java.lang.String, options: fabricLib.fabricDashImplMod.ICanvasOptions) = this()
-    /**
-    	 * Constructor
-    	 * @param element <canvas> element to initialize instance on
-    	 * @param [options] Options object
-    	 */
     def this(element: stdLib.HTMLCanvasElement, options: fabricLib.fabricDashImplMod.ICanvasOptions) = this()
   }
   
@@ -325,11 +240,6 @@ object fabricNs extends js.Object {
     	 * @param [options] Options object
     	 */
     def this(text: java.lang.String) = this()
-    /**
-    	 * Constructor
-    	 * @param text Text string
-    	 * @param [options] Options object
-    	 */
     def this(text: java.lang.String, options: fabricLib.fabricDashImplMod.ITextOptions) = this()
   }
   
@@ -337,26 +247,21 @@ object fabricNs extends js.Object {
   class Textbox protected ()
     extends fabricLib.fabricDashImplMod.Textbox {
     /**
-         * Constructor
-         * @param text Text string
-         * @param [options] Options object
-         */
+      * Constructor
+      * @param text Text string
+      * @param [options] Options object
+      */
     def this(text: java.lang.String) = this()
-    /**
-         * Constructor
-         * @param text Text string
-         * @param [options] Options object
-         */
     def this(text: java.lang.String, options: fabricLib.fabricDashImplMod.IITextOptions) = this()
   }
   
   @js.native
+  /**
+  	 * Constructor
+  	 * @param [options] Options object
+  	 */
   class Triangle ()
     extends fabricLib.fabricDashImplMod.Triangle {
-    /**
-    	 * Constructor
-    	 * @param [options] Options object
-    	 */
     def this(options: fabricLib.fabricDashImplMod.ITriangleOptions) = this()
   }
   
@@ -466,25 +371,10 @@ object fabricNs extends js.Object {
     	 */
     @JSName("supports")
     def supports_getImageData(methodName: fabricLib.fabricLibStrings.getImageData): scala.Boolean = js.native
-    /**
-    	 * Provides a way to check support of some of the canvas methods
-    	 * (either those of HTMLCanvasElement itself, or rendering context)
-    	 * @param methodName Method to check support for; Could be one of "getImageData", "toDataURL", "toDataURLWithQuality" or "setLineDash"
-    	 */
     @JSName("supports")
     def supports_setLineDash(methodName: fabricLib.fabricLibStrings.setLineDash): scala.Boolean = js.native
-    /**
-    	 * Provides a way to check support of some of the canvas methods
-    	 * (either those of HTMLCanvasElement itself, or rendering context)
-    	 * @param methodName Method to check support for; Could be one of "getImageData", "toDataURL", "toDataURLWithQuality" or "setLineDash"
-    	 */
     @JSName("supports")
     def supports_toDataURL(methodName: fabricLib.fabricLibStrings.toDataURL): scala.Boolean = js.native
-    /**
-    	 * Provides a way to check support of some of the canvas methods
-    	 * (either those of HTMLCanvasElement itself, or rendering context)
-    	 * @param methodName Method to check support for; Could be one of "getImageData", "toDataURL", "toDataURLWithQuality" or "setLineDash"
-    	 */
     @JSName("supports")
     def supports_toDataURLWithQuality(methodName: fabricLib.fabricLibStrings.toDataURLWithQuality): scala.Boolean = js.native
     /**
@@ -492,10 +382,6 @@ object fabricNs extends js.Object {
     	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
     	 */
     def toJSON(): java.lang.String = js.native
-    /**
-    	 * Returns JSON representation of canvas
-    	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-    	 */
     def toJSON(propertiesToInclude: js.Array[java.lang.String]): java.lang.String = js.native
   }
   
@@ -578,11 +464,6 @@ object fabricNs extends js.Object {
     	 * @param [options] Options object
     	 */
     def fromElement(element: stdLib.SVGElement): fabricLib.fabricDashImplMod.Ellipse = js.native
-    /**
-    	 * Returns Ellipse instance from an SVG element
-    	 * @param element Element to parse
-    	 * @param [options] Options object
-    	 */
     def fromElement(element: stdLib.SVGElement, options: fabricLib.fabricDashImplMod.IEllipseOptions): fabricLib.fabricDashImplMod.Ellipse = js.native
     /**
     	 * Returns Ellipse instance from an object representation
@@ -624,12 +505,6 @@ object fabricNs extends js.Object {
     	 * @param [options] Options object
     	 */
     def fromElement(element: stdLib.SVGElement, callback: js.Function1[/* image */ this.type, scala.Unit]): scala.Unit = js.native
-    /**
-    	 * Returns Image instance from an SVG element
-    	 * @param element Element to parse
-    	 * @param callback Callback to execute when fabric.Image object is created
-    	 * @param [options] Options object
-    	 */
     def fromElement(
       element: stdLib.SVGElement,
       callback: js.Function1[/* image */ this.type, scala.Unit],
@@ -648,19 +523,7 @@ object fabricNs extends js.Object {
     	 * @param [imgOptions] Options object
     	 */
     def fromURL(url: java.lang.String): fabricLib.fabricDashImplMod.Image = js.native
-    /**
-    	 * Creates an instance of fabric.Image from an URL string
-    	 * @param url URL to create an image from
-    	 * @param [callback] Callback to invoke when image is created (newly created image is passed as a first argument)
-    	 * @param [imgOptions] Options object
-    	 */
     def fromURL(url: java.lang.String, callback: js.Function1[/* image */ this.type, scala.Unit]): fabricLib.fabricDashImplMod.Image = js.native
-    /**
-    	 * Creates an instance of fabric.Image from an URL string
-    	 * @param url URL to create an image from
-    	 * @param [callback] Callback to invoke when image is created (newly created image is passed as a first argument)
-    	 * @param [imgOptions] Options object
-    	 */
     def fromURL(
       url: java.lang.String,
       callback: js.Function1[/* image */ this.type, scala.Unit],
@@ -709,11 +572,6 @@ object fabricNs extends js.Object {
     	 * @param [options] Options object
     	 */
     def fromElement(element: stdLib.SVGElement): fabricLib.fabricDashImplMod.Line = js.native
-    /**
-    	 * Returns fabric.Line instance from an SVG element
-    	 * @param element Element to parse
-    	 * @param [options] Options object
-    	 */
     def fromElement(element: stdLib.SVGElement, options: fabricLib.fabricDashImplMod.ILineOptions): fabricLib.fabricDashImplMod.Line = js.native
     /**
     	 * Returns fabric.Line instance from an object representation
@@ -731,12 +589,6 @@ object fabricNs extends js.Object {
     	 * @param [options] Options object
     	 */
     def fromElement(element: stdLib.SVGElement, callback: js.Function1[/* path */ this.type, _]): scala.Unit = js.native
-    /**
-    	 * Creates an instance of fabric.Path from an SVG <path> element
-    	 * @param element to parse
-    	 * @param callback Callback to invoke when an fabric.Path instance is created
-    	 * @param [options] Options object
-    	 */
     def fromElement(
       element: stdLib.SVGElement,
       callback: js.Function1[/* path */ this.type, _],
@@ -772,11 +624,6 @@ object fabricNs extends js.Object {
     	 * @param [options] Options object
     	 */
     def fromElement(element: stdLib.SVGElement): fabricLib.fabricDashImplMod.Polygon = js.native
-    /**
-    	 * Returns Polygon instance from an SVG element
-    	 * @param element Element to parse
-    	 * @param [options] Options object
-    	 */
     def fromElement(element: stdLib.SVGElement, options: fabricLib.fabricDashImplMod.IPolygonOptions): fabricLib.fabricDashImplMod.Polygon = js.native
     /**
     	 * Returns fabric.Polygon instance from an object representation
@@ -797,11 +644,6 @@ object fabricNs extends js.Object {
     	 * @param [options] Options object
     	 */
     def fromElement(element: stdLib.SVGElement): fabricLib.fabricDashImplMod.Polyline = js.native
-    /**
-    	 * Returns Polyline  instance from an SVG element
-    	 * @param element Element to parse
-    	 * @param [options] Options object
-    	 */
     def fromElement(element: stdLib.SVGElement, options: fabricLib.fabricDashImplMod.IPolylineOptions): fabricLib.fabricDashImplMod.Polyline = js.native
     /**
     	 * Returns fabric.Polyline instance from an object representation
@@ -822,11 +664,6 @@ object fabricNs extends js.Object {
     	 * @param [options] Options object
     	 */
     def fromElement(element: stdLib.SVGElement): fabricLib.fabricDashImplMod.Rect = js.native
-    /**
-    	 * Returns Rect instance from an SVG element
-    	 * @param element Element to parse
-    	 * @param [options] Options object
-    	 */
     def fromElement(element: stdLib.SVGElement, options: fabricLib.fabricDashImplMod.IRectOptions): fabricLib.fabricDashImplMod.Rect = js.native
     /**
     	 * Returns Rect instance from an object representation
@@ -850,25 +687,10 @@ object fabricNs extends js.Object {
     	 */
     @JSName("supports")
     def supports_getImageData(methodName: fabricLib.fabricLibStrings.getImageData): scala.Boolean = js.native
-    /**
-    	 * Provides a way to check support of some of the canvas methods
-    	 * (either those of HTMLCanvasElement itself, or rendering context)
-    	 * @param methodName Method to check support for; Could be one of "getImageData", "toDataURL", "toDataURLWithQuality" or "setLineDash"
-    	 */
     @JSName("supports")
     def supports_setLineDash(methodName: fabricLib.fabricLibStrings.setLineDash): scala.Boolean = js.native
-    /**
-    	 * Provides a way to check support of some of the canvas methods
-    	 * (either those of HTMLCanvasElement itself, or rendering context)
-    	 * @param methodName Method to check support for; Could be one of "getImageData", "toDataURL", "toDataURLWithQuality" or "setLineDash"
-    	 */
     @JSName("supports")
     def supports_toDataURL(methodName: fabricLib.fabricLibStrings.toDataURL): scala.Boolean = js.native
-    /**
-    	 * Provides a way to check support of some of the canvas methods
-    	 * (either those of HTMLCanvasElement itself, or rendering context)
-    	 * @param methodName Method to check support for; Could be one of "getImageData", "toDataURL", "toDataURLWithQuality" or "setLineDash"
-    	 */
     @JSName("supports")
     def supports_toDataURLWithQuality(methodName: fabricLib.fabricLibStrings.toDataURLWithQuality): scala.Boolean = js.native
     /**
@@ -876,10 +698,6 @@ object fabricNs extends js.Object {
     	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
     	 */
     def toJSON(): java.lang.String = js.native
-    /**
-    	 * Returns JSON representation of canvas
-    	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-    	 */
     def toJSON(propertiesToInclude: js.Array[java.lang.String]): java.lang.String = js.native
   }
   
@@ -899,11 +717,6 @@ object fabricNs extends js.Object {
     	 * @param [options] Options object
     	 */
     def fromElement(element: stdLib.SVGElement): fabricLib.fabricDashImplMod.Text = js.native
-    /**
-    	 * Returns fabric.Text instance from an SVG element (<b>not yet implemented</b>)
-    	 * @param element Element to parse
-    	 * @param [options] Options object
-    	 */
     def fromElement(element: stdLib.SVGElement, options: fabricLib.fabricDashImplMod.ITextOptions): fabricLib.fabricDashImplMod.Text = js.native
     /**
     	 * Returns fabric.Text instance from an object representation

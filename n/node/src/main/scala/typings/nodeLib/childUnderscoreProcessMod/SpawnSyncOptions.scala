@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpawnSyncOptions extends js.Object {
   var argv0: js.UndefOr[java.lang.String] = js.undefined
    // Not specified in the docs

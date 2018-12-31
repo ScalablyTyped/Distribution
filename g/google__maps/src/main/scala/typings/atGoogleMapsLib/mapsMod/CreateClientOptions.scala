@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateClientOptions extends js.Object {
   /** Promise constructor (optional). */
   var Promise: js.UndefOr[stdLib.PromiseConstructor] = js.undefined

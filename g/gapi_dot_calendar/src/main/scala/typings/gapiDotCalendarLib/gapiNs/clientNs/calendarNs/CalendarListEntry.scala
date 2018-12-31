@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CalendarListEntry extends js.Object {
   // The effective access role that the authenticated user has on the calendar. Read-only.
   var accessRole: AccessRoleWithoutNone

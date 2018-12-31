@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @since Chrome 57
-         */
-
+  * @since Chrome 57
+  */
 trait Point extends js.Object {
   /** The x-coordinate of the point. */
   var x: chromeDashAppsLib.chromeNs.integer

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGTextAttributes extends SVGAttributes {
   var dx: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var dy: js.UndefOr[java.lang.String | scala.Double] = js.undefined

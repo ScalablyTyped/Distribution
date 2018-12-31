@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Link extends js.Object {
   /**
-               * A set of attributes on the link. There is a limit of 32 attributes per
-               * link.
-               */
+    * A set of attributes on the link. There is a limit of 32 attributes per
+    * link.
+    */
   var attributes: js.UndefOr[Attributes] = js.undefined
   /** `SPAN_ID` identifies a span within a trace. */
   var spanId: js.UndefOr[java.lang.String] = js.undefined

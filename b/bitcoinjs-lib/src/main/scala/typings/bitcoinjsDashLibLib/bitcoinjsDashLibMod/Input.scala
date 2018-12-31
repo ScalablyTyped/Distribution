@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Input extends js.Object {
   var prevOutScript: nodeLib.Buffer
   var prevOutType: java.lang.String

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * The client behind each socket (can have multiple sockets)
 	 */
-
 trait Client extends js.Object {
   /**
   		 * The underlying Engine.io Socket instance

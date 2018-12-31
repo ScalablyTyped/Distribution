@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAbstractValidator[T] extends js.Object {
   var ForList: scala.Boolean
   def CreateAbstractListRule(name: java.lang.String): IAbstractValidationRule[_]

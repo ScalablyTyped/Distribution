@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Precision extends js.Object {
   var asString: js.UndefOr[scala.Boolean] = js.undefined
   var bounds: js.UndefOr[java.lang.String | paperLib.paperNs.Rectangle] = js.undefined

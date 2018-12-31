@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AttachmentCardNoPreviewOptions extends js.Object {
   var buttons: js.Array[DownloadButtonDescriptor | CustomButtonDescriptor]
   var description: java.lang.String

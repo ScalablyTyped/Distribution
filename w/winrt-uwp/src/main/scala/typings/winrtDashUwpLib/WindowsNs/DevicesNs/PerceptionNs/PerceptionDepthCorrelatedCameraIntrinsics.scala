@@ -10,29 +10,29 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class PerceptionDepthCorrelatedCameraIntrinsics () extends js.Object {
   /**
-                   * Unprojects all pixels in an image from camera image space out into the coordinate frame of the camera device, using the corresponding depth values from a correlated depth camera.
-                   * @param depthFrame The depth frame containing the depth value to use when projecting the points into camera space. The coordinates of each pixel in the image will be mapped from camera image space to depth image space, and then used to look up the depth in this depth frame.
-                   */
+    * Unprojects all pixels in an image from camera image space out into the coordinate frame of the camera device, using the corresponding depth values from a correlated depth camera.
+    * @param depthFrame The depth frame containing the depth value to use when projecting the points into camera space. The coordinates of each pixel in the image will be mapped from camera image space to depth image space, and then used to look up the depth in this depth frame.
+    */
   def unprojectAllPixelsAtCorrelatedDepthAsync(depthFrame: PerceptionDepthFrame): winrtDashUwpLib.Anon_Results = js.native
   /**
-                   * Unprojects a point in camera image space out into the coordinate frame of the camera device, using the corresponding depth from a correlated depth camera.
-                   * @param pixelCoordinate A point, relative to the camera frame.
-                   * @param depthFrame The depth frame containing the depth value to use when projecting the point into camera space. The pixelCoordinate will be mapped from camera image space to depth image space, and then used to look up the depth in depthFrame.
-                   * @return An unprojected coordinate, relative to the coordinate system of the camera device. The coordinate is located in front of the camera, at the depth of the corresponding pixel in depthFrame.
-                   */
+    * Unprojects a point in camera image space out into the coordinate frame of the camera device, using the corresponding depth from a correlated depth camera.
+    * @param pixelCoordinate A point, relative to the camera frame.
+    * @param depthFrame The depth frame containing the depth value to use when projecting the point into camera space. The pixelCoordinate will be mapped from camera image space to depth image space, and then used to look up the depth in depthFrame.
+    * @return An unprojected coordinate, relative to the coordinate system of the camera device. The coordinate is located in front of the camera, at the depth of the corresponding pixel in depthFrame.
+    */
   def unprojectPixelAtCorrelatedDepth(pixelCoordinate: winrtDashUwpLib.WindowsNs.FoundationNs.Point, depthFrame: PerceptionDepthFrame): winrtDashUwpLib.WindowsNs.FoundationNs.NumericsNs.Vector3 = js.native
   /**
-                   * Unprojects a set of points in camera image space out into the coordinate frame of the camera device, using the corresponding depth values from a correlated depth camera.
-                   * @param sourceCoordinates A set of points, relative to the camera frame.
-                   * @param depthFrame The depth frame containing the depth value to use when projecting the points into camera space. The pixelCoordinate will be mapped from camera image space to depth image space, and then used to look up the depth in depthFrame.
-                   * @return A set of coordinates, relative to the coordinate system of the camera device and with correlated depth values.
-                   */
+    * Unprojects a set of points in camera image space out into the coordinate frame of the camera device, using the corresponding depth values from a correlated depth camera.
+    * @param sourceCoordinates A set of points, relative to the camera frame.
+    * @param depthFrame The depth frame containing the depth value to use when projecting the points into camera space. The pixelCoordinate will be mapped from camera image space to depth image space, and then used to look up the depth in depthFrame.
+    * @return A set of coordinates, relative to the coordinate system of the camera device and with correlated depth values.
+    */
   def unprojectPixelsAtCorrelatedDepth(sourceCoordinates: winrtDashUwpLib.WindowsNs.FoundationNs.Point, depthFrame: PerceptionDepthFrame): winrtDashUwpLib.WindowsNs.FoundationNs.NumericsNs.Vector3 = js.native
   /**
-                   * Unprojects a region of pixels in an image from camera image space out into the coordinate frame of the camera device, using the corresponding depth values from a correlated depth camera.
-                   * @param region The region of pixels to project from camera image space out into the coordinate frame of the camera device.
-                   * @param depthFrame The depth frame containing the depth value to use when projecting the points into camera space. The pixelCoordinates will be mapped from camera image space to depth image space, and then used to look up the depth in depthFrame.
-                   */
+    * Unprojects a region of pixels in an image from camera image space out into the coordinate frame of the camera device, using the corresponding depth values from a correlated depth camera.
+    * @param region The region of pixels to project from camera image space out into the coordinate frame of the camera device.
+    * @param depthFrame The depth frame containing the depth value to use when projecting the points into camera space. The pixelCoordinates will be mapped from camera image space to depth image space, and then used to look up the depth in depthFrame.
+    */
   def unprojectRegionPixelsAtCorrelatedDepthAsync(region: winrtDashUwpLib.WindowsNs.FoundationNs.Rect, depthFrame: PerceptionDepthFrame): winrtDashUwpLib.Anon_Results = js.native
 }
 

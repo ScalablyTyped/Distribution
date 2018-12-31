@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FaceLandmarks extends js.Object {
   var eyeLeftBottom: point
   var eyeLeftInner: point

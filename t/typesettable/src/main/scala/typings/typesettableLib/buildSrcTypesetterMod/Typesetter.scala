@@ -14,36 +14,24 @@ class Typesetter protected () extends js.Object {
   var wrapper: typesettableLib.buildSrcWrappersMod.Wrapper = js.native
   var writer: typesettableLib.buildSrcWritersMod.Writer = js.native
   /**
-       * Clears the `Measurer`'s CacheMeasurer.
-       *
-       * Call this if your font style changee in SVG.
-       */
+    * Clears the `Measurer`'s CacheMeasurer.
+    *
+    * Call this if your font style changee in SVG.
+    */
   def clearMeasurerCache(): scala.Unit = js.native
   /**
-       * Wraps the given string into the width/height and writes it into the
-       * canvas or SVG (depending on context).
-       *
-       * Delegates to `Writer.write` using the internal `ITypesetterContext`.
-       */
+    * Wraps the given string into the width/height and writes it into the
+    * canvas or SVG (depending on context).
+    *
+    * Delegates to `Writer.write` using the internal `ITypesetterContext`.
+    */
   def write(text: java.lang.String, width: scala.Double, height: scala.Double): scala.Unit = js.native
-  /**
-       * Wraps the given string into the width/height and writes it into the
-       * canvas or SVG (depending on context).
-       *
-       * Delegates to `Writer.write` using the internal `ITypesetterContext`.
-       */
   def write(
     text: java.lang.String,
     width: scala.Double,
     height: scala.Double,
     options: typesettableLib.buildSrcWritersWriterMod.IWriteOptions
   ): scala.Unit = js.native
-  /**
-       * Wraps the given string into the width/height and writes it into the
-       * canvas or SVG (depending on context).
-       *
-       * Delegates to `Writer.write` using the internal `ITypesetterContext`.
-       */
   def write(
     text: java.lang.String,
     width: scala.Double,

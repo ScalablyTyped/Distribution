@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEnvelope[T] extends js.Object {
   /*Uses DEFAULT_CHANNEL if no channel is provided*/
   var channel: js.UndefOr[java.lang.String] = js.undefined

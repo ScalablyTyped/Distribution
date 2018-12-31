@@ -9,106 +9,106 @@ import scala.scalajs.js.annotation._
 sealed trait ChartAxisDisplayUnit extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.7]
-     */
+  * [Api set: ExcelApi 1.7]
+  */
 @JSGlobal("Excel.ChartAxisDisplayUnit")
 @js.native
 object ChartAxisDisplayUnit extends js.Object {
   /**
-           *
-           * This will set the axis in units of billions.
-           *
-           */
+    *
+    * This will set the axis in units of billions.
+    *
+    */
   @js.native
   sealed trait billions
     extends officeDashJsLib.ExcelNs.ChartAxisDisplayUnit
   
   /**
-           *
-           * This will set the axis in units of custom value.
-           *
-           */
+    *
+    * This will set the axis in units of custom value.
+    *
+    */
   @js.native
   sealed trait custom
     extends officeDashJsLib.ExcelNs.ChartAxisDisplayUnit
   
   /**
-           *
-           * This will set the axis in units of hundreds of millions.
-           *
-           */
+    *
+    * This will set the axis in units of hundreds of millions.
+    *
+    */
   @js.native
   sealed trait hundredMillions
     extends officeDashJsLib.ExcelNs.ChartAxisDisplayUnit
   
   /**
-           *
-           * This will set the axis in units of hundreds of thousands.
-           *
-           */
+    *
+    * This will set the axis in units of hundreds of thousands.
+    *
+    */
   @js.native
   sealed trait hundredThousands
     extends officeDashJsLib.ExcelNs.ChartAxisDisplayUnit
   
   /**
-           *
-           * This will set the axis in units of hundreds.
-           *
-           */
+    *
+    * This will set the axis in units of hundreds.
+    *
+    */
   @js.native
   sealed trait hundreds
     extends officeDashJsLib.ExcelNs.ChartAxisDisplayUnit
   
   /**
-           *
-           * This will set the axis in units of millions.
-           *
-           */
+    *
+    * This will set the axis in units of millions.
+    *
+    */
   @js.native
   sealed trait millions
     extends officeDashJsLib.ExcelNs.ChartAxisDisplayUnit
   
   /**
-           *
-           * Default option. This will reset display unit to the axis, and set unit label invisible.
-           *
-           */
+    *
+    * Default option. This will reset display unit to the axis, and set unit label invisible.
+    *
+    */
   @js.native
   sealed trait none
     extends officeDashJsLib.ExcelNs.ChartAxisDisplayUnit
   
   /**
-           *
-           * This will set the axis in units of tens of millions.
-           *
-           */
+    *
+    * This will set the axis in units of tens of millions.
+    *
+    */
   @js.native
   sealed trait tenMillions
     extends officeDashJsLib.ExcelNs.ChartAxisDisplayUnit
   
   /**
-           *
-           * This will set the axis in units of tens of thousands.
-           *
-           */
+    *
+    * This will set the axis in units of tens of thousands.
+    *
+    */
   @js.native
   sealed trait tenThousands
     extends officeDashJsLib.ExcelNs.ChartAxisDisplayUnit
   
   /**
-           *
-           * This will set the axis in units of thousands.
-           *
-           */
+    *
+    * This will set the axis in units of thousands.
+    *
+    */
   @js.native
   sealed trait thousands
     extends officeDashJsLib.ExcelNs.ChartAxisDisplayUnit
   
   /**
-           *
-           * This will set the axis in units of trillions.
-           *
-           */
+    *
+    * This will set the axis in units of trillions.
+    *
+    */
   @js.native
   sealed trait trillions
     extends officeDashJsLib.ExcelNs.ChartAxisDisplayUnit

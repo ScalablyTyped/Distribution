@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var additionalPass: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var afterCompile: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

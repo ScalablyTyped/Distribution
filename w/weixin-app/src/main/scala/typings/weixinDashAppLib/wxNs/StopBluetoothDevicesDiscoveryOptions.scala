@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StopBluetoothDevicesDiscoveryOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")

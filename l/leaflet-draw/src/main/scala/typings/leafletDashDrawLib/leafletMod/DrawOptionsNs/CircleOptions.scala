@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CircleOptions extends SimpleShapeOptions {
   /**
   			 * When not metric, use feet instead of yards for display

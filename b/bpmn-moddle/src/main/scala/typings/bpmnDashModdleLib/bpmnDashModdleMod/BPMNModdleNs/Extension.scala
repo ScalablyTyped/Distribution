@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Extension extends TypeDerived {
   var definition: ExtensionDefinition
   /**
-           * @default false
-           */
+    * @default false
+    */
   var mustUnderstand: scala.Boolean
 }
 

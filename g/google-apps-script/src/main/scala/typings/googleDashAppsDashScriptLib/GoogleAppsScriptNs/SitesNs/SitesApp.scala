@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SitesApp extends js.Object {
-  var AttachmentType: js.Any = js.native
-  var PageType: js.Any = js.native
+  var AttachmentType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Sites.AttachmentType */ js.Any = js.native
+  var PageType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Sites.PageType */ js.Any = js.native
   def copySite(
     domain: java.lang.String,
     name: java.lang.String,

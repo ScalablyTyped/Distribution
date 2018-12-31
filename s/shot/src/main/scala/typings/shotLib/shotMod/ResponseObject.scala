@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResponseObject extends js.Object {
   /** an object containing the response headers. */
   var headers: Headers

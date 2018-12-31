@@ -46,15 +46,15 @@ abstract class ClaimedReceiptPrinter () extends js.Object {
   /** Gets the maximum number of lines that the receipt printer station can print in sideways mode. */
   var sidewaysMaxLines: scala.Double = js.native
   /**
-                   * Creates a new print job for the receipt printer station.
-                   * @return The new print job for the receipt printer station.
-                   */
+    * Creates a new print job for the receipt printer station.
+    * @return The new print job for the receipt printer station.
+    */
   def createJob(): ReceiptPrintJob = js.native
   /**
-                   * Determines whether a data sequence, possibly including one or more escape sequences, is valid for the receipt printer station, before you use that data sequence when you call the ReceiptPrintJob.Print and ReceiptPrintJob.ExecuteAsync methods.
-                   * @param data The data sequence that you want to validate before you use it with the ReceiptPrintJob.Print method. This sequence may include printable data and escape sequences.
-                   * @return True if the data passes validation; otherwise false.
-                   */
+    * Determines whether a data sequence, possibly including one or more escape sequences, is valid for the receipt printer station, before you use that data sequence when you call the ReceiptPrintJob.Print and ReceiptPrintJob.ExecuteAsync methods.
+    * @param data The data sequence that you want to validate before you use it with the ReceiptPrintJob.Print method. This sequence may include printable data and escape sequences.
+    * @return True if the data passes validation; otherwise false.
+    */
   def validateData(data: java.lang.String): scala.Boolean = js.native
 }
 

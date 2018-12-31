@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IWebUIBackgroundTaskInstanceStatics extends js.Object {
   var current: IWebUIBackgroundTaskInstance
 }

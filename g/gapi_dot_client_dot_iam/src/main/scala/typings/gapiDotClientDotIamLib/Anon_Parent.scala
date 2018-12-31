@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Parent extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -25,10 +24,10 @@ trait Anon_Parent extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The resource name of the parent resource in one of the following formats:
-                   * `organizations/{ORGANIZATION_ID}`
-                   * `projects/{PROJECT_ID}`
-                   */
+    * The resource name of the parent resource in one of the following formats:
+    * `organizations/{ORGANIZATION_ID}`
+    * `projects/{PROJECT_ID}`
+    */
   var parent: java.lang.String
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

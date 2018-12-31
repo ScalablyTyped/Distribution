@@ -14,27 +14,21 @@ class Materialbox ()
 @js.native
 object Materialbox extends js.Object {
   /**
-           * Get Instance
-           */
+    * Get Instance
+    */
   def getInstance(elem: stdLib.Element): materializeDashCssLib.MNs.Materialbox = js.native
   /**
-           * Init Materialboxes
-           */
+    * Init Materialboxes
+    */
   def init(els: materializeDashCssLib.MElements): js.Array[materializeDashCssLib.MNs.Materialbox] = js.native
-  /**
-           * Init Materialboxes
-           */
   def init(
     els: materializeDashCssLib.MElements,
     options: stdLib.Partial[materializeDashCssLib.MNs.MaterialboxOptions]
   ): js.Array[materializeDashCssLib.MNs.Materialbox] = js.native
   /**
-           * Init Materialbox
-           */
+    * Init Materialbox
+    */
   def init(els: stdLib.Element): materializeDashCssLib.MNs.Materialbox = js.native
-  /**
-           * Init Materialbox
-           */
   def init(els: stdLib.Element, options: stdLib.Partial[materializeDashCssLib.MNs.MaterialboxOptions]): materializeDashCssLib.MNs.Materialbox = js.native
 }
 

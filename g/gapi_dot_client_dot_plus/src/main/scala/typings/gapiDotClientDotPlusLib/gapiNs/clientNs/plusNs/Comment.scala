@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Comment extends js.Object {
   /** The person who posted this comment. */
   var actor: js.UndefOr[gapiDotClientDotPlusLib.Anon_DisplayNameUrl] = js.undefined
@@ -28,9 +27,9 @@ trait Comment extends js.Object {
   /** The time at which this comment was last updated. Formatted as an RFC 3339 timestamp. */
   var updated: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * This comment's verb, indicating what action was performed. Possible values are:
-               * - "post" - Publish content to the stream.
-               */
+    * This comment's verb, indicating what action was performed. Possible values are:
+    * - "post" - Publish content to the stream.
+    */
   var verb: js.UndefOr[java.lang.String] = js.undefined
 }
 

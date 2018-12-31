@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IpRport extends js.Object {
   var component: scala.Double
   var foundation: java.lang.String

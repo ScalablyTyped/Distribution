@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SIMLockStatus extends js.Object {
   /** Whether SIM lock is enabled. */
   var LockEnabled: scala.Boolean

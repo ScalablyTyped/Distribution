@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PartialStatement extends Node {
   var hash: Hash
   var indent: java.lang.String

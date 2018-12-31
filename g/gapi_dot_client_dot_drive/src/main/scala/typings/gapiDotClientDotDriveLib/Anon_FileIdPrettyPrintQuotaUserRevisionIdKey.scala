@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FileIdPrettyPrintQuotaUserRevisionIdKey extends js.Object {
   /** Whether the user is acknowledging the risk of downloading known malware or other abusive files. This is only applicable when alt=media. */
   var acknowledgeAbuse: js.UndefOr[scala.Boolean] = js.undefined
@@ -22,9 +21,9 @@ trait Anon_FileIdPrettyPrintQuotaUserRevisionIdKey extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** The ID of the revision. */
   var revisionId: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectHeaders extends js.Object {
   var `accept-version`: js.UndefOr[java.lang.String] = js.undefined
   var `heart-beat`: js.UndefOr[java.lang.String] = js.undefined

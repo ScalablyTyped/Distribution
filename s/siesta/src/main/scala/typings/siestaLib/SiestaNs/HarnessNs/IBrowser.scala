@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @singleton
-         */
-
+  * @singleton
+  */
 trait IBrowser
   extends siestaLib.SiestaNs.IHarness {
   var autoRun: scala.Boolean

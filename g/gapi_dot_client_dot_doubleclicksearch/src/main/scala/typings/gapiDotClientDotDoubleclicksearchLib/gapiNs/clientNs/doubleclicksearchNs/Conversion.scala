@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Conversion extends js.Object {
   /** DS ad group ID. */
   var adGroupId: js.UndefOr[java.lang.String] = js.undefined
@@ -20,18 +19,18 @@ trait Conversion extends js.Object {
   /** DS campaign ID. */
   var campaignId: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Sales channel for the product. Acceptable values are:
-               * - "local": a physical store
-               * - "online": an online store
-               */
+    * Sales channel for the product. Acceptable values are:
+    * - "local": a physical store
+    * - "online": an online store
+    */
   var channel: js.UndefOr[java.lang.String] = js.undefined
   /** DS click ID for the conversion. */
   var clickId: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * For offline conversions, advertisers provide this ID. Advertisers can specify any ID that is meaningful to them. Each conversion in a request must
-               * specify a unique ID, and the combination of ID and timestamp must be unique amongst all conversions within the advertiser.
-               * For online conversions, DS copies the dsConversionId or floodlightOrderId into this property depending on the advertiser's Floodlight instructions.
-               */
+    * For offline conversions, advertisers provide this ID. Advertisers can specify any ID that is meaningful to them. Each conversion in a request must
+    * specify a unique ID, and the combination of ID and timestamp must be unique amongst all conversions within the advertiser.
+    * For online conversions, DS copies the dsConversionId or floodlightOrderId into this property depending on the advertiser's Floodlight instructions.
+    */
   var conversionId: js.UndefOr[java.lang.String] = js.undefined
   /** The time at which the conversion was last modified, in epoch millis UTC. */
   var conversionModifiedTimestamp: js.UndefOr[java.lang.String] = js.undefined
@@ -68,9 +67,9 @@ trait Conversion extends js.Object {
   /** The quantity of this conversion, in millis. */
   var quantityMillis: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The revenue amount of this TRANSACTION conversion, in micros (value multiplied by 1000000, no decimal). For example, to specify a revenue value of "10"
-               * enter "10000000" (10 million) in your request.
-               */
+    * The revenue amount of this TRANSACTION conversion, in micros (value multiplied by 1000000, no decimal). For example, to specify a revenue value of "10"
+    * enter "10000000" (10 million) in your request.
+    */
   var revenueMicros: js.UndefOr[java.lang.String] = js.undefined
   /** The numeric segmentation identifier (for example, DoubleClick Search Floodlight activity ID). */
   var segmentationId: js.UndefOr[java.lang.String] = js.undefined
@@ -83,10 +82,10 @@ trait Conversion extends js.Object {
   /** The ID of the local store for which the product was advertised. Applicable only when the channel is "local". */
   var storeId: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The type of the conversion, that is, either ACTION or TRANSACTION. An ACTION conversion is an action by the user that has no monetarily quantifiable
-               * value, while a TRANSACTION conversion is an action that does have a monetarily quantifiable value. Examples are email list signups (ACTION) versus
-               * ecommerce purchases (TRANSACTION).
-               */
+    * The type of the conversion, that is, either ACTION or TRANSACTION. An ACTION conversion is an action by the user that has no monetarily quantifiable
+    * value, while a TRANSACTION conversion is an action that does have a monetarily quantifiable value. Examples are email list signups (ACTION) versus
+    * ecommerce purchases (TRANSACTION).
+    */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 

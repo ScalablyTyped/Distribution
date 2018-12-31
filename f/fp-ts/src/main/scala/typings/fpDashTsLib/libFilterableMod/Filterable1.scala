@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Filterable1[F /* <: fpDashTsLib.libHKTMod.URIS */]
   extends fpDashTsLib.libFunctorMod.Functor1[F]
      with fpDashTsLib.libCompactableMod.Compactable1[F] {

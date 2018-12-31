@@ -11,32 +11,14 @@ trait LineStatic extends js.Object {
   var Y: sylvesterLib.Line = js.native
   var Z: sylvesterLib.Line = js.native
   /**
-           * Constructor function.
-           *
-           * @param Array<number>|Vector anchor The anchor vector.
-           * @param Array<number>|Vector direction The direction vector.
-           */
+    * Constructor function.
+    *
+    * @param Array<number>|Vector anchor The anchor vector.
+    * @param Array<number>|Vector direction The direction vector.
+    */
   def create(anchor: js.Array[scala.Double], direction: js.Array[scala.Double]): sylvesterLib.Line = js.native
-  /**
-           * Constructor function.
-           *
-           * @param Array<number>|Vector anchor The anchor vector.
-           * @param Array<number>|Vector direction The direction vector.
-           */
   def create(anchor: js.Array[scala.Double], direction: sylvesterLib.Vector): sylvesterLib.Line = js.native
-  /**
-           * Constructor function.
-           *
-           * @param Array<number>|Vector anchor The anchor vector.
-           * @param Array<number>|Vector direction The direction vector.
-           */
   def create(anchor: sylvesterLib.Vector, direction: js.Array[scala.Double]): sylvesterLib.Line = js.native
-  /**
-           * Constructor function.
-           *
-           * @param Array<number>|Vector anchor The anchor vector.
-           * @param Array<number>|Vector direction The direction vector.
-           */
   def create(anchor: sylvesterLib.Vector, direction: sylvesterLib.Vector): sylvesterLib.Line = js.native
 }
 

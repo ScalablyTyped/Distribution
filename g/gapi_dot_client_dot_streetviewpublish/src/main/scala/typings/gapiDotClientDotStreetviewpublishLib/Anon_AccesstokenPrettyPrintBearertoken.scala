@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPrettyPrintBearertoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -37,9 +36,9 @@ trait Anon_AccesstokenPrettyPrintBearertoken extends js.Object {
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Specifies if a download URL for the photo bytes should be returned in the
-                   * Photo response.
-                   */
+    * Specifies if a download URL for the photo bytes should be returned in the
+    * Photo response.
+    */
   var view: js.UndefOr[java.lang.String] = js.undefined
 }
 

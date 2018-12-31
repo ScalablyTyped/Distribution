@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Yshift extends js.Object {
   var code: java.lang.String
   var x_shift: scala.Double

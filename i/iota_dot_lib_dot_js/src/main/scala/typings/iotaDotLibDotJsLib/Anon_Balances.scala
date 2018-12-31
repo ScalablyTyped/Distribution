@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Balances extends js.Object {
   var balances: js.Array[scala.Double]
   var duration: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChatOptions extends js.Object {
   var actionClick: js.UndefOr[js.Function1[/* e */ ChatActionClickEvent, scala.Unit]] = js.undefined
   var messages: js.UndefOr[ChatMessages] = js.undefined

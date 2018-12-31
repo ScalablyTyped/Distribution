@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * This type is for INTERNAL use in MongoDB only and should not be used in applications
-             */
+  * This type is for INTERNAL use in MongoDB only and should not be used in applications
+  */
 @JSGlobal("adone.data.bson.Timestamp")
 @js.native
 class Timestamp ()
@@ -20,8 +20,8 @@ class Timestamp ()
 }
 
 /**
-             * This type is for INTERNAL use in MongoDB only and should not be used in applications
-             */
+  * This type is for INTERNAL use in MongoDB only and should not be used in applications
+  */
 @JSGlobal("adone.data.bson.Timestamp")
 @js.native
 object Timestamp extends js.Object {

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 			 * Represents a source of location information, such as GPS.
 			 */
-
 trait LocationProvider
   extends titaniumLib.TitaniumNs.Proxy {
   /**

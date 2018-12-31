@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebGLRenderingContextAttribute extends js.Object {
   var attribute: js.Any
   var buffer: stdLib.WebGLBuffer

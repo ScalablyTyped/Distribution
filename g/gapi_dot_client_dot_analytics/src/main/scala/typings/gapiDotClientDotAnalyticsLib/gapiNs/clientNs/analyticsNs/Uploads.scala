@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Uploads extends js.Object {
   /** A list of uploads. */
   var items: js.UndefOr[js.Array[Upload]] = js.undefined
   /**
-               * The maximum number of resources the response can contain, regardless of the actual number of resources returned. Its value ranges from 1 to 1000 with a
-               * value of 1000 by default, or otherwise specified by the max-results query parameter.
-               */
+    * The maximum number of resources the response can contain, regardless of the actual number of resources returned. Its value ranges from 1 to 1000 with a
+    * value of 1000 by default, or otherwise specified by the max-results query parameter.
+    */
   var itemsPerPage: js.UndefOr[scala.Double] = js.undefined
   /** Collection type. */
   var kind: js.UndefOr[java.lang.String] = js.undefined

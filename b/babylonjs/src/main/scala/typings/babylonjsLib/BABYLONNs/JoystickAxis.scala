@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait JoystickAxis extends js.Object
 
 /**
-     * Defines the potential axis of a Joystick
-     */
+  * Defines the potential axis of a Joystick
+  */
 @JSGlobal("BABYLON.JoystickAxis")
 @js.native
 object JoystickAxis extends js.Object {

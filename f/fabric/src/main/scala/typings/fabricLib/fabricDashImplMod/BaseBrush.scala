@@ -39,10 +39,6 @@ class BaseBrush () extends js.Object {
   	 * @param [options] Options object or string (e.g. "2px 2px 10px rgba(0,0,0,0.2)")
   	 */
   def setShadow(options: java.lang.String): BaseBrush = js.native
-  /**
-  	 * Sets shadow of an object
-  	 * @param [options] Options object or string (e.g. "2px 2px 10px rgba(0,0,0,0.2)")
-  	 */
   def setShadow(options: js.Any): BaseBrush = js.native
 }
 

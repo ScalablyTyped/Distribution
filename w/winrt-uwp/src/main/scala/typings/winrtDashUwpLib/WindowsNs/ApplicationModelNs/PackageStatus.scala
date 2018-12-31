@@ -32,9 +32,9 @@ abstract class PackageStatus () extends js.Object {
   /** Indicates whether the package may have been tampered with. */
   var tampered: scala.Boolean = js.native
   /**
-               * Indicates whether the package is in good condition and may be used.
-               * @return TRUE indicates that the package is in good condition; otherwise FALSE.
-               */
+    * Indicates whether the package is in good condition and may be used.
+    * @return TRUE indicates that the package is in good condition; otherwise FALSE.
+    */
   def verifyIsOK(): scala.Boolean = js.native
 }
 

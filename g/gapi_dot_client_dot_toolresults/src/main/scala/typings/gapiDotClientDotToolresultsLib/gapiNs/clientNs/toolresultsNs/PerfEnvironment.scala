@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PerfEnvironment extends js.Object {
   /** CPU related environment info */
   var cpuInfo: js.UndefOr[CPUInfo] = js.undefined

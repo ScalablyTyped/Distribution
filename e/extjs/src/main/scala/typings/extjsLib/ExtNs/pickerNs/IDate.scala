@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDate
   extends extjsLib.ExtNs.IComponent {
   /** [Config Option] (String) */

@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Location extends js.Object {
   /**
-               * Cross-service attributes for the location. For example
-               * {"cloud.googleapis.com/region": "us-east1"}
-               */
+    * Cross-service attributes for the location. For example
+    * {"cloud.googleapis.com/region": "us-east1"}
+    */
   var labels: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
   /** The canonical id for this location. For example: "us-east1". */
   var locationId: js.UndefOr[java.lang.String] = js.undefined

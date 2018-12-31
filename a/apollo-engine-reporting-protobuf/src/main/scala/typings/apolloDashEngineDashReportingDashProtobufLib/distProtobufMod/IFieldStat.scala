@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFieldStat extends js.Object {
   /** FieldStat count */
   var count: js.UndefOr[scala.Double | scala.Null] = js.undefined

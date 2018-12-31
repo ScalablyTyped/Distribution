@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait imageAuditdata extends js.Object {
   var msg: scala.Double
   var probability: scala.Double

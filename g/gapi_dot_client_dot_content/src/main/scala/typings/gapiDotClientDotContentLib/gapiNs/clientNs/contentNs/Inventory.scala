@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Inventory extends js.Object {
   /** The availability of the product. */
   var availability: js.UndefOr[java.lang.String] = js.undefined
@@ -16,9 +15,9 @@ trait Inventory extends js.Object {
   /** Loyalty points that users receive after purchasing the item. Japan only. */
   var loyaltyPoints: js.UndefOr[LoyaltyPoints] = js.undefined
   /**
-               * Store pickup information. Only supported for local inventory. Not setting pickup means "don't update" while setting it to the empty value ({} in JSON)
-               * means "delete". Otherwise, pickupMethod and pickupSla must be set together, unless pickupMethod is "not supported".
-               */
+    * Store pickup information. Only supported for local inventory. Not setting pickup means "don't update" while setting it to the empty value ({} in JSON)
+    * means "delete". Otherwise, pickupMethod and pickupSla must be set together, unless pickupMethod is "not supported".
+    */
   var pickup: js.UndefOr[InventoryPickup] = js.undefined
   /** The price of the product. */
   var price: js.UndefOr[Price] = js.undefined

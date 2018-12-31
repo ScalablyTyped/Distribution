@@ -9,23 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class DataSource () extends js.Object {
   /**
-       * Invokes a function in the DataSource's JSONGraph object.
-       */
+    * Invokes a function in the DataSource's JSONGraph object.
+    */
   def call(functionPath: falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.Path): Observable[
     falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.JSONGraphEnvelope
   ] = js.native
-  /**
-       * Invokes a function in the DataSource's JSONGraph object.
-       */
   def call(
     functionPath: falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.Path,
     args: js.Array[_]
   ): Observable[
     falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.JSONGraphEnvelope
   ] = js.native
-  /**
-       * Invokes a function in the DataSource's JSONGraph object.
-       */
   def call(
     functionPath: falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.Path,
     args: js.Array[_],
@@ -33,9 +27,6 @@ abstract class DataSource () extends js.Object {
   ): Observable[
     falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.JSONGraphEnvelope
   ] = js.native
-  /**
-       * Invokes a function in the DataSource's JSONGraph object.
-       */
   def call(
     functionPath: falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.Path,
     args: js.Array[_],
@@ -45,16 +36,16 @@ abstract class DataSource () extends js.Object {
     falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.JSONGraphEnvelope
   ] = js.native
   /**
-       * The get method retrieves values from the DataSource's associated JSONGraph object.
-       */
+    * The get method retrieves values from the DataSource's associated JSONGraph object.
+    */
   def get(
     pathSets: js.Array[falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.PathSet]
   ): Observable[
     falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.JSONGraphEnvelope
   ] = js.native
   /**
-       * The set method accepts values to set in the DataSource's associated JSONGraph object.
-       */
+    * The set method accepts values to set in the DataSource's associated JSONGraph object.
+    */
   def set(
     jsonGraphEnvelope: falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.JSONGraphEnvelope
   ): Observable[

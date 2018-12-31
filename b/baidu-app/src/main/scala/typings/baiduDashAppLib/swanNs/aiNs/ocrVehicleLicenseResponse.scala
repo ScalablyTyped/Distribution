@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ocrVehicleLicenseResponse extends js.Object {
   var log_id: java.lang.String
    // 识别结果数，表示 words_result 的元素个数。

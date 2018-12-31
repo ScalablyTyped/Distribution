@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDropHintDetails extends js.Object {
   var dropHintElementRef: reactLib.HTMLElement
   var endX: scala.Double

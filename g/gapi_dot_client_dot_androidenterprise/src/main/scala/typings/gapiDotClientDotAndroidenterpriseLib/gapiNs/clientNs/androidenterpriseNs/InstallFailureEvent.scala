@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InstallFailureEvent extends js.Object {
   /** The Android ID of the device. This field will always be present. */
   var deviceId: js.UndefOr[java.lang.String] = js.undefined

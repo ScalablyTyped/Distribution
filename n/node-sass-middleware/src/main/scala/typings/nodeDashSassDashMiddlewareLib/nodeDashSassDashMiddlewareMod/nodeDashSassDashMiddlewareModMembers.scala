@@ -9,10 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object nodeDashSassDashMiddlewareModMembers extends js.Object {
   /**
-   * 
-   *
-   */
-  
+    * 
+    *
+    */
   def apply(options: Options): expressLib.expressMod.eNs.RequestHandler = js.native
 }
 

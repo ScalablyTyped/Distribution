@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
   extends reactLib.reactMod.ReactNs.Props[BigCalendar[TEvent, TResource]] {
   var allDayAccessor: js.UndefOr[java.lang.String] = js.undefined

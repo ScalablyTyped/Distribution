@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReadingpositionsResource extends js.Object {
   /** Retrieves my reading position information for a volume. */
   def get(request: gapiDotClientDotBooksLib.Anon_SourcePrettyPrintQuotaUserContentVersionKey): gapiDotClientLib.gapiNs.clientNs.Request[ReadingPosition]

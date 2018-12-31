@@ -39,13 +39,11 @@ trait Anon_History extends js.Object {
   def ajax(): jqueryLib.JQueryXHR = js.native
   def ajax(options: jqueryLib.JQueryAjaxSettings): jqueryLib.JQueryXHR = js.native
   // Utility
-  def noConflict(): /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(backbone), TsIdentModule(None,List(backbone)), TsIdentNamespace(Backbone)))) */js.Any = js.native
-  // SYNC
+  def noConflict(): /* import warning: ImportType.apply Failed type conversion: typeof backbone.backbone.Backbone */ js.Any = js.native
   def sync(
     method: java.lang.String,
     model: backboneLib.backboneMod.BackboneNs.Collection[backboneLib.backboneMod.BackboneNs.Model]
   ): js.Any = js.native
-  // SYNC
   def sync(
     method: java.lang.String,
     model: backboneLib.backboneMod.BackboneNs.Collection[backboneLib.backboneMod.BackboneNs.Model],
@@ -53,7 +51,6 @@ trait Anon_History extends js.Object {
   ): js.Any = js.native
   // SYNC
   def sync(method: java.lang.String, model: backboneLib.backboneMod.BackboneNs.Model): js.Any = js.native
-  // SYNC
   def sync(
     method: java.lang.String,
     model: backboneLib.backboneMod.BackboneNs.Model,

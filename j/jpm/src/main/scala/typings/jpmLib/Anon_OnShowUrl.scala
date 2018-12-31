@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnShowUrl extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   var onAttach: js.UndefOr[js.Function1[/* worker */ jpmLib.uiSidebarMod.SidebarWorker, _]] = js.undefined

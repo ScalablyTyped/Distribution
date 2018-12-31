@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AlertableOptions extends js.Object {
   var cancelButton: js.UndefOr[java.lang.String] = js.undefined
   var container: js.UndefOr[java.lang.String] = js.undefined

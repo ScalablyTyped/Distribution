@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHelmetContentSecurityPolicyDirectives extends js.Object {
   var `base-uri`: js.UndefOr[js.Array[HelmetCspDirectiveValue]] = js.undefined
   var baseUri: js.UndefOr[js.Array[HelmetCspDirectiveValue]] = js.undefined

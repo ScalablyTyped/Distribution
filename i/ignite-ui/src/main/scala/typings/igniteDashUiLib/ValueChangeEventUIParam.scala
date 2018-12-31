@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ValueChangeEventUIParam extends js.Object {
   /**
   	 * Gets the previously selected value.

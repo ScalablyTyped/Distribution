@@ -9,7 +9,7 @@ package object stdLib {
   type AlignSetting = stdLib.stdLibStrings.start | stdLib.stdLibStrings.center | stdLib.stdLibStrings.end | stdLib.stdLibStrings.left | stdLib.stdLibStrings.right
   type AnimationPlayState = stdLib.stdLibStrings.idle | stdLib.stdLibStrings.running | stdLib.stdLibStrings.paused | stdLib.stdLibStrings.finished
   type AppendMode = stdLib.stdLibStrings.segments | stdLib.stdLibStrings.sequence
-  type ArrayBufferLike = /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(ArrayBufferTypes))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(ArrayBufferTypes))),List())))) */js.Any
+  type ArrayBufferLike = SharedArrayBuffer | ArrayBuffer
   type AudioContextLatencyCategory = stdLib.stdLibStrings.balanced | stdLib.stdLibStrings.interactive | stdLib.stdLibStrings.playback
   type AudioContextState = stdLib.stdLibStrings.suspended | stdLib.stdLibStrings.running | stdLib.stdLibStrings.closed
   type AudioWorklet = Worklet
@@ -46,8 +46,8 @@ package object stdLib {
   type ConstrainDouble = scala.Double | ConstrainDoubleRange
   type ConstrainLong = scala.Double | ConstrainLongRange
   /**
-   * Obtain the parameters of a constructor function type in a tuple
-   */
+    * Obtain the parameters of a constructor function type in a tuple
+    */
   type ConstructorParameters[T /* <: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any] */] = js.Any
   type DOMHighResTimeStamp = scala.Double
   type DOMTimeStamp = scala.Double
@@ -73,12 +73,12 @@ package object stdLib {
   type EventListener = js.Function1[/* evt */ Event, scala.Unit]
   type EventListenerOrEventListenerObject = EventListener | EventListenerObject
   /**
-   * Exclude from T those types that are assignable to U
-   */
+    * Exclude from T those types that are assignable to U
+    */
   type Exclude[T, U] = T
   /**
-   * Extract from T those types that are assignable to U
-   */
+    * Extract from T those types that are assignable to U
+    */
   type Extract[T, U] = T
   type FillMode = stdLib.stdLibStrings.none | stdLib.stdLibStrings.forwards | stdLib.stdLibStrings.backwards | stdLib.stdLibStrings.both | stdLib.stdLibStrings.auto
   type Float32List = Float32Array | js.Array[GLfloat]
@@ -118,8 +118,8 @@ package object stdLib {
   type ImageSmoothingQuality = stdLib.stdLibStrings.low | stdLib.stdLibStrings.medium | stdLib.stdLibStrings.high
   type InsertPosition = stdLib.stdLibStrings.beforebegin | stdLib.stdLibStrings.afterbegin | stdLib.stdLibStrings.beforeend | stdLib.stdLibStrings.afterend
   /**
-   * Obtain the return type of a constructor function type
-   */
+    * Obtain the return type of a constructor function type
+    */
   type InstanceType[T /* <: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any] */] = js.Any
   type Int32List = Int32Array | js.Array[GLint]
   type IntersectionObserverCallback = js.Function2[
@@ -167,8 +167,8 @@ package object stdLib {
   type NavigatorUserMediaErrorCallback = js.Function1[/* error */ MediaStreamError, scala.Unit]
   type NavigatorUserMediaSuccessCallback = js.Function1[/* stream */ MediaStream, scala.Unit]
   /**
-   * Exclude null and undefined from T
-   */
+    * Exclude null and undefined from T
+    */
   type NonNullable[T] = T
   type NotificationDirection = stdLib.stdLibStrings.auto | stdLib.stdLibStrings.ltr | stdLib.stdLibStrings.rtl
   type NotificationPermission = stdLib.stdLibStrings.default | stdLib.stdLibStrings.denied | stdLib.stdLibStrings.granted
@@ -196,12 +196,12 @@ package object stdLib {
     scala.Unit
   ]
   /**
-   * Obtain the parameters of a function type in a tuple
-   */
-  type Parameters[T /* <: js.Function1[/* repeated */js.Any, _] */] = js.Any
+    * Obtain the parameters of a function type in a tuple
+    */
+  type Parameters[T /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
   /**
-   * Make all properties in T optional
-   */
+    * Make all properties in T optional
+    */
   type Partial[T] = stdLib.stdLibStrings.Partial with T
   type PaymentComplete = stdLib.stdLibStrings.success | stdLib.stdLibStrings.fail | stdLib.stdLibStrings.unknown
   type PaymentRequestUpdateEventInit = EventInit
@@ -215,8 +215,8 @@ package object stdLib {
     scala.Unit
   ]
   /**
-   * From T, pick a set of properties whose keys are in the union K
-   */
+    * From T, pick a set of properties whose keys are in the union K
+    */
   type Pick[T, K /* <: java.lang.String */] = stdLib.stdLibStrings.Pick with T
   type PlaybackDirection = stdLib.stdLibStrings.normal | stdLib.stdLibStrings.reverse | stdLib.stdLibStrings.alternate | stdLib.stdLibStrings.`alternate-reverse`
   type PositionAlignSetting = stdLib.stdLibStrings.`line-left` | stdLib.stdLibStrings.center | stdLib.stdLibStrings.`line-right` | stdLib.stdLibStrings.auto
@@ -282,13 +282,13 @@ package object stdLib {
   ]
   type ReadableStreamErrorCallback = js.Function1[/* reason */ js.Any, scala.Unit | js.Thenable[scala.Unit]]
   /**
-   * Make all properties in T readonly
-   */
+    * Make all properties in T readonly
+    */
   type Readonly[T] = stdLib.stdLibStrings.Readonly with T
   type ReadyState = stdLib.stdLibStrings.closed | stdLib.stdLibStrings.open | stdLib.stdLibStrings.ended
   /**
-   * Construct a type with a set of properties K of type T
-   */
+    * Construct a type with a set of properties K of type T
+    */
   type Record[K /* <: java.lang.String */, T] = org.scalablytyped.runtime.StringDictionary[K]
   type ReferenceError = Error
   type ReferrerPolicy = stdLib.stdLibStrings.Empty | stdLib.stdLibStrings.`no-referrer` | stdLib.stdLibStrings.`no-referrer-when-downgrade` | stdLib.stdLibStrings.`origin-only` | stdLib.stdLibStrings.`origin-when-cross-origin` | stdLib.stdLibStrings.`unsafe-url`
@@ -300,14 +300,14 @@ package object stdLib {
   type RequestMode = stdLib.stdLibStrings.navigate | stdLib.stdLibStrings.`same-origin` | stdLib.stdLibStrings.`no-cors` | stdLib.stdLibStrings.cors
   type RequestRedirect = stdLib.stdLibStrings.follow | stdLib.stdLibStrings.error | stdLib.stdLibStrings.manual
   /**
-   * Make all properties in T required
-   */
+    * Make all properties in T required
+    */
   type Required[T] = stdLib.stdLibStrings.Required with T
   type ResponseType = stdLib.stdLibStrings.basic | stdLib.stdLibStrings.cors | stdLib.stdLibStrings.default | stdLib.stdLibStrings.error | stdLib.stdLibStrings.opaque | stdLib.stdLibStrings.opaqueredirect
   /**
-   * Obtain the return type of a function type
-   */
-  type ReturnType[T /* <: js.Function1[/* repeated */js.Any, _] */] = js.Any
+    * Obtain the return type of a function type
+    */
+  type ReturnType[T /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
   type SVGMatrix = DOMMatrix
   type SVGPathSegClosePath = SVGPathSeg
   type SVGPoint = DOMPoint

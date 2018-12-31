@@ -13,7 +13,6 @@ package object WaterlineNs {
   type AttributeValidation[T] = T | AttributeValidationSyncFn[T] | AttributeValidationAsyncFn[T]
   type AttributeValidationAsyncFn[T] = js.Function1[/* cb */ js.Function1[/* value */ T, js.Any], scala.Unit]
   type AttributeValidationSyncFn[T] = js.Function0[T]
-  type Attributes = org.scalablytyped.runtime.StringDictionary[Attribute] with waterlineLib.Anon_ToObject
   type BaseAttribute[T] = AttributeValidations with waterlineLib.Anon_Size[T]
   type BinaryAttribute = BaseAttribute[_] with waterlineLib.Anon_TypeBinary
   type BooleanAttribute = BaseAttribute[scala.Boolean] with waterlineLib.Anon_TypeBoolean

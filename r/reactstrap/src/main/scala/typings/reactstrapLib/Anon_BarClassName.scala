@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BarClassName extends js.Object {
   var animated: js.UndefOr[scala.Boolean] = js.undefined
   var bar: js.UndefOr[scala.Boolean] = js.undefined

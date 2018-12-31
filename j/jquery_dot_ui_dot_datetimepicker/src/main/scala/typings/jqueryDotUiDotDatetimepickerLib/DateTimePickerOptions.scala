@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DateTimePickerOptions
   extends jqueryuiLib.JQueryUINs.DatepickerOptions {
    //Default: true - Whether to show the timepicker within the datepicker.

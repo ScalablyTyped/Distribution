@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OptionData extends js.Object {
   var children: js.UndefOr[scala.Nothing] = js.undefined
   var disabled: scala.Boolean

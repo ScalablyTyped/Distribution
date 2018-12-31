@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DescribeGlobalSObjectResult extends js.Object {
   var activateable: scala.Boolean
   var createable: scala.Boolean

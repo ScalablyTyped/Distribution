@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Dom extends js.Object {
   var exposedProperties: js.Tuple3[
     mochaccinoLib.mochaccinoLibStrings.window, 

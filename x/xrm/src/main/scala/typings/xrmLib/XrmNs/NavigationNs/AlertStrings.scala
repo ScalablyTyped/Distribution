@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AlertStrings extends js.Object {
   /**
-               * (Optional) The confirm button label.If you do not specify the button label, OK is used as the button label.
-               */
+    * (Optional) The confirm button label.If you do not specify the button label, OK is used as the button label.
+    */
   var confirmButtonLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
-               *  The message to be displyed in the alert dialog.
-               */
+    *  The message to be displyed in the alert dialog.
+    */
   var text: java.lang.String
 }
 

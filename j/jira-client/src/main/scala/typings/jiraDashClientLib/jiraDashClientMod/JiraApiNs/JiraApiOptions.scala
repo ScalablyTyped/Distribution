@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JiraApiOptions extends js.Object {
   var apiVersion: js.UndefOr[java.lang.String] = js.undefined
   var base: js.UndefOr[java.lang.String] = js.undefined

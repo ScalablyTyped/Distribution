@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default 'bottom'
-                   */
+    * @default 'bottom'
+    */
   var bottom: java.lang.String
   /**
-                   * @default 'bound'
-                   */
+    * @default 'bound'
+    */
   var bound: java.lang.String
   /**
-                   * @default 'fixed'
-                   */
+    * @default 'fixed'
+    */
   var fixed: java.lang.String
   /**
-                   * @default 'native'
-                   */
+    * @default 'native'
+    */
   var supported: java.lang.String
   /**
-                   * @default 'top'
-                   */
+    * @default 'top'
+    */
   var top: java.lang.String
 }
 

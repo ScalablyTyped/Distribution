@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserInfoResponse extends js.Object {
   /** 包括敏感数据在内的完整用户信息的加密数据，详细见加密数据解密算法 */
   var encryptData: java.lang.String

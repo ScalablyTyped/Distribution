@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RIGHTANALOGUESTICK extends js.Object {
   var `32`: athenajsLib.athenajsLibNumbers.`1`
   var `37`: athenajsLib.athenajsLibNumbers.`14`

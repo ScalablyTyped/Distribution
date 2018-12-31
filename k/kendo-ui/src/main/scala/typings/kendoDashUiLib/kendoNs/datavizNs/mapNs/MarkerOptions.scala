@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MarkerOptions extends js.Object {
   var location: js.UndefOr[js.Any | Location] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined

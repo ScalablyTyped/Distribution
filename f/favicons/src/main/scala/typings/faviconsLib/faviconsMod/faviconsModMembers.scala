@@ -11,22 +11,16 @@ object faviconsModMembers extends js.Object {
   /** You can programmatically access Favicons configuration (icon filenames, HTML, manifest files, etc) with this export */
   val config: faviconsLib.faviconsMod.faviconsNs.Configuration = js.native
   /**
-   * Generate favicons
-   * @param source Source image(s)
-   * @param configuration
-   * @param callback
-   */
+    * Generate favicons
+    * @param source Source image(s)
+    * @param configuration
+    * @param callback
+    */
   def apply(source: java.lang.String | nodeLib.Buffer | js.Array[java.lang.String]): js.Promise[faviconsLib.faviconsMod.faviconsNs.FavIconResponse] = js.native
   def apply(
     source: java.lang.String | nodeLib.Buffer | js.Array[java.lang.String],
     callback: faviconsLib.faviconsMod.faviconsNs.Callback
   ): scala.Unit = js.native
-  /**
-   * Generate favicons
-   * @param source Source image(s)
-   * @param configuration
-   * @param callback
-   */
   def apply(
     source: java.lang.String | nodeLib.Buffer | js.Array[java.lang.String],
     configuration: stdLib.Partial[faviconsLib.faviconsMod.faviconsNs.Configuration]

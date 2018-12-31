@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPageSizePrettyPrint extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -21,15 +20,15 @@ trait Anon_AccesstokenPageSizePrettyPrint extends js.Object {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Use `filter` to return subset of rollouts.
-                   * The following filters are supported:
-                   * -- To limit the results to only those in
-                   * [status](google.api.servicemanagement.v1.RolloutStatus) 'SUCCESS',
-                   * use filter='status=SUCCESS'
-                   * -- To limit the results to those in
-                   * [status](google.api.servicemanagement.v1.RolloutStatus) 'CANCELLED'
-                   * or 'FAILED', use filter='status=CANCELLED OR status=FAILED'
-                   */
+    * Use `filter` to return subset of rollouts.
+    * The following filters are supported:
+    * -- To limit the results to only those in
+    * [status](google.api.servicemanagement.v1.RolloutStatus) 'SUCCESS',
+    * use filter='status=SUCCESS'
+    * -- To limit the results to those in
+    * [status](google.api.servicemanagement.v1.RolloutStatus) 'CANCELLED'
+    * or 'FAILED', use filter='status=CANCELLED OR status=FAILED'
+    */
   var filter: js.UndefOr[java.lang.String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
@@ -46,9 +45,9 @@ trait Anon_AccesstokenPageSizePrettyPrint extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The name of the service.  See the [overview](/service-management/overview)
-                   * for naming requirements.  For example: `example.googleapis.com`.
-                   */
+    * The name of the service.  See the [overview](/service-management/overview)
+    * for naming requirements.  For example: `example.googleapis.com`.
+    */
   var serviceName: java.lang.String
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

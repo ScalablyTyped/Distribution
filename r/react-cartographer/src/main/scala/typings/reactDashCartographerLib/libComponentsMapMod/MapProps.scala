@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapProps extends js.Object {
   var addressLine1: js.UndefOr[java.lang.String] = js.undefined
   var city: js.UndefOr[java.lang.String] = js.undefined

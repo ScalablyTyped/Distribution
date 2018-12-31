@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DigestMd5Mechanism
   extends saslmechanismsLib.saslmechanismsMod.FactoryNs.Mechanism {
   var clientFirst: saslDashDigestDashMd5Lib.saslDashDigestDashMd5LibNumbers.`false`

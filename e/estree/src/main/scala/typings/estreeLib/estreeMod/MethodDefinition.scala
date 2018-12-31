@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MethodDefinition extends BaseNode {
   var computed: scala.Boolean
   var key: estreeLib.Expression

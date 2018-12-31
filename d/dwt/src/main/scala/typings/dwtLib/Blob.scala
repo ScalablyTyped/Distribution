@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Copied from lib.d.ts (Typescript)
- */
+  * Copied from lib.d.ts (Typescript)
+  */
 @js.native
 trait Blob extends js.Object {
   val size: scala.Double = js.native

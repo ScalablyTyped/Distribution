@@ -11,9 +11,6 @@ trait JQuery extends js.Object {
   	 * Initializer. options is optional.
   	 */
   def sticky(): JQuery = js.native
-  /**
-  	 * Initializer. options is optional.
-  	 */
   def sticky(options: JQueryStickyOptions): JQuery = js.native
   /**
   	 * Recalculates the element's position.

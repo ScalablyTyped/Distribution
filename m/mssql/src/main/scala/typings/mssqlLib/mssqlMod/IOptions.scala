@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOptions extends js.Object {
   var abortTransactionOnError: js.UndefOr[scala.Boolean] = js.undefined
   var appName: js.UndefOr[java.lang.String] = js.undefined

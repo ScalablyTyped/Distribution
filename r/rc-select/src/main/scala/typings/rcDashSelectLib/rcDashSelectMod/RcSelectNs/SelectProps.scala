@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectProps extends js.Object {
   var allowClear: js.UndefOr[scala.Boolean] = js.undefined
   var animation: js.UndefOr[java.lang.String] = js.undefined

@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distTypesLocaleMod {
-  type key = /* LimitUnionLength: was union type with length 53 */java.lang.String
+  type key = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 53 */ java.lang.String
 }

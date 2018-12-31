@@ -32,11 +32,8 @@ class TransactionBuilder () extends js.Object {
   def setVersion(version: scala.Double): scala.Unit = js.native
   /** @since 3.0.0 */
   def sign(vin: scala.Double, keyPair: ECPair): scala.Unit = js.native
-  /** @since 3.0.0 */
   def sign(vin: scala.Double, keyPair: ECPair, redeemScript: nodeLib.Buffer): scala.Unit = js.native
-  /** @since 3.0.0 */
   def sign(vin: scala.Double, keyPair: ECPair, redeemScript: nodeLib.Buffer, hashType: scala.Double): scala.Unit = js.native
-  /** @since 3.0.0 */
   def sign(
     vin: scala.Double,
     keyPair: ECPair,
@@ -44,7 +41,6 @@ class TransactionBuilder () extends js.Object {
     hashType: scala.Double,
     witnessValue: scala.Double
   ): scala.Unit = js.native
-  /** @since 3.0.0 */
   def sign(
     vin: scala.Double,
     keyPair: ECPair,

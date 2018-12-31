@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SetStateStatus extends js.Object {
   var error: scala.Boolean
   var operation: java.lang.String

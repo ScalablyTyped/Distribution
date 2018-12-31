@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PackageMeta
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var name: java.lang.String

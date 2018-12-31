@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Usage extends js.Object {
   var blacklist: js.UndefOr[cssoLib.Anon_Classes] = js.undefined
   var classes: js.UndefOr[js.Array[java.lang.String]] = js.undefined

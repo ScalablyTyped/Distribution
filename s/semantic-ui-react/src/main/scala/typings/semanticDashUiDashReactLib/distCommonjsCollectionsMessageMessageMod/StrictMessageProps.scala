@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictMessageProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
@@ -48,12 +47,12 @@ trait StrictMessageProps extends js.Object {
   /** A message may be formatted to display a negative message. Same as `error`. */
   var negative: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * A message that the user can choose to hide.
-     * Called when the user clicks the "x" icon. This also adds the "x" icon.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * A message that the user can choose to hide.
+    * Called when the user clicks the "x" icon. This also adds the "x" icon.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onDismiss: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 

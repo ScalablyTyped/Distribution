@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Banding extends js.Object {
   def copyTo(range: Range): Banding
   def getFirstColumnColor(): java.lang.String

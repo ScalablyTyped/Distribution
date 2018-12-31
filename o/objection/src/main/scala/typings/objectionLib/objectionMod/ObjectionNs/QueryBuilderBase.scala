@@ -29,8 +29,8 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   @JSName("insertWithRelatedAndFetch")
   var insertWithRelatedAndFetch_Original: InsertGraphAndFetch[QM] = js.native
   /**
-       * insertWithRelated is an alias for insertGraph.
-       */
+    * insertWithRelated is an alias for insertGraph.
+    */
   @JSName("insertWithRelated")
   var insertWithRelated_Original: InsertGraph[QM] = js.native
   @JSName("insert")
@@ -105,17 +105,13 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   // TODO: the return value of this method matches the knex typescript and documentation.
   // The Objection documentation incorrectly states this returns a QueryBuilder.
   def columnInfo(): js.Promise[knexLib.knexMod.KnexNs.ColumnInfo] = js.native
-  // TODO: avgDistinct does not exist in current knex documentation: http://knexjs.org/#Builder-fromJS
-  // TODO: modify does not exist in current knex documentation: http://knexjs.org/#Builder-modify
-  // TODO: the return value of this method matches the knex typescript and documentation.
-  // The Objection documentation incorrectly states this returns a QueryBuilder.
   def columnInfo(column: java.lang.String): js.Promise[knexLib.knexMod.KnexNs.ColumnInfo] = js.native
   def context(): QueryContext = js.native
   // Non-query methods:
   def context(queryContext: js.Object): this.type = js.native
   /**
-       * @return a Promise of the number of deleted rows
-       */
+    * @return a Promise of the number of deleted rows
+    */
   def deleteById(idOrIds: IdOrIds): QueryBuilderYieldingCount[QM, RM] = js.native
   def eager(relationExpression: RelationExpression): this.type = js.native
   def eager(relationExpression: RelationExpression, filters: FilterExpression[QM]): this.type = js.native
@@ -142,15 +138,11 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
       scala.Unit
     ]
   ): QueryBuilderYieldingOneOrNone[QM] = js.native
-  /** findOne is shorthand for .where(...whereArgs).first() */
   def findOne(column: ColumnRef, operator: java.lang.String, value: QueryBuilder[_, js.Array[_], js.Array[_]]): QueryBuilderYieldingOneOrNone[QM] = js.native
-  /** findOne is shorthand for .where(...whereArgs).first() */
   def findOne(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilderYieldingOneOrNone[QM] = js.native
   /** findOne is shorthand for .where(...whereArgs).first() */
   def findOne(column: ColumnRef, operator: java.lang.String, value: Value): QueryBuilderYieldingOneOrNone[QM] = js.native
-  /** findOne is shorthand for .where(...whereArgs).first() */
   def findOne(column: ColumnRef, value: QueryBuilder[_, js.Array[_], js.Array[_]]): QueryBuilderYieldingOneOrNone[QM] = js.native
-  /** findOne is shorthand for .where(...whereArgs).first() */
   def findOne(column: ColumnRef, value: Reference): QueryBuilderYieldingOneOrNone[QM] = js.native
   /** findOne is shorthand for .where(...whereArgs).first() */
   def findOne(column: ColumnRef, value: Value): QueryBuilderYieldingOneOrNone[QM] = js.native
@@ -191,24 +183,12 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   @JSName("insertGraph")
   def `insertGraph_<this>`(): this.type = js.native
   /**
-       * insertWithRelated is an alias for insertGraph.
-       */
+    * insertWithRelated is an alias for insertGraph.
+    */
   def insertWithRelated(): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  /**
-       * insertWithRelated is an alias for insertGraph.
-       */
   def insertWithRelated(modelOrObject: stdLib.Partial[QM]): QueryBuilder[QM, QM, QM] = js.native
-  /**
-       * insertWithRelated is an alias for insertGraph.
-       */
   def insertWithRelated(modelOrObject: stdLib.Partial[QM], options: InsertGraphOptions): QueryBuilder[QM, QM, QM] = js.native
-  /**
-       * insertWithRelated is an alias for insertGraph.
-       */
   def insertWithRelated(modelsOrObjects: js.Array[stdLib.Partial[QM]]): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  /**
-       * insertWithRelated is an alias for insertGraph.
-       */
   def insertWithRelated(modelsOrObjects: js.Array[stdLib.Partial[QM]], options: InsertGraphOptions): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
   def insertWithRelatedAndFetch(): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
   def insertWithRelatedAndFetch(modelOrObject: stdLib.Partial[QM]): QueryBuilder[QM, QM, QM] = js.native
@@ -216,8 +196,8 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def insertWithRelatedAndFetch(modelsOrObjects: js.Array[stdLib.Partial[QM]]): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
   def insertWithRelatedAndFetch(modelsOrObjects: js.Array[stdLib.Partial[QM]], options: InsertGraphOptions): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
   /**
-       * insertWithRelated is an alias for insertGraph.
-       */
+    * insertWithRelated is an alias for insertGraph.
+    */
   @JSName("insertWithRelated")
   def `insertWithRelated_<this>`(): this.type = js.native
   @JSName("insert")
@@ -283,8 +263,8 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def outerJoinRelation[QM /* <: Model */](relationName: java.lang.String, opt: RelationOptions): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
   def page(page: scala.Double, pageSize: scala.Double): QueryBuilder[QM, Page[QM], Page[QM]] = js.native
   /**
-       * @return a Promise of the number of patched rows
-       */
+    * @return a Promise of the number of patched rows
+    */
   def patch(modelOrObject: PartialUpdate[QM]): QueryBuilderYieldingCount[QM, RM] = js.native
   def patchAndFetch(modelOrObject: PartialUpdate[QM]): QueryBuilder[QM, QM, QM] = js.native
   def patchAndFetchById(idOrIds: IdOrIds, modelOrObject: PartialUpdate[QM]): QueryBuilder[QM, QM, QM] = js.native
@@ -316,8 +296,8 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def traverse(modelClass: org.scalablytyped.runtime.Instantiable0[Model], traverser: TraverserFunction): this.type = js.native
   def unrelate(): this.type = js.native
   /**
-       * @return a Promise of the number of updated rows
-       */
+    * @return a Promise of the number of updated rows
+    */
   def update(modelOrObject: PartialUpdate[QM]): QueryBuilderYieldingCount[QM, RM] = js.native
   def updateAndFetch(modelOrObject: PartialUpdate[QM]): QueryBuilder[QM, QM, QM] = js.native
   def updateAndFetchById(id: Id, modelOrObject: PartialUpdate[QM]): QueryBuilder[QM, QM, QM] = js.native

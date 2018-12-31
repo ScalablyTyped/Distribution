@@ -16,17 +16,14 @@ class XMLNamespace protected () extends js.Object {
   val XSLTransforms: XSLTransforms = js.native
   /** @param boolean [AllUsers=false] */
   def Alias(): java.lang.String = js.native
-  /** @param boolean [AllUsers=false] */
   def Alias(AllUsers: scala.Boolean): java.lang.String = js.native
   def AttachToDocument(Document: js.Any): scala.Unit = js.native
   /** @param boolean [AllUsers=false] */
   def DefaultTransform(): XSLTransform = js.native
-  /** @param boolean [AllUsers=false] */
   def DefaultTransform(AllUsers: scala.Boolean): XSLTransform = js.native
   def Delete(): scala.Unit = js.native
   /** @param boolean [AllUsers=false] */
   def Location(): java.lang.String = js.native
-  /** @param boolean [AllUsers=false] */
   def Location(AllUsers: scala.Boolean): java.lang.String = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Shiftdown extends js.Object {
   var between_lines: scala.Boolean
   var code: java.lang.String

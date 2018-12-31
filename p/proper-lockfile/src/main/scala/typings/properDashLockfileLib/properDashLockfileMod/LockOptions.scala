@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LockOptions extends js.Object {
    // default: true
   var fs: js.UndefOr[js.Any] = js.undefined

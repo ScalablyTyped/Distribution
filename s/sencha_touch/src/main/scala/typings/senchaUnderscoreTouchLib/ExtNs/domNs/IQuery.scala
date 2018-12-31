@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IQuery
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Returns true if the passed element s match the passed simple selector e g

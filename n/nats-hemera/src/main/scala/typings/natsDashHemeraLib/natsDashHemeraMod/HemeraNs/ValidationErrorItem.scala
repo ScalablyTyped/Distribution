@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ValidationErrorItem extends js.Object {
   var context: js.UndefOr[Context] = js.undefined
   var message: java.lang.String

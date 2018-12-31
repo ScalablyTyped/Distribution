@@ -12,50 +12,50 @@ sealed trait AcquisitionOperationType extends js.Object
 @js.native
 object AcquisitionOperationType extends js.Object {
   /**
-       * Buy licenses for this extension and install into the host provided
-       */
+    * Buy licenses for this extension and install into the host provided
+    */
   @js.native
   sealed trait Buy
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.AcquisitionOperationType
   
   /**
-       * Not yet used
-       */
+    * Not yet used
+    */
   @js.native
   sealed trait Get
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.AcquisitionOperationType
   
   /**
-       * Install this extension into the host provided
-       */
+    * Install this extension into the host provided
+    */
   @js.native
   sealed trait Install
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.AcquisitionOperationType
   
   /**
-       * No action found
-       */
+    * No action found
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.AcquisitionOperationType
   
   /**
-       * Request admins for purchasing extension
-       */
+    * Request admins for purchasing extension
+    */
   @js.native
   sealed trait PurchaseRequest
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.AcquisitionOperationType
   
   /**
-       * Request this extension for installation
-       */
+    * Request this extension for installation
+    */
   @js.native
   sealed trait Request
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.AcquisitionOperationType
   
   /**
-       * Try this extension
-       */
+    * Try this extension
+    */
   @js.native
   sealed trait Try
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.AcquisitionOperationType

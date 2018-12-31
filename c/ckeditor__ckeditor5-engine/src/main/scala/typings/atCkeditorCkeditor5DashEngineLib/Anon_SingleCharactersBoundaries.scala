@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SingleCharactersBoundaries extends js.Object {
   var boundaries: js.UndefOr[atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Range] = js.undefined
   var direction: js.UndefOr[

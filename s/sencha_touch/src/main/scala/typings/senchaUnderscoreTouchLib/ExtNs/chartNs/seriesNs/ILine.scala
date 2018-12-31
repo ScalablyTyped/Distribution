@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILine extends ICartesian {
   /** [Config Option] (Boolean) */
   var fill: js.UndefOr[scala.Boolean] = js.undefined

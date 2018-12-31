@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AdSlot extends js.Object {
   /** Comment for this ad slot. */
   var comment: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Ad slot compatibility. DISPLAY and DISPLAY_INTERSTITIAL refer to rendering either on desktop, mobile devices or in mobile apps for regular or
-               * interstitial ads respectively. APP and APP_INTERSTITIAL are for rendering in mobile apps. IN_STREAM_VIDEO refers to rendering in in-stream video ads
-               * developed with the VAST standard.
-               */
+    * Ad slot compatibility. DISPLAY and DISPLAY_INTERSTITIAL refer to rendering either on desktop, mobile devices or in mobile apps for regular or
+    * interstitial ads respectively. APP and APP_INTERSTITIAL are for rendering in mobile apps. IN_STREAM_VIDEO refers to rendering in in-stream video ads
+    * developed with the VAST standard.
+    */
   var compatibility: js.UndefOr[java.lang.String] = js.undefined
   /** Height of this ad slot. */
   var height: js.UndefOr[java.lang.String] = js.undefined

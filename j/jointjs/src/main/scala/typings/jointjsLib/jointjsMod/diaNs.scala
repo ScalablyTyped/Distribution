@@ -44,8 +44,8 @@ object diaNs extends js.Object {
     def parent(): java.lang.String = js.native
     def parent(parentId: java.lang.String): this.type = js.native
     /**
-             * @deprecated
-             */
+      * @deprecated
+      */
     /* protected */ def processPorts(): scala.Unit = js.native
     def prop(key: java.lang.String): js.Any = js.native
     def prop(key: java.lang.String, value: js.Any): this.type = js.native
@@ -365,10 +365,9 @@ object diaNs extends js.Object {
   }
   
   @js.native
+   // default label props
   class Link () extends Cell {
-     // default label props
     def this(attributes: jointjsLib.jointjsMod.diaNs.LinkNs.Attributes) = this()
-     // default label props
     def this(attributes: jointjsLib.jointjsMod.diaNs.LinkNs.Attributes, opt: jointjsLib.jointjsMod.diaNs.GraphNs.Options) = this()
     var arrowHeadMarkup: java.lang.String = js.native
     var doubleToolMarkup: js.UndefOr[java.lang.String] = js.native
@@ -574,7 +573,6 @@ object diaNs extends js.Object {
     def update(link: Link, attributes: js.Any, opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   }
   
-  
   trait MarkupNodeJSON extends js.Object {
     var attributes: js.UndefOr[jointjsLib.jointjsMod.attributesNs.NativeSVGAttributes] = js.undefined
     var children: js.UndefOr[MarkupJSON] = js.undefined
@@ -586,7 +584,6 @@ object diaNs extends js.Object {
     var tagName: java.lang.String
     var textContent: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait PaddingJSON extends js.Object {
     var bottom: js.UndefOr[scala.Double] = js.undefined
@@ -730,7 +727,6 @@ object diaNs extends js.Object {
     /* protected */ def updateBackgroundImage(opt: jointjsLib.Anon_PositionSize): scala.Unit = js.native
   }
   
-  
   trait SidesJSON extends js.Object {
     var bottom: js.UndefOr[scala.Double] = js.undefined
     var horizontal: js.UndefOr[scala.Double] = js.undefined
@@ -785,7 +781,6 @@ object diaNs extends js.Object {
   @JSName("Cell")
   @js.native
   object CellNs extends js.Object {
-    
     trait Attributes extends GenericAttributes[Selectors]
     
     @js.native
@@ -793,16 +788,13 @@ object diaNs extends js.Object {
       extends org.scalablytyped.runtime.Instantiable0[T]
          with org.scalablytyped.runtime.Instantiable1[/* opt */ jointjsLib.Anon_Id, T]
     
-    
     trait DisconnectableOptions extends js.Object {
       var disconnectLinks: js.UndefOr[scala.Boolean] = js.undefined
     }
     
-    
     trait EmbeddableOptions extends Options {
       var deep: js.UndefOr[scala.Boolean] = js.undefined
     }
-    
     
     trait GenericAttributes[T]
       extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
@@ -810,14 +802,11 @@ object diaNs extends js.Object {
       var z: js.UndefOr[scala.Double] = js.undefined
     }
     
-    
     trait Options
       extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
     
-    
     trait Selectors
       extends /* selector */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]]
-    
     
     trait TransitionOptions extends Options {
       var delay: js.UndefOr[scala.Double] = js.undefined
@@ -836,11 +825,9 @@ object diaNs extends js.Object {
   @JSName("CellView")
   @js.native
   object CellViewNs extends js.Object {
-    
     trait InteractivityOptions
       extends jointjsLib.jointjsMod.diaNs.ElementViewNs.InteractivityOptions
          with jointjsLib.jointjsMod.diaNs.LinkViewNs.InteractivityOptions
-    
     
     trait Options[T /* <: jointjsLib.jointjsMod.diaNs.Cell */]
       extends jointjsLib.jointjsMod.mvcNs.ViewOptions[T]
@@ -858,10 +845,8 @@ object diaNs extends js.Object {
   @JSName("Element")
   @js.native
   object ElementNs extends js.Object {
-    
     trait Attributes
       extends GenericAttributes[jointjsLib.jointjsMod.diaNs.CellNs.Selectors]
-    
     
     trait GenericAttributes[T]
       extends jointjsLib.jointjsMod.diaNs.CellNs.GenericAttributes[T] {
@@ -871,7 +856,6 @@ object diaNs extends js.Object {
       var position: js.UndefOr[jointjsLib.jointjsMod.diaNs.Point] = js.undefined
       var size: js.UndefOr[jointjsLib.jointjsMod.diaNs.Size] = js.undefined
     }
-    
     
     trait Port extends js.Object {
       var args: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
@@ -883,7 +867,6 @@ object diaNs extends js.Object {
       var z: js.UndefOr[scala.Double | jointjsLib.jointjsLibStrings.auto] = js.undefined
     }
     
-    
     trait PortGroup extends js.Object {
       var attrs: js.UndefOr[jointjsLib.jointjsMod.diaNs.CellNs.Selectors] = js.undefined
       var label: js.UndefOr[jointjsLib.Anon_Markup] = js.undefined
@@ -891,12 +874,10 @@ object diaNs extends js.Object {
       var position: js.UndefOr[PositionType] = js.undefined
     }
     
-    
     trait PortPosition
       extends jointjsLib.jointjsMod.gNs.PlainPoint {
       var angle: scala.Double
     }
-    
     
     trait TranslateOptions extends js.Object {
       var restrictedArea: js.UndefOr[jointjsLib.jointjsMod.diaNs.BBox] = js.undefined
@@ -909,7 +890,6 @@ object diaNs extends js.Object {
   @JSName("ElementView")
   @js.native
   object ElementViewNs extends js.Object {
-    
     trait InteractivityOptions extends js.Object {
       var addLinkFromMagnet: js.UndefOr[scala.Boolean] = js.undefined
       var elementMove: js.UndefOr[scala.Boolean] = js.undefined
@@ -920,18 +900,15 @@ object diaNs extends js.Object {
   @JSName("Graph")
   @js.native
   object GraphNs extends js.Object {
-    
     trait ConnectionOptions
       extends jointjsLib.jointjsMod.diaNs.CellNs.EmbeddableOptions {
       var inbound: js.UndefOr[scala.Boolean] = js.undefined
       var outbound: js.UndefOr[scala.Boolean] = js.undefined
     }
     
-    
     trait ExploreOptions extends ConnectionOptions {
       var breadthFirst: js.UndefOr[scala.Boolean] = js.undefined
     }
-    
     
     trait Options
       extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
@@ -949,10 +926,8 @@ object diaNs extends js.Object {
   @JSName("Link")
   @js.native
   object LinkNs extends js.Object {
-    
     trait Attributes
       extends jointjsLib.jointjsMod.diaNs.CellNs.GenericAttributes[LinkSelectors]
-    
     
     trait EndCellArgs extends js.Object {
       var anchor: js.UndefOr[jointjsLib.jointjsMod.anchorsNs.AnchorJSON] = js.undefined
@@ -962,17 +937,14 @@ object diaNs extends js.Object {
       var selector: js.UndefOr[java.lang.String] = js.undefined
     }
     
-    
     trait EndCellJSON extends EndCellArgs {
       var id: scala.Double | java.lang.String
     }
-    
     
     trait EndPointJSON extends js.Object {
       var x: scala.Double
       var y: scala.Double
     }
-    
     
     trait GenericAttributes[T]
       extends jointjsLib.jointjsMod.diaNs.CellNs.GenericAttributes[T] {
@@ -990,7 +962,6 @@ object diaNs extends js.Object {
       var vertices: js.UndefOr[js.Array[jointjsLib.jointjsMod.diaNs.Point]] = js.undefined
     }
     
-    
     trait Label extends js.Object {
        // optional for default labels
       var attrs: js.UndefOr[jointjsLib.jointjsMod.diaNs.CellNs.Selectors] = js.undefined
@@ -1000,14 +971,12 @@ object diaNs extends js.Object {
       var size: js.UndefOr[jointjsLib.jointjsMod.diaNs.Size] = js.undefined
     }
     
-    
     trait LabelPosition extends js.Object {
       var args: js.UndefOr[jointjsLib.jointjsMod.diaNs.LinkViewNs.LabelOptions] = js.undefined
       var distance: js.UndefOr[scala.Double] = js.undefined
        // optional for default labels
       var offset: js.UndefOr[scala.Double | jointjsLib.Anon_YX] = js.undefined
     }
-    
     
     trait LinkSelectors
       extends jointjsLib.jointjsMod.diaNs.CellNs.Selectors {
@@ -1021,7 +990,6 @@ object diaNs extends js.Object {
       var `.marker-vertices`: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes] = js.undefined
     }
     
-    
     trait Vertex
       extends jointjsLib.jointjsMod.gNs.PlainPoint
          with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
@@ -1031,7 +999,6 @@ object diaNs extends js.Object {
   @JSName("LinkView")
   @js.native
   object LinkViewNs extends js.Object {
-    
     trait InteractivityOptions extends js.Object {
       var arrowheadMove: js.UndefOr[scala.Boolean] = js.undefined
       var labelMove: js.UndefOr[scala.Boolean] = js.undefined
@@ -1040,7 +1007,6 @@ object diaNs extends js.Object {
       var vertexMove: js.UndefOr[scala.Boolean] = js.undefined
       var vertexRemove: js.UndefOr[scala.Boolean] = js.undefined
     }
-    
     
     trait LabelOptions
       extends jointjsLib.jointjsMod.diaNs.CellNs.Options {
@@ -1063,7 +1029,6 @@ object diaNs extends js.Object {
   @JSName("Paper")
   @js.native
   object PaperNs extends js.Object {
-    
     trait BackgroundOptions extends js.Object {
       var color: js.UndefOr[java.lang.String] = js.undefined
       var image: js.UndefOr[java.lang.String] = js.undefined
@@ -1074,7 +1039,6 @@ object diaNs extends js.Object {
       var size: js.UndefOr[jointjsLib.jointjsMod.diaNs.Size | java.lang.String] = js.undefined
       var waterMarkAngle: js.UndefOr[scala.Double] = js.undefined
     }
-    
     
     trait FitToContentOptions extends js.Object {
       var allowNewOrigin: js.UndefOr[
@@ -1089,13 +1053,11 @@ object diaNs extends js.Object {
       var padding: js.UndefOr[jointjsLib.jointjsMod.diaNs.Padding] = js.undefined
     }
     
-    
     trait GradientOptions extends js.Object {
       var id: js.UndefOr[java.lang.String] = js.undefined
       var stops: js.Array[jointjsLib.Anon_OpacityColorOffset]
       var `type`: jointjsLib.jointjsLibStrings.linearGradient | jointjsLib.jointjsLibStrings.radialGradient
     }
-    
     
     trait GridOptions extends js.Object {
       var args: js.UndefOr[
@@ -1107,7 +1069,6 @@ object diaNs extends js.Object {
           ] = js.undefined
       var thickness: js.UndefOr[scala.Double] = js.undefined
     }
-    
     
     trait Options
       extends jointjsLib.jointjsMod.mvcNs.ViewOptions[jointjsLib.jointjsMod.diaNs.Graph] {
@@ -1232,7 +1193,6 @@ object diaNs extends js.Object {
       var width: js.UndefOr[Dimension] = js.undefined
     }
     
-    
     trait ScaleContentOptions extends js.Object {
       var fittingBBox: js.UndefOr[jointjsLib.jointjsMod.diaNs.BBox] = js.undefined
       var maxScale: js.UndefOr[scala.Double] = js.undefined
@@ -1252,7 +1212,6 @@ object diaNs extends js.Object {
   @JSName("ToolView")
   @js.native
   object ToolViewNs extends js.Object {
-    
     trait Options extends js.Object {
       var focusOpacity: js.UndefOr[scala.Double] = js.undefined
     }
@@ -1262,7 +1221,6 @@ object diaNs extends js.Object {
   @JSName("ToolsView")
   @js.native
   object ToolsViewNs extends js.Object {
-    
     trait Options extends js.Object {
       var component: js.UndefOr[scala.Boolean] = js.undefined
       var name: js.UndefOr[java.lang.String | scala.Null] = js.undefined

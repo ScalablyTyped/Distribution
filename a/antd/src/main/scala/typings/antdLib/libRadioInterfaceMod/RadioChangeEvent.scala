@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RadioChangeEvent extends js.Object {
   var nativeEvent: reactLib.MouseEvent
   var target: RadioChangeEventTarget

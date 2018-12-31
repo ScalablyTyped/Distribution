@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("SFS2X.Requests.RoomEvents")
 @js.native
+/**
+  * Creates a new RoomEvents instance.
+  */
 class RoomEvents () extends js.Object {
   /** @type {boolean} Sets whether or not the userCountChange event should be dispatched whenever the users (or players+spectators) count changes in the Room. */
   var allowUserCountChance: scala.Boolean = js.native

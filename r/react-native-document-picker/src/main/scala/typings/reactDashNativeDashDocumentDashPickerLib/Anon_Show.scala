@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Show extends js.Object {
   def show(
     options: reactDashNativeDashDocumentDashPickerLib.reactDashNativeDashDocumentDashPickerMod.Options,

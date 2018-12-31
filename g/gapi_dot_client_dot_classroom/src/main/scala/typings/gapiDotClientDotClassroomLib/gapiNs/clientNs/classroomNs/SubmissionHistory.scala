@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubmissionHistory extends js.Object {
   /** The grade history information of the submission, if present. */
   var gradeHistory: js.UndefOr[GradeHistory] = js.undefined

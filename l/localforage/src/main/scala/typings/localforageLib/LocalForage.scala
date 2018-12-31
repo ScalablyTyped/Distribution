@@ -13,16 +13,16 @@ trait LocalForage extends LocalForageDbMethods {
   def config(): LocalForageOptions = js.native
   def config(options: java.lang.String): js.Any = js.native
   /**
-       * Set and persist localForage options. This must be called before any other calls to localForage are made, but can be called after localForage is loaded.
-       * If you set any config values with this method they will persist after driver changes, so you can call config() then setDriver()
-       * @param {LocalForageOptions} options?
-       */
+    * Set and persist localForage options. This must be called before any other calls to localForage are made, but can be called after localForage is loaded.
+    * If you set any config values with this method they will persist after driver changes, so you can call config() then setDriver()
+    * @param {LocalForageOptions} options?
+    */
   def config(options: LocalForageOptions): scala.Boolean = js.native
   /**
-       * Create a new instance of localForage to point to a different store.
-       * All the configuration options used by config are supported.
-       * @param {LocalForageOptions} options
-       */
+    * Create a new instance of localForage to point to a different store.
+    * All the configuration options used by config are supported.
+    * @param {LocalForageOptions} options
+    */
   def createInstance(options: LocalForageOptions): LocalForage = js.native
   def defineDriver(driver: LocalForageDriver): js.Promise[scala.Unit] = js.native
   def defineDriver(driver: LocalForageDriver, callback: js.Function0[scala.Unit]): js.Promise[scala.Unit] = js.native
@@ -33,47 +33,27 @@ trait LocalForage extends LocalForageDbMethods {
   ): js.Promise[scala.Unit] = js.native
   def driver(): java.lang.String = js.native
   /**
-       * Return a particular driver
-       * @param {string} driver
-       */
+    * Return a particular driver
+    * @param {string} driver
+    */
   def getDriver(driver: java.lang.String): js.Promise[LocalForageDriver] = js.native
   def getSerializer(): js.Promise[LocalForageSerializer] = js.native
   def getSerializer(callback: js.Function1[/* serializer */ LocalForageSerializer, scala.Unit]): js.Promise[LocalForageSerializer] = js.native
   def ready(): js.Promise[scala.Unit] = js.native
   def ready(callback: js.Function1[/* error */ js.Any, scala.Unit]): js.Promise[scala.Unit] = js.native
   /**
-       * Force usage of a particular driver or drivers, if available.
-       * @param {string} driver
-       */
+    * Force usage of a particular driver or drivers, if available.
+    * @param {string} driver
+    */
   def setDriver(driver: java.lang.String): js.Promise[scala.Unit] = js.native
-  /**
-       * Force usage of a particular driver or drivers, if available.
-       * @param {string} driver
-       */
   def setDriver(driver: java.lang.String, callback: js.Function0[scala.Unit]): js.Promise[scala.Unit] = js.native
-  /**
-       * Force usage of a particular driver or drivers, if available.
-       * @param {string} driver
-       */
   def setDriver(
     driver: java.lang.String,
     callback: js.Function0[scala.Unit],
     errorCallback: js.Function1[/* error */ js.Any, scala.Unit]
   ): js.Promise[scala.Unit] = js.native
-  /**
-       * Force usage of a particular driver or drivers, if available.
-       * @param {string} driver
-       */
   def setDriver(driver: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
-  /**
-       * Force usage of a particular driver or drivers, if available.
-       * @param {string} driver
-       */
   def setDriver(driver: js.Array[java.lang.String], callback: js.Function0[scala.Unit]): js.Promise[scala.Unit] = js.native
-  /**
-       * Force usage of a particular driver or drivers, if available.
-       * @param {string} driver
-       */
   def setDriver(
     driver: js.Array[java.lang.String],
     callback: js.Function0[scala.Unit],

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Properties extends js.Object {
   var creation: js.UndefOr[stdLib.Date] = js.undefined
   var creationIndex: js.UndefOr[scala.Double] = js.undefined

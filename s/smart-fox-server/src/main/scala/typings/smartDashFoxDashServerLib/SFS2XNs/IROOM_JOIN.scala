@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IROOM_JOIN extends js.Object {
   var room: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSRoom
 }

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @since 1.0.44
-     */
-
+  * @since 1.0.44
+  */
 trait Event extends js.Object {
   var checked: js.UndefOr[scala.Boolean] = js.undefined
   var element: homeworksLib.JQuery

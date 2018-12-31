@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PortalWithStateProps
   extends reactLib.reactMod.ReactNs.Props[js.Any] {
   var closeOnEsc: js.UndefOr[scala.Boolean] = js.undefined

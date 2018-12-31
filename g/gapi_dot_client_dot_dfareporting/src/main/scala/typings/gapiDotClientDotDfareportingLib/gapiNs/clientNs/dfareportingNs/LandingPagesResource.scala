@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LandingPagesResource extends js.Object {
   /** Deletes an existing campaign landing page. */
   def delete(request: gapiDotClientDotDfareportingLib.Anon_ProfileIdPrettyPrintQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

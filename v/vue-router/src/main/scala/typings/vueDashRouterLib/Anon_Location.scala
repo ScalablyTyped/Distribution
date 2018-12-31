@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Location extends js.Object {
   var href: java.lang.String
   var location: vueDashRouterLib.typesRouterMod.Location

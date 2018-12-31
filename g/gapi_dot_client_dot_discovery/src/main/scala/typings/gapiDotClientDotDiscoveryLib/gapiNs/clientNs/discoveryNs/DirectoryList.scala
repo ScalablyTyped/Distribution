@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DirectoryList extends js.Object {
   /** Indicate the version of the Discovery API used to generate this doc. */
   var discoveryVersion: js.UndefOr[java.lang.String] = js.undefined

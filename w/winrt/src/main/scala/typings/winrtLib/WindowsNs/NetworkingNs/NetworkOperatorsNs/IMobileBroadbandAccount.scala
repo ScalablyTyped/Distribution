@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMobileBroadbandAccount extends js.Object {
   var currentDeviceInformation: MobileBroadbandDeviceInformation
   var currentNetwork: MobileBroadbandNetwork

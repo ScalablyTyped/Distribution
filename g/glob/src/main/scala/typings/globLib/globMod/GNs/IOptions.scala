@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOptions
   extends minimatchLib.minimatchMod.MNs.IOptions {
   var absolute: js.UndefOr[scala.Boolean] = js.undefined

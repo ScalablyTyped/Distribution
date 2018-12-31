@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrategyOptionsWithRequest extends js.Object {
   var failedOnMissing: js.UndefOr[scala.Boolean] = js.undefined
   var passReqToCallback: passportDashUniqueDashTokenLib.passportDashUniqueDashTokenLibNumbers.`true`

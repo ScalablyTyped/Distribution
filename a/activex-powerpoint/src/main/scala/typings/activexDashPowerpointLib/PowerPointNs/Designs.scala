@@ -14,16 +14,13 @@ class Designs protected () extends js.Object {
   var `PowerPoint.Designs_typekey`: Designs = js.native
   /** @param number [Index=-1] */
   def Add(designName: java.lang.String): Design = js.native
-  /** @param number [Index=-1] */
   def Add(designName: java.lang.String, Index: scala.Double): Design = js.native
   /** @param number [Index=-1] */
   def Clone(pOriginal: Design): Design = js.native
-  /** @param number [Index=-1] */
   def Clone(pOriginal: Design, Index: scala.Double): Design = js.native
   def Item(Index: js.Any): Design = js.native
   /** @param number [Index=-1] */
   def Load(TemplateName: java.lang.String): Design = js.native
-  /** @param number [Index=-1] */
   def Load(TemplateName: java.lang.String, Index: scala.Double): Design = js.native
 }
 

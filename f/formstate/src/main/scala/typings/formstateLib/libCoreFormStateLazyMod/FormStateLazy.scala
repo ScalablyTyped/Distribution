@@ -17,32 +17,32 @@ class FormStateLazy[TValue /* <: ValidatableArray */] protected ()
   var _error: js.UndefOr[java.lang.String | scala.Null] = js.native
   var _validators: js.Array[formstateLib.libCoreTypesMod.Validator[TValue]] = js.native
   /**
-       * Error from some sub field if any
-       */
+    * Error from some sub field if any
+    */
   val fieldError: js.UndefOr[java.lang.String | scala.Null] = js.native
   /**
-       * Error from form if any
-       */
+    * Error from form if any
+    */
   val formError: js.UndefOr[java.lang.String | scala.Null] = js.native
   /* CompleteClass */
   override var hasError: scala.Boolean = js.native
   /**
-       * Does any field have an error
-       */
+    * Does any field have an error
+    */
   val hasFieldError: scala.Boolean = js.native
   /**
-       * Does form level validation have an error
-       */
+    * Does form level validation have an error
+    */
   val hasFormError: scala.Boolean = js.native
   /**
-       * You should only show the form error if there are no field errors
-       */
+    * You should only show the form error if there are no field errors
+    */
   val showFormError: scala.Boolean = js.native
   /* CompleteClass */
   override var validating: scala.Boolean = js.native
   /**
-       * Call it when you are `reinit`ing child fields
-       */
+    * Call it when you are `reinit`ing child fields
+    */
   def clearFormError(): scala.Unit = js.native
   /* CompleteClass */
   override def enableAutoValidation(): scala.Unit = js.native

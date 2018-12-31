@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DragulaOptions extends js.Object {
   var accepts: js.UndefOr[
     js.Function4[

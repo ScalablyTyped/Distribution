@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NotificationFileName extends js.Object {
   var caption: js.UndefOr[java.lang.String] = js.undefined
   var fileName: js.UndefOr[java.lang.String] = js.undefined

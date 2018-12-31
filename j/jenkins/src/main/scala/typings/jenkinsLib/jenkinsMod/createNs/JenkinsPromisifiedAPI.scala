@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JenkinsPromisifiedAPI extends js.Object {
   var build: jenkinsLib.Anon_TermName
   var job: jenkinsLib.Anon_EnableNameCreate

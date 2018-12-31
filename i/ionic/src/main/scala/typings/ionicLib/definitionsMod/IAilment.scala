@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAilment extends js.Object {
   val id: java.lang.String
   var `implicit`: scala.Boolean

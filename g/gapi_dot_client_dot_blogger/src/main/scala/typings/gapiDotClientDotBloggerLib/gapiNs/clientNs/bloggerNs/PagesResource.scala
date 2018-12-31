@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PagesResource extends js.Object {
   /** Delete a page by ID. */
   def delete(request: gapiDotClientDotBloggerLib.Anon_PrettyPrintQuotaUserKeyPageId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

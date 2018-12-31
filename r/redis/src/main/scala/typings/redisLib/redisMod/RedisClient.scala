@@ -32,22 +32,14 @@ trait RedisClient
   def duplicate(options: ClientOpts): RedisClient = js.native
   def duplicate(options: ClientOpts, cb: Callback[RedisClient]): RedisClient = js.native
   /**
-       * Client methods.
-       */
-  
+    * Client methods.
+    */
   def end(): scala.Unit = js.native
-  /**
-       * Client methods.
-       */
-  
   def end(flush: scala.Boolean): scala.Unit = js.native
   /**
-       * Mark the start of a transaction block.
-       */
+    * Mark the start of a transaction block.
+    */
   def multi(): Multi = js.native
-  /**
-       * Mark the start of a transaction block.
-       */
   def multi(args: js.Array[js.Array[java.lang.String | scala.Double | Callback[_]]]): Multi = js.native
   @JSName("on")
   def on_message(

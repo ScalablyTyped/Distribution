@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class SpatialAnchorStore () extends js.Object {
   var clear: js.Any = js.native
-   /* unmapped type */var getAllSavedAnchors: js.Any = js.native
-   /* unmapped type */var remove: js.Any = js.native
-   /* unmapped type */var trySave: js.Any = js.native
+   /* unmapped type */ var getAllSavedAnchors: js.Any = js.native
+   /* unmapped type */ var remove: js.Any = js.native
+   /* unmapped type */ var trySave: js.Any = js.native
 }
 

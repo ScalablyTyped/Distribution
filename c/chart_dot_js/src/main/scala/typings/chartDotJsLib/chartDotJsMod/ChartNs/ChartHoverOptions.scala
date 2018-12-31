@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartHoverOptions extends js.Object {
   var animationDuration: js.UndefOr[scala.Double] = js.undefined
   var intersect: js.UndefOr[scala.Boolean] = js.undefined

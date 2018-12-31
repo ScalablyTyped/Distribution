@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * The connection object, exposed via navigator.connection, provides information
- * about the device's cellular and wifi connection.
- */
+  * The connection object, exposed via navigator.connection, provides information
+  * about the device's cellular and wifi connection.
+  */
 @js.native
 trait Connection extends js.Object {
   /**
-       * This property offers a fast way to determine the device's network connection state, and type of connection.
-       * One of:
-       *     Connection.UNKNOWN
-       *     Connection.ETHERNET
-       *     Connection.WIFI
-       *     Connection.CELL_2G
-       *     Connection.CELL_3G
-       *     Connection.CELL_4G
-       *     Connection.CELL
-       *     Connection.NONE
-       */
+    * This property offers a fast way to determine the device's network connection state, and type of connection.
+    * One of:
+    *     Connection.UNKNOWN
+    *     Connection.ETHERNET
+    *     Connection.WIFI
+    *     Connection.CELL_2G
+    *     Connection.CELL_3G
+    *     Connection.CELL_4G
+    *     Connection.CELL
+    *     Connection.NONE
+    */
   var `type`: java.lang.String = js.native
   def addEventListener(`type`: java.lang.String, listener: stdLib.EventListenerOrEventListenerObject): scala.Unit = js.native
   def addEventListener(

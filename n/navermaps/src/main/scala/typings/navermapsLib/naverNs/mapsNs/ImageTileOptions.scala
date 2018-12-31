@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageTileOptions extends js.Object {
   var imgonerror: js.UndefOr[js.Function0[_]] = js.undefined
   var imgonload: js.UndefOr[js.Function0[_]] = js.undefined

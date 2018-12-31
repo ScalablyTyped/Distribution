@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnSummary extends Base {
   var endpoints: Endpoints | scala.Unit
   def calculate(endpoint: Endpoints): scala.Unit

@@ -40,11 +40,6 @@ trait ICollection[T] extends js.Object {
       scala.Unit
     ]
   ): T = js.native
-  /**
-  	 * Executes given function for each object in this group
-  	 * @param context Context (aka thisObject)
-  	 * @return thisArg
-  	 */
   def forEachObject(
     callback: js.Function3[
       /* element */ Object, 
@@ -60,11 +55,6 @@ trait ICollection[T] extends js.Object {
   	 * @param [type] When specified, only objects of this type are returned
   	 */
   def getObjects(): js.Array[Object] = js.native
-  /**
-  	 * Returns an array of children objects of this instance
-  	 * Type parameter introduced in 1.3.10
-  	 * @param [type] When specified, only objects of this type are returned
-  	 */
   def getObjects(`type`: java.lang.String): js.Array[Object] = js.native
   /**
   	 * Inserts an object into collection at specified index, then renders canvas (if `renderOnAddRemove` is not `false`)

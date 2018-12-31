@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CallOptions extends js.Object {
   var audioBandwidth: js.UndefOr[scala.Double] = js.undefined
   var audioCodec: js.UndefOr[java.lang.String] = js.undefined

@@ -12,22 +12,22 @@ sealed trait SupportLevel extends js.Object
 @js.native
 object SupportLevel extends js.Object {
   /**
-       * The functionality is required.
-       */
+    * The functionality is required.
+    */
   @js.native
   sealed trait Required
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.SupportLevel
   
   /**
-       * The functionality is supported.
-       */
+    * The functionality is supported.
+    */
   @js.native
   sealed trait Supported
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.SupportLevel
   
   /**
-       * The functionality is not supported.
-       */
+    * The functionality is not supported.
+    */
   @js.native
   sealed trait Unsupported
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.SupportLevel

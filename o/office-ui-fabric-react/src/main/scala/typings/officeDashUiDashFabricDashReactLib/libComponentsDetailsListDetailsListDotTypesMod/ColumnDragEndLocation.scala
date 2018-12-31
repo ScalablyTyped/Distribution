@@ -12,22 +12,22 @@ sealed trait ColumnDragEndLocation extends js.Object
 @js.native
 object ColumnDragEndLocation extends js.Object {
   /**
-       * Drag ended on Header
-       */
+    * Drag ended on Header
+    */
   @js.native
   sealed trait header
     extends officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.ColumnDragEndLocation
   
   /**
-       * Drag ended outside of current list
-       */
+    * Drag ended outside of current list
+    */
   @js.native
   sealed trait outside
     extends officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.ColumnDragEndLocation
   
   /**
-       * Drag ended on current List
-       */
+    * Drag ended on current List
+    */
   @js.native
   sealed trait surface
     extends officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.ColumnDragEndLocation

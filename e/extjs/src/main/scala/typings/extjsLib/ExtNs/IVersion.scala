@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVersion extends js.Object {
   /** [Method] Returns whether this version equals to the supplied argument
   		* @param target String/Number The version to compare with

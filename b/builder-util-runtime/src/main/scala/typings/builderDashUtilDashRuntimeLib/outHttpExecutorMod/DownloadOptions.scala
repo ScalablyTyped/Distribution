@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DownloadOptions extends js.Object {
   val cancellationToken: builderDashUtilDashRuntimeLib.outCancellationTokenMod.CancellationToken
   val headers: js.UndefOr[nodeLib.httpMod.OutgoingHttpHeaders | scala.Null] = js.undefined

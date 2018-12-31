@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgResponsiveContainerMethods extends js.Object {
   /**
   	 * Adds a callback to the callback collection.

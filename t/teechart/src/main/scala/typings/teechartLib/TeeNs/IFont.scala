@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFont extends js.Object {
   var baseLine: java.lang.String
   var chart: IChart

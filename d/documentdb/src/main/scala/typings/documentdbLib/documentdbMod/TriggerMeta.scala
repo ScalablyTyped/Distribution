@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TriggerMeta extends AbstractMeta {
   var body: java.lang.String
   var triggerOperation: java.lang.String

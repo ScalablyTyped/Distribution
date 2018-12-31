@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object utilTypeMod extends js.Object {
   def getCallSignaturesOfType(`type`: typescriptLib.typescriptMod.tsNs.Type): js.Array[typescriptLib.typescriptMod.tsNs.Signature] = js.native
-  def isEmptyObjectType(`type`: typescriptLib.typescriptMod.tsNs.Type): /* is ObjectType */scala.Boolean = js.native
+  def isEmptyObjectType(`type`: typescriptLib.typescriptMod.tsNs.Type): /* is typescript.typescript.ts.ObjectType */ scala.Boolean = js.native
   def isFalsyType(`type`: typescriptLib.typescriptMod.tsNs.Type): scala.Boolean = js.native
   def isThenableType(
     checker: typescriptLib.typescriptMod.tsNs.TypeChecker,

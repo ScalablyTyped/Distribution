@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IScatter extends ICartesian {
   /** [Method] Render the given visible clip range
   		* @param surface Object

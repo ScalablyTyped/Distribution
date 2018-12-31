@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SamlRequest extends js.Object {
   var assertionConsumerServiceURL: js.UndefOr[java.lang.String] = js.undefined
   var destination: js.UndefOr[java.lang.String] = js.undefined

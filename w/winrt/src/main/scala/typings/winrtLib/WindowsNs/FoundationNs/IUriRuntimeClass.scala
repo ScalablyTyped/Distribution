@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IUriRuntimeClass extends js.Object {
   var absoluteUri: java.lang.String
   var displayUri: java.lang.String

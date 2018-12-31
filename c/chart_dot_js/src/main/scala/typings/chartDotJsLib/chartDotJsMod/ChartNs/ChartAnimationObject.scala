@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartAnimationObject extends js.Object {
   var currentStep: js.UndefOr[scala.Double] = js.undefined
   var easing: js.UndefOr[java.lang.String] = js.undefined

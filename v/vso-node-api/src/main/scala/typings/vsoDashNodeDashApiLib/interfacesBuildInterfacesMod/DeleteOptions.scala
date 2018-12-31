@@ -12,50 +12,50 @@ sealed trait DeleteOptions extends js.Object
 @js.native
 object DeleteOptions extends js.Object {
   /**
-       * All data should be deleted.
-       */
+    * All data should be deleted.
+    */
   @js.native
   sealed trait All
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DeleteOptions
   
   /**
-       * The build should be deleted.
-       */
+    * The build should be deleted.
+    */
   @js.native
   sealed trait Details
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DeleteOptions
   
   /**
-       * The drop location should be deleted.
-       */
+    * The drop location should be deleted.
+    */
   @js.native
   sealed trait DropLocation
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DeleteOptions
   
   /**
-       * The version control label should be deleted.
-       */
+    * The version control label should be deleted.
+    */
   @js.native
   sealed trait Label
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DeleteOptions
   
   /**
-       * No data should be deleted. This value should not be used.
-       */
+    * No data should be deleted. This value should not be used.
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DeleteOptions
   
   /**
-       * Published symbols should be deleted.
-       */
+    * Published symbols should be deleted.
+    */
   @js.native
   sealed trait Symbols
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DeleteOptions
   
   /**
-       * The test results should be deleted.
-       */
+    * The test results should be deleted.
+    */
   @js.native
   sealed trait TestResults
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DeleteOptions

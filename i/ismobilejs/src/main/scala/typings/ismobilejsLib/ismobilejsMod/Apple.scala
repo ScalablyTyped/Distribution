@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Apple extends js.Object {
   var device: scala.Boolean
   var ipod: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GanttMessagesViews extends js.Object {
   var day: js.UndefOr[java.lang.String] = js.undefined
   var end: js.UndefOr[java.lang.String] = js.undefined

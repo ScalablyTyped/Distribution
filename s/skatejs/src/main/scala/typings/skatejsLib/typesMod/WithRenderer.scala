@@ -19,15 +19,15 @@ class WithRenderer[O] ()
   /* CompleteClass */
   override val isContentEditable: scala.Boolean = js.native
   /**
-       * Returns the first following sibling that
-       * is an element, and null otherwise.
-       */
+    * Returns the first following sibling that
+    * is an element, and null otherwise.
+    */
   /* CompleteClass */
   override val nextElementSibling: stdLib.Element | scala.Null = js.native
   /**
-       * Returns the first preceding sibling that
-       * is an element, and null otherwise.
-       */
+    * Returns the first preceding sibling that
+    * is an element, and null otherwise.
+    */
   /* CompleteClass */
   override val previousElementSibling: stdLib.Element | scala.Null = js.native
   // getter for turning of ShadowDOM
@@ -72,11 +72,7 @@ class WithRenderer[O] ()
   // Default renderer, returns string returned from render and adds it to root via innerHTML
   // -> override to get own renderer
   def renderer(root: stdLib.Element, html: js.Function1[/* props */ js.UndefOr[Mixed], O]): scala.Unit = js.native
-  // Default renderer, returns string returned from render and adds it to root via innerHTML
-  // -> override to get own renderer
   def renderer(root: stdLib.Node, html: js.Function1[/* props */ js.UndefOr[Mixed], O]): scala.Unit = js.native
-  // Default renderer, returns string returned from render and adds it to root via innerHTML
-  // -> override to get own renderer
   def renderer(root: stdLib.ShadowRoot, html: js.Function1[/* props */ js.UndefOr[Mixed], O]): scala.Unit = js.native
   def updated(): scala.Unit = js.native
   def updated(props: Mixed): scala.Unit = js.native

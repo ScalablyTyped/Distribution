@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateSubscriberRequest extends js.Object {
   /**
-       * The accountId that is associated with the budget whose subscriber you want to update.
-       */
+    * The accountId that is associated with the budget whose subscriber you want to update.
+    */
   var AccountId: AccountId
   /**
-       * The name of the budget whose subscriber you want to update.
-       */
+    * The name of the budget whose subscriber you want to update.
+    */
   var BudgetName: BudgetName
   /**
-       * The updated subscriber that is associated with a budget notification.
-       */
+    * The updated subscriber that is associated with a budget notification.
+    */
   var NewSubscriber: Subscriber
   /**
-       * The notification whose subscriber you want to update.
-       */
+    * The notification whose subscriber you want to update.
+    */
   var Notification: Notification
   /**
-       * The previous subscriber that is associated with a budget notification.
-       */
+    * The previous subscriber that is associated with a budget notification.
+    */
   var OldSubscriber: Subscriber
 }
 

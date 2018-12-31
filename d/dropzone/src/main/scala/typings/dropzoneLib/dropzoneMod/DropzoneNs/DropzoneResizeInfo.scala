@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DropzoneResizeInfo extends js.Object {
   var srcHeight: js.UndefOr[scala.Double] = js.undefined
   var srcWidth: js.UndefOr[scala.Double] = js.undefined

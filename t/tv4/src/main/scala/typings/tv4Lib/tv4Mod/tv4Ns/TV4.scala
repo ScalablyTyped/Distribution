@@ -44,7 +44,6 @@ trait TV4 extends js.Object {
   def validate(data: js.Any, schema: JsonSchema): scala.Boolean = js.native
   // from including: tv4.async-jquery.js
   def validate(data: js.Any, schema: JsonSchema, callback: AsyncValidationCallback): scala.Unit = js.native
-  // from including: tv4.async-jquery.js
   def validate(data: js.Any, schema: JsonSchema, callback: AsyncValidationCallback, checkRecursive: scala.Boolean): scala.Unit = js.native
   def validate(
     data: js.Any,
@@ -53,7 +52,6 @@ trait TV4 extends js.Object {
     checkRecursive: scala.Boolean,
     banUnknownProperties: scala.Boolean
   ): scala.Unit = js.native
-  // primary API
   def validate(data: js.Any, schema: JsonSchema, checkRecursive: scala.Boolean): scala.Boolean = js.native
   def validate(
     data: js.Any,

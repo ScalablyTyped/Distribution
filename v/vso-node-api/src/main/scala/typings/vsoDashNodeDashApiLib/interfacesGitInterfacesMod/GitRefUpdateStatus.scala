@@ -12,113 +12,113 @@ sealed trait GitRefUpdateStatus extends js.Object
 @js.native
 object GitRefUpdateStatus extends js.Object {
   /**
-       * The ref update request could not be completed because the user lacks the permission to create a branch
-       */
+    * The ref update request could not be completed because the user lacks the permission to create a branch
+    */
   @js.native
   sealed trait CreateBranchPermissionRequired
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitRefUpdateStatus
   
   /**
-       * The ref update request could not be completed because the user lacks the permission to create a tag
-       */
+    * The ref update request could not be completed because the user lacks the permission to create a tag
+    */
   @js.native
   sealed trait CreateTagPermissionRequired
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitRefUpdateStatus
   
   /**
-       * Indicates that the ref update request could not be completed because part of the graph would be disconnected by this change, and the caller does not have ForcePush permission on the repository.
-       */
+    * Indicates that the ref update request could not be completed because part of the graph would be disconnected by this change, and the caller does not have ForcePush permission on the repository.
+    */
   @js.native
   sealed trait ForcePushRequired
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitRefUpdateStatus
   
   /**
-       * Indicates that the ref update request could not be completed because the ref name presented in the request was not valid.
-       */
+    * Indicates that the ref update request could not be completed because the ref name presented in the request was not valid.
+    */
   @js.native
   sealed trait InvalidRefName
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitRefUpdateStatus
   
   /**
-       * The ref update could not be completed because the ref is locked by another user.
-       */
+    * The ref update could not be completed because the ref is locked by another user.
+    */
   @js.native
   sealed trait Locked
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitRefUpdateStatus
   
   /**
-       * The ref update request could not be completed because the user lacks note creation permissions required to write this note
-       */
+    * The ref update request could not be completed because the user lacks note creation permissions required to write this note
+    */
   @js.native
   sealed trait ManageNotePermissionRequired
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitRefUpdateStatus
   
   /**
-       * The ref update could not be completed because, in case-insensitive mode, the ref name conflicts with an existing, differently-cased ref name.
-       */
+    * The ref update could not be completed because, in case-insensitive mode, the ref name conflicts with an existing, differently-cased ref name.
+    */
   @js.native
   sealed trait RefNameConflict
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitRefUpdateStatus
   
   /**
-       * The ref update could not be completed because it was rejected by the plugin.
-       */
+    * The ref update could not be completed because it was rejected by the plugin.
+    */
   @js.native
   sealed trait RejectedByPlugin
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitRefUpdateStatus
   
   /**
-       * The ref update could not be completed because it was rejected by policy.
-       */
+    * The ref update could not be completed because it was rejected by policy.
+    */
   @js.native
   sealed trait RejectedByPolicy
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitRefUpdateStatus
   
   /**
-       * Indicates that the ref update request could not be completed because the old object ID presented in the request was not the object ID of the ref when the database attempted the update. The most likely scenario is that the caller lost a race to update the ref.
-       */
+    * Indicates that the ref update request could not be completed because the old object ID presented in the request was not the object ID of the ref when the database attempted the update. The most likely scenario is that the caller lost a race to update the ref.
+    */
   @js.native
   sealed trait StaleOldObjectId
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitRefUpdateStatus
   
   /**
-       * Indicates that the ref update request was completed successfully.
-       */
+    * Indicates that the ref update request was completed successfully.
+    */
   @js.native
   sealed trait Succeeded
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitRefUpdateStatus
   
   /**
-       * Indicates that the ref update request was completed successfully, but the passed-in ref was corrupt - as in, the old object ID was bad.  This should only happen during deletes.
-       */
+    * Indicates that the ref update request was completed successfully, but the passed-in ref was corrupt - as in, the old object ID was bad.  This should only happen during deletes.
+    */
   @js.native
   sealed trait SucceededCorruptRef
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitRefUpdateStatus
   
   /**
-       * Indicates that the ref update request was completed successfully, but the ref doesn't actually exist so no changes were made.  This should only happen during deletes.
-       */
+    * Indicates that the ref update request was completed successfully, but the ref doesn't actually exist so no changes were made.  This should only happen during deletes.
+    */
   @js.native
   sealed trait SucceededNonExistentRef
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitRefUpdateStatus
   
   /**
-       * The request was not processed
-       */
+    * The request was not processed
+    */
   @js.native
   sealed trait Unprocessed
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitRefUpdateStatus
   
   /**
-       * The ref update request could not be completed because the new object ID for the ref could not be resolved to a commit object (potentially through any number of tags)
-       */
+    * The ref update request could not be completed because the new object ID for the ref could not be resolved to a commit object (potentially through any number of tags)
+    */
   @js.native
   sealed trait UnresolvableToCommit
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitRefUpdateStatus
   
   /**
-       * The ref update request could not be completed because the user lacks write permissions required to write this ref
-       */
+    * The ref update request could not be completed because the user lacks write permissions required to write this ref
+    */
   @js.native
   sealed trait WritePermissionRequired
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitRefUpdateStatus

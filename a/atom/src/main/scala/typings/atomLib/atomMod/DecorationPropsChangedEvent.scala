@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DecorationPropsChangedEvent extends js.Object {
   /** Object the new parameters the decoration now has */
   var newProperties: DecorationOptions

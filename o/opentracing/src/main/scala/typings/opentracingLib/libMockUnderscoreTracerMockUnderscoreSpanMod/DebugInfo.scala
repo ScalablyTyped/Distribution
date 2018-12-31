@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DebugInfo extends js.Object {
   var millis: js.Tuple3[scala.Double, scala.Double, scala.Double]
   var operation: java.lang.String

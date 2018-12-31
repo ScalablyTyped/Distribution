@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MessagePayload extends js.Object {
   var devices: js.Array[java.lang.String]
   var payload: js.Any

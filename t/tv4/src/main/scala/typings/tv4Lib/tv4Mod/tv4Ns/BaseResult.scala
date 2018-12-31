@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseResult extends js.Object {
   var missing: js.Array[java.lang.String]
   var valid: scala.Boolean

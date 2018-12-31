@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GraphicsDisplayInfo extends js.Object {
   var builtin: scala.Boolean
   var connection: java.lang.String

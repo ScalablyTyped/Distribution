@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Sync
- * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.html }
- */
+  * Sync
+  * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.html }
+  */
 @JSImport("realm", "Sync")
 @js.native
 object SyncNs extends js.Object {
@@ -24,9 +24,9 @@ object SyncNs extends js.Object {
     extends realmLib.RealmNs.SyncNs.AdminCredentials
   
   /**
-      * AuthError
-      * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.AuthError.html }
-      */
+    * AuthError
+    * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.AuthError.html }
+    */
   @js.native
   class AuthError ()
     extends realmLib.RealmNs.SyncNs.AuthError
@@ -48,25 +48,25 @@ object SyncNs extends js.Object {
     extends realmLib.RealmNs.SyncNs.PermissionOffer
   
   /**
-      * Session
-      * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.Session.html }
-      */
+    * Session
+    * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.Session.html }
+    */
   @js.native
   class Session ()
     extends realmLib.RealmNs.SyncNs.Session
   
   /**
-       * Subscription
-       * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.Subscription.html }
-       */
+    * Subscription
+    * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.Subscription.html }
+    */
   @js.native
   class Subscription ()
     extends realmLib.RealmNs.SyncNs.Subscription
   
   /**
-       * User
-       * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.User.html }
-       */
+    * User
+    * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.User.html }
+    */
   @js.native
   class User ()
     extends realmLib.RealmNs.SyncNs.User
@@ -90,8 +90,8 @@ object SyncNs extends js.Object {
     changeCallback: js.Function1[/* changeEvent */ realmLib.RealmNs.SyncNs.ChangeEvent, scala.Unit]
   ): js.Promise[scala.Unit] = js.native
   /**
-       * @deprecated, to be removed in future versions
-       */
+    * @deprecated, to be removed in future versions
+    */
   def setFeatureToken(token: java.lang.String): scala.Unit = js.native
   @JSName("setLogLevel")
   def setLogLevel_all(logLevel: realmLib.realmLibStrings.all): scala.Unit = js.native
@@ -154,9 +154,9 @@ object SyncNs extends js.Object {
   }
   
   /**
-       * User
-       * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.User.html }
-       */
+    * User
+    * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.User.html }
+    */
   @js.native
   object User extends js.Object {
     val all: org.scalablytyped.runtime.StringDictionary[realmLib.RealmNs.SyncNs.User] = js.native
@@ -164,8 +164,6 @@ object SyncNs extends js.Object {
     // Deprecated
     /** @deprecated, to be removed in future versions */
     def adminUser(adminToken: java.lang.String): realmLib.RealmNs.SyncNs.User = js.native
-    // Deprecated
-    /** @deprecated, to be removed in future versions */
     def adminUser(adminToken: java.lang.String, server: java.lang.String): realmLib.RealmNs.SyncNs.User = js.native
     /** @deprecated, to be removed in future versions */
     def authenticate(server: java.lang.String, provider: java.lang.String, options: js.Any): js.Promise[realmLib.RealmNs.SyncNs.User] = js.native

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Creates a biskviit cookie jar for managing cookie values in memory */
-
 trait Cookies extends js.Object {
   var cookies: js.Array[nodemailerLib.libFetchCookiesMod.CookiesNs.Cookie]
   var options: nodemailerLib.libFetchCookiesMod.CookiesNs.Options

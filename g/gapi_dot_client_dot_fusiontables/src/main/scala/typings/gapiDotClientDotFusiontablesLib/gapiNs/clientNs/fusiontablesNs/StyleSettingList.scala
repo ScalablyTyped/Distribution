@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StyleSettingList extends js.Object {
   /** All requested style settings. */
   var items: js.UndefOr[js.Array[StyleSetting]] = js.undefined

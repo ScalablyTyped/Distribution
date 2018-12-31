@@ -5,108 +5,107 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPanelProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[officeDashUiDashFabricDashReactLib.libComponentsPanelPanelDotBaseMod.PanelBase] {
   /**
-       * Aria label on close button
-       */
+    * Aria label on close button
+    */
   var closeButtonAriaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Deprecated property. Serves no function.
-       * @deprecated Serves no function.
-       */
+    * Deprecated property. Serves no function.
+    * @deprecated Serves no function.
+    */
   var componentId: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Optional callback to access the IPanel interface. Use this instead of ref for accessing
-       * the public methods and properties of the component.
-       */
+    * Optional callback to access the IPanel interface. Use this instead of ref for accessing
+    * the public methods and properties of the component.
+    */
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[IPanel]] = js.undefined
   /**
-       * Custom panel width, used only when type is set to PanelType.custom.
-       */
+    * Custom panel width, used only when type is set to PanelType.custom.
+    */
   var customWidth: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Sets the HTMLElement to focus on when exiting the FocusTrapZone.
-       * @defaultvalue The element.target that triggered the Panel.
-       */
+    * Sets the HTMLElement to focus on when exiting the FocusTrapZone.
+    * @defaultvalue The element.target that triggered the Panel.
+    */
   var elementToFocusOnDismiss: js.UndefOr[reactLib.HTMLElement] = js.undefined
   /**
-       * Indicates the selector for first focusable item.
-       * Deprecated, use `focusTrapZoneProps`.
-       * @deprecated Use `focusTrapZoneProps`.
-       */
+    * Indicates the selector for first focusable item.
+    * Deprecated, use `focusTrapZoneProps`.
+    * @deprecated Use `focusTrapZoneProps`.
+    */
   var firstFocusableSelector: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Optional props to pass to the FocusTrapZone component to manage focus in the panel.
-       */
+    * Optional props to pass to the FocusTrapZone component to manage focus in the panel.
+    */
   var focusTrapZoneProps: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsFocusTrapZoneFocusTrapZoneDotTypesMod.IFocusTrapZoneProps
   ] = js.undefined
   /**
-       * Indicates whether Panel should force focus inside the focus trap zone
-       * Deprecated, use `focusTrapZoneProps`.
-       * @defaultvalue true
-       * @deprecated Use `focusTrapZoneProps`.
-       */
+    * Indicates whether Panel should force focus inside the focus trap zone
+    * Deprecated, use `focusTrapZoneProps`.
+    * @defaultvalue true
+    * @deprecated Use `focusTrapZoneProps`.
+    */
   var forceFocusInsideTrap: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Has the close button visible.
-       * @defaultvalue true
-       */
+    * Has the close button visible.
+    * @defaultvalue true
+    */
   var hasCloseButton: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Optional parameter to provider the class name for header text
-       */
+    * Optional parameter to provider the class name for header text
+    */
   var headerClassName: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Header text for the Panel.
-       * @defaultvalue ""
-       */
+    * Header text for the Panel.
+    * @defaultvalue ""
+    */
   var headerText: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Indicates if this Panel will ignore keeping track of HTMLElement that activated the Zone.
-       * Deprecated, use `focusTrapZoneProps`.
-       * @defaultvalue false
-       * @deprecated Use `focusTrapZoneProps`.
-       */
+    * Indicates if this Panel will ignore keeping track of HTMLElement that activated the Zone.
+    * Deprecated, use `focusTrapZoneProps`.
+    * @defaultvalue false
+    * @deprecated Use `focusTrapZoneProps`.
+    */
   var ignoreExternalFocusing: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Whether the panel uses a modal overlay or not
-       * @defaultvalue true
-       */
+    * Whether the panel uses a modal overlay or not
+    * @defaultvalue true
+    */
   var isBlocking: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Determines if content should stretch to fill available space putting footer at the bottom of the page
-       * @defaultvalue false
-       */
+    * Determines if content should stretch to fill available space putting footer at the bottom of the page
+    * @defaultvalue false
+    */
   var isFooterAtBottom: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Whether the panel is hidden on dismiss, instead of destroyed in the DOM.
-       * Protects the contents from being destroyed when the panel is dismissed.
-       * @defaultvalue false
-       */
+    * Whether the panel is hidden on dismiss, instead of destroyed in the DOM.
+    * Protects the contents from being destroyed when the panel is dismissed.
+    * @defaultvalue false
+    */
   var isHiddenOnDismiss: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Whether the panel can be light dismissed.
-       * @defaultvalue false
-       */
+    * Whether the panel can be light dismissed.
+    * @defaultvalue false
+    */
   var isLightDismiss: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Whether the panel is displayed.
-       * @defaultvalue false
-       */
+    * Whether the panel is displayed.
+    * @defaultvalue false
+    */
   var isOpen: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Optional props to pass to the Layer component hosting the panel.
-       */
+    * Optional props to pass to the Layer component hosting the panel.
+    */
   var layerProps: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsLayerLayerDotTypesMod.ILayerProps
   ] = js.undefined
   /**
-       * A callback function for when the panel is closed, before the animation completes.
-       * If the panel should NOT be dismissed based on some keyboard event, then simply call ev.preventDefault() on it
-       */
+    * A callback function for when the panel is closed, before the animation completes.
+    * If the panel should NOT be dismissed based on some keyboard event, then simply call ev.preventDefault() on it
+    */
   var onDismiss: js.UndefOr[
     js.Function1[
       /* ev */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
@@ -114,51 +113,51 @@ trait IPanelProps
     ]
   ] = js.undefined
   /**
-       * A callback function which is called after the Panel is dismissed and the animation is complete.
-       */
+    * A callback function which is called after the Panel is dismissed and the animation is complete.
+    */
   var onDismissed: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
-       * Optional custom function to handle clicks outside the panel in lightdismiss mode
-       */
+    * Optional custom function to handle clicks outside the panel in lightdismiss mode
+    */
   var onLightDismissClick: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
-       * Optional custom function to handle clicks outside this component
-       */
+    * Optional custom function to handle clicks outside this component
+    */
   var onOuterClick: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
-       * Optional custom renderer for body region. Replaces any children passed into the component.
-       */
+    * Optional custom renderer for body region. Replaces any children passed into the component.
+    */
   var onRenderBody: js.UndefOr[atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[IPanelProps]] = js.undefined
   /**
-       * Optional custom renderer for footer region. Replaces sticky footer.
-       */
+    * Optional custom renderer for footer region. Replaces sticky footer.
+    */
   var onRenderFooter: js.UndefOr[atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[IPanelProps]] = js.undefined
   /**
-       * Custom renderer for content in the sticky footer
-       */
+    * Custom renderer for content in the sticky footer
+    */
   var onRenderFooterContent: js.UndefOr[atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[IPanelProps]] = js.undefined
   /**
-       * Optional custom renderer for header region. Replaces current title
-       */
+    * Optional custom renderer for header region. Replaces current title
+    */
   var onRenderHeader: js.UndefOr[IPanelHeaderRenderer] = js.undefined
   /**
-       * Optional custom renderer navigation region. Replaces current close button.
-       */
+    * Optional custom renderer navigation region. Replaces current close button.
+    */
   var onRenderNavigation: js.UndefOr[atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[IPanelProps]] = js.undefined
   /**
-       * Call to provide customized styling that will layer on top of the variant rules.
-       */
+    * Call to provide customized styling that will layer on top of the variant rules.
+    */
   var styles: js.UndefOr[
     atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[IPanelStyleProps, IPanelStyles]
   ] = js.undefined
   /**
-       * Theme provided by High-Order Component.
-       */
+    * Theme provided by High-Order Component.
+    */
   var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
   /**
-       * Type of the panel.
-       * @defaultvalue PanelType.smallFixedRight
-       */
+    * Type of the panel.
+    * @defaultvalue PanelType.smallFixedRight
+    */
   var `type`: js.UndefOr[PanelType] = js.undefined
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IElementDimension extends js.Object {
   var rootMaxH: js.UndefOr[scala.Double] = js.undefined
   var rootMaxW: js.UndefOr[scala.Double] = js.undefined

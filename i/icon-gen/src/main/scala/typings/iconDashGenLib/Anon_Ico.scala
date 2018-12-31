@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Ico extends js.Object {
   var ico: js.Array[scala.Double]
   var name: java.lang.String

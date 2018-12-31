@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FormatEnum extends js.Object {
   var dz: AvailableFormatInfo
   var fits: AvailableFormatInfo

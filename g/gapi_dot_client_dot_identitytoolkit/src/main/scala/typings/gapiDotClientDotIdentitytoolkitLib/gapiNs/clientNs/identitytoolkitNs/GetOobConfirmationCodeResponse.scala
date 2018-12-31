@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetOobConfirmationCodeResponse extends js.Object {
   /** The email address that the email is sent to. */
   var email: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryBaseOptions[TVariables] extends js.Object {
   var errorPolicy: js.UndefOr[ErrorPolicy] = js.undefined
   var fetchPolicy: js.UndefOr[FetchPolicy] = js.undefined

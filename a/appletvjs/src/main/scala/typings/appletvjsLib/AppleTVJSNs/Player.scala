@@ -57,14 +57,6 @@ class Player () extends js.Object {
   		 * An integer value — The seek will be performed to the stated value and not the initial requested value.
   		 * */
   def requestSeekToTime(): scala.Unit = js.native
-  /**
-  		 * An event that indicates if a seek to time request was accomplished.
-  		 *
-  		 * The values for this attribute can be one of the following:
-  		 * true — The seek performed as requested.
-  		 * false or null— The seek was not performed.
-  		 * An integer value — The seek will be performed to the stated value and not the initial requested value.
-  		 * */
   def requestSeekToTime(result: js.Any): scala.Unit = js.native
   /** Sets the playback point to a specified time. */
   def seekToTime(time: scala.Double): scala.Unit = js.native

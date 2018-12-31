@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimepickerOptions extends js.Object {
   var appendWidgetTo: js.UndefOr[java.lang.String] = js.undefined
   var defaultTime: js.UndefOr[java.lang.String | scala.Boolean | stdLib.Date] = js.undefined

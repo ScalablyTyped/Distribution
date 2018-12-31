@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransformsStyle extends js.Object {
   var rotation: js.UndefOr[scala.Double] = js.undefined
   var scaleX: js.UndefOr[scala.Double] = js.undefined

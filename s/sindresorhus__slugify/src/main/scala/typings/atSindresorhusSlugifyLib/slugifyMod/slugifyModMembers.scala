@@ -9,12 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object slugifyModMembers extends js.Object {
   /**
-   * Slugify a string
-   */
+    * Slugify a string
+    */
   def apply(input: java.lang.String): java.lang.String = js.native
-  /**
-   * Slugify a string
-   */
   def apply(input: java.lang.String, options: atSindresorhusSlugifyLib.slugifyMod.slugifyNs.Options): java.lang.String = js.native
 }
 

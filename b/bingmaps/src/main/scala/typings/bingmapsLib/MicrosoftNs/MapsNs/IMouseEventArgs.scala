@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMouseEventArgs extends ILayerMouseEventArgs {
   /** The event that occurred. */
   var eventName: java.lang.String
@@ -30,14 +29,14 @@ trait IMouseEventArgs extends ILayerMouseEventArgs {
   /**	The number of units that the mouse wheel has changed. */
   var wheelDelta: scala.Double
   /**
-          * Returns the x-value of the pixel coordinate, relative to the map, of the mouse.
-          * @returns The x-value of the pixel coordinate, relative to the map, of the mouse.
-          */
+    * Returns the x-value of the pixel coordinate, relative to the map, of the mouse.
+    * @returns The x-value of the pixel coordinate, relative to the map, of the mouse.
+    */
   def getX(): scala.Double
   /**
-          * Returns the y-value of the pixel coordinate, relative to the map, of the mouse.
-          * @returns The y-value of the pixel coordinate, relative to the map, of the mouse.
-          */
+    * Returns the y-value of the pixel coordinate, relative to the map, of the mouse.
+    * @returns The y-value of the pixel coordinate, relative to the map, of the mouse.
+    */
   def getY(): scala.Double
 }
 

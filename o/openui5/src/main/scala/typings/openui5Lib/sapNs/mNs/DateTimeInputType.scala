@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait DateTimeInputType extends js.Object
 
 /**
-     * A subset of DateTimeInput types that fit to a simple API returning one string.
-    */
+  * A subset of DateTimeInput types that fit to a simple API returning one string.
+  */
 @JSGlobal("sap.m.DateTimeInputType")
 @js.native
 object DateTimeInputType extends js.Object {

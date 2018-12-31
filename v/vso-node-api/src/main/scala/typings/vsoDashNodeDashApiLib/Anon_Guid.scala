@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Guid extends js.Object {
   var array: scala.Double
   var boolean: scala.Double

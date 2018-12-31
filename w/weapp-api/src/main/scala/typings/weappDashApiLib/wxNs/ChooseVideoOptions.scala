@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChooseVideoOptions extends js.Object {
   /** 前置或者后置摄像头，默认为前后都有，即：['front', 'back'] */
   var camera: js.UndefOr[js.Array[CameraDevice]] = js.undefined

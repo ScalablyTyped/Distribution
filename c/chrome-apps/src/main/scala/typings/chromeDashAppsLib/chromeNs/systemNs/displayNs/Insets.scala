@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Insets extends js.Object {
   /** The y-axis distance from the bottom bound. */
   var bottom: chromeDashAppsLib.chromeNs.integer

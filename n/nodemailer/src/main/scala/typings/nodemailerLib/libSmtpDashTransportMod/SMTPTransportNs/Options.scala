@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveMultipleInheritance: Dropped parents List(nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.Options because Would inherit conflicting mutable fields List(auth))*/
-
 trait Options
   extends MailOptions
      with nodemailerLib.nodemailerMod.TransportOptions {

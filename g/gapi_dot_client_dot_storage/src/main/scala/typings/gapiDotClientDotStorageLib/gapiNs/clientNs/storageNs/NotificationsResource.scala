@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotificationsResource extends js.Object {
   /** Permanently deletes a notification subscription. */
   def delete(request: gapiDotClientDotStorageLib.Anon_Notification): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

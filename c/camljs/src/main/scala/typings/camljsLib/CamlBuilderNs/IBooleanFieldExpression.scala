@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBooleanFieldExpression extends js.Object {
   /** Checks whether the value of the field is equal to the specified value */
   def EqualTo(value: scala.Boolean): IExpression

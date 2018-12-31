@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EncryptedContentInfo extends js.Object {
   var contentEncryptionAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default
   var eContentType: java.lang.String

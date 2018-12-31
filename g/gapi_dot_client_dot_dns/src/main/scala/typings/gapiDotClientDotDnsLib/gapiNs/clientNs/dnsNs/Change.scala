@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Change extends js.Object {
   /** Which ResourceRecordSets to add? */
   var additions: js.UndefOr[js.Array[ResourceRecordSet]] = js.undefined

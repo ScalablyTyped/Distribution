@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-   * A collection of errors. `AggregateError` is an array-like object, with numeric indices and a `.length` property.
-   *  It supports all generic array methods such as `.forEach` directly.
-   *
-   * `AggregateError`s are caught in `.error` handlers, even if the contained errors are not operational.
-   *
-   * `Promise.some` and `Promise.any` use `AggregateError` as rejection reason when they fail.
-   */
+  * A collection of errors. `AggregateError` is an array-like object, with numeric indices and a `.length` property.
+  *  It supports all generic array methods such as `.forEach` directly.
+  *
+  * `AggregateError`s are caught in `.error` handlers, even if the contained errors are not operational.
+  *
+  * `Promise.some` and `Promise.any` use `AggregateError` as rejection reason when they fail.
+  */
 @JSImport("bluebird-lst", "AggregateError")
 @js.native
 class AggregateError ()

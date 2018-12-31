@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UrlCrawlErrorsSample extends js.Object {
   /** The time the error was first detected, in RFC 3339 format. */
   var first_detected: js.UndefOr[java.lang.String] = js.undefined

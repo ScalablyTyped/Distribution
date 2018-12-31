@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICalendarState extends js.Object {
   /** State used to show/hide day picker */
   var isDayPickerVisible: js.UndefOr[scala.Boolean] = js.undefined

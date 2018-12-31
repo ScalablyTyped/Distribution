@@ -9,10 +9,9 @@ import scala.scalajs.js.annotation._
 // XMLHttpRequest
 ////////////////
 /**
- * Request options for {@link GM_xmlhttpRequest}.
- * @see {@link http://wiki.greasespot.net/GM_xmlhttpRequest#Arguments}
- */
-
+  * Request options for {@link GM_xmlhttpRequest}.
+  * @see {@link http://wiki.greasespot.net/GM_xmlhttpRequest#Arguments}
+  */
 trait GMXMLHttpRequestOptions extends js.Object {
   var binary: js.UndefOr[scala.Boolean] = js.undefined
   var context: js.UndefOr[js.Any] = js.undefined

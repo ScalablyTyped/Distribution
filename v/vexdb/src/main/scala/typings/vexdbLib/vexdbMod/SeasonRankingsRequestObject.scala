@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SeasonRankingsRequestObject extends js.Object {
   var limit_number: js.UndefOr[scala.Double] = js.undefined
   var limit_start: js.UndefOr[scala.Double] = js.undefined

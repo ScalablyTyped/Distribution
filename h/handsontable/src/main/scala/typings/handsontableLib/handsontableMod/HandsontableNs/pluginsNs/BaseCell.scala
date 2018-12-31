@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseCell extends js.Object {
   var columnAbsolute: scala.Boolean
   var columnOffset: scala.Double

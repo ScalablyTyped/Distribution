@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @abstract
-     */
-
+  * @abstract
+  */
 trait IHarness extends js.Object {
   var alsoPreload: js.Array[_]
   var autoCheckGlobals: scala.Boolean
@@ -19,7 +18,7 @@ trait IHarness extends js.Object {
   var isReadyTimeout: scala.Double
   var keepNLastResults: scala.Double
   var keepResults: scala.Boolean
-  var listenters: org.scalablytyped.runtime.StringDictionary[js.Function2[/* event */ stdLib.Event, /* repeated */js.Any, scala.Unit]]
+  var listenters: org.scalablytyped.runtime.StringDictionary[js.Function2[/* event */ stdLib.Event, /* repeated */ js.Any, scala.Unit]]
   var maxThreads: scala.Double
   var needDone: scala.Boolean
   var overrideSetTimeout: scala.Boolean

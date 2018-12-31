@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SharedEnhancedButtonProps[T] extends js.Object {
   var centerRipple: js.UndefOr[scala.Boolean] = js.undefined
   var containerElement: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | java.lang.String] = js.undefined

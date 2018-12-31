@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SingleResponse extends js.Object {
   var certID: pkijsLib.srcCertIDMod.default
   var certStatus: js.Any

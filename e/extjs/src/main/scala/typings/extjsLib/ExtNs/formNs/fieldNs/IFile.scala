@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFile extends ITrigger {
   /** [Property] (Ext.button.Button) */
   var button: js.UndefOr[extjsLib.ExtNs.buttonNs.IButton] = js.undefined

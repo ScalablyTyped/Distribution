@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListViewOptions extends js.Object {
   var appendOnRefresh: js.UndefOr[scala.Boolean] = js.undefined
   var autoBind: js.UndefOr[scala.Boolean] = js.undefined

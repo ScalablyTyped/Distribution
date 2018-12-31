@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   // Indicates if user can cancel the scroll or not. Default: true
   var cancelable: js.UndefOr[scala.Boolean] = js.undefined

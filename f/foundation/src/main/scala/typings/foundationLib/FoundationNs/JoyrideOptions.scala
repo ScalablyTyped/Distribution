@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://foundation.zurb.com/docs/components/joyride.html#optional-javascript-configuration
-
 trait JoyrideOptions extends js.Object {
   var cookie_domain: js.UndefOr[scala.Boolean] = js.undefined
   var cookie_expires: js.UndefOr[scala.Double] = js.undefined

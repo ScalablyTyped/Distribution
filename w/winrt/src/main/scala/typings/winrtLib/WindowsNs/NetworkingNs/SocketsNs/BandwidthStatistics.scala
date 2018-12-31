@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BandwidthStatistics extends js.Object {
   var inboundBandwidthPeaked: scala.Boolean
   var inboundBitsPerSecond: scala.Double

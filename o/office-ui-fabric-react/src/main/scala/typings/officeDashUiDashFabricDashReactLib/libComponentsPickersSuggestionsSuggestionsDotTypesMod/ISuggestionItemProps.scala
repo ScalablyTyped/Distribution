@@ -12,8 +12,8 @@ trait ISuggestionItemProps[T] extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.native
   var isSelectedOverride: js.UndefOr[scala.Boolean] = js.native
   /**
-       * The ARIA label for the button to remove the suggestion from the list.
-       */
+    * The ARIA label for the button to remove the suggestion from the list.
+    */
   var removeButtonAriaLabel: js.UndefOr[java.lang.String] = js.native
   var showRemoveButton: js.UndefOr[scala.Boolean] = js.native
   var suggestionModel: officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.ISuggestionModel[T] = js.native

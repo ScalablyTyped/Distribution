@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CellFormat extends js.Object {
   /** The background color of the cell. */
   var backgroundColor: js.UndefOr[Color] = js.undefined

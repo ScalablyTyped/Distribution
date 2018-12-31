@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FetchOptions extends js.Object {
   /** A string or Array of strings containing the body part section to fetch. Default: (none) Example sections: */
   var bodies: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined

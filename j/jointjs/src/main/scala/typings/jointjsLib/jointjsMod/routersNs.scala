@@ -8,12 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("jointjs", "routers")
 @js.native
 object routersNs extends js.Object {
-  
   trait GenericRouterJSON[K /* <: RouterType */] extends js.Object {
     var args: js.UndefOr[GenericRouterArguments[K]] = js.undefined
     var name: K
   }
-  
   
   trait ManhattanRouterArguments extends js.Object {
     var endDirections: js.UndefOr[js.Array[jointjsLib.jointjsMod.diaNs.OrthogonalDirection]] = js.undefined
@@ -27,21 +25,17 @@ object routersNs extends js.Object {
     var step: js.UndefOr[scala.Double] = js.undefined
   }
   
-  
   trait NormalRouterArguments extends js.Object
-  
   
   trait OneSideRouterArguments extends js.Object {
     var padding: js.UndefOr[jointjsLib.jointjsMod.diaNs.Sides] = js.undefined
     var side: js.UndefOr[jointjsLib.jointjsMod.diaNs.OrthogonalDirection] = js.undefined
   }
   
-  
   trait OrthogonalRouterArguments extends js.Object {
     var elementPadding: js.UndefOr[scala.Double] = js.undefined
     var padding: js.UndefOr[jointjsLib.jointjsMod.diaNs.Sides] = js.undefined
   }
-  
   
   trait RouterArgumentsMap
     extends /* key */ org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]] {
@@ -63,7 +57,7 @@ object routersNs extends js.Object {
     /* linkView */ js.UndefOr[jointjsLib.jointjsMod.diaNs.LinkView], 
     js.Array[jointjsLib.jointjsMod.diaNs.Point]
   ]
-  type GenericRouterArguments[K /* <: RouterType */] = js.Any
+  type GenericRouterArguments[K /* <: RouterType */] = /* import warning: ImportType.apply Failed type conversion: jointjs.jointjs.routers.RouterArgumentsMap[K] */ js.Any
   type Router = GenericRouter[RouterType]
   type RouterArguments = GenericRouterArguments[RouterType]
   type RouterJSON = GenericRouterJSON[RouterType]

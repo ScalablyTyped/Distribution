@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Defines potential orientation for back face culling
-     */
+  * Defines potential orientation for back face culling
+  */
 @JSImport("babylonjs", "Orientation")
 @js.native
 object Orientation extends js.Object {

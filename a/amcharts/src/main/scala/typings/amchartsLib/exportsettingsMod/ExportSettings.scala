@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExportSettings extends js.Object {
   var config: js.Any
   var enabled: scala.Boolean

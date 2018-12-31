@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CopyPattern extends js.Object {
   /** Enable transform caching. You can use `{ cache: { key: 'my-cache-key' } }` to invalidate the cache. (default: `false`) */
   var cache: js.UndefOr[scala.Boolean | copyDashWebpackDashPluginLib.Anon_Key] = js.undefined

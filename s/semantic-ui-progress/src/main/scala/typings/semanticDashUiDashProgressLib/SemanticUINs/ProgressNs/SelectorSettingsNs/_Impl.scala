@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default '> .bar
-                   */
+    * @default '> .bar
+    */
   var bar: java.lang.String
   /**
-                   * @default '> .label'
-                   */
+    * @default '> .label'
+    */
   var label: java.lang.String
   /**
-                   * @default '.bar > .progress'
-                   */
+    * @default '.bar > .progress'
+    */
   var progress: java.lang.String
 }
 

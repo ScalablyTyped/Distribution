@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ConsistencyTokenState extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -18,9 +17,9 @@ trait Anon_ConsistencyTokenState extends js.Object {
   /** The preferred language to use for strings returned by this method. */
   var language: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The maximum number of achievement resources to return in the response, used for paging. For any response, the actual number of achievement resources
-                   * returned may be less than the specified maxResults.
-                   */
+    * The maximum number of achievement resources to return in the response, used for paging. For any response, the actual number of achievement resources
+    * returned may be less than the specified maxResults.
+    */
   var maxResults: js.UndefOr[scala.Double] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
@@ -31,9 +30,9 @@ trait Anon_ConsistencyTokenState extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** Tells the server to return only achievements with the specified state. If this parameter isn't specified, all achievements are returned. */
   var state: js.UndefOr[java.lang.String] = js.undefined

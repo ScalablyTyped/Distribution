@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextInput extends js.Object {
   def setFieldName(fieldName: java.lang.String): TextInput
   def setHint(hint: java.lang.String): TextInput

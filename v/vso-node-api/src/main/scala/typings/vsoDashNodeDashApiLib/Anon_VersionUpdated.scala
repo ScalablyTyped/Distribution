@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_VersionUpdated extends js.Object {
   var actionRequired: scala.Double
   var actionResolved: scala.Double

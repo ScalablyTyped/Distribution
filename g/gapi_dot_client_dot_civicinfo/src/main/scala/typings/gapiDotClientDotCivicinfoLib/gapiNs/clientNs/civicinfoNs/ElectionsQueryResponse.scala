@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ElectionsQueryResponse extends js.Object {
   /** A list of available elections */
   var elections: js.UndefOr[js.Array[Election]] = js.undefined

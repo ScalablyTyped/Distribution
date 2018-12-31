@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MatchResult extends js.Object {
   /** The matched value from a [[UrlRule]] */
   var `match`: js.Any

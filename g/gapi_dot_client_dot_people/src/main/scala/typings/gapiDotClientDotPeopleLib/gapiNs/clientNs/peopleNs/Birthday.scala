@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Birthday extends js.Object {
   /** The date of the birthday. */
   var date: js.UndefOr[Date] = js.undefined

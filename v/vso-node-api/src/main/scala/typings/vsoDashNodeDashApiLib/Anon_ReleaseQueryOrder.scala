@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ReleaseQueryOrder extends js.Object {
   var AgentArtifactDefinition: js.Any
   var AgentArtifactType: Anon_EnumValuesAnonCustomFileShare

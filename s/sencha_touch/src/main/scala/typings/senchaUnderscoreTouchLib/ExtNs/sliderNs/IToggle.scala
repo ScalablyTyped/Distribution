@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IToggle extends ISlider {
   /** [Method] Sets the increment configuration
   		* @returns Number

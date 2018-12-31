@@ -14,9 +14,9 @@ abstract class StorageStreamTransaction () extends js.Object {
   /** Releases system resources that are exposed by the stream, indicating that the data request is complete. */
   def close(): scala.Unit = js.native
   /**
-               * Save the stream to the underlying file.
-               * @return No object or value is returned by this method.
-               */
+    * Save the stream to the underlying file.
+    * @return No object or value is returned by this method.
+    */
   def commitAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

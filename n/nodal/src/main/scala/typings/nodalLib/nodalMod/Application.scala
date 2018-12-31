@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class Application ()
   extends fxnLib.fxnMod.Application {
   /**
-     * HTTP Error
-     */
+    * HTTP Error
+    */
   def error(
     req: js.Any,
     res: js.Any,

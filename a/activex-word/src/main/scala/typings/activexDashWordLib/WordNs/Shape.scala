@@ -97,7 +97,6 @@ class Shape protected () extends js.Object {
   def RerouteConnections(): scala.Unit = js.native
   /** @param Office.MsoScaleFrom [Scale=0] */
   def ScaleHeight(Factor: scala.Double, RelativeToOriginalSize: activexDashOfficeLib.OfficeNs.MsoTriState): scala.Unit = js.native
-  /** @param Office.MsoScaleFrom [Scale=0] */
   def ScaleHeight(
     Factor: scala.Double,
     RelativeToOriginalSize: activexDashOfficeLib.OfficeNs.MsoTriState,
@@ -105,7 +104,6 @@ class Shape protected () extends js.Object {
   ): scala.Unit = js.native
   /** @param Office.MsoScaleFrom [Scale=0] */
   def ScaleWidth(Factor: scala.Double, RelativeToOriginalSize: activexDashOfficeLib.OfficeNs.MsoTriState): scala.Unit = js.native
-  /** @param Office.MsoScaleFrom [Scale=0] */
   def ScaleWidth(
     Factor: scala.Double,
     RelativeToOriginalSize: activexDashOfficeLib.OfficeNs.MsoTriState,

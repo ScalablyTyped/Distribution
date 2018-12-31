@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodeStatus extends js.Object {
   /** Selects the icon color. */
   var fill: StatusFill

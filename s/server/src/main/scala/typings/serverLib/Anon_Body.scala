@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Body extends js.Object {
   var body: js.UndefOr[bodyDashParserLib.bodyDashParserMod.bodyParserNs.OptionsUrlencoded] = js.undefined
   var cookie: js.UndefOr[expressLib.expressMod.eNs.CookieOptions] = js.undefined

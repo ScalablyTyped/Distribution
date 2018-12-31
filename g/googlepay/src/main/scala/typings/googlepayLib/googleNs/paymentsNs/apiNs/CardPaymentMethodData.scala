@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CardPaymentMethodData extends BasePaymentMethodData {
   var info: CardInfo
   @JSName("type")

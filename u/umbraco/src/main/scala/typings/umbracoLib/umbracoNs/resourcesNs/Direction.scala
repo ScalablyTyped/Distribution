@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait Direction extends js.Object
 
 /**
-     * Can be Ascending or Descending - Default: Ascending
-     */
+  * Can be Ascending or Descending - Default: Ascending
+  */
 @JSGlobal("umbraco.resources.Direction")
 @js.native
 object Direction extends js.Object {

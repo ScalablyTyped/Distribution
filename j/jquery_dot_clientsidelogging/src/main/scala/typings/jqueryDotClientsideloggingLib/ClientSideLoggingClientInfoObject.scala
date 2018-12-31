@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientSideLoggingClientInfoObject extends js.Object {
   var location: js.UndefOr[scala.Boolean] = js.undefined
   	//  The url to the page on which the error occurred.

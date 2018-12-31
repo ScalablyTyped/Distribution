@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISizePolicy extends js.Object {
   /** [Property] (Boolean) */
   var readsHeight: js.UndefOr[scala.Boolean] = js.undefined

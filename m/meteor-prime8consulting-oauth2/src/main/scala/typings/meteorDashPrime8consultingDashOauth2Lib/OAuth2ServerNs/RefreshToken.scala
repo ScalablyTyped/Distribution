@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RefreshToken extends js.Object {
   var clientId: java.lang.String
   var expires: stdLib.Date

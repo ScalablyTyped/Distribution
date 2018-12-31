@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MessagerOption extends js.Object {
   var actions: js.UndefOr[js.Array[Action]] = js.undefined
   var close: js.UndefOr[scala.Boolean] = js.undefined

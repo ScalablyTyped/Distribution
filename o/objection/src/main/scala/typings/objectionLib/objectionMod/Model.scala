@@ -64,7 +64,6 @@ object Model extends js.Object {
     `this`: objectionLib.objectionMod.ObjectionNs.Constructor[M],
     json: objectionLib.objectionMod.ObjectionNs.Pojo
   ): M = js.native
-  // fromJson and fromDatabaseJson both return an instance of Model, not a Model class:
   def fromJson[M](
     `this`: objectionLib.objectionMod.ObjectionNs.Constructor[M],
     json: objectionLib.objectionMod.ObjectionNs.Pojo,
@@ -105,14 +104,12 @@ object Model extends js.Object {
     models: js.Array[QM],
     expression: objectionLib.objectionMod.ObjectionNs.RelationExpression
   ): objectionLib.objectionMod.ObjectionNs.QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  // loadRelated is overloaded to support both Model and Model[] variants:
   def loadRelated[QM /* <: objectionLib.objectionMod.ObjectionNs.Model */](
     `this`: objectionLib.objectionMod.ObjectionNs.Constructor[QM],
     models: js.Array[QM],
     expression: objectionLib.objectionMod.ObjectionNs.RelationExpression,
     filters: objectionLib.objectionMod.ObjectionNs.Filters[QM]
   ): objectionLib.objectionMod.ObjectionNs.QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  // loadRelated is overloaded to support both Model and Model[] variants:
   def loadRelated[QM /* <: objectionLib.objectionMod.ObjectionNs.Model */](
     `this`: objectionLib.objectionMod.ObjectionNs.Constructor[QM],
     models: js.Array[QM],
@@ -120,7 +117,6 @@ object Model extends js.Object {
     filters: objectionLib.objectionMod.ObjectionNs.Filters[QM],
     trxOrKnex: knexLib.knexMod.Knex
   ): objectionLib.objectionMod.ObjectionNs.QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  // loadRelated is overloaded to support both Model and Model[] variants:
   def loadRelated[QM /* <: objectionLib.objectionMod.ObjectionNs.Model */](
     `this`: objectionLib.objectionMod.ObjectionNs.Constructor[QM],
     models: js.Array[QM],

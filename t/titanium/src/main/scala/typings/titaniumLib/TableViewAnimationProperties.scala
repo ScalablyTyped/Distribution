@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A simple object for specifying the animation properties to use when inserting or deleting rows, or scrolling the table.
- */
-
+  * A simple object for specifying the animation properties to use when inserting or deleting rows, or scrolling the table.
+  */
 trait TableViewAnimationProperties extends js.Object {
   /**
   	 * Whether this table change should be animated. Ignored if any `animationStyle` value is specified.

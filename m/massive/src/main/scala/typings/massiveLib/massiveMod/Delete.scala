@@ -12,17 +12,11 @@ class Delete protected ()
   extends massiveLib.massiveMod.massiveNs.Delete {
   /** Represents a DELETE query. */
   def this(source: massiveLib.massiveMod.massiveNs.Readable) = this()
-  /** Represents a DELETE query. */
   def this(source: massiveLib.massiveMod.massiveNs.Readable, criteria: massiveLib.massiveMod.massiveNs.AnyObject[_]) = this()
-  /** Represents a DELETE query. */
   def this(source: massiveLib.massiveMod.massiveNs.Readable, criteria: massiveLib.massiveMod.massiveNs.UUID) = this()
-  /** Represents a DELETE query. */
   def this(source: massiveLib.massiveMod.massiveNs.Readable, criteria: scala.Double) = this()
-  /** Represents a DELETE query. */
   def this(source: massiveLib.massiveMod.massiveNs.Readable, criteria: massiveLib.massiveMod.massiveNs.AnyObject[_], options: massiveLib.massiveMod.massiveNs.ResultProcessingOptions with massiveLib.massiveMod.massiveNs.InheritanceOptions) = this()
-  /** Represents a DELETE query. */
   def this(source: massiveLib.massiveMod.massiveNs.Readable, criteria: massiveLib.massiveMod.massiveNs.UUID, options: massiveLib.massiveMod.massiveNs.ResultProcessingOptions with massiveLib.massiveMod.massiveNs.InheritanceOptions) = this()
-  /** Represents a DELETE query. */
   def this(source: massiveLib.massiveMod.massiveNs.Readable, criteria: scala.Double, options: massiveLib.massiveMod.massiveNs.ResultProcessingOptions with massiveLib.massiveMod.massiveNs.InheritanceOptions) = this()
   /** Format this object into a SQL SELECT. */
   /* CompleteClass */

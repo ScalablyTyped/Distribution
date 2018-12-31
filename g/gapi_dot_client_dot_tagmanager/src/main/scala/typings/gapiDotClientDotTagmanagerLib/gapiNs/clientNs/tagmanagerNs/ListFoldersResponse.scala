@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListFoldersResponse extends js.Object {
   /** All GTM Folders of a GTM Container. */
   var folder: js.UndefOr[js.Array[Folder]] = js.undefined

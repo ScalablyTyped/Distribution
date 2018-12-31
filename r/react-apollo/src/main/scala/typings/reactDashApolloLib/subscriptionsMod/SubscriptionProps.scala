@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubscriptionProps[TData, TVariables] extends js.Object {
   var children: js.UndefOr[
     js.Function1[/* result */ SubscriptionResult[TData], reactLib.reactMod.ReactNs.ReactNode]

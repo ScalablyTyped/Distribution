@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Dirs extends js.Object {
   var CacheDir: java.lang.String
   var DCIMDir: java.lang.String

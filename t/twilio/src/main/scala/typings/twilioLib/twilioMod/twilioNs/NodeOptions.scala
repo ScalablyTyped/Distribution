@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodeOptions extends js.Object {
   var attributes: js.UndefOr[js.Any] = js.undefined
   var legalNodes: js.Array[java.lang.String]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorksheetViewFrozen extends js.Object {
   /**
   	 * Where a number of rows and columns to the top and left are frozen in place.

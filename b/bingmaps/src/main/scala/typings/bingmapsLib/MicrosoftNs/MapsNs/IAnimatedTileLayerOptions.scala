@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAnimatedTileLayerOptions extends js.Object {
   /** A boolean that specifies whether the animation should auto-start when it is added to the map or not. Default: true **/
   var autoPlay: js.UndefOr[scala.Boolean] = js.undefined

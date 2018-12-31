@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomLocale extends js.Object {
   var amPM: js.UndefOr[js.Tuple2[java.lang.String, java.lang.String]] = js.undefined
   var daysInMonth: js.UndefOr[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColorPickerOptions extends js.Object {
   var buttons: js.UndefOr[scala.Boolean] = js.undefined
   var change: js.UndefOr[js.Function1[/* e */ ColorPickerChangeEvent, scala.Unit]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListObjectResult extends js.Object {
   var isTruncated: scala.Boolean
   var nextMarker: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMedia extends IComponent {
   /** [Config Option] (Boolean) */
   var autoPause: js.UndefOr[scala.Boolean] = js.undefined

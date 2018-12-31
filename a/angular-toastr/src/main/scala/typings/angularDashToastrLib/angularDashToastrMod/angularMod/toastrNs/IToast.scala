@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IToast extends js.Object {
   var el: angularLib.angularMod.angularNs.IAugmentedJQuery
   var iconClass: java.lang.String

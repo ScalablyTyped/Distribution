@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait envObject extends js.Object {
   /**
   	 * @returns {number} maxX coord as integer

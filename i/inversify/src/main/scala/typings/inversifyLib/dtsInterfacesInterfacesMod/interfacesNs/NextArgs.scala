@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NextArgs extends js.Object {
   var avoidConstraints: scala.Boolean
   var isMultiInject: scala.Boolean

@@ -8,14 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Assert extends js.Object {
   /**
-           * @param expression Expression to test for truthiness.
-           * @param message Message to display on error.
-           */
+    * @param expression Expression to test for truthiness.
+    * @param message Message to display on error.
+    */
   def apply(expression: js.Any): scala.Unit = js.native
-  /**
-           * @param expression Expression to test for truthiness.
-           * @param message Message to display on error.
-           */
   def apply(expression: js.Any, message: java.lang.String): scala.Unit = js.native
   def Throw(fn: js.Function): scala.Unit = js.native
   def Throw(fn: js.Function, errType: js.Function): scala.Unit = js.native
@@ -137,7 +133,6 @@ trait Assert extends js.Object {
   def `throw`(fn: js.Function, errType: js.Function): scala.Unit = js.native
   def `throw`(fn: js.Function, errType: js.Function, msg: java.lang.String): scala.Unit = js.native
   def `throw`(fn: js.Function, errType: js.Function, regExp: stdLib.RegExp): scala.Unit = js.native
-  //alias frenzy
   def `throw`(fn: js.Function, msg: java.lang.String): scala.Unit = js.native
   def `throw`(fn: js.Function, regExp: stdLib.RegExp): scala.Unit = js.native
   def throws(fn: js.Function): scala.Unit = js.native

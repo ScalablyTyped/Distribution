@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IResult extends js.Object {
   var browser: IBrowser
   var cpu: ICPU

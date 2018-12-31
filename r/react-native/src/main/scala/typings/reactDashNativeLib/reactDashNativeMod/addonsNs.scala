@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native", "addons")
 @js.native
 object addonsNs extends js.Object {
-  
   trait TestModuleStatic extends js.Object {
     def markTestCompleted(): scala.Unit
     def markTestPassed(indicator: js.Any): scala.Unit

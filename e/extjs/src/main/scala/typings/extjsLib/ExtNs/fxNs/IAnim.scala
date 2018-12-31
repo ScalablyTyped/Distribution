@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAnim
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Config Option] (Boolean) */

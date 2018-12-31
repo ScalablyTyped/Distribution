@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains number values that represent the location and size of a rectangle. */
-
 trait Rect extends js.Object {
   /** The height of the rectangle, in pixels. */
   var height: scala.Double

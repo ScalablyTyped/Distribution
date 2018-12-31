@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAnchorLayout
   extends extjsLib.ExtNs.layoutNs.containerNs.IAuto {
   /** [Config Option] (String) */

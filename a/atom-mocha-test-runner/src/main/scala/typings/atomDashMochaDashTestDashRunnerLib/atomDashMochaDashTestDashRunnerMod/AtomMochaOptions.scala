@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AtomMochaOptions extends js.Object {
   /** Whether or not to colorize output on the terminal. */
   var colors: js.UndefOr[scala.Boolean] = js.undefined

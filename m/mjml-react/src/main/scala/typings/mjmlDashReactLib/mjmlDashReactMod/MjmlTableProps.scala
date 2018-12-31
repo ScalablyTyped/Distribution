@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MjmlTableProps extends js.Object {
   var cellpadding: js.UndefOr[java.lang.String] = js.undefined
   var cellspacing: js.UndefOr[java.lang.String] = js.undefined

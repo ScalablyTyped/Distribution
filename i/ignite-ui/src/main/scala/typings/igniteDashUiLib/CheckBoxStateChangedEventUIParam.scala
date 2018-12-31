@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CheckBoxStateChangedEventUIParam extends js.Object {
   /**
   	 * Gets reference to the grid the RowSelectors are initialized for.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CssProperty extends js.Object {
   var parsed: ParsedCssProperty
   var property: java.lang.String

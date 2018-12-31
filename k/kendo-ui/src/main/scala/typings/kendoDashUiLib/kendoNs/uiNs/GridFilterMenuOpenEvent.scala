@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridFilterMenuOpenEvent extends GridEvent {
   var container: js.UndefOr[kendoDashUiLib.JQuery] = js.undefined
   var field: js.UndefOr[java.lang.String] = js.undefined

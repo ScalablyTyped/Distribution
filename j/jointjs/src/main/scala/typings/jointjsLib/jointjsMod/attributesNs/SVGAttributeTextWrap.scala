@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGAttributeTextWrap
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var ellipsis: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined

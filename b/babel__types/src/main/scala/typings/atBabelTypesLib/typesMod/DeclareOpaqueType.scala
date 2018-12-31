@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeclareOpaqueType extends BaseNode {
   var id: Identifier
   var supertype: FlowType | scala.Null

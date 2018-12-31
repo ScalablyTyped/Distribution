@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITrace extends js.Object {
   /** Trace cachePolicy */
   var cachePolicy: js.UndefOr[

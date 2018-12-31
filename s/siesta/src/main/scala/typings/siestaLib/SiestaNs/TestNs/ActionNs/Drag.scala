@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * @class
-             */
-
+  * @class
+  */
 trait Drag
   extends siestaLib.SiestaNs.TestNs.IAction {
   var by: js.UndefOr[js.Any] = js.undefined

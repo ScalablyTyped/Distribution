@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AntTreeNodeProps
   extends /* customProp */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var checked: js.UndefOr[scala.Boolean] = js.undefined

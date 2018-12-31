@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait R3DependencyMetadataFacade extends js.Object {
   var host: scala.Boolean
   var optional: scala.Boolean

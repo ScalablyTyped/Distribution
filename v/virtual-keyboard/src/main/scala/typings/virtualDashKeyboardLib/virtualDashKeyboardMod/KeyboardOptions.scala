@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeyboardOptions extends js.Object {
   var acceptValid: js.UndefOr[scala.Boolean] = js.undefined
   var accepted: js.UndefOr[kbEventHandler] = js.undefined

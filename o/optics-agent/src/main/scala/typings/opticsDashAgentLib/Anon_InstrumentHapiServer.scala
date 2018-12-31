@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_InstrumentHapiServer extends js.Object {
   var Agent: org.scalablytyped.runtime.Instantiable1[
     /* options */ opticsDashAgentLib.opticsDashAgentMod.Options, 

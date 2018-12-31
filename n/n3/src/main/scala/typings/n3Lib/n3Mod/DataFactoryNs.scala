@@ -30,15 +30,15 @@ object DataFactoryNs extends js.Object {
     graph: rdfDashJsLib.rdfDashJsMod.Quad_Graph
   ): n3Lib.n3Mod.Quad = js.native
   def quad[Q_In /* <: rdfDashJsLib.rdfDashJsMod.BaseQuad */, Q_Out /* <: n3Lib.n3Mod.BaseQuad */](
-    subject: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_In))),List()),Left(TsIdentSimple(subject))) */js.Any,
-    predicate: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_In))),List()),Left(TsIdentSimple(predicate))) */js.Any,
-    `object`: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_In))),List()),Left(TsIdentSimple(object))) */js.Any
+    subject: /* import warning: ImportType.apply Failed type conversion: Q_In['subject'] */ js.Any,
+    predicate: /* import warning: ImportType.apply Failed type conversion: Q_In['predicate'] */ js.Any,
+    `object`: /* import warning: ImportType.apply Failed type conversion: Q_In['object'] */ js.Any
   ): Q_Out = js.native
   def quad[Q_In /* <: rdfDashJsLib.rdfDashJsMod.BaseQuad */, Q_Out /* <: n3Lib.n3Mod.BaseQuad */](
-    subject: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_In))),List()),Left(TsIdentSimple(subject))) */js.Any,
-    predicate: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_In))),List()),Left(TsIdentSimple(predicate))) */js.Any,
-    `object`: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_In))),List()),Left(TsIdentSimple(object))) */js.Any,
-    graph: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_In))),List()),Left(TsIdentSimple(graph))) */js.Any
+    subject: /* import warning: ImportType.apply Failed type conversion: Q_In['subject'] */ js.Any,
+    predicate: /* import warning: ImportType.apply Failed type conversion: Q_In['predicate'] */ js.Any,
+    `object`: /* import warning: ImportType.apply Failed type conversion: Q_In['object'] */ js.Any,
+    graph: /* import warning: ImportType.apply Failed type conversion: Q_In['graph'] */ js.Any
   ): Q_Out = js.native
   def triple(
     subject: rdfDashJsLib.rdfDashJsMod.Quad_Subject,
@@ -46,9 +46,9 @@ object DataFactoryNs extends js.Object {
     `object`: rdfDashJsLib.rdfDashJsMod.Quad_Object
   ): n3Lib.n3Mod.Quad = js.native
   def triple[Q_In /* <: rdfDashJsLib.rdfDashJsMod.BaseQuad */, Q_Out /* <: n3Lib.n3Mod.BaseQuad */](
-    subject: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_In))),List()),Left(TsIdentSimple(subject))) */js.Any,
-    predicate: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_In))),List()),Left(TsIdentSimple(predicate))) */js.Any,
-    `object`: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_In))),List()),Left(TsIdentSimple(object))) */js.Any
+    subject: /* import warning: ImportType.apply Failed type conversion: Q_In['subject'] */ js.Any,
+    predicate: /* import warning: ImportType.apply Failed type conversion: Q_In['predicate'] */ js.Any,
+    `object`: /* import warning: ImportType.apply Failed type conversion: Q_In['object'] */ js.Any
   ): Q_Out = js.native
   def variable(value: java.lang.String): n3Lib.n3Mod.Variable = js.native
 }

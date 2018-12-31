@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RankingsRequestObject extends js.Object {
   var ap: js.UndefOr[NumberRequest] = js.undefined
   var ccwm: js.UndefOr[NumberRequest] = js.undefined

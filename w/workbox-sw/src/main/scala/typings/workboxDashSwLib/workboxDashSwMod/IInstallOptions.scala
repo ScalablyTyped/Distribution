@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IInstallOptions extends js.Object {
   /**
   	 * Plugins to be used for fetching and caching during install.

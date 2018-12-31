@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A simple object that represents an index entry in a `TableView`.
- */
-
+  * A simple object that represents an index entry in a `TableView`.
+  */
 trait TableViewIndexEntry extends js.Object {
   /**
   	 * Row index associated with this item.

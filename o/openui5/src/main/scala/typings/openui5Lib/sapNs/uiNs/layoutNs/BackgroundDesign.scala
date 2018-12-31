@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait BackgroundDesign extends js.Object
 
 /**
-       * Available Background Design.
-      */
+  * Available Background Design.
+  */
 @JSGlobal("sap.ui.layout.BackgroundDesign")
 @js.native
 object BackgroundDesign extends js.Object {

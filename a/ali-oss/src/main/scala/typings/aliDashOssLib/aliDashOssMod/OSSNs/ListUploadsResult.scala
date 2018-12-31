@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListUploadsResult extends js.Object {
   var bucket: java.lang.String
   var isTruncated: scala.Boolean

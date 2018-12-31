@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object for defining a single image in a cover flow view.
- */
-
+  * Simple object for defining a single image in a cover flow view.
+  */
 trait CoverFlowImageType extends js.Object {
   /**
   	 * Display height of the image, in Apple points.

@@ -13,8 +13,8 @@ package object powerbiNs {
   type GeoJson = GeoJsonDefinitionGeneric[java.lang.String]
   type IDeferred[T] = IDeferred2[T, T]
   /**
-       * Represents an operation, to be completed (resolve/rejected) in the future.
-       */
+    * Represents an operation, to be completed (resolve/rejected) in the future.
+    */
   type IPromise[T] = IPromise2[T, T]
   type IResultCallback[T] = js.Function2[/* result */ T, /* done */ scala.Boolean, scala.Unit]
   type ImageValue = ImageDefinitionGeneric[java.lang.String]
@@ -27,6 +27,6 @@ package object powerbiNs {
   type PrimitiveValueRange = ValueRange[PrimitiveValue]
   type RejectablePromise[T] = RejectablePromise2[T, T]
   /** Defines instances of structural types. */
-  type StructuralObjectValue = Fill | FillRule | js.Any | DefaultValueDefinition | ImageValue | Paragraphs | GeoJson | DataBars
+  type StructuralObjectValue = Fill | FillRule | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify SemanticFilter */ js.Any) | DefaultValueDefinition | ImageValue | Paragraphs | GeoJson | DataBars
   type VisualObjectInstanceEnumeration = js.Array[VisualObjectInstance] | VisualObjectInstanceEnumerationObject
 }

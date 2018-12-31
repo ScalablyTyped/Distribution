@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object stringMod extends js.Object {
   val default: bitwiseLib.Anon_ToBits = js.native
-  def toBits(string: java.lang.String): js.Array[_] = js.native
+  def toBits(string: java.lang.String): js.Array[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _
+  ] = js.native
 }
 

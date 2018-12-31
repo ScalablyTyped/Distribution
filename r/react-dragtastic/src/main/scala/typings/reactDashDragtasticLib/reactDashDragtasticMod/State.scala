@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait State extends js.Object {
   /** The id of the currently dragging element. */
   var currentlyDraggingId: js.UndefOr[Id] = js.undefined

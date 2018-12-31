@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PreFilterObject[LHS, RHS] extends js.Object {
   var normalize: js.UndefOr[
     js.Function4[

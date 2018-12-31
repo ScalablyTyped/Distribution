@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced protected () extends Getopt {
   /**
-       * options is a set of option. each option contains 3 fields.
-       *    [short_name, long_name_with_definition, comment]
-       *    Definition:
-       *    * '=ARG':   has argument
-       *    * '[=ARG]': has argument but optional
-       *    * '+':      multiple option supported
-       *
-       *    ARG can be replaced by any word.
-       * @param options
-       */
+    * options is a set of option. each option contains 3 fields.
+    *    [short_name, long_name_with_definition, comment]
+    *    Definition:
+    *    * '=ARG':   has argument
+    *    * '[=ARG]': has argument but optional
+    *    * '+':      multiple option supported
+    *
+    *    ARG can be replaced by any word.
+    * @param options
+    */
   def this(options: js.Array[_]) = this()
 }
 
@@ -31,9 +31,9 @@ object namespaced extends js.Object {
   var SINGLE_ONLY: scala.Boolean = js.native
   var VERSION: java.lang.String = js.native
   /**
-       * equals new Getopt(options)
-       * @param options
-       */
+    * equals new Getopt(options)
+    * @param options
+    */
   def create(options: js.Array[js.Array[java.lang.String]]): nodeDashGetoptLib.nodeDashGetoptMod.Getopt = js.native
   def getVersion(): java.lang.String = js.native
 }

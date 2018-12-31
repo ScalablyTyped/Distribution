@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseX extends js.Object {
   def decode(str: java.lang.String): nodeLib.Buffer
   def decodeUnsafe(str: java.lang.String): nodeLib.Buffer

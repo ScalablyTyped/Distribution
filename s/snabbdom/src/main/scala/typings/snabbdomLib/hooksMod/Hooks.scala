@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Hooks extends js.Object {
   var create: js.UndefOr[CreateHook] = js.undefined
   var destroy: js.UndefOr[DestroyHook] = js.undefined

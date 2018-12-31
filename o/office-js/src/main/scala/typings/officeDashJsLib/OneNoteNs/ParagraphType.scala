@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ParagraphType extends js.Object
 
 /**
-     * [Api set: OneNoteApi 1.1]
-     */
+  * [Api set: OneNoteApi 1.1]
+  */
 @JSGlobal("OneNote.ParagraphType")
 @js.native
 object ParagraphType extends js.Object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RootData extends js.Object {
   var errorHandler: atAngularCoreLib.srcErrorUnderscoreHandlerMod.ErrorHandler
   var injector: atAngularCoreLib.srcDiMod.Injector

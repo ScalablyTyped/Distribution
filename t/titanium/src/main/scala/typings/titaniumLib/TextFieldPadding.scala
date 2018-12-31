@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Dictionary object of parameters for the <Titanium.UI.TextField.padding>  that describes the padding
- */
-
+  * Dictionary object of parameters for the <Titanium.UI.TextField.padding>  that describes the padding
+  */
 trait TextFieldPadding extends js.Object {
   /**
   	 * Bottom padding (Android only, since 6.1.0)

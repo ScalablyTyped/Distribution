@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Lets an add-on store data so that it's retained across Firefox restarts
- */
+  * Lets an add-on store data so that it's retained across Firefox restarts
+  */
 @JSImport("sdk/simple-storage", JSImport.Namespace)
 @js.native
 object simpleDashStorageMod extends js.Object {

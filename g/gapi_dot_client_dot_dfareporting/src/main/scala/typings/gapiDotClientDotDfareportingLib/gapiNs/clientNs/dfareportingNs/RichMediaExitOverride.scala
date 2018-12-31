@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RichMediaExitOverride extends js.Object {
   /** Click-through URL of this rich media exit override. Applicable if the enabled field is set to true. */
   var clickThroughUrl: js.UndefOr[ClickThroughUrl] = js.undefined

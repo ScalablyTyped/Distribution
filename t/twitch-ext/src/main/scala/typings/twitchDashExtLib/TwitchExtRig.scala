@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * The developer rig object as available under window.Twitch.ext.rig.
- *
- * @see TwitchExt.rig
- */
-
+  * The developer rig object as available under window.Twitch.ext.rig.
+  *
+  * @see TwitchExt.rig
+  */
 trait TwitchExtRig extends js.Object {
   /**
   	 * Print a message to the developer rig console.

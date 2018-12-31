@@ -5,22 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MethodIpFrameId extends js.Object {
   /** URL of the page into which the requested resource will be loaded. */
   var documentUrl: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * The value 0 indicates that the request happens in the main frame; a positive value indicates the ID of a
-           * subframe in which the request happens. If the document of a (sub-)frame is loaded (`type` is `main_frame` or
-           * `sub_frame`), `frameId` indicates the ID of this frame, not the ID of the outer frame. Frame IDs are unique
-           * within a tab.
-           */
+    * The value 0 indicates that the request happens in the main frame; a positive value indicates the ID of a
+    * subframe in which the request happens. If the document of a (sub-)frame is loaded (`type` is `main_frame` or
+    * `sub_frame`), `frameId` indicates the ID of this frame, not the ID of the outer frame. Frame IDs are unique
+    * within a tab.
+    */
   var frameId: scala.Double
   /** Indicates if this response was fetched from disk cache. */
   var fromCache: scala.Boolean
   /**
-           * The server IP address that the request was actually sent to. Note that it may be a literal IPv6 address.
-           */
+    * The server IP address that the request was actually sent to. Note that it may be a literal IPv6 address.
+    */
   var ip: js.UndefOr[java.lang.String] = js.undefined
   /** Standard HTTP method. */
   var method: java.lang.String
@@ -31,9 +30,9 @@ trait Anon_MethodIpFrameId extends js.Object {
   /** The HTTP request headers that are going to be sent out with this request. */
   var requestHeaders: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.HttpHeaders] = js.undefined
   /**
-           * The ID of the request. Request IDs are unique within a browser session. As a result, they could be used to
-           * relate different events of the same request.
-           */
+    * The ID of the request. Request IDs are unique within a browser session. As a result, they could be used to
+    * relate different events of the same request.
+    */
   var requestId: java.lang.String
   /** The ID of the tab in which the request takes place. Set to -1 if the request isn't related to a tab. */
   var tabId: scala.Double

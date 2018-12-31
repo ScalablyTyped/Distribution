@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /*
-     * Patch all static methods and the constructor
-     */
+  * Patch all static methods and the constructor
+  */
 @js.native
 trait PromiseConstructor
   extends org.scalablytyped.runtime.Instantiable1[
@@ -20,35 +20,35 @@ trait PromiseConstructor
       Promise[js.Object]
     ] {
   // all: typeof Bluebird.all; // Provided by lib.es2015.d.ts
-  var any: js.Any = js.native
-  var attempt: js.Any = js.native
-  var bind: js.Any = js.native
-  var cast: js.Any = js.native
-  var config: js.Any = js.native
-  var coroutine: js.Any = js.native
-  var defer: js.Any = js.native
-  var delay: js.Any = js.native
-  var each: js.Any = js.native
-  var filter: js.Any = js.native
-  var fromCallback: js.Any = js.native
-  var fromNode: js.Any = js.native
-  var is: js.Any = js.native
-  var join: js.Any = js.native
-  var longStackTraces: js.Any = js.native
-  var map: js.Any = js.native
-  var mapSeries: js.Any = js.native
-  var method: js.Any = js.native
-  var onPossiblyUnhandledRejection: js.Any = js.native
-  var promisify: js.Any = js.native
-  var promisifyAll: js.Any = js.native
-  var props: js.Any = js.native
+  var any: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.any */ js.Any = js.native
+  var attempt: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.attempt */ js.Any = js.native
+  var bind: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.bind */ js.Any = js.native
+  var cast: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.cast */ js.Any = js.native
+  var config: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.config */ js.Any = js.native
+  var coroutine: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.coroutine */ js.Any = js.native
+  var defer: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.defer */ js.Any = js.native
+  var delay: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.delay */ js.Any = js.native
+  var each: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.each */ js.Any = js.native
+  var filter: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.filter */ js.Any = js.native
+  var fromCallback: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.fromCallback */ js.Any = js.native
+  var fromNode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.fromNode */ js.Any = js.native
+  var is: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.is */ js.Any = js.native
+  var join: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.join */ js.Any = js.native
+  var longStackTraces: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.longStackTraces */ js.Any = js.native
+  var map: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.map */ js.Any = js.native
+  var mapSeries: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.mapSeries */ js.Any = js.native
+  var method: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.method */ js.Any = js.native
+  var onPossiblyUnhandledRejection: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.onPossiblyUnhandledRejection */ js.Any = js.native
+  var promisify: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.promisify */ js.Any = js.native
+  var promisifyAll: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.promisifyAll */ js.Any = js.native
+  var props: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.props */ js.Any = js.native
   // race: typeof Bluebird.race; // Provided by lib.es2015.d.ts
-  var reduce: js.Any = js.native
+  var reduce: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.reduce */ js.Any = js.native
   // reject: typeof Bluebird.reject; // Provided by lib.es2015.d.ts
   // resolve: typeof Bluebird.resolve; // Provided by lib.es2015.d.ts
-  var some: js.Any = js.native
-  var `try`: js.Any = js.native
-  var using: js.Any = js.native
+  var some: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.some */ js.Any = js.native
+  var `try`: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.try */ js.Any = js.native
+  var using: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bluebird.using */ js.Any = js.native
   def all[T](values: js.Array[T | js.Thenable[T]]): Promise[js.Array[T]] = js.native
   def all[T1, T2](values: js.Tuple2[T1 | js.Thenable[T1], T2 | js.Thenable[T2]]): Promise[js.Tuple2[T1, T2]] = js.native
   def all[T1, T2, T3](values: js.Tuple3[T1 | js.Thenable[T1], T2 | js.Thenable[T2], T3 | js.Thenable[T3]]): Promise[js.Tuple3[T1, T2, T3]] = js.native
@@ -111,12 +111,12 @@ trait PromiseConstructor
     ]
   ): Promise[js.Tuple9[T1, T2, T3, T4, T5, T6, T7, T8, T9]] = js.native
   /*
-           * Copy&paste from lib.es2015.promise.d.ts, because Bluebird's typings are not in line with the standard lib.
-           *
-           * #std-lib-copy&paste-to-remove
-           *
-           * @todo See the comment near the top of the file about code marked with #std-lib-copy&paste-to-remove
-           */
+    * Copy&paste from lib.es2015.promise.d.ts, because Bluebird's typings are not in line with the standard lib.
+    *
+    * #std-lib-copy&paste-to-remove
+    *
+    * @todo See the comment near the top of the file about code marked with #std-lib-copy&paste-to-remove
+    */
   def all[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
     values: js.Tuple10[
       T1 | js.Thenable[T1], 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BucketsResource extends js.Object {
   /** Permanently deletes an empty bucket. */
   def delete(request: gapiDotClientDotStorageLib.Anon_IfMetagenerationMatch): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
@@ -18,9 +17,9 @@ trait BucketsResource extends js.Object {
   /** Retrieves a list of buckets for a given project. */
   def list(request: gapiDotClientDotStorageLib.Anon_ProjectionProject): gapiDotClientLib.gapiNs.clientNs.Request[Buckets]
   /**
-               * Updates a bucket. Changes to the bucket will be readable immediately after writing, but configuration changes may take time to propagate. This method
-               * supports patch semantics.
-               */
+    * Updates a bucket. Changes to the bucket will be readable immediately after writing, but configuration changes may take time to propagate. This method
+    * supports patch semantics.
+    */
   def patch(request: gapiDotClientDotStorageLib.Anon_IfMetagenerationMatchProjectionPredefinedDefaultObjectAcl): gapiDotClientLib.gapiNs.clientNs.Request[Bucket]
   /** Updates an IAM policy for the specified bucket. */
   def setIamPolicy(request: gapiDotClientDotStorageLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Policy]

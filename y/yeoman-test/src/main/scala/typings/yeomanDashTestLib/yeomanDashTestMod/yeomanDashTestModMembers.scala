@@ -25,7 +25,7 @@ object yeomanDashTestModMembers extends js.Object {
     options: Dictionary[_]
   ): yeomanDashGeneratorLib.yeomanDashGeneratorMod.namespaced = js.native
   def gruntfile(options: Dictionary[_]): scala.Unit = js.native
-  def gruntfile(options: Dictionary[_], done: js.Function1[/* repeated */js.Any, scala.Unit]): scala.Unit = js.native
+  def gruntfile(options: Dictionary[_], done: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
   def mockLocalConfig(generator: yeomanDashGeneratorLib.yeomanDashGeneratorMod.namespaced, localConfig: Dictionary[_]): scala.Unit = js.native
   def mockPrompt(
     generator: yeomanDashGeneratorLib.yeomanDashGeneratorMod.namespaced,
@@ -40,7 +40,7 @@ object yeomanDashTestModMembers extends js.Object {
     GeneratorOrNamespace: Constructor[yeomanDashGeneratorLib.yeomanDashGeneratorMod.namespaced],
     settings: RunContextSettings
   ): RunContext = js.native
-  def setUpTestDirectory(dir: java.lang.String): js.Function1[/* done */ js.Function1[/* repeated */js.Any, scala.Unit], scala.Unit] = js.native
+  def setUpTestDirectory(dir: java.lang.String): js.Function1[/* done */ js.Function1[/* repeated */ js.Any, scala.Unit], scala.Unit] = js.native
   def testDirectory(dir: java.lang.String): scala.Unit = js.native
   def testDirectory(dir: java.lang.String, cb: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit]): scala.Unit = js.native
 }

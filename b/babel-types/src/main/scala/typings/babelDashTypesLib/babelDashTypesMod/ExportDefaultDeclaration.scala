@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExportDefaultDeclaration extends Node {
   var declaration: Declaration | Expression
   @JSName("type")

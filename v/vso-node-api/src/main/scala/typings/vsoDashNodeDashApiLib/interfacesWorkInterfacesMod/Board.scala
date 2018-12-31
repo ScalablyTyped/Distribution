@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Board extends BoardReference {
   var _links: js.Any
   var allowedMappings: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]]

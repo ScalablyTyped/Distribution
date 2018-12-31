@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * @mixin
-             */
+  * @mixin
+  */
 @js.native
 trait IKeyboard extends js.Object {
   def keyPress(el: js.Any, key: java.lang.String, options: js.Any): scala.Unit = js.native

@@ -26,7 +26,7 @@ package object recomposeMod {
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
   type ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance] = (_ReactLifeCycleFunctionsThisArguments[TProps, TState]) with TInstance
   // withStateHandlers: https://github.com/acdlite/recompose/blob/master/docs/API.md#withstatehandlers
-  type StateHandler[TState] = js.Function1[/* repeated */js.Any, js.UndefOr[stdLib.Partial[TState]]]
+  type StateHandler[TState] = js.Function1[/* repeated */ js.Any, js.UndefOr[stdLib.Partial[TState]]]
   type StateUpdaters[TOutter, TState, TUpdaters] = recomposeLib.recomposeLibStrings.StateUpdaters with TUpdaters
   // createEagerFactory: https://github.com/acdlite/recompose/blob/master/docs/API.md#createEagerFactory
   type componentFactory = js.Function2[
@@ -39,7 +39,7 @@ package object recomposeMod {
   type predicateDiff[T] = js.Function2[/* current */ T, /* next */ T, scala.Boolean]
   // withReducer: https://github.com/acdlite/recompose/blob/master/docs/API.md#withReducer
   type reducer[TState, TAction] = js.Function2[/* s */ TState, /* a */ TAction, TState]
-  type reducerProps[TState, TAction, TStateName /* <: java.lang.String */, TDispatchName /* <: java.lang.String */] = recomposeLib.recomposeLibStrings.reducerProps with js.Any
+  type reducerProps[TState, TAction, TStateName /* <: java.lang.String */, TDispatchName /* <: java.lang.String */] = /* import warning: ImportType.apply Failed type conversion: {typemapped, typemapped} */ js.Any
   // withState: https://github.com/acdlite/recompose/blob/master/docs/API.md#withState
-  type stateProps[TState, TStateName /* <: java.lang.String */, TStateUpdaterName /* <: java.lang.String */] = recomposeLib.recomposeLibStrings.stateProps with js.Any
+  type stateProps[TState, TStateName /* <: java.lang.String */, TStateUpdaterName /* <: java.lang.String */] = /* import warning: ImportType.apply Failed type conversion: {typemapped, typemapped} */ js.Any
 }

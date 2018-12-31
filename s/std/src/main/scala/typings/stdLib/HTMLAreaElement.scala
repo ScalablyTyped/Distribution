@@ -10,17 +10,17 @@ trait HTMLAreaElement
   extends HTMLElement
      with HTMLHyperlinkElementUtils {
   /**
-       * Sets or retrieves a text alternative to the graphic.
-       */
+    * Sets or retrieves a text alternative to the graphic.
+    */
   var alt: java.lang.String = js.native
   /**
-       * Sets or retrieves the coordinates of the object.
-       */
+    * Sets or retrieves the coordinates of the object.
+    */
   var coords: java.lang.String = js.native
   var download: java.lang.String = js.native
   /**
-       * Sets or gets whether clicks in this region cause action.
-       */
+    * Sets or gets whether clicks in this region cause action.
+    */
   /** @deprecated */
   var noHref: scala.Boolean = js.native
   var ping: java.lang.String = js.native
@@ -28,12 +28,12 @@ trait HTMLAreaElement
   var rel: java.lang.String = js.native
   val relList: DOMTokenList = js.native
   /**
-       * Sets or retrieves the shape of the object.
-       */
+    * Sets or retrieves the shape of the object.
+    */
   var shape: java.lang.String = js.native
   /**
-       * Sets or retrieves the window or frame at which to target content.
-       */
+    * Sets or retrieves the window or frame at which to target content.
+    */
   var target: java.lang.String = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native

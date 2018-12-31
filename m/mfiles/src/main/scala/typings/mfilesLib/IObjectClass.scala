@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IObjectClass extends js.Object {
   var AccessControlList: IAccessControlList
   val AdditionalClassInfo: IAdditionalClassInfo

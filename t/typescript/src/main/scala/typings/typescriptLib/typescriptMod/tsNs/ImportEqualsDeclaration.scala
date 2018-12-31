@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * One of:
-     * - import x = require("mod");
-     * - import x = M.x;
-     */
+  * One of:
+  * - import x = require("mod");
+  * - import x = M.x;
+  */
 @js.native
 trait ImportEqualsDeclaration
   extends DeclarationStatement

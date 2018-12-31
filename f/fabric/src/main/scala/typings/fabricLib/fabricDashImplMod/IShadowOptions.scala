@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IShadowOptions extends js.Object {
   /**
   	 * Whether the shadow should affect stroke operations

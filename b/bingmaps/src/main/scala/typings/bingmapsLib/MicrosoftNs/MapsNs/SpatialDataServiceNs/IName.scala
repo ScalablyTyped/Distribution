@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IName extends js.Object {
   /** The culture of the region. */
   var Culture: java.lang.String

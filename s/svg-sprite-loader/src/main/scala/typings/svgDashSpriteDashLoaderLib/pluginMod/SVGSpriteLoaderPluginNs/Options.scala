@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /** Render plain sprite without styles and usages */
   var plainSprite: js.UndefOr[scala.Boolean] = js.undefined

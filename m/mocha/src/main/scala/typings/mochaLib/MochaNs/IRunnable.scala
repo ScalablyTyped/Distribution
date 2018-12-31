@@ -17,7 +17,6 @@ trait IRunnable
   var sync: scala.Boolean = js.native
   var timedOut: scala.Boolean = js.native
   var title: java.lang.String = js.native
-  /** @deprecated `.timeout()` has additional overloads in `Mocha.Runnable`. */
   def timeout(n: java.lang.String): this.type = js.native
   /** @deprecated `.timeout()` has additional overloads in `Mocha.Runnable`. */
   def timeout(n: scala.Double): this.type = js.native

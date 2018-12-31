@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilterMenuMessages extends js.Object {
   var additionalOperator: js.UndefOr[java.lang.String] = js.undefined
   var additionalValue: js.UndefOr[java.lang.String] = js.undefined

@@ -21,20 +21,17 @@ class DoCmd protected () extends js.Object {
   def Beep(): scala.Unit = js.native
   /** @param DataMode [DataMode=1] */
   def BrowseTo(ObjectType: AcBrowseToObjectType, ObjectName: java.lang.String): scala.Unit = js.native
-  /** @param DataMode [DataMode=1] */
   def BrowseTo(
     ObjectType: AcBrowseToObjectType,
     ObjectName: java.lang.String,
     PathtoSubformControl: java.lang.String
   ): scala.Unit = js.native
-  /** @param DataMode [DataMode=1] */
   def BrowseTo(
     ObjectType: AcBrowseToObjectType,
     ObjectName: java.lang.String,
     PathtoSubformControl: java.lang.String,
     WhereCondition: java.lang.String
   ): scala.Unit = js.native
-  /** @param DataMode [DataMode=1] */
   def BrowseTo(
     ObjectType: AcBrowseToObjectType,
     ObjectName: java.lang.String,
@@ -42,7 +39,6 @@ class DoCmd protected () extends js.Object {
     WhereCondition: java.lang.String,
     Page: java.lang.String
   ): scala.Unit = js.native
-  /** @param DataMode [DataMode=1] */
   def BrowseTo(
     ObjectType: AcBrowseToObjectType,
     ObjectName: java.lang.String,
@@ -55,14 +51,10 @@ class DoCmd protected () extends js.Object {
   def ClearMacroError(): scala.Unit = js.native
   def Close(): scala.Unit = js.native
   /**
-           * @param ObjectType [ObjectType=-1]
-           * @param Save [Save=0]
-           */
+    * @param ObjectType [ObjectType=-1]
+    * @param Save [Save=0]
+    */
   def Close(ObjectType: AcObjectType, ObjectName: java.lang.String): scala.Unit = js.native
-  /**
-           * @param ObjectType [ObjectType=-1]
-           * @param Save [Save=0]
-           */
   def Close(ObjectType: AcObjectType, ObjectName: java.lang.String, Save: AcCloseSave): scala.Unit = js.native
   def CloseDatabase(): scala.Unit = js.native
   def CopyDatabaseFile(DatabaseFileName: java.lang.String): scala.Unit = js.native
@@ -74,9 +66,7 @@ class DoCmd protected () extends js.Object {
   ): scala.Unit = js.native
   /** @param SourceObjectType [SourceObjectType=-1] */
   def CopyObject(DestinationDatabase: java.lang.String, NewName: java.lang.String): scala.Unit = js.native
-  /** @param SourceObjectType [SourceObjectType=-1] */
   def CopyObject(DestinationDatabase: java.lang.String, NewName: java.lang.String, SourceObjectType: AcObjectType): scala.Unit = js.native
-  /** @param SourceObjectType [SourceObjectType=-1] */
   def CopyObject(
     DestinationDatabase: java.lang.String,
     NewName: java.lang.String,
@@ -85,9 +75,7 @@ class DoCmd protected () extends js.Object {
   ): scala.Unit = js.native
   /** @param ObjectType [ObjectType=-1] */
   def DeleteObject(): scala.Unit = js.native
-  /** @param ObjectType [ObjectType=-1] */
   def DeleteObject(ObjectType: AcObjectType): scala.Unit = js.native
-  /** @param ObjectType [ObjectType=-1] */
   def DeleteObject(ObjectType: AcObjectType, ObjectName: java.lang.String): scala.Unit = js.native
   /** @deprecated Use the **RunCommand** method */
   def DoMenuItem(
@@ -95,14 +83,12 @@ class DoCmd protected () extends js.Object {
     MenuName: Constants | scala.Double,
     Command: Constants | scala.Double
   ): scala.Unit = js.native
-  /** @deprecated Use the **RunCommand** method */
   def DoMenuItem(
     MenuBar: Constants | scala.Double,
     MenuName: Constants | scala.Double,
     Command: Constants | scala.Double,
     Subcommand: Constants | scala.Double
   ): scala.Unit = js.native
-  /** @deprecated Use the **RunCommand** method */
   def DoMenuItem(
     MenuBar: Constants | scala.Double,
     MenuName: Constants | scala.Double,
@@ -113,13 +99,6 @@ class DoCmd protected () extends js.Object {
   def Echo(EchoOn: scala.Boolean): scala.Unit = js.native
   def Echo(EchoOn: scala.Boolean, StatusBarText: java.lang.String): scala.Unit = js.native
   def FindNext(): scala.Unit = js.native
-  /**
-           * @param Match [Match=1]
-           * @param MatchCase [MatchCase=false]
-           * @param Search [Search=2]
-           * @param SearchAsFormatted [SearchAsFormatted=false]
-           * @param OnlyCurrentField [OnlyCurrentField=-1]
-           */
   def FindRecord(
     FindWhat: activexDashInteropLib.VarDate,
     Match: js.UndefOr[AcFindMatch],
@@ -130,12 +109,12 @@ class DoCmd protected () extends js.Object {
     FindFirst: js.UndefOr[scala.Boolean]
   ): scala.Unit = js.native
   /**
-           * @param Match [Match=1]
-           * @param MatchCase [MatchCase=false]
-           * @param Search [Search=2]
-           * @param SearchAsFormatted [SearchAsFormatted=false]
-           * @param OnlyCurrentField [OnlyCurrentField=-1]
-           */
+    * @param Match [Match=1]
+    * @param MatchCase [MatchCase=false]
+    * @param Search [Search=2]
+    * @param SearchAsFormatted [SearchAsFormatted=false]
+    * @param OnlyCurrentField [OnlyCurrentField=-1]
+    */
   def FindRecord(
     FindWhat: java.lang.String,
     Match: js.UndefOr[AcFindMatch],
@@ -145,13 +124,6 @@ class DoCmd protected () extends js.Object {
     OnlyCurrentField: js.UndefOr[AcFindField],
     FindFirst: js.UndefOr[scala.Boolean]
   ): scala.Unit = js.native
-  /**
-           * @param Match [Match=1]
-           * @param MatchCase [MatchCase=false]
-           * @param Search [Search=2]
-           * @param SearchAsFormatted [SearchAsFormatted=false]
-           * @param OnlyCurrentField [OnlyCurrentField=-1]
-           */
   def FindRecord(
     FindWhat: scala.Double,
     Match: js.UndefOr[AcFindMatch],
@@ -166,29 +138,13 @@ class DoCmd protected () extends js.Object {
   def GoToPage(PageNumber: scala.Double, Right: scala.Double): scala.Unit = js.native
   def GoToPage(PageNumber: scala.Double, Right: scala.Double, Down: scala.Double): scala.Unit = js.native
   /**
-           * @param ObjectType [ObjectType=-1]
-           * @param Record [Record=1]
-           */
+    * @param ObjectType [ObjectType=-1]
+    * @param Record [Record=1]
+    */
   def GoToRecord(): scala.Unit = js.native
-  /**
-           * @param ObjectType [ObjectType=-1]
-           * @param Record [Record=1]
-           */
   def GoToRecord(ObjectType: AcDataObjectType): scala.Unit = js.native
-  /**
-           * @param ObjectType [ObjectType=-1]
-           * @param Record [Record=1]
-           */
   def GoToRecord(ObjectType: AcDataObjectType, ObjectName: java.lang.String): scala.Unit = js.native
-  /**
-           * @param ObjectType [ObjectType=-1]
-           * @param Record [Record=1]
-           */
   def GoToRecord(ObjectType: AcDataObjectType, ObjectName: java.lang.String, Record: AcRecord): scala.Unit = js.native
-  /**
-           * @param ObjectType [ObjectType=-1]
-           * @param Record [Record=1]
-           */
   def GoToRecord(ObjectType: AcDataObjectType, ObjectName: java.lang.String, Record: AcRecord, Offset: AcRecord): scala.Unit = js.native
   def Hourglass(HourglassOn: scala.Boolean): scala.Unit = js.native
   def LockNavigationPane(Lock: scala.Boolean): scala.Unit = js.native
@@ -204,14 +160,13 @@ class DoCmd protected () extends js.Object {
   def NavigateTo(Category: js.Any, Group: js.Any): scala.Unit = js.native
   /** @param View [View=0] */
   def OpenDataAccessPage(DataAccessPageName: java.lang.String): scala.Unit = js.native
-  /** @param View [View=0] */
   def OpenDataAccessPage(DataAccessPageName: java.lang.String, View: AcDataAccessPageView): scala.Unit = js.native
   def OpenDiagram(DiagramName: java.lang.String): scala.Unit = js.native
   /**
-           * @param View [View=0]
-           * @param DataMode [DataMode=-1]
-           * @param WindowMode [WindowMode=0]
-           */
+    * @param View [View=0]
+    * @param DataMode [DataMode=-1]
+    * @param WindowMode [WindowMode=0]
+    */
   def OpenForm(
     FormName: java.lang.String,
     View: js.UndefOr[AcFormView],
@@ -222,67 +177,35 @@ class DoCmd protected () extends js.Object {
     OpenArgs: js.UndefOr[java.lang.String]
   ): scala.Unit = js.native
   /**
-           * @param View [View=0]
-           * @param DataMode [DataMode=1]
-           */
+    * @param View [View=0]
+    * @param DataMode [DataMode=1]
+    */
   def OpenFunction(FunctionName: java.lang.String): scala.Unit = js.native
-  /**
-           * @param View [View=0]
-           * @param DataMode [DataMode=1]
-           */
   def OpenFunction(FunctionName: java.lang.String, View: AcView): scala.Unit = js.native
-  /**
-           * @param View [View=0]
-           * @param DataMode [DataMode=1]
-           */
   def OpenFunction(FunctionName: java.lang.String, View: AcView, DataMode: AcOpenDataMode): scala.Unit = js.native
   def OpenModule(): scala.Unit = js.native
   def OpenModule(ModuleName: java.lang.String): scala.Unit = js.native
   def OpenModule(ModuleName: java.lang.String, ProcedureName: java.lang.String): scala.Unit = js.native
   /**
-           * @param View [View=0]
-           * @param DataMode [DataMode=1]
-           */
+    * @param View [View=0]
+    * @param DataMode [DataMode=1]
+    */
   def OpenQuery(QueryName: java.lang.String): scala.Unit = js.native
-  /**
-           * @param View [View=0]
-           * @param DataMode [DataMode=1]
-           */
   def OpenQuery(QueryName: java.lang.String, View: AcView): scala.Unit = js.native
-  /**
-           * @param View [View=0]
-           * @param DataMode [DataMode=1]
-           */
   def OpenQuery(QueryName: java.lang.String, View: AcView, DataMode: AcOpenDataMode): scala.Unit = js.native
   /**
-           * @param View [View=0]
-           * @param WindowMode [WindowMode=0]
-           */
+    * @param View [View=0]
+    * @param WindowMode [WindowMode=0]
+    */
   def OpenReport(ReportName: java.lang.String): scala.Unit = js.native
-  /**
-           * @param View [View=0]
-           * @param WindowMode [WindowMode=0]
-           */
   def OpenReport(ReportName: java.lang.String, View: AcView): scala.Unit = js.native
-  /**
-           * @param View [View=0]
-           * @param WindowMode [WindowMode=0]
-           */
   def OpenReport(ReportName: java.lang.String, View: AcView, FilterName: java.lang.String): scala.Unit = js.native
-  /**
-           * @param View [View=0]
-           * @param WindowMode [WindowMode=0]
-           */
   def OpenReport(
     ReportName: java.lang.String,
     View: AcView,
     FilterName: java.lang.String,
     WhereCondition: java.lang.String
   ): scala.Unit = js.native
-  /**
-           * @param View [View=0]
-           * @param WindowMode [WindowMode=0]
-           */
   def OpenReport(
     ReportName: java.lang.String,
     View: AcView,
@@ -290,10 +213,6 @@ class DoCmd protected () extends js.Object {
     WhereCondition: java.lang.String,
     WindowMode: AcWindowMode
   ): scala.Unit = js.native
-  /**
-           * @param View [View=0]
-           * @param WindowMode [WindowMode=0]
-           */
   def OpenReport(
     ReportName: java.lang.String,
     View: AcView,
@@ -304,56 +223,29 @@ class DoCmd protected () extends js.Object {
   ): scala.Unit = js.native
   /** @param View [View=0] */
   def OpenReportOld0(ReportName: js.Any): scala.Unit = js.native
-  /** @param View [View=0] */
   def OpenReportOld0(ReportName: js.Any, View: AcView): scala.Unit = js.native
-  /** @param View [View=0] */
   def OpenReportOld0(ReportName: js.Any, View: AcView, FilterName: js.Any): scala.Unit = js.native
-  /** @param View [View=0] */
   def OpenReportOld0(ReportName: js.Any, View: AcView, FilterName: js.Any, WhereCondition: js.Any): scala.Unit = js.native
   /**
-           * @param View [View=0]
-           * @param DataMode [DataMode=1]
-           */
+    * @param View [View=0]
+    * @param DataMode [DataMode=1]
+    */
   def OpenStoredProcedure(ProcedureName: java.lang.String): scala.Unit = js.native
-  /**
-           * @param View [View=0]
-           * @param DataMode [DataMode=1]
-           */
   def OpenStoredProcedure(ProcedureName: java.lang.String, View: AcView): scala.Unit = js.native
-  /**
-           * @param View [View=0]
-           * @param DataMode [DataMode=1]
-           */
   def OpenStoredProcedure(ProcedureName: java.lang.String, View: AcView, DataMode: AcOpenDataMode): scala.Unit = js.native
   /**
-           * @param View [View=0]
-           * @param DataMode [DataMode=1]
-           */
+    * @param View [View=0]
+    * @param DataMode [DataMode=1]
+    */
   def OpenTable(TableName: java.lang.String): scala.Unit = js.native
-  /**
-           * @param View [View=0]
-           * @param DataMode [DataMode=1]
-           */
   def OpenTable(TableName: java.lang.String, View: AcView): scala.Unit = js.native
-  /**
-           * @param View [View=0]
-           * @param DataMode [DataMode=1]
-           */
   def OpenTable(TableName: java.lang.String, View: AcView, DataMode: AcOpenDataMode): scala.Unit = js.native
   /**
-           * @param View [View=0]
-           * @param DataMode [DataMode=1]
-           */
+    * @param View [View=0]
+    * @param DataMode [DataMode=1]
+    */
   def OpenView(ViewName: java.lang.String): scala.Unit = js.native
-  /**
-           * @param View [View=0]
-           * @param DataMode [DataMode=1]
-           */
   def OpenView(ViewName: java.lang.String, View: AcView): scala.Unit = js.native
-  /**
-           * @param View [View=0]
-           * @param DataMode [DataMode=1]
-           */
   def OpenView(ViewName: java.lang.String, View: AcView, DataMode: AcOpenDataMode): scala.Unit = js.native
   /** @param OutputQuality [OutputQuality=0] */
   def OutputTo(
@@ -365,7 +257,6 @@ class DoCmd protected () extends js.Object {
     TemplateFile: java.lang.String,
     Encoding: js.Any
   ): scala.Unit = js.native
-  /** @param OutputQuality [OutputQuality=0] */
   def OutputTo(
     ObjectType: AcOutputObjectType,
     ObjectName: java.lang.String,
@@ -416,44 +307,20 @@ class DoCmd protected () extends js.Object {
     Encoding: js.UndefOr[js.Any]
   ): scala.Unit = js.native
   /**
-           * @param PrintRange [PrintRange=0]
-           * @param PrintQuality [PrintQuality=0]
-           * @param Copies [Copies=1]
-           * @param CollateCopies [CollateCopies=true]
-           */
+    * @param PrintRange [PrintRange=0]
+    * @param PrintQuality [PrintQuality=0]
+    * @param Copies [Copies=1]
+    * @param CollateCopies [CollateCopies=true]
+    */
   def PrintOut(PrintRange: AcPrintRange): scala.Unit = js.native
-  /**
-           * @param PrintRange [PrintRange=0]
-           * @param PrintQuality [PrintQuality=0]
-           * @param Copies [Copies=1]
-           * @param CollateCopies [CollateCopies=true]
-           */
   def PrintOut(PrintRange: AcPrintRange, PageFrom: scala.Double): scala.Unit = js.native
-  /**
-           * @param PrintRange [PrintRange=0]
-           * @param PrintQuality [PrintQuality=0]
-           * @param Copies [Copies=1]
-           * @param CollateCopies [CollateCopies=true]
-           */
   def PrintOut(PrintRange: AcPrintRange, PageFrom: scala.Double, PageTo: scala.Double): scala.Unit = js.native
-  /**
-           * @param PrintRange [PrintRange=0]
-           * @param PrintQuality [PrintQuality=0]
-           * @param Copies [Copies=1]
-           * @param CollateCopies [CollateCopies=true]
-           */
   def PrintOut(
     PrintRange: AcPrintRange,
     PageFrom: scala.Double,
     PageTo: scala.Double,
     PrintQuality: AcPrintQuality
   ): scala.Unit = js.native
-  /**
-           * @param PrintRange [PrintRange=0]
-           * @param PrintQuality [PrintQuality=0]
-           * @param Copies [Copies=1]
-           * @param CollateCopies [CollateCopies=true]
-           */
   def PrintOut(
     PrintRange: AcPrintRange,
     PageFrom: scala.Double,
@@ -461,12 +328,6 @@ class DoCmd protected () extends js.Object {
     PrintQuality: AcPrintQuality,
     Copies: scala.Double
   ): scala.Unit = js.native
-  /**
-           * @param PrintRange [PrintRange=0]
-           * @param PrintQuality [PrintQuality=0]
-           * @param Copies [Copies=1]
-           * @param CollateCopies [CollateCopies=true]
-           */
   def PrintOut(
     PrintRange: AcPrintRange,
     PageFrom: scala.Double,
@@ -476,11 +337,11 @@ class DoCmd protected () extends js.Object {
     CollateCopies: scala.Boolean
   ): scala.Unit = js.native
   /**
-           * @param PrintRange [PrintRange=0]
-           * @param PrintQuality [PrintQuality=0]
-           * @param Copies [Copies=1]
-           * @param CollateCopies [CollateCopies=true]
-           */
+    * @param PrintRange [PrintRange=0]
+    * @param PrintQuality [PrintQuality=0]
+    * @param Copies [Copies=1]
+    * @param CollateCopies [CollateCopies=true]
+    */
   def PrintOut(
     PrintRange: js.UndefOr[AcPrintRange],
     PageFrom: js.UndefOr[js.UndefOr[scala.Nothing]],
@@ -491,7 +352,6 @@ class DoCmd protected () extends js.Object {
   ): scala.Unit = js.native
   /** @param Options [Options=1] */
   def Quit(): scala.Unit = js.native
-  /** @param Options [Options=1] */
   def Quit(Options: AcQuitOption): scala.Unit = js.native
   def RefreshRecord(): scala.Unit = js.native
   def Rename(NewName: java.lang.String): scala.Unit = js.native
@@ -514,32 +374,15 @@ class DoCmd protected () extends js.Object {
   def Save(): scala.Unit = js.native
   /** @param ObjectType [ObjectType=-1] */
   def Save(ObjectType: AcObjectType, ObjectName: java.lang.String): scala.Unit = js.native
-  /** @param ObjectType [ObjectType=-1] */
   def Save(ObjectType: js.UndefOr[scala.Nothing], ObjectName: java.lang.String): scala.Unit = js.native
   /**
-           * @param ObjectType [ObjectType=-1]
-           * @param Record [Record=2]
-           */
+    * @param ObjectType [ObjectType=-1]
+    * @param Record [Record=2]
+    */
   def SearchForRecord(): scala.Unit = js.native
-  /**
-           * @param ObjectType [ObjectType=-1]
-           * @param Record [Record=2]
-           */
   def SearchForRecord(ObjectType: AcDataObjectType): scala.Unit = js.native
-  /**
-           * @param ObjectType [ObjectType=-1]
-           * @param Record [Record=2]
-           */
   def SearchForRecord(ObjectType: AcDataObjectType, ObjectName: java.lang.String): scala.Unit = js.native
-  /**
-           * @param ObjectType [ObjectType=-1]
-           * @param Record [Record=2]
-           */
   def SearchForRecord(ObjectType: AcDataObjectType, ObjectName: java.lang.String, Record: AcRecord): scala.Unit = js.native
-  /**
-           * @param ObjectType [ObjectType=-1]
-           * @param Record [Record=2]
-           */
   def SearchForRecord(
     ObjectType: AcDataObjectType,
     ObjectName: java.lang.String,
@@ -590,23 +433,20 @@ class DoCmd protected () extends js.Object {
   def SetParameter(Name: java.lang.String, Expression: js.Any): scala.Unit = js.native
   /** @param Property [Property=0] */
   def SetProperty(ControlName: java.lang.String): scala.Unit = js.native
-  /** @param Property [Property=0] */
   def SetProperty(ControlName: java.lang.String, Property: AcProperty): scala.Unit = js.native
-  /** @param Property [Property=0] */
   def SetProperty(ControlName: java.lang.String, Property: AcProperty, Value: js.Any): scala.Unit = js.native
   def SetWarnings(WarningsOn: scala.Boolean): scala.Unit = js.native
   def ShowAllRecords(): scala.Unit = js.native
   /** @param Show [Show=0] */
   def ShowToolbar(ToolbarName: java.lang.String): scala.Unit = js.native
-  /** @param Show [Show=0] */
   def ShowToolbar(ToolbarName: java.lang.String, Show: AcShowToolbar): scala.Unit = js.native
   def SingleStep(): scala.Unit = js.native
   /**
-           * @param TransferType [TransferType=0]
-           * @param ObjectType [ObjectType=0]
-           * @param StructureOnly [StructureOnly=false\]
-           * @param StoreLogin [StoreLogin=false]
-           */
+    * @param TransferType [TransferType=0]
+    * @param ObjectType [ObjectType=0]
+    * @param StructureOnly [StructureOnly=false\]
+    * @param StoreLogin [StoreLogin=false]
+    */
   def TransferDatabase(
     TransferType: js.UndefOr[AcDataTransferType],
     DatabaseType: js.UndefOr[DatabaseType],
@@ -667,45 +507,25 @@ class DoCmd protected () extends js.Object {
     GetLookupDisplayValues: scala.Boolean
   ): scala.Unit = js.native
   /**
-           * @param TransferType [TransferType=0]
-           * @param SpreadsheetType [SpreadsheetType=10]
-           * @param HasFieldNames [HasFieldNames=false]
-           */
+    * @param TransferType [TransferType=0]
+    * @param SpreadsheetType [SpreadsheetType=10]
+    * @param HasFieldNames [HasFieldNames=false]
+    */
   def TransferSpreadsheet(): scala.Unit = js.native
   /**
-           * @param TransferType [TransferType=0]
-           * @param SpreadsheetType [SpreadsheetType=10]
-           * @param HasFieldNames [HasFieldNames=false]
-           */
+    * @param TransferType [TransferType=0]
+    * @param SpreadsheetType [SpreadsheetType=10]
+    * @param HasFieldNames [HasFieldNames=false]
+    */
   def TransferSpreadsheet(TransferType: AcDataTransferType): scala.Unit = js.native
-  /**
-           * @param TransferType [TransferType=0]
-           * @param SpreadsheetType [SpreadsheetType=10]
-           * @param HasFieldNames [HasFieldNames=false]
-           */
   def TransferSpreadsheet(TransferType: AcDataTransferType, SpreadsheetType: AcSpreadSheetType): scala.Unit = js.native
-  /**
-           * @param TransferType [TransferType=0]
-           * @param SpreadsheetType [SpreadsheetType=10]
-           * @param HasFieldNames [HasFieldNames=false]
-           */
   def TransferSpreadsheet(TransferType: AcDataTransferType, SpreadsheetType: AcSpreadSheetType, TableName: java.lang.String): scala.Unit = js.native
-  /**
-           * @param TransferType [TransferType=0]
-           * @param SpreadsheetType [SpreadsheetType=10]
-           * @param HasFieldNames [HasFieldNames=false]
-           */
   def TransferSpreadsheet(
     TransferType: AcDataTransferType,
     SpreadsheetType: AcSpreadSheetType,
     TableName: java.lang.String,
     FileName: java.lang.String
   ): scala.Unit = js.native
-  /**
-           * @param TransferType [TransferType=0]
-           * @param SpreadsheetType [SpreadsheetType=10]
-           * @param HasFieldNames [HasFieldNames=false]
-           */
   def TransferSpreadsheet(
     TransferType: AcDataTransferType,
     SpreadsheetType: AcSpreadSheetType,
@@ -713,11 +533,6 @@ class DoCmd protected () extends js.Object {
     FileName: java.lang.String,
     HasFieldNames: scala.Boolean
   ): scala.Unit = js.native
-  /**
-           * @param TransferType [TransferType=0]
-           * @param SpreadsheetType [SpreadsheetType=10]
-           * @param HasFieldNames [HasFieldNames=false]
-           */
   def TransferSpreadsheet(
     TransferType: AcDataTransferType,
     SpreadsheetType: AcSpreadSheetType,
@@ -727,9 +542,9 @@ class DoCmd protected () extends js.Object {
     Range: js.Any
   ): scala.Unit = js.native
   /**
-           * @param TransferType [TransferType=0]
-           * @param Encoding For valid values see https://msdn.microsoft.com/en-us/library/windows/desktop/dd317756(v=vs.85).aspx
-           */
+    * @param TransferType [TransferType=0]
+    * @param Encoding For valid values see https://msdn.microsoft.com/en-us/library/windows/desktop/dd317756(v=vs.85).aspx
+    */
   def TransferText(
     TransferType: js.UndefOr[AcTextTransferType],
     SpecificationName: js.UndefOr[java.lang.String],

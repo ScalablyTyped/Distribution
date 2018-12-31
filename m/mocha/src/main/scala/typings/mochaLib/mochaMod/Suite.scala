@@ -28,17 +28,16 @@ import scala.scalajs.js.annotation._
 // #region Suite "beforeAll" event
 // #endregion Runner untyped events
 /**
-     * Initialize a new `Suite` with the given `title` and `ctx`.
-     *
-     * @see https://mochajs.org/api/Mocha.Suite.html
-     */
+  * Initialize a new `Suite` with the given `title` and `ctx`.
+  *
+  * @see https://mochajs.org/api/Mocha.Suite.html
+  */
 @JSImport("mocha", "Suite")
 @js.native
 class Suite protected ()
   extends mochaLib.MochaNs.Suite {
   def this(title: java.lang.String) = this()
   def this(title: java.lang.String, parentContext: mochaLib.MochaNs.Context) = this()
-  /** @deprecated Use the overload that accepts `Mocha.Context` instead. */
   def this(title: java.lang.String, parentContext: mochaLib.MochaNs.IContext) = this()
 }
 
@@ -65,22 +64,22 @@ class Suite protected ()
 // #region Suite "beforeAll" event
 // #endregion Runner untyped events
 /**
-     * Initialize a new `Suite` with the given `title` and `ctx`.
-     *
-     * @see https://mochajs.org/api/Mocha.Suite.html
-     */
+  * Initialize a new `Suite` with the given `title` and `ctx`.
+  *
+  * @see https://mochajs.org/api/Mocha.Suite.html
+  */
 @JSImport("mocha", "Suite")
 @js.native
 object Suite extends js.Object {
   /** @deprecated Use the overload that accepts `Mocha.Suite` instead. */
   def create(parent: mochaLib.MochaNs.ISuite, title: java.lang.String): mochaLib.MochaNs.Suite = js.native
   /**
-           * Create a new `Suite` with the given `title` and parent `Suite`. When a suite
-           * with the same title is already present, that suite is returned to provide
-           * nicer reporter and more flexible meta-testing.
-           *
-           * @see https://mochajs.org/api/mocha#.exports.create
-           */
+    * Create a new `Suite` with the given `title` and parent `Suite`. When a suite
+    * with the same title is already present, that suite is returned to provide
+    * nicer reporter and more flexible meta-testing.
+    *
+    * @see https://mochajs.org/api/mocha#.exports.create
+    */
   def create(parent: mochaLib.MochaNs.Suite, title: java.lang.String): mochaLib.MochaNs.Suite = js.native
 }
 

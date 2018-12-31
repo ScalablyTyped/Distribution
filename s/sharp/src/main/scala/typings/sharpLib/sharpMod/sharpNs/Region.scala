@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Region extends js.Object {
   /** dimension of extracted image */
   var height: scala.Double

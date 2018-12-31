@@ -12,18 +12,18 @@ sealed trait ChangeDetectionStrategy extends js.Object
 @js.native
 object ChangeDetectionStrategy extends js.Object {
   /**
-       * Use the default `CheckAlways` strategy, in which change detection is automatic until
-       * explicitly deactivated.
-       */
+    * Use the default `CheckAlways` strategy, in which change detection is automatic until
+    * explicitly deactivated.
+    */
   @js.native
   sealed trait Default
     extends atAngularCoreLib.srcChangeUnderscoreDetectionConstantsMod.ChangeDetectionStrategy
   
   /**
-       * Use the `CheckOnce` strategy, meaning that automatic change detection is deactivated
-       * until reactivated by setting the strategy to `Default` (`CheckAlways`).
-       * Change detection can still be explictly invoked.
-       */
+    * Use the `CheckOnce` strategy, meaning that automatic change detection is deactivated
+    * until reactivated by setting the strategy to `Default` (`CheckAlways`).
+    * Change detection can still be explictly invoked.
+    */
   @js.native
   sealed trait OnPush
     extends atAngularCoreLib.srcChangeUnderscoreDetectionConstantsMod.ChangeDetectionStrategy

@@ -27,13 +27,6 @@ trait IgTreeGridSelectionMethods extends js.Object {
   	 * @param isFixed If the cell is part of the fixed or unfixed area of the grid.
   	 */
   def deselectCell(row: scala.Double, col: scala.Double): scala.Unit = js.native
-  /**
-  	 * Deselects a cell by row/col
-  	 *
-  	 * @param row Row index
-  	 * @param col Column index
-  	 * @param isFixed If the cell is part of the fixed or unfixed area of the grid.
-  	 */
   def deselectCell(row: scala.Double, col: scala.Double, isFixed: scala.Boolean): scala.Unit = js.native
   /**
   	 * Deselects a cell by row id/column key
@@ -63,13 +56,6 @@ trait IgTreeGridSelectionMethods extends js.Object {
   	 * @param isFixed If the cell is part of the fixed or unfixed area of the grid.
   	 */
   def selectCell(row: scala.Double, col: scala.Double): scala.Unit = js.native
-  /**
-  	 * Selects a cell by row/col
-  	 *
-  	 * @param row Row index
-  	 * @param col Column index
-  	 * @param isFixed If the cell is part of the fixed or unfixed area of the grid.
-  	 */
   def selectCell(row: scala.Double, col: scala.Double, isFixed: scala.Boolean): scala.Unit = js.native
   /**
   	 * Selects a cell by row id/column key

@@ -50,19 +50,11 @@ class OLEObject protected () extends js.Object {
   def BringToFront(): js.Any = js.native
   def Copy(): js.Any = js.native
   /**
-           * @param Appearance [Appearance=2]
-           * @param Format [Format=-4147]
-           */
+    * @param Appearance [Appearance=2]
+    * @param Format [Format=-4147]
+    */
   def CopyPicture(): js.Any = js.native
-  /**
-           * @param Appearance [Appearance=2]
-           * @param Format [Format=-4147]
-           */
   def CopyPicture(Appearance: XlPictureAppearance): js.Any = js.native
-  /**
-           * @param Appearance [Appearance=2]
-           * @param Format [Format=-4147]
-           */
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): js.Any = js.native
   def Cut(): js.Any = js.native
   def Delete(): js.Any = js.native
@@ -78,7 +70,6 @@ class OLEObject protected () extends js.Object {
   def Update(): js.Any = js.native
   /** @param Verb [Verb=1] */
   def Verb(): js.Any = js.native
-  /** @param Verb [Verb=1] */
   def Verb(Verb: XlOLEVerb): js.Any = js.native
 }
 

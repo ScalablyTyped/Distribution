@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPnpObjectWatcher extends js.Object {
   var onadded: js.Any
   var onenumerationcompleted: js.Any

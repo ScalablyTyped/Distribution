@@ -59,8 +59,8 @@ trait Rules
   @JSName("footnote_ref")
   var footnote_ref_Original: Rule = js.native
   /**
-           * Check to see if `\n` is needed before the next token.
-           */
+    * Check to see if `\n` is needed before the next token.
+    */
   @JSName("getBreak")
   var getBreak_Original: GetBreak = js.native
   @JSName("hardbreak")
@@ -139,1122 +139,1122 @@ trait Rules
   var tr_open_Original: Rule = js.native
   def abbr_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def abbr_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def blockquote_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def blockquote_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def bullet_list_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def bullet_list_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def code(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def dd_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def dd_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def del_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def del_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def dl_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def dl_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def dt_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def dt_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def em_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def em_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def fence(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def fence_custom(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def footnote_anchor(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def footnote_block_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def footnote_block_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def footnote_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def footnote_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def footnote_ref(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   /**
-           * Check to see if `\n` is needed before the next token.
-           */
+    * Check to see if `\n` is needed before the next token.
+    */
   def getBreak(tokens: js.Array[ContentToken], idx: scala.Double): remarkableLib.remarkableLibStrings.Empty | remarkableLib.remarkableLibStrings.BACKSLASHn = js.native
   def hardbreak(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def heading_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def heading_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def hr(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def htmlblock(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def htmltag(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def image(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def ins_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def ins_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def link_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def link_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def list_item_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def list_item_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def mark_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def mark_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def ordered_list_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def ordered_list_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def paragraph_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def paragraph_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def softbreak(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def strong_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def strong_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def sub(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def sup(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def table_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def table_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def tbody_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def tbody_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def td_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def td_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def text(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def th_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def th_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def thead_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def thead_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def tr_close(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
   def tr_open(
     /**
-           * The list of tokens currently being processed.
-           */
+    * The list of tokens currently being processed.
+    */
   tokens: js.Array[ContentToken],
     /**
-           * The index of the token currently being processed.
-           */
+    * The index of the token currently being processed.
+    */
   idx: scala.Double,
     /**
-           * The options given to remarkable.
-           */
+    * The options given to remarkable.
+    */
   options: Options,
     /**
-           * The key-value store created by the parsing rules.
-           */
+    * The key-value store created by the parsing rules.
+    */
   env: Env
   ): java.lang.String = js.native
 }

@@ -92,10 +92,6 @@ object LocaleNs extends js.Object {
   		 * `/i18n/LANG/strings.xml` localization file.
   		 */
   def getString(key: java.lang.String): java.lang.String = js.native
-  /**
-  		 * Returns a string, localized according to the current system locale using the appropriate
-  		 * `/i18n/LANG/strings.xml` localization file.
-  		 */
   def getString(key: java.lang.String, hint: java.lang.String): java.lang.String = js.native
   /**
   		 * Removes the specified callback as an event listener for the named event.

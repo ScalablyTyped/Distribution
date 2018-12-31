@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InsertParameters extends js.Object {
   var convert: js.UndefOr[scala.Boolean] = js.undefined
   var ocr: js.UndefOr[scala.Boolean] = js.undefined

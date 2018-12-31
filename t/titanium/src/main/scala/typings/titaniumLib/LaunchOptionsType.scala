@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Dictionary object of parameters used to identify an incoming URL that is handled
- * by the application.
- */
-
+  * Dictionary object of parameters used to identify an incoming URL that is handled
+  * by the application.
+  */
 trait LaunchOptionsType extends js.Object {
   /**
   	 * The application or service that triggered the handled URL.

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Dictionary containing `daysOfWeek` and `week`.
- */
-
+  * Dictionary containing `daysOfWeek` and `week`.
+  */
 trait daysOfTheWeekDictionary extends js.Object {
   /**
   	 * The day of the week. Values are from 1 to 7, with Sunday being 1.

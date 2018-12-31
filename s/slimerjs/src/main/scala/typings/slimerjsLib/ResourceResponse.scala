@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResourceResponse extends js.Object {
   var body: js.Any
   var bodySize: scala.Double

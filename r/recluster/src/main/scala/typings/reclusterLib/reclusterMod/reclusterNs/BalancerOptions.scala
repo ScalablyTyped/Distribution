@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BalancerOptions extends js.Object {
   /** arguments to pass to the worker (default: []) */
   var args: js.UndefOr[js.Array[java.lang.String]] = js.undefined

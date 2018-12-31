@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ZlibOptions extends js.Object {
    // default: zlib.constants.Z_FINISH
   var chunkSize: js.UndefOr[scala.Double] = js.undefined

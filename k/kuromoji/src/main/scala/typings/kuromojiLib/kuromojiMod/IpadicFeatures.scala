@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IpadicFeatures extends js.Object {
   var basic_form: java.lang.String
   var conjugated_form: java.lang.String

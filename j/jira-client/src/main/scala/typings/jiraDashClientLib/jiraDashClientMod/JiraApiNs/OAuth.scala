@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OAuth extends js.Object {
   var access_token: java.lang.String
   var access_token_secret: java.lang.String

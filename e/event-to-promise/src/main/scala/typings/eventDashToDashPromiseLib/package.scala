@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object eventDashToDashPromiseLib {
-  type EventSource = js.Any | stdLib.EventTarget
+  type EventSource = (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EventEmitter */ js.Any) | stdLib.EventTarget
 }

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Properties used in any event or callback which needs to report a failure.
- */
-
+  * Properties used in any event or callback which needs to report a failure.
+  */
 trait FailureResponse extends js.Object {
   /**
   	 * Error code. Returns a non-zero value.

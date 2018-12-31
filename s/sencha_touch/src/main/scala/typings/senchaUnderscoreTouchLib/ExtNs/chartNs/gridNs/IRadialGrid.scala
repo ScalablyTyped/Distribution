@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRadialGrid
   extends senchaUnderscoreTouchLib.ExtNs.drawNs.spriteNs.IPath {
   /** [Method] Render method

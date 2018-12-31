@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_VALUESSET extends js.Object {
   // A metadata attribute of the document changed. This is fired on changes to:
   // gapi.drive.realtime.Attribute.IS_READ_ONLY

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RefDelta extends js.Object {
   var bad: scala.Double
   var blob: scala.Double

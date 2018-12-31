@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreativesResource extends js.Object {
   /** Add a deal id association for the creative. */
   def addDeal(request: gapiDotClientDotAdexchangebuyerLib.Anon_PrettyPrintAccountIdQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

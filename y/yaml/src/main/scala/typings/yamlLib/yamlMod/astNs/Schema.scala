@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Schema extends js.Object {
   var merge: scala.Boolean
   var name: java.lang.String

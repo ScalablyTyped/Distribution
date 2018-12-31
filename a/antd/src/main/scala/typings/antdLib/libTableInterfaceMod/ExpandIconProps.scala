@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExpandIconProps[T] extends js.Object {
   var expandable: scala.Boolean
   var expanded: scala.Boolean

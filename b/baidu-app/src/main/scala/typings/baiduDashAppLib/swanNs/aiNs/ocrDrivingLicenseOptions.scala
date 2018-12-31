@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * 对机动车驾驶证所有关键字段进行识别。
 		 */
-
 trait ocrDrivingLicenseOptions
   extends baiduDashAppLib.swanNs.BaseOptions[js.Any, js.Any] {
    // 图片资源地址

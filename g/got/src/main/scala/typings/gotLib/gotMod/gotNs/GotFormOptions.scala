@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GotFormOptions[E /* <: java.lang.String | scala.Null */] extends GotOptions[E] {
   var body: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var form: gotLib.gotLibNumbers.`true`

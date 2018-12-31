@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait FlexAlignSelf extends js.Object
 
 /**
-     * Available options for the layout of individual elements along the cross axis of the flexbox layout
-     * overriding the default alignment.
-    */
+  * Available options for the layout of individual elements along the cross axis of the flexbox layout
+  * overriding the default alignment.
+  */
 @JSGlobal("sap.m.FlexAlignSelf")
 @js.native
 object FlexAlignSelf extends js.Object {

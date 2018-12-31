@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Encapsulates a decoded SMS text message. Prefer this class to the older SmsTextMessage class. */
 @JSGlobal("Windows.Devices.Sms.SmsTextMessage2")
 @js.native
+/** Constructs a new, default instance of this class. */
 class SmsTextMessage2 () extends js.Object {
   /** Gets or sets the body of the text message. */
   var body: java.lang.String = js.native

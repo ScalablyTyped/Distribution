@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FormHTMLAttributes[T] extends HTMLAttributes[T] {
   var acceptCharset: js.UndefOr[java.lang.String] = js.undefined
   var action: js.UndefOr[java.lang.String] = js.undefined

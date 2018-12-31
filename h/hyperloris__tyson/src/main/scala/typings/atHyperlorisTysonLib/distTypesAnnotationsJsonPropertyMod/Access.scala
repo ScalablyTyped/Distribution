@@ -12,17 +12,17 @@ sealed trait Access extends js.Object
 @js.native
 object Access extends js.Object {
   /**
-       * Access setting that means that the property may only be used
-       * for deserialization: json -> class
-       */
+    * Access setting that means that the property may only be used
+    * for deserialization: json -> class
+    */
   @js.native
   sealed trait FROMJSON_ONLY
     extends atHyperlorisTysonLib.distTypesAnnotationsJsonPropertyMod.Access
   
   /**
-       * Access setting that means that the property may only be used
-       * for serialization: class -> json
-       */
+    * Access setting that means that the property may only be used
+    * for serialization: class -> json
+    */
   @js.native
   sealed trait TOJSON_ONLY
     extends atHyperlorisTysonLib.distTypesAnnotationsJsonPropertyMod.Access

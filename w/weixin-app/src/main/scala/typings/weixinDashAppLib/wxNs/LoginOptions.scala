@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LoginOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 接口调用成功的回调函数 */

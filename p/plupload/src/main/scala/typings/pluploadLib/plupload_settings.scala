@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait plupload_settings extends js.Object {
   /** Required Options */
   var browse_button: js.Any

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IITextOptions extends ITextOptions {
   /**
   	 * Indicates whether internal text char widths can be cached

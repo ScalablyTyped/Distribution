@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Memory
   extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var creeps: org.scalablytyped.runtime.StringDictionary[CreepMemory]

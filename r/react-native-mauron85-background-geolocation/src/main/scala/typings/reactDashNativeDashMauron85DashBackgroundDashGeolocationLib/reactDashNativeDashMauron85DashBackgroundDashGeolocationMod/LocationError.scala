@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocationError extends js.Object {
   /** Reason of an error occurring when using the geolocating device. */
   var code: scala.Double

@@ -22,8 +22,8 @@ object Ticker extends js.Object {
   var paused: scala.Boolean = js.native
   var timingMode: java.lang.String = js.native
   /**
-           * @deprecated
-           */
+    * @deprecated
+    */
   var useRAF: scala.Boolean = js.native
   def addEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEvent): js.Object = js.native
   def addEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEventEventObj): js.Object = js.native
@@ -31,7 +31,6 @@ object Ticker extends js.Object {
   def addEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEvent, useCapture: scala.Boolean): js.Object = js.native
   // EventDispatcher mixins
   def addEventListener(`type`: java.lang.String, listener: easeljsLib.createjsNs.Stage): easeljsLib.createjsNs.Stage = js.native
-  // EventDispatcher mixins
   def addEventListener(`type`: java.lang.String, listener: easeljsLib.createjsNs.Stage, useCapture: scala.Boolean): easeljsLib.createjsNs.Stage = js.native
   def addEventListener(
     `type`: java.lang.String,
@@ -50,23 +49,22 @@ object Ticker extends js.Object {
   def dispatchEvent(eventObj: js.Object, target: js.Object): scala.Boolean = js.native
   // methods
   def getEventTime(): scala.Double = js.native
-  // methods
   def getEventTime(runTime: scala.Boolean): scala.Double = js.native
   /**
-           * @deprecated - use the 'framerate' property instead
-           */
+    * @deprecated - use the 'framerate' property instead
+    */
   def getFPS(): scala.Double = js.native
   /**
-           * @deprecated - use the 'interval' property instead
-           */
+    * @deprecated - use the 'interval' property instead
+    */
   def getInterval(): scala.Double = js.native
   def getMeasuredFPS(): scala.Double = js.native
   def getMeasuredFPS(ticks: scala.Double): scala.Double = js.native
   def getMeasuredTickTime(): scala.Double = js.native
   def getMeasuredTickTime(ticks: scala.Double): scala.Double = js.native
   /**
-           * @deprecated - use the 'paused' property instead
-           */
+    * @deprecated - use the 'paused' property instead
+    */
   def getPaused(): scala.Boolean = js.native
   def getTicks(): scala.Double = js.native
   def getTicks(pauseable: scala.Boolean): scala.Double = js.native
@@ -140,20 +138,17 @@ object Ticker extends js.Object {
     `type`: java.lang.String,
     listener: js.Function1[/* eventObj */ js.Object, scala.Boolean | scala.Unit]
   ): js.Function = js.native
-   // It is necessary for "arguments.callee"
   def on(
     `type`: java.lang.String,
     listener: js.Function1[/* eventObj */ js.Object, scala.Boolean | scala.Unit],
     scope: js.Object
   ): js.Function = js.native
-   // It is necessary for "arguments.callee"
   def on(
     `type`: java.lang.String,
     listener: js.Function1[/* eventObj */ js.Object, scala.Boolean | scala.Unit],
     scope: js.Object,
     once: scala.Boolean
   ): js.Function = js.native
-   // It is necessary for "arguments.callee"
   def on(
     `type`: java.lang.String,
     listener: js.Function1[/* eventObj */ js.Object, scala.Boolean | scala.Unit],
@@ -161,7 +156,6 @@ object Ticker extends js.Object {
     once: scala.Boolean,
     data: js.Any
   ): js.Function = js.native
-   // It is necessary for "arguments.callee"
   def on(
     `type`: java.lang.String,
     listener: js.Function1[/* eventObj */ js.Object, scala.Boolean | scala.Unit],
@@ -189,16 +183,16 @@ object Ticker extends js.Object {
   def removeEventListener(`type`: java.lang.String, listener: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
   def reset(): scala.Unit = js.native
   /**
-           * @deprecated - use the 'framerate' property instead
-           */
+    * @deprecated - use the 'framerate' property instead
+    */
   def setFPS(value: scala.Double): scala.Unit = js.native
   /**
-           * @deprecated - use the 'interval' property instead
-           */
+    * @deprecated - use the 'interval' property instead
+    */
   def setInterval(interval: scala.Double): scala.Unit = js.native
   /**
-           * @deprecated - use the 'paused' property instead
-           */
+    * @deprecated - use the 'paused' property instead
+    */
   def setPaused(value: scala.Boolean): scala.Unit = js.native
   def willTrigger(`type`: java.lang.String): scala.Boolean = js.native
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HookMap extends js.Object {
   var all: Hook | js.Array[Hook]
   var create: Hook | js.Array[Hook]

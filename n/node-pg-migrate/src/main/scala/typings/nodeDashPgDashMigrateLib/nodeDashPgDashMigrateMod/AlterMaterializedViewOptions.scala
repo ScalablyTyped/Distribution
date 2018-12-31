@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AlterMaterializedViewOptions extends js.Object {
   var cluster: js.UndefOr[
     scala.Null | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibNumbers.`false` | java.lang.String

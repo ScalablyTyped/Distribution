@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait FlexRendertype extends js.Object
 
 /**
-     * Determines the type of HTML elements used for rendering controls.
-    */
+  * Determines the type of HTML elements used for rendering controls.
+  */
 @JSGlobal("sap.m.FlexRendertype")
 @js.native
 object FlexRendertype extends js.Object {

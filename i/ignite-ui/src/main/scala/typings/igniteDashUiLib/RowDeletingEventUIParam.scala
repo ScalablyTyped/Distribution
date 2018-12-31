@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RowDeletingEventUIParam extends js.Object {
   /**
   	 * Gets a jQuery object containing the TR element of the row to delete.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OptionInfo extends js.Object {
   /** Unique string ID for this option. */
   var key: java.lang.String

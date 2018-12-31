@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootstrapCardViewEventMap extends BootstrapGridBaseEventMap {
   var batchEditCardDeleting: CardViewBatchEditCardDeletingEventArgs
   var batchEditCardInserting: CardViewBatchEditCardInsertingEventArgs

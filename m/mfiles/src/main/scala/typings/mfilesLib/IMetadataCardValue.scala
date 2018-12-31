@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMetadataCardValue extends js.Object {
   val HasIcon: scala.Boolean
   val ID: java.lang.String

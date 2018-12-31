@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IndexEntry extends js.Object {
   var Cardinality: scala.Double
   var Collation: java.lang.String

@@ -6,6 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildSrcServiceDashObjectMod {
+  type CreateCallback[T] = js.Function3[
+    /* err */ atGoogleDashCloudCommonLib.buildSrcUtilMod.ApiError | scala.Null, 
+    /* instance */ js.UndefOr[T | scala.Null], 
+    /* repeated */ js.Any, 
+    scala.Unit
+  ]
+  type CreateResponse[T] = js.Array[T | js.Any]
   type DeleteCallback = js.Function2[
     /* err */ nodeLib.Error | scala.Null, 
     /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
@@ -22,10 +29,10 @@ package object buildSrcServiceDashObjectMod {
     /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
     scala.Unit
   ]
-  type GetResponse = js.Tuple2[ServiceObject[js.Object], requestLib.requestMod.requestNs.Response]
-  type InstanceResponseCallback = js.Function3[
+  type GetResponse[T] = js.Tuple2[T, requestLib.requestMod.requestNs.Response]
+  type InstanceResponseCallback[T] = js.Function3[
     /* err */ atGoogleDashCloudCommonLib.buildSrcUtilMod.ApiError | scala.Null, 
-    /* instance */ js.UndefOr[ServiceObject[js.Object] | scala.Null], 
+    /* instance */ js.UndefOr[T | scala.Null], 
     /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
     scala.Unit
   ]

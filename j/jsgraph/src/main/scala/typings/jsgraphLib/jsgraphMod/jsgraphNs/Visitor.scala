@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Visitor extends js.Object {
   def blackTarget(req: jsgraphLib.Anon_E): scala.Unit
   def discoverVertex(req: jsgraphLib.Anon_G): scala.Unit

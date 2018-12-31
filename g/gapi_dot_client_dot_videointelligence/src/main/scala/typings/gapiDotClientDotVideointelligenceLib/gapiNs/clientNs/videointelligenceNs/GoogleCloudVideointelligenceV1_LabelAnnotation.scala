@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GoogleCloudVideointelligenceV1_LabelAnnotation extends js.Object {
   /** Textual description, e.g. `Fixed-gear bicycle`. */
   var description: js.UndefOr[java.lang.String] = js.undefined

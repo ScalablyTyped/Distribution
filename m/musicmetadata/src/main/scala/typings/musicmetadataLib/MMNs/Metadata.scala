@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Metadata extends js.Object {
   var album: java.lang.String
   var albumartist: js.Array[java.lang.String]

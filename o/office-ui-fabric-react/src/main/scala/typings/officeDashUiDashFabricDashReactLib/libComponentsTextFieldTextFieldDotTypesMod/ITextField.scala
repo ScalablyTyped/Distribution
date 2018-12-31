@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITextField extends js.Object {
   /** Gets the selection end of the text field. Returns -1 if there is no selection. */
   var selectionEnd: scala.Double | scala.Null
@@ -22,11 +21,11 @@ trait ITextField extends js.Object {
   /** Sets the selection end of the text field to a specified value. */
   def setSelectionEnd(value: scala.Double): scala.Unit
   /**
-       * Sets the start and end positions of a selection in a text field.
-       * Call with start and end set to the same value to set the cursor position.
-       * @param start - Index of the start of the selection.
-       * @param end - Index of the end of the selection.
-       */
+    * Sets the start and end positions of a selection in a text field.
+    * Call with start and end set to the same value to set the cursor position.
+    * @param start - Index of the start of the selection.
+    * @param end - Index of the end of the selection.
+    */
   def setSelectionRange(start: scala.Double, end: scala.Double): scala.Unit
   /** Sets the selection start of the text field to a specified value. */
   def setSelectionStart(value: scala.Double): scala.Unit

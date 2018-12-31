@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JsonLocalBaseBlock extends js.Object {
   var blockLength: scala.Double
   var blockName: java.lang.String

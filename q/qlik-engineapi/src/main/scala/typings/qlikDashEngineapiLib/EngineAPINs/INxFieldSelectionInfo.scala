@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * NxFieldSelectionInfo...
-     */
-
+  * NxFieldSelectionInfo...
+  */
 trait INxFieldSelectionInfo extends js.Object {
   /**
-           * Selection mode.
-           */
+    * Selection mode.
+    */
   var qFieldSelectionMode: FieldSelectionModeType
   /**
-           * Name of the field.
-           */
+    * Name of the field.
+    */
   var qName: java.lang.String
 }
 

@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object middlewareNs extends js.Object {
   /**
-       * Express middleware for preventing the web server from crashing when
-       * an error is thrown from an asynchronous context. Any error that would
-       * have caused a crash is logged to stderr.
-       */
+    * Express middleware for preventing the web server from crashing when
+    * an error is thrown from an asynchronous context. Any error that would
+    * have caused a crash is logged to stderr.
+    */
   def crashProtector(
     errorHandler: js.Function3[
       /* err */ commonDashErrorsLib.commonDashErrorsMod.Error, 
@@ -22,9 +22,9 @@ object middlewareNs extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-       * Express middleware that translates common errors into HTTP status
-       * codes and messages.
-       */
+    * Express middleware that translates common errors into HTTP status
+    * codes and messages.
+    */
   def errorHandler(
     err: commonDashErrorsLib.commonDashErrorsMod.Error,
     req: expressLib.expressMod.eNs.Request,

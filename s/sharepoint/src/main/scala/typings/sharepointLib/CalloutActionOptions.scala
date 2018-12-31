@@ -19,8 +19,8 @@ class CalloutActionOptions () extends js.Object {
   /** Callback which returns if the action link is visible */
   def isVisibleCallback(action: CalloutAction): scala.Boolean = js.native
   /** Callback that is executed when the action link is clicked.
-          @param event Standard javascript event object
-          @param action The action object */
+    @param event Standard javascript event object
+    @param action The action object */
   def onClickCallback(event: stdLib.Event, action: CalloutAction): js.Any = js.native
 }
 

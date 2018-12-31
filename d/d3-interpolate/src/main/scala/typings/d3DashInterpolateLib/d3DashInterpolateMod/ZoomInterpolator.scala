@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait ZoomInterpolator
   extends js.Function {
   /**
-       * Recommended duration of zoom transition in milliseconds.
-       */
+    * Recommended duration of zoom transition in milliseconds.
+    */
   var duration: scala.Double = js.native
   def apply(t: scala.Double): ZoomView = js.native
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object libSharedModMembers extends js.Object {
   def assign(target: js.Object, sources: js.Object*): js.Object = js.native
   def callbackPromise(
-    resolve: js.Function1[/* repeated */js.Any, scala.Unit],
+    resolve: js.Function1[/* repeated */ js.Any, scala.Unit],
     reject: js.Function1[/* err */ nodeLib.Error, scala.Unit]
   ): js.Function0[scala.Unit] = js.native
   def encodeXText(str: java.lang.String): java.lang.String = js.native

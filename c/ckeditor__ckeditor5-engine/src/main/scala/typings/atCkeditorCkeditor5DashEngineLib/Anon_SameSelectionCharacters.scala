@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SameSelectionCharacters extends js.Object {
   var lastRangeBackward: js.UndefOr[scala.Boolean] = js.undefined
   var order: js.UndefOr[js.Array[scala.Double]] = js.undefined

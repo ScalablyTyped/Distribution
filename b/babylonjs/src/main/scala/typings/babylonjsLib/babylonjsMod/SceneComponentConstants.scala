@@ -6,18 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Groups all the scene component constants in one place to ease maintenance.
-     * @hidden
-     */
+  * Groups all the scene component constants in one place to ease maintenance.
+  * @hidden
+  */
 @JSImport("babylonjs", "SceneComponentConstants")
 @js.native
 class SceneComponentConstants ()
   extends babylonjsLib.BABYLONNs.SceneComponentConstants
 
 /**
-     * Groups all the scene component constants in one place to ease maintenance.
-     * @hidden
-     */
+  * Groups all the scene component constants in one place to ease maintenance.
+  * @hidden
+  */
 @JSImport("babylonjs", "SceneComponentConstants")
 @js.native
 object SceneComponentConstants extends js.Object {

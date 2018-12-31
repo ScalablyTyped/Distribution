@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetTimesResult extends js.Object {
   var dawn: stdLib.Date
   var dusk: stdLib.Date

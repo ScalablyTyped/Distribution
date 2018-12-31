@@ -13,8 +13,8 @@ object scheduledeventsNs extends js.Object {
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.scheduledeventsNs.IntervalType
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/scheduled-events relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/scheduled-events relevant section in reference guide}
+    */
   @js.native
   class ScheduledEvent protected ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.scheduledeventsNs.ScheduledEvent {
@@ -37,16 +37,16 @@ object scheduledeventsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/scheduled-events relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/scheduled-events relevant section in reference guide}
+    */
   @js.native
   object ScheduledEvent extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenScheduledeventsMod.StructureVersionInfo = js.native
     /**
-             * Creates a new ScheduledEvent unit in the SDK and on the server.
-             * Expects one argument, the projects.IFolderBase in which this unit is contained.
-             */
+      * Creates a new ScheduledEvent unit in the SDK and on the server.
+      * Expects one argument, the projects.IFolderBase in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenScheduledeventsMod.scheduledeventsNs.ScheduledEvent = js.native
   }
   

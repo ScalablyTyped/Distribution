@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SsdpOptions extends js.Object {
   /** A logger function to use instead of the default. The first argument to the function can contain a format string. */
-  var customLogger: js.UndefOr[js.Function2[/* format */ java.lang.String, /* repeated */js.Any, scala.Unit]] = js.undefined
+  var customLogger: js.UndefOr[js.Function2[/* format */ java.lang.String, /* repeated */ js.Any, scala.Unit]] = js.undefined
   /** Path to SSDP description file */
   var description: js.UndefOr[java.lang.String] = js.undefined
   /** Additional headers */

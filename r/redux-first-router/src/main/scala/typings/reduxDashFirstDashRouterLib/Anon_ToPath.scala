@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ToPath[TState] extends js.Object {
   var capitalizedWords: js.UndefOr[scala.Boolean] = js.undefined
   var coerceNumbers: js.UndefOr[scala.Boolean] = js.undefined

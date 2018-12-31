@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TabIdPopup extends js.Object {
   /** The html file to show in a popup. If set to the empty string (''), no popup is shown. */
   var popup: java.lang.String | scala.Null

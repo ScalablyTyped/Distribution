@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TypeofTypeAnnotation extends Node {
   var argument: FlowTypeAnnotation
   @JSName("type")

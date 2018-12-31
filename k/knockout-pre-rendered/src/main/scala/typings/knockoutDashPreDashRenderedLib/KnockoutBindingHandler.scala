@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KnockoutBindingHandler extends js.Object {
   var init: js.UndefOr[
     js.Function5[

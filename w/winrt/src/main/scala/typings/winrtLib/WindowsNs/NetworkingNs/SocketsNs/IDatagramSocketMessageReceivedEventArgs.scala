@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDatagramSocketMessageReceivedEventArgs extends js.Object {
   var localAddress: winrtLib.WindowsNs.NetworkingNs.HostName
   var remoteAddress: winrtLib.WindowsNs.NetworkingNs.HostName

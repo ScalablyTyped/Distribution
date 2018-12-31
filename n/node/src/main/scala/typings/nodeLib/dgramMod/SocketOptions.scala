@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SocketOptions extends js.Object {
   var lookup: js.UndefOr[
     js.Function3[

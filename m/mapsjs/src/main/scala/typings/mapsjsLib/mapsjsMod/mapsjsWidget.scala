@@ -12,56 +12,24 @@ trait mapsjsWidget extends js.Object {
   	 * above tiled map content. These elements do not scale with the map
   	 * scale. This is used to place markers or callouts on the map
   	 * @param {HTMLElement} element Any html that can be added to the DOM.
-       * @param {number} mapUnitsX The x coordinate of the insertion point in map units.
-       * @param {number} mapUnitsY The y coordinate of the insertion point in map units.
-       * @param {function} [addAction] Callback function called after the 
-       * DOM element has been placed with signature addAction(element).
-       * @param {object} dragOptions JavaScript object of the form {dragEnabled,
-       * useElementInsteadOfNewGestureOverlay, downAction, moveAction, upAction, 
-       * wheelAction } where dragEnabled flags whether dragging should be
-       * enabled on the element, and downAction, moveAction, upAction, and 
-       * wheelAction are callback functions invoked on mousedown, mousemove,
-       * mouseup, and scroll events respectively.
+    * @param {number} mapUnitsX The x coordinate of the insertion point in map units.
+    * @param {number} mapUnitsY The y coordinate of the insertion point in map units.
+    * @param {function} [addAction] Callback function called after the 
+    * DOM element has been placed with signature addAction(element).
+    * @param {object} dragOptions JavaScript object of the form {dragEnabled,
+    * useElementInsteadOfNewGestureOverlay, downAction, moveAction, upAction, 
+    * wheelAction } where dragEnabled flags whether dragging should be
+    * enabled on the element, and downAction, moveAction, upAction, and 
+    * wheelAction are callback functions invoked on mousedown, mousemove,
+    * mouseup, and scroll events respectively.
   	 */
   def addFixedContentElement(element: stdLib.HTMLElement, mapUnitsX: scala.Double, mapUnitsY: scala.Double): scala.Unit = js.native
-  /**
-  	 * Add a fixed element to the content area which resides at a z-level 
-  	 * above tiled map content. These elements do not scale with the map
-  	 * scale. This is used to place markers or callouts on the map
-  	 * @param {HTMLElement} element Any html that can be added to the DOM.
-       * @param {number} mapUnitsX The x coordinate of the insertion point in map units.
-       * @param {number} mapUnitsY The y coordinate of the insertion point in map units.
-       * @param {function} [addAction] Callback function called after the 
-       * DOM element has been placed with signature addAction(element).
-       * @param {object} dragOptions JavaScript object of the form {dragEnabled,
-       * useElementInsteadOfNewGestureOverlay, downAction, moveAction, upAction, 
-       * wheelAction } where dragEnabled flags whether dragging should be
-       * enabled on the element, and downAction, moveAction, upAction, and 
-       * wheelAction are callback functions invoked on mousedown, mousemove,
-       * mouseup, and scroll events respectively.
-  	 */
   def addFixedContentElement(
     element: stdLib.HTMLElement,
     mapUnitsX: scala.Double,
     mapUnitsY: scala.Double,
     addAction: js.Function1[/* ele */ stdLib.HTMLElement, scala.Unit]
   ): scala.Unit = js.native
-  /**
-  	 * Add a fixed element to the content area which resides at a z-level 
-  	 * above tiled map content. These elements do not scale with the map
-  	 * scale. This is used to place markers or callouts on the map
-  	 * @param {HTMLElement} element Any html that can be added to the DOM.
-       * @param {number} mapUnitsX The x coordinate of the insertion point in map units.
-       * @param {number} mapUnitsY The y coordinate of the insertion point in map units.
-       * @param {function} [addAction] Callback function called after the 
-       * DOM element has been placed with signature addAction(element).
-       * @param {object} dragOptions JavaScript object of the form {dragEnabled,
-       * useElementInsteadOfNewGestureOverlay, downAction, moveAction, upAction, 
-       * wheelAction } where dragEnabled flags whether dragging should be
-       * enabled on the element, and downAction, moveAction, upAction, and 
-       * wheelAction are callback functions invoked on mousedown, mousemove,
-       * mouseup, and scroll events respectively.
-  	 */
   def addFixedContentElement(
     element: stdLib.HTMLElement,
     mapUnitsX: scala.Double,
@@ -77,43 +45,17 @@ trait mapsjsWidget extends js.Object {
   	 * for resource cleanup.
   	 * @param {styleGeometry} styledGeom The styledGeometry to render.
   	 * @param {string} key String used to tie a geometry to its SVG
-       * @param {function} addAction optional function that is called when mapsjs adds an svg element to the DOM representing this styledGeometry.
-       * @param {function} removeAction optional function that is called when mapsjs adds an svg element to the DOM representing this styledGeometry.
+    * @param {function} addAction optional function that is called when mapsjs adds an svg element to the DOM representing this styledGeometry.
+    * @param {function} removeAction optional function that is called when mapsjs adds an svg element to the DOM representing this styledGeometry.
   	 * rendering in the DOM.
   	 * @returns {element} The SVG element which was added to the DOM.
   	 */
   def addPathGeometry(styledGeom: styledGeometry, key: java.lang.String): stdLib.SVGElement = js.native
-  /**
-  	 * Add a styled path geometry to the content area which resides at a z-level 
-  	 * above tiled map content. The geometry is converted to SVG and added to the 
-  	 * content area DOM. If an attempt to add a geometry is made with the same 
-  	 * key, the geometry is swapped out. You must remove using removePathGeometry 
-  	 * for resource cleanup.
-  	 * @param {styleGeometry} styledGeom The styledGeometry to render.
-  	 * @param {string} key String used to tie a geometry to its SVG
-       * @param {function} addAction optional function that is called when mapsjs adds an svg element to the DOM representing this styledGeometry.
-       * @param {function} removeAction optional function that is called when mapsjs adds an svg element to the DOM representing this styledGeometry.
-  	 * rendering in the DOM.
-  	 * @returns {element} The SVG element which was added to the DOM.
-  	 */
   def addPathGeometry(
     styledGeom: styledGeometry,
     key: java.lang.String,
     addAction: js.Function1[/* svg */ stdLib.SVGElement, scala.Unit]
   ): stdLib.SVGElement = js.native
-  /**
-  	 * Add a styled path geometry to the content area which resides at a z-level 
-  	 * above tiled map content. The geometry is converted to SVG and added to the 
-  	 * content area DOM. If an attempt to add a geometry is made with the same 
-  	 * key, the geometry is swapped out. You must remove using removePathGeometry 
-  	 * for resource cleanup.
-  	 * @param {styleGeometry} styledGeom The styledGeometry to render.
-  	 * @param {string} key String used to tie a geometry to its SVG
-       * @param {function} addAction optional function that is called when mapsjs adds an svg element to the DOM representing this styledGeometry.
-       * @param {function} removeAction optional function that is called when mapsjs adds an svg element to the DOM representing this styledGeometry.
-  	 * rendering in the DOM.
-  	 * @returns {element} The SVG element which was added to the DOM.
-  	 */
   def addPathGeometry(
     styledGeom: styledGeometry,
     key: java.lang.String,
@@ -129,9 +71,9 @@ trait mapsjsWidget extends js.Object {
   	 * shapeChangeAction, envelopeEndAction, circleEndAction, supressNodeAdd, leavePath }
   	 * where key is a a string associated with this geometry, shapeType
   	 * is the type of shape this geometry is, one of 'polygon', 'polyline', 'multipoint', 'envelope' or 'circle', 
-       * geometryStyle is a geometryStyle which should be applied
+    * geometryStyle is a geometryStyle which should be applied
   	 * to the digitized geometry, styledGeometry is an optional styledGeometry for existing paths to edit, set this to enter edit mode,
-       * nodeTapAndHoldAction is a callback invoked
+    * nodeTapAndHoldAction is a callback invoked
   	 * when any point in the geometry is clicked and held and has the
   	 * signature nodeTapAndHoldAction(setIdx, idx), nodeMoveAction is a
   	 * callback invoked after any node is dragged to a new location and
@@ -139,7 +81,7 @@ trait mapsjsWidget extends js.Object {
   	 * is a callback that is invoked after the geometry shape changes and,
   	 * has signature shapeChangeAction(shape), envelopeEndAction is a callback 
   	 * invoked after an envelope is created and has signature envelopeEndAction(envelope), 
-       * circleEndAction is similar to envelopeEndAction but takes a geometry.polygon representing the circle,
+    * circleEndAction is similar to envelopeEndAction but takes a geometry.polygon representing the circle,
   	 * and leavePath is a flag that indicates whether the digitized shape
   	 * should be left on the map after digitization is complete.
   	 */
@@ -163,31 +105,13 @@ trait mapsjsWidget extends js.Object {
   	 * Animates parabolically from the current map center and zoom level
   	 * to the given map center and zoom level.
   	 * @param {point} center Desired map center as a point.
-       * @param {number} zl Desired zoom level.
-       * @param {number} [durationMs] Animation duration in miliseconds.
-       * @param {function} [completeAction] Function to call after the animation
-       * completes with signature completeAction().
+    * @param {number} zl Desired zoom level.
+    * @param {number} [durationMs] Animation duration in miliseconds.
+    * @param {function} [completeAction] Function to call after the animation
+    * completes with signature completeAction().
   	 */
   def flyTo(center: point, zl: scala.Double): scala.Unit = js.native
-  /**
-  	 * Animates parabolically from the current map center and zoom level
-  	 * to the given map center and zoom level.
-  	 * @param {point} center Desired map center as a point.
-       * @param {number} zl Desired zoom level.
-       * @param {number} [durationMs] Animation duration in miliseconds.
-       * @param {function} [completeAction] Function to call after the animation
-       * completes with signature completeAction().
-  	 */
   def flyTo(center: point, zl: scala.Double, durationMs: scala.Double): scala.Unit = js.native
-  /**
-  	 * Animates parabolically from the current map center and zoom level
-  	 * to the given map center and zoom level.
-  	 * @param {point} center Desired map center as a point.
-       * @param {number} zl Desired zoom level.
-       * @param {number} [durationMs] Animation duration in miliseconds.
-       * @param {function} [completeAction] Function to call after the animation
-       * completes with signature completeAction().
-  	 */
   def flyTo(
     center: point,
     zl: scala.Double,
@@ -272,24 +196,18 @@ trait mapsjsWidget extends js.Object {
   	 */
   def moveFixedContentElement(element: stdLib.HTMLElement, mapUnitsX: scala.Double, mapUnitsY: scala.Double): scala.Unit = js.native
   /**
-      * Offsets the current map center by the specified deltas in pixels. 
-      * @param {number} [dx] offset x in pixels.
-      * @param {number} [dy] offset y in pixels.
-      */
+    * Offsets the current map center by the specified deltas in pixels. 
+    * @param {number} [dx] offset x in pixels.
+    * @param {number} [dy] offset y in pixels.
+    */
   def offsetMapCenterByPixelDelta(dx: scala.Double, dy: scala.Double): scala.Unit = js.native
   /**
-      * Offsets the current map center by the specified deltas in pixels - animated version.
-      * @param {number} [dx] offset x in pixels.
-      * @param {number} [dy] offset y in pixels.
-      * @param {number} [durationMs] animation duration in mS.
-      */
+    * Offsets the current map center by the specified deltas in pixels - animated version.
+    * @param {number} [dx] offset x in pixels.
+    * @param {number} [dy] offset y in pixels.
+    * @param {number} [durationMs] animation duration in mS.
+    */
   def offsetMapCenterByPixelDeltaAnimate(dx: scala.Double, dy: scala.Double): scala.Unit = js.native
-  /**
-      * Offsets the current map center by the specified deltas in pixels - animated version.
-      * @param {number} [dx] offset x in pixels.
-      * @param {number} [dy] offset y in pixels.
-      * @param {number} [durationMs] animation duration in mS.
-      */
   def offsetMapCenterByPixelDeltaAnimate(dx: scala.Double, dy: scala.Double, durationMs: scala.Double): scala.Unit = js.native
   /**
   	 * Removes the last set from the currently digitizing path.
@@ -320,8 +238,8 @@ trait mapsjsWidget extends js.Object {
   	 */
   def redraw(): scala.Unit = js.native
   /**
-      * Removes all tile layers off the display stack
-      */
+    * Removes all tile layers off the display stack
+    */
   def removeAllTileLayers(): scala.Unit = js.native
   /**
   	 * Removes a fixed content element.
@@ -332,19 +250,14 @@ trait mapsjsWidget extends js.Object {
   /**
   	 * Removes a styledGeometry from display.
   	 * @param {string} key The key of the geometry to remove.
-       * @returns {element} The SVG element which was removed from the DOM.
+    * @returns {element} The SVG element which was removed from the DOM.
   	 */
   def removePathGeometry(): stdLib.SVGElement = js.native
-  /**
-  	 * Removes a styledGeometry from display.
-  	 * @param {string} key The key of the geometry to remove.
-       * @returns {element} The SVG element which was removed from the DOM.
-  	 */
   def removePathGeometry(key: java.lang.String): stdLib.SVGElement = js.native
   /**
-      * Removes a tile layer off the display stack by reference
-      * @param {tile.layer} tl A tile layer to remove.
-      */
+    * Removes a tile layer off the display stack by reference
+    * @param {tile.layer} tl A tile layer to remove.
+    */
   def removeTileLayer(tl: mapsjsLib.mapsjsMod.tileNs.layer): scala.Unit = js.native
   /**
   	 * Updates the map to the size of its container. This updates internal 
@@ -391,8 +304,8 @@ trait mapsjsWidget extends js.Object {
   	 * are placing fixed content (such as point features) on the map and 
   	 * need to handle gestures on the placed content. You can call this 
   	 * function at any time to change the order.
-       * @param {boolean} flag Whether or not the fixed content layer should 
-       * reside above the gesture layer.
+    * @param {boolean} flag Whether or not the fixed content layer should 
+    * reside above the gesture layer.
   	 */
   def setDrawnContentZorderToTop(flag: scala.Boolean): scala.Unit = js.native
   /** 
@@ -414,46 +327,20 @@ trait mapsjsWidget extends js.Object {
   	 * Same as setMapCenter except will animate from current map center to the 
   	 * specified location
   	 * @param {point} center The map center as a point.
-       * @param {number} [durationMs] Duration in miliseconds.
-       * @param {function} [completeAction] Callback to perform on animaton complete.
+    * @param {number} [durationMs] Duration in miliseconds.
+    * @param {function} [completeAction] Callback to perform on animaton complete.
   	 */
   def setMapCenterAnimate(center: point): scala.Unit = js.native
-  /**
-  	 * Same as setMapCenter except will animate from current map center to the 
-  	 * specified location
-  	 * @param {point} center The map center as a point.
-       * @param {number} [durationMs] Duration in miliseconds.
-       * @param {function} [completeAction] Callback to perform on animaton complete.
-  	 */
   def setMapCenterAnimate(center: point, durationMs: scala.Double): scala.Unit = js.native
-  /**
-  	 * Same as setMapCenter except will animate from current map center to the 
-  	 * specified location
-  	 * @param {point} center The map center as a point.
-       * @param {number} [durationMs] Duration in miliseconds.
-       * @param {function} [completeAction] Callback to perform on animaton complete.
-  	 */
   def setMapCenterAnimate(center: point, durationMs: scala.Double, completeAction: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
   	 * Sets the map center to the current geolocation if supported. The map is
-       * animated to the new location.
-       * @param {number} [durationMs] Duration in miliseconds.
-       * @param {function} [completeAction] Callback to perform on animaton complete.
+    * animated to the new location.
+    * @param {number} [durationMs] Duration in miliseconds.
+    * @param {function} [completeAction] Callback to perform on animaton complete.
   	 */
   def setMapCenterToGeolocationAnimate(): scala.Unit = js.native
-  /**
-  	 * Sets the map center to the current geolocation if supported. The map is
-       * animated to the new location.
-       * @param {number} [durationMs] Duration in miliseconds.
-       * @param {function} [completeAction] Callback to perform on animaton complete.
-  	 */
   def setMapCenterToGeolocationAnimate(durationMs: scala.Double): scala.Unit = js.native
-  /**
-  	 * Sets the map center to the current geolocation if supported. The map is
-       * animated to the new location.
-       * @param {number} [durationMs] Duration in miliseconds.
-       * @param {function} [completeAction] Callback to perform on animaton complete.
-  	 */
   def setMapCenterToGeolocationAnimate(durationMs: scala.Double, completeAction: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
   	 * Sets the maximum zoom level for the map.
@@ -492,26 +379,12 @@ trait mapsjsWidget extends js.Object {
   /**
   	 * Animates the map from the current zoom level to the given zoom level.
   	 * @param {number} zl The desired zoom level.
-       * @param {number} [durationMs] The duration in miliseconds.
-       * @param {function} [completeAction] Function to call when the animation
-       * completes with signature completeAction().
+    * @param {number} [durationMs] The duration in miliseconds.
+    * @param {function} [completeAction] Function to call when the animation
+    * completes with signature completeAction().
   	 */
   def setZoomLevelAnimate(zl: scala.Double): scala.Unit = js.native
-  /**
-  	 * Animates the map from the current zoom level to the given zoom level.
-  	 * @param {number} zl The desired zoom level.
-       * @param {number} [durationMs] The duration in miliseconds.
-       * @param {function} [completeAction] Function to call when the animation
-       * completes with signature completeAction().
-  	 */
   def setZoomLevelAnimate(zl: scala.Double, durationMs: scala.Double): scala.Unit = js.native
-  /**
-  	 * Animates the map from the current zoom level to the given zoom level.
-  	 * @param {number} zl The desired zoom level.
-       * @param {number} [durationMs] The duration in miliseconds.
-       * @param {function} [completeAction] Function to call when the animation
-       * completes with signature completeAction().
-  	 */
   def setZoomLevelAnimate(zl: scala.Double, durationMs: scala.Double, completeAction: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
   	 * Updates an existing path geometry to reflect a style change.
@@ -530,11 +403,6 @@ trait mapsjsWidget extends js.Object {
   	 * @param {number} [durationMs] Duration in miliseconds.
   	 */
   def zoomDeltaAnimate(delta: scala.Double): scala.Unit = js.native
-  /** 
-  	 * Animates a change to the current zoom level.
-  	 * @param {number} delta Change to be added to the current zoom level.
-  	 * @param {number} [durationMs] Duration in miliseconds.
-  	 */
   def zoomDeltaAnimate(delta: scala.Double, durationMs: scala.Double): scala.Unit = js.native
 }
 

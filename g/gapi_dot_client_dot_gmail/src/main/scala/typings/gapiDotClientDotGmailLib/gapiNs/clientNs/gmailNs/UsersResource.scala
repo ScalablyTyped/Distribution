@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UsersResource extends js.Object {
   var drafts: DraftsResource
   var history: HistoryResource

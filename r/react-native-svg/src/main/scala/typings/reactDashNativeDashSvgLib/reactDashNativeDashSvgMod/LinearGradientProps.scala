@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinearGradientProps extends js.Object {
   var gradientUnits: js.UndefOr[Units] = js.undefined
   var id: java.lang.String

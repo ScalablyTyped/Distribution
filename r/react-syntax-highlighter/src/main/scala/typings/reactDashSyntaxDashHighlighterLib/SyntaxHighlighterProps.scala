@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SyntaxHighlighterProps
   extends /* spread */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var codeTagProps: js.UndefOr[reactLib.reactMod.ReactNs.DOMAttributes[reactLib.HTMLElement]] = js.undefined

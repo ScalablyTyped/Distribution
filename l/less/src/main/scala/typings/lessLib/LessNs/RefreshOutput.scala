@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RefreshOutput extends js.Object {
   var endTime: stdLib.Date
   var sheets: scala.Double

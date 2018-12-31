@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListenerCollection extends js.Object {
   def add(
     `type`: java.lang.String,

@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LiveStream extends js.Object {
   /**
-               * The cdn object defines the live stream's content delivery network (CDN) settings. These settings provide details about the manner in which you stream
-               * your content to YouTube.
-               */
+    * The cdn object defines the live stream's content delivery network (CDN) settings. These settings provide details about the manner in which you stream
+    * your content to YouTube.
+    */
   var cdn: js.UndefOr[CdnSettings] = js.undefined
   /** The content_details object contains information about the stream, including the closed captions ingestion URL. */
   var contentDetails: js.UndefOr[LiveStreamContentDetails] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ValidationOptions extends js.Object {
   var applicable: js.UndefOr[js.Function0[_]] = js.undefined
     // the function used to determine if the property is applicable

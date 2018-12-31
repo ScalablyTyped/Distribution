@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CollapseProps extends js.Object {
   /** 手风琴效果 */
   var accordion: js.UndefOr[scala.Boolean] = js.undefined

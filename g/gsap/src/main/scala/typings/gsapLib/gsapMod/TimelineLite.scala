@@ -16,19 +16,11 @@ class TimelineLite ()
 @js.native
 object TimelineLite extends js.Object {
   /**
-           * Seamlessly transfers all tweens, timelines, and [optionally] delayed calls from the root timeline into a new TimelineLite so that you can perform advanced tasks on a seemingly global
-           * basis without affecting tweens/timelines that you create after the export.
-           */
+    * Seamlessly transfers all tweens, timelines, and [optionally] delayed calls from the root timeline into a new TimelineLite so that you can perform advanced tasks on a seemingly global
+    * basis without affecting tweens/timelines that you create after the export.
+    */
   def exportRoot(): gsapLib.gsapNs.TimelineLite = js.native
-  /**
-           * Seamlessly transfers all tweens, timelines, and [optionally] delayed calls from the root timeline into a new TimelineLite so that you can perform advanced tasks on a seemingly global
-           * basis without affecting tweens/timelines that you create after the export.
-           */
   def exportRoot(vars: js.Object): gsapLib.gsapNs.TimelineLite = js.native
-  /**
-           * Seamlessly transfers all tweens, timelines, and [optionally] delayed calls from the root timeline into a new TimelineLite so that you can perform advanced tasks on a seemingly global
-           * basis without affecting tweens/timelines that you create after the export.
-           */
   def exportRoot(vars: js.Object, omitDelayedCalls: scala.Boolean): gsapLib.gsapNs.TimelineLite = js.native
 }
 

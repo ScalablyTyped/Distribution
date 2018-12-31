@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BusboyConfig extends js.Object {
   var defCharset: js.UndefOr[java.lang.String] = js.undefined
   var fileHwm: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RunUpdateModel extends js.Object {
   var build: ShallowReference
   var buildDropLocation: java.lang.String

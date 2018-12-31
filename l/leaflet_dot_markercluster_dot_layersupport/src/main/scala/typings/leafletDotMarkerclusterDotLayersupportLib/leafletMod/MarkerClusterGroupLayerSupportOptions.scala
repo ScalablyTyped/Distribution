@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Dropped any */ 
-trait MarkerClusterGroupLayerSupportOptions extends js.Object {
+- Dropped any */ trait MarkerClusterGroupLayerSupportOptions extends js.Object {
   /**
-           * Buffer single addLayer and removeLayer requests for efficiency.
-           */
+    * Buffer single addLayer and removeLayer requests for efficiency.
+    */
   var singleAddRemoveBufferDuration: scala.Double
 }
 

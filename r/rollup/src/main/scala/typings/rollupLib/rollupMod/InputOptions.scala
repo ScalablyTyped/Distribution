@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InputOptions extends js.Object {
   var acorn: js.UndefOr[js.Any] = js.undefined
   var acornInjectPlugins: js.UndefOr[js.Array[js.Function]] = js.undefined

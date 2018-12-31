@@ -14,7 +14,7 @@ object helpersNs extends js.Object {
   def mustache(
     str: java.lang.String,
     data: org.scalablytyped.runtime.StringDictionary[
-      java.lang.String | (js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String])
+      java.lang.String | (js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String])
     ]
   ): java.lang.String = js.native
   def randomize(): java.lang.String = js.native

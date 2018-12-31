@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetDetails extends js.Object {
   /** Optional. Whether to check the content settings for an incognito session. (default false)  */
   var incognito: js.UndefOr[scala.Boolean] = js.undefined

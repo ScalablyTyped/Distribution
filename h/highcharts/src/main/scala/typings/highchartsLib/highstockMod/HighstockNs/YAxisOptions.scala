@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait YAxisOptions extends AxisOptions {
   var height: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var maxLength: js.UndefOr[scala.Double | java.lang.String] = js.undefined

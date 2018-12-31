@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileCoverage extends js.Object {
   def computeBranchTotals(): FileCoverageTotal
   def computeSimpleTotals(property: java.lang.String): FileCoverageTotal

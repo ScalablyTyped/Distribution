@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents timeline properties of the SystemMediaTransportControls . Pass an instance of this class to the UpdateTimelineProperties method to update the properties. */
 @JSGlobal("Windows.Media.SystemMediaTransportControlsTimelineProperties")
 @js.native
+/** Initializes a new instance of the SystemMediaTransportControlsTimelineProperties class. */
 class SystemMediaTransportControlsTimelineProperties () extends js.Object {
   /** Gets or sets a value representing the end time of the currently playing media item. */
   var endTime: scala.Double = js.native

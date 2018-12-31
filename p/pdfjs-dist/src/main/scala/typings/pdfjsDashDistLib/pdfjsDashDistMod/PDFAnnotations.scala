@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PDFAnnotations extends js.Object {
   def getData(): PDFAnnotationData
    // throw new NotImplementedException()

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Latitude extends js.Object {
    // 速度，以米/每秒计
   var accuracy: scala.Double

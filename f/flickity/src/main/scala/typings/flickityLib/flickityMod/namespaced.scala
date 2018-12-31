@@ -9,32 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced protected () extends Flickity {
   /**
-       * Initializes an new instance of Flickity .
-       *
-       * @param element Element selector string or container Element to initialize Flickity on
-       * @param options (IFlickityOptions) Flickity options
-       */
+    * Initializes an new instance of Flickity .
+    *
+    * @param element Element selector string or container Element to initialize Flickity on
+    * @param options (IFlickityOptions) Flickity options
+    */
   def this(selector: java.lang.String) = this()
-  /**
-       * Initializes an new instance of Flickity .
-       *
-       * @param element Element selector string or container Element to initialize Flickity on
-       * @param options (IFlickityOptions) Flickity options
-       */
   def this(selector: stdLib.Element) = this()
-  /**
-       * Initializes an new instance of Flickity .
-       *
-       * @param element Element selector string or container Element to initialize Flickity on
-       * @param options (IFlickityOptions) Flickity options
-       */
   def this(selector: java.lang.String, options: FlickityOptions) = this()
-  /**
-       * Initializes an new instance of Flickity .
-       *
-       * @param element Element selector string or container Element to initialize Flickity on
-       * @param options (IFlickityOptions) Flickity options
-       */
   def this(selector: stdLib.Element, options: FlickityOptions) = this()
 }
 
@@ -43,17 +25,11 @@ class namespaced protected () extends Flickity {
 object namespaced extends js.Object {
   // static methods
   /**
-       * (static) Get the Flickity instance.
-       *
-       * @param element Element selector string
-       */
+    * (static) Get the Flickity instance.
+    *
+    * @param element Element selector string
+    */
   def data(element: java.lang.String): flickityLib.flickityMod.Flickity = js.native
-  // static methods
-  /**
-       * (static) Get the Flickity instance.
-       *
-       * @param element Element selector string
-       */
   def data(element: stdLib.Element): flickityLib.flickityMod.Flickity = js.native
 }
 

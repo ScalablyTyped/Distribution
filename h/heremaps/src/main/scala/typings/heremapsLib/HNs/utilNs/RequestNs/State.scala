@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait State extends js.Object
 
 /**
-             * The supported states of an request
-             */
+  * The supported states of an request
+  */
 @JSGlobal("H.util.Request.State")
 @js.native
 object State extends js.Object {

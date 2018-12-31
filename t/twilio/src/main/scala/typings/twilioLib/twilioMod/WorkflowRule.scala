@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("twilio", "WorkflowRule")
 @js.native
+ // Defined property mapped to friendly_name.
 class WorkflowRule ()
   extends twilioLib.twilioMod.twilioNs.WorkflowRule {
-   // Defined property mapped to friendly_name.
   def this(options: twilioLib.twilioMod.twilioNs.WorkflowRuleOptions) = this()
   /* CompleteClass */
   override var expression: java.lang.String = js.native

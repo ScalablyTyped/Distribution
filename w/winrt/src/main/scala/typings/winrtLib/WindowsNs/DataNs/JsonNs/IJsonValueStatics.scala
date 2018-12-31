@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IJsonValueStatics extends js.Object {
   def createBooleanValue(input: scala.Boolean): JsonValue
   def createNumberValue(input: scala.Double): JsonValue

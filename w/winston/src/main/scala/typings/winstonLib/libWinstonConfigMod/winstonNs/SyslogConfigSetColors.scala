@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SyslogConfigSetColors extends AbstractConfigSetColors {
   var alert: java.lang.String | js.Array[java.lang.String]
   var crit: java.lang.String | js.Array[java.lang.String]

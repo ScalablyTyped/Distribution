@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnActiveCellChangedEventArgs[T /* <: SlickData */] extends GridEventArgs[T] {
   var cell: scala.Double
   var row: scala.Double

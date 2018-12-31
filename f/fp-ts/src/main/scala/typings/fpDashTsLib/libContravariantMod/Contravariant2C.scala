@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Contravariant2C[F /* <: fpDashTsLib.libHKTMod.URIS2 */, L] extends js.Object {
   val URI: F
   val _L: L

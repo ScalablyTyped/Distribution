@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line: interface-name
-
 trait IGridData extends js.Object {
   var AdditionalParams: js.UndefOr[js.Any] = js.undefined
   var AutoFilterEntries: js.UndefOr[js.Any] = js.undefined

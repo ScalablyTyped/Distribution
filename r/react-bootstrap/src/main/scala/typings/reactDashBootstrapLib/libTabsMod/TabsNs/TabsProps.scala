@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TabsProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libTabsMod.Tabs] {
   var activeKey: js.UndefOr[js.Any] = js.undefined

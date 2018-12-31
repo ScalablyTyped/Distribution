@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MsgPackDownloadOption extends js.Object {
   var after: js.UndefOr[
     js.Function3[
@@ -19,12 +18,12 @@ trait MsgPackDownloadOption extends js.Object {
     js.Function2[/* xhr */ stdLib.XMLHttpRequest, /* option */ MsgPackDownloadOption, scala.Unit]
   ] = js.undefined
   /**
-       * timeout sec.
-       */
+    * timeout sec.
+    */
   var timeout: js.UndefOr[scala.Double] = js.undefined
   /**
-       * use WebWorker if true.
-       */
+    * use WebWorker if true.
+    */
   var worker: js.UndefOr[scala.Boolean] = js.undefined
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ApprovalOptions extends js.Object {
   var autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped: scala.Boolean
   var enforceIdentityRevalidation: scala.Boolean

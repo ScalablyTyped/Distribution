@@ -12,9 +12,9 @@ sealed trait ScriptKind extends js.Object
 @js.native
 object ScriptKind extends js.Object {
   /**
-           * Used on extensions that doesn't define the ScriptKind but the content defines it.
-           * Deferred extensions are going to be included in all project contexts.
-           */
+    * Used on extensions that doesn't define the ScriptKind but the content defines it.
+    * Deferred extensions are going to be included in all project contexts.
+    */
   @js.native
   sealed trait Deferred
     extends typescriptLib.typescriptMod.tsNs.ScriptKind

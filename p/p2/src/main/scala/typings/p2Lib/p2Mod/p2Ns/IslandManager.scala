@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IslandManager extends Solver {
   var islands: js.Array[Island]
   var nodes: js.Array[IslandNode]

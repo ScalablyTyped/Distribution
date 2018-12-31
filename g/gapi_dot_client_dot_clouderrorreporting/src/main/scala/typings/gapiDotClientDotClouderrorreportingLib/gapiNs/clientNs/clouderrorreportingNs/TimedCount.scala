@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimedCount extends js.Object {
   /** Approximate number of occurrences in the given time period. */
   var count: js.UndefOr[java.lang.String] = js.undefined

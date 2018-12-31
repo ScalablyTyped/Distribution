@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommentsResource extends js.Object {
   /** Marks a comment as not spam. */
   def approve(request: gapiDotClientDotBloggerLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Comment]

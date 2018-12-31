@@ -12,15 +12,15 @@ sealed trait InstalledExtensionStateIssueType extends js.Object
 @js.native
 object InstalledExtensionStateIssueType extends js.Object {
   /**
-       * Represents an installation error, for example an explicit demand not supported
-       */
+    * Represents an installation error, for example an explicit demand not supported
+    */
   @js.native
   sealed trait Error
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.InstalledExtensionStateIssueType
   
   /**
-       * Represents an installation warning, for example an implicit demand not supported
-       */
+    * Represents an installation warning, for example an implicit demand not supported
+    */
   @js.native
   sealed trait Warning
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.InstalledExtensionStateIssueType

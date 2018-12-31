@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AsObject extends js.Object {
   var compilerVersion: googleDashProtobufLib.googleProtobufCompilerPluginUnderscorePbMod.VersionNs.AsObject
   var fileToGenerateList: js.Array[java.lang.String]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColorSpaces extends js.Object {
   var cmyk: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]
   var gl: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/array/pop", JSImport.Namespace)
 @js.native
 object fnArrayPopMod
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayTArrayLike_626826892]
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PugOptions extends js.Object {
   var app: js.UndefOr[koaLib.koaMod.namespaced] = js.undefined
   var basedir: js.UndefOr[java.lang.String] = js.undefined

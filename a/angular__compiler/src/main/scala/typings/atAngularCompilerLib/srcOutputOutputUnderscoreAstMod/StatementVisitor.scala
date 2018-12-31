@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StatementVisitor extends js.Object {
   def visitCommentStmt(stmt: CommentStmt, context: js.Any): js.Any
   def visitDeclareClassStmt(stmt: ClassStmt, context: js.Any): js.Any

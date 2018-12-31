@@ -22,9 +22,6 @@ trait Deferred[T] extends js.Object {
   		 * Calling reject with a reason causes promise to be rejected with that reason.
   		 */
   def reject(): scala.Unit = js.native
-  /**
-  		 * Calling reject with a reason causes promise to be rejected with that reason.
-  		 */
   def reject(reason: js.Any): scala.Unit = js.native
   /**
   		 * Calling resolve with a pending promise causes promise to wait on the passed promise, becoming fulfilled with its
@@ -34,13 +31,6 @@ trait Deferred[T] extends js.Object {
   		 * Calling resolve with a non-promise value causes promise to be fulfilled with that value.
   		 */
   def resolve(): scala.Unit = js.native
-  /**
-  		 * Calling resolve with a pending promise causes promise to wait on the passed promise, becoming fulfilled with its
-  		 * fulfillment value or rejected with its rejection reason (or staying pending forever, if the passed promise does).
-  		 * Calling resolve with a rejected promise causes promise to be rejected with the passed promise's rejection reason.
-  		 * Calling resolve with a fulfilled promise causes promise to be fulfilled with the passed promise's fulfillment value.
-  		 * Calling resolve with a non-promise value causes promise to be fulfilled with that value.
-  		 */
   def resolve(value: IWhenable[T]): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThirdPartyAuthenticationToken extends js.Object {
   /** Name of the third-party authentication token. */
   var name: js.UndefOr[java.lang.String] = js.undefined

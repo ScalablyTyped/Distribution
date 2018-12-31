@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimePickerProps extends js.Object {
   var addon: js.UndefOr[js.Function] = js.undefined
   var allowEmpty: js.UndefOr[scala.Boolean] = js.undefined

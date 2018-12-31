@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RedirectRequest extends js.Object {
   var method: java.lang.String
   var session: js.UndefOr[Session] = js.undefined

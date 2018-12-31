@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait vbox extends js.Object {
   var align: js.UndefOr[java.lang.String] = js.undefined
   var expand: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartAnnotations extends js.Object {
   var boxStyle: js.UndefOr[ChartBoxStyle] = js.undefined
   var datum: js.UndefOr[ChartStemAndStyle] = js.undefined

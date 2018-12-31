@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ButtonStyle extends js.Object {
   /**
-               * 格式#ff0000
-               */
+    * 格式#ff0000
+    */
   var backgroundColor: java.lang.String
   /**
-               * 格式#ff0000
-               */
+    * 格式#ff0000
+    */
   var borderColor: java.lang.String
   var borderRadius: scala.Double
   var borderWidth: scala.Double

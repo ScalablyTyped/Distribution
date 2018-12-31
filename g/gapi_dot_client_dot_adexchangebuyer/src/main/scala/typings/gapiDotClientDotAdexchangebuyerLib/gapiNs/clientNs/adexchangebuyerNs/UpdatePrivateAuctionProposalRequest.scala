@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdatePrivateAuctionProposalRequest extends js.Object {
   /** The externalDealId of the deal to be updated. */
   var externalDealId: js.UndefOr[java.lang.String] = js.undefined

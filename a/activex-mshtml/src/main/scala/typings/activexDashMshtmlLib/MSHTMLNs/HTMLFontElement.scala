@@ -249,7 +249,6 @@ class HTMLFontElement protected () extends js.Object {
   def getAdjacentText(where: java.lang.String): java.lang.String = js.native
   /** @param lFlags [lFlags=0] */
   def getAttribute(strAttributeName: java.lang.String): js.Any = js.native
-  /** @param lFlags [lFlags=0] */
   def getAttribute(strAttributeName: java.lang.String, lFlags: scala.Double): js.Any = js.native
   def getAttributeNS(pvarNS: js.Any, strAttributeName: java.lang.String): js.Any = js.native
   def getAttributeNode(bstrName: java.lang.String): IHTMLDOMAttribute = js.native
@@ -292,7 +291,6 @@ class HTMLFontElement protected () extends js.Object {
   def releaseCapture(): scala.Unit = js.native
   /** @param lFlags [lFlags=1] */
   def removeAttribute(strAttributeName: java.lang.String): scala.Boolean = js.native
-  /** @param lFlags [lFlags=1] */
   def removeAttribute(strAttributeName: java.lang.String, lFlags: scala.Double): scala.Boolean = js.native
   def removeAttributeNS(pvarNS: js.Any, strAttributeName: java.lang.String): scala.Unit = js.native
   def removeAttributeNode(pattr: IHTMLDOMAttribute): IHTMLDOMAttribute = js.native
@@ -302,7 +300,6 @@ class HTMLFontElement protected () extends js.Object {
   def removeFilter(pUnk: js.Any): scala.Unit = js.native
   /** @param fDeep [fDeep=false] */
   def removeNode(): IHTMLDOMNode = js.native
-  /** @param fDeep [fDeep=false] */
   def removeNode(fDeep: scala.Boolean): IHTMLDOMNode = js.native
   def replaceAdjacentText(where: java.lang.String, newText: java.lang.String): java.lang.String = js.native
   def replaceChild(newChild: IHTMLDOMNode, oldChild: IHTMLDOMNode): IHTMLDOMNode = js.native
@@ -312,18 +309,15 @@ class HTMLFontElement protected () extends js.Object {
   def setActive(): scala.Unit = js.native
   /** @param lFlags [lFlags=1] */
   def setAttribute(strAttributeName: java.lang.String, AttributeValue: js.Any): scala.Unit = js.native
-  /** @param lFlags [lFlags=1] */
   def setAttribute(strAttributeName: java.lang.String, AttributeValue: js.Any, lFlags: scala.Double): scala.Unit = js.native
   def setAttributeNS(pvarNS: js.Any, strAttributeName: java.lang.String, pvarAttributeValue: js.Any): scala.Unit = js.native
   def setAttributeNode(pattr: IHTMLDOMAttribute): IHTMLDOMAttribute = js.native
   def setAttributeNodeNS(pattr: IHTMLDOMAttribute2): IHTMLDOMAttribute2 = js.native
   /** @param containerCapture [containerCapture=true] */
   def setCapture(): scala.Unit = js.native
-  /** @param containerCapture [containerCapture=true] */
   def setCapture(containerCapture: scala.Boolean): scala.Unit = js.native
   /** @param language [language=''] */
   def setExpression(propname: java.lang.String, expression: java.lang.String): scala.Unit = js.native
-  /** @param language [language=''] */
   def setExpression(propname: java.lang.String, expression: java.lang.String, language: java.lang.String): scala.Unit = js.native
   def swapNode(otherNode: IHTMLDOMNode): IHTMLDOMNode = js.native
 }

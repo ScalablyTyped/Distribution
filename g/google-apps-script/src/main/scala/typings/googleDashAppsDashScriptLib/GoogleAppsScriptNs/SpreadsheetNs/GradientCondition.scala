@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GradientCondition extends js.Object {
   def getMaxColor(): java.lang.String
   def getMaxType(): InterpolationType

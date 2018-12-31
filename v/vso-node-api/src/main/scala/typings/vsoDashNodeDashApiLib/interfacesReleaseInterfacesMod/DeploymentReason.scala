@@ -12,29 +12,29 @@ sealed trait DeploymentReason extends js.Object
 @js.native
 object DeploymentReason extends js.Object {
   /**
-       * The deployment reason is automated.
-       */
+    * The deployment reason is automated.
+    */
   @js.native
   sealed trait Automated
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentReason
   
   /**
-       * The deployment reason is manual.
-       */
+    * The deployment reason is manual.
+    */
   @js.native
   sealed trait Manual
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentReason
   
   /**
-       * The deployment reason is none.
-       */
+    * The deployment reason is none.
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentReason
   
   /**
-       * The deployment reason is scheduled.
-       */
+    * The deployment reason is scheduled.
+    */
   @js.native
   sealed trait Scheduled
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentReason

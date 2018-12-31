@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Interval[T] extends js.Object {
   var constructor: IntervalConstructor[scala.Double]
   var empty: scala.Boolean

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "DataSync")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class DataSync ()
   extends awsDashSdkLib.awsDashSdkMod.DataSync {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.ClientConfiguration) = this()
 }
 

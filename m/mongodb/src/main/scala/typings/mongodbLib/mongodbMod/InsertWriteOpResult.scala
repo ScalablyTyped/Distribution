@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InsertWriteOpResult extends js.Object {
   var connection: js.Any
   var insertedCount: scala.Double

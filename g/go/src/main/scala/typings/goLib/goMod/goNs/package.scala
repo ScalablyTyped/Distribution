@@ -20,10 +20,10 @@ package object goNs {
   /** A number in place of a Margin object is treated as a uniform Margin with that thickness */
   type MarginLike = Margin | scala.Double
   /**
-      * Palette extends the Diagram class to allow objects to be dragged and placed onto other Diagrams.
-      * Its Diagram.layout is a GridLayout.
-      * The Palette is Diagram.isReadOnly but to support drag-and-drop its Diagram.allowDragOut is true.
-      */
+    * Palette extends the Diagram class to allow objects to be dragged and placed onto other Diagrams.
+    * Its Diagram.layout is a GridLayout.
+    * The Palette is Diagram.isReadOnly but to support drag-and-drop its Diagram.allowDragOut is true.
+    */
   type Palette = Diagram
   /** Either name a property or get the value of a property from an object. */
   type PropertyAccessor = java.lang.String | (js.Function2[/* data */ js.Any, /* newval */ js.Any, js.Any])

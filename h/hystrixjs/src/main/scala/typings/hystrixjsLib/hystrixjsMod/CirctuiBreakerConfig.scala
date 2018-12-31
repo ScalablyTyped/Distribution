@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CirctuiBreakerConfig extends js.Object {
   var circuitBreakerErrorThresholdPercentage: scala.Double
   var circuitBreakerForceClosed: scala.Boolean

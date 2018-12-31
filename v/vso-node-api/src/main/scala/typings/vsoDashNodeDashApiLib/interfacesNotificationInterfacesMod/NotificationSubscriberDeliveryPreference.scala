@@ -28,8 +28,8 @@ object NotificationSubscriberDeliveryPreference extends js.Object {
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationSubscriberDeliveryPreference
   
   /**
-       * Deliver notifications to the subscriber's preferred email address.
-       */
+    * Deliver notifications to the subscriber's preferred email address.
+    */
   @js.native
   sealed trait PreferredEmailAddress
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationSubscriberDeliveryPreference

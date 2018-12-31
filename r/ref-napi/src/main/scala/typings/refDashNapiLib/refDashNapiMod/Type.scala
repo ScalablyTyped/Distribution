@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Type extends js.Object {
   /** The alignment of this datatype when placed inside a struct. */
   var alignment: js.UndefOr[scala.Double] = js.undefined

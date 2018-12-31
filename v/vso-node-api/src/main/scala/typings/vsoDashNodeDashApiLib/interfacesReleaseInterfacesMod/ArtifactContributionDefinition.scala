@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArtifactContributionDefinition extends js.Object {
   var artifactType: java.lang.String
   var artifactTypeStreamMapping: org.scalablytyped.runtime.StringDictionary[java.lang.String]

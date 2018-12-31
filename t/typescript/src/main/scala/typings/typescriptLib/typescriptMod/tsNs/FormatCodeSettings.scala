@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FormatCodeSettings extends EditorSettings {
   val indentMultiLineObjectLiteralBeginningOnBlankLine: js.UndefOr[scala.Boolean] = js.undefined
   val insertSpaceAfterCommaDelimiter: js.UndefOr[scala.Boolean] = js.undefined

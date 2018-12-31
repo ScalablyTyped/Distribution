@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FlexShrink1 extends js.Object {
   var cellDataGetter: reactDashVirtualizedLib.distEsTableMod.TableCellDataGetter
   var cellRenderer: reactDashVirtualizedLib.distEsTableMod.TableCellRenderer

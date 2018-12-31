@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRatingStyles extends js.Object {
   var labelText: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   var ratingButton: atUifabricMergeDashStylesLib.libIStyleMod.IStyle

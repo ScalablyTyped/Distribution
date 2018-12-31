@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ValidityState extends js.Object {
   val badInput: scala.Boolean
   val customError: scala.Boolean

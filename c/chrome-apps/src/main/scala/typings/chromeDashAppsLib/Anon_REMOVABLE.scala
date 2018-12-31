@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_REMOVABLE extends js.Object {
   var FIXED: chromeDashAppsLib.chromeDashAppsLibStrings.fixed
   var REMOVABLE: chromeDashAppsLib.chromeDashAppsLibStrings.removable

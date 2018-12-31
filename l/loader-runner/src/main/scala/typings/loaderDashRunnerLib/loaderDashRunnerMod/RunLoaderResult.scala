@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RunLoaderResult extends js.Object {
   var cacheable: scala.Boolean
   var contextDependencies: js.Array[java.lang.String]

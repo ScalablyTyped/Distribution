@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TableReference extends js.Object {
   /** The time when this table was created, in milliseconds since the epoch. */
   var creationTime: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * [Optional] The time when this table expires, in milliseconds since the epoch. If not present, the table will persist indefinitely. Expired tables will
-                   * be deleted and their storage reclaimed.
-                   */
+    * [Optional] The time when this table expires, in milliseconds since the epoch. If not present, the table will persist indefinitely. Expired tables will
+    * be deleted and their storage reclaimed.
+    */
   var expirationTime: js.UndefOr[java.lang.String] = js.undefined
   /** The user-friendly name for this table. */
   var friendlyName: js.UndefOr[java.lang.String] = js.undefined

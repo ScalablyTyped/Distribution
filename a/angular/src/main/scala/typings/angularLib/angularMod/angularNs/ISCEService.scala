@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 // SCEService
 // see http://docs.angularjs.org/api/ng.$sce
 ///////////////////////////////////////////////////////////////////////////
-
 trait ISCEService extends js.Object {
   def getTrusted(`type`: java.lang.String, mayBeTrusted: js.Any): js.Any
   def getTrustedCss(value: js.Any): js.Any

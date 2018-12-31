@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubscriptionProperties extends js.Object {
   var AutoDeleteOnIdle: scala.Boolean
   var DeadLetteringOnFilterEvaluationExceptions: java.lang.String

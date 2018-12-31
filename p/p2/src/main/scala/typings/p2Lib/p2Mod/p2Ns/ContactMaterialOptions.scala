@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContactMaterialOptions extends js.Object {
   var friction: js.UndefOr[scala.Double] = js.undefined
   var frictionRelaxation: js.UndefOr[scala.Double] = js.undefined

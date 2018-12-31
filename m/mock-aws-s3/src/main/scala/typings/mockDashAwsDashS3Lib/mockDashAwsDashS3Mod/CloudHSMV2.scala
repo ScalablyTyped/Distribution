@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "CloudHSMV2")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class CloudHSMV2 ()
   extends awsDashSdkLib.awsDashSdkMod.CloudHSMV2 {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns.ClientConfiguration) = this()
 }
 

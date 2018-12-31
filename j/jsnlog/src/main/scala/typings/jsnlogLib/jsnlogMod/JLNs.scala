@@ -32,17 +32,14 @@ object JLNs extends js.Object {
     def setOptions(options: JSNLogOptions): scala.Unit = js.native
   }
   
-  
   trait JSNLogAjaxAppender extends JSNLogAppender {
     def setOptions(options: JSNLogAjaxAppenderOptions): JSNLogAjaxAppender
   }
-  
   
   trait JSNLogAjaxAppenderOptions extends JSNLogAppenderOptions {
     var beforeSend: js.UndefOr[js.Function2[/* xhr */ stdLib.XMLHttpRequest, /* json */ js.Any, scala.Unit]] = js.undefined
     var url: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait JSNLogAppender extends js.Object {
     def sendBatch(): scala.Unit
@@ -50,7 +47,6 @@ object JLNs extends js.Object {
   }
   
   // Base for all appender options types
-  
   trait JSNLogAppenderOptions extends JSNLogFilterOptions {
     var batchSize: js.UndefOr[scala.Double] = js.undefined
     var batchTimeout: js.UndefOr[scala.Double] = js.undefined
@@ -60,7 +56,6 @@ object JLNs extends js.Object {
     var sendWithBufferLevel: js.UndefOr[scala.Double] = js.undefined
     var storeInBufferLevel: js.UndefOr[scala.Double] = js.undefined
   }
-  
   
   trait JSNLogFilterOptions extends js.Object {
     var disallow: js.UndefOr[java.lang.String] = js.undefined
@@ -83,12 +78,10 @@ object JLNs extends js.Object {
     def warn(logObject: js.Any): JSNLogLogger = js.native
   }
   
-  
   trait JSNLogLoggerOptions extends JSNLogFilterOptions {
     var appenders: js.UndefOr[js.Array[JSNLogAppender]] = js.undefined
     var onceOnly: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   }
-  
   
   trait JSNLogOptions extends js.Object {
     var clientIP: js.UndefOr[java.lang.String] = js.undefined

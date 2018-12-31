@@ -11,7 +11,7 @@ class BottomBarOutputStrategy protected ()
   extends OutputStrategy
      with RedrawLine {
   def this(hasBottomBarInputOutputColors: BottomBarOutputStrategyOptions) = this()
-  val BottomBar: js.Any = js.native
+  val BottomBar: inquirerLib.Anon_BottomBar = js.native
   var bottomBar: js.UndefOr[inquirerLib.inquirerMod.inquirerNs.uiNs.BottomBar] = js.native
   val colors: atIonicCliDashFrameworkLib.libColorsMod.Colors = js.native
   val rawinput: nodeLib.NodeJSNs.ReadableStream = js.native
@@ -21,7 +21,7 @@ class BottomBarOutputStrategy protected ()
   def close(): scala.Unit = js.native
   /* CompleteClass */
   override def createTaskChain(): atIonicCliDashFrameworkLib.libTasksMod.TaskChain = js.native
-  def get(): js.Any = js.native
+  def get(): inquirerLib.Anon_BottomBar = js.native
   def open(): scala.Unit = js.native
 }
 

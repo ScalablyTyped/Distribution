@@ -36,12 +36,10 @@ object mvcNs extends js.Object {
     def undelegateDocumentEvents(): this.type = js.native
   }
   
-  
   trait ViewOptions[T /* <: backboneLib.backboneMod.Model */]
     extends backboneLib.backboneMod.BackboneNs.ViewOptions[T] {
     var theme: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait viewEventData
     extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]

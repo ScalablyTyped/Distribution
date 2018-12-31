@@ -91,7 +91,6 @@ class OptionGroup protected () extends js.Object {
   val accFocus: js.Any = js.native
   val accParent: js.Any = js.native
   val accSelection: js.Any = js.native
-  // tslint:disable-next-line:no-unnecessary-generics
   def Controls[T](Index: java.lang.String): T = js.native
   // tslint:disable-next-line:no-unnecessary-generics
   def Controls[T](Index: scala.Double): T = js.native

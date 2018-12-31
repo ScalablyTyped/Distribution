@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PieChartProps extends js.Object {
   var clickHandler: js.UndefOr[js.Function2[/* data */ PieData, /* mouseEvent */ reactLib.MouseEvent, _]] = js.undefined
   var data: js.Array[reactDashEasyDashChartLib.Anon_Key]

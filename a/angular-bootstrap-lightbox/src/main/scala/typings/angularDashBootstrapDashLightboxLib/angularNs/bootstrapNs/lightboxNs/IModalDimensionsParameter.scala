@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IModalDimensionsParameter extends js.Object {
   var imageDisplayHeight: scala.Double
   var imageDisplayWidth: scala.Double

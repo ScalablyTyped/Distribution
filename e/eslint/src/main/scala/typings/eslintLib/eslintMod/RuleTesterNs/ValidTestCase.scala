@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ValidTestCase extends js.Object {
   var code: java.lang.String
   var filename: js.UndefOr[java.lang.String] = js.undefined

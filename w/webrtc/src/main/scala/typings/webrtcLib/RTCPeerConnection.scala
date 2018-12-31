@@ -59,8 +59,6 @@ trait RTCPeerConnection
     successCallback: stdLib.RTCSessionDescriptionCallback,
     failureCallback: stdLib.RTCPeerConnectionErrorCallback
   ): js.Promise[scala.Unit] = js.native
-  // Extension: https://www.w3.org/TR/webrtc/#legacy-interface-extensions
-  // Deprecated!
   def createOffer(
     successCallback: stdLib.RTCSessionDescriptionCallback,
     failureCallback: stdLib.RTCPeerConnectionErrorCallback,
@@ -77,7 +75,6 @@ trait RTCPeerConnection
     successCallback: stdLib.RTCStatsCallback,
     failureCallback: stdLib.RTCPeerConnectionErrorCallback
   ): js.Promise[scala.Unit] = js.native
-  // Extension: https://www.w3.org/TR/webrtc/#h-rtcpeerconnection-interface-extensions-2
   def getStats(selector: MediaStreamTrack): js.Promise[stdLib.RTCStatsReport] = js.native
   def getStats(
     selector: MediaStreamTrack,

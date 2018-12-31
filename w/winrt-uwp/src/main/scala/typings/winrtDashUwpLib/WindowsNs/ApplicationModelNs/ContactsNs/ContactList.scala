@@ -39,43 +39,43 @@ abstract class ContactList () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[ContactList, ContactChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Asynchronously deletes this ContactList , including all Contact objects in the ContactStore .
-                   * @return An async action indicating that the method is complete.
-                   */
+    * Asynchronously deletes this ContactList , including all Contact objects in the ContactStore .
+    * @return An async action indicating that the method is complete.
+    */
   def deleteAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Asynchronously deletes and individual Contact from this ContactList and the ContactStore .
-                   * @param contact The Contact to delete.
-                   * @return An async action indicating that the method is complete.
-                   */
+    * Asynchronously deletes and individual Contact from this ContactList and the ContactStore .
+    * @param contact The Contact to delete.
+    * @return An async action indicating that the method is complete.
+    */
   def deleteContactAsync(contact: Contact): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Asynchronously retrieves the specified Contact object from the ContactList .
-                   * @param contactId The string that identifies the Contact to return.
-                   * @return The Contact identified by the contactId parameter.
-                   */
+    * Asynchronously retrieves the specified Contact object from the ContactList .
+    * @param contactId The string that identifies the Contact to return.
+    * @return The Contact identified by the contactId parameter.
+    */
   def getContactAsync(contactId: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[Contact] = js.native
   /**
-                   * Asynchronously gets the Contact identified by the specified RemoteId .
-                   * @param remoteId An ID that can be used by a service provider to access the Contact in their remote system.
-                   * @return The Contact identified by the remoteId parameter.
-                   */
+    * Asynchronously gets the Contact identified by the specified RemoteId .
+    * @param remoteId An ID that can be used by a service provider to access the Contact in their remote system.
+    * @return The Contact identified by the remoteId parameter.
+    */
   def getContactFromRemoteIdAsync(remoteId: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[Contact] = js.native
   /**
-                   * Gets a ContactReader object associated with this ContactList .
-                   * @return A ContactReader object associated with this ContactList .
-                   */
+    * Gets a ContactReader object associated with this ContactList .
+    * @return A ContactReader object associated with this ContactList .
+    */
   def getContactReader(): ContactReader = js.native
   /**
-                   * Gets a ContactReader object associated with this ContactList and using the specified ContactQueryOptions .
-                   * @param options The ContactQueryOptions to use when creating the ContactReader .
-                   * @return A ContactReader object associated with this ContactList .
-                   */
+    * Gets a ContactReader object associated with this ContactList and using the specified ContactQueryOptions .
+    * @param options The ContactQueryOptions to use when creating the ContactReader .
+    * @return A ContactReader object associated with this ContactList .
+    */
   def getContactReader(options: ContactQueryOptions): ContactReader = js.native
   /**
-                   * Asynchronously gets the Contact object for the current user.
-                   * @return The Contact object for the current user.
-                   */
+    * Asynchronously gets the Contact object for the current user.
+    * @return The Contact object for the current user.
+    */
   def getMeContactAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[Contact] = js.native
   /** Occurs when a Contact in this ContactList has been changed. */
   def oncontactchanged(ev: ContactChangedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[ContactList]): scala.Unit = js.native
@@ -86,15 +86,15 @@ abstract class ContactList () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[ContactList, ContactChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Asynchronously saves this ContactList .
-                   * @return An async action indicating that the method has completed.
-                   */
+    * Asynchronously saves this ContactList .
+    * @return An async action indicating that the method has completed.
+    */
   def saveAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Asynchronously saves the specified Contact to the ContactStore .
-                   * @param contact The contact to save.
-                   * @return An async action indicating that the method has completed.
-                   */
+    * Asynchronously saves the specified Contact to the ContactStore .
+    * @param contact The contact to save.
+    * @return An async action indicating that the method has completed.
+    */
   def saveContactAsync(contact: Contact): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

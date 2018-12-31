@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // https://console.bluemix.net/docs/services/Cloudant/api/search.html#queries
-
 trait DocumentSearchParams extends js.Object {
   // A bookmark that was received from a previous search. Used for pagination.
   var bookmark: js.UndefOr[java.lang.String] = js.undefined

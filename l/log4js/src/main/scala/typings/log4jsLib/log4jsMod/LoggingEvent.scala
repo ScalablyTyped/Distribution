@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LoggingEvent extends js.Object {
   var categoryName: java.lang.String
   var cluster: js.UndefOr[log4jsLib.Anon_WorkerId] = js.undefined

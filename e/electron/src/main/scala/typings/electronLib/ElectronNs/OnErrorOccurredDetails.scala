@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnErrorOccurredDetails extends js.Object {
   /**
-       * The error description.
-       */
+    * The error description.
+    */
   var error: java.lang.String
   var fromCache: scala.Boolean
   var id: scala.Double

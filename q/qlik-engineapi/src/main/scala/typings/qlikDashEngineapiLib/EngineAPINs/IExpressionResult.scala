@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * ExpressionResult...
-     */
-
+  * ExpressionResult...
+  */
 trait IExpressionResult extends js.Object {
   var qBadFieldNames: js.Array[INxRange]
 }

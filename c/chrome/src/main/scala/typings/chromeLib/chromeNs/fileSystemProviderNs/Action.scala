@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Action extends js.Object {
   /** The identifier of the action. Any string or CommonActionId for common actions. */
   var id: java.lang.String

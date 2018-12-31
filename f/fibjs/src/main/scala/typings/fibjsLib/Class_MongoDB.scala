@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 	* @brief mongodb 数据库连接对象
 	* @detail 使用 db.open 或 db.openMongoDB 创建，创建方式：,```JavaScript,var mdb = db.openMongoDB("mongodb://host/db");,```
 	*/
-
 @JSGlobal("Class_MongoDB")
 @js.native
 class Class_MongoDB () extends Class__object {
@@ -41,15 +40,6 @@ class Class_MongoDB () extends Class__object {
   	 * 
   	 */
   def oid(): Class_MongoID = js.native
-  /**
-  	 * 
-  	 * @brief 生成一个 mongodb _objectid 对象
-  	 * @param hexStr 初始化 16 进制字符串，缺省生成新的 id
-  	 * @return 新 _objectid 对象
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def oid(hexStr: java.lang.String): Class_MongoID = js.native
   /**
   	 * 

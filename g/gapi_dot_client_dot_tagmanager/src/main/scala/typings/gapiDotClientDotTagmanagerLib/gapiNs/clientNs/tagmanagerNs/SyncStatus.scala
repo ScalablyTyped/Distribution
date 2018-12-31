@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SyncStatus extends js.Object {
   /** Synchornization operation detected a merge conflict. */
   var mergeConflict: js.UndefOr[scala.Boolean] = js.undefined

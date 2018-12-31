@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_InstantOpenOnClick extends js.Object {
   var cardDismissDelay: scala.Double
   var cardOpenDelay: scala.Double

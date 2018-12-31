@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SlotRenderEndedEvent extends js.Object {
   var advertiserId: js.UndefOr[scala.Double] = js.undefined
   var creativeId: js.UndefOr[scala.Double] = js.undefined

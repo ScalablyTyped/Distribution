@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.ITextOptions because Would inherit conflicting mutable fields List(cornerColor, transparentCorners, lockScalingX, shadow, hasControls, backgroundColor, name, includeDefaultValues, hasRotatingPoint, cornerSize, perPixelTargetFind, originX, scaleY, aCoords, lockMovementY, visible, transformMatrix, centeredRotation, angle, evented, stroke, strokeDashArray, data, left, height, centeredScaling, strokeLineCap, hoverCursor, skewX, strokeMiterLimit, lockUniScaling, borderDashArray, selectable, strokeLineJoin, skewY, objectCaching, cornerStrokeColor, flipX, fill, cornerDashArray, rotatingPointOffset, borderScaleFactor, opacity, globalCompositeOperation, padding, `type`, cornerStyle, lockScalingFlip, hasBorders, width, top, lockMovementX, lockRotation, clipTo, strokeWidth, flipY, originY, borderColor, scaleX, lockScalingY, borderOpacityWhenMoving, fillRule, minScaleLimit))*/
+/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.ITextOptions because Would inherit conflicting mutable fields List(aCoords, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, centeredRotation, centeredScaling, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, evented, fill, fillRule, flipX, flipY, globalCompositeOperation, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockUniScaling, minScaleLimit, name, objectCaching, opacity, originX, originY, padding, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, shadow, skewX, skewY, stroke, strokeDashArray, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width))*/
 @JSImport("fabric/fabric-impl", "Text")
 @js.native
 class Text protected () extends Object {
@@ -15,15 +15,10 @@ class Text protected () extends Object {
   	 * @param [options] Options object
   	 */
   def this(text: java.lang.String) = this()
-  /**
-  	 * Constructor
-  	 * @param text Text string
-  	 * @param [options] Options object
-  	 */
   def this(text: java.lang.String, options: ITextOptions) = this()
   /**
-       * Retrieves object's charSpacing
-       */
+    * Retrieves object's charSpacing
+    */
   def getCharSpacing(): scala.Double = js.native
   /**
   	 * Retrieves object's fontFamily
@@ -46,12 +41,12 @@ class Text protected () extends Object {
   	 */
   def getLineHeight(): scala.Double = js.native
   /**
-       * Retrieves object's linethrough
-       */
+    * Retrieves object's linethrough
+    */
   def getLinethrough(): scala.Boolean = js.native
   /**
-       * Retrieves object's overline
-       */
+    * Retrieves object's overline
+    */
   def getOverline(): scala.Boolean = js.native
   /**
   	 * Retrieves object's text
@@ -70,13 +65,13 @@ class Text protected () extends Object {
   	 */
   def getTextDecoration(): java.lang.String = js.native
   /**
-       * Retrieves object's underline
-       */
+    * Retrieves object's underline
+    */
   def getUnderline(): scala.Boolean = js.native
   /**
-       * Sets object's charSpacing
-       * @param charSpacing Character spacing
-       */
+    * Sets object's charSpacing
+    * @param charSpacing Character spacing
+    */
   def setCharSpacing(charSpacing: scala.Double): Text = js.native
   /**
   	 * Sets object's fontFamily
@@ -98,10 +93,6 @@ class Text protected () extends Object {
   	 * @param fontWeight Font weight
   	 */
   def setFontWeight(fontWeight: java.lang.String): Text = js.native
-  /**
-  	 * Sets object's fontWeight
-  	 * @param fontWeight Font weight
-  	 */
   def setFontWeight(fontWeight: scala.Double): Text = js.native
   /**
   	 * Sets object's lineHeight
@@ -109,14 +100,14 @@ class Text protected () extends Object {
   	 */
   def setLineHeight(lineHeight: scala.Double): Text = js.native
   /**
-       * Sets object's linethrough
-       * @param linethrough Text linethrough
-       */
+    * Sets object's linethrough
+    * @param linethrough Text linethrough
+    */
   def setLinethrough(linethrough: scala.Boolean): Text = js.native
   /**
-       * Sets object's overline
-       * @param overline Text overline
-       */
+    * Sets object's overline
+    * @param overline Text overline
+    */
   def setOverline(overline: scala.Boolean): Text = js.native
   /**
   	 * Sets object's text
@@ -139,19 +130,15 @@ class Text protected () extends Object {
   	 */
   def setTextDecoration(textDecoration: java.lang.String): Text = js.native
   /**
-       * Sets object's underline
-       * @param underline Text underline
-       */
+    * Sets object's underline
+    * @param underline Text underline
+    */
   def setUnderline(underline: scala.Boolean): Text = js.native
   /**
   	 * Returns SVG representation of an instance
   	 * @param [reviver] Method for further parsing of svg representation.
   	 */
   def toSVG(): java.lang.String = js.native
-  /**
-  	 * Returns SVG representation of an instance
-  	 * @param [reviver] Method for further parsing of svg representation.
-  	 */
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
@@ -172,11 +159,6 @@ object Text extends js.Object {
   	 * @param [options] Options object
   	 */
   def fromElement(element: stdLib.SVGElement): fabricLib.fabricDashImplMod.Text = js.native
-  /**
-  	 * Returns fabric.Text instance from an SVG element (<b>not yet implemented</b>)
-  	 * @param element Element to parse
-  	 * @param [options] Options object
-  	 */
   def fromElement(element: stdLib.SVGElement, options: fabricLib.fabricDashImplMod.ITextOptions): fabricLib.fabricDashImplMod.Text = js.native
   /**
   	 * Returns fabric.Text instance from an object representation

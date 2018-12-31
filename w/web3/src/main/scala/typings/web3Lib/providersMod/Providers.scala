@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Providers extends js.Object {
   var HttpProvider: org.scalablytyped.runtime.Instantiable2[
     /* host */ java.lang.String, 

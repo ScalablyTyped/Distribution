@@ -4,50 +4,50 @@
 [info ] Phase1ReadTypescript.scala:158 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/tabris/tabris.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/tabris),TsIdentLibrarySimple(tabris)),TsIdentModule(None,List(tabris))) [id => tabris, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(tabris)) [id => tabris, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:196 Processing TsIdentLibrarySimple(tabris) [id => tabris, phase => typescript] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(NativeObject))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(Properties) / TsTypeParam() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(Widget))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(SelectorFunction) / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_ActionSheetProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ActionSheetProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_AlertDialogProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(AlertDialogProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_AppProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(AppProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_DateDialogProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(DateDialogProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_DeviceProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(DeviceProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_FileSystemProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(FileSystemProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_InactivityTimerProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(InactivityTimerProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_NativeObjectProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(NativeObjectProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_PopoverProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(PopoverProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_PopupProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(PopupProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_PrinterProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(PrinterProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_TimeDialogProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(TimeDialogProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_UIProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(UIProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_ActionProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ActionProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_ActivityIndicatorProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ActivityIndicatorProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_ButtonProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ButtonProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_CanvasProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(CanvasProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_CheckBoxProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(CheckBoxProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_CollectionViewProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(CollectionViewProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_CompositeProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(CompositeProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_DrawerProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(DrawerProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_ImageViewProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ImageViewProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_NavigationBarProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(NavigationBarProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_NavigationViewProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(NavigationViewProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_PageProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(PageProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_PickerProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(PickerProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_ProgressBarProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ProgressBarProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_RadioButtonProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(RadioButtonProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_RefreshCompositeProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(RefreshCompositeProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_ScrollViewProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ScrollViewProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_SearchActionProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(SearchActionProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_SliderProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(SliderProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_StatusBarProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(StatusBarProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_SwitchProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(SwitchProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_TabProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(TabProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_TabFolderProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(TabFolderProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_TextInputProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(TextInputProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_TextViewProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(TextViewProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_ToggleButtonProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ToggleButtonProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_VideoProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(VideoProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_WebViewProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(WebViewProperties) / TsTypeRef() / TsTypeRef())] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_WidgetProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(WidgetProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify NativeObject [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(Properties) / TsTypeParam() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify Widget [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(SelectorFunction) / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _ActionSheetProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ActionSheetProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _AlertDialogProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(AlertDialogProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _AppProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(AppProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _DateDialogProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(DateDialogProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _DeviceProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(DeviceProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _FileSystemProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(FileSystemProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _InactivityTimerProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(InactivityTimerProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _NativeObjectProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(NativeObjectProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _PopoverProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(PopoverProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _PopupProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(PopupProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _PrinterProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(PrinterProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _TimeDialogProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(TimeDialogProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _UIProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(UIProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _ActionProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ActionProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _ActivityIndicatorProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ActivityIndicatorProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _ButtonProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ButtonProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _CanvasProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(CanvasProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _CheckBoxProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(CheckBoxProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _CollectionViewProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(CollectionViewProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _CompositeProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(CompositeProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _DrawerProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(DrawerProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _ImageViewProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ImageViewProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _NavigationBarProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(NavigationBarProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _NavigationViewProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(NavigationViewProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _PageProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(PageProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _PickerProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(PickerProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _ProgressBarProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ProgressBarProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _RadioButtonProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(RadioButtonProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _RefreshCompositeProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(RefreshCompositeProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _ScrollViewProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ScrollViewProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _SearchActionProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(SearchActionProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _SliderProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(SliderProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _StatusBarProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(StatusBarProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _SwitchProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(SwitchProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _TabProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(TabProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _TabFolderProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(TabFolderProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _TextInputProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(TextInputProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _TextViewProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(TextViewProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _ToggleButtonProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ToggleButtonProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _VideoProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(VideoProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _WebViewProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(WebViewProperties) / TsTypeRef() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify _WidgetProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(WidgetProperties) / TsTypeRef() / TsTypeRef())] 
 [info ] SimplifyRecursiveTypeAlias.scala:13 Simplified recursive type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(Image) / TsTypeIntersect() / TsTypeRef())] 
 [info ] SimplifyRecursiveTypeAlias.scala:13 Simplified recursive type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(Selector) / TsTypeIntersect() / TsTypeRef())] 
 [info ] PreferTypeAlias.scala:112 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(_FileSystemProperties))] 
@@ -60,38 +60,23 @@
 [info ] PreferTypeAlias.scala:112 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(_CanvasProperties))] 
 [info ] PreferTypeAlias.scala:112 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(CanvasEvents))] 
 [error] PhaseRes.scala:79 StackOverflowError [id => tabris, phase => typescript] java.lang.StackOverflowError
-	at scala.runtime.BoxesRunTime.equals2(BoxesRunTime.java:137)
-	at scala.runtime.BoxesRunTime.equals(BoxesRunTime.java:123)
-	at scala.collection.LinearSeqOptimized.contains(LinearSeqOptimized.scala:105)
-	at scala.collection.LinearSeqOptimized.contains$(LinearSeqOptimized.scala:102)
-	at scala.collection.immutable.List.contains(List.scala:89)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.<init>(TsTreeScope.scala:210)
-	at com.olvind.tso.ts.TsTreeScope.$div(TsTreeScope.scala:29)
-	at com.olvind.tso.ts.TsTreeScope.$div$(TsTreeScope.scala:28)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.$div(TsTreeScope.scala:198)
-	at com.olvind.tso.ts.TsTreeScope$$anonfun$search$1.applyOrElse(TsTreeScope.scala:357)
-	at com.olvind.tso.ts.TsTreeScope$$anonfun$search$1.applyOrElse(TsTreeScope.scala:357)
-	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:145)
-	at scala.collection.immutable.List.foreach(List.scala:392)
-	at scala.collection.TraversableLike.collect(TraversableLike.scala:274)
-	at scala.collection.TraversableLike.collect$(TraversableLike.scala:272)
-	at scala.collection.immutable.List.collect(List.scala:327)
-	at com.olvind.tso.ts.TsTreeScope$.search(TsTreeScope.scala:357)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.local$1(TsTreeScope.scala:247)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupImpl(TsTreeScope.scala:317)
+	at scala.collection.immutable.Nil$.equals(List.scala:435)
+	at com.olvind.tso.ts.TsTreeScope$.search(TsTreeScope.scala:350)
+	at com.olvind.tso.ts.TsTreeScope$Scoped.local$1(TsTreeScope.scala:251)
+	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupImpl(TsTreeScope.scala:321)
 	at com.olvind.tso.ts.TsTreeScope.lookupInternal(TsTreeScope.scala:90)
 	at com.olvind.tso.ts.TsTreeScope.lookupInternal$(TsTreeScope.scala:81)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupInternal(TsTreeScope.scala:198)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupImpl(TsTreeScope.scala:334)
+	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupInternal(TsTreeScope.scala:202)
+	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupImpl(TsTreeScope.scala:338)
 	at com.olvind.tso.ts.TsTreeScope.lookupInternal(TsTreeScope.scala:89)
 	at com.olvind.tso.ts.TsTreeScope.lookupInternal$(TsTreeScope.scala:81)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupInternal(TsTreeScope.scala:198)
+	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupInternal(TsTreeScope.scala:202)
 	at com.olvind.tso.ts.TsTreeScope.lookupBase(TsTreeScope.scala:71)
 	at com.olvind.tso.ts.TsTreeScope.lookupBase$(TsTreeScope.scala:63)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupBase(TsTreeScope.scala:198)
+	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupBase(TsTreeScope.scala:202)
 	at com.olvind.tso.ts.TsTreeScope.lookupTypeIncludeScope(TsTreeScope.scala:61)
 	at com.olvind.tso.ts.TsTreeScope.lookupTypeIncludeScope$(TsTreeScope.scala:60)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupTypeIncludeScope(TsTreeScope.scala:198)
+	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupTypeIncludeScope(TsTreeScope.scala:202)
 	at com.olvind.tso.ts.transforms.ExpandCallables$.callableTypes(ExpandCallables.scala:89)
 	at com.olvind.tso.ts.transforms.ExpandCallables$.$anonfun$callableTypes$1(ExpandCallables.scala:82)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
@@ -1084,6 +1069,21 @@
 	at com.olvind.tso.ts.transforms.ExpandCallables$.$anonfun$callableTypes$1(ExpandCallables.scala:82)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
 	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.immutable.List.map(List.scala:298)
+	at com.olvind.tso.ts.transforms.ExpandCallables$.callableTypes(ExpandCallables.scala:82)
+	at com.olvind.tso.ts.transforms.ExpandCallables$$anonfun$callableTypes$2.applyOrElse(ExpandCallables.scala:100)
+	at com.olvind.tso.ts.transforms.ExpandCallables$$anonfun$callableTypes$2.applyOrElse(ExpandCallables.scala:91)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:148)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:135)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at com.olvind.tso.ts.transforms.ExpandCallables$.callableTypes(ExpandCallables.scala:91)
+	at com.olvind.tso.ts.transforms.ExpandCallables$.$anonfun$callableTypes$1(ExpandCallables.scala:82)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
 
 [debug] PhaseRunner.scala:85 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => typescript] 
 [debug] PhaseRunner.scala:85 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => scala.js] 

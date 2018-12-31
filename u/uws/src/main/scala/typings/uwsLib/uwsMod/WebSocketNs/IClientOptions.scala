@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IClientOptions extends js.Object {
   var agent: js.UndefOr[nodeLib.httpMod.Agent] = js.undefined
   var ca: js.UndefOr[js.Array[_]] = js.undefined

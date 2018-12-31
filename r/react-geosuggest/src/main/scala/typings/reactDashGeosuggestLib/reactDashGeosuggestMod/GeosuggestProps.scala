@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick) */ 
-trait GeosuggestProps extends js.Object {
+- Lifted 1 members from Set(std.Pick<react.react.InputHTMLAttributes<react.HTMLInputElement>, {typemapped, typemapped, indexed, indexed}[keyof react.react.InputHTMLAttributes<react.HTMLInputElement>]>) */ trait GeosuggestProps extends js.Object {
   var autoActivateFirstSuggest: js.UndefOr[scala.Boolean] = js.undefined
   var autoComplete: js.UndefOr[java.lang.String] = js.undefined
   var bounds: js.UndefOr[googlemapsLib.googleNs.mapsNs.LatLngBounds] = js.undefined

@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TemplateContent extends js.Object {
   /**
-           * Address "from" : "deals@company.com" or JSON object composed of the "name" and "email" fields.
-           * "from" : { "name" : "My Company", "email" : "deals@company.com" } used to compose the email’s "From" header.
-           *
-           */
+    * Address "from" : "deals@company.com" or JSON object composed of the "name" and "email" fields.
+    * "from" : { "name" : "My Company", "email" : "deals@company.com" } used to compose the email’s "From" header.
+    *
+    */
   var from: Address | java.lang.String
   /**  JSON dictionary containing headers other than “Subject”, “From”, “To”, and “Reply-To”. */
   var headers: js.UndefOr[js.Any] = js.undefined

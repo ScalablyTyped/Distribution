@@ -243,7 +243,7 @@ trait HostConfig[Type, Props, Container, Instance, TextInstance, HydratableInsta
     callback: js.Function1[/* deadline */ Deadline, scala.Unit],
     options: reactDashReconcilerLib.Anon_Timeout
   ): js.Any = js.native
-  def setTimeout(handler: js.Function1[/* repeated */js.Any, scala.Unit], timeout: scala.Double): TimeoutHandle | NoTimeout = js.native
+  def setTimeout(handler: js.Function1[/* repeated */ js.Any, scala.Unit], timeout: scala.Double): TimeoutHandle | NoTimeout = js.native
   def shouldDeprioritizeSubtree(`type`: Type, props: Props): scala.Boolean = js.native
   def shouldSetTextContent(`type`: Type, props: Props): scala.Boolean = js.native
 }

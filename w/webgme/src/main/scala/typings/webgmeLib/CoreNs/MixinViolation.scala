@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MixinViolation extends js.Object {
   /** The colliding mixin nodes (if any). */
   var collisionNodes: js.UndefOr[js.Array[Node]] = js.undefined

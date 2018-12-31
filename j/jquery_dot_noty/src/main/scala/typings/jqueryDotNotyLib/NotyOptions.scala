@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotyOptions extends js.Object {
   var animation: js.UndefOr[NotyAnimationOptions] = js.undefined
   /** an array of buttons, for creating confirmation dialogs. */

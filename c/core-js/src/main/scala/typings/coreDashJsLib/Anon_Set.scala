@@ -28,7 +28,7 @@ trait Anon_Set extends js.Object {
   val version: java.lang.String = js.native
   @JSName("$for")
   def $for[T](iterable: nodeLib.Iterable[T]): $for[T] = js.native
-  def addLocale(lang: java.lang.String, locale: coreDashJsLib.coreNs.Locale): /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(core-js), TsIdentNamespace(core)))) */js.Any = js.native
+  def addLocale(lang: java.lang.String, locale: coreDashJsLib.coreNs.Locale): /* import warning: ImportType.apply Failed type conversion: typeof core-js.core */ js.Any = js.native
   def clearImmediate(handle: scala.Double): scala.Unit = js.native
   def delay(msec: scala.Double): js.Promise[scala.Unit] = js.native
   def getIterator[T](iterable: nodeLib.Iterable[T]): nodeLib.Iterator[T] = js.native

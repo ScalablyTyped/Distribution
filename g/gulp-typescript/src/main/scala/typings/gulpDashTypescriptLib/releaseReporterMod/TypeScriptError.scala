@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TypeScriptError
   extends nodeLib.Error {
   var diagnostic: typescriptLib.typescriptMod.tsNs.Diagnostic

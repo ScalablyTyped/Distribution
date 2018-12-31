@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class LocationTrigger protected () extends js.Object {
   /**
-                   * Initializes a new instance of a location event trigger.
-                   * @param triggerType The type of location event for this trigger.
-                   */
+    * Initializes a new instance of a location event trigger.
+    * @param triggerType The type of location event for this trigger.
+    */
   def this(triggerType: LocationTriggerType) = this()
   /** The type of location event for this trigger. */
   var triggerType: LocationTriggerType = js.native

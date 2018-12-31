@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Table extends js.Object {
   /** Attribution assigned to the table. */
   var attribution: js.UndefOr[java.lang.String] = js.undefined

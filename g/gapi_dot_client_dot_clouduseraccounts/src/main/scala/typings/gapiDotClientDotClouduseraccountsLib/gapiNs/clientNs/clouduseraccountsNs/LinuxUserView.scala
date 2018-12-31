@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinuxUserView extends js.Object {
   /** [Output Only] The GECOS (user information) entry for this account. */
   var gecos: js.UndefOr[java.lang.String] = js.undefined

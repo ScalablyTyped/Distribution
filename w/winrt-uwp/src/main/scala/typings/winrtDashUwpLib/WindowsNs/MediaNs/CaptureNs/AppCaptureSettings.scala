@@ -46,7 +46,7 @@ abstract class AppCaptureSettings () extends js.Object {
   /** Gets a value indicating whether the device is memory-constrained. */
   var isMemoryConstrained: scala.Boolean = js.native
   var isMicrophoneCaptureEnabled: js.Any = js.native
-   /* unmapped type *//** Gets or sets the maximum recording length. */
+   /* unmapped type */ /** Gets or sets the maximum recording length. */
   var maximumRecordLength: scala.Double = js.native
   /** Gets or sets the screenshot destination folder. */
   var screenshotDestinationFolder: winrtDashUwpLib.WindowsNs.StorageNs.StorageFolder = js.native

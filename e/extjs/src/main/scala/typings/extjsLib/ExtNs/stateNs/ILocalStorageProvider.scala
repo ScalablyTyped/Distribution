@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILocalStorageProvider extends IProvider {
   /** [Method] private
   		* @param name Object

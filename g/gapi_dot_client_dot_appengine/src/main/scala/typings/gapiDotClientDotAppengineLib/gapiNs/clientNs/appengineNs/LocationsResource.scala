@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocationsResource extends js.Object {
   /** Get information about a location. */
   def get(request: gapiDotClientDotAppengineLib.Anon_LocationsId): gapiDotClientLib.gapiNs.clientNs.Request[Location]

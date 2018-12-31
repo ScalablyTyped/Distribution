@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Report extends js.Object {
   /** The account ID to which this report belongs. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined
@@ -22,9 +21,9 @@ trait Report extends js.Object {
   /** The report criteria for a report of type "FLOODLIGHT". */
   var floodlightCriteria: js.UndefOr[gapiDotClientDotDfareportingLib.Anon_FloodlightConfigId] = js.undefined
   /**
-               * The output format of the report. If not specified, default format is "CSV". Note that the actual format in the completed report file might differ if
-               * for instance the report's size exceeds the format's capabilities. "CSV" will then be the fallback format.
-               */
+    * The output format of the report. If not specified, default format is "CSV". Note that the actual format in the completed report file might differ if
+    * for instance the report's size exceeds the format's capabilities. "CSV" will then be the fallback format.
+    */
   var format: js.UndefOr[java.lang.String] = js.undefined
   /** The unique ID identifying this report resource. */
   var id: js.UndefOr[java.lang.String] = js.undefined

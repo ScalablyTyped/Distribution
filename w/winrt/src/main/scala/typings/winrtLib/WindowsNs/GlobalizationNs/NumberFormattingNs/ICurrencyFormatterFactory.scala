@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICurrencyFormatterFactory extends js.Object {
   def createCurrencyFormatterCode(currencyCode: java.lang.String): CurrencyFormatter
   def createCurrencyFormatterCodeContext(

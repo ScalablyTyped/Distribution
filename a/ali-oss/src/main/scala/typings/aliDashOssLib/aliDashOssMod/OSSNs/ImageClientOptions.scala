@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageClientOptions extends js.Object {
    // your image service domain that binding to a OSS bucket
   var accessKeyId: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ComponentOptions[V /* <: vueLib.typesVueMod.Vue */] extends js.Object {
   var beforeRouteEnter: js.UndefOr[vueDashRouterLib.typesRouterMod.NavigationGuard[V]] = js.undefined
   var beforeRouteLeave: js.UndefOr[vueDashRouterLib.typesRouterMod.NavigationGuard[V]] = js.undefined

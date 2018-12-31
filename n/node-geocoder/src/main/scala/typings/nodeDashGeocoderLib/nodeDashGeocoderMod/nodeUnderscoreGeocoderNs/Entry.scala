@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Entry extends js.Object {
   var administrativeLevels: js.UndefOr[nodeDashGeocoderLib.Anon_Level1long] = js.undefined
   var city: js.UndefOr[java.lang.String] = js.undefined

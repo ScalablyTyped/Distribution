@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JSONFixtures extends js.Object {
   var fixturesPath: java.lang.String
   def clearCache(): scala.Unit

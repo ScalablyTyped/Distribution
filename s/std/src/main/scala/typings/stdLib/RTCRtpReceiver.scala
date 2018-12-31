@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RTCRtpReceiver extends js.Object {
   val rtcpTransport: RTCDtlsTransport | scala.Null
   val track: MediaStreamTrack

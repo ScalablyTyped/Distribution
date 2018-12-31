@@ -8,48 +8,40 @@ import scala.scalajs.js.annotation._
 @JSImport("jointjs", "shapes")
 @js.native
 object shapesNs extends js.Object {
-  
   trait SVGCircleSelector
     extends jointjsLib.jointjsMod.diaNs.CellNs.Selectors {
     var circle: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGCircleAttributes] = js.undefined
   }
-  
   
   trait SVGEllipseSelector
     extends jointjsLib.jointjsMod.diaNs.CellNs.Selectors {
     var ellipse: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGEllipseAttributes] = js.undefined
   }
   
-  
   trait SVGImageSelector
     extends jointjsLib.jointjsMod.diaNs.CellNs.Selectors {
     var image: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGImageAttributes] = js.undefined
   }
-  
   
   trait SVGPathSelector
     extends jointjsLib.jointjsMod.diaNs.CellNs.Selectors {
     var path: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGPathAttributes] = js.undefined
   }
   
-  
   trait SVGPolygonSelector
     extends jointjsLib.jointjsMod.diaNs.CellNs.Selectors {
     var polygon: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGPolygonAttributes] = js.undefined
   }
-  
   
   trait SVGPolylineSelector
     extends jointjsLib.jointjsMod.diaNs.CellNs.Selectors {
     var polyline: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGPolylineAttributes] = js.undefined
   }
   
-  
   trait SVGRectSelector
     extends jointjsLib.jointjsMod.diaNs.CellNs.Selectors {
     var rect: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGRectAttributes] = js.undefined
   }
-  
   
   trait SVGTextSelector
     extends jointjsLib.jointjsMod.diaNs.CellNs.Selectors {
@@ -66,7 +58,6 @@ object shapesNs extends js.Object {
     }
     
     /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGCircleSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
-    
     trait CircleSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
     
@@ -77,7 +68,6 @@ object shapesNs extends js.Object {
     }
     
     /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGEllipseSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
-    
     trait EllipseSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
     
@@ -92,7 +82,6 @@ object shapesNs extends js.Object {
     }
     
     /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGImageSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
-    
     trait ImageSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
     
@@ -103,7 +92,6 @@ object shapesNs extends js.Object {
     }
     
     /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGPathSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
-    
     trait PathSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
     
@@ -114,7 +102,6 @@ object shapesNs extends js.Object {
     }
     
     /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGPolygonSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
-    
     trait PolygonSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
     
@@ -125,7 +112,6 @@ object shapesNs extends js.Object {
     }
     
     /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGPolylineSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
-    
     trait PolylineSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
     
@@ -136,7 +122,6 @@ object shapesNs extends js.Object {
     }
     
     /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGRectSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
-    
     trait RectSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
     
@@ -159,7 +144,6 @@ object shapesNs extends js.Object {
     }
     
     /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGRectSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
-    
     trait TextBlockSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector {
       var `.content`: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGTextAttributes] = js.undefined
@@ -254,13 +238,11 @@ object shapesNs extends js.Object {
       def removeOutPort(port: java.lang.String, opt: js.Any): this.type = js.native
     }
     
-    
     trait ModelAttributes
       extends jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[ModelSelectors] {
       var inPorts: js.UndefOr[js.Array[java.lang.String]] = js.undefined
       var outPorts: js.UndefOr[js.Array[java.lang.String]] = js.undefined
     }
-    
     
     trait ModelSelectors
       extends jointjsLib.jointjsMod.diaNs.CellNs.Selectors {
@@ -282,7 +264,6 @@ object shapesNs extends js.Object {
     
     @js.native
     class Derived () extends Attribute
-    
     
     trait EllipsoidSelectors
       extends jointjsLib.jointjsMod.diaNs.CellNs.Selectors {
@@ -324,7 +305,6 @@ object shapesNs extends js.Object {
     @js.native
     class Normal () extends Attribute
     
-    
     trait PolygonalSelectors
       extends jointjsLib.jointjsMod.diaNs.CellNs.Selectors {
       var `.body`: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGPolygonAttributes] = js.undefined
@@ -350,7 +330,6 @@ object shapesNs extends js.Object {
     @js.native
     class Arrow ()
       extends jointjsLib.jointjsMod.diaNs.Link
-    
     
     trait CirculoidSelectors
       extends jointjsLib.jointjsMod.diaNs.CellNs.Selectors {
@@ -396,7 +375,6 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[Gate11Selectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
-    
     trait Gate11Selectors
       extends jointjsLib.jointjsMod.diaNs.CellNs.Selectors {
       var `.body`: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGImageAttributes] = js.undefined
@@ -411,7 +389,6 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[Gate21Selectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
-    
     trait Gate21Selectors
       extends jointjsLib.jointjsMod.diaNs.CellNs.Selectors {
       var `.body`: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGImageAttributes] = js.undefined
@@ -421,7 +398,6 @@ object shapesNs extends js.Object {
       var `.output`: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGCircleAttributes] = js.undefined
       var image: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGImageAttributes] = js.undefined
     }
-    
     
     trait GateSelectors
       extends jointjsLib.jointjsMod.diaNs.CellNs.Selectors {
@@ -498,7 +474,6 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[MemberSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
-    
     trait MemberSelectors
       extends jointjsLib.jointjsMod.diaNs.CellNs.Selectors {
       var `.card`: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGRectAttributes] = js.undefined
@@ -548,7 +523,6 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[BorderedImageSelectors], opt: jointjsLib.jointjsMod.diaNs.GraphNs.Options) = this()
     }
     
-    
     trait BorderedImageSelectors extends js.Object {
       var background: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGRectAttributes] = js.undefined
       var border: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGRectAttributes] = js.undefined
@@ -563,7 +537,6 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[CircleSelectors]) = this()
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[CircleSelectors], opt: jointjsLib.jointjsMod.diaNs.GraphNs.Options) = this()
     }
-    
     
     trait CircleSelectors extends js.Object {
       var body: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGCircleAttributes] = js.undefined
@@ -583,12 +556,10 @@ object shapesNs extends js.Object {
       def topRy(t: scala.Double, opt: jointjsLib.jointjsMod.diaNs.CellNs.Options): this.type = js.native
     }
     
-    
     trait CylinderBodyAttributes
       extends jointjsLib.jointjsMod.attributesNs.SVGPathAttributes {
       var lateralArea: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     }
-    
     
     trait CylinderSelectors extends js.Object {
       var body: js.UndefOr[CylinderBodyAttributes] = js.undefined
@@ -603,7 +574,6 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.LinkNs.GenericAttributes[DoubleLinkSelectors], opt: jointjsLib.jointjsMod.diaNs.GraphNs.Options) = this()
     }
     
-    
     trait DoubleLinkSelectors extends js.Object {
       var line: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGPathAttributes] = js.undefined
       var outline: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGPathAttributes] = js.undefined
@@ -616,7 +586,6 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[EllipseSelectors]) = this()
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[EllipseSelectors], opt: jointjsLib.jointjsMod.diaNs.GraphNs.Options) = this()
     }
-    
     
     trait EllipseSelectors extends js.Object {
       var body: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGCircleAttributes] = js.undefined
@@ -631,7 +600,6 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[EmbeddedImageSelectors], opt: jointjsLib.jointjsMod.diaNs.GraphNs.Options) = this()
     }
     
-    
     trait EmbeddedImageSelectors extends js.Object {
       var body: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGRectAttributes] = js.undefined
       var image: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGImageAttributes] = js.undefined
@@ -645,7 +613,6 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[HeaderedRectangleSelectors]) = this()
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[HeaderedRectangleSelectors], opt: jointjsLib.jointjsMod.diaNs.GraphNs.Options) = this()
     }
-    
     
     trait HeaderedRectangleSelectors extends js.Object {
       var body: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGRectAttributes] = js.undefined
@@ -662,7 +629,6 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[ImageSelectors], opt: jointjsLib.jointjsMod.diaNs.GraphNs.Options) = this()
     }
     
-    
     trait ImageSelectors extends js.Object {
       var image: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGImageAttributes] = js.undefined
       var label: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGTextAttributes] = js.undefined
@@ -675,7 +641,6 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[InscribedImageSelectors]) = this()
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[InscribedImageSelectors], opt: jointjsLib.jointjsMod.diaNs.GraphNs.Options) = this()
     }
-    
     
     trait InscribedImageSelectors extends js.Object {
       var background: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGEllipseAttributes] = js.undefined
@@ -692,7 +657,6 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.LinkNs.GenericAttributes[LinkSelectors], opt: jointjsLib.jointjsMod.diaNs.GraphNs.Options) = this()
     }
     
-    
     trait LinkSelectors extends js.Object {
       var line: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGPathAttributes] = js.undefined
       var root: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes] = js.undefined
@@ -705,7 +669,6 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PathSelectors]) = this()
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PathSelectors], opt: jointjsLib.jointjsMod.diaNs.GraphNs.Options) = this()
     }
-    
     
     trait PathSelectors extends js.Object {
       var body: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGPathAttributes] = js.undefined
@@ -720,7 +683,6 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PolygonSelectors], opt: jointjsLib.jointjsMod.diaNs.GraphNs.Options) = this()
     }
     
-    
     trait PolygonSelectors extends js.Object {
       var body: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGPolygonAttributes] = js.undefined
       var label: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGTextAttributes] = js.undefined
@@ -733,7 +695,6 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PolylineSelectors]) = this()
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PolylineSelectors], opt: jointjsLib.jointjsMod.diaNs.GraphNs.Options) = this()
     }
-    
     
     trait PolylineSelectors extends js.Object {
       var body: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGPolylineAttributes] = js.undefined
@@ -748,7 +709,6 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[RectangleSelectors], opt: jointjsLib.jointjsMod.diaNs.GraphNs.Options) = this()
     }
     
-    
     trait RectangleSelectors extends js.Object {
       var body: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGRectAttributes] = js.undefined
       var label: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGTextAttributes] = js.undefined
@@ -762,7 +722,6 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.LinkNs.GenericAttributes[ShadowLinkSelectors], opt: jointjsLib.jointjsMod.diaNs.GraphNs.Options) = this()
     }
     
-    
     trait ShadowLinkSelectors extends js.Object {
       var line: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGPathAttributes] = js.undefined
       var root: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes] = js.undefined
@@ -775,7 +734,6 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[TextBlockSelectors]) = this()
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[TextBlockSelectors], opt: jointjsLib.jointjsMod.diaNs.GraphNs.Options) = this()
     }
-    
     
     trait TextBlockSelectors extends js.Object {
       var body: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGRectAttributes] = js.undefined
@@ -817,7 +775,6 @@ object shapesNs extends js.Object {
       /* protected */ def updateRectangles(): scala.Unit = js.native
     }
     
-    
     trait ClassAttributes
       extends jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[jointjsLib.jointjsMod.shapesNs.SVGRectSelector] {
       var attributes: js.Array[java.lang.String]
@@ -839,7 +796,6 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[EndStateSelectors]) = this()
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[EndStateSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
-    
     
     trait EndStateSelectors
       extends jointjsLib.jointjsMod.diaNs.CellNs.Selectors {
@@ -883,7 +839,6 @@ object shapesNs extends js.Object {
       /* protected */ def updateName(): scala.Unit = js.native
       /* protected */ def updatePath(): scala.Unit = js.native
     }
-    
     
     trait StateSelectors
       extends jointjsLib.jointjsMod.diaNs.CellNs.Selectors {

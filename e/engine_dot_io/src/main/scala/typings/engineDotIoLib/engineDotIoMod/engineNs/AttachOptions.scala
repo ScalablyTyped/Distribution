@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AttachOptions extends js.Object {
   /**
   		 * destroy unhandled upgrade requests (true)

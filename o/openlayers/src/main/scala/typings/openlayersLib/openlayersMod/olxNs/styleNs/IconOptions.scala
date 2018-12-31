@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IconOptions extends js.Object {
   var anchor: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var anchorOrigin: js.UndefOr[openlayersLib.openlayersMod.styleNs.IconOrigin] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProjectsDisableXpnResourceRequest extends js.Object {
   /** Service resource (a.k.a service project) ID. */
   var xpnResource: js.UndefOr[XpnResourceId] = js.undefined

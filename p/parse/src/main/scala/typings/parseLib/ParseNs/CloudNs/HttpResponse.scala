@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HttpResponse extends js.Object {
   var buffer: js.UndefOr[nodeLib.Buffer] = js.undefined
   var cookies: js.UndefOr[js.Any] = js.undefined

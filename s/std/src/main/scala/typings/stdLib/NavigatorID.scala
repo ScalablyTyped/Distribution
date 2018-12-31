@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigatorID extends js.Object {
   val appCodeName: java.lang.String
   val appName: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Traversable2vComposition[F, G]
   extends fpDashTsLib.libFoldable2vMod.Foldable2vComposition[F, G]
      with fpDashTsLib.libFunctorMod.FunctorComposition[F, G] {

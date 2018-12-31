@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class PlaybackMediaMarker protected () extends js.Object {
   /**
-                   * Initializes a new instance of the PlaybackMediaMarker class with the specified offset into the media timeline.
-                   * @param value The media marker's offset into the media timeline.
-                   */
+    * Initializes a new instance of the PlaybackMediaMarker class with the specified offset into the media timeline.
+    * @param value The media marker's offset into the media timeline.
+    */
   def this(value: scala.Double) = this()
   /**
-                   * Initializes a new instance of the PlaybackMediaMarker class with the specified offset into the media timeline, type string, and text.
-                   * @param value The media marker's offset into the media timeline.
-                   * @param mediaMarketType The type of the media marker.
-                   * @param text The text of the media marker.
-                   */
+    * Initializes a new instance of the PlaybackMediaMarker class with the specified offset into the media timeline, type string, and text.
+    * @param value The media marker's offset into the media timeline.
+    * @param mediaMarketType The type of the media marker.
+    * @param text The text of the media marker.
+    */
   def this(value: scala.Double, mediaMarketType: java.lang.String, text: java.lang.String) = this()
   /** Gets the type of the media marker. */
   var mediaMarkerType: java.lang.String = js.native

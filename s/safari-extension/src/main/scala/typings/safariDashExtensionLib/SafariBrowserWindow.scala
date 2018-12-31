@@ -21,21 +21,7 @@ trait SafariBrowserWindow extends SafariEventTarget {
   		* @returns A new tab.
   		*/
   def openTab(): SafariBrowserTab = js.native
-  /**
-  		* Opens a new tab in the window.
-  		* Available in Safari 5.0 and later.
-  		* @param visibility Either foreground if the tab should be opened in the foreground, or background if it should be opened in the background.
-  		* @param index The desired location of the new tab.
-  		* @returns A new tab.
-  		*/
   def openTab(visibility: java.lang.String): SafariBrowserTab = js.native
-  /**
-  		* Opens a new tab in the window.
-  		* Available in Safari 5.0 and later.
-  		* @param visibility Either foreground if the tab should be opened in the foreground, or background if it should be opened in the background.
-  		* @param index The desired location of the new tab.
-  		* @returns A new tab.
-  		*/
   def openTab(visibility: java.lang.String, index: scala.Double): SafariBrowserTab = js.native
 }
 

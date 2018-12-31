@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Defines the style of the rendered text in a TimedTextCue . You can set the style of a substring within a TimedTextLine by using the Subformats property. */
 @JSGlobal("Windows.Media.Core.TimedTextStyle")
 @js.native
+/** Initializes a new instance of the TimedTextStyle class. */
 class TimedTextStyle () extends js.Object {
   /** Gets or sets the background color of timed text. */
   var background: winrtDashUwpLib.WindowsNs.UINs.Color = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Command extends Chat {
   var args: js.Array[java.lang.String]
   var command: java.lang.String

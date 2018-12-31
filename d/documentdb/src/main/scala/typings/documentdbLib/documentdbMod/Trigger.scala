@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Trigger extends UserScriptable {
   /** The trigger operation. Should be one of 'all', 'create', 'update', 'delete', or 'replace'. */
   var triggerOperation: TriggerOperation

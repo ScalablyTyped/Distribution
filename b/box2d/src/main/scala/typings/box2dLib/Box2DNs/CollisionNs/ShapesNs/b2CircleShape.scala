@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Collision.Shapes.b2CircleShape")
 @js.native
+/**
+		* Creates a new circle shape.
+		* @param radius Circle radius.
+		**/
 class b2CircleShape () extends b2Shape {
-  /**
-  		* Creates a new circle shape.
-  		* @param radius Circle radius.
-  		**/
   def this(radius: scala.Double) = this()
   /**
   		* Get the local position of this circle in its parent body.

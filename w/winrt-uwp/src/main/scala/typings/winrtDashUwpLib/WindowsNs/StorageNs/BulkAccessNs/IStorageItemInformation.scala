@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides synchronous access to the properties of a file or folder in the file system. */
-
 trait IStorageItemInformation extends js.Object {
   /** Gets an object that contains the basic properties information of the item. */
   var basicProperties: winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.BasicProperties

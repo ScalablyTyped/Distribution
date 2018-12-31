@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BufferScanResult extends js.Object {
   var buffer: TextBuffer
   var lineText: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Column extends js.Object {
   /** Align right */
   var alignRight: js.UndefOr[scala.Boolean] = js.undefined
@@ -16,12 +15,12 @@ trait Column extends js.Object {
   /** Label */
   var label: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Render function. Given the value extracted
-       * from the row; and the row also. Can return JSX content.
-       * @param value - the extracted value from data
-       * @param row - the data object representing this row
-       * @returns Any react node (JSX compatible return)
-       */
+    * Render function. Given the value extracted
+    * from the row; and the row also. Can return JSX content.
+    * @param value - the extracted value from data
+    * @param row - the data object representing this row
+    * @returns Any react node (JSX compatible return)
+    */
   var render: js.UndefOr[js.Function2[/* value */ js.Any, /* row */ js.Any, _]] = js.undefined
   /** If the column is sortable */
   var sortable: js.UndefOr[scala.Boolean] = js.undefined

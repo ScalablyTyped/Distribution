@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CloudFrontCustomOrigin extends js.Object {
   var customHeaders: CloudFrontHeaders
   var domainName: java.lang.String

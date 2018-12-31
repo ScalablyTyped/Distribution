@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AdUnit extends js.Object {
   /** Identity code of this ad unit, not necessarily unique across ad clients. */
   var code: js.UndefOr[java.lang.String] = js.undefined
@@ -22,13 +21,13 @@ trait AdUnit extends js.Object {
   /** Name of this ad unit. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Status of this ad unit. Possible values are:
-               * NEW: Indicates that the ad unit was created within the last seven days and does not yet have any activity associated with it.
-               *
-               * ACTIVE: Indicates that there has been activity on this ad unit in the last seven days.
-               *
-               * INACTIVE: Indicates that there has been no activity on this ad unit in the last seven days.
-               */
+    * Status of this ad unit. Possible values are:
+    * NEW: Indicates that the ad unit was created within the last seven days and does not yet have any activity associated with it.
+    *
+    * ACTIVE: Indicates that there has been activity on this ad unit in the last seven days.
+    *
+    * INACTIVE: Indicates that there has been no activity on this ad unit in the last seven days.
+    */
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object PromiseSftpNs extends js.Object {
   /** Output of `PromiseSftp#list()` */
-  
   trait DirectoryListing extends js.Object {
     /** The last modified date of the entry. */
     var date: stdLib.Date
@@ -33,17 +32,16 @@ object PromiseSftpNs extends js.Object {
   sealed trait ERROR_CODES extends js.Object
   
   /** Options for `PromiseSftp#fast{Get,Put}` */
-  
   trait FastOptions extends js.Object {
     /**
-             * Size of each read in bytes
-             * @default 32768
-             */
+      * Size of each read in bytes
+      * @default 32768
+      */
     var chunkSize: scala.Double
     /**
-             * Number of concurrent reads
-             * @default 25
-             */
+      * Number of concurrent reads
+      * @default 25
+      */
     var concurrency: js.UndefOr[scala.Double] = js.undefined
     /** Called every time a part of a file is transferred */
     var step: js.UndefOr[
@@ -90,7 +88,6 @@ object PromiseSftpNs extends js.Object {
   sealed trait STATUSES extends js.Object
   
   /** From the [statvfs struct](http://linux.die.net/man/2/statvfs). */
-  
   trait Statvfs extends js.Object {
     /** free blocks for unprivileged users */
     var f_bavail: scala.Double
@@ -292,8 +289,8 @@ object PromiseSftpNs extends js.Object {
   }
   
   /**
-       * Options for SftpPromise#connect()
-       */
+    * Options for SftpPromise#connect()
+    */
   type Options = ssh2Lib.ssh2Mod.ConnectConfig with promiseDashSftpLib.Anon_ConnTimeout
 }
 

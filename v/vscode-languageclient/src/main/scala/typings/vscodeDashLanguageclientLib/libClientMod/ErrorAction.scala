@@ -12,15 +12,15 @@ sealed trait ErrorAction extends js.Object
 @js.native
 object ErrorAction extends js.Object {
   /**
-       * Continue running the server.
-       */
+    * Continue running the server.
+    */
   @js.native
   sealed trait Continue
     extends vscodeDashLanguageclientLib.libClientMod.ErrorAction
   
   /**
-       * Shutdown the server.
-       */
+    * Shutdown the server.
+    */
   @js.native
   sealed trait Shutdown
     extends vscodeDashLanguageclientLib.libClientMod.ErrorAction

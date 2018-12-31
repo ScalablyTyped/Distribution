@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISeriesPointer extends js.Object {
   var chart: IChart
   var colorEach: scala.Boolean

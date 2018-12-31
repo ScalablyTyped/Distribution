@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatabasesResource extends js.Object {
   /** Deletes a database from a Cloud SQL instance. */
   def delete(request: gapiDotClientDotSqladminLib.Anon_Database): gapiDotClientLib.gapiNs.clientNs.Request[Operation]

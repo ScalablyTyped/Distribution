@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Performs a license acquisition process. */
-
 trait IPlayReadyLicenseAcquisitionServiceRequest extends IPlayReadyServiceRequest {
   /** Gets the current content header property. */
   var contentHeader: PlayReadyContentHeader

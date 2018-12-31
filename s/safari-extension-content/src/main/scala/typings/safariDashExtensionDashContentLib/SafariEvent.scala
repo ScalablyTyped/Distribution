@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SafariEvent extends js.Object {
   /**
   		* A Boolean value that indicates whether the event goes through the bubbling phase.

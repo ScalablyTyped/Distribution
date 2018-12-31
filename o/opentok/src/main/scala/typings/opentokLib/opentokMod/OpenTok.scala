@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OpenTok extends js.Object {
   def createSession(
     options: opentokLib.opentokMod.OpenTokNs.SessionOptions,

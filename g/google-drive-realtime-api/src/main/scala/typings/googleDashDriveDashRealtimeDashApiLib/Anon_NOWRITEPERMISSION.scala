@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NOWRITEPERMISSION extends js.Object {
   // An internal error occurred in the Drive Realtime API client.
   var CLIENT_ERROR: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType

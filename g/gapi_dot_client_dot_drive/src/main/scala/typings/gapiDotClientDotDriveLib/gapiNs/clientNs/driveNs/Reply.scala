@@ -5,20 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Reply extends js.Object {
   /**
-               * The action the reply performed to the parent comment. Valid values are:
-               * - resolve
-               * - reopen
-               */
+    * The action the reply performed to the parent comment. Valid values are:
+    * - resolve
+    * - reopen
+    */
   var action: js.UndefOr[java.lang.String] = js.undefined
   /** The user who created the reply. */
   var author: js.UndefOr[User] = js.undefined
   /**
-               * The plain text content of the reply. This field is used for setting the content, while htmlContent should be displayed. This is required on creates if
-               * no action is specified.
-               */
+    * The plain text content of the reply. This field is used for setting the content, while htmlContent should be displayed. This is required on creates if
+    * no action is specified.
+    */
   var content: js.UndefOr[java.lang.String] = js.undefined
   /** The time at which the reply was created (RFC 3339 date-time). */
   var createdTime: js.UndefOr[java.lang.String] = js.undefined

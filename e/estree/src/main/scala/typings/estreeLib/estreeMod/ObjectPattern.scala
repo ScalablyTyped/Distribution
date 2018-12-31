@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObjectPattern extends BaseNode {
   var properties: js.Array[AssignmentProperty]
   @JSName("type")

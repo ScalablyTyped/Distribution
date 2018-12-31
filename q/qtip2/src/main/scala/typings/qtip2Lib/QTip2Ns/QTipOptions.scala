@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * Options
 	 */
-
 trait QTipOptions extends js.Object {
   var content: js.UndefOr[Text | Content] = js.undefined
   var events: js.UndefOr[Events] = js.undefined

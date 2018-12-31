@@ -15,7 +15,6 @@ trait KnockoutObservableArrayFunctions[T]
   def destroyAll(items: js.Array[T]): scala.Unit = js.native
   // General Array functions
   def indexOf(searchElement: T): scala.Double = js.native
-  // General Array functions
   def indexOf(searchElement: T, fromIndex: scala.Double): scala.Double = js.native
   def pop(): T = js.native
   def push(items: T*): scala.Unit = js.native

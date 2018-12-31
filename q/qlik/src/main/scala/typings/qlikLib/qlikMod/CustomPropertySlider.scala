@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomPropertySlider extends CustomPropertyCommon {
   var component: qlikLib.qlikLibStrings.slider
   var defaultValue: js.UndefOr[scala.Double] = js.undefined

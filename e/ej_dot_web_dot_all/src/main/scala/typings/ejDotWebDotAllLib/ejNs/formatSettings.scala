@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait formatSettings extends js.Object {
   var currency: currencySettings
   var decimals: scala.Double

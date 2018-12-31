@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HolidayDefinition extends js.Object {
   var date: java.lang.String
   var keywords: js.UndefOr[js.Array[java.lang.String]] = js.undefined

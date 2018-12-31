@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOptions extends js.Object {
   /** When additionalProperties is true allow additional unvisited properties on the object. (default true) */
   var additionalProperties: js.UndefOr[scala.Boolean] = js.undefined

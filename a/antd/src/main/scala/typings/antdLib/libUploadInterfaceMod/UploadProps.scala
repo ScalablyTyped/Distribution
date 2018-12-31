@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadProps extends js.Object {
   var accept: js.UndefOr[java.lang.String] = js.undefined
   var action: js.UndefOr[java.lang.String | (js.Function1[/* file */ UploadFile, js.Thenable[_]])] = js.undefined

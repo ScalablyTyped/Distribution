@@ -69,7 +69,6 @@ object linkToolsNs extends js.Object {
   @JSName("Anchor")
   @js.native
   object AnchorNs extends js.Object {
-    
     trait Options
       extends jointjsLib.jointjsMod.diaNs.ToolViewNs.Options {
       var anchor: js.UndefOr[
@@ -91,7 +90,6 @@ object linkToolsNs extends js.Object {
   @JSName("Boundary")
   @js.native
   object BoundaryNs extends js.Object {
-    
     trait Options
       extends jointjsLib.jointjsMod.diaNs.ToolViewNs.Options {
       var padding: js.UndefOr[scala.Double] = js.undefined
@@ -102,7 +100,6 @@ object linkToolsNs extends js.Object {
   @JSName("Button")
   @js.native
   object ButtonNs extends js.Object {
-    
     trait Options
       extends jointjsLib.jointjsMod.diaNs.ToolViewNs.Options {
       var action: js.UndefOr[ActionCallback] = js.undefined
@@ -122,7 +119,6 @@ object linkToolsNs extends js.Object {
   @JSName("Segments")
   @js.native
   object SegmentsNs extends js.Object {
-    
     trait Options
       extends jointjsLib.jointjsMod.diaNs.ToolViewNs.Options {
       var anchor: js.UndefOr[
@@ -139,7 +135,6 @@ object linkToolsNs extends js.Object {
   @JSName("Vertices")
   @js.native
   object VerticesNs extends js.Object {
-    
     trait Options
       extends jointjsLib.jointjsMod.diaNs.ToolViewNs.Options {
       var redundancyRemoval: js.UndefOr[scala.Boolean] = js.undefined

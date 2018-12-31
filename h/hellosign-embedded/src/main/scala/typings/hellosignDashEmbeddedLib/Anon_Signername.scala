@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Signername extends js.Object {
   var has_pin: scala.Boolean
   var last_reminded_at: scala.Double

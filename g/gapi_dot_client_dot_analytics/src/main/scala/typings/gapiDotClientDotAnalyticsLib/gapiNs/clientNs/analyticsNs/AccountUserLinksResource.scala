@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountUserLinksResource extends js.Object {
   /** Removes a user from the given account. */
   def delete(request: gapiDotClientDotAnalyticsLib.Anon_LinkId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

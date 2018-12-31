@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServeOptions extends js.Object {
   var `--`: js.Array[java.lang.String]
   var address: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PrinterOptions extends js.Object {
   var newLine: js.UndefOr[NewLineKind] = js.undefined
   var noEmitHelpers: js.UndefOr[scala.Boolean] = js.undefined

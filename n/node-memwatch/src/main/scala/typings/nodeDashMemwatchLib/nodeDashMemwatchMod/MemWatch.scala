@@ -10,10 +10,10 @@ trait MemWatch
   extends nodeLib.eventsMod.EventEmitter {
   var HeapDiff: org.scalablytyped.runtime.Instantiable0[HeapDiff] = js.native
   /**
-       * Force V8 to do a full GC and heap compaction.
-       *
-       * It's intended to be used for debugging. Calling it in production is highly discouraged.
-       */
+    * Force V8 to do a full GC and heap compaction.
+    *
+    * It's intended to be used for debugging. Calling it in production is highly discouraged.
+    */
   def gc(): scala.Unit = js.native
   @JSName("on")
   def on_leak(

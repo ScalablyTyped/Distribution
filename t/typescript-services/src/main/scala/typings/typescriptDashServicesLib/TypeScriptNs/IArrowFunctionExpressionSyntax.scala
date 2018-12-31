@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IArrowFunctionExpressionSyntax extends IUnaryExpressionSyntax {
   var block: BlockSyntax
   var equalsGreaterThanToken: ISyntaxToken

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IssuerAndSerialNumber extends js.Object {
   var issuer: pkijsLib.srcRelativeDistinguishedNamesMod.default
   var serialNumber: asn1jsLib.asn1jsMod.Integer

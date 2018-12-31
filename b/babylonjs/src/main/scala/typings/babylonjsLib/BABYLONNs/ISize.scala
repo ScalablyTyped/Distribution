@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Interface for the size containing width and height
-     */
-
+  * Interface for the size containing width and height
+  */
 trait ISize extends js.Object {
   /**
-           * Heighht
-           */
+    * Heighht
+    */
   var height: scala.Double
   /**
-           * Width
-           */
+    * Width
+    */
   var width: scala.Double
 }
 

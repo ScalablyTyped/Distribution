@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictAccordionAccordionProps extends js.Object {
   /** Index of the currently active panel. */
   var activeIndex: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
@@ -20,11 +19,11 @@ trait StrictAccordionAccordionProps extends js.Object {
   /** Only allow one panel open at a time. */
   var exclusive: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * Called when a panel title is clicked.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {AccordionTitleProps} data - All item props.
-     */
+    * Called when a panel title is clicked.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {AccordionTitleProps} data - All item props.
+    */
   var onTitleClick: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 

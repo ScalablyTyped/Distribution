@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FeaturesResultPayload extends EventPayload {
   var duration: scala.Double
   var scenarioResults: js.Array[_]

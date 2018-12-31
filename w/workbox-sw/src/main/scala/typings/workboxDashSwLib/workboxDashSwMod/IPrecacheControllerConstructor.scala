@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Create a new PrecacheController.
- */
+  * Create a new PrecacheController.
+  */
 @js.native
 trait IPrecacheControllerConstructor
   extends org.scalablytyped.runtime.Instantiable0[PrecacheController]

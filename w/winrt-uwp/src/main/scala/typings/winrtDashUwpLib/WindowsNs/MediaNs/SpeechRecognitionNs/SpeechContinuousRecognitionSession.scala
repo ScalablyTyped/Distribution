@@ -35,9 +35,9 @@ abstract class SpeechContinuousRecognitionSession () extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-                   * Asynchronously cancel the continuous speech recognition session and discard all pending recognition results.
-                   * @return An asynchronous handler called when the operation is complete.
-                   */
+    * Asynchronously cancel the continuous speech recognition session and discard all pending recognition results.
+    * @return An asynchronous handler called when the operation is complete.
+    */
   def cancelAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /** Occurs when a continuous recognition session ends. */
   def oncompleted(
@@ -48,9 +48,9 @@ abstract class SpeechContinuousRecognitionSession () extends js.Object {
     ev: SpeechContinuousRecognitionResultGeneratedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[SpeechContinuousRecognitionSession]
   ): scala.Unit = js.native
   /**
-                   * Asynchronously pause a continuous speech recognition session.
-                   * @return An asynchronous handler called when the operation is complete.
-                   */
+    * Asynchronously pause a continuous speech recognition session.
+    * @return An asynchronous handler called when the operation is complete.
+    */
   def pauseAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   def removeEventListener(`type`: java.lang.String, listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]): scala.Unit = js.native
   @JSName("removeEventListener")
@@ -69,20 +69,20 @@ abstract class SpeechContinuousRecognitionSession () extends js.Object {
   /** Resumes a continuous speech recognition session, if paused. */
   def resume(): scala.Unit = js.native
   /**
-                   * Overload
-                   * @return An asynchronous handler called when the operation is complete.
-                   */
+    * Overload
+    * @return An asynchronous handler called when the operation is complete.
+    */
   def startAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Overload
-                   * @param mode The speech recognition behavior.
-                   * @return An asynchronous handler called when the operation is complete.
-                   */
+    * Overload
+    * @param mode The speech recognition behavior.
+    * @return An asynchronous handler called when the operation is complete.
+    */
   def startAsync(mode: SpeechContinuousRecognitionMode): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Asynchronously end a continuous speech recognition session and pass all pending recognition results to the ResultGenerated event.
-                   * @return An asynchronous handler called when the operation is complete.
-                   */
+    * Asynchronously end a continuous speech recognition session and pass all pending recognition results to the ResultGenerated event.
+    * @return An asynchronous handler called when the operation is complete.
+    */
   def stopAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

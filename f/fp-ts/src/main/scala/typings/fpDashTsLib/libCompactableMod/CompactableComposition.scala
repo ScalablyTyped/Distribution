@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompactableComposition[F, G]
   extends fpDashTsLib.libFunctorMod.FunctorComposition[F, G] {
   def compact[A](

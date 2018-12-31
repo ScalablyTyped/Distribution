@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IconToggleProps
   extends reactLib.reactMod.ReactNs.HTMLProps[js.Any]
      with RippleComponent {

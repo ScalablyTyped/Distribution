@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExtendOptions extends js.Object {
   var enhance: js.UndefOr[scala.Boolean] = js.undefined
   var enhanceArray: js.UndefOr[scala.Boolean] = js.undefined

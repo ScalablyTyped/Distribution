@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when text message is received
 		*/
-
 trait MessageReceived extends js.Object {
   /**
   			*	Call that dispatched the event

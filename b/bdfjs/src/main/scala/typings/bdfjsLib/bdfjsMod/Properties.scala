@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Properties
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double]] {
   var addStyleName: js.UndefOr[java.lang.String] = js.undefined

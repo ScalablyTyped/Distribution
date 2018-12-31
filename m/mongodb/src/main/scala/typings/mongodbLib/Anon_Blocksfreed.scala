@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Blocksfreed extends js.Object {
   var `allocations requiring file extension`: scala.Double
   var `blocks allocated`: scala.Double

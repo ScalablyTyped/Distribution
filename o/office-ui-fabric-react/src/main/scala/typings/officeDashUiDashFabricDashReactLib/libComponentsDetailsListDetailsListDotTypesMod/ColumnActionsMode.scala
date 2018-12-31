@@ -12,22 +12,22 @@ sealed trait ColumnActionsMode extends js.Object
 @js.native
 object ColumnActionsMode extends js.Object {
   /**
-       * Renders the column header is clickable.
-       */
+    * Renders the column header is clickable.
+    */
   @js.native
   sealed trait clickable
     extends officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.ColumnActionsMode
   
   /**
-       * Renders the column header as disabled.
-       */
+    * Renders the column header as disabled.
+    */
   @js.native
   sealed trait disabled
     extends officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.ColumnActionsMode
   
   /**
-       * Renders the column header ias clickable and displays the dropdown cheveron.
-       */
+    * Renders the column header ias clickable and displays the dropdown cheveron.
+    */
   @js.native
   sealed trait hasDropdown
     extends officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.ColumnActionsMode

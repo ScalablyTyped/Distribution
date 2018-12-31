@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MarketplacenotesResource extends js.Object {
   /** Add notes to the proposal */
   def insert(request: gapiDotClientDotAdexchangebuyerLib.Anon_PrettyPrintProposalId): gapiDotClientLib.gapiNs.clientNs.Request[AddOrderNotesResponse]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FlexOrderSmall extends js.Object {
   var alignX: propDashTypesLib.propDashTypesMod.Requireable[_]
   var alignY: propDashTypesLib.propDashTypesMod.Requireable[_]

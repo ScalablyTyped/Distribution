@@ -23,52 +23,17 @@ trait Shapes extends js.Object {
   ): Shape = js.native
   def AddCanvas(Left: scala.Double, Top: scala.Double, Width: scala.Double, Height: scala.Double): Shape = js.native
   /**
-           * @param Type [Type=-1]
-           * @param Left [Left=-1]
-           * @param Top [Top=-1]
-           * @param Width [Width=-1]
-           * @param Height [Height=-1]
-           */
+    * @param Type [Type=-1]
+    * @param Left [Left=-1]
+    * @param Top [Top=-1]
+    * @param Width [Width=-1]
+    * @param Height [Height=-1]
+    */
   def AddChart(): Shape = js.native
-  /**
-           * @param Type [Type=-1]
-           * @param Left [Left=-1]
-           * @param Top [Top=-1]
-           * @param Width [Width=-1]
-           * @param Height [Height=-1]
-           */
   def AddChart(Type: XlChartType): Shape = js.native
-  /**
-           * @param Type [Type=-1]
-           * @param Left [Left=-1]
-           * @param Top [Top=-1]
-           * @param Width [Width=-1]
-           * @param Height [Height=-1]
-           */
   def AddChart(Type: XlChartType, Left: scala.Double): Shape = js.native
-  /**
-           * @param Type [Type=-1]
-           * @param Left [Left=-1]
-           * @param Top [Top=-1]
-           * @param Width [Width=-1]
-           * @param Height [Height=-1]
-           */
   def AddChart(Type: XlChartType, Left: scala.Double, Top: scala.Double): Shape = js.native
-  /**
-           * @param Type [Type=-1]
-           * @param Left [Left=-1]
-           * @param Top [Top=-1]
-           * @param Width [Width=-1]
-           * @param Height [Height=-1]
-           */
   def AddChart(Type: XlChartType, Left: scala.Double, Top: scala.Double, Width: scala.Double): Shape = js.native
-  /**
-           * @param Type [Type=-1]
-           * @param Left [Left=-1]
-           * @param Top [Top=-1]
-           * @param Width [Width=-1]
-           * @param Height [Height=-1]
-           */
   def AddChart(
     Type: XlChartType,
     Left: scala.Double,
@@ -77,14 +42,14 @@ trait Shapes extends js.Object {
     Height: scala.Double
   ): Shape = js.native
   /**
-           * @param Style [Style=-1]
-           * @param Type [Type=-1]
-           * @param Left [Left=-1]
-           * @param Top [Top=-1]
-           * @param Width [Width=-1]
-           * @param Height [Height=-1]
-           * @param NewLayout [NewLayout=true]
-           */
+    * @param Style [Style=-1]
+    * @param Type [Type=-1]
+    * @param Left [Left=-1]
+    * @param Top [Top=-1]
+    * @param Width [Width=-1]
+    * @param Height [Height=-1]
+    * @param NewLayout [NewLayout=true]
+    */
   def AddChart2(
     Style: js.UndefOr[scala.Double],
     Type: js.UndefOr[XlChartType],
@@ -118,9 +83,9 @@ trait Shapes extends js.Object {
   ): Shape = js.native
   def AddLine(BeginX: scala.Double, BeginY: scala.Double, EndX: scala.Double, EndY: scala.Double): Shape = js.native
   /**
-           * @param Width [Width=-1]
-           * @param Height [Height=-1]
-           */
+    * @param Width [Width=-1]
+    * @param Height [Height=-1]
+    */
   def AddPicture(
     FileName: java.lang.String,
     LinkToFile: MsoTriState,
@@ -128,10 +93,6 @@ trait Shapes extends js.Object {
     Left: scala.Double,
     Top: scala.Double
   ): Shape = js.native
-  /**
-           * @param Width [Width=-1]
-           * @param Height [Height=-1]
-           */
   def AddPicture(
     FileName: java.lang.String,
     LinkToFile: MsoTriState,
@@ -140,10 +101,6 @@ trait Shapes extends js.Object {
     Top: scala.Double,
     Width: scala.Double
   ): Shape = js.native
-  /**
-           * @param Width [Width=-1]
-           * @param Height [Height=-1]
-           */
   def AddPicture(
     FileName: java.lang.String,
     LinkToFile: MsoTriState,
@@ -162,39 +119,15 @@ trait Shapes extends js.Object {
     Height: scala.Double
   ): Shape = js.native
   /**
-           * @param Left [Left=-1]
-           * @param Top [Top=-1]
-           * @param Width [Width=-1]
-           * @param Height [Height=-1]
-           */
+    * @param Left [Left=-1]
+    * @param Top [Top=-1]
+    * @param Width [Width=-1]
+    * @param Height [Height=-1]
+    */
   def AddSmartArt(Layout: SmartArtLayout): Shape = js.native
-  /**
-           * @param Left [Left=-1]
-           * @param Top [Top=-1]
-           * @param Width [Width=-1]
-           * @param Height [Height=-1]
-           */
   def AddSmartArt(Layout: SmartArtLayout, Left: scala.Double): Shape = js.native
-  /**
-           * @param Left [Left=-1]
-           * @param Top [Top=-1]
-           * @param Width [Width=-1]
-           * @param Height [Height=-1]
-           */
   def AddSmartArt(Layout: SmartArtLayout, Left: scala.Double, Top: scala.Double): Shape = js.native
-  /**
-           * @param Left [Left=-1]
-           * @param Top [Top=-1]
-           * @param Width [Width=-1]
-           * @param Height [Height=-1]
-           */
   def AddSmartArt(Layout: SmartArtLayout, Left: scala.Double, Top: scala.Double, Width: scala.Double): Shape = js.native
-  /**
-           * @param Left [Left=-1]
-           * @param Top [Top=-1]
-           * @param Width [Width=-1]
-           * @param Height [Height=-1]
-           */
   def AddSmartArt(
     Layout: SmartArtLayout,
     Left: scala.Double,

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SetDetails extends js.Object {
   /** Optional. The domain of the cookie. If omitted, the cookie becomes a host-only cookie.  */
   var domain: js.UndefOr[java.lang.String] = js.undefined

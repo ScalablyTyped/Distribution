@@ -7,18 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("libxmljs", "Document")
 @js.native
+/**
+  * Create a new XML Document
+  * @param version XML document version, defaults to 1.0
+  * @param encoding Encoding, defaults to utf8
+  */
 class Document () extends js.Object {
-  /**
-       * Create a new XML Document
-       * @param version XML document version, defaults to 1.0
-       * @param encoding Encoding, defaults to utf8
-       */
   def this(version: scala.Double) = this()
-  /**
-       * Create a new XML Document
-       * @param version XML document version, defaults to 1.0
-       * @param encoding Encoding, defaults to utf8
-       */
   def this(version: scala.Double, encoding: java.lang.String) = this()
   var errors: js.Array[SyntaxError] = js.native
   var validationErrors: js.Array[ValidationError] = js.native

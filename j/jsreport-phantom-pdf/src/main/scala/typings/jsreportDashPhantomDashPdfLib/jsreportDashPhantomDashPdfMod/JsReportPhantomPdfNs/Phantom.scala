@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Phantom extends js.Object {
   var blockJavaScript: scala.Boolean
   var customPhantomJS: scala.Boolean

@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class OnlineIdServiceTicketRequest protected () extends js.Object {
   /**
-                       * Creates an instance of the OnlineIdServiceTicketRequest class.
-                       * @param service The service for the request.
-                       */
+    * Creates an instance of the OnlineIdServiceTicketRequest class.
+    * @param service The service for the request.
+    */
   def this(service: java.lang.String) = this()
   /**
-                       * Creates an instance of the OnlineIdServiceTicketRequest class.
-                       * @param service The service for the request.
-                       * @param policy The policy for the request.
-                       */
+    * Creates an instance of the OnlineIdServiceTicketRequest class.
+    * @param service The service for the request.
+    * @param policy The policy for the request.
+    */
   def this(service: java.lang.String, policy: java.lang.String) = this()
   /** The policy used to authenticate users. Supported values are JWT, which returns data using the JSON format. For apps that are requesting user consent to access stored in Live, app developer must pass a policy of DELEGATION. */
   var policy: java.lang.String = js.native

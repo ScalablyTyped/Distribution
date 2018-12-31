@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMetadataCardSelectionList extends js.Object {
   val Events: IEvents
   val Filter: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ColumnMinWidth extends js.Object {
   var children: reactLib.reactMod.ReactNs.Validator[
     js.Function1[

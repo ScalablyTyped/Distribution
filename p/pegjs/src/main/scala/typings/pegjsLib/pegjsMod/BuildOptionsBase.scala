@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BuildOptionsBase extends js.Object {
   /** rules the parser will be allowed to start parsing from (default: the first rule in the grammar) */
   var allowedStartRules: js.UndefOr[js.Array[java.lang.String]] = js.undefined

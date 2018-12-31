@@ -12,22 +12,22 @@ sealed trait IdentityDisplayFormat extends js.Object
 @js.native
 object IdentityDisplayFormat extends js.Object {
   /**
-       * Display Avatar and Full name
-       */
+    * Display Avatar and Full name
+    */
   @js.native
   sealed trait AvatarAndFullName
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.IdentityDisplayFormat
   
   /**
-       * Display avatar only
-       */
+    * Display avatar only
+    */
   @js.native
   sealed trait AvatarOnly
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.IdentityDisplayFormat
   
   /**
-       * Display Full name only
-       */
+    * Display Full name only
+    */
   @js.native
   sealed trait FullName
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.IdentityDisplayFormat

@@ -38,9 +38,7 @@ trait Scenarios extends js.Object {
   ): Scenario = js.native
   /** @param ReportType [ReportType=1] */
   def CreateSummary(): js.Any = js.native
-  /** @param ReportType [ReportType=1] */
   def CreateSummary(ReportType: XlSummaryReportType): js.Any = js.native
-  /** @param ReportType [ReportType=1] */
   def CreateSummary(ReportType: XlSummaryReportType, ResultCells: Range): js.Any = js.native
   def Item(Index: java.lang.String): Scenario = js.native
   def Item(Index: scala.Double): Scenario = js.native

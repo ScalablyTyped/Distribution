@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PagespeedApiImageV2 extends js.Object {
   /** Image data base64 encoded. */
   var data: js.UndefOr[java.lang.String] = js.undefined

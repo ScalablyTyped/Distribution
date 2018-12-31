@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MouseEvent extends js.Object {
   var button: scala.Double
   var height: scala.Double

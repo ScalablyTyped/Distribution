@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimeRanges extends js.Object {
   val length: scala.Double
   def end(index: scala.Double): scala.Double

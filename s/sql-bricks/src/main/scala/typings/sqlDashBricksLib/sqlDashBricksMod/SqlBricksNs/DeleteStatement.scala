@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-   * A DELETE statement
-   */
+  * A DELETE statement
+  */
 @js.native
 trait DeleteStatement extends Statement {
   def and(): SelectStatement = js.native

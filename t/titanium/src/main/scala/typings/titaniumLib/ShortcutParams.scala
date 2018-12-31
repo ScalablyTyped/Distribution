@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Object of options for <Titanium.UI.iOS.ApplicationShortcuts.addDynamicShortcut>.
- */
-
+  * Object of options for <Titanium.UI.iOS.ApplicationShortcuts.addDynamicShortcut>.
+  */
 trait ShortcutParams extends js.Object {
   /**
   	 * The icon to be displayed on the application shortcut. You can either use one of the constants like

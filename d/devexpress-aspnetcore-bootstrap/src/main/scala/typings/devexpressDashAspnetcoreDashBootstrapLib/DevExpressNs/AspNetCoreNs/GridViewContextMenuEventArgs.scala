@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridViewContextMenuEventArgs extends EventArgs {
   val htmlEvent: js.Any
   val index: scala.Double

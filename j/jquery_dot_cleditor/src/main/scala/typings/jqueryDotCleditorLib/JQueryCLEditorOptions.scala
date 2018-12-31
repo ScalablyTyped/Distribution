@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQueryCLEditorOptions extends js.Object {
   var bodyStyle: js.UndefOr[java.lang.String] = js.undefined
   var colors: js.UndefOr[java.lang.String] = js.undefined

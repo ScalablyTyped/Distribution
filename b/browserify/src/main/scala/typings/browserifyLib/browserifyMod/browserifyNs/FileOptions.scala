@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Options pertaining to an individual file.
- */
-
+  * Options pertaining to an individual file.
+  */
 trait FileOptions extends js.Object {
   // Basedir to use to resolve this file's path.
   var basedir: js.UndefOr[java.lang.String] = js.undefined

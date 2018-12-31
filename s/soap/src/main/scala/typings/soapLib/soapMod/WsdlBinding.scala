@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WsdlBinding extends XsdTypeBase {
   var methods: WsdlElements
   var style: java.lang.String

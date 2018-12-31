@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SectionDescriptor extends js.Object {
   var contentElement: js.UndefOr[stdLib.HTMLElement] = js.undefined
   var footerLinkText: js.UndefOr[java.lang.String] = js.undefined

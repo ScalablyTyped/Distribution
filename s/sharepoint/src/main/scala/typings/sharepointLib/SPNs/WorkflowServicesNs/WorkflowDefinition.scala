@@ -26,17 +26,17 @@ class WorkflowDefinition protected ()
   /** true if the workflow definition has been published to the external workflow host; false if the workflow definition is only saved on the site  */
   def get_published(): scala.Boolean = js.native
   /** Determines whether to automatically generate an association form for this workflow.
-              If the value is true, and the associationUrl is not already set, a default association form is automatically generated for the workflow when saveDefinition is called.  */
+    If the value is true, and the associationUrl is not already set, a default association form is automatically generated for the workflow when saveDefinition is called.  */
   def get_requiresAssociationForm(): scala.Boolean = js.native
   /** Determines whether to automatically generate an initiation form for this workflow.
-              If the value is true, and the initiationUrl is not already set, a default initiation form is automatically generated for the workflow when saveDefinition is called.  */
+    If the value is true, and the initiationUrl is not already set, a default initiation form is automatically generated for the workflow when saveDefinition is called.  */
   def get_requiresInitiationForm(): scala.Boolean = js.native
   /** RestrictToScope is a GUID value, used in conjunction with the RestrictToType property to further restrict the scope of the definition.
-              For example, if the RestrictToType is "List", then setting the RestrictToScope to a particular list identifier limits the definition to be associable only to the specified list.
-              If the RestrictToType is "List" but the RestrictToScope is null or the empty string, then the definition is associable to any list. */
+    For example, if the RestrictToType is "List", then setting the RestrictToScope to a particular list identifier limits the definition to be associable only to the specified list.
+    If the RestrictToType is "List" but the RestrictToScope is null or the empty string, then the definition is associable to any list. */
   def get_restrictToScope(): java.lang.String = js.native
   /** RestrictToType determines the possible event source type for a workflow subscription that uses this definition.
-              Possible values include "List", "Site", the empty string, or null.  */
+    Possible values include "List", "Site", the empty string, or null.  */
   def get_restrictToType(): java.lang.String = js.native
   /** XAML definition of the workflow */
   def get_xaml(): java.lang.String = js.native
@@ -53,17 +53,17 @@ class WorkflowDefinition protected ()
   def set_id(value: java.lang.String): java.lang.String = js.native
   def set_initiationUrl(value: java.lang.String): java.lang.String = js.native
   /** Determines whether to automatically generate an association form for this workflow.
-              If the value is true, and the associationUrl is not already set, a default association form is automatically generated for the workflow when saveDefinition is called.  */
+    If the value is true, and the associationUrl is not already set, a default association form is automatically generated for the workflow when saveDefinition is called.  */
   def set_requiresAssociationForm(value: scala.Boolean): scala.Boolean = js.native
   /** Determines whether to automatically generate an initiation form for this workflow.
-              If the value is true, and the initiationUrl is not already set, a default initiation form is automatically generated for the workflow when saveDefinition is called.  */
+    If the value is true, and the initiationUrl is not already set, a default initiation form is automatically generated for the workflow when saveDefinition is called.  */
   def set_requiresInitiationForm(value: scala.Boolean): scala.Boolean = js.native
   /** RestrictToScope is a GUID value, used in conjunction with the RestrictToType property to further restrict the scope of the definition.
-              For example, if the RestrictToType is "List", then setting the RestrictToScope to a particular list identifier limits the definition to be associable only to the specified list.
-              If the RestrictToType is "List" but the RestrictToScope is null or the empty string, then the definition is associable to any list. */
+    For example, if the RestrictToType is "List", then setting the RestrictToScope to a particular list identifier limits the definition to be associable only to the specified list.
+    If the RestrictToType is "List" but the RestrictToScope is null or the empty string, then the definition is associable to any list. */
   def set_restrictToScope(value: java.lang.String): java.lang.String = js.native
   /** RestrictToType determines the possible event source type for a workflow subscription that uses this definition.
-              Possible values include "List", "Site", the empty string, or null.  */
+    Possible values include "List", "Site", the empty string, or null.  */
   def set_restrictToType(value: java.lang.String): java.lang.String = js.native
   /** XAML definition of the workflow */
   def set_xaml(value: java.lang.String): java.lang.String = js.native

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait Theme extends js.Object
 
 /**
-     * Constant Enum: Themes for {@link GlobalContext.getCurrentTheme globalContext.getCurrentTheme()}.
-     * @remarks getCurrentTheme() does not work with Dynamics CRM for tablets or in the unified interface.
-     */
+  * Constant Enum: Themes for {@link GlobalContext.getCurrentTheme globalContext.getCurrentTheme()}.
+  * @remarks getCurrentTheme() does not work with Dynamics CRM for tablets or in the unified interface.
+  */
 @JSGlobal("XrmEnum.Theme")
 @js.native
 object Theme extends js.Object {

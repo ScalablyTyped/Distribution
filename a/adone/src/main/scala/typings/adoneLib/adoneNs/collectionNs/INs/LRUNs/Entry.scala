@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Entry[K, V] extends js.Object {
   /**
-               * key
-               */
+    * key
+    */
   var key: K
   /**
-               * entry length
-               */
+    * entry length
+    */
   var length: scala.Double
   /**
-               * Maximum live time
-               */
+    * Maximum live time
+    */
   var maxAge: scala.Double
   /**
-               * Timestamp when the entry was created
-               */
+    * Timestamp when the entry was created
+    */
   var now: scala.Double
   /**
-               * value
-               */
+    * value
+    */
   var value: V
 }
 

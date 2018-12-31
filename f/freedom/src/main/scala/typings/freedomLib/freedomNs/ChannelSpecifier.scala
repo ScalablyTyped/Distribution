@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Specification for a channel.
-
 trait ChannelSpecifier extends js.Object {
   var channel: Channel
     // How to communicate over this channel.

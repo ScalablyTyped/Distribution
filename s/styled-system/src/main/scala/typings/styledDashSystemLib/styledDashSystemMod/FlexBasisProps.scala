@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlexBasisProps[TLength] extends js.Object {
   // TODO: The FlexBasisValue currently really only exists for documentation
   //       purposes, because flex-basis also accepts `Nem` and `Npx` strings.

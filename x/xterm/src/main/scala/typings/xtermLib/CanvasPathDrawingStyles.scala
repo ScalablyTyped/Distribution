@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CanvasPathDrawingStyles extends js.Object {
   var lineCap: CanvasLineCap
   var lineDashOffset: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JsBeautifyOptions extends js.Object {
   var brace_style: js.UndefOr[
     jsDashBeautifyLib.jsDashBeautifyLibStrings.`collapse-preserve-inline` | jsDashBeautifyLib.jsDashBeautifyLibStrings.collapse | jsDashBeautifyLib.jsDashBeautifyLibStrings.expand | jsDashBeautifyLib.jsDashBeautifyLibStrings.`end-expand` | jsDashBeautifyLib.jsDashBeautifyLibStrings.none

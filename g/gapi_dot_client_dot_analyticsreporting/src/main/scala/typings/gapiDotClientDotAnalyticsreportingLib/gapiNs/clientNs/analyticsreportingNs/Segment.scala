@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Segment extends js.Object {
   /** A dynamic segment definition in the request. */
   var dynamicSegment: js.UndefOr[DynamicSegment] = js.undefined

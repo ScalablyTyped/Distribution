@@ -13,16 +13,13 @@ class MDCNotchedOutline ()
       atMaterialNotchedDashOutlineLib.foundationMod.default
     ] {
   /**
-       * Updates the outline selectors to close notch and return it to idle state.
-       */
+    * Updates the outline selectors to close notch and return it to idle state.
+    */
   def closeNotch(): scala.Unit = js.native
   /**
-       * Updates outline selectors and SVG path to open notch.
-       */
+    * Updates outline selectors and SVG path to open notch.
+    */
   def notch(notchWidth: scala.Double): scala.Unit = js.native
-  /**
-       * Updates outline selectors and SVG path to open notch.
-       */
   def notch(notchWidth: scala.Double, isRtl: scala.Boolean): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SentMessageInfo
   extends nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SentMessageInfo {
   /** includes the envelope object for the message */

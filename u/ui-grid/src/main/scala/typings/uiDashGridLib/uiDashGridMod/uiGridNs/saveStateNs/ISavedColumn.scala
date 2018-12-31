@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISavedColumn extends js.Object {
   var filters: js.UndefOr[js.Array[uiDashGridLib.uiDashGridMod.uiGridNs.IFilterOptions]] = js.undefined
   var name: java.lang.String

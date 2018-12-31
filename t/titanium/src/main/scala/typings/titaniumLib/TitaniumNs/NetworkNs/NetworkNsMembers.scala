@@ -168,33 +168,21 @@ object NetworkNsMembers extends js.Object {
   		 * Creates and returns a `BonjourBrowser` object.
   		 */
   def createBonjourBrowser(serviceType: java.lang.String, domain: java.lang.String): BonjourBrowser = js.native
-  /**
-  		 * Creates and returns a `BonjourBrowser` object.
-  		 */
   def createBonjourBrowser(serviceType: java.lang.String, domain: java.lang.String, parameters: js.Any): BonjourBrowser = js.native
   /**
   		 * Creates and returns a `BonjourService` object.
   		 */
   def createBonjourService(name: java.lang.String, `type`: java.lang.String, domain: java.lang.String): BonjourService = js.native
-  /**
-  		 * Creates and returns a `BonjourService` object.
-  		 */
   def createBonjourService(name: java.lang.String, `type`: java.lang.String, domain: java.lang.String, parameters: js.Any): BonjourService = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Network.Cookie>.
   		 */
   def createCookie(): Cookie = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.Network.Cookie>.
-  		 */
   def createCookie(parameters: js.Any): Cookie = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Network.HTTPClient>.
   		 */
   def createHTTPClient(): HTTPClient = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.Network.HTTPClient>.
-  		 */
   def createHTTPClient(parameters: js.Any): HTTPClient = js.native
   /**
   		 * Legacy method to create and return an instance of <Titanium.Network.TCPSocket>.

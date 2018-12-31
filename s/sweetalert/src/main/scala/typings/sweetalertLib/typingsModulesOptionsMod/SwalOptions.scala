@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SwalOptions extends js.Object {
   var buttons: sweetalertLib.typingsModulesOptionsButtonsMod.ButtonList | (js.Array[java.lang.String | scala.Boolean])
   var className: java.lang.String

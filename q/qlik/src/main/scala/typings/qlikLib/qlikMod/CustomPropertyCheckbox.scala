@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomPropertyCheckbox extends CustomPropertyCommon {
   var defaultValue: js.UndefOr[scala.Boolean] = js.undefined
   @JSName("type")

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Monitor extends js.Object {
   var actionDispatched: js.UndefOr[js.Function1[/* action */ reduxLib.reduxMod.Action[_], scala.Unit]] = js.undefined
   var effectCancelled: js.UndefOr[js.Function1[/* effectId */ scala.Double, scala.Unit]] = js.undefined

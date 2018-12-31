@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DecompressStreamOptions
   extends adoneLib.adoneNs.compressorNs.INs.zlibNs.CommonOptions {
   var dictionary: js.UndefOr[

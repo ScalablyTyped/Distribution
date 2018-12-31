@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExtendedSourceContext extends js.Object {
   /** Any source context. */
   var context: js.UndefOr[SourceContext] = js.undefined

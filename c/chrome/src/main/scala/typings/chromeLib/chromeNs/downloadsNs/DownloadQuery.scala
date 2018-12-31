@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DownloadQuery extends js.Object {
   /** Optional. Number of bytes received so far from the host, without considering file compression.  */
   var bytesReceived: js.UndefOr[scala.Double] = js.undefined

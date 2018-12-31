@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TabIdIncludeRangeData extends js.Object {
   /** Find only ranges with case sensitive match. */
   var caseSensitive: js.UndefOr[scala.Boolean] = js.undefined

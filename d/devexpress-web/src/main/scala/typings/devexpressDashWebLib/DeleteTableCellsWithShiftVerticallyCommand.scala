@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A command to delete the selected table cells with a vertical shift.
- */
-
+  * A command to delete the selected table cells with a vertical shift.
+  */
 trait DeleteTableCellsWithShiftVerticallyCommand extends CommandWithSimpleStateBase {
   /**
-       * Executes the DeleteTableCellsWithShiftVerticallyCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-       */
+    * Executes the DeleteTableCellsWithShiftVerticallyCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    */
   def execute(): scala.Boolean
 }
 

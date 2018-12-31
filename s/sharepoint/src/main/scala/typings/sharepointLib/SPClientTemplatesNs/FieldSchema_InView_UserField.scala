@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FieldSchema_InView_UserField extends FieldSchema_InView {
   /** Either "TRUE" or "FALSE" */
   var AllowMultipleValues: java.lang.String

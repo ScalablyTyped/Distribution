@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapSourceDataEvent
   extends MapboxEvent[js.UndefOr[scala.Nothing]] {
   var coord: Coordinate

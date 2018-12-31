@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EnvelopeBounds extends js.Object {
   var maxX: scala.Double
   var maxY: scala.Double

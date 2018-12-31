@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetFrameResultDetails extends js.Object {
   /** True if the last navigation in this frame was interrupted by an error, i.e. the onErrorOccurred event fired. */
   var errorOccurred: scala.Boolean

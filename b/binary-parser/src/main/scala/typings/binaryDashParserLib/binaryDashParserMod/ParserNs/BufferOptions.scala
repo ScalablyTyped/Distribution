@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BufferOptions extends Options {
   @JSName("clone")
   var clone_FBufferOptions: js.UndefOr[scala.Boolean] = js.undefined

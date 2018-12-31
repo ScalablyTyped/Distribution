@@ -32,7 +32,6 @@ trait ZeptoStatic extends js.Object {
   /**
   	* Effects
   	**/
-  
   /**
   	* Global settings for animations.
   	**/
@@ -40,7 +39,6 @@ trait ZeptoStatic extends js.Object {
   /**
   	* Detect
   	**/
-  
   /**
   	* The following boolean flags are set to true if they apply, if not they're either set to 'false' or 'undefined'.  We recommend accessing them with `!!` prefixed to coerce to a boolean.
   	**/
@@ -63,7 +61,6 @@ trait ZeptoStatic extends js.Object {
   /**
   	 * Core
   	 **/
-  
   /**
   	* Create a Zepto collection object by performing a CSS selector, wrapping DOM nodes, or creating elements from an HTML string.
   	* @param selector
@@ -76,16 +73,6 @@ trait ZeptoStatic extends js.Object {
   	**/
   def apply(selector: java.lang.String): ZeptoCollection = js.native
   /**
-  	 * Core
-  	 **/
-  
-  /**
-  	* Create a Zepto collection object by performing a CSS selector, wrapping DOM nodes, or creating elements from an HTML string.
-  	* @param selector
-  	* @param context
-  	* @return
-  	**/
-  /**
   	* @see ZeptoStatic();
   	* @param attributes
   	**/
@@ -93,7 +80,6 @@ trait ZeptoStatic extends js.Object {
   /**
   	* Event
   	**/
-  
   /**
   	* Create and initialize a DOM event of the specified type. If a properties object is given, use it to extend the new event object. The event is configured to bubble by default; this can be turned off by setting the bubbles property to false.
   	* An event initialized with this function can be triggered with trigger.
@@ -105,7 +91,6 @@ trait ZeptoStatic extends js.Object {
   /**
   	* Ajax
   	**/
-  
   /**
   	* Perform an Ajax request. It can be to a local resource, or cross-domain via HTTP access control support in browsers or JSONP.
   	* Options:
@@ -249,13 +234,6 @@ trait ZeptoStatic extends js.Object {
   	* @return
   	**/
   def inArray(element: js.Any, array: js.Array[_]): scala.Double = js.native
-  /**
-  	* Get the position of element inside an array, or -1 if not found.
-  	* @param element
-  	* @param array
-  	* @param fromIndex
-  	* @return
-  	**/
   def inArray(element: js.Any, array: js.Array[_], fromIndex: scala.Double): scala.Double = js.native
   /**
   	* True if the object is an array.
@@ -296,13 +274,6 @@ trait ZeptoStatic extends js.Object {
   	* @return Seralized URL-encoded string representation of `object`.
   	**/
   def param(`object`: js.Any): java.lang.String = js.native
-  /**
-  	* Serialize an object to a URL-encoded string representation for use in Ajax request query strings and post data. If shallow is set, nested objects are not serialized and nested array values won’t use square brackets on their keys.
-  	* Also accepts an array in serializeArray format, where each item has “name” and “value” properties.
-  	* @param object Serialize this object to URL-encoded string representation.
-  	* @param shallow Only serialize the first level of `object`.
-  	* @return Seralized URL-encoded string representation of `object`.
-  	**/
   def param(`object`: js.Any, shallow: scala.Boolean): java.lang.String = js.native
   /**
   	* Alias for the native JSON.parse method.
@@ -324,10 +295,6 @@ trait ZeptoStatic extends js.Object {
       scala.Unit
     ]
   ): stdLib.XMLHttpRequest = js.native
-  /**
-  	* @see ZeptoStatic.post
-  	* @param data See ZeptoAjaxSettings.data
-  	**/
   def post(
     url: java.lang.String,
     data: js.Any,
@@ -354,12 +321,6 @@ trait ZeptoStatic extends js.Object {
       scala.Unit
     ]
   ): stdLib.XMLHttpRequest = js.native
-  /**
-  	* Perform an Ajax POST request. This is a shortcut for the $.ajax method.
-  	* @param url URL to send the HTTP POST request to.
-  	* @param fn Callback function when the HTTP POST request is completed.
-  	* @return The XMLHttpRequest object.
-  	**/
   def post(
     url: java.lang.String,
     fn: js.Function3[

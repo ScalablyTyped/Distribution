@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFileUploadOptions
   extends cordovaDashPluginDashFileDashTransferLib.FileUploadOptions {
   var encodeURI: js.UndefOr[scala.Boolean] = js.undefined

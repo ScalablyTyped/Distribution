@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "ApplicationAutoScaling")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class ApplicationAutoScaling ()
   extends awsDashSdkLib.awsDashSdkMod.ApplicationAutoScaling {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs.ClientConfiguration) = this()
 }
 

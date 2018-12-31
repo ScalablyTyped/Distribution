@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartLineOptions extends js.Object {
   var backgroundColor: js.UndefOr[ChartColor] = js.undefined
   var borderCapStyle: js.UndefOr[java.lang.String] = js.undefined

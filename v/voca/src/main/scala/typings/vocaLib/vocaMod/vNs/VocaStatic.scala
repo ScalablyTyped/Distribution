@@ -12,7 +12,6 @@ trait VocaStatic extends js.Object {
   def apply(subject: js.Any): Chain = js.native
   // Case
   def camelCase(): java.lang.String = js.native
-  // Case
   def camelCase(subject: java.lang.String): java.lang.String = js.native
   def capitalize(): java.lang.String = js.native
   def capitalize(subject: java.lang.String): java.lang.String = js.native
@@ -20,13 +19,10 @@ trait VocaStatic extends js.Object {
   def chain[T](subject: T): ExplicitChain[T] = js.native
   // Chop
   def charAt(): java.lang.String = js.native
-  // Chop
   def charAt(subject: java.lang.String): java.lang.String = js.native
-  // Chop
   def charAt(subject: java.lang.String, position: scala.Double): java.lang.String = js.native
   // Split
   def chars(): js.Array[java.lang.String] = js.native
-  // Split
   def chars(subject: java.lang.String): js.Array[java.lang.String] = js.native
   def codePointAt(): java.lang.String = js.native
   def codePointAt(subject: java.lang.String): java.lang.String = js.native
@@ -35,7 +31,6 @@ trait VocaStatic extends js.Object {
   def codePoints(subject: java.lang.String): js.Array[scala.Double] = js.native
   // Count
   def count(): scala.Double = js.native
-  // Count
   def count(subject: java.lang.String): scala.Double = js.native
   def countGraphemes(): scala.Double = js.native
   def countGraphemes(subject: java.lang.String): scala.Double = js.native
@@ -56,15 +51,11 @@ trait VocaStatic extends js.Object {
   def decapitalize(subject: java.lang.String): java.lang.String = js.native
   // Query
   def endsWith(): scala.Boolean = js.native
-  // Query
   def endsWith(subject: java.lang.String): scala.Boolean = js.native
-  // Query
   def endsWith(subject: java.lang.String, end: java.lang.String): scala.Boolean = js.native
-  // Query
   def endsWith(subject: java.lang.String, end: java.lang.String, position: scala.Double): scala.Boolean = js.native
   // Escape
   def escapeHtml(): java.lang.String = js.native
-  // Escape
   def escapeHtml(subject: java.lang.String): java.lang.String = js.native
   def escapeRegExp(): java.lang.String = js.native
   def escapeRegExp(subject: java.lang.String): java.lang.String = js.native
@@ -82,19 +73,13 @@ trait VocaStatic extends js.Object {
   def includes(subject: java.lang.String, search: java.lang.String, position: scala.Double): scala.Boolean = js.native
   // Index
   def indexOf(): scala.Double = js.native
-  // Index
   def indexOf(subject: java.lang.String): scala.Double = js.native
-  // Index
   def indexOf(subject: java.lang.String, search: java.lang.String): scala.Double = js.native
-  // Index
   def indexOf(subject: java.lang.String, search: java.lang.String, fromIndex: scala.Double): scala.Double = js.native
   // Manipulate
   def insert(): java.lang.String = js.native
-  // Manipulate
   def insert(subject: java.lang.String): java.lang.String = js.native
-  // Manipulate
   def insert(subject: java.lang.String, toInsert: java.lang.String): java.lang.String = js.native
-  // Manipulate
   def insert(subject: java.lang.String, toInsert: java.lang.String, position: scala.Double): java.lang.String = js.native
   def isAlpha(): scala.Boolean = js.native
   def isAlpha(subject: java.lang.String): scala.Boolean = js.native
@@ -201,7 +186,6 @@ trait VocaStatic extends js.Object {
   def split(subject: java.lang.String, separator: stdLib.RegExp, limit: scala.Double): js.Array[java.lang.String] = js.native
   // Format
   def sprintf(): java.lang.String = js.native
-  // Format
   def sprintf(format: java.lang.String, replacements: js.Any*): java.lang.String = js.native
   def startsWith(): scala.Boolean = js.native
   def startsWith(subject: java.lang.String): scala.Boolean = js.native
@@ -209,7 +193,6 @@ trait VocaStatic extends js.Object {
   def startsWith(subject: java.lang.String, start: java.lang.String, position: scala.Double): scala.Boolean = js.native
   // Strip
   def stripBom(): java.lang.String = js.native
-  // Strip
   def stripBom(subject: java.lang.String): java.lang.String = js.native
   def stripTags(): java.lang.String = js.native
   def stripTags(subject: java.lang.String): java.lang.String = js.native

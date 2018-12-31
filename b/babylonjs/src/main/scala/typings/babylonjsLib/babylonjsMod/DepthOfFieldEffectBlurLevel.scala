@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Specifies the level of max blur that should be applied when using the depth of field effect
-     */
+  * Specifies the level of max blur that should be applied when using the depth of field effect
+  */
 @JSImport("babylonjs", "DepthOfFieldEffectBlurLevel")
 @js.native
 object DepthOfFieldEffectBlurLevel extends js.Object {

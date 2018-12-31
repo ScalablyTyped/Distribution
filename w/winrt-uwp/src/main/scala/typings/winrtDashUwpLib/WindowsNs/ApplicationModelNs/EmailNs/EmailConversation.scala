@@ -36,15 +36,15 @@ abstract class EmailConversation () extends js.Object {
   /** Gets the number of unread messages in the conversation. */
   var unreadMessageCount: scala.Double = js.native
   /**
-                   * Asynchronously gets a batch of messages in the conversation.
-                   * @return The batch of messages.
-                   */
+    * Asynchronously gets a batch of messages in the conversation.
+    * @return The batch of messages.
+    */
   def findMessagesAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /**
-                   * Asynchronously gets a batch of messages in the conversation.
-                   * @param count The size of the batch of messages to retrieve.
-                   * @return The batch of messages.
-                   */
+    * Asynchronously gets a batch of messages in the conversation.
+    * @param count The size of the batch of messages to retrieve.
+    * @return The batch of messages.
+    */
   def findMessagesAsync(count: scala.Double): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
 }
 

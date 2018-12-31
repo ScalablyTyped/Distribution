@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PropertyCreateConfig extends js.Object {
   var collate: js.UndefOr[java.lang.String] = js.undefined
   var custom: js.UndefOr[orientjsLib.Anon_Fields] = js.undefined

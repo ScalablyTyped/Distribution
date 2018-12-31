@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AttributeValue extends js.Object {
   var B: js.UndefOr[java.lang.String] = js.undefined
   var BOOL: js.UndefOr[scala.Boolean] = js.undefined

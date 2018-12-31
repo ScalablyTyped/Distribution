@@ -5,107 +5,106 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Tooltips extends js.Object {
   /**
-       * Default: "Clear selection"
-       */
+    * Default: "Clear selection"
+    */
   var clear: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Close the picker"
-       */
+    * Default: "Close the picker"
+    */
   var close: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Decrement Hour"
-       */
+    * Default: "Decrement Hour"
+    */
   var decrementHour: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Decrement Minute"
-       */
+    * Default: "Decrement Minute"
+    */
   var decrementMinute: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Decrement Second"
-       */
+    * Default: "Decrement Second"
+    */
   var decrementSecond: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Increment Hour"
-       */
+    * Default: "Increment Hour"
+    */
   var incrementHour: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Increment Minute"
-       */
+    * Default: "Increment Minute"
+    */
   var incrementMinute: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Increment Second"
-       */
+    * Default: "Increment Second"
+    */
   var incrementSecond: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Next Century"
-       */
+    * Default: "Next Century"
+    */
   var nextCentury: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Next Decade"
-       */
+    * Default: "Next Decade"
+    */
   var nextDecade: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Next Month"
-       */
+    * Default: "Next Month"
+    */
   var nextMonth: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Next Year"
-       */
+    * Default: "Next Year"
+    */
   var nextYear: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Pick Hour"
-       */
+    * Default: "Pick Hour"
+    */
   var pickHour: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Pick Minute"
-       */
+    * Default: "Pick Minute"
+    */
   var pickMinute: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Pick Second"
-       */
+    * Default: "Pick Second"
+    */
   var pickSecond: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Previous Century"
-       */
+    * Default: "Previous Century"
+    */
   var prevCentury: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Previous Decade"
-       */
+    * Default: "Previous Decade"
+    */
   var prevDecade: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Previous Month"
-       */
+    * Default: "Previous Month"
+    */
   var prevMonth: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Previous Year"
-       */
+    * Default: "Previous Year"
+    */
   var prevYear: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Select Decade"
-       */
+    * Default: "Select Decade"
+    */
   var selectDecade: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Select Month"
-       */
+    * Default: "Select Month"
+    */
   var selectMonth: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Select Time"
-       */
+    * Default: "Select Time"
+    */
   var selectTime: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Select Year"
-       */
+    * Default: "Select Year"
+    */
   var selectYear: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default: "Go to today"
-       */
+    * Default: "Go to today"
+    */
   var today: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Default:  "Toggle Period"
-       */
+    * Default:  "Toggle Period"
+    */
   var togglePeriod: js.UndefOr[java.lang.String] = js.undefined
 }
 

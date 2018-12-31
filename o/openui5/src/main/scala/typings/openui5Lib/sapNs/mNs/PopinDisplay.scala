@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait PopinDisplay extends js.Object
 
 /**
-     * Defines the display of table pop-ins
-    */
+  * Defines the display of table pop-ins
+  */
 @JSGlobal("sap.m.PopinDisplay")
 @js.native
 object PopinDisplay extends js.Object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VendorShorthandPropertiesFallback[TLength] extends js.Object {
   /** The **`animation`** CSS property is a shorthand property for the various animation properties: `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`. */
   var MozAnimation: js.UndefOr[AnimationProperty | js.Array[AnimationProperty]] = js.undefined

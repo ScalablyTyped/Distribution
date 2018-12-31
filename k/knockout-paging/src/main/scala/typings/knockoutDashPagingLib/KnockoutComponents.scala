@@ -21,7 +21,6 @@ trait KnockoutComponents extends js.Object {
   def isRegistered(componentName: java.lang.String): scala.Boolean = js.native
   // overloads for register method:
   def register(componentName: java.lang.String, config: knockoutDashPagingLib.KnockoutComponentTypesNs.Config): scala.Unit = js.native
-  // overloads for register method:
   def register(
     componentName: java.lang.String,
     config: knockoutDashPagingLib.KnockoutComponentTypesNs.EmptyConfig

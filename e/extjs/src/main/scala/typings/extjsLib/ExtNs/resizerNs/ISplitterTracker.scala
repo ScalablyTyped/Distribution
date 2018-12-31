@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISplitterTracker
   extends extjsLib.ExtNs.ddNs.IDragTracker {
   /** [Method] ensure the tracker is enabled store boxes of previous and next components and calculate the constrain region

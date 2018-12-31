@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a list of MediaPlaybackItem objects that can be played back. Provides methods for switching the currently playing item and enabling looping and shuffling. */
 @JSGlobal("Windows.Media.Playback.MediaPlaybackList")
 @js.native
+/** Initializes a new instance of the MediaPlaybackList class. */
 class MediaPlaybackList () extends js.Object {
   /** Gets or sets a value indicating whether the playback list will loop when the end of the list is reached. */
   var autoRepeatEnabled: scala.Boolean = js.native
@@ -51,20 +52,20 @@ class MediaPlaybackList () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[MediaPlaybackList, MediaPlaybackItemOpenedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Changes the current item of the MediaPlaybackList to the next item in the list.
-                   * @return The new current MediaPlaybackItem .
-                   */
+    * Changes the current item of the MediaPlaybackList to the next item in the list.
+    * @return The new current MediaPlaybackItem .
+    */
   def moveNext(): MediaPlaybackItem = js.native
   /**
-                   * Changes the current item of the MediaPlaybackList to the previous item in the list.
-                   * @return The new current MediaPlaybackItem .
-                   */
+    * Changes the current item of the MediaPlaybackList to the previous item in the list.
+    * @return The new current MediaPlaybackItem .
+    */
   def movePrevious(): MediaPlaybackItem = js.native
   /**
-                   * Changes the current item of the MediaPlaybackList to the item with the specified index.
-                   * @param itemIndex The index of the item to make current.
-                   * @return The new current MediaPlaybackItem .
-                   */
+    * Changes the current item of the MediaPlaybackList to the item with the specified index.
+    * @param itemIndex The index of the item to make current.
+    * @return The new current MediaPlaybackItem .
+    */
   def moveTo(itemIndex: scala.Double): MediaPlaybackItem = js.native
   /** Occurs when the currently playing MediaPlaybackItem changes. */
   def oncurrentitemchanged(
@@ -91,9 +92,9 @@ class MediaPlaybackList () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[MediaPlaybackList, MediaPlaybackItemOpenedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Sets the list of MediaPlaybackItem objects that will be played in shuffle mode, in the order in which they will be played.
-                   * @param value The list of MediaPlaybackItem objects that will be played in shuffle mode.
-                   */
+    * Sets the list of MediaPlaybackItem objects that will be played in shuffle mode, in the order in which they will be played.
+    * @param value The list of MediaPlaybackItem objects that will be played in shuffle mode.
+    */
   def setShuffledItems(value: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[MediaPlaybackItem]): scala.Unit = js.native
 }
 

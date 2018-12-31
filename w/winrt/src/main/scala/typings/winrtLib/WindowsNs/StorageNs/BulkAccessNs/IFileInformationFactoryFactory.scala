@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFileInformationFactoryFactory extends js.Object {
   def createWithMode(
     queryResult: winrtLib.WindowsNs.StorageNs.SearchNs.IStorageQueryResultBase,

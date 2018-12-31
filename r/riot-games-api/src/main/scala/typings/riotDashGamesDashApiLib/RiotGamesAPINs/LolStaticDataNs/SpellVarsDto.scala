@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpellVarsDto extends js.Object {
   var coeff: js.Array[scala.Double]
   var dyn: java.lang.String

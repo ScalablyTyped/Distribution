@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LazyLoadProps extends js.Object {
   var children: js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.undefined
   var debounce: js.UndefOr[scala.Double | scala.Boolean] = js.undefined

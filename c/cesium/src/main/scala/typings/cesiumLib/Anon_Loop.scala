@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Loop extends js.Object {
   var id: js.UndefOr[js.Any] = js.undefined
   var loop: js.UndefOr[scala.Boolean] = js.undefined

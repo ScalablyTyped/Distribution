@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISearchCriteria extends js.Object {
   var AdditionalConditions: ISearchConditionExs
   var ExpandUI: scala.Boolean

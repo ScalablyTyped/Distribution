@@ -29,9 +29,9 @@ abstract class ActivitySensor () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[ActivitySensor, ActivitySensorReadingChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Asynchronously gets the current sensor reading.
-                   * @return Asynchronously returns a ActivitySensorReading object that represents info about the sensor.
-                   */
+    * Asynchronously gets the current sensor reading.
+    * @return Asynchronously returns a ActivitySensorReading object that represents info about the sensor.
+    */
   def getCurrentReadingAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[ActivitySensorReading] = js.native
   /** Occurs each time the sensor reports a new sensor reading. */
   def onreadingchanged(
@@ -50,33 +50,33 @@ abstract class ActivitySensor () extends js.Object {
 @js.native
 object ActivitySensor extends js.Object {
   /**
-                   * Asynchronously obtains the sensor from its identifier.
-                   * @param deviceId The sensor identifier.
-                   * @return Returns the ActivitySensor object from its identifier.
-                   */
+    * Asynchronously obtains the sensor from its identifier.
+    * @param deviceId The sensor identifier.
+    * @return Returns the ActivitySensor object from its identifier.
+    */
   def fromIdAsync(deviceId: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.ActivitySensor] = js.native
   /**
-                   * Asynchronously obtains the default sensor.
-                   * @return Asynchronously returns a ActivitySensor object that represents the default sensor.
-                   */
+    * Asynchronously obtains the default sensor.
+    * @return Asynchronously returns a ActivitySensor object that represents the default sensor.
+    */
   def getDefaultAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.ActivitySensor] = js.native
   /**
-                   * Gets the device selector.
-                   * @return Returns the device selector, if it exists; otherwise, null.
-                   */
+    * Gets the device selector.
+    * @return Returns the device selector, if it exists; otherwise, null.
+    */
   def getDeviceSelector(): java.lang.String = js.native
   /**
-                   * Asynchronously gets sensor readings from a specific time.
-                   * @param fromTime The time at which to get sensor readings.
-                   * @return Asynchronously returns a list of ActivitySensorReading objects that represent info about the sensor.
-                   */
+    * Asynchronously gets sensor readings from a specific time.
+    * @param fromTime The time at which to get sensor readings.
+    * @return Asynchronously returns a list of ActivitySensorReading objects that represent info about the sensor.
+    */
   def getSystemHistoryAsync(fromTime: stdLib.Date): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /**
-                   * Asynchronously gets sensor readings from a specific time and duration.
-                   * @param fromTime The time at which to get sensor readings.
-                   * @param duration The time span during which to get sensor readings.
-                   * @return Asynchronously returns a list of ActivitySensorReading objects that represent info about the sensor.
-                   */
+    * Asynchronously gets sensor readings from a specific time and duration.
+    * @param fromTime The time at which to get sensor readings.
+    * @param duration The time span during which to get sensor readings.
+    * @return Asynchronously returns a list of ActivitySensorReading objects that represent info about the sensor.
+    */
   def getSystemHistoryAsync(fromTime: stdLib.Date, duration: scala.Double): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
 }
 

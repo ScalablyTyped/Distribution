@@ -6,10 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @hidden
-     **/
+  * @hidden
+  **/
 @JSGlobal("BABYLON._AlphaState")
 @js.native
+/**
+  * Initializes the state.
+  */
 class _AlphaState () extends js.Object {
   var _alphaBlend: js.Any = js.native
   var _blendConstants: js.Any = js.native

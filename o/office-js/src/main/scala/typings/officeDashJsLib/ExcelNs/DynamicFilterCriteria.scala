@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait DynamicFilterCriteria extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.2]
-     */
+  * [Api set: ExcelApi 1.2]
+  */
 @JSGlobal("Excel.DynamicFilterCriteria")
 @js.native
 object DynamicFilterCriteria extends js.Object {

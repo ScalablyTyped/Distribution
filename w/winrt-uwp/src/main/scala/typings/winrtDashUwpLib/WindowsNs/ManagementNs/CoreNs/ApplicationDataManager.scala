@@ -15,10 +15,10 @@ abstract class ApplicationDataManager () extends js.Object
 @js.native
 object ApplicationDataManager extends js.Object {
   /**
-                   * Provides access to the app data store for the specified package family.
-                   * @param packageFamilyName The package family name.
-                   * @return The app data store.
-                   */
+    * Provides access to the app data store for the specified package family.
+    * @param packageFamilyName The package family name.
+    * @return The app data store.
+    */
   def createForPackageFamily(packageFamilyName: java.lang.String): winrtDashUwpLib.WindowsNs.StorageNs.ApplicationData = js.native
 }
 

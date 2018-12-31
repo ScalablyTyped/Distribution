@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_UNKNOWNERROR extends js.Object {
   var CAPABILITIES_NEGOTIATION_ERROR: chromeDashAppsLib.chromeDashAppsLibStrings.capabilities_negotiation_error
   var CONNECTION_ERROR: chromeDashAppsLib.chromeDashAppsLibStrings.connection_error

@@ -40,8 +40,8 @@ class StaticReflector protected ()
   var summaryResolver: js.Any = js.native
   var symbolResolver: js.Any = js.native
   /**
-       * Simplify but discard any errors
-       */
+    * Simplify but discard any errors
+    */
   var trySimplify: js.Any = js.native
   def annotations(`type`: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol): js.Array[_] = js.native
   def componentModuleUrl(typeOrFunc: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol): java.lang.String = js.native
@@ -49,20 +49,13 @@ class StaticReflector protected ()
   def findDeclaration(moduleUrl: java.lang.String, name: java.lang.String, containingFile: java.lang.String): atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol = js.native
   def findSymbolDeclaration(symbol: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol): atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol = js.native
   /**
-       * getStaticSymbol produces a Type whose metadata is known but whose implementation is not loaded.
-       * All types passed to the StaticResolver should be pseudo-types returned by this method.
-       *
-       * @param declarationFile the absolute path of the file where the symbol is declared
-       * @param name the name of the type.
-       */
+    * getStaticSymbol produces a Type whose metadata is known but whose implementation is not loaded.
+    * All types passed to the StaticResolver should be pseudo-types returned by this method.
+    *
+    * @param declarationFile the absolute path of the file where the symbol is declared
+    * @param name the name of the type.
+    */
   def getStaticSymbol(declarationFile: java.lang.String, name: java.lang.String): atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol = js.native
-  /**
-       * getStaticSymbol produces a Type whose metadata is known but whose implementation is not loaded.
-       * All types passed to the StaticResolver should be pseudo-types returned by this method.
-       *
-       * @param declarationFile the absolute path of the file where the symbol is declared
-       * @param name the name of the type.
-       */
   def getStaticSymbol(declarationFile: java.lang.String, name: java.lang.String, members: js.Array[java.lang.String]): atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol = js.native
   def parameters(`type`: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol): js.Array[_] = js.native
   def propMetadata(`type`: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol): org.scalablytyped.runtime.StringDictionary[js.Array[_]] = js.native

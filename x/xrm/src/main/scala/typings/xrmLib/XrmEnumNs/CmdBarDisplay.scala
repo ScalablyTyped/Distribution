@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait CmdBarDisplay extends js.Object
 
 /**
-      * Constant Enum: Command Bar Display options for Xrm.Url.FormOpenParameters.cmdbar, Xrm.Url.ViewOpenParameters.cmdbar, and Xrm.Utility.FormOpenParameters.cmdbar.
-      * @see {@link Xrm.Url.CmdBarDisplay}
-      */
+  * Constant Enum: Command Bar Display options for Xrm.Url.FormOpenParameters.cmdbar, Xrm.Url.ViewOpenParameters.cmdbar, and Xrm.Utility.FormOpenParameters.cmdbar.
+  * @see {@link Xrm.Url.CmdBarDisplay}
+  */
 @JSGlobal("XrmEnum.CmdBarDisplay")
 @js.native
 object CmdBarDisplay extends js.Object {

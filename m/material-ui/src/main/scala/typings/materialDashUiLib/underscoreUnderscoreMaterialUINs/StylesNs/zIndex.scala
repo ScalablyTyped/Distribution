@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait zIndex extends js.Object {
   var appBar: scala.Double
   var dialog: scala.Double

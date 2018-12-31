@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UnclaimDeviceRequest extends js.Object {
   /** The device ID returned by `ClaimDevice`. */
   var deviceId: js.UndefOr[java.lang.String] = js.undefined

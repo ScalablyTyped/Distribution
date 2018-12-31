@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait DatabaseError
   extends BaseError
      with /**
-         * A base class for all database related errors.
-         */
+  * A base class for all database related errors.
+  */
 org.scalablytyped.runtime.Instantiable1[/* parent */ nodeLib.Error, DatabaseError]
 

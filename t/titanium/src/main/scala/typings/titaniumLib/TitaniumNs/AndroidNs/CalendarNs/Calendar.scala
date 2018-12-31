@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 			 * An object that represents a single calendar on Android.
 			 */
-
 trait Calendar
   extends titaniumLib.TitaniumNs.Proxy {
   /**

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITaskRunner
   extends extjsLib.ExtNs.IBase {
   /** [Method] Destroys this instance stopping all tasks that are currently running  */

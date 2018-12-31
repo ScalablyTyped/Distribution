@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait S3UploaderOptions extends js.Object {
   var awsAccessKeyId: js.UndefOr[java.lang.String] = js.undefined
   var awsBucketAcl: js.UndefOr[java.lang.String] = js.undefined

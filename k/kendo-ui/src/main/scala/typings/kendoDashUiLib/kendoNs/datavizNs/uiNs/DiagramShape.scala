@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiagramShape extends js.Object {
   var connectorDefaults: js.UndefOr[DiagramShapeConnectorDefaults] = js.undefined
   var connectors: js.UndefOr[js.Array[DiagramShapeConnector]] = js.undefined

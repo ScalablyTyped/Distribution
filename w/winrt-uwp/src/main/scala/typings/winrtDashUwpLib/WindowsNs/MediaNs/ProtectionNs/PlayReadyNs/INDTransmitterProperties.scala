@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides the property values for a PlayReady-ND transmitter certificate. */
-
 trait INDTransmitterProperties extends js.Object {
   /** Gets the certificate type for the transmitter. */
   var certificateType: NDCertificateType

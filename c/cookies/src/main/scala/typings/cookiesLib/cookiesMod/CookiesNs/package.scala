@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 package object CookiesNs {
   type CookieAttr = SetOption
   /**
-       * for backward-compatibility
-       */
+    * for backward-compatibility
+    */
   type ICookies = cookiesLib.cookiesMod.Cookies
   /**
-       * for backward-compatibility
-       */
+    * for backward-compatibility
+    */
   type IOptions = SetOption
 }

@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * ===== CacheableResponseNamespace =====
- */
-
-
+  * ===== CacheableResponseNamespace =====
+  */
 trait CacheableResponseNamespace extends js.Object
 

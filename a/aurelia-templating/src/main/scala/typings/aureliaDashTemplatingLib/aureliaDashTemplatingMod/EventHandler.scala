@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventHandler extends js.Object {
   var bubbles: scala.Boolean
   var capture: scala.Boolean

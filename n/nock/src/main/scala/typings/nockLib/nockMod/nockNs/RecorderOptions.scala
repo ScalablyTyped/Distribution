@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RecorderOptions extends js.Object {
   var dont_print: js.UndefOr[scala.Boolean] = js.undefined
   var enable_reqheaders_recording: js.UndefOr[scala.Boolean] = js.undefined

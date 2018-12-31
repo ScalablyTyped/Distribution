@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Provides information regarding availability of and updates to Mobile Broadband Accounts. */
 @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher")
 @js.native
+/** Creates a new instance of a MobileBroadbandAccountWatcher . */
 class MobileBroadbandAccountWatcher () extends js.Object {
   /** Occurs when a Mobile Broadband Account is added to the client. */
   @JSName("onaccountadded")

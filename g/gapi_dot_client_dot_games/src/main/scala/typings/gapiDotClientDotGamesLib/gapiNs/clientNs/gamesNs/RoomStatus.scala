@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RoomStatus extends js.Object {
   /** Auto-matching status for this room. Not set if the room is not currently in the automatching queue. */
   var autoMatchingStatus: js.UndefOr[RoomAutoMatchStatus] = js.undefined
@@ -16,14 +15,14 @@ trait RoomStatus extends js.Object {
   /** Globally unique ID for a room. */
   var roomId: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The status of the room.
-               * Possible values are:
-               * - "ROOM_INVITING" - One or more players have been invited and not responded.
-               * - "ROOM_AUTO_MATCHING" - One or more slots need to be filled by auto-matching.
-               * - "ROOM_CONNECTING" - Players have joined are connecting to each other (either before or after auto-matching).
-               * - "ROOM_ACTIVE" - All players have joined and connected to each other.
-               * - "ROOM_DELETED" - All joined players have left.
-               */
+    * The status of the room.
+    * Possible values are:
+    * - "ROOM_INVITING" - One or more players have been invited and not responded.
+    * - "ROOM_AUTO_MATCHING" - One or more slots need to be filled by auto-matching.
+    * - "ROOM_CONNECTING" - Players have joined are connecting to each other (either before or after auto-matching).
+    * - "ROOM_ACTIVE" - All players have joined and connected to each other.
+    * - "ROOM_DELETED" - All joined players have left.
+    */
   var status: js.UndefOr[java.lang.String] = js.undefined
   /** The version of the status for the room: an increasing counter, used by the client to ignore out-of-order updates to room status. */
   var statusVersion: js.UndefOr[scala.Double] = js.undefined

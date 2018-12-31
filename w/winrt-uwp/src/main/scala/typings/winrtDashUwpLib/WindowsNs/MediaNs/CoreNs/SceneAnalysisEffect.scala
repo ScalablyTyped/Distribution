@@ -31,9 +31,9 @@ abstract class SceneAnalysisEffect () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[SceneAnalysisEffect, SceneAnalyzedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Sets properties on the IMediaExtension .
-                   * @param configuration The property set.
-                   */
+    * Sets properties on the IMediaExtension .
+    * @param configuration The property set.
+    */
   def setProperties(configuration: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet): scala.Unit = js.native
 }
 

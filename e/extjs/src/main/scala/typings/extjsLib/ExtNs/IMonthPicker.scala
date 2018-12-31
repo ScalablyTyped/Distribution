@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMonthPicker extends IComponent {
   /** [Method] Modify the year display by passing an offset
   		* @param offset Number The offset to move by.

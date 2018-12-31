@@ -10,12 +10,9 @@ import scala.scalajs.js.annotation._
 class ɵangular_packages_core_core_d protected ()
   extends atAngularCoreLib.srcDiReflectiveUnderscoreInjectorMod.`ReflectiveInjector_` {
   /**
-       * Private
-       */
+    * Private
+    */
   def this(_providers: js.Array[atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ResolvedReflectiveProvider]) = this()
-  /**
-       * Private
-       */
   def this(_providers: js.Array[atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ResolvedReflectiveProvider], _parent: atAngularCoreLib.srcDiInjectorMod.Injector) = this()
 }
 

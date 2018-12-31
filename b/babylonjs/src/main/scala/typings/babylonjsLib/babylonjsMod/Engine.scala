@@ -6,49 +6,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * The engine class is responsible for interfacing with all lower-level APIs such as WebGL and Audio
-     */
+  * The engine class is responsible for interfacing with all lower-level APIs such as WebGL and Audio
+  */
 @JSImport("babylonjs", "Engine")
 @js.native
 class Engine protected ()
   extends babylonjsLib.BABYLONNs.Engine {
   /**
-           * Creates a new engine
-           * @param canvasOrContext defines the canvas or WebGL context to use for rendering. If you provide a WebGL context, Babylon.js will not hook events on the canvas (like pointers, keyboards, etc...) so no event observables will be available. This is mostly used when Babylon.js is used as a plugin on a system which alreay used the WebGL context
-           * @param antialias defines enable antialiasing (default: false)
-           * @param options defines further options to be sent to the getContext() function
-           * @param adaptToDeviceRatio defines whether to adapt to the device's viewport characteristics (default: false)
-           */
+    * Creates a new engine
+    * @param canvasOrContext defines the canvas or WebGL context to use for rendering. If you provide a WebGL context, Babylon.js will not hook events on the canvas (like pointers, keyboards, etc...) so no event observables will be available. This is mostly used when Babylon.js is used as a plugin on a system which alreay used the WebGL context
+    * @param antialias defines enable antialiasing (default: false)
+    * @param options defines further options to be sent to the getContext() function
+    * @param adaptToDeviceRatio defines whether to adapt to the device's viewport characteristics (default: false)
+    */
   def this(canvasOrContext: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.HTMLCanvasElement | babylonjsLib.WebGLRenderingContext]) = this()
-  /**
-           * Creates a new engine
-           * @param canvasOrContext defines the canvas or WebGL context to use for rendering. If you provide a WebGL context, Babylon.js will not hook events on the canvas (like pointers, keyboards, etc...) so no event observables will be available. This is mostly used when Babylon.js is used as a plugin on a system which alreay used the WebGL context
-           * @param antialias defines enable antialiasing (default: false)
-           * @param options defines further options to be sent to the getContext() function
-           * @param adaptToDeviceRatio defines whether to adapt to the device's viewport characteristics (default: false)
-           */
   def this(canvasOrContext: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.HTMLCanvasElement | babylonjsLib.WebGLRenderingContext], antialias: scala.Boolean) = this()
-  /**
-           * Creates a new engine
-           * @param canvasOrContext defines the canvas or WebGL context to use for rendering. If you provide a WebGL context, Babylon.js will not hook events on the canvas (like pointers, keyboards, etc...) so no event observables will be available. This is mostly used when Babylon.js is used as a plugin on a system which alreay used the WebGL context
-           * @param antialias defines enable antialiasing (default: false)
-           * @param options defines further options to be sent to the getContext() function
-           * @param adaptToDeviceRatio defines whether to adapt to the device's viewport characteristics (default: false)
-           */
   def this(canvasOrContext: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.HTMLCanvasElement | babylonjsLib.WebGLRenderingContext], antialias: scala.Boolean, options: babylonjsLib.BABYLONNs.EngineOptions) = this()
-  /**
-           * Creates a new engine
-           * @param canvasOrContext defines the canvas or WebGL context to use for rendering. If you provide a WebGL context, Babylon.js will not hook events on the canvas (like pointers, keyboards, etc...) so no event observables will be available. This is mostly used when Babylon.js is used as a plugin on a system which alreay used the WebGL context
-           * @param antialias defines enable antialiasing (default: false)
-           * @param options defines further options to be sent to the getContext() function
-           * @param adaptToDeviceRatio defines whether to adapt to the device's viewport characteristics (default: false)
-           */
   def this(canvasOrContext: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.HTMLCanvasElement | babylonjsLib.WebGLRenderingContext], antialias: scala.Boolean, options: babylonjsLib.BABYLONNs.EngineOptions, adaptToDeviceRatio: scala.Boolean) = this()
 }
 
 /**
-     * The engine class is responsible for interfacing with all lower-level APIs such as WebGL and Audio
-     */
+  * The engine class is responsible for interfacing with all lower-level APIs such as WebGL and Audio
+  */
 @JSImport("babylonjs", "Engine")
 @js.native
 object Engine extends js.Object {
@@ -69,26 +48,26 @@ object Engine extends js.Object {
   /** Defines that alpha blending to SRC + (1 - SRC ALPHA) * DEST */
   val ALPHA_PREMULTIPLIED: scala.Double = js.native
   /**
-           * Defines that alpha blending to SRC + (1 - SRC ALPHA) * DEST
-           * Alpha will be set to (1 - SRC ALPHA) * DEST ALPHA
-           */
+    * Defines that alpha blending to SRC + (1 - SRC ALPHA) * DEST
+    * Alpha will be set to (1 - SRC ALPHA) * DEST ALPHA
+    */
   val ALPHA_PREMULTIPLIED_PORTERDUFF: scala.Double = js.native
   /**
-           * Defines that alpha blending to SRC + (1 - SRC) * DEST
-           * Alpha will be set to SRC ALPHA + (1 - SRC ALPHA) * DEST ALPHA
-           */
+    * Defines that alpha blending to SRC + (1 - SRC) * DEST
+    * Alpha will be set to SRC ALPHA + (1 - SRC ALPHA) * DEST ALPHA
+    */
   val ALPHA_SCREENMODE: scala.Double = js.native
   /** Defines that alpha blending to DEST - SRC * DEST */
   val ALPHA_SUBTRACT: scala.Double = js.native
   /** Passed to depthFunction or stencilFunction to specify depth or stencil tests will always pass. i.e. Pixels will be drawn in the order they are drawn */
   val ALWAYS: scala.Double = js.native
   /**
-           * Gets or sets the relative url used to load code if using the engine in non-minified mode
-           */
+    * Gets or sets the relative url used to load code if using the engine in non-minified mode
+    */
   var CodeRepository: java.lang.String = js.native
   /**
-           * Gets or sets the epsilon value used by collision engine
-           */
+    * Gets or sets the epsilon value used by collision engine
+    */
   var CollisionsEpsilon: scala.Double = js.native
   /** Passed to stencilOperation to specify that stencil value must be decremented */
   val DECR: scala.Double = js.native
@@ -125,12 +104,12 @@ object Engine extends js.Object {
   /** Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is less than the stored value */
   val LESS: scala.Double = js.native
   /**
-           * Gets the latest created engine
-           */
+    * Gets the latest created engine
+    */
   val LastCreatedEngine: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Engine] = js.native
   /**
-           * Gets the latest created scene
-           */
+    * Gets the latest created scene
+    */
   val LastCreatedScene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene] = js.native
   /** Passed to depthFunction or stencilFunction to specify depth or stencil tests will never pass. i.e. Nothing will be drawn */
   val NEVER: scala.Double = js.native
@@ -145,8 +124,8 @@ object Engine extends js.Object {
   /** Defines that texture rescaling will look for the nearest power of 2 size */
   val SCALEMODE_NEAREST: scala.Double = js.native
   /**
-           * Gets or sets the relative url used to load shaders if using the engine in non-minified mode
-           */
+    * Gets or sets the relative url used to load shaders if using the engine in non-minified mode
+    */
   var ShadersRepository: java.lang.String = js.native
   /** ALPHA */
   val TEXTUREFORMAT_ALPHA: scala.Double = js.native
@@ -265,45 +244,40 @@ object Engine extends js.Object {
   /** Texture is repeating outside of 0..1 UVs */
   val TEXTURE_WRAP_ADDRESSMODE: scala.Double = js.native
   /**
-           * Returns the current version of the framework
-           */
+    * Returns the current version of the framework
+    */
   val Version: java.lang.String = js.native
   /**
-           * Hidden
-           */
+    * Hidden
+    */
   var _TextureLoaders: js.Array[babylonjsLib.BABYLONNs.IInternalTextureLoader] = js.native
   /**
-           * Gets the audio engine
-           * @see http://doc.babylonjs.com/how_to/playing_sounds_and_music
-           * @ignorenaming
-           */
+    * Gets the audio engine
+    * @see http://doc.babylonjs.com/how_to/playing_sounds_and_music
+    * @ignorenaming
+    */
   var audioEngine: babylonjsLib.BABYLONNs.IAudioEngine = js.native
   /**
-           * Default AudioEngine Factory responsible of creating the Audio Engine.
-           * By default, this will create a BabylonJS Audio Engine if the workload
-           * has been embedded.
-           */
+    * Default AudioEngine Factory responsible of creating the Audio Engine.
+    * By default, this will create a BabylonJS Audio Engine if the workload
+    * has been embedded.
+    */
   def AudioEngineFactory(hostElement: babylonjsLib.BABYLONNs.Nullable[stdLib.HTMLElement]): babylonjsLib.BABYLONNs.IAudioEngine = js.native
   /**
-           * Will flag all materials in all scenes in all engines as dirty to trigger new shader compilation
-           * @param flag defines which part of the materials must be marked as dirty
-           * @param predicate defines a predicate used to filter which materials should be affected
-           */
+    * Will flag all materials in all scenes in all engines as dirty to trigger new shader compilation
+    * @param flag defines which part of the materials must be marked as dirty
+    * @param predicate defines a predicate used to filter which materials should be affected
+    */
   def MarkAllMaterialsAsDirty(flag: scala.Double): scala.Unit = js.native
-  /**
-           * Will flag all materials in all scenes in all engines as dirty to trigger new shader compilation
-           * @param flag defines which part of the materials must be marked as dirty
-           * @param predicate defines a predicate used to filter which materials should be affected
-           */
   def MarkAllMaterialsAsDirty(
     flag: scala.Double,
     predicate: js.Function1[/* mat */ babylonjsLib.BABYLONNs.Material, scala.Boolean]
   ): scala.Unit = js.native
   /**
-           * Gets a boolean indicating if the engine can be instanciated (ie. if a webGL context can be found)
-           * @returns true if the engine can be created
-           * @ignorenaming
-           */
+    * Gets a boolean indicating if the engine can be instanciated (ie. if a webGL context can be found)
+    * @returns true if the engine can be created
+    * @ignorenaming
+    */
   def isSupported(): scala.Boolean = js.native
 }
 

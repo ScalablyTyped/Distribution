@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRenderable
   extends extjsLib.ExtNs.IBase {
   /** [Method] Allows addition of behavior after rendering is complete  */

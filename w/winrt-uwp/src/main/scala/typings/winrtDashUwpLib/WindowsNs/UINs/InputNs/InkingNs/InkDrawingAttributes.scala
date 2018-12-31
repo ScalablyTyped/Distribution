@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Provides properties associated with the drawing of an InkStroke . */
 @JSGlobal("Windows.UI.Input.Inking.InkDrawingAttributes")
 @js.native
+/** Creates a new InkDrawingAttributes object that is used to specify InkStroke attributes. */
 class InkDrawingAttributes () extends js.Object {
   /** Gets or sets a value that indicates the color of an InkStroke . */
   var color: winrtDashUwpLib.WindowsNs.UINs.Color = js.native

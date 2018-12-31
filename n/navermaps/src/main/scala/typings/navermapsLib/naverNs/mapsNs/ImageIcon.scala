@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageIcon extends js.Object {
   var anchor: js.UndefOr[Point | PointLiteral | Position] = js.undefined
   var origin: js.UndefOr[Point | PointLiteral] = js.undefined

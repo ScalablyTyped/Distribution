@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MultiSelectVirtual extends js.Object {
   var itemHeight: js.UndefOr[scala.Double] = js.undefined
   var mapValueTo: js.UndefOr[java.lang.String] = js.undefined

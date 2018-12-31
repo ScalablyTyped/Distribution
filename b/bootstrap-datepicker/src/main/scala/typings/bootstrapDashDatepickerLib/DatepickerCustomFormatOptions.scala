@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatepickerCustomFormatOptions extends js.Object {
   var toDisplay: js.UndefOr[
     js.Function3[

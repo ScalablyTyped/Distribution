@@ -22,9 +22,9 @@ abstract class CoreTextTextUpdatingEventArgs () extends js.Object {
   /** Gets the text that the text input server is requesting to be set into the modified range. The server populates this property before raising the event. */
   var text: java.lang.String = js.native
   /**
-                       * Requests that the text update operation be delayed. Call this method if your text input control is hosted on a worker thread rather than on the UI thread.
-                       * @return A Deferral deferral object.
-                       */
+    * Requests that the text update operation be delayed. Call this method if your text input control is hosted on a worker thread rather than on the UI thread.
+    * @return A Deferral deferral object.
+    */
   def getDeferral(): winrtDashUwpLib.WindowsNs.FoundationNs.Deferral = js.native
 }
 

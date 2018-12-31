@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PluginRegistered extends js.Object {
   /**
-       * the plugin name.
-       */
+    * the plugin name.
+    */
   var name: java.lang.String
   /**
-       * options used to register the plugin.
-       */
+    * options used to register the plugin.
+    */
   var options: js.Object
   /**
-       * the plugin version.
-       */
+    * the plugin version.
+    */
   var version: java.lang.String
 }
 

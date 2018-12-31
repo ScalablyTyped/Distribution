@@ -32,8 +32,8 @@ class _ParseAST protected () extends js.Object {
   def expectIdentifierOrKeywordOrString(): java.lang.String = js.native
   def expectOperator(operator: java.lang.String): scala.Unit = js.native
   /**
-       * An identifier, a keyword, a string with an optional `-` in between.
-       */
+    * An identifier, a keyword, a string with an optional `-` in between.
+    */
   def expectTemplateBindingKey(): java.lang.String = js.native
   def optionalCharacter(code: scala.Double): scala.Boolean = js.native
   def optionalOperator(op: java.lang.String): scala.Boolean = js.native

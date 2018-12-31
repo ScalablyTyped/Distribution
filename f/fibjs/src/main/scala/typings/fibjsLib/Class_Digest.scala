@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 	* @brief 信息摘要对象
 	* @detail 
 	*/
-
 @JSGlobal("Class_Digest")
 @js.native
 class Class_Digest () extends Class__object {
@@ -34,15 +33,6 @@ class Class_Digest () extends Class__object {
   	 * 
   	 */
   def digest(): js.Any = js.native
-  /**
-  	 * 
-  	 * @brief 计算并返回摘要
-  	 * @param codec 指定编码格式，允许值为："buffer", "hex", "base64", "utf8", 或者系统支持的字符集
-  	 * @return 返回指定编码的摘要表示
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def digest(codec: java.lang.String): js.Any = js.native
   /**
   	 * 

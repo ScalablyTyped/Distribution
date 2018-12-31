@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IShellPaneTab extends js.Object {
   val Events: IShellPaneTabEvents
   val IsBuiltIn: scala.Boolean

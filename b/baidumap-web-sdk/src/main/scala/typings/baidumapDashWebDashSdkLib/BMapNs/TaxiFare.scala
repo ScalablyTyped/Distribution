@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaxiFare extends js.Object {
   var day: TaxiFareDetail
   var distance: scala.Double

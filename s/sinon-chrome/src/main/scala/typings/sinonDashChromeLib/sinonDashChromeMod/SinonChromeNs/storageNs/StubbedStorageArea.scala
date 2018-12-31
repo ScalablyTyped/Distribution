@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StubbedStorageArea extends js.Object {
   var clear: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub
   var get: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub

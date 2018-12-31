@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartSeriesItemErrorBars extends js.Object {
   var color: js.UndefOr[java.lang.String] = js.undefined
   var endCaps: js.UndefOr[scala.Boolean] = js.undefined

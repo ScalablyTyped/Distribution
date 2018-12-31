@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConfigProps[FormData, P, ErrorType] extends js.Object {
   var asyncBlurFields: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var asyncChangeFields: js.UndefOr[js.Array[java.lang.String]] = js.undefined

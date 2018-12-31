@@ -9,18 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object fileDashUrlModMembers extends js.Object {
   /**
-   * Convert a path to a file URL.
-   * @param path  File path to convert.
-   * @param options  Options to use.
-   * @return  File URL.
-   */
+    * Convert a path to a file URL.
+    * @param path  File path to convert.
+    * @param options  Options to use.
+    * @return  File URL.
+    */
   def apply(path: java.lang.String): java.lang.String = js.native
-  /**
-   * Convert a path to a file URL.
-   * @param path  File path to convert.
-   * @param options  Options to use.
-   * @return  File URL.
-   */
   def apply(path: java.lang.String, options: FileUrlOptions): java.lang.String = js.native
 }
 

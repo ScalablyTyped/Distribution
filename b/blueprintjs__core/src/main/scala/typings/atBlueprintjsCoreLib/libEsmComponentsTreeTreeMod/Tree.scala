@@ -19,16 +19,11 @@ class Tree[T] ()
   var handleNodeMouseLeave: js.Any = js.native
   var nodeRefs: js.Any = js.native
   /**
-       * Returns the underlying HTML element of the `Tree` node with an id of `nodeId`.
-       * This element does not contain the children of the node, only its label and controls.
-       * If the node is not currently mounted, `undefined` is returned.
-       */
+    * Returns the underlying HTML element of the `Tree` node with an id of `nodeId`.
+    * This element does not contain the children of the node, only its label and controls.
+    * If the node is not currently mounted, `undefined` is returned.
+    */
   def getNodeContentElement(nodeId: java.lang.String): js.UndefOr[reactLib.HTMLElement] = js.native
-  /**
-       * Returns the underlying HTML element of the `Tree` node with an id of `nodeId`.
-       * This element does not contain the children of the node, only its label and controls.
-       * If the node is not currently mounted, `undefined` is returned.
-       */
   def getNodeContentElement(nodeId: scala.Double): js.UndefOr[reactLib.HTMLElement] = js.native
   /* private */ def handlerHelper(handlerFromProps: js.Any, node: js.Any, e: js.Any): js.Any = js.native
   /* private */ def renderNodes(treeNodes: js.Any): js.Any = js.native

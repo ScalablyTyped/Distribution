@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DraggableData extends js.Object {
   var deltaX: scala.Double
   var deltaY: scala.Double

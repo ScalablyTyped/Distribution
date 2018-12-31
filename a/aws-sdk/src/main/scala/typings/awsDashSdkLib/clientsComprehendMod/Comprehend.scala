@@ -11,15 +11,12 @@ trait Comprehend
   @JSName("config")
   var config_Comprehend: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsComprehendMod.ComprehendNs.ClientConfiguration = js.native
   /**
-     * Determines the dominant language of the input text for a batch of documents. For a list of languages that Amazon Comprehend can detect, see Amazon Comprehend Supported Languages. 
-     */
+    * Determines the dominant language of the input text for a batch of documents. For a list of languages that Amazon Comprehend can detect, see Amazon Comprehend Supported Languages. 
+    */
   def batchDetectDominantLanguage(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectDominantLanguageResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Determines the dominant language of the input text for a batch of documents. For a list of languages that Amazon Comprehend can detect, see Amazon Comprehend Supported Languages. 
-     */
   def batchDetectDominantLanguage(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -31,15 +28,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Determines the dominant language of the input text for a batch of documents. For a list of languages that Amazon Comprehend can detect, see Amazon Comprehend Supported Languages. 
-     */
+    * Determines the dominant language of the input text for a batch of documents. For a list of languages that Amazon Comprehend can detect, see Amazon Comprehend Supported Languages. 
+    */
   def batchDetectDominantLanguage(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectDominantLanguageRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectDominantLanguageResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Determines the dominant language of the input text for a batch of documents. For a list of languages that Amazon Comprehend can detect, see Amazon Comprehend Supported Languages. 
-     */
   def batchDetectDominantLanguage(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectDominantLanguageRequest,
     callback: js.Function2[
@@ -52,15 +46,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Inspects the text of a batch of documents for named entities and returns information about them. For more information about named entities, see how-entities 
-     */
+    * Inspects the text of a batch of documents for named entities and returns information about them. For more information about named entities, see how-entities 
+    */
   def batchDetectEntities(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectEntitiesResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Inspects the text of a batch of documents for named entities and returns information about them. For more information about named entities, see how-entities 
-     */
   def batchDetectEntities(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -72,15 +63,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Inspects the text of a batch of documents for named entities and returns information about them. For more information about named entities, see how-entities 
-     */
+    * Inspects the text of a batch of documents for named entities and returns information about them. For more information about named entities, see how-entities 
+    */
   def batchDetectEntities(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectEntitiesRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectEntitiesResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Inspects the text of a batch of documents for named entities and returns information about them. For more information about named entities, see how-entities 
-     */
   def batchDetectEntities(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectEntitiesRequest,
     callback: js.Function2[
@@ -93,15 +81,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Detects the key noun phrases found in a batch of documents.
-     */
+    * Detects the key noun phrases found in a batch of documents.
+    */
   def batchDetectKeyPhrases(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectKeyPhrasesResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Detects the key noun phrases found in a batch of documents.
-     */
   def batchDetectKeyPhrases(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -113,15 +98,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Detects the key noun phrases found in a batch of documents.
-     */
+    * Detects the key noun phrases found in a batch of documents.
+    */
   def batchDetectKeyPhrases(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectKeyPhrasesRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectKeyPhrasesResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Detects the key noun phrases found in a batch of documents.
-     */
   def batchDetectKeyPhrases(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectKeyPhrasesRequest,
     callback: js.Function2[
@@ -134,15 +116,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Inspects a batch of documents and returns an inference of the prevailing sentiment, POSITIVE, NEUTRAL, MIXED, or NEGATIVE, in each one.
-     */
+    * Inspects a batch of documents and returns an inference of the prevailing sentiment, POSITIVE, NEUTRAL, MIXED, or NEGATIVE, in each one.
+    */
   def batchDetectSentiment(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectSentimentResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Inspects a batch of documents and returns an inference of the prevailing sentiment, POSITIVE, NEUTRAL, MIXED, or NEGATIVE, in each one.
-     */
   def batchDetectSentiment(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -154,15 +133,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Inspects a batch of documents and returns an inference of the prevailing sentiment, POSITIVE, NEUTRAL, MIXED, or NEGATIVE, in each one.
-     */
+    * Inspects a batch of documents and returns an inference of the prevailing sentiment, POSITIVE, NEUTRAL, MIXED, or NEGATIVE, in each one.
+    */
   def batchDetectSentiment(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectSentimentRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectSentimentResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Inspects a batch of documents and returns an inference of the prevailing sentiment, POSITIVE, NEUTRAL, MIXED, or NEGATIVE, in each one.
-     */
   def batchDetectSentiment(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectSentimentRequest,
     callback: js.Function2[
@@ -175,15 +151,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Inspects the text of a batch of documents for the syntax and part of speech of the words in the document and returns information about them. For more information, see how-syntax.
-     */
+    * Inspects the text of a batch of documents for the syntax and part of speech of the words in the document and returns information about them. For more information, see how-syntax.
+    */
   def batchDetectSyntax(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectSyntaxResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Inspects the text of a batch of documents for the syntax and part of speech of the words in the document and returns information about them. For more information, see how-syntax.
-     */
   def batchDetectSyntax(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -195,15 +168,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Inspects the text of a batch of documents for the syntax and part of speech of the words in the document and returns information about them. For more information, see how-syntax.
-     */
+    * Inspects the text of a batch of documents for the syntax and part of speech of the words in the document and returns information about them. For more information, see how-syntax.
+    */
   def batchDetectSyntax(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectSyntaxRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectSyntaxResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Inspects the text of a batch of documents for the syntax and part of speech of the words in the document and returns information about them. For more information, see how-syntax.
-     */
   def batchDetectSyntax(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.BatchDetectSyntaxRequest,
     callback: js.Function2[
@@ -216,15 +186,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
-     */
+    * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
+    */
   def createDocumentClassifier(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateDocumentClassifierResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
-     */
   def createDocumentClassifier(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -236,15 +203,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
-     */
+    * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
+    */
   def createDocumentClassifier(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateDocumentClassifierRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateDocumentClassifierResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
-     */
   def createDocumentClassifier(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateDocumentClassifierRequest,
     callback: js.Function2[
@@ -257,15 +221,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the API. 
-     */
+    * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the API. 
+    */
   def createEntityRecognizer(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateEntityRecognizerResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the API. 
-     */
   def createEntityRecognizer(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -277,15 +238,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the API. 
-     */
+    * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the API. 
+    */
   def createEntityRecognizer(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateEntityRecognizerRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateEntityRecognizerResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the API. 
-     */
   def createEntityRecognizer(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateEntityRecognizerRequest,
     callback: js.Function2[
@@ -298,15 +256,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a previously created document classifier Only those classifiers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the classifier into a DELETING state, and it is then removed by a background job. Once removed, the classifier disappears from your account and is no longer available for use. 
-     */
+    * Deletes a previously created document classifier Only those classifiers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the classifier into a DELETING state, and it is then removed by a background job. Once removed, the classifier disappears from your account and is no longer available for use. 
+    */
   def deleteDocumentClassifier(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteDocumentClassifierResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Deletes a previously created document classifier Only those classifiers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the classifier into a DELETING state, and it is then removed by a background job. Once removed, the classifier disappears from your account and is no longer available for use. 
-     */
   def deleteDocumentClassifier(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -318,15 +273,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a previously created document classifier Only those classifiers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the classifier into a DELETING state, and it is then removed by a background job. Once removed, the classifier disappears from your account and is no longer available for use. 
-     */
+    * Deletes a previously created document classifier Only those classifiers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the classifier into a DELETING state, and it is then removed by a background job. Once removed, the classifier disappears from your account and is no longer available for use. 
+    */
   def deleteDocumentClassifier(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteDocumentClassifierRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteDocumentClassifierResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Deletes a previously created document classifier Only those classifiers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the classifier into a DELETING state, and it is then removed by a background job. Once removed, the classifier disappears from your account and is no longer available for use. 
-     */
   def deleteDocumentClassifier(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteDocumentClassifierRequest,
     callback: js.Function2[
@@ -339,15 +291,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes an entity recognizer. Only those recognizers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the recognizer into a DELETING state, and it is then removed by a background job. Once removed, the recognizer disappears from your account and is no longer available for use. 
-     */
+    * Deletes an entity recognizer. Only those recognizers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the recognizer into a DELETING state, and it is then removed by a background job. Once removed, the recognizer disappears from your account and is no longer available for use. 
+    */
   def deleteEntityRecognizer(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteEntityRecognizerResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Deletes an entity recognizer. Only those recognizers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the recognizer into a DELETING state, and it is then removed by a background job. Once removed, the recognizer disappears from your account and is no longer available for use. 
-     */
   def deleteEntityRecognizer(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -359,15 +308,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes an entity recognizer. Only those recognizers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the recognizer into a DELETING state, and it is then removed by a background job. Once removed, the recognizer disappears from your account and is no longer available for use. 
-     */
+    * Deletes an entity recognizer. Only those recognizers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the recognizer into a DELETING state, and it is then removed by a background job. Once removed, the recognizer disappears from your account and is no longer available for use. 
+    */
   def deleteEntityRecognizer(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteEntityRecognizerRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteEntityRecognizerResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Deletes an entity recognizer. Only those recognizers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the recognizer into a DELETING state, and it is then removed by a background job. Once removed, the recognizer disappears from your account and is no longer available for use. 
-     */
   def deleteEntityRecognizer(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteEntityRecognizerRequest,
     callback: js.Function2[
@@ -380,15 +326,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets the properties associated with a document classification job. Use this operation to get the status of a classification job.
-     */
+    * Gets the properties associated with a document classification job. Use this operation to get the status of a classification job.
+    */
   def describeDocumentClassificationJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassificationJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets the properties associated with a document classification job. Use this operation to get the status of a classification job.
-     */
   def describeDocumentClassificationJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -400,15 +343,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets the properties associated with a document classification job. Use this operation to get the status of a classification job.
-     */
+    * Gets the properties associated with a document classification job. Use this operation to get the status of a classification job.
+    */
   def describeDocumentClassificationJob(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassificationJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassificationJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets the properties associated with a document classification job. Use this operation to get the status of a classification job.
-     */
   def describeDocumentClassificationJob(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassificationJobRequest,
     callback: js.Function2[
@@ -421,15 +361,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets the properties associated with a document classifier.
-     */
+    * Gets the properties associated with a document classifier.
+    */
   def describeDocumentClassifier(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassifierResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets the properties associated with a document classifier.
-     */
   def describeDocumentClassifier(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -441,15 +378,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets the properties associated with a document classifier.
-     */
+    * Gets the properties associated with a document classifier.
+    */
   def describeDocumentClassifier(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassifierRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassifierResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets the properties associated with a document classifier.
-     */
   def describeDocumentClassifier(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassifierRequest,
     callback: js.Function2[
@@ -462,15 +396,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets the properties associated with a dominant language detection job. Use this operation to get the status of a detection job.
-     */
+    * Gets the properties associated with a dominant language detection job. Use this operation to get the status of a detection job.
+    */
   def describeDominantLanguageDetectionJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDominantLanguageDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets the properties associated with a dominant language detection job. Use this operation to get the status of a detection job.
-     */
   def describeDominantLanguageDetectionJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -482,17 +413,14 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets the properties associated with a dominant language detection job. Use this operation to get the status of a detection job.
-     */
+    * Gets the properties associated with a dominant language detection job. Use this operation to get the status of a detection job.
+    */
   def describeDominantLanguageDetectionJob(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDominantLanguageDetectionJobRequest
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDominantLanguageDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets the properties associated with a dominant language detection job. Use this operation to get the status of a detection job.
-     */
   def describeDominantLanguageDetectionJob(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDominantLanguageDetectionJobRequest,
     callback: js.Function2[
@@ -505,15 +433,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets the properties associated with an entities detection job. Use this operation to get the status of a detection job.
-     */
+    * Gets the properties associated with an entities detection job. Use this operation to get the status of a detection job.
+    */
   def describeEntitiesDetectionJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeEntitiesDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets the properties associated with an entities detection job. Use this operation to get the status of a detection job.
-     */
   def describeEntitiesDetectionJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -525,15 +450,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets the properties associated with an entities detection job. Use this operation to get the status of a detection job.
-     */
+    * Gets the properties associated with an entities detection job. Use this operation to get the status of a detection job.
+    */
   def describeEntitiesDetectionJob(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeEntitiesDetectionJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeEntitiesDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets the properties associated with an entities detection job. Use this operation to get the status of a detection job.
-     */
   def describeEntitiesDetectionJob(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeEntitiesDetectionJobRequest,
     callback: js.Function2[
@@ -546,15 +468,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Provides details about an entity recognizer including status, S3 buckets containing training data, recognizer metadata, metrics, and so on.
-     */
+    * Provides details about an entity recognizer including status, S3 buckets containing training data, recognizer metadata, metrics, and so on.
+    */
   def describeEntityRecognizer(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeEntityRecognizerResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Provides details about an entity recognizer including status, S3 buckets containing training data, recognizer metadata, metrics, and so on.
-     */
   def describeEntityRecognizer(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -566,15 +485,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Provides details about an entity recognizer including status, S3 buckets containing training data, recognizer metadata, metrics, and so on.
-     */
+    * Provides details about an entity recognizer including status, S3 buckets containing training data, recognizer metadata, metrics, and so on.
+    */
   def describeEntityRecognizer(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeEntityRecognizerRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeEntityRecognizerResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Provides details about an entity recognizer including status, S3 buckets containing training data, recognizer metadata, metrics, and so on.
-     */
   def describeEntityRecognizer(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeEntityRecognizerRequest,
     callback: js.Function2[
@@ -587,15 +503,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets the properties associated with a key phrases detection job. Use this operation to get the status of a detection job.
-     */
+    * Gets the properties associated with a key phrases detection job. Use this operation to get the status of a detection job.
+    */
   def describeKeyPhrasesDetectionJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeKeyPhrasesDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets the properties associated with a key phrases detection job. Use this operation to get the status of a detection job.
-     */
   def describeKeyPhrasesDetectionJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -607,15 +520,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets the properties associated with a key phrases detection job. Use this operation to get the status of a detection job.
-     */
+    * Gets the properties associated with a key phrases detection job. Use this operation to get the status of a detection job.
+    */
   def describeKeyPhrasesDetectionJob(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeKeyPhrasesDetectionJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeKeyPhrasesDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets the properties associated with a key phrases detection job. Use this operation to get the status of a detection job.
-     */
   def describeKeyPhrasesDetectionJob(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeKeyPhrasesDetectionJobRequest,
     callback: js.Function2[
@@ -628,15 +538,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets the properties associated with a sentiment detection job. Use this operation to get the status of a detection job.
-     */
+    * Gets the properties associated with a sentiment detection job. Use this operation to get the status of a detection job.
+    */
   def describeSentimentDetectionJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeSentimentDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets the properties associated with a sentiment detection job. Use this operation to get the status of a detection job.
-     */
   def describeSentimentDetectionJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -648,15 +555,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets the properties associated with a sentiment detection job. Use this operation to get the status of a detection job.
-     */
+    * Gets the properties associated with a sentiment detection job. Use this operation to get the status of a detection job.
+    */
   def describeSentimentDetectionJob(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeSentimentDetectionJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeSentimentDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets the properties associated with a sentiment detection job. Use this operation to get the status of a detection job.
-     */
   def describeSentimentDetectionJob(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeSentimentDetectionJobRequest,
     callback: js.Function2[
@@ -669,15 +573,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets the properties associated with a topic detection job. Use this operation to get the status of a detection job.
-     */
+    * Gets the properties associated with a topic detection job. Use this operation to get the status of a detection job.
+    */
   def describeTopicsDetectionJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeTopicsDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets the properties associated with a topic detection job. Use this operation to get the status of a detection job.
-     */
   def describeTopicsDetectionJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -689,15 +590,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets the properties associated with a topic detection job. Use this operation to get the status of a detection job.
-     */
+    * Gets the properties associated with a topic detection job. Use this operation to get the status of a detection job.
+    */
   def describeTopicsDetectionJob(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeTopicsDetectionJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeTopicsDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets the properties associated with a topic detection job. Use this operation to get the status of a detection job.
-     */
   def describeTopicsDetectionJob(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeTopicsDetectionJobRequest,
     callback: js.Function2[
@@ -710,15 +608,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Determines the dominant language of the input text. For a list of languages that Amazon Comprehend can detect, see Amazon Comprehend Supported Languages. 
-     */
+    * Determines the dominant language of the input text. For a list of languages that Amazon Comprehend can detect, see Amazon Comprehend Supported Languages. 
+    */
   def detectDominantLanguage(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectDominantLanguageResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Determines the dominant language of the input text. For a list of languages that Amazon Comprehend can detect, see Amazon Comprehend Supported Languages. 
-     */
   def detectDominantLanguage(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -730,15 +625,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Determines the dominant language of the input text. For a list of languages that Amazon Comprehend can detect, see Amazon Comprehend Supported Languages. 
-     */
+    * Determines the dominant language of the input text. For a list of languages that Amazon Comprehend can detect, see Amazon Comprehend Supported Languages. 
+    */
   def detectDominantLanguage(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectDominantLanguageRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectDominantLanguageResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Determines the dominant language of the input text. For a list of languages that Amazon Comprehend can detect, see Amazon Comprehend Supported Languages. 
-     */
   def detectDominantLanguage(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectDominantLanguageRequest,
     callback: js.Function2[
@@ -751,15 +643,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Inspects text for named entities, and returns information about them. For more information, about named entities, see how-entities. 
-     */
+    * Inspects text for named entities, and returns information about them. For more information, about named entities, see how-entities. 
+    */
   def detectEntities(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectEntitiesResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Inspects text for named entities, and returns information about them. For more information, about named entities, see how-entities. 
-     */
   def detectEntities(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -771,15 +660,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Inspects text for named entities, and returns information about them. For more information, about named entities, see how-entities. 
-     */
+    * Inspects text for named entities, and returns information about them. For more information, about named entities, see how-entities. 
+    */
   def detectEntities(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectEntitiesRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectEntitiesResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Inspects text for named entities, and returns information about them. For more information, about named entities, see how-entities. 
-     */
   def detectEntities(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectEntitiesRequest,
     callback: js.Function2[
@@ -792,15 +678,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Detects the key noun phrases found in the text. 
-     */
+    * Detects the key noun phrases found in the text. 
+    */
   def detectKeyPhrases(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectKeyPhrasesResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Detects the key noun phrases found in the text. 
-     */
   def detectKeyPhrases(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -812,15 +695,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Detects the key noun phrases found in the text. 
-     */
+    * Detects the key noun phrases found in the text. 
+    */
   def detectKeyPhrases(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectKeyPhrasesRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectKeyPhrasesResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Detects the key noun phrases found in the text. 
-     */
   def detectKeyPhrases(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectKeyPhrasesRequest,
     callback: js.Function2[
@@ -833,15 +713,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Inspects text and returns an inference of the prevailing sentiment (POSITIVE, NEUTRAL, MIXED, or NEGATIVE). 
-     */
+    * Inspects text and returns an inference of the prevailing sentiment (POSITIVE, NEUTRAL, MIXED, or NEGATIVE). 
+    */
   def detectSentiment(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectSentimentResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Inspects text and returns an inference of the prevailing sentiment (POSITIVE, NEUTRAL, MIXED, or NEGATIVE). 
-     */
   def detectSentiment(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -853,15 +730,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Inspects text and returns an inference of the prevailing sentiment (POSITIVE, NEUTRAL, MIXED, or NEGATIVE). 
-     */
+    * Inspects text and returns an inference of the prevailing sentiment (POSITIVE, NEUTRAL, MIXED, or NEGATIVE). 
+    */
   def detectSentiment(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectSentimentRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectSentimentResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Inspects text and returns an inference of the prevailing sentiment (POSITIVE, NEUTRAL, MIXED, or NEGATIVE). 
-     */
   def detectSentiment(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectSentimentRequest,
     callback: js.Function2[
@@ -874,15 +748,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Inspects text for syntax and the part of speech of words in the document. For more information, how-syntax.
-     */
+    * Inspects text for syntax and the part of speech of words in the document. For more information, how-syntax.
+    */
   def detectSyntax(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectSyntaxResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Inspects text for syntax and the part of speech of words in the document. For more information, how-syntax.
-     */
   def detectSyntax(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -894,15 +765,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Inspects text for syntax and the part of speech of words in the document. For more information, how-syntax.
-     */
+    * Inspects text for syntax and the part of speech of words in the document. For more information, how-syntax.
+    */
   def detectSyntax(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectSyntaxRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectSyntaxResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Inspects text for syntax and the part of speech of words in the document. For more information, how-syntax.
-     */
   def detectSyntax(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DetectSyntaxRequest,
     callback: js.Function2[
@@ -915,15 +783,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets a list of the documentation classification jobs that you have submitted.
-     */
+    * Gets a list of the documentation classification jobs that you have submitted.
+    */
   def listDocumentClassificationJobs(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassificationJobsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets a list of the documentation classification jobs that you have submitted.
-     */
   def listDocumentClassificationJobs(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -935,15 +800,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets a list of the documentation classification jobs that you have submitted.
-     */
+    * Gets a list of the documentation classification jobs that you have submitted.
+    */
   def listDocumentClassificationJobs(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassificationJobsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassificationJobsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets a list of the documentation classification jobs that you have submitted.
-     */
   def listDocumentClassificationJobs(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassificationJobsRequest,
     callback: js.Function2[
@@ -956,15 +818,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets a list of the document classifiers that you have created.
-     */
+    * Gets a list of the document classifiers that you have created.
+    */
   def listDocumentClassifiers(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassifiersResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets a list of the document classifiers that you have created.
-     */
   def listDocumentClassifiers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -976,15 +835,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets a list of the document classifiers that you have created.
-     */
+    * Gets a list of the document classifiers that you have created.
+    */
   def listDocumentClassifiers(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassifiersRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassifiersResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets a list of the document classifiers that you have created.
-     */
   def listDocumentClassifiers(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassifiersRequest,
     callback: js.Function2[
@@ -997,15 +853,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets a list of the dominant language detection jobs that you have submitted.
-     */
+    * Gets a list of the dominant language detection jobs that you have submitted.
+    */
   def listDominantLanguageDetectionJobs(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDominantLanguageDetectionJobsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets a list of the dominant language detection jobs that you have submitted.
-     */
   def listDominantLanguageDetectionJobs(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1017,15 +870,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets a list of the dominant language detection jobs that you have submitted.
-     */
+    * Gets a list of the dominant language detection jobs that you have submitted.
+    */
   def listDominantLanguageDetectionJobs(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDominantLanguageDetectionJobsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDominantLanguageDetectionJobsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets a list of the dominant language detection jobs that you have submitted.
-     */
   def listDominantLanguageDetectionJobs(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDominantLanguageDetectionJobsRequest,
     callback: js.Function2[
@@ -1038,15 +888,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets a list of the entity detection jobs that you have submitted.
-     */
+    * Gets a list of the entity detection jobs that you have submitted.
+    */
   def listEntitiesDetectionJobs(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListEntitiesDetectionJobsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets a list of the entity detection jobs that you have submitted.
-     */
   def listEntitiesDetectionJobs(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1058,15 +905,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets a list of the entity detection jobs that you have submitted.
-     */
+    * Gets a list of the entity detection jobs that you have submitted.
+    */
   def listEntitiesDetectionJobs(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListEntitiesDetectionJobsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListEntitiesDetectionJobsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets a list of the entity detection jobs that you have submitted.
-     */
   def listEntitiesDetectionJobs(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListEntitiesDetectionJobsRequest,
     callback: js.Function2[
@@ -1079,15 +923,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets a list of the properties of all entity recognizers that you created, including recognizers currently in training. Allows you to filter the list of recognizers based on criteria such as status and submission time. This call returns up to 500 entity recognizers in the list, with a default number of 100 recognizers in the list. The results of this list are not in any particular order. Please get the list and sort locally if needed.
-     */
+    * Gets a list of the properties of all entity recognizers that you created, including recognizers currently in training. Allows you to filter the list of recognizers based on criteria such as status and submission time. This call returns up to 500 entity recognizers in the list, with a default number of 100 recognizers in the list. The results of this list are not in any particular order. Please get the list and sort locally if needed.
+    */
   def listEntityRecognizers(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListEntityRecognizersResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets a list of the properties of all entity recognizers that you created, including recognizers currently in training. Allows you to filter the list of recognizers based on criteria such as status and submission time. This call returns up to 500 entity recognizers in the list, with a default number of 100 recognizers in the list. The results of this list are not in any particular order. Please get the list and sort locally if needed.
-     */
   def listEntityRecognizers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1099,15 +940,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets a list of the properties of all entity recognizers that you created, including recognizers currently in training. Allows you to filter the list of recognizers based on criteria such as status and submission time. This call returns up to 500 entity recognizers in the list, with a default number of 100 recognizers in the list. The results of this list are not in any particular order. Please get the list and sort locally if needed.
-     */
+    * Gets a list of the properties of all entity recognizers that you created, including recognizers currently in training. Allows you to filter the list of recognizers based on criteria such as status and submission time. This call returns up to 500 entity recognizers in the list, with a default number of 100 recognizers in the list. The results of this list are not in any particular order. Please get the list and sort locally if needed.
+    */
   def listEntityRecognizers(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListEntityRecognizersRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListEntityRecognizersResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets a list of the properties of all entity recognizers that you created, including recognizers currently in training. Allows you to filter the list of recognizers based on criteria such as status and submission time. This call returns up to 500 entity recognizers in the list, with a default number of 100 recognizers in the list. The results of this list are not in any particular order. Please get the list and sort locally if needed.
-     */
   def listEntityRecognizers(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListEntityRecognizersRequest,
     callback: js.Function2[
@@ -1120,15 +958,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Get a list of key phrase detection jobs that you have submitted.
-     */
+    * Get a list of key phrase detection jobs that you have submitted.
+    */
   def listKeyPhrasesDetectionJobs(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListKeyPhrasesDetectionJobsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Get a list of key phrase detection jobs that you have submitted.
-     */
   def listKeyPhrasesDetectionJobs(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1140,15 +975,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Get a list of key phrase detection jobs that you have submitted.
-     */
+    * Get a list of key phrase detection jobs that you have submitted.
+    */
   def listKeyPhrasesDetectionJobs(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListKeyPhrasesDetectionJobsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListKeyPhrasesDetectionJobsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Get a list of key phrase detection jobs that you have submitted.
-     */
   def listKeyPhrasesDetectionJobs(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListKeyPhrasesDetectionJobsRequest,
     callback: js.Function2[
@@ -1161,15 +993,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets a list of sentiment detection jobs that you have submitted.
-     */
+    * Gets a list of sentiment detection jobs that you have submitted.
+    */
   def listSentimentDetectionJobs(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListSentimentDetectionJobsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets a list of sentiment detection jobs that you have submitted.
-     */
   def listSentimentDetectionJobs(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1181,15 +1010,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets a list of sentiment detection jobs that you have submitted.
-     */
+    * Gets a list of sentiment detection jobs that you have submitted.
+    */
   def listSentimentDetectionJobs(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListSentimentDetectionJobsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListSentimentDetectionJobsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets a list of sentiment detection jobs that you have submitted.
-     */
   def listSentimentDetectionJobs(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListSentimentDetectionJobsRequest,
     callback: js.Function2[
@@ -1202,15 +1028,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets a list of the topic detection jobs that you have submitted.
-     */
+    * Gets a list of the topic detection jobs that you have submitted.
+    */
   def listTopicsDetectionJobs(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListTopicsDetectionJobsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets a list of the topic detection jobs that you have submitted.
-     */
   def listTopicsDetectionJobs(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1222,15 +1045,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets a list of the topic detection jobs that you have submitted.
-     */
+    * Gets a list of the topic detection jobs that you have submitted.
+    */
   def listTopicsDetectionJobs(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListTopicsDetectionJobsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListTopicsDetectionJobsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Gets a list of the topic detection jobs that you have submitted.
-     */
   def listTopicsDetectionJobs(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListTopicsDetectionJobsRequest,
     callback: js.Function2[
@@ -1243,15 +1063,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous document classification job. Use the operation to track the progress of the job.
-     */
+    * Starts an asynchronous document classification job. Use the operation to track the progress of the job.
+    */
   def startDocumentClassificationJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartDocumentClassificationJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Starts an asynchronous document classification job. Use the operation to track the progress of the job.
-     */
   def startDocumentClassificationJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1263,15 +1080,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous document classification job. Use the operation to track the progress of the job.
-     */
+    * Starts an asynchronous document classification job. Use the operation to track the progress of the job.
+    */
   def startDocumentClassificationJob(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartDocumentClassificationJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartDocumentClassificationJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Starts an asynchronous document classification job. Use the operation to track the progress of the job.
-     */
   def startDocumentClassificationJob(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartDocumentClassificationJobRequest,
     callback: js.Function2[
@@ -1284,15 +1098,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous dominant language detection job for a collection of documents. Use the operation to track the status of a job.
-     */
+    * Starts an asynchronous dominant language detection job for a collection of documents. Use the operation to track the status of a job.
+    */
   def startDominantLanguageDetectionJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartDominantLanguageDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Starts an asynchronous dominant language detection job for a collection of documents. Use the operation to track the status of a job.
-     */
   def startDominantLanguageDetectionJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1304,15 +1115,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous dominant language detection job for a collection of documents. Use the operation to track the status of a job.
-     */
+    * Starts an asynchronous dominant language detection job for a collection of documents. Use the operation to track the status of a job.
+    */
   def startDominantLanguageDetectionJob(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartDominantLanguageDetectionJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartDominantLanguageDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Starts an asynchronous dominant language detection job for a collection of documents. Use the operation to track the status of a job.
-     */
   def startDominantLanguageDetectionJob(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartDominantLanguageDetectionJobRequest,
     callback: js.Function2[
@@ -1325,15 +1133,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job. This API can be used for either standard entity detection or custom entity recognition. In order to be used for custom entity recognition, the optional EntityRecognizerArn must be used in order to provide access to the recognizer being used to detect the custom entity.
-     */
+    * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job. This API can be used for either standard entity detection or custom entity recognition. In order to be used for custom entity recognition, the optional EntityRecognizerArn must be used in order to provide access to the recognizer being used to detect the custom entity.
+    */
   def startEntitiesDetectionJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartEntitiesDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job. This API can be used for either standard entity detection or custom entity recognition. In order to be used for custom entity recognition, the optional EntityRecognizerArn must be used in order to provide access to the recognizer being used to detect the custom entity.
-     */
   def startEntitiesDetectionJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1345,15 +1150,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job. This API can be used for either standard entity detection or custom entity recognition. In order to be used for custom entity recognition, the optional EntityRecognizerArn must be used in order to provide access to the recognizer being used to detect the custom entity.
-     */
+    * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job. This API can be used for either standard entity detection or custom entity recognition. In order to be used for custom entity recognition, the optional EntityRecognizerArn must be used in order to provide access to the recognizer being used to detect the custom entity.
+    */
   def startEntitiesDetectionJob(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartEntitiesDetectionJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartEntitiesDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job. This API can be used for either standard entity detection or custom entity recognition. In order to be used for custom entity recognition, the optional EntityRecognizerArn must be used in order to provide access to the recognizer being used to detect the custom entity.
-     */
   def startEntitiesDetectionJob(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartEntitiesDetectionJobRequest,
     callback: js.Function2[
@@ -1366,15 +1168,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous key phrase detection job for a collection of documents. Use the operation to track the status of a job.
-     */
+    * Starts an asynchronous key phrase detection job for a collection of documents. Use the operation to track the status of a job.
+    */
   def startKeyPhrasesDetectionJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartKeyPhrasesDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Starts an asynchronous key phrase detection job for a collection of documents. Use the operation to track the status of a job.
-     */
   def startKeyPhrasesDetectionJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1386,15 +1185,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous key phrase detection job for a collection of documents. Use the operation to track the status of a job.
-     */
+    * Starts an asynchronous key phrase detection job for a collection of documents. Use the operation to track the status of a job.
+    */
   def startKeyPhrasesDetectionJob(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartKeyPhrasesDetectionJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartKeyPhrasesDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Starts an asynchronous key phrase detection job for a collection of documents. Use the operation to track the status of a job.
-     */
   def startKeyPhrasesDetectionJob(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartKeyPhrasesDetectionJobRequest,
     callback: js.Function2[
@@ -1407,15 +1203,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous sentiment detection job for a collection of documents. use the operation to track the status of a job.
-     */
+    * Starts an asynchronous sentiment detection job for a collection of documents. use the operation to track the status of a job.
+    */
   def startSentimentDetectionJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartSentimentDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Starts an asynchronous sentiment detection job for a collection of documents. use the operation to track the status of a job.
-     */
   def startSentimentDetectionJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1427,15 +1220,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous sentiment detection job for a collection of documents. use the operation to track the status of a job.
-     */
+    * Starts an asynchronous sentiment detection job for a collection of documents. use the operation to track the status of a job.
+    */
   def startSentimentDetectionJob(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartSentimentDetectionJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartSentimentDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Starts an asynchronous sentiment detection job for a collection of documents. use the operation to track the status of a job.
-     */
   def startSentimentDetectionJob(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartSentimentDetectionJobRequest,
     callback: js.Function2[
@@ -1448,15 +1238,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous topic detection job. Use the DescribeTopicDetectionJob operation to track the status of a job.
-     */
+    * Starts an asynchronous topic detection job. Use the DescribeTopicDetectionJob operation to track the status of a job.
+    */
   def startTopicsDetectionJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartTopicsDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Starts an asynchronous topic detection job. Use the DescribeTopicDetectionJob operation to track the status of a job.
-     */
   def startTopicsDetectionJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1468,15 +1255,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous topic detection job. Use the DescribeTopicDetectionJob operation to track the status of a job.
-     */
+    * Starts an asynchronous topic detection job. Use the DescribeTopicDetectionJob operation to track the status of a job.
+    */
   def startTopicsDetectionJob(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartTopicsDetectionJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartTopicsDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Starts an asynchronous topic detection job. Use the DescribeTopicDetectionJob operation to track the status of a job.
-     */
   def startTopicsDetectionJob(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartTopicsDetectionJobRequest,
     callback: js.Function2[
@@ -1489,15 +1273,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops a dominant language detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
-     */
+    * Stops a dominant language detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
+    */
   def stopDominantLanguageDetectionJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopDominantLanguageDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Stops a dominant language detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
-     */
   def stopDominantLanguageDetectionJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1509,15 +1290,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops a dominant language detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
-     */
+    * Stops a dominant language detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
+    */
   def stopDominantLanguageDetectionJob(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopDominantLanguageDetectionJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopDominantLanguageDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Stops a dominant language detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
-     */
   def stopDominantLanguageDetectionJob(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopDominantLanguageDetectionJobRequest,
     callback: js.Function2[
@@ -1530,15 +1308,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops an entities detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
-     */
+    * Stops an entities detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
+    */
   def stopEntitiesDetectionJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopEntitiesDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Stops an entities detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
-     */
   def stopEntitiesDetectionJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1550,15 +1325,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops an entities detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
-     */
+    * Stops an entities detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
+    */
   def stopEntitiesDetectionJob(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopEntitiesDetectionJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopEntitiesDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Stops an entities detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
-     */
   def stopEntitiesDetectionJob(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopEntitiesDetectionJobRequest,
     callback: js.Function2[
@@ -1571,15 +1343,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops a key phrases detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
-     */
+    * Stops a key phrases detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
+    */
   def stopKeyPhrasesDetectionJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopKeyPhrasesDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Stops a key phrases detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
-     */
   def stopKeyPhrasesDetectionJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1591,15 +1360,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops a key phrases detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
-     */
+    * Stops a key phrases detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
+    */
   def stopKeyPhrasesDetectionJob(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopKeyPhrasesDetectionJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopKeyPhrasesDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Stops a key phrases detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
-     */
   def stopKeyPhrasesDetectionJob(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopKeyPhrasesDetectionJobRequest,
     callback: js.Function2[
@@ -1612,15 +1378,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops a sentiment detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is be stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
-     */
+    * Stops a sentiment detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is be stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
+    */
   def stopSentimentDetectionJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopSentimentDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Stops a sentiment detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is be stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
-     */
   def stopSentimentDetectionJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1632,15 +1395,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops a sentiment detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is be stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
-     */
+    * Stops a sentiment detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is be stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
+    */
   def stopSentimentDetectionJob(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopSentimentDetectionJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopSentimentDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Stops a sentiment detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is be stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
-     */
   def stopSentimentDetectionJob(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopSentimentDetectionJobRequest,
     callback: js.Function2[
@@ -1653,15 +1413,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops a document classifier training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and put into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body. 
-     */
+    * Stops a document classifier training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and put into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body. 
+    */
   def stopTrainingDocumentClassifier(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingDocumentClassifierResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Stops a document classifier training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and put into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body. 
-     */
   def stopTrainingDocumentClassifier(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1673,15 +1430,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops a document classifier training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and put into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body. 
-     */
+    * Stops a document classifier training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and put into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body. 
+    */
   def stopTrainingDocumentClassifier(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingDocumentClassifierRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingDocumentClassifierResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Stops a document classifier training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and put into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body. 
-     */
   def stopTrainingDocumentClassifier(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingDocumentClassifierRequest,
     callback: js.Function2[
@@ -1694,15 +1448,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops an entity recognizer training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and putted into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body.
-     */
+    * Stops an entity recognizer training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and putted into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body.
+    */
   def stopTrainingEntityRecognizer(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingEntityRecognizerResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Stops an entity recognizer training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and putted into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body.
-     */
   def stopTrainingEntityRecognizer(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1714,15 +1465,12 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops an entity recognizer training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and putted into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body.
-     */
+    * Stops an entity recognizer training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and putted into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body.
+    */
   def stopTrainingEntityRecognizer(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingEntityRecognizerRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingEntityRecognizerResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Stops an entity recognizer training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and putted into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body.
-     */
   def stopTrainingEntityRecognizer(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingEntityRecognizerRequest,
     callback: js.Function2[

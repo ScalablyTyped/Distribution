@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 sealed trait ChartGradientStyleType extends js.Object
 
 /**
-     *
-     * Represents the Gradient Style of chart series, only applicable in RegionMap chart.
-     *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  *
+  * Represents the Gradient Style of chart series, only applicable in RegionMap chart.
+  *
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.ChartGradientStyleType")
 @js.native
 object ChartGradientStyleType extends js.Object {

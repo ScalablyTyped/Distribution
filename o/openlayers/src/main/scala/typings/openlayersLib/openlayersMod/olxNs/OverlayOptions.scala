@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Object literal with config options for the overlay.
-     */
-
+  * Object literal with config options for the overlay.
+  */
 trait OverlayOptions extends js.Object {
   var autoPan: js.UndefOr[scala.Boolean] = js.undefined
   var autoPanAnimation: js.UndefOr[openlayersLib.openlayersMod.olxNs.animationNs.PanOptions] = js.undefined

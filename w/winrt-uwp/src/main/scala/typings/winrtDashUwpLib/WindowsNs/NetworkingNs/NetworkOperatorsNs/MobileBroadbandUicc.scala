@@ -12,9 +12,9 @@ abstract class MobileBroadbandUicc () extends js.Object {
   /** Gets the unique SIM Card identity on a mobile broadband device. */
   var simIccId: java.lang.String = js.native
   /**
-                   * Asynchronously retrieves a list of mobile broadband UICC (SIM card) applications.
-                   * @return An asynchronous retrieval operation. On successful completion, returns an object with the results of the retrieval operation.
-                   */
+    * Asynchronously retrieves a list of mobile broadband UICC (SIM card) applications.
+    * @return An asynchronous retrieval operation. On successful completion, returns an object with the results of the retrieval operation.
+    */
   def getUiccAppsAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[MobileBroadbandUiccAppsResult] = js.native
 }
 

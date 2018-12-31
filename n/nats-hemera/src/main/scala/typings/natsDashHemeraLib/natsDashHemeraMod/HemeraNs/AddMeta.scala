@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AddMeta extends js.Object {
   var action: js.Any
   var pattern: Pattern

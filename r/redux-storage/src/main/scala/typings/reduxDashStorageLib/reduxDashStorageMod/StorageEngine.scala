@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StorageEngine extends js.Object {
   /**
-           * Load
-           */
+    * Load
+    */
   def load(): js.Thenable[_]
   /**
-           * Save
-           * @param state
-           */
+    * Save
+    * @param state
+    */
   def save(state: js.Any): js.Thenable[_]
 }
 

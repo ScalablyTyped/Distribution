@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Dictionary containing either `endDate` or `occurrenceCount` property.
- */
-
+  * Dictionary containing either `endDate` or `occurrenceCount` property.
+  */
 trait recurrenceEndDictionary extends js.Object {
   /**
   	 * End date of the recurrence end, or undefined if the recurrence end is count-based.

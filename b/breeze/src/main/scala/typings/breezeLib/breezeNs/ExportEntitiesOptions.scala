@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExportEntitiesOptions extends js.Object {
   var asString: scala.Boolean
     // default true

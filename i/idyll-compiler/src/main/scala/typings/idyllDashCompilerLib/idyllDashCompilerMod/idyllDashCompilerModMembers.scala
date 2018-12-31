@@ -9,34 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object idyllDashCompilerModMembers extends js.Object {
   /**
-   * Compiles the given idyllMarkup and returns an AST either synchronously
-   * or asynchronously.
-   *
-   * If postProcessors are provided or options.async is set to true:
-   *      compiler returns a promise
-   * Otherwise, compile returns the AST synchronously
-   *
-   */
+    * Compiles the given idyllMarkup and returns an AST either synchronously
+    * or asynchronously.
+    *
+    * If postProcessors are provided or options.async is set to true:
+    *      compiler returns a promise
+    * Otherwise, compile returns the AST synchronously
+    *
+    */
   def default(input: java.lang.String): js.Promise[AST] | AST = js.native
-  /**
-   * Compiles the given idyllMarkup and returns an AST either synchronously
-   * or asynchronously.
-   *
-   * If postProcessors are provided or options.async is set to true:
-   *      compiler returns a promise
-   * Otherwise, compile returns the AST synchronously
-   *
-   */
   def default(input: java.lang.String, options: Options): js.Promise[AST] | AST = js.native
-  /**
-   * Compiles the given idyllMarkup and returns an AST either synchronously
-   * or asynchronously.
-   *
-   * If postProcessors are provided or options.async is set to true:
-   *      compiler returns a promise
-   * Otherwise, compile returns the AST synchronously
-   *
-   */
   def default(input: java.lang.String, options: Options, callback: js.Function0[scala.Unit]): js.Promise[AST] | AST = js.native
 }
 

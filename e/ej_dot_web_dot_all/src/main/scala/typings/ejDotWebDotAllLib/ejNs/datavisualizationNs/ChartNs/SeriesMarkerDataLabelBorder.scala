@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SeriesMarkerDataLabelBorder extends js.Object {
   /** Border color of the data label.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var color: js.UndefOr[java.lang.String] = js.undefined
   /** Border width of the data label.
-               * @Default {0.1}
-               */
+    * @Default {0.1}
+    */
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 

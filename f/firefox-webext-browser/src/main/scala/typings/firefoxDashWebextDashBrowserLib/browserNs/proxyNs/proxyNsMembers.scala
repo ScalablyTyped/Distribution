@@ -24,9 +24,9 @@ object proxyNsMembers extends js.Object {
   /** Registers the proxy script for the extension. */
   def register(url: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Registers the proxy script for the extension.
-       * @deprecated Please use `proxy.register`
-       */
+    * Registers the proxy script for the extension.
+    * @deprecated Please use `proxy.register`
+    */
   def registerProxyScript(url: java.lang.String): js.Promise[_] = js.native
   /** Unregisters the proxy script for the extension. */
   def unregister(): js.Promise[scala.Unit] = js.native

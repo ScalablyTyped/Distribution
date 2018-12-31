@@ -201,10 +201,10 @@ object BarcodeSymbologies extends js.Object {
   /** Gets the United States Postal Numeric Encoding Technique (POSTNET) barcode symbology. */
   var usPostNet: scala.Double = js.native
   /**
-                   * Returns the barcode symbology type as a string.
-                   * @param scanDataType The barcode symbology type.
-                   * @return The barcode symbology type as a string.
-                   */
+    * Returns the barcode symbology type as a string.
+    * @param scanDataType The barcode symbology type.
+    * @return The barcode symbology type as a string.
+    */
   def getName(scanDataType: scala.Double): java.lang.String = js.native
 }
 

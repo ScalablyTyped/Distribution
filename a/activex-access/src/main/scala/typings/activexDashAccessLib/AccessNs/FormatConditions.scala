@@ -13,9 +13,7 @@ trait FormatConditions extends js.Object {
   def apply(Index: scala.Double): FormatCondition = js.native
   /** @param Operator [Operator=0] */
   def Add(Type: AcFormatConditionType): FormatCondition = js.native
-  /** @param Operator [Operator=0] */
   def Add(Type: AcFormatConditionType, Operator: AcFormatConditionOperator): FormatCondition = js.native
-  /** @param Operator [Operator=0] */
   def Add(Type: AcFormatConditionType, Operator: AcFormatConditionOperator, Expression1: java.lang.String): FormatCondition = js.native
   /** @param Operator [Operator=0] */
   def Add(
@@ -24,60 +22,50 @@ trait FormatConditions extends js.Object {
     Expression1: java.lang.String,
     Expression2: java.lang.String
   ): FormatCondition = js.native
-  /** @param Operator [Operator=0] */
   def Add(
     Type: AcFormatConditionType,
     Operator: AcFormatConditionOperator,
     Expression1: java.lang.String,
     Expression2: scala.Boolean
   ): FormatCondition = js.native
-  /** @param Operator [Operator=0] */
   def Add(
     Type: AcFormatConditionType,
     Operator: AcFormatConditionOperator,
     Expression1: java.lang.String,
     Expression2: scala.Double
   ): FormatCondition = js.native
-  /** @param Operator [Operator=0] */
   def Add(Type: AcFormatConditionType, Operator: AcFormatConditionOperator, Expression1: scala.Boolean): FormatCondition = js.native
-  /** @param Operator [Operator=0] */
   def Add(
     Type: AcFormatConditionType,
     Operator: AcFormatConditionOperator,
     Expression1: scala.Boolean,
     Expression2: java.lang.String
   ): FormatCondition = js.native
-  /** @param Operator [Operator=0] */
   def Add(
     Type: AcFormatConditionType,
     Operator: AcFormatConditionOperator,
     Expression1: scala.Boolean,
     Expression2: scala.Boolean
   ): FormatCondition = js.native
-  /** @param Operator [Operator=0] */
   def Add(
     Type: AcFormatConditionType,
     Operator: AcFormatConditionOperator,
     Expression1: scala.Boolean,
     Expression2: scala.Double
   ): FormatCondition = js.native
-  /** @param Operator [Operator=0] */
   def Add(Type: AcFormatConditionType, Operator: AcFormatConditionOperator, Expression1: scala.Double): FormatCondition = js.native
-  /** @param Operator [Operator=0] */
   def Add(
     Type: AcFormatConditionType,
     Operator: AcFormatConditionOperator,
     Expression1: scala.Double,
     Expression2: java.lang.String
   ): FormatCondition = js.native
-  /** @param Operator [Operator=0] */
   def Add(
     Type: AcFormatConditionType,
     Operator: AcFormatConditionOperator,
     Expression1: scala.Double,
     Expression2: scala.Boolean
   ): FormatCondition = js.native
-  /** @param Operator [Operator=0] */
   def Add(
     Type: AcFormatConditionType,
     Operator: AcFormatConditionOperator,
@@ -86,9 +74,7 @@ trait FormatConditions extends js.Object {
   ): FormatCondition = js.native
   /** @param Operator [Operator=0] */
   def Add(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: java.lang.String): FormatCondition = js.native
-  /** @param Operator [Operator=0] */
   def Add(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: scala.Boolean): FormatCondition = js.native
-  /** @param Operator [Operator=0] */
   def Add(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: scala.Double): FormatCondition = js.native
   def Delete(): scala.Unit = js.native
   def IsMemberSafe(dispid: scala.Double): scala.Boolean = js.native

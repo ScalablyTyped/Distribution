@@ -23,13 +23,7 @@ class Toplist () extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/Toplist.html#method_getChatCommand
   		 */
   def getChatCommand(): java.lang.String = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Toplist.html#method_getChatCommand
-  		 */
   def getChatCommand(user_or_userId: User): java.lang.String = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Toplist.html#method_getChatCommand
-  		 */
   def getChatCommand(user_or_userId: scala.Double): java.lang.String = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Toplist.html#method_getDisplayName
@@ -39,9 +33,6 @@ class Toplist () extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/Toplist.html#method_getLabel
   		 */
   def getLabel(user_or_userId: User): java.lang.String = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Toplist.html#method_getLabel
-  		 */
   def getLabel(user_or_userId: scala.Double): java.lang.String = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Toplist.html#method_getUserPersistenceNumberKey

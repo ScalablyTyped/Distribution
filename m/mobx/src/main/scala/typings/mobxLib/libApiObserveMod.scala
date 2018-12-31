@@ -54,9 +54,7 @@ object libApiObserveMod extends js.Object {
     `object`: T,
     property: K,
     listener: js.Function1[
-      /* change */ mobxLib.libTypesObservablevalueMod.IValueDidChange[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-      ], 
+      /* change */ mobxLib.libTypesObservablevalueMod.IValueDidChange[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any], 
       scala.Unit
     ]
   ): mobxLib.libUtilsUtilsMod.Lambda = js.native
@@ -64,9 +62,7 @@ object libApiObserveMod extends js.Object {
     `object`: T,
     property: K,
     listener: js.Function1[
-      /* change */ mobxLib.libTypesObservablevalueMod.IValueDidChange[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-      ], 
+      /* change */ mobxLib.libTypesObservablevalueMod.IValueDidChange[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any], 
       scala.Unit
     ],
     fireImmediately: scala.Boolean

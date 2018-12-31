@@ -195,7 +195,6 @@ class ComboBox protected () extends js.Object {
   def AddItem(Item: java.lang.String, Index: scala.Double): scala.Unit = js.native
   def Column(Index: scala.Double): js.Any = js.native
   def Column(Index: scala.Double, Row: scala.Double): js.Any = js.native
-  // tslint:disable-next-line:no-unnecessary-generics
   def Controls[T](Index: java.lang.String): T = js.native
   // tslint:disable-next-line:no-unnecessary-generics
   def Controls[T](Index: scala.Double): T = js.native

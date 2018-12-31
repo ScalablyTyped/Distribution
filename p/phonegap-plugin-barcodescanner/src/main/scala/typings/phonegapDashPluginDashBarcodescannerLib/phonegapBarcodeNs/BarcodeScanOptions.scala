@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BarcodeScanOptions extends js.Object {
   var disableAnimations: scala.Boolean
   var disableSuccessBeep: js.UndefOr[scala.Boolean] = js.undefined

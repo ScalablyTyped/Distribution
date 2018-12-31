@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DownloadFilenameSuggestion extends js.Object {
   /** Optional. The action to take if filename already exists.  */
   var conflictAction: js.UndefOr[java.lang.String] = js.undefined

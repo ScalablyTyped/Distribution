@@ -10,15 +10,14 @@ import scala.scalajs.js.annotation._
 * Date Type Extensions
 * @see {@link http://msdn.microsoft.com/en-us/library/bb310850(v=vs.100).aspx}
 */
-
 trait Date extends js.Object {
   /**
-      * Formats a date by using the invariant (culture-independent) culture.
-      */
+    * Formats a date by using the invariant (culture-independent) culture.
+    */
   def format(format: java.lang.String): java.lang.String
   /**
-      * Formats a date by using the current culture. This function is static and can be invoked without creating an instance of the object.
-      */
+    * Formats a date by using the current culture. This function is static and can be invoked without creating an instance of the object.
+    */
   def localeFormat(format: java.lang.String): java.lang.String
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSStyleBlur extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.styleBlur
   var center: Anon_Y

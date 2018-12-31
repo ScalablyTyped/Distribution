@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LeftTopEdge extends js.Object {
   var bottomAutoEdge: officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibNumbers.`7`
   var bottomCenter: officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibNumbers.`5`

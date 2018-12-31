@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SkewAnimation extends js.Object {
   def skew(ax: scala.Double): Animation
   def skewX(ax: scala.Double): Animation

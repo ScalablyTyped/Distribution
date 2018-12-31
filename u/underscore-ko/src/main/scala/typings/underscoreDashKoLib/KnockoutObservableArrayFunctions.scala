@@ -13,8 +13,8 @@ trait KnockoutObservableArrayFunctions[T] extends js.Object {
   def any(iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[T, scala.Boolean]): scala.Boolean = js.native
   def any(iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[T, scala.Boolean], context: js.Any): scala.Boolean = js.native
   /* **
-       Chaining
-      *****/
+    Chaining
+    *****/
   def chain(`object`: js.Any): js.Any = js.native
   def collect[TResult](
     iterator: (underscoreLib.underscoreMod.underscoreNs.ListIterator[T, TResult]) | (underscoreLib.underscoreMod.underscoreNs.ObjectIterator[T, TResult])
@@ -37,14 +37,11 @@ trait KnockoutObservableArrayFunctions[T] extends js.Object {
   def `drop_`(): js.Array[T] = js.native
   def `drop_`(n: scala.Double): js.Array[T] = js.native
   /* **
-     Collections
+    Collections
     *****/
   def each[TResult](
     iterator: (underscoreLib.underscoreMod.underscoreNs.ListIterator[T, TResult]) | (underscoreLib.underscoreMod.underscoreNs.ObjectIterator[T, TResult])
   ): js.Array[TResult] = js.native
-  /* **
-     Collections
-    *****/
   def each[TResult](
     iterator: (underscoreLib.underscoreMod.underscoreNs.ListIterator[T, TResult]) | (underscoreLib.underscoreMod.underscoreNs.ObjectIterator[T, TResult]),
     context: js.Any
@@ -58,8 +55,8 @@ trait KnockoutObservableArrayFunctions[T] extends js.Object {
   def find(iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[T, scala.Boolean]): T = js.native
   def find(iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[T, scala.Boolean], context: js.Any): T = js.native
   /* **
-       Arrays
-      *****/
+    Arrays
+    *****/
   def first(): T = js.native
   def first(n: scala.Double): js.Array[T] = js.native
   def flatten(): js.Array[_] = js.native

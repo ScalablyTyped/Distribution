@@ -12,57 +12,57 @@ sealed trait DefinitionTriggerType extends js.Object
 @js.native
 object DefinitionTriggerType extends js.Object {
   /**
-       * All types.
-       */
+    * All types.
+    */
   @js.native
   sealed trait All
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DefinitionTriggerType
   
   /**
-       * A build should be started for multiple changesets at a time at a specified interval.
-       */
+    * A build should be started for multiple changesets at a time at a specified interval.
+    */
   @js.native
   sealed trait BatchedContinuousIntegration
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DefinitionTriggerType
   
   /**
-       * A validation build should be started for each batch of check-ins.
-       */
+    * A validation build should be started for each batch of check-ins.
+    */
   @js.native
   sealed trait BatchedGatedCheckIn
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DefinitionTriggerType
   
   /**
-       * A build should be started for each changeset.
-       */
+    * A build should be started for each changeset.
+    */
   @js.native
   sealed trait ContinuousIntegration
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DefinitionTriggerType
   
   /**
-       * A validation build should be started for each check-in.
-       */
+    * A validation build should be started for each check-in.
+    */
   @js.native
   sealed trait GatedCheckIn
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DefinitionTriggerType
   
   /**
-       * Manual builds only.
-       */
+    * Manual builds only.
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DefinitionTriggerType
   
   /**
-       * A build should be triggered when a GitHub pull request is created or updated. Added in resource version 3
-       */
+    * A build should be triggered when a GitHub pull request is created or updated. Added in resource version 3
+    */
   @js.native
   sealed trait PullRequest
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DefinitionTriggerType
   
   /**
-       * A build should be started on a specified schedule whether or not changesets exist.
-       */
+    * A build should be started on a specified schedule whether or not changesets exist.
+    */
   @js.native
   sealed trait Schedule
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DefinitionTriggerType

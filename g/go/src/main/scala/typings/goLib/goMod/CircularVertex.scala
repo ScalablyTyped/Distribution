@@ -77,32 +77,32 @@ class CircularVertex ()
   /* CompleteClass */
   override var y: scala.Double = js.native
   /**
-          * Adds a LayoutEdge to the list of successors (the edge will be going out from this vertex).
-          * @param {LayoutEdge} edge
-          */
+    * Adds a LayoutEdge to the list of successors (the edge will be going out from this vertex).
+    * @param {LayoutEdge} edge
+    */
   /* CompleteClass */
   override def addDestinationEdge(edge: goLib.goMod.goNs.LayoutEdge): scala.Unit = js.native
   /**
-          * Adds a LayoutEdge to the list of predecessors (the edge will be coming into this vertex).
-          * @param {LayoutEdge} edge
-          */
+    * Adds a LayoutEdge to the list of predecessors (the edge will be coming into this vertex).
+    * @param {LayoutEdge} edge
+    */
   /* CompleteClass */
   override def addSourceEdge(edge: goLib.goMod.goNs.LayoutEdge): scala.Unit = js.native
   /**
-          * Moves the Node corresponding to this vertex so that its position is at the current .bounds point.
-          */
+    * Moves the Node corresponding to this vertex so that its position is at the current .bounds point.
+    */
   /* CompleteClass */
   override def commit(): scala.Unit = js.native
   /**
-          * Deletes a LayoutEdge from the list of successors (the edge was going out from this vertex).
-          * @param {LayoutEdge} edge
-          */
+    * Deletes a LayoutEdge from the list of successors (the edge was going out from this vertex).
+    * @param {LayoutEdge} edge
+    */
   /* CompleteClass */
   override def deleteDestinationEdge(edge: goLib.goMod.goNs.LayoutEdge): scala.Unit = js.native
   /**
-          * Deletes a LayoutEdge from the list of predecessors (the edge was coming into this vertex).
-          * @param {LayoutEdge} edge
-          */
+    * Deletes a LayoutEdge from the list of predecessors (the edge was coming into this vertex).
+    * @param {LayoutEdge} edge
+    */
   /* CompleteClass */
   override def deleteSourceEdge(edge: goLib.goMod.goNs.LayoutEdge): scala.Unit = js.native
 }

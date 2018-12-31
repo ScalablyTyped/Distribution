@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IList extends IDataView {
   /** [Property] (Number) */
   var bufferSize: js.UndefOr[scala.Double] = js.undefined

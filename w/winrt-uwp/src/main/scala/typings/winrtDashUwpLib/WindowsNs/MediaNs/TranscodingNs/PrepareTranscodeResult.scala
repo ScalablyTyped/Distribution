@@ -14,9 +14,9 @@ abstract class PrepareTranscodeResult () extends js.Object {
   /** Specifies the reason for the transcode failure. */
   var failureReason: TranscodeFailureReason = js.native
   /**
-                   * Creates an object to perform an asynchronous media transcode operation on media data.
-                   * @return An object that is used to control the asynchronous operation.
-                   */
+    * Creates an object to perform an asynchronous media transcode operation on media data.
+    * @return An object that is used to control the asynchronous operation.
+    */
   def transcodeAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncActionWithProgress[scala.Double] = js.native
 }
 

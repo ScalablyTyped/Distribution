@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 //#region 数据安全 https://docs.alipay.com/mini/api/data-safe
-
 trait RsaOptions
   extends BaseOptions[js.Any, js.Any] {
   /**

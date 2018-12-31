@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PolymerTSElement extends js.Object {
   @JSName("$custom_cons")
   var $custom_cons: js.UndefOr[stdLib.FunctionConstructor] = js.undefined

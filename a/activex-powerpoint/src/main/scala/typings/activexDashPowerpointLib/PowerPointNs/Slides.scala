@@ -16,24 +16,15 @@ class Slides protected () extends js.Object {
   def AddSlide(Index: scala.Double, pCustomLayout: CustomLayout): Slide = js.native
   def FindBySlideID(SlideID: scala.Double): Slide = js.native
   /**
-           * @param number [SlideStart=1]
-           * @param number [SlideEnd=-1]
-           */
+    * @param number [SlideStart=1]
+    * @param number [SlideEnd=-1]
+    */
   def InsertFromFile(FileName: java.lang.String, Index: scala.Double): scala.Double = js.native
-  /**
-           * @param number [SlideStart=1]
-           * @param number [SlideEnd=-1]
-           */
   def InsertFromFile(FileName: java.lang.String, Index: scala.Double, SlideStart: scala.Double): scala.Double = js.native
-  /**
-           * @param number [SlideStart=1]
-           * @param number [SlideEnd=-1]
-           */
   def InsertFromFile(FileName: java.lang.String, Index: scala.Double, SlideStart: scala.Double, SlideEnd: scala.Double): scala.Double = js.native
   def Item(Index: js.Any): Slide = js.native
   /** @param number [Index=-1] */
   def Paste(): SlideRange = js.native
-  /** @param number [Index=-1] */
   def Paste(Index: scala.Double): SlideRange = js.native
   def Range(): SlideRange = js.native
   def Range(Index: js.Any): SlideRange = js.native

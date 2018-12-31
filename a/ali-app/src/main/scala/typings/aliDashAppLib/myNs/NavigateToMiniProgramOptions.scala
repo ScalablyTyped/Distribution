@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region 小程序跳转 https://docs.alipay.com/mini/api/open-miniprogram
-
 trait NavigateToMiniProgramOptions
   extends BaseOptions[js.Any, js.Any] {
   /**

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FocusPanel extends js.Object {
   def add(widget: Widget): FocusPanel
   def addBlurHandler(handler: Handler): FocusPanel

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Coordinates extends js.Object {
   val accuracy: scala.Double
   val altitude: scala.Double | scala.Null

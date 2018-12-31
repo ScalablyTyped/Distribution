@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientConnectOptions extends js.Object {
   var auth: js.UndefOr[js.Any] = js.undefined
   var delay: js.UndefOr[scala.Double] = js.undefined

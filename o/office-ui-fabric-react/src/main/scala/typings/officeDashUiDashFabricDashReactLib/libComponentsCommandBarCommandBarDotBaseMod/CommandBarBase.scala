@@ -24,13 +24,13 @@ class CommandBarBase ()
   /* private */ def _computeCacheKey(data: js.Any): js.Any = js.native
   /* private */ def _onButtonClick(item: js.Any): js.Any = js.native
   /**
-       * Sets focus to the active command in the list.
-       */
+    * Sets focus to the active command in the list.
+    */
   /* CompleteClass */
   override def focus(): scala.Unit = js.native
   /**
-       * Remeasures the available space.
-       */
+    * Remeasures the available space.
+    */
   /* CompleteClass */
   override def remeasure(): scala.Unit = js.native
 }

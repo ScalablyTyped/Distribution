@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class FindAppointmentsOptions () extends js.Object {
   var calendarIds: js.Any = js.native
-   /* unmapped type */var fetchProperties: js.Any = js.native
-   /* unmapped type */var includeHidden: js.Any = js.native
-   /* unmapped type */var maxCount: js.Any = js.native
+   /* unmapped type */ var fetchProperties: js.Any = js.native
+   /* unmapped type */ var includeHidden: js.Any = js.native
+   /* unmapped type */ var maxCount: js.Any = js.native
 }
 

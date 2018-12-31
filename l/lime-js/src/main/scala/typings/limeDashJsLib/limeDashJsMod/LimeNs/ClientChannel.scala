@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientChannel extends Channel {
   def authenticateSession(identity: java.lang.String, authentication: Authentication, instance: java.lang.String): scala.Unit
   def negotiateSession(sessionCompression: java.lang.String, sessionEncryption: java.lang.String): scala.Unit

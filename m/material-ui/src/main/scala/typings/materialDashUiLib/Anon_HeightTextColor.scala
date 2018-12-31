@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_HeightTextColor extends js.Object {
   var borderColor: js.UndefOr[java.lang.String] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined

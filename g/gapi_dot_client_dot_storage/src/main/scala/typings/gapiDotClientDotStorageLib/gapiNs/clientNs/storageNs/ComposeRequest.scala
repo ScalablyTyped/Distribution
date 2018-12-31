@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ComposeRequest extends js.Object {
   /** Properties of the resulting object. */
   var destination: js.UndefOr[Object] = js.undefined

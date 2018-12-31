@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Converter extends js.Object {
   def forward[T /* <: TemplateCoordinates */](coordinates: T): T
   def inverse[T /* <: TemplateCoordinates */](coordinates: T): T

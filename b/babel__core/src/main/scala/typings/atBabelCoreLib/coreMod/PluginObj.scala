@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PluginObj[S] extends js.Object {
   var inherits: js.UndefOr[js.Any] = js.undefined
   var manipulateOptions: js.UndefOr[js.Function2[/* opts */ js.Any, /* parserOpts */ js.Any, scala.Unit]] = js.undefined

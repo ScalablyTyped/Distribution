@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TSEnumDeclaration extends BaseNode {
   var const: scala.Boolean | scala.Null
   var declare: scala.Boolean | scala.Null

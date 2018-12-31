@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IViewport extends IContainer {
   /** [Property] (Boolean) */
   var isViewport: js.UndefOr[scala.Boolean] = js.undefined

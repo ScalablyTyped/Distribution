@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FunctorWithIndexComposition3C1[F /* <: fpDashTsLib.libHKTMod.URIS3 */, FI, G /* <: fpDashTsLib.libHKTMod.URIS */, GI, UF, LF]
   extends fpDashTsLib.libFunctorMod.FunctorComposition3C1[F, G, UF, LF] {
   def mapWithIndex[A, B](

@@ -15,17 +15,13 @@ trait Values[T] extends js.Object {
   def below(value: T): AssertionChain[T] = js.native
   /** Asserts that the reference value is between but not equal (from < value < to) the provided values. */
   def between(from: T, to: T): AssertionChain[T] = js.native
-  /** Asserts that the reference value (a string, array, or object) includes the provided values. */
   def contain(values: T): AssertionChain[T] = js.native
   /** Asserts that the reference value (a string, array, or object) includes the provided values. */
   def contain(values: java.lang.String): AssertionChain[T] = js.native
-  /** Asserts that the reference value (a string, array, or object) includes the provided values. */
   def contain(values: js.Array[java.lang.String | T]): AssertionChain[T] = js.native
-  /** Asserts that the reference value (a string, array, or object) includes the provided values. */
   def contains(values: T): AssertionChain[T] = js.native
   /** Asserts that the reference value (a string, array, or object) includes the provided values. */
   def contains(values: java.lang.String): AssertionChain[T] = js.native
-  /** Asserts that the reference value (a string, array, or object) includes the provided values. */
   def contains(values: js.Array[java.lang.String | T]): AssertionChain[T] = js.native
   /** Asserts that the reference value has a length property equal to zero or an object with no keys. */
   def empty(): AssertionChain[T] = js.native
@@ -35,17 +31,11 @@ trait Values[T] extends js.Object {
   def endsWith(value: java.lang.String): AssertionChain[T] = js.native
   /** Asserts that the reference value equals the provided value. */
   def equal(value: T): AssertionChain[T] = js.native
-  /** Asserts that the reference value equals the provided value. */
   def equal(value: T, options: js.Any): AssertionChain[T] = js.native
-  /** Asserts that the reference value equals the provided value. */
   def equal(value: js.Array[T]): AssertionChain[T] = js.native
-  /** Asserts that the reference value equals the provided value. */
   def equal(value: js.Array[T], options: js.Any): AssertionChain[T] = js.native
-  /** Asserts that the reference value equals the provided value. */
   def equals(value: T, options: js.Any): AssertionChain[T] = js.native
-  /** Asserts that the reference value equals the provided value. */
   def equals(value: js.Array[T]): AssertionChain[T] = js.native
-  /** Asserts that the reference value equals the provided value. */
   def equals(value: js.Array[T], options: js.Any): AssertionChain[T] = js.native
   /** Asserts that the reference value exists (not null or undefined). */
   def exist(): AssertionChain[T] = js.native
@@ -55,17 +45,13 @@ trait Values[T] extends js.Object {
   def `false`(): AssertionChain[T] = js.native
   /** Asserts that the reference value is greater than (>) the provided value. */
   def greaterThan(value: T): AssertionChain[T] = js.native
-  /** Asserts that the reference value (a string, array, or object) includes the provided values. */
   def include(values: T): AssertionChain[T] = js.native
   /** Asserts that the reference value (a string, array, or object) includes the provided values. */
   def include(values: java.lang.String): AssertionChain[T] = js.native
-  /** Asserts that the reference value (a string, array, or object) includes the provided values. */
   def include(values: js.Array[java.lang.String | T]): AssertionChain[T] = js.native
-  /** Asserts that the reference value (a string, array, or object) includes the provided values. */
   def includes(values: T): AssertionChain[T] = js.native
   /** Asserts that the reference value (a string, array, or object) includes the provided values. */
   def includes(values: java.lang.String): AssertionChain[T] = js.native
-  /** Asserts that the reference value (a string, array, or object) includes the provided values. */
   def includes(values: js.Array[java.lang.String | T]): AssertionChain[T] = js.native
   /** Asserts that the reference value has the provided instanceof value. */
   def instanceOf(`type`: js.Any): AssertionChain[T] = js.native
@@ -93,19 +79,13 @@ trait Values[T] extends js.Object {
   def range(from: T, to: T): AssertionChain[T] = js.native
   /** Asserts that the Promise reference value rejects with an exception when called */
   def reject(): AssertionChain[T] = js.native
-  /** Asserts that the Promise reference value rejects with an exception when called */
   def reject(`type`: js.Any): AssertionChain[T] = js.native
-  /** Asserts that the Promise reference value rejects with an exception when called */
   def reject(`type`: js.Any, message: java.lang.String): AssertionChain[T] = js.native
-  /** Asserts that the Promise reference value rejects with an exception when called */
   def reject(`type`: js.Any, message: stdLib.RegExp): AssertionChain[T] = js.native
   /** Asserts that the Promise reference value rejects with an exception when called */
   def rejects(): AssertionChain[T] = js.native
-  /** Asserts that the Promise reference value rejects with an exception when called */
   def rejects(`type`: js.Any): AssertionChain[T] = js.native
-  /** Asserts that the Promise reference value rejects with an exception when called */
   def rejects(`type`: js.Any, message: java.lang.String): AssertionChain[T] = js.native
-  /** Asserts that the Promise reference value rejects with an exception when called */
   def rejects(`type`: js.Any, message: stdLib.RegExp): AssertionChain[T] = js.native
   /** Asserts that the reference value satisfies the provided validator function. */
   def satisfies(validator: js.Function1[/* value */ T, scala.Boolean]): AssertionChain[T] = js.native
@@ -117,19 +97,13 @@ trait Values[T] extends js.Object {
   def startsWith(value: java.lang.String): AssertionChain[T] = js.native
   /** Asserts that the function reference value throws an exception when called. */
   def `throw`(): AssertionChain[T] = js.native
-  /** Asserts that the function reference value throws an exception when called. */
   def `throw`(`type`: js.Any): AssertionChain[T] = js.native
-  /** Asserts that the function reference value throws an exception when called. */
   def `throw`(`type`: js.Any, message: java.lang.String): AssertionChain[T] = js.native
-  /** Asserts that the function reference value throws an exception when called. */
   def `throw`(`type`: js.Any, message: stdLib.RegExp): AssertionChain[T] = js.native
   /** Asserts that the function reference value throws an exception when called. */
   def throws(): AssertionChain[T] = js.native
-  /** Asserts that the function reference value throws an exception when called. */
   def throws(`type`: js.Any): AssertionChain[T] = js.native
-  /** Asserts that the function reference value throws an exception when called. */
   def throws(`type`: js.Any, message: java.lang.String): AssertionChain[T] = js.native
-  /** Asserts that the function reference value throws an exception when called. */
   def throws(`type`: js.Any, message: stdLib.RegExp): AssertionChain[T] = js.native
   /** Asserts that the reference value is true. */
   def `true`(): AssertionChain[T] = js.native

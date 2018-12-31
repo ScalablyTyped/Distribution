@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListBoxMessagesTools extends js.Object {
   var moveDown: js.UndefOr[java.lang.String] = js.undefined
   var moveUp: js.UndefOr[java.lang.String] = js.undefined

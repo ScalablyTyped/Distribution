@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait strings
   extends atMaterialBaseLib.foundationMod.MDCStrings {
   var ARIA_DISABLED: atMaterialSliderLib.atMaterialSliderLibStrings.`aria-disabled`

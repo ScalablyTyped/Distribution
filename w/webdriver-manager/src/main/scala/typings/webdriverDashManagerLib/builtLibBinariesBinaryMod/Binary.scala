@@ -18,46 +18,40 @@ abstract class Binary () extends js.Object {
   var versionCustom: java.lang.String = js.native
   var versionDefault: java.lang.String = js.native
   /**
-       * @param ostype The operating system.
-       * @returns The file name for the executable.
-       */
+    * @param ostype The operating system.
+    * @returns The file name for the executable.
+    */
   def executableFilename(): java.lang.String = js.native
   def executableSuffix(): java.lang.String = js.native
   def filename(): java.lang.String = js.native
   /**
-       * Gets the url to download the file set by the version. This will use the XML if available.
-       * If not, it will download from an existing url.
-       *
-       * @param {string} version The version we are looking for. This could also be 'latest'.
-       */
+    * Gets the url to download the file set by the version. This will use the XML if available.
+    * If not, it will download from an existing url.
+    *
+    * @param {string} version The version we are looking for. This could also be 'latest'.
+    */
   def getUrl(): js.Promise[BinaryUrl] = js.native
-  /**
-       * Gets the url to download the file set by the version. This will use the XML if available.
-       * If not, it will download from an existing url.
-       *
-       * @param {string} version The version we are looking for. This could also be 'latest'.
-       */
   def getUrl(version: java.lang.String): js.Promise[BinaryUrl] = js.native
   /**
-       * Gets the list of available versions available based on the xml. If no XML exists, return an
-       * empty list.
-       */
+    * Gets the list of available versions available based on the xml. If no XML exists, return an
+    * empty list.
+    */
   def getVersionList(): js.Promise[js.Array[java.lang.String]] = js.native
   /**
-       * Gets the id of the binary.
-       */
+    * Gets the id of the binary.
+    */
   def id(): java.lang.String = js.native
   def prefix(): java.lang.String = js.native
   /**
-       * Delete an instance of this binary from the file system
-       */
+    * Delete an instance of this binary from the file system
+    */
   def remove(filename: java.lang.String): scala.Unit = js.native
   def suffix(): java.lang.String = js.native
   def version(): java.lang.String = js.native
   /**
-       * @param ostype The operating system.
-       * @returns The file name for the file inside the downloaded zip file
-       */
+    * @param ostype The operating system.
+    * @returns The file name for the file inside the downloaded zip file
+    */
   def zipContentName(): java.lang.String = js.native
 }
 

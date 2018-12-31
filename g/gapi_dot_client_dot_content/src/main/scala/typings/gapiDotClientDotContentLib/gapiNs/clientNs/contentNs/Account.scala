@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Account extends js.Object {
   /** Indicates whether the merchant sells adult content. */
   var adultContent: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * List of linked AdWords accounts that are active or pending approval. To create a new link request, add a new link with status active to the list. It
-               * will remain in a pending state until approved or rejected either in the AdWords interface or through the  AdWords API. To delete an active link, or to
-               * cancel a link request, remove it from the list.
-               */
+    * List of linked AdWords accounts that are active or pending approval. To create a new link request, add a new link with status active to the list. It
+    * will remain in a pending state until approved or rejected either in the AdWords interface or through the  AdWords API. To delete an active link, or to
+    * cancel a link request, remove it from the list.
+    */
   var adwordsLinks: js.UndefOr[js.Array[AccountAdwordsLink]] = js.undefined
   /** Merchant Center account ID. */
   var id: js.UndefOr[java.lang.String] = js.undefined
@@ -30,10 +29,10 @@ trait Account extends js.Object {
   /** The merchant's website. */
   var websiteUrl: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * List of linked YouTube channels that are active or pending approval. To create a new link request, add a new link with status active to the list. It
-               * will remain in a pending state until approved or rejected in the YT Creator Studio interface. To delete an active link, or to cancel a link request,
-               * remove it from the list.
-               */
+    * List of linked YouTube channels that are active or pending approval. To create a new link request, add a new link with status active to the list. It
+    * will remain in a pending state until approved or rejected in the YT Creator Studio interface. To delete an active link, or to cancel a link request,
+    * remove it from the list.
+    */
   var youtubeChannelLinks: js.UndefOr[js.Array[AccountYouTubeChannelLink]] = js.undefined
 }
 

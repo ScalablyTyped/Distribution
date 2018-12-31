@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISmsBinaryMessage extends ISmsMessage {
   var format: SmsDataFormat
   def getData(): stdLib.Uint8Array

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Event extends js.Object {
   var align: js.UndefOr[juiLib.juiLibStrings.left | juiLib.juiLibStrings.right] = js.undefined
   var event: js.UndefOr[js.Any] = js.undefined

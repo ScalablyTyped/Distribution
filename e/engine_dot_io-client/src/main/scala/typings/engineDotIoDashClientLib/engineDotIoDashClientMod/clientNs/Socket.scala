@@ -23,13 +23,6 @@ trait Socket extends js.Object {
     ev: engineDotIoDashClientLib.engineDotIoDashClientLibStrings.close,
     cb: js.Function2[/* mes */ java.lang.String, /* detail */ js.UndefOr[nodeLib.Error], scala.Unit]
   ): this.type = js.native
-  /*
-  		 * open: Fired upon successful connection.
-  		 * flush: Fired upon completing a buffer flush
-  		 * drain: Fired after drain event of transport if writeBuffer is empty
-  		 * ping: Fired upon flushing a ping packet (ie: actual packet write out)
-  		 * pong: Fired upon receiving a pong packet.
-  		 */
   @JSName("on")
   def on_drain(ev: engineDotIoDashClientLib.engineDotIoDashClientLibStrings.drain, cb: js.Function0[scala.Unit]): this.type = js.native
   /*
@@ -40,13 +33,6 @@ trait Socket extends js.Object {
     ev: engineDotIoDashClientLib.engineDotIoDashClientLibStrings.error,
     cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]
   ): this.type = js.native
-  /*
-  		 * open: Fired upon successful connection.
-  		 * flush: Fired upon completing a buffer flush
-  		 * drain: Fired after drain event of transport if writeBuffer is empty
-  		 * ping: Fired upon flushing a ping packet (ie: actual packet write out)
-  		 * pong: Fired upon receiving a pong packet.
-  		 */
   @JSName("on")
   def on_flush(ev: engineDotIoDashClientLib.engineDotIoDashClientLibStrings.flush, cb: js.Function0[scala.Unit]): this.type = js.native
   /*
@@ -66,22 +52,8 @@ trait Socket extends js.Object {
   		 */
   @JSName("on")
   def on_open(ev: engineDotIoDashClientLib.engineDotIoDashClientLibStrings.open, cb: js.Function0[scala.Unit]): this.type = js.native
-  /*
-  		 * open: Fired upon successful connection.
-  		 * flush: Fired upon completing a buffer flush
-  		 * drain: Fired after drain event of transport if writeBuffer is empty
-  		 * ping: Fired upon flushing a ping packet (ie: actual packet write out)
-  		 * pong: Fired upon receiving a pong packet.
-  		 */
   @JSName("on")
   def on_ping(ev: engineDotIoDashClientLib.engineDotIoDashClientLibStrings.ping, cb: js.Function0[scala.Unit]): this.type = js.native
-  /*
-  		 * open: Fired upon successful connection.
-  		 * flush: Fired upon completing a buffer flush
-  		 * drain: Fired after drain event of transport if writeBuffer is empty
-  		 * ping: Fired upon flushing a ping packet (ie: actual packet write out)
-  		 * pong: Fired upon receiving a pong packet.
-  		 */
   @JSName("on")
   def on_pong(ev: engineDotIoDashClientLib.engineDotIoDashClientLibStrings.pong, cb: js.Function0[scala.Unit]): this.type = js.native
   /*
@@ -104,13 +76,7 @@ trait Socket extends js.Object {
   		 * Sends a message to the server
   		 */
   def send(message: Message): this.type = js.native
-  /**
-  		 * Sends a message to the server
-  		 */
   def send(message: Message, opts: MessageOptions): this.type = js.native
-  /**
-  		 * Sends a message to the server
-  		 */
   def send(message: Message, opts: MessageOptions, cb: js.Function0[scala.Unit]): this.type = js.native
 }
 

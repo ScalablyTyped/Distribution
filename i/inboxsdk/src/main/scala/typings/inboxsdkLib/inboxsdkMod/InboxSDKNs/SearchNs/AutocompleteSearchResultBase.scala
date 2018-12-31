@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutocompleteSearchResultBase extends js.Object {
   var externalURL: js.UndefOr[java.lang.String] = js.undefined
   var iconUrl: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetOptions extends js.Object {
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
   var privacyPolicy: js.UndefOr[java.lang.String] = js.undefined

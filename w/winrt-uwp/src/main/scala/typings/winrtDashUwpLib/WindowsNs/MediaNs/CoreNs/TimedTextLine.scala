@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a line of text that is displayed with a TimedTextCue . */
 @JSGlobal("Windows.Media.Core.TimedTextLine")
 @js.native
+/** Initializes a new instance of the TimedTextLine class. */
 class TimedTextLine () extends js.Object {
   /** Gets a list of TimedTextSubformat objects that provide formatting for substrings within the TimedTextLine . */
   var subformats: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[TimedTextSubformat] = js.native

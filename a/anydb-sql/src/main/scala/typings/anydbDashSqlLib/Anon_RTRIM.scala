@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RTRIM extends js.Object {
   var LOWER: js.Function1[
     /* name */ anydbDashSqlLib.anydbDashSqlMod.anydbSQLNs.Column[java.lang.String], 

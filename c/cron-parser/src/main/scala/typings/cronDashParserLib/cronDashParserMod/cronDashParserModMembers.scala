@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 object cronDashParserModMembers extends js.Object {
   /** Wrapper for CronExpression.parse method */
   def parseExpression(expression: java.lang.String): CronExpression = js.native
-  /** Wrapper for CronExpression.parse method */
   def parseExpression(expression: java.lang.String, options: ParserOptions): CronExpression = js.native
   /** Parse crontab file */
   def parseFile(filePath: java.lang.String, callback: js.Function2[/* err */ js.Any, /* data */ StringResult, _]): scala.Unit = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SwiperProperties
   extends reactLib.reactMod.ReactNs.Props[Swiper] {
   var activeDot: js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.undefined

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // sugar.js
-
 trait StrokeData extends js.Object {
   var color: js.UndefOr[java.lang.String] = js.undefined
   var dasharray: js.UndefOr[java.lang.String] = js.undefined

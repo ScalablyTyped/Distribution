@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PrettyPrintDataSourceIdPageToken extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -20,16 +19,16 @@ trait Anon_PrettyPrintDataSourceIdPageToken extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of
-                   * nextPageToken from the previous response.
-                   */
+    * The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of
+    * nextPageToken from the previous response.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** List data points for the person identified. Use me to indicate the authenticated user. Only me is supported at this time. */
   var userId: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextOptions extends js.Object {
   var backgroundFill: js.UndefOr[openlayersLib.openlayersMod.styleNs.Fill] = js.undefined
   var backgroundStroke: js.UndefOr[openlayersLib.openlayersMod.styleNs.Stroke] = js.undefined

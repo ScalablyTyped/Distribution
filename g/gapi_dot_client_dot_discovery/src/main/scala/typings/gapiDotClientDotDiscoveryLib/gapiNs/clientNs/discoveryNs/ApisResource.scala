@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ApisResource extends js.Object {
   /** Retrieve the description of a particular version of an api. */
   def getRest(request: gapiDotClientDotDiscoveryLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[RestDescription]

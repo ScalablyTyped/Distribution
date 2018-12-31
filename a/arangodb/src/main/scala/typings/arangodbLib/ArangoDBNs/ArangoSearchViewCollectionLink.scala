@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArangoSearchViewCollectionLink extends js.Object {
   var analyzers: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var fields: js.UndefOr[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FontName extends js.Object {
   /** The display name of the font. */
   var displayName: java.lang.String

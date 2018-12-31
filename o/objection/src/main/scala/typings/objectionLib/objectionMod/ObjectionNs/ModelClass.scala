@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-   * ModelClass is a TypeScript hack to support referencing a Model
-   * subclass constructor and not losing access to static members. See
-   * https://github.com/Microsoft/TypeScript/issues/5863#issuecomment-242782664
-   */
+  * ModelClass is a TypeScript hack to support referencing a Model
+  * subclass constructor and not losing access to static members. See
+  * https://github.com/Microsoft/TypeScript/issues/5863#issuecomment-242782664
+  */
 @js.native
 trait ModelClass[M /* <: Model */] extends Constructor[M] {
   var BelongsToOneRelation: Relation = js.native
@@ -57,16 +57,13 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
   def loadRelated(model: M, expression: RelationExpression, filters: Filters[M], trxOrKnex: Transaction): QueryBuilderYieldingOne[M] = js.native
   // loadRelated is overloaded to support both Model and Model[] variants:
   def loadRelated(models: js.Array[M], expression: RelationExpression): QueryBuilder[M, js.Array[M], js.Array[M]] = js.native
-  // loadRelated is overloaded to support both Model and Model[] variants:
   def loadRelated(models: js.Array[M], expression: RelationExpression, filters: Filters[M]): QueryBuilder[M, js.Array[M], js.Array[M]] = js.native
-  // loadRelated is overloaded to support both Model and Model[] variants:
   def loadRelated(
     models: js.Array[M],
     expression: RelationExpression,
     filters: Filters[M],
     trxOrKnex: knexLib.knexMod.Knex
   ): QueryBuilder[M, js.Array[M], js.Array[M]] = js.native
-  // loadRelated is overloaded to support both Model and Model[] variants:
   def loadRelated(models: js.Array[M], expression: RelationExpression, filters: Filters[M], trxOrKnex: Transaction): QueryBuilder[M, js.Array[M], js.Array[M]] = js.native
   def omitImpl(f: js.Function2[/* obj */ js.Object, /* prop */ java.lang.String, scala.Unit]): scala.Unit = js.native
   def query(): QueryBuilder[M, js.Array[M], js.Array[M]] = js.native

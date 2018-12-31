@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Computed extends js.Object {
   var beforeMount: js.Any
   var computed: Anon_TocLastLevelComputed

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InitMultipartUploadResult extends js.Object {
   var bucket: java.lang.String
    // bucket name

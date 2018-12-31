@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridOptions extends js.Object {
   var body: js.UndefOr[Body] = js.undefined
   var collection: backboneLib.backboneMod.Collection[backboneLib.backboneMod.Model]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResultError extends js.Object {
   var constraintName: js.UndefOr[java.lang.String] = js.undefined
   var context: js.UndefOr[java.lang.String] = js.undefined

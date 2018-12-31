@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPie extends IPolar {
   /** [Config Option] (Number) */
   var Allows: js.UndefOr[scala.Double] = js.undefined

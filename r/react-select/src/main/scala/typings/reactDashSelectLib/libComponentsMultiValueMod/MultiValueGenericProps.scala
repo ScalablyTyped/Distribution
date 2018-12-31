@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MultiValueGenericProps[OptionType] extends js.Object {
   var children: reactLib.reactMod.ReactNs.ReactNode
   var data: OptionType

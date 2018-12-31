@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Tier extends js.Object {
   /** The maximum disk size of this tier in bytes. */
   var DiskQuota: js.UndefOr[java.lang.String] = js.undefined

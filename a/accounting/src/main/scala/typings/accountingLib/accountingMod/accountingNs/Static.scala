@@ -15,22 +15,18 @@ trait Static extends js.Object {
     numbers: js.Array[js.Array[scala.Double] | scala.Double],
     options: CurrencySettings[CurrencyFormat | java.lang.String]
   ): js.Array[java.lang.String] = js.native
-  // format a list of values for column-display
   def formatColumn(numbers: js.Array[js.Array[scala.Double] | scala.Double], symbol: java.lang.String): js.Array[java.lang.String] = js.native
-  // format a list of values for column-display
   def formatColumn(
     numbers: js.Array[js.Array[scala.Double] | scala.Double],
     symbol: java.lang.String,
     precision: scala.Double
   ): js.Array[java.lang.String] = js.native
-  // format a list of values for column-display
   def formatColumn(
     numbers: js.Array[js.Array[scala.Double] | scala.Double],
     symbol: java.lang.String,
     precision: scala.Double,
     thousand: java.lang.String
   ): js.Array[java.lang.String] = js.native
-  // format a list of values for column-display
   def formatColumn(
     numbers: js.Array[js.Array[scala.Double] | scala.Double],
     symbol: java.lang.String,
@@ -38,7 +34,6 @@ trait Static extends js.Object {
     thousand: java.lang.String,
     decimal: java.lang.String
   ): js.Array[java.lang.String] = js.native
-  // format a list of values for column-display
   def formatColumn(
     numbers: js.Array[js.Array[scala.Double] | scala.Double],
     symbol: java.lang.String,
@@ -47,21 +42,16 @@ trait Static extends js.Object {
     decimal: java.lang.String,
     format: java.lang.String
   ): js.Array[java.lang.String] = js.native
-  // format any number or stringified number into currency
   def formatMoney(number: java.lang.String): java.lang.String = js.native
   def formatMoney(number: java.lang.String, options: CurrencySettings[CurrencyFormat | java.lang.String]): java.lang.String = js.native
-  // format any number or stringified number into currency
   def formatMoney(number: java.lang.String, symbol: java.lang.String): java.lang.String = js.native
-  // format any number or stringified number into currency
   def formatMoney(number: java.lang.String, symbol: java.lang.String, precision: scala.Double): java.lang.String = js.native
-  // format any number or stringified number into currency
   def formatMoney(
     number: java.lang.String,
     symbol: java.lang.String,
     precision: scala.Double,
     thousand: java.lang.String
   ): java.lang.String = js.native
-  // format any number or stringified number into currency
   def formatMoney(
     number: java.lang.String,
     symbol: java.lang.String,
@@ -69,7 +59,6 @@ trait Static extends js.Object {
     thousand: java.lang.String,
     decimal: java.lang.String
   ): java.lang.String = js.native
-  // format any number or stringified number into currency
   def formatMoney(
     number: java.lang.String,
     symbol: java.lang.String,
@@ -81,18 +70,14 @@ trait Static extends js.Object {
   // format any number or stringified number into currency
   def formatMoney(number: scala.Double): java.lang.String = js.native
   def formatMoney(number: scala.Double, options: CurrencySettings[CurrencyFormat | java.lang.String]): java.lang.String = js.native
-  // format any number or stringified number into currency
   def formatMoney(number: scala.Double, symbol: java.lang.String): java.lang.String = js.native
-  // format any number or stringified number into currency
   def formatMoney(number: scala.Double, symbol: java.lang.String, precision: scala.Double): java.lang.String = js.native
-  // format any number or stringified number into currency
   def formatMoney(
     number: scala.Double,
     symbol: java.lang.String,
     precision: scala.Double,
     thousand: java.lang.String
   ): java.lang.String = js.native
-  // format any number or stringified number into currency
   def formatMoney(
     number: scala.Double,
     symbol: java.lang.String,
@@ -100,7 +85,6 @@ trait Static extends js.Object {
     thousand: java.lang.String,
     decimal: java.lang.String
   ): java.lang.String = js.native
-  // format any number or stringified number into currency
   def formatMoney(
     number: scala.Double,
     symbol: java.lang.String,
@@ -112,18 +96,14 @@ trait Static extends js.Object {
   // generic case (any array of numbers)
   def formatMoney(numbers: js.Array[_ | scala.Double]): js.Array[java.lang.String] = js.native
   def formatMoney(numbers: js.Array[_ | scala.Double], options: CurrencySettings[CurrencyFormat | java.lang.String]): js.Array[java.lang.String] = js.native
-  // generic case (any array of numbers)
   def formatMoney(numbers: js.Array[_ | scala.Double], symbol: java.lang.String): js.Array[java.lang.String] = js.native
-  // generic case (any array of numbers)
   def formatMoney(numbers: js.Array[_ | scala.Double], symbol: java.lang.String, precision: scala.Double): js.Array[java.lang.String] = js.native
-  // generic case (any array of numbers)
   def formatMoney(
     numbers: js.Array[_ | scala.Double],
     symbol: java.lang.String,
     precision: scala.Double,
     thousand: java.lang.String
   ): js.Array[java.lang.String] = js.native
-  // generic case (any array of numbers)
   def formatMoney(
     numbers: js.Array[_ | scala.Double],
     symbol: java.lang.String,
@@ -131,7 +111,6 @@ trait Static extends js.Object {
     thousand: java.lang.String,
     decimal: java.lang.String
   ): js.Array[java.lang.String] = js.native
-  // generic case (any array of numbers)
   def formatMoney(
     numbers: js.Array[_ | scala.Double],
     symbol: java.lang.String,
@@ -153,11 +132,8 @@ trait Static extends js.Object {
   // format a number with custom precision and localisation
   def formatNumber(number: scala.Double): java.lang.String = js.native
   def formatNumber(number: scala.Double, options: NumberSettings): java.lang.String = js.native
-  // format a number with custom precision and localisation
   def formatNumber(number: scala.Double, precision: scala.Double): java.lang.String = js.native
-  // format a number with custom precision and localisation
   def formatNumber(number: scala.Double, precision: scala.Double, thousand: java.lang.String): java.lang.String = js.native
-  // format a number with custom precision and localisation
   def formatNumber(
     number: scala.Double,
     precision: scala.Double,
@@ -166,11 +142,9 @@ trait Static extends js.Object {
   ): java.lang.String = js.native
   // better rounding for floating point numbers
   def toFixed(number: scala.Double): java.lang.String = js.native
-  // better rounding for floating point numbers
   def toFixed(number: scala.Double, precision: scala.Double): java.lang.String = js.native
   // get a value from any formatted number/currency string
   def unformat(string: java.lang.String): scala.Double = js.native
-  // get a value from any formatted number/currency string
   def unformat(string: java.lang.String, decimal: java.lang.String): scala.Double = js.native
 }
 

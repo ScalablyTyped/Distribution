@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListGroupItemProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libListGroupItemMod.ListGroupItem] {
   var active: js.UndefOr[js.Any] = js.undefined

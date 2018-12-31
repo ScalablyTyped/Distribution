@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props extends js.Object {
   var emojiProps: emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.EmojiProps
   var emojis: js.UndefOr[

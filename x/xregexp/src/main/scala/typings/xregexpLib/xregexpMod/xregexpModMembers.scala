@@ -16,19 +16,14 @@ object xregexpModMembers extends js.Object {
   def XRegExp(pattern: java.lang.String, flags: java.lang.String): stdLib.RegExp = js.native
   def XRegExp(pattern: stdLib.RegExp): stdLib.RegExp = js.native
   /* Since xregexp 3.0.0 can be used either via
-  
-              import X = require('xregexp');
-              X();
-  
-          or via
-  
-              import XRegExp = X.XRegExp;
-              XRegExp()
-  
-          I had to duplicate the function declarations. I could simply not
-          find another way to accomplish this with TypeScript.
-      */
-  
+    import X = require('xregexp');
+    X();
+    or via
+    import XRegExp = X.XRegExp;
+    XRegExp()
+    I had to duplicate the function declarations. I could simply not
+    find another way to accomplish this with TypeScript.
+    */
   // begin API definitions
   def addToken(
     regex: stdLib.RegExp,
@@ -38,21 +33,6 @@ object xregexpModMembers extends js.Object {
       java.lang.String
     ]
   ): scala.Unit = js.native
-  /* Since xregexp 3.0.0 can be used either via
-  
-              import X = require('xregexp');
-              X();
-  
-          or via
-  
-              import XRegExp = X.XRegExp;
-              XRegExp()
-  
-          I had to duplicate the function declarations. I could simply not
-          find another way to accomplish this with TypeScript.
-      */
-  
-  // begin API definitions
   def addToken(
     regex: stdLib.RegExp,
     handler: js.Function2[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SiteSummaryResponse extends js.Object {
   /** Summary for the desktop review of the site. */
   var desktopSummary: js.UndefOr[PlatformSummary] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IView extends js.Object {
   var AccessControlList: IAccessControlList
   var Common: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaAttributes extends SharedAttributes {
   // a=candidate
   var candidates: js.UndefOr[js.Array[sdpDashTransformLib.Anon_IpRport]] = js.undefined

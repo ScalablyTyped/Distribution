@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Alarm extends js.Object {
   /** Name of this alarm. */
   var name: java.lang.String

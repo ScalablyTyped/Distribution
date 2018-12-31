@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPreviewerActiveXCtrl extends js.Object {
   def ClearPreview(): scala.Double
   def ShowFilePreview(bstrFilename: java.lang.String): scala.Double

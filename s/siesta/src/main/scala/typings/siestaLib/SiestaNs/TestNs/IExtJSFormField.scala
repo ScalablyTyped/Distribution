@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @mixin
-         */
+  * @mixin
+  */
 @js.native
 trait IExtJSFormField extends js.Object {
   def fieldHasValue(field: js.Any, value: js.Any): scala.Unit = js.native

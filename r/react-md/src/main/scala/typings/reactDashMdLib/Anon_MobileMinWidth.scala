@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MobileMinWidth extends js.Object {
   var desktopMinWidth: scala.Double
   var desktopType: reactDashMdLib.libDrawersDrawerMod.DrawerType

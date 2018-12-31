@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSSymbolInstanceLayer extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.symbolInstance
   var backgroundColor: SketchMSColor

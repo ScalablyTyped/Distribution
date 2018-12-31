@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DefineCommandFromSubsystemOptions extends js.Object {
   var configureArgs: js.UndefOr[js.Array[_]] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined

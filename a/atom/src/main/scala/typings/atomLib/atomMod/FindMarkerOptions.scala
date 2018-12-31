@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FindMarkerOptions extends js.Object {
   /** Only include markers that contain the given Point, inclusive. */
   var containsPoint: js.UndefOr[PointCompatible] = js.undefined

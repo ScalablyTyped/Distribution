@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Search extends Base {
   var searchResultClass: java.lang.String
   def callback(): scala.Unit

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerAuth extends js.Object {
   @JSName("strategy")
   def `strategy_bearer-access-token`(

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Database extends js.Object {
   /** The MySQL charset value. */
   var charset: js.UndefOr[java.lang.String] = js.undefined

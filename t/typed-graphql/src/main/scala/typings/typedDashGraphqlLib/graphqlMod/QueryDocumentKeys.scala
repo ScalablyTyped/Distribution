@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // language/visitor.js
-
 trait QueryDocumentKeys extends js.Object {
   var Argument: js.Array[java.lang.String]
   var BooleanValue: js.Array[scala.Boolean]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StepPayload extends EventPayload {
   var arguments: js.Any
   var isBackground: scala.Boolean

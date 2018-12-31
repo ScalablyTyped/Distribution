@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IsBusy extends js.Object {
   var isAvailable: scala.Boolean
   var isAway: scala.Boolean

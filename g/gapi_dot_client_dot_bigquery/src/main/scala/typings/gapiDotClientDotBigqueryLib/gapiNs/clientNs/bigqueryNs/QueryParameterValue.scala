@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryParameterValue extends js.Object {
   /** [Optional] The array values, if this is an array type. */
   var arrayValues: js.UndefOr[js.Array[QueryParameterValue]] = js.undefined

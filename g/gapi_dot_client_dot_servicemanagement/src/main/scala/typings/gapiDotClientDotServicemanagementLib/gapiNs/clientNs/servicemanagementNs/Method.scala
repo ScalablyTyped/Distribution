@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Method extends js.Object {
   /** The simple name of this method. */
   var name: js.UndefOr[java.lang.String] = js.undefined

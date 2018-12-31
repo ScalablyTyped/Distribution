@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChangeStreamOptions extends js.Object {
   var batchSize: js.UndefOr[scala.Double] = js.undefined
   var collation: js.UndefOr[CollationDocument] = js.undefined

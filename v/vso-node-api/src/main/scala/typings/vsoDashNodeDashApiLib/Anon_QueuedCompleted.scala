@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_QueuedCompleted extends js.Object {
   var cancelling: scala.Double
   var completed: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MenuTabProps
   extends reactDashMdLib.libMod.Props {
   var activeTabIndex: scala.Double

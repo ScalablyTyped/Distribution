@@ -20,12 +20,6 @@ trait Client extends js.Object {
     eventName: Events,
     eventHandler: js.Function1[/* eventObject */ VoxImplantEvent | VoxImplantIMEvent, _]
   ): scala.Unit = js.native
-  /**
-  		*	Register handler for specified event
-  		*
-  		*	@param eventName Event name
-  		*	@param eventHandler Handler function. A single parameter is passed - object with the event information
-  		*/
   def addEventListener(
     eventName: IMEvents,
     eventHandler: js.Function1[/* eventObject */ VoxImplantEvent | VoxImplantIMEvent, _]
@@ -38,13 +32,6 @@ trait Client extends js.Object {
   		*	@param group User group
   		*/
   def addRosterItem(user_id: java.lang.String, name: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Add roster item (IM)
-  		*
-  		*	@param user_id User id
-  		*	@param name Display name
-  		*	@param group User group
-  		*/
   def addRosterItem(user_id: java.lang.String, name: java.lang.String, group: java.lang.String): scala.Unit = js.native
   /**
   		*	Add roster item group (IM)
@@ -60,19 +47,7 @@ trait Client extends js.Object {
   		*	@param failedCallback A function called in case of problems while changing audio recording device
   		*/
   def attachRecordingDevice(): scala.Unit = js.native
-  /**
-  		*	Enable microphone/camera if micRequired in VoxImplant.Config was set to false (WebRTC mode only)
-  		*
-  		*	@param successCallback A function called in case of successful audio recording device change
-  		*	@param failedCallback A function called in case of problems while changing audio recording device
-  		*/
   def attachRecordingDevice(successCallback: js.Function0[_]): scala.Unit = js.native
-  /**
-  		*	Enable microphone/camera if micRequired in VoxImplant.Config was set to false (WebRTC mode only)
-  		*
-  		*	@param successCallback A function called in case of successful audio recording device change
-  		*	@param failedCallback A function called in case of problems while changing audio recording device
-  		*/
   def attachRecordingDevice(successCallback: js.Function0[_], failedCallback: js.Function0[_]): scala.Unit = js.native
   /**
   		*	Get a list of all currently available audio playback devices
@@ -90,13 +65,6 @@ trait Client extends js.Object {
   		*	@param reason Ban reason
   		*/
   def banChatRoomUser(room: java.lang.String, user_id: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Ban user from the chat room
-  		*
-  		*	@param room Room id
-  		*	@param user_id User id
-  		*	@param reason Ban reason
-  		*/
   def banChatRoomUser(room: java.lang.String, user_id: java.lang.String, reason: java.lang.String): scala.Unit = js.native
   /**
   		*	Create call
@@ -107,32 +75,8 @@ trait Client extends js.Object {
   		*	@param extraHeaders Optional custom parameters (SIP headers) that should be passed with call (INVITE) message. Parameter names must start with "X-" to be processed by application. IMPORTANT: Headers size limit is 200 bytes
   		*/
   def call(number: java.lang.String): Call = js.native
-  /**
-  		*	Create call
-  		*
-  		*	@param number The number to call
-  		*	@param useVideo Tells if video should be supported for the call
-  		*	@param customData Custom string associated with the call session. It can be later obtained from Call History using HTTP API
-  		*	@param extraHeaders Optional custom parameters (SIP headers) that should be passed with call (INVITE) message. Parameter names must start with "X-" to be processed by application. IMPORTANT: Headers size limit is 200 bytes
-  		*/
   def call(number: java.lang.String, useVideo: scala.Boolean): Call = js.native
-  /**
-  		*	Create call
-  		*
-  		*	@param number The number to call
-  		*	@param useVideo Tells if video should be supported for the call
-  		*	@param customData Custom string associated with the call session. It can be later obtained from Call History using HTTP API
-  		*	@param extraHeaders Optional custom parameters (SIP headers) that should be passed with call (INVITE) message. Parameter names must start with "X-" to be processed by application. IMPORTANT: Headers size limit is 200 bytes
-  		*/
   def call(number: java.lang.String, useVideo: scala.Boolean, customData: java.lang.String): Call = js.native
-  /**
-  		*	Create call
-  		*
-  		*	@param number The number to call
-  		*	@param useVideo Tells if video should be supported for the call
-  		*	@param customData Custom string associated with the call session. It can be later obtained from Call History using HTTP API
-  		*	@param extraHeaders Optional custom parameters (SIP headers) that should be passed with call (INVITE) message. Parameter names must start with "X-" to be processed by application. IMPORTANT: Headers size limit is 200 bytes
-  		*/
   def call(
     number: java.lang.String,
     useVideo: scala.Boolean,
@@ -158,19 +102,7 @@ trait Client extends js.Object {
   		*	@param users User ids of the invited users to the chat room
   		*/
   def createChatRoom(): java.lang.String = js.native
-  /**
-  		*	Create multi-user chat room and join it
-  		*
-  		*	@param pass Password for room access
-  		*	@param users User ids of the invited users to the chat room
-  		*/
   def createChatRoom(pass: java.lang.String): java.lang.String = js.native
-  /**
-  		*	Create multi-user chat room and join it
-  		*
-  		*	@param pass Password for room access
-  		*	@param users User ids of the invited users to the chat room
-  		*/
   def createChatRoom(pass: java.lang.String, users: js.Array[java.lang.String]): java.lang.String = js.native
   /**
   		*	Decline invitation to join chat room
@@ -180,13 +112,6 @@ trait Client extends js.Object {
   		*	@param reason User-supplied decline reason
   		*/
   def declineChatRoomInvite(room: java.lang.String, user_id: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Decline invitation to join chat room
-  		*
-  		*	@param room Room id
-  		*	@param user_id User id (inviter)
-  		*	@param reason User-supplied decline reason
-  		*/
   def declineChatRoomInvite(room: java.lang.String, user_id: java.lang.String, reason: java.lang.String): scala.Unit = js.native
   /**
   		*	Disable microphone/camera if micRequired in VoxImplant.Config was set to false (WebRTC mode only)
@@ -221,32 +146,8 @@ trait Client extends js.Object {
   		*	@param count Number of messages
   		*/
   def getChatRoomHistory(room: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Get chat room history
-  		*
-  		*	@param room Room id
-  		*	@param message_id Message id (to get messages sent before/after the message)
-  		*	@param direction False/true to get messages older/newer than the message with specified id
-  		*	@param count Number of messages
-  		*/
   def getChatRoomHistory(room: java.lang.String, message_id: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Get chat room history
-  		*
-  		*	@param room Room id
-  		*	@param message_id Message id (to get messages sent before/after the message)
-  		*	@param direction False/true to get messages older/newer than the message with specified id
-  		*	@param count Number of messages
-  		*/
   def getChatRoomHistory(room: java.lang.String, message_id: java.lang.String, direction: scala.Boolean): scala.Unit = js.native
-  /**
-  		*	Get chat room history
-  		*
-  		*	@param room Room id
-  		*	@param message_id Message id (to get messages sent before/after the message)
-  		*	@param direction False/true to get messages older/newer than the message with specified id
-  		*	@param count Number of messages
-  		*/
   def getChatRoomHistory(
     room: java.lang.String,
     message_id: java.lang.String,
@@ -262,32 +163,8 @@ trait Client extends js.Object {
   		*	@param count Number of messages
   		*/
   def getInstantMessagingHistory(user_id: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Get messages in a conversation with particular use
-  		*
-  		*	@param user_id User id
-  		*	@param message_id Message id (to get messages sent before/after the message)
-  		*	@param direction False/true to get messages older/newer than the message with specified id
-  		*	@param count Number of messages
-  		*/
   def getInstantMessagingHistory(user_id: java.lang.String, message_id: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Get messages in a conversation with particular use
-  		*
-  		*	@param user_id User id
-  		*	@param message_id Message id (to get messages sent before/after the message)
-  		*	@param direction False/true to get messages older/newer than the message with specified id
-  		*	@param count Number of messages
-  		*/
   def getInstantMessagingHistory(user_id: java.lang.String, message_id: java.lang.String, direction: scala.Boolean): scala.Unit = js.native
-  /**
-  		*	Get messages in a conversation with particular use
-  		*
-  		*	@param user_id User id
-  		*	@param message_id Message id (to get messages sent before/after the message)
-  		*	@param direction False/true to get messages older/newer than the message with specified id
-  		*	@param count Number of messages
-  		*/
   def getInstantMessagingHistory(
     user_id: java.lang.String,
     message_id: java.lang.String,
@@ -300,11 +177,6 @@ trait Client extends js.Object {
   		*	@param config Client configuration options
   		*/
   def init(): scala.Unit = js.native
-  /**
-  		*	Initialize SDK. SDKReady event will be dispatched after succesful SDK initialization. SDK can't be used until it's initialized
-  		*
-  		*	@param config Client configuration options
-  		*/
   def init(config: Config): scala.Unit = js.native
   /**
   		*	Invite user to join chat room
@@ -314,13 +186,6 @@ trait Client extends js.Object {
   		*	@param reason User-supplied reason for the invitation
   		*/
   def inviteToChatRoom(room: java.lang.String, user_id: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Invite user to join chat room
-  		*
-  		*	@param room Room id
-  		*	@param user_id User id (invitee)
-  		*	@param reason User-supplied reason for the invitation
-  		*/
   def inviteToChatRoom(room: java.lang.String, user_id: java.lang.String, reason: java.lang.String): scala.Unit = js.native
   /**
   		*	Check if WebRTC support is available
@@ -333,12 +198,6 @@ trait Client extends js.Object {
   		*	@param pass Password for room access
   		*/
   def joinChatRoom(room: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Join multi-user chat room
-  		*
-  		*	@param room Room id
-  		*	@param pass Password for room access
-  		*/
   def joinChatRoom(room: java.lang.String, pass: java.lang.String): scala.Unit = js.native
   /**
   		*	Leave multi-user chat room
@@ -347,12 +206,6 @@ trait Client extends js.Object {
   		*	@param msg Message for other participants
   		*/
   def leaveChatRoom(room: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Leave multi-user chat room
-  		*
-  		*	@param room Room id
-  		*	@param msg Message for other participants
-  		*/
   def leaveChatRoom(room: java.lang.String, msg: java.lang.String): scala.Unit = js.native
   /**
   		*	Login into application
@@ -362,13 +215,6 @@ trait Client extends js.Object {
   		*	@param options Login options
   		*/
   def login(username: java.lang.String, password: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Login into application
-  		*
-  		*	@param username
-  		*	@param password
-  		*	@param options Login options
-  		*/
   def login(username: java.lang.String, password: java.lang.String, options: LoginOptions): scala.Unit = js.native
   /**
   		*	Login into application using 'code' auth method
@@ -378,13 +224,6 @@ trait Client extends js.Object {
   		*	@param options Login options
   		*/
   def loginWithCode(username: java.lang.String, code: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Login into application using 'code' auth method
-  		*
-  		*	@param username
-  		*	@param code
-  		*	@param options Login options
-  		*/
   def loginWithCode(username: java.lang.String, code: java.lang.String, options: LoginOptions): scala.Unit = js.native
   /**
   		*	Login into application using 'onetimekey' auth method
@@ -394,13 +233,6 @@ trait Client extends js.Object {
   		*	@param options Login options
   		*/
   def loginWithOneTimeKey(username: java.lang.String, hash: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Login into application using 'onetimekey' auth method
-  		*
-  		*	@param username
-  		*	@param hash
-  		*	@param options Login options
-  		*/
   def loginWithOneTimeKey(username: java.lang.String, hash: java.lang.String, options: LoginOptions): scala.Unit = js.native
   /**
   		*	Move roster item group (IM)
@@ -417,12 +249,6 @@ trait Client extends js.Object {
   		*	@param loop Loop playback if true
   		*/
   def playToneScript(script: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Play ToneScript using WebAudio API
-  		*
-  		*	@param script Tonescript string
-  		*	@param loop Loop playback if true
-  		*/
   def playToneScript(script: java.lang.String, loop: scala.Boolean): scala.Unit = js.native
   /**
   		*	Remove roster item group (IM)
@@ -446,13 +272,6 @@ trait Client extends js.Object {
   		*	@param reason Reason
   		*/
   def removeChatRoomUser(room: java.lang.String, user_id: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Remove user from the chat room
-  		*
-  		*	@param room Room id
-  		*	@param user_id User id
-  		*	@param reason Reason
-  		*/
   def removeChatRoomUser(room: java.lang.String, user_id: java.lang.String, reason: java.lang.String): scala.Unit = js.native
   /**
   		*	Remove handler for specified event
@@ -461,12 +280,6 @@ trait Client extends js.Object {
   		*	@param eventHandler Handler function
   		*/
   def removeEventListener(eventName: Events, eventHandler: js.Function0[_]): scala.Unit = js.native
-  /**
-  		*	Remove handler for specified event
-  		*
-  		*	@param eventName Event name
-  		*	@param eventHandler Handler function
-  		*/
   def removeEventListener(eventName: IMEvents, eventHandler: js.Function0[_]): scala.Unit = js.native
   /**
   		*	Remove message sent to user
@@ -589,29 +402,8 @@ trait Client extends js.Object {
   		*	@param bandwidth Bandwidth limit in kilobits per second (kbps)
   		*/
   def setVideoBandwidth(bandwidth: scala.Double): scala.Unit = js.native
-  /**
-  		*	Set video settings globally. This settings will be used for the next call.
-  		*
-  		*	@param settings Video settings
-  		*	@param successCallback Success callback function
-  		*	@param failedCallback Failed callback function
-  		*/
   def setVideoSettings(settings: FlashVideoSettings): scala.Unit = js.native
-  /**
-  		*	Set video settings globally. This settings will be used for the next call.
-  		*
-  		*	@param settings Video settings
-  		*	@param successCallback Success callback function
-  		*	@param failedCallback Failed callback function
-  		*/
   def setVideoSettings(settings: FlashVideoSettings, successCallback: js.Function0[_]): scala.Unit = js.native
-  /**
-  		*	Set video settings globally. This settings will be used for the next call.
-  		*
-  		*	@param settings Video settings
-  		*	@param successCallback Success callback function
-  		*	@param failedCallback Failed callback function
-  		*/
   def setVideoSettings(settings: FlashVideoSettings, successCallback: js.Function0[_], failedCallback: js.Function0[_]): scala.Unit = js.native
   /**
   		*	Set video settings globally. This settings will be used for the next call.
@@ -621,21 +413,7 @@ trait Client extends js.Object {
   		*	@param failedCallback Failed callback function
   		*/
   def setVideoSettings(settings: VideoSettings): scala.Unit = js.native
-  /**
-  		*	Set video settings globally. This settings will be used for the next call.
-  		*
-  		*	@param settings Video settings
-  		*	@param successCallback Success callback function
-  		*	@param failedCallback Failed callback function
-  		*/
   def setVideoSettings(settings: VideoSettings, successCallback: js.Function0[_]): scala.Unit = js.native
-  /**
-  		*	Set video settings globally. This settings will be used for the next call.
-  		*
-  		*	@param settings Video settings
-  		*	@param successCallback Success callback function
-  		*	@param failedCallback Failed callback function
-  		*/
   def setVideoSettings(settings: VideoSettings, successCallback: js.Function0[_], failedCallback: js.Function0[_]): scala.Unit = js.native
   /**
   		*	Show flash settings panel
@@ -643,11 +421,6 @@ trait Client extends js.Object {
   		*	@param panel Settings type - default/microphone/camera/etc as described in SecurityPanel class
   		*/
   def showFlashSettingsPanel(): scala.Unit = js.native
-  /**
-  		*	Show flash settings panel
-  		*
-  		*	@param panel Settings type - default/microphone/camera/etc as described in SecurityPanel class
-  		*/
   def showFlashSettingsPanel(panel: java.lang.String): scala.Unit = js.native
   /**
   		*	Show/hide local video
@@ -674,37 +447,9 @@ trait Client extends js.Object {
   		*	@param reason Reason
   		*/
   def unbanChatRoomUser(room: java.lang.String, user_id: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Remove a ban on a user in the chat room
-  		*
-  		*	@param room Room id
-  		*	@param user_id User id
-  		*	@param reason Reason
-  		*/
   def unbanChatRoomUser(room: java.lang.String, user_id: java.lang.String, reason: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Use specified audio source , use audioSources to get the list of available audio sources
-  		*
-  		*	@param id Id of the audio source
-  		*	@param successCallback Called in WebRTC mode if audio source changed successfully
-  		*	@param failedCallback Called in WebRTC mode if audio source couldn't be changed successfully
-  		*/
   def useAudioSource(id: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Use specified audio source , use audioSources to get the list of available audio sources
-  		*
-  		*	@param id Id of the audio source
-  		*	@param successCallback Called in WebRTC mode if audio source changed successfully
-  		*	@param failedCallback Called in WebRTC mode if audio source couldn't be changed successfully
-  		*/
   def useAudioSource(id: java.lang.String, successCallback: js.Function0[_]): scala.Unit = js.native
-  /**
-  		*	Use specified audio source , use audioSources to get the list of available audio sources
-  		*
-  		*	@param id Id of the audio source
-  		*	@param successCallback Called in WebRTC mode if audio source changed successfully
-  		*	@param failedCallback Called in WebRTC mode if audio source couldn't be changed successfully
-  		*/
   def useAudioSource(id: java.lang.String, successCallback: js.Function0[_], failedCallback: js.Function0[_]): scala.Unit = js.native
   /**
   		*	Use specified audio source , use audioSources to get the list of available audio sources
@@ -714,45 +459,10 @@ trait Client extends js.Object {
   		*	@param failedCallback Called in WebRTC mode if audio source couldn't be changed successfully
   		*/
   def useAudioSource(id: scala.Double): scala.Unit = js.native
-  /**
-  		*	Use specified audio source , use audioSources to get the list of available audio sources
-  		*
-  		*	@param id Id of the audio source
-  		*	@param successCallback Called in WebRTC mode if audio source changed successfully
-  		*	@param failedCallback Called in WebRTC mode if audio source couldn't be changed successfully
-  		*/
   def useAudioSource(id: scala.Double, successCallback: js.Function0[_]): scala.Unit = js.native
-  /**
-  		*	Use specified audio source , use audioSources to get the list of available audio sources
-  		*
-  		*	@param id Id of the audio source
-  		*	@param successCallback Called in WebRTC mode if audio source changed successfully
-  		*	@param failedCallback Called in WebRTC mode if audio source couldn't be changed successfully
-  		*/
   def useAudioSource(id: scala.Double, successCallback: js.Function0[_], failedCallback: js.Function0[_]): scala.Unit = js.native
-  /**
-  		*	Use specified audio source , use audioSources to get the list of available audio sources
-  		*
-  		*	@param id Id of the video source
-  		*	@param successCallback Called in WebRTC mode if video source changed successfully
-  		*	@param failedCallback Called in WebRTC mode if video source couldn't be changed successfully
-  		*/
   def useVideoSource(id: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Use specified audio source , use audioSources to get the list of available audio sources
-  		*
-  		*	@param id Id of the video source
-  		*	@param successCallback Called in WebRTC mode if video source changed successfully
-  		*	@param failedCallback Called in WebRTC mode if video source couldn't be changed successfully
-  		*/
   def useVideoSource(id: java.lang.String, successCallback: js.Function0[_]): scala.Unit = js.native
-  /**
-  		*	Use specified audio source , use audioSources to get the list of available audio sources
-  		*
-  		*	@param id Id of the video source
-  		*	@param successCallback Called in WebRTC mode if video source changed successfully
-  		*	@param failedCallback Called in WebRTC mode if video source couldn't be changed successfully
-  		*/
   def useVideoSource(id: java.lang.String, successCallback: js.Function0[_], failedCallback: js.Function0[_]): scala.Unit = js.native
   /**
   		*	Use specified audio source , use audioSources to get the list of available audio sources
@@ -762,21 +472,7 @@ trait Client extends js.Object {
   		*	@param failedCallback Called in WebRTC mode if video source couldn't be changed successfully
   		*/
   def useVideoSource(id: scala.Double): scala.Unit = js.native
-  /**
-  		*	Use specified audio source , use audioSources to get the list of available audio sources
-  		*
-  		*	@param id Id of the video source
-  		*	@param successCallback Called in WebRTC mode if video source changed successfully
-  		*	@param failedCallback Called in WebRTC mode if video source couldn't be changed successfully
-  		*/
   def useVideoSource(id: scala.Double, successCallback: js.Function0[_]): scala.Unit = js.native
-  /**
-  		*	Use specified audio source , use audioSources to get the list of available audio sources
-  		*
-  		*	@param id Id of the video source
-  		*	@param successCallback Called in WebRTC mode if video source changed successfully
-  		*	@param failedCallback Called in WebRTC mode if video source couldn't be changed successfully
-  		*/
   def useVideoSource(id: scala.Double, successCallback: js.Function0[_], failedCallback: js.Function0[_]): scala.Unit = js.native
   /**
   		*	Get a list of all currently available video sources / cameras

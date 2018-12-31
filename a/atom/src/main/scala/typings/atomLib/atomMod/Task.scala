@@ -15,62 +15,32 @@ class Task protected () extends js.Object {
   /** Call a function when an event is emitted by the child process. */
   // tslint:disable-next-line:no-any
   def on(eventName: java.lang.String, callback: js.Function1[/* param */ js.Any, scala.Unit]): Disposable = js.native
-  /**
-       *  Send message to the task.
-       *  Throws an error if this task has already been terminated or if sending a
-       *  message to the child process fails.
-       */
-  // tslint:disable-next-line:no-any
   def send(): scala.Unit = js.native
   /**
-       *  Send message to the task.
-       *  Throws an error if this task has already been terminated or if sending a
-       *  message to the child process fails.
-       */
+    *  Send message to the task.
+    *  Throws an error if this task has already been terminated or if sending a
+    *  message to the child process fails.
+    */
   // tslint:disable-next-line:no-any
   def send(message: java.lang.String): scala.Unit = js.native
-  /**
-       *  Send message to the task.
-       *  Throws an error if this task has already been terminated or if sending a
-       *  message to the child process fails.
-       */
-  // tslint:disable-next-line:no-any
   def send(message: js.Array[_]): scala.Unit = js.native
-  /**
-       *  Send message to the task.
-       *  Throws an error if this task has already been terminated or if sending a
-       *  message to the child process fails.
-       */
-  // tslint:disable-next-line:no-any
   def send(message: js.Object): scala.Unit = js.native
-  /**
-       *  Send message to the task.
-       *  Throws an error if this task has already been terminated or if sending a
-       *  message to the child process fails.
-       */
-  // tslint:disable-next-line:no-any
   def send(message: scala.Boolean): scala.Unit = js.native
-  /**
-       *  Send message to the task.
-       *  Throws an error if this task has already been terminated or if sending a
-       *  message to the child process fails.
-       */
-  // tslint:disable-next-line:no-any
   def send(message: scala.Double): scala.Unit = js.native
   // NOTE: this is actually the best we can do here with the REST parameter
   // for this appearing in the beginning of the parameter list, which isn't
   // aligned with the ES6 spec.
   /**
-       *  Starts the task.
-       *  Throws an error if this task has already been terminated or if sending a
-       *  message to the child process fails.
-       */
+    *  Starts the task.
+    *  Throws an error if this task has already been terminated or if sending a
+    *  message to the child process fails.
+    */
   // tslint:disable-next-line:no-any
   def start(args: js.Any*): scala.Unit = js.native
   /**
-       *  Forcefully stop the running task.
-       *  No more events are emitted once this method is called.
-       */
+    *  Forcefully stop the running task.
+    *  No more events are emitted once this method is called.
+    */
   def terminate(): scala.Unit = js.native
 }
 

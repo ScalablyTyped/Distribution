@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 package object libImplementationMod {
   type ProvideImplementationSignature = js.Function3[
-    /* document */ js.Any, 
-    /* position */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify TextDocument */ /* document */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify VPosition */ /* position */ js.Any, 
     /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    js.Any
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ProviderResult<VDefinition | Array<VDefinitionLink>> */ js.Any
   ]
 }

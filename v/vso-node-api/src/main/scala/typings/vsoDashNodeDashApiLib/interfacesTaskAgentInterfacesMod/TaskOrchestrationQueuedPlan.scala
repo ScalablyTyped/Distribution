@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaskOrchestrationQueuedPlan extends js.Object {
   var assignTime: stdLib.Date
   var definition: TaskOrchestrationOwner

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SslCertDetail extends js.Object {
   /** The public information about the cert. */
   var certInfo: js.UndefOr[SslCert] = js.undefined

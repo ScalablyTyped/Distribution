@@ -10,16 +10,11 @@ import scala.scalajs.js.annotation._
 class URIError protected ()
   extends stdLib.URIErrorConstructor {
   /**
-       * @param message     any message
-       * @param inner_error the Error instance that caused the current error.
-       *                    Stack trace will be appended.
-       */
+    * @param message     any message
+    * @param inner_error the Error instance that caused the current error.
+    *                    Stack trace will be appended.
+    */
   def this(message: java.lang.String) = this()
-  /**
-       * @param message     any message
-       * @param inner_error the Error instance that caused the current error.
-       *                    Stack trace will be appended.
-       */
   def this(message: java.lang.String, inner_error: Error) = this()
 }
 

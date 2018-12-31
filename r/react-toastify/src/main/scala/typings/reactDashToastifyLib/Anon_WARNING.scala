@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_WARNING extends js.Object {
   var DEFAULT: reactDashToastifyLib.reactDashToastifyLibStrings.default
   var ERROR: reactDashToastifyLib.reactDashToastifyLibStrings.error

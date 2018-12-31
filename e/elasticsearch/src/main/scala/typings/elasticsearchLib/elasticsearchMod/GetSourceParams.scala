@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetSourceParams extends GenericParams {
   var _source: NameList
   var _sourceExclude: js.UndefOr[NameList] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExplainQueryStage extends js.Object {
   /** Milliseconds the average shard spent on CPU-bound tasks. */
   var computeMsAvg: js.UndefOr[java.lang.String] = js.undefined

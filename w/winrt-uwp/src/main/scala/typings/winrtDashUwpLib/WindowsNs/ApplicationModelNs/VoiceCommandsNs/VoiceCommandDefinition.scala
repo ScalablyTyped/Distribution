@@ -14,11 +14,11 @@ abstract class VoiceCommandDefinition () extends js.Object {
   /** Gets the Name attribute value of the CommandSet element in the Voice Command Definition (VCD) file. */
   var name: java.lang.String = js.native
   /**
-                   * Populates a PhraseList element with an array of Item elements.
-                   * @param phraseListName The string that corresponds to the label attribute of the PhraseList element.
-                   * @param phraseList A string array of values that will be added to the PhraseList element as Item elements.
-                   * @return A string array of values that will be added to the PhraseList element as Item elements.
-                   */
+    * Populates a PhraseList element with an array of Item elements.
+    * @param phraseListName The string that corresponds to the label attribute of the PhraseList element.
+    * @param phraseList A string array of values that will be added to the PhraseList element as Item elements.
+    * @return A string array of values that will be added to the PhraseList element as Item elements.
+    */
   def setPhraseListAsync(
     phraseListName: java.lang.String,
     phraseList: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String]

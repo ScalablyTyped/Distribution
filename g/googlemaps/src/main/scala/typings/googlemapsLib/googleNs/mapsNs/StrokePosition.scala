@@ -12,9 +12,9 @@ sealed trait StrokePosition extends js.Object
 @js.native
 object StrokePosition extends js.Object {
   /**
-       * The stroke is centered on the polygon's path, with half the stroke inside
-       * the polygon and half the stroke outside the polygon.
-       */
+    * The stroke is centered on the polygon's path, with half the stroke inside
+    * the polygon and half the stroke outside the polygon.
+    */
   @js.native
   sealed trait CENTER
     extends googlemapsLib.googleNs.mapsNs.StrokePosition

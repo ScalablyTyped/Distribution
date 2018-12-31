@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Constants extends js.Object {
   var ACCESS_TOKEN: reactDashAdalLib.reactDashAdalLibStrings.access_token
   var ERROR_DESCRIPTION: reactDashAdalLib.reactDashAdalLibStrings.error_description

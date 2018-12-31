@@ -13,7 +13,6 @@ trait FlashLibrary extends js.Object {
   def addItemToDocument(position: FlashPoint, namePath: java.lang.String): scala.Boolean = js.native
   /** "video", "movie clip", "button", "graphic", "bitmap", "screen", and "folder" */
   def addNewItem(`type`: java.lang.String): scala.Boolean = js.native
-  /** "video", "movie clip", "button", "graphic", "bitmap", "screen", and "folder" */
   def addNewItem(`type`: java.lang.String, namePath: java.lang.String): scala.Boolean = js.native
   def deleteItem(): scala.Boolean = js.native
   def deleteItem(namePath: java.lang.String): scala.Boolean = js.native
@@ -38,19 +37,15 @@ trait FlashLibrary extends js.Object {
   def moveToFolder(folderPath: java.lang.String, itemToMove: java.lang.String, bReplace: scala.Boolean): scala.Boolean = js.native
   /** Method; creates a new folder with the specified name, or a default name ("untitled folder #" ) if no folderName parameter is provided, in the currently selected folder. */
   def newFolder(): scala.Boolean = js.native
-  /** Method; creates a new folder with the specified name, or a default name ("untitled folder #" ) if no folderName parameter is provided, in the currently selected folder. */
   def newFolder(folderPath: java.lang.String): scala.Boolean = js.native
   /** Method; renames the currently selected library item in the Library panel. */
   def renameItem(name: java.lang.String): scala.Boolean = js.native
   /** Method; selects or deselects all items in the library. */
   def selectAll(): scala.Unit = js.native
-  /** Method; selects or deselects all items in the library. */
   def selectAll(bSelectAll: scala.Boolean): scala.Unit = js.native
   /** Method; selects a specified library item. */
   def selectItem(namePath: java.lang.String): scala.Boolean = js.native
-  /** Method; selects a specified library item. */
   def selectItem(namePath: java.lang.String, bReplaceCurrentSelection: scala.Boolean): scala.Boolean = js.native
-  /** Method; selects a specified library item. */
   def selectItem(namePath: java.lang.String, bReplaceCurrentSelection: scala.Boolean, bSelect: scala.Boolean): scala.Boolean = js.native
   /** Method; deselects all the library items. */
   def selectNone(): scala.Unit = js.native

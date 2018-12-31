@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AdWordsAdExtensions extends AdGroupExtensions {
   def newCalloutBuilder(): CalloutBuilder[Callout]
   def newMessageBuilder(): MessageBuilder[Message]

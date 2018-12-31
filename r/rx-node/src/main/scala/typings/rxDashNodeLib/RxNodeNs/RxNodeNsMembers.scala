@@ -21,12 +21,6 @@ object RxNodeNsMembers extends js.Object {
   	 * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and 'end' events.
   	 */
   def fromReadableStream[T](stream: nodeLib.NodeJSNs.ReadableStream): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
-  /**
-  	 * Converts a flowing readable stream to an Observable sequence.
-  	 * @param {Stream} stream A stream to convert to a observable sequence.
-  	 * @param {String} [dataEventName] Event that notifies about incoming data. ("data" by default)
-  	 * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and 'end' events.
-  	 */
   def fromReadableStream[T](stream: nodeLib.NodeJSNs.ReadableStream, dataEventName: java.lang.String): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
   /**
   	 * Converts a flowing stream to an Observable sequence.
@@ -36,21 +30,7 @@ object RxNodeNsMembers extends js.Object {
   	 * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and finish events like `end` or `finish`.
   	 */
   def fromStream[T](stream: nodeLib.NodeJSNs.ReadableStream): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
-  /**
-  	 * Converts a flowing stream to an Observable sequence.
-  	 * @param {Stream} stream A stream to convert to a observable sequence.
-  	 * @param {String} [finishEventName] Event that notifies about closed stream. ("end" by default)
-  	 * @param {String} [dataEventName] Event that notifies about incoming data. ("data" by default)
-  	 * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and finish events like `end` or `finish`.
-  	 */
   def fromStream[T](stream: nodeLib.NodeJSNs.ReadableStream, finishEventName: java.lang.String): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
-  /**
-  	 * Converts a flowing stream to an Observable sequence.
-  	 * @param {Stream} stream A stream to convert to a observable sequence.
-  	 * @param {String} [finishEventName] Event that notifies about closed stream. ("end" by default)
-  	 * @param {String} [dataEventName] Event that notifies about incoming data. ("data" by default)
-  	 * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and finish events like `end` or `finish`.
-  	 */
   def fromStream[T](
     stream: nodeLib.NodeJSNs.ReadableStream,
     finishEventName: java.lang.String,
@@ -63,12 +43,6 @@ object RxNodeNsMembers extends js.Object {
   	 * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and 'finish' events.
   	 */
   def fromTransformStream[T](stream: nodeLib.NodeJSNs.ReadWriteStream): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
-  /**
-  	 * Converts a flowing transform stream to an Observable sequence.
-  	 * @param {Stream} stream A stream to convert to a observable sequence.
-  	 * @param {String} [dataEventName] Event that notifies about incoming data. ("data" by default)
-  	 * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and 'finish' events.
-  	 */
   def fromTransformStream[T](stream: nodeLib.NodeJSNs.ReadWriteStream, dataEventName: java.lang.String): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
   /**
   	 * Converts a flowing writeable stream to an Observable sequence.

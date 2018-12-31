@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDropdownState extends js.Object {
   var calloutRenderEdge: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libUtilitiesPositioningPositioningDotTypesMod.RectangleEdge

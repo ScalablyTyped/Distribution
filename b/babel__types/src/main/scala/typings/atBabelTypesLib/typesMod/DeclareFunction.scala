@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeclareFunction extends BaseNode {
   var id: Identifier
   var predicate: DeclaredPredicate | scala.Null

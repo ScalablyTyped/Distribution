@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CentralDirectory extends js.Object {
   var commentLength: scala.Double
   var diskNumber: scala.Double

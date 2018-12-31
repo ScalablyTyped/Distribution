@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NoneManual extends js.Object {
   var automated: scala.Double
   var manual: scala.Double

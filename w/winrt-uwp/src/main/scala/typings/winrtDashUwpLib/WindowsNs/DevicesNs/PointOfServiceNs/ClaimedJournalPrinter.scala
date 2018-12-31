@@ -36,15 +36,15 @@ abstract class ClaimedJournalPrinter () extends js.Object {
   /** Gets the current width of the printed line for the journal printer station, in the units that the ClaimedPosPrinter.MapMode property specifies. */
   var lineWidth: scala.Double = js.native
   /**
-                   * Creates a new print job for the journal printer station.
-                   * @return The new print job for the journal printer station.
-                   */
+    * Creates a new print job for the journal printer station.
+    * @return The new print job for the journal printer station.
+    */
   def createJob(): JournalPrintJob = js.native
   /**
-                   * Determines if a JournalPrintJob can successfully execute a print instruction with the specified data.
-                   * @param data The data sequence that you want to validate before you use it with the JournalPrintJob.Print method. This sequence may include printable data and escape sequences.
-                   * @return True if the data passes validation; otherwise false.
-                   */
+    * Determines if a JournalPrintJob can successfully execute a print instruction with the specified data.
+    * @param data The data sequence that you want to validate before you use it with the JournalPrintJob.Print method. This sequence may include printable data and escape sequences.
+    * @return True if the data passes validation; otherwise false.
+    */
   def validateData(data: java.lang.String): scala.Boolean = js.native
 }
 

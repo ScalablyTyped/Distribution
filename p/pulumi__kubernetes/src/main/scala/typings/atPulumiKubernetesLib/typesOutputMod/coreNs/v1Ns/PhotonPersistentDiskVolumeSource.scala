@@ -6,18 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Represents a Photon Controller persistent disk resource.
-         */
-
+  * Represents a Photon Controller persistent disk resource.
+  */
 trait PhotonPersistentDiskVolumeSource extends js.Object {
   /**
-               * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
-               * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
-               */
+    * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
+    * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+    */
   val fsType: java.lang.String
   /**
-               * ID that identifies Photon Controller persistent disk
-               */
+    * ID that identifies Photon Controller persistent disk
+    */
   val pdID: java.lang.String
 }
 

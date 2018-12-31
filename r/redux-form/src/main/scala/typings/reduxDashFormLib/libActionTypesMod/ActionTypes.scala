@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActionTypes extends js.Object {
   var ARRAY_INSERT: java.lang.String
   var ARRAY_MOVE: java.lang.String

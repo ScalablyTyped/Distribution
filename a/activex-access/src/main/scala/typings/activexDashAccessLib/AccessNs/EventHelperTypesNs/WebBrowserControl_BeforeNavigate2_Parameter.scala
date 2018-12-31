@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebBrowserControl_BeforeNavigate2_Parameter extends js.Object {
   var Cancel: scala.Boolean
   val Headers: js.Any

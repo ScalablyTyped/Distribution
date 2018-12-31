@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HostedGitResult extends Result {
   @JSName("fetchSpec")
   var fetchSpec_HostedGitResult: scala.Null | java.lang.String

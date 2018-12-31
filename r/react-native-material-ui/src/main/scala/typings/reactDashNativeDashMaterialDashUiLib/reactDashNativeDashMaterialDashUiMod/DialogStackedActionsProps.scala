@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DialogStackedActionsProps extends js.Object {
   var actions: js.Array[java.lang.String]
   var style: js.UndefOr[reactDashNativeDashMaterialDashUiLib.Anon_StackedActionsContainer] = js.undefined

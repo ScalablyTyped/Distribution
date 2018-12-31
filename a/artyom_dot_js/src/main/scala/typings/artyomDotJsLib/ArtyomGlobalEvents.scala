@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArtyomGlobalEvents extends js.Object {
   var COMMAND_MATCHED: java.lang.String
   var COMMAND_RECOGNITION_END: java.lang.String

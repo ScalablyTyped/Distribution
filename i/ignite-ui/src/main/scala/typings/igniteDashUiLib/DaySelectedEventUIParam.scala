@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DaySelectedEventUIParam extends js.Object {
   /**
   	 * Gets a reference to currently selected date.

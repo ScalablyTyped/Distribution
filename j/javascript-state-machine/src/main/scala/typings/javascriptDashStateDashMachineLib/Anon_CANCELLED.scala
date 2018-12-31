@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CANCELLED extends js.Object {
   	    // = 2, the event was successfull but no state transition was necessary
   var CANCELLED: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CustomFileShare extends js.Object {
   var build: scala.Double
   var custom: scala.Double

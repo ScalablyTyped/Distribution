@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object i18nNsMembers extends js.Object {
   /**
-               * Default available locales. UI provides default translations for this set of locale codes.
-               */
+    * Default available locales. UI provides default translations for this set of locale codes.
+    */
   val defaultLocales: js.Array[java.lang.String] = js.native
 }
 

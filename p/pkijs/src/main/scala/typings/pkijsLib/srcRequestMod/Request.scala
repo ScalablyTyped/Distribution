@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Request extends js.Object {
   var reqCert: pkijsLib.srcCertIDMod.default
   var singleRequestExtensions: js.UndefOr[js.Array[pkijsLib.srcExtensionMod.default]] = js.undefined

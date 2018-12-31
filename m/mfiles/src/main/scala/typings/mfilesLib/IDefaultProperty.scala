@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDefaultProperty extends js.Object {
   var DataFixedValueValue: ITypedValue
   var DataFromEmailAddVLItemIfNotFound: scala.Boolean

@@ -17,10 +17,10 @@ object webNavigationNsMembers extends js.Object {
     ]
   ] = js.native
   /**
-       * Fired when a navigation is committed. The document (and the resources it refers to, such as images and
-       * subframes) might still be downloading, but at least part of the document has been received from the server and
-       * the browser has decided to switch to the new document.
-       */
+    * Fired when a navigation is committed. The document (and the resources it refers to, such as images and
+    * subframes) might still be downloading, but at least part of the document has been received from the server and
+    * the browser has decided to switch to the new document.
+    */
   val onCommitted: _WebNavigationOnCommittedEvent[
     js.Function1[
       /* details */ firefoxDashWebextDashBrowserLib.Anon_FrameIdTabIdUrlTransitionType, 
@@ -40,9 +40,9 @@ object webNavigationNsMembers extends js.Object {
     js.Function1[/* details */ firefoxDashWebextDashBrowserLib.Anon_FrameIdTabId, scala.Unit]
   ] = js.native
   /**
-       * Fired when an error occurs and the navigation is aborted. This can happen if either a network error occurred, or
-       * the user aborted the navigation.
-       */
+    * Fired when an error occurs and the navigation is aborted. This can happen if either a network error occurred, or
+    * the user aborted the navigation.
+    */
   val onErrorOccurred: _WebNavigationOnErrorOccurredEvent[
     js.Function1[
       /* details */ firefoxDashWebextDashBrowserLib.Anon_FrameIdTabIdUrlTimeStamp, 
@@ -50,9 +50,9 @@ object webNavigationNsMembers extends js.Object {
     ]
   ] = js.native
   /**
-       * Fired when the frame's history was updated to a new URL. All future events for that frame will use the updated
-       * URL.
-       */
+    * Fired when the frame's history was updated to a new URL. All future events for that frame will use the updated
+    * URL.
+    */
   val onHistoryStateUpdated: _WebNavigationOnHistoryStateUpdatedEvent[
     js.Function1[
       /* details */ firefoxDashWebextDashBrowserLib.Anon_FrameIdTabIdUrlTransitionType, 
@@ -60,9 +60,9 @@ object webNavigationNsMembers extends js.Object {
     ]
   ] = js.native
   /**
-       * Fired when the reference fragment of a frame was updated. All future events for that frame will use the updated
-       * URL.
-       */
+    * Fired when the reference fragment of a frame was updated. All future events for that frame will use the updated
+    * URL.
+    */
   val onReferenceFragmentUpdated: _WebNavigationOnReferenceFragmentUpdatedEvent[
     js.Function1[
       /* details */ firefoxDashWebextDashBrowserLib.Anon_FrameIdTabIdUrlTransitionType, 
@@ -74,16 +74,16 @@ object webNavigationNsMembers extends js.Object {
     js.Function1[/* details */ firefoxDashWebextDashBrowserLib.Anon_TimeStamp, scala.Unit]
   ] = js.native
   /**
-       * Retrieves information about all frames of a given tab.
-       * @param details Information about the tab to retrieve all frames from.
-       */
+    * Retrieves information about all frames of a given tab.
+    * @param details Information about the tab to retrieve all frames from.
+    */
   def getAllFrames(details: firefoxDashWebextDashBrowserLib.Anon_TabId): js.Promise[js.Array[firefoxDashWebextDashBrowserLib.Anon_FrameIdTabIdUrlErrorOccurred]] = js.native
   /* webNavigation functions */
   /**
-       * Retrieves information about the given frame. A frame refers to an <iframe> or a <frame> of a web page and is
-       * identified by a tab ID and a frame ID.
-       * @param details Information about the frame to retrieve information about.
-       */
+    * Retrieves information about the given frame. A frame refers to an <iframe> or a <frame> of a web page and is
+    * identified by a tab ID and a frame ID.
+    * @param details Information about the frame to retrieve information about.
+    */
   def getFrame(details: firefoxDashWebextDashBrowserLib.Anon_FrameIdTabIdProcessId): js.Promise[firefoxDashWebextDashBrowserLib.Anon_FrameIdTabIdUrl] = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeviceMetadata extends js.Object {
   /** Device CPU make e.g. "Qualcomm" */
   var cpuMake: js.UndefOr[java.lang.String] = js.undefined

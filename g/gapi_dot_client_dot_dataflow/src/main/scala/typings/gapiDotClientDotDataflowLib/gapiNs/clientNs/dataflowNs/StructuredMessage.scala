@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StructuredMessage extends js.Object {
   /**
-               * Idenfier for this message type.  Used by external systems to
-               * internationalize or personalize message.
-               */
+    * Idenfier for this message type.  Used by external systems to
+    * internationalize or personalize message.
+    */
   var messageKey: js.UndefOr[java.lang.String] = js.undefined
   /** Human-readable version of message. */
   var messageText: js.UndefOr[java.lang.String] = js.undefined

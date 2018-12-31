@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation._
 class ApiAiApp protected ()
   extends actionsDashOnDashGoogleLib.dialogflowDashAppMod.DialogflowApp {
   /**
-       * Constructor for DialogflowApp object.
-       * To be used in the Dialogflow fulfillment webhook logic.
-       *
-       * @example
-       * const DialogflowApp = require('actions-on-google').DialogflowApp;
-       * const app = new DialogflowApp({request: request, response: response,
-       *   sessionStarted:sessionStarted});
-       *
-       * @dialogflow
-       */
+    * Constructor for DialogflowApp object.
+    * To be used in the Dialogflow fulfillment webhook logic.
+    *
+    * @example
+    * const DialogflowApp = require('actions-on-google').DialogflowApp;
+    * const app = new DialogflowApp({request: request, response: response,
+    *   sessionStarted:sessionStarted});
+    *
+    * @dialogflow
+    */
   def this(options: actionsDashOnDashGoogleLib.dialogflowDashAppMod.DialogflowAppOptions) = this()
 }
 

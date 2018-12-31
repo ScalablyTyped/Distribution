@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResponsiveDisplayAdBuilder[ResponsiveDisplayAd] extends AdBuilder[ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]] {
   def withBusinessName(businessName: java.lang.String): ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]
   def withDescription(description: java.lang.String): ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]

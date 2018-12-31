@@ -373,7 +373,7 @@ object dnsNs extends js.Object {
   @JSName("lookupService")
   @js.native
   object lookupServiceNs extends js.Object {
-    def `__promisify__`(address: java.lang.String, port: scala.Double): js.Promise[nodeLib.Anon_Hostname] = js.native
+    def `__promisify__`(address: java.lang.String, port: scala.Double): js.Promise[nodeLib.Anon_HostnameService] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.

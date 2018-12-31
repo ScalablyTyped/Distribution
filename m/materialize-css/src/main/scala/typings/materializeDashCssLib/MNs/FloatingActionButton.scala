@@ -22,27 +22,21 @@ class FloatingActionButton ()
 @js.native
 object FloatingActionButton extends js.Object {
   /**
-           * Get Instance
-           */
+    * Get Instance
+    */
   def getInstance(elem: stdLib.Element): materializeDashCssLib.MNs.FloatingActionButton = js.native
   /**
-           * Init FloatingActionButtons
-           */
+    * Init FloatingActionButtons
+    */
   def init(els: materializeDashCssLib.MElements): js.Array[materializeDashCssLib.MNs.FloatingActionButton] = js.native
-  /**
-           * Init FloatingActionButtons
-           */
   def init(
     els: materializeDashCssLib.MElements,
     options: stdLib.Partial[materializeDashCssLib.MNs.FloatingActionButtonOptions]
   ): js.Array[materializeDashCssLib.MNs.FloatingActionButton] = js.native
   /**
-           * Init FloatingActionButton
-           */
+    * Init FloatingActionButton
+    */
   def init(els: stdLib.Element): materializeDashCssLib.MNs.FloatingActionButton = js.native
-  /**
-           * Init FloatingActionButton
-           */
   def init(
     els: stdLib.Element,
     options: stdLib.Partial[materializeDashCssLib.MNs.FloatingActionButtonOptions]

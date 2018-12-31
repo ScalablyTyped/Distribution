@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPageSize extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -27,19 +26,19 @@ trait Anon_AccesstokenPageSize extends js.Object {
   /** Maximum number of topics to return. */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * The value returned by the last `ListTopicsResponse`; indicates that this is
-                   * a continuation of a prior `ListTopics` call, and that the system should
-                   * return the next page of data.
-                   */
+    * The value returned by the last `ListTopicsResponse`; indicates that this is
+    * a continuation of a prior `ListTopics` call, and that the system should
+    * return the next page of data.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * The name of the cloud project that topics belong to.
-                   * Format is `projects/{project}`.
-                   */
+    * The name of the cloud project that topics belong to.
+    * Format is `projects/{project}`.
+    */
   var project: java.lang.String
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined

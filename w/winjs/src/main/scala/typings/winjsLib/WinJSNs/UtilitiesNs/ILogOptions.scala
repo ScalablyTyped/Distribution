@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion Properties
 //#region Interfaces
-
 trait ILogOptions extends js.Object {
   var action: js.UndefOr[
     js.Function3[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UsageReport extends js.Object {
   /** The date to which the record belongs. */
   var date: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DropzoneOptions extends js.Object {
   var accept: js.UndefOr[
     js.Function2[

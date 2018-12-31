@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StackFrame extends js.Object {
   var args: js.Any
   var columnNumber: scala.Double

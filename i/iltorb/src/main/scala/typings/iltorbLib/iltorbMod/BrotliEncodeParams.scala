@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BrotliEncodeParams extends js.Object {
   var disable_literal_context_modeling: js.UndefOr[scala.Boolean] = js.undefined
   var lgblock: js.UndefOr[scala.Double] = js.undefined

@@ -9,106 +9,106 @@ import scala.scalajs.js.annotation._
 sealed trait Key extends js.Object
 
 /**
-        * Describes key codes.
-        * The values correspond to values in the Document Object Model (DOM).
-        */
+  * Describes key codes.
+  * The values correspond to values in the Document Object Model (DOM).
+  */
 @JSGlobal("Sys.UI.Key")
 @js.native
 object Key extends js.Object {
   /**
-               * Represents the BACKSPACE key.
-               */
+    * Represents the BACKSPACE key.
+    */
   @js.native
   sealed trait backspace
     extends microsoftDashAjaxLib.SysNs.UINs.Key
   
   /**
-               * Represents DELETE key.
-               */
+    * Represents DELETE key.
+    */
   @js.native
   sealed trait del
     extends microsoftDashAjaxLib.SysNs.UINs.Key
   
   /**
-               * Represents the DOWN ARROW key.
-               */
+    * Represents the DOWN ARROW key.
+    */
   @js.native
   sealed trait down
     extends microsoftDashAjaxLib.SysNs.UINs.Key
   
   /**
-               * Represents the END key.
-               */
+    * Represents the END key.
+    */
   @js.native
   sealed trait end
     extends microsoftDashAjaxLib.SysNs.UINs.Key
   
   /**
-               * Represents the ENTER key.
-               */
+    * Represents the ENTER key.
+    */
   @js.native
   sealed trait enter
     extends microsoftDashAjaxLib.SysNs.UINs.Key
   
   /**
-               * Represents the ESC key.
-               */
+    * Represents the ESC key.
+    */
   @js.native
   sealed trait esc
     extends microsoftDashAjaxLib.SysNs.UINs.Key
   
   /**
-               * Represents the HOME key.
-               */
+    * Represents the HOME key.
+    */
   @js.native
   sealed trait home
     extends microsoftDashAjaxLib.SysNs.UINs.Key
   
   /**
-               * Represents the LEFT ARROW key.
-               */
+    * Represents the LEFT ARROW key.
+    */
   @js.native
   sealed trait left
     extends microsoftDashAjaxLib.SysNs.UINs.Key
   
   /**
-               * Represents the PAGE DOWN key.
-               */
+    * Represents the PAGE DOWN key.
+    */
   @js.native
   sealed trait pageDown
     extends microsoftDashAjaxLib.SysNs.UINs.Key
   
   /**
-               * Represents the PAGE UP key.
-               */
+    * Represents the PAGE UP key.
+    */
   @js.native
   sealed trait pageUp
     extends microsoftDashAjaxLib.SysNs.UINs.Key
   
   /**
-               * Represents the RIGHT ARROW key.
-               */
+    * Represents the RIGHT ARROW key.
+    */
   @js.native
   sealed trait right
     extends microsoftDashAjaxLib.SysNs.UINs.Key
   
   /*
-               * Represents the SPACEBAR key.
-               */
+    * Represents the SPACEBAR key.
+    */
   @js.native
   sealed trait space
     extends microsoftDashAjaxLib.SysNs.UINs.Key
   
   /*
-               * Represents the TAB key.
-               */
+    * Represents the TAB key.
+    */
   @js.native
   sealed trait tab
     extends microsoftDashAjaxLib.SysNs.UINs.Key
   
   /**
-               * Represents the UP ARROW key.
-               */
+    * Represents the UP ARROW key.
+    */
   @js.native
   sealed trait up
     extends microsoftDashAjaxLib.SysNs.UINs.Key

@@ -16,8 +16,8 @@ class GoogleAuth ()
 @js.native
 object GoogleAuth extends js.Object {
   /**
-       * Export DefaultTransporter as a static property of the class.
-       */
+    * Export DefaultTransporter as a static property of the class.
+    */
   var DefaultTransporter: org.scalablytyped.runtime.Instantiable0[googleDashAuthDashLibraryLib.buildSrcTransportersMod.DefaultTransporter] = js.native
 }
 

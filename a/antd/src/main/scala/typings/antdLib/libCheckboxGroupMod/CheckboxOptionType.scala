@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CheckboxOptionType extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var label: reactLib.reactMod.ReactNs.ReactNode

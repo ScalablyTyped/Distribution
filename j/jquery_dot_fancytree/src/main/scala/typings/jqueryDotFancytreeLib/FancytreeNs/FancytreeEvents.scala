@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** The `this` context of any event function is set to tree's the HTMLDivElement  */
-
 trait FancytreeEvents extends js.Object {
   /** 'data.node' was deactivated. */
   var activate: js.UndefOr[

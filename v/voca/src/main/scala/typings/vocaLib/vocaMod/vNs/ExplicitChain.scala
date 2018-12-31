@@ -13,7 +13,6 @@ trait ExplicitChain[T] extends js.Object {
   def capitalize(restToLoweropt: scala.Boolean): ExplicitChain[java.lang.String] = js.native
   // Chop
   def charAt(): ExplicitChain[java.lang.String] = js.native
-  // Chop
   def charAt(position: scala.Double): ExplicitChain[java.lang.String] = js.native
   // Split
   def chars(): ExplicitChain[js.Array[java.lang.String]] = js.native
@@ -36,9 +35,7 @@ trait ExplicitChain[T] extends js.Object {
   def decapitalize(): ExplicitChain[java.lang.String] = js.native
   // Query
   def endsWith(): ExplicitChain[scala.Boolean] = js.native
-  // Query
   def endsWith(end: java.lang.String): ExplicitChain[scala.Boolean] = js.native
-  // Query
   def endsWith(end: java.lang.String, position: scala.Double): ExplicitChain[scala.Boolean] = js.native
   // Escape
   def escapeHtml(): ExplicitChain[java.lang.String] = js.native
@@ -53,15 +50,11 @@ trait ExplicitChain[T] extends js.Object {
   def includes(search: java.lang.String, position: scala.Double): ExplicitChain[scala.Boolean] = js.native
   // Index
   def indexOf(): ExplicitChain[scala.Double] = js.native
-  // Index
   def indexOf(search: java.lang.String): ExplicitChain[scala.Double] = js.native
-  // Index
   def indexOf(search: java.lang.String, fromIndex: scala.Double): ExplicitChain[scala.Double] = js.native
   // Multipulate
   def insert(): ExplicitChain[java.lang.String] = js.native
-  // Multipulate
   def insert(toInsert: java.lang.String): ExplicitChain[java.lang.String] = js.native
-  // Multipulate
   def insert(toInsert: java.lang.String, position: scala.Double): ExplicitChain[java.lang.String] = js.native
   def isAlpha(): ExplicitChain[scala.Boolean] = js.native
   def isAlphaDigit(): ExplicitChain[scala.Boolean] = js.native

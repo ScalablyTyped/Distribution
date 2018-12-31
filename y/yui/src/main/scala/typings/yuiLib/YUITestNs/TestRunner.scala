@@ -24,7 +24,6 @@ trait TestRunner extends EventTarget {
   def clear(): scala.Unit = js.native
   //Object|String
   def getCoverage(): js.Any = js.native
-  //Object|String
   def getCoverage(format: js.Function): js.Any = js.native
   def getName(): java.lang.String = js.native
   def getResults(): js.Any = js.native

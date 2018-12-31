@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableReference extends js.Object {
   /** [Required] The ID of the dataset containing this table. */
   var datasetId: js.UndefOr[java.lang.String] = js.undefined

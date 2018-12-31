@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Dropped TsTypeConstructor() */ @JSImport("react-native", "KeyboardAvoidingView")
+- Dropped new Some()Some((args  : ...any))Some(: react-native.react-native.TimerMixin) */ @JSImport("react-native", "KeyboardAvoidingView")
 @js.native
 class KeyboardAvoidingView () extends js.Object
 

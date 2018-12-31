@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlashEdge extends js.Object {
   var cubicSegmentIndex: scala.Double
   var id: scala.Double

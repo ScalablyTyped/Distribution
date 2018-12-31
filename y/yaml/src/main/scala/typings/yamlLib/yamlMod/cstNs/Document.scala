@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Document extends Node {
   @JSName("anchor")
   val anchor_Document: scala.Null

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Argument passed to the callback when a request finishes successfully or erroneously.
- */
-
+  * Argument passed to the callback when a request finishes successfully or erroneously.
+  */
 trait MediaAuthorizationResponse extends js.Object {
   /**
   	 * Error code. Returns 0 if `success` is `true`.

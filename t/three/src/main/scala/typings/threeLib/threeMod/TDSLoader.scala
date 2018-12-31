@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class TDSLoader protected ()
   extends threeLib.threeDashTdsloaderMod.TDSLoader {
-  def this(three: js.Any) = this()
+  def this(three: threeLib.Anon_SphereBufferGeometry) = this()
 }
 

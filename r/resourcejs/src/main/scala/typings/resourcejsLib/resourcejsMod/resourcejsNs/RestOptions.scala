@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RestOptions extends HttpMethodOptions {
   var afterGet: js.UndefOr[HttpHandler] = js.undefined
   var afterIndex: js.UndefOr[HttpHandler] = js.undefined

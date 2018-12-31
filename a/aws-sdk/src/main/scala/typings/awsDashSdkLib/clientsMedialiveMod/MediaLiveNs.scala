@@ -8,131 +8,121 @@ import scala.scalajs.js.annotation._
 @JSImport("aws-sdk/clients/medialive", "MediaLive")
 @js.native
 object MediaLiveNs extends js.Object {
-  
   trait AacSettings extends js.Object {
     /**
-         * Average bitrate in bits/second. Valid values depend on rate control mode and profile.
-         */
+      * Average bitrate in bits/second. Valid values depend on rate control mode and profile.
+      */
     var Bitrate: js.UndefOr[__double] = js.undefined
     /**
-         * Mono, Stereo, or 5.1 channel layout. Valid values depend on rate control mode and profile. The adReceiverMix setting receives a stereo description plus control track and emits a mono AAC encode of the description track, with control data emitted in the PES header as per ETSI TS 101 154 Annex E.
-         */
+      * Mono, Stereo, or 5.1 channel layout. Valid values depend on rate control mode and profile. The adReceiverMix setting receives a stereo description plus control track and emits a mono AAC encode of the description track, with control data emitted in the PES header as per ETSI TS 101 154 Annex E.
+      */
     var CodingMode: js.UndefOr[AacCodingMode] = js.undefined
     /**
-         * Set to "broadcasterMixedAd" when input contains pre-mixed main audio + AD (narration) as a stereo pair.  The Audio Type field (audioType) will be set to 3, which signals to downstream systems that this stream contains "broadcaster mixed AD". Note that the input received by the encoder must contain pre-mixed audio; the encoder does not perform the mixing. The values in audioTypeControl and audioType (in AudioDescription) are ignored when set to broadcasterMixedAd.
-    
+      * Set to "broadcasterMixedAd" when input contains pre-mixed main audio + AD (narration) as a stereo pair.  The Audio Type field (audioType) will be set to 3, which signals to downstream systems that this stream contains "broadcaster mixed AD". Note that the input received by the encoder must contain pre-mixed audio; the encoder does not perform the mixing. The values in audioTypeControl and audioType (in AudioDescription) are ignored when set to broadcasterMixedAd.
     Leave set to "normal" when input does not contain pre-mixed audio + AD.
-         */
+      */
     var InputType: js.UndefOr[AacInputType] = js.undefined
     /**
-         * AAC Profile.
-         */
+      * AAC Profile.
+      */
     var Profile: js.UndefOr[AacProfile] = js.undefined
     /**
-         * Rate Control Mode.
-         */
+      * Rate Control Mode.
+      */
     var RateControlMode: js.UndefOr[AacRateControlMode] = js.undefined
     /**
-         * Sets LATM / LOAS AAC output for raw containers.
-         */
+      * Sets LATM / LOAS AAC output for raw containers.
+      */
     var RawFormat: js.UndefOr[AacRawFormat] = js.undefined
     /**
-         * Sample rate in Hz. Valid values depend on rate control mode and profile.
-         */
+      * Sample rate in Hz. Valid values depend on rate control mode and profile.
+      */
     var SampleRate: js.UndefOr[__double] = js.undefined
     /**
-         * Use MPEG-2 AAC audio instead of MPEG-4 AAC audio for raw or MPEG-2 Transport Stream containers.
-         */
+      * Use MPEG-2 AAC audio instead of MPEG-4 AAC audio for raw or MPEG-2 Transport Stream containers.
+      */
     var Spec: js.UndefOr[AacSpec] = js.undefined
     /**
-         * VBR Quality Level - Only used if rateControlMode is VBR.
-         */
+      * VBR Quality Level - Only used if rateControlMode is VBR.
+      */
     var VbrQuality: js.UndefOr[AacVbrQuality] = js.undefined
   }
   
-  
   trait Ac3Settings extends js.Object {
     /**
-         * Average bitrate in bits/second. Valid bitrates depend on the coding mode.
-         */
+      * Average bitrate in bits/second. Valid bitrates depend on the coding mode.
+      */
     var Bitrate: js.UndefOr[__double] = js.undefined
     /**
-         * Specifies the bitstream mode (bsmod) for the emitted AC-3 stream. See ATSC A/52-2012 for background on these values.
-         */
+      * Specifies the bitstream mode (bsmod) for the emitted AC-3 stream. See ATSC A/52-2012 for background on these values.
+      */
     var BitstreamMode: js.UndefOr[Ac3BitstreamMode] = js.undefined
     /**
-         * Dolby Digital coding mode. Determines number of channels.
-         */
+      * Dolby Digital coding mode. Determines number of channels.
+      */
     var CodingMode: js.UndefOr[Ac3CodingMode] = js.undefined
     /**
-         * Sets the dialnorm for the output. If excluded and input audio is Dolby Digital, dialnorm will be passed through.
-         */
+      * Sets the dialnorm for the output. If excluded and input audio is Dolby Digital, dialnorm will be passed through.
+      */
     var Dialnorm: js.UndefOr[__integerMin1Max31] = js.undefined
     /**
-         * If set to filmStandard, adds dynamic range compression signaling to the output bitstream as defined in the Dolby Digital specification.
-         */
+      * If set to filmStandard, adds dynamic range compression signaling to the output bitstream as defined in the Dolby Digital specification.
+      */
     var DrcProfile: js.UndefOr[Ac3DrcProfile] = js.undefined
     /**
-         * When set to enabled, applies a 120Hz lowpass filter to the LFE channel prior to encoding. Only valid in codingMode32Lfe mode.
-         */
+      * When set to enabled, applies a 120Hz lowpass filter to the LFE channel prior to encoding. Only valid in codingMode32Lfe mode.
+      */
     var LfeFilter: js.UndefOr[Ac3LfeFilter] = js.undefined
     /**
-         * When set to "followInput", encoder metadata will be sourced from the DD, DD+, or DolbyE decoder that supplied this audio data. If audio was not supplied from one of these streams, then the static metadata settings will be used.
-         */
+      * When set to "followInput", encoder metadata will be sourced from the DD, DD+, or DolbyE decoder that supplied this audio data. If audio was not supplied from one of these streams, then the static metadata settings will be used.
+      */
     var MetadataControl: js.UndefOr[Ac3MetadataControl] = js.undefined
   }
-  
   
   trait ArchiveContainerSettings extends js.Object {
     var M2tsSettings: js.UndefOr[M2tsSettings] = js.undefined
   }
   
-  
   trait ArchiveGroupSettings extends js.Object {
     /**
-         * A directory and base filename where archive files should be written.  If the base filename portion of the URI is left blank, the base filename of the first input will be automatically inserted.
-         */
+      * A directory and base filename where archive files should be written.  If the base filename portion of the URI is left blank, the base filename of the first input will be automatically inserted.
+      */
     var Destination: OutputLocationRef
     /**
-         * Number of seconds to write to archive file before closing and starting a new one.
-         */
+      * Number of seconds to write to archive file before closing and starting a new one.
+      */
     var RolloverInterval: js.UndefOr[__integerMin1] = js.undefined
   }
   
-  
   trait ArchiveOutputSettings extends js.Object {
     /**
-         * Settings specific to the container type of the file.
-         */
+      * Settings specific to the container type of the file.
+      */
     var ContainerSettings: ArchiveContainerSettings
     /**
-         * Output file extension. If excluded, this will be auto-selected from the container type.
-         */
+      * Output file extension. If excluded, this will be auto-selected from the container type.
+      */
     var Extension: js.UndefOr[__string] = js.undefined
     /**
-         * String concatenated to the end of the destination filename.  Required for multiple outputs of the same type.
-         */
+      * String concatenated to the end of the destination filename.  Required for multiple outputs of the same type.
+      */
     var NameModifier: js.UndefOr[__string] = js.undefined
   }
   
-  
   trait AribDestinationSettings extends js.Object
-  
   
   trait AribSourceSettings extends js.Object
   
-  
   trait AudioChannelMapping extends js.Object {
     /**
-         * Indices and gain values for each input channel that should be remixed into this output channel.
-         */
+      * Indices and gain values for each input channel that should be remixed into this output channel.
+      */
     var InputChannelLevels: __listOfInputChannelLevel
     /**
-         * The index of the output channel being produced.
-         */
+      * The index of the output channel being produced.
+      */
     var OutputChannel: __integerMin0Max7
   }
-  
   
   trait AudioCodecSettings extends js.Object {
     var AacSettings: js.UndefOr[AacSettings] = js.undefined
@@ -142,341 +132,317 @@ object MediaLiveNs extends js.Object {
     var PassThroughSettings: js.UndefOr[PassThroughSettings] = js.undefined
   }
   
-  
   trait AudioDescription extends js.Object {
     /**
-         * Advanced audio normalization settings.
-         */
+      * Advanced audio normalization settings.
+      */
     var AudioNormalizationSettings: js.UndefOr[AudioNormalizationSettings] = js.undefined
     /**
-         * The name of the AudioSelector used as the source for this AudioDescription.
-         */
+      * The name of the AudioSelector used as the source for this AudioDescription.
+      */
     var AudioSelectorName: __string
     /**
-         * Applies only if audioTypeControl is useConfigured. The values for audioType are defined in ISO-IEC 13818-1.
-         */
+      * Applies only if audioTypeControl is useConfigured. The values for audioType are defined in ISO-IEC 13818-1.
+      */
     var AudioType: js.UndefOr[AudioType] = js.undefined
     /**
-         * Determines how audio type is determined.
+      * Determines how audio type is determined.
       followInput: If the input contains an ISO 639 audioType, then that value is passed through to the output. If the input contains no ISO 639 audioType, the value in Audio Type is included in the output.
       useConfigured: The value in Audio Type is included in the output.
     Note that this field and audioType are both ignored if inputType is broadcasterMixedAd.
-         */
+      */
     var AudioTypeControl: js.UndefOr[AudioDescriptionAudioTypeControl] = js.undefined
     /**
-         * Audio codec settings.
-         */
+      * Audio codec settings.
+      */
     var CodecSettings: js.UndefOr[AudioCodecSettings] = js.undefined
     /**
-         * Indicates the language of the audio output track. Only used if languageControlMode is useConfigured, or there is no ISO 639 language code specified in the input.
-         */
+      * Indicates the language of the audio output track. Only used if languageControlMode is useConfigured, or there is no ISO 639 language code specified in the input.
+      */
     var LanguageCode: js.UndefOr[__stringMin3Max3] = js.undefined
     /**
-         * Choosing followInput will cause the ISO 639 language code of the output to follow the ISO 639 language code of the input. The languageCode will be used when useConfigured is set, or when followInput is selected but there is no ISO 639 language code specified by the input.
-         */
+      * Choosing followInput will cause the ISO 639 language code of the output to follow the ISO 639 language code of the input. The languageCode will be used when useConfigured is set, or when followInput is selected but there is no ISO 639 language code specified by the input.
+      */
     var LanguageCodeControl: js.UndefOr[AudioDescriptionLanguageCodeControl] = js.undefined
     /**
-         * The name of this AudioDescription. Outputs will use this name to uniquely identify this AudioDescription.  Description names should be unique within this Live Event.
-         */
+      * The name of this AudioDescription. Outputs will use this name to uniquely identify this AudioDescription.  Description names should be unique within this Live Event.
+      */
     var Name: __string
     /**
-         * Settings that control how input audio channels are remixed into the output audio channels.
-         */
+      * Settings that control how input audio channels are remixed into the output audio channels.
+      */
     var RemixSettings: js.UndefOr[RemixSettings] = js.undefined
     /**
-         * Used for MS Smooth and Apple HLS outputs. Indicates the name displayed by the player (eg. English, or Director Commentary).
-         */
+      * Used for MS Smooth and Apple HLS outputs. Indicates the name displayed by the player (eg. English, or Director Commentary).
+      */
     var StreamName: js.UndefOr[__string] = js.undefined
   }
   
-  
   trait AudioLanguageSelection extends js.Object {
     /**
-         * Selects a specific three-letter language code from within an audio source.
-         */
+      * Selects a specific three-letter language code from within an audio source.
+      */
     var LanguageCode: __string
     /**
-         * When set to "strict", the transport stream demux strictly identifies audio streams by their language descriptor. If a PMT update occurs such that an audio stream matching the initially selected language is no longer present then mute will be encoded until the language returns. If "loose", then on a PMT update the demux will choose another audio stream in the program with the same stream type if it can't find one with the same language.
-         */
+      * When set to "strict", the transport stream demux strictly identifies audio streams by their language descriptor. If a PMT update occurs such that an audio stream matching the initially selected language is no longer present then mute will be encoded until the language returns. If "loose", then on a PMT update the demux will choose another audio stream in the program with the same stream type if it can't find one with the same language.
+      */
     var LanguageSelectionPolicy: js.UndefOr[AudioLanguageSelectionPolicy] = js.undefined
   }
   
-  
   trait AudioNormalizationSettings extends js.Object {
     /**
-         * Audio normalization algorithm to use. itu17701 conforms to the CALM Act specification, itu17702 conforms to the EBU R-128 specification.
-         */
+      * Audio normalization algorithm to use. itu17701 conforms to the CALM Act specification, itu17702 conforms to the EBU R-128 specification.
+      */
     var Algorithm: js.UndefOr[AudioNormalizationAlgorithm] = js.undefined
     /**
-         * When set to correctAudio the output audio is corrected using the chosen algorithm. If set to measureOnly, the audio will be measured but not adjusted.
-         */
+      * When set to correctAudio the output audio is corrected using the chosen algorithm. If set to measureOnly, the audio will be measured but not adjusted.
+      */
     var AlgorithmControl: js.UndefOr[AudioNormalizationAlgorithmControl] = js.undefined
     /**
-         * Target LKFS(loudness) to adjust volume to. If no value is entered, a default value will be used according to the chosen algorithm.  The CALM Act (1770-1) recommends a target of -24 LKFS. The EBU R-128 specification (1770-2) recommends a target of -23 LKFS.
-         */
+      * Target LKFS(loudness) to adjust volume to. If no value is entered, a default value will be used according to the chosen algorithm.  The CALM Act (1770-1) recommends a target of -24 LKFS. The EBU R-128 specification (1770-2) recommends a target of -23 LKFS.
+      */
     var TargetLkfs: js.UndefOr[__doubleMinNegative59Max0] = js.undefined
   }
   
-  
   trait AudioOnlyHlsSettings extends js.Object {
     /**
-         * Specifies the group to which the audio Rendition belongs.
-         */
+      * Specifies the group to which the audio Rendition belongs.
+      */
     var AudioGroupId: js.UndefOr[__string] = js.undefined
     /**
-         * For use with an audio only Stream. Must be a .jpg or .png file. If given, this image will be used as the cover-art for the audio only output. Ideally, it should be formatted for an iPhone screen for two reasons. The iPhone does not resize the image, it crops a centered image on the top/bottom and left/right. Additionally, this image file gets saved bit-for-bit into every 10-second segment file, so will increase bandwidth by {image file size} * {segment count} * {user count.}.
-         */
+      * For use with an audio only Stream. Must be a .jpg or .png file. If given, this image will be used as the cover-art for the audio only output. Ideally, it should be formatted for an iPhone screen for two reasons. The iPhone does not resize the image, it crops a centered image on the top/bottom and left/right. Additionally, this image file gets saved bit-for-bit into every 10-second segment file, so will increase bandwidth by {image file size} * {segment count} * {user count.}.
+      */
     var AudioOnlyImage: js.UndefOr[InputLocation] = js.undefined
     /**
-         * Four types of audio-only tracks are supported:
-    
+      * Four types of audio-only tracks are supported:
     Audio-Only Variant Stream
     The client can play back this audio-only stream instead of video in low-bandwidth scenarios. Represented as an EXT-X-STREAM-INF in the HLS manifest.
-    
     Alternate Audio, Auto Select, Default
     Alternate rendition that the client should try to play back by default. Represented as an EXT-X-MEDIA in the HLS manifest with DEFAULT=YES, AUTOSELECT=YES
-    
     Alternate Audio, Auto Select, Not Default
     Alternate rendition that the client may try to play back by default. Represented as an EXT-X-MEDIA in the HLS manifest with DEFAULT=NO, AUTOSELECT=YES
-    
     Alternate Audio, not Auto Select
     Alternate rendition that the client will not try to play back by default. Represented as an EXT-X-MEDIA in the HLS manifest with DEFAULT=NO, AUTOSELECT=NO
-         */
+      */
     var AudioTrackType: js.UndefOr[AudioOnlyHlsTrackType] = js.undefined
   }
   
-  
   trait AudioPidSelection extends js.Object {
     /**
-         * Selects a specific PID from within a source.
-         */
+      * Selects a specific PID from within a source.
+      */
     var Pid: __integerMin0Max8191
   }
   
-  
   trait AudioSelector extends js.Object {
     /**
-         * The name of this AudioSelector. AudioDescriptions will use this name to uniquely identify this Selector.  Selector names should be unique per input.
-         */
+      * The name of this AudioSelector. AudioDescriptions will use this name to uniquely identify this Selector.  Selector names should be unique per input.
+      */
     var Name: __stringMin1
     /**
-         * The audio selector settings.
-         */
+      * The audio selector settings.
+      */
     var SelectorSettings: js.UndefOr[AudioSelectorSettings] = js.undefined
   }
-  
   
   trait AudioSelectorSettings extends js.Object {
     var AudioLanguageSelection: js.UndefOr[AudioLanguageSelection] = js.undefined
     var AudioPidSelection: js.UndefOr[AudioPidSelection] = js.undefined
   }
   
-  
   trait AvailBlanking extends js.Object {
     /**
-         * Blanking image to be used. Leave empty for solid black. Only bmp and png images are supported.
-         */
+      * Blanking image to be used. Leave empty for solid black. Only bmp and png images are supported.
+      */
     var AvailBlankingImage: js.UndefOr[InputLocation] = js.undefined
     /**
-         * When set to enabled, causes video, audio and captions to be blanked when insertion metadata is added.
-         */
+      * When set to enabled, causes video, audio and captions to be blanked when insertion metadata is added.
+      */
     var State: js.UndefOr[AvailBlankingState] = js.undefined
   }
   
-  
   trait AvailConfiguration extends js.Object {
     /**
-         * Ad avail settings.
-         */
+      * Ad avail settings.
+      */
     var AvailSettings: js.UndefOr[AvailSettings] = js.undefined
   }
-  
   
   trait AvailSettings extends js.Object {
     var Scte35SpliceInsert: js.UndefOr[Scte35SpliceInsert] = js.undefined
     var Scte35TimeSignalApos: js.UndefOr[Scte35TimeSignalApos] = js.undefined
   }
   
-  
   trait BatchScheduleActionCreateRequest extends js.Object {
     /**
-         * A list of schedule actions to create.
-         */
+      * A list of schedule actions to create.
+      */
     var ScheduleActions: __listOfScheduleAction
   }
-  
   
   trait BatchScheduleActionCreateResult extends js.Object {
     /**
-         * List of actions that have been created in the schedule.
-         */
+      * List of actions that have been created in the schedule.
+      */
     var ScheduleActions: __listOfScheduleAction
   }
-  
   
   trait BatchScheduleActionDeleteRequest extends js.Object {
     /**
-         * A list of schedule actions to delete.
-         */
+      * A list of schedule actions to delete.
+      */
     var ActionNames: __listOf__string
   }
   
-  
   trait BatchScheduleActionDeleteResult extends js.Object {
     /**
-         * List of actions that have been deleted from the schedule.
-         */
+      * List of actions that have been deleted from the schedule.
+      */
     var ScheduleActions: __listOfScheduleAction
   }
   
-  
   trait BatchUpdateScheduleRequest extends js.Object {
     /**
-         * Id of the channel whose schedule is being updated.
-         */
+      * Id of the channel whose schedule is being updated.
+      */
     var ChannelId: __string
     /**
-         * Schedule actions to create in the schedule.
-         */
+      * Schedule actions to create in the schedule.
+      */
     var Creates: js.UndefOr[BatchScheduleActionCreateRequest] = js.undefined
     /**
-         * Schedule actions to delete from the schedule.
-         */
+      * Schedule actions to delete from the schedule.
+      */
     var Deletes: js.UndefOr[BatchScheduleActionDeleteRequest] = js.undefined
   }
   
-  
   trait BatchUpdateScheduleResponse extends js.Object {
     /**
-         * Schedule actions created in the schedule.
-         */
+      * Schedule actions created in the schedule.
+      */
     var Creates: js.UndefOr[BatchScheduleActionCreateResult] = js.undefined
     /**
-         * Schedule actions deleted from the schedule.
-         */
+      * Schedule actions deleted from the schedule.
+      */
     var Deletes: js.UndefOr[BatchScheduleActionDeleteResult] = js.undefined
   }
   
-  
   trait BlackoutSlate extends js.Object {
     /**
-         * Blackout slate image to be used. Leave empty for solid black. Only bmp and png images are supported.
-         */
+      * Blackout slate image to be used. Leave empty for solid black. Only bmp and png images are supported.
+      */
     var BlackoutSlateImage: js.UndefOr[InputLocation] = js.undefined
     /**
-         * Setting to enabled causes the encoder to blackout the video, audio, and captions, and raise the "Network Blackout Image" slate when an SCTE104/35 Network End Segmentation Descriptor is encountered. The blackout will be lifted when the Network Start Segmentation Descriptor is encountered. The Network End and Network Start descriptors must contain a network ID that matches the value entered in "Network ID".
-         */
+      * Setting to enabled causes the encoder to blackout the video, audio, and captions, and raise the "Network Blackout Image" slate when an SCTE104/35 Network End Segmentation Descriptor is encountered. The blackout will be lifted when the Network Start Segmentation Descriptor is encountered. The Network End and Network Start descriptors must contain a network ID that matches the value entered in "Network ID".
+      */
     var NetworkEndBlackout: js.UndefOr[BlackoutSlateNetworkEndBlackout] = js.undefined
     /**
-         * Path to local file to use as Network End Blackout image. Image will be scaled to fill the entire output raster.
-         */
+      * Path to local file to use as Network End Blackout image. Image will be scaled to fill the entire output raster.
+      */
     var NetworkEndBlackoutImage: js.UndefOr[InputLocation] = js.undefined
     /**
-         * Provides Network ID that matches EIDR ID format (e.g., "10.XXXX/XXXX-XXXX-XXXX-XXXX-XXXX-C").
-         */
+      * Provides Network ID that matches EIDR ID format (e.g., "10.XXXX/XXXX-XXXX-XXXX-XXXX-XXXX-C").
+      */
     var NetworkId: js.UndefOr[__stringMin34Max34] = js.undefined
     /**
-         * When set to enabled, causes video, audio and captions to be blanked when indicated by program metadata.
-         */
+      * When set to enabled, causes video, audio and captions to be blanked when indicated by program metadata.
+      */
     var State: js.UndefOr[BlackoutSlateState] = js.undefined
   }
   
-  
   trait BurnInDestinationSettings extends js.Object {
     /**
-         * If no explicit xPosition or yPosition is provided, setting alignment to centered will place the captions at the bottom center of the output. Similarly, setting a left alignment will align captions to the bottom left of the output. If x and y positions are given in conjunction with the alignment parameter, the font will be justified (either left or centered) relative to those coordinates. Selecting "smart" justification will left-justify live subtitles and center-justify pre-recorded subtitles.  All burn-in and DVB-Sub font settings must match.
-         */
+      * If no explicit xPosition or yPosition is provided, setting alignment to centered will place the captions at the bottom center of the output. Similarly, setting a left alignment will align captions to the bottom left of the output. If x and y positions are given in conjunction with the alignment parameter, the font will be justified (either left or centered) relative to those coordinates. Selecting "smart" justification will left-justify live subtitles and center-justify pre-recorded subtitles.  All burn-in and DVB-Sub font settings must match.
+      */
     var Alignment: js.UndefOr[BurnInAlignment] = js.undefined
     /**
-         * Specifies the color of the rectangle behind the captions.  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the color of the rectangle behind the captions.  All burn-in and DVB-Sub font settings must match.
+      */
     var BackgroundColor: js.UndefOr[BurnInBackgroundColor] = js.undefined
     /**
-         * Specifies the opacity of the background rectangle. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent).  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the opacity of the background rectangle. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent).  All burn-in and DVB-Sub font settings must match.
+      */
     var BackgroundOpacity: js.UndefOr[__integerMin0Max255] = js.undefined
     /**
-         * External font file used for caption burn-in. File extension must be 'ttf' or 'tte'.  Although the user can select output fonts for many different types of input captions,  embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts.  All burn-in and DVB-Sub font settings must match.
-         */
+      * External font file used for caption burn-in. File extension must be 'ttf' or 'tte'.  Although the user can select output fonts for many different types of input captions,  embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts.  All burn-in and DVB-Sub font settings must match.
+      */
     var Font: js.UndefOr[InputLocation] = js.undefined
     /**
-         * Specifies the color of the burned-in captions.  This option is not valid for source captions that are STL, 608/embedded or teletext.  These source settings are already pre-defined by the caption stream.  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the color of the burned-in captions.  This option is not valid for source captions that are STL, 608/embedded or teletext.  These source settings are already pre-defined by the caption stream.  All burn-in and DVB-Sub font settings must match.
+      */
     var FontColor: js.UndefOr[BurnInFontColor] = js.undefined
     /**
-         * Specifies the opacity of the burned-in captions. 255 is opaque; 0 is transparent.  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the opacity of the burned-in captions. 255 is opaque; 0 is transparent.  All burn-in and DVB-Sub font settings must match.
+      */
     var FontOpacity: js.UndefOr[__integerMin0Max255] = js.undefined
     /**
-         * Font resolution in DPI (dots per inch); default is 96 dpi.  All burn-in and DVB-Sub font settings must match.
-         */
+      * Font resolution in DPI (dots per inch); default is 96 dpi.  All burn-in and DVB-Sub font settings must match.
+      */
     var FontResolution: js.UndefOr[__integerMin96Max600] = js.undefined
     /**
-         * When set to 'auto' fontSize will scale depending on the size of the output.  Giving a positive integer will specify the exact font size in points.  All burn-in and DVB-Sub font settings must match.
-         */
+      * When set to 'auto' fontSize will scale depending on the size of the output.  Giving a positive integer will specify the exact font size in points.  All burn-in and DVB-Sub font settings must match.
+      */
     var FontSize: js.UndefOr[__string] = js.undefined
     /**
-         * Specifies font outline color. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies font outline color. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.
+      */
     var OutlineColor: js.UndefOr[BurnInOutlineColor] = js.undefined
     /**
-         * Specifies font outline size in pixels. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies font outline size in pixels. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.
+      */
     var OutlineSize: js.UndefOr[__integerMin0Max10] = js.undefined
     /**
-         * Specifies the color of the shadow cast by the captions.  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the color of the shadow cast by the captions.  All burn-in and DVB-Sub font settings must match.
+      */
     var ShadowColor: js.UndefOr[BurnInShadowColor] = js.undefined
     /**
-         * Specifies the opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent).  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent).  All burn-in and DVB-Sub font settings must match.
+      */
     var ShadowOpacity: js.UndefOr[__integerMin0Max255] = js.undefined
     /**
-         * Specifies the horizontal offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels to the left.  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the horizontal offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels to the left.  All burn-in and DVB-Sub font settings must match.
+      */
     var ShadowXOffset: js.UndefOr[__integer] = js.undefined
     /**
-         * Specifies the vertical offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels above the text.  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the vertical offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels above the text.  All burn-in and DVB-Sub font settings must match.
+      */
     var ShadowYOffset: js.UndefOr[__integer] = js.undefined
     /**
-         * Controls whether a fixed grid size will be used to generate the output subtitles bitmap. Only applicable for Teletext inputs and DVB-Sub/Burn-in outputs.
-         */
+      * Controls whether a fixed grid size will be used to generate the output subtitles bitmap. Only applicable for Teletext inputs and DVB-Sub/Burn-in outputs.
+      */
     var TeletextGridControl: js.UndefOr[BurnInTeletextGridControl] = js.undefined
     /**
-         * Specifies the horizontal position of the caption relative to the left side of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the left of the output. If no explicit xPosition is provided, the horizontal caption position will be determined by the alignment parameter.  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the horizontal position of the caption relative to the left side of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the left of the output. If no explicit xPosition is provided, the horizontal caption position will be determined by the alignment parameter.  All burn-in and DVB-Sub font settings must match.
+      */
     var XPosition: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * Specifies the vertical position of the caption relative to the top of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the top of the output. If no explicit yPosition is provided, the caption will be positioned towards the bottom of the output.  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the vertical position of the caption relative to the top of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the top of the output. If no explicit yPosition is provided, the caption will be positioned towards the bottom of the output.  All burn-in and DVB-Sub font settings must match.
+      */
     var YPosition: js.UndefOr[__integerMin0] = js.undefined
   }
   
-  
   trait CaptionDescription extends js.Object {
     /**
-         * Specifies which input caption selector to use as a caption source when generating output captions. This field should match a captionSelector name.
-         */
+      * Specifies which input caption selector to use as a caption source when generating output captions. This field should match a captionSelector name.
+      */
     var CaptionSelectorName: __string
     /**
-         * Additional settings for captions destination that depend on the destination type.
-         */
+      * Additional settings for captions destination that depend on the destination type.
+      */
     var DestinationSettings: js.UndefOr[CaptionDestinationSettings] = js.undefined
     /**
-         * ISO 639-2 three-digit code: http://www.loc.gov/standards/iso639-2/
-         */
+      * ISO 639-2 three-digit code: http://www.loc.gov/standards/iso639-2/
+      */
     var LanguageCode: js.UndefOr[__string] = js.undefined
     /**
-         * Human readable information to indicate captions available for players (eg. English, or Spanish).
-         */
+      * Human readable information to indicate captions available for players (eg. English, or Spanish).
+      */
     var LanguageDescription: js.UndefOr[__string] = js.undefined
     /**
-         * Name of the caption description.  Used to associate a caption description with an output.  Names must be unique within an event.
-         */
+      * Name of the caption description.  Used to associate a caption description with an output.  Names must be unique within an event.
+      */
     var Name: __string
   }
-  
   
   trait CaptionDestinationSettings extends js.Object {
     var AribDestinationSettings: js.UndefOr[AribDestinationSettings] = js.undefined
@@ -493,38 +459,35 @@ object MediaLiveNs extends js.Object {
     var WebvttDestinationSettings: js.UndefOr[WebvttDestinationSettings] = js.undefined
   }
   
-  
   trait CaptionLanguageMapping extends js.Object {
     /**
-         * The closed caption channel being described by this CaptionLanguageMapping.  Each channel mapping must have a unique channel number (maximum of 4)
-         */
+      * The closed caption channel being described by this CaptionLanguageMapping.  Each channel mapping must have a unique channel number (maximum of 4)
+      */
     var CaptionChannel: __integerMin1Max4
     /**
-         * Three character ISO 639-2 language code (see http://www.loc.gov/standards/iso639-2)
-         */
+      * Three character ISO 639-2 language code (see http://www.loc.gov/standards/iso639-2)
+      */
     var LanguageCode: __stringMin3Max3
     /**
-         * Textual description of language
-         */
+      * Textual description of language
+      */
     var LanguageDescription: __stringMin1
   }
   
-  
   trait CaptionSelector extends js.Object {
     /**
-         * When specified this field indicates the three letter language code of the caption track to extract from the source.
-         */
+      * When specified this field indicates the three letter language code of the caption track to extract from the source.
+      */
     var LanguageCode: js.UndefOr[__string] = js.undefined
     /**
-         * Name identifier for a caption selector.  This name is used to associate this caption selector with one or more caption descriptions.  Names must be unique within an event.
-         */
+      * Name identifier for a caption selector.  This name is used to associate this caption selector with one or more caption descriptions.  Names must be unique within an event.
+      */
     var Name: __stringMin1
     /**
-         * Caption selector settings.
-         */
+      * Caption selector settings.
+      */
     var SelectorSettings: js.UndefOr[CaptionSelectorSettings] = js.undefined
   }
-  
   
   trait CaptionSelectorSettings extends js.Object {
     var AribSourceSettings: js.UndefOr[AribSourceSettings] = js.undefined
@@ -535,1212 +498,1151 @@ object MediaLiveNs extends js.Object {
     var TeletextSourceSettings: js.UndefOr[TeletextSourceSettings] = js.undefined
   }
   
-  
   trait Channel extends js.Object {
     /**
-         * The unique arn of the channel.
-         */
+      * The unique arn of the channel.
+      */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
-         * A list of destinations of the channel. For UDP outputs, there is one
+      * A list of destinations of the channel. For UDP outputs, there is one
     destination per output. For other types (HLS, for example), there is
     one destination per packager.
-    
-         */
+      */
     var Destinations: js.UndefOr[__listOfOutputDestination] = js.undefined
     /**
-         * The endpoints where outgoing connections initiate from
-         */
+      * The endpoints where outgoing connections initiate from
+      */
     var EgressEndpoints: js.UndefOr[__listOfChannelEgressEndpoint] = js.undefined
     var EncoderSettings: js.UndefOr[EncoderSettings] = js.undefined
     /**
-         * The unique id of the channel.
-         */
+      * The unique id of the channel.
+      */
     var Id: js.UndefOr[__string] = js.undefined
     /**
-         * List of input attachments for channel.
-         */
+      * List of input attachments for channel.
+      */
     var InputAttachments: js.UndefOr[__listOfInputAttachment] = js.undefined
     var InputSpecification: js.UndefOr[InputSpecification] = js.undefined
     /**
-         * The log level being written to CloudWatch Logs.
-         */
+      * The log level being written to CloudWatch Logs.
+      */
     var LogLevel: js.UndefOr[LogLevel] = js.undefined
     /**
-         * The name of the channel. (user-mutable)
-         */
+      * The name of the channel. (user-mutable)
+      */
     var Name: js.UndefOr[__string] = js.undefined
     /**
-         * The number of currently healthy pipelines.
-         */
+      * The number of currently healthy pipelines.
+      */
     var PipelinesRunningCount: js.UndefOr[__integer] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the role assumed when running the Channel.
-         */
+      * The Amazon Resource Name (ARN) of the role assumed when running the Channel.
+      */
     var RoleArn: js.UndefOr[__string] = js.undefined
     var State: js.UndefOr[ChannelState] = js.undefined
   }
-  
   
   trait ChannelEgressEndpoint extends js.Object {
     /**
-         * Public IP of where a channel's output comes from
-         */
+      * Public IP of where a channel's output comes from
+      */
     var SourceIp: js.UndefOr[__string] = js.undefined
   }
   
-  
   trait ChannelSummary extends js.Object {
     /**
-         * The unique arn of the channel.
-         */
+      * The unique arn of the channel.
+      */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
-         * A list of destinations of the channel. For UDP outputs, there is one
+      * A list of destinations of the channel. For UDP outputs, there is one
     destination per output. For other types (HLS, for example), there is
     one destination per packager.
-    
-         */
+      */
     var Destinations: js.UndefOr[__listOfOutputDestination] = js.undefined
     /**
-         * The endpoints where outgoing connections initiate from
-         */
+      * The endpoints where outgoing connections initiate from
+      */
     var EgressEndpoints: js.UndefOr[__listOfChannelEgressEndpoint] = js.undefined
     /**
-         * The unique id of the channel.
-         */
+      * The unique id of the channel.
+      */
     var Id: js.UndefOr[__string] = js.undefined
     /**
-         * List of input attachments for channel.
-         */
+      * List of input attachments for channel.
+      */
     var InputAttachments: js.UndefOr[__listOfInputAttachment] = js.undefined
     var InputSpecification: js.UndefOr[InputSpecification] = js.undefined
     /**
-         * The log level being written to CloudWatch Logs.
-         */
+      * The log level being written to CloudWatch Logs.
+      */
     var LogLevel: js.UndefOr[LogLevel] = js.undefined
     /**
-         * The name of the channel. (user-mutable)
-         */
+      * The name of the channel. (user-mutable)
+      */
     var Name: js.UndefOr[__string] = js.undefined
     /**
-         * The number of currently healthy pipelines.
-         */
+      * The number of currently healthy pipelines.
+      */
     var PipelinesRunningCount: js.UndefOr[__integer] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the role assumed when running the Channel.
-         */
+      * The Amazon Resource Name (ARN) of the role assumed when running the Channel.
+      */
     var RoleArn: js.UndefOr[__string] = js.undefined
     var State: js.UndefOr[ChannelState] = js.undefined
   }
   
-  
   trait ClientApiVersions extends js.Object {
     /**
-         * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
-         */
+      * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
+      */
     var apiVersion: js.UndefOr[apiVersion] = js.undefined
   }
-  
   
   trait CreateChannelRequest extends js.Object {
     var Destinations: js.UndefOr[__listOfOutputDestination] = js.undefined
     var EncoderSettings: js.UndefOr[EncoderSettings] = js.undefined
     /**
-         * List of input attachments for channel.
-         */
+      * List of input attachments for channel.
+      */
     var InputAttachments: js.UndefOr[__listOfInputAttachment] = js.undefined
     /**
-         * Specification of input for this channel (max. bitrate, resolution, codec, etc.)
-         */
+      * Specification of input for this channel (max. bitrate, resolution, codec, etc.)
+      */
     var InputSpecification: js.UndefOr[InputSpecification] = js.undefined
     /**
-         * The log level to write to CloudWatch Logs.
-         */
+      * The log level to write to CloudWatch Logs.
+      */
     var LogLevel: js.UndefOr[LogLevel] = js.undefined
     /**
-         * Name of channel.
-         */
+      * Name of channel.
+      */
     var Name: js.UndefOr[__string] = js.undefined
     /**
-         * Unique request ID to be specified. This is needed to prevent retries from
+      * Unique request ID to be specified. This is needed to prevent retries from
     creating multiple resources.
-    
-         */
+      */
     var RequestId: js.UndefOr[__string] = js.undefined
     /**
-         * Deprecated field that's only usable by whitelisted customers.
-         */
+      * Deprecated field that's only usable by whitelisted customers.
+      */
     var Reserved: js.UndefOr[__string] = js.undefined
     /**
-         * An optional Amazon Resource Name (ARN) of the role to assume when running the Channel.
-         */
+      * An optional Amazon Resource Name (ARN) of the role to assume when running the Channel.
+      */
     var RoleArn: js.UndefOr[__string] = js.undefined
   }
-  
   
   trait CreateChannelResponse extends js.Object {
     var Channel: js.UndefOr[Channel] = js.undefined
   }
   
-  
   trait CreateInputRequest extends js.Object {
     /**
-         * Destination settings for PUSH type inputs.
-         */
+      * Destination settings for PUSH type inputs.
+      */
     var Destinations: js.UndefOr[__listOfInputDestinationRequest] = js.undefined
     /**
-         * A list of security groups referenced by IDs to attach to the input.
-         */
+      * A list of security groups referenced by IDs to attach to the input.
+      */
     var InputSecurityGroups: js.UndefOr[__listOf__string] = js.undefined
     /**
-         * A list of the MediaConnect Flows that you want to use in this input. You can specify as few as one
+      * A list of the MediaConnect Flows that you want to use in this input. You can specify as few as one
     Flow and presently, as many as two. The only requirement is when you have more than one is that each Flow is in a
     separate Availability Zone as this ensures your EML input is redundant to AZ issues.
-    
-         */
+      */
     var MediaConnectFlows: js.UndefOr[__listOfMediaConnectFlowRequest] = js.undefined
     /**
-         * Name of the input.
-         */
+      * Name of the input.
+      */
     var Name: js.UndefOr[__string] = js.undefined
     /**
-         * Unique identifier of the request to ensure the request is handled
+      * Unique identifier of the request to ensure the request is handled
     exactly once in case of retries.
-    
-         */
+      */
     var RequestId: js.UndefOr[__string] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the role this input assumes during and after creation.
-         */
+      * The Amazon Resource Name (ARN) of the role this input assumes during and after creation.
+      */
     var RoleArn: js.UndefOr[__string] = js.undefined
     /**
-         * The source URLs for a PULL-type input. Every PULL type input needs
+      * The source URLs for a PULL-type input. Every PULL type input needs
     exactly two source URLs for redundancy.
     Only specify sources for PULL type Inputs. Leave Destinations empty.
-    
-         */
+      */
     var Sources: js.UndefOr[__listOfInputSourceRequest] = js.undefined
     var Type: js.UndefOr[InputType] = js.undefined
   }
-  
   
   trait CreateInputResponse extends js.Object {
     var Input: js.UndefOr[Input] = js.undefined
   }
   
-  
   trait CreateInputSecurityGroupRequest extends js.Object {
     /**
-         * List of IPv4 CIDR addresses to whitelist
-         */
+      * List of IPv4 CIDR addresses to whitelist
+      */
     var WhitelistRules: js.UndefOr[__listOfInputWhitelistRuleCidr] = js.undefined
   }
-  
   
   trait CreateInputSecurityGroupResponse extends js.Object {
     var SecurityGroup: js.UndefOr[InputSecurityGroup] = js.undefined
   }
   
-  
   trait DeleteChannelRequest extends js.Object {
     /**
-         * Unique ID of the channel.
-         */
+      * Unique ID of the channel.
+      */
     var ChannelId: __string
   }
-  
   
   trait DeleteChannelResponse extends js.Object {
     /**
-         * The unique arn of the channel.
-         */
+      * The unique arn of the channel.
+      */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
-         * A list of destinations of the channel. For UDP outputs, there is one
+      * A list of destinations of the channel. For UDP outputs, there is one
     destination per output. For other types (HLS, for example), there is
     one destination per packager.
-    
-         */
+      */
     var Destinations: js.UndefOr[__listOfOutputDestination] = js.undefined
     /**
-         * The endpoints where outgoing connections initiate from
-         */
+      * The endpoints where outgoing connections initiate from
+      */
     var EgressEndpoints: js.UndefOr[__listOfChannelEgressEndpoint] = js.undefined
     var EncoderSettings: js.UndefOr[EncoderSettings] = js.undefined
     /**
-         * The unique id of the channel.
-         */
+      * The unique id of the channel.
+      */
     var Id: js.UndefOr[__string] = js.undefined
     /**
-         * List of input attachments for channel.
-         */
+      * List of input attachments for channel.
+      */
     var InputAttachments: js.UndefOr[__listOfInputAttachment] = js.undefined
     var InputSpecification: js.UndefOr[InputSpecification] = js.undefined
     /**
-         * The log level being written to CloudWatch Logs.
-         */
+      * The log level being written to CloudWatch Logs.
+      */
     var LogLevel: js.UndefOr[LogLevel] = js.undefined
     /**
-         * The name of the channel. (user-mutable)
-         */
+      * The name of the channel. (user-mutable)
+      */
     var Name: js.UndefOr[__string] = js.undefined
     /**
-         * The number of currently healthy pipelines.
-         */
+      * The number of currently healthy pipelines.
+      */
     var PipelinesRunningCount: js.UndefOr[__integer] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the role assumed when running the Channel.
-         */
+      * The Amazon Resource Name (ARN) of the role assumed when running the Channel.
+      */
     var RoleArn: js.UndefOr[__string] = js.undefined
     var State: js.UndefOr[ChannelState] = js.undefined
   }
-  
   
   trait DeleteInputRequest extends js.Object {
     /**
-         * Unique ID of the input
-         */
+      * Unique ID of the input
+      */
     var InputId: __string
   }
   
-  
   trait DeleteInputResponse extends js.Object
-  
   
   trait DeleteInputSecurityGroupRequest extends js.Object {
     /**
-         * The Input Security Group to delete
-         */
+      * The Input Security Group to delete
+      */
     var InputSecurityGroupId: __string
   }
   
-  
   trait DeleteInputSecurityGroupResponse extends js.Object
-  
   
   trait DeleteReservationRequest extends js.Object {
     /**
-         * Unique reservation ID, e.g. '1234567'
-         */
+      * Unique reservation ID, e.g. '1234567'
+      */
     var ReservationId: __string
   }
   
-  
   trait DeleteReservationResponse extends js.Object {
     /**
-         * Unique reservation ARN, e.g. 'arn:aws:medialive:us-west-2:123456789012:reservation:1234567'
-         */
+      * Unique reservation ARN, e.g. 'arn:aws:medialive:us-west-2:123456789012:reservation:1234567'
+      */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
-         * Number of reserved resources
-         */
+      * Number of reserved resources
+      */
     var Count: js.UndefOr[__integer] = js.undefined
     /**
-         * Currency code for usagePrice and fixedPrice in ISO-4217 format, e.g. 'USD'
-         */
+      * Currency code for usagePrice and fixedPrice in ISO-4217 format, e.g. 'USD'
+      */
     var CurrencyCode: js.UndefOr[__string] = js.undefined
     /**
-         * Lease duration, e.g. '12'
-         */
+      * Lease duration, e.g. '12'
+      */
     var Duration: js.UndefOr[__integer] = js.undefined
     /**
-         * Units for duration, e.g. 'MONTHS'
-         */
+      * Units for duration, e.g. 'MONTHS'
+      */
     var DurationUnits: js.UndefOr[OfferingDurationUnits] = js.undefined
     /**
-         * Reservation UTC end date and time in ISO-8601 format, e.g. '2019-03-01T00:00:00'
-         */
+      * Reservation UTC end date and time in ISO-8601 format, e.g. '2019-03-01T00:00:00'
+      */
     var End: js.UndefOr[__string] = js.undefined
     /**
-         * One-time charge for each reserved resource, e.g. '0.0' for a NO_UPFRONT offering
-         */
+      * One-time charge for each reserved resource, e.g. '0.0' for a NO_UPFRONT offering
+      */
     var FixedPrice: js.UndefOr[__double] = js.undefined
     /**
-         * User specified reservation name
-         */
+      * User specified reservation name
+      */
     var Name: js.UndefOr[__string] = js.undefined
     /**
-         * Offering description, e.g. 'HD AVC output at 10-20 Mbps, 30 fps, and standard VQ in US West (Oregon)'
-         */
+      * Offering description, e.g. 'HD AVC output at 10-20 Mbps, 30 fps, and standard VQ in US West (Oregon)'
+      */
     var OfferingDescription: js.UndefOr[__string] = js.undefined
     /**
-         * Unique offering ID, e.g. '87654321'
-         */
+      * Unique offering ID, e.g. '87654321'
+      */
     var OfferingId: js.UndefOr[__string] = js.undefined
     /**
-         * Offering type, e.g. 'NO_UPFRONT'
-         */
+      * Offering type, e.g. 'NO_UPFRONT'
+      */
     var OfferingType: js.UndefOr[OfferingType] = js.undefined
     /**
-         * AWS region, e.g. 'us-west-2'
-         */
+      * AWS region, e.g. 'us-west-2'
+      */
     var Region: js.UndefOr[__string] = js.undefined
     /**
-         * Unique reservation ID, e.g. '1234567'
-         */
+      * Unique reservation ID, e.g. '1234567'
+      */
     var ReservationId: js.UndefOr[__string] = js.undefined
     /**
-         * Resource configuration details
-         */
+      * Resource configuration details
+      */
     var ResourceSpecification: js.UndefOr[ReservationResourceSpecification] = js.undefined
     /**
-         * Reservation UTC start date and time in ISO-8601 format, e.g. '2018-03-01T00:00:00'
-         */
+      * Reservation UTC start date and time in ISO-8601 format, e.g. '2018-03-01T00:00:00'
+      */
     var Start: js.UndefOr[__string] = js.undefined
     /**
-         * Current state of reservation, e.g. 'ACTIVE'
-         */
+      * Current state of reservation, e.g. 'ACTIVE'
+      */
     var State: js.UndefOr[ReservationState] = js.undefined
     /**
-         * Recurring usage charge for each reserved resource, e.g. '157.0'
-         */
+      * Recurring usage charge for each reserved resource, e.g. '157.0'
+      */
     var UsagePrice: js.UndefOr[__double] = js.undefined
   }
   
-  
   trait DescribeChannelRequest extends js.Object {
     /**
-         * channel ID
-         */
+      * channel ID
+      */
     var ChannelId: __string
   }
   
-  
   trait DescribeChannelResponse extends js.Object {
     /**
-         * The unique arn of the channel.
-         */
+      * The unique arn of the channel.
+      */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
-         * A list of destinations of the channel. For UDP outputs, there is one
+      * A list of destinations of the channel. For UDP outputs, there is one
     destination per output. For other types (HLS, for example), there is
     one destination per packager.
-    
-         */
+      */
     var Destinations: js.UndefOr[__listOfOutputDestination] = js.undefined
     /**
-         * The endpoints where outgoing connections initiate from
-         */
+      * The endpoints where outgoing connections initiate from
+      */
     var EgressEndpoints: js.UndefOr[__listOfChannelEgressEndpoint] = js.undefined
     var EncoderSettings: js.UndefOr[EncoderSettings] = js.undefined
     /**
-         * The unique id of the channel.
-         */
+      * The unique id of the channel.
+      */
     var Id: js.UndefOr[__string] = js.undefined
     /**
-         * List of input attachments for channel.
-         */
+      * List of input attachments for channel.
+      */
     var InputAttachments: js.UndefOr[__listOfInputAttachment] = js.undefined
     var InputSpecification: js.UndefOr[InputSpecification] = js.undefined
     /**
-         * The log level being written to CloudWatch Logs.
-         */
+      * The log level being written to CloudWatch Logs.
+      */
     var LogLevel: js.UndefOr[LogLevel] = js.undefined
     /**
-         * The name of the channel. (user-mutable)
-         */
+      * The name of the channel. (user-mutable)
+      */
     var Name: js.UndefOr[__string] = js.undefined
     /**
-         * The number of currently healthy pipelines.
-         */
+      * The number of currently healthy pipelines.
+      */
     var PipelinesRunningCount: js.UndefOr[__integer] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the role assumed when running the Channel.
-         */
+      * The Amazon Resource Name (ARN) of the role assumed when running the Channel.
+      */
     var RoleArn: js.UndefOr[__string] = js.undefined
     var State: js.UndefOr[ChannelState] = js.undefined
   }
   
-  
   trait DescribeInputRequest extends js.Object {
     /**
-         * Unique ID of the input
-         */
+      * Unique ID of the input
+      */
     var InputId: __string
   }
   
-  
   trait DescribeInputResponse extends js.Object {
     /**
-         * The Unique ARN of the input (generated, immutable).
-         */
+      * The Unique ARN of the input (generated, immutable).
+      */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
-         * A list of channel IDs that that input is attached to (currently an input can only be attached to one channel).
-         */
+      * A list of channel IDs that that input is attached to (currently an input can only be attached to one channel).
+      */
     var AttachedChannels: js.UndefOr[__listOf__string] = js.undefined
     /**
-         * A list of the destinations of the input (PUSH-type).
-         */
+      * A list of the destinations of the input (PUSH-type).
+      */
     var Destinations: js.UndefOr[__listOfInputDestination] = js.undefined
     /**
-         * The generated ID of the input (unique for user account, immutable).
-         */
+      * The generated ID of the input (unique for user account, immutable).
+      */
     var Id: js.UndefOr[__string] = js.undefined
     /**
-         * A list of MediaConnect Flows for this input.
-         */
+      * A list of MediaConnect Flows for this input.
+      */
     var MediaConnectFlows: js.UndefOr[__listOfMediaConnectFlow] = js.undefined
     /**
-         * The user-assigned name (This is a mutable value).
-         */
+      * The user-assigned name (This is a mutable value).
+      */
     var Name: js.UndefOr[__string] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the role this input assumes during and after creation.
-         */
+      * The Amazon Resource Name (ARN) of the role this input assumes during and after creation.
+      */
     var RoleArn: js.UndefOr[__string] = js.undefined
     /**
-         * A list of IDs for all the security groups attached to the input.
-         */
+      * A list of IDs for all the security groups attached to the input.
+      */
     var SecurityGroups: js.UndefOr[__listOf__string] = js.undefined
     /**
-         * A list of the sources of the input (PULL-type).
-         */
+      * A list of the sources of the input (PULL-type).
+      */
     var Sources: js.UndefOr[__listOfInputSource] = js.undefined
     var State: js.UndefOr[InputState] = js.undefined
     var Type: js.UndefOr[InputType] = js.undefined
   }
   
-  
   trait DescribeInputSecurityGroupRequest extends js.Object {
     /**
-         * The id of the Input Security Group to describe
-         */
+      * The id of the Input Security Group to describe
+      */
     var InputSecurityGroupId: __string
   }
   
-  
   trait DescribeInputSecurityGroupResponse extends js.Object {
     /**
-         * Unique ARN of Input Security Group
-         */
+      * Unique ARN of Input Security Group
+      */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
-         * The Id of the Input Security Group
-         */
+      * The Id of the Input Security Group
+      */
     var Id: js.UndefOr[__string] = js.undefined
     /**
-         * The list of inputs currently using this Input Security Group.
-         */
+      * The list of inputs currently using this Input Security Group.
+      */
     var Inputs: js.UndefOr[__listOf__string] = js.undefined
     /**
-         * The current state of the Input Security Group.
-         */
+      * The current state of the Input Security Group.
+      */
     var State: js.UndefOr[InputSecurityGroupState] = js.undefined
     /**
-         * Whitelist rules and their sync status
-         */
+      * Whitelist rules and their sync status
+      */
     var WhitelistRules: js.UndefOr[__listOfInputWhitelistRule] = js.undefined
   }
   
-  
   trait DescribeOfferingRequest extends js.Object {
     /**
-         * Unique offering ID, e.g. '87654321'
-         */
+      * Unique offering ID, e.g. '87654321'
+      */
     var OfferingId: __string
   }
   
-  
   trait DescribeOfferingResponse extends js.Object {
     /**
-         * Unique offering ARN, e.g. 'arn:aws:medialive:us-west-2:123456789012:offering:87654321'
-         */
+      * Unique offering ARN, e.g. 'arn:aws:medialive:us-west-2:123456789012:offering:87654321'
+      */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
-         * Currency code for usagePrice and fixedPrice in ISO-4217 format, e.g. 'USD'
-         */
+      * Currency code for usagePrice and fixedPrice in ISO-4217 format, e.g. 'USD'
+      */
     var CurrencyCode: js.UndefOr[__string] = js.undefined
     /**
-         * Lease duration, e.g. '12'
-         */
+      * Lease duration, e.g. '12'
+      */
     var Duration: js.UndefOr[__integer] = js.undefined
     /**
-         * Units for duration, e.g. 'MONTHS'
-         */
+      * Units for duration, e.g. 'MONTHS'
+      */
     var DurationUnits: js.UndefOr[OfferingDurationUnits] = js.undefined
     /**
-         * One-time charge for each reserved resource, e.g. '0.0' for a NO_UPFRONT offering
-         */
+      * One-time charge for each reserved resource, e.g. '0.0' for a NO_UPFRONT offering
+      */
     var FixedPrice: js.UndefOr[__double] = js.undefined
     /**
-         * Offering description, e.g. 'HD AVC output at 10-20 Mbps, 30 fps, and standard VQ in US West (Oregon)'
-         */
+      * Offering description, e.g. 'HD AVC output at 10-20 Mbps, 30 fps, and standard VQ in US West (Oregon)'
+      */
     var OfferingDescription: js.UndefOr[__string] = js.undefined
     /**
-         * Unique offering ID, e.g. '87654321'
-         */
+      * Unique offering ID, e.g. '87654321'
+      */
     var OfferingId: js.UndefOr[__string] = js.undefined
     /**
-         * Offering type, e.g. 'NO_UPFRONT'
-         */
+      * Offering type, e.g. 'NO_UPFRONT'
+      */
     var OfferingType: js.UndefOr[OfferingType] = js.undefined
     /**
-         * AWS region, e.g. 'us-west-2'
-         */
+      * AWS region, e.g. 'us-west-2'
+      */
     var Region: js.UndefOr[__string] = js.undefined
     /**
-         * Resource configuration details
-         */
+      * Resource configuration details
+      */
     var ResourceSpecification: js.UndefOr[ReservationResourceSpecification] = js.undefined
     /**
-         * Recurring usage charge for each reserved resource, e.g. '157.0'
-         */
+      * Recurring usage charge for each reserved resource, e.g. '157.0'
+      */
     var UsagePrice: js.UndefOr[__double] = js.undefined
   }
-  
   
   trait DescribeReservationRequest extends js.Object {
     /**
-         * Unique reservation ID, e.g. '1234567'
-         */
+      * Unique reservation ID, e.g. '1234567'
+      */
     var ReservationId: __string
   }
   
-  
   trait DescribeReservationResponse extends js.Object {
     /**
-         * Unique reservation ARN, e.g. 'arn:aws:medialive:us-west-2:123456789012:reservation:1234567'
-         */
+      * Unique reservation ARN, e.g. 'arn:aws:medialive:us-west-2:123456789012:reservation:1234567'
+      */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
-         * Number of reserved resources
-         */
+      * Number of reserved resources
+      */
     var Count: js.UndefOr[__integer] = js.undefined
     /**
-         * Currency code for usagePrice and fixedPrice in ISO-4217 format, e.g. 'USD'
-         */
+      * Currency code for usagePrice and fixedPrice in ISO-4217 format, e.g. 'USD'
+      */
     var CurrencyCode: js.UndefOr[__string] = js.undefined
     /**
-         * Lease duration, e.g. '12'
-         */
+      * Lease duration, e.g. '12'
+      */
     var Duration: js.UndefOr[__integer] = js.undefined
     /**
-         * Units for duration, e.g. 'MONTHS'
-         */
+      * Units for duration, e.g. 'MONTHS'
+      */
     var DurationUnits: js.UndefOr[OfferingDurationUnits] = js.undefined
     /**
-         * Reservation UTC end date and time in ISO-8601 format, e.g. '2019-03-01T00:00:00'
-         */
+      * Reservation UTC end date and time in ISO-8601 format, e.g. '2019-03-01T00:00:00'
+      */
     var End: js.UndefOr[__string] = js.undefined
     /**
-         * One-time charge for each reserved resource, e.g. '0.0' for a NO_UPFRONT offering
-         */
+      * One-time charge for each reserved resource, e.g. '0.0' for a NO_UPFRONT offering
+      */
     var FixedPrice: js.UndefOr[__double] = js.undefined
     /**
-         * User specified reservation name
-         */
+      * User specified reservation name
+      */
     var Name: js.UndefOr[__string] = js.undefined
     /**
-         * Offering description, e.g. 'HD AVC output at 10-20 Mbps, 30 fps, and standard VQ in US West (Oregon)'
-         */
+      * Offering description, e.g. 'HD AVC output at 10-20 Mbps, 30 fps, and standard VQ in US West (Oregon)'
+      */
     var OfferingDescription: js.UndefOr[__string] = js.undefined
     /**
-         * Unique offering ID, e.g. '87654321'
-         */
+      * Unique offering ID, e.g. '87654321'
+      */
     var OfferingId: js.UndefOr[__string] = js.undefined
     /**
-         * Offering type, e.g. 'NO_UPFRONT'
-         */
+      * Offering type, e.g. 'NO_UPFRONT'
+      */
     var OfferingType: js.UndefOr[OfferingType] = js.undefined
     /**
-         * AWS region, e.g. 'us-west-2'
-         */
+      * AWS region, e.g. 'us-west-2'
+      */
     var Region: js.UndefOr[__string] = js.undefined
     /**
-         * Unique reservation ID, e.g. '1234567'
-         */
+      * Unique reservation ID, e.g. '1234567'
+      */
     var ReservationId: js.UndefOr[__string] = js.undefined
     /**
-         * Resource configuration details
-         */
+      * Resource configuration details
+      */
     var ResourceSpecification: js.UndefOr[ReservationResourceSpecification] = js.undefined
     /**
-         * Reservation UTC start date and time in ISO-8601 format, e.g. '2018-03-01T00:00:00'
-         */
+      * Reservation UTC start date and time in ISO-8601 format, e.g. '2018-03-01T00:00:00'
+      */
     var Start: js.UndefOr[__string] = js.undefined
     /**
-         * Current state of reservation, e.g. 'ACTIVE'
-         */
+      * Current state of reservation, e.g. 'ACTIVE'
+      */
     var State: js.UndefOr[ReservationState] = js.undefined
     /**
-         * Recurring usage charge for each reserved resource, e.g. '157.0'
-         */
+      * Recurring usage charge for each reserved resource, e.g. '157.0'
+      */
     var UsagePrice: js.UndefOr[__double] = js.undefined
   }
   
-  
   trait DescribeScheduleRequest extends js.Object {
     /**
-         * Id of the channel whose schedule is being updated.
-         */
+      * Id of the channel whose schedule is being updated.
+      */
     var ChannelId: __string
     var MaxResults: js.UndefOr[MaxResults] = js.undefined
     var NextToken: js.UndefOr[__string] = js.undefined
   }
   
-  
   trait DescribeScheduleResponse extends js.Object {
     /**
-         * The next token; for use in pagination.
-         */
+      * The next token; for use in pagination.
+      */
     var NextToken: js.UndefOr[__string] = js.undefined
     /**
-         * The list of actions in the schedule.
-         */
+      * The list of actions in the schedule.
+      */
     var ScheduleActions: js.UndefOr[__listOfScheduleAction] = js.undefined
   }
   
-  
   trait DvbNitSettings extends js.Object {
     /**
-         * The numeric value placed in the Network Information Table (NIT).
-         */
+      * The numeric value placed in the Network Information Table (NIT).
+      */
     var NetworkId: __integerMin0Max65536
     /**
-         * The network name text placed in the networkNameDescriptor inside the Network Information Table. Maximum length is 256 characters.
-         */
+      * The network name text placed in the networkNameDescriptor inside the Network Information Table. Maximum length is 256 characters.
+      */
     var NetworkName: __stringMin1Max256
     /**
-         * The number of milliseconds between instances of this table in the output transport stream.
-         */
+      * The number of milliseconds between instances of this table in the output transport stream.
+      */
     var RepInterval: js.UndefOr[__integerMin25Max10000] = js.undefined
   }
   
-  
   trait DvbSdtSettings extends js.Object {
     /**
-         * Selects method of inserting SDT information into output stream. The sdtFollow setting copies SDT information from input stream to output stream. The sdtFollowIfPresent setting copies SDT information from input stream to output stream if SDT information is present in the input, otherwise it will fall back on the user-defined values. The sdtManual setting means user will enter the SDT information. The sdtNone setting means output stream will not contain SDT information.
-         */
+      * Selects method of inserting SDT information into output stream. The sdtFollow setting copies SDT information from input stream to output stream. The sdtFollowIfPresent setting copies SDT information from input stream to output stream if SDT information is present in the input, otherwise it will fall back on the user-defined values. The sdtManual setting means user will enter the SDT information. The sdtNone setting means output stream will not contain SDT information.
+      */
     var OutputSdt: js.UndefOr[DvbSdtOutputSdt] = js.undefined
     /**
-         * The number of milliseconds between instances of this table in the output transport stream.
-         */
+      * The number of milliseconds between instances of this table in the output transport stream.
+      */
     var RepInterval: js.UndefOr[__integerMin25Max2000] = js.undefined
     /**
-         * The service name placed in the serviceDescriptor in the Service Description Table. Maximum length is 256 characters.
-         */
+      * The service name placed in the serviceDescriptor in the Service Description Table. Maximum length is 256 characters.
+      */
     var ServiceName: js.UndefOr[__stringMin1Max256] = js.undefined
     /**
-         * The service provider name placed in the serviceDescriptor in the Service Description Table. Maximum length is 256 characters.
-         */
+      * The service provider name placed in the serviceDescriptor in the Service Description Table. Maximum length is 256 characters.
+      */
     var ServiceProviderName: js.UndefOr[__stringMin1Max256] = js.undefined
   }
   
-  
   trait DvbSubDestinationSettings extends js.Object {
     /**
-         * If no explicit xPosition or yPosition is provided, setting alignment to centered will place the captions at the bottom center of the output. Similarly, setting a left alignment will align captions to the bottom left of the output. If x and y positions are given in conjunction with the alignment parameter, the font will be justified (either left or centered) relative to those coordinates. Selecting "smart" justification will left-justify live subtitles and center-justify pre-recorded subtitles.  This option is not valid for source captions that are STL or 608/embedded.  These source settings are already pre-defined by the caption stream.  All burn-in and DVB-Sub font settings must match.
-         */
+      * If no explicit xPosition or yPosition is provided, setting alignment to centered will place the captions at the bottom center of the output. Similarly, setting a left alignment will align captions to the bottom left of the output. If x and y positions are given in conjunction with the alignment parameter, the font will be justified (either left or centered) relative to those coordinates. Selecting "smart" justification will left-justify live subtitles and center-justify pre-recorded subtitles.  This option is not valid for source captions that are STL or 608/embedded.  These source settings are already pre-defined by the caption stream.  All burn-in and DVB-Sub font settings must match.
+      */
     var Alignment: js.UndefOr[DvbSubDestinationAlignment] = js.undefined
     /**
-         * Specifies the color of the rectangle behind the captions.  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the color of the rectangle behind the captions.  All burn-in and DVB-Sub font settings must match.
+      */
     var BackgroundColor: js.UndefOr[DvbSubDestinationBackgroundColor] = js.undefined
     /**
-         * Specifies the opacity of the background rectangle. 255 is opaque; 0 is transparent. Leaving this parameter blank is equivalent to setting it to 0 (transparent).  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the opacity of the background rectangle. 255 is opaque; 0 is transparent. Leaving this parameter blank is equivalent to setting it to 0 (transparent).  All burn-in and DVB-Sub font settings must match.
+      */
     var BackgroundOpacity: js.UndefOr[__integerMin0Max255] = js.undefined
     /**
-         * External font file used for caption burn-in. File extension must be 'ttf' or 'tte'.  Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts.  All burn-in and DVB-Sub font settings must match.
-         */
+      * External font file used for caption burn-in. File extension must be 'ttf' or 'tte'.  Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts.  All burn-in and DVB-Sub font settings must match.
+      */
     var Font: js.UndefOr[InputLocation] = js.undefined
     /**
-         * Specifies the color of the burned-in captions.  This option is not valid for source captions that are STL, 608/embedded or teletext.  These source settings are already pre-defined by the caption stream.  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the color of the burned-in captions.  This option is not valid for source captions that are STL, 608/embedded or teletext.  These source settings are already pre-defined by the caption stream.  All burn-in and DVB-Sub font settings must match.
+      */
     var FontColor: js.UndefOr[DvbSubDestinationFontColor] = js.undefined
     /**
-         * Specifies the opacity of the burned-in captions. 255 is opaque; 0 is transparent.  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the opacity of the burned-in captions. 255 is opaque; 0 is transparent.  All burn-in and DVB-Sub font settings must match.
+      */
     var FontOpacity: js.UndefOr[__integerMin0Max255] = js.undefined
     /**
-         * Font resolution in DPI (dots per inch); default is 96 dpi.  All burn-in and DVB-Sub font settings must match.
-         */
+      * Font resolution in DPI (dots per inch); default is 96 dpi.  All burn-in and DVB-Sub font settings must match.
+      */
     var FontResolution: js.UndefOr[__integerMin96Max600] = js.undefined
     /**
-         * When set to auto fontSize will scale depending on the size of the output.  Giving a positive integer will specify the exact font size in points.  All burn-in and DVB-Sub font settings must match.
-         */
+      * When set to auto fontSize will scale depending on the size of the output.  Giving a positive integer will specify the exact font size in points.  All burn-in and DVB-Sub font settings must match.
+      */
     var FontSize: js.UndefOr[__string] = js.undefined
     /**
-         * Specifies font outline color. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies font outline color. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.
+      */
     var OutlineColor: js.UndefOr[DvbSubDestinationOutlineColor] = js.undefined
     /**
-         * Specifies font outline size in pixels. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies font outline size in pixels. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.
+      */
     var OutlineSize: js.UndefOr[__integerMin0Max10] = js.undefined
     /**
-         * Specifies the color of the shadow cast by the captions.  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the color of the shadow cast by the captions.  All burn-in and DVB-Sub font settings must match.
+      */
     var ShadowColor: js.UndefOr[DvbSubDestinationShadowColor] = js.undefined
     /**
-         * Specifies the opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter blank is equivalent to setting it to 0 (transparent).  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter blank is equivalent to setting it to 0 (transparent).  All burn-in and DVB-Sub font settings must match.
+      */
     var ShadowOpacity: js.UndefOr[__integerMin0Max255] = js.undefined
     /**
-         * Specifies the horizontal offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels to the left.  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the horizontal offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels to the left.  All burn-in and DVB-Sub font settings must match.
+      */
     var ShadowXOffset: js.UndefOr[__integer] = js.undefined
     /**
-         * Specifies the vertical offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels above the text.  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the vertical offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels above the text.  All burn-in and DVB-Sub font settings must match.
+      */
     var ShadowYOffset: js.UndefOr[__integer] = js.undefined
     /**
-         * Controls whether a fixed grid size will be used to generate the output subtitles bitmap. Only applicable for Teletext inputs and DVB-Sub/Burn-in outputs.
-         */
+      * Controls whether a fixed grid size will be used to generate the output subtitles bitmap. Only applicable for Teletext inputs and DVB-Sub/Burn-in outputs.
+      */
     var TeletextGridControl: js.UndefOr[DvbSubDestinationTeletextGridControl] = js.undefined
     /**
-         * Specifies the horizontal position of the caption relative to the left side of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the left of the output. If no explicit xPosition is provided, the horizontal caption position will be determined by the alignment parameter.  This option is not valid for source captions that are STL, 608/embedded or teletext. These source settings are already pre-defined by the caption stream.  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the horizontal position of the caption relative to the left side of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the left of the output. If no explicit xPosition is provided, the horizontal caption position will be determined by the alignment parameter.  This option is not valid for source captions that are STL, 608/embedded or teletext. These source settings are already pre-defined by the caption stream.  All burn-in and DVB-Sub font settings must match.
+      */
     var XPosition: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * Specifies the vertical position of the caption relative to the top of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the top of the output. If no explicit yPosition is provided, the caption will be positioned towards the bottom of the output.  This option is not valid for source captions that are STL, 608/embedded or teletext.  These source settings are already pre-defined by the caption stream.  All burn-in and DVB-Sub font settings must match.
-         */
+      * Specifies the vertical position of the caption relative to the top of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the top of the output. If no explicit yPosition is provided, the caption will be positioned towards the bottom of the output.  This option is not valid for source captions that are STL, 608/embedded or teletext.  These source settings are already pre-defined by the caption stream.  All burn-in and DVB-Sub font settings must match.
+      */
     var YPosition: js.UndefOr[__integerMin0] = js.undefined
   }
   
-  
   trait DvbSubSourceSettings extends js.Object {
     /**
-         * When using DVB-Sub with Burn-In or SMPTE-TT, use this PID for the source content. Unused for DVB-Sub passthrough. All DVB-Sub content is passed through, regardless of selectors.
-         */
+      * When using DVB-Sub with Burn-In or SMPTE-TT, use this PID for the source content. Unused for DVB-Sub passthrough. All DVB-Sub content is passed through, regardless of selectors.
+      */
     var Pid: js.UndefOr[__integerMin1] = js.undefined
   }
   
-  
   trait DvbTdtSettings extends js.Object {
     /**
-         * The number of milliseconds between instances of this table in the output transport stream.
-         */
+      * The number of milliseconds between instances of this table in the output transport stream.
+      */
     var RepInterval: js.UndefOr[__integerMin1000Max30000] = js.undefined
   }
   
-  
   trait Eac3Settings extends js.Object {
     /**
-         * When set to attenuate3Db, applies a 3 dB attenuation to the surround channels. Only used for 3/2 coding mode.
-         */
+      * When set to attenuate3Db, applies a 3 dB attenuation to the surround channels. Only used for 3/2 coding mode.
+      */
     var AttenuationControl: js.UndefOr[Eac3AttenuationControl] = js.undefined
     /**
-         * Average bitrate in bits/second. Valid bitrates depend on the coding mode.
-         */
+      * Average bitrate in bits/second. Valid bitrates depend on the coding mode.
+      */
     var Bitrate: js.UndefOr[__double] = js.undefined
     /**
-         * Specifies the bitstream mode (bsmod) for the emitted E-AC-3 stream. See ATSC A/52-2012 (Annex E) for background on these values.
-         */
+      * Specifies the bitstream mode (bsmod) for the emitted E-AC-3 stream. See ATSC A/52-2012 (Annex E) for background on these values.
+      */
     var BitstreamMode: js.UndefOr[Eac3BitstreamMode] = js.undefined
     /**
-         * Dolby Digital Plus coding mode. Determines number of channels.
-         */
+      * Dolby Digital Plus coding mode. Determines number of channels.
+      */
     var CodingMode: js.UndefOr[Eac3CodingMode] = js.undefined
     /**
-         * When set to enabled, activates a DC highpass filter for all input channels.
-         */
+      * When set to enabled, activates a DC highpass filter for all input channels.
+      */
     var DcFilter: js.UndefOr[Eac3DcFilter] = js.undefined
     /**
-         * Sets the dialnorm for the output. If blank and input audio is Dolby Digital Plus, dialnorm will be passed through.
-         */
+      * Sets the dialnorm for the output. If blank and input audio is Dolby Digital Plus, dialnorm will be passed through.
+      */
     var Dialnorm: js.UndefOr[__integerMin1Max31] = js.undefined
     /**
-         * Sets the Dolby dynamic range compression profile.
-         */
+      * Sets the Dolby dynamic range compression profile.
+      */
     var DrcLine: js.UndefOr[Eac3DrcLine] = js.undefined
     /**
-         * Sets the profile for heavy Dolby dynamic range compression, ensures that the instantaneous signal peaks do not exceed specified levels.
-         */
+      * Sets the profile for heavy Dolby dynamic range compression, ensures that the instantaneous signal peaks do not exceed specified levels.
+      */
     var DrcRf: js.UndefOr[Eac3DrcRf] = js.undefined
     /**
-         * When encoding 3/2 audio, setting to lfe enables the LFE channel
-         */
+      * When encoding 3/2 audio, setting to lfe enables the LFE channel
+      */
     var LfeControl: js.UndefOr[Eac3LfeControl] = js.undefined
     /**
-         * When set to enabled, applies a 120Hz lowpass filter to the LFE channel prior to encoding. Only valid with codingMode32 coding mode.
-         */
+      * When set to enabled, applies a 120Hz lowpass filter to the LFE channel prior to encoding. Only valid with codingMode32 coding mode.
+      */
     var LfeFilter: js.UndefOr[Eac3LfeFilter] = js.undefined
     /**
-         * Left only/Right only center mix level. Only used for 3/2 coding mode.
-         */
+      * Left only/Right only center mix level. Only used for 3/2 coding mode.
+      */
     var LoRoCenterMixLevel: js.UndefOr[__double] = js.undefined
     /**
-         * Left only/Right only surround mix level. Only used for 3/2 coding mode.
-         */
+      * Left only/Right only surround mix level. Only used for 3/2 coding mode.
+      */
     var LoRoSurroundMixLevel: js.UndefOr[__double] = js.undefined
     /**
-         * Left total/Right total center mix level. Only used for 3/2 coding mode.
-         */
+      * Left total/Right total center mix level. Only used for 3/2 coding mode.
+      */
     var LtRtCenterMixLevel: js.UndefOr[__double] = js.undefined
     /**
-         * Left total/Right total surround mix level. Only used for 3/2 coding mode.
-         */
+      * Left total/Right total surround mix level. Only used for 3/2 coding mode.
+      */
     var LtRtSurroundMixLevel: js.UndefOr[__double] = js.undefined
     /**
-         * When set to followInput, encoder metadata will be sourced from the DD, DD+, or DolbyE decoder that supplied this audio data. If audio was not supplied from one of these streams, then the static metadata settings will be used.
-         */
+      * When set to followInput, encoder metadata will be sourced from the DD, DD+, or DolbyE decoder that supplied this audio data. If audio was not supplied from one of these streams, then the static metadata settings will be used.
+      */
     var MetadataControl: js.UndefOr[Eac3MetadataControl] = js.undefined
     /**
-         * When set to whenPossible, input DD+ audio will be passed through if it is present on the input. This detection is dynamic over the life of the transcode. Inputs that alternate between DD+ and non-DD+ content will have a consistent DD+ output as the system alternates between passthrough and encoding.
-         */
+      * When set to whenPossible, input DD+ audio will be passed through if it is present on the input. This detection is dynamic over the life of the transcode. Inputs that alternate between DD+ and non-DD+ content will have a consistent DD+ output as the system alternates between passthrough and encoding.
+      */
     var PassthroughControl: js.UndefOr[Eac3PassthroughControl] = js.undefined
     /**
-         * When set to shift90Degrees, applies a 90-degree phase shift to the surround channels. Only used for 3/2 coding mode.
-         */
+      * When set to shift90Degrees, applies a 90-degree phase shift to the surround channels. Only used for 3/2 coding mode.
+      */
     var PhaseControl: js.UndefOr[Eac3PhaseControl] = js.undefined
     /**
-         * Stereo downmix preference. Only used for 3/2 coding mode.
-         */
+      * Stereo downmix preference. Only used for 3/2 coding mode.
+      */
     var StereoDownmix: js.UndefOr[Eac3StereoDownmix] = js.undefined
     /**
-         * When encoding 3/2 audio, sets whether an extra center back surround channel is matrix encoded into the left and right surround channels.
-         */
+      * When encoding 3/2 audio, sets whether an extra center back surround channel is matrix encoded into the left and right surround channels.
+      */
     var SurroundExMode: js.UndefOr[Eac3SurroundExMode] = js.undefined
     /**
-         * When encoding 2/0 audio, sets whether Dolby Surround is matrix encoded into the two channels.
-         */
+      * When encoding 2/0 audio, sets whether Dolby Surround is matrix encoded into the two channels.
+      */
     var SurroundMode: js.UndefOr[Eac3SurroundMode] = js.undefined
   }
   
-  
   trait EmbeddedDestinationSettings extends js.Object
-  
   
   trait EmbeddedPlusScte20DestinationSettings extends js.Object
   
-  
   trait EmbeddedSourceSettings extends js.Object {
     /**
-         * If upconvert, 608 data is both passed through via the "608 compatibility bytes" fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded.
-         */
+      * If upconvert, 608 data is both passed through via the "608 compatibility bytes" fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded.
+      */
     var Convert608To708: js.UndefOr[EmbeddedConvert608To708] = js.undefined
     /**
-         * Set to "auto" to handle streams with intermittent and/or non-aligned SCTE-20 and Embedded captions.
-         */
+      * Set to "auto" to handle streams with intermittent and/or non-aligned SCTE-20 and Embedded captions.
+      */
     var Scte20Detection: js.UndefOr[EmbeddedScte20Detection] = js.undefined
     /**
-         * Specifies the 608/708 channel number within the video track from which to extract captions. Unused for passthrough.
-         */
+      * Specifies the 608/708 channel number within the video track from which to extract captions. Unused for passthrough.
+      */
     var Source608ChannelNumber: js.UndefOr[__integerMin1Max4] = js.undefined
     /**
-         * This field is unused and deprecated.
-         */
+      * This field is unused and deprecated.
+      */
     var Source608TrackNumber: js.UndefOr[__integerMin1Max5] = js.undefined
   }
-  
   
   trait EncoderSettings extends js.Object {
     var AudioDescriptions: __listOfAudioDescription
     /**
-         * Settings for ad avail blanking.
-         */
+      * Settings for ad avail blanking.
+      */
     var AvailBlanking: js.UndefOr[AvailBlanking] = js.undefined
     /**
-         * Event-wide configuration settings for ad avail insertion.
-         */
+      * Event-wide configuration settings for ad avail insertion.
+      */
     var AvailConfiguration: js.UndefOr[AvailConfiguration] = js.undefined
     /**
-         * Settings for blackout slate.
-         */
+      * Settings for blackout slate.
+      */
     var BlackoutSlate: js.UndefOr[BlackoutSlate] = js.undefined
     /**
-         * Settings for caption decriptions
-         */
+      * Settings for caption decriptions
+      */
     var CaptionDescriptions: js.UndefOr[__listOfCaptionDescription] = js.undefined
     /**
-         * Configuration settings that apply to the event as a whole.
-         */
+      * Configuration settings that apply to the event as a whole.
+      */
     var GlobalConfiguration: js.UndefOr[GlobalConfiguration] = js.undefined
     var OutputGroups: __listOfOutputGroup
     /**
-         * Contains settings used to acquire and adjust timecode information from inputs.
-         */
+      * Contains settings used to acquire and adjust timecode information from inputs.
+      */
     var TimecodeConfig: TimecodeConfig
     var VideoDescriptions: __listOfVideoDescription
   }
   
-  
   trait FecOutputSettings extends js.Object {
     /**
-         * Parameter D from SMPTE 2022-1. The height of the FEC protection matrix.  The number of transport stream packets per column error correction packet. Must be between 4 and 20, inclusive.
-         */
+      * Parameter D from SMPTE 2022-1. The height of the FEC protection matrix.  The number of transport stream packets per column error correction packet. Must be between 4 and 20, inclusive.
+      */
     var ColumnDepth: js.UndefOr[__integerMin4Max20] = js.undefined
     /**
-         * Enables column only or column and row based FEC
-         */
+      * Enables column only or column and row based FEC
+      */
     var IncludeFec: js.UndefOr[FecOutputIncludeFec] = js.undefined
     /**
-         * Parameter L from SMPTE 2022-1. The width of the FEC protection matrix.  Must be between 1 and 20, inclusive. If only Column FEC is used, then larger values increase robustness.  If Row FEC is used, then this is the number of transport stream packets per row error correction packet, and the value must be between 4 and 20, inclusive, if includeFec is columnAndRow. If includeFec is column, this value must be 1 to 20, inclusive.
-         */
+      * Parameter L from SMPTE 2022-1. The width of the FEC protection matrix.  Must be between 1 and 20, inclusive. If only Column FEC is used, then larger values increase robustness.  If Row FEC is used, then this is the number of transport stream packets per row error correction packet, and the value must be between 4 and 20, inclusive, if includeFec is columnAndRow. If includeFec is column, this value must be 1 to 20, inclusive.
+      */
     var RowLength: js.UndefOr[__integerMin1Max20] = js.undefined
   }
   
-  
   trait FixedModeScheduleActionStartSettings extends js.Object {
     /**
-         * Start time for the action to start in the channel. (Not the time for the action to be added to the schedule: actions are always added to the schedule immediately.) UTC format: yyyy-mm-ddThh:mm:ss.nnnZ. All the letters are digits (for example, mm might be 01) except for the two constants "T" for time and "Z" for "UTC format".
-         */
+      * Start time for the action to start in the channel. (Not the time for the action to be added to the schedule: actions are always added to the schedule immediately.) UTC format: yyyy-mm-ddThh:mm:ss.nnnZ. All the letters are digits (for example, mm might be 01) except for the two constants "T" for time and "Z" for "UTC format".
+      */
     var Time: __string
   }
   
-  
   trait FollowModeScheduleActionStartSettings extends js.Object {
     /**
-         * Identifies whether this action starts relative to the start or relative to the end of the reference action.
-         */
+      * Identifies whether this action starts relative to the start or relative to the end of the reference action.
+      */
     var FollowPoint: FollowPoint
     /**
-         * The action name of another action that this one refers to.
-         */
+      * The action name of another action that this one refers to.
+      */
     var ReferenceActionName: __string
   }
   
-  
   trait GlobalConfiguration extends js.Object {
     /**
-         * Value to set the initial audio gain for the Live Event.
-         */
+      * Value to set the initial audio gain for the Live Event.
+      */
     var InitialAudioGain: js.UndefOr[__integerMinNegative60Max60] = js.undefined
     /**
-         * Indicates the action to take when the current input completes (e.g. end-of-file). When switchAndLoopInputs is configured the encoder will restart at the beginning of the first input.  When "none" is configured the encoder will transcode either black, a solid color, or a user specified slate images per the "Input Loss Behavior" configuration until the next input switch occurs (which is controlled through the Channel Schedule API).
-         */
+      * Indicates the action to take when the current input completes (e.g. end-of-file). When switchAndLoopInputs is configured the encoder will restart at the beginning of the first input.  When "none" is configured the encoder will transcode either black, a solid color, or a user specified slate images per the "Input Loss Behavior" configuration until the next input switch occurs (which is controlled through the Channel Schedule API).
+      */
     var InputEndAction: js.UndefOr[GlobalConfigurationInputEndAction] = js.undefined
     /**
-         * Settings for system actions when input is lost.
-         */
+      * Settings for system actions when input is lost.
+      */
     var InputLossBehavior: js.UndefOr[InputLossBehavior] = js.undefined
     /**
-         * Indicates whether the rate of frames emitted by the Live encoder should be paced by its system clock (which optionally may be locked to another source via NTP) or should be locked to the clock of the source that is providing the input stream.
-         */
+      * Indicates whether the rate of frames emitted by the Live encoder should be paced by its system clock (which optionally may be locked to another source via NTP) or should be locked to the clock of the source that is providing the input stream.
+      */
     var OutputTimingSource: js.UndefOr[GlobalConfigurationOutputTimingSource] = js.undefined
     /**
-         * Adjusts video input buffer for streams with very low video framerates. This is commonly set to enabled for music channels with less than one video frame per second.
-         */
+      * Adjusts video input buffer for streams with very low video framerates. This is commonly set to enabled for music channels with less than one video frame per second.
+      */
     var SupportLowFramerateInputs: js.UndefOr[GlobalConfigurationLowFramerateInputs] = js.undefined
   }
   
-  
   trait H264Settings extends js.Object {
     /**
-         * Adaptive quantization. Allows intra-frame quantizers to vary to improve visual quality.
-         */
+      * Adaptive quantization. Allows intra-frame quantizers to vary to improve visual quality.
+      */
     var AdaptiveQuantization: js.UndefOr[H264AdaptiveQuantization] = js.undefined
     /**
-         * Indicates that AFD values will be written into the output stream.  If afdSignaling is "auto", the system will try to preserve the input AFD value (in cases where multiple AFD values are valid). If set to "fixed", the AFD value will be the value configured in the fixedAfd parameter.
-         */
+      * Indicates that AFD values will be written into the output stream.  If afdSignaling is "auto", the system will try to preserve the input AFD value (in cases where multiple AFD values are valid). If set to "fixed", the AFD value will be the value configured in the fixedAfd parameter.
+      */
     var AfdSignaling: js.UndefOr[AfdSignaling] = js.undefined
     /**
-         * Average bitrate in bits/second. Required when the rate control mode is VBR or CBR. Not used for QVBR. In an MS Smooth output group, each output must have a unique value when its bitrate is rounded down to the nearest multiple of 1000.
-         */
+      * Average bitrate in bits/second. Required when the rate control mode is VBR or CBR. Not used for QVBR. In an MS Smooth output group, each output must have a unique value when its bitrate is rounded down to the nearest multiple of 1000.
+      */
     var Bitrate: js.UndefOr[__integerMin1000] = js.undefined
     /**
-         * Percentage of the buffer that should initially be filled (HRD buffer model).
-         */
+      * Percentage of the buffer that should initially be filled (HRD buffer model).
+      */
     var BufFillPct: js.UndefOr[__integerMin0Max100] = js.undefined
     /**
-         * Size of buffer (HRD buffer model) in bits/second.
-         */
+      * Size of buffer (HRD buffer model) in bits/second.
+      */
     var BufSize: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * Includes colorspace metadata in the output.
-         */
+      * Includes colorspace metadata in the output.
+      */
     var ColorMetadata: js.UndefOr[H264ColorMetadata] = js.undefined
     /**
-         * Entropy encoding mode.  Use cabac (must be in Main or High profile) or cavlc.
-         */
+      * Entropy encoding mode.  Use cabac (must be in Main or High profile) or cavlc.
+      */
     var EntropyEncoding: js.UndefOr[H264EntropyEncoding] = js.undefined
     /**
-         * Four bit AFD value to write on all frames of video in the output stream. Only valid when afdSignaling is set to 'Fixed'.
-         */
+      * Four bit AFD value to write on all frames of video in the output stream. Only valid when afdSignaling is set to 'Fixed'.
+      */
     var FixedAfd: js.UndefOr[FixedAfd] = js.undefined
     /**
-         * If set to enabled, adjust quantization within each frame to reduce flicker or 'pop' on I-frames.
-         */
+      * If set to enabled, adjust quantization within each frame to reduce flicker or 'pop' on I-frames.
+      */
     var FlickerAq: js.UndefOr[H264FlickerAq] = js.undefined
     /**
-         * This field indicates how the output video frame rate is specified.  If "specified" is selected then the output video frame rate is determined by framerateNumerator and framerateDenominator, else if "initializeFromSource" is selected then the output video frame rate will be set equal to the input video frame rate of the first input.
-         */
+      * This field indicates how the output video frame rate is specified.  If "specified" is selected then the output video frame rate is determined by framerateNumerator and framerateDenominator, else if "initializeFromSource" is selected then the output video frame rate will be set equal to the input video frame rate of the first input.
+      */
     var FramerateControl: js.UndefOr[H264FramerateControl] = js.undefined
     /**
-         * Framerate denominator.
-         */
+      * Framerate denominator.
+      */
     var FramerateDenominator: js.UndefOr[__integer] = js.undefined
     /**
-         * Framerate numerator - framerate is a fraction, e.g. 24000 / 1001 = 23.976 fps.
-         */
+      * Framerate numerator - framerate is a fraction, e.g. 24000 / 1001 = 23.976 fps.
+      */
     var FramerateNumerator: js.UndefOr[__integer] = js.undefined
     /**
-         * Documentation update needed
-         */
+      * Documentation update needed
+      */
     var GopBReference: js.UndefOr[H264GopBReference] = js.undefined
     /**
-         * Frequency of closed GOPs. In streaming applications, it is recommended that this be set to 1 so a decoder joining mid-stream will receive an IDR frame as quickly as possible. Setting this value to 0 will break output segmenting.
-         */
+      * Frequency of closed GOPs. In streaming applications, it is recommended that this be set to 1 so a decoder joining mid-stream will receive an IDR frame as quickly as possible. Setting this value to 0 will break output segmenting.
+      */
     var GopClosedCadence: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * Number of B-frames between reference frames.
-         */
+      * Number of B-frames between reference frames.
+      */
     var GopNumBFrames: js.UndefOr[__integerMin0Max7] = js.undefined
     /**
-         * GOP size (keyframe interval) in units of either frames or seconds per gopSizeUnits. Must be greater than zero.
-         */
+      * GOP size (keyframe interval) in units of either frames or seconds per gopSizeUnits. Must be greater than zero.
+      */
     var GopSize: js.UndefOr[__doubleMin1] = js.undefined
     /**
-         * Indicates if the gopSize is specified in frames or seconds. If seconds the system will convert the gopSize into a frame count at run time.
-         */
+      * Indicates if the gopSize is specified in frames or seconds. If seconds the system will convert the gopSize into a frame count at run time.
+      */
     var GopSizeUnits: js.UndefOr[H264GopSizeUnits] = js.undefined
     /**
-         * H.264 Level.
-         */
+      * H.264 Level.
+      */
     var Level: js.UndefOr[H264Level] = js.undefined
     /**
-         * Amount of lookahead. A value of low can decrease latency and memory usage, while high can produce better quality for certain content.
-         */
+      * Amount of lookahead. A value of low can decrease latency and memory usage, while high can produce better quality for certain content.
+      */
     var LookAheadRateControl: js.UndefOr[H264LookAheadRateControl] = js.undefined
     /**
-         * For QVBR: See the tooltip for Quality level 
-    
+      * For QVBR: See the tooltip for Quality level 
     For VBR: Set the maximum bitrate in order to accommodate expected spikes in the complexity of the video.
-         */
+      */
     var MaxBitrate: js.UndefOr[__integerMin1000] = js.undefined
     /**
-         * Only meaningful if sceneChangeDetect is set to enabled.  Enforces separation between repeated (cadence) I-frames and I-frames inserted by Scene Change Detection. If a scene change I-frame is within I-interval frames of a cadence I-frame, the GOP is shrunk and/or stretched to the scene change I-frame. GOP stretch requires enabling lookahead as well as setting I-interval. The normal cadence resumes for the next GOP. Note: Maximum GOP stretch = GOP size + Min-I-interval - 1
-         */
+      * Only meaningful if sceneChangeDetect is set to enabled.  Enforces separation between repeated (cadence) I-frames and I-frames inserted by Scene Change Detection. If a scene change I-frame is within I-interval frames of a cadence I-frame, the GOP is shrunk and/or stretched to the scene change I-frame. GOP stretch requires enabling lookahead as well as setting I-interval. The normal cadence resumes for the next GOP. Note: Maximum GOP stretch = GOP size + Min-I-interval - 1
+      */
     var MinIInterval: js.UndefOr[__integerMin0Max30] = js.undefined
     /**
-         * Number of reference frames to use. The encoder may use more than requested if using B-frames and/or interlaced encoding.
-         */
+      * Number of reference frames to use. The encoder may use more than requested if using B-frames and/or interlaced encoding.
+      */
     var NumRefFrames: js.UndefOr[__integerMin1Max6] = js.undefined
     /**
-         * This field indicates how the output pixel aspect ratio is specified.  If "specified" is selected then the output video pixel aspect ratio is determined by parNumerator and parDenominator, else if "initializeFromSource" is selected then the output pixsel aspect ratio will be set equal to the input video pixel aspect ratio of the first input.
-         */
+      * This field indicates how the output pixel aspect ratio is specified.  If "specified" is selected then the output video pixel aspect ratio is determined by parNumerator and parDenominator, else if "initializeFromSource" is selected then the output pixsel aspect ratio will be set equal to the input video pixel aspect ratio of the first input.
+      */
     var ParControl: js.UndefOr[H264ParControl] = js.undefined
     /**
-         * Pixel Aspect Ratio denominator.
-         */
+      * Pixel Aspect Ratio denominator.
+      */
     var ParDenominator: js.UndefOr[__integerMin1] = js.undefined
     /**
-         * Pixel Aspect Ratio numerator.
-         */
+      * Pixel Aspect Ratio numerator.
+      */
     var ParNumerator: js.UndefOr[__integer] = js.undefined
     /**
-         * H.264 Profile.
-         */
+      * H.264 Profile.
+      */
     var Profile: js.UndefOr[H264Profile] = js.undefined
     /**
-         * Controls the target quality for the video encode. Applies only when the rate control mode is QVBR. Set values for the QVBR quality level field and Max bitrate field that suit your most important viewing devices. Recommended values are:
+      * Controls the target quality for the video encode. Applies only when the rate control mode is QVBR. Set values for the QVBR quality level field and Max bitrate field that suit your most important viewing devices. Recommended values are:
     - Primary screen: Quality level: 8 to 10. Max bitrate: 4M
     - PC or tablet: Quality level: 7. Max bitrate: 1.5M to 3M
     - Smartphone: Quality level: 6. Max bitrate: 1M to 1.5M
-         */
+      */
     var QvbrQualityLevel: js.UndefOr[__integerMin1Max10] = js.undefined
     /**
-         * Rate control mode. 
-    
+      * Rate control mode. 
     QVBR: Quality will match the specified quality level except when it is constrained by the
     maximum bitrate.  Recommended if you or your viewers pay for bandwidth.
-    
     VBR: Quality and bitrate vary, depending on the video complexity. Recommended instead of QVBR
     if you want to maintain a specific average bitrate over the duration of the channel.
-    
     CBR: Quality varies, depending on the video complexity. Recommended only if you distribute
     your assets to devices that cannot handle variable bitrates.
-         */
+      */
     var RateControlMode: js.UndefOr[H264RateControlMode] = js.undefined
     /**
-         * Sets the scan type of the output to progressive or top-field-first interlaced.
-         */
+      * Sets the scan type of the output to progressive or top-field-first interlaced.
+      */
     var ScanType: js.UndefOr[H264ScanType] = js.undefined
     /**
-         * Scene change detection.
-    
+      * Scene change detection.
     - On: inserts I-frames when scene change is detected.
     - Off: does not force an I-frame when scene change is detected.
-         */
+      */
     var SceneChangeDetect: js.UndefOr[H264SceneChangeDetect] = js.undefined
     /**
-         * Number of slices per picture. Must be less than or equal to the number of macroblock rows for progressive pictures, and less than or equal to half the number of macroblock rows for interlaced pictures.
+      * Number of slices per picture. Must be less than or equal to the number of macroblock rows for progressive pictures, and less than or equal to half the number of macroblock rows for interlaced pictures.
     This field is optional; when no value is specified the encoder will choose the number of slices based on encode resolution.
-         */
+      */
     var Slices: js.UndefOr[__integerMin1Max32] = js.undefined
     /**
-         * Softness. Selects quantizer matrix, larger values reduce high-frequency content in the encoded image.
-         */
+      * Softness. Selects quantizer matrix, larger values reduce high-frequency content in the encoded image.
+      */
     var Softness: js.UndefOr[__integerMin0Max128] = js.undefined
     /**
-         * If set to enabled, adjust quantization within each frame based on spatial variation of content complexity.
-         */
+      * If set to enabled, adjust quantization within each frame based on spatial variation of content complexity.
+      */
     var SpatialAq: js.UndefOr[H264SpatialAq] = js.undefined
     /**
-         * If set to fixed, use gopNumBFrames B-frames per sub-GOP. If set to dynamic, optimize the number of B-frames used for each sub-GOP to improve visual quality.
-         */
+      * If set to fixed, use gopNumBFrames B-frames per sub-GOP. If set to dynamic, optimize the number of B-frames used for each sub-GOP to improve visual quality.
+      */
     var SubgopLength: js.UndefOr[H264SubGopLength] = js.undefined
     /**
-         * Produces a bitstream compliant with SMPTE RP-2027.
-         */
+      * Produces a bitstream compliant with SMPTE RP-2027.
+      */
     var Syntax: js.UndefOr[H264Syntax] = js.undefined
     /**
-         * If set to enabled, adjust quantization within each frame based on temporal variation of content complexity.
-         */
+      * If set to enabled, adjust quantization within each frame based on temporal variation of content complexity.
+      */
     var TemporalAq: js.UndefOr[H264TemporalAq] = js.undefined
     /**
-         * Determines how timecodes should be inserted into the video elementary stream.
+      * Determines how timecodes should be inserted into the video elementary stream.
     - 'disabled': Do not include timecodes
     - 'picTimingSei': Pass through picture timing SEI messages from the source specified in Timecode Config
-         */
+      */
     var TimecodeInsertion: js.UndefOr[H264TimecodeInsertionBehavior] = js.undefined
   }
   
-  
   trait HlsAkamaiSettings extends js.Object {
     /**
-         * Number of seconds to wait before retrying connection to the CDN if the connection is lost.
-         */
+      * Number of seconds to wait before retrying connection to the CDN if the connection is lost.
+      */
     var ConnectionRetryInterval: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * Size in seconds of file cache for streaming outputs.
-         */
+      * Size in seconds of file cache for streaming outputs.
+      */
     var FilecacheDuration: js.UndefOr[__integerMin0Max600] = js.undefined
     /**
-         * Specify whether or not to use chunked transfer encoding to Akamai. User should contact Akamai to enable this feature.
-         */
+      * Specify whether or not to use chunked transfer encoding to Akamai. User should contact Akamai to enable this feature.
+      */
     var HttpTransferMode: js.UndefOr[HlsAkamaiHttpTransferMode] = js.undefined
     /**
-         * Number of retry attempts that will be made before the Live Event is put into an error state.
-         */
+      * Number of retry attempts that will be made before the Live Event is put into an error state.
+      */
     var NumRetries: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * If a streaming output fails, number of seconds to wait until a restart is initiated. A value of 0 means never restart.
-         */
+      * If a streaming output fails, number of seconds to wait until a restart is initiated. A value of 0 means never restart.
+      */
     var RestartDelay: js.UndefOr[__integerMin0Max15] = js.undefined
     /**
-         * Salt for authenticated Akamai.
-         */
+      * Salt for authenticated Akamai.
+      */
     var Salt: js.UndefOr[__string] = js.undefined
     /**
-         * Token parameter for authenticated akamai. If not specified, _gda_ is used.
-         */
+      * Token parameter for authenticated akamai. If not specified, _gda_ is used.
+      */
     var Token: js.UndefOr[__string] = js.undefined
   }
   
-  
   trait HlsBasicPutSettings extends js.Object {
     /**
-         * Number of seconds to wait before retrying connection to the CDN if the connection is lost.
-         */
+      * Number of seconds to wait before retrying connection to the CDN if the connection is lost.
+      */
     var ConnectionRetryInterval: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * Size in seconds of file cache for streaming outputs.
-         */
+      * Size in seconds of file cache for streaming outputs.
+      */
     var FilecacheDuration: js.UndefOr[__integerMin0Max600] = js.undefined
     /**
-         * Number of retry attempts that will be made before the Live Event is put into an error state.
-         */
+      * Number of retry attempts that will be made before the Live Event is put into an error state.
+      */
     var NumRetries: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * If a streaming output fails, number of seconds to wait until a restart is initiated. A value of 0 means never restart.
-         */
+      * If a streaming output fails, number of seconds to wait until a restart is initiated. A value of 0 means never restart.
+      */
     var RestartDelay: js.UndefOr[__integerMin0Max15] = js.undefined
   }
-  
   
   trait HlsCdnSettings extends js.Object {
     var HlsAkamaiSettings: js.UndefOr[HlsAkamaiSettings] = js.undefined
@@ -1749,1205 +1651,1141 @@ object MediaLiveNs extends js.Object {
     var HlsWebdavSettings: js.UndefOr[HlsWebdavSettings] = js.undefined
   }
   
-  
   trait HlsGroupSettings extends js.Object {
     /**
-         * Choose one or more ad marker types to pass SCTE35 signals through to this group of Apple HLS outputs.
-         */
+      * Choose one or more ad marker types to pass SCTE35 signals through to this group of Apple HLS outputs.
+      */
     var AdMarkers: js.UndefOr[__listOfHlsAdMarkers] = js.undefined
     /**
-         * A partial URI prefix that will be prepended to each output in the media .m3u8 file. Can be used if base manifest is delivered from a different URL than the main .m3u8 file.
-         */
+      * A partial URI prefix that will be prepended to each output in the media .m3u8 file. Can be used if base manifest is delivered from a different URL than the main .m3u8 file.
+      */
     var BaseUrlContent: js.UndefOr[__string] = js.undefined
     /**
-         * A partial URI prefix that will be prepended to each output in the media .m3u8 file. Can be used if base manifest is delivered from a different URL than the main .m3u8 file.
-         */
+      * A partial URI prefix that will be prepended to each output in the media .m3u8 file. Can be used if base manifest is delivered from a different URL than the main .m3u8 file.
+      */
     var BaseUrlManifest: js.UndefOr[__string] = js.undefined
     /**
-         * Mapping of up to 4 caption channels to caption languages.  Is only meaningful if captionLanguageSetting is set to "insert".
-         */
+      * Mapping of up to 4 caption channels to caption languages.  Is only meaningful if captionLanguageSetting is set to "insert".
+      */
     var CaptionLanguageMappings: js.UndefOr[__listOfCaptionLanguageMapping] = js.undefined
     /**
-         * Applies only to 608 Embedded output captions.
+      * Applies only to 608 Embedded output captions.
     insert: Include CLOSED-CAPTIONS lines in the manifest. Specify at least one language in the CC1 Language Code field. One CLOSED-CAPTION line is added for each Language Code you specify. Make sure to specify the languages in the order in which they appear in the original source (if the source is embedded format) or the order of the caption selectors (if the source is other than embedded). Otherwise, languages in the manifest will not match up properly with the output captions.
     none: Include CLOSED-CAPTIONS=NONE line in the manifest.
     omit: Omit any CLOSED-CAPTIONS line from the manifest.
-         */
+      */
     var CaptionLanguageSetting: js.UndefOr[HlsCaptionLanguageSetting] = js.undefined
     /**
-         * When set to "disabled", sets the #EXT-X-ALLOW-CACHE:no tag in the manifest, which prevents clients from saving media segments for later replay.
-         */
+      * When set to "disabled", sets the #EXT-X-ALLOW-CACHE:no tag in the manifest, which prevents clients from saving media segments for later replay.
+      */
     var ClientCache: js.UndefOr[HlsClientCache] = js.undefined
     /**
-         * Specification to use (RFC-6381 or the default RFC-4281) during m3u8 playlist generation.
-         */
+      * Specification to use (RFC-6381 or the default RFC-4281) during m3u8 playlist generation.
+      */
     var CodecSpecification: js.UndefOr[HlsCodecSpecification] = js.undefined
     /**
-         * For use with encryptionType. This is a 128-bit, 16-byte hex value represented by a 32-character text string. If ivSource is set to "explicit" then this parameter is required and is used as the IV for encryption.
-         */
+      * For use with encryptionType. This is a 128-bit, 16-byte hex value represented by a 32-character text string. If ivSource is set to "explicit" then this parameter is required and is used as the IV for encryption.
+      */
     var ConstantIv: js.UndefOr[__stringMin32Max32] = js.undefined
     /**
-         * A directory or HTTP destination for the HLS segments, manifest files, and encryption keys (if enabled).
-         */
+      * A directory or HTTP destination for the HLS segments, manifest files, and encryption keys (if enabled).
+      */
     var Destination: OutputLocationRef
     /**
-         * Place segments in subdirectories.
-         */
+      * Place segments in subdirectories.
+      */
     var DirectoryStructure: js.UndefOr[HlsDirectoryStructure] = js.undefined
     /**
-         * Encrypts the segments with the given encryption scheme.  Exclude this parameter if no encryption is desired.
-         */
+      * Encrypts the segments with the given encryption scheme.  Exclude this parameter if no encryption is desired.
+      */
     var EncryptionType: js.UndefOr[HlsEncryptionType] = js.undefined
     /**
-         * Parameters that control interactions with the CDN.
-         */
+      * Parameters that control interactions with the CDN.
+      */
     var HlsCdnSettings: js.UndefOr[HlsCdnSettings] = js.undefined
     /**
-         * If mode is "live", the number of segments to retain in the manifest (.m3u8) file. This number must be less than or equal to keepSegments. If mode is "vod", this parameter has no effect.
-         */
+      * If mode is "live", the number of segments to retain in the manifest (.m3u8) file. This number must be less than or equal to keepSegments. If mode is "vod", this parameter has no effect.
+      */
     var IndexNSegments: js.UndefOr[__integerMin3] = js.undefined
     /**
-         * Parameter that control output group behavior on input loss.
-         */
+      * Parameter that control output group behavior on input loss.
+      */
     var InputLossAction: js.UndefOr[InputLossActionForHlsOut] = js.undefined
     /**
-         * For use with encryptionType. The IV (Initialization Vector) is a 128-bit number used in conjunction with the key for encrypting blocks. If set to "include", IV is listed in the manifest, otherwise the IV is not in the manifest.
-         */
+      * For use with encryptionType. The IV (Initialization Vector) is a 128-bit number used in conjunction with the key for encrypting blocks. If set to "include", IV is listed in the manifest, otherwise the IV is not in the manifest.
+      */
     var IvInManifest: js.UndefOr[HlsIvInManifest] = js.undefined
     /**
-         * For use with encryptionType. The IV (Initialization Vector) is a 128-bit number used in conjunction with the key for encrypting blocks. If this setting is "followsSegmentNumber", it will cause the IV to change every segment (to match the segment number). If this is set to "explicit", you must enter a constantIv value.
-         */
+      * For use with encryptionType. The IV (Initialization Vector) is a 128-bit number used in conjunction with the key for encrypting blocks. If this setting is "followsSegmentNumber", it will cause the IV to change every segment (to match the segment number). If this is set to "explicit", you must enter a constantIv value.
+      */
     var IvSource: js.UndefOr[HlsIvSource] = js.undefined
     /**
-         * If mode is "live", the number of TS segments to retain in the destination directory. If mode is "vod", this parameter has no effect.
-         */
+      * If mode is "live", the number of TS segments to retain in the destination directory. If mode is "vod", this parameter has no effect.
+      */
     var KeepSegments: js.UndefOr[__integerMin1] = js.undefined
     /**
-         * The value specifies how the key is represented in the resource identified by the URI.  If parameter is absent, an implicit value of "identity" is used.  A reverse DNS string can also be given.
-         */
+      * The value specifies how the key is represented in the resource identified by the URI.  If parameter is absent, an implicit value of "identity" is used.  A reverse DNS string can also be given.
+      */
     var KeyFormat: js.UndefOr[__string] = js.undefined
     /**
-         * Either a single positive integer version value or a slash delimited list of version values (1/2/3).
-         */
+      * Either a single positive integer version value or a slash delimited list of version values (1/2/3).
+      */
     var KeyFormatVersions: js.UndefOr[__string] = js.undefined
     /**
-         * The key provider settings.
-         */
+      * The key provider settings.
+      */
     var KeyProviderSettings: js.UndefOr[KeyProviderSettings] = js.undefined
     /**
-         * When set to gzip, compresses HLS playlist.
-         */
+      * When set to gzip, compresses HLS playlist.
+      */
     var ManifestCompression: js.UndefOr[HlsManifestCompression] = js.undefined
     /**
-         * Indicates whether the output manifest should use floating point or integer values for segment duration.
-         */
+      * Indicates whether the output manifest should use floating point or integer values for segment duration.
+      */
     var ManifestDurationFormat: js.UndefOr[HlsManifestDurationFormat] = js.undefined
     /**
-         * When set, minimumSegmentLength is enforced by looking ahead and back within the specified range for a nearby avail and extending the segment size if needed.
-         */
+      * When set, minimumSegmentLength is enforced by looking ahead and back within the specified range for a nearby avail and extending the segment size if needed.
+      */
     var MinSegmentLength: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * If "vod", all segments are indexed and kept permanently in the destination and manifest. If "live", only the number segments specified in keepSegments and indexNSegments are kept; newer segments replace older segments, which may prevent players from rewinding all the way to the beginning of the event.
-    
+      * If "vod", all segments are indexed and kept permanently in the destination and manifest. If "live", only the number segments specified in keepSegments and indexNSegments are kept; newer segments replace older segments, which may prevent players from rewinding all the way to the beginning of the event.
     VOD mode uses HLS EXT-X-PLAYLIST-TYPE of EVENT while the channel is running, converting it to a "VOD" type manifest on completion of the stream.
-         */
+      */
     var Mode: js.UndefOr[HlsMode] = js.undefined
     /**
-         * Generates the .m3u8 playlist file for this HLS output group. The segmentsOnly option will output segments without the .m3u8 file.
-         */
+      * Generates the .m3u8 playlist file for this HLS output group. The segmentsOnly option will output segments without the .m3u8 file.
+      */
     var OutputSelection: js.UndefOr[HlsOutputSelection] = js.undefined
     /**
-         * Includes or excludes EXT-X-PROGRAM-DATE-TIME tag in .m3u8 manifest files. The value is calculated as follows: either the program date and time are initialized using the input timecode source, or the time is initialized using the input timecode source and the date is initialized using the timestampOffset.
-         */
+      * Includes or excludes EXT-X-PROGRAM-DATE-TIME tag in .m3u8 manifest files. The value is calculated as follows: either the program date and time are initialized using the input timecode source, or the time is initialized using the input timecode source and the date is initialized using the timestampOffset.
+      */
     var ProgramDateTime: js.UndefOr[HlsProgramDateTime] = js.undefined
     /**
-         * Period of insertion of EXT-X-PROGRAM-DATE-TIME entry, in seconds.
-         */
+      * Period of insertion of EXT-X-PROGRAM-DATE-TIME entry, in seconds.
+      */
     var ProgramDateTimePeriod: js.UndefOr[__integerMin0Max3600] = js.undefined
     /**
-         * When set to "enabled", includes the media playlists from both pipelines in the master manifest (.m3u8) file.
-         */
+      * When set to "enabled", includes the media playlists from both pipelines in the master manifest (.m3u8) file.
+      */
     var RedundantManifest: js.UndefOr[HlsRedundantManifest] = js.undefined
     /**
-         * Length of MPEG-2 Transport Stream segments to create (in seconds). Note that segments will end on the next keyframe after this number of seconds, so actual segment length may be longer.
-         */
+      * Length of MPEG-2 Transport Stream segments to create (in seconds). Note that segments will end on the next keyframe after this number of seconds, so actual segment length may be longer.
+      */
     var SegmentLength: js.UndefOr[__integerMin1] = js.undefined
     /**
-         * useInputSegmentation has been deprecated. The configured segment size is always used.
-         */
+      * useInputSegmentation has been deprecated. The configured segment size is always used.
+      */
     var SegmentationMode: js.UndefOr[HlsSegmentationMode] = js.undefined
     /**
-         * Number of segments to write to a subdirectory before starting a new one. directoryStructure must be subdirectoryPerStream for this setting to have an effect.
-         */
+      * Number of segments to write to a subdirectory before starting a new one. directoryStructure must be subdirectoryPerStream for this setting to have an effect.
+      */
     var SegmentsPerSubdirectory: js.UndefOr[__integerMin1] = js.undefined
     /**
-         * Include or exclude RESOLUTION attribute for video in EXT-X-STREAM-INF tag of variant manifest.
-         */
+      * Include or exclude RESOLUTION attribute for video in EXT-X-STREAM-INF tag of variant manifest.
+      */
     var StreamInfResolution: js.UndefOr[HlsStreamInfResolution] = js.undefined
     /**
-         * Indicates ID3 frame that has the timecode.
-         */
+      * Indicates ID3 frame that has the timecode.
+      */
     var TimedMetadataId3Frame: js.UndefOr[HlsTimedMetadataId3Frame] = js.undefined
     /**
-         * Timed Metadata interval in seconds.
-         */
+      * Timed Metadata interval in seconds.
+      */
     var TimedMetadataId3Period: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * Provides an extra millisecond delta offset to fine tune the timestamps.
-         */
+      * Provides an extra millisecond delta offset to fine tune the timestamps.
+      */
     var TimestampDeltaMilliseconds: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * When set to "singleFile", emits the program as a single media resource (.ts) file, and uses #EXT-X-BYTERANGE tags to index segment for playback. Playback of VOD mode content during event is not guaranteed due to HTTP server caching.
-         */
+      * When set to "singleFile", emits the program as a single media resource (.ts) file, and uses #EXT-X-BYTERANGE tags to index segment for playback. Playback of VOD mode content during event is not guaranteed due to HTTP server caching.
+      */
     var TsFileMode: js.UndefOr[HlsTsFileMode] = js.undefined
   }
   
-  
   trait HlsInputSettings extends js.Object {
     /**
-         * When specified the HLS stream with the m3u8 BANDWIDTH that most closely matches this value will be chosen, otherwise the highest bandwidth stream in the m3u8 will be chosen.  The bitrate is specified in bits per second, as in an HLS manifest.
-         */
+      * When specified the HLS stream with the m3u8 BANDWIDTH that most closely matches this value will be chosen, otherwise the highest bandwidth stream in the m3u8 will be chosen.  The bitrate is specified in bits per second, as in an HLS manifest.
+      */
     var Bandwidth: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * When specified, reading of the HLS input will begin this many buffer segments from the end (most recently written segment).  When not specified, the HLS input will begin with the first segment specified in the m3u8.
-         */
+      * When specified, reading of the HLS input will begin this many buffer segments from the end (most recently written segment).  When not specified, the HLS input will begin with the first segment specified in the m3u8.
+      */
     var BufferSegments: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * The number of consecutive times that attempts to read a manifest or segment must fail before the input is considered unavailable.
-         */
+      * The number of consecutive times that attempts to read a manifest or segment must fail before the input is considered unavailable.
+      */
     var Retries: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * The number of seconds between retries when an attempt to read a manifest or segment fails.
-         */
+      * The number of seconds between retries when an attempt to read a manifest or segment fails.
+      */
     var RetryInterval: js.UndefOr[__integerMin0] = js.undefined
   }
   
-  
   trait HlsMediaStoreSettings extends js.Object {
     /**
-         * Number of seconds to wait before retrying connection to the CDN if the connection is lost.
-         */
+      * Number of seconds to wait before retrying connection to the CDN if the connection is lost.
+      */
     var ConnectionRetryInterval: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * Size in seconds of file cache for streaming outputs.
-         */
+      * Size in seconds of file cache for streaming outputs.
+      */
     var FilecacheDuration: js.UndefOr[__integerMin0Max600] = js.undefined
     /**
-         * When set to temporal, output files are stored in non-persistent memory for faster reading and writing.
-         */
+      * When set to temporal, output files are stored in non-persistent memory for faster reading and writing.
+      */
     var MediaStoreStorageClass: js.UndefOr[HlsMediaStoreStorageClass] = js.undefined
     /**
-         * Number of retry attempts that will be made before the Live Event is put into an error state.
-         */
+      * Number of retry attempts that will be made before the Live Event is put into an error state.
+      */
     var NumRetries: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * If a streaming output fails, number of seconds to wait until a restart is initiated. A value of 0 means never restart.
-         */
+      * If a streaming output fails, number of seconds to wait until a restart is initiated. A value of 0 means never restart.
+      */
     var RestartDelay: js.UndefOr[__integerMin0Max15] = js.undefined
   }
   
-  
   trait HlsOutputSettings extends js.Object {
     /**
-         * Settings regarding the underlying stream. These settings are different for audio-only outputs.
-         */
+      * Settings regarding the underlying stream. These settings are different for audio-only outputs.
+      */
     var HlsSettings: HlsSettings
     /**
-         * String concatenated to the end of the destination filename. Accepts \"Format Identifiers\":#formatIdentifierParameters.
-         */
+      * String concatenated to the end of the destination filename. Accepts \"Format Identifiers\":#formatIdentifierParameters.
+      */
     var NameModifier: js.UndefOr[__stringMin1] = js.undefined
     /**
-         * String concatenated to end of segment filenames.
-         */
+      * String concatenated to end of segment filenames.
+      */
     var SegmentModifier: js.UndefOr[__string] = js.undefined
   }
-  
   
   trait HlsSettings extends js.Object {
     var AudioOnlyHlsSettings: js.UndefOr[AudioOnlyHlsSettings] = js.undefined
     var StandardHlsSettings: js.UndefOr[StandardHlsSettings] = js.undefined
   }
   
-  
   trait HlsTimedMetadataScheduleActionSettings extends js.Object {
     /**
-         * Base64 string formatted according to the ID3 specification: http://id3.org/id3v2.4.0-structure
-         */
+      * Base64 string formatted according to the ID3 specification: http://id3.org/id3v2.4.0-structure
+      */
     var Id3: __string
   }
   
-  
   trait HlsWebdavSettings extends js.Object {
     /**
-         * Number of seconds to wait before retrying connection to the CDN if the connection is lost.
-         */
+      * Number of seconds to wait before retrying connection to the CDN if the connection is lost.
+      */
     var ConnectionRetryInterval: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * Size in seconds of file cache for streaming outputs.
-         */
+      * Size in seconds of file cache for streaming outputs.
+      */
     var FilecacheDuration: js.UndefOr[__integerMin0Max600] = js.undefined
     /**
-         * Specify whether or not to use chunked transfer encoding to WebDAV.
-         */
+      * Specify whether or not to use chunked transfer encoding to WebDAV.
+      */
     var HttpTransferMode: js.UndefOr[HlsWebdavHttpTransferMode] = js.undefined
     /**
-         * Number of retry attempts that will be made before the Live Event is put into an error state.
-         */
+      * Number of retry attempts that will be made before the Live Event is put into an error state.
+      */
     var NumRetries: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * If a streaming output fails, number of seconds to wait until a restart is initiated. A value of 0 means never restart.
-         */
+      * If a streaming output fails, number of seconds to wait until a restart is initiated. A value of 0 means never restart.
+      */
     var RestartDelay: js.UndefOr[__integerMin0Max15] = js.undefined
   }
   
-  
   trait Input extends js.Object {
     /**
-         * The Unique ARN of the input (generated, immutable).
-         */
+      * The Unique ARN of the input (generated, immutable).
+      */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
-         * A list of channel IDs that that input is attached to (currently an input can only be attached to one channel).
-         */
+      * A list of channel IDs that that input is attached to (currently an input can only be attached to one channel).
+      */
     var AttachedChannels: js.UndefOr[__listOf__string] = js.undefined
     /**
-         * A list of the destinations of the input (PUSH-type).
-         */
+      * A list of the destinations of the input (PUSH-type).
+      */
     var Destinations: js.UndefOr[__listOfInputDestination] = js.undefined
     /**
-         * The generated ID of the input (unique for user account, immutable).
-         */
+      * The generated ID of the input (unique for user account, immutable).
+      */
     var Id: js.UndefOr[__string] = js.undefined
     /**
-         * A list of MediaConnect Flows for this input.
-         */
+      * A list of MediaConnect Flows for this input.
+      */
     var MediaConnectFlows: js.UndefOr[__listOfMediaConnectFlow] = js.undefined
     /**
-         * The user-assigned name (This is a mutable value).
-         */
+      * The user-assigned name (This is a mutable value).
+      */
     var Name: js.UndefOr[__string] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the role this input assumes during and after creation.
-         */
+      * The Amazon Resource Name (ARN) of the role this input assumes during and after creation.
+      */
     var RoleArn: js.UndefOr[__string] = js.undefined
     /**
-         * A list of IDs for all the security groups attached to the input.
-         */
+      * A list of IDs for all the security groups attached to the input.
+      */
     var SecurityGroups: js.UndefOr[__listOf__string] = js.undefined
     /**
-         * A list of the sources of the input (PULL-type).
-         */
+      * A list of the sources of the input (PULL-type).
+      */
     var Sources: js.UndefOr[__listOfInputSource] = js.undefined
     var State: js.UndefOr[InputState] = js.undefined
     var Type: js.UndefOr[InputType] = js.undefined
   }
   
-  
   trait InputAttachment extends js.Object {
     /**
-         * User-specified name for the attachment. This is required if the user wants to use this input in an input switch action.
-         */
+      * User-specified name for the attachment. This is required if the user wants to use this input in an input switch action.
+      */
     var InputAttachmentName: js.UndefOr[__string] = js.undefined
     /**
-         * The ID of the input
-         */
+      * The ID of the input
+      */
     var InputId: js.UndefOr[__string] = js.undefined
     /**
-         * Settings of an input (caption selector, etc.)
-         */
+      * Settings of an input (caption selector, etc.)
+      */
     var InputSettings: js.UndefOr[InputSettings] = js.undefined
   }
   
-  
   trait InputChannelLevel extends js.Object {
     /**
-         * Remixing value. Units are in dB and acceptable values are within the range from -60 (mute) and 6 dB.
-         */
+      * Remixing value. Units are in dB and acceptable values are within the range from -60 (mute) and 6 dB.
+      */
     var Gain: __integerMinNegative60Max6
     /**
-         * The index of the input channel used as a source.
-         */
+      * The index of the input channel used as a source.
+      */
     var InputChannel: __integerMin0Max15
   }
   
-  
   trait InputDestination extends js.Object {
     /**
-         * The system-generated static IP address of endpoint.
+      * The system-generated static IP address of endpoint.
     It remains fixed for the lifetime of the input.
-    
-         */
+      */
     var Ip: js.UndefOr[__string] = js.undefined
     /**
-         * The port number for the input.
-         */
+      * The port number for the input.
+      */
     var Port: js.UndefOr[__string] = js.undefined
     /**
-         * This represents the endpoint that the customer stream will be
+      * This represents the endpoint that the customer stream will be
     pushed to.
-    
-         */
+      */
     var Url: js.UndefOr[__string] = js.undefined
   }
-  
   
   trait InputDestinationRequest extends js.Object {
     /**
-         * A unique name for the location the RTMP stream is being pushed
+      * A unique name for the location the RTMP stream is being pushed
     to.
-    
-         */
+      */
     var StreamName: js.UndefOr[__string] = js.undefined
   }
   
-  
   trait InputLocation extends js.Object {
     /**
-         * key used to extract the password from EC2 Parameter store
-         */
+      * key used to extract the password from EC2 Parameter store
+      */
     var PasswordParam: js.UndefOr[__string] = js.undefined
     /**
-         * Uniform Resource Identifier - This should be a path to a file accessible to the Live system (eg. a http:// URI) depending on the output type. For example, a RTMP destination should have a uri simliar to: "rtmp://fmsserver/live".
-         */
+      * Uniform Resource Identifier - This should be a path to a file accessible to the Live system (eg. a http:// URI) depending on the output type. For example, a RTMP destination should have a uri simliar to: "rtmp://fmsserver/live".
+      */
     var Uri: __string
     /**
-         * Documentation update needed
-         */
+      * Documentation update needed
+      */
     var Username: js.UndefOr[__string] = js.undefined
   }
-  
   
   trait InputLossBehavior extends js.Object {
     /**
-         * Documentation update needed
-         */
+      * Documentation update needed
+      */
     var BlackFrameMsec: js.UndefOr[__integerMin0Max1000000] = js.undefined
     /**
-         * When input loss image type is "color" this field specifies the color to use. Value: 6 hex characters representing the values of RGB.
-         */
+      * When input loss image type is "color" this field specifies the color to use. Value: 6 hex characters representing the values of RGB.
+      */
     var InputLossImageColor: js.UndefOr[__stringMin6Max6] = js.undefined
     /**
-         * When input loss image type is "slate" these fields specify the parameters for accessing the slate.
-         */
+      * When input loss image type is "slate" these fields specify the parameters for accessing the slate.
+      */
     var InputLossImageSlate: js.UndefOr[InputLocation] = js.undefined
     /**
-         * Indicates whether to substitute a solid color or a slate into the output after input loss exceeds blackFrameMsec.
-         */
+      * Indicates whether to substitute a solid color or a slate into the output after input loss exceeds blackFrameMsec.
+      */
     var InputLossImageType: js.UndefOr[InputLossImageType] = js.undefined
     /**
-         * Documentation update needed
-         */
+      * Documentation update needed
+      */
     var RepeatFrameMsec: js.UndefOr[__integerMin0Max1000000] = js.undefined
   }
   
-  
   trait InputSecurityGroup extends js.Object {
     /**
-         * Unique ARN of Input Security Group
-         */
+      * Unique ARN of Input Security Group
+      */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
-         * The Id of the Input Security Group
-         */
+      * The Id of the Input Security Group
+      */
     var Id: js.UndefOr[__string] = js.undefined
     /**
-         * The list of inputs currently using this Input Security Group.
-         */
+      * The list of inputs currently using this Input Security Group.
+      */
     var Inputs: js.UndefOr[__listOf__string] = js.undefined
     /**
-         * The current state of the Input Security Group.
-         */
+      * The current state of the Input Security Group.
+      */
     var State: js.UndefOr[InputSecurityGroupState] = js.undefined
     /**
-         * Whitelist rules and their sync status
-         */
+      * Whitelist rules and their sync status
+      */
     var WhitelistRules: js.UndefOr[__listOfInputWhitelistRule] = js.undefined
   }
   
-  
   trait InputSettings extends js.Object {
     /**
-         * Used to select the audio stream to decode for inputs that have multiple available.
-         */
+      * Used to select the audio stream to decode for inputs that have multiple available.
+      */
     var AudioSelectors: js.UndefOr[__listOfAudioSelector] = js.undefined
     /**
-         * Used to select the caption input to use for inputs that have multiple available.
-         */
+      * Used to select the caption input to use for inputs that have multiple available.
+      */
     var CaptionSelectors: js.UndefOr[__listOfCaptionSelector] = js.undefined
     /**
-         * Enable or disable the deblock filter when filtering.
-         */
+      * Enable or disable the deblock filter when filtering.
+      */
     var DeblockFilter: js.UndefOr[InputDeblockFilter] = js.undefined
     /**
-         * Enable or disable the denoise filter when filtering.
-         */
+      * Enable or disable the denoise filter when filtering.
+      */
     var DenoiseFilter: js.UndefOr[InputDenoiseFilter] = js.undefined
     /**
-         * Adjusts the magnitude of filtering from 1 (minimal) to 5 (strongest).
-         */
+      * Adjusts the magnitude of filtering from 1 (minimal) to 5 (strongest).
+      */
     var FilterStrength: js.UndefOr[__integerMin1Max5] = js.undefined
     /**
-         * Turns on the filter for this input. MPEG-2 inputs have the deblocking filter enabled by default.
+      * Turns on the filter for this input. MPEG-2 inputs have the deblocking filter enabled by default.
     1) auto - filtering will be applied depending on input type/quality
     2) disabled - no filtering will be applied to the input
     3) forced - filtering will be applied regardless of input type
-         */
+      */
     var InputFilter: js.UndefOr[InputFilter] = js.undefined
     /**
-         * Input settings.
-         */
+      * Input settings.
+      */
     var NetworkInputSettings: js.UndefOr[NetworkInputSettings] = js.undefined
     /**
-         * Loop input if it is a file. This allows a file input to be streamed indefinitely.
-         */
+      * Loop input if it is a file. This allows a file input to be streamed indefinitely.
+      */
     var SourceEndBehavior: js.UndefOr[InputSourceEndBehavior] = js.undefined
     /**
-         * Informs which video elementary stream to decode for input types that have multiple available.
-         */
+      * Informs which video elementary stream to decode for input types that have multiple available.
+      */
     var VideoSelector: js.UndefOr[VideoSelector] = js.undefined
   }
   
-  
   trait InputSource extends js.Object {
     /**
-         * The key used to extract the password from EC2 Parameter store.
-         */
+      * The key used to extract the password from EC2 Parameter store.
+      */
     var PasswordParam: js.UndefOr[__string] = js.undefined
     /**
-         * This represents the customer's source URL where stream is
+      * This represents the customer's source URL where stream is
     pulled from.
-    
-         */
+      */
     var Url: js.UndefOr[__string] = js.undefined
     /**
-         * The username for the input source.
-         */
+      * The username for the input source.
+      */
     var Username: js.UndefOr[__string] = js.undefined
   }
-  
   
   trait InputSourceRequest extends js.Object {
     /**
-         * The key used to extract the password from EC2 Parameter store.
-         */
+      * The key used to extract the password from EC2 Parameter store.
+      */
     var PasswordParam: js.UndefOr[__string] = js.undefined
     /**
-         * This represents the customer's source URL where stream is
+      * This represents the customer's source URL where stream is
     pulled from.
-    
-         */
+      */
     var Url: js.UndefOr[__string] = js.undefined
     /**
-         * The username for the input source.
-         */
+      * The username for the input source.
+      */
     var Username: js.UndefOr[__string] = js.undefined
   }
   
-  
   trait InputSpecification extends js.Object {
     /**
-         * Input codec
-         */
+      * Input codec
+      */
     var Codec: js.UndefOr[InputCodec] = js.undefined
     /**
-         * Maximum input bitrate, categorized coarsely
-         */
+      * Maximum input bitrate, categorized coarsely
+      */
     var MaximumBitrate: js.UndefOr[InputMaximumBitrate] = js.undefined
     /**
-         * Input resolution, categorized coarsely
-         */
+      * Input resolution, categorized coarsely
+      */
     var Resolution: js.UndefOr[InputResolution] = js.undefined
   }
   
-  
   trait InputSwitchScheduleActionSettings extends js.Object {
     /**
-         * The name of the input attachment that should be switched to by this action.
-         */
+      * The name of the input attachment that should be switched to by this action.
+      */
     var InputAttachmentNameReference: __string
   }
   
-  
   trait InputWhitelistRule extends js.Object {
     /**
-         * The IPv4 CIDR that's whitelisted.
-         */
+      * The IPv4 CIDR that's whitelisted.
+      */
     var Cidr: js.UndefOr[__string] = js.undefined
   }
-  
   
   trait InputWhitelistRuleCidr extends js.Object {
     /**
-         * The IPv4 CIDR to whitelist.
-         */
+      * The IPv4 CIDR to whitelist.
+      */
     var Cidr: js.UndefOr[__string] = js.undefined
   }
-  
   
   trait KeyProviderSettings extends js.Object {
     var StaticKeySettings: js.UndefOr[StaticKeySettings] = js.undefined
   }
-  
   
   trait ListChannelsRequest extends js.Object {
     var MaxResults: js.UndefOr[MaxResults] = js.undefined
     var NextToken: js.UndefOr[__string] = js.undefined
   }
   
-  
   trait ListChannelsResponse extends js.Object {
     var Channels: js.UndefOr[__listOfChannelSummary] = js.undefined
     var NextToken: js.UndefOr[__string] = js.undefined
   }
-  
   
   trait ListInputSecurityGroupsRequest extends js.Object {
     var MaxResults: js.UndefOr[MaxResults] = js.undefined
     var NextToken: js.UndefOr[__string] = js.undefined
   }
   
-  
   trait ListInputSecurityGroupsResponse extends js.Object {
     /**
-         * List of input security groups
-         */
+      * List of input security groups
+      */
     var InputSecurityGroups: js.UndefOr[__listOfInputSecurityGroup] = js.undefined
     var NextToken: js.UndefOr[__string] = js.undefined
   }
-  
   
   trait ListInputsRequest extends js.Object {
     var MaxResults: js.UndefOr[MaxResults] = js.undefined
     var NextToken: js.UndefOr[__string] = js.undefined
   }
   
-  
   trait ListInputsResponse extends js.Object {
     var Inputs: js.UndefOr[__listOfInput] = js.undefined
     var NextToken: js.UndefOr[__string] = js.undefined
   }
   
-  
   trait ListOfferingsRequest extends js.Object {
     /**
-         * Filter to offerings that match the configuration of an existing channel, e.g. '2345678' (a channel ID)
-    
-         */
+      * Filter to offerings that match the configuration of an existing channel, e.g. '2345678' (a channel ID)
+      */
     var ChannelConfiguration: js.UndefOr[__string] = js.undefined
     /**
-         * Filter by codec, 'AVC', 'HEVC', 'MPEG2', or 'AUDIO'
-         */
+      * Filter by codec, 'AVC', 'HEVC', 'MPEG2', or 'AUDIO'
+      */
     var Codec: js.UndefOr[__string] = js.undefined
     var MaxResults: js.UndefOr[MaxResults] = js.undefined
     /**
-         * Filter by bitrate, 'MAX_10_MBPS', 'MAX_20_MBPS', or 'MAX_50_MBPS'
-    
-         */
+      * Filter by bitrate, 'MAX_10_MBPS', 'MAX_20_MBPS', or 'MAX_50_MBPS'
+      */
     var MaximumBitrate: js.UndefOr[__string] = js.undefined
     /**
-         * Filter by framerate, 'MAX_30_FPS' or 'MAX_60_FPS'
-         */
+      * Filter by framerate, 'MAX_30_FPS' or 'MAX_60_FPS'
+      */
     var MaximumFramerate: js.UndefOr[__string] = js.undefined
     var NextToken: js.UndefOr[__string] = js.undefined
     /**
-         * Filter by resolution, 'SD', 'HD', or 'UHD'
-         */
+      * Filter by resolution, 'SD', 'HD', or 'UHD'
+      */
     var Resolution: js.UndefOr[__string] = js.undefined
     /**
-         * Filter by resource type, 'INPUT', 'OUTPUT', or 'CHANNEL'
-         */
+      * Filter by resource type, 'INPUT', 'OUTPUT', or 'CHANNEL'
+      */
     var ResourceType: js.UndefOr[__string] = js.undefined
     /**
-         * Filter by special feature, 'ADVANCED_AUDIO' or 'AUDIO_NORMALIZATION'
-    
-         */
+      * Filter by special feature, 'ADVANCED_AUDIO' or 'AUDIO_NORMALIZATION'
+      */
     var SpecialFeature: js.UndefOr[__string] = js.undefined
     /**
-         * Filter by video quality, 'STANDARD', 'ENHANCED', or 'PREMIUM'
-    
-         */
+      * Filter by video quality, 'STANDARD', 'ENHANCED', or 'PREMIUM'
+      */
     var VideoQuality: js.UndefOr[__string] = js.undefined
   }
-  
   
   trait ListOfferingsResponse extends js.Object {
     /**
-         * Token to retrieve the next page of results
-         */
+      * Token to retrieve the next page of results
+      */
     var NextToken: js.UndefOr[__string] = js.undefined
     /**
-         * List of offerings
-         */
+      * List of offerings
+      */
     var Offerings: js.UndefOr[__listOfOffering] = js.undefined
   }
   
-  
   trait ListReservationsRequest extends js.Object {
     /**
-         * Filter by codec, 'AVC', 'HEVC', 'MPEG2', or 'AUDIO'
-         */
+      * Filter by codec, 'AVC', 'HEVC', 'MPEG2', or 'AUDIO'
+      */
     var Codec: js.UndefOr[__string] = js.undefined
     var MaxResults: js.UndefOr[MaxResults] = js.undefined
     /**
-         * Filter by bitrate, 'MAX_10_MBPS', 'MAX_20_MBPS', or 'MAX_50_MBPS'
-    
-         */
+      * Filter by bitrate, 'MAX_10_MBPS', 'MAX_20_MBPS', or 'MAX_50_MBPS'
+      */
     var MaximumBitrate: js.UndefOr[__string] = js.undefined
     /**
-         * Filter by framerate, 'MAX_30_FPS' or 'MAX_60_FPS'
-         */
+      * Filter by framerate, 'MAX_30_FPS' or 'MAX_60_FPS'
+      */
     var MaximumFramerate: js.UndefOr[__string] = js.undefined
     var NextToken: js.UndefOr[__string] = js.undefined
     /**
-         * Filter by resolution, 'SD', 'HD', or 'UHD'
-         */
+      * Filter by resolution, 'SD', 'HD', or 'UHD'
+      */
     var Resolution: js.UndefOr[__string] = js.undefined
     /**
-         * Filter by resource type, 'INPUT', 'OUTPUT', or 'CHANNEL'
-         */
+      * Filter by resource type, 'INPUT', 'OUTPUT', or 'CHANNEL'
+      */
     var ResourceType: js.UndefOr[__string] = js.undefined
     /**
-         * Filter by special feature, 'ADVANCED_AUDIO' or 'AUDIO_NORMALIZATION'
-    
-         */
+      * Filter by special feature, 'ADVANCED_AUDIO' or 'AUDIO_NORMALIZATION'
+      */
     var SpecialFeature: js.UndefOr[__string] = js.undefined
     /**
-         * Filter by video quality, 'STANDARD', 'ENHANCED', or 'PREMIUM'
-    
-         */
+      * Filter by video quality, 'STANDARD', 'ENHANCED', or 'PREMIUM'
+      */
     var VideoQuality: js.UndefOr[__string] = js.undefined
   }
   
-  
   trait ListReservationsResponse extends js.Object {
     /**
-         * Token to retrieve the next page of results
-         */
+      * Token to retrieve the next page of results
+      */
     var NextToken: js.UndefOr[__string] = js.undefined
     /**
-         * List of reservations
-         */
+      * List of reservations
+      */
     var Reservations: js.UndefOr[__listOfReservation] = js.undefined
   }
   
-  
   trait M2tsSettings extends js.Object {
     /**
-         * When set to drop, output audio streams will be removed from the program if the selected input audio stream is removed from the input. This allows the output audio configuration to dynamically change based on input configuration. If this is set to encodeSilence, all output audio streams will output encoded silence when not connected to an active input stream.
-         */
+      * When set to drop, output audio streams will be removed from the program if the selected input audio stream is removed from the input. This allows the output audio configuration to dynamically change based on input configuration. If this is set to encodeSilence, all output audio streams will output encoded silence when not connected to an active input stream.
+      */
     var AbsentInputAudioBehavior: js.UndefOr[M2tsAbsentInputAudioBehavior] = js.undefined
     /**
-         * When set to enabled, uses ARIB-compliant field muxing and removes video descriptor.
-         */
+      * When set to enabled, uses ARIB-compliant field muxing and removes video descriptor.
+      */
     var Arib: js.UndefOr[M2tsArib] = js.undefined
     /**
-         * Packet Identifier (PID) for ARIB Captions in the transport stream. Can be entered as a decimal or hexadecimal value.  Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
-         */
+      * Packet Identifier (PID) for ARIB Captions in the transport stream. Can be entered as a decimal or hexadecimal value.  Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
+      */
     var AribCaptionsPid: js.UndefOr[__string] = js.undefined
     /**
-         * If set to auto, pid number used for ARIB Captions will be auto-selected from unused pids.  If set to useConfigured, ARIB Captions will be on the configured pid number.
-         */
+      * If set to auto, pid number used for ARIB Captions will be auto-selected from unused pids.  If set to useConfigured, ARIB Captions will be on the configured pid number.
+      */
     var AribCaptionsPidControl: js.UndefOr[M2tsAribCaptionsPidControl] = js.undefined
     /**
-         * When set to dvb, uses DVB buffer model for Dolby Digital audio.  When set to atsc, the ATSC model is used.
-         */
+      * When set to dvb, uses DVB buffer model for Dolby Digital audio.  When set to atsc, the ATSC model is used.
+      */
     var AudioBufferModel: js.UndefOr[M2tsAudioBufferModel] = js.undefined
     /**
-         * The number of audio frames to insert for each PES packet.
-         */
+      * The number of audio frames to insert for each PES packet.
+      */
     var AudioFramesPerPes: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * Packet Identifier (PID) of the elementary audio stream(s) in the transport stream. Multiple values are accepted, and can be entered in ranges and/or by comma separation. Can be entered as decimal or hexadecimal values. Each PID specified must be in the range of 32 (or 0x20)..8182 (or 0x1ff6).
-         */
+      * Packet Identifier (PID) of the elementary audio stream(s) in the transport stream. Multiple values are accepted, and can be entered in ranges and/or by comma separation. Can be entered as decimal or hexadecimal values. Each PID specified must be in the range of 32 (or 0x20)..8182 (or 0x1ff6).
+      */
     var AudioPids: js.UndefOr[__string] = js.undefined
     /**
-         * When set to atsc, uses stream type = 0x81 for AC3 and stream type = 0x87 for EAC3. When set to dvb, uses stream type = 0x06.
-         */
+      * When set to atsc, uses stream type = 0x81 for AC3 and stream type = 0x87 for EAC3. When set to dvb, uses stream type = 0x06.
+      */
     var AudioStreamType: js.UndefOr[M2tsAudioStreamType] = js.undefined
     /**
-         * The output bitrate of the transport stream in bits per second. Setting to 0 lets the muxer automatically determine the appropriate bitrate.
-         */
+      * The output bitrate of the transport stream in bits per second. Setting to 0 lets the muxer automatically determine the appropriate bitrate.
+      */
     var Bitrate: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * If set to multiplex, use multiplex buffer model for accurate interleaving.  Setting to bufferModel to none can lead to lower latency, but low-memory devices may not be able to play back the stream without interruptions.
-         */
+      * If set to multiplex, use multiplex buffer model for accurate interleaving.  Setting to bufferModel to none can lead to lower latency, but low-memory devices may not be able to play back the stream without interruptions.
+      */
     var BufferModel: js.UndefOr[M2tsBufferModel] = js.undefined
     /**
-         * When set to enabled, generates captionServiceDescriptor in PMT.
-         */
+      * When set to enabled, generates captionServiceDescriptor in PMT.
+      */
     var CcDescriptor: js.UndefOr[M2tsCcDescriptor] = js.undefined
     /**
-         * Inserts DVB Network Information Table (NIT) at the specified table repetition interval.
-         */
+      * Inserts DVB Network Information Table (NIT) at the specified table repetition interval.
+      */
     var DvbNitSettings: js.UndefOr[DvbNitSettings] = js.undefined
     /**
-         * Inserts DVB Service Description Table (SDT) at the specified table repetition interval.
-         */
+      * Inserts DVB Service Description Table (SDT) at the specified table repetition interval.
+      */
     var DvbSdtSettings: js.UndefOr[DvbSdtSettings] = js.undefined
     /**
-         * Packet Identifier (PID) for input source DVB Subtitle data to this output. Multiple values are accepted, and can be entered in ranges and/or by comma separation. Can be entered as decimal or hexadecimal values.  Each PID specified must be in the range of 32 (or 0x20)..8182 (or 0x1ff6).
-         */
+      * Packet Identifier (PID) for input source DVB Subtitle data to this output. Multiple values are accepted, and can be entered in ranges and/or by comma separation. Can be entered as decimal or hexadecimal values.  Each PID specified must be in the range of 32 (or 0x20)..8182 (or 0x1ff6).
+      */
     var DvbSubPids: js.UndefOr[__string] = js.undefined
     /**
-         * Inserts DVB Time and Date Table (TDT) at the specified table repetition interval.
-         */
+      * Inserts DVB Time and Date Table (TDT) at the specified table repetition interval.
+      */
     var DvbTdtSettings: js.UndefOr[DvbTdtSettings] = js.undefined
     /**
-         * Packet Identifier (PID) for input source DVB Teletext data to this output. Can be entered as a decimal or hexadecimal value.  Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
-         */
+      * Packet Identifier (PID) for input source DVB Teletext data to this output. Can be entered as a decimal or hexadecimal value.  Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
+      */
     var DvbTeletextPid: js.UndefOr[__string] = js.undefined
     /**
-         * If set to passthrough, passes any EBIF data from the input source to this output.
-         */
+      * If set to passthrough, passes any EBIF data from the input source to this output.
+      */
     var Ebif: js.UndefOr[M2tsEbifControl] = js.undefined
     /**
-         * When videoAndFixedIntervals is selected, audio EBP markers will be added to partitions 3 and 4. The interval between these additional markers will be fixed, and will be slightly shorter than the video EBP marker interval. Only available when EBP Cablelabs segmentation markers are selected.  Partitions 1 and 2 will always follow the video interval.
-         */
+      * When videoAndFixedIntervals is selected, audio EBP markers will be added to partitions 3 and 4. The interval between these additional markers will be fixed, and will be slightly shorter than the video EBP marker interval. Only available when EBP Cablelabs segmentation markers are selected.  Partitions 1 and 2 will always follow the video interval.
+      */
     var EbpAudioInterval: js.UndefOr[M2tsAudioInterval] = js.undefined
     /**
-         * When set, enforces that Encoder Boundary Points do not come within the specified time interval of each other by looking ahead at input video. If another EBP is going to come in within the specified time interval, the current EBP is not emitted, and the segment is "stretched" to the next marker.  The lookahead value does not add latency to the system. The Live Event must be configured elsewhere to create sufficient latency to make the lookahead accurate.
-         */
+      * When set, enforces that Encoder Boundary Points do not come within the specified time interval of each other by looking ahead at input video. If another EBP is going to come in within the specified time interval, the current EBP is not emitted, and the segment is "stretched" to the next marker.  The lookahead value does not add latency to the system. The Live Event must be configured elsewhere to create sufficient latency to make the lookahead accurate.
+      */
     var EbpLookaheadMs: js.UndefOr[__integerMin0Max10000] = js.undefined
     /**
-         * Controls placement of EBP on Audio PIDs. If set to videoAndAudioPids, EBP markers will be placed on the video PID and all audio PIDs.  If set to videoPid, EBP markers will be placed on only the video PID.
-         */
+      * Controls placement of EBP on Audio PIDs. If set to videoAndAudioPids, EBP markers will be placed on the video PID and all audio PIDs.  If set to videoPid, EBP markers will be placed on only the video PID.
+      */
     var EbpPlacement: js.UndefOr[M2tsEbpPlacement] = js.undefined
     /**
-         * This field is unused and deprecated.
-         */
+      * This field is unused and deprecated.
+      */
     var EcmPid: js.UndefOr[__string] = js.undefined
     /**
-         * Include or exclude the ES Rate field in the PES header.
-         */
+      * Include or exclude the ES Rate field in the PES header.
+      */
     var EsRateInPes: js.UndefOr[M2tsEsRateInPes] = js.undefined
     /**
-         * Packet Identifier (PID) for input source ETV Platform data to this output. Can be entered as a decimal or hexadecimal value.  Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
-         */
+      * Packet Identifier (PID) for input source ETV Platform data to this output. Can be entered as a decimal or hexadecimal value.  Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
+      */
     var EtvPlatformPid: js.UndefOr[__string] = js.undefined
     /**
-         * Packet Identifier (PID) for input source ETV Signal data to this output. Can be entered as a decimal or hexadecimal value.  Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
-         */
+      * Packet Identifier (PID) for input source ETV Signal data to this output. Can be entered as a decimal or hexadecimal value.  Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
+      */
     var EtvSignalPid: js.UndefOr[__string] = js.undefined
     /**
-         * The length in seconds of each fragment. Only used with EBP markers.
-         */
+      * The length in seconds of each fragment. Only used with EBP markers.
+      */
     var FragmentTime: js.UndefOr[__doubleMin0] = js.undefined
     /**
-         * If set to passthrough, passes any KLV data from the input source to this output.
-         */
+      * If set to passthrough, passes any KLV data from the input source to this output.
+      */
     var Klv: js.UndefOr[M2tsKlv] = js.undefined
     /**
-         * Packet Identifier (PID) for input source KLV data to this output. Multiple values are accepted, and can be entered in ranges and/or by comma separation. Can be entered as decimal or hexadecimal values.  Each PID specified must be in the range of 32 (or 0x20)..8182 (or 0x1ff6).
-         */
+      * Packet Identifier (PID) for input source KLV data to this output. Multiple values are accepted, and can be entered in ranges and/or by comma separation. Can be entered as decimal or hexadecimal values.  Each PID specified must be in the range of 32 (or 0x20)..8182 (or 0x1ff6).
+      */
     var KlvDataPids: js.UndefOr[__string] = js.undefined
     /**
-         * Value in bits per second of extra null packets to insert into the transport stream. This can be used if a downstream encryption system requires periodic null packets.
-         */
+      * Value in bits per second of extra null packets to insert into the transport stream. This can be used if a downstream encryption system requires periodic null packets.
+      */
     var NullPacketBitrate: js.UndefOr[__doubleMin0] = js.undefined
     /**
-         * The number of milliseconds between instances of this table in the output transport stream.  Valid values are 0, 10..1000.
-         */
+      * The number of milliseconds between instances of this table in the output transport stream.  Valid values are 0, 10..1000.
+      */
     var PatInterval: js.UndefOr[__integerMin0Max1000] = js.undefined
     /**
-         * When set to pcrEveryPesPacket, a Program Clock Reference value is inserted for every Packetized Elementary Stream (PES) header. This parameter is effective only when the PCR PID is the same as the video or audio elementary stream.
-         */
+      * When set to pcrEveryPesPacket, a Program Clock Reference value is inserted for every Packetized Elementary Stream (PES) header. This parameter is effective only when the PCR PID is the same as the video or audio elementary stream.
+      */
     var PcrControl: js.UndefOr[M2tsPcrControl] = js.undefined
     /**
-         * Maximum time in milliseconds between Program Clock Reference (PCRs) inserted into the transport stream.
-         */
+      * Maximum time in milliseconds between Program Clock Reference (PCRs) inserted into the transport stream.
+      */
     var PcrPeriod: js.UndefOr[__integerMin0Max500] = js.undefined
     /**
-         * Packet Identifier (PID) of the Program Clock Reference (PCR) in the transport stream. When no value is given, the encoder will assign the same value as the Video PID. Can be entered as a decimal or hexadecimal value.  Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
-         */
+      * Packet Identifier (PID) of the Program Clock Reference (PCR) in the transport stream. When no value is given, the encoder will assign the same value as the Video PID. Can be entered as a decimal or hexadecimal value.  Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
+      */
     var PcrPid: js.UndefOr[__string] = js.undefined
     /**
-         * The number of milliseconds between instances of this table in the output transport stream. Valid values are 0, 10..1000.
-         */
+      * The number of milliseconds between instances of this table in the output transport stream. Valid values are 0, 10..1000.
+      */
     var PmtInterval: js.UndefOr[__integerMin0Max1000] = js.undefined
     /**
-         * Packet Identifier (PID) for the Program Map Table (PMT) in the transport stream. Can be entered as a decimal or hexadecimal value. Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
-         */
+      * Packet Identifier (PID) for the Program Map Table (PMT) in the transport stream. Can be entered as a decimal or hexadecimal value. Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
+      */
     var PmtPid: js.UndefOr[__string] = js.undefined
     /**
-         * The value of the program number field in the Program Map Table.
-         */
+      * The value of the program number field in the Program Map Table.
+      */
     var ProgramNum: js.UndefOr[__integerMin0Max65535] = js.undefined
     /**
-         * When vbr, does not insert null packets into transport stream to fill specified bitrate. The bitrate setting acts as the maximum bitrate when vbr is set.
-         */
+      * When vbr, does not insert null packets into transport stream to fill specified bitrate. The bitrate setting acts as the maximum bitrate when vbr is set.
+      */
     var RateMode: js.UndefOr[M2tsRateMode] = js.undefined
     /**
-         * Packet Identifier (PID) for input source SCTE-27 data to this output. Multiple values are accepted, and can be entered in ranges and/or by comma separation. Can be entered as decimal or hexadecimal values.  Each PID specified must be in the range of 32 (or 0x20)..8182 (or 0x1ff6).
-         */
+      * Packet Identifier (PID) for input source SCTE-27 data to this output. Multiple values are accepted, and can be entered in ranges and/or by comma separation. Can be entered as decimal or hexadecimal values.  Each PID specified must be in the range of 32 (or 0x20)..8182 (or 0x1ff6).
+      */
     var Scte27Pids: js.UndefOr[__string] = js.undefined
     /**
-         * Optionally pass SCTE-35 signals from the input source to this output.
-         */
+      * Optionally pass SCTE-35 signals from the input source to this output.
+      */
     var Scte35Control: js.UndefOr[M2tsScte35Control] = js.undefined
     /**
-         * Packet Identifier (PID) of the SCTE-35 stream in the transport stream. Can be entered as a decimal or hexadecimal value.  Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
-         */
+      * Packet Identifier (PID) of the SCTE-35 stream in the transport stream. Can be entered as a decimal or hexadecimal value.  Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
+      */
     var Scte35Pid: js.UndefOr[__string] = js.undefined
     /**
-         * Inserts segmentation markers at each segmentationTime period. raiSegstart sets the Random Access Indicator bit in the adaptation field. raiAdapt sets the RAI bit and adds the current timecode in the private data bytes. psiSegstart inserts PAT and PMT tables at the start of segments. ebp adds Encoder Boundary Point information to the adaptation field as per OpenCable specification OC-SP-EBP-I01-130118. ebpLegacy adds Encoder Boundary Point information to the adaptation field using a legacy proprietary format.
-         */
+      * Inserts segmentation markers at each segmentationTime period. raiSegstart sets the Random Access Indicator bit in the adaptation field. raiAdapt sets the RAI bit and adds the current timecode in the private data bytes. psiSegstart inserts PAT and PMT tables at the start of segments. ebp adds Encoder Boundary Point information to the adaptation field as per OpenCable specification OC-SP-EBP-I01-130118. ebpLegacy adds Encoder Boundary Point information to the adaptation field using a legacy proprietary format.
+      */
     var SegmentationMarkers: js.UndefOr[M2tsSegmentationMarkers] = js.undefined
     /**
-         * The segmentation style parameter controls how segmentation markers are inserted into the transport stream. With avails, it is possible that segments may be truncated, which can influence where future segmentation markers are inserted.
-    
+      * The segmentation style parameter controls how segmentation markers are inserted into the transport stream. With avails, it is possible that segments may be truncated, which can influence where future segmentation markers are inserted.
     When a segmentation style of "resetCadence" is selected and a segment is truncated due to an avail, we will reset the segmentation cadence. This means the subsequent segment will have a duration of $segmentationTime seconds.
-    
     When a segmentation style of "maintainCadence" is selected and a segment is truncated due to an avail, we will not reset the segmentation cadence. This means the subsequent segment will likely be truncated as well. However, all segments after that will have a duration of $segmentationTime seconds. Note that EBP lookahead is a slight exception to this rule.
-         */
+      */
     var SegmentationStyle: js.UndefOr[M2tsSegmentationStyle] = js.undefined
     /**
-         * The length in seconds of each segment. Required unless markers is set to None_.
-         */
+      * The length in seconds of each segment. Required unless markers is set to None_.
+      */
     var SegmentationTime: js.UndefOr[__doubleMin1] = js.undefined
     /**
-         * When set to passthrough, timed metadata will be passed through from input to output.
-         */
+      * When set to passthrough, timed metadata will be passed through from input to output.
+      */
     var TimedMetadataBehavior: js.UndefOr[M2tsTimedMetadataBehavior] = js.undefined
     /**
-         * Packet Identifier (PID) of the timed metadata stream in the transport stream. Can be entered as a decimal or hexadecimal value.  Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
-         */
+      * Packet Identifier (PID) of the timed metadata stream in the transport stream. Can be entered as a decimal or hexadecimal value.  Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
+      */
     var TimedMetadataPid: js.UndefOr[__string] = js.undefined
     /**
-         * The value of the transport stream ID field in the Program Map Table.
-         */
+      * The value of the transport stream ID field in the Program Map Table.
+      */
     var TransportStreamId: js.UndefOr[__integerMin0Max65535] = js.undefined
     /**
-         * Packet Identifier (PID) of the elementary video stream in the transport stream. Can be entered as a decimal or hexadecimal value.  Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
-         */
+      * Packet Identifier (PID) of the elementary video stream in the transport stream. Can be entered as a decimal or hexadecimal value.  Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
+      */
     var VideoPid: js.UndefOr[__string] = js.undefined
   }
-  
   
   trait M3u8Settings extends js.Object {
     /**
-         * The number of audio frames to insert for each PES packet.
-         */
+      * The number of audio frames to insert for each PES packet.
+      */
     var AudioFramesPerPes: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * Packet Identifier (PID) of the elementary audio stream(s) in the transport stream. Multiple values are accepted, and can be entered in ranges and/or by comma separation. Can be entered as decimal or hexadecimal values.
-         */
+      * Packet Identifier (PID) of the elementary audio stream(s) in the transport stream. Multiple values are accepted, and can be entered in ranges and/or by comma separation. Can be entered as decimal or hexadecimal values.
+      */
     var AudioPids: js.UndefOr[__string] = js.undefined
     /**
-         * This parameter is unused and deprecated.
-         */
+      * This parameter is unused and deprecated.
+      */
     var EcmPid: js.UndefOr[__string] = js.undefined
     /**
-         * The number of milliseconds between instances of this table in the output transport stream. A value of \"0\" writes out the PMT once per segment file.
-         */
+      * The number of milliseconds between instances of this table in the output transport stream. A value of \"0\" writes out the PMT once per segment file.
+      */
     var PatInterval: js.UndefOr[__integerMin0Max1000] = js.undefined
     /**
-         * When set to pcrEveryPesPacket, a Program Clock Reference value is inserted for every Packetized Elementary Stream (PES) header. This parameter is effective only when the PCR PID is the same as the video or audio elementary stream.
-         */
+      * When set to pcrEveryPesPacket, a Program Clock Reference value is inserted for every Packetized Elementary Stream (PES) header. This parameter is effective only when the PCR PID is the same as the video or audio elementary stream.
+      */
     var PcrControl: js.UndefOr[M3u8PcrControl] = js.undefined
     /**
-         * Maximum time in milliseconds between Program Clock References (PCRs) inserted into the transport stream.
-         */
+      * Maximum time in milliseconds between Program Clock References (PCRs) inserted into the transport stream.
+      */
     var PcrPeriod: js.UndefOr[__integerMin0Max500] = js.undefined
     /**
-         * Packet Identifier (PID) of the Program Clock Reference (PCR) in the transport stream. When no value is given, the encoder will assign the same value as the Video PID. Can be entered as a decimal or hexadecimal value.
-         */
+      * Packet Identifier (PID) of the Program Clock Reference (PCR) in the transport stream. When no value is given, the encoder will assign the same value as the Video PID. Can be entered as a decimal or hexadecimal value.
+      */
     var PcrPid: js.UndefOr[__string] = js.undefined
     /**
-         * The number of milliseconds between instances of this table in the output transport stream. A value of \"0\" writes out the PMT once per segment file.
-         */
+      * The number of milliseconds between instances of this table in the output transport stream. A value of \"0\" writes out the PMT once per segment file.
+      */
     var PmtInterval: js.UndefOr[__integerMin0Max1000] = js.undefined
     /**
-         * Packet Identifier (PID) for the Program Map Table (PMT) in the transport stream. Can be entered as a decimal or hexadecimal value.
-         */
+      * Packet Identifier (PID) for the Program Map Table (PMT) in the transport stream. Can be entered as a decimal or hexadecimal value.
+      */
     var PmtPid: js.UndefOr[__string] = js.undefined
     /**
-         * The value of the program number field in the Program Map Table.
-         */
+      * The value of the program number field in the Program Map Table.
+      */
     var ProgramNum: js.UndefOr[__integerMin0Max65535] = js.undefined
     /**
-         * If set to passthrough, passes any SCTE-35 signals from the input source to this output.
-         */
+      * If set to passthrough, passes any SCTE-35 signals from the input source to this output.
+      */
     var Scte35Behavior: js.UndefOr[M3u8Scte35Behavior] = js.undefined
     /**
-         * Packet Identifier (PID) of the SCTE-35 stream in the transport stream. Can be entered as a decimal or hexadecimal value.
-         */
+      * Packet Identifier (PID) of the SCTE-35 stream in the transport stream. Can be entered as a decimal or hexadecimal value.
+      */
     var Scte35Pid: js.UndefOr[__string] = js.undefined
     /**
-         * When set to passthrough, timed metadata is passed through from input to output.
-         */
+      * When set to passthrough, timed metadata is passed through from input to output.
+      */
     var TimedMetadataBehavior: js.UndefOr[M3u8TimedMetadataBehavior] = js.undefined
     /**
-         * Packet Identifier (PID) of the timed metadata stream in the transport stream. Can be entered as a decimal or hexadecimal value.  Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
-         */
+      * Packet Identifier (PID) of the timed metadata stream in the transport stream. Can be entered as a decimal or hexadecimal value.  Valid values are 32 (or 0x20)..8182 (or 0x1ff6).
+      */
     var TimedMetadataPid: js.UndefOr[__string] = js.undefined
     /**
-         * The value of the transport stream ID field in the Program Map Table.
-         */
+      * The value of the transport stream ID field in the Program Map Table.
+      */
     var TransportStreamId: js.UndefOr[__integerMin0Max65535] = js.undefined
     /**
-         * Packet Identifier (PID) of the elementary video stream in the transport stream. Can be entered as a decimal or hexadecimal value.
-         */
+      * Packet Identifier (PID) of the elementary video stream in the transport stream. Can be entered as a decimal or hexadecimal value.
+      */
     var VideoPid: js.UndefOr[__string] = js.undefined
   }
   
-  
   trait MediaConnectFlow extends js.Object {
     /**
-         * The unique ARN of the MediaConnect Flow being used as a source.
-         */
+      * The unique ARN of the MediaConnect Flow being used as a source.
+      */
     var FlowArn: js.UndefOr[__string] = js.undefined
   }
-  
   
   trait MediaConnectFlowRequest extends js.Object {
     /**
-         * The ARN of the MediaConnect Flow that you want to use as a source.
-         */
+      * The ARN of the MediaConnect Flow that you want to use as a source.
+      */
     var FlowArn: js.UndefOr[__string] = js.undefined
   }
   
-  
   trait Mp2Settings extends js.Object {
     /**
-         * Average bitrate in bits/second.
-         */
+      * Average bitrate in bits/second.
+      */
     var Bitrate: js.UndefOr[__double] = js.undefined
     /**
-         * The MPEG2 Audio coding mode.  Valid values are codingMode10 (for mono) or codingMode20 (for stereo).
-         */
+      * The MPEG2 Audio coding mode.  Valid values are codingMode10 (for mono) or codingMode20 (for stereo).
+      */
     var CodingMode: js.UndefOr[Mp2CodingMode] = js.undefined
     /**
-         * Sample rate in Hz.
-         */
+      * Sample rate in Hz.
+      */
     var SampleRate: js.UndefOr[__double] = js.undefined
   }
   
-  
   trait MsSmoothGroupSettings extends js.Object {
     /**
-         * The value of the "Acquisition Point Identity" element used in each message placed in the sparse track.  Only enabled if sparseTrackType is not "none".
-         */
+      * The value of the "Acquisition Point Identity" element used in each message placed in the sparse track.  Only enabled if sparseTrackType is not "none".
+      */
     var AcquisitionPointId: js.UndefOr[__string] = js.undefined
     /**
-         * If set to passthrough for an audio-only MS Smooth output, the fragment absolute time will be set to the current timecode. This option does not write timecodes to the audio elementary stream.
-         */
+      * If set to passthrough for an audio-only MS Smooth output, the fragment absolute time will be set to the current timecode. This option does not write timecodes to the audio elementary stream.
+      */
     var AudioOnlyTimecodeControl: js.UndefOr[SmoothGroupAudioOnlyTimecodeControl] = js.undefined
     /**
-         * If set to verifyAuthenticity, verify the https certificate chain to a trusted Certificate Authority (CA).  This will cause https outputs to self-signed certificates to fail.
-         */
+      * If set to verifyAuthenticity, verify the https certificate chain to a trusted Certificate Authority (CA).  This will cause https outputs to self-signed certificates to fail.
+      */
     var CertificateMode: js.UndefOr[SmoothGroupCertificateMode] = js.undefined
     /**
-         * Number of seconds to wait before retrying connection to the IIS server if the connection is lost. Content will be cached during this time and the cache will be be delivered to the IIS server once the connection is re-established.
-         */
+      * Number of seconds to wait before retrying connection to the IIS server if the connection is lost. Content will be cached during this time and the cache will be be delivered to the IIS server once the connection is re-established.
+      */
     var ConnectionRetryInterval: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * Smooth Streaming publish point on an IIS server. Elemental Live acts as a "Push" encoder to IIS.
-         */
+      * Smooth Streaming publish point on an IIS server. Elemental Live acts as a "Push" encoder to IIS.
+      */
     var Destination: OutputLocationRef
     /**
-         * MS Smooth event ID to be sent to the IIS server.
-    
+      * MS Smooth event ID to be sent to the IIS server.
     Should only be specified if eventIdMode is set to useConfigured.
-         */
+      */
     var EventId: js.UndefOr[__string] = js.undefined
     /**
-         * Specifies whether or not to send an event ID to the IIS server. If no event ID is sent and the same Live Event is used without changing the publishing point, clients might see cached video from the previous run.
-    
+      * Specifies whether or not to send an event ID to the IIS server. If no event ID is sent and the same Live Event is used without changing the publishing point, clients might see cached video from the previous run.
     Options:
     - "useConfigured" - use the value provided in eventId
     - "useTimestamp" - generate and send an event ID based on the current timestamp
     - "noEventId" - do not send an event ID to the IIS server.
-         */
+      */
     var EventIdMode: js.UndefOr[SmoothGroupEventIdMode] = js.undefined
     /**
-         * When set to sendEos, send EOS signal to IIS server when stopping the event
-         */
+      * When set to sendEos, send EOS signal to IIS server when stopping the event
+      */
     var EventStopBehavior: js.UndefOr[SmoothGroupEventStopBehavior] = js.undefined
     /**
-         * Size in seconds of file cache for streaming outputs.
-         */
+      * Size in seconds of file cache for streaming outputs.
+      */
     var FilecacheDuration: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * Length of mp4 fragments to generate (in seconds). Fragment length must be compatible with GOP size and framerate.
-         */
+      * Length of mp4 fragments to generate (in seconds). Fragment length must be compatible with GOP size and framerate.
+      */
     var FragmentLength: js.UndefOr[__integerMin1] = js.undefined
     /**
-         * Parameter that control output group behavior on input loss.
-         */
+      * Parameter that control output group behavior on input loss.
+      */
     var InputLossAction: js.UndefOr[InputLossActionForMsSmoothOut] = js.undefined
     /**
-         * Number of retry attempts.
-         */
+      * Number of retry attempts.
+      */
     var NumRetries: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * Number of seconds before initiating a restart due to output failure, due to exhausting the numRetries on one segment, or exceeding filecacheDuration.
-         */
+      * Number of seconds before initiating a restart due to output failure, due to exhausting the numRetries on one segment, or exceeding filecacheDuration.
+      */
     var RestartDelay: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * useInputSegmentation has been deprecated. The configured segment size is always used.
-         */
+      * useInputSegmentation has been deprecated. The configured segment size is always used.
+      */
     var SegmentationMode: js.UndefOr[SmoothGroupSegmentationMode] = js.undefined
     /**
-         * Number of milliseconds to delay the output from the second pipeline.
-         */
+      * Number of milliseconds to delay the output from the second pipeline.
+      */
     var SendDelayMs: js.UndefOr[__integerMin0Max10000] = js.undefined
     /**
-         * If set to scte35, use incoming SCTE-35 messages to generate a sparse track in this group of MS-Smooth outputs.
-         */
+      * If set to scte35, use incoming SCTE-35 messages to generate a sparse track in this group of MS-Smooth outputs.
+      */
     var SparseTrackType: js.UndefOr[SmoothGroupSparseTrackType] = js.undefined
     /**
-         * When set to send, send stream manifest so publishing point doesn't start until all streams start.
-         */
+      * When set to send, send stream manifest so publishing point doesn't start until all streams start.
+      */
     var StreamManifestBehavior: js.UndefOr[SmoothGroupStreamManifestBehavior] = js.undefined
     /**
-         * Timestamp offset for the event.  Only used if timestampOffsetMode is set to useConfiguredOffset.
-         */
+      * Timestamp offset for the event.  Only used if timestampOffsetMode is set to useConfiguredOffset.
+      */
     var TimestampOffset: js.UndefOr[__string] = js.undefined
     /**
-         * Type of timestamp date offset to use.
+      * Type of timestamp date offset to use.
     - useEventStartDate: Use the date the event was started as the offset
     - useConfiguredOffset: Use an explicitly configured date as the offset
-         */
+      */
     var TimestampOffsetMode: js.UndefOr[SmoothGroupTimestampOffsetMode] = js.undefined
   }
   
-  
   trait MsSmoothOutputSettings extends js.Object {
     /**
-         * String concatenated to the end of the destination filename.  Required for multiple outputs of the same type.
-         */
+      * String concatenated to the end of the destination filename.  Required for multiple outputs of the same type.
+      */
     var NameModifier: js.UndefOr[__string] = js.undefined
   }
   
-  
   trait NetworkInputSettings extends js.Object {
     /**
-         * Specifies HLS input settings when the uri is for a HLS manifest.
-         */
+      * Specifies HLS input settings when the uri is for a HLS manifest.
+      */
     var HlsInputSettings: js.UndefOr[HlsInputSettings] = js.undefined
     /**
-         * Check HTTPS server certificates. When set to checkCryptographyOnly, cryptography in the certificate will be checked, but not the server's name. Certain subdomains (notably S3 buckets that use dots in the bucket name) do not strictly match the corresponding certificate's wildcard pattern and would otherwise cause the event to error. This setting is ignored for protocols that do not use https.
-         */
+      * Check HTTPS server certificates. When set to checkCryptographyOnly, cryptography in the certificate will be checked, but not the server's name. Certain subdomains (notably S3 buckets that use dots in the bucket name) do not strictly match the corresponding certificate's wildcard pattern and would otherwise cause the event to error. This setting is ignored for protocols that do not use https.
+      */
     var ServerValidation: js.UndefOr[NetworkInputServerValidation] = js.undefined
   }
   
-  
   trait Offering extends js.Object {
     /**
-         * Unique offering ARN, e.g. 'arn:aws:medialive:us-west-2:123456789012:offering:87654321'
-         */
+      * Unique offering ARN, e.g. 'arn:aws:medialive:us-west-2:123456789012:offering:87654321'
+      */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
-         * Currency code for usagePrice and fixedPrice in ISO-4217 format, e.g. 'USD'
-         */
+      * Currency code for usagePrice and fixedPrice in ISO-4217 format, e.g. 'USD'
+      */
     var CurrencyCode: js.UndefOr[__string] = js.undefined
     /**
-         * Lease duration, e.g. '12'
-         */
+      * Lease duration, e.g. '12'
+      */
     var Duration: js.UndefOr[__integer] = js.undefined
     /**
-         * Units for duration, e.g. 'MONTHS'
-         */
+      * Units for duration, e.g. 'MONTHS'
+      */
     var DurationUnits: js.UndefOr[OfferingDurationUnits] = js.undefined
     /**
-         * One-time charge for each reserved resource, e.g. '0.0' for a NO_UPFRONT offering
-         */
+      * One-time charge for each reserved resource, e.g. '0.0' for a NO_UPFRONT offering
+      */
     var FixedPrice: js.UndefOr[__double] = js.undefined
     /**
-         * Offering description, e.g. 'HD AVC output at 10-20 Mbps, 30 fps, and standard VQ in US West (Oregon)'
-         */
+      * Offering description, e.g. 'HD AVC output at 10-20 Mbps, 30 fps, and standard VQ in US West (Oregon)'
+      */
     var OfferingDescription: js.UndefOr[__string] = js.undefined
     /**
-         * Unique offering ID, e.g. '87654321'
-         */
+      * Unique offering ID, e.g. '87654321'
+      */
     var OfferingId: js.UndefOr[__string] = js.undefined
     /**
-         * Offering type, e.g. 'NO_UPFRONT'
-         */
+      * Offering type, e.g. 'NO_UPFRONT'
+      */
     var OfferingType: js.UndefOr[OfferingType] = js.undefined
     /**
-         * AWS region, e.g. 'us-west-2'
-         */
+      * AWS region, e.g. 'us-west-2'
+      */
     var Region: js.UndefOr[__string] = js.undefined
     /**
-         * Resource configuration details
-         */
+      * Resource configuration details
+      */
     var ResourceSpecification: js.UndefOr[ReservationResourceSpecification] = js.undefined
     /**
-         * Recurring usage charge for each reserved resource, e.g. '157.0'
-         */
+      * Recurring usage charge for each reserved resource, e.g. '157.0'
+      */
     var UsagePrice: js.UndefOr[__double] = js.undefined
   }
   
-  
   trait Output extends js.Object {
     /**
-         * The names of the AudioDescriptions used as audio sources for this output.
-         */
+      * The names of the AudioDescriptions used as audio sources for this output.
+      */
     var AudioDescriptionNames: js.UndefOr[__listOf__string] = js.undefined
     /**
-         * The names of the CaptionDescriptions used as caption sources for this output.
-         */
+      * The names of the CaptionDescriptions used as caption sources for this output.
+      */
     var CaptionDescriptionNames: js.UndefOr[__listOf__string] = js.undefined
     /**
-         * The name used to identify an output.
-         */
+      * The name used to identify an output.
+      */
     var OutputName: js.UndefOr[__stringMin1Max255] = js.undefined
     /**
-         * Output type-specific settings.
-         */
+      * Output type-specific settings.
+      */
     var OutputSettings: OutputSettings
     /**
-         * The name of the VideoDescription used as the source for this output.
-         */
+      * The name of the VideoDescription used as the source for this output.
+      */
     var VideoDescriptionName: js.UndefOr[__string] = js.undefined
   }
   
-  
   trait OutputDestination extends js.Object {
     /**
-         * User-specified id. This is used in an output group or an output.
-         */
+      * User-specified id. This is used in an output group or an output.
+      */
     var Id: js.UndefOr[__string] = js.undefined
     /**
-         * Destination settings for output; one for each redundant encoder.
-         */
+      * Destination settings for output; one for each redundant encoder.
+      */
     var Settings: js.UndefOr[__listOfOutputDestinationSettings] = js.undefined
   }
   
-  
   trait OutputDestinationSettings extends js.Object {
     /**
-         * key used to extract the password from EC2 Parameter store
-         */
+      * key used to extract the password from EC2 Parameter store
+      */
     var PasswordParam: js.UndefOr[__string] = js.undefined
     /**
-         * Stream name for RTMP destinations (URLs of type rtmp://)
-         */
+      * Stream name for RTMP destinations (URLs of type rtmp://)
+      */
     var StreamName: js.UndefOr[__string] = js.undefined
     /**
-         * A URL specifying a destination
-         */
+      * A URL specifying a destination
+      */
     var Url: js.UndefOr[__string] = js.undefined
     /**
-         * username for destination
-         */
+      * username for destination
+      */
     var Username: js.UndefOr[__string] = js.undefined
   }
   
-  
   trait OutputGroup extends js.Object {
     /**
-         * Custom output group name optionally defined by the user.  Only letters, numbers, and the underscore character allowed; only 32 characters allowed.
-         */
+      * Custom output group name optionally defined by the user.  Only letters, numbers, and the underscore character allowed; only 32 characters allowed.
+      */
     var Name: js.UndefOr[__stringMax32] = js.undefined
     /**
-         * Settings associated with the output group.
-         */
+      * Settings associated with the output group.
+      */
     var OutputGroupSettings: OutputGroupSettings
     var Outputs: __listOfOutput
   }
-  
   
   trait OutputGroupSettings extends js.Object {
     var ArchiveGroupSettings: js.UndefOr[ArchiveGroupSettings] = js.undefined
@@ -2957,11 +2795,9 @@ object MediaLiveNs extends js.Object {
     var UdpGroupSettings: js.UndefOr[UdpGroupSettings] = js.undefined
   }
   
-  
   trait OutputLocationRef extends js.Object {
     var DestinationRefId: js.UndefOr[__string] = js.undefined
   }
-  
   
   trait OutputSettings extends js.Object {
     var ArchiveOutputSettings: js.UndefOr[ArchiveOutputSettings] = js.undefined
@@ -2971,666 +2807,625 @@ object MediaLiveNs extends js.Object {
     var UdpOutputSettings: js.UndefOr[UdpOutputSettings] = js.undefined
   }
   
-  
   trait PassThroughSettings extends js.Object
-  
   
   trait PurchaseOfferingRequest extends js.Object {
     /**
-         * Number of resources
-         */
+      * Number of resources
+      */
     var Count: __integerMin1
     /**
-         * Name for the new reservation
-         */
+      * Name for the new reservation
+      */
     var Name: js.UndefOr[__string] = js.undefined
     /**
-         * Offering to purchase, e.g. '87654321'
-         */
+      * Offering to purchase, e.g. '87654321'
+      */
     var OfferingId: __string
     /**
-         * Unique request ID to be specified. This is needed to prevent retries from creating multiple resources.
-         */
+      * Unique request ID to be specified. This is needed to prevent retries from creating multiple resources.
+      */
     var RequestId: js.UndefOr[__string] = js.undefined
     /**
-         * Requested reservation start time (UTC) in ISO-8601 format. The specified time must be between the first day of the current month and one year from now. If no value is given, the default is now.
-         */
+      * Requested reservation start time (UTC) in ISO-8601 format. The specified time must be between the first day of the current month and one year from now. If no value is given, the default is now.
+      */
     var Start: js.UndefOr[__string] = js.undefined
   }
-  
   
   trait PurchaseOfferingResponse extends js.Object {
     var Reservation: js.UndefOr[Reservation] = js.undefined
   }
   
-  
   trait RemixSettings extends js.Object {
     /**
-         * Mapping of input channels to output channels, with appropriate gain adjustments.
-         */
+      * Mapping of input channels to output channels, with appropriate gain adjustments.
+      */
     var ChannelMappings: __listOfAudioChannelMapping
     /**
-         * Number of input channels to be used.
-         */
+      * Number of input channels to be used.
+      */
     var ChannelsIn: js.UndefOr[__integerMin1Max16] = js.undefined
     /**
-         * Number of output channels to be produced.
+      * Number of output channels to be produced.
     Valid values: 1, 2, 4, 6, 8
-         */
+      */
     var ChannelsOut: js.UndefOr[__integerMin1Max8] = js.undefined
   }
   
-  
   trait Reservation extends js.Object {
     /**
-         * Unique reservation ARN, e.g. 'arn:aws:medialive:us-west-2:123456789012:reservation:1234567'
-         */
+      * Unique reservation ARN, e.g. 'arn:aws:medialive:us-west-2:123456789012:reservation:1234567'
+      */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
-         * Number of reserved resources
-         */
+      * Number of reserved resources
+      */
     var Count: js.UndefOr[__integer] = js.undefined
     /**
-         * Currency code for usagePrice and fixedPrice in ISO-4217 format, e.g. 'USD'
-         */
+      * Currency code for usagePrice and fixedPrice in ISO-4217 format, e.g. 'USD'
+      */
     var CurrencyCode: js.UndefOr[__string] = js.undefined
     /**
-         * Lease duration, e.g. '12'
-         */
+      * Lease duration, e.g. '12'
+      */
     var Duration: js.UndefOr[__integer] = js.undefined
     /**
-         * Units for duration, e.g. 'MONTHS'
-         */
+      * Units for duration, e.g. 'MONTHS'
+      */
     var DurationUnits: js.UndefOr[OfferingDurationUnits] = js.undefined
     /**
-         * Reservation UTC end date and time in ISO-8601 format, e.g. '2019-03-01T00:00:00'
-         */
+      * Reservation UTC end date and time in ISO-8601 format, e.g. '2019-03-01T00:00:00'
+      */
     var End: js.UndefOr[__string] = js.undefined
     /**
-         * One-time charge for each reserved resource, e.g. '0.0' for a NO_UPFRONT offering
-         */
+      * One-time charge for each reserved resource, e.g. '0.0' for a NO_UPFRONT offering
+      */
     var FixedPrice: js.UndefOr[__double] = js.undefined
     /**
-         * User specified reservation name
-         */
+      * User specified reservation name
+      */
     var Name: js.UndefOr[__string] = js.undefined
     /**
-         * Offering description, e.g. 'HD AVC output at 10-20 Mbps, 30 fps, and standard VQ in US West (Oregon)'
-         */
+      * Offering description, e.g. 'HD AVC output at 10-20 Mbps, 30 fps, and standard VQ in US West (Oregon)'
+      */
     var OfferingDescription: js.UndefOr[__string] = js.undefined
     /**
-         * Unique offering ID, e.g. '87654321'
-         */
+      * Unique offering ID, e.g. '87654321'
+      */
     var OfferingId: js.UndefOr[__string] = js.undefined
     /**
-         * Offering type, e.g. 'NO_UPFRONT'
-         */
+      * Offering type, e.g. 'NO_UPFRONT'
+      */
     var OfferingType: js.UndefOr[OfferingType] = js.undefined
     /**
-         * AWS region, e.g. 'us-west-2'
-         */
+      * AWS region, e.g. 'us-west-2'
+      */
     var Region: js.UndefOr[__string] = js.undefined
     /**
-         * Unique reservation ID, e.g. '1234567'
-         */
+      * Unique reservation ID, e.g. '1234567'
+      */
     var ReservationId: js.UndefOr[__string] = js.undefined
     /**
-         * Resource configuration details
-         */
+      * Resource configuration details
+      */
     var ResourceSpecification: js.UndefOr[ReservationResourceSpecification] = js.undefined
     /**
-         * Reservation UTC start date and time in ISO-8601 format, e.g. '2018-03-01T00:00:00'
-         */
+      * Reservation UTC start date and time in ISO-8601 format, e.g. '2018-03-01T00:00:00'
+      */
     var Start: js.UndefOr[__string] = js.undefined
     /**
-         * Current state of reservation, e.g. 'ACTIVE'
-         */
+      * Current state of reservation, e.g. 'ACTIVE'
+      */
     var State: js.UndefOr[ReservationState] = js.undefined
     /**
-         * Recurring usage charge for each reserved resource, e.g. '157.0'
-         */
+      * Recurring usage charge for each reserved resource, e.g. '157.0'
+      */
     var UsagePrice: js.UndefOr[__double] = js.undefined
   }
   
-  
   trait ReservationResourceSpecification extends js.Object {
     /**
-         * Codec, e.g. 'AVC'
-         */
+      * Codec, e.g. 'AVC'
+      */
     var Codec: js.UndefOr[ReservationCodec] = js.undefined
     /**
-         * Maximum bitrate, e.g. 'MAX_20_MBPS'
-         */
+      * Maximum bitrate, e.g. 'MAX_20_MBPS'
+      */
     var MaximumBitrate: js.UndefOr[ReservationMaximumBitrate] = js.undefined
     /**
-         * Maximum framerate, e.g. 'MAX_30_FPS' (Outputs only)
-         */
+      * Maximum framerate, e.g. 'MAX_30_FPS' (Outputs only)
+      */
     var MaximumFramerate: js.UndefOr[ReservationMaximumFramerate] = js.undefined
     /**
-         * Resolution, e.g. 'HD'
-         */
+      * Resolution, e.g. 'HD'
+      */
     var Resolution: js.UndefOr[ReservationResolution] = js.undefined
     /**
-         * Resource type, 'INPUT', 'OUTPUT', or 'CHANNEL'
-         */
+      * Resource type, 'INPUT', 'OUTPUT', or 'CHANNEL'
+      */
     var ResourceType: js.UndefOr[ReservationResourceType] = js.undefined
     /**
-         * Special feature, e.g. 'AUDIO_NORMALIZATION' (Channels only)
-         */
+      * Special feature, e.g. 'AUDIO_NORMALIZATION' (Channels only)
+      */
     var SpecialFeature: js.UndefOr[ReservationSpecialFeature] = js.undefined
     /**
-         * Video quality, e.g. 'STANDARD' (Outputs only)
-         */
+      * Video quality, e.g. 'STANDARD' (Outputs only)
+      */
     var VideoQuality: js.UndefOr[ReservationVideoQuality] = js.undefined
   }
   
-  
   trait RtmpCaptionInfoDestinationSettings extends js.Object
-  
   
   trait RtmpGroupSettings extends js.Object {
     /**
-         * Authentication scheme to use when connecting with CDN
-         */
+      * Authentication scheme to use when connecting with CDN
+      */
     var AuthenticationScheme: js.UndefOr[AuthenticationScheme] = js.undefined
     /**
-         * Controls behavior when content cache fills up. If remote origin server stalls the RTMP connection and does not accept content fast enough the 'Media Cache' will fill up. When the cache reaches the duration specified by cacheLength the cache will stop accepting new content. If set to disconnectImmediately, the RTMP output will force a disconnect. Clear the media cache, and reconnect after restartDelay seconds. If set to waitForServer, the RTMP output will wait up to 5 minutes to allow the origin server to begin accepting data again.
-         */
+      * Controls behavior when content cache fills up. If remote origin server stalls the RTMP connection and does not accept content fast enough the 'Media Cache' will fill up. When the cache reaches the duration specified by cacheLength the cache will stop accepting new content. If set to disconnectImmediately, the RTMP output will force a disconnect. Clear the media cache, and reconnect after restartDelay seconds. If set to waitForServer, the RTMP output will wait up to 5 minutes to allow the origin server to begin accepting data again.
+      */
     var CacheFullBehavior: js.UndefOr[RtmpCacheFullBehavior] = js.undefined
     /**
-         * Cache length, in seconds, is used to calculate buffer size.
-         */
+      * Cache length, in seconds, is used to calculate buffer size.
+      */
     var CacheLength: js.UndefOr[__integerMin30] = js.undefined
     /**
-         * Controls the types of data that passes to onCaptionInfo outputs.  If set to 'all' then 608 and 708 carried DTVCC data will be passed.  If set to 'field1AndField2608' then DTVCC data will be stripped out, but 608 data from both fields will be passed. If set to 'field1608' then only the data carried in 608 from field 1 video will be passed.
-         */
+      * Controls the types of data that passes to onCaptionInfo outputs.  If set to 'all' then 608 and 708 carried DTVCC data will be passed.  If set to 'field1AndField2608' then DTVCC data will be stripped out, but 608 data from both fields will be passed. If set to 'field1608' then only the data carried in 608 from field 1 video will be passed.
+      */
     var CaptionData: js.UndefOr[RtmpCaptionData] = js.undefined
     /**
-         * Controls the behavior of this RTMP group if input becomes unavailable.
-    
+      * Controls the behavior of this RTMP group if input becomes unavailable.
     - emitOutput: Emit a slate until input returns.
     - pauseOutput: Stop transmitting data until input returns. This does not close the underlying RTMP connection.
-         */
+      */
     var InputLossAction: js.UndefOr[InputLossActionForRtmpOut] = js.undefined
     /**
-         * If a streaming output fails, number of seconds to wait until a restart is initiated. A value of 0 means never restart.
-         */
+      * If a streaming output fails, number of seconds to wait until a restart is initiated. A value of 0 means never restart.
+      */
     var RestartDelay: js.UndefOr[__integerMin0] = js.undefined
   }
   
-  
   trait RtmpOutputSettings extends js.Object {
     /**
-         * If set to verifyAuthenticity, verify the tls certificate chain to a trusted Certificate Authority (CA).  This will cause rtmps outputs with self-signed certificates to fail.
-         */
+      * If set to verifyAuthenticity, verify the tls certificate chain to a trusted Certificate Authority (CA).  This will cause rtmps outputs with self-signed certificates to fail.
+      */
     var CertificateMode: js.UndefOr[RtmpOutputCertificateMode] = js.undefined
     /**
-         * Number of seconds to wait before retrying a connection to the Flash Media server if the connection is lost.
-         */
+      * Number of seconds to wait before retrying a connection to the Flash Media server if the connection is lost.
+      */
     var ConnectionRetryInterval: js.UndefOr[__integerMin1] = js.undefined
     /**
-         * The RTMP endpoint excluding the stream name (eg. rtmp://host/appname). For connection to Akamai, a username and password must be supplied. URI fields accept format identifiers.
-         */
+      * The RTMP endpoint excluding the stream name (eg. rtmp://host/appname). For connection to Akamai, a username and password must be supplied. URI fields accept format identifiers.
+      */
     var Destination: OutputLocationRef
     /**
-         * Number of retry attempts.
-         */
+      * Number of retry attempts.
+      */
     var NumRetries: js.UndefOr[__integerMin0] = js.undefined
   }
   
-  
   trait ScheduleAction extends js.Object {
     /**
-         * The name of the action, must be unique within the schedule. This name provides the main reference to an action once it is added to the schedule. A name is unique if it is no longer in the schedule. The schedule is automatically cleaned up to remove actions with a start time of more than 1 hour ago (approximately) so at that point a name can be reused.
-         */
+      * The name of the action, must be unique within the schedule. This name provides the main reference to an action once it is added to the schedule. A name is unique if it is no longer in the schedule. The schedule is automatically cleaned up to remove actions with a start time of more than 1 hour ago (approximately) so at that point a name can be reused.
+      */
     var ActionName: __string
     /**
-         * Settings for this schedule action.
-         */
+      * Settings for this schedule action.
+      */
     var ScheduleActionSettings: ScheduleActionSettings
     /**
-         * The time for the action to start in the channel.
-         */
+      * The time for the action to start in the channel.
+      */
     var ScheduleActionStartSettings: ScheduleActionStartSettings
   }
   
-  
   trait ScheduleActionSettings extends js.Object {
     /**
-         * Settings to emit HLS metadata
-         */
+      * Settings to emit HLS metadata
+      */
     var HlsTimedMetadataSettings: js.UndefOr[HlsTimedMetadataScheduleActionSettings] = js.undefined
     /**
-         * Settings to switch an input
-         */
+      * Settings to switch an input
+      */
     var InputSwitchSettings: js.UndefOr[InputSwitchScheduleActionSettings] = js.undefined
     /**
-         * Settings for SCTE-35 return_to_network message
-         */
+      * Settings for SCTE-35 return_to_network message
+      */
     var Scte35ReturnToNetworkSettings: js.UndefOr[Scte35ReturnToNetworkScheduleActionSettings] = js.undefined
     /**
-         * Settings for SCTE-35 splice_insert message
-         */
+      * Settings for SCTE-35 splice_insert message
+      */
     var Scte35SpliceInsertSettings: js.UndefOr[Scte35SpliceInsertScheduleActionSettings] = js.undefined
     /**
-         * Settings for SCTE-35 time_signal message
-         */
+      * Settings for SCTE-35 time_signal message
+      */
     var Scte35TimeSignalSettings: js.UndefOr[Scte35TimeSignalScheduleActionSettings] = js.undefined
     /**
-         * Settings to activate a static image overlay
-         */
+      * Settings to activate a static image overlay
+      */
     var StaticImageActivateSettings: js.UndefOr[StaticImageActivateScheduleActionSettings] = js.undefined
     /**
-         * Settings to deactivate a static image overlay
-         */
+      * Settings to deactivate a static image overlay
+      */
     var StaticImageDeactivateSettings: js.UndefOr[StaticImageDeactivateScheduleActionSettings] = js.undefined
   }
   
-  
   trait ScheduleActionStartSettings extends js.Object {
     /**
-         * Holds the start time for the action.
-         */
+      * Holds the start time for the action.
+      */
     var FixedModeScheduleActionStartSettings: js.UndefOr[FixedModeScheduleActionStartSettings] = js.undefined
     /**
-         * Specifies an action to follow for scheduling this action.
-         */
+      * Specifies an action to follow for scheduling this action.
+      */
     var FollowModeScheduleActionStartSettings: js.UndefOr[FollowModeScheduleActionStartSettings] = js.undefined
   }
   
-  
   trait Scte20PlusEmbeddedDestinationSettings extends js.Object
-  
   
   trait Scte20SourceSettings extends js.Object {
     /**
-         * If upconvert, 608 data is both passed through via the "608 compatibility bytes" fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded.
-         */
+      * If upconvert, 608 data is both passed through via the "608 compatibility bytes" fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded.
+      */
     var Convert608To708: js.UndefOr[Scte20Convert608To708] = js.undefined
     /**
-         * Specifies the 608/708 channel number within the video track from which to extract captions. Unused for passthrough.
-         */
+      * Specifies the 608/708 channel number within the video track from which to extract captions. Unused for passthrough.
+      */
     var Source608ChannelNumber: js.UndefOr[__integerMin1Max4] = js.undefined
   }
   
-  
   trait Scte27DestinationSettings extends js.Object
-  
   
   trait Scte27SourceSettings extends js.Object {
     /**
-         * The pid field is used in conjunction with the caption selector languageCode field as follows:
+      * The pid field is used in conjunction with the caption selector languageCode field as follows:
       - Specify PID and Language: Extracts captions from that PID; the language is "informational".
       - Specify PID and omit Language: Extracts the specified PID.
       - Omit PID and specify Language: Extracts the specified language, whichever PID that happens to be.
       - Omit PID and omit Language: Valid only if source is DVB-Sub that is being passed through; all languages will be passed through.
-         */
+      */
     var Pid: js.UndefOr[__integerMin1] = js.undefined
   }
   
-  
   trait Scte35DeliveryRestrictions extends js.Object {
     /**
-         * Corresponds to SCTE-35 archive_allowed_flag.
-         */
+      * Corresponds to SCTE-35 archive_allowed_flag.
+      */
     var ArchiveAllowedFlag: Scte35ArchiveAllowedFlag
     /**
-         * Corresponds to SCTE-35 device_restrictions parameter.
-         */
+      * Corresponds to SCTE-35 device_restrictions parameter.
+      */
     var DeviceRestrictions: Scte35DeviceRestrictions
     /**
-         * Corresponds to SCTE-35 no_regional_blackout_flag parameter.
-         */
+      * Corresponds to SCTE-35 no_regional_blackout_flag parameter.
+      */
     var NoRegionalBlackoutFlag: Scte35NoRegionalBlackoutFlag
     /**
-         * Corresponds to SCTE-35 web_delivery_allowed_flag parameter.
-         */
+      * Corresponds to SCTE-35 web_delivery_allowed_flag parameter.
+      */
     var WebDeliveryAllowedFlag: Scte35WebDeliveryAllowedFlag
   }
   
-  
   trait Scte35Descriptor extends js.Object {
     /**
-         * SCTE-35 Descriptor Settings.
-         */
+      * SCTE-35 Descriptor Settings.
+      */
     var Scte35DescriptorSettings: Scte35DescriptorSettings
   }
   
-  
   trait Scte35DescriptorSettings extends js.Object {
     /**
-         * SCTE-35 Segmentation Descriptor.
-         */
+      * SCTE-35 Segmentation Descriptor.
+      */
     var SegmentationDescriptorScte35DescriptorSettings: Scte35SegmentationDescriptor
   }
   
-  
   trait Scte35ReturnToNetworkScheduleActionSettings extends js.Object {
     /**
-         * The splice_event_id for the SCTE-35 splice_insert, as defined in SCTE-35.
-         */
+      * The splice_event_id for the SCTE-35 splice_insert, as defined in SCTE-35.
+      */
     var SpliceEventId: __integerMin0Max4294967295
   }
-  
   
   trait Scte35SegmentationDescriptor extends js.Object {
     /**
-         * Holds the four SCTE-35 delivery restriction parameters.
-         */
+      * Holds the four SCTE-35 delivery restriction parameters.
+      */
     var DeliveryRestrictions: js.UndefOr[Scte35DeliveryRestrictions] = js.undefined
     /**
-         * Corresponds to SCTE-35 segment_num. A value that is valid for the specified segmentation_type_id.
-         */
+      * Corresponds to SCTE-35 segment_num. A value that is valid for the specified segmentation_type_id.
+      */
     var SegmentNum: js.UndefOr[__integerMin0Max255] = js.undefined
     /**
-         * Corresponds to SCTE-35 segmentation_event_cancel_indicator.
-         */
+      * Corresponds to SCTE-35 segmentation_event_cancel_indicator.
+      */
     var SegmentationCancelIndicator: Scte35SegmentationCancelIndicator
     /**
-         * Corresponds to SCTE-35 segmentation_duration. Optional. The duration for the time_signal, in 90 KHz ticks. To convert seconds to ticks, multiple the seconds by 90,000. Enter time in 90 KHz clock ticks. If you do not enter a duration, the time_signal will continue until you insert a cancellation message.
-         */
+      * Corresponds to SCTE-35 segmentation_duration. Optional. The duration for the time_signal, in 90 KHz ticks. To convert seconds to ticks, multiple the seconds by 90,000. Enter time in 90 KHz clock ticks. If you do not enter a duration, the time_signal will continue until you insert a cancellation message.
+      */
     var SegmentationDuration: js.UndefOr[__integerMin0Max1099511627775] = js.undefined
     /**
-         * Corresponds to SCTE-35 segmentation_event_id. 
-         */
+      * Corresponds to SCTE-35 segmentation_event_id. 
+      */
     var SegmentationEventId: __integerMin0Max4294967295
     /**
-         * Corresponds to SCTE-35 segmentation_type_id. One of the segmentation_type_id values listed in the SCTE-35 specification. On the console, enter the ID in decimal (for example, "52"). In the CLI, API, or an SDK, enter the ID in hex (for example, "0x34") or decimal (for example, "52").
-         */
+      * Corresponds to SCTE-35 segmentation_type_id. One of the segmentation_type_id values listed in the SCTE-35 specification. On the console, enter the ID in decimal (for example, "52"). In the CLI, API, or an SDK, enter the ID in hex (for example, "0x34") or decimal (for example, "52").
+      */
     var SegmentationTypeId: js.UndefOr[__integerMin0Max255] = js.undefined
     /**
-         * Corresponds to SCTE-35 segmentation_upid. Enter a string containing the hexadecimal representation of the characters that make up the SCTE-35 segmentation_upid value. Must contain an even number of hex characters. Do not include spaces between each hex pair. For example, the ASCII "ADS Information" becomes hex "41445320496e666f726d6174696f6e.
-         */
+      * Corresponds to SCTE-35 segmentation_upid. Enter a string containing the hexadecimal representation of the characters that make up the SCTE-35 segmentation_upid value. Must contain an even number of hex characters. Do not include spaces between each hex pair. For example, the ASCII "ADS Information" becomes hex "41445320496e666f726d6174696f6e.
+      */
     var SegmentationUpid: js.UndefOr[__string] = js.undefined
     /**
-         * Corresponds to SCTE-35 segmentation_upid_type. On the console, enter one of the types listed in the SCTE-35 specification, converted to a decimal. For example, "0x0C" hex from the specification is "12" in decimal. In the CLI, API, or an SDK, enter one of the types listed in the SCTE-35 specification, in either hex (for example, "0x0C" ) or in decimal (for example, "12").
-         */
+      * Corresponds to SCTE-35 segmentation_upid_type. On the console, enter one of the types listed in the SCTE-35 specification, converted to a decimal. For example, "0x0C" hex from the specification is "12" in decimal. In the CLI, API, or an SDK, enter one of the types listed in the SCTE-35 specification, in either hex (for example, "0x0C" ) or in decimal (for example, "12").
+      */
     var SegmentationUpidType: js.UndefOr[__integerMin0Max255] = js.undefined
     /**
-         * Corresponds to SCTE-35 segments_expected. A value that is valid for the specified segmentation_type_id.
-         */
+      * Corresponds to SCTE-35 segments_expected. A value that is valid for the specified segmentation_type_id.
+      */
     var SegmentsExpected: js.UndefOr[__integerMin0Max255] = js.undefined
     /**
-         * Corresponds to SCTE-35 sub_segment_num. A value that is valid for the specified segmentation_type_id.
-         */
+      * Corresponds to SCTE-35 sub_segment_num. A value that is valid for the specified segmentation_type_id.
+      */
     var SubSegmentNum: js.UndefOr[__integerMin0Max255] = js.undefined
     /**
-         * Corresponds to SCTE-35 sub_segments_expected. A value that is valid for the specified segmentation_type_id.
-         */
+      * Corresponds to SCTE-35 sub_segments_expected. A value that is valid for the specified segmentation_type_id.
+      */
     var SubSegmentsExpected: js.UndefOr[__integerMin0Max255] = js.undefined
   }
   
-  
   trait Scte35SpliceInsert extends js.Object {
     /**
-         * When specified, this offset (in milliseconds) is added to the input Ad Avail PTS time. This only applies to embedded SCTE 104/35 messages and does not apply to OOB messages.
-         */
+      * When specified, this offset (in milliseconds) is added to the input Ad Avail PTS time. This only applies to embedded SCTE 104/35 messages and does not apply to OOB messages.
+      */
     var AdAvailOffset: js.UndefOr[__integerMinNegative1000Max1000] = js.undefined
     /**
-         * When set to ignore, Segment Descriptors with noRegionalBlackoutFlag set to 0 will no longer trigger blackouts or Ad Avail slates
-         */
+      * When set to ignore, Segment Descriptors with noRegionalBlackoutFlag set to 0 will no longer trigger blackouts or Ad Avail slates
+      */
     var NoRegionalBlackoutFlag: js.UndefOr[Scte35SpliceInsertNoRegionalBlackoutBehavior] = js.undefined
     /**
-         * When set to ignore, Segment Descriptors with webDeliveryAllowedFlag set to 0 will no longer trigger blackouts or Ad Avail slates
-         */
+      * When set to ignore, Segment Descriptors with webDeliveryAllowedFlag set to 0 will no longer trigger blackouts or Ad Avail slates
+      */
     var WebDeliveryAllowedFlag: js.UndefOr[Scte35SpliceInsertWebDeliveryAllowedBehavior] = js.undefined
   }
   
-  
   trait Scte35SpliceInsertScheduleActionSettings extends js.Object {
     /**
-         * Optional, the duration for the splice_insert, in 90 KHz ticks. To convert seconds to ticks, multiple the seconds by 90,000. If you enter a duration, there is an expectation that the downstream system can read the duration and cue in at that time. If you do not enter a duration, the splice_insert will continue indefinitely and there is an expectation that you will enter a return_to_network to end the splice_insert at the appropriate time.
-         */
+      * Optional, the duration for the splice_insert, in 90 KHz ticks. To convert seconds to ticks, multiple the seconds by 90,000. If you enter a duration, there is an expectation that the downstream system can read the duration and cue in at that time. If you do not enter a duration, the splice_insert will continue indefinitely and there is an expectation that you will enter a return_to_network to end the splice_insert at the appropriate time.
+      */
     var Duration: js.UndefOr[__integerMin0Max8589934591] = js.undefined
     /**
-         * The splice_event_id for the SCTE-35 splice_insert, as defined in SCTE-35.
-         */
+      * The splice_event_id for the SCTE-35 splice_insert, as defined in SCTE-35.
+      */
     var SpliceEventId: __integerMin0Max4294967295
   }
   
-  
   trait Scte35TimeSignalApos extends js.Object {
     /**
-         * When specified, this offset (in milliseconds) is added to the input Ad Avail PTS time. This only applies to embedded SCTE 104/35 messages and does not apply to OOB messages.
-         */
+      * When specified, this offset (in milliseconds) is added to the input Ad Avail PTS time. This only applies to embedded SCTE 104/35 messages and does not apply to OOB messages.
+      */
     var AdAvailOffset: js.UndefOr[__integerMinNegative1000Max1000] = js.undefined
     /**
-         * When set to ignore, Segment Descriptors with noRegionalBlackoutFlag set to 0 will no longer trigger blackouts or Ad Avail slates
-         */
+      * When set to ignore, Segment Descriptors with noRegionalBlackoutFlag set to 0 will no longer trigger blackouts or Ad Avail slates
+      */
     var NoRegionalBlackoutFlag: js.UndefOr[Scte35AposNoRegionalBlackoutBehavior] = js.undefined
     /**
-         * When set to ignore, Segment Descriptors with webDeliveryAllowedFlag set to 0 will no longer trigger blackouts or Ad Avail slates
-         */
+      * When set to ignore, Segment Descriptors with webDeliveryAllowedFlag set to 0 will no longer trigger blackouts or Ad Avail slates
+      */
     var WebDeliveryAllowedFlag: js.UndefOr[Scte35AposWebDeliveryAllowedBehavior] = js.undefined
   }
   
-  
   trait Scte35TimeSignalScheduleActionSettings extends js.Object {
     /**
-         * The list of SCTE-35 descriptors accompanying the SCTE-35 time_signal.
-         */
+      * The list of SCTE-35 descriptors accompanying the SCTE-35 time_signal.
+      */
     var Scte35Descriptors: __listOfScte35Descriptor
   }
   
-  
   trait SmpteTtDestinationSettings extends js.Object
-  
   
   trait StandardHlsSettings extends js.Object {
     /**
-         * List all the audio groups that are used with the video output stream. Input all the audio GROUP-IDs that are associated to the video, separate by ','.
-         */
+      * List all the audio groups that are used with the video output stream. Input all the audio GROUP-IDs that are associated to the video, separate by ','.
+      */
     var AudioRenditionSets: js.UndefOr[__string] = js.undefined
     var M3u8Settings: M3u8Settings
   }
   
-  
   trait StartChannelRequest extends js.Object {
     /**
-         * A request to start a channel
-         */
+      * A request to start a channel
+      */
     var ChannelId: __string
   }
-  
   
   trait StartChannelResponse extends js.Object {
     /**
-         * The unique arn of the channel.
-         */
+      * The unique arn of the channel.
+      */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
-         * A list of destinations of the channel. For UDP outputs, there is one
+      * A list of destinations of the channel. For UDP outputs, there is one
     destination per output. For other types (HLS, for example), there is
     one destination per packager.
-    
-         */
+      */
     var Destinations: js.UndefOr[__listOfOutputDestination] = js.undefined
     /**
-         * The endpoints where outgoing connections initiate from
-         */
+      * The endpoints where outgoing connections initiate from
+      */
     var EgressEndpoints: js.UndefOr[__listOfChannelEgressEndpoint] = js.undefined
     var EncoderSettings: js.UndefOr[EncoderSettings] = js.undefined
     /**
-         * The unique id of the channel.
-         */
+      * The unique id of the channel.
+      */
     var Id: js.UndefOr[__string] = js.undefined
     /**
-         * List of input attachments for channel.
-         */
+      * List of input attachments for channel.
+      */
     var InputAttachments: js.UndefOr[__listOfInputAttachment] = js.undefined
     var InputSpecification: js.UndefOr[InputSpecification] = js.undefined
     /**
-         * The log level being written to CloudWatch Logs.
-         */
+      * The log level being written to CloudWatch Logs.
+      */
     var LogLevel: js.UndefOr[LogLevel] = js.undefined
     /**
-         * The name of the channel. (user-mutable)
-         */
+      * The name of the channel. (user-mutable)
+      */
     var Name: js.UndefOr[__string] = js.undefined
     /**
-         * The number of currently healthy pipelines.
-         */
+      * The number of currently healthy pipelines.
+      */
     var PipelinesRunningCount: js.UndefOr[__integer] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the role assumed when running the Channel.
-         */
+      * The Amazon Resource Name (ARN) of the role assumed when running the Channel.
+      */
     var RoleArn: js.UndefOr[__string] = js.undefined
     var State: js.UndefOr[ChannelState] = js.undefined
   }
-  
   
   trait StaticImageActivateScheduleActionSettings extends js.Object {
     /**
-         * The duration in milliseconds for the image to remain on the video. If omitted or set to 0 the duration is unlimited and the image will remain until it is explicitly deactivated.
-         */
+      * The duration in milliseconds for the image to remain on the video. If omitted or set to 0 the duration is unlimited and the image will remain until it is explicitly deactivated.
+      */
     var Duration: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * The time in milliseconds for the image to fade in. The fade-in starts at the start time of the overlay. Default is 0 (no fade-in).
-         */
+      * The time in milliseconds for the image to fade in. The fade-in starts at the start time of the overlay. Default is 0 (no fade-in).
+      */
     var FadeIn: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * Applies only if a duration is specified. The time in milliseconds for the image to fade out. The fade-out starts when the duration time is hit, so it effectively extends the duration. Default is 0 (no fade-out).
-         */
+      * Applies only if a duration is specified. The time in milliseconds for the image to fade out. The fade-out starts when the duration time is hit, so it effectively extends the duration. Default is 0 (no fade-out).
+      */
     var FadeOut: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * The height of the image when inserted into the video, in pixels. The overlay will be scaled up or down to the specified height. Leave blank to use the native height of the overlay.
-         */
+      * The height of the image when inserted into the video, in pixels. The overlay will be scaled up or down to the specified height. Leave blank to use the native height of the overlay.
+      */
     var Height: js.UndefOr[__integerMin1] = js.undefined
     /**
-         * The location and filename of the image file to overlay on the video. The file must be a 32-bit BMP, PNG, or TGA file, and must not be larger (in pixels) than the input video.
-         */
+      * The location and filename of the image file to overlay on the video. The file must be a 32-bit BMP, PNG, or TGA file, and must not be larger (in pixels) than the input video.
+      */
     var Image: InputLocation
     /**
-         * Placement of the left edge of the overlay relative to the left edge of the video frame, in pixels. 0 (the default) is the left edge of the frame. If the placement causes the overlay to extend beyond the right edge of the underlying video, then the overlay is cropped on the right.
-         */
+      * Placement of the left edge of the overlay relative to the left edge of the video frame, in pixels. 0 (the default) is the left edge of the frame. If the placement causes the overlay to extend beyond the right edge of the underlying video, then the overlay is cropped on the right.
+      */
     var ImageX: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * Placement of the top edge of the overlay relative to the top edge of the video frame, in pixels. 0 (the default) is the top edge of the frame. If the placement causes the overlay to extend beyond the bottom edge of the underlying video, then the overlay is cropped on the bottom.
-         */
+      * Placement of the top edge of the overlay relative to the top edge of the video frame, in pixels. 0 (the default) is the top edge of the frame. If the placement causes the overlay to extend beyond the bottom edge of the underlying video, then the overlay is cropped on the bottom.
+      */
     var ImageY: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * The number of the layer, 0 to 7. There are 8 layers that can be overlaid on the video, each layer with a different image. The layers are in Z order, which means that overlays with higher values of layer are inserted on top of overlays with lower values of layer. Default is 0.
-         */
+      * The number of the layer, 0 to 7. There are 8 layers that can be overlaid on the video, each layer with a different image. The layers are in Z order, which means that overlays with higher values of layer are inserted on top of overlays with lower values of layer. Default is 0.
+      */
     var Layer: js.UndefOr[__integerMin0Max7] = js.undefined
     /**
-         * Opacity of image where 0 is transparent and 100 is fully opaque. Default is 100.
-         */
+      * Opacity of image where 0 is transparent and 100 is fully opaque. Default is 100.
+      */
     var Opacity: js.UndefOr[__integerMin0Max100] = js.undefined
     /**
-         * The width of the image when inserted into the video, in pixels. The overlay will be scaled up or down to the specified width. Leave blank to use the native width of the overlay.
-         */
+      * The width of the image when inserted into the video, in pixels. The overlay will be scaled up or down to the specified width. Leave blank to use the native width of the overlay.
+      */
     var Width: js.UndefOr[__integerMin1] = js.undefined
   }
   
-  
   trait StaticImageDeactivateScheduleActionSettings extends js.Object {
     /**
-         * The time in milliseconds for the image to fade out. Default is 0 (no fade-out).
-         */
+      * The time in milliseconds for the image to fade out. Default is 0 (no fade-out).
+      */
     var FadeOut: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * The image overlay layer to deactivate, 0 to 7. Default is 0.
-         */
+      * The image overlay layer to deactivate, 0 to 7. Default is 0.
+      */
     var Layer: js.UndefOr[__integerMin0Max7] = js.undefined
   }
   
-  
   trait StaticKeySettings extends js.Object {
     /**
-         * The URL of the license server used for protecting content.
-         */
+      * The URL of the license server used for protecting content.
+      */
     var KeyProviderServer: js.UndefOr[InputLocation] = js.undefined
     /**
-         * Static key value as a 32 character hexadecimal string.
-         */
+      * Static key value as a 32 character hexadecimal string.
+      */
     var StaticKeyValue: __stringMin32Max32
   }
   
-  
   trait StopChannelRequest extends js.Object {
     /**
-         * A request to stop a running channel
-         */
+      * A request to stop a running channel
+      */
     var ChannelId: __string
   }
   
-  
   trait StopChannelResponse extends js.Object {
     /**
-         * The unique arn of the channel.
-         */
+      * The unique arn of the channel.
+      */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
-         * A list of destinations of the channel. For UDP outputs, there is one
+      * A list of destinations of the channel. For UDP outputs, there is one
     destination per output. For other types (HLS, for example), there is
     one destination per packager.
-    
-         */
+      */
     var Destinations: js.UndefOr[__listOfOutputDestination] = js.undefined
     /**
-         * The endpoints where outgoing connections initiate from
-         */
+      * The endpoints where outgoing connections initiate from
+      */
     var EgressEndpoints: js.UndefOr[__listOfChannelEgressEndpoint] = js.undefined
     var EncoderSettings: js.UndefOr[EncoderSettings] = js.undefined
     /**
-         * The unique id of the channel.
-         */
+      * The unique id of the channel.
+      */
     var Id: js.UndefOr[__string] = js.undefined
     /**
-         * List of input attachments for channel.
-         */
+      * List of input attachments for channel.
+      */
     var InputAttachments: js.UndefOr[__listOfInputAttachment] = js.undefined
     var InputSpecification: js.UndefOr[InputSpecification] = js.undefined
     /**
-         * The log level being written to CloudWatch Logs.
-         */
+      * The log level being written to CloudWatch Logs.
+      */
     var LogLevel: js.UndefOr[LogLevel] = js.undefined
     /**
-         * The name of the channel. (user-mutable)
-         */
+      * The name of the channel. (user-mutable)
+      */
     var Name: js.UndefOr[__string] = js.undefined
     /**
-         * The number of currently healthy pipelines.
-         */
+      * The number of currently healthy pipelines.
+      */
     var PipelinesRunningCount: js.UndefOr[__integer] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the role assumed when running the Channel.
-         */
+      * The Amazon Resource Name (ARN) of the role assumed when running the Channel.
+      */
     var RoleArn: js.UndefOr[__string] = js.undefined
     var State: js.UndefOr[ChannelState] = js.undefined
   }
   
-  
   trait TeletextDestinationSettings extends js.Object
-  
   
   trait TeletextSourceSettings extends js.Object {
     /**
-         * Specifies the teletext page number within the data stream from which to extract captions. Range of 0x100 (256) to 0x8FF (2303). Unused for passthrough. Should be specified as a hexadecimal string with no "0x" prefix.
-         */
+      * Specifies the teletext page number within the data stream from which to extract captions. Range of 0x100 (256) to 0x8FF (2303). Unused for passthrough. Should be specified as a hexadecimal string with no "0x" prefix.
+      */
     var PageNumber: js.UndefOr[__string] = js.undefined
   }
   
-  
   trait TimecodeConfig extends js.Object {
     /**
-         * Identifies the source for the timecode that will be associated with the events outputs.
+      * Identifies the source for the timecode that will be associated with the events outputs.
     -Embedded (embedded): Initialize the output timecode with timecode from the the source.  If no embedded timecode is detected in the source, the system falls back to using "Start at 0" (zerobased).
     -System Clock (systemclock): Use the UTC time.
     -Start at 0 (zerobased): The time of the first frame of the event will be 00:00:00:00.
-         */
+      */
     var Source: TimecodeConfigSource
     /**
-         * Threshold in frames beyond which output timecode is resynchronized to the input timecode. Discrepancies below this threshold are permitted to avoid unnecessary discontinuities in the output timecode. No timecode sync when this is not specified.
-         */
+      * Threshold in frames beyond which output timecode is resynchronized to the input timecode. Discrepancies below this threshold are permitted to avoid unnecessary discontinuities in the output timecode. No timecode sync when this is not specified.
+      */
     var SyncThreshold: js.UndefOr[__integerMin1Max1000000] = js.undefined
   }
   
-  
   trait TtmlDestinationSettings extends js.Object {
     /**
-         * When set to passthrough, passes through style and position information from a TTML-like input source (TTML, SMPTE-TT, CFF-TT) to the CFF-TT output or TTML output.
-         */
+      * When set to passthrough, passes through style and position information from a TTML-like input source (TTML, SMPTE-TT, CFF-TT) to the CFF-TT output or TTML output.
+      */
     var StyleControl: js.UndefOr[TtmlDestinationStyleControl] = js.undefined
   }
   
@@ -3640,12 +3435,9 @@ object MediaLiveNs extends js.Object {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
     /**
-       * Update a channel schedule
-       */
+      * Update a channel schedule
+      */
     def batchUpdateSchedule(): awsDashSdkLib.libRequestMod.Request[BatchUpdateScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Update a channel schedule
-       */
     def batchUpdateSchedule(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -3654,12 +3446,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchUpdateScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Update a channel schedule
-       */
+      * Update a channel schedule
+      */
     def batchUpdateSchedule(params: BatchUpdateScheduleRequest): awsDashSdkLib.libRequestMod.Request[BatchUpdateScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Update a channel schedule
-       */
     def batchUpdateSchedule(
       params: BatchUpdateScheduleRequest,
       callback: js.Function2[
@@ -3669,12 +3458,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchUpdateScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a new channel
-       */
+      * Creates a new channel
+      */
     def createChannel(): awsDashSdkLib.libRequestMod.Request[CreateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Creates a new channel
-       */
     def createChannel(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -3683,12 +3469,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a new channel
-       */
+      * Creates a new channel
+      */
     def createChannel(params: CreateChannelRequest): awsDashSdkLib.libRequestMod.Request[CreateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Creates a new channel
-       */
     def createChannel(
       params: CreateChannelRequest,
       callback: js.Function2[
@@ -3698,12 +3481,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Create an input
-       */
+      * Create an input
+      */
     def createInput(): awsDashSdkLib.libRequestMod.Request[CreateInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Create an input
-       */
     def createInput(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -3712,12 +3492,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Create an input
-       */
+      * Create an input
+      */
     def createInput(params: CreateInputRequest): awsDashSdkLib.libRequestMod.Request[CreateInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Create an input
-       */
     def createInput(
       params: CreateInputRequest,
       callback: js.Function2[
@@ -3727,12 +3504,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a Input Security Group
-       */
+      * Creates a Input Security Group
+      */
     def createInputSecurityGroup(): awsDashSdkLib.libRequestMod.Request[CreateInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Creates a Input Security Group
-       */
     def createInputSecurityGroup(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -3741,12 +3515,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a Input Security Group
-       */
+      * Creates a Input Security Group
+      */
     def createInputSecurityGroup(params: CreateInputSecurityGroupRequest): awsDashSdkLib.libRequestMod.Request[CreateInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Creates a Input Security Group
-       */
     def createInputSecurityGroup(
       params: CreateInputSecurityGroupRequest,
       callback: js.Function2[
@@ -3756,12 +3527,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts deletion of channel. The associated outputs are also deleted.
-       */
+      * Starts deletion of channel. The associated outputs are also deleted.
+      */
     def deleteChannel(): awsDashSdkLib.libRequestMod.Request[DeleteChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Starts deletion of channel. The associated outputs are also deleted.
-       */
     def deleteChannel(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -3770,12 +3538,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts deletion of channel. The associated outputs are also deleted.
-       */
+      * Starts deletion of channel. The associated outputs are also deleted.
+      */
     def deleteChannel(params: DeleteChannelRequest): awsDashSdkLib.libRequestMod.Request[DeleteChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Starts deletion of channel. The associated outputs are also deleted.
-       */
     def deleteChannel(
       params: DeleteChannelRequest,
       callback: js.Function2[
@@ -3785,12 +3550,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the input end point
-       */
+      * Deletes the input end point
+      */
     def deleteInput(): awsDashSdkLib.libRequestMod.Request[DeleteInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Deletes the input end point
-       */
     def deleteInput(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -3799,12 +3561,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the input end point
-       */
+      * Deletes the input end point
+      */
     def deleteInput(params: DeleteInputRequest): awsDashSdkLib.libRequestMod.Request[DeleteInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Deletes the input end point
-       */
     def deleteInput(
       params: DeleteInputRequest,
       callback: js.Function2[
@@ -3814,12 +3573,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes an Input Security Group
-       */
+      * Deletes an Input Security Group
+      */
     def deleteInputSecurityGroup(): awsDashSdkLib.libRequestMod.Request[DeleteInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Deletes an Input Security Group
-       */
     def deleteInputSecurityGroup(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -3828,12 +3584,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes an Input Security Group
-       */
+      * Deletes an Input Security Group
+      */
     def deleteInputSecurityGroup(params: DeleteInputSecurityGroupRequest): awsDashSdkLib.libRequestMod.Request[DeleteInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Deletes an Input Security Group
-       */
     def deleteInputSecurityGroup(
       params: DeleteInputSecurityGroupRequest,
       callback: js.Function2[
@@ -3843,12 +3596,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Delete an expired reservation.
-       */
+      * Delete an expired reservation.
+      */
     def deleteReservation(): awsDashSdkLib.libRequestMod.Request[DeleteReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Delete an expired reservation.
-       */
     def deleteReservation(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -3857,12 +3607,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Delete an expired reservation.
-       */
+      * Delete an expired reservation.
+      */
     def deleteReservation(params: DeleteReservationRequest): awsDashSdkLib.libRequestMod.Request[DeleteReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Delete an expired reservation.
-       */
     def deleteReservation(
       params: DeleteReservationRequest,
       callback: js.Function2[
@@ -3872,12 +3619,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Gets details about a channel
-       */
+      * Gets details about a channel
+      */
     def describeChannel(): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Gets details about a channel
-       */
     def describeChannel(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -3886,12 +3630,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Gets details about a channel
-       */
+      * Gets details about a channel
+      */
     def describeChannel(params: DescribeChannelRequest): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Gets details about a channel
-       */
     def describeChannel(
       params: DescribeChannelRequest,
       callback: js.Function2[
@@ -3901,12 +3642,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Produces details about an input
-       */
+      * Produces details about an input
+      */
     def describeInput(): awsDashSdkLib.libRequestMod.Request[DescribeInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Produces details about an input
-       */
     def describeInput(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -3915,12 +3653,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Produces details about an input
-       */
+      * Produces details about an input
+      */
     def describeInput(params: DescribeInputRequest): awsDashSdkLib.libRequestMod.Request[DescribeInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Produces details about an input
-       */
     def describeInput(
       params: DescribeInputRequest,
       callback: js.Function2[
@@ -3930,12 +3665,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Produces a summary of an Input Security Group
-       */
+      * Produces a summary of an Input Security Group
+      */
     def describeInputSecurityGroup(): awsDashSdkLib.libRequestMod.Request[DescribeInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Produces a summary of an Input Security Group
-       */
     def describeInputSecurityGroup(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -3944,12 +3676,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Produces a summary of an Input Security Group
-       */
+      * Produces a summary of an Input Security Group
+      */
     def describeInputSecurityGroup(params: DescribeInputSecurityGroupRequest): awsDashSdkLib.libRequestMod.Request[DescribeInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Produces a summary of an Input Security Group
-       */
     def describeInputSecurityGroup(
       params: DescribeInputSecurityGroupRequest,
       callback: js.Function2[
@@ -3959,12 +3688,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Get details for an offering.
-       */
+      * Get details for an offering.
+      */
     def describeOffering(): awsDashSdkLib.libRequestMod.Request[DescribeOfferingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Get details for an offering.
-       */
     def describeOffering(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -3973,12 +3699,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeOfferingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Get details for an offering.
-       */
+      * Get details for an offering.
+      */
     def describeOffering(params: DescribeOfferingRequest): awsDashSdkLib.libRequestMod.Request[DescribeOfferingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Get details for an offering.
-       */
     def describeOffering(
       params: DescribeOfferingRequest,
       callback: js.Function2[
@@ -3988,12 +3711,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeOfferingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Get details for a reservation.
-       */
+      * Get details for a reservation.
+      */
     def describeReservation(): awsDashSdkLib.libRequestMod.Request[DescribeReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Get details for a reservation.
-       */
     def describeReservation(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -4002,12 +3722,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Get details for a reservation.
-       */
+      * Get details for a reservation.
+      */
     def describeReservation(params: DescribeReservationRequest): awsDashSdkLib.libRequestMod.Request[DescribeReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Get details for a reservation.
-       */
     def describeReservation(
       params: DescribeReservationRequest,
       callback: js.Function2[
@@ -4017,12 +3734,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Get a channel schedule
-       */
+      * Get a channel schedule
+      */
     def describeSchedule(): awsDashSdkLib.libRequestMod.Request[DescribeScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Get a channel schedule
-       */
     def describeSchedule(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -4031,12 +3745,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Get a channel schedule
-       */
+      * Get a channel schedule
+      */
     def describeSchedule(params: DescribeScheduleRequest): awsDashSdkLib.libRequestMod.Request[DescribeScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Get a channel schedule
-       */
     def describeSchedule(
       params: DescribeScheduleRequest,
       callback: js.Function2[
@@ -4046,12 +3757,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Produces list of channels that have been created
-       */
+      * Produces list of channels that have been created
+      */
     def listChannels(): awsDashSdkLib.libRequestMod.Request[ListChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Produces list of channels that have been created
-       */
     def listChannels(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -4060,12 +3768,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Produces list of channels that have been created
-       */
+      * Produces list of channels that have been created
+      */
     def listChannels(params: ListChannelsRequest): awsDashSdkLib.libRequestMod.Request[ListChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Produces list of channels that have been created
-       */
     def listChannels(
       params: ListChannelsRequest,
       callback: js.Function2[
@@ -4075,12 +3780,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Produces a list of Input Security Groups for an account
-       */
+      * Produces a list of Input Security Groups for an account
+      */
     def listInputSecurityGroups(): awsDashSdkLib.libRequestMod.Request[ListInputSecurityGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Produces a list of Input Security Groups for an account
-       */
     def listInputSecurityGroups(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -4089,12 +3791,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListInputSecurityGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Produces a list of Input Security Groups for an account
-       */
+      * Produces a list of Input Security Groups for an account
+      */
     def listInputSecurityGroups(params: ListInputSecurityGroupsRequest): awsDashSdkLib.libRequestMod.Request[ListInputSecurityGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Produces a list of Input Security Groups for an account
-       */
     def listInputSecurityGroups(
       params: ListInputSecurityGroupsRequest,
       callback: js.Function2[
@@ -4104,12 +3803,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListInputSecurityGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Produces list of inputs that have been created
-       */
+      * Produces list of inputs that have been created
+      */
     def listInputs(): awsDashSdkLib.libRequestMod.Request[ListInputsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Produces list of inputs that have been created
-       */
     def listInputs(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -4118,12 +3814,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListInputsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Produces list of inputs that have been created
-       */
+      * Produces list of inputs that have been created
+      */
     def listInputs(params: ListInputsRequest): awsDashSdkLib.libRequestMod.Request[ListInputsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Produces list of inputs that have been created
-       */
     def listInputs(
       params: ListInputsRequest,
       callback: js.Function2[
@@ -4133,12 +3826,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListInputsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * List offerings available for purchase.
-       */
+      * List offerings available for purchase.
+      */
     def listOfferings(): awsDashSdkLib.libRequestMod.Request[ListOfferingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * List offerings available for purchase.
-       */
     def listOfferings(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -4147,12 +3837,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListOfferingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * List offerings available for purchase.
-       */
+      * List offerings available for purchase.
+      */
     def listOfferings(params: ListOfferingsRequest): awsDashSdkLib.libRequestMod.Request[ListOfferingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * List offerings available for purchase.
-       */
     def listOfferings(
       params: ListOfferingsRequest,
       callback: js.Function2[
@@ -4162,12 +3849,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListOfferingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * List purchased reservations.
-       */
+      * List purchased reservations.
+      */
     def listReservations(): awsDashSdkLib.libRequestMod.Request[ListReservationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * List purchased reservations.
-       */
     def listReservations(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -4176,12 +3860,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListReservationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * List purchased reservations.
-       */
+      * List purchased reservations.
+      */
     def listReservations(params: ListReservationsRequest): awsDashSdkLib.libRequestMod.Request[ListReservationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * List purchased reservations.
-       */
     def listReservations(
       params: ListReservationsRequest,
       callback: js.Function2[
@@ -4191,12 +3872,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListReservationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Purchase an offering and create a reservation.
-       */
+      * Purchase an offering and create a reservation.
+      */
     def purchaseOffering(): awsDashSdkLib.libRequestMod.Request[PurchaseOfferingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Purchase an offering and create a reservation.
-       */
     def purchaseOffering(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -4205,12 +3883,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PurchaseOfferingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Purchase an offering and create a reservation.
-       */
+      * Purchase an offering and create a reservation.
+      */
     def purchaseOffering(params: PurchaseOfferingRequest): awsDashSdkLib.libRequestMod.Request[PurchaseOfferingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Purchase an offering and create a reservation.
-       */
     def purchaseOffering(
       params: PurchaseOfferingRequest,
       callback: js.Function2[
@@ -4220,12 +3895,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PurchaseOfferingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts an existing channel
-       */
+      * Starts an existing channel
+      */
     def startChannel(): awsDashSdkLib.libRequestMod.Request[StartChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Starts an existing channel
-       */
     def startChannel(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -4234,12 +3906,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts an existing channel
-       */
+      * Starts an existing channel
+      */
     def startChannel(params: StartChannelRequest): awsDashSdkLib.libRequestMod.Request[StartChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Starts an existing channel
-       */
     def startChannel(
       params: StartChannelRequest,
       callback: js.Function2[
@@ -4249,12 +3918,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Stops a running channel
-       */
+      * Stops a running channel
+      */
     def stopChannel(): awsDashSdkLib.libRequestMod.Request[StopChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Stops a running channel
-       */
     def stopChannel(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -4263,12 +3929,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StopChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Stops a running channel
-       */
+      * Stops a running channel
+      */
     def stopChannel(params: StopChannelRequest): awsDashSdkLib.libRequestMod.Request[StopChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Stops a running channel
-       */
     def stopChannel(
       params: StopChannelRequest,
       callback: js.Function2[
@@ -4278,12 +3941,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StopChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates a channel.
-       */
+      * Updates a channel.
+      */
     def updateChannel(): awsDashSdkLib.libRequestMod.Request[UpdateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Updates a channel.
-       */
     def updateChannel(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -4292,12 +3952,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates a channel.
-       */
+      * Updates a channel.
+      */
     def updateChannel(params: UpdateChannelRequest): awsDashSdkLib.libRequestMod.Request[UpdateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Updates a channel.
-       */
     def updateChannel(
       params: UpdateChannelRequest,
       callback: js.Function2[
@@ -4307,12 +3964,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates an input.
-       */
+      * Updates an input.
+      */
     def updateInput(): awsDashSdkLib.libRequestMod.Request[UpdateInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Updates an input.
-       */
     def updateInput(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -4321,12 +3975,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates an input.
-       */
+      * Updates an input.
+      */
     def updateInput(params: UpdateInputRequest): awsDashSdkLib.libRequestMod.Request[UpdateInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Updates an input.
-       */
     def updateInput(
       params: UpdateInputRequest,
       callback: js.Function2[
@@ -4336,12 +3987,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Update an Input Security Group's Whilelists.
-       */
+      * Update an Input Security Group's Whilelists.
+      */
     def updateInputSecurityGroup(): awsDashSdkLib.libRequestMod.Request[UpdateInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Update an Input Security Group's Whilelists.
-       */
     def updateInputSecurityGroup(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -4350,12 +3998,9 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Update an Input Security Group's Whilelists.
-       */
+      * Update an Input Security Group's Whilelists.
+      */
     def updateInputSecurityGroup(params: UpdateInputSecurityGroupRequest): awsDashSdkLib.libRequestMod.Request[UpdateInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Update an Input Security Group's Whilelists.
-       */
     def updateInputSecurityGroup(
       params: UpdateInputSecurityGroupRequest,
       callback: js.Function2[
@@ -4366,217 +4011,199 @@ object MediaLiveNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[UpdateInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
-  
   trait UdpContainerSettings extends js.Object {
     var M2tsSettings: js.UndefOr[M2tsSettings] = js.undefined
   }
   
-  
   trait UdpGroupSettings extends js.Object {
     /**
-         * Specifies behavior of last resort when input video is lost, and no more backup inputs are available. When dropTs is selected the entire transport stream will stop being emitted.  When dropProgram is selected the program can be dropped from the transport stream (and replaced with null packets to meet the TS bitrate requirement).  Or, when emitProgram is chosen the transport stream will continue to be produced normally with repeat frames, black frames, or slate frames substituted for the absent input video.
-         */
+      * Specifies behavior of last resort when input video is lost, and no more backup inputs are available. When dropTs is selected the entire transport stream will stop being emitted.  When dropProgram is selected the program can be dropped from the transport stream (and replaced with null packets to meet the TS bitrate requirement).  Or, when emitProgram is chosen the transport stream will continue to be produced normally with repeat frames, black frames, or slate frames substituted for the absent input video.
+      */
     var InputLossAction: js.UndefOr[InputLossActionForUdpOut] = js.undefined
     /**
-         * Indicates ID3 frame that has the timecode.
-         */
+      * Indicates ID3 frame that has the timecode.
+      */
     var TimedMetadataId3Frame: js.UndefOr[UdpTimedMetadataId3Frame] = js.undefined
     /**
-         * Timed Metadata interval in seconds.
-         */
+      * Timed Metadata interval in seconds.
+      */
     var TimedMetadataId3Period: js.UndefOr[__integerMin0] = js.undefined
   }
   
-  
   trait UdpOutputSettings extends js.Object {
     /**
-         * UDP output buffering in milliseconds. Larger values increase latency through the transcoder but simultaneously assist the transcoder in maintaining a constant, low-jitter UDP/RTP output while accommodating clock recovery, input switching, input disruptions, picture reordering, etc.
-         */
+      * UDP output buffering in milliseconds. Larger values increase latency through the transcoder but simultaneously assist the transcoder in maintaining a constant, low-jitter UDP/RTP output while accommodating clock recovery, input switching, input disruptions, picture reordering, etc.
+      */
     var BufferMsec: js.UndefOr[__integerMin0Max10000] = js.undefined
     var ContainerSettings: UdpContainerSettings
     /**
-         * Destination address and port number for RTP or UDP packets. Can be unicast or multicast RTP or UDP (eg. rtp://239.10.10.10:5001 or udp://10.100.100.100:5002).
-         */
+      * Destination address and port number for RTP or UDP packets. Can be unicast or multicast RTP or UDP (eg. rtp://239.10.10.10:5001 or udp://10.100.100.100:5002).
+      */
     var Destination: OutputLocationRef
     /**
-         * Settings for enabling and adjusting Forward Error Correction on UDP outputs.
-         */
+      * Settings for enabling and adjusting Forward Error Correction on UDP outputs.
+      */
     var FecOutputSettings: js.UndefOr[FecOutputSettings] = js.undefined
   }
   
-  
   trait UpdateChannelRequest extends js.Object {
     /**
-         * channel ID
-         */
+      * channel ID
+      */
     var ChannelId: __string
     /**
-         * A list of output destinations for this channel.
-         */
+      * A list of output destinations for this channel.
+      */
     var Destinations: js.UndefOr[__listOfOutputDestination] = js.undefined
     /**
-         * The encoder settings for this channel.
-         */
+      * The encoder settings for this channel.
+      */
     var EncoderSettings: js.UndefOr[EncoderSettings] = js.undefined
     var InputAttachments: js.UndefOr[__listOfInputAttachment] = js.undefined
     /**
-         * Specification of input for this channel (max. bitrate, resolution, codec, etc.)
-         */
+      * Specification of input for this channel (max. bitrate, resolution, codec, etc.)
+      */
     var InputSpecification: js.UndefOr[InputSpecification] = js.undefined
     /**
-         * The log level to write to CloudWatch Logs.
-         */
+      * The log level to write to CloudWatch Logs.
+      */
     var LogLevel: js.UndefOr[LogLevel] = js.undefined
     /**
-         * The name of the channel.
-         */
+      * The name of the channel.
+      */
     var Name: js.UndefOr[__string] = js.undefined
     /**
-         * An optional Amazon Resource Name (ARN) of the role to assume when running the Channel. If you do not specify this on an update call but the role was previously set that role will be removed.
-         */
+      * An optional Amazon Resource Name (ARN) of the role to assume when running the Channel. If you do not specify this on an update call but the role was previously set that role will be removed.
+      */
     var RoleArn: js.UndefOr[__string] = js.undefined
   }
-  
   
   trait UpdateChannelResponse extends js.Object {
     var Channel: js.UndefOr[Channel] = js.undefined
   }
   
-  
   trait UpdateInputRequest extends js.Object {
     /**
-         * Destination settings for PUSH type inputs.
-         */
+      * Destination settings for PUSH type inputs.
+      */
     var Destinations: js.UndefOr[__listOfInputDestinationRequest] = js.undefined
     /**
-         * Unique ID of the input.
-         */
+      * Unique ID of the input.
+      */
     var InputId: __string
     /**
-         * A list of security groups referenced by IDs to attach to the input.
-         */
+      * A list of security groups referenced by IDs to attach to the input.
+      */
     var InputSecurityGroups: js.UndefOr[__listOf__string] = js.undefined
     /**
-         * A list of the MediaConnect Flow ARNs that you want to use as the source of the input. You can specify as few as one
+      * A list of the MediaConnect Flow ARNs that you want to use as the source of the input. You can specify as few as one
     Flow and presently, as many as two. The only requirement is when you have more than one is that each Flow is in a
     separate Availability Zone as this ensures your EML input is redundant to AZ issues.
-    
-         */
+      */
     var MediaConnectFlows: js.UndefOr[__listOfMediaConnectFlowRequest] = js.undefined
     /**
-         * Name of the input.
-         */
+      * Name of the input.
+      */
     var Name: js.UndefOr[__string] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the role this input assumes during and after creation.
-         */
+      * The Amazon Resource Name (ARN) of the role this input assumes during and after creation.
+      */
     var RoleArn: js.UndefOr[__string] = js.undefined
     /**
-         * The source URLs for a PULL-type input. Every PULL type input needs
+      * The source URLs for a PULL-type input. Every PULL type input needs
     exactly two source URLs for redundancy.
     Only specify sources for PULL type Inputs. Leave Destinations empty.
-    
-         */
+      */
     var Sources: js.UndefOr[__listOfInputSourceRequest] = js.undefined
   }
-  
   
   trait UpdateInputResponse extends js.Object {
     var Input: js.UndefOr[Input] = js.undefined
   }
   
-  
   trait UpdateInputSecurityGroupRequest extends js.Object {
     /**
-         * The id of the Input Security Group to update.
-         */
+      * The id of the Input Security Group to update.
+      */
     var InputSecurityGroupId: __string
     /**
-         * List of IPv4 CIDR addresses to whitelist
-         */
+      * List of IPv4 CIDR addresses to whitelist
+      */
     var WhitelistRules: js.UndefOr[__listOfInputWhitelistRuleCidr] = js.undefined
   }
-  
   
   trait UpdateInputSecurityGroupResponse extends js.Object {
     var SecurityGroup: js.UndefOr[InputSecurityGroup] = js.undefined
   }
   
-  
   trait VideoCodecSettings extends js.Object {
     var H264Settings: js.UndefOr[H264Settings] = js.undefined
   }
   
-  
   trait VideoDescription extends js.Object {
     /**
-         * Video codec settings.
-         */
+      * Video codec settings.
+      */
     var CodecSettings: js.UndefOr[VideoCodecSettings] = js.undefined
     /**
-         * Output video height (in pixels). Leave blank to use source video height. If left blank, width must also be unspecified.
-         */
+      * Output video height (in pixels). Leave blank to use source video height. If left blank, width must also be unspecified.
+      */
     var Height: js.UndefOr[__integer] = js.undefined
     /**
-         * The name of this VideoDescription. Outputs will use this name to uniquely identify this Description.  Description names should be unique within this Live Event.
-         */
+      * The name of this VideoDescription. Outputs will use this name to uniquely identify this Description.  Description names should be unique within this Live Event.
+      */
     var Name: __string
     /**
-         * Indicates how to respond to the AFD values in the input stream. Setting to "respond" causes input video to be clipped, depending on AFD value, input display aspect ratio and output display aspect ratio.
-         */
+      * Indicates how to respond to the AFD values in the input stream. Setting to "respond" causes input video to be clipped, depending on AFD value, input display aspect ratio and output display aspect ratio.
+      */
     var RespondToAfd: js.UndefOr[VideoDescriptionRespondToAfd] = js.undefined
     /**
-         * When set to "stretchToOutput", automatically configures the output position to stretch the video to the specified output resolution. This option will override any position value.
-         */
+      * When set to "stretchToOutput", automatically configures the output position to stretch the video to the specified output resolution. This option will override any position value.
+      */
     var ScalingBehavior: js.UndefOr[VideoDescriptionScalingBehavior] = js.undefined
     /**
-         * Changes the width of the anti-alias filter kernel used for scaling. Only applies if scaling is being performed and antiAlias is set to true. 0 is the softest setting, 100 the sharpest, and 50 recommended for most content.
-         */
+      * Changes the width of the anti-alias filter kernel used for scaling. Only applies if scaling is being performed and antiAlias is set to true. 0 is the softest setting, 100 the sharpest, and 50 recommended for most content.
+      */
     var Sharpness: js.UndefOr[__integerMin0Max100] = js.undefined
     /**
-         * Output video width (in pixels). Leave out to use source video width.  If left out, height must also be left out. Display aspect ratio is always preserved by letterboxing or pillarboxing when necessary.
-         */
+      * Output video width (in pixels). Leave out to use source video width.  If left out, height must also be left out. Display aspect ratio is always preserved by letterboxing or pillarboxing when necessary.
+      */
     var Width: js.UndefOr[__integer] = js.undefined
   }
   
-  
   trait VideoSelector extends js.Object {
     /**
-         * Specifies the colorspace of an input. This setting works in tandem with colorSpaceConversion to determine if any conversion will be performed.
-         */
+      * Specifies the colorspace of an input. This setting works in tandem with colorSpaceConversion to determine if any conversion will be performed.
+      */
     var ColorSpace: js.UndefOr[VideoSelectorColorSpace] = js.undefined
     /**
-         * Applies only if colorSpace is a value other than follow. This field controls how the value in the colorSpace field will be used. fallback means that when the input does include color space data, that data will be used, but when the input has no color space data, the value in colorSpace will be used. Choose fallback if your input is sometimes missing color space data, but when it does have color space data, that data is correct. force means to always use the value in colorSpace. Choose force if your input usually has no color space data or might have unreliable color space data.
-         */
+      * Applies only if colorSpace is a value other than follow. This field controls how the value in the colorSpace field will be used. fallback means that when the input does include color space data, that data will be used, but when the input has no color space data, the value in colorSpace will be used. Choose fallback if your input is sometimes missing color space data, but when it does have color space data, that data is correct. force means to always use the value in colorSpace. Choose force if your input usually has no color space data or might have unreliable color space data.
+      */
     var ColorSpaceUsage: js.UndefOr[VideoSelectorColorSpaceUsage] = js.undefined
     /**
-         * The video selector settings.
-         */
+      * The video selector settings.
+      */
     var SelectorSettings: js.UndefOr[VideoSelectorSettings] = js.undefined
   }
   
-  
   trait VideoSelectorPid extends js.Object {
     /**
-         * Selects a specific PID from within a video source.
-         */
+      * Selects a specific PID from within a video source.
+      */
     var Pid: js.UndefOr[__integerMin0Max8191] = js.undefined
   }
   
-  
   trait VideoSelectorProgramId extends js.Object {
     /**
-         * Selects a specific program from within a multi-program transport stream. If the program doesn't exist, the first program within the transport stream will be selected by default.
-         */
+      * Selects a specific program from within a multi-program transport stream. If the program doesn't exist, the first program within the transport stream will be selected by default.
+      */
     var ProgramId: js.UndefOr[__integerMin0Max65536] = js.undefined
   }
-  
   
   trait VideoSelectorSettings extends js.Object {
     var VideoSelectorPid: js.UndefOr[VideoSelectorPid] = js.undefined
     var VideoSelectorProgramId: js.UndefOr[VideoSelectorProgramId] = js.undefined
   }
-  
   
   trait WebvttDestinationSettings extends js.Object
   

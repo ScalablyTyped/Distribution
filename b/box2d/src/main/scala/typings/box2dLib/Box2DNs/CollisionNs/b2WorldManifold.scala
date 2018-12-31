@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Collision.b2WorldManifold")
 @js.native
+/**
+		* Creates a new b2WorldManifold.
+		**/
 class b2WorldManifold () extends js.Object {
   /**
   		* World vector pointing from A to B.

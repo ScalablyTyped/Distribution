@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait MIDIConnectionEvent
   extends stdLib.Event {
   /**
-       * The port that has been connected or disconnected.
-       */
+    * The port that has been connected or disconnected.
+    */
   var port: MIDIPort = js.native
 }
 

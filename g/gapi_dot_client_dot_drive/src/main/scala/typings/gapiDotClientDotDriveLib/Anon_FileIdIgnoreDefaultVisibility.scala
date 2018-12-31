@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FileIdIgnoreDefaultVisibility extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -14,9 +13,9 @@ trait Anon_FileIdIgnoreDefaultVisibility extends js.Object {
   /** The ID of the file. */
   var fileId: java.lang.String
   /**
-                   * Whether to ignore the domain's default visibility settings for the created file. Domain administrators can choose to make all uploaded files visible to
-                   * the domain by default; this parameter bypasses that behavior for the request. Permissions are still inherited from parent folders.
-                   */
+    * Whether to ignore the domain's default visibility settings for the created file. Domain administrators can choose to make all uploaded files visible to
+    * the domain by default; this parameter bypasses that behavior for the request. Permissions are still inherited from parent folders.
+    */
   var ignoreDefaultVisibility: js.UndefOr[scala.Boolean] = js.undefined
   /** Whether to set the 'keepForever' field in the new head revision. This is only applicable to files with binary content in Drive. */
   var keepRevisionForever: js.UndefOr[scala.Boolean] = js.undefined
@@ -29,9 +28,9 @@ trait Anon_FileIdIgnoreDefaultVisibility extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** Whether the requesting application supports Team Drives. */
   var supportsTeamDrives: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictTableProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
@@ -38,8 +37,8 @@ trait StrictTableProps extends js.Object {
   /** A table may be formatted to emphasize a first column that defines a rows content. */
   var definition: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * A table can use fixed a special faster form of table rendering that does not resize table cells based on content.
-     */
+    * A table can use fixed a special faster form of table rendering that does not resize table cells based on content.
+    */
   var fixed: js.UndefOr[scala.Boolean] = js.undefined
   /** Shorthand for a TableRow to be placed within Table.Footer. */
   var footerRow: js.UndefOr[
@@ -56,12 +55,12 @@ trait StrictTableProps extends js.Object {
     scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.very
   ] = js.undefined
   /**
-     * Mapped over `tableData` and should return shorthand for each Table.Row to be placed within Table.Body.
-     *
-     * @param {*} data - An element in the `tableData` array.
-     * @param {number} index - The index of the current element in `tableData`.
-     * @returns {*} Shorthand for a Table.Row.
-     */
+    * Mapped over `tableData` and should return shorthand for each Table.Row to be placed within Table.Body.
+    *
+    * @param {*} data - An element in the `tableData` array.
+    * @param {number} index - The index of the current element in `tableData`.
+    * @returns {*} Shorthand for a Table.Row.
+    */
   var renderBodyRow: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ scala.Double, _]] = js.undefined
   /** A table can have its rows appear selectable. */
   var selectable: js.UndefOr[scala.Boolean] = js.undefined

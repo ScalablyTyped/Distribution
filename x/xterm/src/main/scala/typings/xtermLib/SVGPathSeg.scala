@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGPathSeg extends js.Object {
   val PATHSEG_ARC_ABS: scala.Double
   val PATHSEG_ARC_REL: scala.Double

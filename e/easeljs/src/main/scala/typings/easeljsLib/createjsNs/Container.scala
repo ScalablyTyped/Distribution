@@ -23,15 +23,14 @@ class Container () extends DisplayObject {
   def addChildAt[T /* <: DisplayObject */](child0: DisplayObject, child1: DisplayObject, lastChild: T, index: scala.Double): T = js.native
   def addChildAt[T /* <: DisplayObject */](child0: DisplayObject, lastChild: T, index: scala.Double): T = js.native
   def addChildAt[T /* <: DisplayObject */](child: T, index: scala.Double): T = js.native
-   // actually (...child: DisplayObject[], index: number)
   def clone(recursive: scala.Boolean): Container = js.native
   def contains(child: DisplayObject): scala.Boolean = js.native
   def getChildAt(index: scala.Double): DisplayObject = js.native
   def getChildByName(name: java.lang.String): DisplayObject = js.native
   def getChildIndex(child: DisplayObject): scala.Double = js.native
   /**
-           * @deprecated - use numChildren property instead.
-           */
+    * @deprecated - use numChildren property instead.
+    */
   def getNumChildren(): scala.Double = js.native
   def getObjectUnderPoint(x: scala.Double, y: scala.Double, mode: scala.Double): DisplayObject = js.native
   def getObjectsUnderPoint(x: scala.Double, y: scala.Double, mode: scala.Double): js.Array[DisplayObject] = js.native

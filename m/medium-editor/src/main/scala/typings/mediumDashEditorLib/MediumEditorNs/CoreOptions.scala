@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CoreOptions extends js.Object {
   var activeButtonClass: js.UndefOr[java.lang.String] = js.undefined
   var allowMultiParagraphSelection: js.UndefOr[scala.Boolean] = js.undefined

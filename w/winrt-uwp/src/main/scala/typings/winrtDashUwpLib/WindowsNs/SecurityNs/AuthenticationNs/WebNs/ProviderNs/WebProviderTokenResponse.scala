@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebProviderTokenResponse protected () extends js.Object {
   /**
-                           * Creates a new instance of the WebProviderTokenResponse class.
-                           * @param webTokenResponse The web token response from the client.
-                           */
+    * Creates a new instance of the WebProviderTokenResponse class.
+    * @param webTokenResponse The web token response from the client.
+    */
   def this(webTokenResponse: winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.CoreNs.WebTokenResponse) = this()
   /** Gets the response from the provider to the client. */
   var clientResponse: winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.CoreNs.WebTokenResponse = js.native

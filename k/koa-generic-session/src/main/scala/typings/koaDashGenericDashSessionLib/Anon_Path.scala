@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Path extends js.Object {
   var httpOnly: js.UndefOr[scala.Boolean] = js.undefined
   var maxAge: js.UndefOr[scala.Double] = js.undefined

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 			 * Dynamic behavior defining an item's movement to a specific point.
 			 */
-
 trait SnapBehavior
   extends titaniumLib.TitaniumNs.Proxy {
   /**

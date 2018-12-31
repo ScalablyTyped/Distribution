@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LzmaOptions extends js.Object {
   var blockSize: js.UndefOr[scala.Double] = js.undefined
   var bufsize: js.UndefOr[scala.Double] = js.undefined

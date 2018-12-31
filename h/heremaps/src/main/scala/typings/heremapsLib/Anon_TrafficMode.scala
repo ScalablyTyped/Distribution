@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TrafficMode extends js.Object {
   var feature: js.Array[_]
   var trafficMode: java.lang.String

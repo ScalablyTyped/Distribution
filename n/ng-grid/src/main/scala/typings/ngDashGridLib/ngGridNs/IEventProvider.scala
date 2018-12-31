@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEventProvider extends js.Object {
   var colToMove: IColumn
   var groupToMove: js.Any

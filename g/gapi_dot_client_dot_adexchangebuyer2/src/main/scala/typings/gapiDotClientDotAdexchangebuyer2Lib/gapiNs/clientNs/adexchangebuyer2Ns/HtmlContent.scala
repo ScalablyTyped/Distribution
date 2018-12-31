@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HtmlContent extends js.Object {
   /** The height of the HTML snippet in pixels. */
   var height: js.UndefOr[scala.Double] = js.undefined

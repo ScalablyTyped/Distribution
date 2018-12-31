@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class UriTemplate () extends js.Object {
   /**
-       * Expands template into a string using parameter
-       * supplied
-       */
+    * Expands template into a string using parameter
+    * supplied
+    */
   def expand(data: js.Object): java.lang.String = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IArrayStore extends IStore {
   /** [Method] Loads an array of data straight into the Store
   		* @param data Object

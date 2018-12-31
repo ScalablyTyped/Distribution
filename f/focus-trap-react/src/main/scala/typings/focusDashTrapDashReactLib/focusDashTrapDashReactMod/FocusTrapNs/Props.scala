@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props
   extends reactLib.reactMod.ReactNs.AllHTMLAttributes[js.Any]
      with // Allow through any properties that weren't picked up

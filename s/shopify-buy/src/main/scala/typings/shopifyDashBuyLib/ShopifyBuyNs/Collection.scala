@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Collection extends js.Object {
   var body_html: java.lang.String
   var handle: java.lang.String

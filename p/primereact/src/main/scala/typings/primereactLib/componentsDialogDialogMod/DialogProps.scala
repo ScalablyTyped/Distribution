@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DialogProps extends js.Object {
   var appendTo: js.UndefOr[reactLib.HTMLElement] = js.undefined
   var baseZIndex: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Client extends js.Object {
   def changeMessageVisibility(options: VisibilityOptions, cb: CallbackT[scala.Double]): scala.Unit
   def createQueue(options: QueueOptions, cb: CallbackT[scala.Double]): scala.Unit

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Lead extends js.Object {
   var avatar: intercomDashClientLib.userMod.Avatar
   var companies: intercomDashClientLib.Anon_Type

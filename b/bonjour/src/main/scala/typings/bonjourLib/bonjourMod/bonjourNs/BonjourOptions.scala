@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BonjourOptions extends js.Object {
   var interface: js.UndefOr[java.lang.String] = js.undefined
   var ip: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RelayProfiler extends js.Object {
   def attachAggregateHandler(
     name: java.lang.String,

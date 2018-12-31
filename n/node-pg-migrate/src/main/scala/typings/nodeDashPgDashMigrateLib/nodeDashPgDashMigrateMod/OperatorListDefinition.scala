@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OperatorListDefinition extends js.Object {
   var name: Name
   var number: scala.Double

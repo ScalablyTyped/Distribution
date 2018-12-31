@@ -6,30 +6,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * This is the base class for all user-manipulated top-level objects.
-    * Because it inherits from Panel, it is automatically a visual container
-    * of other GraphObjects.
-    * Because it thus also inherits from GraphObject, it also has properties such as
-    * GraphObject.actualBounds, GraphObject.contextMenu, and GraphObject.visible.
-    */
+  * This is the base class for all user-manipulated top-level objects.
+  * Because it inherits from Panel, it is automatically a visual container
+  * of other GraphObjects.
+  * Because it thus also inherits from GraphObject, it also has properties such as
+  * GraphObject.actualBounds, GraphObject.contextMenu, and GraphObject.visible.
+  */
 @JSImport("go", "Part")
 @js.native
+/**
+  * The constructor builds an empty Part.
+  * @param {EnumValue=} type if not supplied, the default Panel type is Panel.Position.
+  */
 class Part ()
   extends goLib.goMod.goNs.Part {
-  /**
-          * The constructor builds an empty Part.
-          * @param {EnumValue=} type if not supplied, the default Panel type is Panel.Position.
-          */
   def this(`type`: goLib.goMod.goNs.EnumValue) = this()
 }
 
 /**
-    * This is the base class for all user-manipulated top-level objects.
-    * Because it inherits from Panel, it is automatically a visual container
-    * of other GraphObjects.
-    * Because it thus also inherits from GraphObject, it also has properties such as
-    * GraphObject.actualBounds, GraphObject.contextMenu, and GraphObject.visible.
-    */
+  * This is the base class for all user-manipulated top-level objects.
+  * Because it inherits from Panel, it is automatically a visual container
+  * of other GraphObjects.
+  * Because it thus also inherits from GraphObject, it also has properties such as
+  * GraphObject.actualBounds, GraphObject.contextMenu, and GraphObject.visible.
+  */
 @JSImport("go", "Part")
 @js.native
 object Part extends js.Object {

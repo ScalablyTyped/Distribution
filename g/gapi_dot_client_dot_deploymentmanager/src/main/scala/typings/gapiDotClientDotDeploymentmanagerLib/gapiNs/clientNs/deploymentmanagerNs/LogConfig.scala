@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LogConfig extends js.Object {
   /** Cloud audit options. */
   var cloudAudit: js.UndefOr[LogConfigCloudAuditOptions] = js.undefined

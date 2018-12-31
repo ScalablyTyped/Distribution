@@ -21,7 +21,6 @@ trait MockjsRandomName extends js.Object {
   def last(): S = js.native
   // Random.name
   def name(): S = js.native
-  // Random.name
   def name(middle: B): S = js.native
 }
 

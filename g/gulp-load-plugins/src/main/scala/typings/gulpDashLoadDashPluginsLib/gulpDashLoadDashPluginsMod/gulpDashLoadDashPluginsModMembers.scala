@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 object gulpDashLoadDashPluginsModMembers extends js.Object {
   /** Loads in any gulp plugins and attaches them to an object, freeing you up from having to manually require each gulp plugin. */
   def apply[T /* <: gulpDashLoadDashPluginsLib.IGulpPlugins */](): T = js.native
-  /** Loads in any gulp plugins and attaches them to an object, freeing you up from having to manually require each gulp plugin. */
   def apply[T /* <: gulpDashLoadDashPluginsLib.IGulpPlugins */](options: IOptions): T = js.native
 }
 

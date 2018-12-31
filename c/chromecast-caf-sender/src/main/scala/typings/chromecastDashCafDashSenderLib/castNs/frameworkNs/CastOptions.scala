@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CastOptions extends js.Object {
   var autoJoinPolicy: chromeLib.chromeNs.castNs.AutoJoinPolicy
   var language: js.UndefOr[java.lang.String] = js.undefined

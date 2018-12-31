@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var mode: js.UndefOr[
     postcssDashModulesDashLocalDashByDashDefaultLib.postcssDashModulesDashLocalDashByDashDefaultLibStrings.global | postcssDashModulesDashLocalDashByDashDefaultLib.postcssDashModulesDashLocalDashByDashDefaultLibStrings.local | postcssDashModulesDashLocalDashByDashDefaultLib.postcssDashModulesDashLocalDashByDashDefaultLibStrings.pure

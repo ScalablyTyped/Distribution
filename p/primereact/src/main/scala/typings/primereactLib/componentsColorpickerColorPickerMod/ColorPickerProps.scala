@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColorPickerProps extends js.Object {
   var appendTo: js.UndefOr[js.Any] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined

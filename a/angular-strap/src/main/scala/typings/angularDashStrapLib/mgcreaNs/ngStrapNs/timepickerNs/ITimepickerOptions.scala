@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITimepickerOptions extends js.Object {
   var animation: js.UndefOr[java.lang.String] = js.undefined
   var arrowBehaviour: js.UndefOr[java.lang.String] = js.undefined

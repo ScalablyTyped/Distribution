@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFieldSet
   extends senchaUnderscoreTouchLib.ExtNs.IContainer {
   /** [Method] A convenient method to disable all fields in this FieldSet

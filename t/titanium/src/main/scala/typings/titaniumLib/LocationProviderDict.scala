@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object describing a location provider.
- */
-
+  * Simple object describing a location provider.
+  */
 trait LocationProviderDict extends js.Object {
   /**
   	 * Accuracy of the location provider, either fine (1) or coarse (2).

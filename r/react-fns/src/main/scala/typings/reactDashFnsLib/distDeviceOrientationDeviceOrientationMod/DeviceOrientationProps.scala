@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeviceOrientationProps extends js.Object {
   var absolute: scala.Boolean
   var alpha: scala.Double | scala.Null

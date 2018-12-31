@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Encapsulates format information about a media file. */
-
 trait MediaFileData extends js.Object {
   /** The average bitrate of the content. The value is zero for images. */
   var bitrate: scala.Double

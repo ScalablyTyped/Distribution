@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AdaptorOptions extends js.Object {
   var aggregates: js.UndefOr[java.lang.String] = js.undefined
   var count: js.UndefOr[java.lang.String] = js.undefined

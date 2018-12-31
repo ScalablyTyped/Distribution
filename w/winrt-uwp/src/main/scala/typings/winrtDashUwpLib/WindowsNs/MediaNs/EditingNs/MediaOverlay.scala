@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class MediaOverlay protected () extends js.Object {
   /**
-                   * Initializes a new instance of the MediaOverlay class.
-                   * @param clip The media clip to be used for the overlay.
-                   */
+    * Initializes a new instance of the MediaOverlay class.
+    * @param clip The media clip to be used for the overlay.
+    */
   def this(clip: MediaClip) = this()
   /**
-                   * Initializes a new instance of the MediaOverlay class.
-                   * @param clip The media clip to be used for the overlay.
-                   * @param position The position of the overlay.
-                   * @param opacity The opacity of the overlay, in the range of 0.0 to 1.0, where 0.0 is completely transparent and 1.0 is completely opaque.
-                   */
+    * Initializes a new instance of the MediaOverlay class.
+    * @param clip The media clip to be used for the overlay.
+    * @param position The position of the overlay.
+    * @param opacity The opacity of the overlay, in the range of 0.0 to 1.0, where 0.0 is completely transparent and 1.0 is completely opaque.
+    */
   def this(clip: MediaClip, position: winrtDashUwpLib.WindowsNs.FoundationNs.Rect, opacity: scala.Double) = this()
   /** Gets or sets a value indicating whether audio is enabled for the MediaOverlay . */
   var audioEnabled: scala.Boolean = js.native

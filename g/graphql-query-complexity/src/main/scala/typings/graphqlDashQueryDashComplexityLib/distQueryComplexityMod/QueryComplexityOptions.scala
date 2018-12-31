@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryComplexityOptions extends js.Object {
   var createError: js.UndefOr[
     js.Function2[

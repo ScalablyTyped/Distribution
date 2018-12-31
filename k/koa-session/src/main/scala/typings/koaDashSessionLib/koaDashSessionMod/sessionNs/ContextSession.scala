@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContextSession extends js.Object {
   var app: js.Any
   var ctx: koaDashSessionLib.koaDashSessionMod.koaMod.Context
@@ -14,21 +13,21 @@ trait ContextSession extends js.Object {
   var session: Session | koaDashSessionLib.koaDashSessionLibNumbers.`false`
   var store: stores
   /**
-           * Commit the session changes or removal.
-           */
+    * Commit the session changes or removal.
+    */
   def commit(): js.Promise[scala.Unit]
   /**
-           * internal logic of `ctx.session`
-           */
+    * internal logic of `ctx.session`
+    */
   def get(): Session
   /**
-           * init session from external store
-           * will be called in the front of session middleware
-           */
+    * init session from external store
+    * will be called in the front of session middleware
+    */
   def initFromExternal(): js.Promise[scala.Unit]
   /**
-           * internal logic of `ctx.session=`
-           */
+    * internal logic of `ctx.session=`
+    */
   def set(`val`: js.Any): scala.Unit
 }
 

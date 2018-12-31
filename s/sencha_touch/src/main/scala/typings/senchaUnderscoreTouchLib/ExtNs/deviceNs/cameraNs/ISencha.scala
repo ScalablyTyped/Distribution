@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISencha extends IAbstract {
   /** [Method] Allows you to capture a photo
   		* @param options Object

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait XMLNode extends js.Object {
   def getAttribute(attribute: java.lang.String): java.lang.String
   def getChildNodeIterator(): XMLNodeIterator

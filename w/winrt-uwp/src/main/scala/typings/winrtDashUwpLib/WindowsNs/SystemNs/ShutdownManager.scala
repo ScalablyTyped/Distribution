@@ -13,6 +13,6 @@ abstract class ShutdownManager () extends js.Object
 @js.native
 object ShutdownManager extends js.Object {
   var beginShutdown: js.Any = js.native
-   /* unmapped type */var cancelShutdown: js.Any = js.native
+   /* unmapped type */ var cancelShutdown: js.Any = js.native
 }
 

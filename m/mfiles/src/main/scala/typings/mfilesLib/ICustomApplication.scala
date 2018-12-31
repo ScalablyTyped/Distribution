@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICustomApplication extends js.Object {
   val ApplicationType: mfilesLib.MFilesNs.MFCustomApplicationType
   val ChecksumHash: java.lang.String

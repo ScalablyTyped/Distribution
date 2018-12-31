@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Interface of the JQuery extension of the W3C event object
- */
+  * Interface of the JQuery extension of the W3C event object
+  */
 @js.native
 trait BaseJQueryEventObject
   extends stdLib.Event {

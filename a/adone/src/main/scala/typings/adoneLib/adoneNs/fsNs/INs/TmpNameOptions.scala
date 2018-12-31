@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TmpNameOptions extends js.Object {
   var dir: js.UndefOr[java.lang.String] = js.undefined
   var ext: js.UndefOr[java.lang.String] = js.undefined

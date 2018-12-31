@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShowSearchTransitionName extends js.Object {
   var choiceTransitionName: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   var className: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]

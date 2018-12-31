@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapQuestOptions extends js.Object {
   var cacheSize: js.UndefOr[scala.Double] = js.undefined
   var layer: java.lang.String

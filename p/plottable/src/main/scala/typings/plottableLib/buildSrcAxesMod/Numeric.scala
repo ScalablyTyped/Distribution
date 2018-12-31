@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 class Numeric protected ()
   extends plottableLib.buildSrcAxesNumericAxisMod.Numeric {
   /**
-       * Constructs a Numeric Axis.
-       *
-       * A Numeric Axis is a visual representation of a QuantitativeScale.
-       *
-       * @constructor
-       * @param {QuantitativeScale} scale
-       * @param {AxisOrientation} orientation Orientation of this Numeric Axis.
-       */
+    * Constructs a Numeric Axis.
+    *
+    * A Numeric Axis is a visual representation of a QuantitativeScale.
+    *
+    * @constructor
+    * @param {QuantitativeScale} scale
+    * @param {AxisOrientation} orientation Orientation of this Numeric Axis.
+    */
   def this(scale: plottableLib.buildSrcScalesQuantitativeScaleMod.QuantitativeScale[scala.Double], orientation: plottableLib.buildSrcAxesAxisMod.AxisOrientation) = this()
 }
 

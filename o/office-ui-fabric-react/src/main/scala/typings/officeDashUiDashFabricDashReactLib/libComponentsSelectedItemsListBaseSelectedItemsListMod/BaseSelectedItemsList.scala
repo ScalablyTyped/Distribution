@@ -47,14 +47,10 @@ class BaseSelectedItemsList[T, P /* <: officeDashUiDashFabricDashReactLib.libCom
   /* protected */ def renderItems(): js.Array[reactLib.reactMod.Global.JSXNs.Element] = js.native
   def unselectAll(): scala.Unit = js.native
   /**
-       * Controls what happens whenever there is an action that impacts the selected items.
-       * If selectedItems is provided as a property then this will act as a controlled component and it will not update it's own state.
-       */
+    * Controls what happens whenever there is an action that impacts the selected items.
+    * If selectedItems is provided as a property then this will act as a controlled component and it will not update it's own state.
+    */
   def updateItems(items: js.Array[T]): scala.Unit = js.native
-  /**
-       * Controls what happens whenever there is an action that impacts the selected items.
-       * If selectedItems is provided as a property then this will act as a controlled component and it will not update it's own state.
-       */
   def updateItems(items: js.Array[T], focusIndex: scala.Double): scala.Unit = js.native
 }
 

@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebAccountCommand protected () extends js.Object {
   /**
-                   * Initializes a new instance of the WebAccountCommand class.
-                   * @param webAccount The web account to associate with the current command.
-                   * @param invoked The delegate that handles the command.
-                   * @param actions A bitmask of web account actions.
-                   */
+    * Initializes a new instance of the WebAccountCommand class.
+    * @param webAccount The web account to associate with the current command.
+    * @param invoked The delegate that handles the command.
+    * @param actions A bitmask of web account actions.
+    */
   def this(webAccount: winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.WebAccount, invoked: WebAccountCommandInvokedHandler, actions: SupportedWebAccountActions) = this()
   /** Gets the actions that the command performs on the web account in the accounts pane. */
   var actions: SupportedWebAccountActions = js.native

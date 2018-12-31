@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Sync tree args
-     */
-
+  * Sync tree args
+  */
 trait ISyncTreeArgs extends js.Object {
   /* optional, specifies whether to set the synced node to be the active node, this will default to true if not specified*/
   var activate: scala.Boolean

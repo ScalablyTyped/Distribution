@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * A particle represents one of the element emitted by a particle system.
-     * This is mainly define by its coordinates, direction, velocity and age.
-     */
+  * A particle represents one of the element emitted by a particle system.
+  * This is mainly define by its coordinates, direction, velocity and age.
+  */
 @JSGlobal("BABYLON.Particle")
 @js.native
 class Particle protected () extends js.Object {
   /**
-           * Creates a new instance Particle
-           * @param particleSystem the particle system the particle belongs to
-           */
+    * Creates a new instance Particle
+    * @param particleSystem the particle system the particle belongs to
+    */
   def this(/**
-           * The particle system the particle belongs to.
-           */
+    * The particle system the particle belongs to.
+    */
   particleSystem: ParticleSystem) = this()
   /** @hidden */
   var _attachedSubEmitters: Nullable[js.Array[SubEmitter]] = js.native
@@ -71,60 +71,60 @@ class Particle protected () extends js.Object {
   /** @hidden */
   var _randomNoiseCoordinates2: Vector3 = js.native
   /**
-           * The current age of the particle.
-           */
+    * The current age of the particle.
+    */
   var age: scala.Double = js.native
   /**
-           * The current angle of the particle.
-           */
+    * The current angle of the particle.
+    */
   var angle: scala.Double = js.native
   /**
-           * Defines how fast is the angle changing.
-           */
+    * Defines how fast is the angle changing.
+    */
   var angularSpeed: scala.Double = js.native
   /**
-           * Defines the cell index used by the particle to be rendered from a sprite.
-           */
+    * Defines the cell index used by the particle to be rendered from a sprite.
+    */
   var cellIndex: scala.Double = js.native
   /**
-           * The color of the particle.
-           */
+    * The color of the particle.
+    */
   var color: Color4 = js.native
   /**
-           * The color change of the particle per step.
-           */
+    * The color change of the particle per step.
+    */
   var colorStep: Color4 = js.native
   /**
-           * The world direction of the particle in the scene.
-           */
+    * The world direction of the particle in the scene.
+    */
   var direction: Vector3 = js.native
   /**
-           * Unique ID of the particle
-           */
+    * Unique ID of the particle
+    */
   var id: scala.Double = js.native
   /**
-           * Defines how long will the life of the particle be.
-           */
+    * Defines how long will the life of the particle be.
+    */
   var lifeTime: scala.Double = js.native
   /**
-           * The particle system the particle belongs to.
-           */
+    * The particle system the particle belongs to.
+    */
   var particleSystem: ParticleSystem = js.native
   /**
-           * The world position of the particle in the scene.
-           */
+    * The world position of the particle in the scene.
+    */
   var position: Vector3 = js.native
   /**
-           * The information required to support color remapping
-           */
+    * The information required to support color remapping
+    */
   var remapData: Vector4 = js.native
   /**
-           * The current scale of the particle.
-           */
+    * The current scale of the particle.
+    */
   var scale: Vector2 = js.native
   /**
-           * The current size of the particle.
-           */
+    * The current size of the particle.
+    */
   var size: scala.Double = js.native
   var updateCellInfoFromSystem: js.Any = js.native
   /** @hidden */
@@ -134,20 +134,20 @@ class Particle protected () extends js.Object {
   /** @hidden */
   def _reset(): scala.Unit = js.native
   /**
-           * Copy the properties of particle to another one.
-           * @param other the particle to copy the information to.
-           */
+    * Copy the properties of particle to another one.
+    * @param other the particle to copy the information to.
+    */
   def copyTo(other: Particle): scala.Unit = js.native
   /**
-           * Defines how the sprite cell index is updated for the particle
-           */
+    * Defines how the sprite cell index is updated for the particle
+    */
   def updateCellIndex(): scala.Unit = js.native
 }
 
 /**
-     * A particle represents one of the element emitted by a particle system.
-     * This is mainly define by its coordinates, direction, velocity and age.
-     */
+  * A particle represents one of the element emitted by a particle system.
+  * This is mainly define by its coordinates, direction, velocity and age.
+  */
 @JSGlobal("BABYLON.Particle")
 @js.native
 object Particle extends js.Object {

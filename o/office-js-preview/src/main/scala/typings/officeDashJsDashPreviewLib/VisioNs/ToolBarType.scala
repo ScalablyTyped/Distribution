@@ -9,37 +9,37 @@ import scala.scalajs.js.annotation._
 sealed trait ToolBarType extends js.Object
 
 /**
-     *
-     * Toolbar IDs of the app
-     *
-     * [Api set:  1.1]
-     */
+  *
+  * Toolbar IDs of the app
+  *
+  * [Api set:  1.1]
+  */
 @JSGlobal("Visio.ToolBarType")
 @js.native
 object ToolBarType extends js.Object {
   /**
-           *
-           * CommandBar
-           *
-           */
+    *
+    * CommandBar
+    *
+    */
   @js.native
   sealed trait commandBar
     extends officeDashJsDashPreviewLib.VisioNs.ToolBarType
   
   /**
-           *
-           * PageNavigationBar
-           *
-           */
+    *
+    * PageNavigationBar
+    *
+    */
   @js.native
   sealed trait pageNavigationBar
     extends officeDashJsDashPreviewLib.VisioNs.ToolBarType
   
   /**
-           *
-           * StatusBar
-           *
-           */
+    *
+    * StatusBar
+    *
+    */
   @js.native
   sealed trait statusBar
     extends officeDashJsDashPreviewLib.VisioNs.ToolBarType

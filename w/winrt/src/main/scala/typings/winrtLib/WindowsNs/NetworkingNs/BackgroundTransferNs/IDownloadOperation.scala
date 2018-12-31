@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDownloadOperation extends IBackgroundTransferOperation {
   var progress: BackgroundDownloadProgress
   var resultFile: winrtLib.WindowsNs.StorageNs.IStorageFile

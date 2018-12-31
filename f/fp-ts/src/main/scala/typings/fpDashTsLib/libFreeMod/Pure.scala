@@ -16,13 +16,13 @@ class Pure[F, A] protected () extends js.Object {
   val value: A = js.native
   def ap[B](fab: Free[F, js.Function1[/* a */ A, B]]): Free[F, B] = js.native
   /**
-       * Flipped version of {@link ap}
-       */
+    * Flipped version of {@link ap}
+    */
   def `ap_`[B, C](`this`: Free[F, js.Function1[/* b */ B, C]], fb: Free[F, B]): Free[F, C] = js.native
   def chain[B](f: js.Function1[/* a */ A, Free[F, B]]): Free[F, B] = js.native
   def inspect(): java.lang.String = js.native
-  def isImpure(): /* is Impure */scala.Boolean = js.native
-  def isPure(): /* is Pure */scala.Boolean = js.native
+  def isImpure(): /* is fp-ts.fp-ts/lib/Free.Impure<F, A, any> */ scala.Boolean = js.native
+  def isPure(): /* is fp-ts.fp-ts/lib/Free.Pure<F, A> */ scala.Boolean = js.native
   def map[B](f: js.Function1[/* a */ A, B]): Free[F, B] = js.native
 }
 

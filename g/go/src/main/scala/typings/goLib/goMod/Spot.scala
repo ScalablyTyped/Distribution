@@ -6,26 +6,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * A Spot represents a relative point from(0, 0) to(1, 1) within the bounds of
-    * a rectangular area plus an absolute offset.
-    */
+  * A Spot represents a relative point from(0, 0) to(1, 1) within the bounds of
+  * a rectangular area plus an absolute offset.
+  */
 @JSImport("go", "Spot")
 @js.native
+/**
+  * The default constructor produces the Spot(0, 0, 0, 0), at the top-left corner.
+  */
 class Spot ()
   extends goLib.goMod.goNs.Spot {
   /**
-          * The two-argument constructor produces the Spot(x, y), where X and Y are fractional distances, between zero and one.
-          * @param {number} x must be between zero and one, inclusive.
-          * @param {number} y must be between zero and one, inclusive.
-          */
+    * The two-argument constructor produces the Spot(x, y), where X and Y are fractional distances, between zero and one.
+    * @param {number} x must be between zero and one, inclusive.
+    * @param {number} y must be between zero and one, inclusive.
+    */
   def this(x: scala.Double, y: scala.Double) = this()
   /**
-          * The four-argument constructor produces the Spot(x, y, offx, offy), where X and Y are fractional distances, between zero and one, and OFFX and OFFY are additional absolute offsets.
-          * @param {number} x must be between zero and one, inclusive.
-          * @param {number} y must be between zero and one, inclusive.
-          * @param {number} offx an offset along the X coordinates, may be negative.
-          * @param {number} offy an offset along the Y coordinates, may be negative.
-          */
+    * The four-argument constructor produces the Spot(x, y, offx, offy), where X and Y are fractional distances, between zero and one, and OFFX and OFFY are additional absolute offsets.
+    * @param {number} x must be between zero and one, inclusive.
+    * @param {number} y must be between zero and one, inclusive.
+    * @param {number} offx an offset along the X coordinates, may be negative.
+    * @param {number} offy an offset along the Y coordinates, may be negative.
+    */
   def this(x: scala.Double, y: scala.Double, offx: scala.Double, offy: scala.Double) = this()
   /**Gets or sets the offsetX value of the Spot.*/
   /* CompleteClass */
@@ -40,69 +43,69 @@ class Spot ()
   /* CompleteClass */
   override var y: scala.Double = js.native
   /**
-          * Create a copy of this Spot, with the same values.
-          */
+    * Create a copy of this Spot, with the same values.
+    */
   /* CompleteClass */
   override def copy(): goLib.goMod.goNs.Spot = js.native
   /**
-          * Two spots are equal if all four property values are the same.
-          * @param {Spot} spot The Spot to compare to the current Spot.
-          */
+    * Two spots are equal if all four property values are the same.
+    * @param {Spot} spot The Spot to compare to the current Spot.
+    */
   /* CompleteClass */
   override def equals(spot: goLib.goMod.goNs.Spot): scala.Boolean = js.native
   /**
-          * This predicate is true if this Spot is a side that
-          * includes the side(s) given by the argument Spot.
-          * @param {Spot} side
-          */
+    * This predicate is true if this Spot is a side that
+    * includes the side(s) given by the argument Spot.
+    * @param {Spot} side
+    */
   /* CompleteClass */
   override def includesSide(side: goLib.goMod.goNs.Spot): scala.Boolean = js.native
   /**
-          * True if this is a special spot referring to the default spot.
-          */
+    * True if this is a special spot referring to the default spot.
+    */
   /* CompleteClass */
   override def isDefault(): scala.Boolean = js.native
   /**
-          * True if this is an unspecific special spot, such as Spot.None or one of the sides.
-          */
+    * True if this is an unspecific special spot, such as Spot.None or one of the sides.
+    */
   /* CompleteClass */
   override def isNoSpot(): scala.Boolean = js.native
   /**
-          * True if this is a special spot referring to one (or more) of the sides.
-          */
+    * True if this is a special spot referring to one (or more) of the sides.
+    */
   /* CompleteClass */
   override def isSide(): scala.Boolean = js.native
   /**
-          * True if this is a specific spot, not a side nor Spot.None.
-          */
+    * True if this is a specific spot, not a side nor Spot.None.
+    */
   /* CompleteClass */
   override def isSpot(): scala.Boolean = js.native
   /**
-          * Return a new spot that is opposite this spot.
-          */
+    * Return a new spot that is opposite this spot.
+    */
   /* CompleteClass */
   override def opposite(): goLib.goMod.goNs.Spot = js.native
   /**
-          * Modify this Spot so that its X, Y, OffsetX, and OffsetY values are the same as the given Spot.
-          * @param {Spot} s the given Spot.
-          */
+    * Modify this Spot so that its X, Y, OffsetX, and OffsetY values are the same as the given Spot.
+    * @param {Spot} s the given Spot.
+    */
   /* CompleteClass */
   override def set(s: goLib.goMod.goNs.Spot): goLib.goMod.goNs.Spot = js.native
   /**
-          * Modify this Spot with new X, Y, OffsetX, and OffsetY values.
-          * @param {number} x
-          * @param {number} y
-          * @param {number} offx
-          * @param {number} offy
-          */
+    * Modify this Spot with new X, Y, OffsetX, and OffsetY values.
+    * @param {number} x
+    * @param {number} y
+    * @param {number} offx
+    * @param {number} offy
+    */
   /* CompleteClass */
   override def setTo(x: scala.Double, y: scala.Double, offx: scala.Double, offy: scala.Double): goLib.goMod.goNs.Spot = js.native
 }
 
 /**
-    * A Spot represents a relative point from(0, 0) to(1, 1) within the bounds of
-    * a rectangular area plus an absolute offset.
-    */
+  * A Spot represents a relative point from(0, 0) to(1, 1) within the bounds of
+  * a rectangular area plus an absolute offset.
+  */
 @JSImport("go", "Spot")
 @js.native
 object Spot extends js.Object {
@@ -175,14 +178,14 @@ object Spot extends js.Object {
   /**The set of points at the top side of the bounding rectangle.*/
   var TopSide: goLib.goMod.goNs.Spot = js.native
   /**
-          * This static function can be used to read in a Spot from a string that was produced by Spot.stringify.
-          * @param {string} str
-          */
+    * This static function can be used to read in a Spot from a string that was produced by Spot.stringify.
+    * @param {string} str
+    */
   def parse(str: java.lang.String): goLib.goMod.goNs.Spot = js.native
   /**
-          * This static function can be used to write out a Spot as a string that can be read by Spot.parse.
-          * @param {Spot} val
-          */
+    * This static function can be used to write out a Spot as a string that can be read by Spot.parse.
+    * @param {Spot} val
+    */
   def stringify(`val`: goLib.goMod.goNs.Spot): java.lang.String = js.native
 }
 

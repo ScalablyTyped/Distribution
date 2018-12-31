@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait POEMessage extends js.Object {
   var canceledQuantity: js.UndefOr[scala.Double] = js.undefined
   var instrument: js.UndefOr[java.lang.String] = js.undefined

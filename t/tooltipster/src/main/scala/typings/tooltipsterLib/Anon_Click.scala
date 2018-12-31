@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Click extends js.Object {
   /**
   			 * When the origin is clicked by a mouse.

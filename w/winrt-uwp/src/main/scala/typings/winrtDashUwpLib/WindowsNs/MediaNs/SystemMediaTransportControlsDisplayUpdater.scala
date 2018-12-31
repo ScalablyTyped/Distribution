@@ -24,11 +24,11 @@ abstract class SystemMediaTransportControlsDisplayUpdater () extends js.Object {
   /** Clears out all of the media metadata. */
   def clearAll(): scala.Unit = js.native
   /**
-               * Initialize the media properties using the specified file.
-               * @param type The type of media.
-               * @param source The file to initialize the media properties.
-               * @return When this method completes, it returns a boolean value that indicates true if the operation succeeded; otherwise, false.
-               */
+    * Initialize the media properties using the specified file.
+    * @param type The type of media.
+    * @param source The file to initialize the media properties.
+    * @return When this method completes, it returns a boolean value that indicates true if the operation succeeded; otherwise, false.
+    */
   def copyFromFileAsync(`type`: MediaPlaybackType, source: winrtDashUwpLib.WindowsNs.StorageNs.StorageFile): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
   /** Updates the metadata for the currently playing media. */
   def update(): scala.Unit = js.native

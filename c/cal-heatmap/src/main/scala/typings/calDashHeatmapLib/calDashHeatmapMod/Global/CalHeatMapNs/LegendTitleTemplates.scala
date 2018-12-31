@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LegendTitleTemplates extends js.Object {
   /** Formatting of all the value but the first and the last. Default value: "between {down} and {up} {name}" */
   var inner: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubscriptionServerOptions extends js.Object {
   var keepAlive: js.UndefOr[scala.Double] = js.undefined
   var onConnect: js.UndefOr[

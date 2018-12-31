@@ -10,16 +10,16 @@ trait Watch
   extends nodeLib.NodeJSNs.EventEmitter {
   var consul: Consul = js.native
   /**
-           * End watch
-           */
+    * End watch
+    */
   def end(): scala.Unit = js.native
   /**
-           * Is running
-           */
+    * Is running
+    */
   def isRunning(): scala.Boolean = js.native
   /**
-           * Update time
-           */
+    * Update time
+    */
   def updateTime(): scala.Double = js.native
 }
 

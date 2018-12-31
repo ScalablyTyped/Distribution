@@ -20,9 +20,9 @@ abstract class NetworkAdapter () extends js.Object {
   /** Gets a value indicating the maximum outbound speed in bits per second. */
   var outboundMaxBitsPerSecond: scala.Double = js.native
   /**
-                   * Gets the connection profile currently associated with the network adapter.
-                   * @return The connection profile associated with this network adapter.
-                   */
+    * Gets the connection profile currently associated with the network adapter.
+    * @return The connection profile associated with this network adapter.
+    */
   def getConnectedProfileAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[ConnectionProfile] = js.native
 }
 

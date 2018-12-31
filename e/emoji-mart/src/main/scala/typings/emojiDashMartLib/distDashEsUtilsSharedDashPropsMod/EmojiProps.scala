@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EmojiProps extends js.Object {
   /** defaults to returning a png from unpkg.com-hosted emoji-datasource-${set} */
   var backgroundImageFn: js.UndefOr[BackgroundImageFn] = js.undefined

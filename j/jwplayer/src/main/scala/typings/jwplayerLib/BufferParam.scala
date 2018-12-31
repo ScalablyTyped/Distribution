@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BufferParam extends CallbackParam {
   var newstate: java.lang.String
   var oldstate: java.lang.String

@@ -12,29 +12,29 @@ sealed trait PullRequestMergeFailureType extends js.Object
 @js.native
 object PullRequestMergeFailureType extends js.Object {
   /**
-       * Pull request merge failed due to case mismatch.
-       */
+    * Pull request merge failed due to case mismatch.
+    */
   @js.native
   sealed trait CaseSensitive
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.PullRequestMergeFailureType
   
   /**
-       * Type is not set. Default type.
-       */
+    * Type is not set. Default type.
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.PullRequestMergeFailureType
   
   /**
-       * Pull request merge failed due to an object being too large.
-       */
+    * Pull request merge failed due to an object being too large.
+    */
   @js.native
   sealed trait ObjectTooLarge
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.PullRequestMergeFailureType
   
   /**
-       * Pull request merge failure type unknown.
-       */
+    * Pull request merge failure type unknown.
+    */
   @js.native
   sealed trait Unknown
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.PullRequestMergeFailureType

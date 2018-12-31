@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransformObject extends js.Object {
   var deps: org.scalablytyped.runtime.StringDictionary[js.Any]
   var entry: scala.Boolean

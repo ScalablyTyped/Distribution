@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Available data-* attributes to be used by a tooltip, this interface isn't used by ReactTooltip itself as any
-     * data-* attribute can exist on a JSX element without type checking, but it at least be useful for developers
-     * to ensure they're using attributes which ReactTooltip support
-     */
-
+  * Available data-* attributes to be used by a tooltip, this interface isn't used by ReactTooltip itself as any
+  * data-* attribute can exist on a JSX element without type checking, but it at least be useful for developers
+  * to ensure they're using attributes which ReactTooltip support
+  */
 trait DataProps extends js.Object {
   var `data-border`: js.UndefOr[scala.Boolean] = js.undefined
   var `data-class`: js.UndefOr[java.lang.String] = js.undefined

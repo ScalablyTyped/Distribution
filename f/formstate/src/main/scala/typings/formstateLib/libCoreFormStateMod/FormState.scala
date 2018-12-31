@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class FormState[TValue /* <: ValidatableMapOrArray */] protected ()
   extends formstateLib.libCoreTypesMod.ComposibleValidatable[TValue] {
   def this(/**
-           * SubItems can be any Validatable
-           */
+    * SubItems can be any Validatable
+    */
   $: TValue) = this()
   /* CompleteClass */
   @JSName("$")
@@ -19,45 +19,45 @@ class FormState[TValue /* <: ValidatableMapOrArray */] protected ()
   var _error: js.UndefOr[java.lang.String | scala.Null] = js.native
   var _validators: js.Array[formstateLib.libCoreTypesMod.Validator[TValue]] = js.native
   /**
-       * Auto validation
-       */
+    * Auto validation
+    */
   var autoValidationEnabled: scala.Boolean = js.native
   /**
-       * Error from some sub field if any
-       */
+    * Error from some sub field if any
+    */
   val fieldError: js.UndefOr[java.lang.String | scala.Null] = js.native
   /**
-       * Error from form if any
-       */
+    * Error from form if any
+    */
   val formError: js.UndefOr[java.lang.String | scala.Null] = js.native
   /* CompleteClass */
   override var hasError: scala.Boolean = js.native
   /**
-       * Does any field have an error
-       */
+    * Does any field have an error
+    */
   val hasFieldError: scala.Boolean = js.native
   /**
-       * Does form level validation have an error
-       */
+    * Does form level validation have an error
+    */
   val hasFormError: scala.Boolean = js.native
   var mode: formstateLib.formstateLibStrings.array | formstateLib.formstateLibStrings.map = js.native
   /**
-       * You should only show the form error if there are no field errors
-       */
+    * You should only show the form error if there are no field errors
+    */
   val showFormError: scala.Boolean = js.native
   /**
-       * Composible field validation tracking
-       */
+    * Composible field validation tracking
+    */
   var validatedSubFields: js.Array[formstateLib.libCoreTypesMod.ComposibleValidatable[_]] = js.native
   /* CompleteClass */
   override var validating: scala.Boolean = js.native
   /**
-       * Call it when you are `reinit`ing child fields
-       */
+    * Call it when you are `reinit`ing child fields
+    */
   def clearFormError(): scala.Unit = js.native
   /**
-       * Composible fields (fields that work in conjuction with FormState)
-       */
+    * Composible fields (fields that work in conjuction with FormState)
+    */
   def compose(): this.type = js.native
   def disableAutoValidation(): scala.Unit = js.native
   /* CompleteClass */

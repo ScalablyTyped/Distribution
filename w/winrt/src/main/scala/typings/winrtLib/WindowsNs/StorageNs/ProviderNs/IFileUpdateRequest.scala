@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFileUpdateRequest extends js.Object {
   var contentId: java.lang.String
   var file: winrtLib.WindowsNs.StorageNs.StorageFile

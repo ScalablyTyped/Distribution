@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IPAddress extends js.Object {
   var Aliases: js.UndefOr[js.Any] = js.undefined
   var EndpointID: java.lang.String

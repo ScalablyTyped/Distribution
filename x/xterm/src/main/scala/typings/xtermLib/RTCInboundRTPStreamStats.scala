@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RTCInboundRTPStreamStats extends RTCRTPStreamStats {
   var bytesReceived: js.UndefOr[scala.Double] = js.undefined
   var fractionLost: js.UndefOr[scala.Double] = js.undefined

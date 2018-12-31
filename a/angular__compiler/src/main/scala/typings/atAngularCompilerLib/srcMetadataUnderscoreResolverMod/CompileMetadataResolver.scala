@@ -58,9 +58,9 @@ class CompileMetadataResolver protected () extends js.Object {
   def clearCache(): scala.Unit = js.native
   def clearCacheFor(`type`: atAngularCompilerLib.srcCoreMod.Type): scala.Unit = js.native
   /**
-       * Gets the metadata for the given directive.
-       * This assumes `loadNgModuleDirectiveAndPipeMetadata` has been called first.
-       */
+    * Gets the metadata for the given directive.
+    * This assumes `loadNgModuleDirectiveAndPipeMetadata` has been called first.
+    */
   def getDirectiveMetadata(directiveType: js.Any): atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileDirectiveMetadata = js.native
   def getDirectiveSummary(dirType: js.Any): atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileDirectiveSummary = js.native
   def getHostComponentMetadata(compMeta: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileDirectiveMetadata): atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileDirectiveMetadata = js.native
@@ -87,9 +87,9 @@ class CompileMetadataResolver protected () extends js.Object {
   def getNonNormalizedDirectiveMetadata(directiveType: js.Any): atAngularCompilerLib.Anon_Annotation | scala.Null = js.native
   def getOrLoadPipeMetadata(pipeType: js.Any): atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompilePipeMetadata = js.native
   /**
-       * Gets the metadata for the given pipe.
-       * This assumes `loadNgModuleDirectiveAndPipeMetadata` has been called first.
-       */
+    * Gets the metadata for the given pipe.
+    * This assumes `loadNgModuleDirectiveAndPipeMetadata` has been called first.
+    */
   def getPipeMetadata(pipeType: js.Any): atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompilePipeMetadata | scala.Null = js.native
   def getPipeSummary(pipeType: js.Any): atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompilePipeSummary = js.native
   def getProviderMetadata(provider: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.ProviderMeta): atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileProviderMetadata = js.native
@@ -101,12 +101,9 @@ class CompileMetadataResolver protected () extends js.Object {
   def isPipe(`type`: js.Any): scala.Boolean = js.native
   def loadDirectiveMetadata(ngModuleType: js.Any, directiveType: js.Any, isSync: scala.Boolean): atAngularCompilerLib.srcUtilMod.SyncAsync[scala.Null] = js.native
   /**
-       * Loads the declared directives and pipes of an NgModule.
-       */
+    * Loads the declared directives and pipes of an NgModule.
+    */
   def loadNgModuleDirectiveAndPipeMetadata(moduleType: js.Any, isSync: scala.Boolean): js.Promise[_] = js.native
-  /**
-       * Loads the declared directives and pipes of an NgModule.
-       */
   def loadNgModuleDirectiveAndPipeMetadata(moduleType: js.Any, isSync: scala.Boolean, throwIfNotFound: scala.Boolean): js.Promise[_] = js.native
 }
 

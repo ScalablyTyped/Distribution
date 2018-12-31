@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents 2D coordinate that is used to convey the values of timed text style properties. */
-
 trait TimedTextPoint extends js.Object {
   /** The units of the coordinates, either pixels or percentage. */
   var unit: TimedTextUnit

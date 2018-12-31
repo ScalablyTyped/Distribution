@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParsedOptions extends js.Object {
   var _disable: js.Array[DateLimit[stdLib.Date]]
   var _enable: js.Array[DateLimit[stdLib.Date]]

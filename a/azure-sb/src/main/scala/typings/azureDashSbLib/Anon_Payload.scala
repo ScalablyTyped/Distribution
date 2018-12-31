@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Payload extends js.Object {
   var alert: java.lang.String
   var aps: js.Object

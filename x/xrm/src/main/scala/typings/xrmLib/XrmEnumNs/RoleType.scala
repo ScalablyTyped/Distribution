@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait RoleType extends js.Object
 
 /**
-     * An enumeration for Relationship Role Type Metadata
-     */
+  * An enumeration for Relationship Role Type Metadata
+  */
 @JSGlobal("XrmEnum.RoleType")
 @js.native
 object RoleType extends js.Object {

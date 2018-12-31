@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CombinationOperators extends js.Object {
   /** Matches if all the selectors in the array match. */
   @JSName("$and")

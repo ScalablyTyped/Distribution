@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object TextDocumentSaveReasonNs extends js.Object {
   /**
-       * Automatic after a delay.
-       */
+    * Automatic after a delay.
+    */
   val AfterDelay: vscodeDashLanguageserverLib.vscodeDashLanguageserverLibNumbers.`2` = js.native
   /**
-       * When the editor lost focus.
-       */
+    * When the editor lost focus.
+    */
   val FocusOut: vscodeDashLanguageserverLib.vscodeDashLanguageserverLibNumbers.`3` = js.native
   /**
-       * Manually triggered, e.g. by the user pressing save, by starting debugging,
-       * or by an API call.
-       */
+    * Manually triggered, e.g. by the user pressing save, by starting debugging,
+    * or by an API call.
+    */
   val Manual: vscodeDashLanguageserverLib.vscodeDashLanguageserverLibNumbers.`1` = js.native
 }
 

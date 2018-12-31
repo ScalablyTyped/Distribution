@@ -13,15 +13,15 @@ class Record ()
   /* CompleteClass */
   override var constructor: js.Function = js.native
   /**
-        * Determines whether an object has a property with the specified name.
-        * @param v A property name.
-        */
+    * Determines whether an object has a property with the specified name.
+    * @param v A property name.
+    */
   /* CompleteClass */
   override def hasOwnProperty(v: stdLib.PropertyKey): scala.Boolean = js.native
   /**
-        * Determines whether a specified property is enumerable.
-        * @param v A property name.
-        */
+    * Determines whether a specified property is enumerable.
+    * @param v A property name.
+    */
   /* CompleteClass */
   override def propertyIsEnumerable(v: stdLib.PropertyKey): scala.Boolean = js.native
 }

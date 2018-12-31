@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGroupedListState extends js.Object {
   var groups: js.UndefOr[
     js.Array[

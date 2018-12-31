@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContextRowRenderedEventUIParam extends js.Object {
   /**
   	 * Gets the current context row mode.

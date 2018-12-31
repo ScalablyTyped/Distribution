@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RectanglePrimitive extends js.Object {
   var asynchronous: scala.Boolean
   var debugShowBoundingVolume: scala.Boolean

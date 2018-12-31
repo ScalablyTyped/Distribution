@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnDef extends js.Object {
   /** Appends a css class for the column cells */
   var cellClass: js.UndefOr[java.lang.String] = js.undefined
   /**
-         * A function which takes the value of the cell and returns the display value. Useful when your data model has an underlying value which you need to convert to a human readable format.
-         * @param val 
-         * @returns the display value
-         * @example function(unixTimeTicks) { return new Date(unixTimeTicks); }
-         */
+    * A function which takes the value of the cell and returns the display value. Useful when your data model has an underlying value which you need to convert to a human readable format.
+    * @param val 
+    * @returns the display value
+    * @example function(unixTimeTicks) { return new Date(unixTimeTicks); }
+    */
   var cellFormatter: js.UndefOr[js.Function1[/* val */ js.Any, java.lang.String]] = js.undefined
   /**Sets the cell template for the column. See github wiki for more details.*/
   var cellTemplate: js.UndefOr[java.lang.String | jqueryLib.JQueryGenericPromise[java.lang.String]] = js.undefined

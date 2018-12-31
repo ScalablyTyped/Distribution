@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WindowChangeInfo extends js.Object {
   /** The number of columns for the pseudo-TTY. */
   var cols: scala.Double

@@ -10,12 +10,9 @@ import scala.scalajs.js.annotation._
 class TermsQuery protected ()
   extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.TermsQuery {
   /*
-       A Query that matches documents containing provided terms.
-       */
+    A Query that matches documents containing provided terms.
+    */
   def this(field: java.lang.String, terms: java.lang.String) = this()
-  /*
-       A Query that matches documents containing provided terms.
-       */
   def this(field: java.lang.String, terms: js.Array[java.lang.String]) = this()
 }
 

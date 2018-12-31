@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WFSWriteTransactionOptions extends js.Object {
   var featureNS: java.lang.String
   var featurePrefix: java.lang.String

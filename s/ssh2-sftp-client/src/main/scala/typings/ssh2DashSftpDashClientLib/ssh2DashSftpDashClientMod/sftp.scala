@@ -31,7 +31,7 @@ trait sftp extends js.Object {
   def list(remoteFilePath: java.lang.String): js.Promise[js.Array[ssh2DashSftpDashClientLib.ssh2DashSftpDashClientMod.sftpNs.FileInfo]] = js.native
   def mkdir(remoteFilePath: java.lang.String): js.Promise[scala.Unit] = js.native
   def mkdir(remoteFilePath: java.lang.String, recursive: scala.Boolean): js.Promise[scala.Unit] = js.native
-  def on(event: java.lang.String, callback: js.Function1[/* repeated */js.Any, scala.Unit]): scala.Unit = js.native
+  def on(event: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
   def put(input: java.lang.String, remoteFilePath: java.lang.String): js.Promise[scala.Unit] = js.native
   def put(input: java.lang.String, remoteFilePath: java.lang.String, useCompression: scala.Boolean): js.Promise[scala.Unit] = js.native
   def put(

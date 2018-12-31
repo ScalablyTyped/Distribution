@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Cert extends js.Object {
   var ca: js.UndefOr[java.lang.String] = js.undefined
   var cert: js.UndefOr[java.lang.String] = js.undefined

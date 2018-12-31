@@ -5,17 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrderAddress extends js.Object {
   /** CLDR country code (e.g. "US"). */
   var country: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Strings representing the lines of the printed label for mailing the order, for example:
-               * John Smith
-               * 1600 Amphitheatre Parkway
-               * Mountain View, CA, 94043
-               * United States
-               */
+    * Strings representing the lines of the printed label for mailing the order, for example:
+    * John Smith
+    * 1600 Amphitheatre Parkway
+    * Mountain View, CA, 94043
+    * United States
+    */
   var fullAddress: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Whether the address is a post office box. */
   var isPostOfficeBox: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AbstractAuthData extends js.Object {
   var authType: java.lang.String
   var deploymentId: java.lang.String

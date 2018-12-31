@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var filter: js.UndefOr[
     js.Function2[/* path */ java.lang.String, /* stat */ nodeLib.fsMod.Stats, scala.Boolean]

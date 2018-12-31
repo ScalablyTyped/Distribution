@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RenderInputProps extends InputProps {
    // parameter is either a DOM element or a mounted React component
   val value: reactDashTagsinputLib.Tag

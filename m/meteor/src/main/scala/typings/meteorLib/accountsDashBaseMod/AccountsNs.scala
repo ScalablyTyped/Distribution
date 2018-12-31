@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("meteor/accounts-base", "Accounts")
 @js.native
 object AccountsNs extends js.Object {
-  
   trait IValidateLoginAttemptCbOpts extends js.Object {
     var allowed: scala.Boolean
     var connection: meteorLib.MeteorNs.Connection

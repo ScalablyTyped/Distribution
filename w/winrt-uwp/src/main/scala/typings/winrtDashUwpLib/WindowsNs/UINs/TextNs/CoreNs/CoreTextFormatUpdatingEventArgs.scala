@@ -26,9 +26,9 @@ abstract class CoreTextFormatUpdatingEventArgs () extends js.Object {
   /** Gets a value that represents the underline type to be applied to the text range. The text input server populates this property before raising the event. */
   var underlineType: winrtDashUwpLib.WindowsNs.UINs.TextNs.UnderlineType = js.native
   /**
-                       * Requests that the format update operation be delayed. Call this method if your text input control is hosted on a worker thread rather than on the UI thread.
-                       * @return A Deferral object.
-                       */
+    * Requests that the format update operation be delayed. Call this method if your text input control is hosted on a worker thread rather than on the UI thread.
+    * @return A Deferral object.
+    */
   def getDeferral(): winrtDashUwpLib.WindowsNs.FoundationNs.Deferral = js.native
 }
 

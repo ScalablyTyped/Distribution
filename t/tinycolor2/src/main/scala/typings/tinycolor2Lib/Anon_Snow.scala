@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Snow extends js.Object {
   var aliceblue: tinycolor2Lib.tinycolor2LibStrings.f0f8ff
   var antiquewhite: tinycolor2Lib.tinycolor2LibStrings.faebd7

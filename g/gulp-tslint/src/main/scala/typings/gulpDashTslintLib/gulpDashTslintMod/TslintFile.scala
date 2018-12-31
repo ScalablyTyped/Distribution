@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TslintFile extends js.Object {
   var contents: nodeLib.Buffer | js.Any
   var path: java.lang.String

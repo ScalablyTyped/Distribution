@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotificationSystemTheme extends js.Object {
   var notificationClassName: js.UndefOr[reapopLib.Anon_Dismissible] = js.undefined
   var notificationsContainerClassName: js.UndefOr[reapopLib.Anon_Position] = js.undefined

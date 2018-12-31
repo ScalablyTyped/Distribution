@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SvgCommonProps extends js.Object {
   var delayLongPress: js.UndefOr[scala.Double] = js.undefined
   var delayPressIn: js.UndefOr[scala.Double] = js.undefined

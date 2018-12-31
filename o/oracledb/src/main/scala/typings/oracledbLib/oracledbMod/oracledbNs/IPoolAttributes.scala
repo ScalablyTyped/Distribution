@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPoolAttributes extends IConnectionAttributes {
   var poolIncrement: js.UndefOr[scala.Double] = js.undefined
   var poolMax: js.UndefOr[scala.Double] = js.undefined

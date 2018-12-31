@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConditionalExpression extends Node {
   var alternate: Expression
   var consequent: Expression

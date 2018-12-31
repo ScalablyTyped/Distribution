@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileInputProps extends js.Object {
   var accept: java.lang.String
   var className: java.lang.String

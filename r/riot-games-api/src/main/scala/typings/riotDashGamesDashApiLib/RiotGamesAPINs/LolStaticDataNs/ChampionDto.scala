@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChampionDto extends js.Object {
   var allytips: js.Array[java.lang.String]
   var blurb: java.lang.String

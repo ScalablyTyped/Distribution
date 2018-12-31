@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait RangeUnderlineStyle extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.1]
-     */
+  * [Api set: ExcelApi 1.1]
+  */
 @JSGlobal("Excel.RangeUnderlineStyle")
 @js.native
 object RangeUnderlineStyle extends js.Object {

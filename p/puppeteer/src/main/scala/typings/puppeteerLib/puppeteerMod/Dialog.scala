@@ -8,14 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Dialog extends js.Object {
   /**
-     * Accepts the dialog.
-     * @param promptText A text to enter in prompt. Does not cause any effects if the dialog's type is not prompt.
-     */
+    * Accepts the dialog.
+    * @param promptText A text to enter in prompt. Does not cause any effects if the dialog's type is not prompt.
+    */
   def accept(): js.Promise[scala.Unit] = js.native
-  /**
-     * Accepts the dialog.
-     * @param promptText A text to enter in prompt. Does not cause any effects if the dialog's type is not prompt.
-     */
   def accept(promptText: java.lang.String): js.Promise[scala.Unit] = js.native
   /** If dialog is prompt, returns default prompt value. Otherwise, returns empty string. */
   def defaultValue(): java.lang.String = js.native

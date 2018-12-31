@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PreserveWhitespacesDefaultEncapsulation extends js.Object {
   var defaultEncapsulation: js.UndefOr[atAngularCompilerLib.srcCoreMod.ViewEncapsulation] = js.undefined
   var jitDevMode: js.UndefOr[scala.Boolean] = js.undefined

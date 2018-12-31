@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Hljs extends js.Object {
   var autoDetect: js.UndefOr[scala.Boolean] = js.undefined
   var caption: js.UndefOr[java.lang.String] = js.undefined

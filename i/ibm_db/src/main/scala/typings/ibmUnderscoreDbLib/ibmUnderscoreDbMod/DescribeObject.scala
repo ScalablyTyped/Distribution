@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DescribeObject extends js.Object {
   var column: js.UndefOr[java.lang.String] = js.undefined
   var database: java.lang.String

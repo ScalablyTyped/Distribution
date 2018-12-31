@@ -14,8 +14,8 @@ class Repository ()
 @js.native
 object Repository extends js.Object {
   /**
-       * Creates a branch with the passed in name pointing to the commit
-       */
+    * Creates a branch with the passed in name pointing to the commit
+    */
   def discover(startPath: java.lang.String, acrossFs: scala.Double, ceilingDirs: java.lang.String): js.Promise[nodegitLib.bufMod.Buf] = js.native
   def init(path: java.lang.String, isBare: scala.Double): js.Promise[nodegitLib.repositoryMod.Repository] = js.native
   def initExt(repoPath: java.lang.String): js.Promise[nodegitLib.repositoryMod.Repository] = js.native

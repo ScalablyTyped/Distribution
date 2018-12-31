@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Scalar extends Node {
   /**
-           * By default (undefined), numbers use decimal notation.
-           * The YAML 1.2 core schema only supports 'HEX' and 'OCT'.
-           */
+    * By default (undefined), numbers use decimal notation.
+    * The YAML 1.2 core schema only supports 'HEX' and 'OCT'.
+    */
   var format: js.UndefOr[
     yamlLib.yamlLibStrings.BIN | yamlLib.yamlLibStrings.HEX | yamlLib.yamlLibStrings.OCT | yamlLib.yamlLibStrings.TIME
   ]

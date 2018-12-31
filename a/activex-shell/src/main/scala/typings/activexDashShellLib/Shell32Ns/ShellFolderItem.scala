@@ -39,34 +39,19 @@ class ShellFolderItem protected () extends js.Object {
   /** Access an extended property */
   def ExtendedProperty(bstrPropName: java.lang.String): js.Any = js.native
   /**
-           * Execute a command on the item.
-           * Must be one of the values returned by the item's `FolderItemVerb.Name` property.
-           * If no verb is specified, the default verb will be invoked.
-           */
+    * Execute a command on the item.
+    * Must be one of the values returned by the item's `FolderItemVerb.Name` property.
+    * If no verb is specified, the default verb will be invoked.
+    */
   def InvokeVerb(): scala.Unit = js.native
-  /**
-           * Execute a command on the item.
-           * Must be one of the values returned by the item's `FolderItemVerb.Name` property.
-           * If no verb is specified, the default verb will be invoked.
-           */
   def InvokeVerb(vVerb: java.lang.String): scala.Unit = js.native
   /**
-           * Extended version of InvokeVerb
-           * @param vVerb String that corresponds to the command to be executed. If no verb is specified, the default verb is executed.
-           * @param vArgs String with one or more arguments to the command specified by vVerb. The format of this string depends on the particular verb.
-           */
+    * Extended version of InvokeVerb
+    * @param vVerb String that corresponds to the command to be executed. If no verb is specified, the default verb is executed.
+    * @param vArgs String with one or more arguments to the command specified by vVerb. The format of this string depends on the particular verb.
+    */
   def InvokeVerbEx(): scala.Unit = js.native
-  /**
-           * Extended version of InvokeVerb
-           * @param vVerb String that corresponds to the command to be executed. If no verb is specified, the default verb is executed.
-           * @param vArgs String with one or more arguments to the command specified by vVerb. The format of this string depends on the particular verb.
-           */
   def InvokeVerbEx(vVerb: java.lang.String): scala.Unit = js.native
-  /**
-           * Extended version of InvokeVerb
-           * @param vVerb String that corresponds to the command to be executed. If no verb is specified, the default verb is executed.
-           * @param vArgs String with one or more arguments to the command specified by vVerb. The format of this string depends on the particular verb.
-           */
   def InvokeVerbEx(vVerb: java.lang.String, vArgs: java.lang.String): scala.Unit = js.native
   /** Get the list of verbs for the object */
   def Verbs(): FolderItemVerbs = js.native

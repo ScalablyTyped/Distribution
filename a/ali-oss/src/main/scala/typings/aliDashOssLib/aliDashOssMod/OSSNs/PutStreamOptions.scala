@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PutStreamOptions extends js.Object {
   var callback: ObjectCallback
   var contentLength: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Check extends js.Object {
   var after: js.UndefOr[js.Function | java.lang.String] = js.undefined
   var enabled: js.UndefOr[scala.Boolean] = js.undefined

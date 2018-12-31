@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OPNUMNOTEQUAL extends js.Object {
   var OP_0: scala.Double
   var OP_0NOTEQUAL: scala.Double

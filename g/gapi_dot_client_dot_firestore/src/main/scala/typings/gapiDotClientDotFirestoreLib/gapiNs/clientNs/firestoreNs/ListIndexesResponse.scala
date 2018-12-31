@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListIndexesResponse extends js.Object {
   /** The indexes. */
   var indexes: js.UndefOr[js.Array[Index]] = js.undefined

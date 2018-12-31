@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait animalClassifyResponse extends js.Object {
   var log_id: scala.Double
    // 识别结果数，标识返回结果数目。

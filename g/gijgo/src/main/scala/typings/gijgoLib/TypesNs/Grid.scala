@@ -24,7 +24,6 @@ trait Grid[Entity, Params]
   def expandAll(): Grid[Entity, Params] = js.native
   //get(position: number): Entity; //TODO: rename to getByPosition to avoid conflicts with jquery.get
   def getAll(): js.Array[Entity] = js.native
-  //get(position: number): Entity; //TODO: rename to getByPosition to avoid conflicts with jquery.get
   def getAll(includeAllRecords: scala.Boolean): js.Array[Entity] = js.native
   def getById(id: java.lang.String): Entity = js.native
   def getCSV(): java.lang.String = js.native

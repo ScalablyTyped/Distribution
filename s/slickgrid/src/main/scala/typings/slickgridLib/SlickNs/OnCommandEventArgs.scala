@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnCommandEventArgs[T /* <: SlickData */] extends js.Object {
   var button: HeaderButton
   var column: Column[T]

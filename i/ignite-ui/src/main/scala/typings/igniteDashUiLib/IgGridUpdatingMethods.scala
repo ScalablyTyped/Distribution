@@ -40,12 +40,6 @@ trait IgGridUpdatingMethods extends js.Object {
   	 * @param create Requests to create the editor if it has not been created yet.
   	 */
   def editorForCell(cell: java.lang.String): js.Object = js.native
-  /**
-  	 * Gets the editor for a column by the cell it resides in. If allowed the function can create the editor if it has not been created yet.
-  	 *
-  	 * @param cell Reference to the jQuery-wrapped TD object of the grid that the editor belongs to.
-  	 * @param create Requests to create the editor if it has not been created yet.
-  	 */
   def editorForCell(cell: java.lang.String, create: scala.Boolean): js.Object = js.native
   /**
   	 * Gets the editor for a column by the column key. That method can be used only after the editor has been created.
@@ -60,19 +54,7 @@ trait IgGridUpdatingMethods extends js.Object {
   	 * @param raiseEvents Specifies whether or not updating events should be raised for this operation.
   	 */
   def endEdit(): scala.Boolean = js.native
-  /**
-  	 * Ends the currently active edit mode.
-  	 *
-  	 * @param update Specifies if the edit process should accept the current changes. Default is 'false'.
-  	 * @param raiseEvents Specifies whether or not updating events should be raised for this operation.
-  	 */
   def endEdit(update: scala.Boolean): scala.Boolean = js.native
-  /**
-  	 * Ends the currently active edit mode.
-  	 *
-  	 * @param update Specifies if the edit process should accept the current changes. Default is 'false'.
-  	 * @param raiseEvents Specifies whether or not updating events should be raised for this operation.
-  	 */
   def endEdit(update: scala.Boolean, raiseEvents: scala.Boolean): scala.Boolean = js.native
   /**
   	 * Finds and returns the key of the first column the editor for which has invalid value.
@@ -107,11 +89,6 @@ trait IgGridUpdatingMethods extends js.Object {
   	 * @param raiseEvents Specifies whether or not updating events should be raised for this operation.
   	 */
   def startAddRowEdit(): scala.Boolean = js.native
-  /**
-  	 * Starts editing for adding a new row.
-  	 *
-  	 * @param raiseEvents Specifies whether or not updating events should be raised for this operation.
-  	 */
   def startAddRowEdit(raiseEvents: scala.Boolean): scala.Boolean = js.native
   /**
   	 * Starts editing for the row or cell specified (depending on the [editMode](ui.iggridupdating#options:editMode)).
@@ -121,13 +98,6 @@ trait IgGridUpdatingMethods extends js.Object {
   	 * @param raiseEvents Specifies whether or not updating events should be raised for this operation.
   	 */
   def startEdit(rowId: js.Object, column: js.Object): scala.Boolean = js.native
-  /**
-  	 * Starts editing for the row or cell specified (depending on the [editMode](ui.iggridupdating#options:editMode)).
-  	 *
-  	 * @param rowId The row id.
-  	 * @param column The column key or index.
-  	 * @param raiseEvents Specifies whether or not updating events should be raised for this operation.
-  	 */
   def startEdit(rowId: js.Object, column: js.Object, raiseEvents: scala.Boolean): scala.Boolean = js.native
   /**
   	 * Sets values for specified cells in a row. It also creates a transaction and updates the UI.

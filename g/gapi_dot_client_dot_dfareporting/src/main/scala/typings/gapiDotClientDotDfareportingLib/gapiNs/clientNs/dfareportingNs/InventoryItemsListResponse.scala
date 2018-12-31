@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InventoryItemsListResponse extends js.Object {
   /** Inventory item collection */
   var inventoryItems: js.UndefOr[js.Array[InventoryItem]] = js.undefined

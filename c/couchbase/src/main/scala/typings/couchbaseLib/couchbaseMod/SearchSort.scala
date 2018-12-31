@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class SearchSort () extends js.Object {
   /**
-       * Specifies whether to sort descending or not.
-       */
+    * Specifies whether to sort descending or not.
+    */
   def descending(descending: scala.Boolean): this.type = js.native
 }
 

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // 设备-----加速度计
-
 trait AccelerometerData extends js.Object {
   /** X 轴 */
   var x: scala.Double

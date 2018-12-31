@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AliasesMap extends js.Object {
   var `\u21E7`: scala.Double
   var `\u2303`: scala.Double

@@ -13,11 +13,8 @@ trait MigrationBuilder extends js.Object {
   def addColumns(tableName: Name, newColumns: ColumnDefinitions): scala.Unit = js.native
   // Constraints
   def addConstraint(tableName: Name, constraintName: java.lang.String, expression: java.lang.String): scala.Unit = js.native
-  // Constraints
   def addConstraint(tableName: Name, constraintName: java.lang.String, expression: ConstraintOptions): scala.Unit = js.native
-  // Constraints
   def addConstraint(tableName: Name, constraintName: scala.Null, expression: java.lang.String): scala.Unit = js.native
-  // Constraints
   def addConstraint(tableName: Name, constraintName: scala.Null, expression: ConstraintOptions): scala.Unit = js.native
   def addExtension(extension: java.lang.String): scala.Unit = js.native
   def addExtension(extension: java.lang.String, options: CreateExtensionOptions): scala.Unit = js.native
@@ -48,15 +45,11 @@ trait MigrationBuilder extends js.Object {
   def createConstraint(tableName: Name, constraintName: scala.Null, expression: ConstraintOptions): scala.Unit = js.native
   // Domains
   def createDomain(domainName: Name, `type`: Type): scala.Unit = js.native
-  // Domains
   def createDomain(domainName: Name, `type`: Type, domainOptions: DomainOptionsCreate): scala.Unit = js.native
   // Extensions
   def createExtension(extension: java.lang.String): scala.Unit = js.native
-  // Extensions
   def createExtension(extension: java.lang.String, options: CreateExtensionOptions): scala.Unit = js.native
-  // Extensions
   def createExtension(extension: js.Array[java.lang.String]): scala.Unit = js.native
-  // Extensions
   def createExtension(extension: js.Array[java.lang.String], options: CreateExtensionOptions): scala.Unit = js.native
   // Functions
   def createFunction(
@@ -67,16 +60,12 @@ trait MigrationBuilder extends js.Object {
   ): scala.Unit = js.native
   // Indexes
   def createIndex(tableName: Name, columns: java.lang.String): scala.Unit = js.native
-  // Indexes
   def createIndex(tableName: Name, columns: java.lang.String, options: CreateIndexOptions): scala.Unit = js.native
-  // Indexes
   def createIndex(tableName: Name, columns: js.Array[java.lang.String]): scala.Unit = js.native
-  // Indexes
   def createIndex(tableName: Name, columns: js.Array[java.lang.String], options: CreateIndexOptions): scala.Unit = js.native
   def createMaterializedView(viewName: Name, options: CreateMaterializedViewOptions, definition: java.lang.String): scala.Unit = js.native
   // Operators
   def createOperator(operatorName: Name): scala.Unit = js.native
-  // Operators
   def createOperator(operatorName: Name, options: CreateOperatorOptions): scala.Unit = js.native
   def createOperatorClass(
     operatorClassName: Name,
@@ -88,31 +77,24 @@ trait MigrationBuilder extends js.Object {
   def createOperatorFamily(operatorFamilyName: Name, indexMethod: Name): scala.Unit = js.native
   // Policies
   def createPolicy(tableName: Name, policyName: java.lang.String): scala.Unit = js.native
-  // Policies
   def createPolicy(tableName: Name, policyName: java.lang.String, options: CreatePolicyOptions): scala.Unit = js.native
   // Roles
   def createRole(roleName: Name): scala.Unit = js.native
-  // Roles
   def createRole(roleName: Name, roleOptions: RoleOptions): scala.Unit = js.native
   // Schemas
   def createSchema(schemaName: java.lang.String): scala.Unit = js.native
-  // Schemas
   def createSchema(schemaName: java.lang.String, schemaOptions: nodeDashPgDashMigrateLib.Anon_IfNotExists): scala.Unit = js.native
   // Sequences
   def createSequence(sequenceName: Name): scala.Unit = js.native
-  // Sequences
   def createSequence(sequenceName: Name, sequenceOptions: SequenceOptionsCreate): scala.Unit = js.native
   // Tables
   def createTable(tableName: Name, columns: ColumnDefinitions): scala.Unit = js.native
-  // Tables
   def createTable(tableName: Name, columns: ColumnDefinitions, options: TableOptions): scala.Unit = js.native
   // Triggers
   def createTrigger(tableName: Name, triggerName: Name, triggerOptions: TriggerOptions): scala.Unit = js.native
-  // Triggers
   def createTrigger(tableName: Name, triggerName: Name, triggerOptions: TriggerOptions, definition: Value): scala.Unit = js.native
   // Types
   def createType(typeName: Name, values: js.Array[Value]): scala.Unit = js.native
-  // Types
   def createType(typeName: Name, values: org.scalablytyped.runtime.StringDictionary[Type]): scala.Unit = js.native
   def createView(viewName: Name, options: CreateViewOptions, definition: java.lang.String): scala.Unit = js.native
   def dropColumn(tableName: Name, columns: java.lang.String): scala.Unit = js.native

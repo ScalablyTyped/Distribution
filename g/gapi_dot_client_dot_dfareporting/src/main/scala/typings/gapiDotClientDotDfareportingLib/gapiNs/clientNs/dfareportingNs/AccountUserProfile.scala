@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountUserProfile extends js.Object {
   /** Account ID of the user profile. This is a read-only field that can be left blank. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined
@@ -24,30 +23,30 @@ trait AccountUserProfile extends js.Object {
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#accountUserProfile". */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Locale of the user profile. This is a required field.
-               * Acceptable values are:
-               * - "cs" (Czech)
-               * - "de" (German)
-               * - "en" (English)
-               * - "en-GB" (English United Kingdom)
-               * - "es" (Spanish)
-               * - "fr" (French)
-               * - "it" (Italian)
-               * - "ja" (Japanese)
-               * - "ko" (Korean)
-               * - "pl" (Polish)
-               * - "pt-BR" (Portuguese Brazil)
-               * - "ru" (Russian)
-               * - "sv" (Swedish)
-               * - "tr" (Turkish)
-               * - "zh-CN" (Chinese Simplified)
-               * - "zh-TW" (Chinese Traditional)
-               */
+    * Locale of the user profile. This is a required field.
+    * Acceptable values are:
+    * - "cs" (Czech)
+    * - "de" (German)
+    * - "en" (English)
+    * - "en-GB" (English United Kingdom)
+    * - "es" (Spanish)
+    * - "fr" (French)
+    * - "it" (Italian)
+    * - "ja" (Japanese)
+    * - "ko" (Korean)
+    * - "pl" (Polish)
+    * - "pt-BR" (Portuguese Brazil)
+    * - "ru" (Russian)
+    * - "sv" (Swedish)
+    * - "tr" (Turkish)
+    * - "zh-CN" (Chinese Simplified)
+    * - "zh-TW" (Chinese Traditional)
+    */
   var locale: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Name of the user profile. This is a required field. Must be less than 64 characters long, must be globally unique, and cannot contain whitespace or any
-               * of the following characters: "&;"#%,".
-               */
+    * Name of the user profile. This is a required field. Must be less than 64 characters long, must be globally unique, and cannot contain whitespace or any
+    * of the following characters: "&;"#%,".
+    */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** Filter that describes which sites are visible to the user profile. */
   var siteFilter: js.UndefOr[ObjectFilter] = js.undefined

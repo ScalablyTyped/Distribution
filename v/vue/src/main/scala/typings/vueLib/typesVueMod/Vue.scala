@@ -16,7 +16,7 @@ trait Vue extends js.Object {
   @JSName("$data")
   val $data: stdLib.Record[java.lang.String, _] = js.native
   @JSName("$delete")
-  var $delete_Original: js.Function2[/* object */ js.Object, /* key */ java.lang.String | scala.Double, scala.Unit] = js.native
+  var $delete_Original: vueLib.Anon_ObjectKey = js.native
   @JSName("$el")
   val $el: stdLib.Element = js.native
   @JSName("$isServer")
@@ -43,12 +43,7 @@ trait Vue extends js.Object {
   @JSName("$scopedSlots")
   val $scopedSlots: org.scalablytyped.runtime.StringDictionary[js.UndefOr[vueLib.typesVnodeMod.ScopedSlot]] = js.native
   @JSName("$set")
-  var $set_Original: js.Function3[
-    /* object */ js.Object, 
-    /* key */ java.lang.String | scala.Double, 
-    /* value */ js.Any, 
-    _
-  ] = js.native
+  var $set_Original: vueLib.Anon_Object = js.native
   @JSName("$slots")
   val $slots: org.scalablytyped.runtime.StringDictionary[js.UndefOr[js.Array[vueLib.typesVnodeMod.VNode]]] = js.native
   @JSName("$ssrContext")
@@ -141,6 +136,8 @@ trait Vue extends js.Object {
   def $delete(`object`: js.Object, key: java.lang.String): scala.Unit = js.native
   @JSName("$delete")
   def $delete(`object`: js.Object, key: scala.Double): scala.Unit = js.native
+  @JSName("$delete")
+  def $delete[T](array: js.Array[T], key: scala.Double): scala.Unit = js.native
   @JSName("$destroy")
   def $destroy(): scala.Unit = js.native
   @JSName("$emit")
@@ -179,6 +176,8 @@ trait Vue extends js.Object {
   def $once(event: java.lang.String, callback: js.Function): this.type = js.native
   @JSName("$once")
   def $once(event: js.Array[java.lang.String], callback: js.Function): this.type = js.native
+  @JSName("$set")
+  def $set[T](array: js.Array[T], key: scala.Double, value: T): T = js.native
   @JSName("$set")
   def $set[T](`object`: js.Object, key: java.lang.String, value: T): T = js.native
   @JSName("$set")

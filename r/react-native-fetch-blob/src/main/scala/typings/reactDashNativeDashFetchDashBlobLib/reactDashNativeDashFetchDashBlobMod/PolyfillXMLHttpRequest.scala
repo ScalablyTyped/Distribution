@@ -27,14 +27,14 @@ trait PolyfillXMLHttpRequest extends PolyfillXMLHttpRequestEventTarget {
   def getResponseHeader(field: java.lang.String): java.lang.String | scala.Null = js.native
   def onreadystatechange(e: stdLib.Event): scala.Unit = js.native
   /**
-       * XMLHttpRequest.open, always async, user and password not supported. When
-       * this method invoked, headers should becomes empty again.
-       * @param  method Request method
-       * @param  url Request URL
-       * @param  async Always async
-       * @param  user NOT SUPPORTED
-       * @param  password NOT SUPPORTED
-       */
+    * XMLHttpRequest.open, always async, user and password not supported. When
+    * this method invoked, headers should becomes empty again.
+    * @param  method Request method
+    * @param  url Request URL
+    * @param  async Always async
+    * @param  user NOT SUPPORTED
+    * @param  password NOT SUPPORTED
+    */
   def open(
     method: java.lang.String,
     url: java.lang.String,
@@ -44,9 +44,9 @@ trait PolyfillXMLHttpRequest extends PolyfillXMLHttpRequestEventTarget {
   ): scala.Unit = js.native
   def overrideMimeType(mime: java.lang.String): scala.Unit = js.native
   /**
-       * Invoke this function to send HTTP request, and set body.
-       * @param body Body in RNfetchblob flavor
-       */
+    * Invoke this function to send HTTP request, and set body.
+    * @param body Body in RNfetchblob flavor
+    */
   def send(body: js.Any): scala.Unit = js.native
   def setRequestHeader(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
 }

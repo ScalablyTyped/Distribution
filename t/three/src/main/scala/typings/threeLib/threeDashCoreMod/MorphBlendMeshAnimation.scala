@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MorphBlendMeshAnimation extends js.Object {
   var active: scala.Boolean
   var currentFrame: scala.Double

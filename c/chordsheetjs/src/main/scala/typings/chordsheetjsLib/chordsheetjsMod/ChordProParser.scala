@@ -18,9 +18,9 @@ class ChordProParser () extends js.Object {
   def endSection(sectionType: java.lang.String, tag: Tag): scala.Unit = js.native
   def finishTag(): scala.Unit = js.native
   /**
-       * Parses a ChordPro chord sheet into a song
-       * @param chordProChordSheet The ChordPro chord sheet
-       */
+    * Parses a ChordPro chord sheet into a song
+    * @param chordProChordSheet The ChordPro chord sheet
+    */
   def parse(chordProChordSheet: java.lang.String): Song = js.native
   def parseDocument(document: java.lang.String): scala.Unit = js.native
   def readChords(chr: java.lang.String): scala.Unit = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Options[T] extends js.Object {
   var errorMessage: js.UndefOr[js.Any] = js.undefined
   var negated: js.UndefOr[scala.Boolean] = js.undefined

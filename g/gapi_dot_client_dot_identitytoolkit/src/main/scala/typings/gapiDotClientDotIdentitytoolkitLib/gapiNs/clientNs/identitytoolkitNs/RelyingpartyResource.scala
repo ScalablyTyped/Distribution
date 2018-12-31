@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RelyingpartyResource extends js.Object {
   /** Creates the URI used by the IdP to authenticate the user. */
   def createAuthUri(request: gapiDotClientDotIdentitytoolkitLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[CreateAuthUriResponse]

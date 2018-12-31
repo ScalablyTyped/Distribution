@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Events extends js.Object {
   var onChange: js.UndefOr[js.Function1[/* publicState */ PublicState, _]] = js.undefined
   var onClick: js.UndefOr[js.Function0[_]] = js.undefined

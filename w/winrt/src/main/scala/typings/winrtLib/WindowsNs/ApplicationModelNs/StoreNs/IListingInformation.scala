@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IListingInformation extends js.Object {
   var ageRating: scala.Double
   var currentMarket: java.lang.String

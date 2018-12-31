@@ -8,645 +8,609 @@ import scala.scalajs.js.annotation._
 @JSImport("aws-sdk/clients/ram", "RAM")
 @js.native
 object RAMNs extends js.Object {
-  
   trait AcceptResourceShareInvitationRequest extends js.Object {
     /**
-         * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
-         */
+      * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+      */
     var clientToken: js.UndefOr[String] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the invitation.
-         */
+      * The Amazon Resource Name (ARN) of the invitation.
+      */
     var resourceShareInvitationArn: String
   }
-  
   
   trait AcceptResourceShareInvitationResponse extends js.Object {
     /**
-         * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
-         */
+      * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+      */
     var clientToken: js.UndefOr[String] = js.undefined
     /**
-         * Information about the invitation.
-         */
+      * Information about the invitation.
+      */
     var resourceShareInvitation: js.UndefOr[ResourceShareInvitation] = js.undefined
   }
-  
   
   trait AssociateResourceShareRequest extends js.Object {
     /**
-         * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
-         */
+      * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+      */
     var clientToken: js.UndefOr[String] = js.undefined
     /**
-         * The principals.
-         */
+      * The principals.
+      */
     var principals: js.UndefOr[PrincipalArnOrIdList] = js.undefined
     /**
-         * The Amazon Resource Names (ARN) of the resources.
-         */
+      * The Amazon Resource Names (ARN) of the resources.
+      */
     var resourceArns: js.UndefOr[ResourceArnList] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the resource share.
-         */
+      * The Amazon Resource Name (ARN) of the resource share.
+      */
     var resourceShareArn: String
   }
-  
   
   trait AssociateResourceShareResponse extends js.Object {
     /**
-         * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
-         */
+      * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+      */
     var clientToken: js.UndefOr[String] = js.undefined
     /**
-         * Information about the associations.
-         */
+      * Information about the associations.
+      */
     var resourceShareAssociations: js.UndefOr[ResourceShareAssociationList] = js.undefined
   }
-  
   
   trait ClientApiVersions extends js.Object {
     /**
-         * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
-         */
+      * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
+      */
     var apiVersion: js.UndefOr[apiVersion] = js.undefined
   }
   
-  
   trait CreateResourceShareRequest extends js.Object {
     /**
-         * Indicates whether principals outside your organization can be associated with a resource share.
-         */
+      * Indicates whether principals outside your organization can be associated with a resource share.
+      */
     var allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined
     /**
-         * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
-         */
+      * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+      */
     var clientToken: js.UndefOr[String] = js.undefined
     /**
-         * The name of the resource share.
-         */
+      * The name of the resource share.
+      */
     var name: String
     /**
-         * The principals to associate with the resource share. The possible values are IDs of AWS accounts, the ARN of an OU or organization from AWS Organizations.
-         */
+      * The principals to associate with the resource share. The possible values are IDs of AWS accounts, the ARN of an OU or organization from AWS Organizations.
+      */
     var principals: js.UndefOr[PrincipalArnOrIdList] = js.undefined
     /**
-         * The Amazon Resource Names (ARN) of the resources to associate with the resource share.
-         */
+      * The Amazon Resource Names (ARN) of the resources to associate with the resource share.
+      */
     var resourceArns: js.UndefOr[ResourceArnList] = js.undefined
     /**
-         * One or more tags.
-         */
+      * One or more tags.
+      */
     var tags: js.UndefOr[TagList] = js.undefined
   }
-  
   
   trait CreateResourceShareResponse extends js.Object {
     /**
-         * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
-         */
+      * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+      */
     var clientToken: js.UndefOr[String] = js.undefined
     /**
-         * Information about the resource share.
-         */
+      * Information about the resource share.
+      */
     var resourceShare: js.UndefOr[ResourceShare] = js.undefined
   }
   
-  
   trait DeleteResourceShareRequest extends js.Object {
     /**
-         * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
-         */
+      * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+      */
     var clientToken: js.UndefOr[String] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the resource share.
-         */
+      * The Amazon Resource Name (ARN) of the resource share.
+      */
     var resourceShareArn: String
   }
-  
   
   trait DeleteResourceShareResponse extends js.Object {
     /**
-         * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
-         */
+      * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+      */
     var clientToken: js.UndefOr[String] = js.undefined
     /**
-         * Indicates whether the request succeeded.
-         */
+      * Indicates whether the request succeeded.
+      */
     var returnValue: js.UndefOr[Boolean] = js.undefined
   }
-  
   
   trait DisassociateResourceShareRequest extends js.Object {
     /**
-         * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
-         */
+      * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+      */
     var clientToken: js.UndefOr[String] = js.undefined
     /**
-         * The principals.
-         */
+      * The principals.
+      */
     var principals: js.UndefOr[PrincipalArnOrIdList] = js.undefined
     /**
-         * The Amazon Resource Names (ARN) of the resources.
-         */
+      * The Amazon Resource Names (ARN) of the resources.
+      */
     var resourceArns: js.UndefOr[ResourceArnList] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the resource share.
-         */
+      * The Amazon Resource Name (ARN) of the resource share.
+      */
     var resourceShareArn: String
   }
-  
   
   trait DisassociateResourceShareResponse extends js.Object {
     /**
-         * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
-         */
+      * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+      */
     var clientToken: js.UndefOr[String] = js.undefined
     /**
-         * Information about the associations.
-         */
+      * Information about the associations.
+      */
     var resourceShareAssociations: js.UndefOr[ResourceShareAssociationList] = js.undefined
   }
-  
   
   trait EnableSharingWithAwsOrganizationRequest extends js.Object
   
-  
   trait EnableSharingWithAwsOrganizationResponse extends js.Object {
     /**
-         * Indicates whether the request succeeded.
-         */
+      * Indicates whether the request succeeded.
+      */
     var returnValue: js.UndefOr[Boolean] = js.undefined
   }
   
-  
   trait GetResourcePoliciesRequest extends js.Object {
     /**
-         * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
-         */
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+      */
     var maxResults: js.UndefOr[MaxResults] = js.undefined
     /**
-         * The token for the next page of results.
-         */
+      * The token for the next page of results.
+      */
     var nextToken: js.UndefOr[String] = js.undefined
     /**
-         * The principal.
-         */
+      * The principal.
+      */
     var principal: js.UndefOr[String] = js.undefined
     /**
-         * The Amazon Resource Names (ARN) of the resources.
-         */
+      * The Amazon Resource Names (ARN) of the resources.
+      */
     var resourceArns: ResourceArnList
   }
   
-  
   trait GetResourcePoliciesResponse extends js.Object {
     /**
-         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
-         */
+      * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+      */
     var nextToken: js.UndefOr[String] = js.undefined
     /**
-         * A key policy document, in JSON format.
-         */
+      * A key policy document, in JSON format.
+      */
     var policies: js.UndefOr[PolicyList] = js.undefined
   }
   
-  
   trait GetResourceShareAssociationsRequest extends js.Object {
     /**
-         * The status of the association.
-         */
+      * The status of the association.
+      */
     var associationStatus: js.UndefOr[ResourceShareAssociationStatus] = js.undefined
     /**
-         * The association type.
-         */
+      * The association type.
+      */
     var associationType: ResourceShareAssociationType
     /**
-         * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
-         */
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+      */
     var maxResults: js.UndefOr[MaxResults] = js.undefined
     /**
-         * The token for the next page of results.
-         */
+      * The token for the next page of results.
+      */
     var nextToken: js.UndefOr[String] = js.undefined
     /**
-         * The principal.
-         */
+      * The principal.
+      */
     var principal: js.UndefOr[String] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the resource.
-         */
+      * The Amazon Resource Name (ARN) of the resource.
+      */
     var resourceArn: js.UndefOr[String] = js.undefined
     /**
-         * The Amazon Resource Names (ARN) of the resource shares.
-         */
+      * The Amazon Resource Names (ARN) of the resource shares.
+      */
     var resourceShareArns: js.UndefOr[ResourceShareArnList] = js.undefined
   }
-  
   
   trait GetResourceShareAssociationsResponse extends js.Object {
     /**
-         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
-         */
+      * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+      */
     var nextToken: js.UndefOr[String] = js.undefined
     /**
-         * Information about the association.
-         */
+      * Information about the association.
+      */
     var resourceShareAssociations: js.UndefOr[ResourceShareAssociationList] = js.undefined
   }
-  
   
   trait GetResourceShareInvitationsRequest extends js.Object {
     /**
-         * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
-         */
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+      */
     var maxResults: js.UndefOr[MaxResults] = js.undefined
     /**
-         * The token for the next page of results.
-         */
+      * The token for the next page of results.
+      */
     var nextToken: js.UndefOr[String] = js.undefined
     /**
-         * The Amazon Resource Names (ARN) of the resource shares.
-         */
+      * The Amazon Resource Names (ARN) of the resource shares.
+      */
     var resourceShareArns: js.UndefOr[ResourceShareArnList] = js.undefined
     /**
-         * The Amazon Resource Names (ARN) of the invitations.
-         */
+      * The Amazon Resource Names (ARN) of the invitations.
+      */
     var resourceShareInvitationArns: js.UndefOr[ResourceShareInvitationArnList] = js.undefined
   }
   
-  
   trait GetResourceShareInvitationsResponse extends js.Object {
     /**
-         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
-         */
+      * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+      */
     var nextToken: js.UndefOr[String] = js.undefined
     /**
-         * Information about the invitations.
-         */
+      * Information about the invitations.
+      */
     var resourceShareInvitations: js.UndefOr[ResourceShareInvitationList] = js.undefined
   }
   
-  
   trait GetResourceSharesRequest extends js.Object {
     /**
-         * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
-         */
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+      */
     var maxResults: js.UndefOr[MaxResults] = js.undefined
     /**
-         * The name of the resource share.
-         */
+      * The name of the resource share.
+      */
     var name: js.UndefOr[String] = js.undefined
     /**
-         * The token for the next page of results.
-         */
+      * The token for the next page of results.
+      */
     var nextToken: js.UndefOr[String] = js.undefined
     /**
-         * The type of owner.
-         */
+      * The type of owner.
+      */
     var resourceOwner: ResourceOwner
     /**
-         * The Amazon Resource Names (ARN) of the resource shares.
-         */
+      * The Amazon Resource Names (ARN) of the resource shares.
+      */
     var resourceShareArns: js.UndefOr[ResourceShareArnList] = js.undefined
     /**
-         * The status of the resource share.
-         */
+      * The status of the resource share.
+      */
     var resourceShareStatus: js.UndefOr[ResourceShareStatus] = js.undefined
     /**
-         * One or more tag filters.
-         */
+      * One or more tag filters.
+      */
     var tagFilters: js.UndefOr[TagFilters] = js.undefined
   }
   
-  
   trait GetResourceSharesResponse extends js.Object {
     /**
-         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
-         */
+      * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+      */
     var nextToken: js.UndefOr[String] = js.undefined
     /**
-         * Information about the resource shares.
-         */
+      * Information about the resource shares.
+      */
     var resourceShares: js.UndefOr[ResourceShareList] = js.undefined
   }
   
-  
   trait ListPrincipalsRequest extends js.Object {
     /**
-         * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
-         */
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+      */
     var maxResults: js.UndefOr[MaxResults] = js.undefined
     /**
-         * The token for the next page of results.
-         */
+      * The token for the next page of results.
+      */
     var nextToken: js.UndefOr[String] = js.undefined
     /**
-         * The principals.
-         */
+      * The principals.
+      */
     var principals: js.UndefOr[PrincipalArnOrIdList] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the resource.
-         */
+      * The Amazon Resource Name (ARN) of the resource.
+      */
     var resourceArn: js.UndefOr[String] = js.undefined
     /**
-         * The type of owner.
-         */
+      * The type of owner.
+      */
     var resourceOwner: ResourceOwner
     /**
-         * The Amazon Resource Names (ARN) of the resource shares.
-         */
+      * The Amazon Resource Names (ARN) of the resource shares.
+      */
     var resourceShareArns: js.UndefOr[ResourceShareArnList] = js.undefined
     /**
-         * The resource type.
-         */
+      * The resource type.
+      */
     var resourceType: js.UndefOr[String] = js.undefined
   }
-  
   
   trait ListPrincipalsResponse extends js.Object {
     /**
-         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
-         */
+      * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+      */
     var nextToken: js.UndefOr[String] = js.undefined
     /**
-         * The principals.
-         */
+      * The principals.
+      */
     var principals: js.UndefOr[PrincipalList] = js.undefined
   }
   
-  
   trait ListResourcesRequest extends js.Object {
     /**
-         * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
-         */
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+      */
     var maxResults: js.UndefOr[MaxResults] = js.undefined
     /**
-         * The token for the next page of results.
-         */
+      * The token for the next page of results.
+      */
     var nextToken: js.UndefOr[String] = js.undefined
     /**
-         * The principal.
-         */
+      * The principal.
+      */
     var principal: js.UndefOr[String] = js.undefined
     /**
-         * The Amazon Resource Names (ARN) of the resources.
-         */
+      * The Amazon Resource Names (ARN) of the resources.
+      */
     var resourceArns: js.UndefOr[ResourceArnList] = js.undefined
     /**
-         * The type of owner.
-         */
+      * The type of owner.
+      */
     var resourceOwner: ResourceOwner
     /**
-         * The Amazon Resource Names (ARN) of the resource shares.
-         */
+      * The Amazon Resource Names (ARN) of the resource shares.
+      */
     var resourceShareArns: js.UndefOr[ResourceShareArnList] = js.undefined
     /**
-         * The resource type.
-         */
+      * The resource type.
+      */
     var resourceType: js.UndefOr[String] = js.undefined
   }
   
-  
   trait ListResourcesResponse extends js.Object {
     /**
-         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
-         */
+      * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+      */
     var nextToken: js.UndefOr[String] = js.undefined
     /**
-         * Information about the resources.
-         */
+      * Information about the resources.
+      */
     var resources: js.UndefOr[ResourceList] = js.undefined
   }
   
-  
   trait Principal extends js.Object {
     /**
-         * The time when the principal was associated with the resource share.
-         */
+      * The time when the principal was associated with the resource share.
+      */
     var creationTime: js.UndefOr[DateTime] = js.undefined
     /**
-         * Indicates whether the principal belongs to the same organization as the AWS account that owns the resource share.
-         */
+      * Indicates whether the principal belongs to the same organization as the AWS account that owns the resource share.
+      */
     var external: js.UndefOr[Boolean] = js.undefined
     /**
-         * The ID of the principal.
-         */
+      * The ID of the principal.
+      */
     var id: js.UndefOr[String] = js.undefined
     /**
-         * The time when the association was last updated.
-         */
+      * The time when the association was last updated.
+      */
     var lastUpdatedTime: js.UndefOr[DateTime] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the resource share.
-         */
+      * The Amazon Resource Name (ARN) of the resource share.
+      */
     var resourceShareArn: js.UndefOr[String] = js.undefined
   }
-  
   
   trait RejectResourceShareInvitationRequest extends js.Object {
     /**
-         * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
-         */
+      * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+      */
     var clientToken: js.UndefOr[String] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the invitation.
-         */
+      * The Amazon Resource Name (ARN) of the invitation.
+      */
     var resourceShareInvitationArn: String
   }
   
-  
   trait RejectResourceShareInvitationResponse extends js.Object {
     /**
-         * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
-         */
+      * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+      */
     var clientToken: js.UndefOr[String] = js.undefined
     /**
-         * Information about the invitation.
-         */
+      * Information about the invitation.
+      */
     var resourceShareInvitation: js.UndefOr[ResourceShareInvitation] = js.undefined
   }
   
-  
   trait Resource extends js.Object {
     /**
-         * The Amazon Resource Name (ARN) of the resource.
-         */
+      * The Amazon Resource Name (ARN) of the resource.
+      */
     var arn: js.UndefOr[String] = js.undefined
     /**
-         * The time when the resource was associated with the resource share.
-         */
+      * The time when the resource was associated with the resource share.
+      */
     var creationTime: js.UndefOr[DateTime] = js.undefined
     /**
-         * The time when the association was last updated.
-         */
+      * The time when the association was last updated.
+      */
     var lastUpdatedTime: js.UndefOr[DateTime] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the resource share.
-         */
+      * The Amazon Resource Name (ARN) of the resource share.
+      */
     var resourceShareArn: js.UndefOr[String] = js.undefined
     /**
-         * The status of the resource.
-         */
+      * The status of the resource.
+      */
     var status: js.UndefOr[ResourceStatus] = js.undefined
     /**
-         * A message about the status of the resource.
-         */
+      * A message about the status of the resource.
+      */
     var statusMessage: js.UndefOr[String] = js.undefined
     /**
-         * The resource type.
-         */
+      * The resource type.
+      */
     var `type`: js.UndefOr[String] = js.undefined
   }
   
-  
   trait ResourceShare extends js.Object {
     /**
-         * Indicates whether principals outside your organization can be associated with a resource share.
-         */
+      * Indicates whether principals outside your organization can be associated with a resource share.
+      */
     var allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined
     /**
-         * The time when the resource share was created.
-         */
+      * The time when the resource share was created.
+      */
     var creationTime: js.UndefOr[DateTime] = js.undefined
     /**
-         * The time when the resource share was last updated.
-         */
+      * The time when the resource share was last updated.
+      */
     var lastUpdatedTime: js.UndefOr[DateTime] = js.undefined
     /**
-         * The name of the resource share.
-         */
+      * The name of the resource share.
+      */
     var name: js.UndefOr[String] = js.undefined
     /**
-         * The ID of the AWS account that owns the resource share.
-         */
+      * The ID of the AWS account that owns the resource share.
+      */
     var owningAccountId: js.UndefOr[String] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the resource share.
-         */
+      * The Amazon Resource Name (ARN) of the resource share.
+      */
     var resourceShareArn: js.UndefOr[String] = js.undefined
     /**
-         * The status of the resource share.
-         */
+      * The status of the resource share.
+      */
     var status: js.UndefOr[ResourceShareStatus] = js.undefined
     /**
-         * A message about the status of the resource share.
-         */
+      * A message about the status of the resource share.
+      */
     var statusMessage: js.UndefOr[String] = js.undefined
     /**
-         * The tags for the resource share.
-         */
+      * The tags for the resource share.
+      */
     var tags: js.UndefOr[TagList] = js.undefined
   }
   
-  
   trait ResourceShareAssociation extends js.Object {
     /**
-         * The associated entity. For resource associations, this is the ARN of the resource. For principal associations, this is the ID of an AWS account or the ARN of an OU or organization from AWS Organizations.
-         */
+      * The associated entity. For resource associations, this is the ARN of the resource. For principal associations, this is the ID of an AWS account or the ARN of an OU or organization from AWS Organizations.
+      */
     var associatedEntity: js.UndefOr[String] = js.undefined
     /**
-         * The association type.
-         */
+      * The association type.
+      */
     var associationType: js.UndefOr[ResourceShareAssociationType] = js.undefined
     /**
-         * The time when the association was created.
-         */
+      * The time when the association was created.
+      */
     var creationTime: js.UndefOr[DateTime] = js.undefined
     /**
-         * Indicates whether the principal belongs to the same organization as the AWS account that owns the resource share.
-         */
+      * Indicates whether the principal belongs to the same organization as the AWS account that owns the resource share.
+      */
     var external: js.UndefOr[Boolean] = js.undefined
     /**
-         * The time when the association was last updated.
-         */
+      * The time when the association was last updated.
+      */
     var lastUpdatedTime: js.UndefOr[DateTime] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the resource share.
-         */
+      * The Amazon Resource Name (ARN) of the resource share.
+      */
     var resourceShareArn: js.UndefOr[String] = js.undefined
     /**
-         * The status of the association.
-         */
+      * The status of the association.
+      */
     var status: js.UndefOr[ResourceShareAssociationStatus] = js.undefined
     /**
-         * A message about the status of the association.
-         */
+      * A message about the status of the association.
+      */
     var statusMessage: js.UndefOr[String] = js.undefined
   }
   
-  
   trait ResourceShareInvitation extends js.Object {
     /**
-         * The date and time when the invitation was sent.
-         */
+      * The date and time when the invitation was sent.
+      */
     var invitationTimestamp: js.UndefOr[DateTime] = js.undefined
     /**
-         * The ID of the AWS account that received the invitation.
-         */
+      * The ID of the AWS account that received the invitation.
+      */
     var receiverAccountId: js.UndefOr[String] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the resource share.
-         */
+      * The Amazon Resource Name (ARN) of the resource share.
+      */
     var resourceShareArn: js.UndefOr[String] = js.undefined
     /**
-         * The resources associated with the resource share.
-         */
+      * The resources associated with the resource share.
+      */
     var resourceShareAssociations: js.UndefOr[ResourceShareAssociationList] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the invitation.
-         */
+      * The Amazon Resource Name (ARN) of the invitation.
+      */
     var resourceShareInvitationArn: js.UndefOr[String] = js.undefined
     /**
-         * The name of the resource share.
-         */
+      * The name of the resource share.
+      */
     var resourceShareName: js.UndefOr[String] = js.undefined
     /**
-         * The ID of the AWS account that sent the invitation.
-         */
+      * The ID of the AWS account that sent the invitation.
+      */
     var senderAccountId: js.UndefOr[String] = js.undefined
     /**
-         * The status of the invitation.
-         */
+      * The status of the invitation.
+      */
     var status: js.UndefOr[ResourceShareInvitationStatus] = js.undefined
   }
   
-  
   trait Tag extends js.Object {
     /**
-         * The key of the tag.
-         */
+      * The key of the tag.
+      */
     var key: js.UndefOr[TagKey] = js.undefined
     /**
-         * The value of the tag.
-         */
+      * The value of the tag.
+      */
     var value: js.UndefOr[TagValue] = js.undefined
   }
   
-  
   trait TagFilter extends js.Object {
     /**
-         * The tag key.
-         */
+      * The tag key.
+      */
     var tagKey: js.UndefOr[TagKey] = js.undefined
     /**
-         * The tag values.
-         */
+      * The tag values.
+      */
     var tagValues: js.UndefOr[TagValueList] = js.undefined
   }
   
-  
   trait TagResourceRequest extends js.Object {
     /**
-         * The Amazon Resource Name (ARN) of the resource share.
-         */
+      * The Amazon Resource Name (ARN) of the resource share.
+      */
     var resourceShareArn: String
     /**
-         * One or more tags.
-         */
+      * One or more tags.
+      */
     var tags: TagList
   }
-  
   
   trait TagResourceResponse extends js.Object
   
@@ -656,12 +620,9 @@ object RAMNs extends js.Object {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
     /**
-       * Accepts an invitation to a resource share from another AWS account.
-       */
+      * Accepts an invitation to a resource share from another AWS account.
+      */
     def acceptResourceShareInvitation(): awsDashSdkLib.libRequestMod.Request[AcceptResourceShareInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Accepts an invitation to a resource share from another AWS account.
-       */
     def acceptResourceShareInvitation(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -670,12 +631,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AcceptResourceShareInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Accepts an invitation to a resource share from another AWS account.
-       */
+      * Accepts an invitation to a resource share from another AWS account.
+      */
     def acceptResourceShareInvitation(params: AcceptResourceShareInvitationRequest): awsDashSdkLib.libRequestMod.Request[AcceptResourceShareInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Accepts an invitation to a resource share from another AWS account.
-       */
     def acceptResourceShareInvitation(
       params: AcceptResourceShareInvitationRequest,
       callback: js.Function2[
@@ -685,12 +643,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AcceptResourceShareInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates the specified resource share with the specified principals and resources.
-       */
+      * Associates the specified resource share with the specified principals and resources.
+      */
     def associateResourceShare(): awsDashSdkLib.libRequestMod.Request[AssociateResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Associates the specified resource share with the specified principals and resources.
-       */
     def associateResourceShare(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -699,12 +654,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AssociateResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates the specified resource share with the specified principals and resources.
-       */
+      * Associates the specified resource share with the specified principals and resources.
+      */
     def associateResourceShare(params: AssociateResourceShareRequest): awsDashSdkLib.libRequestMod.Request[AssociateResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Associates the specified resource share with the specified principals and resources.
-       */
     def associateResourceShare(
       params: AssociateResourceShareRequest,
       callback: js.Function2[
@@ -714,12 +666,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AssociateResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a resource share.
-       */
+      * Creates a resource share.
+      */
     def createResourceShare(): awsDashSdkLib.libRequestMod.Request[CreateResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Creates a resource share.
-       */
     def createResourceShare(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -728,12 +677,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a resource share.
-       */
+      * Creates a resource share.
+      */
     def createResourceShare(params: CreateResourceShareRequest): awsDashSdkLib.libRequestMod.Request[CreateResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Creates a resource share.
-       */
     def createResourceShare(
       params: CreateResourceShareRequest,
       callback: js.Function2[
@@ -743,12 +689,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the specified resource share.
-       */
+      * Deletes the specified resource share.
+      */
     def deleteResourceShare(): awsDashSdkLib.libRequestMod.Request[DeleteResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Deletes the specified resource share.
-       */
     def deleteResourceShare(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -757,12 +700,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the specified resource share.
-       */
+      * Deletes the specified resource share.
+      */
     def deleteResourceShare(params: DeleteResourceShareRequest): awsDashSdkLib.libRequestMod.Request[DeleteResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Deletes the specified resource share.
-       */
     def deleteResourceShare(
       params: DeleteResourceShareRequest,
       callback: js.Function2[
@@ -772,12 +712,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Disassociates the specified principals or resources from the specified resource share.
-       */
+      * Disassociates the specified principals or resources from the specified resource share.
+      */
     def disassociateResourceShare(): awsDashSdkLib.libRequestMod.Request[DisassociateResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Disassociates the specified principals or resources from the specified resource share.
-       */
     def disassociateResourceShare(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -786,12 +723,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DisassociateResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Disassociates the specified principals or resources from the specified resource share.
-       */
+      * Disassociates the specified principals or resources from the specified resource share.
+      */
     def disassociateResourceShare(params: DisassociateResourceShareRequest): awsDashSdkLib.libRequestMod.Request[DisassociateResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Disassociates the specified principals or resources from the specified resource share.
-       */
     def disassociateResourceShare(
       params: DisassociateResourceShareRequest,
       callback: js.Function2[
@@ -801,12 +735,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DisassociateResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Enables resource sharing within your organization.
-       */
+      * Enables resource sharing within your organization.
+      */
     def enableSharingWithAwsOrganization(): awsDashSdkLib.libRequestMod.Request[EnableSharingWithAwsOrganizationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Enables resource sharing within your organization.
-       */
     def enableSharingWithAwsOrganization(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -815,12 +746,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[EnableSharingWithAwsOrganizationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Enables resource sharing within your organization.
-       */
+      * Enables resource sharing within your organization.
+      */
     def enableSharingWithAwsOrganization(params: EnableSharingWithAwsOrganizationRequest): awsDashSdkLib.libRequestMod.Request[EnableSharingWithAwsOrganizationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Enables resource sharing within your organization.
-       */
     def enableSharingWithAwsOrganization(
       params: EnableSharingWithAwsOrganizationRequest,
       callback: js.Function2[
@@ -830,12 +758,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[EnableSharingWithAwsOrganizationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Gets the policies for the specifies resources.
-       */
+      * Gets the policies for the specifies resources.
+      */
     def getResourcePolicies(): awsDashSdkLib.libRequestMod.Request[GetResourcePoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Gets the policies for the specifies resources.
-       */
     def getResourcePolicies(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -844,12 +769,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetResourcePoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Gets the policies for the specifies resources.
-       */
+      * Gets the policies for the specifies resources.
+      */
     def getResourcePolicies(params: GetResourcePoliciesRequest): awsDashSdkLib.libRequestMod.Request[GetResourcePoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Gets the policies for the specifies resources.
-       */
     def getResourcePolicies(
       params: GetResourcePoliciesRequest,
       callback: js.Function2[
@@ -859,12 +781,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetResourcePoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Gets the associations for the specified resource share.
-       */
+      * Gets the associations for the specified resource share.
+      */
     def getResourceShareAssociations(): awsDashSdkLib.libRequestMod.Request[GetResourceShareAssociationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Gets the associations for the specified resource share.
-       */
     def getResourceShareAssociations(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -873,12 +792,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetResourceShareAssociationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Gets the associations for the specified resource share.
-       */
+      * Gets the associations for the specified resource share.
+      */
     def getResourceShareAssociations(params: GetResourceShareAssociationsRequest): awsDashSdkLib.libRequestMod.Request[GetResourceShareAssociationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Gets the associations for the specified resource share.
-       */
     def getResourceShareAssociations(
       params: GetResourceShareAssociationsRequest,
       callback: js.Function2[
@@ -888,12 +804,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetResourceShareAssociationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Gets the specified invitations for resource sharing.
-       */
+      * Gets the specified invitations for resource sharing.
+      */
     def getResourceShareInvitations(): awsDashSdkLib.libRequestMod.Request[GetResourceShareInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Gets the specified invitations for resource sharing.
-       */
     def getResourceShareInvitations(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -902,12 +815,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetResourceShareInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Gets the specified invitations for resource sharing.
-       */
+      * Gets the specified invitations for resource sharing.
+      */
     def getResourceShareInvitations(params: GetResourceShareInvitationsRequest): awsDashSdkLib.libRequestMod.Request[GetResourceShareInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Gets the specified invitations for resource sharing.
-       */
     def getResourceShareInvitations(
       params: GetResourceShareInvitationsRequest,
       callback: js.Function2[
@@ -917,12 +827,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetResourceShareInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Gets the specified resource shares or all of your resource shares.
-       */
+      * Gets the specified resource shares or all of your resource shares.
+      */
     def getResourceShares(): awsDashSdkLib.libRequestMod.Request[GetResourceSharesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Gets the specified resource shares or all of your resource shares.
-       */
     def getResourceShares(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -931,12 +838,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetResourceSharesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Gets the specified resource shares or all of your resource shares.
-       */
+      * Gets the specified resource shares or all of your resource shares.
+      */
     def getResourceShares(params: GetResourceSharesRequest): awsDashSdkLib.libRequestMod.Request[GetResourceSharesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Gets the specified resource shares or all of your resource shares.
-       */
     def getResourceShares(
       params: GetResourceSharesRequest,
       callback: js.Function2[
@@ -946,12 +850,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetResourceSharesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the principals with access to the specified resource.
-       */
+      * Lists the principals with access to the specified resource.
+      */
     def listPrincipals(): awsDashSdkLib.libRequestMod.Request[ListPrincipalsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Lists the principals with access to the specified resource.
-       */
     def listPrincipals(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -960,12 +861,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListPrincipalsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the principals with access to the specified resource.
-       */
+      * Lists the principals with access to the specified resource.
+      */
     def listPrincipals(params: ListPrincipalsRequest): awsDashSdkLib.libRequestMod.Request[ListPrincipalsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Lists the principals with access to the specified resource.
-       */
     def listPrincipals(
       params: ListPrincipalsRequest,
       callback: js.Function2[
@@ -975,12 +873,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListPrincipalsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the resources that the specified principal can access.
-       */
+      * Lists the resources that the specified principal can access.
+      */
     def listResources(): awsDashSdkLib.libRequestMod.Request[ListResourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Lists the resources that the specified principal can access.
-       */
     def listResources(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -989,12 +884,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListResourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the resources that the specified principal can access.
-       */
+      * Lists the resources that the specified principal can access.
+      */
     def listResources(params: ListResourcesRequest): awsDashSdkLib.libRequestMod.Request[ListResourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Lists the resources that the specified principal can access.
-       */
     def listResources(
       params: ListResourcesRequest,
       callback: js.Function2[
@@ -1004,12 +896,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListResourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Rejects an invitation to a resource share from another AWS account.
-       */
+      * Rejects an invitation to a resource share from another AWS account.
+      */
     def rejectResourceShareInvitation(): awsDashSdkLib.libRequestMod.Request[RejectResourceShareInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Rejects an invitation to a resource share from another AWS account.
-       */
     def rejectResourceShareInvitation(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1018,12 +907,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[RejectResourceShareInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Rejects an invitation to a resource share from another AWS account.
-       */
+      * Rejects an invitation to a resource share from another AWS account.
+      */
     def rejectResourceShareInvitation(params: RejectResourceShareInvitationRequest): awsDashSdkLib.libRequestMod.Request[RejectResourceShareInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Rejects an invitation to a resource share from another AWS account.
-       */
     def rejectResourceShareInvitation(
       params: RejectResourceShareInvitationRequest,
       callback: js.Function2[
@@ -1033,12 +919,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[RejectResourceShareInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Adds the specified tags to the specified resource share.
-       */
+      * Adds the specified tags to the specified resource share.
+      */
     def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Adds the specified tags to the specified resource share.
-       */
     def tagResource(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1047,12 +930,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Adds the specified tags to the specified resource share.
-       */
+      * Adds the specified tags to the specified resource share.
+      */
     def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Adds the specified tags to the specified resource share.
-       */
     def tagResource(
       params: TagResourceRequest,
       callback: js.Function2[
@@ -1062,12 +942,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Removes the specified tags from the specified resource share.
-       */
+      * Removes the specified tags from the specified resource share.
+      */
     def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Removes the specified tags from the specified resource share.
-       */
     def untagResource(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1076,12 +953,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Removes the specified tags from the specified resource share.
-       */
+      * Removes the specified tags from the specified resource share.
+      */
     def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Removes the specified tags from the specified resource share.
-       */
     def untagResource(
       params: UntagResourceRequest,
       callback: js.Function2[
@@ -1091,12 +965,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates the specified resource share.
-       */
+      * Updates the specified resource share.
+      */
     def updateResourceShare(): awsDashSdkLib.libRequestMod.Request[UpdateResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Updates the specified resource share.
-       */
     def updateResourceShare(
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -1105,12 +976,9 @@ object RAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates the specified resource share.
-       */
+      * Updates the specified resource share.
+      */
     def updateResourceShare(params: UpdateResourceShareRequest): awsDashSdkLib.libRequestMod.Request[UpdateResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Updates the specified resource share.
-       */
     def updateResourceShare(
       params: UpdateResourceShareRequest,
       callback: js.Function2[
@@ -1121,50 +989,46 @@ object RAMNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[UpdateResourceShareResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
-  
   trait UntagResourceRequest extends js.Object {
     /**
-         * The Amazon Resource Name (ARN) of the resource share.
-         */
+      * The Amazon Resource Name (ARN) of the resource share.
+      */
     var resourceShareArn: String
     /**
-         * The tag keys of the tags to remove.
-         */
+      * The tag keys of the tags to remove.
+      */
     var tagKeys: TagKeyList
   }
   
-  
   trait UntagResourceResponse extends js.Object
-  
   
   trait UpdateResourceShareRequest extends js.Object {
     /**
-         * Indicates whether principals outside your organization can be associated with a resource share.
-         */
+      * Indicates whether principals outside your organization can be associated with a resource share.
+      */
     var allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined
     /**
-         * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
-         */
+      * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+      */
     var clientToken: js.UndefOr[String] = js.undefined
     /**
-         * The name of the resource share.
-         */
+      * The name of the resource share.
+      */
     var name: js.UndefOr[String] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the resource share.
-         */
+      * The Amazon Resource Name (ARN) of the resource share.
+      */
     var resourceShareArn: String
   }
   
-  
   trait UpdateResourceShareResponse extends js.Object {
     /**
-         * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
-         */
+      * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+      */
     var clientToken: js.UndefOr[String] = js.undefined
     /**
-         * Information about the resource share.
-         */
+      * Information about the resource share.
+      */
     var resourceShare: js.UndefOr[ResourceShare] = js.undefined
   }
   

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * The parameter for [setContentInsets](Titanium.UI.TableView.setContentInsets) method.
- */
-
+  * The parameter for [setContentInsets](Titanium.UI.TableView.setContentInsets) method.
+  */
 trait TableViewEdgeInsets extends js.Object {
   /**
   	 * Value specifying the bottom insets for the enclosing scroll view of the table.

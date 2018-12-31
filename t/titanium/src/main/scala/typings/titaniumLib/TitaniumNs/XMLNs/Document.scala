@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * The DOM Document returned from <Titanium.XML.parseString>.
 		 */
-
 trait Document
   extends titaniumLib.TitaniumNs.Proxy {
   /**

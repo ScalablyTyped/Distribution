@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionStatusListener extends js.Object {
   def onConnectionBroken(): scala.Unit
   def onConnectionClosed(): scala.Unit

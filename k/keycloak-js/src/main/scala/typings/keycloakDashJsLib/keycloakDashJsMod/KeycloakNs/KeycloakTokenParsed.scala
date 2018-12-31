@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeycloakTokenParsed extends js.Object {
   var exp: js.UndefOr[scala.Double] = js.undefined
   var iat: js.UndefOr[scala.Double] = js.undefined

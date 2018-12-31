@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait hstsOptions extends js.Object {
   var includeSubDomains: js.UndefOr[scala.Boolean] = js.undefined
   var maxAge: js.UndefOr[scala.Double] = js.undefined

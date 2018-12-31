@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait PrintErrorType extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.PrintErrorType")
 @js.native
 object PrintErrorType extends js.Object {

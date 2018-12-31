@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHeaderContainer
   extends extjsLib.ExtNs.gridNs.headerNs.IContainer {
   /** [Method] This is the function which all other column access methods are based upon Return the full column set for the whole Lo

@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileConsumer extends js.Object {
   /**
-       * @default false
-       */
+    * @default false
+    */
   var isIncludeDir: js.UndefOr[scala.Boolean] = js.undefined
   def consume(
     file: java.lang.String,

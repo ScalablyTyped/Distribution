@@ -9,16 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class DBRef protected () extends js.Object {
   /**
-       * @param namespace The collection name.
-       * @param oid The reference ObjectID.
-       * @param db Optional db name, if omitted the reference is local to the current db
-       */
+    * @param namespace The collection name.
+    * @param oid The reference ObjectID.
+    * @param db Optional db name, if omitted the reference is local to the current db
+    */
   def this(namespace: java.lang.String, oid: ObjectID) = this()
-  /**
-       * @param namespace The collection name.
-       * @param oid The reference ObjectID.
-       * @param db Optional db name, if omitted the reference is local to the current db
-       */
   def this(namespace: java.lang.String, oid: ObjectID, db: java.lang.String) = this()
   var db: js.UndefOr[java.lang.String] = js.native
   var namespace: java.lang.String = js.native

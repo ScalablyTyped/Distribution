@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PerformanceNavigationTiming extends PerformanceResourceTiming {
   val domComplete: scala.Double
   val domContentLoadedEventEnd: scala.Double

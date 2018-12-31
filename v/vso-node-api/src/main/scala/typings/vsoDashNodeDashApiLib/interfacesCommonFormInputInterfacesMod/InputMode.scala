@@ -12,50 +12,50 @@ sealed trait InputMode extends js.Object
 @js.native
 object InputMode extends js.Object {
   /**
-       * Checkbox should be shown(for true/false values)
-       */
+    * Checkbox should be shown(for true/false values)
+    */
   @js.native
   sealed trait CheckBox
     extends vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputMode
   
   /**
-       * A select/combo control should be shown
-       */
+    * A select/combo control should be shown
+    */
   @js.native
   sealed trait Combo
     extends vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputMode
   
   /**
-       * This input should not be shown in the UI
-       */
+    * This input should not be shown in the UI
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputMode
   
   /**
-       * An password input box should be shown
-       */
+    * An password input box should be shown
+    */
   @js.native
   sealed trait PasswordBox
     extends vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputMode
   
   /**
-       * Radio buttons should be shown
-       */
+    * Radio buttons should be shown
+    */
   @js.native
   sealed trait RadioButtons
     extends vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputMode
   
   /**
-       * A multi-line text area should be shown
-       */
+    * A multi-line text area should be shown
+    */
   @js.native
   sealed trait TextArea
     extends vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputMode
   
   /**
-       * An input text box should be shown
-       */
+    * An input text box should be shown
+    */
   @js.native
   sealed trait TextBox
     extends vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputMode

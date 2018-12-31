@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Mapping extends js.Object {
   var generated: Position
   var name: js.UndefOr[java.lang.String] = js.undefined

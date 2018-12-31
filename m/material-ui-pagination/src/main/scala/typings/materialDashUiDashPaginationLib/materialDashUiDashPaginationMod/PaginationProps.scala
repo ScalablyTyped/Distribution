@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaginationProps extends js.Object {
   var current: scala.Double
   var display: scala.Double

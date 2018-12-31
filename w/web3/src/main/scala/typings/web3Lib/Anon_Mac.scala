@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Mac extends js.Object {
   var cipher: java.lang.String
   var cipherparams: Anon_Iv

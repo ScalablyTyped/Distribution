@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HorizontalRule extends js.Object {
   def copy(): HorizontalRule
   def getAttributes(): js.Object

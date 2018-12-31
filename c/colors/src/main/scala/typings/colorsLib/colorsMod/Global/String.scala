@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait String extends js.Object {
   var america: java.lang.String
   var bgBlack: java.lang.String

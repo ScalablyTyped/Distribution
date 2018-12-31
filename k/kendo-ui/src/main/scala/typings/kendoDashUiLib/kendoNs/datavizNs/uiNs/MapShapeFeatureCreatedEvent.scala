@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapShapeFeatureCreatedEvent extends MapEvent {
   var dataItem: js.UndefOr[js.Any] = js.undefined
   var group: js.UndefOr[kendoDashUiLib.kendoNs.drawingNs.Group] = js.undefined

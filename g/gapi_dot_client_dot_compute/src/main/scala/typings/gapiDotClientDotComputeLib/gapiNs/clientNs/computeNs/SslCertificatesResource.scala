@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SslCertificatesResource extends js.Object {
   /** Deletes the specified SslCertificate resource. */
   def delete(request: gapiDotClientDotComputeLib.Anon_SslCertificateProject): gapiDotClientLib.gapiNs.clientNs.Request[Operation]

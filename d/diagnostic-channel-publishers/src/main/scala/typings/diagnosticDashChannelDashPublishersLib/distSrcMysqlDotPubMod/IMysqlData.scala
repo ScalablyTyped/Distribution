@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMysqlData extends js.Object {
   var callbackArgs: stdLib.IArguments
   var duration: scala.Double

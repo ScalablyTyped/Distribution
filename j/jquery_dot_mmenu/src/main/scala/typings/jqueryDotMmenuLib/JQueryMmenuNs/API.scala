@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait API extends js.Object {
   /**
-           * Trigger non-specialized signature method
-           * @param methodName
-           * @param callback
-           */
-  def bind(methodName: java.lang.String, callback: js.Function1[/* repeated */js.Any, scala.Unit]): js.Any = js.native
+    * Trigger non-specialized signature method
+    * @param methodName
+    * @param callback
+    */
+  def bind(methodName: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): js.Any = js.native
   /** @see closeAllPanels() */
   @JSName("bind")
   def bind_closeAllPanels(
@@ -57,44 +57,39 @@ trait API extends js.Object {
   @JSName("bind")
   def bind_update(methodName: jqueryDotMmenuLib.jqueryDotMmenuLibStrings.update, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
-           * Trigger this method to close all opened panels and go back to the first panel.
-           */
+    * Trigger this method to close all opened panels and go back to the first panel.
+    */
   def closeAllPanels(): jqueryDotMmenuLib.JQuery = js.native
   /**
-           * Trigger this method to close a panel
-           * (only available if the "slidingSubmenus" option is set to false).
-           * @param panel
-           */
+    * Trigger this method to close a panel
+    * (only available if the "slidingSubmenus" option is set to false).
+    * @param panel
+    */
   def closePanel(panel: jqueryDotMmenuLib.JQuery): scala.Unit = js.native
   /**
-           * Trigger this method to get the class instance for the menu.
-           */
+    * Trigger this method to get the class instance for the menu.
+    */
   def getInstance(): scala.Unit = js.native
   /**
-           * Trigger this method to (re)initialize a newly added panel.
-           * @param panel The panel to (re)initialize.
-           */
+    * Trigger this method to (re)initialize a newly added panel.
+    * @param panel The panel to (re)initialize.
+    */
   def init(panel: jqueryDotMmenuLib.JQuery): scala.Unit = js.native
   /**
-           * Trigger this method to open a panel.
-           * @param panel The panel to open.
-           */
+    * Trigger this method to open a panel.
+    * @param panel The panel to open.
+    */
   def openPanel(panel: jqueryDotMmenuLib.JQuery): scala.Unit = js.native
   /**
-           * Trigger this method to set or unset a list item as "selected".
-           * @param li The list item to set or unset as "selected".
-           * @param selected Whether to set or unset the list item as "selected". Default: true
-           */
+    * Trigger this method to set or unset a list item as "selected".
+    * @param li The list item to set or unset as "selected".
+    * @param selected Whether to set or unset the list item as "selected". Default: true
+    */
   def setSelected(li: jqueryDotMmenuLib.JQuery): scala.Unit = js.native
-  /**
-           * Trigger this method to set or unset a list item as "selected".
-           * @param li The list item to set or unset as "selected".
-           * @param selected Whether to set or unset the list item as "selected". Default: true
-           */
   def setSelected(li: jqueryDotMmenuLib.JQuery, selected: scala.Boolean): scala.Unit = js.native
   /**
-           * Trigger this method to update the appearance for the menu.
-           */
+    * Trigger this method to update the appearance for the menu.
+    */
   def update(): scala.Unit = js.native
 }
 

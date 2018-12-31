@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MutationBaseOptions[T, TVariables] extends js.Object {
   var awaitRefetchQueries: js.UndefOr[scala.Boolean] = js.undefined
   var errorPolicy: js.UndefOr[ErrorPolicy] = js.undefined

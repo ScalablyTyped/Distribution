@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Redis extends js.Object {
   def client(): redisLib.redisMod.RedisClient
   def configureFactory(options: js.Object, queue: Queue): scala.Unit

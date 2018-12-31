@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * The strength of the force in correspondence to the distance of the affected object
-     * @see https://doc.babylonjs.com/how_to/using_the_physics_engine
-     */
+  * The strength of the force in correspondence to the distance of the affected object
+  * @see https://doc.babylonjs.com/how_to/using_the_physics_engine
+  */
 @JSImport("babylonjs", "PhysicsUpdraftMode")
 @js.native
 object PhysicsUpdraftMode extends js.Object {

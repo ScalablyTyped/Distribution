@@ -74,9 +74,6 @@ object myNsMembers extends js.Object {
   	 * 监听WebSocket关闭。
   	 */
   def closeSocket(): scala.Unit = js.native
-  /**
-  	 * 监听WebSocket关闭。
-  	 */
   def closeSocket(options: CloseSocketOptions): scala.Unit = js.native
   /**
   	 * 压缩图片。扫码体验：
@@ -118,12 +115,6 @@ object myNsMembers extends js.Object {
   	 * @returns
   	 */
   def createSelectorQuery(): SelectorQuery = js.native
-  /**
-  	 * 获取一个节点查询对象 SelectorQuery。
-  	 *
-  	 * @param page 可以指定 page 属性，默认为当前页面
-  	 * @returns
-  	 */
   def createSelectorQuery(page: js.Any): SelectorQuery = js.native
   /**
   	 * 创建并返回 web-view 上下文 webViewContext 对象。
@@ -201,9 +192,6 @@ object myNsMembers extends js.Object {
   	 * 获取屏幕亮度
   	 */
   def getScreenBrightness(): scala.Unit = js.native
-  /**
-  	 * 获取屏幕亮度
-  	 */
   def getScreenBrightness(options: GetScreenBrightnessOptions): scala.Unit = js.native
   def getServerTime(options: GetServerTimeOptions): scala.Unit = js.native
   /**
@@ -234,9 +222,6 @@ object myNsMembers extends js.Object {
   	 * 隐藏消息提示框
   	 */
   def hideLoading(): scala.Unit = js.native
-  /**
-  	 * 隐藏消息提示框
-  	 */
   def hideLoading(options: HideLoadingOptions): scala.Unit = js.native
   /** 隐藏导航栏 loading。 */
   def hideNavigationBarLoading(): scala.Unit = js.native
@@ -244,9 +229,6 @@ object myNsMembers extends js.Object {
   	 * 隐藏分享按钮。
   	 */
   def hideShareMenu(): scala.Unit = js.native
-  /**
-  	 * 隐藏分享按钮。
-  	 */
   def hideShareMenu(options: BaseOptions[_, _]): scala.Unit = js.native
   def hideToast(): scala.Unit = js.native
   def httpRequest(options: RequestOptions): scala.Unit = js.native
@@ -260,9 +242,6 @@ object myNsMembers extends js.Object {
   	 * 关闭当前页面，返回上一级或多级页面。可通过 getCurrentPages 获取当前的页面栈信息，决定需要返回几层。
   	 */
   def navigateBack(): scala.Unit = js.native
-  /**
-  	 * 关闭当前页面，返回上一级或多级页面。可通过 getCurrentPages 获取当前的页面栈信息，决定需要返回几层。
-  	 */
   def navigateBack(options: NavigateBackOptions): scala.Unit = js.native
   /**
   	 * 跳转回上一个小程序，只有当另一个小程序跳转到当前小程序时才会能调用成功
@@ -289,9 +268,6 @@ object myNsMembers extends js.Object {
   	 * 移除低功耗蓝牙设备的特征值变化事件的监听。
   	 */
   def offBLECharacteristicValueChange(): scala.Unit = js.native
-  /**
-  	 * 移除低功耗蓝牙设备的特征值变化事件的监听。
-  	 */
   def offBLECharacteristicValueChange(callback: js.Any): scala.Unit = js.native
   /**
   	 * 移除低功耗蓝牙连接状态变化事件的监听。
@@ -305,9 +281,6 @@ object myNsMembers extends js.Object {
   	 * 移除寻找到新的蓝牙设备事件的监听。
   	 */
   def offBluetoothDeviceFound(): scala.Unit = js.native
-  /**
-  	 * 移除寻找到新的蓝牙设备事件的监听。
-  	 */
   def offBluetoothDeviceFound(callback: js.Any): scala.Unit = js.native
   /**
   	 * 取消网络状态变化的监听
@@ -380,11 +353,6 @@ object myNsMembers extends js.Object {
   	 * 监听用户主动截屏事件，用户使用系统截屏按键截屏时触发此事件
   	 */
   def onUserCaptureScreen(): scala.Unit = js.native
-  //#endregion
-  //#region 用户截屏事件 https://docs.alipay.com/mini/api/user-capture-screen
-  /**
-  	 * 监听用户主动截屏事件，用户使用系统截屏按键截屏时触发此事件
-  	 */
   def onUserCaptureScreen(callback: js.Function1[/* res */ js.Any, scala.Unit]): scala.Unit = js.native
   /**
   	 * 初始化小程序蓝牙模块，生效周期为调用 my.openBluetoothAdapter 至调用 my.closeBluetoothAdapter 或小程序被销毁为止。 在小程序蓝牙适配器模块生效期间，开发者可以正常调用下面的小程序API，并会收到蓝牙模块相关的 on 事件回调。
@@ -417,10 +385,6 @@ object myNsMembers extends js.Object {
   	 * 有关支付宝卡包详细功能，见[支付宝卡包产品介绍](https://docs.alipay.com/mini/introduce/voucher)
   	 */
   def openKBVoucherDetail(options: OpenKBVoucherDetailOptions1): scala.Unit = js.native
-  /**
-  	 * 打开当前用户的某张券的详情页（口碑）
-  	 * 有关支付宝卡包详细功能，见[支付宝卡包产品介绍](https://docs.alipay.com/mini/introduce/voucher)
-  	 */
   def openKBVoucherDetail(options: OpenKBVoucherDetailOptions2): scala.Unit = js.native
   /**
   	 * 使用微信内置地图查看位置
@@ -448,11 +412,6 @@ object myNsMembers extends js.Object {
   	 * 有关支付宝卡包详细功能，见[支付宝卡包产品介绍](https://docs.alipay.com/mini/introduce/voucher)
   	 */
   def openTicketDetail(options: OpenTicketDetailOptions1): scala.Unit = js.native
-  /**
-  	 * 打开当前用户的某张票的详情页
-  	 *
-  	 * 有关支付宝卡包详细功能，见[支付宝卡包产品介绍](https://docs.alipay.com/mini/introduce/voucher)
-  	 */
   def openTicketDetail(options: OpenTicketDetailOptions2): scala.Unit = js.native
   /**
   	 * 打开支付宝票列表。
@@ -464,10 +423,6 @@ object myNsMembers extends js.Object {
   	 * 有关支付宝卡包详细功能，见[支付宝卡包产品介绍](https://docs.alipay.com/mini/introduce/voucher)
   	 */
   def openVoucherDetail(options: OpenVoucherDetailOptions1): scala.Unit = js.native
-  /**
-  	 * 打开当前用户的某张券的详情页（非口碑）
-  	 * 有关支付宝卡包详细功能，见[支付宝卡包产品介绍](https://docs.alipay.com/mini/introduce/voucher)
-  	 */
   def openVoucherDetail(options: OpenVoucherDetailOptions2): scala.Unit = js.native
   /**
   	 * 打开支付宝券列表
@@ -504,9 +459,6 @@ object myNsMembers extends js.Object {
   	 * 关闭所有页面，打开到应用内的某个页面。
   	 */
   def reLaunch(): scala.Unit = js.native
-  /**
-  	 * 关闭所有页面，打开到应用内的某个页面。
-  	 */
   def reLaunch(options: ReLaunchOptions): scala.Unit = js.native
   /**
   	 * 读取低功耗蓝牙设备特征值中的数据。调用后在 my.onBLECharacteristicValueChange() 事件中接收数据返回。
@@ -565,10 +517,6 @@ object myNsMembers extends js.Object {
   	 * 仅在当前小程序生效，离开小程序后设置失效。
   	 */
   def setKeepScreenOn(): scala.Unit = js.native
-  /**
-  	 * 设置是否保持常亮状态。
-  	 * 仅在当前小程序生效，离开小程序后设置失效。
-  	 */
   def setKeepScreenOn(options: SetKeepScreenOnOptions): scala.Unit = js.native
   /**
   	 * 动态设置当前页面的标题。
@@ -600,9 +548,6 @@ object myNsMembers extends js.Object {
   	 * 显示加载提示
   	 */
   def showLoading(): scala.Unit = js.native
-  /**
-  	 * 显示加载提示
-  	 */
   def showLoading(options: LoadingOptions): scala.Unit = js.native
   /**
   	 * 显示导航栏 loading
@@ -662,27 +607,16 @@ object myNsMembers extends js.Object {
   	 * 调用震动功能。
   	 */
   def vibrate(): scala.Unit = js.native
-  //#endregion
-  //#region 震动 https://docs.alipay.com/mini/api/vibrate
-  /**
-  	 * 调用震动功能。
-  	 */
   def vibrate(options: BaseOptions[_, _]): scala.Unit = js.native
   /**
   	 * 调用震动功能。
   	 */
   def vibrateLong(): scala.Unit = js.native
-  /**
-  	 * 调用震动功能。
-  	 */
   def vibrateLong(options: BaseOptions[_, _]): scala.Unit = js.native
   /**
   	 * 调用震动功能。
   	 */
   def vibrateShort(): scala.Unit = js.native
-  /**
-  	 * 调用震动功能。
-  	 */
   def vibrateShort(options: BaseOptions[_, _]): scala.Unit = js.native
   //#endregion
   //#region 摇一摇 https://docs.alipay.com/mini/api/shake

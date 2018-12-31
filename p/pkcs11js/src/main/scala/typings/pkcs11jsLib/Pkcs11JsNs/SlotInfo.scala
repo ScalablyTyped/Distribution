@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SlotInfo extends js.Object {
   var firmwareVersion: Version
   var flags: scala.Double

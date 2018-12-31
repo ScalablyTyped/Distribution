@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GraphQLFieldDefinition extends js.Object {
   var args: js.Array[GraphQLArgument]
   var deprecationReason: js.UndefOr[java.lang.String] = js.undefined

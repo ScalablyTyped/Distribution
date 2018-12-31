@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Identifier extends Node {
   var name: java.lang.String
   var typeAnnotation: js.UndefOr[TypeAnnotation] = js.undefined

@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /**
-           * Default: `require('fs')`
-           *
-           * Use a custom `fs` implementation. For example [`graceful-fs`](https://github.com/isaacs/node-graceful-fs).
-           */
-  var fs: js.UndefOr[js.Any] = js.undefined
+    * Default: `require('fs')`
+    *
+    * Use a custom `fs` implementation. For example [`graceful-fs`](https://github.com/isaacs/node-graceful-fs).
+    */
+  var fs: js.UndefOr[makeDashDirLib.Anon_StatSync] = js.undefined
   /**
-           * Default: `0o777 & (~process.umask())`
-           *
-           * Directory [permissions](https://x-team.com/blog/file-system-permissions-umask-node-js/).
-           */
+    * Default: `0o777 & (~process.umask())`
+    *
+    * Directory [permissions](https://x-team.com/blog/file-system-permissions-umask-node-js/).
+    */
   var mode: js.UndefOr[scala.Double] = js.undefined
 }
 

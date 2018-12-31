@@ -12,92 +12,92 @@ sealed trait SortByType extends js.Object
 @js.native
 object SortByType extends js.Object {
   /**
-       * The results will be sorted as per Author defined in the VSix/Metadata. If not defined, publisher name is used This is specifically needed by VS IDE, other (new and old) clients are not encouraged to use this
-       */
+    * The results will be sorted as per Author defined in the VSix/Metadata. If not defined, publisher name is used This is specifically needed by VS IDE, other (new and old) clients are not encouraged to use this
+    */
   @js.native
   sealed trait Author
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.SortByType
   
   /**
-       * The results will be sorted as per Average ratings of the extensions
-       */
+    * The results will be sorted as per Average ratings of the extensions
+    */
   @js.native
   sealed trait AverageRating
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.SortByType
   
   /**
-       * Results will be sorted by Install Count
-       */
+    * Results will be sorted by Install Count
+    */
   @js.native
   sealed trait InstallCount
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.SortByType
   
   /**
-       * The results will be sorted as per Last Updated date of the extensions with recently updated at the top
-       */
+    * The results will be sorted as per Last Updated date of the extensions with recently updated at the top
+    */
   @js.native
   sealed trait LastUpdatedDate
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.SortByType
   
   /**
-       * The results will be sorted as per Published date of the extensions
-       */
+    * The results will be sorted as per Published date of the extensions
+    */
   @js.native
   sealed trait PublishedDate
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.SortByType
   
   /**
-       * Results will be sorted Alphabetically as per Publisher title
-       */
+    * Results will be sorted Alphabetically as per Publisher title
+    */
   @js.native
   sealed trait Publisher
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.SortByType
   
   /**
-       * The results will be sorted as per ReleaseDate of the extensions (date on which the extension first went public)
-       */
+    * The results will be sorted as per ReleaseDate of the extensions (date on which the extension first went public)
+    */
   @js.native
   sealed trait ReleaseDate
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.SortByType
   
   /**
-       * The results will be sorted by relevance in case search query is given, if no search query resutls will be provided as is
-       */
+    * The results will be sorted by relevance in case search query is given, if no search query resutls will be provided as is
+    */
   @js.native
   sealed trait Relevance
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.SortByType
   
   /**
-       * Results will be sorted Alphabetically as per the title of the extension
-       */
+    * Results will be sorted Alphabetically as per the title of the extension
+    */
   @js.native
   sealed trait Title
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.SortByType
   
   /**
-       * The results will be sorted as per Trending Daily Score of the extensions
-       */
+    * The results will be sorted as per Trending Daily Score of the extensions
+    */
   @js.native
   sealed trait TrendingDaily
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.SortByType
   
   /**
-       * The results will be sorted as per Trending monthly Score of the extensions
-       */
+    * The results will be sorted as per Trending monthly Score of the extensions
+    */
   @js.native
   sealed trait TrendingMonthly
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.SortByType
   
   /**
-       * The results will be sorted as per Trending weekly Score of the extensions
-       */
+    * The results will be sorted as per Trending weekly Score of the extensions
+    */
   @js.native
   sealed trait TrendingWeekly
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.SortByType
   
   /**
-       * The results will be sorted as per Weighted Rating of the extension.
-       */
+    * The results will be sorted as per Weighted Rating of the extension.
+    */
   @js.native
   sealed trait WeightedRating
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.SortByType

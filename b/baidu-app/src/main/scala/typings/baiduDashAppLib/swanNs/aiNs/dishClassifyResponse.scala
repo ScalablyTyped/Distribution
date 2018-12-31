@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait dishClassifyResponse extends js.Object {
   var log_id: scala.Double
    // 返回结果数目，及result数组中的元素个数。

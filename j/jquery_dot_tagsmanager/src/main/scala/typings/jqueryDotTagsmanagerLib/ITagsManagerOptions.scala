@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITagsManagerOptions extends js.Object {
   var AjaxPush: js.UndefOr[java.lang.String] = js.undefined
   var CapitalizeFirstLetter: js.UndefOr[scala.Boolean] = js.undefined

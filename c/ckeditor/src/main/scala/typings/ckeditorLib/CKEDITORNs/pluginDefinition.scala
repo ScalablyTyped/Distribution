@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait pluginDefinition extends js.Object {
   var afterInit: js.UndefOr[js.Function1[/* editor */ editor, _]] = js.undefined
   var beforeInit: js.UndefOr[js.Function1[/* editor */ editor, _]] = js.undefined

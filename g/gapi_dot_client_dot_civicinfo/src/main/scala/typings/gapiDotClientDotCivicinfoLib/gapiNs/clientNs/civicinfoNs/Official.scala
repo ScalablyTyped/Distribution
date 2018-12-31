@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Official extends js.Object {
   /** Addresses at which to contact the official. */
   var address: js.UndefOr[js.Array[SimpleAddressType]] = js.undefined

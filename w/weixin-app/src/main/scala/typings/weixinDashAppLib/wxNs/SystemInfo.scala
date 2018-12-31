@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 // #endregion
 // #region 设备API列表
 // 设备-----系统信息
-
 trait SystemInfo extends js.Object {
   /** 客户端基础库版本 */
   var SDKVersion: java.lang.String

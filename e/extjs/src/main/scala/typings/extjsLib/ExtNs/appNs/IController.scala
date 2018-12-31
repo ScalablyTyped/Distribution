@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IController
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Method] Registers one or more references

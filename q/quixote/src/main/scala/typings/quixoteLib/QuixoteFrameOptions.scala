@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QuixoteFrameOptions extends js.Object {
   // Height of the iframe. Defaults to a large value (see stability note below)
   var height: js.UndefOr[scala.Double] = js.undefined

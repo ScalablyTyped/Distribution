@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PathStat extends js.Object {
   /**
-                       * File path
-                       */
+    * File path
+    */
   var path: java.lang.String
   /**
-                       * File stats
-                       */
+    * File stats
+    */
   var stat: adoneLib.adoneNs.fsNs.INs.Stats
 }
 

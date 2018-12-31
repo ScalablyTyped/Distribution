@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AggregateStats extends js.Object {
   /** The number of messages sent between a pair of peers. */
   var count: js.UndefOr[java.lang.String] = js.undefined

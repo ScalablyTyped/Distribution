@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @see ITaskOptions
-         */
-
+  * @see ITaskOptions
+  */
 trait ITaskCompactOptions
   extends gruntLib.gruntNs.fileNs.IFilesConfig
      with ITaskOptions

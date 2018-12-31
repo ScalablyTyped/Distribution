@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Change extends js.Object {
   /** The updated state of the file. Present if the type is file and the file has not been removed from this list of changes. */
   var file: js.UndefOr[File] = js.undefined
@@ -16,9 +15,9 @@ trait Change extends js.Object {
   /** Whether the file or Team Drive has been removed from this list of changes, for example by deletion or loss of access. */
   var removed: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * The updated state of the Team Drive. Present if the type is teamDrive, the user is still a member of the Team Drive, and the Team Drive has not been
-               * removed.
-               */
+    * The updated state of the Team Drive. Present if the type is teamDrive, the user is still a member of the Team Drive, and the Team Drive has not been
+    * removed.
+    */
   var teamDrive: js.UndefOr[TeamDrive] = js.undefined
   /** The ID of the Team Drive associated with this change. */
   var teamDriveId: js.UndefOr[java.lang.String] = js.undefined

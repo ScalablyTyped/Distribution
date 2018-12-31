@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MomentLongDateFormat extends js.Object {
   var L: java.lang.String
   var LL: java.lang.String

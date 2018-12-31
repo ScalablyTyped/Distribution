@@ -24,11 +24,6 @@ trait IgGridPagingMethods extends js.Object {
   	 * @param index The page index to go to.
   	 */
   def pageIndex(): scala.Double = js.native
-  /**
-  	 * Gets/Sets the current page index, delegates data binding and paging to [$.ig.DataSource](ig.datasource).
-  	 *
-  	 * @param index The page index to go to.
-  	 */
   def pageIndex(index: scala.Double): scala.Double = js.native
   /**
   	 * Gets/Sets the page size. If no parameter is specified, just returns the current page size.
@@ -36,11 +31,6 @@ trait IgGridPagingMethods extends js.Object {
   	 * @param size The new page size.
   	 */
   def pageSize(): scala.Double = js.native
-  /**
-  	 * Gets/Sets the page size. If no parameter is specified, just returns the current page size.
-  	 *
-  	 * @param size The new page size.
-  	 */
   def pageSize(size: scala.Double): scala.Double = js.native
 }
 

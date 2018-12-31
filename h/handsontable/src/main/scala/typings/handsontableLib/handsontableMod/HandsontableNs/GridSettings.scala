@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridSettings extends Hooks {
   var activeHeaderClassName: js.UndefOr[java.lang.String] = js.undefined
   var allowEmpty: js.UndefOr[scala.Boolean] = js.undefined

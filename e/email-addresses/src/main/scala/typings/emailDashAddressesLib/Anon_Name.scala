@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Name extends js.Object {
   var address: emailDashAddressesLib.emailAddressesNs.ASTNode
   var comments: js.Array[emailDashAddressesLib.emailAddressesNs.ASTNode]

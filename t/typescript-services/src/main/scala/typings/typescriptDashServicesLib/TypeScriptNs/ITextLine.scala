@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITextLine extends js.Object {
   def end(): scala.Double
   def endIncludingLineBreak(): scala.Double

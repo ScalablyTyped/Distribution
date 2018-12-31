@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced protected () extends js.Object {
   /**
-       * Used to create references to parent spans.
-       * See: https://github.com/DataDog/dd-trace-js/blob/master/src/opentracing/tracer.js#L99
-       */
+    * Used to create references to parent spans.
+    * See: https://github.com/DataDog/dd-trace-js/blob/master/src/opentracing/tracer.js#L99
+    */
   def this(props: SpanContextLike) = this()
 }
 

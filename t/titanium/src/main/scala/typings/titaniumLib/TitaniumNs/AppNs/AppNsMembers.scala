@@ -125,9 +125,6 @@ object AppNsMembers extends js.Object {
   		 * Fire a system-level event such as <Titanium.App.EVENT_ACCESSIBILITY_ANNOUNCEMENT>.
   		 */
   def fireSystemEvent(eventName: java.lang.String): scala.Unit = js.native
-  /**
-  		 * Fire a system-level event such as <Titanium.App.EVENT_ACCESSIBILITY_ANNOUNCEMENT>.
-  		 */
   def fireSystemEvent(eventName: java.lang.String, param: js.Any): scala.Unit = js.native
   /**
   		 * Gets the value of the <Titanium.App.accessibilityEnabled> property.

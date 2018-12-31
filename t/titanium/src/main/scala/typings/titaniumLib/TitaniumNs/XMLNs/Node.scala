@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * A single node in the [Document](Titanium.XML.Document) tree.
 		 */
-
 trait Node
   extends titaniumLib.TitaniumNs.Proxy {
   /**

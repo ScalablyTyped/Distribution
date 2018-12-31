@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait List extends Parent {
   @JSName("children")
   var children_List: js.Array[ListContent]

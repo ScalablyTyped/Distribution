@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * The Twitch extensions JavaScript Helper.
- *
- * @see https://dev.twitch.tv/docs/extensions/reference/#javascript-helper
- */
+  * The Twitch extensions JavaScript Helper.
+  *
+  * @see https://dev.twitch.tv/docs/extensions/reference/#javascript-helper
+  */
 @js.native
 trait TwitchExt extends js.Object {
   /**
@@ -97,14 +97,6 @@ trait TwitchExt extends js.Object {
   	 * @see https://dev.twitch.tv/docs/extensions/reference/#onvisibilitychanged
   	 */
   def onVisibilityChanged(callback: js.Function1[twitchDashExtLib.twitchDashExtLibNumbers.`false`, scala.Unit]): scala.Unit = js.native
-  /**
-  	 * This function registers a callback that gets called whenever an extension is hidden/re-shown. (This occurs only
-  	 * for mobile or component extensions.) When an extension is not visible in the mobile app, it does not receive
-  	 * onContext updates and must perform only minimal work in the background.
-  	 *
-  	 * @param callback This callback is called whenever an extension is hidden/re-shown.
-  	 * @see https://dev.twitch.tv/docs/extensions/reference/#onvisibilitychanged
-  	 */
   def onVisibilityChanged(
     callback: js.Function2[
       twitchDashExtLib.twitchDashExtLibNumbers.`true`, 
@@ -112,14 +104,6 @@ trait TwitchExt extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /**
-  	 * This function can be called by the front end to send directly to PubSub.
-  	 *
-  	 * @param target Target topic. Often this is "broadcast" but it might be "whisper-<userId>".
-  	 * @param contentType type of the serialized message; for example, "application/json".
-  	 * @param message Either an object that will be automatically serialized as JSON or a string.
-  	 * @see https://dev.twitch.tv/docs/extensions/reference/#send
-  	 */
   def send(target: java.lang.String, contentType: java.lang.String, message: java.lang.String): scala.Unit = js.native
   /**
   	 * This function can be called by the front end to send directly to PubSub.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAsideOptions extends js.Object {
   var animation: js.UndefOr[java.lang.String] = js.undefined
   var backdrop: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined

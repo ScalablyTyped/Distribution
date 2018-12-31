@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LintResult extends js.Object {
   var col: scala.Double
   var evidence: java.lang.String

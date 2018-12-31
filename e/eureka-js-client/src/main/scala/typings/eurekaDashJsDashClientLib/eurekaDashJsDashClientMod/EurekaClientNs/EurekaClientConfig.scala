@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EurekaClientConfig extends js.Object {
   var clusterRefreshInterval: js.UndefOr[scala.Boolean] = js.undefined
   var fetchMetadata: js.UndefOr[scala.Boolean] = js.undefined

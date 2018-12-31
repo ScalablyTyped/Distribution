@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Option extends js.Object {
   var load: js.UndefOr[
     js.Function1[/* element */ stdLib.HTMLElement | stdLib.HTMLCanvasElement, scala.Unit]

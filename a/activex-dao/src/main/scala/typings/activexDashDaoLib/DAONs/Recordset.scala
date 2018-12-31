@@ -53,7 +53,6 @@ trait Recordset extends js.Object {
   def Cancel(): scala.Unit = js.native
   /** @param UpdateType [UpdateType=1] */
   def CancelUpdate(): scala.Unit = js.native
-  /** @param UpdateType [UpdateType=1] */
   def CancelUpdate(UpdateType: scala.Double): scala.Unit = js.native
   def Clone(): Recordset = js.native
   def Close(): scala.Unit = js.native
@@ -77,7 +76,6 @@ trait Recordset extends js.Object {
   def MoveFirst(): scala.Unit = js.native
   /** @param Options [Options=0] */
   def MoveLast(): scala.Unit = js.native
-  /** @param Options [Options=0] */
   def MoveLast(Options: scala.Double): scala.Unit = js.native
   def MoveNext(): scala.Unit = js.native
   def MovePrevious(): scala.Unit = js.native
@@ -106,19 +104,11 @@ trait Recordset extends js.Object {
     Key13: js.UndefOr[js.Any]
   ): scala.Unit = js.native
   /**
-           * @param UpdateType [UpdateType=1]
-           * @param Force [Force=false]
-           */
+    * @param UpdateType [UpdateType=1]
+    * @param Force [Force=false]
+    */
   def Update(): scala.Unit = js.native
-  /**
-           * @param UpdateType [UpdateType=1]
-           * @param Force [Force=false]
-           */
   def Update(UpdateType: UpdateTypeEnum): scala.Unit = js.native
-  /**
-           * @param UpdateType [UpdateType=1]
-           * @param Force [Force=false]
-           */
   def Update(UpdateType: UpdateTypeEnum, Force: scala.Boolean): scala.Unit = js.native
 }
 

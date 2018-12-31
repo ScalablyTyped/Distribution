@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OAuthConfig extends js.Object {
   var baseUrl: java.lang.String
   var clientId: java.lang.String

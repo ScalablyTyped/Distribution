@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParameterMetadata extends js.Object {
   /** Required. The help text to display for the parameter. */
   var helpText: js.UndefOr[java.lang.String] = js.undefined

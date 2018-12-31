@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOperation extends js.Object {
   /**
-           * Operation id
-           */
+    * Operation id
+    */
   var id: java.lang.String
   /**
-           * Operation name
-           */
+    * Operation name
+    */
   var name: java.lang.String
   /**
-           * Parent operation id
-           */
+    * Parent operation id
+    */
   var parentId: java.lang.String
   /**
-           * Root operation id
-           */
+    * Root operation id
+    */
   var rootId: java.lang.String
   /**
-           * Synthetic source of the operation
-           */
+    * Synthetic source of the operation
+    */
   var syntheticSource: java.lang.String
 }
 

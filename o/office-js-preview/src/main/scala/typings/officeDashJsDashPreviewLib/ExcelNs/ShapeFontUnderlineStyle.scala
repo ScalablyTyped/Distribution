@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait ShapeFontUnderlineStyle extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.ShapeFontUnderlineStyle")
 @js.native
 object ShapeFontUnderlineStyle extends js.Object {

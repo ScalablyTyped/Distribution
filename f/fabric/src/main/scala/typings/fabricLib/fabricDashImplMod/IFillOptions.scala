@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFillOptions extends js.Object {
   /**
   	 * Pattern horizontal offset from object's left/top corner

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides information about whether the data transfers that the ReadPartial , WritePartial , or WriteReadPartial method performed succeeded, and the actual number of bytes the method transferred. */
-
 trait I2cTransferResult extends js.Object {
   /** The actual number of bytes that the operation actually transferred. The following table describes what this value represents for each method. */
   var bytesTransferred: scala.Double

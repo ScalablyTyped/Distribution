@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AggregateOptions extends RegistrationOptions {
   var inverse: js.UndefOr[js.Function2[/* total */ js.Any, /* dropped */ js.Any, _]] = js.undefined
   var result: js.UndefOr[js.Function1[/* total */ js.Any, _]] = js.undefined

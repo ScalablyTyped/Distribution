@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChangePageOptions extends js.Object {
   var allowSamePageTransition: js.UndefOr[scala.Boolean] = js.undefined
   var changeHash: js.UndefOr[scala.Boolean] = js.undefined

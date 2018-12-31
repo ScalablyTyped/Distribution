@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILayout
   extends extjsLib.ExtNs.IBase {
   /** [Method] Removes layout s itemCls and owning Container s itemCls

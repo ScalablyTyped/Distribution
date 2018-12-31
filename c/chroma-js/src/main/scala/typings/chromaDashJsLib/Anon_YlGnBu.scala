@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_YlGnBu extends js.Object {
   var Accent: js.Array[java.lang.String]
   var Blues: js.Array[java.lang.String]

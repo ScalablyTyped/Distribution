@@ -6,24 +6,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * This arranges nodes into layers.
-    * The method uses a hierarchical approach
-    * for creating drawings of digraphs with nodes arranged in layers.
-    * The layout algorithm consists of four-major steps: Cycle Removal,
-    * Layer Assignment, Crossing Reduction, and Straightening and Packing.
-    */
+  * This arranges nodes into layers.
+  * The method uses a hierarchical approach
+  * for creating drawings of digraphs with nodes arranged in layers.
+  * The layout algorithm consists of four-major steps: Cycle Removal,
+  * Layer Assignment, Crossing Reduction, and Straightening and Packing.
+  */
 @JSImport("go", "LayeredDigraphLayout")
 @js.native
+/**
+  * Constructs a LayeredDigraphLayout with no Layout.network and with no owning Layout.diagram.
+  */
 class LayeredDigraphLayout ()
   extends goLib.goMod.goNs.LayeredDigraphLayout
 
 /**
-    * This arranges nodes into layers.
-    * The method uses a hierarchical approach
-    * for creating drawings of digraphs with nodes arranged in layers.
-    * The layout algorithm consists of four-major steps: Cycle Removal,
-    * Layer Assignment, Crossing Reduction, and Straightening and Packing.
-    */
+  * This arranges nodes into layers.
+  * The method uses a hierarchical approach
+  * for creating drawings of digraphs with nodes arranged in layers.
+  * The layout algorithm consists of four-major steps: Cycle Removal,
+  * Layer Assignment, Crossing Reduction, and Straightening and Packing.
+  */
 @JSImport("go", "LayeredDigraphLayout")
 @js.native
 object LayeredDigraphLayout extends js.Object {

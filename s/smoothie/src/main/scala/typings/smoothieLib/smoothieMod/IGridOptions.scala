@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGridOptions extends js.Object {
   /** Whether the grid lines trace the border of the chart or not. */
   var borderVisible: js.UndefOr[scala.Boolean] = js.undefined

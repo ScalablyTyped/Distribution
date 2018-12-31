@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListobjectDef extends js.Object {
   var qAutoSortByState: NxAutoSortByStateDef
   var qDef: NxInlineDimensionDef

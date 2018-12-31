@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /** Size of the cells used to generate a randomized grid */
   var cell_size: js.UndefOr[scala.Double] = js.undefined

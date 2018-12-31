@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IntlFormat extends js.Object {
   var formatDate: reactLib.reactMod.ReactNs.Requireable[_]
   var formatHTMLMessage: reactLib.reactMod.ReactNs.Requireable[_]

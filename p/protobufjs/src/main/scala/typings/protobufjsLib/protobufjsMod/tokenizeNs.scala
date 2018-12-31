@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object tokenizeNs extends js.Object {
   /**
-       * Unescapes a string.
-       * @param str String to unescape
-       * @returns Unescaped string
-       */
+    * Unescapes a string.
+    * @param str String to unescape
+    * @returns Unescaped string
+    */
   def unescape(str: java.lang.String): java.lang.String = js.native
 }
 

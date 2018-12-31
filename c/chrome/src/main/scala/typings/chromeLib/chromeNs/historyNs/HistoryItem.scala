@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HistoryItem extends js.Object {
   /** The unique identifier for the item. */
   var id: java.lang.String

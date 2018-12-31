@@ -11,14 +11,14 @@ trait LodashFindFrom extends js.Object {
   def apply[T](predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean]): LodashFindFrom2x1[T] = js.native
   def apply[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ],
     fromIndex: lodashLib.lodashMod.underscoreNs.`__`
   ): LodashFindFrom4x5[T] = js.native
   def apply[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ],
     fromIndex: lodashLib.lodashMod.underscoreNs.`__`,
@@ -35,14 +35,12 @@ trait LodashFindFrom extends js.Object {
   ): LodashFindFrom2x3[T] = js.native
   def apply[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ],
     fromIndex: scala.Double,
     collection: T
-  ): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def apply[T](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean],
     fromIndex: scala.Double,
@@ -65,9 +63,9 @@ trait LodashFindFrom extends js.Object {
     fromIndex: scala.Double,
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashFindFrom1x6[T] = js.native
-  def apply[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def apply[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ]
   ): LodashFindFrom3x1[T, S] = js.native
@@ -75,9 +73,9 @@ trait LodashFindFrom extends js.Object {
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[T, S],
     fromIndex: lodashLib.lodashMod.underscoreNs.`__`
   ): LodashFindFrom1x5[S] = js.native
-  def apply[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def apply[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ],
     fromIndex: lodashLib.lodashMod.underscoreNs.`__`,
@@ -89,9 +87,9 @@ trait LodashFindFrom extends js.Object {
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashFindFrom1x5[S] = js.native
   def apply[T, S /* <: T */](predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[T, S], fromIndex: scala.Double): js.UndefOr[S] = js.native
-  def apply[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def apply[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ],
     fromIndex: scala.Double,

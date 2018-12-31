@@ -12,15 +12,15 @@ sealed trait ExtensionFlags extends js.Object
 @js.native
 object ExtensionFlags extends js.Object {
   /**
-       * A built-in extension is installed for all VSTS accounts by default
-       */
+    * A built-in extension is installed for all VSTS accounts by default
+    */
   @js.native
   sealed trait BuiltIn
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ExtensionFlags
   
   /**
-       * The extension comes from a fully-trusted publisher
-       */
+    * The extension comes from a fully-trusted publisher
+    */
   @js.native
   sealed trait Trusted
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ExtensionFlags

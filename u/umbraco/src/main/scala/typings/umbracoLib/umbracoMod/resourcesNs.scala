@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("umbraco", "resources")
 @js.native
 object resourcesNs extends js.Object {
-  
   trait IResourcePromise extends js.Object {
     var data: js.Any
     var errorMsg: java.lang.String
@@ -16,8 +15,8 @@ object resourcesNs extends js.Object {
   }
   
   /**
-       * Can be Ascending or Descending - Default: Ascending
-       */
+    * Can be Ascending or Descending - Default: Ascending
+    */
   @js.native
   object Direction extends js.Object {
     val Ascending: umbracoLib.umbracoNs.resourcesNs.Direction.Ascending with java.lang.String = js.native
@@ -27,8 +26,8 @@ object resourcesNs extends js.Object {
   }
   
   /**
-       * LogType
-       */
+    * LogType
+    */
   @js.native
   object LogType extends js.Object {
     val Debug: umbracoLib.umbracoNs.resourcesNs.LogType.Debug with java.lang.String = js.native
@@ -38,8 +37,8 @@ object resourcesNs extends js.Object {
   }
   
   /**
-       * Property to order items by, default: `SortOrder`
-       */
+    * Property to order items by, default: `SortOrder`
+    */
   @js.native
   object OrderItemsBy extends js.Object {
     val SortOrder: umbracoLib.umbracoNs.resourcesNs.OrderItemsBy.SortOrder with java.lang.String = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientOptions extends js.Object {
   var credentials: js.UndefOr[Credentials] = js.undefined
   var email: js.UndefOr[java.lang.String] = js.undefined

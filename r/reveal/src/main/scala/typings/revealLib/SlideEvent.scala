@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // https://github.com/hakimel/reveal.js/#slide-changed-event
-
 trait SlideEvent extends js.Object {
   var currentSlide: stdLib.Element
   var indexh: scala.Double

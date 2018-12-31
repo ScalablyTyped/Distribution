@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimePickerOptions extends js.Object {
   /** Selector for an alternate field to store selected time into */
   var altField: js.UndefOr[java.lang.String] = js.undefined
@@ -14,26 +13,26 @@ trait TimePickerOptions extends js.Object {
   /** Display text following the input box, e.g. showing the format */
   var appendText: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Position of the input element to match
-       *
-       * Note : if the position utility is not loaded, the timepicker will attach left top to left bottom
-       * See the position utility for more info : http://jqueryui.com/demos/position/
-       */
+    * Position of the input element to match
+    *
+    * Note : if the position utility is not loaded, the timepicker will attach left top to left bottom
+    * See the position utility for more info : http://jqueryui.com/demos/position/
+    */
   var atPosition: js.UndefOr[java.lang.String] = js.undefined
   /** Define a callback function executed before the timepicker is shown */
   var beforeShow: js.UndefOr[js.Function0[_]] = js.undefined
   /**
-       * 'button' element that will trigger the timepicker.
-       *
-       * "button" for trigger button, or "both" for either (not yet implemented).
-       */
+    * 'button' element that will trigger the timepicker.
+    *
+    * "button" for trigger button, or "both" for either (not yet implemented).
+    */
   var button: js.UndefOr[java.lang.String] = js.undefined
   /** Text for the confirmation button (ok button).*/
   var closeButtonText: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Used as default time when input field is empty or for inline timePicker
-       * (set to 'now' for the current time, '' for no highlighted time)
-       **/
+    * Used as default time when input field is empty or for inline timePicker
+    * (set to 'now' for the current time, '' for no highlighted time)
+    **/
   var defaultTime: js.UndefOr[java.lang.String] = js.undefined
   /** Text for the deselect button */
   var deselectButtonText: js.UndefOr[java.lang.String] = js.undefined
@@ -45,10 +44,10 @@ trait TimePickerOptions extends js.Object {
   var minuteText: js.UndefOr[java.lang.String] = js.undefined
   var minutes: js.UndefOr[TimePickerMinutes] = js.undefined
   /**
-       * Position of the dialog relative to the input.
-       *
-       * See the position utility for more info : http://jqueryui.com/demos/position/
-       */
+    * Position of the dialog relative to the input.
+    *
+    * See the position utility for more info : http://jqueryui.com/demos/position/
+    */
   var myPosition: js.UndefOr[java.lang.String] = js.undefined
   /** Text for the 'now' button.*/
   var nowButtonText: js.UndefOr[java.lang.String] = js.undefined

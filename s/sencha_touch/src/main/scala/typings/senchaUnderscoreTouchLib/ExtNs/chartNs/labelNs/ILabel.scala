@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILabel
   extends senchaUnderscoreTouchLib.ExtNs.drawNs.spriteNs.IText {
   /** [Config Option] (Object) */

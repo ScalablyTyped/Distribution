@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait State[OptionType] extends js.Object {
   var ariaLiveContext: java.lang.String
   var ariaLiveSelection: java.lang.String

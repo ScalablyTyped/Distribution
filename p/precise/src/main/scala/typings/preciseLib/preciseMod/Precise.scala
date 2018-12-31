@@ -10,18 +10,18 @@ import scala.scalajs.js.annotation._
 class Precise ()
   extends preciseLib.preciseMod.underscorePreciseNs.Precise {
   /**
-           * Returns the nanoseconds from `start()` to `stop()`
-           */
+    * Returns the nanoseconds from `start()` to `stop()`
+    */
   /* CompleteClass */
   override def diff(): scala.Double = js.native
   /**
-           * Starts a timer
-           */
+    * Starts a timer
+    */
   /* CompleteClass */
   override def start(): preciseLib.preciseMod.underscorePreciseNs.Precise = js.native
   /**
-           * Stops a timer
-           */
+    * Stops a timer
+    */
   /* CompleteClass */
   override def stop(): preciseLib.preciseMod.underscorePreciseNs.Precise = js.native
 }

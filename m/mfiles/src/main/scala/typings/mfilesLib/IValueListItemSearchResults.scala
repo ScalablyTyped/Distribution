@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IValueListItemSearchResults extends js.Object {
   val Count: scala.Double
   var MoreResults: scala.Boolean

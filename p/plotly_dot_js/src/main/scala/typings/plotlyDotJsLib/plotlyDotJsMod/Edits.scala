@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Edits extends js.Object {
   var annotationPosition: scala.Boolean
   var annotationTail: scala.Boolean

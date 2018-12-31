@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Equation extends js.Object {
   var G: js.Array[scala.Double]
   var a: scala.Double

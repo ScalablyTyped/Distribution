@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQueryContextMenuOptions extends js.Object {
   var animation: js.UndefOr[Anon_Hide] = js.undefined
   var appendTo: js.UndefOr[java.lang.String] = js.undefined

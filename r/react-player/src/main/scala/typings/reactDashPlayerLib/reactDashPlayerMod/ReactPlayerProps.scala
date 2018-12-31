@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactPlayerProps
   extends /* otherProps */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var config: js.UndefOr[Config] = js.undefined

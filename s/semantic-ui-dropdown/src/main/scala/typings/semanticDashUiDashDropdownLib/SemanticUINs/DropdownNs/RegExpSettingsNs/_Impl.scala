@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default /[-[\]{}()*+?.,\\^$|#\s]/g
-                   */
+    * @default /[-[\]{}()*+?.,\\^$|#\s]/g
+    */
   var escape: stdLib.RegExp
 }
 

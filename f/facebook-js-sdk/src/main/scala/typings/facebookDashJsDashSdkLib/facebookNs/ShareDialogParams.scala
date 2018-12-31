@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShareDialogParams extends DialogParams {
   var hashtag: js.UndefOr[java.lang.String] = js.undefined
   var href: java.lang.String

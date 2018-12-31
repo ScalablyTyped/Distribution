@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MenuItem extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var command: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventItem, scala.Unit]] = js.undefined

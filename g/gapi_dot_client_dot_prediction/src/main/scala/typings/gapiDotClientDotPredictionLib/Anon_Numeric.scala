@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Numeric extends js.Object {
   /** Description of the output values in the data set. */
   var numeric: js.UndefOr[Anon_Count] = js.undefined

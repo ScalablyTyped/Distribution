@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("meteor/tracker", "Tracker")
 @js.native
 object TrackerNs extends js.Object {
-  
   trait Computation extends js.Object {
     var firstRun: scala.Boolean
     var invalidated: scala.Boolean

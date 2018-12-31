@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Card extends js.Object {
   var accountHistory: js.Array[java.lang.String]
   var address: FullAddress

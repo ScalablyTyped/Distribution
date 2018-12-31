@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICheckboxModel extends IRowModel {
   /** [Config Option] (Boolean) */
   var checkOnly: js.UndefOr[scala.Boolean] = js.undefined

@@ -12,78 +12,78 @@ sealed trait BuildReason extends js.Object
 @js.native
 object BuildReason extends js.Object {
   /**
-       * All reasons.
-       */
+    * All reasons.
+    */
   @js.native
   sealed trait All
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildReason
   
   /**
-       * The build was started for the trigger TriggerType.BatchedContinuousIntegration.
-       */
+    * The build was started for the trigger TriggerType.BatchedContinuousIntegration.
+    */
   @js.native
   sealed trait BatchedCI
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildReason
   
   /**
-       * The build was started for the trigger ContinuousIntegrationType.Gated.
-       */
+    * The build was started for the trigger ContinuousIntegrationType.Gated.
+    */
   @js.native
   sealed trait CheckInShelveset
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildReason
   
   /**
-       * The build was started for the trigger TriggerType.ContinuousIntegration.
-       */
+    * The build was started for the trigger TriggerType.ContinuousIntegration.
+    */
   @js.native
   sealed trait IndividualCI
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildReason
   
   /**
-       * The build was started manually.
-       */
+    * The build was started manually.
+    */
   @js.native
   sealed trait Manual
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildReason
   
   /**
-       * No reason. This value should not be used.
-       */
+    * No reason. This value should not be used.
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildReason
   
   /**
-       * The build was started by a pull request. Added in resource version 3.
-       */
+    * The build was started by a pull request. Added in resource version 3.
+    */
   @js.native
   sealed trait PullRequest
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildReason
   
   /**
-       * The build was started for the trigger TriggerType.Schedule.
-       */
+    * The build was started for the trigger TriggerType.Schedule.
+    */
   @js.native
   sealed trait Schedule
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildReason
   
   /**
-       * The build was triggered for retention policy purposes.
-       */
+    * The build was triggered for retention policy purposes.
+    */
   @js.native
   sealed trait Triggered
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildReason
   
   /**
-       * The build was created by a user.
-       */
+    * The build was created by a user.
+    */
   @js.native
   sealed trait UserCreated
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildReason
   
   /**
-       * The build was started manually for private validation.
-       */
+    * The build was started manually for private validation.
+    */
   @js.native
   sealed trait ValidateShelveset
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildReason

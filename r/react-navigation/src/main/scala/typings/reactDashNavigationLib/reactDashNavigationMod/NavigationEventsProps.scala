@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigationEventsProps
   extends reactDashNativeLib.reactDashNativeMod.ViewProps {
   var navigation: js.UndefOr[NavigationNavigator[NavigationState, js.Object, js.Object]] = js.undefined

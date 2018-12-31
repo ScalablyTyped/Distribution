@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default '(?:\s|^)'
-                   */
+    * @default '(?:\s|^)'
+    */
   var beginsWith: java.lang.String
   /**
-                   * @default /[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g
-                   */
+    * @default /[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g
+    */
   var escape: stdLib.RegExp
 }
 

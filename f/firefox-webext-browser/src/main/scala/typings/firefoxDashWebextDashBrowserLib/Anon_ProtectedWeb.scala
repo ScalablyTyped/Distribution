@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ProtectedWeb extends js.Object {
   /** Extensions and packaged applications a user has installed (be _really_ careful!). */
   var extension: js.UndefOr[scala.Boolean] = js.undefined

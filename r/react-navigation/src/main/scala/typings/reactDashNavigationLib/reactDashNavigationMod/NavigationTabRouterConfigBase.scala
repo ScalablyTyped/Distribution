@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line:strict-export-declare-modifiers
-
 trait NavigationTabRouterConfigBase extends js.Object {
    // todo: type these as the real route names rather than 'string'
   // Does the back button cause the router to switch to the initial tab

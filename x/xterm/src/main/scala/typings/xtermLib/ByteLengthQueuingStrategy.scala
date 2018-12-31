@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ByteLengthQueuingStrategy
   extends QueuingStrategy[stdLib.ArrayBufferView] {
   @JSName("highWaterMark")

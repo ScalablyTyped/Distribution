@@ -5,25 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IIconProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement]
      with atUifabricUtilitiesLib.libBaseComponentMod.IBaseProps[js.Any] {
   /**
-       * The aria label of the button for the benefit of screen readers.
-       */
+    * The aria label of the button for the benefit of screen readers.
+    */
   var ariaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * The name of the icon to use from the icon font. If string is empty, a placeholder icon will be rendered the same width as an icon
-       */
+    * The name of the icon to use from the icon font. If string is empty, a placeholder icon will be rendered the same width as an icon
+    */
   var iconName: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * The type of icon to render (image or icon font).
-       */
+    * The type of icon to render (image or icon font).
+    */
   var iconType: js.UndefOr[IconType] = js.undefined
   /**
-       * If rendering an image icon, this function callback will be invoked in the event loading the image errors.
-       */
+    * If rendering an image icon, this function callback will be invoked in the event loading the image errors.
+    */
   var imageErrorAs: js.UndefOr[
     (reactLib.reactMod.ReactNs.StatelessComponent[
       officeDashUiDashFabricDashReactLib.libComponentsImageImageDotTypesMod.IImageProps
@@ -33,14 +32,14 @@ trait IIconProps
     ])
   ] = js.undefined
   /**
-       * If rendering an image icon, these props will be passed to the Image component.
-       */
+    * If rendering an image icon, these props will be passed to the Image component.
+    */
   var imageProps: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsImageImageDotTypesMod.IImageProps
   ] = js.undefined
   /**
-       * Gets the styles for an Icon.
-       */
+    * Gets the styles for an Icon.
+    */
   var styles: js.UndefOr[
     atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[IIconStyleProps, IIconStyles]
   ] = js.undefined

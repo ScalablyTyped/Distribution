@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableResource extends js.Object {
   /** Copies a table. */
   def copy(request: gapiDotClientDotFusiontablesLib.Anon_CopyPresentation): gapiDotClientLib.gapiNs.clientNs.Request[Table]
@@ -22,9 +21,9 @@ trait TableResource extends js.Object {
   /** Retrieves a list of tables a user owns. */
   def list(request: gapiDotClientDotFusiontablesLib.Anon_MaxResultsPrettyPrintPageToken): gapiDotClientLib.gapiNs.clientNs.Request[TableList]
   /**
-               * Updates an existing table. Unless explicitly requested, only the name, description, and attribution will be updated. This method supports patch
-               * semantics.
-               */
+    * Updates an existing table. Unless explicitly requested, only the name, description, and attribution will be updated. This method supports patch
+    * semantics.
+    */
   def patch(request: gapiDotClientDotFusiontablesLib.Anon_PrettyPrintQuotaUserKeyUserIp): gapiDotClientLib.gapiNs.clientNs.Request[Table]
   /** Replaces rows of an existing table. Current rows remain visible until all replacement rows are ready. */
   def replaceRows(request: gapiDotClientDotFusiontablesLib.Anon_StartLine): gapiDotClientLib.gapiNs.clientNs.Request[Task]

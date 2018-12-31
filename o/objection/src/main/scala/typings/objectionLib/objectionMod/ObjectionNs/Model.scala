@@ -90,54 +90,28 @@ trait Model extends js.Object {
   @JSName("$query")
   def $query[QM /* <: Model */](`this`: QM, trxOrKnex: Transaction): QueryBuilder[QM, QM, QM] = js.native
   /**
-       * If you add fields to your model, you get $relatedQuery typings for
-       * free.
-       *
-       * Note that if you make any chained calls to the QueryBuilder,
-       * though, you should apply a cast, which will make your code use not this
-       * signatue, but the following signature.
-       */
+    * If you add fields to your model, you get $relatedQuery typings for
+    * free.
+    *
+    * Note that if you make any chained calls to the QueryBuilder,
+    * though, you should apply a cast, which will make your code use not this
+    * signatue, but the following signature.
+    */
   @JSName("$relatedQuery")
-  def $relatedQuery[K /* <: java.lang.String */, V /* <: (/* import warning: Failed type conversion: TsTypeLookup(TsTypeThis(),Left(TsIdentSimple(K))) */js.Any) with Model */](relationName: K): QueryBuilder[V, V, V] = js.native
-  /**
-       * If you add fields to your model, you get $relatedQuery typings for
-       * free.
-       *
-       * Note that if you make any chained calls to the QueryBuilder,
-       * though, you should apply a cast, which will make your code use not this
-       * signatue, but the following signature.
-       */
+  def $relatedQuery[K /* <: java.lang.String */, V /* <: (/* import warning: ImportType.apply Failed type conversion: this[K] */ js.Any) with Model */](relationName: K): QueryBuilder[V, V, V] = js.native
   @JSName("$relatedQuery")
-  def $relatedQuery[K /* <: java.lang.String */, V /* <: (/* import warning: Failed type conversion: TsTypeLookup(TsTypeThis(),Left(TsIdentSimple(K))) */js.Any) with Model */](relationName: K, trxOrKnex: knexLib.knexMod.Knex): QueryBuilder[V, V, V] = js.native
-  /**
-       * If you add fields to your model, you get $relatedQuery typings for
-       * free.
-       *
-       * Note that if you make any chained calls to the QueryBuilder,
-       * though, you should apply a cast, which will make your code use not this
-       * signatue, but the following signature.
-       */
+  def $relatedQuery[K /* <: java.lang.String */, V /* <: (/* import warning: ImportType.apply Failed type conversion: this[K] */ js.Any) with Model */](relationName: K, trxOrKnex: knexLib.knexMod.Knex): QueryBuilder[V, V, V] = js.native
   @JSName("$relatedQuery")
-  def $relatedQuery[K /* <: java.lang.String */, V /* <: (/* import warning: Failed type conversion: TsTypeLookup(TsTypeThis(),Left(TsIdentSimple(K))) */js.Any) with Model */](relationName: K, trxOrKnex: Transaction): QueryBuilder[V, V, V] = js.native
+  def $relatedQuery[K /* <: java.lang.String */, V /* <: (/* import warning: ImportType.apply Failed type conversion: this[K] */ js.Any) with Model */](relationName: K, trxOrKnex: Transaction): QueryBuilder[V, V, V] = js.native
   /**
-       * Builds a query that only affects the models related to this instance
-       * through a relation. Note that this signature requires a
-       * type cast (like `bob.$relatedQuery<Animal>('pets')`).
-       */
+    * Builds a query that only affects the models related to this instance
+    * through a relation. Note that this signature requires a
+    * type cast (like `bob.$relatedQuery<Animal>('pets')`).
+    */
   @JSName("$relatedQuery")
   def $relatedQuery[QM /* <: Model */, RM](relationName: java.lang.String): QueryBuilder[QM, RM, RM] = js.native
-  /**
-       * Builds a query that only affects the models related to this instance
-       * through a relation. Note that this signature requires a
-       * type cast (like `bob.$relatedQuery<Animal>('pets')`).
-       */
   @JSName("$relatedQuery")
   def $relatedQuery[QM /* <: Model */, RM](relationName: java.lang.String, trxOrKnex: knexLib.knexMod.Knex): QueryBuilder[QM, RM, RM] = js.native
-  /**
-       * Builds a query that only affects the models related to this instance
-       * through a relation. Note that this signature requires a
-       * type cast (like `bob.$relatedQuery<Animal>('pets')`).
-       */
   @JSName("$relatedQuery")
   def $relatedQuery[QM /* <: Model */, RM](relationName: java.lang.String, trxOrKnex: Transaction): QueryBuilder[QM, RM, RM] = js.native
   @JSName("$set")

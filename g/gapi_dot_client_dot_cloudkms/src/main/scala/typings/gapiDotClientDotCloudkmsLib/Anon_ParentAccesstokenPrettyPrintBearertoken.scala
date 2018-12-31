@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParentAccesstokenPrettyPrintBearertoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -19,9 +18,9 @@ trait Anon_ParentAccesstokenPrettyPrintBearertoken extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Required. It must be unique within a KeyRing and match the regular
-                   * expression `[a-zA-Z0-9_-]{1,63}`
-                   */
+    * Required. It must be unique within a KeyRing and match the regular
+    * expression `[a-zA-Z0-9_-]{1,63}`
+    */
   var cryptoKeyId: js.UndefOr[java.lang.String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
@@ -30,9 +29,9 @@ trait Anon_ParentAccesstokenPrettyPrintBearertoken extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Required. The name of the KeyRing associated with the
-                   * CryptoKeys.
-                   */
+    * Required. The name of the KeyRing associated with the
+    * CryptoKeys.
+    */
   var parent: java.lang.String
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

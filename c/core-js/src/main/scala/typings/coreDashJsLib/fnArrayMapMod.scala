@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/array/map", JSImport.Namespace)
 @js.native
 object fnArrayMapMod
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayCallbackfnValue]
 

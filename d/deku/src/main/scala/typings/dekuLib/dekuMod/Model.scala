@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Model extends js.Object {
   var children: js.UndefOr[js.Array[_]] = js.undefined
   var context: js.UndefOr[js.Any] = js.undefined

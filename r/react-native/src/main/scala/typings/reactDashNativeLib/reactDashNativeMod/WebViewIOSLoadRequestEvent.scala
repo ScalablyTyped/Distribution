@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebViewIOSLoadRequestEvent extends js.Object {
   var canGoBack: scala.Boolean
   var canGoForward: scala.Boolean

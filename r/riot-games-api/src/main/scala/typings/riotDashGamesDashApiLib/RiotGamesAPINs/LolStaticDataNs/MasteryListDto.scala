@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MasteryListDto extends js.Object {
   var data: js.Array[org.scalablytyped.runtime.StringDictionary[MasteryDto]]
   var tree: MasteryTreeDto

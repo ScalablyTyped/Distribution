@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IModel
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Property] (String) */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDataFunctionCall extends js.Object {
   val DataFunction: mfilesLib.MFilesNs.MFDataFunction
   def SetDataDate(): scala.Unit

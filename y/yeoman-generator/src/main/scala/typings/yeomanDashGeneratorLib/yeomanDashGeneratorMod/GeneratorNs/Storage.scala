@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Storage extends js.Object {
   def defaults(defaults: js.Object): js.Object
   def delete(key: java.lang.String): scala.Unit

@@ -12,14 +12,14 @@ object constantsNs extends js.Object {
   /** Constant for fs.copyFile. Flag indicating the destination file should not be overwritten if it already exists. */
   val COPYFILE_EXCL: scala.Double = js.native
   /**
-           * Constant for fs.copyFile. copy operation will attempt to create a copy-on-write reflink.
-           * If the underlying platform does not support copy-on-write, then a fallback copy mechanism is used.
-           */
+    * Constant for fs.copyFile. copy operation will attempt to create a copy-on-write reflink.
+    * If the underlying platform does not support copy-on-write, then a fallback copy mechanism is used.
+    */
   val COPYFILE_FICLONE: scala.Double = js.native
   /**
-           * Constant for fs.copyFile. Copy operation will attempt to create a copy-on-write reflink.
-           * If the underlying platform does not support copy-on-write, then the operation will fail with an error.
-           */
+    * Constant for fs.copyFile. Copy operation will attempt to create a copy-on-write reflink.
+    * If the underlying platform does not support copy-on-write, then the operation will fail with an error.
+    */
   val COPYFILE_FICLONE_FORCE: scala.Double = js.native
   // File Access Constants
   /** Constant for fs.access(). File is visible to the calling process. */
@@ -37,17 +37,17 @@ object constantsNs extends js.Object {
   /** Constant for fs.open(). Flag indicating that opening a file should fail if the O_CREAT flag is set and the file already exists. */
   val O_EXCL: scala.Double = js.native
   /**
-           * constant for fs.open().
-           * Flag indicating reading accesses to the file system will no longer result in
-           * an update to the atime information associated with the file.
-           * This flag is available on Linux operating systems only.
-           */
+    * constant for fs.open().
+    * Flag indicating reading accesses to the file system will no longer result in
+    * an update to the atime information associated with the file.
+    * This flag is available on Linux operating systems only.
+    */
   val O_NOATIME: scala.Double = js.native
   /**
-           * Constant for fs.open(). Flag indicating that if path identifies a terminal device,
-           * opening the path shall not cause that terminal to become the controlling terminal for the process
-           * (if the process does not already have one).
-           */
+    * Constant for fs.open(). Flag indicating that if path identifies a terminal device,
+    * opening the path shall not cause that terminal to become the controlling terminal for the process
+    * (if the process does not already have one).
+    */
   val O_NOCTTY: scala.Double = js.native
   /** Constant for fs.open(). Flag indicating that the open should fail if the path is a symbolic link. */
   val O_NOFOLLOW: scala.Double = js.native

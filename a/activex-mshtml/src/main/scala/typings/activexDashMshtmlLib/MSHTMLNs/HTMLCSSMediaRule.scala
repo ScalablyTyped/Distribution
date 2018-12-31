@@ -19,11 +19,9 @@ class HTMLCSSMediaRule protected () extends js.Object {
   def cssRules(index: scala.Double): IHTMLStyleSheetRule = js.native
   /** @param lIndex [lIndex=-1] */
   def deleteRule(): scala.Unit = js.native
-  /** @param lIndex [lIndex=-1] */
   def deleteRule(lIndex: scala.Double): scala.Unit = js.native
   /** @param lIndex [lIndex=-1] */
   def insertRule(bstrRule: java.lang.String): scala.Double = js.native
-  /** @param lIndex [lIndex=-1] */
   def insertRule(bstrRule: java.lang.String, lIndex: scala.Double): scala.Double = js.native
 }
 

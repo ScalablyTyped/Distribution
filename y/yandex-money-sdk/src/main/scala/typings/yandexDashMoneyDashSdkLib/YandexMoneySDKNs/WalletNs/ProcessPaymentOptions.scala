@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProcessPaymentOptions extends js.Object {
   var csc: js.UndefOr[java.lang.String] = js.undefined
   var ext_auth_fail_uri: js.UndefOr[java.lang.String] = js.undefined

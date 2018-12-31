@@ -23,9 +23,6 @@ class UserAccess () extends js.Object {
       scala.Boolean
     ]
   ): scala.Unit = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_eachAccessibleUser
-  		 */
   def eachAccessibleUser(
     callback: js.Function4[
       /* user */ User, 

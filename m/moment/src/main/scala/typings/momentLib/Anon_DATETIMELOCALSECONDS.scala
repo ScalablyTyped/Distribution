@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DATETIMELOCALSECONDS extends js.Object {
   var DATE: java.lang.String
   var DATETIME_LOCAL: java.lang.String

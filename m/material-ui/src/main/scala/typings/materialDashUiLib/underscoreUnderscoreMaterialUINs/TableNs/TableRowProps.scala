@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableRowProps extends js.Object {
   // <tr/> is element that get the 'other' properties
   var className: js.UndefOr[java.lang.String] = js.undefined

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched if chat room subject was changed
 		*/
-
 trait ChatRoomSubjectChange extends js.Object {
   /**
   			* User id who changed the subject

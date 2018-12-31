@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITextMetrics
   extends extjsLib.ExtNs.IBase {
   /** [Method] Binds this TextMetrics instance to a new element

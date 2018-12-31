@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents the address of a contact. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactAddress")
 @js.native
+/** Initializes a new instance of a ContactAddress class. */
 class ContactAddress () extends js.Object {
   /** Gets and sets the country of a contact address. The maximum string length for the country is 1024 characters. */
   var country: java.lang.String = js.native

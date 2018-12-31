@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-   * Reference: https://developers.google.com/api-client-library/javascript/reference/referencedocs#gapiauth2authorizeconfig
-   */
-
+  * Reference: https://developers.google.com/api-client-library/javascript/reference/referencedocs#gapiauth2authorizeconfig
+  */
 trait AuthorizeConfig extends js.Object {
   var app_package_name: js.UndefOr[java.lang.String] = js.undefined
   var client_id: java.lang.String

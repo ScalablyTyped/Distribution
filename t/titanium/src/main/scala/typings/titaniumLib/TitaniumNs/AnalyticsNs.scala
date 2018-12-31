@@ -36,18 +36,11 @@ object AnalyticsNs extends js.Object {
   		 * **Not displayed in Analytics UI**.
   		 */
   def addEvent(`type`: java.lang.String, name: java.lang.String): scala.Unit = js.native
-  /**
-  		 * Sends a generic event for this application session.
-  		 * **Not displayed in Analytics UI**.
-  		 */
   def addEvent(`type`: java.lang.String, name: java.lang.String, data: js.Any): scala.Unit = js.native
   /**
   		 * Sends a feature event for this application session.
   		 */
   def featureEvent(name: java.lang.String): scala.Double = js.native
-  /**
-  		 * Sends a feature event for this application session.
-  		 */
   def featureEvent(name: java.lang.String, data: js.Any): scala.Double = js.native
   /**
   		 * Sets a list of events that will not be sent to the Analytics server.
@@ -78,15 +71,7 @@ object AnalyticsNs extends js.Object {
   		 * **Not displayed in Analytics UI**.
   		 */
   def navEvent(from: java.lang.String, to: java.lang.String): scala.Unit = js.native
-  /**
-  		 * Sends a navigation event for this application session.
-  		 * **Not displayed in Analytics UI**.
-  		 */
   def navEvent(from: java.lang.String, to: java.lang.String, name: java.lang.String): scala.Unit = js.native
-  /**
-  		 * Sends a navigation event for this application session.
-  		 * **Not displayed in Analytics UI**.
-  		 */
   def navEvent(from: java.lang.String, to: java.lang.String, name: java.lang.String, data: js.Any): scala.Unit = js.native
   /**
   		 * Sets the value of the <Titanium.Analytics.bubbleParent> property.
@@ -109,20 +94,12 @@ object AnalyticsNs extends js.Object {
   		 * **Not displayed in Analytics UI**.
   		 */
   def settingsEvent(name: java.lang.String): scala.Unit = js.native
-  /**
-  		 * Sends a settings event for this application session.
-  		 * **Not displayed in Analytics UI**.
-  		 */
   def settingsEvent(name: java.lang.String, data: js.Any): scala.Unit = js.native
   /**
   		 * Send a timed event for this application session.
   		 * **Not displayed in Analytics UI**.
   		 */
   def timedEvent(name: java.lang.String, start: stdLib.Date, stop: stdLib.Date, duration: scala.Double): scala.Unit = js.native
-  /**
-  		 * Send a timed event for this application session.
-  		 * **Not displayed in Analytics UI**.
-  		 */
   def timedEvent(
     name: java.lang.String,
     start: stdLib.Date,
@@ -134,9 +111,6 @@ object AnalyticsNs extends js.Object {
   		 * Sends a user event for this application session. **Not displayed in Analytics UI**.
   		 */
   def userEvent(name: java.lang.String): scala.Unit = js.native
-  /**
-  		 * Sends a user event for this application session. **Not displayed in Analytics UI**.
-  		 */
   def userEvent(name: java.lang.String, data: js.Any): scala.Unit = js.native
 }
 

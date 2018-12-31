@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISettings extends js.Object {
   var custom: IAnimation
   var details: scala.Boolean

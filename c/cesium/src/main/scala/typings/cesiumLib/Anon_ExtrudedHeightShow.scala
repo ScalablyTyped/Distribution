@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ExtrudedHeightShow extends js.Object {
   var extrudedHeight: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
   var fill: js.UndefOr[scala.Boolean] = js.undefined

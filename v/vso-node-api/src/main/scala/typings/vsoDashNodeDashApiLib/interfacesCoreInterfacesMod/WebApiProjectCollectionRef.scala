@@ -5,23 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebApiProjectCollectionRef extends js.Object {
   /**
-       * Collection Tfs Url (Host Url)
-       */
+    * Collection Tfs Url (Host Url)
+    */
   var collectionUrl: java.lang.String
   /**
-       * Collection Guid
-       */
+    * Collection Guid
+    */
   var id: java.lang.String
   /**
-       * Collection Name
-       */
+    * Collection Name
+    */
   var name: java.lang.String
   /**
-       * Collection REST Url
-       */
+    * Collection REST Url
+    */
   var url: java.lang.String
 }
 

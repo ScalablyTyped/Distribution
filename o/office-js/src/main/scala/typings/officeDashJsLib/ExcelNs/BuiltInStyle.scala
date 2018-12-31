@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait BuiltInStyle extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.7]
-     */
+  * [Api set: ExcelApi 1.7]
+  */
 @JSGlobal("Excel.BuiltInStyle")
 @js.native
 object BuiltInStyle extends js.Object {

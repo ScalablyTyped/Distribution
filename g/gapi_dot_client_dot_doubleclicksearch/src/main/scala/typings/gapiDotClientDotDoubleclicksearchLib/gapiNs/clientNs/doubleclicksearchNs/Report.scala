@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Report extends js.Object {
   /** Asynchronous report only. Contains a list of generated report files once the report has succesfully completed. */
   var files: js.UndefOr[js.Array[gapiDotClientDotDoubleclicksearchLib.Anon_Url]] = js.undefined
@@ -22,9 +21,9 @@ trait Report extends js.Object {
   /** Synchronous report only. Generated report rows. */
   var rows: js.UndefOr[js.Array[ReportRow]] = js.undefined
   /**
-               * The currency code of all monetary values produced in the report, including values that are set by users (e.g., keyword bid settings) and metrics (e.g.,
-               * cost and revenue). The currency code of a report is determined by the statisticsCurrency field of the report request.
-               */
+    * The currency code of all monetary values produced in the report, including values that are set by users (e.g., keyword bid settings) and metrics (e.g.,
+    * cost and revenue). The currency code of a report is determined by the statisticsCurrency field of the report request.
+    */
   var statisticsCurrencyCode: js.UndefOr[java.lang.String] = js.undefined
   /** If all statistics of the report are sourced from the same time zone, this would be it. Otherwise the field is unset. */
   var statisticsTimeZone: js.UndefOr[java.lang.String] = js.undefined

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "Health")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class Health ()
   extends awsDashSdkLib.awsDashSdkMod.Health {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsHealthMod.HealthNs.ClientConfiguration) = this()
 }
 

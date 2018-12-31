@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebfontList extends js.Object {
   /** The list of fonts currently served by the Google Fonts API. */
   var items: js.UndefOr[js.Array[Webfont]] = js.undefined

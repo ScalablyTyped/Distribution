@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BasicProfile extends js.Object {
   def getEmail(): java.lang.String
   def getFamilyName(): java.lang.String

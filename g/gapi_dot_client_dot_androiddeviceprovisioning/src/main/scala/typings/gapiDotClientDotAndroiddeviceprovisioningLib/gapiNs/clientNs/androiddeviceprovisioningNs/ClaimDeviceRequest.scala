@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClaimDeviceRequest extends js.Object {
   /** The customer to claim for. */
   var customerId: js.UndefOr[java.lang.String] = js.undefined

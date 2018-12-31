@@ -619,7 +619,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the height of the control.
   	 *
   	 */
-  
   def igBaseEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -630,19 +629,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igBaseEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the height of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igBaseEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -849,7 +840,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
   	 *
   	 */
-  
   def igBaseEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue
@@ -860,19 +850,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igBaseEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igBaseEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
@@ -901,7 +883,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igBaseEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -912,19 +893,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igBaseEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igBaseEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -1067,7 +1040,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the width of the control.
   	 *
   	 */
-  
   def igBaseEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -1078,19 +1050,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igBaseEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the width of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igBaseEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -1387,7 +1351,6 @@ trait JQuery extends js.Object {
   /**
   	 * The height of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igBulletGraph(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -1397,18 +1360,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igBulletGraph(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The height of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igBulletGraph(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -1684,7 +1640,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the orientation of the scale.
   	 */
-  
   def igBulletGraph(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.orientation
@@ -1694,7 +1649,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igBulletGraph(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.orientation,
@@ -1835,7 +1789,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igBulletGraph(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -1846,19 +1799,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igBulletGraph(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igBulletGraph(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -2410,7 +2355,6 @@ trait JQuery extends js.Object {
   /**
   	 * The width of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igBulletGraph(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -2420,18 +2364,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igBulletGraph(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The width of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igBulletGraph(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -2645,7 +2582,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the type of chart series to generate from the data.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.chartType
@@ -2655,7 +2591,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.chartType,
@@ -2999,7 +2934,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the behavior for markers in each series which are placed too close together for the current view, resulting in a collision.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.markerCollisionAvoidance
@@ -3009,7 +2943,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.markerCollisionAvoidance,
@@ -3385,7 +3318,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  horizontal alignment which determines the subtitle position, relative to the left and right edges of the control.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.subtitleAlignment
@@ -3395,7 +3327,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.subtitleAlignment,
@@ -3540,7 +3471,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  horizontal alignment which determines the title position, relative to the left and right edges of the control.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.titleAlignment
@@ -3550,7 +3480,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.titleAlignment,
@@ -3794,7 +3723,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the method that determines how to animate series plots when the chart is loading into view
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.transitionInMode
@@ -3804,7 +3732,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.transitionInMode,
@@ -3813,7 +3740,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the arrival speed used for animating series plots when the chart is loading into view
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.transitionInSpeedType
@@ -3823,7 +3749,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.transitionInSpeedType,
@@ -3882,7 +3807,6 @@ trait JQuery extends js.Object {
   	 * Gets  the formula used for calculating trend lines in this chart.This property applies only to these chart types: point, line, spline, and bubble
   	 *
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.trendLineType
@@ -3893,7 +3817,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.trendLineType,
@@ -3903,7 +3826,6 @@ trait JQuery extends js.Object {
   	 * Gets  the behavior that determines how unknown values will be plotted on the chart.Null and Double.NaN are two examples of unknown values.
   	 *
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.unknownValuePlotting
@@ -3914,7 +3836,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.unknownValuePlotting,
@@ -4141,7 +4062,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Horizontal alignment of X-axis labels.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisLabelHorizontalAlignment
@@ -4151,7 +4071,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisLabelHorizontalAlignment,
@@ -4245,7 +4164,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Vertical alignment of X-axis labels.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisLabelVerticalAlignment
@@ -4255,7 +4173,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisLabelVerticalAlignment,
@@ -4264,7 +4181,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Visibility of X-axis labels.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisLabelVisibility
@@ -4274,7 +4190,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisLabelVisibility,
@@ -4508,7 +4423,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Horizontal alignment of the X-axis title.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisTitleAlignment
@@ -4518,7 +4432,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisTitleAlignment,
@@ -4818,7 +4731,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Horizontal alignment of Y-axis labels.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelHorizontalAlignment
@@ -4828,7 +4740,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelHorizontalAlignment,
@@ -4854,7 +4765,6 @@ trait JQuery extends js.Object {
   /**
   	 * The location of Y-axis labels, relative to the plot area.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelLocation
@@ -4864,7 +4774,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelLocation,
@@ -4941,7 +4850,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Vertical alignment of Y-axis labels.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelVerticalAlignment
@@ -4951,7 +4859,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelVerticalAlignment,
@@ -4960,7 +4867,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Visibility of Y-axis labels.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelVisibility
@@ -4970,7 +4876,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelVisibility,
@@ -5236,7 +5141,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Vertical alignment of the Y-axis title.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisTitleAlignment
@@ -5246,7 +5150,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisTitleAlignment,
@@ -5467,7 +5370,6 @@ trait JQuery extends js.Object {
   /**
   	 * Type of the legend.
   	 */
-  
   def igChartLegend(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`
@@ -5477,7 +5379,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igChartLegend(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`,
@@ -5486,7 +5387,6 @@ trait JQuery extends js.Object {
   /**
   	 * The height of the legend. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igChartLegend(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -5496,18 +5396,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igChartLegend(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The height of the legend. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igChartLegend(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -5679,7 +5572,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igChartLegend(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -5690,19 +5582,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igChartLegend(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igChartLegend(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -5728,7 +5612,6 @@ trait JQuery extends js.Object {
   /**
   	 * The width of the legend. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igChartLegend(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -5738,18 +5621,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igChartLegend(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The width of the legend. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igChartLegend(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -5866,7 +5742,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the height of the control.
   	 *
   	 */
-  
   def igCheckboxEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -5877,19 +5752,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCheckboxEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the height of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igCheckboxEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -6145,7 +6012,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igCheckboxEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -6156,19 +6022,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCheckboxEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igCheckboxEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -6212,7 +6070,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets size of the checkbox based on preset styles.For different sizes, define 'width' and 'height' options instead.
   	 *
   	 */
-  
   def igCheckboxEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.size
@@ -6223,7 +6080,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCheckboxEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.size,
@@ -6330,7 +6186,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the width of the control.
   	 *
   	 */
-  
   def igCheckboxEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -6341,19 +6196,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCheckboxEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the width of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igCheckboxEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -7210,7 +7057,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets drop-down list orientation when open button is clicked.
   	 *
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dropDownOrientation
@@ -7221,7 +7067,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dropDownOrientation,
@@ -7231,7 +7076,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the width of drop-down list in pixels.
   	 *
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dropDownWidth
@@ -7242,19 +7086,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dropDownWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the width of drop-down list in pixels.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dropDownWidth,
@@ -7343,7 +7179,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets condition used for filtering.Note: When [autoComplete](ui.igcombo#options:autoComplete) is enabled, the filtering condition is always "startsWith".
   	 *
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filteringCondition
@@ -7354,7 +7189,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filteringCondition,
@@ -7364,7 +7198,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets filtering logic.
   	 *
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filteringLogic
@@ -7375,7 +7208,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filteringLogic,
@@ -7385,7 +7217,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets type of filtering.Note: option is set to "remote", then the "css.waitFiltering" is applied to combo and its drop-down list.
   	 *
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filteringType
@@ -7396,7 +7227,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filteringType,
@@ -7525,7 +7355,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets height of combo. The numeric and string values (valid html units for size) are supported. It includes %, px, em and other units.
   	 *
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -7536,19 +7365,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets height of combo. The numeric and string values (valid html units for size) are supported. It includes %, px, em and other units.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -7558,7 +7379,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets condition used for highlighting of matching parts in items of drop-down list.
   	 *
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.highlightMatchesMode
@@ -7569,7 +7389,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.highlightMatchesMode,
@@ -7743,7 +7562,6 @@ trait JQuery extends js.Object {
   	 * Sets gets functionality mode.
   	 *
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode
@@ -7754,7 +7572,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode,
@@ -7844,7 +7661,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -7855,19 +7671,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -7959,7 +7767,6 @@ trait JQuery extends js.Object {
   	 * Response type when a URL is set as the data source. See http://api.jquery.com/jQuery.ajax/ => dataType.
   	 *
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.responseDataType
@@ -7970,7 +7777,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.responseDataType,
@@ -8217,7 +8023,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the width of combo. The numeric and string values (valid html units for size) are supported. It includes %, px, em and other units.
   	 *
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -8228,19 +8033,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the width of combo. The numeric and string values (valid html units for size) are supported. It includes %, px, em and other units.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igCombo(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -8502,7 +8299,6 @@ trait JQuery extends js.Object {
   	 * Gets visibility of the spin, clear and drop-down button. That option can be set only on initialization. Combinations like 'dropdown,spin' or 'spin,clear' are supported too.Note! This option can not be set runtime.
   	 *
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.buttonType
@@ -8513,7 +8309,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.buttonType,
@@ -8544,7 +8339,6 @@ trait JQuery extends js.Object {
   	 * In addition, the maximum value that can be set to [minDecimals](ui.igNumericEditor#options:minDecimals) and [maxDecimals](ui.igNumericEditor#options:maxDecimals) options can be 15, when editor is in 'double' mode and 7, when in 'float' mode.
   	 *
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataMode
@@ -8557,7 +8351,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataMode,
@@ -8678,7 +8471,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the drop-down list opening orientation when the list gets open. If the option is set to auto the editor has priority to open the drop-down list bottom. If the space is not enough it tries to open the list top. If the space is not enough in both directions then the list gets opened at the bottom of the editor.
   	 *
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dropDownOrientation
@@ -8689,7 +8481,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dropDownOrientation,
@@ -8776,7 +8567,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the height of the control.
   	 *
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -8787,19 +8577,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the height of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -9120,7 +8902,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
   	 *
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue
@@ -9131,19 +8912,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
@@ -9233,7 +9006,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -9244,19 +9016,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -9310,7 +9074,6 @@ trait JQuery extends js.Object {
   	 * Notes: The "+" character is not supported in edit mode.
   	 *
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.scientificFormat
@@ -9323,7 +9086,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.scientificFormat,
@@ -9333,7 +9095,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the action when the editor gets focused. The default value is selectAll.
   	 *
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionOnFocus
@@ -9344,7 +9105,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionOnFocus,
@@ -9455,7 +9215,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the horizontal alignment of the text in the editor.
   	 *
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.textAlign
@@ -9466,7 +9225,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.textAlign,
@@ -9588,7 +9346,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the width of the control.
   	 *
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -9599,19 +9356,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the width of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igCurrencyEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -9943,7 +9692,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  which type of hit testing the series should use.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.contentHitTestMode
@@ -9953,7 +9701,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.contentHitTestMode,
@@ -9983,7 +9730,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the current Chart's crosshair visibility override.  Note: setting this property does not affect the mobile browser version of the chart.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairVisibility
@@ -9993,7 +9739,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairVisibility,
@@ -10053,7 +9798,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the DefaultInteraction property. The default interaction state defines the chart's response to mouse events.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.defaultInteraction
@@ -10063,7 +9807,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.defaultInteraction,
@@ -10095,7 +9838,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the current Chart's DragModifier property.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dragModifier
@@ -10105,7 +9847,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dragModifier,
@@ -10155,7 +9896,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the GridMode property.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.gridMode
@@ -10165,7 +9905,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.gridMode,
@@ -10174,7 +9913,6 @@ trait JQuery extends js.Object {
   /**
   	 * The height of the chart. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -10184,18 +9922,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The height of the chart. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -10504,7 +10235,6 @@ trait JQuery extends js.Object {
   /**
   	 * The visibility of the OverviewPlusDetailPane.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.overviewPlusDetailPaneVisibility
@@ -10514,7 +10244,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.overviewPlusDetailPaneVisibility,
@@ -10523,7 +10252,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the current Chart's PanModifier property.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.panModifier
@@ -10533,7 +10261,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.panModifier,
@@ -10732,7 +10459,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -10743,19 +10469,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -11077,7 +10795,6 @@ trait JQuery extends js.Object {
   /**
   	 * The horizontal alignment to use for the subtitle.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.subtitleHorizontalAlignment
@@ -11087,7 +10804,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.subtitleHorizontalAlignment,
@@ -11306,7 +11022,6 @@ trait JQuery extends js.Object {
   /**
   	 * The horizontal alignment to use for the title.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.titleHorizontalAlignment
@@ -11316,7 +11031,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.titleHorizontalAlignment,
@@ -11651,7 +11365,6 @@ trait JQuery extends js.Object {
   /**
   	 * The width of the chart. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -11661,18 +11374,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The width of the chart. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -11799,7 +11505,6 @@ trait JQuery extends js.Object {
   	 * The response to user panning and zooming: whether to update the view immediately while the user action is happening, or to defer the update to after the user action is complete.  The user action will be an action such as a mouse drag which causes panning and/or zooming to occur.
   	 *
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.windowResponse
@@ -11810,7 +11515,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDataChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.windowResponse,
@@ -12217,7 +11921,6 @@ trait JQuery extends js.Object {
   	 * Gets visibility of the spin and clear buttons. That option can be set only on initialization. Combinations like 'spin,clear' are supported too.
   	 *
   	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.buttonType
@@ -12228,7 +11931,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.buttonType,
@@ -12264,7 +11966,6 @@ trait JQuery extends js.Object {
   	 * "2016-11-11T10:00:00+05:00"
   	 *
   	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataMode
@@ -12278,7 +11979,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataMode,
@@ -12723,7 +12423,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the height of the control.
   	 *
   	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -12734,19 +12433,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the height of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -13005,7 +12696,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
   	 *
   	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue
@@ -13016,31 +12706,16 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
     optionValue: scala.Double
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
@@ -13124,7 +12799,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -13135,19 +12809,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -13176,7 +12842,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the action when the editor gets focused. The default value is selectAll.
   	 *
   	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionOnFocus
@@ -13187,7 +12852,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionOnFocus,
@@ -13209,30 +12873,10 @@ trait JQuery extends js.Object {
   	 * Time periods that don't have values use 1 as default.
   	 *
   	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.spinDelta
   ): scala.Double | js.Object = js.native
-  /**
-  	 * /Sets delta-value which is used to increment or decrement the editor date on spin actions.When not editing (focused) the delta is applied on the day if available in the input mask or the lowest available period.
-  	 * When in edit mode the time period, where the cursor is positioned, is incremented or decremented with the defined delta value.
-  	 * Accepted values for deltas are positive integer numbers, and the fractional portion of floating point numbers is ignored.
-  	 * spinDelta: {
-  	 * year: 4,
-  	 * month: 3,
-  	 * day: 10,
-  	 * hours: 12,
-  	 * minutes: 15,
-  	 * seconds: 10,
-  	 * milliseconds: 100
-  	 * }
-  	 * Time periods that don't have values use 1 as default.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.spinDelta,
@@ -13256,7 +12900,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.spinDelta,
@@ -13330,7 +12973,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the horizontal alignment of the text in the editor.
   	 *
   	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.textAlign
@@ -13341,7 +12983,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.textAlign,
@@ -13478,7 +13119,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the width of the control.
   	 *
   	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -13489,19 +13129,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the width of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDateEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -13603,7 +13235,6 @@ trait JQuery extends js.Object {
   	 * Gets visibility of the spin, clear and drop-down button. That option can be set only on initialization. Combinations like 'dropdown,spin' or 'spin,clear' are supported too.
   	 *
   	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.buttonType
@@ -13614,7 +13245,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.buttonType,
@@ -13650,7 +13280,6 @@ trait JQuery extends js.Object {
   	 * "2016-11-11T10:00:00+05:00"
   	 *
   	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataMode
@@ -13664,7 +13293,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataMode,
@@ -14132,7 +13760,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the height of the control.
   	 *
   	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -14143,19 +13770,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the height of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -14431,7 +14050,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
   	 *
   	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue
@@ -14442,31 +14060,16 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
     optionValue: scala.Double
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
@@ -14550,7 +14153,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -14561,19 +14163,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -14602,7 +14196,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the action when the editor gets focused. The default value is selectAll.
   	 *
   	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionOnFocus
@@ -14613,7 +14206,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionOnFocus,
@@ -14635,30 +14227,10 @@ trait JQuery extends js.Object {
   	 * Time periods that don't have values use 1 as default.
   	 *
   	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.spinDelta
   ): scala.Double | js.Object = js.native
-  /**
-  	 * /Sets delta-value which is used to increment or decrement the editor date on spin actions.When not editing (focused) the delta is applied on the day if available in the input mask or the lowest available period.
-  	 * When in edit mode the time period, where the cursor is positioned, is incremented or decremented with the defined delta value.
-  	 * Accepted values for deltas are positive integer numbers, and the fractional portion of floating point numbers is ignored.
-  	 * spinDelta: {
-  	 * year: 4,
-  	 * month: 3,
-  	 * day: 10,
-  	 * hours: 12,
-  	 * minutes: 15,
-  	 * seconds: 10,
-  	 * milliseconds: 100
-  	 * }
-  	 * Time periods that don't have values use 1 as default.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.spinDelta,
@@ -14682,7 +14254,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.spinDelta,
@@ -14768,7 +14339,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the horizontal alignment of the text in the editor.
   	 *
   	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.textAlign
@@ -14779,7 +14349,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.textAlign,
@@ -14916,7 +14485,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the width of the control.
   	 *
   	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -14927,19 +14495,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the width of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDatePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -15276,19 +14836,10 @@ trait JQuery extends js.Object {
   	 * In case of "%", the size of browser window is used and it has effect only on open action.
   	 *
   	 */
-  
   def igDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * /Sets the initial height of the dialog in pixels for normal state.Besides numeric values, following units are supported: "px", "em" and "%".
-  	 * In case of "%", the size of browser window is used and it has effect only on open action.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -15301,7 +14852,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -15631,7 +15181,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -15642,19 +15191,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -15816,7 +15357,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the state of the dialog.Note: when the dialog is modal, then pinned and minimized states are not supported, because that will trigger misbehavior.
   	 *
   	 */
-  
   def igDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.state
@@ -15863,7 +15403,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.state,
@@ -15958,19 +15497,10 @@ trait JQuery extends js.Object {
   	 * In case of "%", the size of browser window is used and it has effect only on open action.
   	 *
   	 */
-  
   def igDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * /Sets the initial width of the dialog in pixels for normal state.Besides numeric values, following units are supported: "px", "em" and "%".
-  	 * In case of "%", the size of browser window is used and it has effect only on open action.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -15983,7 +15513,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -16221,7 +15750,6 @@ trait JQuery extends js.Object {
   /**
   	 * The height of the chart. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igDoughnutChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -16231,18 +15759,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDoughnutChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The height of the chart. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDoughnutChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -16628,7 +16149,6 @@ trait JQuery extends js.Object {
   /**
   	 * The width of the chart. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igDoughnutChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -16638,18 +16158,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igDoughnutChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The width of the chart. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igDoughnutChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -16866,7 +16379,6 @@ trait JQuery extends js.Object {
   /**
   	 * The type of price series to display in the main chart.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.chartType
@@ -16885,7 +16397,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.chartType,
@@ -17941,7 +17452,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  horizontal alignment which determines the subtitle position, relative to the left and right edges of the control.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.subtitleAlignment
@@ -17951,7 +17461,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.subtitleAlignment,
@@ -18096,7 +17605,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  horizontal alignment which determines the title position, relative to the left and right edges of the control.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.titleAlignment
@@ -18106,7 +17614,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.titleAlignment,
@@ -18382,7 +17889,6 @@ trait JQuery extends js.Object {
   	 * Gets  the formula used for calculating trend lines in this chart.This property applies only to these chart types: point, line, spline, and bubble
   	 *
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.trendLineType
@@ -18402,7 +17908,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.trendLineType,
@@ -18412,7 +17917,6 @@ trait JQuery extends js.Object {
   	 * Gets  the behavior that determines how unknown values will be plotted on the chart.Null and Double.NaN are two examples of unknown values.
   	 *
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.unknownValuePlotting
@@ -18423,7 +17927,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.unknownValuePlotting,
@@ -18520,7 +18023,6 @@ trait JQuery extends js.Object {
   /**
   	 * The type of series to display in the volume pane.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.volumeType
@@ -18539,7 +18041,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.volumeType,
@@ -18695,7 +18196,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Horizontal alignment of X-axis labels.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisLabelHorizontalAlignment
@@ -18705,7 +18205,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisLabelHorizontalAlignment,
@@ -18799,7 +18298,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Vertical alignment of X-axis labels.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisLabelVerticalAlignment
@@ -18809,7 +18307,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisLabelVerticalAlignment,
@@ -18818,7 +18315,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Visibility of X-axis labels.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisLabelVisibility
@@ -18828,7 +18324,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisLabelVisibility,
@@ -18915,7 +18410,6 @@ trait JQuery extends js.Object {
   /**
   	 * The scaling mode of the X-axis.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisMode
@@ -18925,7 +18419,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisMode,
@@ -19043,7 +18536,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Horizontal alignment of the X-axis title.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisTitleAlignment
@@ -19053,7 +18545,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisTitleAlignment,
@@ -19353,7 +18844,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Horizontal alignment of Y-axis labels.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelHorizontalAlignment
@@ -19363,7 +18853,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelHorizontalAlignment,
@@ -19389,7 +18878,6 @@ trait JQuery extends js.Object {
   /**
   	 * The location of Y-axis labels, relative to the plot area.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelLocation
@@ -19399,7 +18887,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelLocation,
@@ -19476,7 +18963,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Vertical alignment of Y-axis labels.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelVerticalAlignment
@@ -19486,7 +18972,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelVerticalAlignment,
@@ -19495,7 +18980,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Visibility of Y-axis labels.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelVisibility
@@ -19505,7 +18989,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelVisibility,
@@ -19662,7 +19145,6 @@ trait JQuery extends js.Object {
   /**
   	 * The scaling mode of the Y-axis.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisMode
@@ -19672,7 +19154,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisMode,
@@ -19790,7 +19271,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Vertical alignment of the Y-axis title.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisTitleAlignment
@@ -19800,7 +19280,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisTitleAlignment,
@@ -19955,7 +19434,6 @@ trait JQuery extends js.Object {
   /**
   	 * The type of series to display in the zoom slider pane.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.zoomSliderType
@@ -19965,7 +19443,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.zoomSliderType,
@@ -20277,7 +19754,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  how the heights of the funnel slices should be configured.
   	 */
-  
   def igFunnelChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.funnelSliceDisplay
@@ -20287,7 +19763,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFunnelChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.funnelSliceDisplay,
@@ -20357,7 +19832,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  whether the inner labels are visible.
   	 */
-  
   def igFunnelChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.innerLabelVisibility
@@ -20367,7 +19841,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFunnelChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.innerLabelVisibility,
@@ -20502,7 +19975,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  which side of the chart the outer labels should appear.
   	 */
-  
   def igFunnelChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.outerLabelAlignment
@@ -20512,7 +19984,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFunnelChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.outerLabelAlignment,
@@ -20572,7 +20043,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  whether the outer labels are visible.
   	 */
-  
   def igFunnelChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.outerLabelVisibility
@@ -20582,7 +20052,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igFunnelChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.outerLabelVisibility,
@@ -21115,7 +20584,6 @@ trait JQuery extends js.Object {
   	 * Sets gets ability to automatically format text in cells for numeric and date columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. [Here column formatting is explained in details](http://www.igniteui.com/help/iggrid-columns-and-layout#column-formatting)
   	 *
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.autoFormat
@@ -21126,19 +20594,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.autoFormat,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Sets gets ability to automatically format text in cells for numeric and date columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. [Here column formatting is explained in details](http://www.igniteui.com/help/iggrid-columns-and-layout#column-formatting)
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.autoFormat,
@@ -21190,7 +20650,6 @@ trait JQuery extends js.Object {
   	 * Used for [column virtualization](ui.iggrid#options:columnVirtualization) in [fixed mode](ui.iggrid#options:virtualizationMode). This is the average value in pixels for a column width.
   	 *
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.avgColumnWidth
@@ -21201,19 +20660,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.avgColumnWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Used for [column virtualization](ui.iggrid#options:columnVirtualization) in [fixed mode](ui.iggrid#options:virtualizationMode). This is the average value in pixels for a column width.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.avgColumnWidth,
@@ -21223,7 +20674,6 @@ trait JQuery extends js.Object {
   	 * Used for [row virtualization](ui.iggrid#options:rowVirtualization) in [fixed mode](ui.iggrid#options:virtualizationMode). This is the average value in pixels (default) that will be used to calculate how many rows to render as the end user scrolls. Also all rows' height will be automatically set to this value.
   	 *
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.avgRowHeight
@@ -21234,19 +20684,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.avgRowHeight,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Used for [row virtualization](ui.iggrid#options:rowVirtualization) in [fixed mode](ui.iggrid#options:virtualizationMode). This is the average value in pixels (default) that will be used to calculate how many rows to render as the end user scrolls. Also all rows' height will be automatically set to this value.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.avgRowHeight,
@@ -21491,7 +20933,6 @@ trait JQuery extends js.Object {
   	 * Can be any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an $.ig.DataSource itself
   	 *
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataSource
@@ -21534,13 +20975,6 @@ trait JQuery extends js.Object {
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataSourceUrl,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Can be any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an $.ig.DataSource itself
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataSource,
@@ -21552,19 +20986,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataSource,
     optionValue: js.Array[_]
   ): scala.Unit = js.native
-  /**
-  	 * Can be any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an $.ig.DataSource itself
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataSource,
@@ -21574,7 +21000,6 @@ trait JQuery extends js.Object {
   	 * Default column width that will be set for all columns, that don't have [column width](ui.iggrid#options:columns.width) defined. Can also be set as '*', in which case the width auto-size based on the content of the column cells (including the header text).
   	 *
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.defaultColumnWidth
@@ -21585,19 +21010,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.defaultColumnWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Default column width that will be set for all columns, that don't have [column width](ui.iggrid#options:columns.width) defined. Can also be set as '*', in which case the width auto-size based on the content of the column cells (including the header text).
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.defaultColumnWidth,
@@ -21681,7 +21098,6 @@ trait JQuery extends js.Object {
   	 * Configures how the feature chooser icon should display on header cells - e.g. to display as gear icon or not.
   	 *
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.featureChooserIconDisplay
@@ -21692,7 +21108,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.featureChooserIconDisplay,
@@ -21850,7 +21265,6 @@ trait JQuery extends js.Object {
   	 * This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row - (if any), etc. [Here you can find more info about setting igGrid height](http://www.igniteui.com/help/iggrid-columns-and-layout#width-height).
   	 *
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -21861,19 +21275,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row - (if any), etc. [Here you can find more info about setting igGrid height](http://www.igniteui.com/help/iggrid-columns-and-layout#width-height).
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -21999,7 +21405,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -22010,19 +21415,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -22382,7 +21779,6 @@ trait JQuery extends js.Object {
   	 * The templating engine that will be used to render the grid [column templates](ui.iggrid#options:columns.template). [Here you can find](http://www.infragistics.com/community/blogs/marina_stoyanova/archive/2014/05/30/using-different-template-engines-with-ignite-ui-controls.aspx) how to use templating engines other than igTemplating and jsRender.
   	 *
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.templatingEngine
@@ -22393,7 +21789,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.templatingEngine,
@@ -22430,7 +21825,6 @@ trait JQuery extends js.Object {
   	 * Determines row virtualization mode.
   	 *
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.virtualizationMode
@@ -22441,7 +21835,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.virtualizationMode,
@@ -22481,7 +21874,6 @@ trait JQuery extends js.Object {
   	 * Defines the grid width in pixels or percents. [Here you can find more info about setting igGrid width](http://www.igniteui.com/help/iggrid-columns-and-layout#width-height).
   	 *
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -22492,19 +21884,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Defines the grid width in pixels or percents. [Here you can find more info about setting igGrid width](http://www.igniteui.com/help/iggrid-columns-and-layout#width-height).
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -22516,7 +21900,6 @@ trait JQuery extends js.Object {
   	 * Defines local or remote type of appending rows on demand in igGrid
   	 *
   	 */
-  
   def igGridAppendRowsOnDemand(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`
@@ -22527,7 +21910,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridAppendRowsOnDemand(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`,
@@ -22651,7 +22033,6 @@ trait JQuery extends js.Object {
   	 * Denotes the append rows on demand request method
   	 *
   	 */
-  
   def igGridAppendRowsOnDemand(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.loadTrigger
@@ -22662,7 +22043,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridAppendRowsOnDemand(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.loadTrigger,
@@ -22852,7 +22232,6 @@ trait JQuery extends js.Object {
   	 * Defines when merging should be applied.
   	 *
   	 */
-  
   def igGridCellMerging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mergeOn
@@ -22863,7 +22242,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridCellMerging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mergeOn,
@@ -22892,7 +22270,6 @@ trait JQuery extends js.Object {
   	 * Defines the rules merging is based on.
   	 *
   	 */
-  
   def igGridCellMerging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mergeStrategy
@@ -22903,19 +22280,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridCellMerging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mergeStrategy,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Defines the rules merging is based on.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridCellMerging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mergeStrategy,
@@ -22925,7 +22294,6 @@ trait JQuery extends js.Object {
   	 * Defines the type of merging.
   	 *
   	 */
-  
   def igGridCellMerging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mergeType
@@ -22936,7 +22304,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridCellMerging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mergeType,
@@ -22946,7 +22313,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igGridCellMerging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -22957,19 +22323,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridCellMerging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridCellMerging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -22979,7 +22337,6 @@ trait JQuery extends js.Object {
   	 * Defines the rules merging is based on.
   	 *
   	 */
-  
   def igGridCellMerging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.rowMergeStrategy
@@ -22990,19 +22347,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridCellMerging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.rowMergeStrategy,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Defines the rules merging is based on.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridCellMerging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.rowMergeStrategy,
@@ -23224,7 +22573,6 @@ trait JQuery extends js.Object {
   	 * Configures which side the fixed columns of the grid will be rendered on. Check [this topic](http://www.igniteui.com/help/iggrid-columnfixing-configuring#direction) out of more information.
   	 *
   	 */
-  
   def igGridColumnFixing(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.fixingDirection
@@ -23235,7 +22583,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridColumnFixing(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.fixingDirection,
@@ -23311,7 +22658,6 @@ trait JQuery extends js.Object {
   	 * Minimal visible area in pixels for the unfixed columns. If the end user tries to fix a column(or columns), which causes the width of the fixed columns to grow such that the width of visible area of unfixed columns is less than this option then fixing will be canceled. Check [this topic](http://www.igniteui.com/help/iggrid-columnfixing-configuring#non-fixable-min-width) out for more information.
   	 *
   	 */
-  
   def igGridColumnFixing(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minimalVisibleAreaWidth
@@ -23322,19 +22668,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridColumnFixing(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minimalVisibleAreaWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Minimal visible area in pixels for the unfixed columns. If the end user tries to fix a column(or columns), which causes the width of the fixed columns to grow such that the width of visible area of unfixed columns is less than this option then fixing will be canceled. Check [this topic](http://www.igniteui.com/help/iggrid-columnfixing-configuring#non-fixable-min-width) out for more information.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridColumnFixing(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minimalVisibleAreaWidth,
@@ -23361,7 +22699,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igGridColumnFixing(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -23372,19 +22709,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridColumnFixing(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridColumnFixing(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -23901,7 +23230,6 @@ trait JQuery extends js.Object {
   	 * Specify the drag-and-drop mode for the feature
   	 *
   	 */
-  
   def igGridColumnMoving(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode
@@ -23912,7 +23240,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridColumnMoving(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode,
@@ -23922,7 +23249,6 @@ trait JQuery extends js.Object {
   	 * Specify the way columns will be rearranged
   	 *
   	 */
-  
   def igGridColumnMoving(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.moveType
@@ -23933,7 +23259,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridColumnMoving(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.moveType,
@@ -24358,7 +23683,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igGridColumnMoving(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -24369,19 +23693,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridColumnMoving(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridColumnMoving(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -24598,7 +23914,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igGridFeatureChooser(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -24609,19 +23924,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFeatureChooser(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridFeatureChooser(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -24652,7 +23959,6 @@ trait JQuery extends js.Object {
   	 * Controls where the popover DOM should be attached to.
   	 *
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.appendTo
@@ -24663,19 +23969,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.appendTo,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Controls where the popover DOM should be attached to.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.appendTo,
@@ -24703,7 +24001,6 @@ trait JQuery extends js.Object {
   	 * The content for the popover container. If left null the content will be get from the target.
   	 *
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.contentTemplate
@@ -24714,19 +24011,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.contentTemplate,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Sets the content for the popover container. If left null the content will be get from the target.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.contentTemplate,
@@ -24736,7 +24025,6 @@ trait JQuery extends js.Object {
   	 * Controls the direction in which the control shows relative to the target element
   	 *
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.direction
@@ -24768,7 +24056,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.direction,
@@ -24806,18 +24093,10 @@ trait JQuery extends js.Object {
   	 * Defines height for the popover. leave null for auto
   	 *
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Defines height for the popover. leave null for auto
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -24829,7 +24108,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -24873,18 +24151,10 @@ trait JQuery extends js.Object {
   	 * Defines height the popover won't exceed even if no specific one is set.
   	 *
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maxHeight
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Defines height the popover won't exceed even if no specific one is set.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maxHeight,
@@ -24896,7 +24166,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maxHeight,
@@ -24906,18 +24175,10 @@ trait JQuery extends js.Object {
   	 * Defines width the popover won't exceed even if no specific one is set.
   	 *
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maxWidth
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Defines width the popover won't exceed even if no specific one is set.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maxWidth,
@@ -24929,7 +24190,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maxWidth,
@@ -24939,18 +24199,10 @@ trait JQuery extends js.Object {
   	 * Defines width the popover won't go under the value even if no specific one is set.
   	 *
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minWidth
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Defines width the popover won't go under the value even if no specific one is set.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minWidth,
@@ -24962,7 +24214,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minWidth,
@@ -24972,7 +24223,6 @@ trait JQuery extends js.Object {
   	 * Controls the position of the popover according to the target element in case the popover is larger than the target on the side we want to position, if the popover is smaller it should always be in the middle of the visible area
   	 *
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.position
@@ -24983,7 +24233,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.position,
@@ -25012,7 +24261,6 @@ trait JQuery extends js.Object {
   	 * The event on which the popover will be shown. Predefined values are "mouseenter", "click" and "focus"
   	 *
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.showOn
@@ -25023,7 +24271,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.showOn,
@@ -25076,18 +24323,10 @@ trait JQuery extends js.Object {
   	 * Defines width for the popover. leave null for auto.
   	 *
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Defines width for the popover. leave null for auto.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -25099,7 +24338,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFeatureChooserPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -25184,7 +24422,6 @@ trait JQuery extends js.Object {
   	 * Type of filtering. Delegates all filtering functionality to the [$.ig.DataSource](ig.datasource).
   	 *
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`
@@ -25195,7 +24432,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`,
@@ -25224,7 +24460,6 @@ trait JQuery extends js.Object {
   	 * Location of the advanced filtering button when [advancedModeEditorsVisible](ui.iggridfiltering#options:advancedModeEditorsVisible) is false (i.e. when the button is rendered in the header).
   	 *
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.advancedModeHeaderButtonLocation
@@ -25235,7 +24470,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.advancedModeHeaderButtonLocation,
@@ -25467,7 +24701,6 @@ trait JQuery extends js.Object {
   	 * The filtering button for filter dropdowns can be rendered either on the left of the filter editor, or on the right.
   	 *
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterButtonLocation
@@ -25478,7 +24711,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterButtonLocation,
@@ -25507,7 +24739,6 @@ trait JQuery extends js.Object {
   	 * Add button width - in the advanced filter dialog.
   	 *
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogAddButtonWidth
@@ -25518,19 +24749,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogAddButtonWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Add button width - in the advanced filter dialog.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogAddButtonWidth,
@@ -25614,7 +24837,6 @@ trait JQuery extends js.Object {
   	 * Width of the column chooser dropdowns in the advanced filter dialog.
   	 *
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogColumnDropDownDefaultWidth
@@ -25625,19 +24847,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogColumnDropDownDefaultWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Width of the column chooser dropdowns in the advanced filter dialog.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogColumnDropDownDefaultWidth,
@@ -25706,7 +24920,6 @@ trait JQuery extends js.Object {
   	 * Width of the filtering expression input boxes in the advanced filter dialog.
   	 *
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogExprInputDefaultWidth
@@ -25717,19 +24930,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogExprInputDefaultWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Width of the filtering expression input boxes in the advanced filter dialog.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogExprInputDefaultWidth,
@@ -25794,7 +24999,6 @@ trait JQuery extends js.Object {
   	 * Width of the filtering condition dropdowns in the advanced filter dialog.
   	 *
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogFilterDropDownDefaultWidth
@@ -25805,19 +25009,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogFilterDropDownDefaultWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Width of the filtering condition dropdowns in the advanced filter dialog.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogFilterDropDownDefaultWidth,
@@ -25871,7 +25067,6 @@ trait JQuery extends js.Object {
   	 * Default filter dialog height (used for Advanced filtering [mode](ui.iggridfiltering#options:mode)).
   	 *
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogHeight
@@ -25882,19 +25077,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogHeight,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Default filter dialog height (used for Advanced filtering [mode](ui.iggridfiltering#options:mode)).
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogHeight,
@@ -25940,7 +25127,6 @@ trait JQuery extends js.Object {
   	 * Width of the Ok and Cancel buttons in the advanced filtering dialogs.
   	 *
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogOkCancelButtonWidth
@@ -25951,19 +25137,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogOkCancelButtonWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Width of the Ok and Cancel buttons in the advanced filtering dialogs.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogOkCancelButtonWidth,
@@ -26009,7 +25187,6 @@ trait JQuery extends js.Object {
   	 * Default filter dialog width (used for Advanced filtering [mode](ui.iggridfiltering#options:mode)).
   	 *
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogWidth
@@ -26020,19 +25197,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Default filter dialog width (used for Advanced filtering [mode](ui.iggridfiltering#options:mode)).
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogWidth,
@@ -26061,7 +25230,6 @@ trait JQuery extends js.Object {
   	 * Type of animations for the column filter dropdowns.
   	 *
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDropDownAnimations
@@ -26072,7 +25240,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDropDownAnimations,
@@ -26105,7 +25272,6 @@ trait JQuery extends js.Object {
   	 * Enable/disable filter icons visibility.
   	 *
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDropDownItemIcons
@@ -26116,7 +25282,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDropDownItemIcons,
@@ -26126,7 +25291,6 @@ trait JQuery extends js.Object {
   	 * Width of the column filter dropdowns.
   	 *
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDropDownWidth
@@ -26137,19 +25301,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDropDownWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Width of the column filter dropdowns.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDropDownWidth,
@@ -26286,7 +25442,6 @@ trait JQuery extends js.Object {
   	 * Default is 'simple' for non-virtualized grids, and 'advanced' when [virtualization](ui.iggrid#options:virtualization) is enabled.
   	 *
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode
@@ -26297,7 +25452,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode,
@@ -26345,7 +25499,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -26356,19 +25509,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -26522,7 +25667,6 @@ trait JQuery extends js.Object {
   	 * Gets whether the GroupBy operation takes place locally on client-side or remotely on server-side.
   	 *
   	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`
@@ -26533,7 +25677,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`,
@@ -26581,7 +25724,6 @@ trait JQuery extends js.Object {
   	 * Default sort order - ascending or descending
   	 *
   	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.defaultSortingDirection
@@ -26592,7 +25734,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.defaultSortingDirection,
@@ -26678,7 +25819,6 @@ trait JQuery extends js.Object {
   	 * Sets the place in the grid where the GroupBy area will be
   	 *
   	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.groupByAreaVisibility
@@ -26689,7 +25829,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.groupByAreaVisibility,
@@ -26699,7 +25838,6 @@ trait JQuery extends js.Object {
   	 * Controls containment behavior for the GroupBy Dialog.
   	 *
   	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.groupByDialogContainment
@@ -26710,7 +25848,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.groupByDialogContainment,
@@ -26805,7 +25942,6 @@ trait JQuery extends js.Object {
   	 * Gets the groupSummaries postion inside each group.
   	 *
   	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.groupSummariesPosition
@@ -26816,7 +25952,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.groupSummariesPosition,
@@ -27414,7 +26549,6 @@ trait JQuery extends js.Object {
   	 * Gets height of the GroupBy Dialog
   	 *
   	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.modalDialogHeight
@@ -27425,19 +26559,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.modalDialogHeight,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Sets height of the GroupBy Dialog
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.modalDialogHeight,
@@ -27568,7 +26694,6 @@ trait JQuery extends js.Object {
   	 * Gets width of the GroupBy Dialog
   	 *
   	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.modalDialogWidth
@@ -27579,19 +26704,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.modalDialogWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Sets width of the GroupBy Dialog
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.modalDialogWidth,
@@ -27601,7 +26718,6 @@ trait JQuery extends js.Object {
   	 * Gets when paging is applied and there is at least one grouped column which records should be included in page processing.
   	 *
   	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.pagingMode
@@ -27612,7 +26728,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.pagingMode,
@@ -27641,7 +26756,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -27652,19 +26766,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridGroupBy(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -28497,7 +27603,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igGridHiding(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -28508,19 +27613,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridHiding(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridHiding(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -28860,7 +27957,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igGridModalDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -28871,19 +27967,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridModalDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridModalDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -29080,7 +28168,6 @@ trait JQuery extends js.Object {
   	 * Type of paging. Delegates all paging functionality to the [$.ig.DataSource](ig.datasource).
   	 *
   	 */
-  
   def igGridPaging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`
@@ -29091,7 +28178,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridPaging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`,
@@ -29515,7 +28601,6 @@ trait JQuery extends js.Object {
   	 * Page size dropdown location, when [showPageSizeDropDown](ui.iggridpaging#options:showPageSizeDropDown) is set to true. Can be rendered above the grid header or inside the pager, next to the page links.
   	 *
   	 */
-  
   def igGridPaging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.pageSizeDropDownLocation
@@ -29526,7 +28611,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridPaging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.pageSizeDropDownLocation,
@@ -29798,7 +28882,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igGridPaging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -29809,19 +28892,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridPaging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridPaging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -30136,7 +29211,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igGridResizing(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -30147,19 +29221,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridResizing(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridResizing(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -30288,7 +29354,6 @@ trait JQuery extends js.Object {
   	 * The width of the properties column when vertical rendering is enabled
   	 *
   	 */
-  
   def igGridResponsive(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.propertiesColumnWidth
@@ -30299,19 +29364,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridResponsive(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.propertiesColumnWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The width of the properties column when vertical rendering is enabled
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridResponsive(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.propertiesColumnWidth,
@@ -30482,7 +29539,6 @@ trait JQuery extends js.Object {
   	 * The width of the values column when vertical rendering is enabled
   	 *
   	 */
-  
   def igGridResponsive(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.valuesColumnWidth
@@ -30493,19 +29549,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridResponsive(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.valuesColumnWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The width of the values column when vertical rendering is enabled
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridResponsive(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.valuesColumnWidth,
@@ -30515,7 +29563,6 @@ trait JQuery extends js.Object {
   	 * The window's width under which the grid will render its contents vertically.
   	 *
   	 */
-  
   def igGridResponsive(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.windowWidthToRenderVertically
@@ -30526,19 +29573,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridResponsive(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.windowWidthToRenderVertically,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The window's width under which the grid will render its contents vertically.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridResponsive(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.windowWidthToRenderVertically,
@@ -30767,7 +29806,6 @@ trait JQuery extends js.Object {
   	 * Defines width of the row selector`s column in pixels or percentage.
   	 *
   	 */
-  
   def igGridRowSelectors(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.rowSelectorColumnWidth
@@ -30778,19 +29816,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridRowSelectors(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.rowSelectorColumnWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Defines width of the row selector`s column in pixels or percentage.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridRowSelectors(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.rowSelectorColumnWidth,
@@ -31008,7 +30038,6 @@ trait JQuery extends js.Object {
   	 * Defines type of the selection.
   	 *
   	 */
-  
   def igGridSelection(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode
@@ -31019,7 +30048,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridSelection(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode,
@@ -31272,7 +30300,6 @@ trait JQuery extends js.Object {
   	 * Defines local or remote sorting operations.
   	 *
   	 */
-  
   def igGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`
@@ -31283,7 +30310,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`,
@@ -31487,7 +30513,6 @@ trait JQuery extends js.Object {
   	 * Gets which direction to use on the first click / keydown, if the column is sorted for the first time.
   	 *
   	 */
-  
   def igGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.firstSortDirection
@@ -31498,7 +30523,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.firstSortDirection,
@@ -31819,7 +30843,6 @@ trait JQuery extends js.Object {
   	 * Gets height of multiple sorting dialog.
   	 *
   	 */
-  
   def igGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.modalDialogHeight
@@ -31830,19 +30853,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.modalDialogHeight,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Sets height of multiple sorting dialog.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.modalDialogHeight,
@@ -31998,7 +31013,6 @@ trait JQuery extends js.Object {
   	 * Gets width of multiple sorting dialog.
   	 *
   	 */
-  
   def igGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.modalDialogWidth
@@ -32009,19 +31023,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.modalDialogWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Sets width of multiple sorting dialog.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.modalDialogWidth,
@@ -32031,7 +31037,6 @@ trait JQuery extends js.Object {
   	 * Defines single column sorting or multiple column sorting.
   	 *
   	 */
-  
   def igGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode
@@ -32042,7 +31047,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode,
@@ -32071,7 +31075,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -32082,19 +31085,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -32255,7 +31250,6 @@ trait JQuery extends js.Object {
   	 * Type of summaries calculating.
   	 *
   	 */
-  
   def igGridSummaries(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`
@@ -32266,7 +31260,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridSummaries(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`,
@@ -32276,7 +31269,6 @@ trait JQuery extends js.Object {
   	 * Gets when calculations are made.
   	 *
   	 */
-  
   def igGridSummaries(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.calculateRenderMode
@@ -32287,7 +31279,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridSummaries(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.calculateRenderMode,
@@ -32673,7 +31664,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igGridSummaries(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -32684,19 +31674,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridSummaries(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridSummaries(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -32706,7 +31688,6 @@ trait JQuery extends js.Object {
   	 * A reference or name of a javascript function - renders summary cell in grid footer.(if not set it is used default render function) It takes 3 parameters - methodName(summary method), columnKey, data(summary data which should be rendered)
   	 *
   	 */
-  
   def igGridSummaries(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.renderSummaryCellFunc
@@ -32717,19 +31698,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridSummaries(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.renderSummaryCellFunc,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * A reference or name of a javascript function - renders summary cell in grid footer.(if not set it is used default render function) It takes 3 parameters - methodName(summary method), columnKey, data(summary data which should be rendered)
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridSummaries(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.renderSummaryCellFunc,
@@ -32925,7 +31898,6 @@ trait JQuery extends js.Object {
   	 * Determines when the summary values are calculated when type is local
   	 *
   	 */
-  
   def igGridSummaries(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.summaryExecution
@@ -32936,7 +31908,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridSummaries(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.summaryExecution,
@@ -33162,7 +32133,6 @@ trait JQuery extends js.Object {
   	 * Controls the tooltip's style
   	 *
   	 */
-  
   def igGridTooltips(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.style
@@ -33173,7 +32143,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridTooltips(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.style,
@@ -33251,7 +32220,6 @@ trait JQuery extends js.Object {
   	 * Determines the tooltip visibility option
   	 *
   	 */
-  
   def igGridTooltips(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.visibility
@@ -33262,7 +32230,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridTooltips(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.visibility,
@@ -33585,7 +32552,6 @@ trait JQuery extends js.Object {
   	 * Gets the edit mode.
   	 *
   	 */
-  
   def igGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.editMode
@@ -33596,7 +32562,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.editMode,
@@ -33992,18 +32957,10 @@ trait JQuery extends js.Object {
   	 * Sets a custom function to be called when the AJAX request to the URL specified by the [updateUrl](ui.iggrid#options:updateUrl) property fails. The function will be called with arguments representing the data returned by the server.
   	 *
   	 */
-  
   def igGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.saveChangesErrorHandler
   ): js.Function | java.lang.String = js.native
-  /**
-  	 * Sets a custom function to be called when the AJAX request to the URL specified by the [updateUrl](ui.iggrid#options:updateUrl) property fails. The function will be called with arguments representing the data returned by the server.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.saveChangesErrorHandler,
@@ -34015,7 +32972,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.saveChangesErrorHandler,
@@ -34025,18 +32981,10 @@ trait JQuery extends js.Object {
   	 * Sets a custom function to be called when the AJAX request to the URL specified by the [updateUrl](ui.iggrid#options:updateUrl) property succeeds. The function will be called with arguments representing the data returned by the server.
   	 *
   	 */
-  
   def igGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.saveChangesSuccessHandler
   ): js.Function | java.lang.String = js.native
-  /**
-  	 * Sets a custom function to be called when the AJAX request to the URL specified by the [updateUrl](ui.iggrid#options:updateUrl) property succeeds. The function will be called with arguments representing the data returned by the server.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.saveChangesSuccessHandler,
@@ -34048,7 +32996,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.saveChangesSuccessHandler,
@@ -34077,7 +33024,6 @@ trait JQuery extends js.Object {
   	 * Gets how end-users are able to start edit mode. Possible values: "click", "dblclick", "F2", "enter" and their combinations separated by coma or in array. The keyboard triggers have effect only if the grid cells can receive focus (the grid's [tabIndex](ui.iggrid#options:tabIndex) property should not have a negative value) or Selection is enabled. If "dblclick" is included, then "click" has no effect.
   	 *
   	 */
-  
   def igGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.startEditTriggers
@@ -34088,19 +33034,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.startEditTriggers,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Sets how end-users are able to start edit mode. Possible values: "click", "dblclick", "F2", "enter" and their combinations separated by coma or in array. The keyboard triggers have effect only if the grid cells can receive focus (the grid's [tabIndex](ui.iggrid#options:tabIndex) property should not have a negative value) or Selection is enabled. If "dblclick" is included, then "click" has no effect.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.startEditTriggers,
@@ -34110,7 +33048,6 @@ trait JQuery extends js.Object {
   	 * On touch-enabled devices specifies the swipe distance for the delete button to appear.
   	 *
   	 */
-  
   def igGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.swipeDistance
@@ -34121,19 +33058,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.swipeDistance,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * On touch-enabled devices specifies the swipe distance for the delete button to appear.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.swipeDistance,
@@ -34639,7 +33568,6 @@ trait JQuery extends js.Object {
   	 * Sets gets ability to automatically format text in cells for numeric and date columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. [Here column formatting is explained in details](http://www.igniteui.com/help/iggrid-columns-and-layout#column-formatting)
   	 *
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.autoFormat
@@ -34650,19 +33578,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.autoFormat,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Sets gets ability to automatically format text in cells for numeric and date columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. [Here column formatting is explained in details](http://www.igniteui.com/help/iggrid-columns-and-layout#column-formatting)
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.autoFormat,
@@ -34735,7 +33655,6 @@ trait JQuery extends js.Object {
   	 * Used for [column virtualization](ui.ighierarchicalgrid#options:columnVirtualization) in [fixed mode](ui.ighierarchicalgrid#options:virtualizationMode). This is the average value in pixels for a column width.
   	 *
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.avgColumnWidth
@@ -34746,19 +33665,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.avgColumnWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Used for [column virtualization](ui.ighierarchicalgrid#options:columnVirtualization) in [fixed mode](ui.ighierarchicalgrid#options:virtualizationMode). This is the average value in pixels for a column width.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.avgColumnWidth,
@@ -34768,7 +33679,6 @@ trait JQuery extends js.Object {
   	 * Used for [row virtualization](ui.ighierarchicalgrid#options:rowVirtualization) in [fixed mode](ui.ighierarchicalgrid#options:virtualizationMode). This is the average value in pixels (default) that will be used to calculate how many rows to render as the end user scrolls. Also all rows' height will be automatically set to this value.
   	 *
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.avgRowHeight
@@ -34779,19 +33689,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.avgRowHeight,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Used for [row virtualization](ui.ighierarchicalgrid#options:rowVirtualization) in [fixed mode](ui.ighierarchicalgrid#options:virtualizationMode). This is the average value in pixels (default) that will be used to calculate how many rows to render as the end user scrolls. Also all rows' height will be automatically set to this value.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.avgRowHeight,
@@ -35159,7 +34061,6 @@ trait JQuery extends js.Object {
   	 * Can be any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an $.ig.DataSource itself
   	 *
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataSource
@@ -35208,31 +34109,16 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataSource,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Can be any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an $.ig.DataSource itself
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataSource,
     optionValue: js.Array[_]
   ): scala.Unit = js.native
-  /**
-  	 * Can be any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an $.ig.DataSource itself
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataSource,
@@ -35261,7 +34147,6 @@ trait JQuery extends js.Object {
   	 * Default column width that will be set for all columns, that don't have [column width](ui.ighierarchicalgrid#options:columns.width) defined.
   	 *
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.defaultColumnWidth
@@ -35272,19 +34157,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.defaultColumnWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Default column width that will be set for all columns, that don't have [column width](ui.ighierarchicalgrid#options:columns.width) defined.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.defaultColumnWidth,
@@ -35425,7 +34302,6 @@ trait JQuery extends js.Object {
   	 * Configures how the feature chooser icon should display on header cells - e.g. to display as gear icon or not.
   	 *
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.featureChooserIconDisplay
@@ -35436,7 +34312,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.featureChooserIconDisplay,
@@ -35594,7 +34469,6 @@ trait JQuery extends js.Object {
   	 * This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row - (if any), etc. [Here you can find more info about setting igGrid height](http://www.igniteui.com/help/iggrid-columns-and-layout#width-height).
   	 *
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -35605,19 +34479,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row - (if any), etc. [Here you can find more info about setting igGrid height](http://www.igniteui.com/help/iggrid-columns-and-layout#width-height).
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -35828,7 +34694,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -35839,19 +34704,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -36302,7 +35159,6 @@ trait JQuery extends js.Object {
   	 * The templating engine that will be used to render the grid [column templates](ui.ighierarchicalgrid#options:columns.template). [Here you can find](http://www.infragistics.com/community/blogs/marina_stoyanova/archive/2014/05/30/using-different-template-engines-with-ignite-ui-controls.aspx) how to use templating engines other than igTemplating and jsRender.
   	 *
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.templatingEngine
@@ -36313,7 +35169,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.templatingEngine,
@@ -36350,7 +35205,6 @@ trait JQuery extends js.Object {
   	 * Determines row virtualization mode.
   	 *
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.virtualizationMode
@@ -36361,7 +35215,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.virtualizationMode,
@@ -36401,7 +35254,6 @@ trait JQuery extends js.Object {
   	 * Defines the grid width in pixels or percents. [Here you can find more info about setting igGrid width](http://www.igniteui.com/help/iggrid-columns-and-layout#width-height).
   	 *
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -36412,19 +35264,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Defines the grid width in pixels or percents. [Here you can find more info about setting igGrid width](http://www.igniteui.com/help/iggrid-columns-and-layout#width-height).
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igHierarchicalGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -36595,7 +35439,6 @@ trait JQuery extends js.Object {
   	 * The height of the html editor. It can be set as a number in pixels, string (px) or percentage (%).
   	 *
   	 */
-  
   def igHtmlEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -36606,19 +35449,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igHtmlEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The height of the html editor. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igHtmlEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -36719,7 +35554,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igHtmlEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -36730,19 +35564,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igHtmlEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igHtmlEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -36985,7 +35811,6 @@ trait JQuery extends js.Object {
   	 * The width of the html editor. It can be set as a number in pixels, string (px) or percentage (%).
   	 *
   	 */
-  
   def igHtmlEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -36996,19 +35821,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igHtmlEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The width of the html editor. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igHtmlEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -37120,7 +35937,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igHtmlEditorPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -37131,19 +35947,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igHtmlEditorPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igHtmlEditorPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -37330,7 +36138,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igImagePropertiesDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -37341,19 +36148,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igImagePropertiesDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igImagePropertiesDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -37435,7 +36234,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets height of the layout container.
   	 *
   	 */
-  
   def igLayoutManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -37446,19 +36244,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igLayoutManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets height of the layout container.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igLayoutManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -37660,7 +36450,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets width of the layout container.
   	 *
   	 */
-  
   def igLayoutManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -37671,19 +36460,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igLayoutManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets width of the layout container.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igLayoutManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -37908,7 +36689,6 @@ trait JQuery extends js.Object {
   /**
   	 * The height of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igLinearGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -37918,18 +36698,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igLinearGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The height of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igLinearGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -38430,7 +37203,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the shape to use when rendering the needle from a number of options.
   	 */
-  
   def igLinearGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.needleShape
@@ -38440,7 +37212,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igLinearGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.needleShape,
@@ -38483,7 +37254,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the orientation of the scale.
   	 */
-  
   def igLinearGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.orientation
@@ -38493,7 +37263,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igLinearGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.orientation,
@@ -38634,7 +37403,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igLinearGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -38645,19 +37413,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igLinearGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igLinearGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -38984,7 +37744,6 @@ trait JQuery extends js.Object {
   /**
   	 * The width of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igLinearGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -38994,18 +37753,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igLinearGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The width of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igLinearGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -39140,7 +37892,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igLinkPropertiesDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -39151,19 +37902,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igLinkPropertiesDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igLinkPropertiesDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -39360,7 +38103,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the current Map's crosshair visibility override.
   	 */
-  
   def igMap(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairVisibility
@@ -39370,7 +38112,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igMap(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairVisibility,
@@ -39430,7 +38171,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the DefaultInteraction property. The default interaction state defines the map's response to mouse events.
   	 */
-  
   def igMap(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.defaultInteraction
@@ -39440,7 +38180,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igMap(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.defaultInteraction,
@@ -39472,7 +38211,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the current Map's DragModifier property.
   	 */
-  
   def igMap(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dragModifier
@@ -39482,7 +38220,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igMap(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dragModifier,
@@ -39530,7 +38267,6 @@ trait JQuery extends js.Object {
   /**
   	 * The height of the map. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igMap(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -39540,18 +38276,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igMap(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The height of the map. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igMap(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -39661,7 +38390,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the current Map's PanModifier property.
   	 */
-  
   def igMap(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.panModifier
@@ -39671,7 +38399,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igMap(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.panModifier,
@@ -39828,7 +38555,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igMap(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -39839,19 +38565,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igMap(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igMap(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -40344,7 +39062,6 @@ trait JQuery extends js.Object {
   /**
   	 * The width of the map. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igMap(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -40354,18 +39071,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igMap(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The width of the map. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igMap(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -40492,7 +39202,6 @@ trait JQuery extends js.Object {
   	 * The response to user panning and zooming: whether to update the view immediately while the user action is happening, or to defer the update to after the user action is complete.  The user action will be an action such as a mouse drag which causes panning and/or zooming to occur.
   	 *
   	 */
-  
   def igMap(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.windowResponse
@@ -40503,7 +39212,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igMap(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.windowResponse,
@@ -40721,7 +39429,6 @@ trait JQuery extends js.Object {
   	 * Gets visibility of the clear button. That option can be set only on initialization.
   	 *
   	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.buttonType
@@ -40732,7 +39439,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.buttonType,
@@ -40742,7 +39448,6 @@ trait JQuery extends js.Object {
   	 * It affects the value of the control (value method/option and submitted in forms). It defines what the value should contain from text, unfilled prompts and literals. The default is allText and when used value method/option returns the text entered, all prompts (positions) and literals.
   	 *
   	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataMode
@@ -40753,7 +39458,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataMode,
@@ -40948,7 +39652,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the height of the control.
   	 *
   	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -40959,19 +39662,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the height of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -41201,7 +39896,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
   	 *
   	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue
@@ -41212,19 +39906,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
@@ -41310,7 +39996,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -41321,19 +40006,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -41362,7 +40039,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the action when the editor gets focused. The default value is selectAll.
   	 *
   	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionOnFocus
@@ -41373,7 +40049,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionOnFocus,
@@ -41447,7 +40122,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the horizontal alignment of the text in the editor.
   	 *
   	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.textAlign
@@ -41458,7 +40132,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.textAlign,
@@ -41622,7 +40295,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the width of the control.
   	 *
   	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -41633,19 +40305,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the width of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igMaskEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -41770,7 +40434,6 @@ trait JQuery extends js.Object {
   	 * Controls where the popover DOM should be attached to (only applies to popovers).
   	 *
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.appendTo
@@ -41781,19 +40444,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.appendTo,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Controls where the popover DOM should be attached to (only applies to popovers).
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.appendTo,
@@ -41841,7 +40496,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the content for the popover container. Templated with parameters by default: {0} - icon container class, {1} - the icon class and {2} - message text.
   	 *
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.contentTemplate
@@ -41852,19 +40506,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.contentTemplate,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the content for the popover container. Templated with parameters by default: {0} - icon container class, {1} - the icon class and {2} - message text.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.contentTemplate,
@@ -41874,7 +40520,6 @@ trait JQuery extends js.Object {
   	 * Controls the direction in which the control shows relative to the target element
   	 *
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.direction
@@ -41906,7 +40551,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.direction,
@@ -41935,18 +40579,10 @@ trait JQuery extends js.Object {
   	 * Defines height for the popover. leave null for auto
   	 *
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Defines height for the popover. leave null for auto
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -41958,7 +40594,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -42002,18 +40637,10 @@ trait JQuery extends js.Object {
   	 * Defines height the popover won't exceed even if no specific one is set.
   	 *
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maxHeight
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Defines height the popover won't exceed even if no specific one is set.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maxHeight,
@@ -42025,7 +40652,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maxHeight,
@@ -42035,18 +40661,10 @@ trait JQuery extends js.Object {
   	 * Defines width the popover won't exceed even if no specific one is set.
   	 *
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maxWidth
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Defines width the popover won't exceed even if no specific one is set.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maxWidth,
@@ -42058,7 +40676,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maxWidth,
@@ -42068,18 +40685,10 @@ trait JQuery extends js.Object {
   	 * Defines width the popover won't go under the value even if no specific one is set.
   	 *
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minWidth
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Defines width the popover won't go under the value even if no specific one is set.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minWidth,
@@ -42091,7 +40700,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minWidth,
@@ -42101,7 +40709,6 @@ trait JQuery extends js.Object {
   	 * Controls the positioning mode of messages. Setting a mode will override the default behavior which is auto.Note: Inline element uses a block container as is always placed after the target.
   	 *
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode
@@ -42112,7 +40719,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode,
@@ -42122,7 +40728,6 @@ trait JQuery extends js.Object {
   	 * Controls the level of notifications shown by automatic and manual messages using the [notify](ui.ignotifier#methods:notify) method. Use [show](ui.ignotifier#methods:show) to ignore the level.
   	 *
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.notifyLevel
@@ -42133,7 +40738,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.notifyLevel,
@@ -42143,7 +40747,6 @@ trait JQuery extends js.Object {
   	 * Controls the position of the popover according to the target element in case the popover is larger than the target on the side we want to position, if the popover is smaller it should always be in the middle of the visible area
   	 *
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.position
@@ -42154,7 +40757,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.position,
@@ -42200,7 +40802,6 @@ trait JQuery extends js.Object {
   	 * Sets the event on which the notification will be shown. Predefined values are "mouseenter", "click" and "focus"
   	 *
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.showOn
@@ -42211,7 +40812,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.showOn,
@@ -42255,7 +40855,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the current state of the igNotifier messages. State controls what CSS classes are applied to the messages and target and has interactions with other options as well.
   	 *
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.state
@@ -42266,7 +40865,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.state,
@@ -42276,18 +40874,10 @@ trait JQuery extends js.Object {
   	 * Defines width for the popover. leave null for auto.
   	 *
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Defines width for the popover. leave null for auto.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -42299,7 +40889,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNotifier(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -42382,7 +40971,6 @@ trait JQuery extends js.Object {
   	 * Gets visibility of the spin, clear and drop-down button. That option can be set only on initialization. Combinations like 'dropdown,spin' or 'spin,clear' are supported too.Note! This option can not be set runtime.
   	 *
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.buttonType
@@ -42393,7 +40981,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.buttonType,
@@ -42405,7 +40992,6 @@ trait JQuery extends js.Object {
   	 * In addition, the maximum value that can be set to [minDecimals](ui.igNumericEditor#options:minDecimals) and [maxDecimals](ui.igNumericEditor#options:maxDecimals) options can be 15, when editor is in 'double' mode and 7, when in 'float' mode.
   	 *
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataMode
@@ -42418,7 +41004,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataMode,
@@ -42641,7 +41226,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the drop-down list opening orientation when the list gets open. If the option is set to auto the editor has priority to open the drop-down list bottom. If the space is not enough it tries to open the list top. If the space is not enough in both directions then the list gets opened at the bottom of the editor.
   	 *
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dropDownOrientation
@@ -42652,7 +41236,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dropDownOrientation,
@@ -42739,7 +41322,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the height of the control.
   	 *
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -42750,19 +41332,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the height of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -43083,7 +41657,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
   	 *
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue
@@ -43094,19 +41667,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
@@ -43173,7 +41738,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -43184,19 +41748,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -43250,7 +41806,6 @@ trait JQuery extends js.Object {
   	 * Notes: The "+" character is not supported in edit mode.
   	 *
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.scientificFormat
@@ -43263,7 +41818,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.scientificFormat,
@@ -43273,7 +41827,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the action when the editor gets focused. The default value is selectAll.
   	 *
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionOnFocus
@@ -43284,7 +41837,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionOnFocus,
@@ -43395,7 +41947,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the horizontal alignment of the text in the editor.
   	 *
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.textAlign
@@ -43406,7 +41957,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.textAlign,
@@ -43547,7 +42097,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the width of the control.
   	 *
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -43558,19 +42107,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the width of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igNumericEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -43692,7 +42233,6 @@ trait JQuery extends js.Object {
   	 * Gets visibility of the spin, clear and drop-down button. That option can be set only on initialization. Combinations like 'dropdown,spin' or 'spin,clear' are supported too.Note! This option can not be set runtime.
   	 *
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.buttonType
@@ -43703,7 +42243,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.buttonType,
@@ -43715,7 +42254,6 @@ trait JQuery extends js.Object {
   	 * In addition, the maximum value that can be set to [minDecimals](ui.igPercentEditor#options:minDecimals) and [maxDecimals](ui.igPercentEditor#options:maxDecimals) options can be 15, when editor is in 'double' mode and 7, when in 'float' mode.
   	 *
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataMode
@@ -43728,7 +42266,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataMode,
@@ -43876,7 +42413,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the drop-down list opening orientation when the list gets open. If the option is set to auto the editor has priority to open the drop-down list bottom. If the space is not enough it tries to open the list top. If the space is not enough in both directions then the list gets opened at the bottom of the editor.
   	 *
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dropDownOrientation
@@ -43887,7 +42423,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dropDownOrientation,
@@ -43974,7 +42509,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the height of the control.
   	 *
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -43985,19 +42519,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the height of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -44318,7 +42844,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
   	 *
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue
@@ -44329,19 +42854,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
@@ -44452,7 +42969,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -44463,19 +42979,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -44529,7 +43037,6 @@ trait JQuery extends js.Object {
   	 * Notes: The "+" character is not supported in edit mode.
   	 *
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.scientificFormat
@@ -44542,7 +43049,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.scientificFormat,
@@ -44552,7 +43058,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the action when the editor gets focused. The default value is selectAll.
   	 *
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionOnFocus
@@ -44563,7 +43068,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionOnFocus,
@@ -44674,7 +43178,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the horizontal alignment of the text in the editor.
   	 *
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.textAlign
@@ -44685,7 +43188,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.textAlign,
@@ -44807,7 +43309,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the width of the control.
   	 *
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -44818,19 +43319,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the width of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPercentEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -45107,7 +43600,6 @@ trait JQuery extends js.Object {
   /**
   	 * The height of the chart. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -45117,18 +43609,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The height of the chart. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -45233,7 +43718,6 @@ trait JQuery extends js.Object {
   	 * Gets  the position of chart labels.
   	 *
   	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.labelsPosition
@@ -45244,7 +43728,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.labelsPosition,
@@ -45290,7 +43773,6 @@ trait JQuery extends js.Object {
   	 * Gets  what type of leader lines will be used for the outside end labels.
   	 *
   	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.leaderLineType
@@ -45301,7 +43783,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.leaderLineType,
@@ -45311,7 +43792,6 @@ trait JQuery extends js.Object {
   	 * Gets  whether the leader lines are visible.
   	 *
   	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.leaderLineVisibility
@@ -45322,7 +43802,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.leaderLineVisibility,
@@ -45481,7 +43960,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  whether to use numeric or percent-based threshold value.
   	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.othersCategoryType
@@ -45491,7 +43969,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.othersCategoryType,
@@ -45539,7 +44016,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -45550,19 +44026,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -45759,7 +44227,6 @@ trait JQuery extends js.Object {
   	 * Gets  the type of selection the pie chart allows.
   	 *
   	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionMode
@@ -45770,7 +44237,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionMode,
@@ -45845,7 +44311,6 @@ trait JQuery extends js.Object {
   	 * Gets  the rotational direction of the chart.
   	 *
   	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.sweepDirection
@@ -45856,7 +44321,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.sweepDirection,
@@ -46033,7 +44497,6 @@ trait JQuery extends js.Object {
   /**
   	 * The width of the chart. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -46043,18 +44506,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The width of the chart. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPieChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -46539,7 +44995,6 @@ trait JQuery extends js.Object {
   	 * This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row -  (if any), etc.
   	 *
   	 */
-  
   def igPivotDataSelector(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -46550,19 +45005,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPivotDataSelector(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row -  (if any), etc.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPivotDataSelector(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -46678,7 +45125,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igPivotDataSelector(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -46689,19 +45135,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPivotDataSelector(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPivotDataSelector(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -46710,7 +45148,6 @@ trait JQuery extends js.Object {
   /**
   	 * *
   	 */
-  
   def igPivotDataSelector(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -46720,18 +45157,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPivotDataSelector(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPivotDataSelector(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -46996,7 +45426,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets the default sort behavior for the levels if no sort behavior is specified in an item from the levelSortDirections option.
   	 */
-  
   def igPivotGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.defaultLevelSortBehavior
@@ -47006,7 +45435,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPivotGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.defaultLevelSortBehavior,
@@ -47410,7 +45838,6 @@ trait JQuery extends js.Object {
   	 * This is the total height of the grid.
   	 *
   	 */
-  
   def igPivotGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -47421,19 +45848,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPivotGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * This is the total height of the grid.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPivotGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -47724,7 +46143,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igPivotGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -47735,19 +46153,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPivotGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPivotGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -47915,7 +46325,6 @@ trait JQuery extends js.Object {
   /**
   	 * *
   	 */
-  
   def igPivotGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -47925,18 +46334,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPivotGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPivotGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -48083,7 +46485,6 @@ trait JQuery extends js.Object {
   /**
   	 * *
   	 */
-  
   def igPivotView(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -48093,18 +46494,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPivotView(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPivotView(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -48190,7 +46584,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igPivotView(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -48201,19 +46594,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPivotView(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPivotView(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -48222,7 +46607,6 @@ trait JQuery extends js.Object {
   /**
   	 * *
   	 */
-  
   def igPivotView(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -48232,18 +46616,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPivotView(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPivotView(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -48298,7 +46675,6 @@ trait JQuery extends js.Object {
   	 * Controls where the popover DOM should be attached to.
   	 *
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.appendTo
@@ -48309,19 +46685,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.appendTo,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Controls where the popover DOM should be attached to.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.appendTo,
@@ -48369,7 +46737,6 @@ trait JQuery extends js.Object {
   	 * The content for the popover container. If left null the content will be get from the target.
   	 *
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.contentTemplate
@@ -48380,19 +46747,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.contentTemplate,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Sets the content for the popover container. If left null the content will be get from the target.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.contentTemplate,
@@ -48402,7 +46761,6 @@ trait JQuery extends js.Object {
   	 * Controls the direction in which the control shows relative to the target element
   	 *
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.direction
@@ -48434,7 +46792,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.direction,
@@ -48463,18 +46820,10 @@ trait JQuery extends js.Object {
   	 * Defines height for the popover. leave null for auto
   	 *
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Defines height for the popover. leave null for auto
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -48486,7 +46835,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -48568,18 +46916,10 @@ trait JQuery extends js.Object {
   	 * Defines height the popover won't exceed even if no specific one is set.
   	 *
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maxHeight
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Defines height the popover won't exceed even if no specific one is set.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maxHeight,
@@ -48591,7 +46931,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maxHeight,
@@ -48601,18 +46940,10 @@ trait JQuery extends js.Object {
   	 * Defines width the popover won't exceed even if no specific one is set.
   	 *
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maxWidth
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Defines width the popover won't exceed even if no specific one is set.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maxWidth,
@@ -48624,7 +46955,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maxWidth,
@@ -48634,18 +46964,10 @@ trait JQuery extends js.Object {
   	 * Defines width the popover won't go under the value even if no specific one is set.
   	 *
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minWidth
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Defines width the popover won't go under the value even if no specific one is set.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minWidth,
@@ -48657,7 +46979,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minWidth,
@@ -48667,7 +46988,6 @@ trait JQuery extends js.Object {
   	 * Controls the position of the popover according to the target element in case the popover is larger than the target on the side we want to position, if the popover is smaller it should always be in the middle of the visible area
   	 *
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.position
@@ -48678,7 +46998,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.position,
@@ -48688,7 +47007,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -48699,19 +47017,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -48740,7 +47050,6 @@ trait JQuery extends js.Object {
   	 * The event on which the popover will be shown. Predefined values are "mouseenter", "click" and "focus"
   	 *
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.showOn
@@ -48751,7 +47060,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.showOn,
@@ -48795,18 +47103,10 @@ trait JQuery extends js.Object {
   	 * Defines width for the popover. leave null for auto.
   	 *
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Defines width for the popover. leave null for auto.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -48818,7 +47118,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igPopover(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -49094,7 +47393,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  a value which specifies how the grid fills within the barcode control dimensions.
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.barsFillMode
@@ -49104,7 +47402,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.barsFillMode,
@@ -49153,7 +47450,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  a value indicating whether to show the ECI header.
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.eciHeaderDisplayMode
@@ -49163,7 +47459,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.eciHeaderDisplayMode,
@@ -49191,7 +47486,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the encoding mode for compaction of the QR Code symbol data. The default value is undefined if the Shift_JIS encoding is loaded. Otherwise the default value is byte.
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.encodingMode
@@ -49201,7 +47495,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.encodingMode,
@@ -49210,7 +47503,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the error correction level of the QR Code symbol.
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.errorCorrectionLevel
@@ -49220,7 +47512,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.errorCorrectionLevel,
@@ -49269,7 +47560,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the FNC1 mode indicator which identifies symbols encoding messages formatted according to specific predefined industry or application specifications.
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.fnc1Mode
@@ -49279,7 +47569,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.fnc1Mode,
@@ -49322,7 +47611,6 @@ trait JQuery extends js.Object {
   /**
   	 * The height of the barcode. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -49332,18 +47620,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The height of the barcode. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -49412,7 +47693,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -49423,19 +47703,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -49444,7 +47716,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the size version of the QR Code symbol.
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.sizeVersion
@@ -49454,7 +47725,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.sizeVersion,
@@ -49463,7 +47733,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the stretch.
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.stretch
@@ -49473,7 +47742,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.stretch,
@@ -49482,7 +47750,6 @@ trait JQuery extends js.Object {
   /**
   	 * The width of the barcode. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -49509,18 +47776,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The width of the barcode. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igQRCodeBarcode(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -49717,7 +47977,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the type of shape to use for the backing of the gauge.
   	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.backingShape
@@ -49727,7 +47986,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.backingShape,
@@ -49787,7 +48045,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the strategy to use for omitting labels if the first and last label have the same value.
   	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.duplicateLabelOmissionStrategy
@@ -49797,7 +48054,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.duplicateLabelOmissionStrategy,
@@ -49875,7 +48131,6 @@ trait JQuery extends js.Object {
   /**
   	 * The height of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -49885,18 +48140,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The height of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -50314,7 +48562,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the shape to use for the needle cap.
   	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.needlePivotShape
@@ -50324,7 +48571,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.needlePivotShape,
@@ -50407,7 +48653,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the shape to use when rendering the needle from a number of options.
   	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.needleShape
@@ -50417,7 +48662,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.needleShape,
@@ -50579,7 +48823,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -50590,19 +48833,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -50671,7 +48906,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the oversweep shape to use for the excess fill area for the scale.
   	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.scaleOversweepShape
@@ -50681,7 +48915,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.scaleOversweepShape,
@@ -50736,7 +48969,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the direction in which the scale sweeps around the center from the start angle to end angle.
   	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.scaleSweepDirection
@@ -50746,7 +48978,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.scaleSweepDirection,
@@ -50912,7 +49143,6 @@ trait JQuery extends js.Object {
   /**
   	 * The width of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -50922,18 +49152,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The width of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igRadialGauge(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -51473,7 +49696,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igRadialMenu(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -51484,19 +49706,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igRadialMenu(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igRadialMenu(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -51709,7 +49923,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets precision. Precision of value and valueHover.
   	 *
   	 */
-  
   def igRating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.precision
@@ -51745,7 +49958,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igRating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.precision,
@@ -51755,7 +49967,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igRating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -51766,19 +49977,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igRating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igRating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -51884,7 +50087,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets value (selected votes or percent). If the value is of type string, it should be suitable for parsing to number. According to [valueAsPercent](ui.igrating#options:valueAsPercent) options the value is used as number of selected votes or as a percent of the votes.
   	 *
   	 */
-  
   def igRating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.value
@@ -51935,18 +50137,10 @@ trait JQuery extends js.Object {
   	 * Gets/Sets value-hover (hovered votes or percent of hovered votes). The default is same as value. If the value is of type string, it should be suitable for parsing to number. According to [valueAsPercent](ui.igrating#options:valueAsPercent) options the valueHover is used as number of hovered votes or as a percent of the hovered votes.
   	 *
   	 */
-  
   def igRating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.valueHover
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * /Sets value-hover (hovered votes or percent of hovered votes). The default is same as value. If the value is of type string, it should be suitable for parsing to number. According to [valueAsPercent](ui.igrating#options:valueAsPercent) options the valueHover is used as number of hovered votes or as a percent of the hovered votes.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igRating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.valueHover,
@@ -51958,19 +50152,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igRating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.valueHover,
     optionValue: scala.Double
   ): scala.Unit = js.native
-  /**
-  	 * /Sets value (selected votes or percent). If the value is of type string, it should be suitable for parsing to number. According to [valueAsPercent](ui.igrating#options:valueAsPercent) options the value is used as number of selected votes or as a percent of the votes.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igRating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.value,
@@ -51982,7 +50168,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igRating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.value,
@@ -52501,7 +50686,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the height of the control.
   	 *
   	 */
-  
   def igScheduler(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -52512,19 +50696,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igScheduler(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the height of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igScheduler(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -52625,7 +50801,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igScheduler(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -52636,19 +50811,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igScheduler(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igScheduler(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -52784,7 +50951,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets current view mode in the Scheduler. If this options is not defined, then the first defined view in the views property is taken.
   	 *
   	 */
-  
   def igScheduler(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.viewMode
@@ -52795,7 +50961,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igScheduler(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.viewMode,
@@ -52877,7 +51042,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the width of the control.
   	 *
   	 */
-  
   def igScheduler(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -52888,19 +51052,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igScheduler(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the width of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igScheduler(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -53108,18 +51264,10 @@ trait JQuery extends js.Object {
   	 * Sets or gets the minimum size of the thumb drag in pixels. For the vertical thumb it means its minimum height, for the horizontal thumb it means its minimum width. This affects only the custom scrollblar when scrollbarType is set to "custom".
   	 *
   	 */
-  
   def igScroll(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minThumbSize
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Sets or gets the minimum size of the thumb drag in pixels. For the vertical thumb it means its minimum height, for the horizontal thumb it means its minimum width. This affects only the custom scrollblar when scrollbarType is set to "custom".
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igScroll(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minThumbSize,
@@ -53131,7 +51279,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igScroll(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minThumbSize,
@@ -53160,7 +51307,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igScroll(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -53171,19 +51317,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igScroll(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igScroll(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -53408,7 +51546,6 @@ trait JQuery extends js.Object {
   	 * Sets or gets what type of scrollbars should be using the igScroll (on all environments).
   	 *
   	 */
-  
   def igScroll(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.scrollbarType
@@ -53419,7 +51556,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igScroll(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.scrollbarType,
@@ -53801,7 +51937,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the type of chart series to generate from the data.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.chartType
@@ -53811,7 +51946,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.chartType,
@@ -54155,7 +52289,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  collision avoidance between markers on series that support this behaviour.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.markerCollision
@@ -54165,7 +52298,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.markerCollision,
@@ -54520,7 +52652,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  horizontal alignment which determines the subtitle position, relative to the left and right edges of the control.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.subtitleAlignment
@@ -54530,7 +52661,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.subtitleAlignment,
@@ -54675,7 +52805,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  horizontal alignment which determines the title position, relative to the left and right edges of the control.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.titleAlignment
@@ -54685,7 +52814,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.titleAlignment,
@@ -54943,7 +53071,6 @@ trait JQuery extends js.Object {
   	 * Gets  the formula used for calculating trend lines in this chart.This property applies only to these chart types: point, line, spline, and bubble
   	 *
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.trendLineType
@@ -54954,7 +53081,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.trendLineType,
@@ -54981,7 +53107,6 @@ trait JQuery extends js.Object {
   	 * Gets  the behavior that determines how unknown values will be plotted on the chart.Null and Double.NaN are two examples of unknown values.
   	 *
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.unknownValuePlotting
@@ -54992,7 +53117,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.unknownValuePlotting,
@@ -55236,7 +53360,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Horizontal alignment of X-axis labels.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisLabelHorizontalAlignment
@@ -55246,7 +53369,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisLabelHorizontalAlignment,
@@ -55340,7 +53462,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Vertical alignment of X-axis labels.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisLabelVerticalAlignment
@@ -55350,7 +53471,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisLabelVerticalAlignment,
@@ -55359,7 +53479,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Visibility of X-axis labels.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisLabelVisibility
@@ -55369,7 +53488,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisLabelVisibility,
@@ -55637,7 +53755,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Horizontal alignment of the X-axis title.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisTitleAlignment
@@ -55647,7 +53764,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisTitleAlignment,
@@ -55947,7 +54063,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Horizontal alignment of Y-axis labels.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelHorizontalAlignment
@@ -55957,7 +54072,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelHorizontalAlignment,
@@ -55983,7 +54097,6 @@ trait JQuery extends js.Object {
   /**
   	 * The location of Y-axis labels, relative to the plot area.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelLocation
@@ -55993,7 +54106,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelLocation,
@@ -56070,7 +54182,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Vertical alignment of Y-axis labels.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelVerticalAlignment
@@ -56080,7 +54191,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelVerticalAlignment,
@@ -56089,7 +54199,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Visibility of Y-axis labels.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelVisibility
@@ -56099,7 +54208,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisLabelVisibility,
@@ -56365,7 +54473,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  Vertical alignment of the Y-axis title.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisTitleAlignment
@@ -56375,7 +54482,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.yAxisTitleAlignment,
@@ -57008,7 +55114,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the display type of the sparkline.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.displayType
@@ -57018,7 +55123,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.displayType,
@@ -57061,7 +55165,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the first marker visibility of the sparkline.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.firstMarkerVisibility
@@ -57071,7 +55174,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.firstMarkerVisibility,
@@ -57097,7 +55199,6 @@ trait JQuery extends js.Object {
   /**
   	 * The height of the sparkline. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -57107,18 +55208,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The height of the sparkline. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -57188,7 +55282,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the high marker visibility of the sparkline.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.highMarkerVisibility
@@ -57198,7 +55291,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.highMarkerVisibility,
@@ -57243,7 +55335,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the display state of the horizontal axis.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.horizontalAxisVisibility
@@ -57253,7 +55344,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.horizontalAxisVisibility,
@@ -57313,7 +55403,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the last marker visibility of the sparkline.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.lastMarkerVisibility
@@ -57323,7 +55412,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.lastMarkerVisibility,
@@ -57383,7 +55471,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the low marker visibility of the sparkline.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.lowMarkerVisibility
@@ -57393,7 +55480,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.lowMarkerVisibility,
@@ -57436,7 +55522,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the marker visibility of the sparkline.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.markerVisibility
@@ -57446,7 +55531,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.markerVisibility,
@@ -57523,7 +55607,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the negative marker visibility of the sparkline.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.negativeMarkerVisibility
@@ -57533,7 +55616,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.negativeMarkerVisibility,
@@ -57593,7 +55675,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the normal range visibility of the sparkline.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.normalRangeVisibility
@@ -57603,7 +55684,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.normalRangeVisibility,
@@ -57737,7 +55817,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the type of trendline used by the sparkline.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.trendLineType
@@ -57747,7 +55826,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.trendLineType,
@@ -57756,7 +55834,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the way null values are interpreted.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.unknownValuePlotting
@@ -57766,7 +55843,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.unknownValuePlotting,
@@ -57861,7 +55937,6 @@ trait JQuery extends js.Object {
   /**
   	 * Gets  the display state of the vertical axis.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.verticalAxisVisibility
@@ -57871,7 +55946,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.verticalAxisVisibility,
@@ -57880,7 +55954,6 @@ trait JQuery extends js.Object {
   /**
   	 * The width of the sparkline. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -57890,18 +55963,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The width of the sparkline. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igSparkline(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -58242,7 +56308,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the height of the container.
   	 *
   	 */
-  
   def igSplitter(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -58253,19 +56318,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSplitter(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the height of the container.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igSplitter(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -58359,7 +56416,6 @@ trait JQuery extends js.Object {
   	 * Gets the orientation of the splitter.
   	 *
   	 */
-  
   def igSplitter(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.orientation
@@ -58370,7 +56426,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSplitter(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.orientation,
@@ -58399,7 +56454,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igSplitter(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -58410,19 +56464,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSplitter(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igSplitter(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -58520,7 +56566,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the width of the container.
   	 *
   	 */
-  
   def igSplitter(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -58531,19 +56576,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSplitter(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the width of the container.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igSplitter(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -58916,7 +56953,6 @@ trait JQuery extends js.Object {
   	 * navigated when Shift + Enter are pressed.
   	 *
   	 */
-  
   def igSpreadsheet(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.enterKeyNavigationDirection
@@ -58928,7 +56964,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSpreadsheet(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.enterKeyNavigationDirection,
@@ -58957,7 +56992,6 @@ trait JQuery extends js.Object {
   	 * The height of the spreadsheet. It can be set as a number in pixels, string (px) or percentage (%).
   	 *
   	 */
-  
   def igSpreadsheet(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -58968,19 +57002,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSpreadsheet(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The height of the spreadsheet. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igSpreadsheet(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -59194,7 +57220,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igSpreadsheet(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -59205,19 +57230,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSpreadsheet(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igSpreadsheet(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -59263,7 +57280,6 @@ trait JQuery extends js.Object {
   	 * Returns  a value indicating how the selection is updated when interacting with the cells via the mouse or keyboard.
   	 *
   	 */
-  
   def igSpreadsheet(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionMode
@@ -59274,7 +57290,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSpreadsheet(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionMode,
@@ -59322,7 +57337,6 @@ trait JQuery extends js.Object {
   	 * The width of the spreadsheet. It can be set as a number in pixels, string (px) or percentage (%).
   	 *
   	 */
-  
   def igSpreadsheet(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -59333,19 +57347,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igSpreadsheet(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The width of the spreadsheet. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igSpreadsheet(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -59555,7 +57561,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igTablePropertiesDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -59566,19 +57571,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTablePropertiesDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTablePropertiesDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -59660,7 +57657,6 @@ trait JQuery extends js.Object {
   	 * Gets visibility of the spin, clear and drop-down button. That option can be set only on initialization. Combinations like 'dropdown,spin' or 'spin,clear' are supported too.Note! This option can not be set runtime.
   	 *
   	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.buttonType
@@ -59671,7 +57667,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.buttonType,
@@ -59869,7 +57864,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the drop-down list opening orientation when the list gets open. If the option is set to auto the editor has priority to open the drop-down list bottom. If the space is not enough it tries to open the list top. If the space is not enough in both directions then the list gets opened at the bottom of the editor.
   	 *
   	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dropDownOrientation
@@ -59880,7 +57874,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dropDownOrientation,
@@ -59932,7 +57925,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the height of the control.
   	 *
   	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -59943,19 +57935,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the height of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -60286,7 +58270,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
   	 *
   	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue
@@ -60297,19 +58280,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
@@ -60376,7 +58351,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -60387,19 +58361,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -60462,7 +58428,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the action when the editor gets focused. The default value is selectAll.
   	 *
   	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionOnFocus
@@ -60473,7 +58438,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionOnFocus,
@@ -60563,7 +58527,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the horizontal alignment of the text in the editor.
   	 *
   	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.textAlign
@@ -60574,7 +58537,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.textAlign,
@@ -60603,7 +58565,6 @@ trait JQuery extends js.Object {
   	 * Gets the text mode of the editor such as: single-line text editor, password editor or multiline editor. That option has effect only on initialization. If based element (selector) is TEXTAREA, then it is used as input-field.
   	 *
   	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.textMode
@@ -60614,7 +58575,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.textMode,
@@ -60771,7 +58731,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the width of the control.
   	 *
   	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -60782,19 +58741,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the width of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTextEditor(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -60911,7 +58862,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the columns count in the container.
   	 *
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.cols
@@ -60922,7 +58872,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.cols,
@@ -60932,7 +58881,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the height of each column in the container.
   	 *
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.columnHeight
@@ -60943,31 +58891,16 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.columnHeight,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the height of each column in the container.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.columnHeight,
     optionValue: js.Array[_]
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the height of each column in the container.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.columnHeight,
@@ -60977,7 +58910,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the width of each column in the container.
   	 *
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.columnWidth
@@ -60988,31 +58920,16 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.columnWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the width of each column in the container.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.columnWidth,
     optionValue: js.Array[_]
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the width of each column in the container.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.columnWidth,
@@ -61133,7 +59050,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the height of the container.
   	 *
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -61144,19 +59060,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the height of the container.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -61166,7 +59074,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the tiles configurations. Every tile is described by rowSpan, colSpan, rowIndex and colIndex.
   	 *
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.items
@@ -61177,7 +59084,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.items,
@@ -61267,7 +59173,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the content of the tiles in maximized state.
   	 *
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maximizedState
@@ -61278,7 +59183,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maximizedState,
@@ -61288,7 +59192,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the index of which items configuration will be used for positioning and sizing of the maximized tile.
   	 *
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maximizedTileIndex
@@ -61299,7 +59202,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.maximizedTileIndex,
@@ -61309,7 +59211,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the content of the tiles in minimized state.
   	 *
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minimizedState
@@ -61320,7 +59221,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minimizedState,
@@ -61368,7 +59268,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -61379,19 +59278,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -61489,7 +59380,6 @@ trait JQuery extends js.Object {
   	 * Property in the response which specifies where the data records array will be held (if the response is wrapped). See [$.ig.DataSource responseDataKey](ig.datasource#options:settings.responseDataKey).
   	 *
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.responseDataKey
@@ -61500,7 +59390,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.responseDataKey,
@@ -61510,7 +59399,6 @@ trait JQuery extends js.Object {
   	 * Explicitly set data source type (such as "json"). Please refer to the documentation of [$.ig.DataSource type](ig.datasource#options:settings.type) and its type property.
   	 *
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.responseDataType
@@ -61521,7 +59409,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.responseDataType,
@@ -61531,7 +59418,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets how many columns to be displayed in the right panel when the tiles are minimized.
   	 *
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.rightPanelCols
@@ -61542,7 +59428,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.rightPanelCols,
@@ -61552,7 +59437,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the height of the minimized tiles in the right panel.
   	 *
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.rightPanelTilesHeight
@@ -61563,7 +59447,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.rightPanelTilesHeight,
@@ -61573,7 +59456,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the width of the minimized tiles in the right panel.
   	 *
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.rightPanelTilesWidth
@@ -61584,7 +59466,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.rightPanelTilesWidth,
@@ -61594,7 +59475,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the rows count in the container.
   	 *
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.rows
@@ -61605,7 +59485,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.rows,
@@ -61806,7 +59685,6 @@ trait JQuery extends js.Object {
   /**
   	 * *
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -61816,18 +59694,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTileManager(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -61933,7 +59804,6 @@ trait JQuery extends js.Object {
   	 * Note! A combination like 'dropdown, spin' is not allowed.
   	 *
   	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.buttonType
@@ -61945,7 +59815,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.buttonType,
@@ -61981,7 +59850,6 @@ trait JQuery extends js.Object {
   	 * "2016-11-11T10:00:00+05:00"
   	 *
   	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataMode
@@ -61995,7 +59863,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataMode,
@@ -62238,7 +60105,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the drop-down list opening orientation when the list gets open. If the option is set to auto the timepicker has priority to open the drop-down list bottom. If the space is not enough it tries to open the list top. If the space is not enough in both directions then the list gets opened at the bottom of the editor.
   	 *
   	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dropDownOrientation
@@ -62249,7 +60115,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dropDownOrientation,
@@ -62322,7 +60187,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the height of the control.
   	 *
   	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -62333,19 +60197,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the height of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -62643,7 +60499,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
   	 *
   	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue
@@ -62654,31 +60509,16 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
     optionValue: scala.Double
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.nullValue,
@@ -62762,7 +60602,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -62773,19 +60612,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -62814,7 +60645,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the action when the editor gets focused. The default value is selectAll.
   	 *
   	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionOnFocus
@@ -62825,7 +60655,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.selectionOnFocus,
@@ -62950,7 +60779,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the horizontal alignment of the text in the editor.
   	 *
   	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.textAlign
@@ -62961,7 +60789,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.textAlign,
@@ -63196,7 +61023,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the width of the control.
   	 *
   	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -63207,19 +61033,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the width of the control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTimePicker(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -63616,7 +61434,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igToolbar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -63627,19 +61444,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igToolbar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igToolbar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -64009,7 +61818,6 @@ trait JQuery extends js.Object {
   	 * Gets the behavior and type of the checkboxes rendered for the tree nodes. Can be set only at initialization.
   	 *
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.checkboxMode
@@ -64020,7 +61828,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.checkboxMode,
@@ -64073,7 +61880,6 @@ trait JQuery extends js.Object {
   	 * Gets the type of the data source. Delegates the value to [$.ig.DataSource.settings.type](ig.datasource#options:settings.type). Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource.settings.type.
   	 *
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataSourceType
@@ -64084,7 +61890,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataSourceType,
@@ -64094,7 +61899,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets a remote URL accepted by [$.ig.DataSource](ig.datasource) in order to request data from it.
   	 *
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataSourceUrl
@@ -64105,7 +61909,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataSourceUrl,
@@ -64235,7 +62038,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets how the height of of the control container.
   	 *
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -64246,19 +62048,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets how the height of of the control container.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -64325,7 +62119,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the CSS class applied to all leaf nodes.
   	 *
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.leafNodeImageClass
@@ -64336,7 +62129,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.leafNodeImageClass,
@@ -64346,7 +62138,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the tooltip applied to all leaf node images.
   	 *
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.leafNodeImageTooltip
@@ -64357,7 +62148,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.leafNodeImageTooltip,
@@ -64367,7 +62157,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the image url applied to all leaf nodes.
   	 *
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.leafNodeImageUrl
@@ -64378,7 +62167,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.leafNodeImageUrl,
@@ -64630,7 +62418,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the CSS class applied to all parent nodes.
   	 *
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.parentNodeImageClass
@@ -64641,7 +62428,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.parentNodeImageClass,
@@ -64651,7 +62437,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the tooltip applied to all parent node images.
   	 *
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.parentNodeImageTooltip
@@ -64662,7 +62447,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.parentNodeImageTooltip,
@@ -64672,7 +62456,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the image url applied to all parent nodes.
   	 *
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.parentNodeImageUrl
@@ -64683,7 +62466,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.parentNodeImageUrl,
@@ -64712,7 +62494,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -64723,19 +62504,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -64817,7 +62590,6 @@ trait JQuery extends js.Object {
   	 * Gets the JSON key at which a remote data source will write the data. Delegates the value to [$.ig.DataSource.settings.responseDataKey](ig.datasource#options:settings.responseDataKey). Please refer to the documentation of $.ig.DataSource.settings.responseDataKey.
   	 *
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.responseDataKey
@@ -64828,7 +62600,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.responseDataKey,
@@ -64838,7 +62609,6 @@ trait JQuery extends js.Object {
   	 * Gets the data type of the remote data source response. Delegates the value to [$.ig.DataSource.settings.responseDataType](ig.datasource#options:settings.responseDataType). Please refer to the documentation of $.ig.DataSource.settings.responseDataType.
   	 *
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.responseDataType
@@ -64849,7 +62619,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.responseDataType,
@@ -64931,7 +62700,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the width of the control container.
   	 *
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -64942,19 +62710,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the width of the control container.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTree(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -65069,7 +62829,6 @@ trait JQuery extends js.Object {
   	 * Sets gets ability to automatically format text in cells for numeric and date columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. [Here column formatting is explained in details](http://www.igniteui.com/help/iggrid-columns-and-layout#column-formatting)
   	 *
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.autoFormat
@@ -65080,19 +62839,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.autoFormat,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Sets gets ability to automatically format text in cells for numeric and date columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. [Here column formatting is explained in details](http://www.igniteui.com/help/iggrid-columns-and-layout#column-formatting)
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.autoFormat,
@@ -65451,7 +63202,6 @@ trait JQuery extends js.Object {
   	 * Can be any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an $.ig.DataSource itself
   	 *
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataSource
@@ -65513,13 +63263,6 @@ trait JQuery extends js.Object {
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataSourceUrl,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Can be any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an $.ig.DataSource itself
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataSource,
@@ -65531,19 +63274,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataSource,
     optionValue: js.Array[_]
   ): scala.Unit = js.native
-  /**
-  	 * Can be any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an $.ig.DataSource itself
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.dataSource,
@@ -65553,7 +63288,6 @@ trait JQuery extends js.Object {
   	 * Default column width that will be set for all columns, that don't have [column width](ui.iggrid#options:columns.width) defined. Can also be set as '*', in which case the width auto-size based on the content of the column cells (including the header text).
   	 *
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.defaultColumnWidth
@@ -65564,19 +63298,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.defaultColumnWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Default column width that will be set for all columns, that don't have [column width](ui.iggrid#options:columns.width) defined. Can also be set as '*', in which case the width auto-size based on the content of the column cells (including the header text).
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.defaultColumnWidth,
@@ -65700,7 +63426,6 @@ trait JQuery extends js.Object {
   	 * Configures how the feature chooser icon should display on header cells - e.g. to display as gear icon or not.
   	 *
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.featureChooserIconDisplay
@@ -65711,7 +63436,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.featureChooserIconDisplay,
@@ -65824,18 +63548,10 @@ trait JQuery extends js.Object {
   	 * Gets the foreign key value in the data source to treat as the root level once the grid is data bound. Defaults to -1 (which includes the entire data source)
   	 *
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.foreignKeyRootValue
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Sets the foreign key value in the data source to treat as the root level once the grid is data bound. Defaults to -1 (which includes the entire data source)
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.foreignKeyRootValue,
@@ -65847,7 +63563,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.foreignKeyRootValue,
@@ -65921,7 +63636,6 @@ trait JQuery extends js.Object {
   	 * This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row - (if any), etc. [Here you can find more info about setting igGrid height](http://www.igniteui.com/help/iggrid-columns-and-layout#width-height).
   	 *
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -65932,19 +63646,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row - (if any), etc. [Here you can find more info about setting igGrid height](http://www.igniteui.com/help/iggrid-columns-and-layout#width-height).
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -66117,7 +63823,6 @@ trait JQuery extends js.Object {
   	 * A reference or name of a javascript function which renders expand indicators(called ONLY IF option renderExpansionIndicatorColumn is true)
   	 *
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.renderExpansionCellFunction
@@ -66128,19 +63833,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.renderExpansionCellFunction,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * A reference or name of a javascript function which renders expand indicators(called ONLY IF option renderExpansionIndicatorColumn is true)
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.renderExpansionCellFunction,
@@ -66169,7 +63866,6 @@ trait JQuery extends js.Object {
   	 * A reference or name of a javascript function which changes first data cell - renders indentation according to databound level
   	 *
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.renderFirstDataCellFunction
@@ -66180,19 +63876,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.renderFirstDataCellFunction,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * A reference or name of a javascript function which changes first data cell - renders indentation according to databound level
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.renderFirstDataCellFunction,
@@ -66618,7 +64306,6 @@ trait JQuery extends js.Object {
   	 * The templating engine that will be used to render the grid [column templates](ui.iggrid#options:columns.template). [Here you can find](http://www.infragistics.com/community/blogs/marina_stoyanova/archive/2014/05/30/using-different-template-engines-with-ignite-ui-controls.aspx) how to use templating engines other than igTemplating and jsRender.
   	 *
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.templatingEngine
@@ -66629,7 +64316,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.templatingEngine,
@@ -66717,7 +64403,6 @@ trait JQuery extends js.Object {
   	 * Defines the grid width in pixels or percents. [Here you can find more info about setting igGrid width](http://www.igniteui.com/help/iggrid-columns-and-layout#width-height).
   	 *
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -66728,19 +64413,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Defines the grid width in pixels or percents. [Here you can find more info about setting igGrid width](http://www.igniteui.com/help/iggrid-columns-and-layout#width-height).
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGrid(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -66930,7 +64607,6 @@ trait JQuery extends js.Object {
   	 * Configures which side the fixed columns of the grid will be rendered on. Check [this topic](http://www.igniteui.com/help/iggrid-columnfixing-configuring#direction) out of more information.
   	 *
   	 */
-  
   def igTreeGridColumnFixing(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.fixingDirection
@@ -66941,7 +64617,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridColumnFixing(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.fixingDirection,
@@ -66998,7 +64673,6 @@ trait JQuery extends js.Object {
   	 * Minimal visible area in pixels for the unfixed columns. If the end user tries to fix a column(or columns), which causes the width of the fixed columns to grow such that the width of visible area of unfixed columns is less than this option then fixing will be canceled. Check [this topic](http://www.igniteui.com/help/iggrid-columnfixing-configuring#non-fixable-min-width) out for more information.
   	 *
   	 */
-  
   def igTreeGridColumnFixing(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minimalVisibleAreaWidth
@@ -67009,19 +64683,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridColumnFixing(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minimalVisibleAreaWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Minimal visible area in pixels for the unfixed columns. If the end user tries to fix a column(or columns), which causes the width of the fixed columns to grow such that the width of visible area of unfixed columns is less than this option then fixing will be canceled. Check [this topic](http://www.igniteui.com/help/iggrid-columnfixing-configuring#non-fixable-min-width) out for more information.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGridColumnFixing(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.minimalVisibleAreaWidth,
@@ -67536,7 +65202,6 @@ trait JQuery extends js.Object {
   	 * Specify the drag-and-drop mode for the feature
   	 *
   	 */
-  
   def igTreeGridColumnMoving(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode
@@ -67547,7 +65212,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridColumnMoving(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode,
@@ -67557,7 +65221,6 @@ trait JQuery extends js.Object {
   	 * Specify the way columns will be rearranged
   	 *
   	 */
-  
   def igTreeGridColumnMoving(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.moveType
@@ -67568,7 +65231,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridColumnMoving(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.moveType,
@@ -68081,7 +65743,6 @@ trait JQuery extends js.Object {
   	 * Type of filtering. Delegates all filtering functionality to the [$.ig.DataSource](ig.datasource).
   	 *
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`
@@ -68092,7 +65753,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`,
@@ -68121,7 +65781,6 @@ trait JQuery extends js.Object {
   	 * Location of the advanced filtering button when [advancedModeEditorsVisible](ui.iggridfiltering#options:advancedModeEditorsVisible) is false (i.e. when the button is rendered in the header).
   	 *
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.advancedModeHeaderButtonLocation
@@ -68132,7 +65791,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.advancedModeHeaderButtonLocation,
@@ -68383,7 +66041,6 @@ trait JQuery extends js.Object {
   	 * The filtering button for filter dropdowns can be rendered either on the left of the filter editor, or on the right.
   	 *
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterButtonLocation
@@ -68394,7 +66051,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterButtonLocation,
@@ -68423,7 +66079,6 @@ trait JQuery extends js.Object {
   	 * Add button width - in the advanced filter dialog.
   	 *
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogAddButtonWidth
@@ -68434,19 +66089,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogAddButtonWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Add button width - in the advanced filter dialog.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogAddButtonWidth,
@@ -68530,7 +66177,6 @@ trait JQuery extends js.Object {
   	 * Width of the column chooser dropdowns in the advanced filter dialog.
   	 *
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogColumnDropDownDefaultWidth
@@ -68541,19 +66187,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogColumnDropDownDefaultWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Width of the column chooser dropdowns in the advanced filter dialog.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogColumnDropDownDefaultWidth,
@@ -68622,7 +66260,6 @@ trait JQuery extends js.Object {
   	 * Width of the filtering expression input boxes in the advanced filter dialog.
   	 *
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogExprInputDefaultWidth
@@ -68633,19 +66270,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogExprInputDefaultWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Width of the filtering expression input boxes in the advanced filter dialog.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogExprInputDefaultWidth,
@@ -68710,7 +66339,6 @@ trait JQuery extends js.Object {
   	 * Width of the filtering condition dropdowns in the advanced filter dialog.
   	 *
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogFilterDropDownDefaultWidth
@@ -68721,19 +66349,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogFilterDropDownDefaultWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Width of the filtering condition dropdowns in the advanced filter dialog.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogFilterDropDownDefaultWidth,
@@ -68787,7 +66407,6 @@ trait JQuery extends js.Object {
   	 * Default filter dialog height (used for Advanced filtering [mode](ui.iggridfiltering#options:mode)).
   	 *
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogHeight
@@ -68798,19 +66417,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogHeight,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Default filter dialog height (used for Advanced filtering [mode](ui.iggridfiltering#options:mode)).
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogHeight,
@@ -68856,7 +66467,6 @@ trait JQuery extends js.Object {
   	 * Width of the Ok and Cancel buttons in the advanced filtering dialogs.
   	 *
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogOkCancelButtonWidth
@@ -68867,19 +66477,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogOkCancelButtonWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Width of the Ok and Cancel buttons in the advanced filtering dialogs.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogOkCancelButtonWidth,
@@ -68925,7 +66527,6 @@ trait JQuery extends js.Object {
   	 * Default filter dialog width (used for Advanced filtering [mode](ui.iggridfiltering#options:mode)).
   	 *
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogWidth
@@ -68936,19 +66537,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Default filter dialog width (used for Advanced filtering [mode](ui.iggridfiltering#options:mode)).
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogWidth,
@@ -68977,7 +66570,6 @@ trait JQuery extends js.Object {
   	 * Type of animations for the column filter dropdowns.
   	 *
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDropDownAnimations
@@ -68988,7 +66580,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDropDownAnimations,
@@ -69021,7 +66612,6 @@ trait JQuery extends js.Object {
   	 * Enable/disable filter icons visibility.
   	 *
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDropDownItemIcons
@@ -69032,7 +66622,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDropDownItemIcons,
@@ -69042,7 +66631,6 @@ trait JQuery extends js.Object {
   	 * Width of the column filter dropdowns.
   	 *
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDropDownWidth
@@ -69053,19 +66641,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDropDownWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Width of the column filter dropdowns.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDropDownWidth,
@@ -69256,7 +66836,6 @@ trait JQuery extends js.Object {
   	 * Default is 'simple' for non-virtualized grids, and 'advanced' when [virtualization](ui.iggrid#options:virtualization) is enabled.
   	 *
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode
@@ -69267,7 +66846,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridFiltering(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode,
@@ -70335,7 +67913,6 @@ trait JQuery extends js.Object {
   	 * Type of paging. Delegates all paging functionality to the [$.ig.DataSource](ig.datasource).
   	 *
   	 */
-  
   def igTreeGridPaging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`
@@ -70346,7 +67923,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridPaging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`,
@@ -70415,7 +67991,6 @@ trait JQuery extends js.Object {
   	 * When data flows to the next page there are a couple of different modes that can help communicate the context of a leaf level row. When mode option is "rootLevelOnly" then the context row always shows the value of the contextRowRootText option.
   	 *
   	 */
-  
   def igTreeGridPaging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.contextRowMode
@@ -70426,7 +68001,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridPaging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.contextRowMode,
@@ -70709,7 +68283,6 @@ trait JQuery extends js.Object {
   	 * Sets gets paging mode.
   	 *
   	 */
-  
   def igTreeGridPaging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode
@@ -70720,7 +68293,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridPaging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode,
@@ -70907,7 +68479,6 @@ trait JQuery extends js.Object {
   	 * Page size dropdown location, when [showPageSizeDropDown](ui.iggridpaging#options:showPageSizeDropDown) is set to true. Can be rendered above the grid header or inside the pager, next to the page links.
   	 *
   	 */
-  
   def igTreeGridPaging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.pageSizeDropDownLocation
@@ -70918,7 +68489,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridPaging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.pageSizeDropDownLocation,
@@ -71190,18 +68760,10 @@ trait JQuery extends js.Object {
   	 * Reference to the (or name of )function, called before rendering context row content(rendering loading message/bread crumb/parent row). The function takes 4 arguments- dataRow, $textArea- jQuery representation of the text area of the context row(when mode is loading/breadcrumb then it is <span /> otherwise <tr />), array of parent rows and context mode - "loading"|"breadcrumb"|"parent". When the function returns string it is used as html set in $textArea. If the function does not return result or returns false/empty string then rendering of the content of the context row should be handled by the developer(similar to canceling rendering of context row content).
   	 *
   	 */
-  
   def igTreeGridPaging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.renderContextRowFunc
   ): js.Function | java.lang.String = js.native
-  /**
-  	 * Reference to the (or name of )function, called before rendering context row content(rendering loading message/bread crumb/parent row). The function takes 4 arguments- dataRow, $textArea- jQuery representation of the text area of the context row(when mode is loading/breadcrumb then it is <span /> otherwise <tr />), array of parent rows and context mode - "loading"|"breadcrumb"|"parent". When the function returns string it is used as html set in $textArea. If the function does not return result or returns false/empty string then rendering of the content of the context row should be handled by the developer(similar to canceling rendering of context row content).
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGridPaging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.renderContextRowFunc,
@@ -71213,7 +68775,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridPaging(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.renderContextRowFunc,
@@ -71516,7 +69077,6 @@ trait JQuery extends js.Object {
   	 * Gets the type of checkboxes rendered in the row selector. Can be set only at initialization.
   	 *
   	 */
-  
   def igTreeGridRowSelectors(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.checkBoxMode
@@ -71527,7 +69087,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridRowSelectors(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.checkBoxMode,
@@ -71740,7 +69299,6 @@ trait JQuery extends js.Object {
   	 * Defines width of the row selector`s column in pixels or percentage.
   	 *
   	 */
-  
   def igTreeGridRowSelectors(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.rowSelectorColumnWidth
@@ -71751,19 +69309,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridRowSelectors(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.rowSelectorColumnWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Defines width of the row selector`s column in pixels or percentage.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGridRowSelectors(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.rowSelectorColumnWidth,
@@ -71773,7 +69323,6 @@ trait JQuery extends js.Object {
   	 * Determines row numbering format.
   	 *
   	 */
-  
   def igTreeGridRowSelectors(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.rowSelectorNumberingMode
@@ -71784,7 +69333,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridRowSelectors(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.rowSelectorNumberingMode,
@@ -72026,7 +69574,6 @@ trait JQuery extends js.Object {
   	 * Defines type of the selection.
   	 *
   	 */
-  
   def igTreeGridSelection(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode
@@ -72037,7 +69584,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridSelection(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode,
@@ -72290,7 +69836,6 @@ trait JQuery extends js.Object {
   	 * Defines local or remote sorting operations.
   	 *
   	 */
-  
   def igTreeGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`
@@ -72301,7 +69846,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.`type`,
@@ -72505,7 +70049,6 @@ trait JQuery extends js.Object {
   	 * Gets which direction to use on the first click / keydown, if the column is sorted for the first time.
   	 *
   	 */
-  
   def igTreeGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.firstSortDirection
@@ -72516,7 +70059,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.firstSortDirection,
@@ -72835,7 +70377,6 @@ trait JQuery extends js.Object {
   	 * Gets height of multiple sorting dialog.
   	 *
   	 */
-  
   def igTreeGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.modalDialogHeight
@@ -72846,19 +70387,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.modalDialogHeight,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Sets height of multiple sorting dialog.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.modalDialogHeight,
@@ -73014,7 +70547,6 @@ trait JQuery extends js.Object {
   	 * Gets width of multiple sorting dialog.
   	 *
   	 */
-  
   def igTreeGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.modalDialogWidth
@@ -73025,19 +70557,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.modalDialogWidth,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Sets width of multiple sorting dialog.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.modalDialogWidth,
@@ -73047,7 +70571,6 @@ trait JQuery extends js.Object {
   	 * Defines single column sorting or multiple column sorting.
   	 *
   	 */
-  
   def igTreeGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode
@@ -73058,7 +70581,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridSorting(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.mode,
@@ -73394,7 +70916,6 @@ trait JQuery extends js.Object {
   	 * Controls the tooltip's style
   	 *
   	 */
-  
   def igTreeGridTooltips(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.style
@@ -73405,7 +70926,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridTooltips(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.style,
@@ -73483,7 +71003,6 @@ trait JQuery extends js.Object {
   	 * Determines the tooltip visibility option
   	 *
   	 */
-  
   def igTreeGridTooltips(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.visibility
@@ -73494,7 +71013,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridTooltips(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.visibility,
@@ -73855,7 +71373,6 @@ trait JQuery extends js.Object {
   	 * Gets the edit mode.
   	 *
   	 */
-  
   def igTreeGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.editMode
@@ -73866,7 +71383,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.editMode,
@@ -74281,18 +71797,10 @@ trait JQuery extends js.Object {
   	 * Sets a custom function to be called when the AJAX request to the URL specified by the [updateUrl](ui.iggrid#options:updateUrl) property fails. The function will be called with arguments representing the data returned by the server.
   	 *
   	 */
-  
   def igTreeGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.saveChangesErrorHandler
   ): js.Function | java.lang.String = js.native
-  /**
-  	 * Sets a custom function to be called when the AJAX request to the URL specified by the [updateUrl](ui.iggrid#options:updateUrl) property fails. The function will be called with arguments representing the data returned by the server.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.saveChangesErrorHandler,
@@ -74304,7 +71812,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.saveChangesErrorHandler,
@@ -74314,18 +71821,10 @@ trait JQuery extends js.Object {
   	 * Sets a custom function to be called when the AJAX request to the URL specified by the [updateUrl](ui.iggrid#options:updateUrl) property succeeds. The function will be called with arguments representing the data returned by the server.
   	 *
   	 */
-  
   def igTreeGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.saveChangesSuccessHandler
   ): js.Function | java.lang.String = js.native
-  /**
-  	 * Sets a custom function to be called when the AJAX request to the URL specified by the [updateUrl](ui.iggrid#options:updateUrl) property succeeds. The function will be called with arguments representing the data returned by the server.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.saveChangesSuccessHandler,
@@ -74337,7 +71836,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.saveChangesSuccessHandler,
@@ -74366,7 +71864,6 @@ trait JQuery extends js.Object {
   	 * Gets how end-users are able to start edit mode. Possible values: "click", "dblclick", "F2", "enter" and their combinations separated by coma or in array. The keyboard triggers have effect only if the grid cells can receive focus (the grid's [tabIndex](ui.iggrid#options:tabIndex) property should not have a negative value) or Selection is enabled. If "dblclick" is included, then "click" has no effect.
   	 *
   	 */
-  
   def igTreeGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.startEditTriggers
@@ -74377,19 +71874,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.startEditTriggers,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Sets how end-users are able to start edit mode. Possible values: "click", "dblclick", "F2", "enter" and their combinations separated by coma or in array. The keyboard triggers have effect only if the grid cells can receive focus (the grid's [tabIndex](ui.iggrid#options:tabIndex) property should not have a negative value) or Selection is enabled. If "dblclick" is included, then "click" has no effect.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.startEditTriggers,
@@ -74399,7 +71888,6 @@ trait JQuery extends js.Object {
   	 * On touch-enabled devices specifies the swipe distance for the delete button to appear.
   	 *
   	 */
-  
   def igTreeGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.swipeDistance
@@ -74410,19 +71898,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igTreeGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.swipeDistance,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * On touch-enabled devices specifies the swipe distance for the delete button to appear.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igTreeGridUpdating(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.swipeDistance,
@@ -75522,18 +73002,10 @@ trait JQuery extends js.Object {
   	 * Get or set height of the main container of the file upload control. Main container contains all buttons, progressbar, etc.
   	 *
   	 */
-  
   def igUpload(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Get or set height of the main container of the file upload control. Main container contains all buttons, progressbar, etc.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igUpload(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -75545,7 +73017,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igUpload(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -75977,7 +73448,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igUpload(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -75988,19 +73458,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igUpload(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igUpload(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -76067,18 +73529,10 @@ trait JQuery extends js.Object {
   	 * Get or set width of the main container of the file upload control. Main container contains all buttons, progressbar, etc.
   	 *
   	 */
-  
   def igUpload(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Get or set width of the main container of the file upload control. Main container contains all buttons, progressbar, etc.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igUpload(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -76090,7 +73544,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igUpload(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -76148,18 +73601,10 @@ trait JQuery extends js.Object {
   	 * Gets/Sets Credit Card number validation rule options.Note: This rule will only validate the checksum of the number using Luhn algorithm irregardless of card type.
   	 *
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.creditCard
   ): scala.Boolean | js.Object = js.native
-  /**
-  	 * /Sets Credit Card number validation rule options.Note: This rule will only validate the checksum of the number using Luhn algorithm irregardless of card type.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.creditCard,
@@ -76171,7 +73616,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.creditCard,
@@ -76181,18 +73625,10 @@ trait JQuery extends js.Object {
   	 * Gets/Sets a custom function to perform validation. Use 'this' to reference the calling validator and the value and optional field settings arguments to determine and return the state of the field.
   	 *
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.custom
   ): js.Function | java.lang.String | js.Object = js.native
-  /**
-  	 * /Sets a custom function to perform validation. Use 'this' to reference the calling validator and the value and optional field settings arguments to determine and return the state of the field.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.custom,
@@ -76204,19 +73640,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.custom,
     optionValue: js.Function
   ): scala.Unit = js.native
-  /**
-  	 * /Sets a custom function to perform validation. Use 'this' to reference the calling validator and the value and optional field settings arguments to determine and return the state of the field.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.custom,
@@ -76226,18 +73654,10 @@ trait JQuery extends js.Object {
   	 * Gets/Sets date validation rule options. This can additionally help guide the [valueRange](ui.igvalidator#options:valueRange) validation.Note: Dependant on JavaScript Date parsing which will accept a wide range of values.
   	 *
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.date
   ): scala.Boolean | js.Object = js.native
-  /**
-  	 * /Sets date validation rule options. This can additionally help guide the [valueRange](ui.igvalidator#options:valueRange) validation.Note: Dependant on JavaScript Date parsing which will accept a wide range of values.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.date,
@@ -76249,7 +73669,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.date,
@@ -76259,18 +73678,10 @@ trait JQuery extends js.Object {
   	 * Gets/Sets email validation rule options. Uses a RegExp defined in the "$.ui.igValidator.defaults" object.
   	 *
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.email
   ): scala.Boolean | js.Object = js.native
-  /**
-  	 * /Sets email validation rule options. Uses a RegExp defined in the "$.ui.igValidator.defaults" object.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.email,
@@ -76282,7 +73693,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.email,
@@ -76292,7 +73702,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets a requirement for the value in this field to be the same as another input element or editor control.
   	 *
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.equalTo
@@ -76303,19 +73712,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.equalTo,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets a requirement for the value in this field to be the same as another input element or editor control.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.equalTo,
@@ -76598,7 +73999,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets a minimum and/or maximum length of text or number of selected items. Null or 0 values are ignored.
   	 *
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.lengthRange
@@ -76609,19 +74009,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.lengthRange,
     optionValue: js.Array[_]
   ): scala.Unit = js.native
-  /**
-  	 * /Sets a minimum and/or maximum length of text or number of selected items. Null or 0 values are ignored.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.lengthRange,
@@ -76688,18 +74080,10 @@ trait JQuery extends js.Object {
   	 * Gets/Sets number validation rule options.Default separators for decimals and thousands are '.' and ',' respectively and are defined in the "$.ui.igValidator.defaults" object.
   	 *
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.number
   ): scala.Boolean | js.Object = js.native
-  /**
-  	 * /Sets number validation rule options.Default separators for decimals and thousands are '.' and ',' respectively and are defined in the "$.ui.igValidator.defaults" object.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.number,
@@ -76711,7 +74095,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.number,
@@ -76805,7 +74188,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets regular expression validation rule options.
   	 *
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.pattern
@@ -76816,19 +74198,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.pattern,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets regular expression validation rule options.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.pattern,
@@ -76838,7 +74212,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -76849,19 +74222,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -76871,7 +74236,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets option to validate if a value was entered (not empty text, selected item, etc.)
   	 *
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.required
@@ -76897,13 +74261,6 @@ trait JQuery extends js.Object {
     optionName: igniteDashUiLib.igniteDashUiLibStrings.requiredIndication,
     optionValue: scala.Boolean
   ): scala.Unit = js.native
-  /**
-  	 * /Sets option to validate if a value was entered (not empty text, selected item, etc.)
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.required,
@@ -76915,7 +74272,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.required,
@@ -77116,7 +74472,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets a minimum and/or maximum value. Null values are ignored.
   	 *
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.valueRange
@@ -77127,19 +74482,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.valueRange,
     optionValue: js.Array[_]
   ): scala.Unit = js.native
-  /**
-  	 * /Sets a minimum and/or maximum value. Null values are ignored.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igValidator(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.valueRange,
@@ -77563,7 +74910,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the height of the control. By default null will stretch the control to fit data, if no other heights are defined.
   	 *
   	 */
-  
   def igVideoPlayer(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -77574,19 +74920,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igVideoPlayer(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the height of the control. By default null will stretch the control to fit data, if no other heights are defined.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igVideoPlayer(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -77782,7 +75120,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igVideoPlayer(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -77793,19 +75130,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igVideoPlayer(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igVideoPlayer(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -77971,7 +75300,6 @@ trait JQuery extends js.Object {
   	 * Gets/Sets the width of the control. By default null will stretch the control to fit data, if no other widths are defined.
   	 *
   	 */
-  
   def igVideoPlayer(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -77982,19 +75310,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igVideoPlayer(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * /Sets the width of the control. By default null will stretch the control to fit data, if no other widths are defined.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igVideoPlayer(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -78102,7 +75422,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igWidget(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -78113,19 +75432,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igWidget(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igWidget(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -78217,7 +75528,6 @@ trait JQuery extends js.Object {
   /**
   	 * The height of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igZoomSlider(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
@@ -78227,18 +75537,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igZoomSlider(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The height of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igZoomSlider(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -78616,7 +75919,6 @@ trait JQuery extends js.Object {
   /**
   	 * The width of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
-  
   def igZoomSlider(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -78626,18 +75928,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igZoomSlider(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * The width of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igZoomSlider(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -78684,7 +75979,6 @@ trait JQuery extends js.Object {
   	 * object A valid set of properties to initialize the clone with.
   	 *
   	 */
-  
   def igZoombar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.clone
@@ -78696,20 +75990,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igZoombar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.clone,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Sets how the target widget's clone is rendered inside the Zoombar.
-  	 * object A valid set of properties to initialize the clone with.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igZoombar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.clone,
@@ -78738,18 +76023,10 @@ trait JQuery extends js.Object {
   	 * Gets the height of the Zoombar.
   	 *
   	 */
-  
   def igZoombar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height
   ): scala.Double | java.lang.String = js.native
-  /**
-  	 * Sets the height of the Zoombar.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igZoombar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -78761,7 +76038,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igZoombar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.height,
@@ -78866,7 +76142,6 @@ trait JQuery extends js.Object {
   	 * Set/Get the regional setting for the widget.
   	 *
   	 */
-  
   def igZoombar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional
@@ -78877,19 +76152,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igZoombar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igZoombar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.regional,
@@ -78919,7 +76186,6 @@ trait JQuery extends js.Object {
   	 * object A valid jQuery object, the first element of which is that element.
   	 *
   	 */
-  
   def igZoombar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.target
@@ -78931,20 +76197,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igZoombar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.target,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Sets the element on which the widget the Zoombar is attached to is initialized.
-  	 * object A valid jQuery object, the first element of which is that element.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igZoombar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.target,
@@ -78954,7 +76211,6 @@ trait JQuery extends js.Object {
   	 * Gets the width of the Zoombar.
   	 *
   	 */
-  
   def igZoombar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width
@@ -78965,19 +76221,11 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igZoombar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
     optionValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-  	 * Sets the width of the Zoombar.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  
   def igZoombar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.width,
@@ -79125,7 +76373,6 @@ trait JQuery extends js.Object {
   	 * Gets when the zoom effect is applied.
   	 *
   	 */
-  
   def igZoombar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.zoomAction
@@ -79136,7 +76383,6 @@ trait JQuery extends js.Object {
   	 *
   	 * @optionValue New value to be set.
   	 */
-  
   def igZoombar(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.zoomAction,

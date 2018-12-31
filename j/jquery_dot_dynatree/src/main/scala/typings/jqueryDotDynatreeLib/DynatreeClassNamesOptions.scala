@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DynatreeClassNamesOptions extends js.Object {
   var active: js.UndefOr[java.lang.String] = js.undefined
   var checkbox: js.UndefOr[java.lang.String] = js.undefined

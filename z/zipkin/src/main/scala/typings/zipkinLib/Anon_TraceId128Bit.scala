@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TraceId128Bit extends js.Object {
   var ctxImpl: zipkinLib.zipkinMod.zipkinNs.Context[zipkinLib.zipkinMod.zipkinNs.TraceId]
   var localEndpoint: js.UndefOr[zipkinLib.zipkinMod.zipkinNs.modelNs.Endpoint] = js.undefined

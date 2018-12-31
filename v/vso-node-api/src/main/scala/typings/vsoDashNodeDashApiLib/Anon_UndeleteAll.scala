@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_UndeleteAll extends js.Object {
   var add: scala.Double
   var all: scala.Double

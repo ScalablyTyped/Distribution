@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRemotingProvider extends IJsonProvider {
   /** [Config Option] (Object) */
   var actions: js.UndefOr[js.Any] = js.undefined

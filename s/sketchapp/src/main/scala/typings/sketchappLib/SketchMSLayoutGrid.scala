@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSLayoutGrid extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.layoutGrid
   var columnWidth: scala.Double

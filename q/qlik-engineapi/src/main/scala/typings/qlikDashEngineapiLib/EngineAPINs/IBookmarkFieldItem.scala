@@ -6,49 +6,48 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * BookmarkFieldItem...
-     */
-
+  * BookmarkFieldItem...
+  */
 trait IBookmarkFieldItem extends js.Object {
   /**
-           * If set to true, selections within a list object are made in AND mode;
-           * If you have a list object that lists all customers, by selecting Customer 1 and
-           * Customer 2 while in and-mode, all records that are associated with Customer 1 and Customer 2 are selected.
-           *
-           * The default value is false; selections within a list object are made in OR mode. If you have a list object
-           * that lists all customers, by selecting Customer 1 and Customer 2 while in or-mode, all records that are
-           * associated with either Customer 1 or Customer 2 are selected.
-           * This parameter is not returned if set to false.
-           */
+    * If set to true, selections within a list object are made in AND mode;
+    * If you have a list object that lists all customers, by selecting Customer 1 and
+    * Customer 2 while in and-mode, all records that are associated with Customer 1 and Customer 2 are selected.
+    *
+    * The default value is false; selections within a list object are made in OR mode. If you have a list object
+    * that lists all customers, by selecting Customer 1 and Customer 2 while in or-mode, all records that are
+    * associated with either Customer 1 or Customer 2 are selected.
+    * This parameter is not returned if set to false.
+    */
   var qAndMode: scala.Boolean
   /**
-           * Name and type of the field
-           */
+    * Name and type of the field
+    */
   var qDef: IFieldDefEx
   /**
-           * List of excluded values.
-           * Either the list of selected values or the list of excluded values is displayed.
-           */
+    * List of excluded values.
+    * Either the list of selected values or the list of excluded values is displayed.
+    */
   var qExcludedValues: js.Array[IFieldValue]
   /**
-           * Indicates if the field is locked.
-           * Default is false.
-           */
+    * Indicates if the field is locked.
+    * Default is false.
+    */
   var qLocked: scala.Boolean
   /**
-           * If set to true, the field has always one selection (not 0 and not more than 1).
-           * If another value is selected, the previous one is unselected.
-           * The default value is false. This parameter is not returned if set to false.
-           */
+    * If set to true, the field has always one selection (not 0 and not more than 1).
+    * If another value is selected, the previous one is unselected.
+    * The default value is false. This parameter is not returned if set to false.
+    */
   var qOneAndOnlyOne: scala.Boolean
   /**
-           * Information on the selections criteria
-           */
+    * Information on the selections criteria
+    */
   var qSelectInfo: ISelectInfo
   /**
-           * List of the selected values
-           * Either the list of selected values or the list of excluded values is displayed.
-           */
+    * List of the selected values
+    * Either the list of selected values or the list of excluded values is displayed.
+    */
   var qValues: js.Array[IFieldValue]
 }
 

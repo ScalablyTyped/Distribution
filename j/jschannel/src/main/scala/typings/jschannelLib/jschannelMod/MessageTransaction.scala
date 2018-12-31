@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MessageTransaction extends js.Object {
   def complete(result: js.Any): scala.Unit
   def completed(): scala.Boolean

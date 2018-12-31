@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NormalHandle extends js.Object {
   var dra: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Splitter
   var dragHandle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.SplitterHandle

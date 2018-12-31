@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StoreOptions
   extends ibmDashMobilefirstLib.WLNs.Options {
   var additionalSearchFields: js.UndefOr[js.Object] = js.undefined

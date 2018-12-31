@@ -14,28 +14,16 @@ class ImageLoader () extends js.Object {
   var path: java.lang.String = js.native
   var withCredentials: java.lang.String = js.native
   /**
-       * Begin loading from url
-       * @param url
-       */
+    * Begin loading from url
+    * @param url
+    */
   def load(url: java.lang.String): stdLib.HTMLImageElement = js.native
-  /**
-       * Begin loading from url
-       * @param url
-       */
   def load(url: java.lang.String, onLoad: js.Function1[/* image */ stdLib.HTMLImageElement, scala.Unit]): stdLib.HTMLImageElement = js.native
-  /**
-       * Begin loading from url
-       * @param url
-       */
   def load(
     url: java.lang.String,
     onLoad: js.Function1[/* image */ stdLib.HTMLImageElement, scala.Unit],
     onProgress: js.Function1[/* event */ stdLib.ProgressEvent, scala.Unit]
   ): stdLib.HTMLImageElement = js.native
-  /**
-       * Begin loading from url
-       * @param url
-       */
   def load(
     url: java.lang.String,
     onLoad: js.Function1[/* image */ stdLib.HTMLImageElement, scala.Unit],

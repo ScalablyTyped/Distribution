@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaskRunOptions extends js.Object {
   /**
-       * Optional environment variables to override those set in the container definition.
-       */
+    * Optional environment variables to override those set in the container definition.
+    */
   var environment: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
   /**
-       * The properties of the host where this task can run.
-       */
+    * The properties of the host where this task can run.
+    */
   var host: js.UndefOr[HostProperties] = js.undefined
 }
 

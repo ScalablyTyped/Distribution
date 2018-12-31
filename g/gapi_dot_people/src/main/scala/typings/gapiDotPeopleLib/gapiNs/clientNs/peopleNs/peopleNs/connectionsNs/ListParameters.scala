@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListParameters extends js.Object {
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   // Query parameters

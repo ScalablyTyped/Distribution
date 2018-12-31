@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RenderError extends js.Object {
   var column: scala.Double
   var extract: js.Array[java.lang.String]

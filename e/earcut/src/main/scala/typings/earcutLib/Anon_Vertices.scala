@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Vertices extends js.Object {
   var dimensions: scala.Double
   var holes: js.Array[scala.Double]

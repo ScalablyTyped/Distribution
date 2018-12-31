@@ -100,7 +100,6 @@ class ManagementClient protected () extends js.Object {
   // Clients
   def getClients(): js.Promise[js.Array[Client]] = js.native
   def getClients(cb: js.Function2[/* err */ stdLib.Error, /* clients */ js.Array[Client], scala.Unit]): scala.Unit = js.native
-  // Clients
   def getClients(params: GetClientsOptions): js.Promise[js.Array[Client]] = js.native
   def getClients(
     params: GetClientsOptions,

@@ -12,23 +12,23 @@ sealed trait TimeZoneKind extends js.Object
 @js.native
 object TimeZoneKind extends js.Object {
   /**
-       * Local time offset as determined by JavaScript Date class.
-       */
+    * Local time offset as determined by JavaScript Date class.
+    */
   @js.native
   sealed trait Local
     extends timezonecompleteLib.distLibTimezoneMod.TimeZoneKind
   
   /**
-       * Fixed offset from UTC, without DST.
-       */
+    * Fixed offset from UTC, without DST.
+    */
   @js.native
   sealed trait Offset
     extends timezonecompleteLib.distLibTimezoneMod.TimeZoneKind
   
   /**
-       * IANA timezone managed through Olsen TZ database. Includes
-       * DST if applicable.
-       */
+    * IANA timezone managed through Olsen TZ database. Includes
+    * DST if applicable.
+    */
   @js.native
   sealed trait Proper
     extends timezonecompleteLib.distLibTimezoneMod.TimeZoneKind

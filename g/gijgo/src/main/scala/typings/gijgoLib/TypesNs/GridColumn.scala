@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridColumn extends js.Object {
   var align: js.UndefOr[java.lang.String] = js.undefined
   var cssClass: js.UndefOr[java.lang.String] = js.undefined

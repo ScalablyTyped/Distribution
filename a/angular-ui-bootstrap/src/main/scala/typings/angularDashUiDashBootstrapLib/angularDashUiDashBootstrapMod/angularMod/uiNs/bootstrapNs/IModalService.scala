@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IModalService extends js.Object {
   /**
-               * @returns {IPromise}
-               */
+    * @returns {IPromise}
+    */
   def getPromiseChain(): angularLib.angularMod.angularNs.IPromise[_]
   /**
-               * @param {IModalSettings} options
-               * @returns {IModalInstanceService}
-               */
+    * @param {IModalSettings} options
+    * @returns {IModalInstanceService}
+    */
   def open(options: IModalSettings): IModalInstanceService
 }
 

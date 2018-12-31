@@ -12,19 +12,19 @@ abstract class PlayToSourceRequest () extends js.Object {
   /** Gets the time limit to supply the Play To source element. */
   var deadline: stdLib.Date = js.native
   /**
-                   * Displays an error message in the Play To UI.
-                   * @param errorString The error message to display in the Play To UI.
-                   */
+    * Displays an error message in the Play To UI.
+    * @param errorString The error message to display in the Play To UI.
+    */
   def displayErrorString(errorString: java.lang.String): scala.Unit = js.native
   /**
-                   * Defers connecting a media source to a Play To target.
-                   * @return A deferral object that you can use to identify when the deferral is complete.
-                   */
+    * Defers connecting a media source to a Play To target.
+    * @return A deferral object that you can use to identify when the deferral is complete.
+    */
   def getDeferral(): PlayToSourceDeferral = js.native
   /**
-                   * Sets the source element to connect to the Play To target.
-                   * @param value The source element to connect to the Play To target.
-                   */
+    * Sets the source element to connect to the Play To target.
+    * @param value The source element to connect to the Play To target.
+    */
   def setSource(value: PlayToSource): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RowDeletedEventUIParam extends js.Object {
   /**
   	 * Gets a jQuery object containing the TR element of the deleted row.

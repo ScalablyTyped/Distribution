@@ -17,9 +17,7 @@ class MiniSignalBinding protected ()
   extends pixiDotJsLib.PIXINs.MiniSignalBinding {
   //tslint:disable-next-line:ban-types forbidden-types
   def this(fn: js.Function) = this()
-  //tslint:disable-next-line:ban-types forbidden-types
   def this(fn: js.Function, once: scala.Boolean) = this()
-  //tslint:disable-next-line:ban-types forbidden-types
   def this(fn: js.Function, once: scala.Boolean, thisArg: js.Any) = this()
 }
 

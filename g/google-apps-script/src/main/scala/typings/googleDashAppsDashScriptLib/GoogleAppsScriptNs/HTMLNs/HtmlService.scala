@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HtmlService extends js.Object {
-  var SandboxMode: js.Any = js.native
-  var XFrameOptionsMode: js.Any = js.native
+  var SandboxMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.HTML.SandboxMode */ js.Any = js.native
+  var XFrameOptionsMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.HTML.XFrameOptionsMode */ js.Any = js.native
   def createHtmlOutput(): HtmlOutput = js.native
   def createHtmlOutput(blob: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.BlobSource): HtmlOutput = js.native
   def createHtmlOutput(html: java.lang.String): HtmlOutput = js.native

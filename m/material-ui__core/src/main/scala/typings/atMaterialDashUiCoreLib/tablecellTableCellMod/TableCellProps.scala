@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick, @material-ui/core.@material-ui/core.StandardProps) */ 
-trait TableCellProps
+- Lifted 3 members from Set(std.Pick<@material-ui/core.@material-ui/core/TableCell/TableCell.TableCellBaseProps, std.Exclude<keyof @material-ui/core.@material-ui/core/TableCell/TableCell.TableCellBaseProps, 'classes' | never>>, @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/TableCell/TableCell.TableCellBaseProps, @material-ui/core.@material-ui/core/TableCell/TableCell.TableCellClassKey, never>) */ trait TableCellProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TableCellClassKey] {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[TableCellBaseProps]] = js.undefined

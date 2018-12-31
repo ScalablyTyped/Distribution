@@ -320,7 +320,6 @@ trait HTMLCurrentStyle extends js.Object {
   def apply(index: scala.Double): java.lang.String = js.native
   /** @param lFlags [lFlags=0] */
   def getAttribute(strAttributeName: java.lang.String): js.Any = js.native
-  /** @param lFlags [lFlags=0] */
   def getAttribute(strAttributeName: java.lang.String, lFlags: scala.Double): js.Any = js.native
   def getPropertyPriority(bstrPropertyName: java.lang.String): java.lang.String = js.native
   def getPropertyValue(bstrPropertyName: java.lang.String): java.lang.String = js.native
@@ -328,7 +327,6 @@ trait HTMLCurrentStyle extends js.Object {
   def removeProperty(bstrPropertyName: java.lang.String): java.lang.String = js.native
   /** @param pvarPropertyPriority [pvarPropertyPriority=''] */
   def setProperty(bstrPropertyName: java.lang.String, pvarPropertyValue: js.Any): scala.Unit = js.native
-  /** @param pvarPropertyPriority [pvarPropertyPriority=''] */
   def setProperty(bstrPropertyName: java.lang.String, pvarPropertyValue: js.Any, pvarPropertyPriority: js.Any): scala.Unit = js.native
 }
 

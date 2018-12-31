@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Bindingsversion extends js.Object {
   var bindings_version: java.lang.String
   var lang: java.lang.String

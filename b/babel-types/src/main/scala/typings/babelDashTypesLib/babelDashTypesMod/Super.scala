@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Super extends Node {
   @JSName("type")
   var type_Super: babelDashTypesLib.babelDashTypesLibStrings.Super

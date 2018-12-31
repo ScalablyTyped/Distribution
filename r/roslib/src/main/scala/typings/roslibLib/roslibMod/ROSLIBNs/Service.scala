@@ -29,15 +29,6 @@ trait Service extends js.Object {
   		 *   * error - the error message reported by ROS
   		 */
   def callService(request: ServiceRequest, callback: js.Function1[/* response */ js.Any, scala.Unit]): scala.Unit = js.native
-  /**
-  		 * Calls the service. Returns the service response in the callback.
-  		 *
-  		 * @param request - the ROSLIB.ServiceRequest to send
-  		 * @param callback - function with params:
-  		 *   * response - the response from the service request
-  		 * @param failedCallback - the callback function when the service call failed (optional). Params:
-  		 *   * error - the error message reported by ROS
-  		 */
   def callService(
     request: ServiceRequest,
     callback: js.Function1[/* response */ js.Any, scala.Unit],

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseListItemProps extends js.Object {
   var `aria-posinset`: js.UndefOr[scala.Double] = js.undefined
   var `aria-setsize`: js.UndefOr[scala.Double] = js.undefined

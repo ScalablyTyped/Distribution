@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OperationsListResponse extends js.Object {
   /** List of operation resources. */
   var items: js.UndefOr[js.Array[Operation]] = js.undefined

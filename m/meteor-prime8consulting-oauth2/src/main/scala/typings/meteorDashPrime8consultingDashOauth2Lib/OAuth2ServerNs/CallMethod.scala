@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CallMethod extends js.Object {
   /**
-           * Wrapper for Meteor.method to create an authorization code. This is an async function and a callback must be provided to be of any use.
-           */
+    * Wrapper for Meteor.method to create an authorization code. This is an async function and a callback must be provided to be of any use.
+    */
   def authCodeGrant(
     client_id: java.lang.String,
     redirect_uri: java.lang.String,

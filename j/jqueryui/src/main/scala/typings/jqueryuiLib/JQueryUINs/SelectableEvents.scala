@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectableEvents extends js.Object {
   var selected: js.UndefOr[
     js.Function2[/* event */ stdLib.Event, /* ui */ jqueryuiLib.Anon_Selected, scala.Unit]

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	*	VoxImplant roster item
 	*/
-
 trait RosterItem extends js.Object {
   /**
   		*	Groups this roster item belongs to

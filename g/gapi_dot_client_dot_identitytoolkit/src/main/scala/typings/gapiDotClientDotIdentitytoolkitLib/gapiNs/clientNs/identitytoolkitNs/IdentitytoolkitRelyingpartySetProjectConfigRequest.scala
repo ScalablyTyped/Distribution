@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IdentitytoolkitRelyingpartySetProjectConfigRequest extends js.Object {
   /** Whether to allow password user sign in or sign up. */
   var allowPasswordUser: js.UndefOr[scala.Boolean] = js.undefined

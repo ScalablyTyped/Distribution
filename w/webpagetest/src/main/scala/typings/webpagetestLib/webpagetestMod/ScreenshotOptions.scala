@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScreenshotOptions extends js.Object {
   /** returns the page screenshot at the Document Complete point (i.e.: when window.onload was fired) */
   var documentComplete: js.UndefOr[scala.Boolean] = js.undefined

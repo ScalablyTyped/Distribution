@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IconStackProps extends SizeOverrideHTMLProps[IconStack] {
   @JSName("children")
   var children_IconStackProps: js.UndefOr[

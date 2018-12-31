@@ -16,7 +16,7 @@ trait MiniPass
   val flowing: scala.Boolean = js.native
   var pipes: js.Any = js.native
   var readable: scala.Boolean = js.native
-  def addEventHandler(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): this.type = js.native
+  def addEventHandler(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   @JSName("addEventHandler")
   def addEventHandler_close(event: minipassLib.minipassLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("addEventHandler")

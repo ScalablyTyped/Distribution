@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OperatingSystem extends js.Object {
   /** DART ID of this operating system. This is the ID used for targeting. */
   var dartId: js.UndefOr[java.lang.String] = js.undefined

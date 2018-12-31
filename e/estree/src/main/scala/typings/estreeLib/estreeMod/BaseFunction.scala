@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseFunction extends BaseNode {
   var async: js.UndefOr[scala.Boolean] = js.undefined
   // The body is either BlockStatement or Expression because arrow functions

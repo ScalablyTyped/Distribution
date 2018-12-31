@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ColumnId extends js.Object {
   /** The id of the column in the base table from which this column is derived. */
   var columnId: js.UndefOr[scala.Double] = js.undefined

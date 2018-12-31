@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Transformer[I, O] extends js.Object {
   var flush: js.UndefOr[TransformStreamDefaultControllerCallback[O]] = js.undefined
   var readableType: js.UndefOr[scala.Nothing] = js.undefined

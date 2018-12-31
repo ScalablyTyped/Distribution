@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://docs.couchdb.org/en/latest/api/database/changes.html#get--db-_changes
-
 trait DatabaseChangesParams extends js.Object {
   // Include encoding information in attachment stubs if include_docs is true and the particular attachment is
   // compressed. Ignored if include_docs isn’t true. Default is false.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ViewportOptions extends js.Object {
   var height: js.UndefOr[scala.Double] = js.undefined
   var projectionMatrix: js.UndefOr[ProjectionMatrix] = js.undefined

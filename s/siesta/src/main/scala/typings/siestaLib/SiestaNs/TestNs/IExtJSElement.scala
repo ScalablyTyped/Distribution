@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @mixin
-         */
+  * @mixin
+  */
 @js.native
 trait IExtJSElement extends js.Object {
   def hasRegion(el: js.Any, region: js.Any): scala.Unit = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HingeConstraintDefinition extends js.Object {
   var axis: threeLib.threeMod.Vector3
   var id: scala.Double

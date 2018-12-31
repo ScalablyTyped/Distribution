@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Request extends js.Object {
   var cancel: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var canceled: js.UndefOr[scala.Boolean] = js.undefined

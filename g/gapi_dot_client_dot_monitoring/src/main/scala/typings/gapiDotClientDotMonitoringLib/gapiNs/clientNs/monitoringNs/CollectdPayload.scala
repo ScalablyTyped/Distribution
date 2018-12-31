@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CollectdPayload extends js.Object {
   /** The end time of the interval. */
   var endTime: js.UndefOr[java.lang.String] = js.undefined

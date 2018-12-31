@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AsyncOperationNotFound extends js.Object {
   var asyncOperationNotFound: scala.Double
   var createBranchPermissionRequired: scala.Double

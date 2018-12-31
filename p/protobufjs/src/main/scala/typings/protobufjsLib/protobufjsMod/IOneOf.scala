@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOneOf extends js.Object {
   /** Oneof field names */
   var oneof: js.Array[java.lang.String]

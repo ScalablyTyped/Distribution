@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This IVisualPlugin interface is only used by the CLI tools when compiling */
-
 @js.native
 trait IVisualPlugin extends js.Object {
   /** The version of the api that this plugin should be run against */
@@ -21,7 +20,6 @@ trait IVisualPlugin extends js.Object {
   var name: java.lang.String = js.native
   /** Function to call to create the visual. */
   def create(): powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.extensibilityNs.IVisual = js.native
-  /** Function to call to create the visual. */
   def create(
     options: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.extensibilityNs.VisualConstructorOptions
   ): powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.extensibilityNs.IVisual = js.native

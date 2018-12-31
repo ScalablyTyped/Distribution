@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubscriptionSubscriberSnippet extends js.Object {
   /** The channel ID of the subscriber. */
   var channelId: js.UndefOr[java.lang.String] = js.undefined

@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * Options which are used to initialize the clustering Provider
-             * @property min {number=} - The minimal supported zoom level, default is 0
-             * @property max {number=} - The maximal supported zoom level, default is 22
-             * @property clusteringOptions {H.clustering.Provider.ClusteringOptions=} - options for clustering algorithm
-             * @property theme {H.clustering.ITheme=} - cluster and noise point graphical representation
-             */
-
+  * Options which are used to initialize the clustering Provider
+  * @property min {number=} - The minimal supported zoom level, default is 0
+  * @property max {number=} - The maximal supported zoom level, default is 22
+  * @property clusteringOptions {H.clustering.Provider.ClusteringOptions=} - options for clustering algorithm
+  * @property theme {H.clustering.ITheme=} - cluster and noise point graphical representation
+  */
 trait Options extends js.Object {
   var clusteringOptions: js.UndefOr[ClusteringOptions] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined

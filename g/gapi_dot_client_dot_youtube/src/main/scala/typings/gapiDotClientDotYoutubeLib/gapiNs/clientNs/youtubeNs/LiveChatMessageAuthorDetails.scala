@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LiveChatMessageAuthorDetails extends js.Object {
   /** The YouTube channel ID. */
   var channelId: js.UndefOr[java.lang.String] = js.undefined

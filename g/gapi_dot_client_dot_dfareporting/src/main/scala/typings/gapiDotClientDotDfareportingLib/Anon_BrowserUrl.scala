@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BrowserUrl extends js.Object {
   /** The URL for downloading the report data through the API. */
   var apiUrl: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGElementTagNameMap extends js.Object {
   var circle: SVGCircleElement
   var clipPath: SVGClipPathElement

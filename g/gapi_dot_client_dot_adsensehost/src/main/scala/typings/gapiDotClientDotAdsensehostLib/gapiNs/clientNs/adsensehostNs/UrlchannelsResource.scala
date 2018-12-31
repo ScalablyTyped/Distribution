@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UrlchannelsResource extends js.Object {
   /** Delete a URL channel from the host AdSense account. */
   def delete(request: gapiDotClientDotAdsensehostLib.Anon_PrettyPrintAdClientIdUrlChannelId): gapiDotClientLib.gapiNs.clientNs.Request[UrlChannel]

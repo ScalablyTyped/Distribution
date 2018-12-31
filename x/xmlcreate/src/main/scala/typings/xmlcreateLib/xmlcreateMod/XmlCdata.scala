@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 class XmlCdata protected ()
   extends xmlcreateLib.libNodesXmlCdataMod.default {
   /**
-       * Initializes a new instance of the {@link XmlCdata} class.
-       *
-       * @param data The character data of the CDATA section.
-       */
+    * Initializes a new instance of the {@link XmlCdata} class.
+    *
+    * @param data The character data of the CDATA section.
+    */
   def this(data: java.lang.String) = this()
 }
 

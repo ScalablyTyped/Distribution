@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ZoomChangeInfo extends js.Object {
   var newZoomFactor: scala.Double
   var oldZoomFactor: scala.Double

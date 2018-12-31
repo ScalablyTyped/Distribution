@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModalOptions extends js.Object {
   var buttons: js.UndefOr[js.Array[ModalButtonDescriptor]] = js.undefined
   var chrome: js.UndefOr[scala.Boolean] = js.undefined

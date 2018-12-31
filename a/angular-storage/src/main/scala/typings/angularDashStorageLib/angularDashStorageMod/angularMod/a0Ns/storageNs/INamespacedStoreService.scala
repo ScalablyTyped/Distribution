@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INamespacedStoreService extends js.Object {
   /**
   			 * Returns the saved value with they key name.

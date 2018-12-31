@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocalNotificationOptions extends js.Object {
   // extra 字段
   var badge: js.UndefOr[scala.Double] = js.undefined

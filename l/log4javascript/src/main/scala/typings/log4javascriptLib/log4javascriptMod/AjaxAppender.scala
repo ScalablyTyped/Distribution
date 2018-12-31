@@ -15,12 +15,6 @@ class AjaxAppender protected () extends Appender {
   	 * @param withCredentials Specifies whether cookies should be sent with each request.
   	 */
   def this(url: java.lang.String) = this()
-  /**
-  	 * Constructor
-  	 * @param url The URL to which log messages should be sent. Note that this is subject to the usual Ajax restrictions:
-  	 * the URL should be in the same domain as that of the page making the request.
-  	 * @param withCredentials Specifies whether cookies should be sent with each request.
-  	 */
   def this(url: java.lang.String, withCredentials: scala.Boolean) = this()
   /**
   	 * Adds an HTTP header that is sent with each request.

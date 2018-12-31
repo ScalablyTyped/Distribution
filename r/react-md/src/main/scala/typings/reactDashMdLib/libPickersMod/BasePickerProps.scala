@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BasePickerProps
   extends reactDashMdLib.libMod.Props
      with reactDashMdLib.libTextFieldsTextFieldMod.SharedTextFieldProps {

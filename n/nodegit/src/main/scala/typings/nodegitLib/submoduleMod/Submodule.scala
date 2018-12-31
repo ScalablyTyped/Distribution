@@ -26,16 +26,11 @@ class Submodule () extends js.Object {
   def repoInit(useGitLink: scala.Double): js.Promise[nodegitLib.repositoryMod.Repository] = js.native
   def sync(): js.Promise[scala.Double] = js.native
   /**
-       * Updates a submodule
-       *
-       *
-       */
+    * Updates a submodule
+    *
+    *
+    */
   def update(init: scala.Double): js.Promise[scala.Double] = js.native
-  /**
-       * Updates a submodule
-       *
-       *
-       */
   def update(init: scala.Double, options: nodegitLib.submoduleDashUpdateDashOptionsMod.SubmoduleUpdateOptions): js.Promise[scala.Double] = js.native
   def updateStrategy(): scala.Double = js.native
   def url(): java.lang.String = js.native

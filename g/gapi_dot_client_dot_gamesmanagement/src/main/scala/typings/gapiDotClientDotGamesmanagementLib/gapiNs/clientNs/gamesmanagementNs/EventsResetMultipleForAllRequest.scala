@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventsResetMultipleForAllRequest extends js.Object {
   /** The IDs of events to reset. */
   var event_ids: js.UndefOr[js.Array[java.lang.String]] = js.undefined

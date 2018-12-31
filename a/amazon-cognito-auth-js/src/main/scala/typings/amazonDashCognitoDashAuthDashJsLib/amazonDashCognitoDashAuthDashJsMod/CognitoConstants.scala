@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CognitoConstants extends js.Object {
   var ACCESSTOKEN: java.lang.String
   var AMPERSAND: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StorelayoutpagesResource extends js.Object {
   /** Deletes a store page. */
   def delete(request: gapiDotClientDotAndroidenterpriseLib.Anon_EnterpriseIdPrettyPrintQuotaUserKeyPageId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

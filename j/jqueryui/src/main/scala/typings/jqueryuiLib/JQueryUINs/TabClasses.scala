@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TabClasses extends js.Object {
   var `ui-tabs`: js.UndefOr[java.lang.String] = js.undefined
   var `ui-tabs-active`: js.UndefOr[java.lang.String] = js.undefined

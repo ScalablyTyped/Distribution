@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EnterprisesSendTestPushNotificationResponse extends js.Object {
   /** The message ID of the test push notification that was sent. */
   var messageId: js.UndefOr[java.lang.String] = js.undefined

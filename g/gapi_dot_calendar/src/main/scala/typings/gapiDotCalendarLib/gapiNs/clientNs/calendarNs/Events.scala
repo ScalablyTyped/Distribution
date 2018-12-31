@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Events extends js.Object {
   // The user's access role for this calendar. Read-only. Possible values are:
   var accessRole: AccessRole

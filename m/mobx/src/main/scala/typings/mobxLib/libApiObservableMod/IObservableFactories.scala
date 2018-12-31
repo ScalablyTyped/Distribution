@@ -10,13 +10,13 @@ trait IObservableFactories extends js.Object {
   @JSName("deep")
   var deep_Original: mobxLib.libApiObservabledecoratorMod.IObservableDecorator = js.native
   /**
-       * Decorator that creates an observable that only observes the references, but doesn't try to turn the assigned value into an observable.ts.
-       */
+    * Decorator that creates an observable that only observes the references, but doesn't try to turn the assigned value into an observable.ts.
+    */
   @JSName("ref")
   var ref_Original: mobxLib.libApiObservabledecoratorMod.IObservableDecorator = js.native
   /**
-       * Decorator that creates an observable converts its value (objects, maps or arrays) into a shallow observable structure
-       */
+    * Decorator that creates an observable converts its value (objects, maps or arrays) into a shallow observable structure
+    */
   @JSName("shallow")
   var shallow_Original: mobxLib.libApiObservabledecoratorMod.IObservableDecorator = js.native
   @JSName("struct")
@@ -45,36 +45,18 @@ trait IObservableFactories extends js.Object {
     options: CreateObservableOptions
   ): T with mobxLib.libTypesObservableobjectMod.IObservableObject = js.native
   /**
-       * Decorator that creates an observable that only observes the references, but doesn't try to turn the assigned value into an observable.ts.
-       */
+    * Decorator that creates an observable that only observes the references, but doesn't try to turn the assigned value into an observable.ts.
+    */
   def ref(target: js.Object, property: java.lang.String): scala.Unit = js.native
-  /**
-       * Decorator that creates an observable that only observes the references, but doesn't try to turn the assigned value into an observable.ts.
-       */
   def ref(target: js.Object, property: java.lang.String, descriptor: stdLib.PropertyDescriptor): scala.Unit = js.native
-  /**
-       * Decorator that creates an observable that only observes the references, but doesn't try to turn the assigned value into an observable.ts.
-       */
   def ref(target: js.Object, property: js.Symbol): scala.Unit = js.native
-  /**
-       * Decorator that creates an observable that only observes the references, but doesn't try to turn the assigned value into an observable.ts.
-       */
   def ref(target: js.Object, property: js.Symbol, descriptor: stdLib.PropertyDescriptor): scala.Unit = js.native
   /**
-       * Decorator that creates an observable converts its value (objects, maps or arrays) into a shallow observable structure
-       */
+    * Decorator that creates an observable converts its value (objects, maps or arrays) into a shallow observable structure
+    */
   def shallow(target: js.Object, property: java.lang.String): scala.Unit = js.native
-  /**
-       * Decorator that creates an observable converts its value (objects, maps or arrays) into a shallow observable structure
-       */
   def shallow(target: js.Object, property: java.lang.String, descriptor: stdLib.PropertyDescriptor): scala.Unit = js.native
-  /**
-       * Decorator that creates an observable converts its value (objects, maps or arrays) into a shallow observable structure
-       */
   def shallow(target: js.Object, property: js.Symbol): scala.Unit = js.native
-  /**
-       * Decorator that creates an observable converts its value (objects, maps or arrays) into a shallow observable structure
-       */
   def shallow(target: js.Object, property: js.Symbol, descriptor: stdLib.PropertyDescriptor): scala.Unit = js.native
   def struct(target: js.Object, property: java.lang.String): scala.Unit = js.native
   def struct(target: js.Object, property: java.lang.String, descriptor: stdLib.PropertyDescriptor): scala.Unit = js.native

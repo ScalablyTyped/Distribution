@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConfigFile
   extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] {
   var android: js.UndefOr[java.lang.String] = js.undefined

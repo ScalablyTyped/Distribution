@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait appFrameworkAjaxSettings extends js.Object {
   var beforeSend: js.UndefOr[
     js.Function2[

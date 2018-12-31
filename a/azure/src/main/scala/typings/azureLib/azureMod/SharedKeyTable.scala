@@ -14,12 +14,12 @@ class SharedKeyTable protected () extends js.Object {
   var storageAccount: java.lang.String = js.native
   var usePathStyleUri: java.lang.String = js.native
   /**
-       * Retrieves the webresource's canonicalized resource string.
-       */
+    * Retrieves the webresource's canonicalized resource string.
+    */
   def _getCanonicalizedResource(webResource: WebResource): java.lang.String = js.native
   /**
-       * Signs a request with the Authentication header.
-       */
+    * Signs a request with the Authentication header.
+    */
   def signRequest(webResource: WebResource, callback: ErrorCallback): scala.Unit = js.native
 }
 

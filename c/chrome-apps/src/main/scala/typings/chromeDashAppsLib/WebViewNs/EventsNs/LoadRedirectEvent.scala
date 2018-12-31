@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Fired when a top-level load request has redirected to a different URL.
-         */
-
+  * Fired when a top-level load request has redirected to a different URL.
+  */
 trait LoadRedirectEvent extends js.Object {
   /** Whether or not the redirect happened at top-level or in a subframe. */
   var isTopLevel: scala.Boolean

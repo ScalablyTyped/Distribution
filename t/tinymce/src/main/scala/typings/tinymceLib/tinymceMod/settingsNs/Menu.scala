@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Menu extends js.Object {
   var edit: MenuItem
   var file: MenuItem

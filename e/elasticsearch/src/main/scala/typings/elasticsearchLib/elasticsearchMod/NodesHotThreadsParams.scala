@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodesHotThreadsParams extends GenericParams {
   var ignoreIdleThreads: js.UndefOr[scala.Boolean] = js.undefined
   var interval: js.UndefOr[TimeSpan] = js.undefined

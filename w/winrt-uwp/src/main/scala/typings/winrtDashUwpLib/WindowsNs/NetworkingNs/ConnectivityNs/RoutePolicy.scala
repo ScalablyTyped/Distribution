@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class RoutePolicy protected () extends js.Object {
   /**
-                   * Creates an instance of RoutePolicy using the defined connection profile and host name values.
-                   * @param connectionProfile The connection profile
-                   * @param hostName The host name for the route policy to the special PDP context.
-                   * @param type The domain type of hostName when the HostNameType value indicates a domain name.
-                   */
+    * Creates an instance of RoutePolicy using the defined connection profile and host name values.
+    * @param connectionProfile The connection profile
+    * @param hostName The host name for the route policy to the special PDP context.
+    * @param type The domain type of hostName when the HostNameType value indicates a domain name.
+    */
   def this(connectionProfile: ConnectionProfile, hostName: winrtDashUwpLib.WindowsNs.NetworkingNs.HostName, `type`: winrtDashUwpLib.WindowsNs.NetworkingNs.DomainNameType) = this()
   /** Retrieves the connection profile for an access point connection. */
   var connectionProfile: ConnectionProfile = js.native

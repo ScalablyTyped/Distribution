@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LoginOptions extends js.Object {
   var appId: js.UndefOr[java.lang.String] = js.undefined
   var cookie: js.UndefOr[scala.Boolean] = js.undefined

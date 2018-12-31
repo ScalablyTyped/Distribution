@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PBKDF2Params extends js.Object {
   var iterationCount: scala.Double
   var keyLength: scala.Double

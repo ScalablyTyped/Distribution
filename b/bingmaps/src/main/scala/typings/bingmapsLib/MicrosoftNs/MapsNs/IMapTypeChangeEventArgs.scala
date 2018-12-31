@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMapTypeChangeEventArgs extends js.Object {
   /** The map type that map has changed to. */
   var newMapTypeId: MapTypeId

@@ -12,15 +12,15 @@ sealed trait RoleAccess extends js.Object
 @js.native
 object RoleAccess extends js.Object {
   /**
-       * Access has been explicitly set.
-       */
+    * Access has been explicitly set.
+    */
   @js.native
   sealed trait Assigned
     extends vsoDashNodeDashApiLib.interfacesSecurityRolesInterfacesMod.RoleAccess
   
   /**
-       * Access has been inherited from a higher scope.
-       */
+    * Access has been inherited from a higher scope.
+    */
   @js.native
   sealed trait Inherited
     extends vsoDashNodeDashApiLib.interfacesSecurityRolesInterfacesMod.RoleAccess

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Duration extends js.Object {
   var duration: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType
   var measurements: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType

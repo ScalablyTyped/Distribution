@@ -9,169 +9,29 @@ import scala.scalajs.js.annotation._
 @js.native
 class FieldBase protected () extends ReflectionObject {
   /**
-       * Not an actual constructor. Use {@link Field} instead.
-       * @param name Unique name within its namespace
-       * @param id Unique id within its namespace
-       * @param type Value type
-       * @param [rule="optional"] Field rule
-       * @param [extend] Extended type if different from parent
-       * @param [options] Declared options
-       * @param [comment] Comment associated with this field
-       */
+    * Not an actual constructor. Use {@link Field} instead.
+    * @param name Unique name within its namespace
+    * @param id Unique id within its namespace
+    * @param type Value type
+    * @param [rule="optional"] Field rule
+    * @param [extend] Extended type if different from parent
+    * @param [options] Declared options
+    * @param [comment] Comment associated with this field
+    */
   def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String) = this()
-  /**
-       * Not an actual constructor. Use {@link Field} instead.
-       * @param name Unique name within its namespace
-       * @param id Unique id within its namespace
-       * @param type Value type
-       * @param [rule="optional"] Field rule
-       * @param [extend] Extended type if different from parent
-       * @param [options] Declared options
-       * @param [comment] Comment associated with this field
-       */
   def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: java.lang.String) = this()
-  /**
-       * Not an actual constructor. Use {@link Field} instead.
-       * @param name Unique name within its namespace
-       * @param id Unique id within its namespace
-       * @param type Value type
-       * @param [rule="optional"] Field rule
-       * @param [extend] Extended type if different from parent
-       * @param [options] Declared options
-       * @param [comment] Comment associated with this field
-       */
   def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
-  /**
-       * Not an actual constructor. Use {@link Field} instead.
-       * @param name Unique name within its namespace
-       * @param id Unique id within its namespace
-       * @param type Value type
-       * @param [rule="optional"] Field rule
-       * @param [extend] Extended type if different from parent
-       * @param [options] Declared options
-       * @param [comment] Comment associated with this field
-       */
   def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: java.lang.String, extend: java.lang.String) = this()
-  /**
-       * Not an actual constructor. Use {@link Field} instead.
-       * @param name Unique name within its namespace
-       * @param id Unique id within its namespace
-       * @param type Value type
-       * @param [rule="optional"] Field rule
-       * @param [extend] Extended type if different from parent
-       * @param [options] Declared options
-       * @param [comment] Comment associated with this field
-       */
   def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: java.lang.String, extend: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
-  /**
-       * Not an actual constructor. Use {@link Field} instead.
-       * @param name Unique name within its namespace
-       * @param id Unique id within its namespace
-       * @param type Value type
-       * @param [rule="optional"] Field rule
-       * @param [extend] Extended type if different from parent
-       * @param [options] Declared options
-       * @param [comment] Comment associated with this field
-       */
   def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: org.scalablytyped.runtime.StringDictionary[js.Any], extend: java.lang.String) = this()
-  /**
-       * Not an actual constructor. Use {@link Field} instead.
-       * @param name Unique name within its namespace
-       * @param id Unique id within its namespace
-       * @param type Value type
-       * @param [rule="optional"] Field rule
-       * @param [extend] Extended type if different from parent
-       * @param [options] Declared options
-       * @param [comment] Comment associated with this field
-       */
   def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: org.scalablytyped.runtime.StringDictionary[js.Any], extend: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
-  /**
-       * Not an actual constructor. Use {@link Field} instead.
-       * @param name Unique name within its namespace
-       * @param id Unique id within its namespace
-       * @param type Value type
-       * @param [rule="optional"] Field rule
-       * @param [extend] Extended type if different from parent
-       * @param [options] Declared options
-       * @param [comment] Comment associated with this field
-       */
   def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: java.lang.String, extend: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
-  /**
-       * Not an actual constructor. Use {@link Field} instead.
-       * @param name Unique name within its namespace
-       * @param id Unique id within its namespace
-       * @param type Value type
-       * @param [rule="optional"] Field rule
-       * @param [extend] Extended type if different from parent
-       * @param [options] Declared options
-       * @param [comment] Comment associated with this field
-       */
   def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: java.lang.String, extend: org.scalablytyped.runtime.StringDictionary[js.Any], options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
-  /**
-       * Not an actual constructor. Use {@link Field} instead.
-       * @param name Unique name within its namespace
-       * @param id Unique id within its namespace
-       * @param type Value type
-       * @param [rule="optional"] Field rule
-       * @param [extend] Extended type if different from parent
-       * @param [options] Declared options
-       * @param [comment] Comment associated with this field
-       */
   def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: org.scalablytyped.runtime.StringDictionary[js.Any], extend: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
-  /**
-       * Not an actual constructor. Use {@link Field} instead.
-       * @param name Unique name within its namespace
-       * @param id Unique id within its namespace
-       * @param type Value type
-       * @param [rule="optional"] Field rule
-       * @param [extend] Extended type if different from parent
-       * @param [options] Declared options
-       * @param [comment] Comment associated with this field
-       */
   def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: org.scalablytyped.runtime.StringDictionary[js.Any], extend: org.scalablytyped.runtime.StringDictionary[js.Any], options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
-  /**
-       * Not an actual constructor. Use {@link Field} instead.
-       * @param name Unique name within its namespace
-       * @param id Unique id within its namespace
-       * @param type Value type
-       * @param [rule="optional"] Field rule
-       * @param [extend] Extended type if different from parent
-       * @param [options] Declared options
-       * @param [comment] Comment associated with this field
-       */
   def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: java.lang.String, extend: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
-  /**
-       * Not an actual constructor. Use {@link Field} instead.
-       * @param name Unique name within its namespace
-       * @param id Unique id within its namespace
-       * @param type Value type
-       * @param [rule="optional"] Field rule
-       * @param [extend] Extended type if different from parent
-       * @param [options] Declared options
-       * @param [comment] Comment associated with this field
-       */
   def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: java.lang.String, extend: org.scalablytyped.runtime.StringDictionary[js.Any], options: org.scalablytyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
-  /**
-       * Not an actual constructor. Use {@link Field} instead.
-       * @param name Unique name within its namespace
-       * @param id Unique id within its namespace
-       * @param type Value type
-       * @param [rule="optional"] Field rule
-       * @param [extend] Extended type if different from parent
-       * @param [options] Declared options
-       * @param [comment] Comment associated with this field
-       */
   def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: org.scalablytyped.runtime.StringDictionary[js.Any], extend: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
-  /**
-       * Not an actual constructor. Use {@link Field} instead.
-       * @param name Unique name within its namespace
-       * @param id Unique id within its namespace
-       * @param type Value type
-       * @param [rule="optional"] Field rule
-       * @param [extend] Extended type if different from parent
-       * @param [options] Declared options
-       * @param [comment] Comment associated with this field
-       */
   def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: org.scalablytyped.runtime.StringDictionary[js.Any], extend: org.scalablytyped.runtime.StringDictionary[js.Any], options: org.scalablytyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
   /** Whether this field's value is a buffer. */
   var bytes: scala.Boolean = js.native
@@ -207,11 +67,6 @@ class FieldBase protected () extends ReflectionObject {
   var `type`: java.lang.String = js.native
   /** The field type's default value. */
   var typeDefault: js.Any = js.native
-  /**
-       * Converts this field to a field descriptor.
-       * @param [toJSONOptions] JSON conversion options
-       * @returns Field descriptor
-       */
   def toJSON(toJSONOptions: IToJSONOptions): IField = js.native
 }
 

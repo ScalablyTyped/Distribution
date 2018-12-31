@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RevealOptions extends js.Object {
   var autoSlide: js.UndefOr[scala.Double] = js.undefined
   var autoSlideMethod: js.UndefOr[js.Any] = js.undefined

@@ -19,12 +19,9 @@ object Injector extends js.Object {
   var ngInjectableDef: scala.Nothing = js.native
   def create(options: atAngularCoreLib.Anon_Name): atAngularCoreLib.srcDiInjectorMod.Injector = js.native
   /**
-       * @deprecated from v5 use the new signature Injector.create(options)
-       */
+    * @deprecated from v5 use the new signature Injector.create(options)
+    */
   def create(providers: js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider]): atAngularCoreLib.srcDiInjectorMod.Injector = js.native
-  /**
-       * @deprecated from v5 use the new signature Injector.create(options)
-       */
   def create(
     providers: js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider],
     parent: atAngularCoreLib.srcDiInjectorMod.Injector

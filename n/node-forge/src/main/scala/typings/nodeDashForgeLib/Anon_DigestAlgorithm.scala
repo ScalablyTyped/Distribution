@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DigestAlgorithm extends js.Object {
   var authenticatedAttributes: js.Array[Anon_Type]
   var certificate: nodeDashForgeLib.nodeDashForgeMod.pkiNs.Certificate

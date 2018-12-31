@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a resolver. */
-
 trait IResolver extends js.Object {
   /**
-           * Resolves a specific type.
-           */
+    * Resolves a specific type.
+    */
   def resolve[T](): T
 }
 

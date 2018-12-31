@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HookMatchCriteria
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[HookMatchCriterion]] {
   /** A [[HookMatchCriterion]] to match any state that would be entering */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PathToConversionReportCompatibleFields extends js.Object {
   /** Conversion dimensions which are compatible to be selected in the "conversionDimensions" section of the report. */
   var conversionDimensions: js.UndefOr[js.Array[Dimension]] = js.undefined

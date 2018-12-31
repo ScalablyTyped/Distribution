@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReleaseWorkItemRef extends js.Object {
   var assignee: java.lang.String
   var id: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DefaultSettings extends js.Object {
   var APP_NAME: js.UndefOr[java.lang.String] = js.undefined
   var HOSTNAME: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Header extends js.Object {
   var asm_group_id: scala.Double
   var category: js.Array[java.lang.String]

@@ -43,7 +43,7 @@ object distSrcCoreUtilUtilMod extends js.Object {
   def isInvalidJSONNumber(data: js.Any): scala.Boolean = js.native
   def isWindowsStoreApp(): scala.Boolean = js.native
   def log(var_args: java.lang.String*): scala.Unit = js.native
-  def logWrapper(prefix: java.lang.String): js.Function1[/* repeated */js.Any, scala.Unit] = js.native
+  def logWrapper(prefix: java.lang.String): js.Function1[/* repeated */ js.Any, scala.Unit] = js.native
   def nameCompare(a: java.lang.String, b: java.lang.String): scala.Double = js.native
   def requireKey(key: java.lang.String, obj: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any = js.native
   def setTimeoutNonBlocking(fn: js.Function, time: scala.Double): scala.Double | js.Object = js.native

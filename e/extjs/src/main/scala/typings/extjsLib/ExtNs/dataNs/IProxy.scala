@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IProxy
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Method] Performs a batch of Operations in the order specified by batchOrder

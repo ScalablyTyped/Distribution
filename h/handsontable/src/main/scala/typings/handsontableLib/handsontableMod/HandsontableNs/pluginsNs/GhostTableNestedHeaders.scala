@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GhostTableNestedHeaders extends js.Object {
   var container: js.Any
   var nestedHeaders: NestedHeaders

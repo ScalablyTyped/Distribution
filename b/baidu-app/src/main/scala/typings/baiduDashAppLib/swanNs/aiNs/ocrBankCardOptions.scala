@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * 识别银行卡并返回卡号、发卡行和卡片类型。
 		 */
-
 trait ocrBankCardOptions
   extends baiduDashAppLib.swanNs.BaseOptions[js.Any, js.Any] {
   var image: java.lang.String

@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // A TextElement kind that represents a run of text that all has the same
 // styling.
-
 trait TextRun extends js.Object {
   // The text of this run.
   var content: java.lang.String

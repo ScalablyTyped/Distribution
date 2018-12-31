@@ -19,7 +19,6 @@ trait N3StreamParser[Q /* <: BaseQuad */]
   def pipe[T /* <: nodeLib.NodeJSNs.WritableStream | rdfDashJsLib.rdfDashJsMod.Stream[Q] */](destination: T): T = js.native
   def pipe[T /* <: nodeLib.NodeJSNs.WritableStream | rdfDashJsLib.rdfDashJsMod.Stream[Q] */](destination: T, options: n3Lib.Anon_End): T = js.native
   def resume(): this.type = js.native
-  // read(size?: number): string | Buffer; // Overwritten by RDF.Stream
   def setEncoding(): scala.Unit = js.native
   // read(size?: number): string | Buffer; // Overwritten by RDF.Stream
   def setEncoding(encoding: java.lang.String): scala.Unit = js.native

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * Menu State
-    */
-
+  * Menu State
+  */
 trait IMenuState extends js.Object {
   //The tree node that the ctx menu is launched for
   var currentNode: js.Any

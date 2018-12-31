@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Entities extends js.Object {
   var hashtags: js.Array[HashtagEntity]
   var media: js.Array[MediaEntity]

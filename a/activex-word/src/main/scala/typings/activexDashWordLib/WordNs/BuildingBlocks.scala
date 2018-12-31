@@ -15,7 +15,6 @@ class BuildingBlocks protected () extends js.Object {
   var `Word.BuildingBlocks_typekey`: BuildingBlocks = js.native
   /** @param Word.WdDocPartInsertOptions [InsertOptions=0] */
   def Add(Name: java.lang.String, Range: Range, Description: js.Any): BuildingBlock = js.native
-  /** @param Word.WdDocPartInsertOptions [InsertOptions=0] */
   def Add(Name: java.lang.String, Range: Range, Description: js.Any, InsertOptions: WdDocPartInsertOptions): BuildingBlock = js.native
   def Item(Index: js.Any): BuildingBlock = js.native
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NameValidateOnly extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -23,9 +22,9 @@ trait Anon_NameValidateOnly extends js.Object {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Output only. The name of this group. The format is "projects/{project_id_or_number}/groups/{group_id}". When creating a group, this field is ignored
-                   * and a new name is created consisting of the project specified in the call to CreateGroup and a unique {group_id} that is generated automatically.
-                   */
+    * Output only. The name of this group. The format is "projects/{project_id_or_number}/groups/{group_id}". When creating a group, this field is ignored
+    * and a new name is created consisting of the project specified in the call to CreateGroup and a unique {group_id} that is generated automatically.
+    */
   var name: java.lang.String
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined

@@ -8,21 +8,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TaskConstructor
   extends /**
-     * Construct a new Task, which is a Container that can be run many times as individual tasks.
-     *
-     * @param name The unique name of the task.
-     * @param container The container specification.
-     * @param opts A bag of options that controls how this resource behaves.
-     */
+  * Construct a new Task, which is a Container that can be run many times as individual tasks.
+  *
+  * @param name The unique name of the task.
+  * @param container The container specification.
+  * @param opts A bag of options that controls how this resource behaves.
+  */
 org.scalablytyped.runtime.Instantiable2[/* name */ java.lang.String, /* container */ Container, Task]
-     with /**
-     * Construct a new Task, which is a Container that can be run many times as individual tasks.
-     *
-     * @param name The unique name of the task.
-     * @param container The container specification.
-     * @param opts A bag of options that controls how this resource behaves.
-     */
-org.scalablytyped.runtime.Instantiable3[
+     with org.scalablytyped.runtime.Instantiable3[
       /* name */ java.lang.String, 
       /* container */ Container, 
       /* opts */ atPulumiPulumiLib.resourceMod.ResourceOptions, 

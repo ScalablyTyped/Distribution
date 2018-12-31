@@ -1278,7 +1278,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashExcelLib.activexDashExcelLibStrings.Target],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Worksheet, 
-      /* parameter */ Anon_TargetRange_490879595, 
+      /* parameter */ Anon_TargetRange_1506387795, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1428,7 +1428,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashExcelLib.activexDashExcelLibStrings.Target],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Worksheet, 
-      /* parameter */ Anon_TargetRange_490879595, 
+      /* parameter */ Anon_TargetRange_1506387795, 
       scala.Unit
     ]
   ): scala.Unit = js.native

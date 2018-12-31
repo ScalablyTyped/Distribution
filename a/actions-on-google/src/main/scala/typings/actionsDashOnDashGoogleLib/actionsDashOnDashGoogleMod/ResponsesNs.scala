@@ -9,108 +9,71 @@ import scala.scalajs.js.annotation._
 @js.native
 object ResponsesNs extends js.Object {
   @js.native
+  /**
+    * Constructor for BasicCard. Accepts optional BasicCard to clone.
+    *
+    * @param basicCard Optional BasicCard to clone.
+    */
   class BasicCard ()
     extends actionsDashOnDashGoogleLib.responseDashBuilderMod.BasicCard {
-    /**
-         * Constructor for BasicCard. Accepts optional BasicCard to clone.
-         *
-         * @param basicCard Optional BasicCard to clone.
-         */
     def this(basicCard: actionsDashOnDashGoogleLib.responseDashBuilderMod.BasicCard) = this()
   }
   
   @js.native
+  /**
+    * Constructor for BrowseCarousel. Accepts optional BrowseCarousel to
+    * clone or list of items to copy.
+    *
+    * @param carousel Either a carousel to clone
+    *     or an array of BrowseItem to initialize a new carousel
+    */
   class BrowseCarousel ()
     extends actionsDashOnDashGoogleLib.responseDashBuilderMod.BrowseCarousel {
-    /**
-         * Constructor for BrowseCarousel. Accepts optional BrowseCarousel to
-         * clone or list of items to copy.
-         *
-         * @param carousel Either a carousel to clone
-         *     or an array of BrowseItem to initialize a new carousel
-         */
     def this(carousel: actionsDashOnDashGoogleLib.responseDashBuilderMod.BrowseCarousel) = this()
-    /**
-         * Constructor for BrowseCarousel. Accepts optional BrowseCarousel to
-         * clone or list of items to copy.
-         *
-         * @param carousel Either a carousel to clone
-         *     or an array of BrowseItem to initialize a new carousel
-         */
     def this(carousel: js.Array[actionsDashOnDashGoogleLib.responseDashBuilderMod.BrowseItem]) = this()
   }
   
   @js.native
+  /**
+    * Constructor for BrowseItem. Accepts a title and URL for the Browse Item
+    * card.
+    *
+    * @param title The title of the Browse Item card.
+    * @param url The URL of the link opened by clicking the  Browse Item card.
+    */
   class BrowseItem ()
     extends actionsDashOnDashGoogleLib.responseDashBuilderMod.BrowseItem {
-    /**
-         * Constructor for BrowseItem. Accepts a title and URL for the Browse Item
-         * card.
-         *
-         * @param title The title of the Browse Item card.
-         * @param url The URL of the link opened by clicking the  Browse Item card.
-         */
     def this(title: java.lang.String) = this()
-    /**
-         * Constructor for BrowseItem. Accepts a title and URL for the Browse Item
-         * card.
-         *
-         * @param title The title of the Browse Item card.
-         * @param url The URL of the link opened by clicking the  Browse Item card.
-         */
     def this(title: java.lang.String, url: java.lang.String) = this()
   }
   
   @js.native
+  /**
+    * Constructor for Carousel. Accepts optional Carousel to clone or list of
+    * items to copy.
+    *
+    * @param carousel Either a carousel to clone
+    *     or an array of OptionItem to initialize a new carousel
+    */
   class Carousel ()
     extends actionsDashOnDashGoogleLib.responseDashBuilderMod.Carousel {
-    /**
-         * Constructor for Carousel. Accepts optional Carousel to clone or list of
-         * items to copy.
-         *
-         * @param carousel Either a carousel to clone
-         *     or an array of OptionItem to initialize a new carousel
-         */
     def this(carousel: actionsDashOnDashGoogleLib.responseDashBuilderMod.Carousel) = this()
-    /**
-         * Constructor for Carousel. Accepts optional Carousel to clone or list of
-         * items to copy.
-         *
-         * @param carousel Either a carousel to clone
-         *     or an array of OptionItem to initialize a new carousel
-         */
     def this(carousel: js.Array[actionsDashOnDashGoogleLib.responseDashBuilderMod.OptionItem]) = this()
   }
   
   @js.native
+  /**
+    * Constructor for List. Accepts optional List to clone, string title, or
+    * list of items to copy.
+    *
+    * @param list Either a list to clone, a title
+    *     to set for a new List, or an array of OptionItem to initialize a new
+    *     list.
+    */
   class List ()
     extends actionsDashOnDashGoogleLib.responseDashBuilderMod.List {
-    /**
-         * Constructor for List. Accepts optional List to clone, string title, or
-         * list of items to copy.
-         *
-         * @param list Either a list to clone, a title
-         *     to set for a new List, or an array of OptionItem to initialize a new
-         *     list.
-         */
     def this(list: actionsDashOnDashGoogleLib.responseDashBuilderMod.List) = this()
-    /**
-         * Constructor for List. Accepts optional List to clone, string title, or
-         * list of items to copy.
-         *
-         * @param list Either a list to clone, a title
-         *     to set for a new List, or an array of OptionItem to initialize a new
-         *     list.
-         */
     def this(list: java.lang.String) = this()
-    /**
-         * Constructor for List. Accepts optional List to clone, string title, or
-         * list of items to copy.
-         *
-         * @param list Either a list to clone, a title
-         *     to set for a new List, or an array of OptionItem to initialize a new
-         *     list.
-         */
     def this(list: js.Array[actionsDashOnDashGoogleLib.responseDashBuilderMod.OptionItem]) = this()
   }
   
@@ -118,11 +81,11 @@ object ResponsesNs extends js.Object {
   class MediaObject protected ()
     extends actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaObject {
     /**
-         * Constructor for MediaObject.
-         *
-         * @param name Name of the MediaObject.
-         * @param contentUrl URL of the MediaObject.
-         */
+      * Constructor for MediaObject.
+      *
+      * @param name Name of the MediaObject.
+      * @param contentUrl URL of the MediaObject.
+      */
     def this(name: java.lang.String, contentUrl: java.lang.String) = this()
   }
   
@@ -130,31 +93,31 @@ object ResponsesNs extends js.Object {
   class MediaResponse protected ()
     extends actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaResponse {
     /**
-         * Constructor for MediaResponse.
-         * @param mediaType Type of the media which defaults to MediaValues.Type.AUDIO
-         */
+      * Constructor for MediaResponse.
+      * @param mediaType Type of the media which defaults to MediaValues.Type.AUDIO
+      */
     def this(mediaType: actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Type) = this()
   }
   
   @js.native
+  /**
+    * Constructor for OptionItem. Accepts optional OptionItem to clone.
+    *
+    * @param optionItem Optional OptionItem to clone.
+    */
   class OptionItem ()
     extends actionsDashOnDashGoogleLib.responseDashBuilderMod.OptionItem {
-    /**
-         * Constructor for OptionItem. Accepts optional OptionItem to clone.
-         *
-         * @param optionItem Optional OptionItem to clone.
-         */
     def this(optionItem: actionsDashOnDashGoogleLib.responseDashBuilderMod.OptionItem) = this()
   }
   
   @js.native
+  /**
+    * Constructor for RichResponse. Accepts optional RichResponse to clone.
+    *
+    * @param richResponse Optional RichResponse to clone.
+    */
   class RichResponse ()
     extends actionsDashOnDashGoogleLib.responseDashBuilderMod.RichResponse {
-    /**
-         * Constructor for RichResponse. Accepts optional RichResponse to clone.
-         *
-         * @param richResponse Optional RichResponse to clone.
-         */
     def this(richResponse: actionsDashOnDashGoogleLib.responseDashBuilderMod.RichResponse) = this()
   }
   
@@ -175,8 +138,8 @@ object ResponsesNs extends js.Object {
   @js.native
   object MediaValuesNs extends js.Object {
     /**
-         * List of possible item types.
-         */
+      * List of possible item types.
+      */
     @js.native
     object ImageType extends js.Object {
       val ICON: actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.ImageType.ICON with java.lang.String = js.native
@@ -188,8 +151,8 @@ object ResponsesNs extends js.Object {
     }
     
     /**
-         * List of media control status' returned.
-         */
+      * List of media control status' returned.
+      */
     @js.native
     object Status extends js.Object {
       val FINISHED: actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Status.FINISHED with java.lang.String = js.native
@@ -201,8 +164,8 @@ object ResponsesNs extends js.Object {
     }
     
     /**
-         * Type of the media within a MediaResponse.
-         */
+      * Type of the media within a MediaResponse.
+      */
     @js.native
     object Type extends js.Object {
       val AUDIO: actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Type.AUDIO with java.lang.String = js.native

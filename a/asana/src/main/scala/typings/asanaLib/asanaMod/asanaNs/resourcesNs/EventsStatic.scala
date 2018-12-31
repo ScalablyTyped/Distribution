@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait EventsStatic
   extends /**
-             * @param dispatcher
-             * @return
-             */
+  * @param dispatcher
+  * @return
+  */
 org.scalablytyped.runtime.Instantiable1[/* dispatcher */ asanaLib.asanaMod.asanaNs.Dispatcher, Events]
 

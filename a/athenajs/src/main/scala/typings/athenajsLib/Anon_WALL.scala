@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_WALL extends js.Object {
   var AIR: athenajsLib.athenajsLibNumbers.`1`
   var LADDER: athenajsLib.athenajsLibNumbers.`3`

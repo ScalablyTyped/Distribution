@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RetrievalOptions extends js.Object {
   var exprs: js.UndefOr[AnyObject[java.lang.String]] = js.undefined
   var fields: js.UndefOr[js.Array[java.lang.String]] = js.undefined

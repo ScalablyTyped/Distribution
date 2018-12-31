@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IKeyboardEvent extends js.Object {
   val altKey: scala.Boolean
   val browserEvent: stdLib.KeyboardEvent

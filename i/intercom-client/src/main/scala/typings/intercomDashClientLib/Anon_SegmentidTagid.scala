@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SegmentidTagid extends js.Object {
   var email: js.UndefOr[java.lang.String] = js.undefined
   var segment_id: js.UndefOr[java.lang.String] = js.undefined

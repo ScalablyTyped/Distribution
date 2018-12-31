@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MemoryHistoryBuildOptions extends js.Object {
   var getUserConfirmation: js.UndefOr[
     js.Function2[

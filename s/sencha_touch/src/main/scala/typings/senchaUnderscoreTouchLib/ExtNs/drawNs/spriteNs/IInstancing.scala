@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IInstancing extends ISprite {
   /** [Method] Creates a new sprite instance
   		* @param config Object The configuration of the instance.

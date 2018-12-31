@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CycleOptions extends js.Object {
   var activePagerClass: js.UndefOr[java.lang.String] = js.undefined
                                                                                                                   // class name used for the active pager link

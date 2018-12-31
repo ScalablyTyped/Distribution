@@ -16,12 +16,12 @@ class Button protected () extends Widget {
   @JSName("model")
   var model_Button: ejDotWebDotAllLib.ejNs.ButtonNs.Model = js.native
   /** To disable the button
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def disable(): scala.Unit = js.native
   /** To enable the button
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def enable(): scala.Unit = js.native
 }
 

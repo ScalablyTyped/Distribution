@@ -13,12 +13,12 @@ class WorkflowSubscription ()
   /** Gets the unique ID of the workflow definition to activate. */
   def get_definitionId(): sharepointLib.SPNs.Guid = js.native
   /** Gets a boolean value that specifies if the workflow subscription is enabled.
-              When disabled, new instances of the subscription cannot be started, but existing instances will continue to run.  */
+    When disabled, new instances of the subscription cannot be started, but existing instances will continue to run.  */
   def get_enabled(): scala.Boolean = js.native
   /** Gets the logical source instance name of the event. (GUID) */
   def get_eventSourceId(): java.lang.String = js.native
   /** Gets or sets the list of event types for which the subscription is listening.
-              For SharePoint events, these will map to a value in the SPEventReceiverType enumeration. */
+    For SharePoint events, these will map to a value in the SPEventReceiverType enumeration. */
   def get_eventTypes(): js.Array[java.lang.String] = js.native
   /** Unique identifier (GUID) of the workflow subscription */
   def get_id(): java.lang.String = js.native
@@ -35,12 +35,12 @@ class WorkflowSubscription ()
   /** Sets the unique ID of the workflow definition to activate. */
   def set_definitionId(value: sharepointLib.SPNs.Guid): sharepointLib.SPNs.Guid = js.native
   /** Sets a boolean value that enables or disables the workflow subscription.
-              When disabled, new instances of the subscription cannot be started, but existing instances will continue to run.  */
+    When disabled, new instances of the subscription cannot be started, but existing instances will continue to run.  */
   def set_enabled(value: scala.Boolean): scala.Boolean = js.native
   /** Sets the logical source instance name of the event. (GUID) */
   def set_eventSourceId(value: java.lang.String): java.lang.String = js.native
   /** Gets or sets the list of event types for which the subscription is listening.
-              For SharePoint events, these will map to a value in the SPEventReceiverType enumeration. */
+    For SharePoint events, these will map to a value in the SPEventReceiverType enumeration. */
   def set_eventTypes(value: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   /** Unique identifier (GUID) of the workflow subscription */
   def set_id(value: java.lang.String): java.lang.String = js.native

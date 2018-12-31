@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class WlanConnectionProfileDetails () extends js.Object {
   /**
-                   * Retrieves the Service Set Identifier (SSID) for a WLAN connection.
-                   * @return The service set identifier (SSID).
-                   */
+    * Retrieves the Service Set Identifier (SSID) for a WLAN connection.
+    * @return The service set identifier (SSID).
+    */
   def getConnectedSsid(): java.lang.String = js.native
 }
 

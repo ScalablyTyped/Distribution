@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocationData extends js.Object {
   var city_name: java.lang.String | scala.Null
   var continent_code: java.lang.String | scala.Null

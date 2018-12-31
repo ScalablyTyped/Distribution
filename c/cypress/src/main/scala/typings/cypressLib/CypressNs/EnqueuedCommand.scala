@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EnqueuedCommand extends js.Object {
   var args: js.Array[_]
   var chainerId: java.lang.String

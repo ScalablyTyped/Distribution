@@ -11,10 +11,10 @@ object internalObservableZipModMembers extends js.Object {
   def zip[R](array: js.Array[rxjsLib.internalTypesMod.ObservableInput[_]]): rxjsLib.internalObservableMod.Observable[R] = js.native
   def zip[R](
     array: js.Array[rxjsLib.internalTypesMod.ObservableInput[_]],
-    resultSelector: js.Function1[/* repeated */js.Any, R]
+    resultSelector: js.Function1[/* repeated */ js.Any, R]
   ): rxjsLib.internalObservableMod.Observable[R] = js.native
   def zip[R](
-    observables: (rxjsLib.internalTypesMod.ObservableInput[_] | (js.Function1[/* repeated */js.Any, R]))*
+    observables: (rxjsLib.internalTypesMod.ObservableInput[_] | (js.Function1[/* repeated */ js.Any, R]))*
   ): rxjsLib.internalObservableMod.Observable[R] = js.native
   def zip[T, R](v1: rxjsLib.internalTypesMod.ObservableInput[T], resultSelector: js.Function1[/* v1 */ T, R]): rxjsLib.internalObservableMod.Observable[R] = js.native
   def zip[T, T2](v1: rxjsLib.internalTypesMod.ObservableInput[T], v2: rxjsLib.internalTypesMod.ObservableInput[T2]): rxjsLib.internalObservableMod.Observable[js.Tuple2[T, T2]] = js.native
@@ -86,9 +86,9 @@ object internalObservableZipModMembers extends js.Object {
   @JSName("zip")
   def zip_TR[T, R](
     array: js.Array[rxjsLib.internalTypesMod.ObservableInput[T]],
-    resultSelector: js.Function1[/* repeated */T, R]
+    resultSelector: js.Function1[/* repeated */ T, R]
   ): rxjsLib.internalObservableMod.Observable[R] = js.native
   @JSName("zip")
-  def zip_TR[T, R](observables: (rxjsLib.internalTypesMod.ObservableInput[T] | (js.Function1[/* repeated */T, R]))*): rxjsLib.internalObservableMod.Observable[R] = js.native
+  def zip_TR[T, R](observables: (rxjsLib.internalTypesMod.ObservableInput[T] | (js.Function1[/* repeated */ T, R]))*): rxjsLib.internalObservableMod.Observable[R] = js.native
 }
 

@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ZipCelXCell extends js.Object {
   /**
-       * The cell value type
-       */
+    * The cell value type
+    */
   var `type`: zipcelxLib.zipcelxLibStrings.string | zipcelxLib.zipcelxLibStrings.number
   /**
-       * The cell value
-       */
+    * The cell value
+    */
   var value: java.lang.String | scala.Double
 }
 

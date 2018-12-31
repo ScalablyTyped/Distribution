@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDirectProxy
   extends extjsLib.ExtNs.dataNs.proxyNs.IServer {
   /** [Method] inherit docs

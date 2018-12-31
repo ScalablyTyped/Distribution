@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Lock extends js.Object {
   var count: scala.Double
   def dispose(): scala.Unit

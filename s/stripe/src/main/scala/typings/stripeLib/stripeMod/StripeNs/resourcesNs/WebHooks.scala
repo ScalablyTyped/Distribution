@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait WebHooks extends js.Object {
-  def constructEvent[T](requestBody: js.Any, signature: java.lang.String, endpointSecret: java.lang.String): stripeLib.stripeMod.StripeNs.webhooksNs.StripeWebhookEvent[T] = js.native
-  def constructEvent[T](
+  def constructEvent(requestBody: js.Any, signature: java.lang.String, endpointSecret: java.lang.String): stripeLib.stripeMod.StripeNs.webhooksNs.StripeWebhookEvent[_] = js.native
+  def constructEvent(
     requestBody: js.Any,
     signature: java.lang.String,
     endpointSecret: java.lang.String,
     tolerance: scala.Double
-  ): stripeLib.stripeMod.StripeNs.webhooksNs.StripeWebhookEvent[T] = js.native
-  def constructEvent[T](requestBody: js.Any, signature: js.Array[java.lang.String], endpointSecret: java.lang.String): stripeLib.stripeMod.StripeNs.webhooksNs.StripeWebhookEvent[T] = js.native
-  def constructEvent[T](
+  ): stripeLib.stripeMod.StripeNs.webhooksNs.StripeWebhookEvent[_] = js.native
+  def constructEvent(requestBody: js.Any, signature: js.Array[java.lang.String], endpointSecret: java.lang.String): stripeLib.stripeMod.StripeNs.webhooksNs.StripeWebhookEvent[_] = js.native
+  def constructEvent(
     requestBody: js.Any,
     signature: js.Array[java.lang.String],
     endpointSecret: java.lang.String,
     tolerance: scala.Double
-  ): stripeLib.stripeMod.StripeNs.webhooksNs.StripeWebhookEvent[T] = js.native
+  ): stripeLib.stripeMod.StripeNs.webhooksNs.StripeWebhookEvent[_] = js.native
 }
 

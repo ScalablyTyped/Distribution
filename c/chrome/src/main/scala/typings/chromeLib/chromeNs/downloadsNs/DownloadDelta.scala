@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DownloadDelta extends js.Object {
   /** Optional. The change in canResume, if any.  */
   var canResume: js.UndefOr[BooleanDelta] = js.undefined

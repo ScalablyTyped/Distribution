@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 package object grpcMod {
   /**
-     * Any client call type
-     */
+    * Any client call type
+    */
   type Call = ClientUnaryCall | ClientReadableStream[js.Any] | ClientWritableStream[js.Any] | (ClientDuplexStream[js.Any, js.Any])
   type CancelRequester = js.Function1[/* next */ js.Function, scala.Unit]
   type CheckServerIdentityCallback = js.Function2[/* hostname */ java.lang.String, /* cert */ Certificate, js.UndefOr[nodeLib.Error]]
@@ -24,31 +24,31 @@ package object grpcMod {
   type ServiceDefinition[ImplementationType] = grpcLib.grpcLibStrings.ServiceDefinition with js.Any
   type StatusListener = js.Function2[/* status */ StatusObject, /* next */ js.Function, scala.Unit]
   /**
-     * A deserialization function
-     * @param data The byte sequence to deserialize
-     * @return The data deserialized as a value
-     */
+    * A deserialization function
+    * @param data The byte sequence to deserialize
+    * @return The data deserialized as a value
+    */
   type deserialize[T] = js.Function1[/* data */ nodeLib.Buffer, T]
   /**
-     * User provided method to handle bidirectional streaming calls on the server.
-     */
+    * User provided method to handle bidirectional streaming calls on the server.
+    */
   type handleBidiStreamingCall[RequestType, ResponseType] = js.Function1[/* call */ ServerDuplexStream[RequestType, ResponseType], scala.Unit]
   type handleCall[RequestType, ResponseType] = (handleUnaryCall[RequestType, ResponseType]) | (handleClientStreamingCall[RequestType, ResponseType]) | (handleServerStreamingCall[RequestType, ResponseType]) | (handleBidiStreamingCall[RequestType, ResponseType])
   /**
-     * User provided method to handle client streaming methods on the server.
-     */
+    * User provided method to handle client streaming methods on the server.
+    */
   type handleClientStreamingCall[RequestType, ResponseType] = js.Function2[
     /* call */ ServerReadableStream[RequestType], 
     /* callback */ sendUnaryData[ResponseType], 
     scala.Unit
   ]
   /**
-     * User provided method to handle server streaming methods on the server.
-     */
+    * User provided method to handle server streaming methods on the server.
+    */
   type handleServerStreamingCall[RequestType, ResponseType] = js.Function1[/* call */ ServerWriteableStream[RequestType], scala.Unit]
   /**
-     * User-provided method to handle unary requests on a server
-     */
+    * User-provided method to handle unary requests on a server
+    */
   type handleUnaryCall[RequestType, ResponseType] = js.Function2[
     /* call */ ServerUnaryCall[RequestType], 
     /* callback */ sendUnaryData[ResponseType], 
@@ -69,9 +69,9 @@ package object grpcMod {
     scala.Unit
   ]
   /**
-     * Callback function passed to server handlers that handle methods with
-     * unary responses.
-     */
+    * Callback function passed to server handlers that handle methods with
+    * unary responses.
+    */
   type sendUnaryData[ResponseType] = js.Function4[
     /* error */ ServiceError | scala.Null, 
     /* value */ ResponseType | scala.Null, 
@@ -80,9 +80,9 @@ package object grpcMod {
     scala.Unit
   ]
   /**
-     * A serialization function
-     * @param value The value to serialize
-     * @return The value serialized as a byte sequence
-     */
+    * A serialization function
+    * @param value The value to serialize
+    * @return The value serialized as a byte sequence
+    */
   type serialize[T] = js.Function1[/* value */ T, nodeLib.Buffer]
 }

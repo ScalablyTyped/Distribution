@@ -5,32 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Config extends js.Object {
   /**
-           * Main output directory
-           * @default '.'
-           */
+    * Main output directory
+    * @default '.'
+    */
   var dest: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Logging verbosity or custom logger
-           */
+    * Logging verbosity or custom logger
+    */
   var log: js.UndefOr[java.lang.String | winstonLib.winstonMod.winstonNs.Logger] = js.undefined
   /**
-           * Output mode configurations
-           */
+    * Output mode configurations
+    */
   var mode: js.UndefOr[Mode] = js.undefined
   /**
-           * SVG shape configuration
-           */
+    * SVG shape configuration
+    */
   var shape: js.UndefOr[Shape] = js.undefined
   /**
-           * Sprite SVG options
-           */
+    * Sprite SVG options
+    */
   var svg: js.UndefOr[Svg] = js.undefined
   /**
-           * Custom templating variables
-           */
+    * Custom templating variables
+    */
   var variables: js.UndefOr[js.Any] = js.undefined
 }
 

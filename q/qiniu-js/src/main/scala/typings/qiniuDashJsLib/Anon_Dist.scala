@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Dist extends js.Object {
   var dist: stdLib.Blob
   	// 压缩后的图片宽度

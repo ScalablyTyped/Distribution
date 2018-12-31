@@ -5,24 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DefaultTreeDocumentType extends DefaultTreeNode {
   /**
-       * Document type name.
-       */
+    * Document type name.
+    */
   var name: java.lang.String
   /**
-       * The name of the node.
-       */
+    * The name of the node.
+    */
   @JSName("nodeName")
   var nodeName_DefaultTreeDocumentType: parse5Lib.parse5LibStrings.`#documentType`
   /**
-       * Document type public identifier.
-       */
+    * Document type public identifier.
+    */
   var publicId: java.lang.String
   /**
-       * Document type system identifier.
-       */
+    * Document type system identifier.
+    */
   var systemId: java.lang.String
 }
 

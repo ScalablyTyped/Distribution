@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NumberFormatOptions extends js.Object {
   var currency: js.UndefOr[java.lang.String] = js.undefined
   var currencyDisplay: js.UndefOr[java.lang.String] = js.undefined

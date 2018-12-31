@@ -14,8 +14,8 @@ class FieldState[TValue] protected ()
   @JSName("$")
   override var $: TValue = js.native
   /**
-       * Allows you to preserve the `_autoValidationEnabled` value across `reinit`s
-       */
+    * Allows you to preserve the `_autoValidationEnabled` value across `reinit`s
+    */
   var _autoValidationDefault: scala.Boolean = js.native
   var _autoValidationEnabled: scala.Boolean = js.native
   var _initValue: js.Any = js.native
@@ -26,10 +26,10 @@ class FieldState[TValue] protected ()
   @JSName("error")
   var error_FieldState: js.UndefOr[java.lang.String] = js.native
   /**
-       * Set to true if a validation run has been completed since init
-       * Use case:
-       * - to show a green color in the field : `hasError == false && hasBeenValidated == true`
-       **/
+    * Set to true if a validation run has been completed since init
+    * Use case:
+    * - to show a green color in the field : `hasError == false && hasBeenValidated == true`
+    **/
   var hasBeenValidated: scala.Boolean = js.native
   /* CompleteClass */
   override var hasError: scala.Boolean = js.native
@@ -39,12 +39,12 @@ class FieldState[TValue] protected ()
   /* CompleteClass */
   override var validating: scala.Boolean = js.native
   /**
-       * The value you should bind to the input in your field.
-       */
+    * The value you should bind to the input in your field.
+    */
   var value: TValue = js.native
   /**
-       * Allows you to take actions in your code based on `value` changes caused by user interactions
-       */
+    * Allows you to take actions in your code based on `value` changes caused by user interactions
+    */
   /* protected */ def _onDidChange(config: formstateLib.Anon_OldValue[TValue]): js.Any = js.native
   /* protected */ def _onUpdate(state: FieldState[TValue]): js.Any = js.native
   def disableAutoValidation(): this.type = js.native
@@ -65,27 +65,23 @@ class FieldState[TValue] protected ()
   def onChange(value: TValue): scala.Unit = js.native
   def onDidChange(handler: js.Function1[/* config */ formstateLib.Anon_OldValue[TValue], _]): this.type = js.native
   /**
-       * onUpdate is called whenever we change something in our local state that is significant
-       * - value
-       * - $
-       * - error
-       */
+    * onUpdate is called whenever we change something in our local state that is significant
+    * - value
+    * - $
+    * - error
+    */
   def onUpdate(handler: js.Function1[/* state */ FieldState[TValue], _]): this.type = js.native
   /**
-       * Runs validation with debouncing to keep the UI super smoothly responsive
-       * NOTE:
-       * - also setup in constructor
-       * - Not using `action` from mobx *here* as it throws off our type definitions
-       */
+    * Runs validation with debouncing to keep the UI super smoothly responsive
+    * NOTE:
+    * - also setup in constructor
+    * - Not using `action` from mobx *here* as it throws off our type definitions
+    */
   /* protected */ def queueValidation(): scala.Unit = js.native
   def queuedValidationWakeup(): scala.Unit = js.native
   /** Allows a convinient reset for all fields */
   /* CompleteClass */
   override def reset(): scala.Unit = js.native
-  /**
-       * If the page wants to reinitialize the field,
-       * it should call this function
-       */
   def reset(value: TValue): scala.Unit = js.native
   def setAutoValidationDebouncedMs(milliseconds: scala.Double): this.type = js.native
   def setAutoValidationDefault(autoValidationDefault: scala.Boolean): this.type = js.native
@@ -93,12 +89,12 @@ class FieldState[TValue] protected ()
   /* CompleteClass */
   override def setCompositionParent(config: formstateLib.Anon_OnChangeAfterValidation): scala.Unit = js.native
   /**
-       * Allows you to set an error on a field lazily
-       * Use case:
-       *  You validate some things on client (e.g. isRequired)
-       *  You then validate the field on the backend with an explict action (e.g. continue button)
-       *  You now want to highlight an error from the backend for this field
-       **/
+    * Allows you to set an error on a field lazily
+    * Use case:
+    *  You validate some things on client (e.g. isRequired)
+    *  You then validate the field on the backend with an explict action (e.g. continue button)
+    *  You now want to highlight an error from the backend for this field
+    **/
   def setError(error: java.lang.String): scala.Unit = js.native
   /* CompleteClass */
   override def validate(): js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_HasErrorFalseValue[TValue]] = js.native

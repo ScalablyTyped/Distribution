@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * This layout positions nodes in a tree-like arrangement.
-    */
+  * This layout positions nodes in a tree-like arrangement.
+  */
 @js.native
 trait TreeLayout extends Layout {
   /**Gets or sets the default alignment of parents relative to their children.*/
@@ -101,47 +101,47 @@ trait TreeLayout extends Layout {
   /**Gets or sets the Style for the resulting trees.*/
   var treeStyle: EnumValue = js.native
   /**
-          * Find associated objects to be positioned along with the TreeVertex.
-          * @param {LayoutVertex} v
-          */
+    * Find associated objects to be positioned along with the TreeVertex.
+    * @param {LayoutVertex} v
+    */
   def addComments(v: TreeVertex): scala.Unit = js.native
   /**Gets or sets the default comparison function used for sorting.*/
   def alternateComparer(a: TreeVertex, b: TreeVertex): scala.Double = js.native
   /**
-          * Position each separate tree.
-          */
+    * Position each separate tree.
+    */
   def arrangeTrees(): scala.Unit = js.native
   /**
-          * Assign final property values for a TreeVertex.
-          * @param {LayoutVertex} v
-          */
+    * Assign final property values for a TreeVertex.
+    * @param {LayoutVertex} v
+    */
   def assignTreeVertexValues(v: TreeVertex): scala.Unit = js.native
   /**
-          * This overridable method is called by commitLayout if layerStyle is LayerUniform
-          * to support custom arrangement of bands or labels across each layout layer.
-          * @param Array<*> layerRects an Array of Rects with the bounds of each of the "layers"
-          * @param {Point} offset the position of the top-left corner of the banded area relative to the coordinates given by the layerRects
-          */
+    * This overridable method is called by commitLayout if layerStyle is LayerUniform
+    * to support custom arrangement of bands or labels across each layout layer.
+    * @param Array<*> layerRects an Array of Rects with the bounds of each of the "layers"
+    * @param {Point} offset the position of the top-left corner of the banded area relative to the coordinates given by the layerRects
+    */
   def commitLayers(layerRects: js.Array[Rect], offset: Point): scala.Unit = js.native
   /**
-          * Commit the position and routing of all edge links.
-          */
+    * Commit the position and routing of all edge links.
+    */
   def commitLinks(): scala.Unit = js.native
   /**
-          * Commit the position of all vertex nodes.
-          */
+    * Commit the position of all vertex nodes.
+    */
   def commitNodes(): scala.Unit = js.native
   /**Gets or sets the default comparison function used for sorting.*/
   def comparer(a: TreeVertex, b: TreeVertex): scala.Double = js.native
   /**
-          * Assign initial property values for a TreeVertex.
-          * @param {LayoutVertex} v
-          */
+    * Assign initial property values for a TreeVertex.
+    * @param {LayoutVertex} v
+    */
   def initializeTreeVertexValues(v: TreeVertex): scala.Unit = js.native
   /**
-          * Position and TreeVertex.comments around the vertex.
-          * @param {LayoutVertex} v
-          */
+    * Position and TreeVertex.comments around the vertex.
+    * @param {LayoutVertex} v
+    */
   def layoutComments(v: TreeVertex): scala.Unit = js.native
 }
 

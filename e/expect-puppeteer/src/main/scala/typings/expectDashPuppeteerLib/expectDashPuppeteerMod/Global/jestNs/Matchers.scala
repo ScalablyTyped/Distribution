@@ -11,8 +11,6 @@ trait Matchers[R] extends js.Object {
   // These must all match the ExpectPuppeteer interface above.
   // We can't extend from it directly because some method names conflict in type-incompatible ways.
   def toClick(selector: java.lang.String): js.Promise[scala.Unit] = js.native
-  // These must all match the ExpectPuppeteer interface above.
-  // We can't extend from it directly because some method names conflict in type-incompatible ways.
   def toClick(
     selector: java.lang.String,
     options: expectDashPuppeteerLib.expectDashPuppeteerMod.ExpectToClickOptions

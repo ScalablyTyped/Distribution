@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options[TRow /* <: js.Object */] extends js.Object {
   /**
   	 * Assign a callback function which will be called after triggering column filtering.
@@ -399,8 +398,8 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
     js.Function3[
       /* row */ TRow, 
       /* fieldName */ java.lang.String, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TRow))),List()),Left(TsIdentSimple(K))) *//* value */ js.Any, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TRow))),List()),Left(TsIdentSimple(K))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: TRow[string & keyof TRow] */ /* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: TRow[string & keyof TRow] */ js.Any
     ]
   ] = js.undefined
   /**

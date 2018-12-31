@@ -13,7 +13,6 @@ trait ModuleSelfConstructor extends js.Object {
   def providePromises(classFn: js.Function): scala.Unit = js.native
   // Identifies a named API's provider class.
   def provideSynchronous(): scala.Unit = js.native
-  // Identifies a named API's provider class.
   def provideSynchronous(classFn: js.Function): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DroppableEvent extends js.Object {
   var element: js.UndefOr[JQuery] = js.undefined
   var event: js.UndefOr[js.Object] = js.undefined

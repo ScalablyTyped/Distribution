@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Collaboration extends BaseElement {
   var artifacts: js.Array[Artifact]
   var choreographyRef: js.Array[Choreography]

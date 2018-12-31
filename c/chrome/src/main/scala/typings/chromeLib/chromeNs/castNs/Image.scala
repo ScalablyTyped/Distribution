@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class Image protected () extends js.Object {
   /**
-           * @param {string} url
-           * @constructor
-           * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Image
-           */
+    * @param {string} url
+    * @constructor
+    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Image
+    */
   def this(url: java.lang.String) = this()
   var height: js.UndefOr[scala.Double] = js.native
   var url: java.lang.String = js.native

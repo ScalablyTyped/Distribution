@@ -16,43 +16,24 @@ trait Channel extends js.Object {
   /* protected */ def _isDisabled(): scala.Boolean = js.native
   /* private */ def _stringify(envelope: js.Any): js.Any = js.native
   /**
-       * Add a telemetry item to the send buffer
-       */
+    * Add a telemetry item to the send buffer
+    */
   def send(envelope: applicationinsightsLib.outDeclarationsContractsMod.Envelope): scala.Unit = js.native
   /**
-       * Enable or disable disk-backed retry caching to cache events when client is offline (enabled by default)
-       * These cached events are stored in your system or user's temporary directory and access restricted to your user when possible.
-       * @param value if true events that occured while client is offline will be cached on disk
-       * @param resendInterval The wait interval for resending cached events.
-       * @param maxBytesOnDisk The maximum size (in bytes) that the created temporary directory for cache events can grow to, before caching is disabled.
-       * @returns {Configuration} this class
-       */
+    * Enable or disable disk-backed retry caching to cache events when client is offline (enabled by default)
+    * These cached events are stored in your system or user's temporary directory and access restricted to your user when possible.
+    * @param value if true events that occured while client is offline will be cached on disk
+    * @param resendInterval The wait interval for resending cached events.
+    * @param maxBytesOnDisk The maximum size (in bytes) that the created temporary directory for cache events can grow to, before caching is disabled.
+    * @returns {Configuration} this class
+    */
   def setUseDiskRetryCaching(value: scala.Boolean): scala.Unit = js.native
-  /**
-       * Enable or disable disk-backed retry caching to cache events when client is offline (enabled by default)
-       * These cached events are stored in your system or user's temporary directory and access restricted to your user when possible.
-       * @param value if true events that occured while client is offline will be cached on disk
-       * @param resendInterval The wait interval for resending cached events.
-       * @param maxBytesOnDisk The maximum size (in bytes) that the created temporary directory for cache events can grow to, before caching is disabled.
-       * @returns {Configuration} this class
-       */
   def setUseDiskRetryCaching(value: scala.Boolean, resendInterval: scala.Double): scala.Unit = js.native
-  /**
-       * Enable or disable disk-backed retry caching to cache events when client is offline (enabled by default)
-       * These cached events are stored in your system or user's temporary directory and access restricted to your user when possible.
-       * @param value if true events that occured while client is offline will be cached on disk
-       * @param resendInterval The wait interval for resending cached events.
-       * @param maxBytesOnDisk The maximum size (in bytes) that the created temporary directory for cache events can grow to, before caching is disabled.
-       * @returns {Configuration} this class
-       */
   def setUseDiskRetryCaching(value: scala.Boolean, resendInterval: scala.Double, maxBytesOnDisk: scala.Double): scala.Unit = js.native
   /**
-       * Immediately send buffered data
-       */
+    * Immediately send buffered data
+    */
   def triggerSend(isNodeCrashing: scala.Boolean): scala.Unit = js.native
-  /**
-       * Immediately send buffered data
-       */
   def triggerSend(isNodeCrashing: scala.Boolean, callback: js.Function1[/* v */ java.lang.String, scala.Unit]): scala.Unit = js.native
 }
 

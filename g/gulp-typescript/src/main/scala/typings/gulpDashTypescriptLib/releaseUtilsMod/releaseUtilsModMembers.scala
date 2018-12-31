@@ -13,10 +13,13 @@ object releaseUtilsModMembers extends js.Object {
   def forwardSlashes(fileName: java.lang.String): java.lang.String = js.native
   def getCommonBasePath(a: java.lang.String, b: java.lang.String): java.lang.String = js.native
   def getCommonBasePathOfArray(paths: js.Array[java.lang.String]): java.lang.String = js.native
-  def getError(info: typescriptLib.typescriptMod.tsNs.Diagnostic, typescript: js.Any): gulpDashTypescriptLib.releaseReporterMod.TypeScriptError = js.native
   def getError(
     info: typescriptLib.typescriptMod.tsNs.Diagnostic,
-    typescript: js.Any,
+    typescript: gulpDashTypescriptLib.Anon_CreateFunctionExpression
+  ): gulpDashTypescriptLib.releaseReporterMod.TypeScriptError = js.native
+  def getError(
+    info: typescriptLib.typescriptMod.tsNs.Diagnostic,
+    typescript: gulpDashTypescriptLib.Anon_CreateFunctionExpression,
     file: gulpDashTypescriptLib.releaseInputMod.File
   ): gulpDashTypescriptLib.releaseReporterMod.TypeScriptError = js.native
   def message(title: java.lang.String, alternative: java.lang.String): scala.Unit = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Locale extends js.Object {
   var AM: js.UndefOr[java.lang.String] = js.undefined
   var PM: js.UndefOr[java.lang.String] = js.undefined

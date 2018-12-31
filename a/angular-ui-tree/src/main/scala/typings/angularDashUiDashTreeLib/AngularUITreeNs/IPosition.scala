@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPosition extends js.Object {
   var dirAx: scala.Double
   var dirX: scala.Double

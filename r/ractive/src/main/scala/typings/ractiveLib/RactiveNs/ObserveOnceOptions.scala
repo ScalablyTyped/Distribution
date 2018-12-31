@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObserveOnceOptions extends js.Object {
   // Default Ractive
   var context: js.UndefOr[js.Any] = js.undefined

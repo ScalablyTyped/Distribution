@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFontWeightsStatics extends js.Object {
   var black: FontWeight
   var bold: FontWeight

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReadDirOptions extends js.Object {
   var contentHash: js.UndefOr[java.lang.String] = js.undefined
   var deleted: js.UndefOr[scala.Boolean] = js.undefined

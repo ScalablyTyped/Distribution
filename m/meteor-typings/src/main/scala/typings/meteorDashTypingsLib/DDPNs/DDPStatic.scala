@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DDPStatic extends js.Object {
   @JSName("apply")
   def apply(method: java.lang.String, parameters: js.Any*): scala.Unit

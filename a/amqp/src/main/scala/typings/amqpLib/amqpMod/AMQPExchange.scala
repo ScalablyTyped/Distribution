@@ -13,14 +13,14 @@ trait AMQPExchange
   def bind_headers(exchange: java.lang.String, routing: java.lang.String): scala.Unit = js.native
   def bind_headers(exchange: java.lang.String, routing: java.lang.String, callback: Callback[scala.Unit]): scala.Unit = js.native
   /**
-     * ifUnused default: true
-     *
-     * Deletes an exchange.
-     *
-     * If the optional boolean second argument is set, the server will only delete the exchange if it has no queue bindings.
-     *
-     * If the exchange has queue bindings the server does not delete it but raises a channel exception instead
-     */
+    * ifUnused default: true
+    *
+    * Deletes an exchange.
+    *
+    * If the optional boolean second argument is set, the server will only delete the exchange if it has no queue bindings.
+    *
+    * If the exchange has queue bindings the server does not delete it but raises a channel exception instead
+    */
   def destroy(ifUnused: scala.Boolean): scala.Unit = js.native
   @JSName("on")
   def on_ack(event: amqpLib.amqpLibStrings.ack, callback: Callback[scala.Unit]): this.type = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ColorY extends js.Object {
   var blur: jssLib.cssMod.Length
   var color: js.Any

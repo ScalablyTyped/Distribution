@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object webpackDashFailDashPluginMod extends js.Object {
   /**
-       * Webpack plugin that will make the process return status code 1 when it finishes with errors in single-run mode.
-      */
+    * Webpack plugin that will make the process return status code 1 when it finishes with errors in single-run mode.
+    */
   def apply(): webpackLib.webpackMod.Plugin = js.native
 }
 

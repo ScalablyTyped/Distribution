@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClusterOperationStatus extends js.Object {
   /** Output-only.A message containing any operation metadata details. */
   var details: js.UndefOr[java.lang.String] = js.undefined

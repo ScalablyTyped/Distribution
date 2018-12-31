@@ -5,24 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnnotateImageResponse extends js.Object {
   /** If present, crop hints have completed successfully. */
   var cropHintsAnnotation: js.UndefOr[CropHintsAnnotation] = js.undefined
   /**
-               * If set, represents the error message for the operation.
-               * Note that filled-in image annotations are guaranteed to be
-               * correct, even when `error` is set.
-               */
+    * If set, represents the error message for the operation.
+    * Note that filled-in image annotations are guaranteed to be
+    * correct, even when `error` is set.
+    */
   var error: js.UndefOr[Status] = js.undefined
   /** If present, face detection has completed successfully. */
   var faceAnnotations: js.UndefOr[js.Array[FaceAnnotation]] = js.undefined
   /**
-               * If present, text (OCR) detection or document (OCR) text detection has
-               * completed successfully.
-               * This annotation provides the structural hierarchy for the OCR detected
-               * text.
-               */
+    * If present, text (OCR) detection or document (OCR) text detection has
+    * completed successfully.
+    * This annotation provides the structural hierarchy for the OCR detected
+    * text.
+    */
   var fullTextAnnotation: js.UndefOr[TextAnnotation] = js.undefined
   /** If present, image properties were extracted successfully. */
   var imagePropertiesAnnotation: js.UndefOr[ImageProperties] = js.undefined

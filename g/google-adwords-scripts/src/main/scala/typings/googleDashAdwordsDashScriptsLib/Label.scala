@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Labels
-
 trait Label extends AdWordsEntity {
   def adGroups(): AdWordsSelector[AdGroup]
   def ads(): AdWordsSelector[Ad]

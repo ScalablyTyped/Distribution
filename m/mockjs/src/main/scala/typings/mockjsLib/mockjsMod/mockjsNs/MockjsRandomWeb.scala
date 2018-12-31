@@ -13,7 +13,6 @@ trait MockjsRandomWeb extends js.Object {
   def dtl(): S = js.native
   // Random.email
   def email(): S = js.native
-  // Random.email
   def email(domain: S): S = js.native
   // Random.ip
   def ip(): S = js.native
@@ -21,9 +20,7 @@ trait MockjsRandomWeb extends js.Object {
   def protocal(): RandomWebProtocal = js.native
   // Random.url
   def url(): S = js.native
-  // Random.url
   def url(protocol: S): S = js.native
-  // Random.url
   def url(protocol: S, host: S): S = js.native
 }
 

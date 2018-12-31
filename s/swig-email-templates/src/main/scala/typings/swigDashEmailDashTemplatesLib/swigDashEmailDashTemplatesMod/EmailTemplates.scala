@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EmailTemplates extends js.Object {
   def generateSubject(
     templatePath: java.lang.String,

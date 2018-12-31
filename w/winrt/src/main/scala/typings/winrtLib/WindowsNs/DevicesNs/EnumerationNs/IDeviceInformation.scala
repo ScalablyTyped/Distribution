@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDeviceInformation extends js.Object {
   var enclosureLocation: EnclosureLocation
   var id: java.lang.String

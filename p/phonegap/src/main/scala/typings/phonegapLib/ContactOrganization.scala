@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContactOrganization extends js.Object {
   var department: java.lang.String
   var name: java.lang.String

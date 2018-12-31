@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait RelationshipType extends js.Object
 
 /**
-     * An enumeration for Relationship Type Metadata
-     */
+  * An enumeration for Relationship Type Metadata
+  */
 @JSGlobal("XrmEnum.RelationshipType")
 @js.native
 object RelationshipType extends js.Object {

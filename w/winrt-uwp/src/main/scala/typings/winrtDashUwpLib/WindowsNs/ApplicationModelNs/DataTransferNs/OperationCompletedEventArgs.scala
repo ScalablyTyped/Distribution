@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class OperationCompletedEventArgs () extends js.Object {
   var acceptedFormatId: js.Any = js.native
-   /* unmapped type *//** Specifies the operation that the target app completed. */
+   /* unmapped type */ /** Specifies the operation that the target app completed. */
   var operation: DataPackageOperation = js.native
 }
 

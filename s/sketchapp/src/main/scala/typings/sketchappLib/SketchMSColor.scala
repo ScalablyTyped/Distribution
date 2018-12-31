@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSColor extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.color
   var alpha: scala.Double
@@ -14,9 +13,9 @@ trait SketchMSColor extends js.Object {
   var green: scala.Double
   var red: scala.Double
   /**
-     * ex: "#FFFFFF"
-     * ex: rgb(1,0,1)
-     */
+    * ex: "#FFFFFF"
+    * ex: rgb(1,0,1)
+    */
   var value: java.lang.String
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Internalpagemultiblockwrites extends js.Object {
   var `dictionary matches`: scala.Double
   var `fast-path pages deleted`: scala.Double

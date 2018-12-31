@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CallOptions extends js.Object {
   var autoPaginate: js.UndefOr[scala.Boolean] = js.undefined
   var isBundling: js.UndefOr[scala.Boolean] = js.undefined

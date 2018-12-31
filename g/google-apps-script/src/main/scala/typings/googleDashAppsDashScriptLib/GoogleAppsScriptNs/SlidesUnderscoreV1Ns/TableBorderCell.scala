@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableBorderCell extends js.Object {
   // The location of the border within the border table.
   var location: TableCellLocation

@@ -24,11 +24,11 @@ abstract class PhotoImportSession () extends js.Object {
   /** Closes the photo import session and releases associated resources. */
   def close(): scala.Unit = js.native
   /**
-                   * Asynchronously finds items on the source device that are available for import.
-                   * @param contentTypeFilter A value indicating whether the find operation includes images, videos, or both in the results.
-                   * @param itemSelectionMode A value indicating whether all items, no items, or only new items in the results are initially marked as selected.
-                   * @return An asynchronous operation that returns a PhotoImportFindItemsResult on successful completion.
-                   */
+    * Asynchronously finds items on the source device that are available for import.
+    * @param contentTypeFilter A value indicating whether the find operation includes images, videos, or both in the results.
+    * @param itemSelectionMode A value indicating whether all items, no items, or only new items in the results are initially marked as selected.
+    * @return An asynchronous operation that returns a PhotoImportFindItemsResult on successful completion.
+    */
   def findItemsAsync(contentTypeFilter: PhotoImportContentTypeFilter, itemSelectionMode: PhotoImportItemSelectionMode): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[PhotoImportFindItemsResult, scala.Double] = js.native
 }
 

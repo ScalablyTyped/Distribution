@@ -7,13 +7,12 @@ import scala.scalajs.js.annotation._
 
 // End Deprecated
 /**
-     * Context object used in methods like `getInitialProps()`
-     * https://github.com/zeit/next.js/blob/7.0.0/server/render.js#L97
-     * https://github.com/zeit/next.js/blob/7.0.0/README.md#fetching-data-and-component-lifecycle
-     *
-     * @template Q Query object schema.
-     */
-
+  * Context object used in methods like `getInitialProps()`
+  * https://github.com/zeit/next.js/blob/7.0.0/server/render.js#L97
+  * https://github.com/zeit/next.js/blob/7.0.0/README.md#fetching-data-and-component-lifecycle
+  *
+  * @template Q Query object schema.
+  */
 trait NextContext[Q /* <: nextDashServerLib.routerMod.DefaultQuery */] extends js.Object {
   /** String of the actual path (including the query) shows in the browser */
   var asPath: java.lang.String

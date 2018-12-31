@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkbookSheetRowCell extends js.Object {
   var background: js.UndefOr[java.lang.String] = js.undefined
   var bold: js.UndefOr[scala.Boolean] = js.undefined

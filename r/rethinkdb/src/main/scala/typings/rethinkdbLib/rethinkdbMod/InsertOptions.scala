@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InsertOptions extends js.Object {
   var conflict: js.UndefOr[
     rethinkdbLib.rethinkdbLibStrings.error | rethinkdbLib.rethinkdbLibStrings.replace | rethinkdbLib.rethinkdbLibStrings.update | (js.Function3[/* id */ java.lang.String, /* oldDoc */ js.Any, /* newDoc */ js.Any, _])

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConfigurationServiceApiVersions extends js.Object {
   var acm: js.UndefOr[awsDashSdkLib.clientsAcmMod.ACMNs.apiVersion] = js.undefined
   var acmpca: js.UndefOr[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.apiVersion] = js.undefined
@@ -26,7 +25,9 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var autoscaling: js.UndefOr[awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.apiVersion] = js.undefined
   var autoscalingplans: js.UndefOr[awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.apiVersion] = js.undefined
   var batch: js.UndefOr[awsDashSdkLib.clientsBatchMod.BatchNs.apiVersion] = js.undefined
-  var budgets: js.UndefOr[js.Any] = js.undefined
+  var budgets: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify AWS.Budgets.Types.apiVersion */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify AWS.Budgets.Types.apiVersion */ js.Any
+  ] = js.undefined
   var chime: js.UndefOr[awsDashSdkLib.clientsChimeMod.ChimeNs.apiVersion] = js.undefined
   var cloud9: js.UndefOr[awsDashSdkLib.clientsCloud9Mod.Cloud9Ns.apiVersion] = js.undefined
   var clouddirectory: js.UndefOr[awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.apiVersion] = js.undefined

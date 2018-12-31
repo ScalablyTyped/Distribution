@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigationHelpButtonViewModel extends js.Object {
   var command: Command
   var showClick: Command

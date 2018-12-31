@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetBackgroundAudioPlayerStateOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */

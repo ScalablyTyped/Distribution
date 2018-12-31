@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileUploadOptions extends js.Object {
   var chunkedMode: js.UndefOr[scala.Boolean] = js.undefined
   var fileKey: js.UndefOr[java.lang.String] = js.undefined

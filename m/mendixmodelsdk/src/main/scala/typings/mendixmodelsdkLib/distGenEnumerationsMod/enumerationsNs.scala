@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object enumerationsNs extends js.Object {
   /**
-       * Interfaces and instance classes for types from the Mendix sub meta model `Enumerations`.
-       */
+    * Interfaces and instance classes for types from the Mendix sub meta model `Enumerations`.
+    */
   @js.native
   class Condition protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
@@ -24,9 +24,9 @@ object enumerationsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/enumerations relevant section in reference guide}
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.IEnumeration because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * See: {@link https://docs.mendix.com/refguide7/enumerations relevant section in reference guide}
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.IEnumeration because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class Enumeration protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
@@ -35,9 +35,9 @@ object enumerationsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/enumeration-values relevant section in reference guide}
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.IEnumerationValue because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * See: {@link https://docs.mendix.com/refguide7/enumeration-values relevant section in reference guide}
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.IEnumerationValue because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class EnumerationValue protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
@@ -53,8 +53,8 @@ object enumerationsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/enumerations relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/enumerations relevant section in reference guide}
+    */
   @js.native
   trait IEnumeration
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.IDocument {
@@ -62,8 +62,8 @@ object enumerationsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/enumeration-values relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/enumeration-values relevant section in reference guide}
+    */
   @js.native
   trait IEnumerationValue
     extends mendixmodelsdkLib.distSdkInternalElementsMod.IElement
@@ -75,64 +75,64 @@ object enumerationsNs extends js.Object {
   }
   
   /**
-       * Interfaces and instance classes for types from the Mendix sub meta model `Enumerations`.
-       */
+    * Interfaces and instance classes for types from the Mendix sub meta model `Enumerations`.
+    */
   @js.native
   object Condition extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenEnumerationsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new Condition instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new Condition instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.Condition = js.native
     /**
-             * Creates and returns a new Condition instance in the SDK and on the server.
-             * The new Condition will be automatically stored in the 'conditions' property
-             * of the parent documenttemplates.ConditionSettings element passed as argument.
-             */
+      * Creates and returns a new Condition instance in the SDK and on the server.
+      * The new Condition will be automatically stored in the 'conditions' property
+      * of the parent documenttemplates.ConditionSettings element passed as argument.
+      */
     def createInConditionSettingsUnderConditions(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.ConditionSettings): mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.Condition = js.native
     /**
-             * Creates and returns a new Condition instance in the SDK and on the server.
-             * The new Condition will be automatically stored in the 'conditions' property
-             * of the parent pages.ConditionalSettings element passed as argument.
-             */
+      * Creates and returns a new Condition instance in the SDK and on the server.
+      * The new Condition will be automatically stored in the 'conditions' property
+      * of the parent pages.ConditionalSettings element passed as argument.
+      */
     def createInConditionalSettingsUnderConditions(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ConditionalSettings): mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.Condition = js.native
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/enumerations relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/enumerations relevant section in reference guide}
+    */
   @js.native
   object Enumeration extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenEnumerationsMod.StructureVersionInfo = js.native
     /**
-             * Creates a new Enumeration unit in the SDK and on the server.
-             * Expects one argument, the projects.IFolderBase in which this unit is contained.
-             */
+      * Creates a new Enumeration unit in the SDK and on the server.
+      * Expects one argument, the projects.IFolderBase in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.Enumeration = js.native
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/enumeration-values relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/enumeration-values relevant section in reference guide}
+    */
   @js.native
   object EnumerationValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenEnumerationsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new EnumerationValue instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new EnumerationValue instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.EnumerationValue = js.native
     /**
-             * Creates and returns a new EnumerationValue instance in the SDK and on the server.
-             * The new EnumerationValue will be automatically stored in the 'values' property
-             * of the parent Enumeration element passed as argument.
-             */
+      * Creates and returns a new EnumerationValue instance in the SDK and on the server.
+      * The new EnumerationValue will be automatically stored in the 'values' property
+      * of the parent Enumeration element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.Enumeration): mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.EnumerationValue = js.native
   }
   

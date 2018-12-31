@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
 class UserProfilePropertiesForUser protected ()
   extends sharepointLib.SPNs.ClientObject {
   /** Creates new UserProfilePropertiesForUser object
-                  @param context Specifies the client context to use.
-                  @param accountName Specifies the user by account name.
-                  @param propertyNames Specifies an array of strings that specify the properties to retrieve. */
+    @param context Specifies the client context to use.
+    @param accountName Specifies the user by account name.
+    @param propertyNames Specifies an array of strings that specify the properties to retrieve. */
   def this(context: sharepointLib.SPNs.ClientContext, accountName: java.lang.String, propertyNames: js.Array[java.lang.String]) = this()
   /** Gets an array of strings that specify the user profile property names. */
   def getPropertyNames(): js.Array[java.lang.String] = js.native

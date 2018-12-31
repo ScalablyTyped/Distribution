@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LoggingConfig extends js.Object {
   var level: LoggingLevel
   var piiLoggingEnabled: scala.Boolean

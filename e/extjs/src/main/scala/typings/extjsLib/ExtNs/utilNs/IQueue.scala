@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IQueue
   extends extjsLib.ExtNs.IBase {
   /** [Method] Removes all items from the collection  */

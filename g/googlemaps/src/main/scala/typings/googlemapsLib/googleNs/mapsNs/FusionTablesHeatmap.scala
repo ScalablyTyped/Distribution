@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FusionTablesHeatmap extends js.Object {
   var enabled: scala.Boolean
 }

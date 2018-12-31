@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var argv: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var autoHelp: js.UndefOr[scala.Boolean] = js.undefined
   var autoVersion: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * Caution: Explicitly specifying undefined for booleanDefault
-           * has different meaning from omitting key itself.
-           */
+    * Caution: Explicitly specifying undefined for booleanDefault
+    * has different meaning from omitting key itself.
+    */
   var booleanDefault: js.UndefOr[scala.Boolean | scala.Null] = js.undefined
   var description: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
   var flags: js.UndefOr[minimistDashOptionsLib.minimistDashOptionsMod.buildNs.Options] = js.undefined

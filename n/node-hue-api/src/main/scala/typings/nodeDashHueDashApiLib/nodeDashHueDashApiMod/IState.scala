@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IState extends js.Object {
   var config: IBridgeConfig
   var groups: org.scalablytyped.runtime.StringDictionary[ILightGroup]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Neutral4 extends js.Object {
   var danger: java.lang.String
   var dangerLight: java.lang.String

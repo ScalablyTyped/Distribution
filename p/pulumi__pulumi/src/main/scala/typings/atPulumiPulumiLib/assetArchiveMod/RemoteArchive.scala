@@ -11,8 +11,8 @@ class RemoteArchive protected () extends Archive {
   def this(uri: java.lang.String) = this()
   def this(uri: js.Promise[java.lang.String]) = this()
   /**
-       * The URI where the archive lives.
-       */
+    * The URI where the archive lives.
+    */
   val uri: js.Promise[java.lang.String] = js.native
 }
 

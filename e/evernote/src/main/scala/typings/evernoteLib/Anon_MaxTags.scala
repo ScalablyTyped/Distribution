@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MaxTags extends js.Object {
   var includeContainingNotebooks: js.UndefOr[scala.Boolean] = js.undefined
   var maxNotebooks: js.UndefOr[scala.Double] = js.undefined

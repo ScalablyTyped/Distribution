@@ -32,9 +32,6 @@ trait DocumentViewer
   				 * Dismisses the document viewer.
   				 */
   def hide(): scala.Unit = js.native
-  /**
-  				 * Dismisses the document viewer.
-  				 */
   def hide(options: titaniumLib.DocumentViewerOptions): scala.Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.DocumentViewer.url> property.
@@ -44,9 +41,6 @@ trait DocumentViewer
   				 * Displays the document viewer over the current view.
   				 */
   def show(): scala.Unit = js.native
-  /**
-  				 * Displays the document viewer over the current view.
-  				 */
   def show(options: titaniumLib.DocumentViewerOptions): scala.Unit = js.native
 }
 

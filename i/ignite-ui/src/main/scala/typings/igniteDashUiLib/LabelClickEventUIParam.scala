@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LabelClickEventUIParam extends js.Object {
   /**
   	 * Used to determine whether or not the label click should fire slice click event.

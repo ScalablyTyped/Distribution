@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveMultipleInheritance: Dropped parents List(reactDashMdLib.libListsListItemMod.BaseListItemProps because Would inherit conflicting mutable fields List(disabled))*/
-
 trait ListItemProps
   extends reactDashMdLib.libInksInjectInkMod.InjectedInkProps
      with // for the `component` prop until refactored out
@@ -29,24 +28,24 @@ trait ListItemProps
   var contentClassName: js.UndefOr[java.lang.String] = js.undefined
   var contentStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var defaultOpen: js.UndefOr[scala.Boolean] = js.undefined
   var defaultVisible: js.UndefOr[scala.Boolean] = js.undefined
   var expanderIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var expanderIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var expanderIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var expanderLeft: js.UndefOr[scala.Boolean] = js.undefined
   var inset: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var isOpen: js.UndefOr[scala.Boolean] = js.undefined
   var itemComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var itemProps: js.UndefOr[js.Object] = js.undefined

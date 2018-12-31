@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ErrorHandler extends js.Object {
   /** Error condition this handler applies to. */
   var errorCode: js.UndefOr[java.lang.String] = js.undefined

@@ -205,9 +205,6 @@ trait Picker extends View {
   			 * Selects a column's row.
   			 */
   def setSelectedRow(column: scala.Double, row: scala.Double): scala.Unit = js.native
-  /**
-  			 * Selects a column's row.
-  			 */
   def setSelectedRow(column: scala.Double, row: scala.Double, animated: scala.Boolean): scala.Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Picker.selectionIndicator> property.

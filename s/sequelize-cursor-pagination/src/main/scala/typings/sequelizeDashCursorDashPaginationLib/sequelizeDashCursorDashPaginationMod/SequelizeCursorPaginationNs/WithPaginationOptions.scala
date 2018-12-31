@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WithPaginationOptions[MethodName /* <: java.lang.String */] extends js.Object {
   var methodName: js.UndefOr[MethodName] = js.undefined
    // [default: 'paginate']

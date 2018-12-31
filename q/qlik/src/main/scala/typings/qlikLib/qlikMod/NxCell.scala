@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NxCell extends js.Object {
   var qAttrDims: NxAttributeDimValues
   var qAttrExps: NxAttributeExpressionValues

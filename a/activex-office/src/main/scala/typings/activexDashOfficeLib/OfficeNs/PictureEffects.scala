@@ -13,11 +13,9 @@ trait PictureEffects extends js.Object {
   def apply(Index: scala.Double): PictureEffect = js.native
   /** @param Index [Index=-1] */
   def Delete(): scala.Unit = js.native
-  /** @param Index [Index=-1] */
   def Delete(Index: scala.Double): scala.Unit = js.native
   /** @param Position [Position=-1] */
   def Insert(EffectType: MsoPictureEffectType): PictureEffect = js.native
-  /** @param Position [Position=-1] */
   def Insert(EffectType: MsoPictureEffectType, Position: scala.Double): PictureEffect = js.native
   def Item(Index: scala.Double): PictureEffect = js.native
 }

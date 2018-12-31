@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TgfancyOptions extends js.Object {
   var chatIdResolution: js.UndefOr[scala.Boolean | ChatIdResolutionOptions] = js.undefined
   var emojification: js.UndefOr[scala.Boolean | EmojificationOptions] = js.undefined

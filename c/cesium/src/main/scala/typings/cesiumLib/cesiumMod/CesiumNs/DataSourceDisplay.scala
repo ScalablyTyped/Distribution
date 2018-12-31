@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataSourceDisplay extends js.Object {
   var dataSources: DataSourceCollection
   var defaultDataSource: CustomDataSource

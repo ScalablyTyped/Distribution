@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BulkUpload[T] extends js.Object {
   def forCampaignManagement(): T
   def forOfflineConversions(): T

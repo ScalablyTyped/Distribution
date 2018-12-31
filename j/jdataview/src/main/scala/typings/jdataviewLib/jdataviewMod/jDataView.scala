@@ -20,7 +20,6 @@ trait jDataView
   ): js.Array[scala.Double] = js.native
   // Strings and Blobs
   def getChar(): java.lang.String = js.native
-  // Strings and Blobs
   def getChar(byteOffset: scala.Double): java.lang.String = js.native
   def getFloat32(): scala.Double = js.native
   def getFloat64(): scala.Double = js.native
@@ -28,15 +27,12 @@ trait jDataView
   def getInt32(): scala.Double = js.native
   // 64 bit integers
   def getInt64(): jdataviewLib.jdataviewMod.jDataViewNs.Int64 = js.native
-  // 64 bit integers
   def getInt64(byteOffset: scala.Double): jdataviewLib.jdataviewMod.jDataViewNs.Int64 = js.native
-  // 64 bit integers
   def getInt64(byteOffset: scala.Double, littleEndian: scala.Boolean): jdataviewLib.jdataviewMod.jDataViewNs.Int64 = js.native
   // Specification getters
   def getInt8(): scala.Double = js.native
   // Bitfields
   def getSigned(bitLength: scala.Double): scala.Double = js.native
-  // Bitfields
   def getSigned(bitLength: scala.Double, byteOffset: scala.Double): scala.Double = js.native
   def getString(byteLength: scala.Double): java.lang.String = js.native
   def getString(byteLength: scala.Double, byteOffset: scala.Double): java.lang.String = js.native

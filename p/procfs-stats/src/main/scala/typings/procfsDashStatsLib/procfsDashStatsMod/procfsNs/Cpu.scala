@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Cpu extends js.Object {
   var btime: java.lang.String
   var cpu: CpuDetail

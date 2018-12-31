@@ -22,13 +22,13 @@ object LViewFlags extends js.Object {
     extends atAngularCoreLib.srcRender3InterfacesViewMod.LViewFlags
   
   /**
-       * Whether or not the view is in creationMode.
-       *
-       * This must be stored in the view rather than using `data` as a marker so that
-       * we can properly support embedded views. Otherwise, when exiting a child view
-       * back into the parent view, `data` will be defined and `creationMode` will be
-       * improperly reported as false.
-       */
+    * Whether or not the view is in creationMode.
+    *
+    * This must be stored in the view rather than using `data` as a marker so that
+    * we can properly support embedded views. Otherwise, when exiting a child view
+    * back into the parent view, `data` will be defined and `creationMode` will be
+    * improperly reported as false.
+    */
   @js.native
   sealed trait CreationMode
     extends atAngularCoreLib.srcRender3InterfacesViewMod.LViewFlags
@@ -49,12 +49,12 @@ object LViewFlags extends js.Object {
     extends atAngularCoreLib.srcRender3InterfacesViewMod.LViewFlags
   
   /**
-       *  Whether or not the init hooks have run.
-       *
-       * If on, the init hooks haven't yet been run and should be executed by the first component that
-       * runs OR the first cR() instruction that runs (so inits are run for the top level view before
-       * any embedded views).
-       */
+    *  Whether or not the init hooks have run.
+    *
+    * If on, the init hooks haven't yet been run and should be executed by the first component that
+    * runs OR the first cR() instruction that runs (so inits are run for the top level view before
+    * any embedded views).
+    */
   @js.native
   sealed trait RunInit
     extends atAngularCoreLib.srcRender3InterfacesViewMod.LViewFlags

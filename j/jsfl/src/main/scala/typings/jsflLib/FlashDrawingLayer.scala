@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 trait FlashDrawingLayer extends js.Object {
   /// Puts Flash in drawing mode.
   def beginDraw(): scala.Unit = js.native
-  /// Puts Flash in drawing mode.
   def beginDraw(persistentDraw: scala.Boolean): scala.Unit = js.native
   /// Erases what was previously drawn using the drawingLayer and prepares for more drawing commands.
   def beginFrame(): scala.Unit = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Versionstring extends js.Object {
   var copyright: java.lang.String
   var description: java.lang.String

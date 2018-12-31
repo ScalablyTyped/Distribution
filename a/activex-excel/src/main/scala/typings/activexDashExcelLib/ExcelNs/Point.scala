@@ -59,18 +59,13 @@ class Point protected () extends js.Object {
   def Paste(): js.Any = js.native
   /** @param Index [Index=2] */
   def PieSliceLocation(loc: XlPieSliceLocation): scala.Double = js.native
-  /** @param Index [Index=2] */
   def PieSliceLocation(loc: XlPieSliceLocation, Index: XlPieSliceIndex): scala.Double = js.native
   def Select(): js.Any = js.native
   /** @param Type [Type=2] */
   def _ApplyDataLabels(): js.Any = js.native
-  /** @param Type [Type=2] */
   def _ApplyDataLabels(Type: XlDataLabelsType): js.Any = js.native
-  /** @param Type [Type=2] */
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any): js.Any = js.native
-  /** @param Type [Type=2] */
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any): js.Any = js.native
-  /** @param Type [Type=2] */
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
 }
 

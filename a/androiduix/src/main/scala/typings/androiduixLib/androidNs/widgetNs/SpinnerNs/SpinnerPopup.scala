@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpinnerPopup extends js.Object {
   def dismiss(): scala.Unit
   def getBackground(): androiduixLib.androidNs.graphicsNs.drawableNs.Drawable

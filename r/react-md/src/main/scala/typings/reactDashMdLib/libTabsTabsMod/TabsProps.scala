@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TabsProps
   extends reactDashMdLib.libMod.Props
      with // for the `component` prop until refactored out
@@ -26,12 +25,12 @@ trait TabsProps
   var indicatorHeight: js.UndefOr[scala.Double] = js.undefined
   var nextIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var nextIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var nextIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var onTabChange: js.UndefOr[
     js.Function5[
@@ -46,22 +45,22 @@ trait TabsProps
   var overflowMenu: js.UndefOr[scala.Boolean] = js.undefined
   var overflowMenuIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var overflowMenuIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var overflowMenuIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var overflowMenuLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var previousIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var previousIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var previousIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var tabId: reactDashMdLib.libMod.IdPropType
 }

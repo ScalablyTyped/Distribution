@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LightsObjects extends js.Object {
   var elements: js.Array[threeLib.threeDashCoreMod.Face3]
       // Sprite or Particle

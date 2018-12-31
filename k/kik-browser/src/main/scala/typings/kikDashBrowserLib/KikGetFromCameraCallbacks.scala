@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KikGetFromCameraCallbacks extends js.Object {
   def onCancel(): scala.Unit
   def onComplete(photos: js.Array[java.lang.String]): scala.Unit

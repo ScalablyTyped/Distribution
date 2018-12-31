@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class PixelDataProvider () extends js.Object {
   /**
-                   * Returns the internally-stored pixel data.
-                   * @return The pixel data.
-                   */
+    * Returns the internally-stored pixel data.
+    * @return The pixel data.
+    */
   def detachPixelData(): js.Array[scala.Double] = js.native
 }
 

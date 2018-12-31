@@ -9,29 +9,19 @@ import scala.scalajs.js.annotation._
 trait QueryDetails
   extends knexLib.knexMod.KnexNs.Sql {
   var transacting: scala.Boolean = js.native
-  /**
-       * Function that needs to be called to mock database query result for knex.
-       *
-       * @param error The Error, string or instance of Error, which represents why the result was rejected
-       */
   def reject(error: java.lang.String): scala.Unit = js.native
   /**
-       * Function that needs to be called to mock database query result for knex.
-       *
-       * @param error The Error, string or instance of Error, which represents why the result was rejected
-       */
+    * Function that needs to be called to mock database query result for knex.
+    *
+    * @param error The Error, string or instance of Error, which represents why the result was rejected
+    */
   def reject(error: nodeLib.Error): scala.Unit = js.native
   /**
-       * Function that needs to be called to mock database query result for knex.
-       *
-       * @param values An array of mock data to be returned by database. For Bookshelf this is mostly array of objects. Knex could return any type of data.
-       */
+    * Function that needs to be called to mock database query result for knex.
+    *
+    * @param values An array of mock data to be returned by database. For Bookshelf this is mostly array of objects. Knex could return any type of data.
+    */
   def response(values: js.Any): scala.Unit = js.native
-  /**
-       * Function that needs to be called to mock database query result for knex.
-       *
-       * @param values An array of mock data to be returned by database. For Bookshelf this is mostly array of objects. Knex could return any type of data.
-       */
   def response(values: js.Any, options: QueryDetailsResponseOption): scala.Unit = js.native
 }
 

@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 @js.native
 class KmlBalloonStyle () extends KmlObject {
   /**
-       * Background color of the balloon (optional).
-       */
+    * Background color of the balloon (optional).
+    */
   def getBgColor(): KmlColor = js.native
   /**
-       * The text contained in the balloon. 
-       */
+    * The text contained in the balloon. 
+    */
   def getText(): java.lang.String = js.native
   /**
-       * Foreground color for text. The default is black (ff000000).
-       */
+    * Foreground color for text. The default is black (ff000000).
+    */
   def getTextColor(): KmlColor = js.native
   /**
-       * The text contained in the balloon. 
-       */
+    * The text contained in the balloon. 
+    */
   def setText(text: java.lang.String): scala.Unit = js.native
 }
 

@@ -16,9 +16,9 @@ abstract class VisualElementsRequest () extends js.Object {
   /** Gets a copy of the parent secondary tile's SecondaryTileVisualElements object. The visual elements properties can be set or read through this object. When deferral is complete (or the handler returns without a deferral), the properties in this object are verified and then reflected in the Pin to Start flyout. */
   var visualElements: SecondaryTileVisualElements = js.native
   /**
-                   * Retrieves a deferral object, which allows the app time to provide information and assets used in the Pin to Start flyout.
-                   * @return The deferral object.
-                   */
+    * Retrieves a deferral object, which allows the app time to provide information and assets used in the Pin to Start flyout.
+    * @return The deferral object.
+    */
   def getDeferral(): VisualElementsRequestDeferral = js.native
 }
 

@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * ContentLibraryList...
-     */
-
+  * ContentLibraryList...
+  */
 trait IContentLibraryList extends js.Object {
   /**
-           * Information about the content library.
-           */
+    * Information about the content library.
+    */
   var qItems: IContentLibraryListItem
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITouchSpinOptions extends js.Object {
   var buttonDownClass: js.UndefOr[java.lang.String] = js.undefined
   var buttonDownShow: js.UndefOr[scala.Boolean] = js.undefined

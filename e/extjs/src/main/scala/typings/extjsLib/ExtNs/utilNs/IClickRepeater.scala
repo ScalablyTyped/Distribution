@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IClickRepeater extends IObservable {
   /** [Config Option] (Boolean) */
   var accelerate: js.UndefOr[scala.Boolean] = js.undefined

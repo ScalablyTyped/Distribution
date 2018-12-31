@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait PhysicsUpdraftMode extends js.Object
 
 /**
-     * The strength of the force in correspondence to the distance of the affected object
-     * @see https://doc.babylonjs.com/how_to/using_the_physics_engine
-     */
+  * The strength of the force in correspondence to the distance of the affected object
+  * @see https://doc.babylonjs.com/how_to/using_the_physics_engine
+  */
 @JSGlobal("BABYLON.PhysicsUpdraftMode")
 @js.native
 object PhysicsUpdraftMode extends js.Object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Legacy extends js.Object {
   var antialias: scala.Boolean
   var autoResize: scala.Boolean

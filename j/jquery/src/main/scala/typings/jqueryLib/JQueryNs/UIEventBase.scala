@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 // #endregion
 // region UIEvent
 // #region UIEvent
-
 trait UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] {
   // Event
   @JSName("bubbles")

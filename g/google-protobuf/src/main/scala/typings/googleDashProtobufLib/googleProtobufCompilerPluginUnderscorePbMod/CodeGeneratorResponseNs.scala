@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("google-protobuf/google/protobuf/compiler/plugin_pb", "CodeGeneratorResponse")
 @js.native
 object CodeGeneratorResponseNs extends js.Object {
-  
   trait AsObject extends js.Object {
     var error: js.UndefOr[java.lang.String] = js.undefined
     var fileList: js.Array[
@@ -59,7 +58,6 @@ object CodeGeneratorResponseNs extends js.Object {
   @JSName("File")
   @js.native
   object FileNs extends js.Object {
-    
     trait AsObject extends js.Object {
       var content: js.UndefOr[java.lang.String] = js.undefined
       var insertionPoint: js.UndefOr[java.lang.String] = js.undefined

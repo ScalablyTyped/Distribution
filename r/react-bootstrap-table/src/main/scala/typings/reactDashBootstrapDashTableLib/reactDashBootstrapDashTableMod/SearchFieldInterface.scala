@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SearchFieldInterface extends js.Object {
   /**
   	 * getValue should return the current search text.

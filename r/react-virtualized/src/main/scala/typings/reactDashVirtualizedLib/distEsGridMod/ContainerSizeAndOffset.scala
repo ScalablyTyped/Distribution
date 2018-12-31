@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContainerSizeAndOffset extends js.Object {
   var containerSize: scala.Double
   var offset: scala.Double

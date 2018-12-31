@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Transport extends js.Object {
   var close: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var mailer: js.UndefOr[nodemailerLib.libMailerMod.namespaced] = js.undefined

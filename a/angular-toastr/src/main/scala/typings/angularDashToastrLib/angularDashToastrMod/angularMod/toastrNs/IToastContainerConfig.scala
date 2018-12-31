@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IToastContainerConfig extends js.Object {
   var autoDismiss: js.UndefOr[scala.Boolean] = js.undefined
   var containerId: js.UndefOr[java.lang.String] = js.undefined

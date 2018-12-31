@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScriptReferenceHost extends js.Object {
   def getCompilerOptions(): CompilerOptions
   def getCurrentDirectory(): java.lang.String

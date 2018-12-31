@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CipherParams extends js.Object {
   var algorithm: java.lang.String
   var key: js.Any

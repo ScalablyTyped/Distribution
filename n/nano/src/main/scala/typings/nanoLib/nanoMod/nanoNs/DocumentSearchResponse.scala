@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DocumentSearchResponse[V] extends js.Object {
   // token which if supplied to a subsequent search will return the next page of results.
   var bookmark: java.lang.String

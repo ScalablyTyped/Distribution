@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ToolbarOptions extends js.Object {
   var deleteLayer: js.UndefOr[scala.Boolean] = js.undefined
    // topleft | topright | bottomleft | bottomright

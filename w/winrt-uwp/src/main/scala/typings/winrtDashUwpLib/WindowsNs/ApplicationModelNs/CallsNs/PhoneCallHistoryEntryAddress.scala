@@ -8,12 +8,13 @@ import scala.scalajs.js.annotation._
 /** Address book information for a contact used by PhoneCallHistoryEntry objects. */
 @JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryEntryAddress")
 @js.native
+/** Creates a new empty PhoneCallHistoryEntryAddress object. */
 class PhoneCallHistoryEntryAddress () extends js.Object {
   /**
-                   * Creates a new PhoneCallHistoryEntryAddress object with an initial address.
-                   * @param rawAddress The address to initiailize to the RawAddress property.
-                   * @param rawAddressKind The type of address represented by rawAddress.
-                   */
+    * Creates a new PhoneCallHistoryEntryAddress object with an initial address.
+    * @param rawAddress The address to initiailize to the RawAddress property.
+    * @param rawAddressKind The type of address represented by rawAddress.
+    */
   def this(rawAddress: java.lang.String, rawAddressKind: PhoneCallHistoryEntryRawAddressKind) = this()
   /** Gets or sets the unique identifier for this contact. */
   var contactId: java.lang.String = js.native

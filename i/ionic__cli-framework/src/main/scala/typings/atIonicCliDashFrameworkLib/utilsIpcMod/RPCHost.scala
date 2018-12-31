@@ -13,19 +13,15 @@ class RPCHost protected () extends js.Object {
   val modulePath: java.lang.String = js.native
   var rpc: RPCProcess = js.native
   def call[R /* <: RPCResponse[_, js.Object] */](
-    procedure: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(R))),List()),Left(TsIdentSimple(procedure))) */js.Any,
-    args: /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(R))),List()),Left(TsIdentSimple(request))),Left(TsIdentSimple(args))) */js.Any
-  ): js.Promise[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(R))),List()),Left(TsIdentSimple(data))) */js.Any
-  ] = js.native
+    procedure: /* import warning: ImportType.apply Failed type conversion: R['procedure'] */ js.Any,
+    args: /* import warning: ImportType.apply Failed type conversion: R['request']['args'] */ js.Any
+  ): js.Promise[/* import warning: ImportType.apply Failed type conversion: R['data'] */ js.Any] = js.native
   def end(): scala.Unit = js.native
   def register[R /* <: RPCResponse[_, js.Object] */](
-    procedure: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(R))),List()),Left(TsIdentSimple(procedure))) */js.Any,
+    procedure: /* import warning: ImportType.apply Failed type conversion: R['procedure'] */ js.Any,
     fn: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(R))),List()),Left(TsIdentSimple(request))),Left(TsIdentSimple(args))) *//* args */ js.Any, 
-      js.Promise[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(R))),List()),Left(TsIdentSimple(data))) */js.Any
-      ]
+      /* import warning: ImportType.apply Failed type conversion: R['request']['args'] */ /* args */ js.Any, 
+      js.Promise[/* import warning: ImportType.apply Failed type conversion: R['data'] */ js.Any]
     ]
   ): scala.Unit = js.native
   def start(): scala.Unit = js.native

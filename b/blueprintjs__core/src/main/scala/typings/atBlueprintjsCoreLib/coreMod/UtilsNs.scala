@@ -27,7 +27,7 @@ object UtilsNs extends js.Object {
   def ensureElement(): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
   def ensureElement(
     child: reactLib.reactMod.ReactNs.ReactChild | js.UndefOr[scala.Nothing],
-    tagName: /* LimitUnionLength: was union type with length 170 */java.lang.String
+    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ java.lang.String
   ): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
   def ensureElement(child: reactLib.reactMod.ReactNs.ReactChild): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
   def getDeepUnequalKeyValues[T /* <: js.Object */](): js.Array[atBlueprintjsCoreLib.Anon_ValueAKey[T]] = js.native
@@ -39,8 +39,8 @@ object UtilsNs extends js.Object {
   def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[atBlueprintjsCoreLib.Anon_ValueA] = js.native
   def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: atBlueprintjsCoreLib.libEsmCommonUtilsCompareUtilsMod.IKeyBlacklist[T]): js.Array[atBlueprintjsCoreLib.Anon_ValueA] = js.native
   def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: atBlueprintjsCoreLib.libEsmCommonUtilsCompareUtilsMod.IKeyWhitelist[T]): js.Array[atBlueprintjsCoreLib.Anon_ValueA] = js.native
-  def isElementOfType[P](element: js.Any, ComponentType: reactLib.reactMod.ReactNs.ComponentType[P]): /* is ReactElement */scala.Boolean = js.native
-  def isFunction(value: js.Any): /* is Function */scala.Boolean = js.native
+  def isElementOfType[P](element: js.Any, ComponentType: reactLib.reactMod.ReactNs.ComponentType[P]): /* is react.react.React.ReactElement<P> */ scala.Boolean = js.native
+  def isFunction(value: js.Any): /* is std.Function */ scala.Boolean = js.native
   def isNodeEnv(env: java.lang.String): scala.Boolean = js.native
   def isReactNodeEmpty(): scala.Boolean = js.native
   def isReactNodeEmpty(node: reactLib.reactMod.ReactNs.ReactNode): scala.Boolean = js.native
@@ -98,7 +98,7 @@ object UtilsNs extends js.Object {
   def throttleReactEventCallback(
     callback: js.Function2[
       /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       _
     ]
   ): js.Function1[
@@ -108,7 +108,7 @@ object UtilsNs extends js.Object {
   def throttleReactEventCallback(
     callback: js.Function2[
       /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       _
     ],
     options: atBlueprintjsCoreLib.libEsmCommonUtilsMod.IThrottledReactEventOptions

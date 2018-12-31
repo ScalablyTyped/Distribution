@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileObject extends js.Object {
   var basename: js.UndefOr[java.lang.String] = js.undefined
   // using package's terminology

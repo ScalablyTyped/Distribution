@@ -12,50 +12,50 @@ sealed trait GitResolutionError extends js.Object
 @js.native
 object GitResolutionError extends js.Object {
   /**
-       * No error
-       */
+    * No error
+    */
   @js.native
   sealed trait InvalidPath
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitResolutionError
   
   /**
-       * User set a blob id for resolving a content merge, but blob was not found in repo during application
-       */
+    * User set a blob id for resolving a content merge, but blob was not found in repo during application
+    */
   @js.native
   sealed trait MergeContentNotFound
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitResolutionError
   
   /**
-       * No error
-       */
+    * No error
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitResolutionError
   
   /**
-       * Any error for which a more specific code doesn't apply
-       */
+    * Any error for which a more specific code doesn't apply
+    */
   @js.native
   sealed trait OtherError
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitResolutionError
   
   /**
-       * Attempted to resolve a conflict by moving a file to another path, but path was already in use
-       */
+    * Attempted to resolve a conflict by moving a file to another path, but path was already in use
+    */
   @js.native
   sealed trait PathInUse
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitResolutionError
   
   /**
-       * GitResolutionAction was set to an unrecognized value
-       */
+    * GitResolutionAction was set to an unrecognized value
+    */
   @js.native
   sealed trait UnknownAction
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitResolutionError
   
   /**
-       * GitResolutionMergeType was set to an unrecognized value
-       */
+    * GitResolutionMergeType was set to an unrecognized value
+    */
   @js.native
   sealed trait UnknownMergeType
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitResolutionError

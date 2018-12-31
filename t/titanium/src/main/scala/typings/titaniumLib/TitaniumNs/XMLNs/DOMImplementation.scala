@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * The <Titanium.XML.DOMImplementation> interface provides a number of methods for performing operations that are independent of any particular instance of the document object model.Implements the [DOM Level 2 API](https://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-102161490) on Android and iOS.
 		 */
-
 trait DOMImplementation
   extends titaniumLib.TitaniumNs.Proxy {
   /**

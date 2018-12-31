@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TooltipOptions extends DivOverlayOptions {
   var direction: js.UndefOr[Direction] = js.undefined
   var interactive: js.UndefOr[scala.Boolean] = js.undefined

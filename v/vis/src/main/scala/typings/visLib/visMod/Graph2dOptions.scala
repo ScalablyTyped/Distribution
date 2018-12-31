@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Graph2dOptions extends js.Object {
   var autoResize: js.UndefOr[scala.Boolean] = js.undefined
   var barChart: js.UndefOr[Graph2dOptionBarChart] = js.undefined

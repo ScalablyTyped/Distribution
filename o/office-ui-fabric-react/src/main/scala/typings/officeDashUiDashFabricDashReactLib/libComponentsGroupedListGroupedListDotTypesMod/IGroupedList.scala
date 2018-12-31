@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait IGroupedList
   extends officeDashUiDashFabricDashReactLib.libComponentsListListDotTypesMod.IList {
   /**
-       * Toggles the collapsed state of all the groups in the list.
-       */
+    * Toggles the collapsed state of all the groups in the list.
+    */
   def toggleCollapseAll(allCollapsed: scala.Boolean): scala.Unit = js.native
 }
 

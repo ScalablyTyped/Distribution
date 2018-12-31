@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Modes extends js.Object {
   var idlength: js.Array[java.lang.String]
   var length: scala.Double

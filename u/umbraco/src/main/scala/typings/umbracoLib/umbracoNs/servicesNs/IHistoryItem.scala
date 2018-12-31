@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * History item
-     */
-
+  * History item
+  */
 trait IHistoryItem extends js.Object {
   //css class for the list, ex: "icon-image", "icon-doc"
   var icon: java.lang.String

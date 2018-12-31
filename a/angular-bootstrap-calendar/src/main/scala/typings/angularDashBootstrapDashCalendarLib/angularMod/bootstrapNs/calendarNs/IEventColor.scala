@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEventColor extends js.Object {
   /**
   	         * The primary color of the event, should be darker than secondary

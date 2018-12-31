@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServiceProviderOptions extends js.Object {
   var allow_unencrypted_assertion: js.UndefOr[scala.Boolean] = js.undefined
   var alt_certs: js.UndefOr[js.Array[java.lang.String]] = js.undefined

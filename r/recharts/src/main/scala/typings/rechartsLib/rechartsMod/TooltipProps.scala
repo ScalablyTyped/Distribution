@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TooltipProps extends Animatable {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var content: js.UndefOr[

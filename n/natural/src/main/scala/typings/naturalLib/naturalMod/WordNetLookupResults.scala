@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WordNetLookupResults extends js.Object {
   var gloss: java.lang.String
   var lemma: java.lang.String

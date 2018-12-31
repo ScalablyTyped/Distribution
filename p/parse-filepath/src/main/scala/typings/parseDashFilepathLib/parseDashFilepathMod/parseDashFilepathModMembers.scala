@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object parseDashFilepathModMembers extends js.Object {
   /**
-   * Pollyfill for node.js `path.parse()`, parses a filepath into an object.
-   *
-   * @param filepath
-   */
+    * Pollyfill for node.js `path.parse()`, parses a filepath into an object.
+    *
+    * @param filepath
+    */
   def apply(filepath: java.lang.String): parseDashFilepathLib.parseDashFilepathMod.parseFilepathNs.ParsedPath = js.native
 }
 

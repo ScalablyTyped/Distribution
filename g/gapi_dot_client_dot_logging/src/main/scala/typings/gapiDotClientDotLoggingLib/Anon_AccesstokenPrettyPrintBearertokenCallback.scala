@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPrettyPrintBearertokenCallback extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -31,13 +30,13 @@ trait Anon_AccesstokenPrettyPrintBearertokenCallback extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Required. The resource name of the sink:
-                   * "projects/[PROJECT_ID]/sinks/[SINK_ID]"
-                   * "organizations/[ORGANIZATION_ID]/sinks/[SINK_ID]"
-                   * "billingAccounts/[BILLING_ACCOUNT_ID]/sinks/[SINK_ID]"
-                   * "folders/[FOLDER_ID]/sinks/[SINK_ID]"
-                   * Example: "projects/my-project-id/sinks/my-sink-id".
-                   */
+    * Required. The resource name of the sink:
+    * "projects/[PROJECT_ID]/sinks/[SINK_ID]"
+    * "organizations/[ORGANIZATION_ID]/sinks/[SINK_ID]"
+    * "billingAccounts/[BILLING_ACCOUNT_ID]/sinks/[SINK_ID]"
+    * "folders/[FOLDER_ID]/sinks/[SINK_ID]"
+    * Example: "projects/my-project-id/sinks/my-sink-id".
+    */
   var sinkName: java.lang.String
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Transaction extends js.Object {
   var blockHash: java.lang.String
   var blockNumber: scala.Double

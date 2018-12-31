@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModalDialogSortingChangedEventUIParam extends js.Object {
   /**
   	 * Gets the column key.

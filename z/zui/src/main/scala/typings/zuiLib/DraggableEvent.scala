@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DraggableEvent extends js.Object {
   var element: js.UndefOr[JQuery | js.Object] = js.undefined
   var event: js.UndefOr[js.Object] = js.undefined

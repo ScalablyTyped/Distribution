@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SIGNINCANCELLED extends js.Object {
   var IN_PROGRESS: java.lang.String
   var PLAY_SERVICES_NOT_AVAILABLE: java.lang.String

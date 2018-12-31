@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Int32 extends js.Object {
   var Bool: scala.Double
   var Bytes: scala.Double

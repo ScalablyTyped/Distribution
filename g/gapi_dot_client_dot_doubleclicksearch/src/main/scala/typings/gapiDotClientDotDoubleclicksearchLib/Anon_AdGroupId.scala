@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AdGroupId extends js.Object {
   /** DS ad group ID. */
   var adGroupId: js.UndefOr[java.lang.String] = js.undefined

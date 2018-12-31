@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Collision.b2DynamicTreeBroadPhase")
 @js.native
+/**
+		* Creates the dynamic tree broad phase.
+		**/
 class b2DynamicTreeBroadPhase () extends IBroadPhase {
   /**
   		* Create a proxy with an initial AABB. Pairs are not reported until UpdatePairs is called.

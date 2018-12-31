@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PayerInfo extends js.Object {
   var billing_address: js.UndefOr[Address] = js.undefined
   var birth_date: js.UndefOr[java.lang.String] = js.undefined

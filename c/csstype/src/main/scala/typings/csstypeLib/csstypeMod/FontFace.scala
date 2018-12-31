@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FontFace extends js.Object {
   var MozFontFeatureSettings: js.UndefOr[csstypeLib.FontFaceFontFeatureSettingsProperty] = js.undefined
   var fontDisplay: js.UndefOr[csstypeLib.FontFaceFontDisplayProperty] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlowMap extends MapBase {
   @JSName("cstNode")
   var cstNode_FlowMap: js.UndefOr[yamlLib.yamlMod.cstNs.FlowMap] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AsyncOptions extends SyncOptions {
   /** Function that creates a `stream.Transform` object to transform each copying file. */
   var transform: js.UndefOr[

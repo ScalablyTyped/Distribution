@@ -27,7 +27,7 @@ trait Storage extends js.Object {
   def provide(
     name: java.lang.String,
     provider: enhancedDashResolveLib.libCommonDashTypesMod.CommonFileSystemMethod,
-    callback: js.Function1[/* repeated */js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, _]
   ): js.Any = js.native
   def provideSync(name: java.lang.String, provider: js.Function1[/* name */ java.lang.String, _]): js.Any = js.native
   def purge(): scala.Unit = js.native

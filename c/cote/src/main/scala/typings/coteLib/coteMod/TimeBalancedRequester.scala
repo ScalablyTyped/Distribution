@@ -9,19 +9,19 @@ import scala.scalajs.js.annotation._
 @js.native
 class TimeBalancedRequester () extends Requester {
   /**
-       * How long to wait for response before neglecting its calculation time,
-       * in milliseconds.
-       */
+    * How long to wait for response before neglecting its calculation time,
+    * in milliseconds.
+    */
   var CALCULATION_TIMEOUT: scala.Double = js.native
   /**
-       * How many requests to make before exploring a random server for response
-       * time improvement.
-       */
+    * How many requests to make before exploring a random server for response
+    * time improvement.
+    */
   var MAX_REQUESTS: scala.Double = js.native
   /**
-       * How often to check whether a response arrived. Readonly because used in
-       * constructor right after being set.
-       */
+    * How often to check whether a response arrived. Readonly because used in
+    * constructor right after being set.
+    */
   val SAMPLE_INTERVAL: scala.Double = js.native
 }
 

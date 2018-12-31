@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridPdf extends js.Object {
   var allPages: js.UndefOr[scala.Boolean] = js.undefined
   var author: js.UndefOr[java.lang.String] = js.undefined

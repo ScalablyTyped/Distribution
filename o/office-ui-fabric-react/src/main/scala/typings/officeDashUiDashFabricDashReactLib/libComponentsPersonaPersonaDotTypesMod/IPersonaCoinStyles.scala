@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPersonaCoinStyles extends js.Object {
   var coin: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   var image: atUifabricMergeDashStylesLib.libIStyleMod.IStyle

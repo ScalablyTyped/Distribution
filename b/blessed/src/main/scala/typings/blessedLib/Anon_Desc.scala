@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Desc extends js.Object {
   var bools: js.Any
   var desc: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseRequest extends js.Object {
   var content: java.lang.String
   var contentType: java.lang.String

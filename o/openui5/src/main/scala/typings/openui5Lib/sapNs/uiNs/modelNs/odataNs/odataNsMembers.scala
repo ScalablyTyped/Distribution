@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object odataNsMembers extends js.Object {
   /**
-           * Adapter for TreeBindings to add the ListBinding functionality and use thetree structure in list
-           * based controls.
-          */
+    * Adapter for TreeBindings to add the ListBinding functionality and use thetree structure in list
+    * based controls.
+    */
   def ODataTreeBindingAdapter(): scala.Unit = js.native
   /**
-           * Adapter for TreeBindings to add the ListBinding functionality and use thetree structure in list
-           * based controls.
-          */
+    * Adapter for TreeBindings to add the ListBinding functionality and use thetree structure in list
+    * based controls.
+    */
   def ODataTreeBindingFlat(): scala.Unit = js.native
 }
 

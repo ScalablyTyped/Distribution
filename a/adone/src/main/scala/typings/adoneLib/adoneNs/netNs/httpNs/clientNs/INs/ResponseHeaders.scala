@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResponseHeaders
   extends /* header */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] {
   var `accept-patch`: js.UndefOr[java.lang.String]

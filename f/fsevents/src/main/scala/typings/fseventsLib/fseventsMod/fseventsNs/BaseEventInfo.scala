@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseEventInfo[E /* <: java.lang.String */] extends js.Object {
   var changes: fseventsLib.Anon_Xattrs
   var event: E

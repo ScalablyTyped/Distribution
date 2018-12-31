@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImeParameters extends js.Object {
   /** ID of the engine to use */
   var engineID: java.lang.String

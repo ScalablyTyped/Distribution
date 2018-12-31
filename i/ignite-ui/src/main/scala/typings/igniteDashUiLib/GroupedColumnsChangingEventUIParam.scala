@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GroupedColumnsChangingEventUIParam extends js.Object {
   /**
   	 * Gets a reference to the current child grid element, in case it's an hierarchical grid(not set if called from modal dialog).

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CardExe
   extends BaseOptions[js.Any, js.Any] {
   // 仅自定义 code 模式的卡券须填写，非自定义 code 模式卡券不可填写，详情

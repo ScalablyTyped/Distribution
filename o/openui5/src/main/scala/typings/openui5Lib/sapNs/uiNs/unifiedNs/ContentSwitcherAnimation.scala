@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ContentSwitcherAnimation extends js.Object
 
 /**
-       * Predefined animations for the ContentSwitcher
-      */
+  * Predefined animations for the ContentSwitcher
+  */
 @JSGlobal("sap.ui.unified.ContentSwitcherAnimation")
 @js.native
 object ContentSwitcherAnimation extends js.Object {

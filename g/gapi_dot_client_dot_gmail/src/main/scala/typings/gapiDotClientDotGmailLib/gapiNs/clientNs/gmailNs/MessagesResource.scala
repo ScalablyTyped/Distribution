@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MessagesResource extends js.Object {
   var attachments: AttachmentsResource
   /** Deletes many messages by message ID. Provides no guarantees that messages were not already deleted or even existed at all. */
@@ -17,9 +16,9 @@ trait MessagesResource extends js.Object {
   /** Gets the specified message. */
   def get(request: gapiDotClientDotGmailLib.Anon_Format): gapiDotClientLib.gapiNs.clientNs.Request[Message]
   /**
-               * Imports a message into only this user's mailbox, with standard email delivery scanning and classification similar to receiving via SMTP. Does not send
-               * a message.
-               */
+    * Imports a message into only this user's mailbox, with standard email delivery scanning and classification similar to receiving via SMTP. Does not send
+    * a message.
+    */
   def `import`(request: gapiDotClientDotGmailLib.Anon_InternalDateSourcePrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Message]
   /** Directly inserts a message into only this user's mailbox similar to IMAP APPEND, bypassing most scanning and classification. Does not send a message. */
   def insert(request: gapiDotClientDotGmailLib.Anon_InternalDateSource): gapiDotClientLib.gapiNs.clientNs.Request[Message]

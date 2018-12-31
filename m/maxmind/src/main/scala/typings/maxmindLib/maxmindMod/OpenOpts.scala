@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OpenOpts extends js.Object {
   var cache: js.UndefOr[maxmindLib.Anon_Max] = js.undefined
   var watchForUpdates: js.UndefOr[scala.Boolean] = js.undefined

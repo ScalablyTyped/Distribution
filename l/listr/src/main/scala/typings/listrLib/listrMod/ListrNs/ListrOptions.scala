@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListrOptions extends js.Object {
   var concurrent: js.UndefOr[scala.Boolean | scala.Double] = js.undefined
   var exitOnError: js.UndefOr[scala.Boolean] = js.undefined

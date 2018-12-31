@@ -12,105 +12,105 @@ sealed trait AnimationMetadataType extends js.Object
 @js.native
 object AnimationMetadataType extends js.Object {
   /**
-       * Contains an animation step.
-       * See `animate()`
-       */
+    * Contains an animation step.
+    * See `animate()`
+    */
   @js.native
   sealed trait Animate
     extends atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadataType
   
   /**
-       * Contains data to use in executing child animations returned by a query.
-       * See `animateChild()`
-       */
+    * Contains data to use in executing child animations returned by a query.
+    * See `animateChild()`
+    */
   @js.native
   sealed trait AnimateChild
     extends atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadataType
   
   /**
-       * Contains animation parameters for a re-usable animation.
-       * See `useAnimation()`
-       */
+    * Contains animation parameters for a re-usable animation.
+    * See `useAnimation()`
+    */
   @js.native
   sealed trait AnimateRef
     extends atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadataType
   
   /**
-       * Contains a set of animation steps.
-       * See `{@link animations/group group()}`
-       */
+    * Contains a set of animation steps.
+    * See `{@link animations/group group()}`
+    */
   @js.native
   sealed trait Group
     extends atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadataType
   
   /**
-       * Contains a set of animation steps.
-       * See `keyframes()`
-       */
+    * Contains a set of animation steps.
+    * See `keyframes()`
+    */
   @js.native
   sealed trait Keyframes
     extends atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadataType
   
   /**
-       * Contains child-animation query data.
-       * See `query()`
-       */
+    * Contains child-animation query data.
+    * See `query()`
+    */
   @js.native
   sealed trait Query
     extends atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadataType
   
   /**
-       * Contains a re-usable animation.
-       * See `animation()`
-       */
+    * Contains a re-usable animation.
+    * See `animation()`
+    */
   @js.native
   sealed trait Reference
     extends atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadataType
   
   /**
-       * Contains a set of animation steps.
-       * See `sequence()`
-       */
+    * Contains a set of animation steps.
+    * See `sequence()`
+    */
   @js.native
   sealed trait Sequence
     extends atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadataType
   
   /**
-       * Contains data for staggering an animation sequence.
-       * See `stagger()`
-       */
+    * Contains data for staggering an animation sequence.
+    * See `stagger()`
+    */
   @js.native
   sealed trait Stagger
     extends atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadataType
   
   /**
-       * Associates a named animation state with a set of CSS styles.
-       * See `state()`
-       */
+    * Associates a named animation state with a set of CSS styles.
+    * See `state()`
+    */
   @js.native
   sealed trait State
     extends atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadataType
   
   /**
-       * Contains a set of CSS property-value pairs into a named style.
-       * See `style()`
-       */
+    * Contains a set of CSS property-value pairs into a named style.
+    * See `style()`
+    */
   @js.native
   sealed trait Style
     extends atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadataType
   
   /**
-       * Data for a transition from one animation state to another.
-       * See `transition()`
-       */
+    * Data for a transition from one animation state to another.
+    * See `transition()`
+    */
   @js.native
   sealed trait Transition
     extends atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadataType
   
   /**
-       * Associates an animation with an entry trigger that can be attached to an element.
-       * See `trigger()`
-       */
+    * Associates an animation with an entry trigger that can be attached to an element.
+    * See `trigger()`
+    */
   @js.native
   sealed trait Trigger
     extends atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadataType

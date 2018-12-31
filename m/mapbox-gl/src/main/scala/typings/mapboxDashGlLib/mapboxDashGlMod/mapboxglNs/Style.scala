@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Style extends js.Object {
   var bearing: js.UndefOr[scala.Double] = js.undefined
   var center: js.UndefOr[js.Array[scala.Double]] = js.undefined

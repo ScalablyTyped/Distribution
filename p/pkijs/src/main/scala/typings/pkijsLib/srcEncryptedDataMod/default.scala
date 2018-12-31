@@ -16,16 +16,16 @@ class default () extends EncryptedData {
   /* CompleteClass */
   override var version: scala.Double = js.native
   /**
-           * Create a new CMS Encrypted Data content
-           * @param {*} parameters Parameters neccessary for encryption
-           */
+    * Create a new CMS Encrypted Data content
+    * @param {*} parameters Parameters neccessary for encryption
+    */
   /* CompleteClass */
   override def decrypt(parameters: pkijsLib.Anon_Password): js.Thenable[stdLib.ArrayBuffer] = js.native
   /**
-           * Create a new CMS Encrypted Data content
-           * @param {*} parameters Parameters neccessary for encryption
-           * @returns {Promise}
-           */
+    * Create a new CMS Encrypted Data content
+    * @param {*} parameters Parameters neccessary for encryption
+    * @returns {Promise}
+    */
   /* CompleteClass */
   override def encrypt(parameters: pkijsLib.Anon_HmacHashAlgorithm): js.Thenable[stdLib.ArrayBuffer] = js.native
   /* CompleteClass */
@@ -40,10 +40,10 @@ class default () extends EncryptedData {
 @js.native
 object default extends js.Object {
   /**
-           * Compare values with default values for all class members
-           * @param {string} memberName String name for a class member
-           * @param {*} memberValue Value to compare with default value
-           */
+    * Compare values with default values for all class members
+    * @param {string} memberName String name for a class member
+    * @param {*} memberValue Value to compare with default value
+    */
   def compareWithDefault(memberName: java.lang.String, memberValue: js.Any): scala.Boolean = js.native
   def defaultValues(memberName: java.lang.String): js.Any = js.native
   def schema(): js.Any = js.native

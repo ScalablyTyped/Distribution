@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Graph2dDataAxisOption extends js.Object {
   var alignZeros: js.UndefOr[scala.Boolean] = js.undefined
   var iconWidth: js.UndefOr[scala.Double] = js.undefined

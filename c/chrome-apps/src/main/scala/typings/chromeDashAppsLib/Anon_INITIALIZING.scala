@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_INITIALIZING extends js.Object {
   var AUTHENTICATION_REQUIRED: chromeDashAppsLib.chromeDashAppsLibStrings.authentication_required
   var DISABLED: chromeDashAppsLib.chromeDashAppsLibStrings.disabled

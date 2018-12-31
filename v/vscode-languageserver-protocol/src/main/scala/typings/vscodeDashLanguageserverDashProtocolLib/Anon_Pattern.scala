@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Pattern extends js.Object {
   /** A language id, like `typescript`. */
   var language: java.lang.String

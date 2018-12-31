@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaList
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[java.lang.String] {
   val length: scala.Double

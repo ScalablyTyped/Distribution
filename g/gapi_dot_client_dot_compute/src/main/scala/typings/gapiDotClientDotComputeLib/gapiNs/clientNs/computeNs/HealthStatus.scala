@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HealthStatus extends js.Object {
   /** Health state of the instance. */
   var healthState: js.UndefOr[java.lang.String] = js.undefined

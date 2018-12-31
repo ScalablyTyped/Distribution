@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 		 * 用于检测一张车辆图片的具体车型，即对于输入的一张图片（可正常解码，且长
 		 * 宽比适宜），输出图片的车辆品牌及型号、颜色及年份、位置信息。
 		 */
-
 trait carClassifyOptions
   extends baiduDashAppLib.swanNs.BaseOptions[js.Any, js.Any] {
    // 图像资源地址

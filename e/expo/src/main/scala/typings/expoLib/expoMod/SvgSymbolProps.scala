@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SvgSymbolProps extends SvgCommonProps {
   var height: scala.Double | java.lang.String
   var preserveAspectRatio: js.UndefOr[java.lang.String] = js.undefined

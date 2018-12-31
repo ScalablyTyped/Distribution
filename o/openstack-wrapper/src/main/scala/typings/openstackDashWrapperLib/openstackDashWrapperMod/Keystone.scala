@@ -23,33 +23,33 @@ class Keystone protected () extends js.Object {
     entry_id: js.Any,
     entry_type: js.Any,
     role_id: js.Any,
-    cb: js.Function1[/* repeated */js.Any, _]
+    cb: js.Function1[/* repeated */ js.Any, _]
   ): js.Any = js.native
-  def getProjectByName(admin_access_token: js.Any, project_name: js.Any, cb: js.Function1[/* repeated */js.Any, _]): js.Any = js.native
-  def getProjectToken(access_token: js.Any, project_id: js.Any, cb: js.Function1[/* repeated */js.Any, _]): js.Any = js.native
+  def getProjectByName(admin_access_token: js.Any, project_name: js.Any, cb: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+  def getProjectToken(access_token: js.Any, project_id: js.Any, cb: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
   def getProjectTokenByName(
     access_token: js.Any,
     domain_id: js.Any,
     project_name: java.lang.String,
-    cb: js.Function1[/* repeated */js.Any, _]
+    cb: js.Function1[/* repeated */ js.Any, _]
   ): js.Any = js.native
-  def getProjectTokenForReal(auth_data: js.Any, cb: js.Function1[/* repeated */js.Any, _]): js.Any = js.native
+  def getProjectTokenForReal(auth_data: js.Any, cb: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
   def getRequestOptions(path: java.lang.String, json_value: js.Any, extra_headers: js.Any): RequestOption = js.native
-  def getToken(username: java.lang.String, password: java.lang.String, cb: js.Function1[/* repeated */js.Any, _]): js.Any = js.native
-  def listMetaEnvironments(auth_token: js.Any, cb: js.Function1[/* repeated */js.Any, _]): js.Any = js.native
-  def listMetaOwningGroups(auth_token: js.Any, cb: js.Function1[/* repeated */js.Any, _]): js.Any = js.native
-  def listProjectMeta(project_token: js.Any, project_id: js.Any, cb: js.Function1[/* repeated */js.Any, _]): js.Any = js.native
-  def listProjects(admin_access_token: js.Any, cb: js.Function1[/* repeated */js.Any, _]): js.Any = js.native
-  def listRoleAssignments(project_token: js.Any, project_id: js.Any, cb: js.Function1[/* repeated */js.Any, _]): js.Any = js.native
-  def listRoles(project_token: js.Any, cb: js.Function1[/* repeated */js.Any, _]): js.Any = js.native
-  def listUserProjects(username: js.Any, access_token: js.Any, cb: js.Function1[/* repeated */js.Any, _]): js.Any = js.native
+  def getToken(username: java.lang.String, password: java.lang.String, cb: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+  def listMetaEnvironments(auth_token: js.Any, cb: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+  def listMetaOwningGroups(auth_token: js.Any, cb: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+  def listProjectMeta(project_token: js.Any, project_id: js.Any, cb: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+  def listProjects(admin_access_token: js.Any, cb: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+  def listRoleAssignments(project_token: js.Any, project_id: js.Any, cb: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+  def listRoles(project_token: js.Any, cb: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+  def listUserProjects(username: js.Any, access_token: js.Any, cb: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
   def removeRoleAssignment(
     project_token: js.Any,
     project_id: js.Any,
     entry_id: js.Any,
     entry_type: js.Any,
     role_id: js.Any,
-    cb: js.Function1[/* repeated */js.Any, _]
+    cb: js.Function1[/* repeated */ js.Any, _]
   ): js.Any = js.native
   def setLogger(logger: js.Any): scala.Unit = js.native
   def setMangler(mangle_lib: js.Any): scala.Unit = js.native
@@ -61,7 +61,7 @@ class Keystone protected () extends js.Object {
     project_token: js.Any,
     project_id: js.Any,
     new_meta: js.Any,
-    cb: js.Function1[/* repeated */js.Any, _]
+    cb: js.Function1[/* repeated */ js.Any, _]
   ): js.Any = js.native
 }
 

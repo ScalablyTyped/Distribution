@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnimateOptions extends js.Object {
    // TODO: void?
   // TODO: number as type correct?

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Object literal with config options for the projection.
-     */
-
+  * Object literal with config options for the projection.
+  */
 trait ProjectionOptions extends js.Object {
   var axisOrientation: js.UndefOr[java.lang.String] = js.undefined
   var code: java.lang.String

@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BufferChangedEvent extends js.Object {
   /**
-       *  An array of objects summarizing the aggregated changes that occurred
-       *  during the transaction.
-       */
+    *  An array of objects summarizing the aggregated changes that occurred
+    *  during the transaction.
+    */
   var changes: js.Array[atomLib.Anon_NewRange]
   /** Range of the new text. */
   var newRange: Range

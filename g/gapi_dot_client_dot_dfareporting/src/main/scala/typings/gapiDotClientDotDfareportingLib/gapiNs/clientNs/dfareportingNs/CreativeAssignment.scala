@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreativeAssignment extends js.Object {
   /** Whether this creative assignment is active. When true, the creative will be included in the ad's rotation. */
   var active: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * Whether applicable event tags should fire when this creative assignment is rendered. If this value is unset when the ad is inserted or updated, it will
-               * default to true for all creative types EXCEPT for INTERNAL_REDIRECT, INTERSTITIAL_INTERNAL_REDIRECT, and INSTREAM_VIDEO.
-               */
+    * Whether applicable event tags should fire when this creative assignment is rendered. If this value is unset when the ad is inserted or updated, it will
+    * default to true for all creative types EXCEPT for INTERNAL_REDIRECT, INTERSTITIAL_INTERNAL_REDIRECT, and INSTREAM_VIDEO.
+    */
   var applyEventTags: js.UndefOr[scala.Boolean] = js.undefined
   /** Click-through URL of the creative assignment. */
   var clickThroughUrl: js.UndefOr[ClickThroughUrl] = js.undefined
@@ -27,25 +26,25 @@ trait CreativeAssignment extends js.Object {
   /** Date and time that the assigned creative should stop serving. Must be later than the start time. */
   var endTime: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Rich media exit overrides for this creative assignment.
-               * Applicable when the creative type is any of the following:
-               * - DISPLAY
-               * - RICH_MEDIA_INPAGE
-               * - RICH_MEDIA_INPAGE_FLOATING
-               * - RICH_MEDIA_IM_EXPAND
-               * - RICH_MEDIA_EXPANDING
-               * - RICH_MEDIA_INTERSTITIAL_FLOAT
-               * - RICH_MEDIA_MOBILE_IN_APP
-               * - RICH_MEDIA_MULTI_FLOATING
-               * - RICH_MEDIA_PEEL_DOWN
-               * - VPAID_LINEAR
-               * - VPAID_NON_LINEAR
-               */
+    * Rich media exit overrides for this creative assignment.
+    * Applicable when the creative type is any of the following:
+    * - DISPLAY
+    * - RICH_MEDIA_INPAGE
+    * - RICH_MEDIA_INPAGE_FLOATING
+    * - RICH_MEDIA_IM_EXPAND
+    * - RICH_MEDIA_EXPANDING
+    * - RICH_MEDIA_INTERSTITIAL_FLOAT
+    * - RICH_MEDIA_MOBILE_IN_APP
+    * - RICH_MEDIA_MULTI_FLOATING
+    * - RICH_MEDIA_PEEL_DOWN
+    * - VPAID_LINEAR
+    * - VPAID_NON_LINEAR
+    */
   var richMediaExitOverrides: js.UndefOr[js.Array[RichMediaExitOverride]] = js.undefined
   /**
-               * Sequence number of the creative assignment, applicable when the rotation type is CREATIVE_ROTATION_TYPE_SEQUENTIAL. Acceptable values are 1 to 65535,
-               * inclusive.
-               */
+    * Sequence number of the creative assignment, applicable when the rotation type is CREATIVE_ROTATION_TYPE_SEQUENTIAL. Acceptable values are 1 to 65535,
+    * inclusive.
+    */
   var sequence: js.UndefOr[scala.Double] = js.undefined
   /** Whether the creative to be assigned is SSL-compliant. This is a read-only field that is auto-generated when the ad is inserted or updated. */
   var sslCompliant: js.UndefOr[scala.Boolean] = js.undefined

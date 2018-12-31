@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadBlobOptions extends SetBlobPropertiesOptions {
   var metadata: js.UndefOr[StorageMetadata] = js.undefined
   var parallelOperationThreadCount: js.UndefOr[scala.Double] = js.undefined

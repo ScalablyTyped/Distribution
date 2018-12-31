@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlagsListResponse extends js.Object {
   /** List of flags. */
   var items: js.UndefOr[js.Array[Flag]] = js.undefined

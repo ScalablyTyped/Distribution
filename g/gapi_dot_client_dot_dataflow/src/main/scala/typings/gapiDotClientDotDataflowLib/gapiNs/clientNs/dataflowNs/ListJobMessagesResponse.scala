@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListJobMessagesResponse extends js.Object {
   /** Autoscaling events in ascending timestamp order. */
   var autoscalingEvents: js.UndefOr[js.Array[AutoscalingEvent]] = js.undefined

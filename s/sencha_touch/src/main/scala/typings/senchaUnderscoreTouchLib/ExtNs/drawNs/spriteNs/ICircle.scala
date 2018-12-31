@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICircle extends IPath {
   /** [Config Option] (Number) */
   var cx: js.UndefOr[scala.Double] = js.undefined

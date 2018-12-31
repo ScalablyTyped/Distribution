@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SensorManager extends js.Object {
   def startAccelerometer(delay: scala.Double): scala.Unit
   def startGyroscope(delay: scala.Double): scala.Unit

@@ -13,7 +13,6 @@ trait PropertyTests extends js.Object {
   def apply(Index: scala.Double): PropertyTest = js.native
   /** @param Connector [Connector=1] */
   def Add(Name: java.lang.String, Condition: MsoCondition, Value: js.Any, SecondValue: js.Any): scala.Unit = js.native
-  /** @param Connector [Connector=1] */
   def Add(
     Name: java.lang.String,
     Condition: MsoCondition,

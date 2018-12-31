@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MyOrganization extends js.Object {
   var billingEmail: java.lang.String
   var collaborators: scala.Double

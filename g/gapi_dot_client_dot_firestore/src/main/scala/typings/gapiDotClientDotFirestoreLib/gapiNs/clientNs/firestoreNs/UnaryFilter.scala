@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UnaryFilter extends js.Object {
   /** The field to which to apply the operator. */
   var field: js.UndefOr[FieldReference] = js.undefined

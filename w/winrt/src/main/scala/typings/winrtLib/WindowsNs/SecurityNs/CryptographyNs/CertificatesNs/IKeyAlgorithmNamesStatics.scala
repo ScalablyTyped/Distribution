@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IKeyAlgorithmNamesStatics extends js.Object {
   var dsa: java.lang.String
   var ecdh256: java.lang.String

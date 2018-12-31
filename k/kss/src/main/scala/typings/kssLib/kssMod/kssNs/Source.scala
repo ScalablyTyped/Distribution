@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Source extends js.Object {
   /** The name of the file. */
   var filename: java.lang.String

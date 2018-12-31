@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPageSizePrettyPrint extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -27,10 +26,10 @@ trait Anon_AccesstokenPageSizePrettyPrint extends js.Object {
   /** Maximum number of subscription names to return. */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * The value returned by the last `ListTopicSubscriptionsResponse`; indicates
-                   * that this is a continuation of a prior `ListTopicSubscriptions` call, and
-                   * that the system should return the next page of data.
-                   */
+    * The value returned by the last `ListTopicSubscriptionsResponse`; indicates
+    * that this is a continuation of a prior `ListTopicSubscriptions` call, and
+    * that the system should return the next page of data.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined
@@ -39,9 +38,9 @@ trait Anon_AccesstokenPageSizePrettyPrint extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The name of the topic that subscriptions are attached to.
-                   * Format is `projects/{project}/topics/{topic}`.
-                   */
+    * The name of the topic that subscriptions are attached to.
+    * Format is `projects/{project}/topics/{topic}`.
+    */
   var topic: java.lang.String
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

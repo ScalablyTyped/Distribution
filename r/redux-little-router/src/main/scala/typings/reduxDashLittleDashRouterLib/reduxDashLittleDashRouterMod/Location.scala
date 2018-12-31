@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Location extends HistoryLocation {
   var basename: js.UndefOr[java.lang.String] = js.undefined
   var options: js.UndefOr[LocationOptions] = js.undefined

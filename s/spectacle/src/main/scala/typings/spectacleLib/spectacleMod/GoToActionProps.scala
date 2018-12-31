@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GoToActionProps extends js.Object {
   var margin: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var padding: js.UndefOr[scala.Double | java.lang.String] = js.undefined

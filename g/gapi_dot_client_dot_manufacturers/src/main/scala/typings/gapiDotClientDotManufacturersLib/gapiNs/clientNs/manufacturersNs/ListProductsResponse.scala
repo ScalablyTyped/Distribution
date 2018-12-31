@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListProductsResponse extends js.Object {
   /** The token for the retrieval of the next page of product statuses. */
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined

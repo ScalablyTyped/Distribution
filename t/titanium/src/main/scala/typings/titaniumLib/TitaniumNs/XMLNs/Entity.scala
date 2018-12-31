@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 		 * This interface represents an entity, either parsed or unparsed, in an XML document. Note that this models the entity itself not the entity declaration. The nodeName attribute that is inherited from Node contains the name of the entity. An Entity node does not have any parent.
 		 * Implements the [DOM Level 2 API](https://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-527DCFF2) on Android and iOS.
 		 */
-
 trait Entity
   extends titaniumLib.TitaniumNs.Proxy {
   /**

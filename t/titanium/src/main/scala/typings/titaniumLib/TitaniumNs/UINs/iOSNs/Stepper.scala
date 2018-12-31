@@ -241,9 +241,6 @@ trait Stepper
   				 * Animates this view.
   				 */
   def animate(animation: js.Any): scala.Unit = js.native
-  /**
-  				 * Animates this view.
-  				 */
   def animate(animation: js.Any, callback: js.Function1[/* param0 */ js.Any, _]): scala.Unit = js.native
   /**
   				 * Translates a point from this view's coordinate system to another view's coordinate system.
@@ -470,9 +467,6 @@ trait Stepper
   				 * Hides this view.
   				 */
   def hide(): scala.Unit = js.native
-  /**
-  				 * Hides this view.
-  				 */
   def hide(options: titaniumLib.AnimationOption): scala.Unit = js.native
   /**
   				 * Inserts a view at the specified position in the [children](Titanium.UI.View.children) array.
@@ -706,9 +700,6 @@ trait Stepper
   				 * Makes this view visible.
   				 */
   def show(): scala.Unit = js.native
-  /**
-  				 * Makes this view visible.
-  				 */
   def show(options: titaniumLib.AnimationOption): scala.Unit = js.native
   /**
   				 * Starts a batch update of this view's layout properties.
@@ -718,13 +709,7 @@ trait Stepper
   				 * Returns an image of the rendered view, as a Blob.
   				 */
   def toImage(): titaniumLib.TitaniumNs.Blob = js.native
-  /**
-  				 * Returns an image of the rendered view, as a Blob.
-  				 */
   def toImage(callback: js.Function1[/* param0 */ titaniumLib.TitaniumNs.Blob, _]): titaniumLib.TitaniumNs.Blob = js.native
-  /**
-  				 * Returns an image of the rendered view, as a Blob.
-  				 */
   def toImage(
     callback: js.Function1[/* param0 */ titaniumLib.TitaniumNs.Blob, _],
     honorScaleFactor: scala.Boolean

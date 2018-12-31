@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NewExtent extends js.Object {
   /** A Point representing the replacement extent. */
   var newExtent: atomLib.atomMod.Point

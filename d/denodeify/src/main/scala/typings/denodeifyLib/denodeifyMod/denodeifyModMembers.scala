@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("denodeify", JSImport.Namespace)
 @js.native
 object denodeifyModMembers extends js.Object {
-  def apply(fn: denodeifyLib.denodeifyMod.underscoreNs.F): js.Function1[/* repeated */js.Any, js.Promise[_]] = js.native
+  def apply(fn: denodeifyLib.denodeifyMod.underscoreNs.F): js.Function1[/* repeated */ js.Any, js.Promise[_]] = js.native
   def apply(
     fn: denodeifyLib.denodeifyMod.underscoreNs.F,
     transformer: denodeifyLib.denodeifyMod.underscoreNs.M
-  ): js.Function1[/* repeated */js.Any, js.Promise[_]] = js.native
+  ): js.Function1[/* repeated */ js.Any, js.Promise[_]] = js.native
   def apply[A, R](fn: denodeifyLib.denodeifyMod.underscoreNs.F1[A, R]): js.Function1[/* a */ A, js.Promise[R]] = js.native
   def apply[A, R](
     fn: denodeifyLib.denodeifyMod.underscoreNs.F1[A, R],

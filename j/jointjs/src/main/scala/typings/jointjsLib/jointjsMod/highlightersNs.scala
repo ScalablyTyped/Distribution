@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jointjs", "highlighters")
 @js.native
 object highlightersNs extends js.Object {
-  
   trait AddClassHighlighterArguments extends js.Object {
     var className: js.UndefOr[java.lang.String] = js.undefined
   }
@@ -29,12 +28,10 @@ object highlightersNs extends js.Object {
     ): scala.Unit = js.native
   }
   
-  
   trait GenericHighlighterJSON[K /* <: HighlighterType */] extends js.Object {
     var name: K
     var options: js.UndefOr[GenericHighlighterArguments[K]] = js.undefined
   }
-  
   
   trait HighlighterArgumentsMap
     extends /* key */ org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]] {
@@ -43,9 +40,7 @@ object highlightersNs extends js.Object {
     var stroke: StrokeHighlighterArguments
   }
   
-  
   trait OpacityHighlighterArguments extends js.Object
-  
   
   trait StrokeHighlighterArguments extends js.Object {
     var attrs: js.UndefOr[jointjsLib.jointjsMod.attributesNs.NativeSVGAttributes] = js.undefined
@@ -57,7 +52,7 @@ object highlightersNs extends js.Object {
   var addClass: GenericHighlighter[jointjsLib.jointjsLibStrings.addClass] = js.native
   var opacity: GenericHighlighter[jointjsLib.jointjsLibStrings.opacity] = js.native
   var stroke: GenericHighlighter[jointjsLib.jointjsLibStrings.stroke] = js.native
-  type GenericHighlighterArguments[K /* <: HighlighterType */] = js.Any
+  type GenericHighlighterArguments[K /* <: HighlighterType */] = /* import warning: ImportType.apply Failed type conversion: jointjs.jointjs.highlighters.HighlighterArgumentsMap[K] */ js.Any
   type Highlighter = GenericHighlighter[HighlighterType]
   type HighlighterArguments = GenericHighlighterArguments[HighlighterType]
   type HighlighterJSON = GenericHighlighterJSON[HighlighterType]

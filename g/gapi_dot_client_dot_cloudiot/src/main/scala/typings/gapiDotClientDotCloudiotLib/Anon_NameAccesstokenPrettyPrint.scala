@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NameAccesstokenPrettyPrint extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -23,16 +22,16 @@ trait Anon_NameAccesstokenPrettyPrint extends js.Object {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The name of the device. For example,
-                   * `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
-                   * `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
-                   */
+    * The name of the device. For example,
+    * `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
+    * `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
+    */
   var name: java.lang.String
   /**
-                   * The number of states to list. States are listed in descending order of
-                   * update time. The maximum number of states retained is 10. If this
-                   * value is zero, it will return all the states available.
-                   */
+    * The number of states to list. States are listed in descending order of
+    * update time. The maximum number of states retained is 10. If this
+    * value is zero, it will return all the states available.
+    */
   var numStates: js.UndefOr[scala.Double] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined

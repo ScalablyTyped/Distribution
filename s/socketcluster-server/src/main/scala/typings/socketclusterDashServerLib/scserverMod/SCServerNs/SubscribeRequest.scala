@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubscribeRequest extends js.Object {
   var authTokenExpiredError: js.UndefOr[nodeLib.Error] = js.undefined
   var channel: js.UndefOr[java.lang.String] = js.undefined

@@ -9,6 +9,13 @@ import scala.scalajs.js.annotation._
 trait Request
   extends expressLib.expressMod.eNs.Request {
   var CURRENT_APP: java.lang.String = js.native
-  var ral: yog2DashKernelLib.Anon_GetConf = js.native
+  @JSName("ralP")
+  var ralP_Original: yog2DashKernelLib.Anon_Name = js.native
+  @JSName("ral")
+  var ral_Original: yog2DashKernelLib.Anon_GetConf = js.native
+  def ral(serviceName: java.lang.String): nodeDashRalLib.nodeDashRalMod.RALNs.RalRunner = js.native
+  def ral(serviceName: java.lang.String, options: js.Object): nodeDashRalLib.nodeDashRalMod.RALNs.RalRunner = js.native
+  def ralP[T](name: java.lang.String): js.Promise[T] = js.native
+  def ralP[T](name: java.lang.String, options: js.Object): js.Promise[T] = js.native
 }
 

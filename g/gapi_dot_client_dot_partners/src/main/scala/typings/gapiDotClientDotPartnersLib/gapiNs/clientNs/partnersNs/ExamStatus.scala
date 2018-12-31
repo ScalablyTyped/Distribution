@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExamStatus extends js.Object {
   /** The type of the exam. */
   var examType: js.UndefOr[java.lang.String] = js.undefined

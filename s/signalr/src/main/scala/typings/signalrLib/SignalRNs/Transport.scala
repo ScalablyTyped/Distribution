@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Transport extends js.Object {
   var name: java.lang.String
   def abort(connection: Connection, async: scala.Boolean): scala.Unit

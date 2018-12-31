@@ -34,25 +34,25 @@ abstract class BitmapDecoder () extends js.Object {
   /** The width of the first frame in pixels. */
   var pixelWidth: scala.Double = js.native
   /**
-                   * Asynchronously retrieves a frame from the image file.
-                   * @param frameIndex The zero-based index of the frame to be retrieved.
-                   * @return Object that manages the asynchronous retrieval of the frame.
-                   */
+    * Asynchronously retrieves a frame from the image file.
+    * @param frameIndex The zero-based index of the frame to be retrieved.
+    * @return Object that manages the asynchronous retrieval of the frame.
+    */
   def getFrameAsync(frameIndex: scala.Double): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[BitmapFrame] = js.native
   /**
-                   * Asynchronously requests the pixel data for the frame.
-                   * @return Object that manages the asynchronous retrieval of the pixel data.
-                   */
+    * Asynchronously requests the pixel data for the frame.
+    * @return Object that manages the asynchronous retrieval of the pixel data.
+    */
   def getPixelDataAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[PixelDataProvider] = js.native
   /**
-                   * Asynchronously requests the pixel data for the frame using the specified parameters.
-                   * @param pixelFormat The specified pixel format.
-                   * @param alphaMode The specified alpha mode.
-                   * @param transform The set of transformations to be applied to the frame.
-                   * @param exifOrientationMode Indicates whether the EXIF orientation flag should be ignored or respected.
-                   * @param colorManagementMode Indicates whether the pixel data should be color managed to the sRGB color space.
-                   * @return Object that manages the asynchronous retrieval of the pixel data.
-                   */
+    * Asynchronously requests the pixel data for the frame using the specified parameters.
+    * @param pixelFormat The specified pixel format.
+    * @param alphaMode The specified alpha mode.
+    * @param transform The set of transformations to be applied to the frame.
+    * @param exifOrientationMode Indicates whether the EXIF orientation flag should be ignored or respected.
+    * @param colorManagementMode Indicates whether the pixel data should be color managed to the sRGB color space.
+    * @return Object that manages the asynchronous retrieval of the pixel data.
+    */
   def getPixelDataAsync(
     pixelFormat: BitmapPixelFormat,
     alphaMode: BitmapAlphaMode,
@@ -61,31 +61,31 @@ abstract class BitmapDecoder () extends js.Object {
     colorManagementMode: ColorManagementMode
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[PixelDataProvider] = js.native
   /**
-                   * Asynchronously returns a stream containing the preview image.
-                   * @return Object that manages the asynchronous retrieval of the bitmap preview data.
-                   */
+    * Asynchronously returns a stream containing the preview image.
+    * @return Object that manages the asynchronous retrieval of the bitmap preview data.
+    */
   def getPreviewAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[ImageStream] = js.native
   /**
-                   * Asynchronously gets a SoftwareBitmap representation of the decoded bitmap.
-                   * @return An asynchronous operation that returns a SoftwareBitmap on successful completion.
-                   */
+    * Asynchronously gets a SoftwareBitmap representation of the decoded bitmap.
+    * @return An asynchronous operation that returns a SoftwareBitmap on successful completion.
+    */
   def getSoftwareBitmapAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[SoftwareBitmap] = js.native
   /**
-                   * Asynchronously gets a SoftwareBitmap representation of the decoded bitmap.
-                   * @param pixelFormat The pixel format of the software bitmap.
-                   * @param alphaMode The alpha mode of the software bitmap.
-                   * @return An asynchronous operation that returns a SoftwareBitmap on successful completion.
-                   */
+    * Asynchronously gets a SoftwareBitmap representation of the decoded bitmap.
+    * @param pixelFormat The pixel format of the software bitmap.
+    * @param alphaMode The alpha mode of the software bitmap.
+    * @return An asynchronous operation that returns a SoftwareBitmap on successful completion.
+    */
   def getSoftwareBitmapAsync(pixelFormat: BitmapPixelFormat, alphaMode: BitmapAlphaMode): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[SoftwareBitmap] = js.native
   /**
-                   * Asynchronously gets a SoftwareBitmap representation of the decoded bitmap.
-                   * @param pixelFormat The pixel format of the software bitmap.
-                   * @param alphaMode The alpha mode of the software bitmap.
-                   * @param transform The transform of the software bitmap.
-                   * @param exifOrientationMode The EXIF orientation mode of the software bitmap.
-                   * @param colorManagementMode The color management mode of the software bitmap.
-                   * @return An asynchronous operation that returns a SoftwareBitmap on successful completion.
-                   */
+    * Asynchronously gets a SoftwareBitmap representation of the decoded bitmap.
+    * @param pixelFormat The pixel format of the software bitmap.
+    * @param alphaMode The alpha mode of the software bitmap.
+    * @param transform The transform of the software bitmap.
+    * @param exifOrientationMode The EXIF orientation mode of the software bitmap.
+    * @param colorManagementMode The color management mode of the software bitmap.
+    * @return An asynchronous operation that returns a SoftwareBitmap on successful completion.
+    */
   def getSoftwareBitmapAsync(
     pixelFormat: BitmapPixelFormat,
     alphaMode: BitmapAlphaMode,
@@ -94,9 +94,9 @@ abstract class BitmapDecoder () extends js.Object {
     colorManagementMode: ColorManagementMode
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[SoftwareBitmap] = js.native
   /**
-                   * Asynchronously returns a stream containing the thumbnail image.
-                   * @return Object that manages the asynchronous retrieval of the thumbnail stream.
-                   */
+    * Asynchronously returns a stream containing the thumbnail image.
+    * @return Object that manages the asynchronous retrieval of the thumbnail stream.
+    */
   def getThumbnailAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[ImageStream] = js.native
 }
 
@@ -119,25 +119,25 @@ object BitmapDecoder extends js.Object {
   /** The unique identifier of the TIFF decoder. */
   var tiffDecoderId: java.lang.String = js.native
   /**
-                   * Asynchronously creates a new BitmapDecoder using a specific bitmap codec and initializes it using a stream.
-                   * @param decoderId The unique identifier of the specified bitmap codec.
-                   * @param stream The stream containing the image file to be decoded.
-                   * @return An object that manages the asynchronous creation of a new BitmapDecoder .
-                   */
+    * Asynchronously creates a new BitmapDecoder using a specific bitmap codec and initializes it using a stream.
+    * @param decoderId The unique identifier of the specified bitmap codec.
+    * @param stream The stream containing the image file to be decoded.
+    * @return An object that manages the asynchronous creation of a new BitmapDecoder .
+    */
   def createAsync(
     decoderId: java.lang.String,
     stream: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.BitmapDecoder] = js.native
   /**
-                   * Asynchronously creates a new BitmapDecoder and initializes it using a stream.
-                   * @param stream The stream containing the image file to be decoded.
-                   * @return An object that manages the asynchronous creation of a new BitmapDecoder .
-                   */
+    * Asynchronously creates a new BitmapDecoder and initializes it using a stream.
+    * @param stream The stream containing the image file to be decoded.
+    * @return An object that manages the asynchronous creation of a new BitmapDecoder .
+    */
   def createAsync(stream: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.BitmapDecoder] = js.native
   /**
-                   * The bitmap decoders installed on the system and information about them.
-                   * @return A list of BitmapCodecInformation objects containing information about each decoder.
-                   */
+    * The bitmap decoders installed on the system and information about them.
+    * @return A list of BitmapCodecInformation objects containing information about each decoder.
+    */
   def getDecoderInformationEnumerator(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.BitmapCodecInformation] = js.native
 }
 

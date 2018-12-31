@@ -20,8 +20,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Flash
   extends /**
-     * 
-     * @return  
-     */
+  * 
+  * @return  
+  */
 org.scalablytyped.runtime.Instantiable0[Flash]
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Supports the ability to determine the capabilities of any connected mouse devices. */
 @JSGlobal("Windows.Devices.Input.MouseCapabilities")
 @js.native
+/** Initializes a new instance of the MouseCapabilities class. */
 class MouseCapabilities () extends js.Object {
   /** Gets a value indicating whether any of the mice connected to the computer have a scroll wheel that tilts left and right (usually for horizontal scrolling). */
   var horizontalWheelPresent: scala.Double = js.native

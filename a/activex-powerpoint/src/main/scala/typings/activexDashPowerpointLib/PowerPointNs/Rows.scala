@@ -14,7 +14,6 @@ class Rows protected () extends js.Object {
   var `PowerPoint.Rows_typekey`: Rows = js.native
   /** @param number [BeforeRow=-1] */
   def Add(): Row = js.native
-  /** @param number [BeforeRow=-1] */
   def Add(BeforeRow: scala.Double): Row = js.native
   def Item(Index: scala.Double): Row = js.native
 }

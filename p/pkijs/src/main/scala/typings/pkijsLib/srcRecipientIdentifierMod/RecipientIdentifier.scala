@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RecipientIdentifier extends js.Object {
   var value: js.Any
   var variant: scala.Double

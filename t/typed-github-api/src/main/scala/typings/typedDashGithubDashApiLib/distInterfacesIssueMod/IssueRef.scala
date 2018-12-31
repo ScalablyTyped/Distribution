@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IssueRef extends js.Object {
   val number: scala.Double
   def loadAsync(): js.Promise[Issue | scala.Null]

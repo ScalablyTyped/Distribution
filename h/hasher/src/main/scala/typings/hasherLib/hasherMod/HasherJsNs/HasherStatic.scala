@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HasherStatic extends js.Object {
   // <static> <constant> {string} hasher.VERSION
   // hasher Version Number

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MessageEvent extends js.Object {
   var from: java.lang.String
   var hostmask: java.lang.String

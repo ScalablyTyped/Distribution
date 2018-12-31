@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SuggestResult extends js.Object {
   /** The text that is put into the URL bar, and that is sent to the extension when the user chooses this entry. */
   var content: java.lang.String

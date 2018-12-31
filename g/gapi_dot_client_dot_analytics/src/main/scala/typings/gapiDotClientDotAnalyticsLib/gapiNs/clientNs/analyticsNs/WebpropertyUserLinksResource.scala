@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebpropertyUserLinksResource extends js.Object {
   /** Removes a user from the given web property. */
   def delete(request: gapiDotClientDotAnalyticsLib.Anon_LinkIdPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

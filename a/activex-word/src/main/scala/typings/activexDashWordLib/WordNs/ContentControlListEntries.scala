@@ -14,19 +14,11 @@ class ContentControlListEntries protected () extends js.Object {
   val Parent: js.Any = js.native
   var `Word.ContentControlListEntries_typekey`: ContentControlListEntries = js.native
   /**
-           * @param string [Value='']
-           * @param number [Index=0]
-           */
+    * @param string [Value='']
+    * @param number [Index=0]
+    */
   def Add(Text: java.lang.String): ContentControlListEntry = js.native
-  /**
-           * @param string [Value='']
-           * @param number [Index=0]
-           */
   def Add(Text: java.lang.String, Value: java.lang.String): ContentControlListEntry = js.native
-  /**
-           * @param string [Value='']
-           * @param number [Index=0]
-           */
   def Add(Text: java.lang.String, Value: java.lang.String, Index: scala.Double): ContentControlListEntry = js.native
   def Clear(): scala.Unit = js.native
   def Item(Index: scala.Double): ContentControlListEntry = js.native

@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictRefProps extends js.Object {
   /** Primary content. */
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * Called when componentDidMount.
-     *
-     * @param {HTMLElement} node - Referred node.
-     */
+    * Called when componentDidMount.
+    *
+    * @param {HTMLElement} node - Referred node.
+    */
   var innerRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[_]] = js.undefined
 }
 

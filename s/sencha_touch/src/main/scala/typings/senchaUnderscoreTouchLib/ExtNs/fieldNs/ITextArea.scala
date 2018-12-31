@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITextArea extends IText {
   /** [Method] Returns the value of maxRows
   		* @returns Number

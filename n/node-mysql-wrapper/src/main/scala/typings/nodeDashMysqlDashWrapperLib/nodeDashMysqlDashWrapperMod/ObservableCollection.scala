@@ -15,35 +15,20 @@ class ObservableCollection[T] protected () extends js.Object {
   var items: js.Array[T with ObservableObject] = js.native
   //auti i klasi 9a xrisimopoieite ws Collection me kapoies paralages mesa sto index.ts.
   var local: BaseCollection[T] = js.native
-  /**
-       * same thing as .remove();
-       */
   def delete(criteriaOrID: java.lang.String): bluebirdLib.bluebirdMod.namespaced[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
-  /**
-       * same thing as .remove();
-       */
   def delete(
     criteriaOrID: java.lang.String,
     callback: js.Function1[/* _result */ nodeDashMysqlDashWrapperLib.DeleteAnswer, _]
   ): bluebirdLib.bluebirdMod.namespaced[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
   /**
-       * same thing as .remove();
-       */
+    * same thing as .remove();
+    */
   def delete(criteriaOrID: js.Any): bluebirdLib.bluebirdMod.namespaced[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
-  /**
-       * same thing as .remove();
-       */
   def delete(
     criteriaOrID: js.Any,
     callback: js.Function1[/* _result */ nodeDashMysqlDashWrapperLib.DeleteAnswer, _]
   ): bluebirdLib.bluebirdMod.namespaced[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
-  /**
-       * same thing as .remove();
-       */
   def delete(criteriaOrID: scala.Double): bluebirdLib.bluebirdMod.namespaced[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
-  /**
-       * same thing as .remove();
-       */
   def delete(
     criteriaOrID: scala.Double,
     callback: js.Function1[/* _result */ nodeDashMysqlDashWrapperLib.DeleteAnswer, _]
@@ -64,12 +49,9 @@ class ObservableCollection[T] protected () extends js.Object {
   def findOne(criteriaRawJsObject: js.Any): bluebirdLib.bluebirdMod.namespaced[T] = js.native
   def findOne(criteriaRawJsObject: js.Any, callback: js.Function1[/* _result */ T, _]): bluebirdLib.bluebirdMod.namespaced[T] = js.native
   /**
-       * .insert() and .update() do the same thing:  .save();
-       */
+    * .insert() and .update() do the same thing:  .save();
+    */
   def insert(criteriaRawJsObject: js.Any): bluebirdLib.bluebirdMod.namespaced[T | _] = js.native
-  /**
-       * .insert() and .update() do the same thing:  .save();
-       */
   def insert(criteriaRawJsObject: js.Any, callback: js.Function1[/* _result */ js.Any, _]): bluebirdLib.bluebirdMod.namespaced[T | _] = js.native
   def onCollectionChanged(callback: js.Function1[/* eventArgs */ CollectionChangedEventArgs[T], scala.Unit]): scala.Unit = js.native
   def remove(criteriaOrID: java.lang.String): bluebirdLib.bluebirdMod.namespaced[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native

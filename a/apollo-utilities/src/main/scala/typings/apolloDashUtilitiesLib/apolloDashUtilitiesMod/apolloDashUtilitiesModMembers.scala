@@ -59,13 +59,13 @@ object apolloDashUtilitiesModMembers extends js.Object {
   def isDevelopment(): scala.Boolean = js.native
   def isEnv(env: java.lang.String): scala.Boolean = js.native
   def isEqual(a: js.Any, b: js.Any): scala.Boolean = js.native
-  def isField(selection: graphqlLib.languageAstMod.SelectionNode): /* is FieldNode */scala.Boolean = js.native
-  def isIdValue(idObject: apolloDashUtilitiesLib.libStoreUtilsMod.StoreValue): /* is IdValue */scala.Boolean = js.native
-  def isInlineFragment(selection: graphqlLib.languageAstMod.SelectionNode): /* is InlineFragmentNode */scala.Boolean = js.native
-  def isJsonValue(jsonObject: apolloDashUtilitiesLib.libStoreUtilsMod.StoreValue): /* is JsonValue */scala.Boolean = js.native
-  def isNumberValue(value: graphqlLib.languageAstMod.ValueNode): /* is NumberValue */scala.Boolean = js.native
+  def isField(selection: graphqlLib.languageAstMod.SelectionNode): /* is graphql.graphql/language/ast.FieldNode */ scala.Boolean = js.native
+  def isIdValue(idObject: apolloDashUtilitiesLib.libStoreUtilsMod.StoreValue): /* is apollo-utilities.apollo-utilities/lib/storeUtils.IdValue */ scala.Boolean = js.native
+  def isInlineFragment(selection: graphqlLib.languageAstMod.SelectionNode): /* is graphql.graphql/language/ast.InlineFragmentNode */ scala.Boolean = js.native
+  def isJsonValue(jsonObject: apolloDashUtilitiesLib.libStoreUtilsMod.StoreValue): /* is apollo-utilities.apollo-utilities/lib/storeUtils.JsonValue */ scala.Boolean = js.native
+  def isNumberValue(value: graphqlLib.languageAstMod.ValueNode): /* is apollo-utilities.apollo-utilities/lib/storeUtils.NumberValue */ scala.Boolean = js.native
   def isProduction(): scala.Boolean = js.native
-  def isScalarValue(value: graphqlLib.languageAstMod.ValueNode): /* is ScalarValue */scala.Boolean = js.native
+  def isScalarValue(value: graphqlLib.languageAstMod.ValueNode): /* is apollo-utilities.apollo-utilities/lib/storeUtils.ScalarValue */ scala.Boolean = js.native
   def isTest(): scala.Boolean = js.native
   def maybeDeepFreeze(obj: js.Any): js.Any = js.native
   def removeArgumentsFromDocument(

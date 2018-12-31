@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StripePaymentRequestOptions extends StripePaymentRequestUpdateOptions {
   var country: java.lang.String
   var requestPayerEmail: js.UndefOr[scala.Boolean] = js.undefined

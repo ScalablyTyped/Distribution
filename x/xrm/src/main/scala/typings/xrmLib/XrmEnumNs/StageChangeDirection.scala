@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait StageChangeDirection extends js.Object
 
 /**
-     * Constant Enum: Direction types for a process stage change event
-     * @see {@link ProcessFlow.StageChangeDirection}
-     */
+  * Constant Enum: Direction types for a process stage change event
+  * @see {@link ProcessFlow.StageChangeDirection}
+  */
 @JSGlobal("XrmEnum.StageChangeDirection")
 @js.native
 object StageChangeDirection extends js.Object {

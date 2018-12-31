@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SwaggerRouter12Options extends js.Object {
   var controllers: js.UndefOr[
     SwaggerRouter12OptionsControllers | java.lang.String | js.Array[java.lang.String]

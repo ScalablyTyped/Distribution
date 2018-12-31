@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Usage: <code>import * as numeral from 'numeral'</code>
- */
+  * Usage: <code>import * as numeral from 'numeral'</code>
+  */
 @JSImport("numeral", JSImport.Namespace)
 @js.native
 object numeralMod

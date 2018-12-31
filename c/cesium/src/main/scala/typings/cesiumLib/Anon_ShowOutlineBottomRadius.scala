@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShowOutlineBottomRadius extends js.Object {
   var bottomRadius: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
   var fill: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined

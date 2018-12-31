@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICopyright extends js.Object {
   /** The copyright URL for the GeoData service. */
   var CopyrightURL: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DragDropManager[Context] extends js.Object {
   def dispatch(action: js.Any): scala.Unit
   def getActions(): DragDropActions

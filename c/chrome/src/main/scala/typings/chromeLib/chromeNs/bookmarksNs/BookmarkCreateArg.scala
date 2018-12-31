@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BookmarkCreateArg extends js.Object {
   var index: js.UndefOr[scala.Double] = js.undefined
   /** Optional. Defaults to the Other Bookmarks folder.  */

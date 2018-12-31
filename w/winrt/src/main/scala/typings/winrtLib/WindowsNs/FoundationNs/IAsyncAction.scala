@@ -20,11 +20,28 @@ trait IAsyncAction extends IAsyncInfo {
   def completed(asyncInfo: IAsyncAction, asyncStatus: AsyncStatus): scala.Unit = js.native
   def getResults(): scala.Unit = js.native
   def `then`[U](): js.Any = js.native
-  def `then`[U](success: js.Function0[_ | U]): js.Any = js.native
-  def `then`[U](success: js.Function0[_ | U], error: js.Function1[/* error */ js.Any, _ | U]): js.Any = js.native
   def `then`[U](
-    success: js.Function0[_ | U],
-    error: js.Function1[/* error */ js.Any, _ | U],
+    success: js.Function0[
+      (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify IPromise<U> */ _) | U
+    ]
+  ): js.Any = js.native
+  def `then`[U](
+    success: js.Function0[
+      (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify IPromise<U> */ _) | U
+    ],
+    error: js.Function1[
+      /* error */ js.Any, 
+      (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify IPromise<U> */ _) | U
+    ]
+  ): js.Any = js.native
+  def `then`[U](
+    success: js.Function0[
+      (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify IPromise<U> */ _) | U
+    ],
+    error: js.Function1[
+      /* error */ js.Any, 
+      (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify IPromise<U> */ _) | U
+    ],
     progress: js.Function1[/* progress */ js.Any, scala.Unit]
   ): js.Any = js.native
 }

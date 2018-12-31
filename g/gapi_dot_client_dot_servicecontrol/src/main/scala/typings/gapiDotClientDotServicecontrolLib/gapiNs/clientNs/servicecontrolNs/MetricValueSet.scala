@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MetricValueSet extends js.Object {
   /** The metric name defined in the service configuration. */
   var metricName: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnimationStateListener2 extends js.Object {
   def complete(entry: TrackEntry): scala.Unit
   def dispose(entry: TrackEntry): scala.Unit

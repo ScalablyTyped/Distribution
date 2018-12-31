@@ -6,21 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Related Claims which may be revelant to processing this claimn
-     */
-
+  * Related Claims which may be revelant to processing this claimn
+  */
 trait ClaimRelated extends BackboneElement {
   /**
-           * Reference to the related claim
-           */
+    * Reference to the related claim
+    */
   var claim: js.UndefOr[Reference] = js.undefined
   /**
-           * Related file or case reference
-           */
+    * Related file or case reference
+    */
   var reference: js.UndefOr[Identifier] = js.undefined
   /**
-           * How the reference claim is related
-           */
+    * How the reference claim is related
+    */
   var relationship: js.UndefOr[CodeableConcept] = js.undefined
 }
 

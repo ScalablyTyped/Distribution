@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props extends js.Object {
   var bodyClassName: js.UndefOr[java.lang.String] = js.undefined
   var burgerBarClassName: js.UndefOr[java.lang.String] = js.undefined

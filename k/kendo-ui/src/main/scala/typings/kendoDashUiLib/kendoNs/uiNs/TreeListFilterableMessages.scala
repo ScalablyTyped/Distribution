@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TreeListFilterableMessages extends js.Object {
   var and: js.UndefOr[java.lang.String] = js.undefined
   var clear: js.UndefOr[java.lang.String] = js.undefined

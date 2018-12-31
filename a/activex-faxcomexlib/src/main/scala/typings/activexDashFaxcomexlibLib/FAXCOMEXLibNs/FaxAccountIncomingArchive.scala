@@ -17,14 +17,10 @@ class FaxAccountIncomingArchive protected () extends js.Object {
   /** Get an archived message by its ID */
   def GetMessage(bstrMessageId: java.lang.String): IFaxIncomingMessage = js.native
   /**
-           * Iterator on the archived messages
-           * @param number [lPrefetchSize=100]
-           */
+    * Iterator on the archived messages
+    * @param number [lPrefetchSize=100]
+    */
   def GetMessages(): FaxIncomingMessageIterator = js.native
-  /**
-           * Iterator on the archived messages
-           * @param number [lPrefetchSize=100]
-           */
   def GetMessages(lPrefetchSize: scala.Double): FaxIncomingMessageIterator = js.native
   /** Refresh the object */
   def Refresh(): scala.Unit = js.native

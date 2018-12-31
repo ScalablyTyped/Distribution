@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 // A List describes the look and feel of bullets belonging to paragraphs
 // associated with a list. A paragraph that is part of a list has an implicit
 // reference to that list's ID.
-
 trait List extends js.Object {
   // The ID of the list.
   var list_id: java.lang.String

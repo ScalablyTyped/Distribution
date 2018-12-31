@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Key[Content /* <: js.Object */] extends js.Object {
   /** Only present if `include_docs` was `true`. */
   var doc: js.UndefOr[

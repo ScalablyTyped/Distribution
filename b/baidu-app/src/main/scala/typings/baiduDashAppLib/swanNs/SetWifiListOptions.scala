@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SetWifiListOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 提供预设的 Wi-Fi 信息列表 */

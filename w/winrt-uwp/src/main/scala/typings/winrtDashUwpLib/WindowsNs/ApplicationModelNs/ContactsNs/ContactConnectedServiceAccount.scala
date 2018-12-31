@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a connected service account for a contact. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactConnectedServiceAccount")
 @js.native
+/** Initializes a new instance of a ContactConnectedServiceAccount class. */
 class ContactConnectedServiceAccount () extends js.Object {
   /** Gets and sets the identifier of a connected service account for a contact. The maximum string length for the identifier is 321 characters. */
   var id: java.lang.String = js.native

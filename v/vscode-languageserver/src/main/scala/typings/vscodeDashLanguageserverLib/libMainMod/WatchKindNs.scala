@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object WatchKindNs extends js.Object {
   /**
-       * Interested in change events
-       */
+    * Interested in change events
+    */
   val Change: /* 2 */ scala.Double = js.native
   /**
-       * Interested in create events.
-       */
+    * Interested in create events.
+    */
   val Create: /* 1 */ scala.Double = js.native
   /**
-       * Interested in delete events
-       */
+    * Interested in delete events
+    */
   val Delete: /* 4 */ scala.Double = js.native
 }
 

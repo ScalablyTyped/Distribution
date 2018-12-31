@@ -44,10 +44,8 @@ trait Watcher
   def listenerCount_fsevent(`type`: fseventsLib.fseventsLibStrings.fsevent): scala.Double = js.native
   // tslint:disable-next-line ban-types
   def listeners(event: EventType): js.Array[js.Function] = js.native
-  // tslint:disable-next-line ban-types
   @JSName("listeners")
   def listeners_change(event: fseventsLib.fseventsLibStrings.change): js.Array[js.Function] = js.native
-  // tslint:disable-next-line ban-types
   @JSName("listeners")
   def listeners_fsevent(event: fseventsLib.fseventsLibStrings.fsevent): js.Array[js.Function] = js.native
   def on(

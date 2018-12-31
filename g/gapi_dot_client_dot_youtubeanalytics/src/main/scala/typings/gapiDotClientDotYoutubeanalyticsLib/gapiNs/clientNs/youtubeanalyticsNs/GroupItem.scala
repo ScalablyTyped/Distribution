@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GroupItem extends js.Object {
   var etag: js.UndefOr[java.lang.String] = js.undefined
   var groupId: js.UndefOr[java.lang.String] = js.undefined

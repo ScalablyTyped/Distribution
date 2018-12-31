@@ -6,33 +6,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Base definition information for tools
-     */
-
+  * Base definition information for tools
+  */
 trait ElementDefinitionBase extends Element {
   /**
-           * Contains extended information for property 'max'.
-           */
+    * Contains extended information for property 'max'.
+    */
   var _max: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'min'.
-           */
+    * Contains extended information for property 'min'.
+    */
   var _min: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'path'.
-           */
+    * Contains extended information for property 'path'.
+    */
   var _path: js.UndefOr[Element] = js.undefined
   /**
-           * Max cardinality of the base element
-           */
+    * Max cardinality of the base element
+    */
   var max: java.lang.String
   /**
-           * Min cardinality of the base element
-           */
+    * Min cardinality of the base element
+    */
   var min: unsignedInt
   /**
-           * Path that identifies the base element
-           */
+    * Path that identifies the base element
+    */
   var path: java.lang.String
 }
 

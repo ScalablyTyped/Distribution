@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodeStatic extends js.Object {
   var Arguments: org.scalablytyped.runtime.Instantiable0[stylusLib.stylusMod.StylusNs.NodesNs.Arguments]
   var Atblock: org.scalablytyped.runtime.Instantiable0[stylusLib.stylusMod.StylusNs.NodesNs.Atblock]

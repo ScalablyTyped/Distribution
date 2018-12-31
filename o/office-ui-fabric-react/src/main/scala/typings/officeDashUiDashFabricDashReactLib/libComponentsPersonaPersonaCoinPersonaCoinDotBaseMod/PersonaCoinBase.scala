@@ -17,8 +17,8 @@ class PersonaCoinBase protected ()
   var _onRenderCoin: js.Any = js.native
   var _onRenderInitials: js.Any = js.native
   /**
-       * Deprecation helper for getting text.
-       */
+    * Deprecation helper for getting text.
+    */
   /* private */ def _getText(): js.Any = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MPersonaCoinBase(

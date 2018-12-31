@@ -14,27 +14,21 @@ class FormSelect ()
 @js.native
 object FormSelect extends js.Object {
   /**
-           * Get Instance
-           */
+    * Get Instance
+    */
   def getInstance(elem: stdLib.Element): materializeDashCssLib.MNs.FormSelect = js.native
   /**
-           * Init FormSelects
-           */
+    * Init FormSelects
+    */
   def init(els: materializeDashCssLib.MElements): js.Array[materializeDashCssLib.MNs.FormSelect] = js.native
-  /**
-           * Init FormSelects
-           */
   def init(
     els: materializeDashCssLib.MElements,
     options: stdLib.Partial[materializeDashCssLib.MNs.FormSelectOptions]
   ): js.Array[materializeDashCssLib.MNs.FormSelect] = js.native
   /**
-           * Init FormSelect
-           */
+    * Init FormSelect
+    */
   def init(els: stdLib.Element): materializeDashCssLib.MNs.FormSelect = js.native
-  /**
-           * Init FormSelect
-           */
   def init(els: stdLib.Element, options: stdLib.Partial[materializeDashCssLib.MNs.FormSelectOptions]): materializeDashCssLib.MNs.FormSelect = js.native
 }
 

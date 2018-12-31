@@ -15,15 +15,15 @@ abstract class CachedFileManager () extends js.Object
 @js.native
 object CachedFileManager extends js.Object {
   /**
-               * Initiates updates for the specified file. This method contacts the app that provided the file to perform the updates.
-               * @param file The file to update.
-               * @return When this method completes, it returns a FileUpdateStatus enum value that describes the status of the updates to the file.
-               */
+    * Initiates updates for the specified file. This method contacts the app that provided the file to perform the updates.
+    * @param file The file to update.
+    * @return When this method completes, it returns a FileUpdateStatus enum value that describes the status of the updates to the file.
+    */
   def completeUpdatesAsync(file: winrtDashUwpLib.WindowsNs.StorageNs.IStorageFile): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.StorageNs.ProviderNs.FileUpdateStatus] = js.native
   /**
-               * Lets apps defer real-time updates for a specified file.
-               * @param file The file to defer updates for.
-               */
+    * Lets apps defer real-time updates for a specified file.
+    * @param file The file to defer updates for.
+    */
   def deferUpdates(file: winrtDashUwpLib.WindowsNs.StorageNs.IStorageFile): scala.Unit = js.native
 }
 

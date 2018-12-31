@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISql extends IClient {
   /** [Method] Performs the given create operation
   		* @param operation Object

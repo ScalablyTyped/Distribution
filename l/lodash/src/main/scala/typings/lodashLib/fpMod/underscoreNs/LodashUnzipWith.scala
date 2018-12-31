@@ -12,9 +12,9 @@ trait LodashUnzipWith extends js.Object {
     iteratee: lodashLib.lodashMod.underscoreNs.`__`,
     array: lodashLib.lodashMod.underscoreNs.List[lodashLib.lodashMod.underscoreNs.List[T]]
   ): LodashUnzipWith1x2[T] = js.native
-  def apply[T, TResult](iteratee: js.Function1[/* repeated */T, TResult]): js.Array[TResult] = js.native
+  def apply[T, TResult](iteratee: js.Function1[/* repeated */ T, TResult]): js.Array[TResult] = js.native
   def apply[T, TResult](
-    iteratee: js.Function1[/* repeated */T, TResult],
+    iteratee: js.Function1[/* repeated */ T, TResult],
     array: lodashLib.lodashMod.underscoreNs.List[lodashLib.lodashMod.underscoreNs.List[T]]
   ): js.Array[TResult] = js.native
 }

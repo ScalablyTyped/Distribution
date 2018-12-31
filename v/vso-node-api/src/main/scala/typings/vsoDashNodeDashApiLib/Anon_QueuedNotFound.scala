@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_QueuedNotFound extends js.Object {
   var cancelled: scala.Double
   var failed: scala.Double

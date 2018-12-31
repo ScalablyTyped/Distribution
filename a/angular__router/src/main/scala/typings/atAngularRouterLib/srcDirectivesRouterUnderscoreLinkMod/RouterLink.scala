@@ -14,8 +14,8 @@ class RouterLink protected () extends js.Object {
   var preserve: js.Any = js.native
   var preserveFragment: scala.Boolean = js.native
   /**
-       * @deprecated 4.0.0 use `queryParamsHandling` instead.
-       */
+    * @deprecated 4.0.0 use `queryParamsHandling` instead.
+    */
   var preserveQueryParams: scala.Boolean = js.native
   var queryParams: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var queryParamsHandling: atAngularRouterLib.srcConfigMod.QueryParamsHandling = js.native

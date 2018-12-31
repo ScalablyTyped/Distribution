@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PasteOptions extends js.Object {
   var cleanAttrs: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var cleanPastedHTML: js.UndefOr[scala.Boolean] = js.undefined

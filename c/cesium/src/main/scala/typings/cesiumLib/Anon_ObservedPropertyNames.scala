@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ObservedPropertyNames extends js.Object {
   var entity: cesiumLib.cesiumMod.CesiumNs.Entity
   var geometryOptions: js.Any

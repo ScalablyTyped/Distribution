@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScrollNumberProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[java.lang.String] = js.undefined

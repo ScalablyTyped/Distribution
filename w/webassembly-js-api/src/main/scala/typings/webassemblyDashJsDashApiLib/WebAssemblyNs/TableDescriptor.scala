@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * WebAssembly.Table
-     */
-
+  * WebAssembly.Table
+  */
 trait TableDescriptor extends js.Object {
   var element: webassemblyDashJsDashApiLib.webassemblyDashJsDashApiLibStrings.anyfunc
   var initial: scala.Double

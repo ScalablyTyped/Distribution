@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrderAdjustment
   extends shopifyDashPrimeLib.distModelsBaseMod.ShopifyObject {
   var amount: java.lang.String

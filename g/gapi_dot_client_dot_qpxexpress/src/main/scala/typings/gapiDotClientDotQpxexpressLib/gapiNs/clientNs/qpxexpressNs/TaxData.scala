@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaxData extends js.Object {
   /** An identifier uniquely identifying a tax in a response. */
   var id: js.UndefOr[java.lang.String] = js.undefined

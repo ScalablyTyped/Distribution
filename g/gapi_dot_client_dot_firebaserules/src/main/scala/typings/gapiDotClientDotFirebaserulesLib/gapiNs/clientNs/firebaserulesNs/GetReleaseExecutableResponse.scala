@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetReleaseExecutableResponse extends js.Object {
   /** Executable view of the `Ruleset` referenced by the `Release`. */
   var executable: js.UndefOr[java.lang.String] = js.undefined

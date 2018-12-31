@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // options for isURL
-
 trait IsURLOptions extends js.Object {
   var allow_protocol_relative_urls: js.UndefOr[scala.Boolean] = js.undefined
   var allow_trailing_dot: js.UndefOr[scala.Boolean] = js.undefined

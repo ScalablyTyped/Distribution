@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AbideOptions extends js.Object {
   var error_labels: js.UndefOr[scala.Boolean] = js.undefined
   var focus_on_invalid: js.UndefOr[scala.Boolean] = js.undefined

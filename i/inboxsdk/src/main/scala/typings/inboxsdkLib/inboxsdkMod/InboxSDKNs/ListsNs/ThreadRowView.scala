@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThreadRowView extends js.Object {
   var destroyed: scala.Boolean
   // addButton(buttonDescriptor: Stream<ThreadRowButtonDescriptor>): void;

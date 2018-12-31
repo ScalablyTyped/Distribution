@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BasicDataDto extends js.Object {
   var colloq: java.lang.String
   var consumeOnFull: scala.Boolean

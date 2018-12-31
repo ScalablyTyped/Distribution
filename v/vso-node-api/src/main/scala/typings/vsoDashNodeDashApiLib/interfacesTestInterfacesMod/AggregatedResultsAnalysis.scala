@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AggregatedResultsAnalysis extends js.Object {
   var duration: js.Any
   var notReportedResultsByOutcome: org.scalablytyped.runtime.NumberDictionary[AggregatedResultsByOutcome]

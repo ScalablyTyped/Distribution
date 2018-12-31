@@ -17,9 +17,9 @@ trait IAsyncOperationWithProgress[TResult, TProgress] extends IAsyncInfo {
   /** Gets or sets the method that handles the operation completed notification. */
   def completed(asyncInfo: IAsyncOperationWithProgress[TResult, TProgress], asyncStatus: AsyncStatus): scala.Unit = js.native
   /**
-               * Returns the results of the operation.
-               * @return The results of the operation.
-               */
+    * Returns the results of the operation.
+    * @return The results of the operation.
+    */
   def getResults(): TResult = js.native
   /** Gets or sets the method that handles progress notifications. */
   def progress(asyncInfo: IAsyncOperationWithProgress[TResult, TProgress], progressInfo: TProgress): scala.Unit = js.native

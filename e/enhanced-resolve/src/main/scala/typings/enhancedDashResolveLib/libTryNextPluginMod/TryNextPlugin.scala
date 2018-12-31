@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TryNextPlugin extends js.Object {
   var message: java.lang.String | scala.Null
   var source: java.lang.String

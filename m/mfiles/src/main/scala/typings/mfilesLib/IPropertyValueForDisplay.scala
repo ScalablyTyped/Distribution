@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPropertyValueForDisplay extends js.Object {
   val ContentType: mfilesLib.MFilesNs.MFContentType
   val DataType: mfilesLib.MFilesNs.MFDataType

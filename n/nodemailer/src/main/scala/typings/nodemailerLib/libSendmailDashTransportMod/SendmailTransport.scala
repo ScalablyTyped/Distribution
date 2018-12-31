@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SendmailTransport
   extends nodemailerLib.nodemailerMod.Transport {
   var args: js.Array[java.lang.String] | nodemailerLib.nodemailerLibNumbers.`false`

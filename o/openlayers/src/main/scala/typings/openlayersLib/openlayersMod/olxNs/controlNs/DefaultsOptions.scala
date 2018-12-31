@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DefaultsOptions extends js.Object {
   var attribution: js.UndefOr[scala.Boolean] = js.undefined
   var attributionOptions: js.UndefOr[AttributionOptions] = js.undefined

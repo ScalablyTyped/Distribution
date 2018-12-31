@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AppRestrictionsSchema extends js.Object {
   /** Identifies what kind of resource this is. Value: the fixed string "androidenterprise#appRestrictionsSchema". */
   var kind: js.UndefOr[java.lang.String] = js.undefined

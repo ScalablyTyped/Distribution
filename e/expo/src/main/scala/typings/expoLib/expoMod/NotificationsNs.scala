@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "Notifications")
 @js.native
 object NotificationsNs extends js.Object {
-  
   trait ChannelAndroid extends js.Object {
     var badge: js.UndefOr[scala.Boolean] = js.undefined
     var description: js.UndefOr[java.lang.String] = js.undefined
@@ -20,7 +19,6 @@ object NotificationsNs extends js.Object {
     var vibrate: js.UndefOr[scala.Boolean | js.Array[scala.Double]] = js.undefined
   }
   
-  
   trait LocalNotification extends js.Object {
     var android: js.UndefOr[expoLib.Anon_Priority] = js.undefined
     var body: js.UndefOr[java.lang.String] = js.undefined
@@ -29,14 +27,12 @@ object NotificationsNs extends js.Object {
     var title: java.lang.String
   }
   
-  
   trait Notification extends js.Object {
     var data: js.Any
     var isMultiple: scala.Boolean
     var origin: expoLib.expoLibStrings.selected | expoLib.expoLibStrings.received
     var remote: scala.Boolean
   }
-  
   
   trait SchedulingOptions extends js.Object {
     var intervalMs: js.UndefOr[scala.Double] = js.undefined

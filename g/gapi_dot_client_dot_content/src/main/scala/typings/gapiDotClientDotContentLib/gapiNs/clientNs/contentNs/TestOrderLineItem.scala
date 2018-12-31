@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestOrderLineItem extends js.Object {
   /** Product data from the time of the order placement. */
   var product: js.UndefOr[TestOrderLineItemProduct] = js.undefined

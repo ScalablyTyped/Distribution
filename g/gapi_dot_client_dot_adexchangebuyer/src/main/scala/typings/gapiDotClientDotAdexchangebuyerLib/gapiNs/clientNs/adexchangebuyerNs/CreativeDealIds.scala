@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreativeDealIds extends js.Object {
   /** A list of external deal ids and ARC approval status. */
   var dealStatuses: js.UndefOr[js.Array[gapiDotClientDotAdexchangebuyerLib.Anon_WebPropertyId]] = js.undefined

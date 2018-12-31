@@ -13,14 +13,14 @@ class CompositeDisposable protected () extends DisposableLike {
   var disposed: scala.Boolean = js.native
   // Managing Disposables
   /**
-       *  Add disposables to be disposed when the composite is disposed.
-       *  If this object has already been disposed, this method has no effect.
-       */
+    *  Add disposables to be disposed when the composite is disposed.
+    *  If this object has already been disposed, this method has no effect.
+    */
   def add(disposables: DisposableLike*): scala.Unit = js.native
   /**
-       *  Clear all disposables. They will not be disposed by the next call to
-       *  dispose.
-       */
+    *  Clear all disposables. They will not be disposed by the next call to
+    *  dispose.
+    */
   def clear(): scala.Unit = js.native
   /** Alias to CompositeDisposable::remove. */
   def delete(disposable: DisposableLike): scala.Unit = js.native

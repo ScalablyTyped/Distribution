@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LabelProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libLabelMod.Label] {
   var bsSize: js.UndefOr[reactDashBootstrapLib.reactDashBootstrapMod.Sizes] = js.undefined

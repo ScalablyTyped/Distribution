@@ -17,7 +17,6 @@ object streamNs extends js.Object {
       def this(options: WorkbookWriterOptions) = this()
     }
     
-    
     trait WorkbookWriterOptions extends js.Object {
       /**
       			 * 	If stream not specified, this field specifies the path to a file to write the XLSX workbook to.

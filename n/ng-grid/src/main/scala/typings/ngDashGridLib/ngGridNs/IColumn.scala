@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IColumn extends js.Object {
   var aggLabelFilter: js.Any
   var cellClass: java.lang.String

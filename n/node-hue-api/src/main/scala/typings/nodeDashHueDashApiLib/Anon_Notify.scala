@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Notify extends js.Object {
   var checkforupdate: scala.Boolean
   var devicetypes: Anon_Lights

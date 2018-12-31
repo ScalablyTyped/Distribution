@@ -22,7 +22,6 @@ trait WebpackAssetsManifest
   def fixKey(key: java.lang.String): java.lang.String = js.native
   /** Get an item from the manifest */
   def get(key: java.lang.String): js.Any = js.native
-  /** Get an item from the manifest */
   def get(key: java.lang.String, defaultValue: java.lang.String): js.Any = js.native
   /** Get the file extension */
   def getExtension(filename: java.lang.String): java.lang.String = js.native
@@ -34,11 +33,6 @@ trait WebpackAssetsManifest
   	 * @param raw - Use `setRaw` instead of `set`
   	 */
   def getProxy(): stdLib.ProxyHandler[WebpackAssetsManifest] = js.native
-  /**
-  	 * Get a [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler) for the manifest
-  	 *
-  	 * @param raw - Use `setRaw` instead of `set`
-  	 */
   def getProxy(raw: scala.Boolean): stdLib.ProxyHandler[WebpackAssetsManifest] = js.native
   /** Get the public path for the filename */
   def getPublicPath(filename: java.lang.String): java.lang.String = js.native

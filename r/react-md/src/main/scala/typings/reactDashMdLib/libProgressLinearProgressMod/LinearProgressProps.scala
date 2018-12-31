@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinearProgressProps
   extends reactDashMdLib.libProgressMod.BaseProgressProps {
   var progressClassName: js.UndefOr[

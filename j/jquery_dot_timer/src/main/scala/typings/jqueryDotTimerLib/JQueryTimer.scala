@@ -13,11 +13,8 @@ trait JQueryTimer extends js.Object {
   var remaining: stdLib.Number = js.native
   // #region Constructors
   def apply(): js.Object = js.native
-  // #region Constructors
   def apply(action: js.Function): js.Object = js.native
-  // #region Constructors
   def apply(action: js.Function, time: stdLib.Number): js.Object = js.native
-  // #region Constructors
   def apply(action: js.Function, time: stdLib.Number, autostart: scala.Boolean): js.Object = js.native
   // #endregion
   // #region Actions

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeleteOrderDealsRequest extends js.Object {
   /** List of deals to delete for a given proposal */
   var dealIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined

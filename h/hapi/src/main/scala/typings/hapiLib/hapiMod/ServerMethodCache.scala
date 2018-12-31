@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerMethodCache
   extends catboxLib.catboxMod.PolicyOptions[js.Any] {
   @JSName("generateTimeout")

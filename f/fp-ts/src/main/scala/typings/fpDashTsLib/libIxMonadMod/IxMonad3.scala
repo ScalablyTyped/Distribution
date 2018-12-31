@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IxMonad3[F /* <: fpDashTsLib.libHKTMod.URIS3 */] extends js.Object {
   val URI: F
   def ichain[I, O, Z, A, B](

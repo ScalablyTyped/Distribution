@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // matrix.js
-
 trait MatrixExtract extends js.Object {
   var a: scala.Double
   var b: scala.Double

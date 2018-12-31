@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region 屏幕亮度 https://docs.alipay.com/mini/api/screen-brightness
-
 trait SetKeepScreenOnOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 是否保持屏幕常亮 */

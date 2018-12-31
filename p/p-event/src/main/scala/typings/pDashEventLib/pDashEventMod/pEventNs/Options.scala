@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options[T] extends js.Object {
   var filter: js.UndefOr[pDashEventLib.FilterFn[T]] = js.undefined
   var multiArgs: js.UndefOr[scala.Boolean] = js.undefined

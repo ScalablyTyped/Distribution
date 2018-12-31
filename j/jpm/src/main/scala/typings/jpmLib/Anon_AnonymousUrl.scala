@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AnonymousUrl[ResponseType] extends js.Object {
   var anonymous: js.UndefOr[scala.Boolean] = js.undefined
   var content: js.UndefOr[java.lang.String | js.Object] = js.undefined

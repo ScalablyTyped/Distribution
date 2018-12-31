@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictTableCellProps extends js.Object {
   /** A cell can be active or selected by a user. */
   var active: js.UndefOr[scala.Boolean] = js.undefined

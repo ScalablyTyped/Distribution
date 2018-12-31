@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BlockDevicesData extends js.Object {
   var fstype: java.lang.String
   var label: java.lang.String

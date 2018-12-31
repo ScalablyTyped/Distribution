@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TooltipOptions extends js.Object {
   var additional_inheritable_classes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var append_to: js.UndefOr[java.lang.String] = js.undefined

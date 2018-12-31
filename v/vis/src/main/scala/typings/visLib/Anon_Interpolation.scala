@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Interpolation extends js.Object {
   var borderDashes: scala.Boolean | js.Array[scala.Double]
    // only for borders

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Token extends js.Object {
   var bank_account: js.UndefOr[BankAccount] = js.undefined
   var card: js.UndefOr[Card] = js.undefined

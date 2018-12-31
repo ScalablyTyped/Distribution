@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParentAccesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -25,21 +24,21 @@ trait Anon_ParentAccesstoken extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Number of instance configurations to be returned in the response. If 0 or
-                   * less, defaults to the server's maximum allowed page size.
-                   */
+    * Number of instance configurations to be returned in the response. If 0 or
+    * less, defaults to the server's maximum allowed page size.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * If non-empty, `page_token` should contain a
-                   * next_page_token
-                   * from a previous ListInstanceConfigsResponse.
-                   */
+    * If non-empty, `page_token` should contain a
+    * next_page_token
+    * from a previous ListInstanceConfigsResponse.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Required. The name of the project for which a list of supported instance
-                   * configurations is requested. Values are of the form
-                   * `projects/<project>`.
-                   */
+    * Required. The name of the project for which a list of supported instance
+    * configurations is requested. Values are of the form
+    * `projects/<project>`.
+    */
   var parent: java.lang.String
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

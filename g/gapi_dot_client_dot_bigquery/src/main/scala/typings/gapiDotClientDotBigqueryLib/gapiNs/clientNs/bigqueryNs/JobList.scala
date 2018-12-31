@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JobList extends js.Object {
   /** A hash of this page of results. */
   var etag: js.UndefOr[java.lang.String] = js.undefined

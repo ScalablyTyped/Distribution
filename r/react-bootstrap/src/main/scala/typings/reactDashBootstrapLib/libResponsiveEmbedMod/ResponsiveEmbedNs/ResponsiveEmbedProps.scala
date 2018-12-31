@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResponsiveEmbedProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libResponsiveEmbedMod.ResponsiveEmbed] {
   var a16by9: js.UndefOr[scala.Boolean] = js.undefined

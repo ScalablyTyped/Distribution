@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KDBush[T] extends js.Object {
   var coords: js.Array[scala.Double]
   var ids: js.Array[scala.Double]

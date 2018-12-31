@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FormValidatedEventUIParam extends js.Object {
   /**
   	 * Gets reference to the igValidator widget.

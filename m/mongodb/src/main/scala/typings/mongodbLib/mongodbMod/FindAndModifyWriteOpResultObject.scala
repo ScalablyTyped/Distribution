@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FindAndModifyWriteOpResultObject[TSchema] extends js.Object {
   //The raw lastErrorObject returned from the command.
   var lastErrorObject: js.UndefOr[js.Any] = js.undefined

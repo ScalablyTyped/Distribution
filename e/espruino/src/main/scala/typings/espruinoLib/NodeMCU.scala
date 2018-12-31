@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait NodeMCU
   extends /**
-     * 
-     * @return  
-     */
+  * 
+  * @return  
+  */
 org.scalablytyped.runtime.Instantiable0[NodeMCU]
 

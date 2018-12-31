@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStandardPrintTaskOptionsStatic extends js.Object {
   var binding: java.lang.String
   var collation: java.lang.String

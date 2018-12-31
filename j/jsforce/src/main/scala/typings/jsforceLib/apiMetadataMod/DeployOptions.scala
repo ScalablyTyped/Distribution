@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeployOptions extends js.Object {
   var allowMissingFiles: js.UndefOr[scala.Boolean] = js.undefined
   var autoUpdatePackage: js.UndefOr[scala.Boolean] = js.undefined

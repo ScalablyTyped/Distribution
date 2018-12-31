@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictListIconProps
   extends semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.StrictIconProps {
   /** An element inside a list can be vertically aligned. */

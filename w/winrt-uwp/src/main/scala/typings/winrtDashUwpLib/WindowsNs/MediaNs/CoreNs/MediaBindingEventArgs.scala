@@ -20,9 +20,9 @@ abstract class MediaBindingEventArgs () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[MediaBindingEventArgs, _]
   ): scala.Unit = js.native
   /**
-                   * Informs the system that the app might continue to perform work after the Binding event handler returns.
-                   * @return The requested deferral.
-                   */
+    * Informs the system that the app might continue to perform work after the Binding event handler returns.
+    * @return The requested deferral.
+    */
   def getDeferral(): winrtDashUwpLib.WindowsNs.FoundationNs.Deferral = js.native
   /** Occurs when the binding operation is cancelled. */
   def oncanceled(ev: js.Any with winrtDashUwpLib.WindowsNs.WinRTEvent[MediaBindingEventArgs]): scala.Unit = js.native
@@ -33,27 +33,27 @@ abstract class MediaBindingEventArgs () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[MediaBindingEventArgs, _]
   ): scala.Unit = js.native
   /**
-                   * Sets the media content to be bound to the MediaSource .
-                   * @param stream A stream containing the media content.
-                   * @param contentType A string specifying the content type of the media content.
-                   */
+    * Sets the media content to be bound to the MediaSource .
+    * @param stream A stream containing the media content.
+    * @param contentType A string specifying the content type of the media content.
+    */
   def setStream(
     stream: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream,
     contentType: java.lang.String
   ): scala.Unit = js.native
   /**
-                   * Sets the media content to be bound to the MediaSource .
-                   * @param stream A stream reference containing the media content to be bound.
-                   * @param contentType A string specifying the content type of the media content.
-                   */
+    * Sets the media content to be bound to the MediaSource .
+    * @param stream A stream reference containing the media content to be bound.
+    * @param contentType A string specifying the content type of the media content.
+    */
   def setStreamReference(
     stream: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStreamReference,
     contentType: java.lang.String
   ): scala.Unit = js.native
   /**
-                   * Sets the URI of the media content to be bound to the MediaSource .
-                   * @param uri The URI of the media content to be bound.
-                   */
+    * Sets the URI of the media content to be bound to the MediaSource .
+    * @param uri The URI of the media content to be bound.
+    */
   def setUri(uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri): scala.Unit = js.native
 }
 

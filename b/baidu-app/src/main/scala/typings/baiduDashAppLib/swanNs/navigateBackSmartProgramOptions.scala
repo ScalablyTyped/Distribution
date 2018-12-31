@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 *  返回上一个小程序(参数)
 	 */
-
 trait navigateBackSmartProgramOptions
   extends BaseOptions[js.Any, js.Any] {
   /**

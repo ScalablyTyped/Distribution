@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InjectorTypeWithProviders[T] extends js.Object {
   var ngModule: InjectorType[T]
   var providers: js.UndefOr[

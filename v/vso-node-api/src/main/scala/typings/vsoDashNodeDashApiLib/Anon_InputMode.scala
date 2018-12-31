@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_InputMode extends js.Object {
   var InputDataType: Anon_EnumValuesAnonNumber
   var InputDescriptor: Anon_Fields

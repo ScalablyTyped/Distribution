@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // --- Ads ---
-
 trait AdvertisementOptions extends js.Object {
   var context: js.UndefOr[js.Any] = js.undefined
   var domain: js.UndefOr[js.Any] = js.undefined

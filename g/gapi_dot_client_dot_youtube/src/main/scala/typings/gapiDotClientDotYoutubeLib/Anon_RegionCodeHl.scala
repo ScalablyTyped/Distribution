@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RegionCodeHl extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -14,9 +13,9 @@ trait Anon_RegionCodeHl extends js.Object {
   /** The hl parameter specifies the language that will be used for text values in the API response. */
   var hl: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The id parameter specifies a comma-separated list of the YouTube channel category ID(s) for the resource(s) that are being retrieved. In a
-                   * guideCategory resource, the id property specifies the YouTube channel category ID.
-                   */
+    * The id parameter specifies a comma-separated list of the YouTube channel category ID(s) for the resource(s) that are being retrieved. In a
+    * guideCategory resource, the id property specifies the YouTube channel category ID.
+    */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
@@ -27,14 +26,14 @@ trait Anon_RegionCodeHl extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The regionCode parameter instructs the API to return the list of guide categories available in the specified country. The parameter value is an ISO
-                   * 3166-1 alpha-2 country code.
-                   */
+    * The regionCode parameter instructs the API to return the list of guide categories available in the specified country. The parameter value is an ISO
+    * 3166-1 alpha-2 country code.
+    */
   var regionCode: js.UndefOr[java.lang.String] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[java.lang.String] = js.undefined

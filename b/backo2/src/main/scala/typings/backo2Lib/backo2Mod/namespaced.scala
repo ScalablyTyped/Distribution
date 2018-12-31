@@ -12,23 +12,23 @@ class namespaced () extends Backoff {
   /* CompleteClass */
   override def duration(): scala.Double = js.native
   /**
-       * Reset the number of attempts.
-       */
+    * Reset the number of attempts.
+    */
   /* CompleteClass */
   override def reset(): scala.Unit = js.native
   /**
-       * Set the jitter
-       */
+    * Set the jitter
+    */
   /* CompleteClass */
   override def setJitter(jitter: scala.Double): scala.Unit = js.native
   /**
-       * Set the maximum duration
-       */
+    * Set the maximum duration
+    */
   /* CompleteClass */
   override def setMax(max: scala.Double): scala.Unit = js.native
   /**
-       * Set the minimum duration
-       */
+    * Set the minimum duration
+    */
   /* CompleteClass */
   override def setMin(min: scala.Double): scala.Unit = js.native
 }

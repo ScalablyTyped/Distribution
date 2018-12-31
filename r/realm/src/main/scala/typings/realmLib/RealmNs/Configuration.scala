@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * realm configuration
-     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.html#~Configuration }
-     */
-
+  * realm configuration
+  * @see { @link https://realm.io/docs/javascript/latest/api/Realm.html#~Configuration }
+  */
 trait Configuration extends js.Object {
   var deleteRealmIfMigrationNeeded: js.UndefOr[scala.Boolean] = js.undefined
   var disableFormatUpgrade: js.UndefOr[scala.Boolean] = js.undefined

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait GridPosition extends js.Object
 
 /**
-       * The position of the Grid. Can be "Left", "Center" or "Right". "Left" is default.
-      */
+  * The position of the Grid. Can be "Left", "Center" or "Right". "Left" is default.
+  */
 @JSGlobal("sap.ui.layout.GridPosition")
 @js.native
 object GridPosition extends js.Object {

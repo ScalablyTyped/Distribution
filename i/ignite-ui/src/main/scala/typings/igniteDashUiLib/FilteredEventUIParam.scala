@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilteredEventUIParam extends js.Object {
   /**
   	 * Used to obtain a jquery reference to the rendered filtered elements.

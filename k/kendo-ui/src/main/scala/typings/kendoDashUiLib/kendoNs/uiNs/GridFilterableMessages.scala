@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridFilterableMessages extends js.Object {
   var and: js.UndefOr[java.lang.String] = js.undefined
   var cancel: js.UndefOr[java.lang.String] = js.undefined

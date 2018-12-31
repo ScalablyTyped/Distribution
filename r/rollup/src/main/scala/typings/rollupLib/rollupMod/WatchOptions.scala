@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WatchOptions extends js.Object {
   var alwaysStat: js.UndefOr[scala.Boolean] = js.undefined
   var atomic: js.UndefOr[scala.Boolean | scala.Double] = js.undefined

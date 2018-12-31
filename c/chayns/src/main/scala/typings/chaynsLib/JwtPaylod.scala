@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Utility Functions
- * Miscellaneous
- * chayns.utils
- * interfaces
- */
+  * Utility Functions
+  * Miscellaneous
+  * chayns.utils
+  * interfaces
+  */
 // chayns.utils.getJwtPayload()
-
 trait JwtPaylod extends js.Object {
   var FacebookUserID: java.lang.String
   var FirstName: java.lang.String

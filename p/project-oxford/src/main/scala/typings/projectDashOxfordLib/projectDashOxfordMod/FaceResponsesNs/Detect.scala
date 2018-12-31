@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Detect extends js.Object {
   var attributes: Attributes
   var faceId: java.lang.String

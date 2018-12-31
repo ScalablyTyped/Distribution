@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Fog extends js.Object {
   var density: scala.Double
   var enabled: scala.Boolean

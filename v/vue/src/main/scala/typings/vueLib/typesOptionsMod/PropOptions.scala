@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PropOptions[T] extends js.Object {
   var default: js.UndefOr[T | scala.Null | (js.Function0[js.UndefOr[T | scala.Null]])] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IQueryOptions extends js.Object {
   var applicationSearchFilter: java.lang.String
   var dateStackOption: DateStackOption

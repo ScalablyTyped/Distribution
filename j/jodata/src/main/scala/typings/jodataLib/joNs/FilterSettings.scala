@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilterSettings extends ISettings {
   var CapturedFilter: js.Array[FilterClause]
   var DefaultFilters: js.Array[FilterClause]

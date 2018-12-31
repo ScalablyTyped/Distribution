@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColorPaletteOptions extends js.Object {
   var change: js.UndefOr[js.Function1[/* e */ ColorPaletteEvent, scala.Unit]] = js.undefined
   var columns: js.UndefOr[scala.Double] = js.undefined

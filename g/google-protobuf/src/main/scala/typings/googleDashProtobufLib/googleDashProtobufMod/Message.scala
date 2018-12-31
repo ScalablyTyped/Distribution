@@ -107,7 +107,7 @@ object Message extends js.Object {
     msg: googleDashProtobufLib.googleDashProtobufMod.Message,
     fieldNumber: scala.Double,
     noLazyCreate: scala.Boolean,
-    valueCtor: js.Object
+    valueCtor: org.scalablytyped.runtime.Instantiable0[googleDashProtobufLib.googleDashProtobufMod.Message]
   ): googleDashProtobufLib.googleDashProtobufMod.Map[_, _] = js.native
   def getOptionalFloatingPointField(msg: googleDashProtobufLib.googleDashProtobufMod.Message, fieldNumber: scala.Double): js.UndefOr[scala.Double] = js.native
   def getRepeatedFloatingPointField(msg: googleDashProtobufLib.googleDashProtobufMod.Message, fieldNumber: scala.Double): js.Array[scala.Double] = js.native
@@ -169,7 +169,10 @@ object Message extends js.Object {
     repeatedFields: js.Array[scala.Double],
     oneofFields: js.Array[js.Array[scala.Double]]
   ): scala.Unit = js.native
-  def registerMessageType(id: scala.Double, constructor: js.Object): scala.Unit = js.native
+  def registerMessageType(
+    id: scala.Double,
+    constructor: org.scalablytyped.runtime.Instantiable0[googleDashProtobufLib.googleDashProtobufMod.Message]
+  ): scala.Unit = js.native
   def serializeBinaryToWriter(
     message: googleDashProtobufLib.googleDashProtobufMod.Message,
     writer: googleDashProtobufLib.googleDashProtobufMod.BinaryWriter

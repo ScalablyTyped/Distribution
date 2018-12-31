@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigationTransition extends js.Object {
   var currentRawUrl: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree
   var currentRouterState: atAngularRouterLib.srcRouterUnderscoreStateMod.RouterState

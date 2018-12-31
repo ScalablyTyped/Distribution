@@ -26,17 +26,13 @@ object Model extends js.Object {
   def count(column: java.lang.String, options: bookshelfLib.bookshelfMod.BookshelfNs.SyncOptions): bluebirdLib.bluebirdMod.namespaced[scala.Double] = js.native
   /** @deprecated use Typescript classes */
   def extend[T /* <: bookshelfLib.bookshelfMod.BookshelfNs.Model[_] */](): js.Function = js.native
-  /** @deprecated use Typescript classes */
   def extend[T /* <: bookshelfLib.bookshelfMod.BookshelfNs.Model[_] */](prototypeProperties: js.Any): js.Function = js.native
-  /** @deprecated use Typescript classes */
   def extend[T /* <: bookshelfLib.bookshelfMod.BookshelfNs.Model[_] */](prototypeProperties: js.Any, classProperties: js.Any): js.Function = js.native
    // should return a type
   def fetchAll[T /* <: bookshelfLib.bookshelfMod.BookshelfNs.Model[_] */](): bluebirdLib.bluebirdMod.namespaced[bookshelfLib.bookshelfMod.BookshelfNs.Collection[T]] = js.native
   /** @deprecated should use `new` objects instead. */
   def forge[T](): T = js.native
-  /** @deprecated should use `new` objects instead. */
   def forge[T](attributes: js.Any): T = js.native
-  /** @deprecated should use `new` objects instead. */
   def forge[T](attributes: js.Any, options: bookshelfLib.bookshelfMod.BookshelfNs.ModelOptions): T = js.native
   def where[T](key: java.lang.String, operatorOrValue: java.lang.String): T = js.native
   def where[T](key: java.lang.String, operatorOrValue: java.lang.String, valueIfOperator: java.lang.String): T = js.native

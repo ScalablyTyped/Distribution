@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageResource extends js.Object {
   var density: js.UndefOr[java.lang.String] = js.undefined
   var dest: java.lang.String

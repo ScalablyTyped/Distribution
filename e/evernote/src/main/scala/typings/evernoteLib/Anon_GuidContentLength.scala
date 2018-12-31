@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_GuidContentLength extends js.Object {
   var attributes: js.UndefOr[evernoteLib.evernoteMod.EvernoteNs.NoteAttributes] = js.undefined
   var contentLength: js.UndefOr[scala.Double] = js.undefined

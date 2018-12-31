@@ -10,42 +10,42 @@ import scala.scalajs.js.annotation._
 class File protected ()
   extends p5Lib.p5Mod.p5Ns.File {
   /**
-       *   Base class for a file Using this for
-       *   createFileInput
-       *
-       *   @param file File that is wrapped
-       */
+    *   Base class for a file Using this for
+    *   createFileInput
+    *
+    *   @param file File that is wrapped
+    */
   def this(file: File) = this()
   /**
-       *   URL string containing image data.
-       */
+    *   URL string containing image data.
+    */
   /* CompleteClass */
   override var data: js.Any = js.native
   /**
-       *   Underlying File object. All normal File methods
-       *   can be called on this.
-       */
+    *   Underlying File object. All normal File methods
+    *   can be called on this.
+    */
   /* CompleteClass */
   override var file: js.Any = js.native
   /**
-       *   File name
-       */
+    *   File name
+    */
   /* CompleteClass */
   override var name: js.Any = js.native
   /**
-       *   File size
-       */
+    *   File size
+    */
   /* CompleteClass */
   override var size: js.Any = js.native
   /**
-       *   File subtype (usually the file extension jpg, png,
-       *   xml, etc.)
-       */
+    *   File subtype (usually the file extension jpg, png,
+    *   xml, etc.)
+    */
   /* CompleteClass */
   override var subtype: js.Any = js.native
   /**
-       *   File type (image, text, etc.)
-       */
+    *   File type (image, text, etc.)
+    */
   /* CompleteClass */
   override var `type`: js.Any = js.native
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UnderlyingSource[R] extends js.Object {
   var cancel: js.UndefOr[ReadableStreamErrorCallback] = js.undefined
   var pull: js.UndefOr[ReadableStreamDefaultControllerCallback[R]] = js.undefined

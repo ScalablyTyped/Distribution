@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Survey extends js.Object {
   /** Targeting-criteria message containing demographic information */
   var audience: js.UndefOr[SurveyAudience] = js.undefined
   /** Cost to run the survey and collect the necessary number of responses. */
   var cost: js.UndefOr[SurveyCost] = js.undefined
   /**
-               * Additional information to store on behalf of the API consumer and associate with this question. This binary blob is treated as opaque. This field is
-               * limited to 64K bytes.
-               */
+    * Additional information to store on behalf of the API consumer and associate with this question. This binary blob is treated as opaque. This field is
+    * limited to 64K bytes.
+    */
   var customerData: js.UndefOr[java.lang.String] = js.undefined
   /** Text description of the survey. */
   var description: js.UndefOr[java.lang.String] = js.undefined

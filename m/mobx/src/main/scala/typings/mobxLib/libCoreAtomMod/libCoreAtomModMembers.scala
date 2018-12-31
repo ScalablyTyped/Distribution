@@ -17,6 +17,6 @@ object libCoreAtomModMembers extends js.Object {
     onBecomeObservedHandler: js.Function0[scala.Unit],
     onBecomeUnobservedHandler: js.Function0[scala.Unit]
   ): IAtom = js.native
-  def isAtom(x: js.Any): /* is Atom */scala.Boolean = js.native
+  def isAtom(x: js.Any): /* is mobx.mobx/lib/core/atom.Atom */ scala.Boolean = js.native
 }
 

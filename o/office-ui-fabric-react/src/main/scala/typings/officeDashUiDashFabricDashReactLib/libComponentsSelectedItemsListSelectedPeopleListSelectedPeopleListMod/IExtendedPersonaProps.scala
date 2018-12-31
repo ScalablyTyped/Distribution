@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IExtendedPersonaProps
   extends officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaProps {
   var blockRecipientRemoval: js.UndefOr[scala.Boolean] = js.undefined

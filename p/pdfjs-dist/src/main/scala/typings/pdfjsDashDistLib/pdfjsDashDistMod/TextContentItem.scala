@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextContentItem extends js.Object {
   var dir: java.lang.String
    // Left-to-right (ltr), etc

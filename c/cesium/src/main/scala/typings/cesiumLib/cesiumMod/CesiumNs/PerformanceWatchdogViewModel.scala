@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PerformanceWatchdogViewModel extends js.Object {
   var dismissMessage: Command
   var lowFrameRateMessage: java.lang.String

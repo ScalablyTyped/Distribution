@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PrimitiveDefinition extends js.Object {
   var defaultComponents: js.UndefOr[js.Any] = js.undefined
    // TODO cleanup type

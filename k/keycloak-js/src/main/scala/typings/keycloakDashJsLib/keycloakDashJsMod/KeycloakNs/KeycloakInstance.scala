@@ -162,10 +162,6 @@ trait KeycloakInstance extends js.Object {
   		 * @param options Supports same options as Keycloak#login.
   		 */
   def createLoginUrl(): java.lang.String = js.native
-  /**
-  		 * Returns the URL to login form.
-  		 * @param options Supports same options as Keycloak#login.
-  		 */
   def createLoginUrl(options: KeycloakLoginOptions): java.lang.String = js.native
   /**
   		 * Returns the URL to logout the user.
@@ -173,11 +169,6 @@ trait KeycloakInstance extends js.Object {
   		 * @param options.redirectUri Specifies the uri to redirect to after logout.
   		 */
   def createLogoutUrl(): java.lang.String = js.native
-  /**
-  		 * Returns the URL to logout the user.
-  		 * @param options Logout options.
-  		 * @param options.redirectUri Specifies the uri to redirect to after logout.
-  		 */
   def createLogoutUrl(options: js.Any): java.lang.String = js.native
   /**
   		 * Returns the URL to registration page.
@@ -185,11 +176,6 @@ trait KeycloakInstance extends js.Object {
   		 *                `action` is set to `'register'`.
   		 */
   def createRegisterUrl(): java.lang.String = js.native
-  /**
-  		 * Returns the URL to registration page.
-  		 * @param options Supports same options as Keycloak#createLoginUrl but
-  		 *                `action` is set to `'register'`.
-  		 */
   def createRegisterUrl(options: KeycloakLoginOptions): java.lang.String = js.native
   /**
   		 * Returns true if the token has the given realm role.
@@ -202,11 +188,6 @@ trait KeycloakInstance extends js.Object {
   		 * @param resource If not specified, `clientId` is used.
   		 */
   def hasResourceRole(role: java.lang.String): scala.Boolean = js.native
-  /**
-  		 * Returns true if the token has the given role for the resource.
-  		 * @param role A role name.
-  		 * @param resource If not specified, `clientId` is used.
-  		 */
   def hasResourceRole(role: java.lang.String, resource: java.lang.String): scala.Boolean = js.native
   /**
   		 * Called to initialize the adapter.
@@ -220,11 +201,6 @@ trait KeycloakInstance extends js.Object {
   		 * @param minValidity If not specified, `0` is used.
   		 */
   def isTokenExpired(): scala.Boolean = js.native
-  /**
-  		 * Returns true if the token has less than `minValidity` seconds left before
-  		 * it expires.
-  		 * @param minValidity If not specified, `0` is used.
-  		 */
   def isTokenExpired(minValidity: scala.Double): scala.Boolean = js.native
   /**
   		 * @private Undocumented.
@@ -240,10 +216,6 @@ trait KeycloakInstance extends js.Object {
   		 * @param options Login options.
   		 */
   def login(): KeycloakPromise[scala.Unit, scala.Unit] = js.native
-  /**
-  		 * Redirects to login form.
-  		 * @param options Login options.
-  		 */
   def login(options: KeycloakLoginOptions): KeycloakPromise[scala.Unit, scala.Unit] = js.native
   /**
   		 * Redirects to logout.
@@ -251,11 +223,6 @@ trait KeycloakInstance extends js.Object {
   		 * @param options.redirectUri Specifies the uri to redirect to after logout.
   		 */
   def logout(): KeycloakPromise[scala.Unit, scala.Unit] = js.native
-  /**
-  		 * Redirects to logout.
-  		 * @param options Logout options.
-  		 * @param options.redirectUri Specifies the uri to redirect to after logout.
-  		 */
   def logout(options: js.Any): KeycloakPromise[scala.Unit, scala.Unit] = js.native
   /**
   		 * Redirects to registration form.
@@ -263,11 +230,6 @@ trait KeycloakInstance extends js.Object {
   		 *                set to `'register'`.
   		 */
   def register(): KeycloakPromise[scala.Unit, scala.Unit] = js.native
-  /**
-  		 * Redirects to registration form.
-  		 * @param options Supports same options as Keycloak#login but `action` is
-  		 *                set to `'register'`.
-  		 */
   def register(options: js.Any): KeycloakPromise[scala.Unit, scala.Unit] = js.native
   /**
   		 * If the token expires within `minValidity` seconds, the token is refreshed.

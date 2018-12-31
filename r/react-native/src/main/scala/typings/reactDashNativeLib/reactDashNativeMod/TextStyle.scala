@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(reactDashNativeLib.reactDashNativeMod.TextStyleAndroid because Would inherit conflicting mutable fields List(flexShrink, flex, minHeight, margin, flexBasis, borderBottomWidth, marginTop, marginHorizontal, marginLeft, overflow, flexDirection, alignItems, aspectRatio, bottom, alignContent, alignSelf, borderStartWidth, left, marginEnd, borderLeftWidth, paddingRight, height, borderWidth, borderTopWidth, borderEndWidth, direction, paddingTop, justifyContent, marginVertical, flexWrap, paddingStart, borderRightWidth, minWidth, marginBottom, paddingBottom, zIndex, marginRight, end, position, marginStart, paddingVertical, padding, start, paddingEnd, width, top, maxWidth, flexGrow, paddingLeft, maxHeight, paddingHorizontal, right, display, shadowOpacity, shadowColor, shadowOffset, shadowRadius, translateX, scaleY, transformMatrix, rotation, transform, scaleX, translateY, backgroundColor, borderTopStartRadius, borderTopRightRadius, borderBottomColor, borderTopEndRadius, borderRightColor, borderLeftColor, borderEndColor, borderBottomEndRadius, borderStartColor, borderRadius, borderBottomLeftRadius, testID, elevation, borderStyle, borderBottomStartRadius, backfaceVisibility, opacity, borderTopColor, borderTopLeftRadius, borderBottomRightRadius, borderColor))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(reactDashNativeLib.reactDashNativeMod.TextStyleAndroid because Would inherit conflicting mutable fields List(alignContent, alignItems, alignSelf, aspectRatio, backfaceVisibility, backgroundColor, borderBottomColor, borderBottomEndRadius, borderBottomLeftRadius, borderBottomRightRadius, borderBottomStartRadius, borderBottomWidth, borderColor, borderEndColor, borderEndWidth, borderLeftColor, borderLeftWidth, borderRadius, borderRightColor, borderRightWidth, borderStartColor, borderStartWidth, borderStyle, borderTopColor, borderTopEndRadius, borderTopLeftRadius, borderTopRightRadius, borderTopStartRadius, borderTopWidth, borderWidth, bottom, direction, display, elevation, end, flex, flexBasis, flexDirection, flexGrow, flexShrink, flexWrap, height, justifyContent, left, margin, marginBottom, marginEnd, marginHorizontal, marginLeft, marginRight, marginStart, marginTop, marginVertical, maxHeight, maxWidth, minHeight, minWidth, opacity, overflow, padding, paddingBottom, paddingEnd, paddingHorizontal, paddingLeft, paddingRight, paddingStart, paddingTop, paddingVertical, position, right, rotation, scaleX, scaleY, shadowColor, shadowOffset, shadowOpacity, shadowRadius, start, testID, top, transform, transformMatrix, translateX, translateY, width, zIndex))*/
 trait TextStyle extends TextStyleIOS {
   var color: js.UndefOr[java.lang.String] = js.undefined
   var fontFamily: js.UndefOr[java.lang.String] = js.undefined
@@ -15,10 +14,10 @@ trait TextStyle extends TextStyleIOS {
     reactDashNativeLib.reactDashNativeLibStrings.normal | reactDashNativeLib.reactDashNativeLibStrings.italic
   ] = js.undefined
   /**
-       * Specifies font weight. The values 'normal' and 'bold' are supported
-       * for most fonts. Not all fonts have a variant for each of the numeric
-       * values, in that case the closest one is chosen.
-       */
+    * Specifies font weight. The values 'normal' and 'bold' are supported
+    * for most fonts. Not all fonts have a variant for each of the numeric
+    * values, in that case the closest one is chosen.
+    */
   var fontWeight: js.UndefOr[
     reactDashNativeLib.reactDashNativeLibStrings.normal | reactDashNativeLib.reactDashNativeLibStrings.bold | reactDashNativeLib.reactDashNativeLibStrings.`100` | reactDashNativeLib.reactDashNativeLibStrings.`200` | reactDashNativeLib.reactDashNativeLibStrings.`300` | reactDashNativeLib.reactDashNativeLibStrings.`400` | reactDashNativeLib.reactDashNativeLibStrings.`500` | reactDashNativeLib.reactDashNativeLibStrings.`600` | reactDashNativeLib.reactDashNativeLibStrings.`700` | reactDashNativeLib.reactDashNativeLibStrings.`800` | reactDashNativeLib.reactDashNativeLibStrings.`900`
   ] = js.undefined

@@ -78,11 +78,9 @@ class IHTMLElement2 protected () extends js.Object {
   def replaceAdjacentText(where: java.lang.String, newText: java.lang.String): java.lang.String = js.native
   /** @param containerCapture [containerCapture=true] */
   def setCapture(): scala.Unit = js.native
-  /** @param containerCapture [containerCapture=true] */
   def setCapture(containerCapture: scala.Boolean): scala.Unit = js.native
   /** @param language [language=''] */
   def setExpression(propname: java.lang.String, expression: java.lang.String): scala.Unit = js.native
-  /** @param language [language=''] */
   def setExpression(propname: java.lang.String, expression: java.lang.String, language: java.lang.String): scala.Unit = js.native
 }
 

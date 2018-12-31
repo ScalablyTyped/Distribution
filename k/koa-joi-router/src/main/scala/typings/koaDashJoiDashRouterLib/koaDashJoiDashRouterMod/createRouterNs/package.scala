@@ -15,7 +15,7 @@ package object createRouterNs {
   type Method = js.Function3[
     /* path */ java.lang.String | stdLib.RegExp, 
     /* handlerOrConfig */ Handler | js.Object, 
-    /* repeated */Handler, 
+    /* repeated */ Handler, 
     Router
   ]
   type PartialHandler = js.Function1[/* ctx */ koaLib.koaMod.ApplicationNs.Context, js.Any]

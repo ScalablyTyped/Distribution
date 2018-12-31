@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompileDiDependencyMetadata extends js.Object {
   var isAttribute: js.UndefOr[scala.Boolean] = js.undefined
   var isHost: js.UndefOr[scala.Boolean] = js.undefined

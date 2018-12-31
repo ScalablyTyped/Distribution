@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Author extends js.Object {
   var ContentRootElement: java.lang.String
   var author: js.UndefOr[Anon_Name] = js.undefined

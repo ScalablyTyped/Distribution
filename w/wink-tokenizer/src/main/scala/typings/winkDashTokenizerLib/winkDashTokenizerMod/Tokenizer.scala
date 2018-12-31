@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Tokenizer extends js.Object {
   /**
   	 * Defines the configuration in terms of the types of token that will be extracted by tokenize() method.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IContextualMenuListProps extends js.Object {
   var hasCheckmarks: scala.Boolean
   var hasIcons: scala.Boolean

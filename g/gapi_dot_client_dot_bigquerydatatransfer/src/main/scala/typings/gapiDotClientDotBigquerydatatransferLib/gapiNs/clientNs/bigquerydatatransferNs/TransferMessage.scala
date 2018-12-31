@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransferMessage extends js.Object {
   /** Message text. */
   var messageText: js.UndefOr[java.lang.String] = js.undefined

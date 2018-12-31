@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StubbedContentSetting extends js.Object {
   var clear: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub
   var get: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub

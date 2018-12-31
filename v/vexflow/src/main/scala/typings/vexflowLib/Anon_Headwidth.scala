@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Headwidth extends js.Object {
   var code_head: js.UndefOr[java.lang.String] = js.undefined
   var dot_shiftY: scala.Double

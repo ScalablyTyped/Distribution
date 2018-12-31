@@ -12,9 +12,9 @@ abstract class TargetFileRequest () extends js.Object {
   /** Gets or sets the IStorageFile object that is provided to represent the file to save by the app that is providing the save location. */
   var targetFile: winrtDashUwpLib.WindowsNs.StorageNs.IStorageFile = js.native
   /**
-                       * Gets a targetFileRequestDeferral that the app providing the save location can use to respond asynchronously to a targetfilerequested event.
-                       * @return The targetFileRequestDeferral that the providing app can use asynchronously to indicate that it is finished responding to a targetfilerequested event.
-                       */
+    * Gets a targetFileRequestDeferral that the app providing the save location can use to respond asynchronously to a targetfilerequested event.
+    * @return The targetFileRequestDeferral that the providing app can use asynchronously to indicate that it is finished responding to a targetfilerequested event.
+    */
   def getDeferral(): TargetFileRequestDeferral = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClusterOptions extends js.Object {
   var clusterRetryStrategy: js.UndefOr[js.Function1[/* times */ scala.Double, scala.Double]] = js.undefined
   var enableOfflineQueue: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Layer extends js.Object {
   var filter: js.UndefOr[js.Array[_]] = js.undefined
   var id: java.lang.String

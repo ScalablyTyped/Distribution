@@ -12,15 +12,15 @@ sealed trait CloseAction extends js.Object
 @js.native
 object CloseAction extends js.Object {
   /**
-       * Don't restart the server. The connection stays closed.
-       */
+    * Don't restart the server. The connection stays closed.
+    */
   @js.native
   sealed trait DoNotRestart
     extends vscodeDashLanguageclientLib.libClientMod.CloseAction
   
   /**
-       * Restart the server.
-       */
+    * Restart the server.
+    */
   @js.native
   sealed trait Restart
     extends vscodeDashLanguageclientLib.libClientMod.CloseAction

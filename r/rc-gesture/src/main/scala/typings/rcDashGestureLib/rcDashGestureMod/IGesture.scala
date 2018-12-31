@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGesture extends js.Object {
   var direction: js.UndefOr[
     rcDashGestureLib.rcDashGestureLibStrings.all | rcDashGestureLib.rcDashGestureLibStrings.vertical | rcDashGestureLib.rcDashGestureLibStrings.horizontal

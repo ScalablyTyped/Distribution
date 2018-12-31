@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick, @material-ui/core.@material-ui/core.StandardProps) */ 
-trait InputBaseProps
+- Lifted 3 members from Set(std.Pick<react.react.HTMLAttributes<react.HTMLDivElement>, std.Exclude<keyof react.react.HTMLAttributes<react.HTMLDivElement>, 'classes' | 'onChange' | 'onKeyUp' | 'onKeyDown' | 'defaultValue'>>, @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLDivElement>, @material-ui/core.@material-ui/core/InputBase/InputBase.InputBaseClassKey, 'onChange' | 'onKeyUp' | 'onKeyDown' | 'defaultValue'>) */ trait InputBaseProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[InputBaseClassKey] {
   var autoComplete: js.UndefOr[java.lang.String] = js.undefined
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
@@ -29,13 +28,13 @@ trait InputBaseProps
   var multiline: js.UndefOr[scala.Boolean] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-     * `onChange`, `onKeyUp` + `onKeyDown` are applied to the inner `InputComponent`,
-     * which by default is an input or textarea. Since these handlers differ from the
-     * ones inherited by `React.HTMLAttributes<HTMLDivElement>` we need to omit them.
-     *
-     * Note that  `blur` and `focus` event handler are applied to the outter `<div>`.
-     * So these can just be inherited from the native `<div>`.
-     */
+    * `onChange`, `onKeyUp` + `onKeyDown` are applied to the inner `InputComponent`,
+    * which by default is an input or textarea. Since these handlers differ from the
+    * ones inherited by `React.HTMLAttributes<HTMLDivElement>` we need to omit them.
+    *
+    * Note that  `blur` and `focus` event handler are applied to the outer `<div>`.
+    * So these can just be inherited from the native `<div>`.
+    */
   var onChange: js.UndefOr[
     reactLib.reactMod.ReactNs.ChangeEventHandler[reactLib.HTMLTextAreaElement | reactLib.HTMLInputElement]
   ] = js.undefined

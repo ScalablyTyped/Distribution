@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DisabledAsDuplicateOfDefault extends js.Object {
   var disabled: scala.Double
   var disabledAsDuplicateOfDefault: scala.Double

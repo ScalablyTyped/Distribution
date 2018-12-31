@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AvailableEvents extends js.Object {
   var onConnectionSlow: java.lang.String
   var onDisconnect: java.lang.String

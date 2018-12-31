@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents the 3D model in a 3D Manufacturing Format (3MF) package. */
 @JSGlobal("Windows.Graphics.Printing3D.Printing3DModel")
 @js.native
+/** Creates an instance of the Printing3DModel class. */
 class Printing3DModel () extends js.Object {
   /** Gets or sets the root 3D Manufacturing Format (3MF) component. It represents the build plate on a 3D printer and defines what will be printed. */
   var build: Printing3DComponent = js.native
@@ -28,9 +29,9 @@ class Printing3DModel () extends js.Object {
   /** Gets or sets the version of the 3D Manufacturing Format (3MF) package. */
   var version: java.lang.String = js.native
   /**
-                   * Repairs the 3D model.
-                   * @return Results of the operation.
-                   */
+    * Repairs the 3D model.
+    * @return Results of the operation.
+    */
   def repairAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

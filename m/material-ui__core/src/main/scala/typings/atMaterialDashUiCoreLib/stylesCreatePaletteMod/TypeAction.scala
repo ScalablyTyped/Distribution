@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TypeAction extends js.Object {
   var active: java.lang.String
   var disabled: java.lang.String

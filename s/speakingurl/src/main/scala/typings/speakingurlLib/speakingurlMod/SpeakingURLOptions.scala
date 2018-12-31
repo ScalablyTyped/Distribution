@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpeakingURLOptions extends js.Object {
   var custom: js.UndefOr[js.Array[java.lang.String] | Dictionary[java.lang.String]] = js.undefined
   var lang: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined

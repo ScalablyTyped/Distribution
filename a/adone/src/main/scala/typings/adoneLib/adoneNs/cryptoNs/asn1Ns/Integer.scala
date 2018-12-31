@@ -11,20 +11,17 @@ class Integer ()
   extends BaseBlock[adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalIntegerValueBlock] {
   def this(params: adoneLib.adoneNs.cryptoNs.asn1Ns.INs.IntegerParams) = this()
   /**
-               * Convert current Integer value from DER to BER format
-               */
+    * Convert current Integer value from DER to BER format
+    */
   def convertFromDER(): Integer = js.native
   /**
-               * Convert current Integer value from BER into DER format
-               */
+    * Convert current Integer value from BER into DER format
+    */
   def convertToDER(): Integer = js.native
   /**
-               * Compare two Integer object, or Integer and ArrayBuffer objects
-               */
+    * Compare two Integer object, or Integer and ArrayBuffer objects
+    */
   def isEqual(otherValue: Integer): scala.Boolean = js.native
-  /**
-               * Compare two Integer object, or Integer and ArrayBuffer objects
-               */
   def isEqual(otherValue: stdLib.ArrayBuffer): scala.Boolean = js.native
 }
 

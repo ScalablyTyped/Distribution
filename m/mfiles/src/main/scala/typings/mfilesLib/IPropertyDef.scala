@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPropertyDef extends js.Object {
   var AccessControlList: IAccessControlList
   var AllObjectTypes: scala.Boolean

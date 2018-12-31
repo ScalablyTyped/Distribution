@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UIViewAnimData extends js.Object {
   @JSName("$$animLeave")
   var $$animLeave: atUirouterAngularjsLib.Anon_Resolve

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SimpleAddressType extends js.Object {
   /** The city or town for the address. */
   var city: js.UndefOr[java.lang.String] = js.undefined

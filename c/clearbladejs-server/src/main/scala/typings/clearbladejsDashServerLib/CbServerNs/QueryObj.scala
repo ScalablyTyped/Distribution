@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryObj extends js.Object {
   var OR: js.Array[Query]
   var URI: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Guid extends js.Object {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var attributes: js.UndefOr[evernoteLib.evernoteMod.EvernoteNs.NoteAttributes] = js.undefined

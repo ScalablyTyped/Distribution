@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // The page background fill.
-
 trait PagePropertiesPageBackgroundFill extends js.Object {
   // The kind of background fill.
   var kind: googleDashAppsDashScriptLib.Anon_Stretchedpicturefill

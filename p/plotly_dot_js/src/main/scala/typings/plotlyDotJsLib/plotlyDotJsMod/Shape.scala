@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Shape extends js.Object {
   var fillcolor: java.lang.String
   var layer: plotlyDotJsLib.plotlyDotJsLibStrings.below | plotlyDotJsLib.plotlyDotJsLibStrings.above

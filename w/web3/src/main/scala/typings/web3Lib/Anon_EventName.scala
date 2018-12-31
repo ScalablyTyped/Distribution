@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EventName
   extends /* eventName */ org.scalablytyped.runtime.StringDictionary[
       js.Function2[

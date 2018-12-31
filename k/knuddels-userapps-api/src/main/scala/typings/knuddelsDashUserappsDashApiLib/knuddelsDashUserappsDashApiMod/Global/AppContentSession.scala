@@ -31,9 +31,6 @@ class AppContentSession () extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/AppContentSession.html#method_sendEvent
   		 */
   def sendEvent(`type`: java.lang.String): scala.Unit = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/AppContentSession.html#method_sendEvent
-  		 */
   def sendEvent(
     `type`: java.lang.String,
     data: knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.KnuddelsEvent

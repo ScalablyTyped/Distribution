@@ -15,8 +15,8 @@ trait Context extends BaseContext {
   var request: Request = js.native
   var res: nodeLib.httpMod.ServerResponse = js.native
   /**
-           * To bypass Koa's built-in response handling, you may explicitly set `ctx.respond = false;`
-           */
+    * To bypass Koa's built-in response handling, you may explicitly set `ctx.respond = false;`
+    */
   var respond: js.UndefOr[scala.Boolean] = js.native
   var response: Response = js.native
   var state: js.Any = js.native

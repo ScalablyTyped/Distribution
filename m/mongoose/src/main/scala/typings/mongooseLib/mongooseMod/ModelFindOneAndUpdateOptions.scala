@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModelFindOneAndUpdateOptions extends ModelFindByIdAndUpdateOptions {
   /** Field selection. Equivalent to .select(fields).findOneAndUpdate() */
   var fields: js.UndefOr[js.Any | java.lang.String] = js.undefined

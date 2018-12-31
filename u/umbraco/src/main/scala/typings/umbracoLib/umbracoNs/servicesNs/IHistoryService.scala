@@ -6,25 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * @ngdoc service
-    * @name umbraco.services.historyService
-    *
-    * @requires $rootScope
-    * @requires $timeout
-    * @requires angularHelper
-    *
-    * @description
-    * Service to handle the main application navigation history. Responsible for keeping track
-    * of where a user navigates to, stores an icon, url and name in a collection, to make it easy
-    * for the user to go back to a previous editor / action
-    *
-    * **Note:** only works with new angular-based editors, not legacy ones
-    *
-    * ##usage
-    * To use, simply inject the historyService into any controller that needs it, and make
-    * sure the umbraco.services module is accesible - which it should be by default.
-    */
-
+  * @ngdoc service
+  * @name umbraco.services.historyService
+  *
+  * @requires $rootScope
+  * @requires $timeout
+  * @requires angularHelper
+  *
+  * @description
+  * Service to handle the main application navigation history. Responsible for keeping track
+  * of where a user navigates to, stores an icon, url and name in a collection, to make it easy
+  * for the user to go back to a previous editor / action
+  *
+  * **Note:** only works with new angular-based editors, not legacy ones
+  *
+  * ##usage
+  * To use, simply inject the historyService into any controller that needs it, and make
+  * sure the umbraco.services module is accesible - which it should be by default.
+  */
 trait IHistoryService extends js.Object {
   /**
   		* @ngdoc method
@@ -42,13 +41,13 @@ trait IHistoryService extends js.Object {
   		*/
   def add(item: IHistoryItem): IHistoryItem
   /**
-          * @ngdoc method
-          * @name umbraco.services.historyService#getCurrent
-          * @methodOf umbraco.services.historyService
-          *
-          * @description
-          * Method to return the current history collection.
-          */
+    * @ngdoc method
+    * @name umbraco.services.historyService#getCurrent
+    * @methodOf umbraco.services.historyService
+    *
+    * @description
+    * Method to return the current history collection.
+    */
   def getCurrent(): js.Array[IHistoryItem]
   /**
   		 * @ngdoc method
@@ -62,13 +61,13 @@ trait IHistoryService extends js.Object {
   		 */
   def remove(index: scala.Double): scala.Unit
   /**
-          * @ngdoc method
-          * @name umbraco.services.historyService#removeAll
-          * @methodOf umbraco.services.historyService
-          *
-          * @description
-          * Removes all history items from the users history collection
-          */
+    * @ngdoc method
+    * @name umbraco.services.historyService#removeAll
+    * @methodOf umbraco.services.historyService
+    *
+    * @description
+    * Removes all history items from the users history collection
+    */
   def removeAll(): scala.Unit
 }
 

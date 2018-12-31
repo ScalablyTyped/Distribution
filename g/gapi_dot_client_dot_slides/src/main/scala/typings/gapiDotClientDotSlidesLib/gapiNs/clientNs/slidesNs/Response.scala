@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Response extends js.Object {
   /** The result of creating an image. */
   var createImage: js.UndefOr[CreateImageResponse] = js.undefined
@@ -24,14 +23,14 @@ trait Response extends js.Object {
   /** The result of duplicating an object. */
   var duplicateObject: js.UndefOr[DuplicateObjectResponse] = js.undefined
   /**
-               * The result of replacing all shapes matching some criteria with an
-               * image.
-               */
+    * The result of replacing all shapes matching some criteria with an
+    * image.
+    */
   var replaceAllShapesWithImage: js.UndefOr[ReplaceAllShapesWithImageResponse] = js.undefined
   /**
-               * The result of replacing all shapes matching some criteria with a Google
-               * Sheets chart.
-               */
+    * The result of replacing all shapes matching some criteria with a Google
+    * Sheets chart.
+    */
   var replaceAllShapesWithSheetsChart: js.UndefOr[ReplaceAllShapesWithSheetsChartResponse] = js.undefined
   /** The result of replacing text. */
   var replaceAllText: js.UndefOr[ReplaceAllTextResponse] = js.undefined

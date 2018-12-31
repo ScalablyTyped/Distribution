@@ -16,7 +16,6 @@ class Filter () extends js.Object {
     width: scala.Double,
     height: scala.Double
   ): scala.Boolean = js.native
-  // methods
   def applyFilter(
     ctx: stdLib.CanvasRenderingContext2D,
     x: scala.Double,
@@ -25,7 +24,6 @@ class Filter () extends js.Object {
     height: scala.Double,
     targetCtx: stdLib.CanvasRenderingContext2D
   ): scala.Boolean = js.native
-  // methods
   def applyFilter(
     ctx: stdLib.CanvasRenderingContext2D,
     x: scala.Double,
@@ -35,7 +33,6 @@ class Filter () extends js.Object {
     targetCtx: stdLib.CanvasRenderingContext2D,
     targetX: scala.Double
   ): scala.Boolean = js.native
-  // methods
   def applyFilter(
     ctx: stdLib.CanvasRenderingContext2D,
     x: scala.Double,

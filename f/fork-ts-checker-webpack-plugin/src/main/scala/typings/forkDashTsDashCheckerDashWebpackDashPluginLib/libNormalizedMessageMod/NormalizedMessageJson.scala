@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NormalizedMessageJson extends js.Object {
   var character: js.UndefOr[scala.Double] = js.undefined
   var code: java.lang.String | scala.Double

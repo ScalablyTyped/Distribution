@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutocompleteOptions extends js.Object {
   var input: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
   var location: js.UndefOr[java.lang.String | Map | Point] = js.undefined

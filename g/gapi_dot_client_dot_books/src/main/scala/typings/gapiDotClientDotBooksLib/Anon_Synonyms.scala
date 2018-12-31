@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Synonyms extends js.Object {
   var conjugations: js.UndefOr[js.Array[Anon_TypeValue]] = js.undefined
   var definitions: js.UndefOr[js.Array[Anon_Definition]] = js.undefined

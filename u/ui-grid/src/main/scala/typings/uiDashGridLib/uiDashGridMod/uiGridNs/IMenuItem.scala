@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMenuItem extends js.Object {
   /** the method to call when the menu is clicked */
   var action: js.UndefOr[

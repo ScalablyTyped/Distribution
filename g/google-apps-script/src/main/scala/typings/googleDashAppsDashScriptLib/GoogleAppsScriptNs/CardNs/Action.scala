@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Action extends js.Object {
   def setFunctionName(functionName: java.lang.String): Action
   def setLoadIndicator(loadIndicator: LoadIndicator): Action

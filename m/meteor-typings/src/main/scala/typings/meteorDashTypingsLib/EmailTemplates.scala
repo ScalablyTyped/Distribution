@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EmailTemplates extends js.Object {
   var enrollAccount: EmailFields
   var from: java.lang.String

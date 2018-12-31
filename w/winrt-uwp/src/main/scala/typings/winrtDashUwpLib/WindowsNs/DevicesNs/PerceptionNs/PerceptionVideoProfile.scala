@@ -20,10 +20,10 @@ abstract class PerceptionVideoProfile () extends js.Object {
   /** Gets the frame width, in pixels. */
   var width: scala.Double = js.native
   /**
-                   * A comparison function used to determine if two IPerceptionVideoProfile objects are equivalent.
-                   * @param other The IPerceptionVideoProfile object to compare to this one.
-                   * @return True if the two video profiles are equivalent, otherwise false.
-                   */
+    * A comparison function used to determine if two IPerceptionVideoProfile objects are equivalent.
+    * @param other The IPerceptionVideoProfile object to compare to this one.
+    * @return True if the two video profiles are equivalent, otherwise false.
+    */
   def isEqual(other: PerceptionVideoProfile): scala.Boolean = js.native
 }
 

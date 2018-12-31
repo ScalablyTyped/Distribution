@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Provides info about a subject alternative name. */
 @JSGlobal("Windows.Security.Cryptography.Certificates.SubjectAlternativeNameInfo")
 @js.native
+/** Creates a new instance of the SubjectAlternativeNameInfo class. */
 class SubjectAlternativeNameInfo () extends js.Object {
   /** Gets the distinguished name. */
   var distinguishedName: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String] = js.native

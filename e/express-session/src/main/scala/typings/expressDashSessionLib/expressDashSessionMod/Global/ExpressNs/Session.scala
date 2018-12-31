@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Session extends SessionData {
   @JSName("cookie")
   var cookie_Session: SessionCookie

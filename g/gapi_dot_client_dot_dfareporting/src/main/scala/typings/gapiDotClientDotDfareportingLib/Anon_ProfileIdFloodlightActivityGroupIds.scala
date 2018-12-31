@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ProfileIdFloodlightActivityGroupIds extends js.Object {
   /**
-                   * Select only floodlight activities for the specified advertiser ID. Must specify either ids, advertiserId, or floodlightConfigurationId for a non-empty
-                   * result.
-                   */
+    * Select only floodlight activities for the specified advertiser ID. Must specify either ids, advertiserId, or floodlightConfigurationId for a non-empty
+    * result.
+    */
   var advertiserId: js.UndefOr[java.lang.String] = js.undefined
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -25,9 +24,9 @@ trait Anon_ProfileIdFloodlightActivityGroupIds extends js.Object {
   /** Select only floodlight activities with the specified floodlight activity group type. */
   var floodlightActivityGroupType: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Select only floodlight activities for the specified floodlight configuration ID. Must specify either ids, advertiserId, or floodlightConfigurationId
-                   * for a non-empty result.
-                   */
+    * Select only floodlight activities for the specified floodlight configuration ID. Must specify either ids, advertiserId, or floodlightConfigurationId
+    * for a non-empty result.
+    */
   var floodlightConfigurationId: js.UndefOr[java.lang.String] = js.undefined
   /** Select only floodlight activities with the specified IDs. Must specify either ids, advertiserId, or floodlightConfigurationId for a non-empty result. */
   var ids: js.UndefOr[java.lang.String] = js.undefined
@@ -44,16 +43,16 @@ trait Anon_ProfileIdFloodlightActivityGroupIds extends js.Object {
   /** User profile ID associated with this request. */
   var profileId: java.lang.String
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Allows searching for objects by name or ID. Wildcards (&#42;) are allowed. For example, "floodlightactivity&#42;2015" will return objects with names like
-                   * "floodlightactivity June 2015", "floodlightactivity April 2015", or simply "floodlightactivity 2015". Most of the searches also add wildcards
-                   * implicitly at the start and the end of the search string. For example, a search string of "floodlightactivity" will match objects with name "my
-                   * floodlightactivity activity", "floodlightactivity 2015", or simply "floodlightactivity".
-                   */
+    * Allows searching for objects by name or ID. Wildcards (&#42;) are allowed. For example, "floodlightactivity&#42;2015" will return objects with names like
+    * "floodlightactivity June 2015", "floodlightactivity April 2015", or simply "floodlightactivity 2015". Most of the searches also add wildcards
+    * implicitly at the start and the end of the search string. For example, a search string of "floodlightactivity" will match objects with name "my
+    * floodlightactivity activity", "floodlightactivity 2015", or simply "floodlightactivity".
+    */
   var searchString: js.UndefOr[java.lang.String] = js.undefined
   /** Field by which to sort the list. */
   var sortField: js.UndefOr[java.lang.String] = js.undefined

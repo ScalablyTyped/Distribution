@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeatmapPaint extends js.Object {
   var `heatmap-color`: js.UndefOr[java.lang.String | StyleFunction | Expression] = js.undefined
   var `heatmap-intensity`: js.UndefOr[scala.Double | StyleFunction | Expression] = js.undefined

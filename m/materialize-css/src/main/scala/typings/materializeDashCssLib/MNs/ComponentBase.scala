@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 abstract class ComponentBase[TOptions] () extends js.Object {
   def this(options: stdLib.Partial[TOptions]) = this()
   /**
-           * The DOM element the plugin was initialized with
-           */
+    * The DOM element the plugin was initialized with
+    */
   var el: stdLib.Element = js.native
   /**
-           * The options the instance was initialized with
-           */
+    * The options the instance was initialized with
+    */
   var options: TOptions = js.native
 }
 

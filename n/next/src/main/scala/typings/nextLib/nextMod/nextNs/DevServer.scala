@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Next.js dev server instance API.
-     */
+  * Next.js dev server instance API.
+  */
 @js.native
 trait DevServer
   extends nextDashServerLib.nextDashServerMod.nextNs.Server {

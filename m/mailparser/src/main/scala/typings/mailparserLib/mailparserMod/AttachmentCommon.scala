@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * COmmon part of the Attachment object.
- */
-
+  * COmmon part of the Attachment object.
+  */
 trait AttachmentCommon extends js.Object {
   /**
   	 * A MD5 hash of the message content.

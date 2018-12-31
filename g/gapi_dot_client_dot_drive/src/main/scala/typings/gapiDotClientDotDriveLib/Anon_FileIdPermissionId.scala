@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FileIdPermissionId extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -22,16 +21,16 @@ trait Anon_FileIdPermissionId extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** Whether the requesting application supports Team Drives. */
   var supportsTeamDrives: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Whether the request should be treated as if it was issued by a domain administrator; if set to true, then the requester will be granted access if they
-                   * are an administrator of the domain to which the item belongs.
-                   */
+    * Whether the request should be treated as if it was issued by a domain administrator; if set to true, then the requester will be granted access if they
+    * are an administrator of the domain to which the item belongs.
+    */
   var useDomainAdminAccess: js.UndefOr[scala.Boolean] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[java.lang.String] = js.undefined

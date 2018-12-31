@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Apk extends js.Object {
   /** Information about the binary payload of this APK. */
   var binary: js.UndefOr[ApkBinary] = js.undefined

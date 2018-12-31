@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeclareModuleExports extends BaseNode {
   var typeAnnotation: TypeAnnotation
   @JSName("type")

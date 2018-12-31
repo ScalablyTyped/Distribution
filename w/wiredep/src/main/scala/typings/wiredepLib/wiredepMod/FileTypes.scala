@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileTypes extends js.Object {
   var fileExtension: wiredepLib.Anon_BlockReplaceDetect
   // defaults:

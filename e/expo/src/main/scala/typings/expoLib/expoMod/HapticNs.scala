@@ -19,8 +19,8 @@ object HapticNs extends js.Object {
   def notification(): scala.Unit = js.native
   def notification(notificationType: NotificationType): scala.Unit = js.native
   /**
-     * Used to let a user know when a selection change has been registered
-     */
+    * Used to let a user know when a selection change has been registered
+    */
   def selection(): scala.Unit = js.native
   @js.native
   object ImpactStyles extends js.Object {

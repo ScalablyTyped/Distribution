@@ -16,9 +16,9 @@ class default () extends OtherPrimeInfo {
   /* CompleteClass */
   override var prime: asn1jsLib.asn1jsMod.Integer = js.native
   /**
-           * Convert JSON value into current object
-           * @param {JsonOtherPrimeInfo} json
-           */
+    * Convert JSON value into current object
+    * @param {JsonOtherPrimeInfo} json
+    */
   /* CompleteClass */
   override def fromJSON(json: pkijsLib.JsonOtherPrimeInfo): scala.Unit = js.native
   /* CompleteClass */

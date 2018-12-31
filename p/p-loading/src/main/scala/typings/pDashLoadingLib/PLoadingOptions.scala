@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PLoadingOptions extends js.Object {
   var action: js.UndefOr[
     pDashLoadingLib.pDashLoadingLibStrings.show | pDashLoadingLib.pDashLoadingLibStrings.hide | pDashLoadingLib.pDashLoadingLibStrings.destroy
@@ -18,16 +17,16 @@ trait PLoadingOptions extends js.Object {
   var idPrefix: js.UndefOr[java.lang.String] = js.undefined
   var maskColor: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * @deprecated
-       */
+    * @deprecated
+    */
   var onDestroyContainer: js.UndefOr[js.Function1[/* $container */ JQuery, scala.Unit]] = js.undefined
   /**
-       * @deprecated
-       */
+    * @deprecated
+    */
   var onHideContainer: js.UndefOr[js.Function2[/* $pluginElement */ JQuery, /* $container */ JQuery, scala.Unit]] = js.undefined
   /**
-       * @deprecated
-       */
+    * @deprecated
+    */
   var onShowContainer: js.UndefOr[js.Function2[/* $pluginElement */ JQuery, /* $container */ JQuery, scala.Unit]] = js.undefined
   var pluginNameSpace: js.UndefOr[java.lang.String] = js.undefined
   var showAnimation: js.UndefOr[js.Function1[/* $container */ JQuery, scala.Unit]] = js.undefined

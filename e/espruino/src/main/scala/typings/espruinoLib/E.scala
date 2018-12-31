@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait E
   extends /**
-     * 
-     * @return  
-     */
+  * 
+  * @return  
+  */
 org.scalablytyped.runtime.Instantiable0[E]
 

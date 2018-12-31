@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IContext
   extends extjsLib.ExtNs.IBase {
   /** [Method] Flushes any pending writes to the DOM by calling each ContextItem in the flushQueue  */

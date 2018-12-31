@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RalLogger extends js.Object {
   def debug(param: js.Any*): scala.Unit
   def fatal(param: js.Any*): scala.Unit

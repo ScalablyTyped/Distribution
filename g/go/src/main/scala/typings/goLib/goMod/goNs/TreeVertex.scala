@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This holds TreeLayout-specific information about Nodes.*/
-
 trait TreeVertex extends LayoutVertex {
   /**Gets or sets how this parent node should be aligned relative to its children.*/
   var alignment: EnumValue
@@ -71,9 +70,9 @@ trait TreeVertex extends LayoutVertex {
   /**Gets or sets how the children should be sorted.*/
   def comparer(a: TreeVertex, b: TreeVertex): scala.Double
   /**
-          * Copy inherited properties from another TreeVertex to this one.
-          * @param {TreeVertex} copy
-          */
+    * Copy inherited properties from another TreeVertex to this one.
+    * @param {TreeVertex} copy
+    */
   def copyInheritedPropertiesFrom(copy: TreeVertex): scala.Unit
 }
 

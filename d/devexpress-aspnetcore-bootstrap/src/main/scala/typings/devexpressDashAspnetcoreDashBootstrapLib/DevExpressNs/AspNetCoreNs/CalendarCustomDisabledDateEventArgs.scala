@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CalendarCustomDisabledDateEventArgs extends EventArgs {
   val date: stdLib.Date
   var isDisabled: scala.Boolean

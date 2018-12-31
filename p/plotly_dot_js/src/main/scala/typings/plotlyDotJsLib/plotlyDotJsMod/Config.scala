@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Config extends js.Object {
   /** DO autosize once regardless of layout.autosize (use default width or height values otherwise) */
   var autosizable: scala.Boolean

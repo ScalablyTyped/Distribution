@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountstatusesCustomBatchRequest extends js.Object {
   /** The request entries to be processed in the batch. */
   var entries: js.UndefOr[js.Array[AccountstatusesCustomBatchRequestEntry]] = js.undefined

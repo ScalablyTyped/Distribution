@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AltId extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -17,10 +16,10 @@ trait Anon_AltId extends js.Object {
   /** Data format for response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Filter Avails that match a case-insensitive, partner-specific custom id.
-                   * NOTE: this field is deprecated and will be removed on V2; `alt_ids`
-                   * should be used instead.
-                   */
+    * Filter Avails that match a case-insensitive, partner-specific custom id.
+    * NOTE: this field is deprecated and will be removed on V2; `alt_ids`
+    * should be used instead.
+    */
   var altId: js.UndefOr[java.lang.String] = js.undefined
   /** Filter Avails that match (case-insensitive) any of the given partner-specific custom ids. */
   var altIds: js.UndefOr[java.lang.String] = js.undefined
@@ -49,16 +48,16 @@ trait Anon_AltId extends js.Object {
   /** See _List methods rules_ for info about this field. */
   var studioNames: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Filter Avails that match (case-insensitive) any of the given country codes,
-                   * using the "ISO 3166-1 alpha-2" format (examples: "US", "us", "Us").
-                   */
+    * Filter Avails that match (case-insensitive) any of the given country codes,
+    * using the "ISO 3166-1 alpha-2" format (examples: "US", "us", "Us").
+    */
   var territories: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Filter that matches Avails with a `title_internal_alias`,
-                   * `series_title_internal_alias`, `season_title_internal_alias`,
-                   * or `episode_title_internal_alias` that contains the given
-                   * case-insensitive title.
-                   */
+    * Filter that matches Avails with a `title_internal_alias`,
+    * `series_title_internal_alias`, `season_title_internal_alias`,
+    * or `episode_title_internal_alias` that contains the given
+    * case-insensitive title.
+    */
   var title: js.UndefOr[java.lang.String] = js.undefined
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

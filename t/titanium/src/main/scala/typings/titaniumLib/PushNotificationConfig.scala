@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object for specifying push notification options to
- * [registerForPushNotifications](Titanium.Network.registerForPushNotifications).
- */
-
+  * Simple object for specifying push notification options to
+  * [registerForPushNotifications](Titanium.Network.registerForPushNotifications).
+  */
 trait PushNotificationConfig extends js.Object {
   /**
   	 * Callback function invoked upon receiving a new push notification.

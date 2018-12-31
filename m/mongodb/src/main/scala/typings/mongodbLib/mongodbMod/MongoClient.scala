@@ -21,13 +21,10 @@ class MongoClient protected ()
   def connect(callback: MongoCallback[MongoClient]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#db */
   def db(): Db = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#db */
   def db(dbName: java.lang.String): Db = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#db */
   def db(dbName: java.lang.String, options: MongoClientCommonOption): Db = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#isConnected */
   def isConnected(): scala.Boolean = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#isConnected */
   def isConnected(options: MongoClientCommonOption): scala.Boolean = js.native
   def logout(): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#logout */
@@ -36,13 +33,10 @@ class MongoClient protected ()
   def logout(options: mongodbLib.Anon_DbName, callback: MongoCallback[_]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#startSession */
   def startSession(): ClientSession = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#startSession */
   def startSession(options: SessionOptions): ClientSession = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#watch */
   def watch(): ChangeStream = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#watch */
   def watch(pipeline: js.Array[js.Object]): ChangeStream = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#watch */
   def watch(
     pipeline: js.Array[js.Object],
     options: ChangeStreamOptions with mongodbLib.Anon_SessionStartAtClusterTime

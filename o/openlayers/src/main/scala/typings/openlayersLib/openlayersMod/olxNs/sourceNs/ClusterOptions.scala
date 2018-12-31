@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClusterOptions extends js.Object {
   var attributions: js.UndefOr[openlayersLib.openlayersMod.AttributionLike] = js.undefined
   var distance: js.UndefOr[scala.Double] = js.undefined

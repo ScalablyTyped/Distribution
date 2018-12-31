@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBar
   extends senchaUnderscoreTouchLib.ExtNs.ITitleBar {
   /** [Config Option] (Boolean) */

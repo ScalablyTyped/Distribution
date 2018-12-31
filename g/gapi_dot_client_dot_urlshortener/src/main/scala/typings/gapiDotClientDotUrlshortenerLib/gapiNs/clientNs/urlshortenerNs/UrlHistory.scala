@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UrlHistory extends js.Object {
   /** A list of URL resources. */
   var items: js.UndefOr[js.Array[Url]] = js.undefined

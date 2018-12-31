@@ -539,7 +539,6 @@ trait WebGL2RenderingContext
    //[WebGLHandlesContextLoss]
   def beginQuery(target: scala.Double, query: WebGLQuery): scala.Unit = js.native
   def beginTransformFeedback(primitiveMode: scala.Double): scala.Unit = js.native
-  /* Uniform Buffer Objects and Transform Feedback Buffers */
   def bindBufferBase(target: scala.Double, index: scala.Double): scala.Unit = js.native
   /* Uniform Buffer Objects and Transform Feedback Buffers */
   def bindBufferBase(target: scala.Double, index: scala.Double, buffer: stdLib.WebGLBuffer): scala.Unit = js.native
@@ -557,15 +556,12 @@ trait WebGL2RenderingContext
     offset: scala.Double,
     size: scala.Double
   ): scala.Unit = js.native
-   //[WebGLHandlesContextLoss]
   def bindSampler(unit: scala.Double): scala.Unit = js.native
    //[WebGLHandlesContextLoss]
   def bindSampler(unit: scala.Double, sampler: WebGLSampler): scala.Unit = js.native
-   //[WebGLHandlesContextLoss]
   def bindTransformFeedback(target: scala.Double): scala.Unit = js.native
    //[WebGLHandlesContextLoss]
   def bindTransformFeedback(target: scala.Double, tf: WebGLTransformFeedback): scala.Unit = js.native
-   //[WebGLHandlesContextLoss]
   def bindVertexArray(): scala.Unit = js.native
    //[WebGLHandlesContextLoss]
   def bindVertexArray(array: WebGLVertexArrayObject): scala.Unit = js.native
@@ -591,7 +587,6 @@ trait WebGL2RenderingContext
     usage: scala.Double,
     srcOffset: scala.Double
   ): scala.Unit = js.native
-  // WebGL2:
   def bufferData(
     target: scala.Double,
     srcData: stdLib.Int8Array | stdLib.Int16Array | stdLib.Int32Array | stdLib.Uint8Array | stdLib.Uint16Array | stdLib.Uint32Array | stdLib.Uint8ClampedArray | stdLib.Float32Array | stdLib.Float64Array | stdLib.DataView | stdLib.ArrayBuffer | scala.Null,
@@ -701,7 +696,6 @@ trait WebGL2RenderingContext
     srcOffset: scala.Double,
     srcLengthOverride: scala.Double
   ): scala.Unit = js.native
-  // For compatibility with WebGL 1 context in older Typescript versions.
   def compressedTexImage2D(
     target: scala.Double,
     level: scala.Double,
@@ -712,7 +706,6 @@ trait WebGL2RenderingContext
     srcData: stdLib.ArrayBufferView,
     srcOffset: scala.Double
   ): scala.Unit = js.native
-  // For compatibility with WebGL 1 context in older Typescript versions.
   def compressedTexImage2D(
     target: scala.Double,
     level: scala.Double,
@@ -821,7 +814,6 @@ trait WebGL2RenderingContext
     srcOffset: scala.Double,
     srcLengthOverride: scala.Double
   ): scala.Unit = js.native
-  // For compatibility with WebGL 1 context in older Typescript versions.
   def compressedTexSubImage2D(
     target: scala.Double,
     level: scala.Double,
@@ -833,7 +825,6 @@ trait WebGL2RenderingContext
     srcData: scala.Null,
     srcOffset: scala.Double
   ): scala.Unit = js.native
-  // For compatibility with WebGL 1 context in older Typescript versions.
   def compressedTexSubImage2D(
     target: scala.Double,
     level: scala.Double,
@@ -846,7 +837,6 @@ trait WebGL2RenderingContext
     srcOffset: scala.Double,
     srcLengthOverride: scala.Double
   ): scala.Unit = js.native
-  // For compatibility with WebGL 1 context in older Typescript versions.
   def compressedTexSubImage2D(
     target: scala.Double,
     level: scala.Double,
@@ -858,7 +848,6 @@ trait WebGL2RenderingContext
     srcData: stdLib.ArrayBufferView,
     srcOffset: scala.Double
   ): scala.Unit = js.native
-  // For compatibility with WebGL 1 context in older Typescript versions.
   def compressedTexSubImage2D(
     target: scala.Double,
     level: scala.Double,
@@ -953,7 +942,6 @@ trait WebGL2RenderingContext
   def deleteQuery(query: WebGLQuery): scala.Unit = js.native
   def deleteSampler(): scala.Unit = js.native
   def deleteSampler(sampler: WebGLSampler): scala.Unit = js.native
-   //[WebGLHandlesContextLoss]
   def deleteSync(): scala.Unit = js.native
    //[WebGLHandlesContextLoss]
   def deleteSync(sync: WebGLSync): scala.Unit = js.native
@@ -1004,18 +992,12 @@ trait WebGL2RenderingContext
   // can not be exposed safely to JavaScript. GetBufferSubData
   // replaces it for the purpose of fetching data back from the GPU.
   def getBufferSubData(target: scala.Double, srcByteOffset: scala.Double, dstBuffer: stdLib.ArrayBufferView): scala.Unit = js.native
-  // MapBufferRange, in particular its read-only and write-only modes,
-  // can not be exposed safely to JavaScript. GetBufferSubData
-  // replaces it for the purpose of fetching data back from the GPU.
   def getBufferSubData(
     target: scala.Double,
     srcByteOffset: scala.Double,
     dstBuffer: stdLib.ArrayBufferView,
     dstOffset: scala.Double
   ): scala.Unit = js.native
-  // MapBufferRange, in particular its read-only and write-only modes,
-  // can not be exposed safely to JavaScript. GetBufferSubData
-  // replaces it for the purpose of fetching data back from the GPU.
   def getBufferSubData(
     target: scala.Double,
     srcByteOffset: scala.Double,
@@ -1056,8 +1038,6 @@ trait WebGL2RenderingContext
   def isVertexArray(vertexArray: WebGLVertexArrayObject): scala.Boolean = js.native
   def pauseTransformFeedback(): scala.Unit = js.native
   def readBuffer(src: scala.Double): scala.Unit = js.native
-  /* Reading back pixels */
-  // WebGL1:
   def readPixels(
     x: scala.Double,
     y: scala.Double,
@@ -1219,7 +1199,6 @@ trait WebGL2RenderingContext
     srcData: stdLib.ArrayBufferView,
     srcOffset: scala.Double
   ): scala.Unit = js.native
-   // May throw DOMException
   def texImage3D(
     target: scala.Double,
     level: scala.Double,
@@ -1470,7 +1449,6 @@ trait WebGL2RenderingContext
     srcData: stdLib.ArrayBufferView,
     srcOffset: scala.Double
   ): scala.Unit = js.native
-   // May throw DOMException
   def texSubImage3D(
     target: scala.Double,
     level: scala.Double,
@@ -1561,7 +1539,6 @@ trait WebGL2RenderingContext
     `type`: scala.Double,
     source: ImageBitmap
   ): scala.Unit = js.native
-   // May throw DOMException
   def texSubImage3D(
     target: scala.Double,
     level: scala.Double,
@@ -1590,7 +1567,6 @@ trait WebGL2RenderingContext
     `type`: scala.Double,
     srcData: stdLib.ArrayBufferView
   ): scala.Unit = js.native
-   // May throw DOMException
   def texSubImage3D(
     target: scala.Double,
     level: scala.Double,
@@ -1668,7 +1644,6 @@ trait WebGL2RenderingContext
     srcOffset: scala.Double,
     srcLength: scala.Double
   ): scala.Unit = js.native
-  /* Uniforms */
   def uniform1ui(location: scala.Null, v0: scala.Double): scala.Unit = js.native
   /* Uniforms */
   def uniform1ui(location: stdLib.WebGLUniformLocation, v0: scala.Double): scala.Unit = js.native

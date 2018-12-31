@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IndexDescription[T] extends js.Object {
   var deduplicate: js.UndefOr[scala.Boolean] = js.undefined
   var fields: js.Array[java.lang.String]

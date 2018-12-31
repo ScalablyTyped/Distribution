@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISegmenter
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Add step units to the value

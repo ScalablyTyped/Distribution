@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Schema extends js.Object {
   def addFieldType(`type`: AposType): scala.Unit
   def addFilters(schema: Schema, options: js.Any, cursor: js.Any): scala.Unit

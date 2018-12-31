@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProjectionDefinition extends js.Object {
   var R_A: js.UndefOr[proj4Lib.proj4LibNumbers.`true`] = js.undefined
   var a: js.UndefOr[scala.Double] = js.undefined

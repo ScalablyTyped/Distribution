@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object HeapProfilerNs {
   /**
-           * Heap snapshot object id.
-           */
+    * Heap snapshot object id.
+    */
   type HeapSnapshotObjectId = java.lang.String
 }

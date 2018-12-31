@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 ////////////////////////////////////////////////////////////
 // Filters
 ////////////////////////////////////////////////////////////
-
 trait IAllFilters extends js.Object {
   var BaseFilter: fabricLib.Anon_OptionsIBaseFilter
   var Blend: fabricLib.Anon_OptionsFromObjectObjectIBlendFilter

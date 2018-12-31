@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // interfaces
-
 trait ClusterSettings extends js.Object {
   var args: js.UndefOr[js.Array[java.lang.String]] = js.undefined
    // default: process.execArgv

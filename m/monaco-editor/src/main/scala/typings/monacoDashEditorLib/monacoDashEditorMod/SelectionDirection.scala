@@ -12,15 +12,15 @@ sealed trait SelectionDirection extends js.Object
 @js.native
 object SelectionDirection extends js.Object {
   /**
-       * The selection starts above where it ends.
-       */
+    * The selection starts above where it ends.
+    */
   @js.native
   sealed trait LTR
     extends monacoDashEditorLib.monacoDashEditorMod.SelectionDirection
   
   /**
-       * The selection starts below where it ends.
-       */
+    * The selection starts below where it ends.
+    */
   @js.native
   sealed trait RTL
     extends monacoDashEditorLib.monacoDashEditorMod.SelectionDirection

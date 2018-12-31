@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INumeric extends IAxis {
   /** [Method] Returns the value of aggregator
   		* @returns String

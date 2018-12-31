@@ -18,9 +18,9 @@ object preludeDashLsMod extends js.Object {
   def any[A](f: js.Function1[/* x */ A, scala.Boolean]): js.Function1[/* xs */ js.Array[A], scala.Boolean] = js.native
   def any[A](f: js.Function1[/* x */ A, scala.Boolean], xs: js.Array[A]): scala.Boolean = js.native
   @JSName("apply")
-  def apply[A, B](f: js.Function1[/* repeated */A, B]): js.Function1[/* args */ js.Array[A], B] = js.native
+  def apply[A, B](f: js.Function1[/* repeated */ A, B]): js.Function1[/* args */ js.Array[A], B] = js.native
   @JSName("apply")
-  def apply[A, B](f: js.Function1[/* repeated */A, B], args: js.Array[A]): B = js.native
+  def apply[A, B](f: js.Function1[/* repeated */ A, B], args: js.Array[A]): B = js.native
   def asin(x: scala.Double): scala.Double = js.native
   def at[A](n: scala.Double): js.Function1[/* xs */ js.Array[A], A] = js.native
   def at[A](n: scala.Double, xs: js.Array[A]): A = js.native
@@ -274,7 +274,7 @@ object preludeDashLsMod extends js.Object {
   def zip[A, B](xs: js.Array[A]): js.Function1[/* ys */ js.Array[B], js.Array[js.Tuple2[A, B]]] = js.native
   def zip[A, B](xs: js.Array[A], ys: js.Array[B]): js.Array[js.Tuple2[A, B]] = js.native
   def zipAll[A](xss: js.Array[A]*): js.Array[js.Array[A]] = js.native
-  def zipAllWith[A, B](f: js.Function1[/* repeated */A, B], xss: js.Array[A]*): js.Array[B] = js.native
+  def zipAllWith[A, B](f: js.Function1[/* repeated */ A, B], xss: js.Array[A]*): js.Array[B] = js.native
   def zipWith[A, B, C](f: js.Function1[/* x */ A, js.Function1[/* y */ B, C]]): js.Function1[/* xs */ js.Array[A], js.Function1[/* ys */ js.Array[B], js.Array[C]]] = js.native
   def zipWith[A, B, C](f: js.Function1[/* x */ A, js.Function1[/* y */ B, C]], xs: js.Array[A]): js.Function1[/* ys */ js.Array[B], js.Array[C]] = js.native
   def zipWith[A, B, C](f: js.Function1[/* x */ A, js.Function1[/* y */ B, C]], xs: js.Array[A], ys: js.Array[B]): js.Array[C] = js.native

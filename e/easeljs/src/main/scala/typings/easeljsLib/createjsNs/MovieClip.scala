@@ -29,17 +29,16 @@ class MovieClip () extends Container {
   var totalFrames: scala.Double = js.native
   // methods
   def advance(): scala.Unit = js.native
-  // methods
   def advance(time: scala.Double): scala.Unit = js.native
    // not supported
   /**
-           * @deprecated - use 'currentLabel' property instead
-           */
+    * @deprecated - use 'currentLabel' property instead
+    */
   def getCurrentLabel(): java.lang.String = js.native
     // deprecated
   /**
-           * @deprecated - use 'labels' property instead
-           */
+    * @deprecated - use 'labels' property instead
+    */
   def getLabels(): js.Array[js.Object] = js.native
   def gotoAndPlay(positionOrLabel: java.lang.String): scala.Unit = js.native
   def gotoAndPlay(positionOrLabel: scala.Double): scala.Unit = js.native

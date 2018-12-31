@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // According to http://docs.parseplatform.org/rest/guide/#aggregate-queries
-
 trait AggregationOptions extends js.Object {
   var group: js.UndefOr[parseLib.Anon_Key] = js.undefined
   var limit: js.UndefOr[scala.Double] = js.undefined

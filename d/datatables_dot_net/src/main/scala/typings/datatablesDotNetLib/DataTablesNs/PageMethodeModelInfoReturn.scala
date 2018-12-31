@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PageMethodeModelInfoReturn extends js.Object {
   var end: scala.Double
   var length: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatafeedStatusError extends js.Object {
   /** The code of the error, e.g., "validation/invalid_value". */
   var code: js.UndefOr[java.lang.String] = js.undefined

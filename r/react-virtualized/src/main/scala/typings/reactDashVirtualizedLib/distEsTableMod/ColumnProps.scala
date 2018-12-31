@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnProps extends js.Object {
   /** Optional aria-label value to set on the column header */
   var `aria-label`: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Callback responsible for returning a cell's data, given its :dataKey
-       * ({ columnData: any, dataKey: string, rowData: any }): any
-       */
+    * Callback responsible for returning a cell's data, given its :dataKey
+    * ({ columnData: any, dataKey: string, rowData: any }): any
+    */
   var cellDataGetter: js.UndefOr[TableCellDataGetter] = js.undefined
   /**
-       * Callback responsible for rendering a cell's contents.
-       * ({ cellData: any, columnData: any, dataKey: string, rowData: any, rowIndex: number }): node
-       */
+    * Callback responsible for rendering a cell's contents.
+    * ({ cellData: any, columnData: any, dataKey: string, rowData: any, rowIndex: number }): node
+    */
   var cellRenderer: js.UndefOr[TableCellRenderer] = js.undefined
   /** Optional CSS class to apply to cell */
   var className: js.UndefOr[java.lang.String] = js.undefined
@@ -36,9 +35,9 @@ trait ColumnProps extends js.Object {
   /** Optional CSS class to apply to this column's header */
   var headerClassName: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Optional callback responsible for rendering a column header contents.
-       * ({ columnData: object, dataKey: string, disableSort: boolean, label: string, sortBy: string, sortDirection: string }): PropTypes.node
-       */
+    * Optional callback responsible for rendering a column header contents.
+    * ({ columnData: object, dataKey: string, disableSort: boolean, label: string, sortBy: string, sortDirection: string }): PropTypes.node
+    */
   var headerRenderer: js.UndefOr[TableHeaderRenderer] = js.undefined
   /** Optional inline style to apply to this column's header */
   var headerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

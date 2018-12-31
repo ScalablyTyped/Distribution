@@ -17,10 +17,6 @@ object virtualDashDomModMembers extends js.Object {
     for which the common denominator is Element (not HTMLElement).
     */
   def create(vnode: virtualDashDomLib.VirtualDOMNs.VText): stdLib.Text = js.native
-  /**
-    create() calls either document.createElement() or document.createElementNS(),
-    for which the common denominator is Element (not HTMLElement).
-    */
   def create(vnode: virtualDashDomLib.VirtualDOMNs.VText, opts: virtualDashDomLib.Anon_Warn): stdLib.Text = js.native
   def create(vnode: virtualDashDomLib.VirtualDOMNs.Widget): stdLib.Element = js.native
   def create(vnode: virtualDashDomLib.VirtualDOMNs.Widget, opts: virtualDashDomLib.Anon_Warn): stdLib.Element = js.native
@@ -37,19 +33,15 @@ object virtualDashDomModMembers extends js.Object {
     properties: virtualDashDomLib.VirtualDOMNs.createProperties,
     children: js.Array[virtualDashDomLib.VirtualDOMNs.VChild]
   ): virtualDashDomLib.VirtualDOMNs.VNode = js.native
-  def isThunk(vTree: virtualDashDomLib.VirtualDOMNs.VTree): /* is Thunk */scala.Boolean = js.native
-  def isVNode(vTree: virtualDashDomLib.VirtualDOMNs.VTree): /* is VNode */scala.Boolean = js.native
-  def isVText(vTree: virtualDashDomLib.VirtualDOMNs.VTree): /* is VText */scala.Boolean = js.native
-  def isWidget(vTree: virtualDashDomLib.VirtualDOMNs.VTree): /* is Widget */scala.Boolean = js.native
+  def isThunk(vTree: virtualDashDomLib.VirtualDOMNs.VTree): /* is virtual-dom.VirtualDOM.Thunk */ scala.Boolean = js.native
+  def isVNode(vTree: virtualDashDomLib.VirtualDOMNs.VTree): /* is virtual-dom.VirtualDOM.VNode */ scala.Boolean = js.native
+  def isVText(vTree: virtualDashDomLib.VirtualDOMNs.VTree): /* is virtual-dom.VirtualDOM.VText */ scala.Boolean = js.native
+  def isWidget(vTree: virtualDashDomLib.VirtualDOMNs.VTree): /* is virtual-dom.VirtualDOM.Widget */ scala.Boolean = js.native
   /**
     patch() usually just returns rootNode after doing stuff to it, so we want
     to preserve that type (though it will usually be just Element).
     */
   def patch[T /* <: stdLib.Element */](rootNode: T, patches: js.Array[virtualDashDomLib.VirtualDOMNs.VPatch]): T = js.native
-  /**
-    patch() usually just returns rootNode after doing stuff to it, so we want
-    to preserve that type (though it will usually be just Element).
-    */
   def patch[T /* <: stdLib.Element */](
     rootNode: T,
     patches: js.Array[virtualDashDomLib.VirtualDOMNs.VPatch],

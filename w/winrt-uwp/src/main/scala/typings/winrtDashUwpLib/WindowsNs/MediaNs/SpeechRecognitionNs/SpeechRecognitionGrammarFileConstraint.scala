@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class SpeechRecognitionGrammarFileConstraint protected () extends js.Object {
   /**
-                   * Creates an instance of the SpeechRecognitionGrammarFileConstraint class from a file object.
-                   * @param file An object representing a SRGS grammar file.
-                   */
+    * Creates an instance of the SpeechRecognitionGrammarFileConstraint class from a file object.
+    * @param file An object representing a SRGS grammar file.
+    */
   def this(file: winrtDashUwpLib.WindowsNs.StorageNs.StorageFile) = this()
   /**
-                   * Creates an instance of the SpeechRecognitionGrammarFileConstraint class from a file object and a tag.
-                   * @param file An object representing a SRGS grammar file.
-                   * @param tag The tag to assign to the constraint.
-                   */
+    * Creates an instance of the SpeechRecognitionGrammarFileConstraint class from a file object and a tag.
+    * @param file An object representing a SRGS grammar file.
+    * @param tag The tag to assign to the constraint.
+    */
   def this(file: winrtDashUwpLib.WindowsNs.StorageNs.StorageFile, tag: java.lang.String) = this()
   /** Gets the StorageFile object representing the Speech Recognition Grammar Specification (SRGS) grammar file. */
   var grammarFile: winrtDashUwpLib.WindowsNs.StorageNs.StorageFile = js.native

@@ -5,23 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default 'checked'
-                   */
+    * @default 'checked'
+    */
   var checked: java.lang.String
   /**
-                   * @default 'disabled'
-                   */
+    * @default 'disabled'
+    */
   var disabled: java.lang.String
   /**
-                   * @default 'radio'
-                   */
+    * @default 'radio'
+    */
   var radio: java.lang.String
   /**
-                   * @default 'read-only'
-                   */
+    * @default 'read-only'
+    */
   var readOnly: java.lang.String
 }
 

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait DevicePickFileType extends js.Object
 
 /**
-     * Constant Enum: Posible file types for Xrm.Device.pickFile options
-     * @see {@link Xrm.Device.PickFileTypes}
-     */
+  * Constant Enum: Posible file types for Xrm.Device.pickFile options
+  * @see {@link Xrm.Device.PickFileTypes}
+  */
 @JSGlobal("XrmEnum.DevicePickFileType")
 @js.native
 object DevicePickFileType extends js.Object {

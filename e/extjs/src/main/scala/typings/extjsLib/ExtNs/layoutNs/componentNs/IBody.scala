@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBody extends IAuto {
   /** [Method] Called before any calculation cycles to prepare for layout
   		* @param ownerContext Object

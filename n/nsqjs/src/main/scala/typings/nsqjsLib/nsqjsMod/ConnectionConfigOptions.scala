@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionConfigOptions extends js.Object {
   var authSecret: js.UndefOr[java.lang.String] = js.undefined
   var clientId: js.UndefOr[java.lang.String] = js.undefined

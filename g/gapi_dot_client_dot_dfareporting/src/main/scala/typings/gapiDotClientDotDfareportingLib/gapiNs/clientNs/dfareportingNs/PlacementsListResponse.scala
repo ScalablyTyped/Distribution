@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlacementsListResponse extends js.Object {
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#placementsListResponse". */
   var kind: js.UndefOr[java.lang.String] = js.undefined

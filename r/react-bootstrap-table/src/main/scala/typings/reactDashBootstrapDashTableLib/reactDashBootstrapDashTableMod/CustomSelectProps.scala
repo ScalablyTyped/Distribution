@@ -35,11 +35,6 @@ trait CustomSelectProps extends js.Object {
   	 *   `rowIndex`: the index of the current row being toggled.
   	 */
   def onChange(event: js.Any, rowIndex: java.lang.String): scala.Unit = js.native
-  /**
-  	 * Callback that should be used when someone selects the current row.
-  	 *   `event`: the current event target
-  	 *   `rowIndex`: the index of the current row being toggled.
-  	 */
   def onChange(event: js.Any, rowIndex: scala.Double): scala.Unit = js.native
 }
 

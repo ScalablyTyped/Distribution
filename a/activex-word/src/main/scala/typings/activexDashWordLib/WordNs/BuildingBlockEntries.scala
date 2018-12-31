@@ -21,7 +21,6 @@ class BuildingBlockEntries protected () extends js.Object {
     Range: Range,
     Description: js.Any
   ): BuildingBlock = js.native
-  /** @param Word.WdDocPartInsertOptions [InsertOptions=0] */
   def Add(
     Name: java.lang.String,
     Type: WdBuildingBlockTypes,

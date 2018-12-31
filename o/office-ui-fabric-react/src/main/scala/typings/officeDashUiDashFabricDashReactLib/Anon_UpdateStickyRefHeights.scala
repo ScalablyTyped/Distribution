@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_UpdateStickyRefHeights extends js.Object {
   var addSticky: js.Function1[/* sticky */ officeDashUiDashFabricDashReactLib.libStickyMod.Sticky, scala.Unit]
   var notifySubscribers: js.Function1[/* sort */ js.UndefOr[scala.Boolean], scala.Unit]

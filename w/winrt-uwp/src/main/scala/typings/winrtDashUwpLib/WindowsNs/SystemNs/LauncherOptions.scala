@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Specifies the options used to launch the default app for a file or URI. */
 @JSGlobal("Windows.System.LauncherOptions")
 @js.native
+/** Creates and initializes a new instance of the launcher options object. */
 class LauncherOptions () extends js.Object {
   /** Gets or sets the content type that is associated with a URI that represents a file on the network. */
   var contentType: java.lang.String = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExpandingEventUIParam extends js.Object {
   /**
   	 * Used to get a reference the igSplitButton.

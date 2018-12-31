@@ -13,25 +13,25 @@ class TemplateDefinitionBuilder protected ()
   def this(constantPool: atAngularCompilerLib.srcConstantUnderscorePoolMod.ConstantPool, parentBindingScope: BindingScope, level: scala.Double, contextName: java.lang.String | scala.Null, i18nContext: atAngularCompilerLib.srcRender3ViewI18nContextMod.I18nContext | scala.Null, templateIndex: scala.Double | scala.Null, templateName: java.lang.String | scala.Null, viewQueries: js.Array[atAngularCompilerLib.srcRender3ViewApiMod.R3QueryMetadata], directiveMatcher: atAngularCompilerLib.srcSelectorMod.SelectorMatcher[_] | scala.Null, directives: stdLib.Set[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression], pipeTypeByName: stdLib.Map[java.lang.String, atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression], pipes: stdLib.Set[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression], _namespace: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference, relativeContextFilePath: java.lang.String) = this()
   var _bindingContext: js.Any = js.native
   /**
-       * This scope contains local variables declared in the update mode block of the template.
-       * (e.g. refs and context vars in bindings)
-       */
+    * This scope contains local variables declared in the update mode block of the template.
+    * (e.g. refs and context vars in bindings)
+    */
   var _bindingScope: js.Any = js.native
   var _bindingSlots: js.Any = js.native
   /**
-       * List of callbacks to generate creation mode instructions. We store them here as we process
-       * the template so bindings in listeners are resolved only once all nodes have been visited.
-       * This ensures all local refs and context variables are available for matching.
-       */
+    * List of callbacks to generate creation mode instructions. We store them here as we process
+    * the template so bindings in listeners are resolved only once all nodes have been visited.
+    * This ensures all local refs and context variables are available for matching.
+    */
   var _creationCodeFns: js.Any = js.native
   var _dataIndex: js.Any = js.native
   var _namespace: js.Any = js.native
   /**
-       * List of callbacks to build nested templates. Nested templates must not be visited until
-       * after the parent template has finished visiting all of its nodes. This ensures that all
-       * local ref bindings in nested templates are able to find local ref values if the refs
-       * are defined after the template declaration.
-       */
+    * List of callbacks to build nested templates. Nested templates must not be visited until
+    * after the parent template has finished visiting all of its nodes. This ensures that all
+    * local ref bindings in nested templates are able to find local ref values if the refs
+    * are defined after the template declaration.
+    */
   var _nestedTemplateFns: js.Any = js.native
   var _prefixCode: js.Any = js.native
   var _pureFunctionSlots: js.Any = js.native
@@ -39,10 +39,10 @@ class TemplateDefinitionBuilder protected ()
   var _tempVariables: js.Any = js.native
   var _unsupported: js.Any = js.native
   /**
-       * List of callbacks to generate update mode instructions. We store them here as we process
-       * the template so bindings are resolved only once all nodes have been visited. This ensures
-       * all local refs and context variables are available for matching.
-       */
+    * List of callbacks to generate update mode instructions. We store them here as we process
+    * the template so bindings are resolved only once all nodes have been visited. This ensures
+    * all local refs and context variables are available for matching.
+    */
   var _updateCodeFns: js.Any = js.native
   var _valueConverter: js.Any = js.native
   var allocateBindingSlots: js.Any = js.native

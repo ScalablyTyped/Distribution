@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PageableQueryParams extends js.Object {
   var currentPage: js.UndefOr[java.lang.String] = js.undefined
   var directions: js.UndefOr[js.Any] = js.undefined

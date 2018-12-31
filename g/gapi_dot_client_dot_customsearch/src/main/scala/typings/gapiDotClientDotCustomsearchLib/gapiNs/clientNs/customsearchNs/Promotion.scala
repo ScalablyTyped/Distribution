@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Promotion extends js.Object {
   var bodyLines: js.UndefOr[js.Array[gapiDotClientDotCustomsearchLib.Anon_Link]] = js.undefined
   var displayLink: js.UndefOr[java.lang.String] = js.undefined

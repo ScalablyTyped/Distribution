@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var chan: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var ipv6: js.UndefOr[scala.Boolean] = js.undefined

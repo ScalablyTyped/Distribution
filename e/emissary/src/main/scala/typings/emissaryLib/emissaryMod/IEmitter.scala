@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEmitter extends js.Object {
   def behavior(eventName: java.lang.String, initialValue: js.Any): scala.Unit
   def decrementSubscriptionCount(eventName: java.lang.String): scala.Double

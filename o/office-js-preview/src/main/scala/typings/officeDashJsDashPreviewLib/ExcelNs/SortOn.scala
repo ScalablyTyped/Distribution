@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait SortOn extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.2]
-     */
+  * [Api set: ExcelApi 1.2]
+  */
 @JSGlobal("Excel.SortOn")
 @js.native
 object SortOn extends js.Object {

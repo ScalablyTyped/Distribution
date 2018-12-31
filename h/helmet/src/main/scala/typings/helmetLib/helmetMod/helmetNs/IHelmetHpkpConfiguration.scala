@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHelmetHpkpConfiguration extends js.Object {
   var includeSubdomains: js.UndefOr[scala.Boolean] = js.undefined
   var maxAge: scala.Double

@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CipherNameAndProtocol extends js.Object {
   /**
-           * The cipher name.
-           */
+    * The cipher name.
+    */
   var name: java.lang.String
   /**
-           * SSL/TLS protocol version.
-           */
+    * SSL/TLS protocol version.
+    */
   var version: java.lang.String
 }
 

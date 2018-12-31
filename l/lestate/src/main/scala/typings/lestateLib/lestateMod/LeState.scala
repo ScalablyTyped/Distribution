@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LeState extends js.Object {
   def createListener(options: lestateLib.Anon_Selector): scala.Unit
   def get(): js.Any

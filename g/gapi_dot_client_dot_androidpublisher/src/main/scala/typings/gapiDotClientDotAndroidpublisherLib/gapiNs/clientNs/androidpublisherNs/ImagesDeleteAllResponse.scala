@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImagesDeleteAllResponse extends js.Object {
   var deleted: js.UndefOr[js.Array[Image]] = js.undefined
 }

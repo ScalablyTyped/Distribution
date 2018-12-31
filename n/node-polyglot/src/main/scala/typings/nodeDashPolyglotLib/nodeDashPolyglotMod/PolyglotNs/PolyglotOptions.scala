@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PolyglotOptions extends js.Object {
   var allowMissing: js.UndefOr[scala.Boolean] = js.undefined
   var locale: js.UndefOr[java.lang.String] = js.undefined

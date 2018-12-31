@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultAsync extends js.Object {
   val ClassGroupOperations: IVaultClassGroupOperationsAsync
   val ClassOperations: IVaultClassOperationsAsync

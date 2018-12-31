@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBottomSheetOptions extends js.Object {
   var bindToController: js.UndefOr[scala.Boolean] = js.undefined
   var clickOutsideToClose: js.UndefOr[scala.Boolean] = js.undefined

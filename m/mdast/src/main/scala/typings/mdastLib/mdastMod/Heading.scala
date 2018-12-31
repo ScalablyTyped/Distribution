@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Heading extends Parent {
   @JSName("children")
   var children_Heading: js.Array[PhrasingContent]

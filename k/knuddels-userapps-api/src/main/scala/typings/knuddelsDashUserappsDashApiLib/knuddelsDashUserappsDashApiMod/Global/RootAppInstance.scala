@@ -20,17 +20,11 @@ class RootAppInstance () extends AppInstance {
   		 * @see https://developer.knuddels.de/docs/classes/RootAppInstance.html#method_stopApp
   		 */
   def stopApp(message: java.lang.String): scala.Unit = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/RootAppInstance.html#method_stopApp
-  		 */
   def stopApp(message: java.lang.String, logMessage: java.lang.String): scala.Unit = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/RootAppInstance.html#method_updateApp
   		 */
   def updateApp(message: java.lang.String): scala.Double = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/RootAppInstance.html#method_updateApp
-  		 */
   def updateApp(message: java.lang.String, logMessage: java.lang.String): scala.Double = js.native
 }
 

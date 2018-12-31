@@ -42,9 +42,9 @@ abstract class PhotoImportSource () extends js.Object {
   /** Gets a value indicating the type of the source device. */
   var `type`: PhotoImportSourceType = js.native
   /**
-                   * Creates a new photo import session.
-                   * @return The new PhotoImportSession object.
-                   */
+    * Creates a new photo import session.
+    * @return The new PhotoImportSession object.
+    */
   def createImportSession(): PhotoImportSession = js.native
 }
 
@@ -53,16 +53,16 @@ abstract class PhotoImportSource () extends js.Object {
 @js.native
 object PhotoImportSource extends js.Object {
   /**
-                   * Creates a new instance of PhotoImportSource from the specified root folder.
-                   * @param sourceRootFolder The root folder from which the photo import source is created.
-                   * @return An asynchronous operation that returns a PhotoImportSource upon successful completion.
-                   */
+    * Creates a new instance of PhotoImportSource from the specified root folder.
+    * @param sourceRootFolder The root folder from which the photo import source is created.
+    * @return An asynchronous operation that returns a PhotoImportSource upon successful completion.
+    */
   def fromFolderAsync(sourceRootFolder: winrtDashUwpLib.WindowsNs.StorageNs.IStorageFolder): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportSource] = js.native
   /**
-                   * Creates a new instance of PhotoImportSource from the specified device ID.
-                   * @param sourceId The root folder from which the photo import source is created.
-                   * @return An asynchronous operation that returns a PhotoImportSource upon successful completion.
-                   */
+    * Creates a new instance of PhotoImportSource from the specified device ID.
+    * @param sourceId The root folder from which the photo import source is created.
+    * @return An asynchronous operation that returns a PhotoImportSource upon successful completion.
+    */
   def fromIdAsync(sourceId: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportSource] = js.native
 }
 

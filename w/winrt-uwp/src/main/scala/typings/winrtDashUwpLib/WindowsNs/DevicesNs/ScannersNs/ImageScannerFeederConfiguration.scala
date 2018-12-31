@@ -76,29 +76,29 @@ abstract class ImageScannerFeederConfiguration () extends js.Object {
   /** Gets or sets the origin coordinates (horizontal and vertical) and dimensions (width and height) of the selected scan area, in inches. This property is ignored when the AutoCroppingMode property is not Disabled. */
   var selectedScanRegion: winrtDashUwpLib.WindowsNs.FoundationNs.Rect = js.native
   /**
-                   * Returns whether the scanner's Feeder supports the specified ImageScannerAutoCroppingMode .
-                   * @param value The auto crop mode of the image to scan.
-                   * @return Indicates whether the device supports value mode.
-                   */
+    * Returns whether the scanner's Feeder supports the specified ImageScannerAutoCroppingMode .
+    * @param value The auto crop mode of the image to scan.
+    * @return Indicates whether the device supports value mode.
+    */
   def isAutoCroppingModeSupported(value: ImageScannerAutoCroppingMode): scala.Boolean = js.native
   /**
-                   * Returns whether the scanner's Feeder can scan and transfer images in the specified color mode.
-                   * @param value The color mode.
-                   * @return Indicates whether the scanner can scan images in value mode.
-                   */
+    * Returns whether the scanner's Feeder can scan and transfer images in the specified color mode.
+    * @param value The color mode.
+    * @return Indicates whether the scanner can scan images in value mode.
+    */
   def isColorModeSupported(value: ImageScannerColorMode): scala.Boolean = js.native
   /**
-                   * Determines whether the scanner's Feeder supports the specified file format or not.
-                   * @param value The file type.
-                   * @return Indicates whether the specified file type is supported.
-                   */
+    * Determines whether the scanner's Feeder supports the specified file format or not.
+    * @param value The file type.
+    * @return Indicates whether the specified file type is supported.
+    */
   def isFormatSupported(value: ImageScannerFormat): scala.Boolean = js.native
   /**
-                   * Returns whether the Feeder can scan documents in the specified page size and orientation.
-                   * @param pageSize The page size.
-                   * @param pageOrientation The page orientation.
-                   * @return Indicates the scanner can scan with pageSize and pageOrientation values.
-                   */
+    * Returns whether the Feeder can scan documents in the specified page size and orientation.
+    * @param pageSize The page size.
+    * @param pageOrientation The page orientation.
+    * @return Indicates the scanner can scan with pageSize and pageOrientation values.
+    */
   def isPageSizeSupported(
     pageSize: winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintMediaSize,
     pageOrientation: winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintOrientation

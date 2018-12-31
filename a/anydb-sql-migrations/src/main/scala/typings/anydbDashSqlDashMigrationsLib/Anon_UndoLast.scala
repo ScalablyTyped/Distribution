@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_UndoLast extends js.Object {
   var check: js.Function1[
     /* f */ js.Function1[

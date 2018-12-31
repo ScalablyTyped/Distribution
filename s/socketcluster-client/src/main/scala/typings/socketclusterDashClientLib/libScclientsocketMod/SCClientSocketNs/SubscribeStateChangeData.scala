@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubscribeStateChangeData extends js.Object {
   var channel: java.lang.String
   var newState: scDashChannelLib.scDashChannelMod.ChannelState

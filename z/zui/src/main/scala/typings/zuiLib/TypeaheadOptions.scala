@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TypeaheadOptions extends js.Object {
   var highlighter: js.UndefOr[js.Function1[/* item */ js.Any, java.lang.String]] = js.undefined
   var items: js.UndefOr[scala.Double] = js.undefined

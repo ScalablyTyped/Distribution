@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Output extends js.Object {
   /** When used in tandem with output.library and output.libraryTarget, this option allows users to insert comments within the export wrapper. */
   var auxiliaryComment: js.UndefOr[java.lang.String | AuxiliaryCommentObject] = js.undefined
@@ -20,11 +19,11 @@ trait Output extends js.Object {
     java.lang.String | (js.Function1[/* info */ DevtoolModuleFilenameTemplateInfo, java.lang.String])
   ] = js.undefined
   /**
-           * Enable line to line mapped mode for all/specified modules.
-           * Line to line mapped mode uses a simple SourceMap where each line of the generated source is mapped to the same line of the original source.
-           * It’s a performance optimization. Only use it if your performance need to be better and you are sure that input lines match which generated lines.
-           * true enables it for all modules (not recommended)
-           */
+    * Enable line to line mapped mode for all/specified modules.
+    * Line to line mapped mode uses a simple SourceMap where each line of the generated source is mapped to the same line of the original source.
+    * It’s a performance optimization. Only use it if your performance need to be better and you are sure that input lines match which generated lines.
+    * true enables it for all modules (not recommended)
+    */
   var devtoolLineToLine: js.UndefOr[scala.Boolean] = js.undefined
   /** Filename template string of function for the sources array in a generated SourceMap. */
   var devtoolModuleFilenameTemplate: js.UndefOr[
@@ -65,17 +64,17 @@ trait Output extends js.Object {
   /** Configure which module or modules will be exposed via the `libraryTarget` */
   var libraryExport: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   /**
-           * Which format to export the library:
-           * - "var" - Export by setting a variable: var Library = xxx (default)
-           * - "this" - Export by setting a property of this: this["Library"] = xxx
-           * - "commonjs" - Export by setting a property of exports: exports["Library"] = xxx
-           * - "commonjs2" - Export by setting module.exports: module.exports = xxx
-           * - "amd" - Export to AMD (optionally named)
-           * - "umd" - Export to AMD, CommonJS2 or as property in root
-           * - "window" - Assign to window
-           * - "assign" - Assign to a global variable
-           * - "jsonp" - Generate Webpack JSONP module
-           */
+    * Which format to export the library:
+    * - "var" - Export by setting a variable: var Library = xxx (default)
+    * - "this" - Export by setting a property of this: this["Library"] = xxx
+    * - "commonjs" - Export by setting a property of exports: exports["Library"] = xxx
+    * - "commonjs2" - Export by setting module.exports: module.exports = xxx
+    * - "amd" - Export to AMD (optionally named)
+    * - "umd" - Export to AMD, CommonJS2 or as property in root
+    * - "window" - Assign to window
+    * - "assign" - Assign to a global variable
+    * - "jsonp" - Generate Webpack JSONP module
+    */
   var libraryTarget: js.UndefOr[LibraryTarget] = js.undefined
   /** The output directory as absolute path. */
   var path: js.UndefOr[java.lang.String] = js.undefined

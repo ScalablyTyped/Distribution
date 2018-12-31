@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RadioStyle extends js.Object {
   var borderOffColor: js.UndefOr[java.lang.String] = js.undefined
   var borderOnColor: js.UndefOr[java.lang.String] = js.undefined

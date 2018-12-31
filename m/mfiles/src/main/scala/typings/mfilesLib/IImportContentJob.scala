@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IImportContentJob extends js.Object {
   var ActivateAutomaticPermissionsForNewOrChangedDefinitions: scala.Boolean
   var DisableImportedExternalObjectTypeConnections: scala.Boolean

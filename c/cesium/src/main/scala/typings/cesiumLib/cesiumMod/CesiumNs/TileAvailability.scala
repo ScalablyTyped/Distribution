@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TileAvailability extends js.Object {
   def addAvailableTileRange(
     level: scala.Double,

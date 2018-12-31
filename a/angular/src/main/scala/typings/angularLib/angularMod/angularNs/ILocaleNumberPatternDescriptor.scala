@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILocaleNumberPatternDescriptor extends js.Object {
   var gSize: scala.Double
   var lgSize: scala.Double

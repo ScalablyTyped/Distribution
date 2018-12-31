@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /** The number of steps to take. */
   var count: js.UndefOr[scala.Double] = js.undefined

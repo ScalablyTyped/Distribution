@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Plugin extends js.Object {
   var banner: js.UndefOr[AddonHook] = js.undefined
   var buildEnd: js.UndefOr[

@@ -9,22 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class ContourLine protected () extends Polygon {
   /**
-           * @constructor
-           * @param boundary The boundary of this contour line
-           * @param contourValue The value associated with this contour line
-           */
+    * @constructor
+    * @param boundary The boundary of this contour line
+    * @param contourValue The value associated with this contour line
+    */
   def this(boundary: js.Array[Location]) = this()
-  /**
-           * @constructor
-           * @param boundary The boundary of this contour line
-           * @param contourValue The value associated with this contour line
-           */
   def this(boundary: js.Array[Location], contourValue: java.lang.String) = this()
-  /**
-           * @constructor
-           * @param boundary The boundary of this contour line
-           * @param contourValue The value associated with this contour line
-           */
   def this(boundary: js.Array[Location], contourValue: scala.Double) = this()
   /** The data value associated with this contour line */
   var contourValue: scala.Double | java.lang.String = js.native

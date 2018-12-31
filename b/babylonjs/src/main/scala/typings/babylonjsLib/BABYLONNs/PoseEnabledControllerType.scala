@@ -9,49 +9,49 @@ import scala.scalajs.js.annotation._
 sealed trait PoseEnabledControllerType extends js.Object
 
 /**
-    * Defines the types of pose enabled controllers that are supported
-    */
+  * Defines the types of pose enabled controllers that are supported
+  */
 @JSGlobal("BABYLON.PoseEnabledControllerType")
 @js.native
 object PoseEnabledControllerType extends js.Object {
   /**
-           * Google Daydream
-           */
+    * Google Daydream
+    */
   @js.native
   sealed trait DAYDREAM
     extends babylonjsLib.BABYLONNs.PoseEnabledControllerType
   
   /**
-           * Samsung gear VR
-           */
+    * Samsung gear VR
+    */
   @js.native
   sealed trait GEAR_VR
     extends babylonjsLib.BABYLONNs.PoseEnabledControllerType
   
   /**
-           * Generic
-           */
+    * Generic
+    */
   @js.native
   sealed trait GENERIC
     extends babylonjsLib.BABYLONNs.PoseEnabledControllerType
   
   /**
-           * Oculus Rift
-           */
+    * Oculus Rift
+    */
   @js.native
   sealed trait OCULUS
     extends babylonjsLib.BABYLONNs.PoseEnabledControllerType
   
   /**
-           * HTC Vive
-           */
+    * HTC Vive
+    */
   @js.native
   sealed trait VIVE
     extends babylonjsLib.BABYLONNs.PoseEnabledControllerType
   
   /**
-           * Windows mixed reality
-           */
+    * Windows mixed reality
+    */
   @js.native
   sealed trait WINDOWS
     extends babylonjsLib.BABYLONNs.PoseEnabledControllerType

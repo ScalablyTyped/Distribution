@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IChannel extends js.Object {
   /** Channel name */
   var name: java.lang.String

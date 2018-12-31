@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_205 extends js.Object {
   var `100`: java.lang.String
   var `101`: java.lang.String

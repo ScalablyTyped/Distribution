@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditorProps extends js.Object {
   @JSName("$blockScrolling")
   var $blockScrolling: js.UndefOr[scala.Double | scala.Boolean] = js.undefined
@@ -20,44 +19,44 @@ trait EditorProps extends js.Object {
   @JSName("$highlightTagPending")
   var $highlightTagPending: js.UndefOr[scala.Boolean] = js.undefined
   @JSName("$multiselectOnSessionChange")
-  var $multiselectOnSessionChange: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $multiselectOnSessionChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   @JSName("$onAddRange")
-  var $onAddRange: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $onAddRange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   @JSName("$onChangeAnnotation")
-  var $onChangeAnnotation: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $onChangeAnnotation: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   @JSName("$onChangeBackMarker")
-  var $onChangeBackMarker: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $onChangeBackMarker: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   @JSName("$onChangeBreakpoint")
-  var $onChangeBreakpoint: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $onChangeBreakpoint: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   @JSName("$onChangeFold")
-  var $onChangeFold: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $onChangeFold: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   @JSName("$onChangeFrontMarker")
-  var $onChangeFrontMarker: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $onChangeFrontMarker: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   @JSName("$onChangeMode")
-  var $onChangeMode: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $onChangeMode: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   @JSName("$onChangeTabSize")
-  var $onChangeTabSize: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $onChangeTabSize: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   @JSName("$onChangeWrapLimit")
-  var $onChangeWrapLimit: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $onChangeWrapLimit: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   @JSName("$onChangeWrapMode")
-  var $onChangeWrapMode: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $onChangeWrapMode: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   @JSName("$onCursorChange")
-  var $onCursorChange: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $onCursorChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   @JSName("$onDocumentChange")
-  var $onDocumentChange: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $onDocumentChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   @JSName("$onMultiSelect")
-  var $onMultiSelect: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $onMultiSelect: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   @JSName("$onRemoveRange")
-  var $onRemoveRange: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $onRemoveRange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   @JSName("$onScrollLeftChange")
-  var $onScrollLeftChange: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $onScrollLeftChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   @JSName("$onScrollTopChange")
-  var $onScrollTopChange: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $onScrollTopChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   @JSName("$onSelectionChange")
-  var $onSelectionChange: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $onSelectionChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   @JSName("$onSingleSelect")
-  var $onSingleSelect: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $onSingleSelect: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   @JSName("$onTokenizerUpdate")
-  var $onTokenizerUpdate: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var $onTokenizerUpdate: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
 }
 

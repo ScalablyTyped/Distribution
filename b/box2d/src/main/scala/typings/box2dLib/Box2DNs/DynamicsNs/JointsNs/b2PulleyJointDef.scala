@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Dynamics.Joints.b2PulleyJointDef")
 @js.native
+/**
+		* Constructor.
+		**/
 class b2PulleyJointDef () extends b2JointDef {
   /**
   		* The first ground anchor in world coordinates. This point never moves.

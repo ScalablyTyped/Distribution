@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObjectTypeAnnotation extends BaseNode {
   var callProperties: js.Array[ObjectTypeCallProperty] | scala.Null
   var exact: scala.Boolean

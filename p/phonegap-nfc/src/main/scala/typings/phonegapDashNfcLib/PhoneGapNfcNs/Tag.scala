@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Tag extends js.Object {
   var date: java.lang.String
   var id: js.Array[scala.Double]

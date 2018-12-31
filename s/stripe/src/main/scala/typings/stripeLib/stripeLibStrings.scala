@@ -22,6 +22,33 @@ object stripeLibStrings {
   sealed trait MasterCard extends js.Object
   
   @js.native
+  sealed trait StripeAPIError extends js.Object
+  
+  @js.native
+  sealed trait StripeAuthenticationError extends js.Object
+  
+  @js.native
+  sealed trait StripeCardError extends js.Object
+  
+  @js.native
+  sealed trait StripeConnectionError extends js.Object
+  
+  @js.native
+  sealed trait StripeIdempotencyError extends js.Object
+  
+  @js.native
+  sealed trait StripeInvalidRequestError extends js.Object
+  
+  @js.native
+  sealed trait StripePermissionError extends js.Object
+  
+  @js.native
+  sealed trait StripeRateLimitError extends js.Object
+  
+  @js.native
+  sealed trait StripeSignatureVerificationError extends js.Object
+  
+  @js.native
   sealed trait Unknown extends js.Object
   
   @js.native
@@ -38,6 +65,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait android_pay extends js.Object
+  
+  @js.native
+  sealed trait api_error extends js.Object
   
   @js.native
   sealed trait apple_pay extends js.Object
@@ -80,6 +110,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait card extends js.Object
+  
+  @js.native
+  sealed trait card_error extends js.Object
   
   @js.native
   sealed trait charge extends js.Object
@@ -199,6 +232,9 @@ object stripeLibStrings {
   sealed trait graduated extends js.Object
   
   @js.native
+  sealed trait idempotency_error extends js.Object
+  
+  @js.native
   sealed trait identity_document extends js.Object
   
   @js.native
@@ -233,6 +269,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait invalid extends js.Object
+  
+  @js.native
+  sealed trait invalid_request_error extends js.Object
   
   @js.native
   sealed trait invoice extends js.Object
@@ -533,12 +572,22 @@ object stripeLibStrings {
   def Discover: Discover = "Discover".asInstanceOf[Discover]
   def JCB: JCB = "JCB".asInstanceOf[JCB]
   def MasterCard: MasterCard = "MasterCard".asInstanceOf[MasterCard]
+  def StripeAPIError: StripeAPIError = "StripeAPIError".asInstanceOf[StripeAPIError]
+  def StripeAuthenticationError: StripeAuthenticationError = "StripeAuthenticationError".asInstanceOf[StripeAuthenticationError]
+  def StripeCardError: StripeCardError = "StripeCardError".asInstanceOf[StripeCardError]
+  def StripeConnectionError: StripeConnectionError = "StripeConnectionError".asInstanceOf[StripeConnectionError]
+  def StripeIdempotencyError: StripeIdempotencyError = "StripeIdempotencyError".asInstanceOf[StripeIdempotencyError]
+  def StripeInvalidRequestError: StripeInvalidRequestError = "StripeInvalidRequestError".asInstanceOf[StripeInvalidRequestError]
+  def StripePermissionError: StripePermissionError = "StripePermissionError".asInstanceOf[StripePermissionError]
+  def StripeRateLimitError: StripeRateLimitError = "StripeRateLimitError".asInstanceOf[StripeRateLimitError]
+  def StripeSignatureVerificationError: StripeSignatureVerificationError = "StripeSignatureVerificationError".asInstanceOf[StripeSignatureVerificationError]
   def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
   def Visa: Visa = "Visa".asInstanceOf[Visa]
   def active: active = "active".asInstanceOf[active]
   def alipay_account: alipay_account = "alipay_account".asInstanceOf[alipay_account]
   def all: all = "all".asInstanceOf[all]
   def android_pay: android_pay = "android_pay".asInstanceOf[android_pay]
+  def api_error: api_error = "api_error".asInstanceOf[api_error]
   def apple_pay: apple_pay = "apple_pay".asInstanceOf[apple_pay]
   def application: application = "application".asInstanceOf[application]
   def `application/octet-stream`: `application/octet-stream` = "application/octet-stream".asInstanceOf[`application/octet-stream`]
@@ -553,6 +602,7 @@ object stripeLibStrings {
   def business_logo: business_logo = "business_logo".asInstanceOf[business_logo]
   def canceled: canceled = "canceled".asInstanceOf[canceled]
   def card: card = "card".asInstanceOf[card]
+  def card_error: card_error = "card_error".asInstanceOf[card_error]
   def charge: charge = "charge".asInstanceOf[charge]
   def charge_automatically: charge_automatically = "charge_automatically".asInstanceOf[charge_automatically]
   def charge_refunded: charge_refunded = "charge_refunded".asInstanceOf[charge_refunded]
@@ -592,6 +642,7 @@ object stripeLibStrings {
   def general: general = "general".asInstanceOf[general]
   def good: good = "good".asInstanceOf[good]
   def graduated: graduated = "graduated".asInstanceOf[graduated]
+  def idempotency_error: idempotency_error = "idempotency_error".asInstanceOf[idempotency_error]
   def identity_document: identity_document = "identity_document".asInstanceOf[identity_document]
   def in_stock: in_stock = "in_stock".asInstanceOf[in_stock]
   def in_transit: in_transit = "in_transit".asInstanceOf[in_transit]
@@ -604,6 +655,7 @@ object stripeLibStrings {
   def instant: instant = "instant".asInstanceOf[instant]
   def insufficient_funds: insufficient_funds = "insufficient_funds".asInstanceOf[insufficient_funds]
   def invalid: invalid = "invalid".asInstanceOf[invalid]
+  def invalid_request_error: invalid_request_error = "invalid_request_error".asInstanceOf[invalid_request_error]
   def invoice: invoice = "invoice".asInstanceOf[invoice]
   def invoiceitem: invoiceitem = "invoiceitem".asInstanceOf[invoiceitem]
   def issuer_declined: issuer_declined = "issuer_declined".asInstanceOf[issuer_declined]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AlertsResource extends js.Object {
   /** List the alerts for this Ad Exchange account. */
   def list(request: gapiDotClientDotAdexchangesellerLib.Anon_PrettyPrintAccountId): gapiDotClientLib.gapiNs.clientNs.Request[Alerts]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JdbcParameterMetaData extends js.Object {
   def getParameterClassName(param: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): java.lang.String
   def getParameterCount(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer

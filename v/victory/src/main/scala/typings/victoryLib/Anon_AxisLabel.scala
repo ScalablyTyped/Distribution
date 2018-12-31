@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AxisLabel extends js.Object {
   var axis: reactLib.reactMod.ReactNs.CSSProperties
   var axisLabel: reactLib.reactMod.ReactNs.CSSProperties

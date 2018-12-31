@@ -9,35 +9,35 @@ import scala.scalajs.js.annotation._
 sealed trait PrintMarginUnit extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.PrintMarginUnit")
 @js.native
 object PrintMarginUnit extends js.Object {
   /**
-           *
-           * Assign the page margins in centimeters.
-           *
-           */
+    *
+    * Assign the page margins in centimeters.
+    *
+    */
   @js.native
   sealed trait centimeters
     extends officeDashJsDashPreviewLib.ExcelNs.PrintMarginUnit
   
   /**
-           *
-           * Assign the page margins in inches.
-           *
-           */
+    *
+    * Assign the page margins in inches.
+    *
+    */
   @js.native
   sealed trait inches
     extends officeDashJsDashPreviewLib.ExcelNs.PrintMarginUnit
   
   /**
-           *
-           * Assign the page margins in points. A point is 1/72 of an inch.
-           *
-           */
+    *
+    * Assign the page margins in points. A point is 1/72 of an inch.
+    *
+    */
   @js.native
   sealed trait points
     extends officeDashJsDashPreviewLib.ExcelNs.PrintMarginUnit

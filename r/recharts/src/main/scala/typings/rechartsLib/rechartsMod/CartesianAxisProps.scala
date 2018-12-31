@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial) */ 
-trait CartesianAxisProps extends EventAttributes {
+- Lifted 1 members from Set(std.Partial<recharts.recharts.PresentationAttributes<number, number>>) */ trait CartesianAxisProps extends EventAttributes {
   var axisLine: js.UndefOr[scala.Boolean | js.Object] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined

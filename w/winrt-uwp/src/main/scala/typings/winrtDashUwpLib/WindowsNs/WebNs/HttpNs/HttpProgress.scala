@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains status information on the progress of an HttpClient operation. */
-
 trait HttpProgress extends js.Object {
   /** The total number of bytes received. */
   var bytesReceived: scala.Double

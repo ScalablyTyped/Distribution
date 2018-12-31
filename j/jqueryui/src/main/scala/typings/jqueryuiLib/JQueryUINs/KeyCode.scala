@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeyCode extends js.Object {
   var BACKSPACE: scala.Double
   var COMMA: scala.Double

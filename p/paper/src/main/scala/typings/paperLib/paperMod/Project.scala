@@ -9,15 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Project protected ()
   extends paperLib.paperNs.Project {
-  /**
-           * Creates a Paper.js project containing one empty Layer, referenced by project.activeLayer.
-           * @param element - the HTML canvas element that should be used as the element for the view, or an ID string by which to find the element.
-           */
   def this(element: java.lang.String) = this()
   /**
-           * Creates a Paper.js project containing one empty Layer, referenced by project.activeLayer.
-           * @param element - the HTML canvas element that should be used as the element for the view, or an ID string by which to find the element.
-           */
+    * Creates a Paper.js project containing one empty Layer, referenced by project.activeLayer.
+    * @param element - the HTML canvas element that should be used as the element for the view, or an ID string by which to find the element.
+    */
   def this(element: stdLib.HTMLCanvasElement) = this()
 }
 

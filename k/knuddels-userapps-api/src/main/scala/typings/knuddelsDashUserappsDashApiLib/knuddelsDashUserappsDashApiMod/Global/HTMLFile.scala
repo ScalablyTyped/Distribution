@@ -15,9 +15,6 @@ class HTMLFile protected () extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/HTMLFile.html#method_HTMLFile
   		 */
   def this(assetPath: java.lang.String) = this()
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/HTMLFile.html#method_HTMLFile
-  		 */
   def this(assetPath: java.lang.String, pageData: Json) = this()
   /**
   		 * @see https://developer.knuddels.de/docs/classes/HTMLFile.html#method_getAssetPath

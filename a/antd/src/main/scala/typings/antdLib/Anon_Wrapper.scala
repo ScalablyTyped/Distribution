@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Wrapper extends js.Object {
   var cell: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var row: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined

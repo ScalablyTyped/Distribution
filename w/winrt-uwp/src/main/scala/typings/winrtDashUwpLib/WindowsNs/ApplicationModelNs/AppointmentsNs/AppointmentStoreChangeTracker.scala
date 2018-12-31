@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class AppointmentStoreChangeTracker () extends js.Object {
   var enable: js.Any = js.native
-   /* unmapped type */var getChangeReader: js.Any = js.native
-   /* unmapped type */var reset: js.Any = js.native
+   /* unmapped type */ var getChangeReader: js.Any = js.native
+   /* unmapped type */ var reset: js.Any = js.native
 }
 

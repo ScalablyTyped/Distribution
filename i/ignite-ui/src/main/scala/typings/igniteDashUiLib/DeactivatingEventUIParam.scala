@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeactivatingEventUIParam extends js.Object {
   /**
   	 * Used to get reference to this igToolbarButton.

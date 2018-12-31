@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MonthDay extends js.Object {
   /** Day of a month, value in [1, 31] range. Valid range depends on the specified month. */
   var day: js.UndefOr[scala.Double] = js.undefined

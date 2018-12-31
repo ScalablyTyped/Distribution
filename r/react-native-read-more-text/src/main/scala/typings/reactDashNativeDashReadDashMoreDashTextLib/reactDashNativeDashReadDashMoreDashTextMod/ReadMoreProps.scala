@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReadMoreProps extends js.Object {
   var children: reactLib.reactMod.ReactNs.ReactNode
   var numberOfLines: scala.Double

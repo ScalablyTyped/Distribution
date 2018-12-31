@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TypeParameter extends BaseNode {
   var bound: TypeAnnotation | scala.Null
   var default: FlowType | scala.Null

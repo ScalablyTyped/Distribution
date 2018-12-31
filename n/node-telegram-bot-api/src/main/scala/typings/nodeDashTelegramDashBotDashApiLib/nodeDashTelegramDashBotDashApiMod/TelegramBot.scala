@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait TelegramBot
   extends nodeLib.eventsMod.EventEmitter {
   /**
-       * @deprecated since version 0.30.0
-       */
+    * @deprecated since version 0.30.0
+    */
   def answerCallbackQuery(): js.Promise[scala.Boolean] = js.native
   def answerCallbackQuery(callbackQueryId: java.lang.String): js.Promise[scala.Boolean] = js.native
   def answerCallbackQuery(
@@ -19,9 +19,6 @@ trait TelegramBot
       nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.AnswerCallbackQueryOptions
     ]
   ): js.Promise[scala.Boolean] = js.native
-  /**
-       * @deprecated since version 0.30.0
-       */
   def answerCallbackQuery(
     options: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.AnswerCallbackQueryOptions
   ): js.Promise[scala.Boolean] = js.native

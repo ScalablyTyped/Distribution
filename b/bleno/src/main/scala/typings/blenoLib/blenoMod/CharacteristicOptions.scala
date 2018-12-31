@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CharacteristicOptions extends js.Object {
   var descriptors: js.UndefOr[js.Array[Descriptor] | scala.Null] = js.undefined
   var onIndicate: js.UndefOr[js.Function0[scala.Unit] | scala.Null] = js.undefined

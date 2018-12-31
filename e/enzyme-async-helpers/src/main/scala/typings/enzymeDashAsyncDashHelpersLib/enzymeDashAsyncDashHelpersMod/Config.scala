@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Config extends js.Object {
   var interval: js.UndefOr[scala.Double] = js.undefined
    // Default: true, logs the wrapper's rendered structure when the wait times out. An attempt to help out in finding what's wrong.

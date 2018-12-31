@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Snapshot extends js.Object {
   /** The cover image of this snapshot. May be absent if there is no image. */
   var coverImage: js.UndefOr[SnapshotImage] = js.undefined
   /** The description of this snapshot. */
   var description: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The ID of the file underlying this snapshot in the Drive API. Only present if the snapshot is a view on a Drive file and the file is owned by the
-               * caller.
-               */
+    * The ID of the file underlying this snapshot in the Drive API. Only present if the snapshot is a view on a Drive file and the file is owned by the
+    * caller.
+    */
   var driveId: js.UndefOr[java.lang.String] = js.undefined
   /** The duration associated with this snapshot, in millis. */
   var durationMillis: js.UndefOr[java.lang.String] = js.undefined
@@ -29,10 +28,10 @@ trait Snapshot extends js.Object {
   /** The title of this snapshot. */
   var title: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The type of this snapshot.
-               * Possible values are:
-               * - "SAVE_GAME" - A snapshot representing a save game.
-               */
+    * The type of this snapshot.
+    * Possible values are:
+    * - "SAVE_GAME" - A snapshot representing a save game.
+    */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
   /** The unique name provided when the snapshot was created. */
   var uniqueName: js.UndefOr[java.lang.String] = js.undefined

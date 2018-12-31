@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MachineGroupActionFilter extends js.Object {
   var AadLoginPromptOption: Anon_EnumValuesAnonSelectAccount
   var AgentChangeEvent: js.Any

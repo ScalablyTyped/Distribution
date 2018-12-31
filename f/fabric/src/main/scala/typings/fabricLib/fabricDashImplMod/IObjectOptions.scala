@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IObjectOptions extends js.Object {
   /**
-       * Describes the object's corner position in canvas object absolute properties.
-       */
+    * Describes the object's corner position in canvas object absolute properties.
+    */
   var aCoords: js.UndefOr[fabricLib.Anon_Tr] = js.undefined
   /**
   	 * Angle of rotation of an object (in degrees)
@@ -24,8 +23,8 @@ trait IObjectOptions extends js.Object {
   	 */
   var borderColor: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Array specifying dash pattern of an object's border (hasBorder must be true)
-       */
+    * Array specifying dash pattern of an object's border (hasBorder must be true)
+    */
   var borderDashArray: js.UndefOr[js.Array[scala.Double]] = js.undefined
   /**
   	 * Opacity of object's controlling borders when object is active and moving
@@ -212,12 +211,12 @@ trait IObjectOptions extends js.Object {
   	 */
   var shadow: js.UndefOr[Shadow | java.lang.String] = js.undefined
   /**
-       * Object skew factor (horizontal)
-       */
+    * Object skew factor (horizontal)
+    */
   var skewX: js.UndefOr[scala.Double] = js.undefined
   /**
-       * Object skew factor (vertical)
-       */
+    * Object skew factor (vertical)
+    */
   var skewY: js.UndefOr[scala.Double] = js.undefined
   /**
   	 * When defined, an object is rendered via stroke and this property specifies its color

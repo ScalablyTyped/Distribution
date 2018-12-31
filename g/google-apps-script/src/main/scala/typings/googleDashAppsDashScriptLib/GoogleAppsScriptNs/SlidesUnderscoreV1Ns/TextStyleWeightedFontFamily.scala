@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Represents a font family and weight used to style a TextRun.
-
 trait TextStyleWeightedFontFamily extends js.Object {
   // The font family of the text.
   //

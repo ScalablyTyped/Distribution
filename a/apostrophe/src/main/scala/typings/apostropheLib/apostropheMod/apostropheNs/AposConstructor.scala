@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // Pass in custom modules as first argument
 // second argument is additional custom options e.g. restApi exposed by apostrophe-headless
-
 trait AposConstructor[M, O] extends js.Object {
   var afterInit: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var afterListen: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

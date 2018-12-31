@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPlaylistSettings extends VideoOrPlaylistSettings {
   /**
   		 * Start index of the playlist, if not 0.

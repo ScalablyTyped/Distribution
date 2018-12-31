@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFileOpenPicker extends js.Object {
   var commitButtonText: java.lang.String
   var continuationData: winrtLib.WindowsNs.FoundationNs.CollectionsNs.ValueSet

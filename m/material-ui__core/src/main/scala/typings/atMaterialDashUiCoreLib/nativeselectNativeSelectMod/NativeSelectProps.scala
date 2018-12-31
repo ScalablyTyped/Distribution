@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 4 members from Set(std.Pick, @material-ui/core.@material-ui/core.StandardProps) */ 
-trait NativeSelectProps
+- Lifted 4 members from Set(std.Pick<@material-ui/core.@material-ui/core/Input.InputProps, std.Exclude<keyof @material-ui/core.@material-ui/core/Input.InputProps, 'classes' | 'value' | 'onChange'>>, @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/Input.InputProps, @material-ui/core.@material-ui/core/NativeSelect/NativeSelect.NativeSelectClassKey, 'value' | 'onChange'>, std.Pick<@material-ui/core.@material-ui/core/NativeSelect/NativeSelectInput.NativeSelectInputProps, 'onChange'>) */ trait NativeSelectProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[NativeSelectClassKey] {
   var IconComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined

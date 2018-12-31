@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MaxApertureValue extends js.Object {
   var aperture: scala.Double
   var cameraMake: java.lang.String

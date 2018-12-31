@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PreviewImageOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 当当前显示图片索引，默认 0 */

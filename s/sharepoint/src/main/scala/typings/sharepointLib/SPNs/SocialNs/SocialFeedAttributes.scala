@@ -16,7 +16,7 @@ sealed trait SocialFeedAttributes extends js.Object
 //    internalError = 3
 // }
 /** Provides information about the feed.
-            This type provides information about whether the feed on the server contains additional threads that were not returned. */
+  This type provides information about whether the feed on the server contains additional threads that were not returned. */
 @JSGlobal("SP.Social.SocialFeedAttributes")
 @js.native
 object SocialFeedAttributes extends js.Object {

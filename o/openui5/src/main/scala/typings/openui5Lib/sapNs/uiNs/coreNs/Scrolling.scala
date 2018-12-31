@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait Scrolling extends js.Object
 
 /**
-       * Defines the possible values for horizontal and vertical scrolling behavior.
-      */
+  * Defines the possible values for horizontal and vertical scrolling behavior.
+  */
 @JSGlobal("sap.ui.core.Scrolling")
 @js.native
 object Scrolling extends js.Object {

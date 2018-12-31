@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RowEditDialogContentsRenderedEventUIParam extends js.Object {
   /**
   	 * Gets a reference to row edit dialog DOM element.

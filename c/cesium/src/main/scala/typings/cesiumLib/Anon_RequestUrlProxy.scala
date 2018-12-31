@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RequestUrlProxy extends js.Object {
   var headers: js.UndefOr[js.Any] = js.undefined
   var proxy: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.DefaultProxy] = js.undefined

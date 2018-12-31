@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestOption extends js.Object {
   var headers: js.UndefOr[js.Any] = js.undefined
   var json: js.UndefOr[js.Any] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PackOptions extends Options {
   var dereference: js.UndefOr[scala.Boolean] = js.undefined
   var entries: js.UndefOr[js.Array[java.lang.String]] = js.undefined

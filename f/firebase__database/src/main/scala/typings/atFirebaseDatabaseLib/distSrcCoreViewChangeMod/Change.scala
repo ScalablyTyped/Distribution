@@ -33,38 +33,38 @@ object Change extends js.Object {
   /** Event type for a value change */
   var VALUE: java.lang.String = js.native
   /**
-       * @param {string} childKey
-       * @param {!Node} snapshot
-       * @return {!Change}
-       */
+    * @param {string} childKey
+    * @param {!Node} snapshot
+    * @return {!Change}
+    */
   def childAddedChange(childKey: java.lang.String, snapshot: atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node): atFirebaseDatabaseLib.distSrcCoreViewChangeMod.Change = js.native
   /**
-       * @param {string} childKey
-       * @param {!Node} newSnapshot
-       * @param {!Node} oldSnapshot
-       * @return {!Change}
-       */
+    * @param {string} childKey
+    * @param {!Node} newSnapshot
+    * @param {!Node} oldSnapshot
+    * @return {!Change}
+    */
   def childChangedChange(
     childKey: java.lang.String,
     newSnapshot: atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node,
     oldSnapshot: atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node
   ): atFirebaseDatabaseLib.distSrcCoreViewChangeMod.Change = js.native
   /**
-       * @param {string} childKey
-       * @param {!Node} snapshot
-       * @return {!Change}
-       */
+    * @param {string} childKey
+    * @param {!Node} snapshot
+    * @return {!Change}
+    */
   def childMovedChange(childKey: java.lang.String, snapshot: atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node): atFirebaseDatabaseLib.distSrcCoreViewChangeMod.Change = js.native
   /**
-       * @param {string} childKey
-       * @param {!Node} snapshot
-       * @return {!Change}
-       */
+    * @param {string} childKey
+    * @param {!Node} snapshot
+    * @return {!Change}
+    */
   def childRemovedChange(childKey: java.lang.String, snapshot: atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node): atFirebaseDatabaseLib.distSrcCoreViewChangeMod.Change = js.native
   /**
-       * @param {!Node} snapshot
-       * @return {!Change}
-       */
+    * @param {!Node} snapshot
+    * @return {!Change}
+    */
   def valueChange(snapshot: atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node): atFirebaseDatabaseLib.distSrcCoreViewChangeMod.Change = js.native
 }
 

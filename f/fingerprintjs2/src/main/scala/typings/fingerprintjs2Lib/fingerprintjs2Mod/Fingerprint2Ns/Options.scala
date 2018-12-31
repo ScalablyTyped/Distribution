@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var ERROR: js.UndefOr[java.lang.String] = js.undefined
   var EXCLUDED: js.UndefOr[java.lang.String] = js.undefined

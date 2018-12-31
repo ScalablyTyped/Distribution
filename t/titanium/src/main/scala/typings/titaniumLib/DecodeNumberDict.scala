@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Named parameters for <Titanium.Codec.decodeNumber>.
- */
-
+  * Named parameters for <Titanium.Codec.decodeNumber>.
+  */
 trait DecodeNumberDict extends js.Object {
   /**
   	 * byte order to decode with.

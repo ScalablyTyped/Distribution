@@ -12,22 +12,22 @@ sealed trait ShimmerElementsDefaultHeights extends js.Object
 @js.native
 object ShimmerElementsDefaultHeights extends js.Object {
   /**
-       * Default height of the circle element when not provided by user: 24px
-       */
+    * Default height of the circle element when not provided by user: 24px
+    */
   @js.native
   sealed trait circle
     extends officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerDotTypesMod.ShimmerElementsDefaultHeights
   
   /**
-       * Default height of the gap element when not provided by user: 16px
-       */
+    * Default height of the gap element when not provided by user: 16px
+    */
   @js.native
   sealed trait gap
     extends officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerDotTypesMod.ShimmerElementsDefaultHeights
   
   /**
-       * Default height of the line element when not provided by user: 16px
-       */
+    * Default height of the line element when not provided by user: 16px
+    */
   @js.native
   sealed trait line
     extends officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerDotTypesMod.ShimmerElementsDefaultHeights

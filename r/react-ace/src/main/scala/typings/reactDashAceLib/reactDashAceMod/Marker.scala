@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Marker extends js.Object {
   var className: java.lang.String
   var endCol: scala.Double

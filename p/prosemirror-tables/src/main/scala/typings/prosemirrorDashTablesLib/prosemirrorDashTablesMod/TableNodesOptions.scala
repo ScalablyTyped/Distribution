@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableNodesOptions extends js.Object {
   var cellAttributes: org.scalablytyped.runtime.StringDictionary[CellAttributes]
   var cellContent: java.lang.String

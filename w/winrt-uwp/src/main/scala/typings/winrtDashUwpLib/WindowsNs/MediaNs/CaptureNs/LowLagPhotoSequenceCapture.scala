@@ -19,9 +19,9 @@ abstract class LowLagPhotoSequenceCapture () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[LowLagPhotoSequenceCapture, PhotoCapturedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Asynchronously releases the LowLagPhotoSequenceCapture object and resources used by the photo sequence capture operation.
-                   * @return Object that is used to control the asynchronous operation.
-                   */
+    * Asynchronously releases the LowLagPhotoSequenceCapture object and resources used by the photo sequence capture operation.
+    * @return Object that is used to control the asynchronous operation.
+    */
   def finishAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /** Occurs when a photo has been captured. */
   def onphotocaptured(ev: PhotoCapturedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[LowLagPhotoSequenceCapture]): scala.Unit = js.native
@@ -32,14 +32,14 @@ abstract class LowLagPhotoSequenceCapture () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[LowLagPhotoSequenceCapture, PhotoCapturedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Asynchronously starts capturing photos.
-                   * @return Object that is used to control the asynchronous operation.
-                   */
+    * Asynchronously starts capturing photos.
+    * @return Object that is used to control the asynchronous operation.
+    */
   def startAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Asynchronously stops capturing photos.
-                   * @return Object that is used to control the asynchronous operation.
-                   */
+    * Asynchronously stops capturing photos.
+    * @return Object that is used to control the asynchronous operation.
+    */
   def stopAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

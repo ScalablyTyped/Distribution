@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * ===== HandlerCallback =====
- */
-
-
+  * ===== HandlerCallback =====
+  */
 trait IHandlerContext extends IMatchContext {
   /**
   	 * Parameters returned by the Route's match callback function. This will be undefined if nothing was returned.

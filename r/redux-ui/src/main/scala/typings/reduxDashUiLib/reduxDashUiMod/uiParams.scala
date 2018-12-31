@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait uiParams[UIStateShape] extends js.Object {
   // optional key which is used to determine the UI path in which state will
   // be stored. if omitted this is randomly generated.

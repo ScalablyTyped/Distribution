@@ -110,26 +110,1052 @@ trait Map extends Evented {
   def moveLayer(id: java.lang.String): this.type = js.native
   def moveLayer(id: java.lang.String, beforeId: java.lang.String): this.type = js.native
   def off(`type`: java.lang.String, listener: js.Function1[/* ev */ js.Any, scala.Unit]): this.type = js.native
-  def off[T /* <: java.lang.String */](
-    `type`: T,
-    layer: java.lang.String,
-    listener: js.Function1[/* ev */ js.Any with EventData, scala.Unit]
+  @JSName("off")
+  def off_boxzoomcancel(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.boxzoomcancel,
+    listener: js.Function1[/* ev */ MapBoxZoomEvent with EventData, scala.Unit]
   ): this.type = js.native
-  def off[T /* <: java.lang.String */](`type`: T, listener: js.Function1[/* ev */ js.Any with EventData, scala.Unit]): this.type = js.native
+  @JSName("off")
+  def off_boxzoomend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.boxzoomend,
+    listener: js.Function1[/* ev */ MapBoxZoomEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_boxzoomstart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.boxzoomstart,
+    listener: js.Function1[/* ev */ MapBoxZoomEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_click(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.click,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_click(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.click,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_contextmenu(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.contextmenu,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_contextmenu(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.contextmenu,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_data(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.data,
+    listener: js.Function1[/* ev */ MapDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_dataloading(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.dataloading,
+    listener: js.Function1[/* ev */ MapDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_dblclick(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.dblclick,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_dblclick(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.dblclick,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_drag(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.drag,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("off")
+  def off_dragend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.dragend,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("off")
+  def off_dragstart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.dragstart,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("off")
+  def off_error(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.error,
+    listener: js.Function1[/* ev */ ErrorEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_load(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.load,
+    listener: js.Function1[/* ev */ MapboxEvent[js.UndefOr[scala.Nothing]] with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_mousedown(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mousedown,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_mousedown(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mousedown,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_mouseenter(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseenter,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_mouseleave(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseleave,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_mousemove(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mousemove,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_mousemove(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mousemove,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_mouseout(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseout,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_mouseout(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseout,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_mouseover(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseover,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_mouseover(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseover,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_mouseup(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseup,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_mouseup(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseup,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_move(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.move,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("off")
+  def off_moveend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.moveend,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("off")
+  def off_movestart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.movestart,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("off")
+  def off_pitch(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.pitch,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("off")
+  def off_pitchend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.pitchend,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("off")
+  def off_pitchstart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.pitchstart,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("off")
+  def off_remove(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.remove,
+    listener: js.Function1[/* ev */ MapboxEvent[js.UndefOr[scala.Nothing]] with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_render(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.render,
+    listener: js.Function1[/* ev */ MapboxEvent[js.UndefOr[scala.Nothing]] with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_resize(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.resize,
+    listener: js.Function1[/* ev */ MapboxEvent[js.UndefOr[scala.Nothing]] with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_rotate(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.rotate,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("off")
+  def off_rotateend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.rotateend,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("off")
+  def off_rotatestart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.rotatestart,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("off")
+  def off_sourcedata(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.sourcedata,
+    listener: js.Function1[/* ev */ MapSourceDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_sourcedataloading(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.sourcedataloading,
+    listener: js.Function1[/* ev */ MapSourceDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_styledata(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.styledata,
+    listener: js.Function1[/* ev */ MapStyleDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_styledataloading(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.styledataloading,
+    listener: js.Function1[/* ev */ MapStyleDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_tiledataloading(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.tiledataloading,
+    listener: js.Function1[/* ev */ MapDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_touchcancel(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchcancel,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_touchcancel(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchcancel,
+    listener: js.Function1[/* ev */ MapTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_touchend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchend,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_touchend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchend,
+    listener: js.Function1[/* ev */ MapTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_touchmove(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchmove,
+    listener: js.Function1[/* ev */ MapTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_touchstart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchstart,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_touchstart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchstart,
+    listener: js.Function1[/* ev */ MapTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_webglcontextlost(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.webglcontextlost,
+    listener: js.Function1[/* ev */ MapContextEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_webglcontextrestored(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.webglcontextrestored,
+    listener: js.Function1[/* ev */ MapContextEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_wheel(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.wheel,
+    listener: js.Function1[/* ev */ MapWheelEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_zoom(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.zoom,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("off")
+  def off_zoomend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.zoomend,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("off")
+  def off_zoomstart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.zoomstart,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
   def on(`type`: java.lang.String, listener: js.Function1[/* ev */ js.Any, scala.Unit]): this.type = js.native
-  def on[T /* <: java.lang.String */](
-    `type`: T,
-    layer: java.lang.String,
-    listener: js.Function1[/* ev */ js.Any with EventData, scala.Unit]
+  @JSName("on")
+  def on_boxzoomcancel(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.boxzoomcancel,
+    listener: js.Function1[/* ev */ MapBoxZoomEvent with EventData, scala.Unit]
   ): this.type = js.native
-  def on[T /* <: java.lang.String */](`type`: T, listener: js.Function1[/* ev */ js.Any with EventData, scala.Unit]): this.type = js.native
+  @JSName("on")
+  def on_boxzoomend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.boxzoomend,
+    listener: js.Function1[/* ev */ MapBoxZoomEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_boxzoomstart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.boxzoomstart,
+    listener: js.Function1[/* ev */ MapBoxZoomEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_click(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.click,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_click(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.click,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_contextmenu(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.contextmenu,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_contextmenu(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.contextmenu,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_data(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.data,
+    listener: js.Function1[/* ev */ MapDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_dataloading(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.dataloading,
+    listener: js.Function1[/* ev */ MapDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_dblclick(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.dblclick,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_dblclick(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.dblclick,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_drag(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.drag,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("on")
+  def on_dragend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.dragend,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("on")
+  def on_dragstart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.dragstart,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("on")
+  def on_error(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.error,
+    listener: js.Function1[/* ev */ ErrorEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_load(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.load,
+    listener: js.Function1[/* ev */ MapboxEvent[js.UndefOr[scala.Nothing]] with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_mousedown(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mousedown,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_mousedown(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mousedown,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_mouseenter(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseenter,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_mouseleave(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseleave,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_mousemove(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mousemove,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_mousemove(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mousemove,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_mouseout(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseout,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_mouseout(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseout,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_mouseover(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseover,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_mouseover(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseover,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_mouseup(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseup,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_mouseup(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseup,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_move(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.move,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("on")
+  def on_moveend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.moveend,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("on")
+  def on_movestart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.movestart,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("on")
+  def on_pitch(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.pitch,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("on")
+  def on_pitchend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.pitchend,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("on")
+  def on_pitchstart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.pitchstart,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("on")
+  def on_remove(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.remove,
+    listener: js.Function1[/* ev */ MapboxEvent[js.UndefOr[scala.Nothing]] with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_render(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.render,
+    listener: js.Function1[/* ev */ MapboxEvent[js.UndefOr[scala.Nothing]] with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_resize(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.resize,
+    listener: js.Function1[/* ev */ MapboxEvent[js.UndefOr[scala.Nothing]] with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_rotate(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.rotate,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("on")
+  def on_rotateend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.rotateend,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("on")
+  def on_rotatestart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.rotatestart,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("on")
+  def on_sourcedata(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.sourcedata,
+    listener: js.Function1[/* ev */ MapSourceDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_sourcedataloading(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.sourcedataloading,
+    listener: js.Function1[/* ev */ MapSourceDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_styledata(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.styledata,
+    listener: js.Function1[/* ev */ MapStyleDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_styledataloading(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.styledataloading,
+    listener: js.Function1[/* ev */ MapStyleDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_tiledataloading(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.tiledataloading,
+    listener: js.Function1[/* ev */ MapDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_touchcancel(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchcancel,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_touchcancel(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchcancel,
+    listener: js.Function1[/* ev */ MapTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_touchend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchend,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_touchend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchend,
+    listener: js.Function1[/* ev */ MapTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_touchmove(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchmove,
+    listener: js.Function1[/* ev */ MapTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_touchstart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchstart,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_touchstart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchstart,
+    listener: js.Function1[/* ev */ MapTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_webglcontextlost(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.webglcontextlost,
+    listener: js.Function1[/* ev */ MapContextEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_webglcontextrestored(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.webglcontextrestored,
+    listener: js.Function1[/* ev */ MapContextEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_wheel(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.wheel,
+    listener: js.Function1[/* ev */ MapWheelEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_zoom(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.zoom,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("on")
+  def on_zoomend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.zoomend,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("on")
+  def on_zoomstart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.zoomstart,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
   def once(`type`: java.lang.String, listener: js.Function1[/* ev */ js.Any, scala.Unit]): this.type = js.native
-  def once[T /* <: java.lang.String */](
-    `type`: T,
-    layer: java.lang.String,
-    listener: js.Function1[/* ev */ js.Any with EventData, scala.Unit]
+  @JSName("once")
+  def once_boxzoomcancel(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.boxzoomcancel,
+    listener: js.Function1[/* ev */ MapBoxZoomEvent with EventData, scala.Unit]
   ): this.type = js.native
-  def once[T /* <: java.lang.String */](`type`: T, listener: js.Function1[/* ev */ js.Any with EventData, scala.Unit]): this.type = js.native
+  @JSName("once")
+  def once_boxzoomend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.boxzoomend,
+    listener: js.Function1[/* ev */ MapBoxZoomEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_boxzoomstart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.boxzoomstart,
+    listener: js.Function1[/* ev */ MapBoxZoomEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_click(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.click,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_click(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.click,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_contextmenu(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.contextmenu,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_contextmenu(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.contextmenu,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_data(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.data,
+    listener: js.Function1[/* ev */ MapDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_dataloading(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.dataloading,
+    listener: js.Function1[/* ev */ MapDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_dblclick(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.dblclick,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_dblclick(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.dblclick,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_drag(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.drag,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def once_dragend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.dragend,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def once_dragstart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.dragstart,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def once_error(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.error,
+    listener: js.Function1[/* ev */ ErrorEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_load(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.load,
+    listener: js.Function1[/* ev */ MapboxEvent[js.UndefOr[scala.Nothing]] with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_mousedown(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mousedown,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_mousedown(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mousedown,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_mouseenter(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseenter,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_mouseleave(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseleave,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_mousemove(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mousemove,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_mousemove(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mousemove,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_mouseout(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseout,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_mouseout(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseout,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_mouseover(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseover,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_mouseover(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseover,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_mouseup(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseup,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_mouseup(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mouseup,
+    listener: js.Function1[/* ev */ MapMouseEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_move(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.move,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def once_moveend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.moveend,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def once_movestart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.movestart,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def once_pitch(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.pitch,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def once_pitchend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.pitchend,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def once_pitchstart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.pitchstart,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def once_remove(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.remove,
+    listener: js.Function1[/* ev */ MapboxEvent[js.UndefOr[scala.Nothing]] with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_render(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.render,
+    listener: js.Function1[/* ev */ MapboxEvent[js.UndefOr[scala.Nothing]] with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_resize(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.resize,
+    listener: js.Function1[/* ev */ MapboxEvent[js.UndefOr[scala.Nothing]] with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_rotate(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.rotate,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def once_rotateend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.rotateend,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def once_rotatestart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.rotatestart,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def once_sourcedata(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.sourcedata,
+    listener: js.Function1[/* ev */ MapSourceDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_sourcedataloading(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.sourcedataloading,
+    listener: js.Function1[/* ev */ MapSourceDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_styledata(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.styledata,
+    listener: js.Function1[/* ev */ MapStyleDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_styledataloading(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.styledataloading,
+    listener: js.Function1[/* ev */ MapStyleDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_tiledataloading(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.tiledataloading,
+    listener: js.Function1[/* ev */ MapDataEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_touchcancel(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchcancel,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_touchcancel(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchcancel,
+    listener: js.Function1[/* ev */ MapTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_touchend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchend,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_touchend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchend,
+    listener: js.Function1[/* ev */ MapTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_touchmove(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchmove,
+    listener: js.Function1[/* ev */ MapTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_touchstart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchstart,
+    layer: java.lang.String,
+    listener: js.Function1[/* ev */ MapLayerTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_touchstart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchstart,
+    listener: js.Function1[/* ev */ MapTouchEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_webglcontextlost(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.webglcontextlost,
+    listener: js.Function1[/* ev */ MapContextEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_webglcontextrestored(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.webglcontextrestored,
+    listener: js.Function1[/* ev */ MapContextEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_wheel(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.wheel,
+    listener: js.Function1[/* ev */ MapWheelEvent with EventData, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_zoom(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.zoom,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def once_zoomend(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.zoomend,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def once_zoomstart(
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.zoomstart,
+    listener: js.Function1[
+      /* ev */ (MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]) with EventData, 
+      scala.Unit
+    ]
+  ): this.type = js.native
   def panBy(offset: PointLike): this.type = js.native
   def panBy(offset: PointLike, options: AnimationOptions): this.type = js.native
   def panBy(offset: PointLike, options: AnimationOptions, eventData: EventData): this.type = js.native

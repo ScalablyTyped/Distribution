@@ -36,9 +36,9 @@ abstract class PhotoImportImportItemsResult () extends js.Object {
   /** Gets the size of the imported videos, in bytes. */
   var videosSizeInBytes: scala.Double = js.native
   /**
-                   * Asynchronously deletes the items that were imported from the source.
-                   * @return An asynchronous operation that returns a PhotoImportDeleteImportedItemsFromSourceResult on successful completion.
-                   */
+    * Asynchronously deletes the items that were imported from the source.
+    * @return An asynchronous operation that returns a PhotoImportDeleteImportedItemsFromSourceResult on successful completion.
+    */
   def deleteImportedItemsFromSourceAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[PhotoImportDeleteImportedItemsFromSourceResult, scala.Double] = js.native
 }
 

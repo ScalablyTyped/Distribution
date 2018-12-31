@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITemplate extends IColumn {
   /** [Method] When defined this will take precedence over the renderer config
   		* @param value Object

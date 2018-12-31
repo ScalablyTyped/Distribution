@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResponseInfo extends js.Object {
   var allResponseHeaders: js.UndefOr[java.lang.String] = js.undefined
   /** Can be string or bytearray depending on request.binaryStringResponseBody field */

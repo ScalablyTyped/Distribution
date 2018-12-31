@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AchievementResetResponse extends js.Object {
   /**
-               * The current state of the achievement. This is the same as the initial state of the achievement.
-               * Possible values are:
-               * - "HIDDEN"- Achievement is hidden.
-               * - "REVEALED" - Achievement is revealed.
-               * - "UNLOCKED" - Achievement is unlocked.
-               */
+    * The current state of the achievement. This is the same as the initial state of the achievement.
+    * Possible values are:
+    * - "HIDDEN"- Achievement is hidden.
+    * - "REVEALED" - Achievement is revealed.
+    * - "UNLOCKED" - Achievement is unlocked.
+    */
   var currentState: js.UndefOr[java.lang.String] = js.undefined
   /** The ID of an achievement for which player state has been updated. */
   var definitionId: js.UndefOr[java.lang.String] = js.undefined

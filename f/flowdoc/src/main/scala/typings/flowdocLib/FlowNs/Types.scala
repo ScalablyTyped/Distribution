@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Types extends js.Object {
   var DIAMOND: flowdocLib.flowdocLibStrings.DIAMOND
   var DOCUMENT: flowdocLib.flowdocLibStrings.DOCUMENT

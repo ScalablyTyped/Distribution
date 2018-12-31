@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServiceStatus extends js.Object {
   var authorization: scala.Double
   var hasPermissions: scala.Boolean

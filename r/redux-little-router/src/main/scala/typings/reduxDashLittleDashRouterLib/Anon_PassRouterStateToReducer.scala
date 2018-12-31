@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PassRouterStateToReducer extends js.Object {
   var baseUrl: java.lang.String
   var passRouterStateToReducer: js.UndefOr[scala.Boolean] = js.undefined

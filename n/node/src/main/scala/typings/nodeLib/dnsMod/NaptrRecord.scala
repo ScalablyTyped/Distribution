@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NaptrRecord extends js.Object {
   var flags: java.lang.String
   var order: scala.Double

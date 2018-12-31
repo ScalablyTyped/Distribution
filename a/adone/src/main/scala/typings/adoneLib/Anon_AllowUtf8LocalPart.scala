@@ -5,23 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AllowUtf8LocalPart extends js.Object {
   /**
-               * Whether to allow email addresses with display names ("Name <local@domain>"")
-               */
+    * Whether to allow email addresses with display names ("Name <local@domain>"")
+    */
   var allowDisplayName: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * Whether to allow UTF8 characters in the local part
-               */
+    * Whether to allow UTF8 characters in the local part
+    */
   var allowUtf8LocalPart: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * Whether to require display name
-               */
+    * Whether to require display name
+    */
   var requireDisplayName: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * Whether to require top-level domain, default `true`
-               */
+    * Whether to require top-level domain, default `true`
+    */
   var requireTld: js.UndefOr[scala.Boolean] = js.undefined
 }
 

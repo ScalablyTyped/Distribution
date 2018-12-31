@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TextBox extends js.Object {
   var checkBox: scala.Double
   var combo: scala.Double

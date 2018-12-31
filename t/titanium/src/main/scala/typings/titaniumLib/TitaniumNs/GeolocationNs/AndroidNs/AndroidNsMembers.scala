@@ -44,17 +44,11 @@ object AndroidNsMembers extends js.Object {
   			 * Creates and returns an instance of <Titanium.Geolocation.Android.LocationProvider>.
   			 */
   def createLocationProvider(): LocationProvider = js.native
-  /**
-  			 * Creates and returns an instance of <Titanium.Geolocation.Android.LocationProvider>.
-  			 */
   def createLocationProvider(parameters: js.Any): LocationProvider = js.native
   /**
   			 * Creates and returns an instance of <Titanium.Geolocation.Android.LocationRule>.
   			 */
   def createLocationRule(): LocationRule = js.native
-  /**
-  			 * Creates and returns an instance of <Titanium.Geolocation.Android.LocationRule>.
-  			 */
   def createLocationRule(parameters: js.Any): LocationRule = js.native
   /**
   			 * Fires a synthesized event to any registered listeners.

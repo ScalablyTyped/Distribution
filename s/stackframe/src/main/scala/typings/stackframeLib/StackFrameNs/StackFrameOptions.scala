@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StackFrameOptions extends js.Object {
   var args: js.UndefOr[js.Array[_]] = js.undefined
   var columnNumber: js.UndefOr[scala.Double] = js.undefined

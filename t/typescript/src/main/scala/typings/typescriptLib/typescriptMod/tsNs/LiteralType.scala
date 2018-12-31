@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LiteralType extends Type {
   var freshType: LiteralType
   var regularType: LiteralType

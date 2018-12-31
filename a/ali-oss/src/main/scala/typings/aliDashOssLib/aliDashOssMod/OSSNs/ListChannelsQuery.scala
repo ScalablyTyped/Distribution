@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListChannelsQuery extends js.Object {
    // the channel id prefix (returns channels with this prefix)
   var marker: java.lang.String

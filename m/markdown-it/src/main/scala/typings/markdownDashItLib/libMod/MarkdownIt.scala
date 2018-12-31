@@ -32,16 +32,14 @@ trait MarkdownIt extends js.Object {
   def renderInline(md: java.lang.String, env: js.Any): java.lang.String = js.native
   def set(options: markdownDashItLib.libMod.MarkdownItNs.Options): MarkdownIt = js.native
   /*
-      // The following only works in 3.0
-      // Since it's still not allowed to target 3.0, i'll leave the code commented out
-  
-      use<T extends Array<any> = any[]>(
-          plugin: (md: MarkdownIt, ...params: T) => void,
-          ...params: T
-      ): MarkdownIt;
-      */
-  
-  def use(plugin: js.Function2[/* md */ this.type, /* repeated */js.Any, scala.Unit], params: js.Any*): MarkdownIt = js.native
+    // The following only works in 3.0
+    // Since it's still not allowed to target 3.0, i'll leave the code commented out
+    use<T extends Array<any> = any[]>(
+    plugin: (md: MarkdownIt, ...params: T) => void,
+    ...params: T
+    ): MarkdownIt;
+    */
+  def use(plugin: js.Function2[/* md */ this.type, /* repeated */ js.Any, scala.Unit], params: js.Any*): MarkdownIt = js.native
   def validateLink(url: java.lang.String): scala.Boolean = js.native
 }
 

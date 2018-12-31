@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LibraryItem extends js.Object {
   var album: js.UndefOr[java.lang.String] = js.undefined
   var albumArtRef: js.UndefOr[js.Array[ArtRef]] = js.undefined

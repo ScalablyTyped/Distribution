@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OAuthError extends js.Object {
   var AbstractGrantType: org.scalablytyped.runtime.Instantiable1[
     /* options */ oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.TokenOptions, 
@@ -25,8 +24,8 @@ trait Anon_OAuthError extends js.Object {
     oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.OAuthError
   ]
   /**
-       * Represents an incoming HTTP request.
-       */
+    * Represents an incoming HTTP request.
+    */
   var Request: org.scalablytyped.runtime.Instantiable1[
     /* options */ js.UndefOr[
       /* options */ org.scalablytyped.runtime.StringDictionary[js.Any] | expressLib.expressMod.eNs.Request
@@ -34,8 +33,8 @@ trait Anon_OAuthError extends js.Object {
     oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Request
   ]
   /**
-       * Represents an outgoing HTTP response.
-       */
+    * Represents an outgoing HTTP response.
+    */
   var Response: org.scalablytyped.runtime.Instantiable1[
     /* options */ js.UndefOr[
       /* options */ org.scalablytyped.runtime.StringDictionary[js.Any] | expressLib.expressMod.eNs.Response

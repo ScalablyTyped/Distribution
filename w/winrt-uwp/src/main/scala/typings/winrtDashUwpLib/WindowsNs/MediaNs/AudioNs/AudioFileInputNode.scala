@@ -43,27 +43,27 @@ abstract class AudioFileInputNode () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[AudioFileInputNode, _]
   ): scala.Unit = js.native
   /**
-                   * Adds an outgoing connection to the audio file input node.
-                   * @param destination The destination node for the connection.
-                   */
+    * Adds an outgoing connection to the audio file input node.
+    * @param destination The destination node for the connection.
+    */
   def addOutgoingConnection(destination: IAudioNode): scala.Unit = js.native
   /**
-                   * Adds an outgoing connection with gain to the audio file input node.
-                   * @param destination The destination node for the connection.
-                   * @param gain A value indicating the gain associated with the connection.
-                   */
+    * Adds an outgoing connection with gain to the audio file input node.
+    * @param destination The destination node for the connection.
+    * @param gain A value indicating the gain associated with the connection.
+    */
   def addOutgoingConnection(destination: IAudioNode, gain: scala.Double): scala.Unit = js.native
   /** Closes the audio file input node. */
   def close(): scala.Unit = js.native
   /**
-                   * Disables all effects in the EffectDefinitions list with the specified effect definition.
-                   * @param definition The effect definition of the effects to disable.
-                   */
+    * Disables all effects in the EffectDefinitions list with the specified effect definition.
+    * @param definition The effect definition of the effects to disable.
+    */
   def disableEffectsByDefinition(definition: winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition): scala.Unit = js.native
   /**
-                   * Enables all effects in the EffectDefinitions list with the specified effect definition.
-                   * @param definition The effect definition of the effects to enable.
-                   */
+    * Enables all effects in the EffectDefinitions list with the specified effect definition.
+    * @param definition The effect definition of the effects to enable.
+    */
   def enableEffectsByDefinition(definition: winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition): scala.Unit = js.native
   /** Notifies of completion of the file associated with the audio file input node. */
   def onfilecompleted(ev: js.Any with winrtDashUwpLib.WindowsNs.WinRTEvent[AudioFileInputNode]): scala.Unit = js.native
@@ -74,16 +74,16 @@ abstract class AudioFileInputNode () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[AudioFileInputNode, _]
   ): scala.Unit = js.native
   /**
-                   * Removes the outgoing connection for the audio file input node.
-                   * @param destination The destination for the outgoing connection.
-                   */
+    * Removes the outgoing connection for the audio file input node.
+    * @param destination The destination for the outgoing connection.
+    */
   def removeOutgoingConnection(destination: IAudioNode): scala.Unit = js.native
   /** Resets the audio file input node. */
   def reset(): scala.Unit = js.native
   /**
-                   * Moves the playback position of the node to the specified time within the audio input file.
-                   * @param position A value indicating the position to which the node should seek.
-                   */
+    * Moves the playback position of the node to the specified time within the audio input file.
+    * @param position A value indicating the position to which the node should seek.
+    */
   def seek(position: scala.Double): scala.Unit = js.native
   /** Starts the audio file input node. */
   def start(): scala.Unit = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAbstractHelper
   extends extjsLib.ExtNs.IBase {
   /** [Method] Creates new DOM element s and appends them to el

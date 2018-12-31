@@ -15,6 +15,6 @@ package object propDashTypesMod {
   type ReactNodeLike = js.UndefOr[
     js.Object | ReactElementLike | ReactNodeArray | java.lang.String | scala.Double | scala.Boolean | scala.Null
   ]
-  type RequiredKeys[V] = /* import warning: Failed type conversion: TsTypeLookup(TsTypeObject(List(TsMemberTypeMapped(NoComments,Default,false,TsIdentSimple(K),TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(V))),List())),Deoptionalize,TsTypeRef(TsQIdent(List(TsIdentSimple(K))),List())))),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(V))),List())))) */js.Any
+  type RequiredKeys[V] = /* import warning: ImportType.apply Failed type conversion: {typemapped}[keyof V] */ js.Any
   type ValidationMap[T] = propDashTypesLib.propDashTypesLibStrings.ValidationMap with T
 }

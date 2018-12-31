@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Callbacks extends js.Object {
   /** Invoked on every step of animation */
   var onChange: js.UndefOr[js.Function] = js.undefined

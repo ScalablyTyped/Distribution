@@ -12,50 +12,50 @@ sealed trait TimelineTeamStatusCode extends js.Object
 @js.native
 object TimelineTeamStatusCode extends js.Object {
   /**
-       * Backlog does not exist or is missing crucial information.
-       */
+    * Backlog does not exist or is missing crucial information.
+    */
   @js.native
   sealed trait BacklogInError
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.TimelineTeamStatusCode
   
   /**
-       * Team does not exist or access is denied.
-       */
+    * Team does not exist or access is denied.
+    */
   @js.native
   sealed trait DoesntExistOrAccessDenied
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.TimelineTeamStatusCode
   
   /**
-       * Maximum number of team fields (ie Area paths) have been exceeded. No team data will be returned for this team.
-       */
+    * Maximum number of team fields (ie Area paths) have been exceeded. No team data will be returned for this team.
+    */
   @js.native
   sealed trait MaxTeamFieldsExceeded
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.TimelineTeamStatusCode
   
   /**
-       * Maximum number of teams was exceeded. No team data will be returned for this team.
-       */
+    * Maximum number of teams was exceeded. No team data will be returned for this team.
+    */
   @js.native
   sealed trait MaxTeamsExceeded
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.TimelineTeamStatusCode
   
   /**
-       * Team field value is not set for this team. No team data will be returned for this team
-       */
+    * Team field value is not set for this team. No team data will be returned for this team
+    */
   @js.native
   sealed trait MissingTeamFieldValue
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.TimelineTeamStatusCode
   
   /**
-       * Team does not have a single iteration with date range.
-       */
+    * Team does not have a single iteration with date range.
+    */
   @js.native
   sealed trait NoIterationsExist
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.TimelineTeamStatusCode
   
   /**
-       * No error - all data for team is good.
-       */
+    * No error - all data for team is good.
+    */
   @js.native
   sealed trait OK
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.TimelineTeamStatusCode

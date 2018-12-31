@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SafariExtensionContextMenuItemValidateEvent extends js.Object {
   /**
   		* The object that the event is currently being sent to.

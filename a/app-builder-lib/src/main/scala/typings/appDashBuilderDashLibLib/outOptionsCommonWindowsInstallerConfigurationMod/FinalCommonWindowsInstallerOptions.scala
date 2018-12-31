@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FinalCommonWindowsInstallerOptions extends js.Object {
   var isAssisted: scala.Boolean
   var isCreateDesktopShortcut: DesktopShortcutCreationPolicy

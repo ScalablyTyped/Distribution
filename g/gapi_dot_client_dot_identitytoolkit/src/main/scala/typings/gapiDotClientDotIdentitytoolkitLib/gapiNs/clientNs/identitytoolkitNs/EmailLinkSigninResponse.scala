@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EmailLinkSigninResponse extends js.Object {
   /** The user's email. */
   var email: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISelect extends js.Object {
   def active(index: scala.Double): scala.Double
   def hide(): scala.Unit

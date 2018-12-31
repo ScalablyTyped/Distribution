@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object facebookDashJsDashSdkLibMembers extends js.Object {
-  var FB: js.Any = js.native
+  var FB: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify fb.FacebookStatic */ js.Any = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModeStatic extends js.Object {
   var CBC: CBC
   var CFB: CFB

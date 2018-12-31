@@ -12,36 +12,36 @@ sealed trait GitConflictUpdateStatus extends js.Object
 @js.native
 object GitConflictUpdateStatus extends js.Object {
   /**
-       * Indicates that the update request did not fit the expected data contract
-       */
+    * Indicates that the update request did not fit the expected data contract
+    */
   @js.native
   sealed trait BadRequest
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictUpdateStatus
   
   /**
-       * Indicates that the requested resolution was not valid
-       */
+    * Indicates that the requested resolution was not valid
+    */
   @js.native
   sealed trait InvalidResolution
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictUpdateStatus
   
   /**
-       * Indicates that the conflict could not be found
-       */
+    * Indicates that the conflict could not be found
+    */
   @js.native
   sealed trait NotFound
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictUpdateStatus
   
   /**
-       * Indicates that pull request conflict update request was completed successfully
-       */
+    * Indicates that pull request conflict update request was completed successfully
+    */
   @js.native
   sealed trait Succeeded
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictUpdateStatus
   
   /**
-       * Indicates that the conflict in the update request was not a supported conflict type
-       */
+    * Indicates that the conflict in the update request was not a supported conflict type
+    */
   @js.native
   sealed trait UnsupportedConflictType
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictUpdateStatus

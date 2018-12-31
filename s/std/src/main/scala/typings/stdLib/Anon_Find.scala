@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Find extends js.Object {
   var copyWithin: scala.Boolean
   var entries: scala.Boolean

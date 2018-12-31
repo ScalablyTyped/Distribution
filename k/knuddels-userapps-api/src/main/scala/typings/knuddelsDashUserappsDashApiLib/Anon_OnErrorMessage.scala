@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnErrorMessage extends js.Object {
   var displayReasonText: js.UndefOr[java.lang.String] = js.undefined
   var onError: js.UndefOr[js.Function1[/* message */ java.lang.String, scala.Unit]] = js.undefined

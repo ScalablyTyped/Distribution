@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_InsertTrueExpandShapes extends js.Object {
   var applyMatrix: js.UndefOr[paperLib.paperNs.Matrix] = js.undefined
   var expandShapes: js.UndefOr[scala.Boolean] = js.undefined

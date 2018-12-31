@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * Message objects passed between Android application components.
 		 */
-
 trait Intent
   extends titaniumLib.TitaniumNs.Proxy {
   /**

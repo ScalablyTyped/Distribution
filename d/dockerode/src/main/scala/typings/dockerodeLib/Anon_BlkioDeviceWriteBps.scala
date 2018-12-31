@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BlkioDeviceWriteBps extends js.Object {
   var AutoRemove: js.UndefOr[scala.Boolean] = js.undefined
   var Binds: js.UndefOr[js.Array[java.lang.String]] = js.undefined

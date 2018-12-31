@@ -38,7 +38,6 @@ class NodePath[T] protected () extends js.Object {
   def assertAnyTypeAnnotation(opts: js.Object): scala.Unit = js.native
   // ------------------------- assertXXX -------------------------
   def assertArrayExpression(): scala.Unit = js.native
-  // ------------------------- assertXXX -------------------------
   def assertArrayExpression(opts: js.Object): scala.Unit = js.native
   def assertArrayPattern(): scala.Unit = js.native
   def assertArrayPattern(opts: js.Object): scala.Unit = js.native
@@ -389,22 +388,22 @@ class NodePath[T] protected () extends js.Object {
   // ------------------------- context -------------------------
   def call(key: java.lang.String): scala.Boolean = js.native
   /**
-       * This checks whether or not we're in one of the following positions:
-       *
-       *   for (KEY in right);
-       *   for (KEY;;);
-       *
-       * This is because these spots allow VariableDeclarations AND normal expressions so we need
-       * to tell the path replacement that it's ok to replace this with an expression.
-       */
+    * This checks whether or not we're in one of the following positions:
+    *
+    *   for (KEY in right);
+    *   for (KEY;;);
+    *
+    * This is because these spots allow VariableDeclarations AND normal expressions so we need
+    * to tell the path replacement that it's ok to replace this with an expression.
+    */
   def canHaveVariableDeclarationOrExpression(): scala.Boolean = js.native
   /**
-       * This checks whether we are swapping an arrow function's body between an
-       * expression and a block statement (or vice versa).
-       *
-       * This is because arrow functions may implicitly return an expression, which
-       * is the same as containing a block statement.
-       */
+    * This checks whether we are swapping an arrow function's body between an
+    * expression and a block statement (or vice versa).
+    *
+    * This is because arrow functions may implicitly return an expression, which
+    * is the same as containing a block statement.
+    */
   def canSwapBetweenExpressionAndStatement(replacement: Node): scala.Boolean = js.native
   def couldBeBaseType(name: java.lang.String): scala.Boolean = js.native
   // Example: https://github.com/babel/babel/blob/63204ae51e020d84a5b246312f5eeb4d981ab952/packages/babel-traverse/src/path/modification.js#L83
@@ -412,67 +411,61 @@ class NodePath[T] protected () extends js.Object {
   /** Check whether the path node `key` strict equals `value`. */
   def equals(key: java.lang.String, value: js.Any): scala.Boolean = js.native
   /**
-       * Walk the input `node` and statically evaluate it.
-       *
-       * Returns an object in the form `{ confident, value }`. `confident` indicates
-       * whether or not we had to drop out of evaluating the expression because of
-       * hitting an unknown node that we couldn't confidently find the value of.
-       *
-       * Example:
-       *
-       *   t.evaluate(parse("5 + 5")) // { confident: true, value: 10 }
-       *   t.evaluate(parse("!true")) // { confident: true, value: false }
-       *   t.evaluate(parse("foo + foo")) // { confident: false, value: undefined }
-       */
+    * Walk the input `node` and statically evaluate it.
+    *
+    * Returns an object in the form `{ confident, value }`. `confident` indicates
+    * whether or not we had to drop out of evaluating the expression because of
+    * hitting an unknown node that we couldn't confidently find the value of.
+    *
+    * Example:
+    *
+    *   t.evaluate(parse("5 + 5")) // { confident: true, value: 10 }
+    *   t.evaluate(parse("!true")) // { confident: true, value: false }
+    *   t.evaluate(parse("foo + foo")) // { confident: false, value: undefined }
+    */
   def evaluate(): babelDashTraverseLib.Anon_Confident = js.native
   // ------------------------- evaluation -------------------------
   /**
-       * Walk the input `node` and statically evaluate if it's truthy.
-       *
-       * Returning `true` when we're sure that the expression will evaluate to a
-       * truthy value, `false` if we're sure that it will evaluate to a falsy
-       * value and `undefined` if we aren't sure. Because of this please do not
-       * rely on coercion when using this method and check with === if it's false.
-       */
+    * Walk the input `node` and statically evaluate if it's truthy.
+    *
+    * Returning `true` when we're sure that the expression will evaluate to a
+    * truthy value, `false` if we're sure that it will evaluate to a falsy
+    * value and `undefined` if we aren't sure. Because of this please do not
+    * rely on coercion when using this method and check with === if it's false.
+    */
   def evaluateTruthy(): scala.Boolean = js.native
   def find(callback: js.Function1[/* path */ this.type, scala.Boolean]): NodePath[Node] = js.native
   // ------------------------- ancestry -------------------------
   /**
-       * Call the provided `callback` with the `NodePath`s of all the parents.
-       * When the `callback` returns a truthy value, we return that node path.
-       */
+    * Call the provided `callback` with the `NodePath`s of all the parents.
+    * When the `callback` returns a truthy value, we return that node path.
+    */
   def findParent(callback: js.Function1[/* path */ this.type, scala.Boolean]): NodePath[Node] = js.native
   def get(key: java.lang.String): NodePath[Node] | js.Array[NodePath[Node]] = js.native
   def get(key: java.lang.String, context: TraversalContext): NodePath[Node] | js.Array[NodePath[Node]] = js.native
   def get(key: java.lang.String, context: scala.Boolean): NodePath[Node] | js.Array[NodePath[Node]] = js.native
-  def get[K /* <: java.lang.String */](key: K): (NodePath[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-  ]) | (js.Array[
+  def get[K /* <: java.lang.String */](key: K): (NodePath[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]) | (js.Array[
     NodePath[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))),Left(TsIdentSimple(number))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: T[K][number] */ js.Any
     ]
   ]) = js.native
-  def get[K /* <: java.lang.String */](key: K, context: TraversalContext): (NodePath[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-  ]) | (js.Array[
+  def get[K /* <: java.lang.String */](key: K, context: TraversalContext): (NodePath[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]) | (js.Array[
     NodePath[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))),Left(TsIdentSimple(number))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: T[K][number] */ js.Any
     ]
   ]) = js.native
-  def get[K /* <: java.lang.String */](key: K, context: scala.Boolean): (NodePath[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-  ]) | (js.Array[
+  def get[K /* <: java.lang.String */](key: K, context: scala.Boolean): (NodePath[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]) | (js.Array[
     NodePath[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))),Left(TsIdentSimple(number))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: T[K][number] */ js.Any
     ]
   ]) = js.native
   def getAllNextSiblings(): js.Array[NodePath[Node]] = js.native
   def getAllPrevSiblings(): js.Array[NodePath[Node]] = js.native
   /**
-       * Build an array of node paths containing the entire ancestry of the current node path.
-       *
-       * NOTE: The current node path is included in this.
-       */
+    * Build an array of node paths containing the entire ancestry of the current node path.
+    *
+    * NOTE: The current node path is included in this.
+    */
   def getAncestry(): js.Array[NodePath[Node]] = js.native
   def getBindingIdentifiers(): js.Array[Node] = js.native
   def getBindingIdentifiers(duplicates: scala.Boolean): js.Array[Node] = js.native
@@ -481,7 +474,6 @@ class NodePath[T] protected () extends js.Object {
   def getData(key: java.lang.String, `def`: js.Any): js.Any = js.native
   /** Get the earliest path in the tree where the provided `paths` intersect. */
   def getDeepestCommonAncestorFrom(paths: js.Array[NodePath[Node]]): NodePath[Node] = js.native
-  /** Get the earliest path in the tree where the provided `paths` intersect. */
   def getDeepestCommonAncestorFrom(
     paths: js.Array[NodePath[Node]],
     filter: js.Function3[
@@ -492,12 +484,12 @@ class NodePath[T] protected () extends js.Object {
     ]
   ): NodePath[Node] = js.native
   /**
-       * Get the deepest common ancestor and then from it, get the earliest relationship path
-       * to that ancestor.
-       *
-       * Earliest is defined as being "before" all the other nodes in terms of list container
-       * position and visiting key.
-       */
+    * Get the deepest common ancestor and then from it, get the earliest relationship path
+    * to that ancestor.
+    *
+    * Earliest is defined as being "before" all the other nodes in terms of list container
+    * position and visiting key.
+    */
   def getEarliestCommonAncestorFrom(paths: js.Array[NodePath[Node]]): js.Array[NodePath[Node]] = js.native
   /** Get the parent function of the current path. */
   def getFunctionParent(): NodePath[babelDashTypesLib.babelDashTypesMod.Function] = js.native
@@ -517,433 +509,418 @@ class NodePath[T] protected () extends js.Object {
   /** Infer the type of the current `NodePath`. */
   def getTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.FlowTypeAnnotation = js.native
   /**
-       * Check whether we have the input `key`. If the `key` references an array then we check
-       * if the array has any items, otherwise we just check if it's falsy.
-       */
+    * Check whether we have the input `key`. If the `key` references an array then we check
+    * if the array has any items, otherwise we just check if it's falsy.
+    */
   def has(key: java.lang.String): scala.Boolean = js.native
   /** Hoist the current node to the highest scope possible and return a UID referencing it. */
   def hoist(scope: Scope): scala.Unit = js.native
   def inType(candidateTypes: java.lang.String*): scala.Boolean = js.native
   /**
-       * Insert the provided nodes after the current one. When inserting nodes after an
-       * expression, ensure that the completion record is correct by pushing the current node.
-       */
+    * Insert the provided nodes after the current one. When inserting nodes after an
+    * expression, ensure that the completion record is correct by pushing the current node.
+    */
   def insertAfter(nodes: Node): js.Any = js.native
-  /**
-       * Insert the provided nodes after the current one. When inserting nodes after an
-       * expression, ensure that the completion record is correct by pushing the current node.
-       */
   def insertAfter(nodes: js.Array[Node]): js.Any = js.native
   // ------------------------- modification -------------------------
   /** Insert the provided nodes before the current one. */
   def insertBefore(nodes: Node): js.Any = js.native
-  // ------------------------- modification -------------------------
-  /** Insert the provided nodes before the current one. */
   def insertBefore(nodes: js.Array[Node]): js.Any = js.native
   /** Alias of `has`. */
   def is(key: java.lang.String): scala.Boolean = js.native
-  def isAnyTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isAnyTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
+  def isAnyTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.AnyTypeAnnotation> */ scala.Boolean = js.native
+  def isAnyTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.AnyTypeAnnotation> */ scala.Boolean = js.native
   // ------------------------- isXXX -------------------------
-  def isArrayExpression(): /* is NodePath */scala.Boolean = js.native
-  // ------------------------- isXXX -------------------------
-  def isArrayExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isArrayPattern(): /* is NodePath */scala.Boolean = js.native
-  def isArrayPattern(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isArrayTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isArrayTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isArrowFunctionExpression(): /* is NodePath */scala.Boolean = js.native
-  def isArrowFunctionExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isAssignmentExpression(): /* is NodePath */scala.Boolean = js.native
-  def isAssignmentExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isAssignmentPattern(): /* is NodePath */scala.Boolean = js.native
-  def isAssignmentPattern(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isAwaitExpression(): /* is NodePath */scala.Boolean = js.native
-  def isAwaitExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
+  def isArrayExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ArrayExpression> */ scala.Boolean = js.native
+  def isArrayExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ArrayExpression> */ scala.Boolean = js.native
+  def isArrayPattern(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ArrayPattern> */ scala.Boolean = js.native
+  def isArrayPattern(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ArrayPattern> */ scala.Boolean = js.native
+  def isArrayTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ArrayTypeAnnotation> */ scala.Boolean = js.native
+  def isArrayTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ArrayTypeAnnotation> */ scala.Boolean = js.native
+  def isArrowFunctionExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ArrowFunctionExpression> */ scala.Boolean = js.native
+  def isArrowFunctionExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ArrowFunctionExpression> */ scala.Boolean = js.native
+  def isAssignmentExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.AssignmentExpression> */ scala.Boolean = js.native
+  def isAssignmentExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.AssignmentExpression> */ scala.Boolean = js.native
+  def isAssignmentPattern(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.AssignmentPattern> */ scala.Boolean = js.native
+  def isAssignmentPattern(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.AssignmentPattern> */ scala.Boolean = js.native
+  def isAwaitExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.AwaitExpression> */ scala.Boolean = js.native
+  def isAwaitExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.AwaitExpression> */ scala.Boolean = js.native
   def isBaseType(baseName: java.lang.String): scala.Boolean = js.native
   def isBaseType(baseName: java.lang.String, soft: scala.Boolean): scala.Boolean = js.native
-  def isBinary(): /* is NodePath */scala.Boolean = js.native
-  def isBinary(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isBinaryExpression(): /* is NodePath */scala.Boolean = js.native
-  def isBinaryExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isBindExpression(): /* is NodePath */scala.Boolean = js.native
-  def isBindExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isBindingIdentifier(): /* is NodePath */scala.Boolean = js.native
-  def isBindingIdentifier(opts: js.Object): /* is NodePath */scala.Boolean = js.native
+  def isBinary(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Binary> */ scala.Boolean = js.native
+  def isBinary(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Binary> */ scala.Boolean = js.native
+  def isBinaryExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BinaryExpression> */ scala.Boolean = js.native
+  def isBinaryExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BinaryExpression> */ scala.Boolean = js.native
+  def isBindExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BindExpression> */ scala.Boolean = js.native
+  def isBindExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BindExpression> */ scala.Boolean = js.native
+  def isBindingIdentifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Identifier> */ scala.Boolean = js.native
+  def isBindingIdentifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Identifier> */ scala.Boolean = js.native
   def isBlacklisted(): scala.Boolean = js.native
-  def isBlock(): /* is NodePath */scala.Boolean = js.native
-  def isBlock(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isBlockParent(): /* is NodePath */scala.Boolean = js.native
-  def isBlockParent(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isBlockScoped(): /* is NodePath */scala.Boolean = js.native
-  def isBlockScoped(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isBlockStatement(): /* is NodePath */scala.Boolean = js.native
-  def isBlockStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isBooleanLiteral(): /* is NodePath */scala.Boolean = js.native
-  def isBooleanLiteral(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isBooleanLiteralTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isBooleanLiteralTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isBooleanTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isBooleanTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isBreakStatement(): /* is NodePath */scala.Boolean = js.native
-  def isBreakStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isCallExpression(): /* is NodePath */scala.Boolean = js.native
-  def isCallExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isCatchClause(): /* is NodePath */scala.Boolean = js.native
-  def isCatchClause(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isClass(): /* is NodePath */scala.Boolean = js.native
-  def isClass(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isClassBody(): /* is NodePath */scala.Boolean = js.native
-  def isClassBody(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isClassDeclaration(): /* is NodePath */scala.Boolean = js.native
-  def isClassDeclaration(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isClassExpression(): /* is NodePath */scala.Boolean = js.native
-  def isClassExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isClassImplements(): /* is NodePath */scala.Boolean = js.native
-  def isClassImplements(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isClassMethod(): /* is NodePath */scala.Boolean = js.native
-  def isClassMethod(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isClassProperty(): /* is NodePath */scala.Boolean = js.native
-  def isClassProperty(opts: js.Object): /* is NodePath */scala.Boolean = js.native
+  def isBlock(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Block> */ scala.Boolean = js.native
+  def isBlock(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Block> */ scala.Boolean = js.native
+  def isBlockParent(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BlockParent> */ scala.Boolean = js.native
+  def isBlockParent(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BlockParent> */ scala.Boolean = js.native
+  def isBlockScoped(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionDeclaration | babel-types.babel-types.ClassDeclaration | babel-types.babel-types.VariableDeclaration> */ scala.Boolean = js.native
+  def isBlockScoped(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionDeclaration | babel-types.babel-types.ClassDeclaration | babel-types.babel-types.VariableDeclaration> */ scala.Boolean = js.native
+  def isBlockStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BlockStatement> */ scala.Boolean = js.native
+  def isBlockStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BlockStatement> */ scala.Boolean = js.native
+  def isBooleanLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BooleanLiteral> */ scala.Boolean = js.native
+  def isBooleanLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BooleanLiteral> */ scala.Boolean = js.native
+  def isBooleanLiteralTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BooleanLiteralTypeAnnotation> */ scala.Boolean = js.native
+  def isBooleanLiteralTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BooleanLiteralTypeAnnotation> */ scala.Boolean = js.native
+  def isBooleanTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BooleanTypeAnnotation> */ scala.Boolean = js.native
+  def isBooleanTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BooleanTypeAnnotation> */ scala.Boolean = js.native
+  def isBreakStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BreakStatement> */ scala.Boolean = js.native
+  def isBreakStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BreakStatement> */ scala.Boolean = js.native
+  def isCallExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.CallExpression> */ scala.Boolean = js.native
+  def isCallExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.CallExpression> */ scala.Boolean = js.native
+  def isCatchClause(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.CatchClause> */ scala.Boolean = js.native
+  def isCatchClause(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.CatchClause> */ scala.Boolean = js.native
+  def isClass(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Class> */ scala.Boolean = js.native
+  def isClass(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Class> */ scala.Boolean = js.native
+  def isClassBody(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassBody> */ scala.Boolean = js.native
+  def isClassBody(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassBody> */ scala.Boolean = js.native
+  def isClassDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassDeclaration> */ scala.Boolean = js.native
+  def isClassDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassDeclaration> */ scala.Boolean = js.native
+  def isClassExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassExpression> */ scala.Boolean = js.native
+  def isClassExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassExpression> */ scala.Boolean = js.native
+  def isClassImplements(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassImplements> */ scala.Boolean = js.native
+  def isClassImplements(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassImplements> */ scala.Boolean = js.native
+  def isClassMethod(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassMethod> */ scala.Boolean = js.native
+  def isClassMethod(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassMethod> */ scala.Boolean = js.native
+  def isClassProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassProperty> */ scala.Boolean = js.native
+  def isClassProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassProperty> */ scala.Boolean = js.native
   /** Check whether the current path references a completion record */
   def isCompletionRecord(): scala.Boolean = js.native
-  /** Check whether the current path references a completion record */
   def isCompletionRecord(allowInsideFunction: scala.Boolean): scala.Boolean = js.native
-  def isCompletionStatement(): /* is NodePath */scala.Boolean = js.native
-  def isCompletionStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isConditional(): /* is NodePath */scala.Boolean = js.native
-  def isConditional(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isConditionalExpression(): /* is NodePath */scala.Boolean = js.native
-  def isConditionalExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isContinueStatement(): /* is NodePath */scala.Boolean = js.native
-  def isContinueStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isDebuggerStatement(): /* is NodePath */scala.Boolean = js.native
-  def isDebuggerStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isDeclaration(): /* is NodePath */scala.Boolean = js.native
-  def isDeclaration(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isDeclareClass(): /* is NodePath */scala.Boolean = js.native
-  def isDeclareClass(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isDeclareFunction(): /* is NodePath */scala.Boolean = js.native
-  def isDeclareFunction(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isDeclareInterface(): /* is NodePath */scala.Boolean = js.native
-  def isDeclareInterface(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isDeclareModule(): /* is NodePath */scala.Boolean = js.native
-  def isDeclareModule(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isDeclareTypeAlias(): /* is NodePath */scala.Boolean = js.native
-  def isDeclareTypeAlias(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isDeclareVariable(): /* is NodePath */scala.Boolean = js.native
-  def isDeclareVariable(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isDecorator(): /* is NodePath */scala.Boolean = js.native
-  def isDecorator(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isDirective(): /* is NodePath */scala.Boolean = js.native
-  def isDirective(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isDirectiveLiteral(): /* is NodePath */scala.Boolean = js.native
-  def isDirectiveLiteral(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isDoExpression(): /* is NodePath */scala.Boolean = js.native
-  def isDoExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isDoWhileStatement(): /* is NodePath */scala.Boolean = js.native
-  def isDoWhileStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isEmptyStatement(): /* is NodePath */scala.Boolean = js.native
-  def isEmptyStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isExistentialTypeParam(): /* is NodePath */scala.Boolean = js.native
-  def isExistentialTypeParam(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isExportAllDeclaration(): /* is NodePath */scala.Boolean = js.native
-  def isExportAllDeclaration(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isExportDeclaration(): /* is NodePath */scala.Boolean = js.native
-  def isExportDeclaration(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isExportDefaultDeclaration(): /* is NodePath */scala.Boolean = js.native
-  def isExportDefaultDeclaration(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isExportDefaultSpecifier(): /* is NodePath */scala.Boolean = js.native
-  def isExportDefaultSpecifier(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isExportNamedDeclaration(): /* is NodePath */scala.Boolean = js.native
-  def isExportNamedDeclaration(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isExportNamespaceSpecifier(): /* is NodePath */scala.Boolean = js.native
-  def isExportNamespaceSpecifier(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isExportSpecifier(): /* is NodePath */scala.Boolean = js.native
-  def isExportSpecifier(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isExpression(): /* is NodePath */scala.Boolean = js.native
-  def isExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isExpressionStatement(): /* is NodePath */scala.Boolean = js.native
-  def isExpressionStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isExpressionWrapper(): /* is NodePath */scala.Boolean = js.native
-  def isExpressionWrapper(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isFile(): /* is NodePath */scala.Boolean = js.native
-  def isFile(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isFlow(): /* is NodePath */scala.Boolean = js.native
-  def isFlow(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isFlowBaseAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isFlowBaseAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isFlowDeclaration(): /* is NodePath */scala.Boolean = js.native
-  def isFlowDeclaration(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isFor(): /* is NodePath */scala.Boolean = js.native
-  def isFor(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isForInStatement(): /* is NodePath */scala.Boolean = js.native
-  def isForInStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isForOfStatement(): /* is NodePath */scala.Boolean = js.native
-  def isForOfStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isForStatement(): /* is NodePath */scala.Boolean = js.native
-  def isForStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isForXStatement(): /* is NodePath */scala.Boolean = js.native
-  def isForXStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isFunction(): /* is NodePath */scala.Boolean = js.native
-  def isFunction(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isFunctionDeclaration(): /* is NodePath */scala.Boolean = js.native
-  def isFunctionDeclaration(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isFunctionExpression(): /* is NodePath */scala.Boolean = js.native
-  def isFunctionExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isFunctionParent(): /* is NodePath */scala.Boolean = js.native
-  def isFunctionParent(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isFunctionTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isFunctionTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isFunctionTypeParam(): /* is NodePath */scala.Boolean = js.native
-  def isFunctionTypeParam(opts: js.Object): /* is NodePath */scala.Boolean = js.native
+  def isCompletionStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.CompletionStatement> */ scala.Boolean = js.native
+  def isCompletionStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.CompletionStatement> */ scala.Boolean = js.native
+  def isConditional(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Conditional> */ scala.Boolean = js.native
+  def isConditional(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Conditional> */ scala.Boolean = js.native
+  def isConditionalExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ConditionalExpression> */ scala.Boolean = js.native
+  def isConditionalExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ConditionalExpression> */ scala.Boolean = js.native
+  def isContinueStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ContinueStatement> */ scala.Boolean = js.native
+  def isContinueStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ContinueStatement> */ scala.Boolean = js.native
+  def isDebuggerStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DebuggerStatement> */ scala.Boolean = js.native
+  def isDebuggerStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DebuggerStatement> */ scala.Boolean = js.native
+  def isDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Declaration> */ scala.Boolean = js.native
+  def isDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Declaration> */ scala.Boolean = js.native
+  def isDeclareClass(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareClass> */ scala.Boolean = js.native
+  def isDeclareClass(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareClass> */ scala.Boolean = js.native
+  def isDeclareFunction(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareFunction> */ scala.Boolean = js.native
+  def isDeclareFunction(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareFunction> */ scala.Boolean = js.native
+  def isDeclareInterface(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareInterface> */ scala.Boolean = js.native
+  def isDeclareInterface(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareInterface> */ scala.Boolean = js.native
+  def isDeclareModule(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareModule> */ scala.Boolean = js.native
+  def isDeclareModule(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareModule> */ scala.Boolean = js.native
+  def isDeclareTypeAlias(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareTypeAlias> */ scala.Boolean = js.native
+  def isDeclareTypeAlias(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareTypeAlias> */ scala.Boolean = js.native
+  def isDeclareVariable(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareVariable> */ scala.Boolean = js.native
+  def isDeclareVariable(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareVariable> */ scala.Boolean = js.native
+  def isDecorator(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Decorator> */ scala.Boolean = js.native
+  def isDecorator(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Decorator> */ scala.Boolean = js.native
+  def isDirective(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Directive> */ scala.Boolean = js.native
+  def isDirective(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Directive> */ scala.Boolean = js.native
+  def isDirectiveLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DirectiveLiteral> */ scala.Boolean = js.native
+  def isDirectiveLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DirectiveLiteral> */ scala.Boolean = js.native
+  def isDoExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DoExpression> */ scala.Boolean = js.native
+  def isDoExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DoExpression> */ scala.Boolean = js.native
+  def isDoWhileStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DoWhileStatement> */ scala.Boolean = js.native
+  def isDoWhileStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DoWhileStatement> */ scala.Boolean = js.native
+  def isEmptyStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.EmptyStatement> */ scala.Boolean = js.native
+  def isEmptyStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.EmptyStatement> */ scala.Boolean = js.native
+  def isExistentialTypeParam(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExistentialTypeParam> */ scala.Boolean = js.native
+  def isExistentialTypeParam(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExistentialTypeParam> */ scala.Boolean = js.native
+  def isExportAllDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportAllDeclaration> */ scala.Boolean = js.native
+  def isExportAllDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportAllDeclaration> */ scala.Boolean = js.native
+  def isExportDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportDeclaration> */ scala.Boolean = js.native
+  def isExportDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportDeclaration> */ scala.Boolean = js.native
+  def isExportDefaultDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportDefaultDeclaration> */ scala.Boolean = js.native
+  def isExportDefaultDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportDefaultDeclaration> */ scala.Boolean = js.native
+  def isExportDefaultSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportDefaultSpecifier> */ scala.Boolean = js.native
+  def isExportDefaultSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportDefaultSpecifier> */ scala.Boolean = js.native
+  def isExportNamedDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportNamedDeclaration> */ scala.Boolean = js.native
+  def isExportNamedDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportNamedDeclaration> */ scala.Boolean = js.native
+  def isExportNamespaceSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportNamespaceSpecifier> */ scala.Boolean = js.native
+  def isExportNamespaceSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportNamespaceSpecifier> */ scala.Boolean = js.native
+  def isExportSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportSpecifier> */ scala.Boolean = js.native
+  def isExportSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportSpecifier> */ scala.Boolean = js.native
+  def isExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Expression> */ scala.Boolean = js.native
+  def isExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Expression> */ scala.Boolean = js.native
+  def isExpressionStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExpressionStatement> */ scala.Boolean = js.native
+  def isExpressionStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExpressionStatement> */ scala.Boolean = js.native
+  def isExpressionWrapper(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExpressionWrapper> */ scala.Boolean = js.native
+  def isExpressionWrapper(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExpressionWrapper> */ scala.Boolean = js.native
+  def isFile(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.File> */ scala.Boolean = js.native
+  def isFile(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.File> */ scala.Boolean = js.native
+  def isFlow(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Flow> */ scala.Boolean = js.native
+  def isFlow(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Flow> */ scala.Boolean = js.native
+  def isFlowBaseAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FlowBaseAnnotation> */ scala.Boolean = js.native
+  def isFlowBaseAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FlowBaseAnnotation> */ scala.Boolean = js.native
+  def isFlowDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FlowDeclaration> */ scala.Boolean = js.native
+  def isFlowDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FlowDeclaration> */ scala.Boolean = js.native
+  def isFor(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.For> */ scala.Boolean = js.native
+  def isFor(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.For> */ scala.Boolean = js.native
+  def isForInStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ForInStatement> */ scala.Boolean = js.native
+  def isForInStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ForInStatement> */ scala.Boolean = js.native
+  def isForOfStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ForOfStatement> */ scala.Boolean = js.native
+  def isForOfStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ForOfStatement> */ scala.Boolean = js.native
+  def isForStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ForStatement> */ scala.Boolean = js.native
+  def isForStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ForStatement> */ scala.Boolean = js.native
+  def isForXStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ForXStatement> */ scala.Boolean = js.native
+  def isForXStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ForXStatement> */ scala.Boolean = js.native
+  def isFunction(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Function> */ scala.Boolean = js.native
+  def isFunction(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Function> */ scala.Boolean = js.native
+  def isFunctionDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionDeclaration> */ scala.Boolean = js.native
+  def isFunctionDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionDeclaration> */ scala.Boolean = js.native
+  def isFunctionExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionExpression> */ scala.Boolean = js.native
+  def isFunctionExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionExpression> */ scala.Boolean = js.native
+  def isFunctionParent(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionParent> */ scala.Boolean = js.native
+  def isFunctionParent(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionParent> */ scala.Boolean = js.native
+  def isFunctionTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionTypeAnnotation> */ scala.Boolean = js.native
+  def isFunctionTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionTypeAnnotation> */ scala.Boolean = js.native
+  def isFunctionTypeParam(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionTypeParam> */ scala.Boolean = js.native
+  def isFunctionTypeParam(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionTypeParam> */ scala.Boolean = js.native
   def isGenerated(): scala.Boolean = js.native
   def isGenerated(opts: js.Object): scala.Boolean = js.native
   def isGenericType(genericName: java.lang.String): scala.Boolean = js.native
-  def isGenericTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isGenericTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isIdentifier(): /* is NodePath */scala.Boolean = js.native
-  def isIdentifier(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isIfStatement(): /* is NodePath */scala.Boolean = js.native
-  def isIfStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isImmutable(): /* is NodePath */scala.Boolean = js.native
-  def isImmutable(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isImportDeclaration(): /* is NodePath */scala.Boolean = js.native
-  def isImportDeclaration(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isImportDefaultSpecifier(): /* is NodePath */scala.Boolean = js.native
-  def isImportDefaultSpecifier(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isImportNamespaceSpecifier(): /* is NodePath */scala.Boolean = js.native
-  def isImportNamespaceSpecifier(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isImportSpecifier(): /* is NodePath */scala.Boolean = js.native
-  def isImportSpecifier(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isInterfaceDeclaration(): /* is NodePath */scala.Boolean = js.native
-  def isInterfaceDeclaration(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isInterfaceExtends(): /* is NodePath */scala.Boolean = js.native
-  def isInterfaceExtends(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isIntersectionTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isIntersectionTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isJSX(): /* is NodePath */scala.Boolean = js.native
-  def isJSX(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isJSXAttribute(): /* is NodePath */scala.Boolean = js.native
-  def isJSXAttribute(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isJSXClosingElement(): /* is NodePath */scala.Boolean = js.native
-  def isJSXClosingElement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isJSXElement(): /* is NodePath */scala.Boolean = js.native
-  def isJSXElement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isJSXEmptyExpression(): /* is NodePath */scala.Boolean = js.native
-  def isJSXEmptyExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isJSXExpressionContainer(): /* is NodePath */scala.Boolean = js.native
-  def isJSXExpressionContainer(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isJSXIdentifier(): /* is NodePath */scala.Boolean = js.native
-  def isJSXIdentifier(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isJSXMemberExpression(): /* is NodePath */scala.Boolean = js.native
-  def isJSXMemberExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isJSXNamespacedName(): /* is NodePath */scala.Boolean = js.native
-  def isJSXNamespacedName(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isJSXOpeningElement(): /* is NodePath */scala.Boolean = js.native
-  def isJSXOpeningElement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isJSXSpreadAttribute(): /* is NodePath */scala.Boolean = js.native
-  def isJSXSpreadAttribute(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isJSXText(): /* is NodePath */scala.Boolean = js.native
-  def isJSXText(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isLVal(): /* is NodePath */scala.Boolean = js.native
-  def isLVal(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isLabeledStatement(): /* is NodePath */scala.Boolean = js.native
-  def isLabeledStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isLiteral(): /* is NodePath */scala.Boolean = js.native
-  def isLiteral(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isLogicalExpression(): /* is NodePath */scala.Boolean = js.native
-  def isLogicalExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isLoop(): /* is NodePath */scala.Boolean = js.native
-  def isLoop(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isMemberExpression(): /* is NodePath */scala.Boolean = js.native
-  def isMemberExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isMetaProperty(): /* is NodePath */scala.Boolean = js.native
-  def isMetaProperty(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isMethod(): /* is NodePath */scala.Boolean = js.native
-  def isMethod(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isMixedTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isMixedTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isModuleDeclaration(): /* is NodePath */scala.Boolean = js.native
-  def isModuleDeclaration(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isModuleSpecifier(): /* is NodePath */scala.Boolean = js.native
-  def isModuleSpecifier(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isNewExpression(): /* is NodePath */scala.Boolean = js.native
-  def isNewExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
+  def isGenericTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.GenericTypeAnnotation> */ scala.Boolean = js.native
+  def isGenericTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.GenericTypeAnnotation> */ scala.Boolean = js.native
+  def isIdentifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Identifier> */ scala.Boolean = js.native
+  def isIdentifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Identifier> */ scala.Boolean = js.native
+  def isIfStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.IfStatement> */ scala.Boolean = js.native
+  def isIfStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.IfStatement> */ scala.Boolean = js.native
+  def isImmutable(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Immutable> */ scala.Boolean = js.native
+  def isImmutable(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Immutable> */ scala.Boolean = js.native
+  def isImportDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ImportDeclaration> */ scala.Boolean = js.native
+  def isImportDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ImportDeclaration> */ scala.Boolean = js.native
+  def isImportDefaultSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ImportDefaultSpecifier> */ scala.Boolean = js.native
+  def isImportDefaultSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ImportDefaultSpecifier> */ scala.Boolean = js.native
+  def isImportNamespaceSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ImportNamespaceSpecifier> */ scala.Boolean = js.native
+  def isImportNamespaceSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ImportNamespaceSpecifier> */ scala.Boolean = js.native
+  def isImportSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ImportSpecifier> */ scala.Boolean = js.native
+  def isImportSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ImportSpecifier> */ scala.Boolean = js.native
+  def isInterfaceDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.InterfaceDeclaration> */ scala.Boolean = js.native
+  def isInterfaceDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.InterfaceDeclaration> */ scala.Boolean = js.native
+  def isInterfaceExtends(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.InterfaceExtends> */ scala.Boolean = js.native
+  def isInterfaceExtends(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.InterfaceExtends> */ scala.Boolean = js.native
+  def isIntersectionTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.IntersectionTypeAnnotation> */ scala.Boolean = js.native
+  def isIntersectionTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.IntersectionTypeAnnotation> */ scala.Boolean = js.native
+  def isJSX(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSX> */ scala.Boolean = js.native
+  def isJSX(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSX> */ scala.Boolean = js.native
+  def isJSXAttribute(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXAttribute> */ scala.Boolean = js.native
+  def isJSXAttribute(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXAttribute> */ scala.Boolean = js.native
+  def isJSXClosingElement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXClosingElement> */ scala.Boolean = js.native
+  def isJSXClosingElement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXClosingElement> */ scala.Boolean = js.native
+  def isJSXElement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXElement> */ scala.Boolean = js.native
+  def isJSXElement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXElement> */ scala.Boolean = js.native
+  def isJSXEmptyExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXEmptyExpression> */ scala.Boolean = js.native
+  def isJSXEmptyExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXEmptyExpression> */ scala.Boolean = js.native
+  def isJSXExpressionContainer(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXExpressionContainer> */ scala.Boolean = js.native
+  def isJSXExpressionContainer(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXExpressionContainer> */ scala.Boolean = js.native
+  def isJSXIdentifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXIdentifier> */ scala.Boolean = js.native
+  def isJSXIdentifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXIdentifier> */ scala.Boolean = js.native
+  def isJSXMemberExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXMemberExpression> */ scala.Boolean = js.native
+  def isJSXMemberExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXMemberExpression> */ scala.Boolean = js.native
+  def isJSXNamespacedName(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXNamespacedName> */ scala.Boolean = js.native
+  def isJSXNamespacedName(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXNamespacedName> */ scala.Boolean = js.native
+  def isJSXOpeningElement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXOpeningElement> */ scala.Boolean = js.native
+  def isJSXOpeningElement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXOpeningElement> */ scala.Boolean = js.native
+  def isJSXSpreadAttribute(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXSpreadAttribute> */ scala.Boolean = js.native
+  def isJSXSpreadAttribute(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXSpreadAttribute> */ scala.Boolean = js.native
+  def isJSXText(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXText> */ scala.Boolean = js.native
+  def isJSXText(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXText> */ scala.Boolean = js.native
+  def isLVal(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.LVal> */ scala.Boolean = js.native
+  def isLVal(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.LVal> */ scala.Boolean = js.native
+  def isLabeledStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.LabeledStatement> */ scala.Boolean = js.native
+  def isLabeledStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.LabeledStatement> */ scala.Boolean = js.native
+  def isLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Literal> */ scala.Boolean = js.native
+  def isLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Literal> */ scala.Boolean = js.native
+  def isLogicalExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.LogicalExpression> */ scala.Boolean = js.native
+  def isLogicalExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.LogicalExpression> */ scala.Boolean = js.native
+  def isLoop(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Loop> */ scala.Boolean = js.native
+  def isLoop(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Loop> */ scala.Boolean = js.native
+  def isMemberExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.MemberExpression> */ scala.Boolean = js.native
+  def isMemberExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.MemberExpression> */ scala.Boolean = js.native
+  def isMetaProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.MetaProperty> */ scala.Boolean = js.native
+  def isMetaProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.MetaProperty> */ scala.Boolean = js.native
+  def isMethod(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Method> */ scala.Boolean = js.native
+  def isMethod(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Method> */ scala.Boolean = js.native
+  def isMixedTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.MixedTypeAnnotation> */ scala.Boolean = js.native
+  def isMixedTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.MixedTypeAnnotation> */ scala.Boolean = js.native
+  def isModuleDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ModuleDeclaration> */ scala.Boolean = js.native
+  def isModuleDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ModuleDeclaration> */ scala.Boolean = js.native
+  def isModuleSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ModuleSpecifier> */ scala.Boolean = js.native
+  def isModuleSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ModuleSpecifier> */ scala.Boolean = js.native
+  def isNewExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NewExpression> */ scala.Boolean = js.native
+  def isNewExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NewExpression> */ scala.Boolean = js.native
   /**
-       * Check the type against our stored internal type of the node. This is handy when a node has
-       * been removed yet we still internally know the type and need it to calculate node replacement.
-       */
+    * Check the type against our stored internal type of the node. This is handy when a node has
+    * been removed yet we still internally know the type and need it to calculate node replacement.
+    */
   def isNodeType(`type`: java.lang.String): scala.Boolean = js.native
-  def isNoop(): /* is NodePath */scala.Boolean = js.native
-  def isNoop(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isNullLiteral(): /* is NodePath */scala.Boolean = js.native
-  def isNullLiteral(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isNullLiteralTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isNullLiteralTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isNullableTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isNullableTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isNumberLiteral(): /* is NodePath */scala.Boolean = js.native
-  def isNumberLiteral(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isNumberTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isNumberTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isNumericLiteral(): /* is NodePath */scala.Boolean = js.native
-  def isNumericLiteral(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isNumericLiteralTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isNumericLiteralTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isObjectExpression(): /* is NodePath */scala.Boolean = js.native
-  def isObjectExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isObjectMember(): /* is NodePath */scala.Boolean = js.native
-  def isObjectMember(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isObjectMethod(): /* is NodePath */scala.Boolean = js.native
-  def isObjectMethod(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isObjectPattern(): /* is NodePath */scala.Boolean = js.native
-  def isObjectPattern(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isObjectProperty(): /* is NodePath */scala.Boolean = js.native
-  def isObjectProperty(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isObjectTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isObjectTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isObjectTypeCallProperty(): /* is NodePath */scala.Boolean = js.native
-  def isObjectTypeCallProperty(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isObjectTypeIndexer(): /* is NodePath */scala.Boolean = js.native
-  def isObjectTypeIndexer(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isObjectTypeProperty(): /* is NodePath */scala.Boolean = js.native
-  def isObjectTypeProperty(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isParenthesizedExpression(): /* is NodePath */scala.Boolean = js.native
-  def isParenthesizedExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isPattern(): /* is NodePath */scala.Boolean = js.native
-  def isPattern(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isProgram(): /* is NodePath */scala.Boolean = js.native
-  def isProgram(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isProperty(): /* is NodePath */scala.Boolean = js.native
-  def isProperty(opts: js.Object): /* is NodePath */scala.Boolean = js.native
+  def isNoop(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Noop> */ scala.Boolean = js.native
+  def isNoop(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Noop> */ scala.Boolean = js.native
+  def isNullLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NullLiteral> */ scala.Boolean = js.native
+  def isNullLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NullLiteral> */ scala.Boolean = js.native
+  def isNullLiteralTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NullLiteralTypeAnnotation> */ scala.Boolean = js.native
+  def isNullLiteralTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NullLiteralTypeAnnotation> */ scala.Boolean = js.native
+  def isNullableTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NullableTypeAnnotation> */ scala.Boolean = js.native
+  def isNullableTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NullableTypeAnnotation> */ scala.Boolean = js.native
+  def isNumberLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NumericLiteral> */ scala.Boolean = js.native
+  def isNumberLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NumericLiteral> */ scala.Boolean = js.native
+  def isNumberTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NumberTypeAnnotation> */ scala.Boolean = js.native
+  def isNumberTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NumberTypeAnnotation> */ scala.Boolean = js.native
+  def isNumericLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NumericLiteral> */ scala.Boolean = js.native
+  def isNumericLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NumericLiteral> */ scala.Boolean = js.native
+  def isNumericLiteralTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NumericLiteralTypeAnnotation> */ scala.Boolean = js.native
+  def isNumericLiteralTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NumericLiteralTypeAnnotation> */ scala.Boolean = js.native
+  def isObjectExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectExpression> */ scala.Boolean = js.native
+  def isObjectExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectExpression> */ scala.Boolean = js.native
+  def isObjectMember(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectMember> */ scala.Boolean = js.native
+  def isObjectMember(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectMember> */ scala.Boolean = js.native
+  def isObjectMethod(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectMethod> */ scala.Boolean = js.native
+  def isObjectMethod(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectMethod> */ scala.Boolean = js.native
+  def isObjectPattern(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectPattern> */ scala.Boolean = js.native
+  def isObjectPattern(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectPattern> */ scala.Boolean = js.native
+  def isObjectProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectProperty> */ scala.Boolean = js.native
+  def isObjectProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectProperty> */ scala.Boolean = js.native
+  def isObjectTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectTypeAnnotation> */ scala.Boolean = js.native
+  def isObjectTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectTypeAnnotation> */ scala.Boolean = js.native
+  def isObjectTypeCallProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectTypeCallProperty> */ scala.Boolean = js.native
+  def isObjectTypeCallProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectTypeCallProperty> */ scala.Boolean = js.native
+  def isObjectTypeIndexer(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectTypeIndexer> */ scala.Boolean = js.native
+  def isObjectTypeIndexer(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectTypeIndexer> */ scala.Boolean = js.native
+  def isObjectTypeProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectTypeProperty> */ scala.Boolean = js.native
+  def isObjectTypeProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectTypeProperty> */ scala.Boolean = js.native
+  def isParenthesizedExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ParenthesizedExpression> */ scala.Boolean = js.native
+  def isParenthesizedExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ParenthesizedExpression> */ scala.Boolean = js.native
+  def isPattern(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Pattern> */ scala.Boolean = js.native
+  def isPattern(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Pattern> */ scala.Boolean = js.native
+  def isProgram(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Program> */ scala.Boolean = js.native
+  def isProgram(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Program> */ scala.Boolean = js.native
+  def isProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Property> */ scala.Boolean = js.native
+  def isProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Property> */ scala.Boolean = js.native
   def isPure(): scala.Boolean = js.native
   def isPure(opts: js.Object): scala.Boolean = js.native
-  def isPureish(): /* is NodePath */scala.Boolean = js.native
-  def isPureish(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isQualifiedTypeIdentifier(): /* is NodePath */scala.Boolean = js.native
-  def isQualifiedTypeIdentifier(opts: js.Object): /* is NodePath */scala.Boolean = js.native
+  def isPureish(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Pureish> */ scala.Boolean = js.native
+  def isPureish(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Pureish> */ scala.Boolean = js.native
+  def isQualifiedTypeIdentifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.QualifiedTypeIdentifier> */ scala.Boolean = js.native
+  def isQualifiedTypeIdentifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.QualifiedTypeIdentifier> */ scala.Boolean = js.native
   def isReferenced(): scala.Boolean = js.native
   def isReferenced(opts: js.Object): scala.Boolean = js.native
-  def isReferencedIdentifier(): /* is NodePath */scala.Boolean = js.native
-  def isReferencedIdentifier(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isReferencedMemberExpression(): /* is NodePath */scala.Boolean = js.native
-  def isReferencedMemberExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isRegExpLiteral(): /* is NodePath */scala.Boolean = js.native
-  def isRegExpLiteral(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isRegexLiteral(): /* is NodePath */scala.Boolean = js.native
-  def isRegexLiteral(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isRestElement(): /* is NodePath */scala.Boolean = js.native
-  def isRestElement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isRestProperty(): /* is NodePath */scala.Boolean = js.native
-  def isRestProperty(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isReturnStatement(): /* is NodePath */scala.Boolean = js.native
-  def isReturnStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isScopable(): /* is NodePath */scala.Boolean = js.native
-  def isScopable(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isScope(): /* is NodePath */scala.Boolean = js.native
-  def isScope(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isSequenceExpression(): /* is NodePath */scala.Boolean = js.native
-  def isSequenceExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isSpreadElement(): /* is NodePath */scala.Boolean = js.native
-  def isSpreadElement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isSpreadProperty(): /* is NodePath */scala.Boolean = js.native
-  def isSpreadProperty(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isStatement(): /* is NodePath */scala.Boolean = js.native
-  def isStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
+  def isReferencedIdentifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Identifier | babel-types.babel-types.JSXIdentifier> */ scala.Boolean = js.native
+  def isReferencedIdentifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Identifier | babel-types.babel-types.JSXIdentifier> */ scala.Boolean = js.native
+  def isReferencedMemberExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.MemberExpression> */ scala.Boolean = js.native
+  def isReferencedMemberExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.MemberExpression> */ scala.Boolean = js.native
+  def isRegExpLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.RegExpLiteral> */ scala.Boolean = js.native
+  def isRegExpLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.RegExpLiteral> */ scala.Boolean = js.native
+  def isRegexLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.RegExpLiteral> */ scala.Boolean = js.native
+  def isRegexLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.RegExpLiteral> */ scala.Boolean = js.native
+  def isRestElement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.RestElement> */ scala.Boolean = js.native
+  def isRestElement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.RestElement> */ scala.Boolean = js.native
+  def isRestProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.RestProperty> */ scala.Boolean = js.native
+  def isRestProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.RestProperty> */ scala.Boolean = js.native
+  def isReturnStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ReturnStatement> */ scala.Boolean = js.native
+  def isReturnStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ReturnStatement> */ scala.Boolean = js.native
+  def isScopable(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Scopable> */ scala.Boolean = js.native
+  def isScopable(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Scopable> */ scala.Boolean = js.native
+  def isScope(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Scopable> */ scala.Boolean = js.native
+  def isScope(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Scopable> */ scala.Boolean = js.native
+  def isSequenceExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SequenceExpression> */ scala.Boolean = js.native
+  def isSequenceExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SequenceExpression> */ scala.Boolean = js.native
+  def isSpreadElement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SpreadElement> */ scala.Boolean = js.native
+  def isSpreadElement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SpreadElement> */ scala.Boolean = js.native
+  def isSpreadProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SpreadProperty> */ scala.Boolean = js.native
+  def isSpreadProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SpreadProperty> */ scala.Boolean = js.native
+  def isStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Statement> */ scala.Boolean = js.native
+  def isStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Statement> */ scala.Boolean = js.native
   /**
-       * Check whether or not the current `key` allows either a single statement or block statement
-       * so we can explode it if necessary.
-       */
+    * Check whether or not the current `key` allows either a single statement or block statement
+    * so we can explode it if necessary.
+    */
   def isStatementOrBlock(): scala.Boolean = js.native
   def isStatic(): scala.Boolean = js.native
-  def isStringLiteral(): /* is NodePath */scala.Boolean = js.native
-  def isStringLiteral(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isStringLiteralTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isStringLiteralTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isStringTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isStringTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isSuper(): /* is NodePath */scala.Boolean = js.native
-  def isSuper(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isSwitchCase(): /* is NodePath */scala.Boolean = js.native
-  def isSwitchCase(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isSwitchStatement(): /* is NodePath */scala.Boolean = js.native
-  def isSwitchStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isTaggedTemplateExpression(): /* is NodePath */scala.Boolean = js.native
-  def isTaggedTemplateExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isTemplateElement(): /* is NodePath */scala.Boolean = js.native
-  def isTemplateElement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isTemplateLiteral(): /* is NodePath */scala.Boolean = js.native
-  def isTemplateLiteral(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isTerminatorless(): /* is NodePath */scala.Boolean = js.native
-  def isTerminatorless(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isThisExpression(): /* is NodePath */scala.Boolean = js.native
-  def isThisExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isThisTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isThisTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isThrowStatement(): /* is NodePath */scala.Boolean = js.native
-  def isThrowStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isTryStatement(): /* is NodePath */scala.Boolean = js.native
-  def isTryStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isTupleTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isTupleTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isTypeAlias(): /* is NodePath */scala.Boolean = js.native
-  def isTypeAlias(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isTypeCastExpression(): /* is NodePath */scala.Boolean = js.native
-  def isTypeCastExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isTypeParameterDeclaration(): /* is NodePath */scala.Boolean = js.native
-  def isTypeParameterDeclaration(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isTypeParameterInstantiation(): /* is NodePath */scala.Boolean = js.native
-  def isTypeParameterInstantiation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isTypeofTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isTypeofTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isUnaryExpression(): /* is NodePath */scala.Boolean = js.native
-  def isUnaryExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isUnaryLike(): /* is NodePath */scala.Boolean = js.native
-  def isUnaryLike(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isUnionTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isUnionTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isUpdateExpression(): /* is NodePath */scala.Boolean = js.native
-  def isUpdateExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
+  def isStringLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.StringLiteral> */ scala.Boolean = js.native
+  def isStringLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.StringLiteral> */ scala.Boolean = js.native
+  def isStringLiteralTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.StringLiteralTypeAnnotation> */ scala.Boolean = js.native
+  def isStringLiteralTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.StringLiteralTypeAnnotation> */ scala.Boolean = js.native
+  def isStringTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.StringTypeAnnotation> */ scala.Boolean = js.native
+  def isStringTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.StringTypeAnnotation> */ scala.Boolean = js.native
+  def isSuper(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Super> */ scala.Boolean = js.native
+  def isSuper(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Super> */ scala.Boolean = js.native
+  def isSwitchCase(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SwitchCase> */ scala.Boolean = js.native
+  def isSwitchCase(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SwitchCase> */ scala.Boolean = js.native
+  def isSwitchStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SwitchStatement> */ scala.Boolean = js.native
+  def isSwitchStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SwitchStatement> */ scala.Boolean = js.native
+  def isTaggedTemplateExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TaggedTemplateExpression> */ scala.Boolean = js.native
+  def isTaggedTemplateExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TaggedTemplateExpression> */ scala.Boolean = js.native
+  def isTemplateElement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TemplateElement> */ scala.Boolean = js.native
+  def isTemplateElement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TemplateElement> */ scala.Boolean = js.native
+  def isTemplateLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TemplateLiteral> */ scala.Boolean = js.native
+  def isTemplateLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TemplateLiteral> */ scala.Boolean = js.native
+  def isTerminatorless(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Terminatorless> */ scala.Boolean = js.native
+  def isTerminatorless(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Terminatorless> */ scala.Boolean = js.native
+  def isThisExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ThisExpression> */ scala.Boolean = js.native
+  def isThisExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ThisExpression> */ scala.Boolean = js.native
+  def isThisTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ThisTypeAnnotation> */ scala.Boolean = js.native
+  def isThisTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ThisTypeAnnotation> */ scala.Boolean = js.native
+  def isThrowStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ThrowStatement> */ scala.Boolean = js.native
+  def isThrowStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ThrowStatement> */ scala.Boolean = js.native
+  def isTryStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TryStatement> */ scala.Boolean = js.native
+  def isTryStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TryStatement> */ scala.Boolean = js.native
+  def isTupleTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TupleTypeAnnotation> */ scala.Boolean = js.native
+  def isTupleTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TupleTypeAnnotation> */ scala.Boolean = js.native
+  def isTypeAlias(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeAlias> */ scala.Boolean = js.native
+  def isTypeAlias(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeAlias> */ scala.Boolean = js.native
+  def isTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeAnnotation> */ scala.Boolean = js.native
+  def isTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeAnnotation> */ scala.Boolean = js.native
+  def isTypeCastExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeCastExpression> */ scala.Boolean = js.native
+  def isTypeCastExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeCastExpression> */ scala.Boolean = js.native
+  def isTypeParameterDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeParameterDeclaration> */ scala.Boolean = js.native
+  def isTypeParameterDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeParameterDeclaration> */ scala.Boolean = js.native
+  def isTypeParameterInstantiation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeParameterInstantiation> */ scala.Boolean = js.native
+  def isTypeParameterInstantiation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeParameterInstantiation> */ scala.Boolean = js.native
+  def isTypeofTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeofTypeAnnotation> */ scala.Boolean = js.native
+  def isTypeofTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeofTypeAnnotation> */ scala.Boolean = js.native
+  def isUnaryExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UnaryExpression> */ scala.Boolean = js.native
+  def isUnaryExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UnaryExpression> */ scala.Boolean = js.native
+  def isUnaryLike(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UnaryLike> */ scala.Boolean = js.native
+  def isUnaryLike(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UnaryLike> */ scala.Boolean = js.native
+  def isUnionTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UnionTypeAnnotation> */ scala.Boolean = js.native
+  def isUnionTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UnionTypeAnnotation> */ scala.Boolean = js.native
+  def isUpdateExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UpdateExpression> */ scala.Boolean = js.native
+  def isUpdateExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UpdateExpression> */ scala.Boolean = js.native
   def isUser(): scala.Boolean = js.native
   def isUser(opts: js.Object): scala.Boolean = js.native
-  def isUserWhitespacable(): /* is NodePath */scala.Boolean = js.native
-  def isUserWhitespacable(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isVar(): /* is NodePath */scala.Boolean = js.native
-  def isVar(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isVariableDeclaration(): /* is NodePath */scala.Boolean = js.native
-  def isVariableDeclaration(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isVariableDeclarator(): /* is NodePath */scala.Boolean = js.native
-  def isVariableDeclarator(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isVoidTypeAnnotation(): /* is NodePath */scala.Boolean = js.native
-  def isVoidTypeAnnotation(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isWhile(): /* is NodePath */scala.Boolean = js.native
-  def isWhile(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isWhileStatement(): /* is NodePath */scala.Boolean = js.native
-  def isWhileStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isWithStatement(): /* is NodePath */scala.Boolean = js.native
-  def isWithStatement(opts: js.Object): /* is NodePath */scala.Boolean = js.native
-  def isYieldExpression(): /* is NodePath */scala.Boolean = js.native
-  def isYieldExpression(opts: js.Object): /* is NodePath */scala.Boolean = js.native
+  def isUserWhitespacable(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UserWhitespacable> */ scala.Boolean = js.native
+  def isUserWhitespacable(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UserWhitespacable> */ scala.Boolean = js.native
+  def isVar(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.VariableDeclaration> */ scala.Boolean = js.native
+  def isVar(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.VariableDeclaration> */ scala.Boolean = js.native
+  def isVariableDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.VariableDeclaration> */ scala.Boolean = js.native
+  def isVariableDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.VariableDeclaration> */ scala.Boolean = js.native
+  def isVariableDeclarator(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.VariableDeclarator> */ scala.Boolean = js.native
+  def isVariableDeclarator(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.VariableDeclarator> */ scala.Boolean = js.native
+  def isVoidTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.VoidTypeAnnotation> */ scala.Boolean = js.native
+  def isVoidTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.VoidTypeAnnotation> */ scala.Boolean = js.native
+  def isWhile(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.While> */ scala.Boolean = js.native
+  def isWhile(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.While> */ scala.Boolean = js.native
+  def isWhileStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.WhileStatement> */ scala.Boolean = js.native
+  def isWhileStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.WhileStatement> */ scala.Boolean = js.native
+  def isWithStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.WithStatement> */ scala.Boolean = js.native
+  def isWithStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.WithStatement> */ scala.Boolean = js.native
+  def isYieldExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.YieldExpression> */ scala.Boolean = js.native
+  def isYieldExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.YieldExpression> */ scala.Boolean = js.native
   /** Opposite of `has`. */
   def isnt(key: java.lang.String): scala.Boolean = js.native
   // ------------------------- introspection -------------------------
   /**
-       * Match the current node if it matches the provided `pattern`.
-       *
-       * For example, given the match `React.createClass` it would match the
-       * parsed nodes of `React.createClass` and `React["createClass"]`.
-       */
+    * Match the current node if it matches the provided `pattern`.
+    *
+    * For example, given the match `React.createClass` it would match the
+    * parsed nodes of `React.createClass` and `React["createClass"]`.
+    */
   def matchesPattern(pattern: java.lang.String): scala.Boolean = js.native
-  // ------------------------- introspection -------------------------
-  /**
-       * Match the current node if it matches the provided `pattern`.
-       *
-       * For example, given the match `React.createClass` it would match the
-       * parsed nodes of `React.createClass` and `React["createClass"]`.
-       */
   def matchesPattern(pattern: java.lang.String, allowPartial: scala.Boolean): scala.Boolean = js.native
   def popContext(): scala.Unit = js.native
   def pushContext(context: TraversalContext): scala.Unit = js.native
@@ -952,33 +929,32 @@ class NodePath[T] protected () extends js.Object {
   // ------------------------- removal -------------------------
   def remove(): scala.Unit = js.native
   /**
-       * This method takes an array of statements nodes and then explodes it
-       * into expressions. This method retains completion records which is
-       * extremely important to retain original semantics.
-       */
+    * This method takes an array of statements nodes and then explodes it
+    * into expressions. This method retains completion records which is
+    * extremely important to retain original semantics.
+    */
   def replaceExpressionWithStatements(nodes: js.Array[Node]): Node = js.native
   def replaceInline(nodes: Node): scala.Unit = js.native
   def replaceInline(nodes: js.Array[Node]): scala.Unit = js.native
   /** Replace the current node with another. */
   def replaceWith(replacement: Node): scala.Unit = js.native
-  /** Replace the current node with another. */
   def replaceWith(replacement: NodePath[Node]): scala.Unit = js.native
   // ------------------------- replacement -------------------------
   /**
-       * Replace a node with an array of multiple. This method performs the following steps:
-       *
-       *  - Inherit the comments of first provided node with that of the current node.
-       *  - Insert the provided nodes after the current node.
-       *  - Remove the current node.
-       */
+    * Replace a node with an array of multiple. This method performs the following steps:
+    *
+    *  - Inherit the comments of first provided node with that of the current node.
+    *  - Insert the provided nodes after the current node.
+    *  - Remove the current node.
+    */
   def replaceWithMultiple(nodes: js.Array[Node]): scala.Unit = js.native
   /**
-       * Parse a string as an expression and replace the current node with the result.
-       *
-       * NOTE: This is typically not a good idea to use. Building source strings when
-       * transforming ASTs is an antipattern and SHOULD NOT be encouraged. Even if it's
-       * easier to use, your transforms will be extremely brittle.
-       */
+    * Parse a string as an expression and replace the current node with the result.
+    *
+    * NOTE: This is typically not a good idea to use. Building source strings when
+    * transforming ASTs is an antipattern and SHOULD NOT be encouraged. Even if it's
+    * easier to use, your transforms will be extremely brittle.
+    */
   def replaceWithSourceString(replacement: js.Any): scala.Unit = js.native
   def set(key: java.lang.String, node: Node): scala.Unit = js.native
   def setContext(context: TraversalContext): NodePath[T] = js.native

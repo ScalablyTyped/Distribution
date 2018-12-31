@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DocsListDialog extends js.Object {
   def addCloseHandler(handler: Handler): DocsListDialog
   def addSelectionHandler(handler: Handler): DocsListDialog

@@ -12,15 +12,15 @@ sealed trait RendererStyleFlags2 extends js.Object
 @js.native
 object RendererStyleFlags2 extends js.Object {
   /**
-       * Marks a style as using dash case naming (this-is-dash-case).
-       */
+    * Marks a style as using dash case naming (this-is-dash-case).
+    */
   @js.native
   sealed trait DashCase
     extends atAngularCoreLib.srcRenderApiMod.RendererStyleFlags2
   
   /**
-       * Marks a style as important.
-       */
+    * Marks a style as important.
+    */
   @js.native
   sealed trait Important
     extends atAngularCoreLib.srcRenderApiMod.RendererStyleFlags2

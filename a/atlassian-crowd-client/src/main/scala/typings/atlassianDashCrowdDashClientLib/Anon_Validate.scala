@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Validate extends js.Object {
   var create: js.Function4[
     /* username */ java.lang.String, 

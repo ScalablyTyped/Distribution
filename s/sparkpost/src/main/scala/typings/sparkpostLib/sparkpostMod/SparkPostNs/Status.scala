@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Status extends js.Object {
   /** Verification status of abuse@ mailbox */
   var abuse_at_status: sparkpostLib.sparkpostLibStrings.valid | sparkpostLib.sparkpostLibStrings.invalid | sparkpostLib.sparkpostLibStrings.unverified | sparkpostLib.sparkpostLibStrings.pending

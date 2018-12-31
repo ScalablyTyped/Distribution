@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IonRangeSliderEvent extends js.Object {
    // MAX values
   var from: scala.Double

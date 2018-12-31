@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * An object for playing basic audio resources.
 		 */
-
 trait Sound
   extends titaniumLib.TitaniumNs.Proxy {
   /**

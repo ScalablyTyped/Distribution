@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ManagementOptions extends js.Object {
   var audience: js.UndefOr[java.lang.String] = js.undefined
   var clientId: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Serverless extends js.Object {
   var cli: serverlessLib.Anon_Log
   var config: serverlessLib.serverlessMod.ServerlessNs.Config

@@ -15,9 +15,7 @@ class InlineShapes protected () extends js.Object {
   var `Word.InlineShapes_typekey`: InlineShapes = js.native
   /** @param Office.XlChartType [Type=-1] */
   def AddChart(): InlineShape = js.native
-  /** @param Office.XlChartType [Type=-1] */
   def AddChart(Type: activexDashOfficeLib.OfficeNs.XlChartType): InlineShape = js.native
-  /** @param Office.XlChartType [Type=-1] */
   def AddChart(Type: activexDashOfficeLib.OfficeNs.XlChartType, Range: js.Any): InlineShape = js.native
   def AddHorizontalLine(FileName: java.lang.String): InlineShape = js.native
   def AddHorizontalLine(FileName: java.lang.String, Range: js.Any): InlineShape = js.native

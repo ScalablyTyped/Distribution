@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SystemData extends js.Object {
   var manufacturer: java.lang.String
   var model: java.lang.String

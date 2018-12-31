@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MaskPosition extends js.Object {
   var point: java.lang.String
   var scale: scala.Double

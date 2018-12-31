@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("aws-sdk/clients/all", "SWF")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class SWF ()
   extends awsDashSdkLib.clientsSwfMod.namespaced {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsSwfMod.SWFNs.ClientConfiguration) = this()
 }
 

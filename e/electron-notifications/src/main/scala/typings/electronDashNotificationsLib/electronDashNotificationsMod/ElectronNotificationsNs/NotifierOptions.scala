@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotifierOptions extends js.Object {
   /** One or two buttons to display on the right of the notification. */
   var buttons: js.UndefOr[js.Array[java.lang.String]] = js.undefined

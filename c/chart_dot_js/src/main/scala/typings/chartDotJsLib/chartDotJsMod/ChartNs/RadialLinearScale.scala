@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RadialLinearScale extends LinearScale {
   var angleLines: js.UndefOr[AngleLineOptions] = js.undefined
   var lineArc: js.UndefOr[scala.Boolean] = js.undefined

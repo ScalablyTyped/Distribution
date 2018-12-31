@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Type extends js.Object {
   /** The list of fields. */
   var fields: js.UndefOr[js.Array[Field]] = js.undefined

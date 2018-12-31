@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RadialGradientProps extends js.Object {
   var cx: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
   var cy: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined

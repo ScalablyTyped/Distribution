@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Info extends js.Object {
   var contact: js.UndefOr[Contact] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined

@@ -8,20 +8,21 @@ import scala.scalajs.js.annotation._
 /** Represents a link within a syndication feed or item. This class encapsulates information in the /rss/channel/link or / rss/channel/item/link element in RSS 2.0 or the atom:link element in Atom 1.0. */
 @JSGlobal("Windows.Web.Syndication.SyndicationLink")
 @js.native
+/** Creates a new SyndicationLink object. */
 class SyndicationLink () extends js.Object {
   /**
-                   * Creates a new SyndicationLink with a Uri.
-                   * @param uri The Uri value.
-                   */
+    * Creates a new SyndicationLink with a Uri.
+    * @param uri The Uri value.
+    */
   def this(uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri) = this()
   /**
-                   * Creates a new SyndicationLink object with a Uri, Relationship, Title, MediaType, and Length.
-                   * @param uri The Uri value.
-                   * @param relationship The relationship type.
-                   * @param title The title of the syndication link.
-                   * @param mediaType The MediaType of the syndication link.
-                   * @param length The length, in bytes, of the syndication link.
-                   */
+    * Creates a new SyndicationLink object with a Uri, Relationship, Title, MediaType, and Length.
+    * @param uri The Uri value.
+    * @param relationship The relationship type.
+    * @param title The title of the syndication link.
+    * @param mediaType The MediaType of the syndication link.
+    * @param length The length, in bytes, of the syndication link.
+    */
   def this(uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri, relationship: java.lang.String, title: java.lang.String, mediaType: java.lang.String, length: scala.Double) = this()
   /** Gets the list of custom attributes of the element. */
   var attributeExtensions: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[SyndicationAttribute] = js.native
@@ -50,10 +51,10 @@ class SyndicationLink () extends js.Object {
   /** Gets or sets the URI of the linked resource. */
   var uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri = js.native
   /**
-                   * Generates the DOM object that represents this element, all the attributes and child elements including foreign markups. The only formats accepted by this method are Atom 1.0 and RSS 2.0.
-                   * @param format The format of the data.
-                   * @return The DOM object that represents this element, and all the attributes and child elements, including foreign markups.
-                   */
+    * Generates the DOM object that represents this element, all the attributes and child elements including foreign markups. The only formats accepted by this method are Atom 1.0 and RSS 2.0.
+    * @param format The format of the data.
+    * @return The DOM object that represents this element, and all the attributes and child elements, including foreign markups.
+    */
   def getXmlDocument(format: SyndicationFormat): winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument = js.native
 }
 

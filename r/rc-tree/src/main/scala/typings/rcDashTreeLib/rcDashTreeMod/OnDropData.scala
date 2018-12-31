@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnDropData extends js.Object {
   var dragNode: InternalTreeNode
   var dragNodesKeys: js.Array[java.lang.String]

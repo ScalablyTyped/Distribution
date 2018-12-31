@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AppendObjectOptions extends js.Object {
   var headers: js.UndefOr[js.Object] = js.undefined
    // custom mime, will send with Content-Type entity header

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReportOptions extends js.Object {
   var allowWarnings: js.UndefOr[scala.Boolean] = js.undefined
   var emitError: js.UndefOr[scala.Boolean] = js.undefined

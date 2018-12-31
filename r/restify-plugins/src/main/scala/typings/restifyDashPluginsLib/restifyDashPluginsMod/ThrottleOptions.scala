@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThrottleOptions extends js.Object {
   var burst: js.UndefOr[scala.Double] = js.undefined
   var ip: js.UndefOr[scala.Boolean] = js.undefined

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 *  打开另一个小程序。(参数)
 	 */
-
 trait navigateToSmartProgramOptions
   extends BaseOptions[js.Any, js.Any] {
   /**

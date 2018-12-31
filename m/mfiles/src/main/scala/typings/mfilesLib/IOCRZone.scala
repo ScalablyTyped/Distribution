@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOCRZone extends js.Object {
   var Barcode: scala.Boolean
   var DataType: mfilesLib.MFilesNs.MFDataType

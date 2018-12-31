@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CollectionCellGroupRendererParams extends js.Object {
   var cellRenderer: CollectionCellRenderer
   var cellSizeAndPositionGetter: CollectionCellSizeAndPositionGetter

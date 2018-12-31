@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ExcludeSwitches extends js.Object {
   var args: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var binary: js.UndefOr[java.lang.String] = js.undefined

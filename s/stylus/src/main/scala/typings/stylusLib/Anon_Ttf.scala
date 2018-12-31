@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Ttf extends js.Object {
   var `.eot`: java.lang.String
   var `.gif`: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Clientid extends js.Object {
   /** You need to register your app in the Google APIs Console to get the client ID. */
   var client_id: java.lang.String

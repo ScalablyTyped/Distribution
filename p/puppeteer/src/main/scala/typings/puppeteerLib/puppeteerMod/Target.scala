@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Target extends js.Object {
   /** Get the browser the target belongs to. */
   def browser(): Browser

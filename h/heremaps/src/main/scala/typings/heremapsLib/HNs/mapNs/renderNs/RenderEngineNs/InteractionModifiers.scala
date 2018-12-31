@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait InteractionModifiers extends js.Object
 
 /**
-                 * This object defines the modifiers to use for H.map.ViewPort#startInteraction.
-                 */
+  * This object defines the modifiers to use for H.map.ViewPort#startInteraction.
+  */
 @JSGlobal("H.map.render.RenderEngine.InteractionModifiers")
 @js.native
 object InteractionModifiers extends js.Object {

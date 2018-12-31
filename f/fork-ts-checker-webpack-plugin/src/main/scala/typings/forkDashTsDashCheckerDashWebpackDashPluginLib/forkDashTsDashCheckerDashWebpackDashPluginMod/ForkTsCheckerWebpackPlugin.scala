@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * ForkTsCheckerWebpackPlugin
- * Runs typescript type checker and linter (tslint) on separate process.
- * This speed-ups build a lot.
- *
- * Options description in README.md
- */
-
+  * ForkTsCheckerWebpackPlugin
+  * Runs typescript type checker and linter (tslint) on separate process.
+  * This speed-ups build a lot.
+  *
+  * Options description in README.md
+  */
 trait ForkTsCheckerWebpackPlugin extends js.Object {
   var async: js.Any
   var cancellationToken: js.UndefOr[js.Any] = js.undefined

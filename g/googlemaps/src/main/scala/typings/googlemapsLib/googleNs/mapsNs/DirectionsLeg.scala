@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DirectionsLeg extends js.Object {
   var arrival_time: Time
   var departure_time: Time

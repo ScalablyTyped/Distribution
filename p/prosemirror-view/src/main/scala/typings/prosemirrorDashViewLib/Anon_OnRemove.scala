@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnRemove extends js.Object {
   var onRemove: js.UndefOr[
     (js.Function1[

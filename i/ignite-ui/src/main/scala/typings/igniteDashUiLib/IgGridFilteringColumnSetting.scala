@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgGridFilteringColumnSetting
   extends /**
 	 * Option for IgGridFilteringColumnSetting

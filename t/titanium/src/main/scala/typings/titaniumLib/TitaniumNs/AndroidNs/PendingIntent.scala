@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * The Titanium binding of an Android `PendingIntent`.
 		 */
-
 trait PendingIntent
   extends titaniumLib.TitaniumNs.Proxy {
   /**

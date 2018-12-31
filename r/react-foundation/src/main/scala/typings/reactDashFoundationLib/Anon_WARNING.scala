@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_WARNING extends js.Object {
   var ALERT: reactDashFoundationLib.enumsMod.BadgeColors
   var INFO: reactDashFoundationLib.enumsMod.BadgeColors

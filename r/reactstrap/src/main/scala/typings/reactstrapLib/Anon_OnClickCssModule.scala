@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnClickCssModule extends js.Object {
   var action: js.UndefOr[scala.Boolean] = js.undefined
   var active: js.UndefOr[scala.Boolean] = js.undefined

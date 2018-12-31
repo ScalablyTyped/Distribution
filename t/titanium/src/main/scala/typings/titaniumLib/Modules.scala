@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Optional Titanium modules.
- */
-
+  * Optional Titanium modules.
+  */
 trait Modules extends js.Object
 

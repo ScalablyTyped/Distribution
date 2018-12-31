@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UrlFilter extends js.Object {
   /** Optional. Matches if the host name of the URL contains a specified string. To test whether a host name component has a prefix 'foo', use hostContains: '.foo'. This matches 'www.foobar.com' and 'foo.com', because an implicit dot is added at the beginning of the host name. Similarly, hostContains can be used to match against component suffix ('foo.') and to exactly match against components ('.foo.'). Suffix- and exact-matching for the last components need to be done separately using hostSuffix, because no implicit dot is added at the end of the host name.  */
   var hostContains: js.UndefOr[java.lang.String] = js.undefined
@@ -16,10 +15,10 @@ trait UrlFilter extends js.Object {
   /** Optional. Matches if the host name of the URL ends with a specified string.  */
   var hostSuffix: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Optional.
-            * Since Chrome 28.
-           * Matches if the URL without query segment and fragment identifier matches a specified regular expression. Port numbers are stripped from the URL if they match the default port number. The regular expressions use the RE2 syntax.
-           */
+    * Optional.
+    * Since Chrome 28.
+    * Matches if the URL without query segment and fragment identifier matches a specified regular expression. Port numbers are stripped from the URL if they match the default port number. The regular expressions use the RE2 syntax.
+    */
   var originAndPathMatches: js.UndefOr[java.lang.String] = js.undefined
   /** Optional. Matches if the path segment of the URL contains a specified string.  */
   var pathContains: js.UndefOr[java.lang.String] = js.undefined
@@ -46,10 +45,10 @@ trait UrlFilter extends js.Object {
   /** Optional. Matches if the URL (without fragment identifier) is equal to a specified string. Port numbers are stripped from the URL if they match the default port number.  */
   var urlEquals: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Optional.
-            * Since Chrome 23.
-           * Matches if the URL (without fragment identifier) matches a specified regular expression. Port numbers are stripped from the URL if they match the default port number. The regular expressions use the RE2 syntax.
-           */
+    * Optional.
+    * Since Chrome 23.
+    * Matches if the URL (without fragment identifier) matches a specified regular expression. Port numbers are stripped from the URL if they match the default port number. The regular expressions use the RE2 syntax.
+    */
   var urlMatches: js.UndefOr[java.lang.String] = js.undefined
   /** Optional. Matches if the URL (without fragment identifier) starts with a specified string. Port numbers are stripped from the URL if they match the default port number.  */
   var urlPrefix: js.UndefOr[java.lang.String] = js.undefined

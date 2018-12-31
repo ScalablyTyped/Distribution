@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Device extends js.Object {
   /** Indicates that Cordova initialize successfully. */
   var available: scala.Boolean
@@ -16,9 +15,9 @@ trait Device extends js.Object {
   /** Get the device's manufacturer. */
   var manufacturer: java.lang.String
   /**
-       * The device.model returns the name of the device's model or product. The value is set
-       * by the device manufacturer and may be different across versions of the same product.
-       */
+    * The device.model returns the name of the device's model or product. The value is set
+    * by the device manufacturer and may be different across versions of the same product.
+    */
   var model: java.lang.String
   /** Get the device's operating system name. */
   var platform: java.lang.String

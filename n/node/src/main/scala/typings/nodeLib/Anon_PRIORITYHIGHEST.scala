@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PRIORITYHIGHEST extends js.Object {
   var PRIORITY_ABOVE_NORMAL: scala.Double
   var PRIORITY_BELOW_NORMAL: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IndexConfig extends js.Object {
   var `class`: js.UndefOr[java.lang.String] = js.undefined
   var engine: js.UndefOr[

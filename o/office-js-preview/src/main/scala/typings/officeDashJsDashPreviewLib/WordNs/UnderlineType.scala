@@ -9,19 +9,19 @@ import scala.scalajs.js.annotation._
 sealed trait UnderlineType extends js.Object
 
 /**
-     *
-     * Underline types
-     *
-     * [Api set: WordApi]
-     */
+  *
+  * Underline types
+  *
+  * [Api set: WordApi]
+  */
 @JSGlobal("Word.UnderlineType")
 @js.native
 object UnderlineType extends js.Object {
   /**
-           *
-           * A single dash underline.
-           *
-           */
+    *
+    * A single dash underline.
+    *
+    */
   @js.native
   sealed trait dashLine
     extends officeDashJsDashPreviewLib.WordNs.UnderlineType
@@ -39,10 +39,10 @@ object UnderlineType extends js.Object {
     extends officeDashJsDashPreviewLib.WordNs.UnderlineType
   
   /**
-           *
-           * An alternating dot-dash underline.
-           *
-           */
+    *
+    * An alternating dot-dash underline.
+    *
+    */
   @js.native
   sealed trait dotDashLine
     extends officeDashJsDashPreviewLib.WordNs.UnderlineType
@@ -52,18 +52,18 @@ object UnderlineType extends js.Object {
     extends officeDashJsDashPreviewLib.WordNs.UnderlineType
   
   /**
-           *
-           * @deprecated DotLine is no longer supported.
-           */
+    *
+    * @deprecated DotLine is no longer supported.
+    */
   @js.native
   sealed trait dotLine
     extends officeDashJsDashPreviewLib.WordNs.UnderlineType
   
   /**
-           *
-           * A dotted underline.
-           *
-           */
+    *
+    * A dotted underline.
+    *
+    */
   @js.native
   sealed trait dotted
     extends officeDashJsDashPreviewLib.WordNs.UnderlineType
@@ -73,18 +73,18 @@ object UnderlineType extends js.Object {
     extends officeDashJsDashPreviewLib.WordNs.UnderlineType
   
   /**
-           *
-           * A double underline.
-           *
-           */
+    *
+    * A double underline.
+    *
+    */
   @js.native
   sealed trait double
     extends officeDashJsDashPreviewLib.WordNs.UnderlineType
   
   /**
-           *
-           * @deprecated Hidden is no longer supported.
-           */
+    *
+    * @deprecated Hidden is no longer supported.
+    */
   @js.native
   sealed trait hidden
     extends officeDashJsDashPreviewLib.WordNs.UnderlineType
@@ -94,37 +94,37 @@ object UnderlineType extends js.Object {
     extends officeDashJsDashPreviewLib.WordNs.UnderlineType
   
   /**
-           *
-           * No underline.
-           *
-           */
+    *
+    * No underline.
+    *
+    */
   @js.native
   sealed trait none
     extends officeDashJsDashPreviewLib.WordNs.UnderlineType
   
   /**
-           *
-           * A single underline. This is the default value.
-           *
-           */
+    *
+    * A single underline. This is the default value.
+    *
+    */
   @js.native
   sealed trait single
     extends officeDashJsDashPreviewLib.WordNs.UnderlineType
   
   /**
-           *
-           * A single thick underline.
-           *
-           */
+    *
+    * A single thick underline.
+    *
+    */
   @js.native
   sealed trait thick
     extends officeDashJsDashPreviewLib.WordNs.UnderlineType
   
   /**
-           *
-           * An alternating dot-dot-dash underline.
-           *
-           */
+    *
+    * An alternating dot-dot-dash underline.
+    *
+    */
   @js.native
   sealed trait twoDotDashLine
     extends officeDashJsDashPreviewLib.WordNs.UnderlineType
@@ -134,10 +134,10 @@ object UnderlineType extends js.Object {
     extends officeDashJsDashPreviewLib.WordNs.UnderlineType
   
   /**
-           *
-           * A single wavy underline.
-           *
-           */
+    *
+    * A single wavy underline.
+    *
+    */
   @js.native
   sealed trait wave
     extends officeDashJsDashPreviewLib.WordNs.UnderlineType
@@ -151,10 +151,10 @@ object UnderlineType extends js.Object {
     extends officeDashJsDashPreviewLib.WordNs.UnderlineType
   
   /**
-           *
-           * Only underline individual words.
-           *
-           */
+    *
+    * Only underline individual words.
+    *
+    */
   @js.native
   sealed trait word
     extends officeDashJsDashPreviewLib.WordNs.UnderlineType

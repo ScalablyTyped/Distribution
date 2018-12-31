@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GeolocationResponse extends js.Object {
   /** The accuracy of the estimated location, in meters. This represents the radius of a circle around the given location. */
   var accuracy: scala.Double

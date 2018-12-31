@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NiceScrollOptions extends js.Object {
   var autohidemode: js.UndefOr[
     jqueryDotNicescrollLib.jqueryDotNicescrollLibStrings.leave | jqueryDotNicescrollLib.jqueryDotNicescrollLibStrings.scroll | jqueryDotNicescrollLib.jqueryDotNicescrollLibStrings.cursor | jqueryDotNicescrollLib.jqueryDotNicescrollLibStrings.hidden | scala.Boolean

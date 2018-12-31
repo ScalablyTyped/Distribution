@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EnableUtils extends js.Object {
   var block: Anon_Parse
   var configure: js.Any

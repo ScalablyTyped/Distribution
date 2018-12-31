@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPie3D extends IPolar {
   /** [Config Option] (Boolean/Number) */
   var donut: js.UndefOr[js.Any] = js.undefined

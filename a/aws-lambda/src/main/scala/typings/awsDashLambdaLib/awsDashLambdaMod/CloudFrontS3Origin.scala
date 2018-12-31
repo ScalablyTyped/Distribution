@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CloudFrontS3Origin extends js.Object {
   var authMethod: awsDashLambdaLib.awsDashLambdaLibStrings.`origin-access-identity` | awsDashLambdaLib.awsDashLambdaLibStrings.none
   var customHeaders: CloudFrontHeaders

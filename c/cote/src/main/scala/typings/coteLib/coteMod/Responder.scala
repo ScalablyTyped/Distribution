@@ -9,22 +9,22 @@ import scala.scalajs.js.annotation._
 @js.native
 class Responder protected () extends Component {
   def this(/**
-           * Configuration which controls the data being advertised for auto-discovery.
-           */
+    * Configuration which controls the data being advertised for auto-discovery.
+    */
   advertisement: ResponderAdvertisement) = this()
   def this(/**
-           * Configuration which controls the data being advertised for auto-discovery.
-           */
+    * Configuration which controls the data being advertised for auto-discovery.
+    */
   advertisement: ResponderAdvertisement, /**
-           * Controls the network-layer configuration and environments for components.
-           */
+    * Controls the network-layer configuration and environments for components.
+    */
   discoveryOptions: DiscoveryOptions) = this()
   /**
-       * Responds to certain requests from a Requester.
-       *
-       * @param type Type. May be wildcarded or namespaced like in EventEmitter2.
-       * @param listener Callback. Should return a result.
-       */
+    * Responds to certain requests from a Requester.
+    *
+    * @param type Type. May be wildcarded or namespaced like in EventEmitter2.
+    * @param listener Callback. Should return a result.
+    */
   def on[T /* <: Event */](
     `type`: java.lang.String,
     listener: js.Function2[
@@ -33,12 +33,6 @@ class Responder protected () extends Component {
       scala.Unit
     ]
   ): this.type = js.native
-  /**
-       * Responds to certain requests from a Requester.
-       *
-       * @param type Type. May be wildcarded or namespaced like in EventEmitter2.
-       * @param listener Callback. Should return a result.
-       */
   def on[T /* <: Event */](
     `type`: js.Array[java.lang.String],
     listener: js.Function2[
@@ -48,20 +42,15 @@ class Responder protected () extends Component {
     ]
   ): this.type = js.native
   /**
-       * Listens to internal `cote:added` and `cote:removed` events.
-       *
-       * @param listener Callback.
-       */
+    * Listens to internal `cote:added` and `cote:removed` events.
+    *
+    * @param listener Callback.
+    */
   @JSName("on")
   def `on_cote:added`(
     `type`: coteLib.coteLibStrings.`cote:added`,
     listener: js.Function1[/* event */ Status, scala.Unit]
   ): this.type = js.native
-  /**
-       * Listens to internal `cote:added` and `cote:removed` events.
-       *
-       * @param listener Callback.
-       */
   @JSName("on")
   def `on_cote:removed`(
     `type`: coteLib.coteLibStrings.`cote:removed`,

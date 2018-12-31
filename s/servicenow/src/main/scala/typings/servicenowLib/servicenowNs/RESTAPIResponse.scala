@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RESTAPIResponse extends js.Object {
   def getStreamWriter(): RESTAPIResponseStream
   def setBody(body: js.Any): scala.Unit

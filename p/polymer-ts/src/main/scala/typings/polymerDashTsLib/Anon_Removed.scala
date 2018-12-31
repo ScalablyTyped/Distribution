@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Removed extends js.Object {
   var addedCount: scala.Double
   var index: scala.Double

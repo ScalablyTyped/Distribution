@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PaymentRequestButton extends js.Object {
   var base: js.UndefOr[stripejsLib.elementMod.PaymentRequestButtonStyle] = js.undefined
   var complete: js.UndefOr[stripejsLib.elementMod.PaymentRequestButtonStyle] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGPreserveAspectRatio extends js.Object {
   val SVG_MEETORSLICE_MEET: scala.Double
   val SVG_MEETORSLICE_SLICE: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RavenOptions extends js.Object {
   var DSN: java.lang.String
   var enable: scala.Boolean

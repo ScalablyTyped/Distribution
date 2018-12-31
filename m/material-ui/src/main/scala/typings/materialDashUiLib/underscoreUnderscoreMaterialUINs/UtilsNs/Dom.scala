@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Dom extends js.Object {
   def addClass(el: reactLib.Element, className: java.lang.String): scala.Unit
   def forceRedraw(el: reactLib.HTMLElement): scala.Unit

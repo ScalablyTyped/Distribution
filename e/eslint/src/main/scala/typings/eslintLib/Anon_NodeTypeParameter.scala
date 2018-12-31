@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NodeTypeParameter extends js.Object {
   var node: estreeLib.estreeMod.FunctionDeclaration | estreeLib.estreeMod.FunctionExpression | estreeLib.estreeMod.ArrowFunctionExpression
   var parent: scala.Null

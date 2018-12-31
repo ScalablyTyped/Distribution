@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICheckbox extends IBase {
   /** [Config Option] (String/Array/Ext.XTemplate) */
   var afterBoxLabelTextTpl: js.UndefOr[js.Any] = js.undefined

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DragEvent extends MouseEvent {
   /**
-       * Returns the DataTransfer object for the event.
-       */
+    * Returns the DataTransfer object for the event.
+    */
   val dataTransfer: DataTransfer | scala.Null = js.native
 }
 

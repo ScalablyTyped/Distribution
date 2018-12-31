@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebServerRequest extends js.Object {
   var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var httpVersion: scala.Double

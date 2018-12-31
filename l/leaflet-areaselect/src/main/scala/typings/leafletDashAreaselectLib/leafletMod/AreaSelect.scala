@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AreaSelect extends js.Object {
   def addTo(map: leafletLib.leafletMod.Map): leafletLib.leafletMod.Map
   def getBounds(): leafletLib.leafletMod.LatLngBounds

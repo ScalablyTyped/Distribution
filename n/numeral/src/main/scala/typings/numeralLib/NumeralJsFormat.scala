@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://numeraljs.com/#custom-formats
-
 trait NumeralJsFormat extends js.Object {
   var regexps: Anon_Unformat
   def format(value: js.Any, format: java.lang.String, roundingFunction: RoundingFunction): java.lang.String

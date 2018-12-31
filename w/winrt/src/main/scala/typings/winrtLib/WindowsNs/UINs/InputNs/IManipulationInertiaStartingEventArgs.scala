@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IManipulationInertiaStartingEventArgs extends js.Object {
   var cumulative: ManipulationDelta
   var delta: ManipulationDelta

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FieldDef extends js.Object {
   var columnID: scala.Double
   var dataTypeID: scala.Double

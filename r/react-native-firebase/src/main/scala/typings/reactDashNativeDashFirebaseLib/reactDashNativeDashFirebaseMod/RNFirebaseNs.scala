@@ -8,12 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-firebase", "RNFirebase")
 @js.native
 object RNFirebaseNs extends js.Object {
-  
   trait ActionCodeInfo extends js.Object {
     var data: reactDashNativeDashFirebaseLib.Anon_FromEmail
     var operation: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.PASSWORD_RESET | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.VERIFY_EMAIL | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.RECOVER_EMAIL | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.EMAIL_SIGNIN | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.ERROR
   }
-  
   
   trait ActionCodeSettings extends js.Object {
     var android: reactDashNativeDashFirebaseLib.Anon_InstallApp
@@ -21,7 +19,6 @@ object RNFirebaseNs extends js.Object {
     var iOS: reactDashNativeDashFirebaseLib.Anon_BundleId
     var url: java.lang.String
   }
-  
   
   trait AdditionalUserInfo extends js.Object {
     var isNewUser: scala.Boolean
@@ -31,91 +28,60 @@ object RNFirebaseNs extends js.Object {
   }
   
   /**
-       * firebase Analytics
-       */
+    * firebase Analytics
+    */
   @js.native
   trait Analytics
     extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
     /**Log a custom event with optional params. */
     def logEvent(event: java.lang.String): scala.Unit = js.native
-    /**Log a custom event with optional params. */
     def logEvent(event: java.lang.String, params: js.Object): scala.Unit = js.native
     /** Sets whether analytics collection is enabled for this app on this device. */
     def setAnalyticsCollectionEnabled(enabled: scala.Boolean): scala.Unit = js.native
-    /**
-           * Sets the current screen name, which specifies the current visual context in your app.
-           * Whilst screenClassOverride is optional,
-           * it is recommended it is always sent as your current class name,
-           * for example on Android it will always show as 'MainActivity' if not specified.
-           */
     def setCurrentScreen(): scala.Unit = js.native
     /**
-           * Sets the current screen name, which specifies the current visual context in your app.
-           * Whilst screenClassOverride is optional,
-           * it is recommended it is always sent as your current class name,
-           * for example on Android it will always show as 'MainActivity' if not specified.
-           */
+      * Sets the current screen name, which specifies the current visual context in your app.
+      * Whilst screenClassOverride is optional,
+      * it is recommended it is always sent as your current class name,
+      * for example on Android it will always show as 'MainActivity' if not specified.
+      */
     def setCurrentScreen(screenName: java.lang.String): scala.Unit = js.native
-    /**
-           * Sets the current screen name, which specifies the current visual context in your app.
-           * Whilst screenClassOverride is optional,
-           * it is recommended it is always sent as your current class name,
-           * for example on Android it will always show as 'MainActivity' if not specified.
-           */
     def setCurrentScreen(screenName: java.lang.String, screenClassOverride: java.lang.String): scala.Unit = js.native
-    /**
-           * Sets the current screen name, which specifies the current visual context in your app.
-           * Whilst screenClassOverride is optional,
-           * it is recommended it is always sent as your current class name,
-           * for example on Android it will always show as 'MainActivity' if not specified.
-           */
     def setCurrentScreen(screenName: scala.Null, screenClassOverride: java.lang.String): scala.Unit = js.native
     /**
-           * Sets the minimum engagement time required before starting a session.
-           * The default value is 10000 (10 seconds)
-           */
+      * Sets the minimum engagement time required before starting a session.
+      * The default value is 10000 (10 seconds)
+      */
     def setMinimumSessionDuration(milliseconds: scala.Double): scala.Unit = js.native
     /**
-           * Sets the duration of inactivity that terminates the current session.
-           * The default value is 1800000 (30 minutes).
-           */
+      * Sets the duration of inactivity that terminates the current session.
+      * The default value is 1800000 (30 minutes).
+      */
     def setSessionTimeoutDuration(milliseconds: scala.Double): scala.Unit = js.native
-    /**
-           * Gives a user a unique identification.
-           * @example
-           * const id = firebase.auth().currentUser.uid;
-           *
-           * firebase.analytics().setUserId(id);
-           */
     def setUserId(): scala.Unit = js.native
     /**
-           * Gives a user a unique identification.
-           * @example
-           * const id = firebase.auth().currentUser.uid;
-           *
-           * firebase.analytics().setUserId(id);
-           */
+      * Gives a user a unique identification.
+      * @example
+      * const id = firebase.auth().currentUser.uid;
+      *
+      * firebase.analytics().setUserId(id);
+      */
     def setUserId(id: java.lang.String): scala.Unit = js.native
     /**
-           * Sets multiple user properties to the supplied values.
-           */
+      * Sets multiple user properties to the supplied values.
+      */
     def setUserProperties(fieldMapping: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null]): scala.Unit = js.native
-    /**
-           * Sets a key/value pair of data on the current user.
-           */
     def setUserProperty(name: java.lang.String): scala.Unit = js.native
     /**
-           * Sets a key/value pair of data on the current user.
-           */
+      * Sets a key/value pair of data on the current user.
+      */
     def setUserProperty(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
   }
-  
   
   trait ConfirmationResult extends js.Object {
     var verificationId: java.lang.String | scala.Null
     def confirm(verificationCode: java.lang.String): js.Promise[User | scala.Null]
   }
-  
   
   trait GoogleApiAvailabilityType extends js.Object {
     var error: js.UndefOr[java.lang.String] = js.undefined
@@ -123,7 +89,6 @@ object RNFirebaseNs extends js.Object {
     var isUserResolvableError: js.UndefOr[scala.Boolean] = js.undefined
     var status: scala.Double
   }
-  
   
   trait IdTokenResult extends js.Object {
     var authTime: java.lang.String
@@ -133,7 +98,6 @@ object RNFirebaseNs extends js.Object {
     var signInProvider: scala.Null | java.lang.String
     var token: java.lang.String
   }
-  
   
   trait PhoneAuthError extends js.Object {
     var code: java.lang.String | scala.Null
@@ -160,7 +124,6 @@ object RNFirebaseNs extends js.Object {
     def `then`(fn: js.Function1[/* snapshot */ PhoneAuthSnapshot, scala.Unit]): js.Promise[_] = js.native
   }
   
-  
   trait PhoneAuthSnapshot extends js.Object {
     var code: java.lang.String | scala.Null
     var error: stdLib.Error | scala.Null
@@ -168,12 +131,10 @@ object RNFirebaseNs extends js.Object {
     var verificationId: java.lang.String
   }
   
-  
   trait RnError
     extends stdLib.Error {
     var code: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait UpdateProfile extends js.Object {
     var displayName: js.UndefOr[java.lang.String] = js.undefined
@@ -183,137 +144,119 @@ object RNFirebaseNs extends js.Object {
   @js.native
   trait User extends js.Object {
     /**
-           * The user's display name (if available).
-           */
+      * The user's display name (if available).
+      */
     var displayName: java.lang.String | scala.Null = js.native
     /**
-           * - The user's email address (if available).
-           */
+      * - The user's email address (if available).
+      */
     var email: java.lang.String | scala.Null = js.native
     /**
-           * - True if the user's email address has been verified.
-           */
+      * - True if the user's email address has been verified.
+      */
     var emailVerified: scala.Boolean = js.native
     /**
-           *
-           */
+      *
+      */
     var isAnonymous: scala.Boolean = js.native
     var metadata: UserMetadata = js.native
     var phoneNumber: java.lang.String | scala.Null = js.native
     /**
-           * - The URL of the user's profile picture (if available).
-           */
+      * - The URL of the user's profile picture (if available).
+      */
     var photoURL: java.lang.String | scala.Null = js.native
     /**
-           * - Additional provider-specific information about the user.
-           */
+      * - Additional provider-specific information about the user.
+      */
     var providerData: js.Array[UserInfo] = js.native
     /**
-           *  - The authentication provider ID for the current user.
-           *  For example, 'facebook.com', or 'google.com'.
-           */
+      *  - The authentication provider ID for the current user.
+      *  For example, 'facebook.com', or 'google.com'.
+      */
     var providerId: java.lang.String = js.native
     /**
-           *  - The user's unique ID.
-           */
+      *  - The user's unique ID.
+      */
     var uid: java.lang.String = js.native
     /**
-           * Delete the current user.
-           */
+      * Delete the current user.
+      */
     def delete(): js.Promise[scala.Unit] = js.native
     /**
-           * Returns the users authentication token.
-           *
-           * @param forceRefresh: boolean - default to false
-           */
+      * Returns the users authentication token.
+      *
+      * @param forceRefresh: boolean - default to false
+      */
     def getIdToken(): js.Promise[java.lang.String] = js.native
-    /**
-           * Returns the users authentication token.
-           *
-           * @param forceRefresh: boolean - default to false
-           */
     def getIdToken(forceRefresh: scala.Boolean): js.Promise[java.lang.String] = js.native
     /**
-           * Returns a firebase.auth.IdTokenResult object which contains the ID token JWT string and
-           * other helper properties for getting different data associated with the token as well as
-           * all the decoded payload claims.
-           *
-           * @param forceRefresh boolean Force refresh regardless of token expiration.
-           */
+      * Returns a firebase.auth.IdTokenResult object which contains the ID token JWT string and
+      * other helper properties for getting different data associated with the token as well as
+      * all the decoded payload claims.
+      *
+      * @param forceRefresh boolean Force refresh regardless of token expiration.
+      */
     def getIdTokenResult(): js.Promise[IdTokenResult] = js.native
-    /**
-           * Returns a firebase.auth.IdTokenResult object which contains the ID token JWT string and
-           * other helper properties for getting different data associated with the token as well as
-           * all the decoded payload claims.
-           *
-           * @param forceRefresh boolean Force refresh regardless of token expiration.
-           */
     def getIdTokenResult(forceRefresh: scala.Boolean): js.Promise[IdTokenResult] = js.native
     /**
-           * @deprecated
-           * @param credential
-           */
+      * @deprecated
+      * @param credential
+      */
     def linkAndRetrieveDataWithCredential(credential: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.AuthCredential): js.Promise[UserCredential] = js.native
     /**
-           * Link the user with a 3rd party credential provider.
-           */
+      * Link the user with a 3rd party credential provider.
+      */
     def linkWithCredential(credential: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.AuthCredential): js.Promise[UserCredential] = js.native
     /**
-           * @deprecated
-           * @param credential
-           */
+      * @deprecated
+      * @param credential
+      */
     def reauthenticateAndRetrieveDataWithCredential(credential: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.AuthCredential): js.Promise[UserCredential] = js.native
     /**
-           * Re-authenticate a user with a third-party authentication provider
-           */
+      * Re-authenticate a user with a third-party authentication provider
+      */
     def reauthenticateWithCredential(credential: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.AuthCredential): js.Promise[UserCredential] = js.native
     /**
-           * Refreshes the current user.
-           */
+      * Refreshes the current user.
+      */
     def reload(): js.Promise[scala.Unit] = js.native
     /**
-           * Sends a verification email to a user.
-           * This will Promise reject is the user is anonymous.
-           */
+      * Sends a verification email to a user.
+      * This will Promise reject is the user is anonymous.
+      */
     def sendEmailVerification(): js.Promise[scala.Unit] = js.native
-    /**
-           * Sends a verification email to a user.
-           * This will Promise reject is the user is anonymous.
-           */
     def sendEmailVerification(actionCodeSettings: ActionCodeSettings): js.Promise[scala.Unit] = js.native
     def toJSON(): js.Object = js.native
     def unlink(providerId: java.lang.String): js.Promise[User] = js.native
     /**
-           * Updates the user's email address.
-           * See Firebase docs for more information on security & email validation.
-           * This will Promise reject is the user is anonymous.
-           */
+      * Updates the user's email address.
+      * See Firebase docs for more information on security & email validation.
+      * This will Promise reject is the user is anonymous.
+      */
     def updateEmail(email: java.lang.String): js.Promise[scala.Unit] = js.native
     /**
-           * Important: this is a security sensitive operation that requires the user to have recently signed in.
-           * If this requirement isn't met, ask the user to authenticate again and then call firebase.User#reauthenticate.
-           * This will Promise reject is the user is anonymous.
-           */
+      * Important: this is a security sensitive operation that requires the user to have recently signed in.
+      * If this requirement isn't met, ask the user to authenticate again and then call firebase.User#reauthenticate.
+      * This will Promise reject is the user is anonymous.
+      */
     def updatePassword(password: java.lang.String): js.Promise[scala.Unit] = js.native
     /**
-           * Updates the user's phone number.
-           * See Firebase docs for more information on security & email validation.
-           * This will Promise reject is the user is anonymous.
-           */
+      * Updates the user's phone number.
+      * See Firebase docs for more information on security & email validation.
+      * This will Promise reject is the user is anonymous.
+      */
     def updatePhoneNumber(credential: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.AuthCredential): js.Promise[scala.Unit] = js.native
     /**
-           * Updates a user's profile data.
-           * Profile data should be an object of fields to update:
-           */
+      * Updates a user's profile data.
+      * Profile data should be an object of fields to update:
+      */
     def updateProfile(updates: UpdateProfile): js.Promise[scala.Unit] = js.native
   }
-  
   
   trait UserCredential extends js.Object {
     var additionalUserInfo: js.UndefOr[AdditionalUserInfo] = js.undefined
     var user: User
   }
-  
   
   trait UserInfo extends js.Object {
     var displayName: js.UndefOr[java.lang.String] = js.undefined
@@ -324,79 +267,77 @@ object RNFirebaseNs extends js.Object {
     var uid: java.lang.String
   }
   
-  
   trait UserMetadata extends js.Object {
     var creationTime: js.UndefOr[java.lang.String] = js.undefined
     var lastSignInTime: js.UndefOr[java.lang.String] = js.undefined
   }
   
   /**
-       * pass custom options by passing an object with configuration options.
-       * The configuration object will be generated first by the native configuration object, if set and then will be overridden if passed in JS.
-       * That is, all of the following key/value pairs are optional if the native configuration is set.
-       */
-  
+    * pass custom options by passing an object with configuration options.
+    * The configuration object will be generated first by the native configuration object, if set and then will be overridden if passed in JS.
+    * That is, all of the following key/value pairs are optional if the native configuration is set.
+    */
   trait configurationOptions extends js.Object {
     /**
-           * default ""
-           * The secret iOS API key used for authenticating requests from our app
-           */
+      * default ""
+      * The secret iOS API key used for authenticating requests from our app
+      */
     var APIKey: js.UndefOr[java.lang.String] = js.undefined
     /**
-           * default  ""
-           * The Project number from the Google Developer's console used to configure Google Cloud Messaging
-           */
+      * default  ""
+      * The Project number from the Google Developer's console used to configure Google Cloud Messaging
+      */
     var GCMSenderID: js.UndefOr[java.lang.String] = js.undefined
     /**
-           * default ""
-           * The Android client ID used in Google AppInvite when an iOS app has it's android version
-           */
+      * default ""
+      * The Android client ID used in Google AppInvite when an iOS app has it's android version
+      */
     var androidClientID: js.UndefOr[java.lang.String] = js.undefined
     /**
-           * Default from app [NSBundle mainBundle]  The bundle ID for the app to be bundled with
-           */
+      * Default from app [NSBundle mainBundle]  The bundle ID for the app to be bundled with
+      */
     var bundleID: js.UndefOr[java.lang.String] = js.undefined
     /**
-           * default ""
-           * The OAuth2 client ID for iOS application used to authenticate Google Users for signing in with Google
-           */
+      * default ""
+      * The OAuth2 client ID for iOS application used to authenticate Google Users for signing in with Google
+      */
     var clientID: js.UndefOr[java.lang.String] = js.undefined
     /**
-           * default ""
-           * The database root (i.e. https://my-app.firebaseio.com)
-           */
+      * default ""
+      * The database root (i.e. https://my-app.firebaseio.com)
+      */
     var databaseURL: js.UndefOr[java.lang.String] = js.undefined
     /**
-           *  default false
-           *  When set to true, RNFirebase will log messages to the console and fire debug events we can listen to in js
-           * @usage
-           * firebase.on('debug', msg => console.log('Received debug message', msg))
-           */
+      *  default false
+      *  When set to true, RNFirebase will log messages to the console and fire debug events we can listen to in js
+      * @usage
+      * firebase.on('debug', msg => console.log('Received debug message', msg))
+      */
     var debug: js.UndefOr[scala.Boolean] = js.undefined
     /**
-           * default ""
-           * URL scheme to set up durable deep link service
-           */
+      * default ""
+      * URL scheme to set up durable deep link service
+      */
     var deepLinkURLScheme: js.UndefOr[java.lang.String] = js.undefined
     /**
-           * default ""
-           * The Google App ID that is used to uniquely identify an instance of an app.
-           */
+      * default ""
+      * The Google App ID that is used to uniquely identify an instance of an app.
+      */
     var googleAppID: js.UndefOr[java.lang.String] = js.undefined
     /**
-           * default false
-           * When set to true, database persistence will be enabled.
-           */
+      * default false
+      * When set to true, database persistence will be enabled.
+      */
     var persistence: js.UndefOr[scala.Boolean] = js.undefined
     /**
-           * default ""
-           * The Google Cloud storage bucket name
-           */
+      * default ""
+      * The Google Cloud storage bucket name
+      */
     var storageBucket: js.UndefOr[java.lang.String] = js.undefined
     /**
-           * default ""
-           * The tracking ID for Google Analytics
-           */
+      * default ""
+      * The tracking ID for Google Analytics
+      */
     var trackingID: js.UndefOr[java.lang.String] = js.undefined
   }
   
@@ -408,81 +349,76 @@ object RNFirebaseNs extends js.Object {
       extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
       val app: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.App = js.native
       /**
-               * Returns the current Firebase authentication state.
-               */
+        * Returns the current Firebase authentication state.
+        */
       var authResult: OrNull[AuthResult] = js.native
       /**
-               * Returns the currently signed-in user (or null). See the User class documentation for further usage.
-               */
+        * Returns the currently signed-in user (or null). See the User class documentation for further usage.
+        */
       var currentUser: OrNull[reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.User] = js.native
       /**
-               * Gets/Sets the language for the app instance
-               */
+        * Gets/Sets the language for the app instance
+        */
       var languageCode: OrNull[java.lang.String] = js.native
       var settings: AuthSettings = js.native
       /**
-               * Applies a verification code sent to the user by email or other out-of-band mechanism.
-               */
+        * Applies a verification code sent to the user by email or other out-of-band mechanism.
+        */
       def applyActionCode(code: java.lang.String): js.Promise[scala.Unit] = js.native
       /**
-               * Checks a verification code sent to the user by email or other out-of-band mechanism.
-               */
+        * Checks a verification code sent to the user by email or other out-of-band mechanism.
+        */
       def checkActionCode(code: java.lang.String): js.Promise[
             reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.ActionCodeInfo
           ] = js.native
       /**
-               * Completes the password reset process, given a confirmation code and new password.
-               */
+        * Completes the password reset process, given a confirmation code and new password.
+        */
       def confirmPasswordReset(code: java.lang.String, newPassword: java.lang.String): js.Promise[scala.Unit] = js.native
       /**
-               * @deprecated
-               * @param email
-               * @param password
-               */
+        * @deprecated
+        * @param email
+        * @param password
+        */
       def createUserAndRetrieveDataWithEmailAndPassword(email: java.lang.String, password: java.lang.String): js.Promise[
             reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.UserCredential
           ] = js.native
       /**
-               * We can create a user by calling the createUserWithEmailAndPassword() function.
-               * The method accepts two parameters, an email and a password.
-               */
+        * We can create a user by calling the createUserWithEmailAndPassword() function.
+        * The method accepts two parameters, an email and a password.
+        */
       def createUserWithEmailAndPassword(email: java.lang.String, password: java.lang.String): js.Promise[
             reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.UserCredential
           ] = js.native
       /**
-               * Returns a list of authentication methods that can be used to sign in a given user (identified by its main email address).
-               */
+        * Returns a list of authentication methods that can be used to sign in a given user (identified by its main email address).
+        */
       def fetchSignInMethodsForEmail(email: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
       def isSignInWithEmailLink(emailLink: java.lang.String): scala.Boolean = js.native
       /**
-               * Listen for changes in the users auth state (logging in and out).
-               * This method returns a unsubscribe function to stop listening to events.
-               * Always ensure you unsubscribe from the listener when no longer needed to prevent updates to components no longer in use.
-               */
+        * Listen for changes in the users auth state (logging in and out).
+        * This method returns a unsubscribe function to stop listening to events.
+        * Always ensure you unsubscribe from the listener when no longer needed to prevent updates to components no longer in use.
+        */
       def onAuthStateChanged(listener: AuthListenerCallback): js.Function0[scala.Unit] = js.native
       /**
-               * Listen for changes in id token.
-               * This method returns a unsubscribe function to stop listening to events.
-               * Always ensure you unsubscribe from the listener when no longer needed to prevent updates to components no longer in use.
-               */
+        * Listen for changes in id token.
+        * This method returns a unsubscribe function to stop listening to events.
+        * Always ensure you unsubscribe from the listener when no longer needed to prevent updates to components no longer in use.
+        */
       def onIdTokenChanged(listener: AuthListenerCallback): js.Function0[scala.Unit] = js.native
       /**
-               * Listen for changes in the user.
-               * This method returns a unsubscribe function to stop listening to events.
-               * Always ensure you unsubscribe from the listener when no longer needed to prevent updates to components no longer in use.
-               */
+        * Listen for changes in the user.
+        * This method returns a unsubscribe function to stop listening to events.
+        * Always ensure you unsubscribe from the listener when no longer needed to prevent updates to components no longer in use.
+        */
       def onUserChanged(listener: AuthListenerCallback): js.Function0[scala.Unit] = js.native
       /**
-               * Sends a password reset email to the given email address.
-               * Unlike the web SDK,
-               * the email will contain a password reset link rather than a code.
-               */
+        * Sends a password reset email to the given email address.
+        * Unlike the web SDK,
+        * the email will contain a password reset link rather than a code.
+        */
       def sendPasswordResetEmail(email: java.lang.String): js.Promise[scala.Unit] = js.native
-      /**
-               * Sends a password reset email to the given email address.
-               * Unlike the web SDK,
-               * the email will contain a password reset link rather than a code.
-               */
       def sendPasswordResetEmail(
         email: java.lang.String,
         actionCodeSettings: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.ActionCodeSettings
@@ -493,60 +429,60 @@ object RNFirebaseNs extends js.Object {
         actionCodeSettings: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.ActionCodeSettings
       ): js.Promise[scala.Unit] = js.native
       /**
-               * @deprecated
-               * @param credential
-               */
+        * @deprecated
+        * @param credential
+        */
       def signInAndRetrieveDataWithCredential(credential: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.AuthCredential): js.Promise[
             reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.UserCredential
           ] = js.native
       /**
-               * @deprecated
-               * @param token
-               */
+        * @deprecated
+        * @param token
+        */
       def signInAndRetrieveDataWithCustomToken(token: java.lang.String): js.Promise[
             reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.UserCredential
           ] = js.native
       /**
-               * @deprecated
-               * @param email
-               * @param password
-               */
+        * @deprecated
+        * @param email
+        * @param password
+        */
       def signInAndRetrieveDataWithEmailAndPassword(email: java.lang.String, password: java.lang.String): js.Promise[
             reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.UserCredential
           ] = js.native
       /**
-               * Sign an anonymous user.
-               * If the user has already signed in, that user will be returned
-               */
+        * Sign an anonymous user.
+        * If the user has already signed in, that user will be returned
+        */
       def signInAnonymously(): js.Promise[
             reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.UserCredential
           ] = js.native
       /**
-               * @deprecated
-               */
+        * @deprecated
+        */
       def signInAnonymouslyAndRetrieveData(): js.Promise[
             reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.UserCredential
           ] = js.native
       /**
-               * Sign in the user with a 3rd party credential provider.
-               * credential requires the following properties:
-               */
+        * Sign in the user with a 3rd party credential provider.
+        * credential requires the following properties:
+        */
       def signInWithCredential(credential: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.AuthCredential): js.Promise[
             reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.UserCredential
           ] = js.native
       /**
-               * Sign a user in with a self-signed JWT token.
-               * To sign a user using a self-signed custom token,
-               * use the signInWithCustomToken() function.
-               * It accepts one parameter, the custom token:
-               */
+        * Sign a user in with a self-signed JWT token.
+        * To sign a user using a self-signed custom token,
+        * use the signInWithCustomToken() function.
+        * It accepts one parameter, the custom token:
+        */
       def signInWithCustomToken(token: java.lang.String): js.Promise[
             reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.UserCredential
           ] = js.native
       /**
-               * To sign a user in with their email and password, use the signInWithEmailAndPassword() function.
-               * It accepts two parameters, the user's email and password:
-               */
+        * To sign a user in with their email and password, use the signInWithEmailAndPassword() function.
+        * It accepts two parameters, the user's email and password:
+        */
       def signInWithEmailAndPassword(email: java.lang.String, password: java.lang.String): js.Promise[
             reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.UserCredential
           ] = js.native
@@ -554,59 +490,35 @@ object RNFirebaseNs extends js.Object {
             reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.UserCredential
           ] = js.native
       /**
-               * Asynchronously signs in using a phone number.
-               */
+        * Asynchronously signs in using a phone number.
+        */
       def signInWithPhoneNumber(phoneNumber: java.lang.String): js.Promise[
             reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.ConfirmationResult
           ] = js.native
-      /**
-               * Asynchronously signs in using a phone number.
-               */
       def signInWithPhoneNumber(phoneNumber: java.lang.String, forceResend: scala.Boolean): js.Promise[
             reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.ConfirmationResult
           ] = js.native
       def signOut(): js.Promise[scala.Unit] = js.native
       def verifyPasswordResetCode(code: java.lang.String): js.Promise[java.lang.String] = js.native
       /**
-               * Returns a PhoneAuthListener to listen to phone verification events,
-               * on the final completion event a PhoneAuthCredential can be generated for
-               * authentication purposes.
-               */
+        * Returns a PhoneAuthListener to listen to phone verification events,
+        * on the final completion event a PhoneAuthCredential can be generated for
+        * authentication purposes.
+        */
       def verifyPhoneNumber(phoneNumber: java.lang.String): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.PhoneAuthListener = js.native
-      /**
-               * Returns a PhoneAuthListener to listen to phone verification events,
-               * on the final completion event a PhoneAuthCredential can be generated for
-               * authentication purposes.
-               */
       def verifyPhoneNumber(phoneNumber: java.lang.String, autoVerifyTimeoutOrForceResend: scala.Boolean): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.PhoneAuthListener = js.native
-      /**
-               * Returns a PhoneAuthListener to listen to phone verification events,
-               * on the final completion event a PhoneAuthCredential can be generated for
-               * authentication purposes.
-               */
       def verifyPhoneNumber(
         phoneNumber: java.lang.String,
         autoVerifyTimeoutOrForceResend: scala.Boolean,
         forceResend: scala.Boolean
       ): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.PhoneAuthListener = js.native
-      /**
-               * Returns a PhoneAuthListener to listen to phone verification events,
-               * on the final completion event a PhoneAuthCredential can be generated for
-               * authentication purposes.
-               */
       def verifyPhoneNumber(phoneNumber: java.lang.String, autoVerifyTimeoutOrForceResend: scala.Double): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.PhoneAuthListener = js.native
-      /**
-               * Returns a PhoneAuthListener to listen to phone verification events,
-               * on the final completion event a PhoneAuthCredential can be generated for
-               * authentication purposes.
-               */
       def verifyPhoneNumber(
         phoneNumber: java.lang.String,
         autoVerifyTimeoutOrForceResend: scala.Double,
         forceResend: scala.Boolean
       ): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.PhoneAuthListener = js.native
     }
-    
     
     trait AuthProvider extends js.Object {
       var PROVIDER_ID: java.lang.String
@@ -617,30 +529,28 @@ object RNFirebaseNs extends js.Object {
           ]
     }
     
-    
     trait AuthSettings extends js.Object {
       /**
-               * Flag to determine whether app verification should be disabled for testing or not.
-               *
-               * @platform iOS
-               * @param disabled
-               */
+        * Flag to determine whether app verification should be disabled for testing or not.
+        *
+        * @platform iOS
+        * @param disabled
+        */
       var appVerificationDisabledForTesting: scala.Boolean
       /**
-               * The phone number and SMS code here must have been configured in the
-               * Firebase Console (Authentication > Sign In Method > Phone).
-               *
-               * Calling this method a second time will overwrite the previously passed parameters.
-               * Only one number can be configured at a given time.
-               *
-               * @platform Android
-               * @param phoneNumber
-               * @param smsCode
-               * @return {*}
-               */
+        * The phone number and SMS code here must have been configured in the
+        * Firebase Console (Authentication > Sign In Method > Phone).
+        *
+        * Calling this method a second time will overwrite the previously passed parameters.
+        * Only one number can be configured at a given time.
+        *
+        * @platform Android
+        * @param phoneNumber
+        * @param smsCode
+        * @return {*}
+        */
       def setAutoRetrievedSmsCodeForPhoneNumber(phoneNumber: java.lang.String, smsCode: java.lang.String): js.Promise[scala.Null]
     }
-    
     
     trait AuthStatics extends js.Object {
       var EmailAuthProvider: EmailAuthProvider
@@ -652,7 +562,6 @@ object RNFirebaseNs extends js.Object {
       var PhoneAuthState: reactDashNativeDashFirebaseLib.Anon_ERROR
       var TwitterAuthProvider: AuthProvider
     }
-    
     
     trait EmailAuthProvider extends js.Object {
       var EMAIL_LINK_SIGN_IN_METHOD: java.lang.String
@@ -684,72 +593,55 @@ object RNFirebaseNs extends js.Object {
     @js.native
     trait Config extends js.Object {
       /**
-               * Fetches the remote config data from Firebase, defined in the dashboard.
-               * The default expiration duration is 43200 seconds (12 hours)
-               */
+        * Fetches the remote config data from Firebase, defined in the dashboard.
+        * The default expiration duration is 43200 seconds (12 hours)
+        */
       def activateFetched(): js.Promise[scala.Boolean] = js.native
       /** Enable Remote Config developer mode to allow for frequent refreshes of the cache. */
       def enableDeveloperMode(): scala.Unit = js.native
       /**
-               * Fetches the remote config data from Firebase, defined in the dashboard.
-               * If duration is defined (seconds), data will be locally cached for this duration.
-               *
-               * The default duration is 43200 seconds (12 hours).
-               * To force a cache refresh call the method with a duration of 0.
-               */
+        * Fetches the remote config data from Firebase, defined in the dashboard.
+        * If duration is defined (seconds), data will be locally cached for this duration.
+        *
+        * The default duration is 43200 seconds (12 hours).
+        * To force a cache refresh call the method with a duration of 0.
+        */
       def fetch(): js.Promise[java.lang.String] = js.native
-      /**
-               * Fetches the remote config data from Firebase, defined in the dashboard.
-               * If duration is defined (seconds), data will be locally cached for this duration.
-               *
-               * The default duration is 43200 seconds (12 hours).
-               * To force a cache refresh call the method with a duration of 0.
-               */
       def fetch(duration: scala.Double): js.Promise[java.lang.String] = js.native
       /**
-               * Returns all keys as an array by a prefix. If no prefix is defined all keys are returned.
-               */
+        * Returns all keys as an array by a prefix. If no prefix is defined all keys are returned.
+        */
       def getKeysByPrefix(): js.Promise[js.Array[java.lang.String]] = js.native
-      /**
-               * Returns all keys as an array by a prefix. If no prefix is defined all keys are returned.
-               */
       def getKeysByPrefix(prefix: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
       /**
-               * Gets a config item by key.
-               * Returns a snapshot containing source (default, remote or static) and val function.
-               */
+        * Gets a config item by key.
+        * Returns a snapshot containing source (default, remote or static) and val function.
+        */
       def getValue(key: java.lang.String): js.Promise[ConfigSnapshot] = js.native
       /**
-               * Gets multiple values by key.
-               * Returns a snapshot object with snapshot keys e.g. snapshots.foo.val().
-               */
+        * Gets multiple values by key.
+        * Returns a snapshot object with snapshot keys e.g. snapshots.foo.val().
+        */
       def getValues(array: js.Array[java.lang.String]): js.Promise[Object[ConfigSnapshot]] = js.native
       /**
-               * Sets default values for the app to use when accessing values.
-               * Any data fetched and activated will override any default values.
-               * Any values in the defaults but not on Firebase will be untouched.
-               */
+        * Sets default values for the app to use when accessing values.
+        * Any data fetched and activated will override any default values.
+        * Any values in the defaults but not on Firebase will be untouched.
+        */
       def setDefaults(defaults: js.Object): scala.Unit = js.native
       /**
-               * Sets the default values from a resource:
-               * - Android: Id for the XML resource, which should be in your application's res/xml folder.
-               * - iOS: The plist file name, with no file name extension.
-               */
+        * Sets the default values from a resource:
+        * - Android: Id for the XML resource, which should be in your application's res/xml folder.
+        * - iOS: The plist file name, with no file name extension.
+        */
       def setDefaultsFromResource(resource: java.lang.String): scala.Unit = js.native
-      /**
-               * Sets the default values from a resource:
-               * - Android: Id for the XML resource, which should be in your application's res/xml folder.
-               * - iOS: The plist file name, with no file name extension.
-               */
       def setDefaultsFromResource(resource: scala.Double): scala.Unit = js.native
     }
-    
     
     trait ConfigSnapshot extends js.Object {
       var source: java.lang.String
       def `val`(): js.Any
     }
-    
     
     trait Object[ConfigSnapshot]
       extends /* key */ org.scalablytyped.runtime.StringDictionary[ConfigSnapshot]
@@ -759,39 +651,38 @@ object RNFirebaseNs extends js.Object {
   @JSName("crashlytics")
   @js.native
   object crashlyticsNs extends js.Object {
-    
     trait Crashlytics extends js.Object {
       /**
-               * Forces a crash. Useful for testing your application is set up correctly.
-               */
+        * Forces a crash. Useful for testing your application is set up correctly.
+        */
       def crash(): scala.Unit
       /**
-               * Logs a message that will appear in any subsequent crash reports.
-               */
+        * Logs a message that will appear in any subsequent crash reports.
+        */
       def log(message: java.lang.String): scala.Unit
       /**
-               * Logs a non fatal exception.
-               */
+        * Logs a non fatal exception.
+        */
       def recordError(code: scala.Double, message: java.lang.String): scala.Unit
       /**
-               * Set a boolean value to show alongside any subsequent crash reports.
-               */
+        * Set a boolean value to show alongside any subsequent crash reports.
+        */
       def setBoolValue(key: java.lang.String, value: scala.Boolean): scala.Unit
       /**
-               * Set a float value to show alongside any subsequent crash reports.
-               */
+        * Set a float value to show alongside any subsequent crash reports.
+        */
       def setFloatValue(key: java.lang.String, value: scala.Double): scala.Unit
       /**
-               * Set an integer value to show alongside any subsequent crash reports.
-               */
+        * Set an integer value to show alongside any subsequent crash reports.
+        */
       def setIntValue(key: java.lang.String, value: scala.Double): scala.Unit
       /**
-               * Set a string value to show alongside any subsequent crash reports.
-               */
+        * Set a string value to show alongside any subsequent crash reports.
+        */
       def setStringValue(key: java.lang.String, value: java.lang.String): scala.Unit
       /**
-               * Set the user ID to show alongside any subsequent crash reports.
-               */
+        * Set the user ID to show alongside any subsequent crash reports.
+        */
       def setUserIdentifier(userId: java.lang.String): scala.Unit
     }
     
@@ -800,7 +691,6 @@ object RNFirebaseNs extends js.Object {
   @JSName("database")
   @js.native
   object databaseNs extends js.Object {
-    
     trait DataSnapshot extends js.Object {
       var key: java.lang.String | scala.Null
       var ref: Reference
@@ -820,28 +710,22 @@ object RNFirebaseNs extends js.Object {
     trait Database
       extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
       /**
-               * Removes all event handlers and their native subscriptions
-               */
+        * Removes all event handlers and their native subscriptions
+        */
       def cleanup(): js.Promise[_] = js.native
       /**
-               * disconnect to firebase backend
-               */
+        * disconnect to firebase backend
+        */
       def goOffline(): scala.Unit = js.native
       /**
-               * connect to firebase backend
-               */
+        * connect to firebase backend
+        */
       def goOnline(): scala.Unit = js.native
       /**
-               * unregister listener
-               */
+        * unregister listener
+        */
       def off(path: java.lang.String, modifiersString: java.lang.String): js.Any = js.native
-      /**
-               * unregister listener
-               */
       def off(path: java.lang.String, modifiersString: java.lang.String, eventName: java.lang.String): js.Any = js.native
-      /**
-               * unregister listener
-               */
       def off(
         path: java.lang.String,
         modifiersString: java.lang.String,
@@ -849,8 +733,8 @@ object RNFirebaseNs extends js.Object {
         origCB: js.Function0[scala.Unit]
       ): js.Any = js.native
       /**
-               * register listener
-               */
+        * register listener
+        */
       def on(
         path: java.lang.String,
         modifiersString: java.lang.String,
@@ -860,15 +744,11 @@ object RNFirebaseNs extends js.Object {
         errorCb: js.Function0[scala.Unit]
       ): js.Any = js.native
       /**
-               * Returns a new firebase reference instance
-               * */
+        * Returns a new firebase reference instance
+        * */
       def ref(): RnReference = js.native
-      /**
-               * Returns a new firebase reference instance
-               * */
       def ref(path: java.lang.String): RnReference = js.native
     }
-    
     
     trait DatabaseStatics extends js.Object {
       /** @see https://www.firebase.com/docs/java-api/javadoc/com/firebase/client/ServerValue.html#TIMESTAMP */
@@ -1162,7 +1042,6 @@ object RNFirebaseNs extends js.Object {
       ): Query = js.native
     }
     
-    
     trait DocumentChange extends js.Object {
       val doc: DocumentSnapshot
       val newIndex: scala.Double
@@ -1272,7 +1151,6 @@ object RNFirebaseNs extends js.Object {
     @js.native
     class FieldValue () extends js.Object
     
-    
     trait Firestore extends js.Object {
       val app: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.App
       def batch(): WriteBatch
@@ -1306,7 +1184,6 @@ object RNFirebaseNs extends js.Object {
       val latitude: scala.Double = js.native
       val longitude: scala.Double = js.native
     }
-    
     
     trait MetadataChanges extends js.Object {
       var includeMetadataChanges: scala.Boolean
@@ -1384,7 +1261,6 @@ object RNFirebaseNs extends js.Object {
       ): Query = js.native
     }
     
-    
     trait QuerySnapshot extends js.Object {
       val docChanges: js.Array[DocumentChange]
       val docs: js.Array[DocumentSnapshot]
@@ -1394,7 +1270,6 @@ object RNFirebaseNs extends js.Object {
       val size: scala.Double
       def forEach(callback: js.Function1[/* snapshot */ DocumentSnapshot, _]): scala.Unit
     }
-    
     
     trait Settings extends js.Object {
       var host: js.UndefOr[java.lang.String] = js.undefined
@@ -1575,19 +1450,16 @@ object RNFirebaseNs extends js.Object {
     @JSName("Query")
     @js.native
     object QueryNs extends js.Object {
-      
       trait FieldFilter extends js.Object {
         var fieldPath: NativeFieldPath
         var operator: java.lang.String
         var value: js.Any
       }
       
-      
       trait FieldOrder extends js.Object {
         var direction: java.lang.String
         var fieldPath: NativeFieldPath
       }
-      
       
       trait NativeError
         extends stdLib.Error {
@@ -1595,7 +1467,6 @@ object RNFirebaseNs extends js.Object {
         var nativeErrorCode: js.UndefOr[java.lang.String] = js.undefined
         var nativeErrorMessage: js.UndefOr[java.lang.String] = js.undefined
       }
-      
       
       trait NativeFieldPath extends js.Object {
         var elements: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -1613,7 +1484,6 @@ object RNFirebaseNs extends js.Object {
         ): scala.Unit = js.native
       }
       
-      
       trait QueryOptions extends js.Object {
         var endAt: js.UndefOr[js.Array[_]] = js.undefined
         var endBefore: js.UndefOr[js.Array[_]] = js.undefined
@@ -1623,7 +1493,6 @@ object RNFirebaseNs extends js.Object {
         var startAfter: js.UndefOr[js.Array[_]] = js.undefined
         var startAt: js.UndefOr[js.Array[_]] = js.undefined
       }
-      
       
       trait SnapshotError extends NativeError {
         var appName: java.lang.String
@@ -1640,7 +1509,6 @@ object RNFirebaseNs extends js.Object {
     @JSName("QuerySnapshot")
     @js.native
     object QuerySnapshotNs extends js.Object {
-      
       trait NativeData extends js.Object {
         var changes: js.Array[
                 reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.TypesNs.NativeDocumentChange
@@ -1656,11 +1524,9 @@ object RNFirebaseNs extends js.Object {
     @JSName("Types")
     @js.native
     object TypesNs extends js.Object {
-      
       trait GetOptions extends js.Object {
         var source: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.default | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.server | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.cache
       }
-      
       
       trait NativeDocumentChange extends js.Object {
         var document: NativeDocumentSnapshot
@@ -1669,24 +1535,20 @@ object RNFirebaseNs extends js.Object {
         var `type`: java.lang.String
       }
       
-      
       trait NativeDocumentSnapshot extends js.Object {
         var data: org.scalablytyped.runtime.StringDictionary[TypeMap]
         var metadata: SnapshotMetadata
         var path: java.lang.String
       }
       
-      
       trait SetOptions extends js.Object {
         var merge: js.UndefOr[scala.Boolean] = js.undefined
       }
-      
       
       trait SnapshotMetadata extends js.Object {
         var fromCache: scala.Boolean
         var hasPendingWrites: scala.Boolean
       }
-      
       
       trait TypeMap extends js.Object {
         var `type`: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.array | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.boolean | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.date | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.documentid | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.fieldvalue | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.geopoint | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`null` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.number | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`object` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.reference | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.string
@@ -1707,113 +1569,108 @@ object RNFirebaseNs extends js.Object {
   @js.native
   object functionsNs extends js.Object {
     /**
-           * `FirebaseFunctions` represents a Functions app, and is the entry point for
-           * all Functions operations.
-           */
-    
+      * `FirebaseFunctions` represents a Functions app, and is the entry point for
+      * all Functions operations.
+      */
     trait Functions
       extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
       /**
-               * Gets an `HttpsCallable` instance that refers to the function with the given
-               * name.
-               *
-               * @param name The name of the https callable function.
-               * @return The `HttpsCallable` instance.
-               */
+        * Gets an `HttpsCallable` instance that refers to the function with the given
+        * name.
+        *
+        * @param name The name of the https callable function.
+        * @return The `HttpsCallable` instance.
+        */
       def httpsCallable(name: java.lang.String): HttpsCallable
       /**
-               * Changes this instance to point to a Cloud Functions emulator running
-               * locally.
-               *
-               * See https://firebase.google.com/docs/functions/local-emulator
-               *
-               * @param origin the origin string of the local emulator started via firebase tools
-               * "http://10.0.0.8:1337".
-               */
+        * Changes this instance to point to a Cloud Functions emulator running
+        * locally.
+        *
+        * See https://firebase.google.com/docs/functions/local-emulator
+        *
+        * @param origin the origin string of the local emulator started via firebase tools
+        * "http://10.0.0.8:1337".
+        */
       def useFunctionsEmulator(origin: java.lang.String): js.Promise[scala.Null]
     }
     
     /**
-           * firebase.functions.X
-           */
-    
+      * firebase.functions.X
+      */
     trait FunctionsStatics extends js.Object {
       /**
-               * Uppercased + underscored variables of @FunctionsErrorCode
-               */
+        * Uppercased + underscored variables of @FunctionsErrorCode
+        */
       var HttpsErrorCode: HttpsErrorCode
     }
     
     /**
-           * An HttpsCallableResult wraps a single result from a function call.
-           */
-    
+      * An HttpsCallableResult wraps a single result from a function call.
+      */
     trait HttpsCallableResult extends js.Object {
       val data: js.Any
     }
     
-    
     trait HttpsError
       extends stdLib.Error {
       /**
-               * A standard error code that will be returned to the client. This also
-               * determines the HTTP status code of the response, as defined in code.proto.
-               */
+        * A standard error code that will be returned to the client. This also
+        * determines the HTTP status code of the response, as defined in code.proto.
+        */
       val code: FunctionsErrorCode
       /**
-               * Extra data to be converted to JSON and included in the error response.
-               */
+        * Extra data to be converted to JSON and included in the error response.
+        */
       val details: js.UndefOr[js.Any] = js.undefined
     }
-    
     
     trait HttpsErrorCode
       extends /* name */ org.scalablytyped.runtime.StringDictionary[FunctionsErrorCode]
     
     /**
-           * The set of Firebase Functions status codes. The codes are the same at the
-           * ones exposed by gRPC here:
-           * https://github.com/grpc/grpc/blob/master/doc/statuscodes.md
-           *
-           * Possible values:
-           * - 'cancelled': The operation was cancelled (typically by the caller).
-           * - 'unknown': Unknown error or an error from a different error domain.
-           * - 'invalid-argument': Client specified an invalid argument. Note that this
-           *   differs from 'failed-precondition'. 'invalid-argument' indicates
-           *   arguments that are problematic regardless of the state of the system
-           *   (e.g. an invalid field name).
-           * - 'deadline-exceeded': Deadline expired before operation could complete.
-           *   For operations that change the state of the system, this error may be
-           *   returned even if the operation has completed successfully. For example,
-           *   a successful response from a server could have been delayed long enough
-           *   for the deadline to expire.
-           * - 'not-found': Some requested document was not found.
-           * - 'already-exists': Some document that we attempted to create already
-           *   exists.
-           * - 'permission-denied': The caller does not have permission to execute the
-           *   specified operation.
-           * - 'resource-exhausted': Some resource has been exhausted, perhaps a
-           *   per-user quota, or perhaps the entire file system is out of space.
-           * - 'failed-precondition': Operation was rejected because the system is not
-           *   in a state required for the operation's execution.
-           * - 'aborted': The operation was aborted, typically due to a concurrency
-           *   issue like transaction aborts, etc.
-           * - 'out-of-range': Operation was attempted past the valid range.
-           * - 'unimplemented': Operation is not implemented or not supported/enabled.
-           * - 'internal': Internal errors. Means some invariants expected by
-           *   underlying system has been broken. If you see one of these errors,
-           *   something is very broken.
-           * - 'unavailable': The service is currently unavailable. This is most likely
-           *   a transient condition and may be corrected by retrying with a backoff.
-           * - 'data-loss': Unrecoverable data loss or corruption.
-           * - 'unauthenticated': The request does not have valid authentication
-           *   credentials for the operation.
-           */
+      * The set of Firebase Functions status codes. The codes are the same at the
+      * ones exposed by gRPC here:
+      * https://github.com/grpc/grpc/blob/master/doc/statuscodes.md
+      *
+      * Possible values:
+      * - 'cancelled': The operation was cancelled (typically by the caller).
+      * - 'unknown': Unknown error or an error from a different error domain.
+      * - 'invalid-argument': Client specified an invalid argument. Note that this
+      *   differs from 'failed-precondition'. 'invalid-argument' indicates
+      *   arguments that are problematic regardless of the state of the system
+      *   (e.g. an invalid field name).
+      * - 'deadline-exceeded': Deadline expired before operation could complete.
+      *   For operations that change the state of the system, this error may be
+      *   returned even if the operation has completed successfully. For example,
+      *   a successful response from a server could have been delayed long enough
+      *   for the deadline to expire.
+      * - 'not-found': Some requested document was not found.
+      * - 'already-exists': Some document that we attempted to create already
+      *   exists.
+      * - 'permission-denied': The caller does not have permission to execute the
+      *   specified operation.
+      * - 'resource-exhausted': Some resource has been exhausted, perhaps a
+      *   per-user quota, or perhaps the entire file system is out of space.
+      * - 'failed-precondition': Operation was rejected because the system is not
+      *   in a state required for the operation's execution.
+      * - 'aborted': The operation was aborted, typically due to a concurrency
+      *   issue like transaction aborts, etc.
+      * - 'out-of-range': Operation was attempted past the valid range.
+      * - 'unimplemented': Operation is not implemented or not supported/enabled.
+      * - 'internal': Internal errors. Means some invariants expected by
+      *   underlying system has been broken. If you see one of these errors,
+      *   something is very broken.
+      * - 'unavailable': The service is currently unavailable. This is most likely
+      *   a transient condition and may be corrected by retrying with a backoff.
+      * - 'data-loss': Unrecoverable data loss or corruption.
+      * - 'unauthenticated': The request does not have valid authentication
+      *   credentials for the operation.
+      */
     type FunctionsErrorCode = reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.ok | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.cancelled | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.unknown | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`invalid-argument` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`deadline-exceeded` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`not-found` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`already-exists` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`permission-denied` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`resource-exhausted` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`failed-precondition` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.aborted | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`out-of-range` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.unimplemented | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.internal | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.unavailable | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`data-loss` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.unauthenticated
     /**
-           * An HttpsCallable is a reference to a "callable" http trigger in
-           * Google Cloud Functions.
-           */
+      * An HttpsCallable is a reference to a "callable" http trigger in
+      * Google Cloud Functions.
+      */
     type HttpsCallable = js.Function1[/* data */ js.UndefOr[js.Any], js.Promise[HttpsCallableResult]]
   }
   
@@ -1837,7 +1694,6 @@ object RNFirebaseNs extends js.Object {
   @JSName("links")
   @js.native
   object linksNs extends js.Object {
-    
     trait AnalyticsParameters extends js.Object {
       def setCampaign(campaign: java.lang.String): DynamicLink
       def setContent(content: java.lang.String): DynamicLink
@@ -1845,7 +1701,6 @@ object RNFirebaseNs extends js.Object {
       def setSource(source: java.lang.String): DynamicLink
       def setTerm(term: java.lang.String): DynamicLink
     }
-    
     
     trait AndroidParameters extends js.Object {
       def setFallbackUrl(fallbackUrl: java.lang.String): DynamicLink
@@ -1864,7 +1719,6 @@ object RNFirebaseNs extends js.Object {
       var social: SocialParameters = js.native
     }
     
-    
     trait IOSParameters extends js.Object {
       def setAppStoreId(appStoreId: java.lang.String): DynamicLink
       def setBundleId(bundleId: java.lang.String): DynamicLink
@@ -1874,7 +1728,6 @@ object RNFirebaseNs extends js.Object {
       def setIPadFallbackUrl(iPadFallbackUrl: java.lang.String): DynamicLink
       def setMinimumVersion(minimumVersion: java.lang.String): DynamicLink
     }
-    
     
     trait ITunesParameters extends js.Object {
       def setAffiliateToken(affiliateToken: java.lang.String): DynamicLink
@@ -1892,38 +1745,34 @@ object RNFirebaseNs extends js.Object {
         dynamicLink: DynamicLink,
         `type`: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.SHORT
       ): js.Promise[java.lang.String] = js.native
-      /** Creates a short dynamic link. */
       @JSName("createShortDynamicLink")
       def createShortDynamicLink_UNGUESSABLE(
         dynamicLink: DynamicLink,
         `type`: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.UNGUESSABLE
       ): js.Promise[java.lang.String] = js.native
       /**
-               * Returns the URL that the app has been launched from. If the app was
-               * not launched from a URL the return value will be null.
-               */
+        * Returns the URL that the app has been launched from. If the app was
+        * not launched from a URL the return value will be null.
+        */
       def getInitialLink(): js.Promise[java.lang.String | scala.Null] = js.native
       /**
-               * Subscribe to URL open events while the app is still running.
-               * The listener is called from URL open events whilst the app is still
-               * running, use getInitialLink for URLs which cause the app to open
-               * from a previously closed / not running state.
-               * Returns an unsubscribe function, call the returned function to
-               * unsubscribe from all future events.
-               */
+        * Subscribe to URL open events while the app is still running.
+        * The listener is called from URL open events whilst the app is still
+        * running, use getInitialLink for URLs which cause the app to open
+        * from a previously closed / not running state.
+        * Returns an unsubscribe function, call the returned function to
+        * unsubscribe from all future events.
+        */
       def onLink(listener: js.Function1[/* url */ java.lang.String, scala.Unit]): js.Function0[scala.Unit] = js.native
     }
-    
     
     trait LinksStatics extends js.Object {
       var DynamicLink: org.scalablytyped.runtime.Instantiable2[/* link */ java.lang.String, /* dynamicLinkDomain */ java.lang.String, DynamicLink]
     }
     
-    
     trait NavigationParameters extends js.Object {
       def setForcedRedirectEnabled(forcedRedirectEnabled: scala.Boolean): DynamicLink
     }
-    
     
     trait SocialParameters extends js.Object {
       def setDescriptionText(descriptionText: java.lang.String): DynamicLink
@@ -1939,12 +1788,12 @@ object RNFirebaseNs extends js.Object {
     @js.native
     class IOSMessaging () extends js.Object {
       /**
-               * Returns the devices APNS token.
-               */
+        * Returns the devices APNS token.
+        */
       def getAPNSToken(): js.Promise[java.lang.String | scala.Null] = js.native
       /**
-               * Register for iOS remote notifications
-               */
+        * Register for iOS remote notifications
+        */
       def registerForRemoteNotifications(): js.Promise[scala.Unit] = js.native
     }
     
@@ -1954,42 +1803,41 @@ object RNFirebaseNs extends js.Object {
       def deleteToken(authorizedEntity: java.lang.String): js.Promise[scala.Unit] = js.native
       def deleteToken(authorizedEntity: java.lang.String, scope: java.lang.String): js.Promise[scala.Unit] = js.native
       /**
-               * Returns the devices FCM token.
-               */
+        * Returns the devices FCM token.
+        */
       def getToken(): js.Promise[java.lang.String] = js.native
       /**
-               * Checks if the app has notification permissions.
-               */
+        * Checks if the app has notification permissions.
+        */
       def hasPermission(): js.Promise[scala.Boolean] = js.native
       /**
-               * On a new message,
-               * the payload object is passed to the listener callback.
-               * This method is only triggered when the app is running.
-               */
+        * On a new message,
+        * the payload object is passed to the listener callback.
+        * This method is only triggered when the app is running.
+        */
       def onMessage(listener: js.Function1[/* message */ js.Any, _]): js.Function0[_] = js.native
       /**
-               * On the event a devices FCM token is refreshed by Google,
-               *  the new token is returned in a callback listener.
-               */
+        * On the event a devices FCM token is refreshed by Google,
+        *  the new token is returned in a callback listener.
+        */
       def onTokenRefresh(listener: js.Function1[/* token */ java.lang.String, _]): js.Function0[_] = js.native
       /**
-               * Requests app notification permissions in an Alert dialog.
-               */
+        * Requests app notification permissions in an Alert dialog.
+        */
       def requestPermission(): js.Promise[scala.Boolean] = js.native
       /**
-               * Send an upstream message
-               */
+        * Send an upstream message
+        */
       def sendMessage(remoteMessage: RemoteMessage): js.Promise[scala.Unit] = js.native
       /**
-               * Subscribes the device to a topic.
-               */
+        * Subscribes the device to a topic.
+        */
       def subscribeToTopic(topic: java.lang.String): scala.Unit = js.native
       /**
-               * Unsubscribe the device from a topic.
-               */
+        * Unsubscribe the device from a topic.
+        */
       def unsubscribeFromTopic(topic: java.lang.String): scala.Unit = js.native
     }
-    
     
     trait MessagingStatics extends js.Object {
       var RemoteMessage: org.scalablytyped.runtime.Instantiable0[RemoteMessage]
@@ -2145,7 +1993,6 @@ object RNFirebaseNs extends js.Object {
       def setWhen(when: scala.Double): Notification = js.native
     }
     
-    
     trait AndroidNotifications extends js.Object {
       def createChannel(
         channel: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Channel
@@ -2226,21 +2073,20 @@ object RNFirebaseNs extends js.Object {
       var results: js.UndefOr[js.Any] = js.native
     }
     
-    
     trait Notifications extends js.Object {
       var android: AndroidNotifications
       /**
-               * Cancels all notifications
-               */
+        * Cancels all notifications
+        */
       def cancelAllNotifications(): scala.Unit
       /**
-               * Cancels a notification by ID
-               */
+        * Cancels a notification by ID
+        */
       def cancelNotification(notificationId: java.lang.String): scala.Unit
       def displayNotification(notification: Notification): js.Promise[scala.Unit]
       /**
-               * Returns the current badge number on the app icon.
-               */
+        * Returns the current badge number on the app icon.
+        */
       def getBadge(): js.Promise[scala.Double]
       def getInitialNotification(): js.Promise[NotificationOpen]
       def getScheduledNotifications(): js.Promise[js.Array[Notification]]
@@ -2250,15 +2096,14 @@ object RNFirebaseNs extends js.Object {
       def removeAllDeliveredNotifications(): scala.Unit
       def removeDeliveredNotification(notificationId: java.lang.String): scala.Unit
       /**
-               * Schedule a local notification to be shown on the device.
-               */
+        * Schedule a local notification to be shown on the device.
+        */
       def scheduleNotification(notification: Notification, schedule: js.Any): js.Any
       /**
-               * Sets the badge number on the iOS app icon.
-               */
+        * Sets the badge number on the iOS app icon.
+        */
       def setBadge(badge: scala.Double): scala.Unit
     }
-    
     
     trait NotificationsStatics extends js.Object {
       var Android: reactDashNativeDashFirebaseLib.Anon_RemoteInput
@@ -2614,107 +2459,104 @@ object RNFirebaseNs extends js.Object {
   @JSName("perf")
   @js.native
   object perfNs extends js.Object {
-    
     trait HttpMetric extends js.Object {
       /**
-               * Return an attribute by name, or null if it does not exist.
-               */
+        * Return an attribute by name, or null if it does not exist.
+        */
       def getAttribute(attribute: java.lang.String): js.Promise[java.lang.String | scala.Null]
       /**
-               * Return an object of key-value attributes.
-               */
+        * Return an object of key-value attributes.
+        */
       def getAttributes(): js.Promise[js.Object]
       /**
-               * Set an attribute. Returns true if it was set, false if it was not.
-               */
+        * Set an attribute. Returns true if it was set, false if it was not.
+        */
       def putAttribute(attribute: java.lang.String, value: java.lang.String): js.Promise[
             reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibNumbers.`true` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibNumbers.`false`
           ]
       /**
-               * Remove an attribute by name.
-               */
+        * Remove an attribute by name.
+        */
       def removeAttribute(attribute: java.lang.String): js.Promise[scala.Null]
       /**
-               * Set the request HTTP response code.
-               */
+        * Set the request HTTP response code.
+        */
       def setHttpResponseCode(code: scala.Double): js.Promise[scala.Null]
       /**
-               * Set the request payload size, in bytes.
-               */
+        * Set the request payload size, in bytes.
+        */
       def setRequestPayloadSize(bytes: scala.Double): js.Promise[scala.Null]
       /**
-               * Set the response content type.
-               */
+        * Set the response content type.
+        */
       def setResponseContentType(`type`: java.lang.String): js.Promise[scala.Null]
       /**
-               * Set the response payload size, in bytes.
-               */
+        * Set the response payload size, in bytes.
+        */
       def setResponsePayloadSize(bytes: scala.Double): js.Promise[scala.Null]
       /**
-               * Start a HttpMetric instance.
-               */
+        * Start a HttpMetric instance.
+        */
       def start(): js.Promise[scala.Null]
       /**
-               * Stop a HttpMetric instance.
-               */
+        * Stop a HttpMetric instance.
+        */
       def stop(): js.Promise[scala.Null]
     }
     
-    
     trait Perf extends js.Object {
       /**
-               * Returns a new HTTP Metric instance.
-               */
+        * Returns a new HTTP Metric instance.
+        */
       def newHttpMetric(url: java.lang.String, httpMethod: HttpMethod): HttpMetric
       /**
-               * Returns a new Trace instance.
-               */
+        * Returns a new Trace instance.
+        */
       def newTrace(trace: java.lang.String): Trace
       /**
-               * Globally enable or disable performance monitoring.
-               */
+        * Globally enable or disable performance monitoring.
+        */
       def setPerformanceCollectionEnabled(enabled: scala.Boolean): scala.Unit
     }
     
-    
     trait Trace extends js.Object {
       /**
-               * Return an attribute by name, or null if it does not exist.
-               */
+        * Return an attribute by name, or null if it does not exist.
+        */
       def getAttribute(attribute: java.lang.String): js.Promise[java.lang.String | scala.Null]
       /**
-               * Return an object of key-value attributes.
-               */
+        * Return an object of key-value attributes.
+        */
       def getAttributes(): js.Promise[js.Object]
       /**
-               * Get a metric by name. Returns 0 if it does not exist.
-               */
+        * Get a metric by name. Returns 0 if it does not exist.
+        */
       def getMetric(metricName: java.lang.String): js.Promise[scala.Double]
       /**
-               * Increment a metric by name and value.
-               */
+        * Increment a metric by name and value.
+        */
       def incrementMetric(metricName: java.lang.String, incrementBy: scala.Double): js.Promise[scala.Null]
       /**
-               * Set an attribute. Returns true if it was set, false if it was not.
-               */
+        * Set an attribute. Returns true if it was set, false if it was not.
+        */
       def putAttribute(attribute: java.lang.String, value: java.lang.String): js.Promise[
             reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibNumbers.`true` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibNumbers.`false`
           ]
       /**
-               * Set a metric.
-               */
+        * Set a metric.
+        */
       def putMetric(metricName: java.lang.String, value: scala.Double): js.Promise[scala.Null]
       /**
-               * Remove an attribute by name.
-               */
+        * Remove an attribute by name.
+        */
       def removeAttribute(attribute: java.lang.String): js.Promise[scala.Null]
       /**
-               * Start a Trace instance.
-               */
+        * Start a Trace instance.
+        */
       def start(): js.Promise[scala.Null]
       /**
-               * Stop a Trace instance.
-               */
+        * Stop a Trace instance.
+        */
       def stop(): js.Promise[scala.Null]
     }
     
@@ -2724,14 +2566,12 @@ object RNFirebaseNs extends js.Object {
   @JSName("storage")
   @js.native
   object storageNs extends js.Object {
-    
     trait DownloadTaskSnapshot extends js.Object {
       var bytesTransferred: scala.Double
       var ref: Reference
       var state: TaskState
       var totalBytes: scala.Double
     }
-    
     
     trait FullMetadata extends SettableMetadata {
       var bucket: java.lang.String
@@ -2746,68 +2586,59 @@ object RNFirebaseNs extends js.Object {
     }
     
     /**
-           * A reference represents a reference to a Google Cloud Storage object.
-           *
-           * You can upload, download, and delete objects, as well as get/set object
-           * metadata for a file via this reference.
-           */
+      * A reference represents a reference to a Google Cloud Storage object.
+      *
+      * You can upload, download, and delete objects, as well as get/set object
+      * metadata for a file via this reference.
+      */
     @js.native
     trait Reference extends js.Object {
       var fullPath: java.lang.String = js.native
       /**
-               * Returns a reference to a relative path from this reference.
-               *
-               * @param path The relative path
-               */
+        * Returns a reference to a relative path from this reference.
+        *
+        * @param path The relative path
+        */
       def child(path: java.lang.String): Reference = js.native
       /**
-               * Deletes the object at this reference's location.
-               */
+        * Deletes the object at this reference's location.
+        */
       def delete(): js.Promise[scala.Unit] = js.native
       /**
-               * Downloads the storage object for this reference to the device file
-               * path specified.
-               *
-               * @param filePath The destination path of the downloaded file.
-               */
+        * Downloads the storage object for this reference to the device file
+        * path specified.
+        *
+        * @param filePath The destination path of the downloaded file.
+        */
       def downloadFile(filePath: java.lang.String): StorageTask[DownloadTaskSnapshot] = js.native
       /**
-               * Fetches a long lived download URL for this object.
-               */
+        * Fetches a long lived download URL for this object.
+        */
       def getDownloadURL(): js.Promise[java.lang.String] = js.native
       /**
-               * Fetches metadata for the object at this location, if one exists.
-               *
-               * @returns A promise that is resolved with the metadata; or rejected on
-               *          failure, including if the object does not exist.
-               */
+        * Fetches metadata for the object at this location, if one exists.
+        *
+        * @returns A promise that is resolved with the metadata; or rejected on
+        *          failure, including if the object does not exist.
+        */
       def getMetadata(): js.Promise[FullMetadata] = js.native
       /**
-               * Uploads the file path specified from the device into a storage object
-               * for this reference.
-               *
-               * @param filePath The path to the file on the device. It must be a full
-               *        file path.
-               * @param metadata The metadata to associate with this file.
-               */
+        * Uploads the file path specified from the device into a storage object
+        * for this reference.
+        *
+        * @param filePath The path to the file on the device. It must be a full
+        *        file path.
+        * @param metadata The metadata to associate with this file.
+        */
       def putFile(filePath: java.lang.String): StorageTask[UploadTaskSnapshot] = js.native
-      /**
-               * Uploads the file path specified from the device into a storage object
-               * for this reference.
-               *
-               * @param filePath The path to the file on the device. It must be a full
-               *        file path.
-               * @param metadata The metadata to associate with this file.
-               */
       def putFile(filePath: java.lang.String, metadata: SettableMetadata): StorageTask[UploadTaskSnapshot] = js.native
       /**
-               * Updates the metadata for the object at this location, if one exists.
-               *
-               * @param metadata
-               */
+        * Updates the metadata for the object at this location, if one exists.
+        *
+        * @param metadata
+        */
       def updateMetadata(metadata: SettableMetadata): js.Promise[FullMetadata] = js.native
     }
-    
     
     trait SettableMetadata extends js.Object {
       var cacheControl: js.UndefOr[java.lang.String | scala.Null] = js.undefined
@@ -2819,54 +2650,46 @@ object RNFirebaseNs extends js.Object {
     }
     
     /**
-           * The Firebase Storage service interface.
-           *
-           * An instance can be accessed using `firebase.storage()`.
-           */
+      * The Firebase Storage service interface.
+      *
+      * An instance can be accessed using `firebase.storage()`.
+      */
     @js.native
     class Storage () extends js.Object {
       /**
-               * The app associated with the Storage service instance.
-               */
+        * The app associated with the Storage service instance.
+        */
       var app: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.App = js.native
       /**
-               * Returns a reference for the given path in the default bucket.
-               *
-               * @param path A relative path to initialize the reference with, for
-               *        example path/to/image.jpg. If not passed, the returned
-               *        reference points to the bucket root.
-               */
+        * Returns a reference for the given path in the default bucket.
+        *
+        * @param path A relative path to initialize the reference with, for
+        *        example path/to/image.jpg. If not passed, the returned
+        *        reference points to the bucket root.
+        */
       def ref(): Reference = js.native
-      /**
-               * Returns a reference for the given path in the default bucket.
-               *
-               * @param path A relative path to initialize the reference with, for
-               *        example path/to/image.jpg. If not passed, the returned
-               *        reference points to the bucket root.
-               */
       def ref(path: java.lang.String): Reference = js.native
       /**
-               * Returns a reference for the given absolute URL.
-               *
-               * @param url URL must be in the form of either
-               *        -   a Cloud Storage URL, for example gs://bucket/files/image.png; or
-               *        -   download URL taken from object metadata.
-               */
+        * Returns a reference for the given absolute URL.
+        *
+        * @param url URL must be in the form of either
+        *        -   a Cloud Storage URL, for example gs://bucket/files/image.png; or
+        *        -   download URL taken from object metadata.
+        */
       def refFromURL(url: java.lang.String): Reference = js.native
       /**
-               * @param time The new maximum download retry time in milliseconds.
-               */
+        * @param time The new maximum download retry time in milliseconds.
+        */
       def setMaxDownloadRetryTime(time: scala.Double): scala.Unit = js.native
       /**
-               * @param time The new maximum operation retry time in milliseconds.
-               */
+        * @param time The new maximum operation retry time in milliseconds.
+        */
       def setMaxOperationRetryTime(time: scala.Double): scala.Unit = js.native
       /**
-               * @param time The new maximum upload retry time in milliseconds.
-               */
+        * @param time The new maximum upload retry time in milliseconds.
+        */
       def setMaxUploadRetryTime(time: scala.Double): scala.Unit = js.native
     }
-    
     
     trait StorageStatics extends js.Object {
       var Native: js.UndefOr[reactDashNativeDashFirebaseLib.Anon_LIBRARYDIRECTORYPATH] = js.undefined
@@ -2878,8 +2701,8 @@ object RNFirebaseNs extends js.Object {
     trait StorageTask[T]
       extends stdLib.Promise[T] {
       /**
-               * Not supported by react-native-firebase
-               */
+        * Not supported by react-native-firebase
+        */
       def cancel(): scala.Unit = js.native
       def on(
         event: TaskEvent,
@@ -2898,12 +2721,12 @@ object RNFirebaseNs extends js.Object {
       ): js.Function0[scala.Unit] = js.native
       def on(event: TaskEvent, observer: reactDashNativeDashFirebaseLib.Anon_Next[T]): js.Function0[scala.Unit] = js.native
       /**
-               * Not supported by react-native-firebase
-               */
+        * Not supported by react-native-firebase
+        */
       def pause(): scala.Unit = js.native
       /**
-               * Not supported by react-native-firebase
-               */
+        * Not supported by react-native-firebase
+        */
       def resume(): scala.Unit = js.native
     }
     
@@ -2912,7 +2735,6 @@ object RNFirebaseNs extends js.Object {
     
     @js.native
     sealed trait TaskState extends js.Object
-    
     
     trait UploadTaskSnapshot extends js.Object {
       var bytesTransferred: scala.Double

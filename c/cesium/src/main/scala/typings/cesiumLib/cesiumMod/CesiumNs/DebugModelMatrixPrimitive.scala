@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DebugModelMatrixPrimitive extends js.Object {
   var id: js.Any
   var length: scala.Double

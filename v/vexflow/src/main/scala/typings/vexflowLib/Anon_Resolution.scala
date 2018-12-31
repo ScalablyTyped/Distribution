@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Resolution extends js.Object {
   var beat_value: scala.Double
   var num_beats: scala.Double

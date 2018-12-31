@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Response extends js.Object {
   /** A reply from adding a banded range. */
   var addBanding: js.UndefOr[AddBandingResponse] = js.undefined

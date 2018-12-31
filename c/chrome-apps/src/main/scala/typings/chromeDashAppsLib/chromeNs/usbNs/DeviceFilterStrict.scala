@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeviceFilterStrict extends js.Object {
   /** USB interface class, matches any interface on the device. */
   var interfaceClass: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined

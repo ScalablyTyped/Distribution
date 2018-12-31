@@ -9,30 +9,18 @@ import scala.scalajs.js.annotation._
 trait Encode extends js.Object {
   var options: EncodeOptions = js.native
   /**
-      * Encode a string of text
-      *
-      * This function takes a string of text and encodes (by default) any symbols
-      * that aren’t printable ASCII symbols and &, <, >, ", ', and `, replacing
-      * them with character references.
-      *
-      * As long as the input string contains allowed code points only, the return
-      * value of this function is always valid HTML. Any (invalid) code points
-      * that cannot be represented using a character reference in the input are
-      * not encoded.
-      */
+    * Encode a string of text
+    *
+    * This function takes a string of text and encodes (by default) any symbols
+    * that aren’t printable ASCII symbols and &, <, >, ", ', and `, replacing
+    * them with character references.
+    *
+    * As long as the input string contains allowed code points only, the return
+    * value of this function is always valid HTML. Any (invalid) code points
+    * that cannot be represented using a character reference in the input are
+    * not encoded.
+    */
   def apply(text: java.lang.String): java.lang.String = js.native
-  /**
-      * Encode a string of text
-      *
-      * This function takes a string of text and encodes (by default) any symbols
-      * that aren’t printable ASCII symbols and &, <, >, ", ', and `, replacing
-      * them with character references.
-      *
-      * As long as the input string contains allowed code points only, the return
-      * value of this function is always valid HTML. Any (invalid) code points
-      * that cannot be represented using a character reference in the input are
-      * not encoded.
-      */
   def apply(text: java.lang.String, options: EncodeOptions): java.lang.String = js.native
 }
 

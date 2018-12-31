@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcrtpheaderextensioncapability
-
 trait RTCRtpHeaderExtensionCapability extends js.Object {
   var uri: js.UndefOr[java.lang.String] = js.undefined
 }

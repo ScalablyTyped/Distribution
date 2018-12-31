@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ToolbarModeHandler extends js.Object {
   var enabled: scala.Boolean
   var handler: leafletLib.leafletMod.Handler

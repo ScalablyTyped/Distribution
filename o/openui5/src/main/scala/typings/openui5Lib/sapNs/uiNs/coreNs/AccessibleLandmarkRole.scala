@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 sealed trait AccessibleLandmarkRole extends js.Object
 
 /**
-       * Defines the accessible landmark roles for ARIA support. This enumeration is used with the
-       * AccessibleRole control property.For more information, goto "Roles for Accessible Rich Internet
-       * Applications (WAI-ARIA Roles)" at the www.w3.org homepage.
-      */
+  * Defines the accessible landmark roles for ARIA support. This enumeration is used with the
+  * AccessibleRole control property.For more information, goto "Roles for Accessible Rich Internet
+  * Applications (WAI-ARIA Roles)" at the www.w3.org homepage.
+  */
 @JSGlobal("sap.ui.core.AccessibleLandmarkRole")
 @js.native
 object AccessibleLandmarkRole extends js.Object {

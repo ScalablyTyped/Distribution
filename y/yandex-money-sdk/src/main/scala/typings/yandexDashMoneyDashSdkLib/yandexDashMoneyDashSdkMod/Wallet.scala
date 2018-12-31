@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Wallet extends js.Object {
   def accountInfo(callback: ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.AccountInfoResult]): scala.Unit
   def incomingTransferAccept(

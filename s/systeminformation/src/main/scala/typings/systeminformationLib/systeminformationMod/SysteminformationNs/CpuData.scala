@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CpuData extends js.Object {
   var brand: java.lang.String
   var cache: CpuCacheData

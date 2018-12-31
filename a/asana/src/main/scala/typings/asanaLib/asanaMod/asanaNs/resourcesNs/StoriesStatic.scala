@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StoriesStatic
   extends /**
-             * @param dispatcher
-             */
+  * @param dispatcher
+  */
 org.scalablytyped.runtime.Instantiable1[/* dispatcher */ asanaLib.asanaMod.asanaNs.Dispatcher, Stories]
 

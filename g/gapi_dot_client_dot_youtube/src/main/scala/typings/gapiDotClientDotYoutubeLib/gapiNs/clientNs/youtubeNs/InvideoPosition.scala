@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InvideoPosition extends js.Object {
   /** Describes in which corner of the video the visual widget will appear. */
   var cornerPosition: js.UndefOr[java.lang.String] = js.undefined

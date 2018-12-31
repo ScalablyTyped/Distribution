@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScheduledEvent extends js.Object {
   var account: java.lang.String
   var detail: js.Any

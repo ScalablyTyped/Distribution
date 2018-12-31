@@ -51,12 +51,10 @@ object utilNs extends js.Object {
     def serialize(obj: js.Object, quote: java.lang.String): java.lang.String = js.native
   }
   
-  
   trait JSONRequest extends js.Object {
     def send(args: js.Object): scala.Unit
     def sendRPC(o: js.Object): scala.Unit
   }
-  
   
   trait LocalStorage extends js.Object {
     var length: scala.Double
@@ -138,7 +136,6 @@ object utilNs extends js.Object {
     def once(name: java.lang.String, callback: js.Function0[scala.Unit]): js.Object = js.native
     def send(settings: js.Object): scala.Unit = js.native
   }
-  
   
   trait i18n extends js.Object {
     var rtl: scala.Boolean

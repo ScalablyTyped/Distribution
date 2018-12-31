@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientCertificateSelectRequestDetails extends js.Object {
   /** List of distinguished names of certificate authorities allowed by the server. Each entry must be a DER-encoded X.509 DistinguishedName. */
   var certificateAuthorities: js.Array[stdLib.ArrayBuffer]

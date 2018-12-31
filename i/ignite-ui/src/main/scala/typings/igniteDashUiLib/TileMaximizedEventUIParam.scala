@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TileMaximizedEventUIParam extends js.Object {
   /**
   	 * Used to get a reference to the tile manager the maximized tile belongs to.

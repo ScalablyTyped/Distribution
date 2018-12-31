@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class QueueReorderItemsRequest protected () extends js.Object {
   /**
-           * @param {!Array<number>}
-           * @constructor
-           * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueReorderItemsRequest
-           */
+    * @param {!Array<number>}
+    * @constructor
+    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueReorderItemsRequest
+    */
   def this(itemIdsToReorder: js.Array[scala.Double]) = this()
   var customData: js.Object = js.native
   var insertBefore: scala.Double = js.native

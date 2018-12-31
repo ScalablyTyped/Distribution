@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_4[T1, T3, T5, T4, T2, T6] extends js.Object {
   var `0`: T1
   var `1`: T2

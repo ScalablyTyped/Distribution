@@ -15,9 +15,9 @@ abstract class WalletManager () extends js.Object
 @js.native
 object WalletManager extends js.Object {
   /**
-                   * Requests an instance of the default wallet store for the app.
-                   * @return An asynchronous operation that, on successful completion, returns an instance of the default wallet store. If you use Asynchronous programming, the result type is a single WalletItemStore object.
-                   */
+    * Requests an instance of the default wallet store for the app.
+    * @return An asynchronous operation that, on successful completion, returns an instance of the default wallet store. If you use Asynchronous programming, the result type is a single WalletItemStore object.
+    */
   def requestStoreAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.ApplicationModelNs.WalletNs.WalletItemStore] = js.native
 }
 

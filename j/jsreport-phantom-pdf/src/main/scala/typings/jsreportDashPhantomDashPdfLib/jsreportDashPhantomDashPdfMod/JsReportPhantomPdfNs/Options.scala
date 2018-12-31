@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 //   dedicatedProcess = 'dedicated-process',
 //   phantomServer = 'phantom-server'
 // }
-
 trait Options extends js.Object {
   var allowLocalFilesAccess: scala.Boolean
   // appDirectory: string;

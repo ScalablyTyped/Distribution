@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * http://js.cytoscape.org/#collection/animation
-     */
-
+  * http://js.cytoscape.org/#collection/animation
+  */
 trait ElementAnimateOptionsBase extends js.Object {
   /** A function to call when the animation is done. */
   var complete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

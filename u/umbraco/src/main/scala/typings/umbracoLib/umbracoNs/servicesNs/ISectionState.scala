@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Section State
-     */
-
+  * Section State
+  */
 trait ISectionState extends js.Object {
   //The currently active section
   var currentSection: js.Any

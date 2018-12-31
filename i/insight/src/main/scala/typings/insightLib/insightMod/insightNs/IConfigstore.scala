@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IConfigstore extends js.Object {
   var all: js.Any
   var path: java.lang.String

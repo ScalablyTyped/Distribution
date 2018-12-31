@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DealServingMetadataDealPauseStatus extends js.Object {
   var buyerPauseReason: js.UndefOr[java.lang.String] = js.undefined
   /** If the deal is paused, records which party paused the deal first. */

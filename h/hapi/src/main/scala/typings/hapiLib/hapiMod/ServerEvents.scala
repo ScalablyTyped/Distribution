@@ -9,39 +9,23 @@ import scala.scalajs.js.annotation._
 trait ServerEvents
   extends podiumLib.podiumMod.Podium {
   /**
-       * Subscribe to an event where:
-       * @param criteria - the subscription criteria which must be one of:
-       * * event name string which can be any of the built-in server events
-       * * a custom application event registered with server.event().
-       * * a criteria object
-       * @param listener - the handler method set to receive event updates. The function signature depends on the event argument, and the spread and tags options.
-       * @return Return value: none.
-       * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-servereventsoncriteria-listener)
-       * See ['log' event](https://github.com/hapijs/hapi/blob/master/API.md#-log-event)
-       * See ['request' event](https://github.com/hapijs/hapi/blob/master/API.md#-request-event)
-       * See ['response' event](https://github.com/hapijs/hapi/blob/master/API.md#-response-event)
-       * See ['route' event](https://github.com/hapijs/hapi/blob/master/API.md#-route-event)
-       * See ['start' event](https://github.com/hapijs/hapi/blob/master/API.md#-start-event)
-       * See ['stop' event](https://github.com/hapijs/hapi/blob/master/API.md#-stop-event)
-       */
+    * Subscribe to an event where:
+    * @param criteria - the subscription criteria which must be one of:
+    * * event name string which can be any of the built-in server events
+    * * a custom application event registered with server.event().
+    * * a criteria object
+    * @param listener - the handler method set to receive event updates. The function signature depends on the event argument, and the spread and tags options.
+    * @return Return value: none.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-servereventsoncriteria-listener)
+    * See ['log' event](https://github.com/hapijs/hapi/blob/master/API.md#-log-event)
+    * See ['request' event](https://github.com/hapijs/hapi/blob/master/API.md#-request-event)
+    * See ['response' event](https://github.com/hapijs/hapi/blob/master/API.md#-response-event)
+    * See ['route' event](https://github.com/hapijs/hapi/blob/master/API.md#-route-event)
+    * See ['start' event](https://github.com/hapijs/hapi/blob/master/API.md#-start-event)
+    * See ['stop' event](https://github.com/hapijs/hapi/blob/master/API.md#-stop-event)
+    */
   @JSName("on")
   def on_log(criteria: hapiLib.hapiLibStrings.log, listener: LogEventHandler): scala.Unit = js.native
-  /**
-       * Subscribe to an event where:
-       * @param criteria - the subscription criteria which must be one of:
-       * * event name string which can be any of the built-in server events
-       * * a custom application event registered with server.event().
-       * * a criteria object
-       * @param listener - the handler method set to receive event updates. The function signature depends on the event argument, and the spread and tags options.
-       * @return Return value: none.
-       * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-servereventsoncriteria-listener)
-       * See ['log' event](https://github.com/hapijs/hapi/blob/master/API.md#-log-event)
-       * See ['request' event](https://github.com/hapijs/hapi/blob/master/API.md#-request-event)
-       * See ['response' event](https://github.com/hapijs/hapi/blob/master/API.md#-response-event)
-       * See ['route' event](https://github.com/hapijs/hapi/blob/master/API.md#-route-event)
-       * See ['start' event](https://github.com/hapijs/hapi/blob/master/API.md#-start-event)
-       * See ['stop' event](https://github.com/hapijs/hapi/blob/master/API.md#-stop-event)
-       */
   @JSName("on")
   def on_log(criteria: ServerEventCriteria[hapiLib.hapiLibStrings.log], listener: LogEventHandler): scala.Unit = js.native
   @JSName("on")
@@ -64,48 +48,29 @@ trait ServerEvents
   def on_stop(criteria: hapiLib.hapiLibStrings.stop, listener: StopEventHandler): scala.Unit = js.native
   @JSName("on")
   def on_stop(criteria: ServerEventCriteria[hapiLib.hapiLibStrings.stop], listener: StopEventHandler): scala.Unit = js.native
-  /**
-       * Same as calling server.events.on() with the count option set to 1.
-       * @param criteria - the subscription criteria which must be one of:
-       * * event name string which can be any of the built-in server events
-       * * a custom application event registered with server.event().
-       * * a criteria object
-       * @return Return value: a promise that resolves when the event is emitted.
-       * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-servereventsoncecriteria)
-       */
   def once(criteria: ServerEventCriteria[java.lang.String]): js.Promise[_] = js.native
   /**
-       * Same as calling server.events.on() with the count option set to 1.
-       * @param criteria - the subscription criteria which must be one of:
-       * * event name string which can be any of the built-in server events
-       * * a custom application event registered with server.event().
-       * * a criteria object
-       * @return Return value: a promise that resolves when the event is emitted.
-       * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-servereventsoncecriteria)
-       */
+    * Same as calling server.events.on() with the count option set to 1.
+    * @param criteria - the subscription criteria which must be one of:
+    * * event name string which can be any of the built-in server events
+    * * a custom application event registered with server.event().
+    * * a criteria object
+    * @return Return value: a promise that resolves when the event is emitted.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-servereventsoncecriteria)
+    */
   def once(criteria: java.lang.String): js.Promise[_] = js.native
   /**
-       * Same as calling [server.events.on()](https://github.com/hapijs/hapi/blob/master/API.md#server.events.on()) with the count option set to 1.
-       * @param criteria - the subscription criteria which must be one of:
-       * * event name string which can be any of the built-in server events
-       * * a custom application event registered with server.event().
-       * * a criteria object
-       * @param listener - the handler method set to receive event updates. The function signature depends on the event argument, and the spread and tags options.
-       * @return Return value: none.
-       * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-servereventsoncecriteria-listener)
-       */
+    * Same as calling [server.events.on()](https://github.com/hapijs/hapi/blob/master/API.md#server.events.on()) with the count option set to 1.
+    * @param criteria - the subscription criteria which must be one of:
+    * * event name string which can be any of the built-in server events
+    * * a custom application event registered with server.event().
+    * * a criteria object
+    * @param listener - the handler method set to receive event updates. The function signature depends on the event argument, and the spread and tags options.
+    * @return Return value: none.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-servereventsoncecriteria-listener)
+    */
   @JSName("once")
   def once_log(criteria: hapiLib.hapiLibStrings.log, listener: LogEventHandler): scala.Unit = js.native
-  /**
-       * Same as calling [server.events.on()](https://github.com/hapijs/hapi/blob/master/API.md#server.events.on()) with the count option set to 1.
-       * @param criteria - the subscription criteria which must be one of:
-       * * event name string which can be any of the built-in server events
-       * * a custom application event registered with server.event().
-       * * a criteria object
-       * @param listener - the handler method set to receive event updates. The function signature depends on the event argument, and the spread and tags options.
-       * @return Return value: none.
-       * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-servereventsoncecriteria-listener)
-       */
   @JSName("once")
   def once_log(criteria: ServerEventCriteria[hapiLib.hapiLibStrings.log], listener: LogEventHandler): scala.Unit = js.native
   @JSName("once")

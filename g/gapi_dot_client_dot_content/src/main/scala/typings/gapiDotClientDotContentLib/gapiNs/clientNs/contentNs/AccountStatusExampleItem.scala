@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountStatusExampleItem extends js.Object {
   /** Unique item ID as specified in the uploaded product data. */
   var itemId: js.UndefOr[java.lang.String] = js.undefined

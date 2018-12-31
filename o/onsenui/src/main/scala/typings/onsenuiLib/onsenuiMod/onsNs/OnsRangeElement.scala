@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait OnsRangeElement
   extends stdLib.HTMLElement {
   /**
-       * @description A boolean value that specifies whether the input is disabled or not.
-       */
+    * @description A boolean value that specifies whether the input is disabled or not.
+    */
   var disabled: scala.Boolean = js.native
   /**
-       * @description The current value of the input.
-       */
+    * @description The current value of the input.
+    */
   var value: java.lang.String = js.native
 }
 

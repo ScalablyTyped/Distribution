@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Relationship extends BaseElement {
   var direction: RelationshipDirection
   var source: js.Array[BaseElement]

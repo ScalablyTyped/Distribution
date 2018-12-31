@@ -10,40 +10,18 @@ import scala.scalajs.js.annotation._
 class Renderer protected ()
   extends p5Lib.p5Mod.p5Ns.Renderer {
   /**
-       *   Main graphics and rendering context, as well as
-       *   the base API implementation for p5.js "core". To
-       *   be used as the superclass for Renderer2D and
-       *   Renderer3D classes, respecitvely.
-       *
-       *   @param elt DOM node that is wrapped
-       *   @param [pInst] pointer to p5 instance
-       *   @param [isMainCanvas] whether we're using it as
-       *   main canvas
-       */
+    *   Main graphics and rendering context, as well as
+    *   the base API implementation for p5.js "core". To
+    *   be used as the superclass for Renderer2D and
+    *   Renderer3D classes, respecitvely.
+    *
+    *   @param elt DOM node that is wrapped
+    *   @param [pInst] pointer to p5 instance
+    *   @param [isMainCanvas] whether we're using it as
+    *   main canvas
+    */
   def this(elt: java.lang.String) = this()
-  /**
-       *   Main graphics and rendering context, as well as
-       *   the base API implementation for p5.js "core". To
-       *   be used as the superclass for Renderer2D and
-       *   Renderer3D classes, respecitvely.
-       *
-       *   @param elt DOM node that is wrapped
-       *   @param [pInst] pointer to p5 instance
-       *   @param [isMainCanvas] whether we're using it as
-       *   main canvas
-       */
   def this(elt: java.lang.String, pInst: p5) = this()
-  /**
-       *   Main graphics and rendering context, as well as
-       *   the base API implementation for p5.js "core". To
-       *   be used as the superclass for Renderer2D and
-       *   Renderer3D classes, respecitvely.
-       *
-       *   @param elt DOM node that is wrapped
-       *   @param [pInst] pointer to p5 instance
-       *   @param [isMainCanvas] whether we're using it as
-       *   main canvas
-       */
   def this(elt: java.lang.String, pInst: p5, isMainCanvas: scala.Boolean) = this()
 }
 

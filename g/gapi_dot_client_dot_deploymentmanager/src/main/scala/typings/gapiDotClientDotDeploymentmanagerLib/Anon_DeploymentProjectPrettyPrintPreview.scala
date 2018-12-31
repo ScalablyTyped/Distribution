@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DeploymentProjectPrettyPrintPreview extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -24,19 +23,19 @@ trait Anon_DeploymentProjectPrettyPrintPreview extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * If set to true, updates the deployment and creates and updates the "shell" resources but does not actually alter or instantiate these resources. This
-                   * allows you to preview what your deployment will look like. You can use this intent to preview how an update would affect your deployment. You must
-                   * provide a target.config with a configuration if this is set to true. After previewing a deployment, you can deploy your resources by making a request
-                   * with the update() or you can cancelPreview() to remove the preview altogether. Note that the deployment will still exist after you cancel the preview
-                   * and you must separately delete this deployment if you want to remove it.
-                   */
+    * If set to true, updates the deployment and creates and updates the "shell" resources but does not actually alter or instantiate these resources. This
+    * allows you to preview what your deployment will look like. You can use this intent to preview how an update would affect your deployment. You must
+    * provide a target.config with a configuration if this is set to true. After previewing a deployment, you can deploy your resources by making a request
+    * with the update() or you can cancelPreview() to remove the preview altogether. Note that the deployment will still exist after you cancel the preview
+    * and you must separately delete this deployment if you want to remove it.
+    */
   var preview: js.UndefOr[scala.Boolean] = js.undefined
   /** The project ID for this request. */
   var project: java.lang.String
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[java.lang.String] = js.undefined

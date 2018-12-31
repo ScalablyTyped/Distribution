@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class Paragraph () extends js.Object {
   /**
-       * The Line items of which the paragraph consists
-       */
+    * The Line items of which the paragraph consists
+    */
   var lines: js.Array[Line] = js.native
   /**
-       * Tries to determine the common type for all lines. If the types for all lines are equal, it returns that type.
-       * If not, it returns 'indeterminate'.
-       */
+    * Tries to determine the common type for all lines. If the types for all lines are equal, it returns that type.
+    * If not, it returns 'indeterminate'.
+    */
   var `type`: java.lang.String = js.native
   def addLine(line: Line): scala.Unit = js.native
 }

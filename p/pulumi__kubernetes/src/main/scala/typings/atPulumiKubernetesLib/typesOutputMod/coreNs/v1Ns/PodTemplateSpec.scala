@@ -6,19 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * PodTemplateSpec describes the data a pod should have when created from a template
-         */
-
+  * PodTemplateSpec describes the data a pod should have when created from a template
+  */
 trait PodTemplateSpec extends js.Object {
   /**
-               * Standard object's metadata. More info:
-               * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
-               */
+    * Standard object's metadata. More info:
+    * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+    */
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta
   /**
-               * Specification of the desired behavior of the pod. More info:
-               * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
-               */
+    * Specification of the desired behavior of the pod. More info:
+    * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+    */
   val spec: PodSpec
 }
 

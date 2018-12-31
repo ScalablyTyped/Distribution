@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 	 * Any class that implements a view method can be used as a Mithril component.
 	 * Components can be consumed via the m() utility.
 	 */
-
 trait ClassComponent[A] extends Lifecycle[A, ClassComponent[A]] {
   /** The onbeforeremove hook is called before a DOM element is detached from the document. If a Promise is returned, Mithril only detaches the DOM element after the promise completes. */
   @JSName("onbeforeremove")

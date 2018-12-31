@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Capabilities extends js.Object {
   var applicationName: js.UndefOr[java.lang.String] = js.undefined
   var capabilities: js.UndefOr[Anon_Consumercancelnotify] = js.undefined

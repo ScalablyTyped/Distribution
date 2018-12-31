@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VideoCategoryListResponse extends js.Object {
   /** Etag of this resource. */
   var etag: js.UndefOr[java.lang.String] = js.undefined
   /** Serialized EventId of the request which produced this response. */
   var eventId: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * A list of video categories that can be associated with YouTube videos. In this map, the video category ID is the map key, and its value is the
-               * corresponding videoCategory resource.
-               */
+    * A list of video categories that can be associated with YouTube videos. In this map, the video category ID is the map key, and its value is the
+    * corresponding videoCategory resource.
+    */
   var items: js.UndefOr[js.Array[VideoCategory]] = js.undefined
   /** Identifies what kind of resource this is. Value: the fixed string "youtube#videoCategoryListResponse". */
   var kind: js.UndefOr[java.lang.String] = js.undefined

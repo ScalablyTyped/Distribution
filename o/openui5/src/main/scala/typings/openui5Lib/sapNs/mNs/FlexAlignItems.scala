@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait FlexAlignItems extends js.Object
 
 /**
-     * Available options for the layout of all elements along the cross axis of the flexbox layout.
-    */
+  * Available options for the layout of all elements along the cross axis of the flexbox layout.
+  */
 @JSGlobal("sap.m.FlexAlignItems")
 @js.native
 object FlexAlignItems extends js.Object {

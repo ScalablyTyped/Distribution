@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("is-buffer", JSImport.Namespace)
 @js.native
 object isDashBufferMod extends js.Object {
-  def apply(obj: js.Any): /* is Buffer */scala.Boolean = js.native
+  def apply(obj: js.Any): /* is node.Buffer */ scala.Boolean = js.native
 }
 

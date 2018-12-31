@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial) */ 
-trait InfoWindowProps extends js.Object {
+- Lifted 1 members from Set(std.Partial<googlemaps.google.maps.InfoWindowOptions>) */ trait InfoWindowProps extends js.Object {
+  var google: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof googlemaps.google */ js.Any
   var map: googlemapsLib.googleNs.mapsNs.Map
   var mapCenter: js.UndefOr[
     googlemapsLib.googleNs.mapsNs.LatLng | googlemapsLib.googleNs.mapsNs.LatLngLiteral

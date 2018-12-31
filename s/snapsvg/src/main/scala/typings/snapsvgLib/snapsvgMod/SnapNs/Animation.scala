@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Animation extends js.Object {
   var attr: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | js.Any]
   var callback: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

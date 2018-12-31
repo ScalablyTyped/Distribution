@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Fragments
-
 trait FragmentSpread extends js.Object {
   var directives: js.UndefOr[js.Array[Directive]] = js.undefined
   var kind: java.lang.String

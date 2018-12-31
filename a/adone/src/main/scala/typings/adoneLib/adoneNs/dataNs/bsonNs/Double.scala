@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * Represents BSON Double type
-             */
+  * Represents BSON Double type
+  */
 @JSGlobal("adone.data.bson.Double")
 @js.native
 class Double protected ()

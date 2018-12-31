@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * Represents an XML entity reference.
 		 */
-
 trait EntityReference
   extends titaniumLib.TitaniumNs.Proxy {
   /**

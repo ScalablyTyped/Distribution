@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HtmlOutput extends js.Object {
   def addMetaTag(name: java.lang.String, content: java.lang.String): HtmlOutput
   def append(addedContent: java.lang.String): HtmlOutput

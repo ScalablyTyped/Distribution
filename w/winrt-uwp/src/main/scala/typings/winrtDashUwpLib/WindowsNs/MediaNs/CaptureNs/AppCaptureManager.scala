@@ -15,14 +15,14 @@ abstract class AppCaptureManager () extends js.Object
 @js.native
 object AppCaptureManager extends js.Object {
   /**
-                   * Applies app capture settings.
-                   * @param appCaptureSettings The settings to apply.
-                   */
+    * Applies app capture settings.
+    * @param appCaptureSettings The settings to apply.
+    */
   def applySettings(appCaptureSettings: winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.AppCaptureSettings): scala.Unit = js.native
   /**
-                   * Gets the current app capture settings.
-                   * @return The current app capture settings.
-                   */
+    * Gets the current app capture settings.
+    * @return The current app capture settings.
+    */
   def getCurrentSettings(): winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.AppCaptureSettings = js.native
 }
 

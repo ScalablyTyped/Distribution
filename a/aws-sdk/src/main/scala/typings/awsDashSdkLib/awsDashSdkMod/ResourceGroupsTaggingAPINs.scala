@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object ResourceGroupsTaggingAPINs extends js.Object {
   @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Types ()
     extends awsDashSdkLib.clientsAllMod.ResourceGroupsTaggingAPINs.Types {
-    /**
-       * Constructs a service object. This object has one method for each API operation.
-       */
     def this(options: awsDashSdkLib.clientsResourcegroupstaggingapiMod.ResourceGroupsTaggingAPINs.ClientConfiguration) = this()
   }
   

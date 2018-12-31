@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableStyle extends js.Object {
   var broder: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var compact: js.UndefOr[scala.Boolean] = js.undefined

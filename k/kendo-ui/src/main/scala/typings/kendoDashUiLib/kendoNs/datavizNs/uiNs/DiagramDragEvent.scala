@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiagramDragEvent extends DiagramEvent {
   var connectionHandle: js.UndefOr[java.lang.String] = js.undefined
   var connections: js.UndefOr[js.Any] = js.undefined

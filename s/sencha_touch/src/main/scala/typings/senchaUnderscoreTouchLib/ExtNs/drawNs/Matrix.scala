@@ -16,37 +16,23 @@ object Matrix extends js.Object {
   		* @param members Object
   		*/
   def addMembers(): scala.Unit = js.native
-  /** [Method] Add methods  properties to the prototype of this class
-  		* @param members Object
-  		*/
   def addMembers(members: js.Any): scala.Unit = js.native
   /** [Method] Add  override static properties of this class
   		* @param members Object
   		* @returns Ext.Base this
   		*/
   def addStatics(): senchaUnderscoreTouchLib.ExtNs.IBase = js.native
-  /** [Method] Add  override static properties of this class
-  		* @param members Object
-  		* @returns Ext.Base this
-  		*/
   def addStatics(members: js.Any): senchaUnderscoreTouchLib.ExtNs.IBase = js.native
   /** [Method]
   		* @param args Object
   		*/
   def callParent(): scala.Unit = js.native
-  /** [Method]
-  		* @param args Object
-  		*/
   def callParent(args: js.Any): scala.Unit = js.native
   /** [Method] Create a matrix from mat
   		* @param mat Mixed
   		* @returns Ext.draw.Matrix
   		*/
   def create(): senchaUnderscoreTouchLib.ExtNs.drawNs.IMatrix = js.native
-  /** [Method] Create a matrix from mat
-  		* @param mat Mixed
-  		* @returns Ext.draw.Matrix
-  		*/
   def create(mat: js.Any): senchaUnderscoreTouchLib.ExtNs.drawNs.IMatrix = js.native
   /** [Method] Return the affine matrix that transform two points x0 y0 and x1 y1 to x0p y0p and x1p y1p
   		* @param x0 Number
@@ -73,15 +59,7 @@ object Matrix extends js.Object {
   		* @param origin String/Object The original method name
   		*/
   def createAlias(): scala.Unit = js.native
-  /** [Method] Create aliases for existing prototype methods
-  		* @param alias String/Object The new method name, or an object to set multiple aliases. See flexSetter
-  		* @param origin String/Object The original method name
-  		*/
   def createAlias(alias: js.Any): scala.Unit = js.native
-  /** [Method] Create aliases for existing prototype methods
-  		* @param alias String/Object The new method name, or an object to set multiple aliases. See flexSetter
-  		* @param origin String/Object The original method name
-  		*/
   def createAlias(alias: js.Any, origin: js.Any): scala.Unit = js.native
   /** [Method] Return the affine matrix that transform two points x0 y0 and x1 y1 to x0p y0p and x1p y1p
   		* @param x0 Number
@@ -108,10 +86,6 @@ object Matrix extends js.Object {
   		* @returns Ext.draw.Matrix
   		*/
   def fly(): senchaUnderscoreTouchLib.ExtNs.drawNs.IMatrix = js.native
-  /** [Method] Create a flyweight to wrap the given array
-  		* @param elements Array
-  		* @returns Ext.draw.Matrix
-  		*/
   def fly(elements: senchaUnderscoreTouchLib.ExtNs.Array): senchaUnderscoreTouchLib.ExtNs.drawNs.IMatrix = js.native
   /** [Method] Get the current class name in string format
   		* @returns String className
@@ -122,10 +96,6 @@ object Matrix extends js.Object {
   		* @returns Ext.Base this class
   		*/
   def `override`(): senchaUnderscoreTouchLib.ExtNs.IBase = js.native
-  /** [Method] Override members of this class
-  		* @param members Object The properties to add to this class. This should be specified as an object literal containing one or more properties.
-  		* @returns Ext.Base this class
-  		*/
   def `override`(members: js.Any): senchaUnderscoreTouchLib.ExtNs.IBase = js.native
 }
 

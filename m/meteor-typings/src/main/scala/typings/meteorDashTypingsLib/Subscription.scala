@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Subscription extends js.Object {
   var connection: meteorDashTypingsLib.MeteorNs.Connection
   var userId: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SmimeInfoResource extends js.Object {
   /** Deletes the specified S/MIME config for the specified send-as alias. */
   def delete(request: gapiDotClientDotGmailLib.Anon_PrettyPrintQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

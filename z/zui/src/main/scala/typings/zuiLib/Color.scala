@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * color
- */
-
+  * color
+  */
 @js.native
 trait Color extends js.Object {
   def contrast(dark: java.lang.String, light: java.lang.String, threshold: scala.Double): java.lang.String = js.native

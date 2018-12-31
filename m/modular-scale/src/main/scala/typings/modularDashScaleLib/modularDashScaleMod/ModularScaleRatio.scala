@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModularScaleRatio extends js.Object {
   var augFourth: scala.Double
   var doubleOctave: scala.Double

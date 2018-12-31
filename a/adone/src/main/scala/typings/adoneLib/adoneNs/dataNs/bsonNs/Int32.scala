@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * / **
-             * Represents BSON Int32 type
-             */
+  * / **
+  * Represents BSON Int32 type
+  */
 @JSGlobal("adone.data.bson.Int32")
 @js.native
 class Int32 protected ()

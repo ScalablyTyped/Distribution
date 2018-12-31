@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class default protected () extends XmlComment {
   /**
-       * Initializes a new instance of the {@link XmlComment} class.
-       *
-       * @param content The content of the comment.
-       */
+    * Initializes a new instance of the {@link XmlComment} class.
+    *
+    * @param content The content of the comment.
+    */
   def this(content: java.lang.String) = this()
 }
 

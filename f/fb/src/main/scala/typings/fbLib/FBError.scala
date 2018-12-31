@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FBError extends js.Object {
   var code: scala.Double
   var error_subcode: js.UndefOr[scala.Double] = js.undefined

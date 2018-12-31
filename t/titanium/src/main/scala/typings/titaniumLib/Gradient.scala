@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A simple object defining a color gradient.
- */
-
+  * A simple object defining a color gradient.
+  */
 trait Gradient extends js.Object {
   /**
   	 * Set to `true` to continue filling with the final color beyond the `endPoint`.

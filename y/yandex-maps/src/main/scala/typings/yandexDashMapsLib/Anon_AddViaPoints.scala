@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AddViaPoints extends js.Object {
   var addViaPoints: js.UndefOr[scala.Boolean] = js.undefined
   var addWayPoints: js.UndefOr[scala.Boolean] = js.undefined

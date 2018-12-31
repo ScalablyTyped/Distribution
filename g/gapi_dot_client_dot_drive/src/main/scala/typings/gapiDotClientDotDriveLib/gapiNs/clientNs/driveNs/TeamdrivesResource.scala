@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TeamdrivesResource extends js.Object {
   /** Creates a new Team Drive. */
   def create(request: gapiDotClientDotDriveLib.Anon_PrettyPrintQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[TeamDrive]

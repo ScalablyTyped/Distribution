@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_UpdateReset extends js.Object {
   def reset(): scala.Unit
   def start(): scala.Unit

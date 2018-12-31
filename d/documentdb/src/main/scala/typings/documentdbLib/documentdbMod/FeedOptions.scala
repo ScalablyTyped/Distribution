@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FeedOptions extends RequestOptions {
   /** Opaque token for continuing the enumeration. */
   var continuation: js.UndefOr[java.lang.String] = js.undefined

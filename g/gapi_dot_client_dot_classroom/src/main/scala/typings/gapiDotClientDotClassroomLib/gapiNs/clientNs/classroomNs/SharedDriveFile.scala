@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SharedDriveFile extends js.Object {
   /** Drive file details. */
   var driveFile: js.UndefOr[DriveFile] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictTabProps extends js.Object {
   /** Index of the currently active tab. */
   var activeIndex: js.UndefOr[scala.Double | java.lang.String] = js.undefined
@@ -22,13 +21,13 @@ trait StrictTabProps extends js.Object {
     semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right
   ] = js.undefined
   /**
-     * Called on tab change.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - The proposed new Tab.Pane.
-     * @param {object} data.activeIndex - The new proposed activeIndex.
-     * @param {object} data.panes - Props of the new proposed active pane.
-     */
+    * Called on tab change.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - The proposed new Tab.Pane.
+    * @param {object} data.activeIndex - The new proposed activeIndex.
+    * @param {object} data.panes - Props of the new proposed active pane.
+    */
   var onTabChange: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
@@ -37,17 +36,17 @@ trait StrictTabProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Array of objects describing each Menu.Item and Tab.Pane:
-     * {
-     *   menuItem: 'Home',
-     *   render: () => <Tab.Pane>Welcome!</Tab.Pane>,
-     * }
-     * or
-     * {
-     *   menuItem: 'Home',
-     *   pane: 'Welcome',
-     * }
-     */
+    * Array of objects describing each Menu.Item and Tab.Pane:
+    * {
+    *   menuItem: 'Home',
+    *   render: () => <Tab.Pane>Welcome!</Tab.Pane>,
+    * }
+    * or
+    * {
+    *   menuItem: 'Home',
+    *   pane: 'Welcome',
+    * }
+    */
   var panes: js.UndefOr[js.Array[semanticDashUiDashReactLib.Anon_MenuItem]] = js.undefined
   /** A Tab can render only active pane. */
   var renderActiveOnly: js.UndefOr[scala.Boolean] = js.undefined

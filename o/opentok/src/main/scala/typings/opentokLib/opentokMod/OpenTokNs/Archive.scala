@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Archive extends js.Object {
   var createdAt: scala.Double
   var duration: java.lang.String

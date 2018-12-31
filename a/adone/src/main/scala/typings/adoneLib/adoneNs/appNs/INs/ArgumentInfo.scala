@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArgumentInfo extends js.Object {
   var action: js.UndefOr[
     adoneLib.adoneLibStrings.store | adoneLib.adoneLibStrings.store_const | adoneLib.adoneLibStrings.store_true | adoneLib.adoneLibStrings.store_false | adoneLib.adoneLibStrings.append | adoneLib.adoneLibStrings.count | adoneLib.adoneLibStrings.set

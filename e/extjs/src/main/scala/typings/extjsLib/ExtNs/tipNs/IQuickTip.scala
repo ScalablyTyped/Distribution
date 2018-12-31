@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IQuickTip extends IToolTip {
   /** [Method] Hides a visible tip or cancels an impending show for a particular element
   		* @param el String/HTMLElement/Ext.Element The element that is the target of the tip or ID of the element.

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * @deprecated ​ Deprecated. Internal. See \`{@link https://github.com/jquery/api.jquery.com/issues/912 }\`.
- */
+  * @deprecated ​ Deprecated. Internal. See \`{@link https://github.com/jquery/api.jquery.com/issues/912 }\`.
+  */
 @js.native
 trait JQueryEasingFunctions
   extends /* name */ org.scalablytyped.runtime.StringDictionary[JQueryEasingFunction] {

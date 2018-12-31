@@ -15,10 +15,10 @@ abstract class UserDataAccountSystemAccessManager () extends js.Object
 @js.native
 object UserDataAccountSystemAccessManager extends js.Object {
   /**
-                       * Asynchronously displays the system UI to manage the sync relationships for the specified accounts.
-                       * @param accounts The list of accounts to manage in the system UI.
-                       * @return Returns an updated list of accounts.
-                       */
+    * Asynchronously displays the system UI to manage the sync relationships for the specified accounts.
+    * @param accounts The list of accounts to manage in the system UI.
+    * @return Returns an updated list of accounts.
+    */
   def addAndShowDeviceAccountsAsync(
     accounts: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[
       winrtDashUwpLib.WindowsNs.ApplicationModelNs.UserDataAccountsNs.SystemAccessNs.DeviceAccountConfiguration

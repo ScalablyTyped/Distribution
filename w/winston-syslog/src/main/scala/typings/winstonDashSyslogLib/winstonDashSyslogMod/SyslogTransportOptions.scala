@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SyslogTransportOptions
   extends winstonDashTransportLib.winstonDashTransportMod.TransportStreamNs.TransportStreamOptions {
   var app_name: js.UndefOr[java.lang.String] = js.undefined

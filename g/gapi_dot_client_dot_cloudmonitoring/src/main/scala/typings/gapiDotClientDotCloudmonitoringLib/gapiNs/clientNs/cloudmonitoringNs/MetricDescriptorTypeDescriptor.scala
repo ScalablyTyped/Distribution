@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MetricDescriptorTypeDescriptor extends js.Object {
   /** The method of collecting data for the metric. See Metric types. */
   var metricType: js.UndefOr[java.lang.String] = js.undefined

@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick, @material-ui/core.@material-ui/core.StandardProps) */ 
-trait FormControlProps
+- Lifted 3 members from Set(std.Pick<react.react.HtmlHTMLAttributes<react.HTMLDivElement>, std.Exclude<keyof react.react.HtmlHTMLAttributes<react.HTMLDivElement>, 'classes' | never>>, @material-ui/core.@material-ui/core.StandardProps<react.react.HtmlHTMLAttributes<react.HTMLDivElement>, @material-ui/core.@material-ui/core/FormControl/FormControl.FormControlClassKey, never>) */ trait FormControlProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[FormControlClassKey] {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[FormControlProps]] = js.undefined

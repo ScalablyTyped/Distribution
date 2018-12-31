@@ -19,18 +19,12 @@ trait Matchers[T]
   def Any(params: js.Any*): js.Any = js.native
   def message(): js.Any = js.native
   /**
-           *
-           * @param expected the actual value to be === to the expected value.
-           * @param expectationFailOutput
-           * @returns {}
-           */
+    *
+    * @param expected the actual value to be === to the expected value.
+    * @param expectationFailOutput
+    * @returns {}
+    */
   def toBe(expected: Expected[T]): scala.Boolean = js.native
-  /**
-           *
-           * @param expected the actual value to be === to the expected value.
-           * @param expectationFailOutput
-           * @returns {}
-           */
   def toBe(expected: Expected[T], expectationFailOutput: js.Any): scala.Boolean = js.native
   def toBeCloseTo(expected: scala.Double): scala.Boolean = js.native
   def toBeCloseTo(expected: scala.Double, precision: js.Any): scala.Boolean = js.native
@@ -61,18 +55,12 @@ trait Matchers[T]
   def toContain(expected: js.Any): scala.Boolean = js.native
   def toContain(expected: js.Any, expectationFailOutput: js.Any): scala.Boolean = js.native
   /**
-           *
-           * @param expected the actual value to be equal to the expected, using deep equality comparison.
-           * @param expectationFailOutput
-           * @returns {}
-           */
+    *
+    * @param expected the actual value to be equal to the expected, using deep equality comparison.
+    * @param expectationFailOutput
+    * @returns {}
+    */
   def toEqual(expected: Expected[T]): scala.Boolean = js.native
-  /**
-           *
-           * @param expected the actual value to be equal to the expected, using deep equality comparison.
-           * @param expectationFailOutput
-           * @returns {}
-           */
   def toEqual(expected: Expected[T], expectationFailOutput: js.Any): scala.Boolean = js.native
   def toHaveBeenCalled(): scala.Boolean = js.native
   def toHaveBeenCalledBefore(expected: Spy): scala.Boolean = js.native
@@ -100,9 +88,9 @@ trait Matchers[T]
   def toThrowError(message: stdLib.RegExp): scala.Boolean = js.native
   def toThrowMatching(predicate: js.Function1[/* thrown */ js.Any, scala.Boolean]): scala.Boolean = js.native
   /**
-           * Add some context for an expect.
-           * @param message - Additional context to show when the matcher fails
-           */
+    * Add some context for an expect.
+    * @param message - Additional context to show when the matcher fails
+    */
   def withContext(message: java.lang.String): Matchers[T] = js.native
 }
 

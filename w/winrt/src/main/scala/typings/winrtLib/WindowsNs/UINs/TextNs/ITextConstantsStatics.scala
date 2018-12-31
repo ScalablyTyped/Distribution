@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITextConstantsStatics extends js.Object {
   var autoColor: winrtLib.WindowsNs.UINs.Color
   var maxUnitCount: scala.Double

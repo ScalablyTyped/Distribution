@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Subtitle extends js.Object {
   /** Whether anonymous logging should be allowed. */
   var allowAnonLogging: js.UndefOr[scala.Boolean] = js.undefined
@@ -20,9 +19,9 @@ trait Anon_Subtitle extends js.Object {
   /** An identifier for the version of the volume content (text & images). (In LITE projection) */
   var contentVersion: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * A synopsis of the volume. The text of the description is formatted in HTML and includes simple formatting elements, such as b, i, and br tags. (In LITE
-                   * projection.)
-                   */
+    * A synopsis of the volume. The text of the description is formatted in HTML and includes simple formatting elements, such as b, i, and br tags. (In LITE
+    * projection.)
+    */
   var description: js.UndefOr[java.lang.String] = js.undefined
   /** Physical dimensions of this volume. */
   var dimensions: js.UndefOr[Anon_Height] = js.undefined

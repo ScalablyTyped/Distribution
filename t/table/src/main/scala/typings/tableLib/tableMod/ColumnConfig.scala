@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnConfig extends js.Object {
   var alignment: js.UndefOr[
     tableLib.tableLibStrings.left | tableLib.tableLibStrings.center | tableLib.tableLibStrings.right

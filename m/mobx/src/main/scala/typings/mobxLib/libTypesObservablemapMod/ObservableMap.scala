@@ -36,23 +36,16 @@ class ObservableMap[K, V] ()
   def enhancer(newValue: V, oldValue: js.UndefOr[scala.Nothing], name: java.lang.String): V = js.native
   /* CompleteClass */
   override def intercept(handler: mobxLib.libTypesInterceptDashUtilsMod.IInterceptor[IMapWillChange[K, V]]): mobxLib.libUtilsUtilsMod.Lambda = js.native
-  /** Merge another object into this object, returns this. */
   def merge(other: js.Any): ObservableMap[K, V] = js.native
-  /** Merge another object into this object, returns this. */
   def merge(other: IKeyValueMap[V]): ObservableMap[K, V] = js.native
   /** Merge another object into this object, returns this. */
   def merge(other: ObservableMap[K, V]): ObservableMap[K, V] = js.native
   /**
-       * Observes this object. Triggers for the events 'add', 'update' and 'delete'.
-       * See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/observe
-       * for callback details
-       */
+    * Observes this object. Triggers for the events 'add', 'update' and 'delete'.
+    * See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/observe
+    * for callback details
+    */
   def observe(listener: js.Function1[/* changes */ IMapDidChange[K, V], scala.Unit]): mobxLib.libUtilsUtilsMod.Lambda = js.native
-  /**
-       * Observes this object. Triggers for the events 'add', 'update' and 'delete'.
-       * See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/observe
-       * for callback details
-       */
   def observe(
     listener: js.Function1[/* changes */ IMapDidChange[K, V], scala.Unit],
     fireImmediately: scala.Boolean
@@ -61,16 +54,16 @@ class ObservableMap[K, V] ()
   def replace(values: IKeyValueMap[V]): ObservableMap[K, V] = js.native
   def replace(values: ObservableMap[K, V]): ObservableMap[K, V] = js.native
   /**
-       * Returns a shallow non observable object clone of this map.
-       * Note that the values migth still be observable. For a deep clone use mobx.toJS.
-       */
+    * Returns a shallow non observable object clone of this map.
+    * Note that the values migth still be observable. For a deep clone use mobx.toJS.
+    */
   def toJS(): stdLib.Map[K, V] = js.native
   def toJSON(): IKeyValueMap[V] = js.native
   /**
-       * Returns a plain object that represents this map.
-       * Note that all the keys being stringified.
-       * If there are duplicating keys after converting them to strings, behaviour is undetermined.
-       */
+    * Returns a plain object that represents this map.
+    * Note that all the keys being stringified.
+    * If there are duplicating keys after converting them to strings, behaviour is undetermined.
+    */
   def toPOJO(): IKeyValueMap[V] = js.native
 }
 

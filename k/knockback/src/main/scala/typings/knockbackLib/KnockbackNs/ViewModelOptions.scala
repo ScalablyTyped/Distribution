@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ViewModelOptions extends OptionsBase {
                 // the path to the value (used to create related observables from the factory).
   var factories: js.UndefOr[js.Any] = js.undefined

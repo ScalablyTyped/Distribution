@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BarcodeResult extends js.Object {
   def getBase64(
     callback: js.Function2[

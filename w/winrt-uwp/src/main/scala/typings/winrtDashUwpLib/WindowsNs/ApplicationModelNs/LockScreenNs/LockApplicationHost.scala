@@ -35,9 +35,9 @@ abstract class LockApplicationHost () extends js.Object {
 @js.native
 object LockApplicationHost extends js.Object {
   /**
-                   * Gets a LockApplicationHost object.
-                   * @return A LockApplicationHost object.
-                   */
+    * Gets a LockApplicationHost object.
+    * @return A LockApplicationHost object.
+    */
   def getForCurrentView(): winrtDashUwpLib.WindowsNs.ApplicationModelNs.LockScreenNs.LockApplicationHost = js.native
 }
 

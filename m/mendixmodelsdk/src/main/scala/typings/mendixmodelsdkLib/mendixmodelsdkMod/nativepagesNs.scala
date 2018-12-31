@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object nativepagesNs extends js.Object {
   /**
-       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-       *
-       * In version 7.21.0: introduced
-       */
+    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+    *
+    * In version 7.21.0: introduced
+    */
   @js.native
   class NativeLayout protected ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.nativepagesNs.NativeLayout {
@@ -20,10 +20,10 @@ object nativepagesNs extends js.Object {
   }
   
   /**
-       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-       *
-       * In version 7.21.0: introduced
-       */
+    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+    *
+    * In version 7.21.0: introduced
+    */
   @js.native
   class NativePage protected ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.nativepagesNs.NativePage {
@@ -31,34 +31,34 @@ object nativepagesNs extends js.Object {
   }
   
   /**
-       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-       *
-       * In version 7.21.0: introduced
-       */
+    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+    *
+    * In version 7.21.0: introduced
+    */
   @js.native
   object NativeLayout extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenNativepagesMod.StructureVersionInfo = js.native
     /**
-             * Creates a new NativeLayout unit in the SDK and on the server.
-             * Expects one argument, the projects.IFolderBase in which this unit is contained.
-             */
+      * Creates a new NativeLayout unit in the SDK and on the server.
+      * Expects one argument, the projects.IFolderBase in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout = js.native
   }
   
   /**
-       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-       *
-       * In version 7.21.0: introduced
-       */
+    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+    *
+    * In version 7.21.0: introduced
+    */
   @js.native
   object NativePage extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenNativepagesMod.StructureVersionInfo = js.native
     /**
-             * Creates a new NativePage unit in the SDK and on the server.
-             * Expects one argument, the projects.IFolderBase in which this unit is contained.
-             */
+      * Creates a new NativePage unit in the SDK and on the server.
+      * Expects one argument, the projects.IFolderBase in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativePage = js.native
   }
   

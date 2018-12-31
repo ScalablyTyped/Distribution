@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LanguageData extends js.Object {
   var plurals: js.UndefOr[
     js.Function2[

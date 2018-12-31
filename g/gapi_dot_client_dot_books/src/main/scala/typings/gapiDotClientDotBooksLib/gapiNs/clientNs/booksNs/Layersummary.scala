@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Layersummary extends js.Object {
   /** The number of annotations for this layer. */
   var annotationCount: js.UndefOr[scala.Double] = js.undefined
@@ -30,9 +29,9 @@ trait Layersummary extends js.Object {
   /** Timestamp for the last time an item in this layer was updated. (RFC 3339 UTC date-time format). */
   var updated: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The current version of this layer's volume annotations. Note that this version applies only to the data in the books.layers.volumeAnnotations.&#42;
-               * responses. The actual annotation data is versioned separately.
-               */
+    * The current version of this layer's volume annotations. Note that this version applies only to the data in the books.layers.volumeAnnotations.&#42;
+    * responses. The actual annotation data is versioned separately.
+    */
   var volumeAnnotationsVersion: js.UndefOr[java.lang.String] = js.undefined
   /** The volume id this resource is for. */
   var volumeId: js.UndefOr[java.lang.String] = js.undefined

@@ -1072,9 +1072,6 @@ object adoneLibStrings {
   sealed trait ObjectId extends js.Object
   
   @js.native
-  sealed trait Optional extends js.Object
-  
-  @js.native
   sealed trait PATCH extends js.Object
   
   @js.native
@@ -2413,7 +2410,6 @@ object adoneLibStrings {
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   def Object: Object = "Object".asInstanceOf[Object]
   def ObjectId: ObjectId = "ObjectId".asInstanceOf[ObjectId]
-  def Optional: Optional = "Optional".asInstanceOf[Optional]
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   def POST: POST = "POST".asInstanceOf[POST]
   def PT154: PT154 = "PT154".asInstanceOf[PT154]

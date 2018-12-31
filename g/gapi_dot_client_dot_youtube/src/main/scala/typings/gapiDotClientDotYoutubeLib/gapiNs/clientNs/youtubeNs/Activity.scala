@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Activity extends js.Object {
   /**
-               * The contentDetails object contains information about the content associated with the activity. For example, if the snippet.type value is videoRated,
-               * then the contentDetails object's content identifies the rated video.
-               */
+    * The contentDetails object contains information about the content associated with the activity. For example, if the snippet.type value is videoRated,
+    * then the contentDetails object's content identifies the rated video.
+    */
   var contentDetails: js.UndefOr[ActivityContentDetails] = js.undefined
   /** Etag of this resource. */
   var etag: js.UndefOr[java.lang.String] = js.undefined

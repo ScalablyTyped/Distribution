@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OriginalURLParsed extends js.Object {
   var fragment: java.lang.String
   var host: java.lang.String

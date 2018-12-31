@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserData extends js.Object {
   var app_metadata: js.UndefOr[AppMetadata] = js.undefined
   var email: js.UndefOr[java.lang.String] = js.undefined

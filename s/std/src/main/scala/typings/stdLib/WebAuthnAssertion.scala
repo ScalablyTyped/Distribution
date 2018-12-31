@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebAuthnAssertion extends js.Object {
   val authenticatorData: ArrayBuffer
   val clientData: ArrayBuffer

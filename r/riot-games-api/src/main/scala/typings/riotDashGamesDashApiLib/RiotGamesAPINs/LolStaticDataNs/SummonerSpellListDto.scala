@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SummonerSpellListDto extends js.Object {
   var data: js.Array[org.scalablytyped.runtime.StringDictionary[SummonerSpellDto]]
   var `type`: java.lang.String

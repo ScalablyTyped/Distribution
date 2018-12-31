@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapOptions extends js.Object {
   // Control options
   var attributionControl: js.UndefOr[scala.Boolean] = js.undefined

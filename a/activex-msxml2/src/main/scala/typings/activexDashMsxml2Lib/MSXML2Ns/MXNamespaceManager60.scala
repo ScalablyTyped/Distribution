@@ -20,7 +20,6 @@ class MXNamespaceManager60 protected () extends js.Object {
   def pushContext(): scala.Unit = js.native
   /** @param fDeep [fDeep=true] */
   def pushNodeContext(contextNode: IXMLDOMNode): scala.Unit = js.native
-  /** @param fDeep [fDeep=true] */
   def pushNodeContext(contextNode: IXMLDOMNode, fDeep: scala.Boolean): scala.Unit = js.native
   def reset(): scala.Unit = js.native
 }

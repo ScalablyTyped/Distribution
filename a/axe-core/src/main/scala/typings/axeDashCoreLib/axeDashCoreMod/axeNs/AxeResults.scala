@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AxeResults extends js.Object {
   var inapplicable: js.Array[Result]
   var incomplete: js.Array[Result]

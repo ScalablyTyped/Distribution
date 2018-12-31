@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BeginDragPayload extends js.Object {
   var clientOffset: XYCoord | scala.Null
   var isSourcePublic: scala.Boolean

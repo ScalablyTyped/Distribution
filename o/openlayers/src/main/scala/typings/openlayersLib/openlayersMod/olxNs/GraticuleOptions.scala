@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GraticuleOptions extends js.Object {
   var latLabelFormatter: js.UndefOr[js.Function1[/* lat */ scala.Double, java.lang.String]] = js.undefined
   var latLabelPosition: js.UndefOr[scala.Double] = js.undefined

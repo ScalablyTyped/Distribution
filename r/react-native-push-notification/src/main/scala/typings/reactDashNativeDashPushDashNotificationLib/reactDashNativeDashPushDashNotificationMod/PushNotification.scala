@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PushNotification extends js.Object {
   var alert: js.Object
   var badge: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CandidateUsage extends js.Object {
   /** The body string of detail description. */
   var body: java.lang.String

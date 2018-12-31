@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExternalPayment extends js.Object {
   def process(
     options: yandexDashMoneyDashSdkLib.YandexMoneySDKNs.ExternalPaymentNs.ProcessOptions,

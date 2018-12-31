@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StripeApplePayShippingMethod extends js.Object {
   var amount: scala.Double
   var detail: java.lang.String

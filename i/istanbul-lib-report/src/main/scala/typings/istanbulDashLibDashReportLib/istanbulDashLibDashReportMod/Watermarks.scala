@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Watermarks extends js.Object {
   var branches: js.Array[scala.Double]
   var functions: js.Array[scala.Double]

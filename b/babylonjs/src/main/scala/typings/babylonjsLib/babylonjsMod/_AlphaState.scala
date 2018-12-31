@@ -6,10 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @hidden
-     **/
+  * @hidden
+  **/
 @JSImport("babylonjs", "_AlphaState")
 @js.native
+/**
+  * Initializes the state.
+  */
 class _AlphaState ()
   extends babylonjsLib.BABYLONNs._AlphaState
 

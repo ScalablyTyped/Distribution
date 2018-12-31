@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Errors
-     */
+  * Errors
+  */
 @JSGlobal("WebAssembly.CompileError")
 @js.native
 class CompileError ()

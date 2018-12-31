@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinuxGroupView extends js.Object {
   /** [Output Only] The Group ID. */
   var gid: js.UndefOr[scala.Double] = js.undefined

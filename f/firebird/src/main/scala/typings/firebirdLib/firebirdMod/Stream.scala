@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Represents BLOB stream.
-     *
-     * @desc
-     * Create BLOB stream using
-     * @code var strm = new fb.Stream(FBblob);.
-     *
-     * You may pipe strm to/from NodeJS Stream objects (fs or socket).
-     * You may also look at [NodeJS Streams reference](https://nodejs.org/api/stream.html).
-     */
+  * Represents BLOB stream.
+  *
+  * @desc
+  * Create BLOB stream using
+  * @code var strm = new fb.Stream(FBblob);.
+  *
+  * You may pipe strm to/from NodeJS Stream objects (fs or socket).
+  * You may also look at [NodeJS Streams reference](https://nodejs.org/api/stream.html).
+  */
 @JSImport("firebird", "Stream")
 @js.native
 class Stream protected ()

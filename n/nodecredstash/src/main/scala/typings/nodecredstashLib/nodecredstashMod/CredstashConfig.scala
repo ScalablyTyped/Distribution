@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CredstashConfig extends js.Object {
   var awsOpts: js.UndefOr[awsDashSdkLib.clientsKmsMod.KMSNs.ClientConfiguration] = js.undefined
   var dynamoOpts: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ClientConfiguration] = js.undefined

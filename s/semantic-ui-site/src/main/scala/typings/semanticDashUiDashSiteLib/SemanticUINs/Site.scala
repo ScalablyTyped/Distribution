@@ -12,11 +12,11 @@ trait Site extends js.Object {
   def apply(behavior: semanticDashUiDashSiteLib.semanticDashUiDashSiteLibStrings.destroy): semanticDashUiDashSiteLib.JQuery = js.native
   def apply(behavior: semanticDashUiDashSiteLib.semanticDashUiDashSiteLibStrings.setting, value: SiteSettings): semanticDashUiDashSiteLib.JQuery = js.native
   def apply(settings: SiteSettings): semanticDashUiDashSiteLib.JQuery = js.native
-  def apply[K /* <: java.lang.String */](behavior: semanticDashUiDashSiteLib.semanticDashUiDashSiteLibStrings.setting, name: K): js.Any = js.native
+  def apply[K /* <: java.lang.String */](behavior: semanticDashUiDashSiteLib.semanticDashUiDashSiteLibStrings.setting, name: K): /* import warning: ImportType.apply Failed type conversion: semantic-ui-site.SemanticUI.SiteSettings._Impl[K] */ js.Any = js.native
   def apply[K /* <: java.lang.String */](
     behavior: semanticDashUiDashSiteLib.semanticDashUiDashSiteLibStrings.setting,
     name: K,
-    value: js.Any
+    value: /* import warning: ImportType.apply Failed type conversion: semantic-ui-site.SemanticUI.SiteSettings._Impl[K] */ js.Any
   ): semanticDashUiDashSiteLib.JQuery = js.native
 }
 

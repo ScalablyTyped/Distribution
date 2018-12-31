@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UrlRulesApi extends js.Object {
   /** See: [[UrlRules.initial]] */ var initial: js.Function1[
     /* handler */ java.lang.String | UrlRuleHandlerFn | atUirouterCoreLib.libStateMod.TargetState | atUirouterCoreLib.libStateInterfaceMod.TargetStateDef, 

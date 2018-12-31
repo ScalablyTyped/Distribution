@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CarouselProps extends js.Object {
   var accessibility: js.UndefOr[scala.Boolean] = js.undefined
   var adaptiveHeight: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListViewOptions extends js.Object {
   var autodividers: js.UndefOr[scala.Boolean] = js.undefined
   var autodividersSelector: js.UndefOr[js.Function1[/* jq */ js.UndefOr[JQuery], java.lang.String]] = js.undefined

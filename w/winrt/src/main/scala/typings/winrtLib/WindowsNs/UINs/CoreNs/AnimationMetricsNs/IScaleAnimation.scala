@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IScaleAnimation extends IPropertyAnimation {
   var finalScaleX: scala.Double
   var finalScaleY: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EntityAction
   extends breezeLib.breezeNs.coreNs.IEnum {
   var AcceptChanges: EntityActionSymbol

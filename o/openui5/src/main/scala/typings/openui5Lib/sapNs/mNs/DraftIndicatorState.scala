@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait DraftIndicatorState extends js.Object
 
 /**
-     * Enum for the state of sap.m.DraftIndicator control.
-    */
+  * Enum for the state of sap.m.DraftIndicator control.
+  */
 @JSGlobal("sap.m.DraftIndicatorState")
 @js.native
 object DraftIndicatorState extends js.Object {

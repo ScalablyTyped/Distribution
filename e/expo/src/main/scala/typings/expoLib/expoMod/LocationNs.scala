@@ -8,12 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "Location")
 @js.native
 object LocationNs extends js.Object {
-  
   trait Coords extends LocationProps {
     var accuracy: scala.Double
     var altitude: scala.Double
   }
-  
   
   trait GeocodeData extends js.Object {
     var city: java.lang.String
@@ -24,19 +22,16 @@ object LocationNs extends js.Object {
     var street: java.lang.String
   }
   
-  
   trait HeadingStatus extends js.Object {
     var accuracy: scala.Double
     var magHeading: scala.Double
     var trueHeading: scala.Double
   }
   
-  
   trait LocationData extends js.Object {
     var coords: expoLib.Anon_Speed with Coords
     var timestamp: scala.Double
   }
-  
   
   trait LocationOptions extends js.Object {
     var distanceInterval: js.UndefOr[scala.Double] = js.undefined
@@ -44,12 +39,10 @@ object LocationNs extends js.Object {
     var timeInterval: js.UndefOr[scala.Double] = js.undefined
   }
   
-  
   trait LocationProps extends js.Object {
     var latitude: scala.Double
     var longitude: scala.Double
   }
-  
   
   trait ProviderStatus extends js.Object {
     var gpsAvailable: js.UndefOr[scala.Boolean] = js.undefined

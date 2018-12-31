@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProjectsResource extends js.Object {
   /** Disable this project as a shared VPC host project. */
   def disableXpnHost(
@@ -20,9 +19,9 @@ trait ProjectsResource extends js.Object {
     request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintQuotaUserKeyUserIpOauthtokenAltFieldsRequestId
   ): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
-               * Enable service resource (a.k.a service project) for a host project, so that subnets in the host project can be used by instances in the service
-               * project.
-               */
+    * Enable service resource (a.k.a service project) for a host project, so that subnets in the host project can be used by instances in the service
+    * project.
+    */
   def enableXpnResource(
     request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintQuotaUserKeyUserIpOauthtokenAltFieldsRequestId
   ): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
@@ -51,9 +50,9 @@ trait ProjectsResource extends js.Object {
     request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintQuotaUserKeyUserIpOauthtokenAltFieldsRequestId
   ): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
-               * Enables the usage export feature and sets the usage export bucket where reports are stored. If you provide an empty request body using this method, the
-               * usage export feature will be disabled.
-               */
+    * Enables the usage export feature and sets the usage export bucket where reports are stored. If you provide an empty request body using this method, the
+    * usage export feature will be disabled.
+    */
   def setUsageExportBucket(
     request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintQuotaUserKeyUserIpOauthtokenAltFieldsRequestId
   ): gapiDotClientLib.gapiNs.clientNs.Request[Operation]

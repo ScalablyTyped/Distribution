@@ -38,39 +38,21 @@ class ContentControl protected () extends js.Object {
   def Cut(): scala.Unit = js.native
   /** @param boolean [DeleteContents=false] */
   def Delete(): scala.Unit = js.native
-  /** @param boolean [DeleteContents=false] */
   def Delete(DeleteContents: scala.Boolean): scala.Unit = js.native
   /** @param string [Font=''] */
   def SetCheckedSymbol(CharacterNumber: scala.Double): scala.Unit = js.native
-  /** @param string [Font=''] */
   def SetCheckedSymbol(CharacterNumber: scala.Double, Font: java.lang.String): scala.Unit = js.native
   /**
-           * @param Word.BuildingBlock [BuildingBlock=0]
-           * @param Word.Range [Range=0]
-           * @param string [Text='']
-           */
+    * @param Word.BuildingBlock [BuildingBlock=0]
+    * @param Word.Range [Range=0]
+    * @param string [Text='']
+    */
   def SetPlaceholderText(): scala.Unit = js.native
-  /**
-           * @param Word.BuildingBlock [BuildingBlock=0]
-           * @param Word.Range [Range=0]
-           * @param string [Text='']
-           */
   def SetPlaceholderText(BuildingBlock: BuildingBlock): scala.Unit = js.native
-  /**
-           * @param Word.BuildingBlock [BuildingBlock=0]
-           * @param Word.Range [Range=0]
-           * @param string [Text='']
-           */
   def SetPlaceholderText(BuildingBlock: BuildingBlock, Range: Range): scala.Unit = js.native
-  /**
-           * @param Word.BuildingBlock [BuildingBlock=0]
-           * @param Word.Range [Range=0]
-           * @param string [Text='']
-           */
   def SetPlaceholderText(BuildingBlock: BuildingBlock, Range: Range, Text: java.lang.String): scala.Unit = js.native
   /** @param string [Font=''] */
   def SetUncheckedSymbol(CharacterNumber: scala.Double): scala.Unit = js.native
-  /** @param string [Font=''] */
   def SetUncheckedSymbol(CharacterNumber: scala.Double, Font: java.lang.String): scala.Unit = js.native
   def Ungroup(): scala.Unit = js.native
 }

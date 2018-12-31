@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RaygunOfflineStorageProvider[TTransportItem, TStorageItem] extends js.Object {
   def init(options: js.Any): RaygunOfflineStorageProvider[RaygunPayload, java.lang.String]
   def retrieve(

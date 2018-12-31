@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryParameters extends js.Object {
   var anchor_type: js.UndefOr[java.lang.String] = js.undefined
   var count: js.UndefOr[scala.Double] = js.undefined

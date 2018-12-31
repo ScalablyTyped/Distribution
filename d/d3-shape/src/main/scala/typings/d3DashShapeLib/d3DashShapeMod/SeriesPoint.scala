@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 trait SeriesPoint[Datum]
   extends stdLib.Array[scala.Double] {
   /**
-       * Corresponds to y0, the lower value (baseline).
-       */
+    * Corresponds to y0, the lower value (baseline).
+    */
   var `0`: scala.Double = js.native
   /**
-       * Corresponds to y1, the upper value (topline).
-       */
+    * Corresponds to y1, the upper value (topline).
+    */
   var `1`: scala.Double = js.native
   /**
-       * The data element underlying the series point.
-       */
+    * The data element underlying the series point.
+    */
   var data: Datum = js.native
 }
 

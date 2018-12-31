@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISharedFileInfo extends js.Object {
   val ChangeTimeUtc: stdLib.Date
   val Extension: java.lang.String

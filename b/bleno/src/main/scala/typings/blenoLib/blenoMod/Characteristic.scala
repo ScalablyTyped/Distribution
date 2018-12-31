@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Characteristic extends js.Object {
   val RESULT_ATTR_NOT_LONG: scala.Double
   val RESULT_INVALID_ATTRIBUTE_LENGTH: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditorOptions[T /* <: slickgridLib.SlickNs.SlickData */] extends js.Object {
   var cancelChanges: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var column: slickgridLib.SlickNs.Column[T]

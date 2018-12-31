@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Format extends js.Object {
   var default: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
-  var format: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */_, _]]
+  var format: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
   var gapDegree: propDashTypesLib.propDashTypesMod.Requireable[scala.Double]
   var percent: propDashTypesLib.propDashTypesMod.Requireable[scala.Double]
   var showInfo: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]

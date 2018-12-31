@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DefaultContent extends js.Object {
   var autoSave: js.Any
   var defaultContent: java.lang.String

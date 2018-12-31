@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DKIMKey extends js.Object {
   var DKIMHost: java.lang.String
   var DKIMPendingHost: java.lang.String

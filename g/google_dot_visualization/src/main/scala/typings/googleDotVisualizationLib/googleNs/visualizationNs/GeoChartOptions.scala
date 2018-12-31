@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GeoChartOptions extends js.Object {
   var backgroundColor: js.UndefOr[js.Any] = js.undefined
   var colorAxis: js.UndefOr[ChartColorAxis] = js.undefined

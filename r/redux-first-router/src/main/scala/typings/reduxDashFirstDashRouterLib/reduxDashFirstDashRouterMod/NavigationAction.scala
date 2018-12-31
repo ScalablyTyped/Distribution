@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigationAction extends js.Object {
   var action: js.UndefOr[NavigationAction] = js.undefined
   var actions: js.UndefOr[js.Array[NavigationAction]] = js.undefined

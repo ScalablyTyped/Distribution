@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScrollbarOptions extends js.Object {
   var alwaysShowTracks: scala.Boolean
   var continuousScrolling: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CMYK extends js.Object {
   var c: scala.Double
   var k: scala.Double

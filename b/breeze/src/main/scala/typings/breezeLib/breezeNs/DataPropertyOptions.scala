@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataPropertyOptions extends js.Object {
   var complexTypeName: js.UndefOr[java.lang.String] = js.undefined
   var concurrencyMode: js.UndefOr[java.lang.String] = js.undefined

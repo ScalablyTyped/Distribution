@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/array/reduce-right", JSImport.Namespace)
 @js.native
 object fnArrayReduceDashRightMod
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayCallbackfnPreviousValue]
 

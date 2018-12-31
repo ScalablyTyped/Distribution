@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListParameters extends js.Object {
   var corpora: js.UndefOr[java.lang.String] = js.undefined
   var corpus: js.UndefOr[java.lang.String] = js.undefined

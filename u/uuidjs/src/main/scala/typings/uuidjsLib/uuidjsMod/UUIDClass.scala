@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UUIDClass extends js.Object {
   val bitFields: UUIDFields[java.lang.String]
   val bitString: java.lang.String

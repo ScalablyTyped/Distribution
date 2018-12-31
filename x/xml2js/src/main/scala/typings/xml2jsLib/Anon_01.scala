@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_01 extends js.Object {
   var `0.1`: xml2jsLib.xml2jsMod.Options
   var `0.2`: xml2jsLib.xml2jsMod.OptionsV2

@@ -5,21 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Node
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
-       * Information from the ecosystem.
-       */
+    * Information from the ecosystem.
+    */
   var data: js.UndefOr[Data] = js.undefined
   /**
-       * Location of a node in a source document.
-       * Must not be present if a node is generated.
-       */
+    * Location of a node in a source document.
+    * Must not be present if a node is generated.
+    */
   var position: js.UndefOr[Position] = js.undefined
   /**
-       * The variant of a node.
-       */
+    * The variant of a node.
+    */
   var `type`: java.lang.String
 }
 

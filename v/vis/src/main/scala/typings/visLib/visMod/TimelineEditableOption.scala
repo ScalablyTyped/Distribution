@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimelineEditableOption extends js.Object {
   var add: js.UndefOr[scala.Boolean] = js.undefined
   var overrideItems: js.UndefOr[scala.Boolean] = js.undefined

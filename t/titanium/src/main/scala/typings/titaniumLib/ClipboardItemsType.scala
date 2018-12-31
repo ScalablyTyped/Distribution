@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Dictionary describing the items for <Titanium.UI.Clipboard.setItems>.
- */
-
+  * Dictionary describing the items for <Titanium.UI.Clipboard.setItems>.
+  */
 trait ClipboardItemsType extends js.Object {
   /**
   	 * An array of key-value items to add to the clipboard. The key must a valid mime-type

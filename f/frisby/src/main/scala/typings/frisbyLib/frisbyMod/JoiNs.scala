@@ -52,7 +52,7 @@ object JoiNs extends js.Object {
   def func(): joiLib.joiMod.FunctionSchema = js.native
   def invalid(value: js.Any, values: js.Any*): joiLib.joiMod.Schema = js.native
   def invalid(values: js.Array[_]): joiLib.joiMod.Schema = js.native
-  def isRef(ref: js.Any): /* is Reference */scala.Boolean = js.native
+  def isRef(ref: js.Any): /* is joi.joi.Reference */ scala.Boolean = js.native
   def label(name: java.lang.String): joiLib.joiMod.Schema = js.native
   def `lazy`(cb: js.Function0[joiLib.joiMod.Schema]): joiLib.joiMod.LazySchema = js.native
   def `lazy`(cb: js.Function0[joiLib.joiMod.Schema], options: joiLib.joiMod.LazyOptions): joiLib.joiMod.LazySchema = js.native

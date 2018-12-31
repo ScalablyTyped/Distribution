@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CodeParameter extends js.Object {
   var challengeAnswer: js.UndefOr[java.lang.String] = js.undefined
   var challengeName: js.UndefOr[java.lang.String] = js.undefined

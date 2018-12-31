@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParentAccesstokenPageSize extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -19,18 +18,18 @@ trait Anon_ParentAccesstokenPageSize extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The collection ID, relative to `parent`, to list. For example: `chatrooms`
-                   * or `messages`.
-                   */
+    * The collection ID, relative to `parent`, to list. For example: `chatrooms`
+    * or `messages`.
+    */
   var collectionId: java.lang.String
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The list of field paths in the mask. See Document.fields for a field
-                   * path syntax reference.
-                   */
+    * The list of field paths in the mask. See Document.fields for a field
+    * path syntax reference.
+    */
   var `mask.fieldPaths`: js.UndefOr[java.lang.String] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
@@ -41,13 +40,13 @@ trait Anon_ParentAccesstokenPageSize extends js.Object {
   /** The `next_page_token` value returned from a previous List request, if any. */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The parent resource name. In the format:
-                   * `projects/{project_id}/databases/{database_id}/documents` or
-                   * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
-                   * For example:
-                   * `projects/my-project/databases/my-database/documents` or
-                   * `projects/my-project/databases/my-database/documents/chatrooms/my-chatroom`
-                   */
+    * The parent resource name. In the format:
+    * `projects/{project_id}/databases/{database_id}/documents` or
+    * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
+    * For example:
+    * `projects/my-project/databases/my-database/documents` or
+    * `projects/my-project/databases/my-database/documents/chatrooms/my-chatroom`
+    */
   var parent: java.lang.String
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined
@@ -56,19 +55,19 @@ trait Anon_ParentAccesstokenPageSize extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Reads documents as they were at the given time.
-                   * This may not be older than 60 seconds.
-                   */
+    * Reads documents as they were at the given time.
+    * This may not be older than 60 seconds.
+    */
   var readTime: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * If the list should show missing documents. A missing document is a
-                   * document that does not exist but has sub-documents. These documents will
-                   * be returned with a key but will not have fields, Document.create_time,
-                   * or Document.update_time set.
-                   *
-                   * Requests with `show_missing` may not specify `where` or
-                   * `order_by`.
-                   */
+    * If the list should show missing documents. A missing document is a
+    * document that does not exist but has sub-documents. These documents will
+    * be returned with a key but will not have fields, Document.create_time,
+    * or Document.update_time set.
+    *
+    * Requests with `show_missing` may not specify `where` or
+    * `order_by`.
+    */
   var showMissing: js.UndefOr[scala.Boolean] = js.undefined
   /** Reads documents in a transaction. */
   var transaction: js.UndefOr[java.lang.String] = js.undefined

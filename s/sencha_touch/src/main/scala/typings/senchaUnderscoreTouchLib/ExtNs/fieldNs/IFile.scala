@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFile extends IField {
   /** [Config Option] (String) */
   var accept: js.UndefOr[java.lang.String] = js.undefined

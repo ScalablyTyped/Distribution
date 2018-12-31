@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Money extends js.Object {
   var BigInt: mssqlLib.mssqlMod.ISqlTypeFactoryWithNoParams
   var Binary: mssqlLib.mssqlMod.ISqlTypeFactoryWithNoParams

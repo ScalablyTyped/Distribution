@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFloating
   extends extjsLib.ExtNs.IBase {
   /** [Method] Center this Component in its container

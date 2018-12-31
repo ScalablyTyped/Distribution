@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick, @material-ui/core.@material-ui/core.StandardProps) */ 
-trait SvgIconProps
+- Lifted 3 members from Set(std.Pick<react.react.SVGProps<react.SVGSVGElement>, std.Exclude<keyof react.react.SVGProps<react.SVGSVGElement>, 'classes' | never>>, @material-ui/core.@material-ui/core.StandardProps<react.react.SVGProps<react.SVGSVGElement>, @material-ui/core.@material-ui/core/SvgIcon/SvgIcon.SvgIconClassKey, never>) */ trait SvgIconProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SvgIconClassKey] {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[

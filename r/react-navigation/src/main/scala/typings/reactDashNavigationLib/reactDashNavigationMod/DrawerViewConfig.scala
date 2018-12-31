@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DrawerViewConfig extends js.Object {
   var contentComponent: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[DrawerItemsProps]] = js.undefined
   var contentOptions: js.UndefOr[js.Any] = js.undefined

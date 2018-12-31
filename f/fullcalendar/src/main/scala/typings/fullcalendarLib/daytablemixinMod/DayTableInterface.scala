@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DayTableInterface extends js.Object {
   var colCnt: js.Any
   var dayDates: js.Any

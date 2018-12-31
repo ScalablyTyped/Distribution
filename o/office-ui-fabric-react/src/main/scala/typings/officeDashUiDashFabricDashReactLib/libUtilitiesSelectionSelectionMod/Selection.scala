@@ -36,11 +36,11 @@ class Selection ()
   @JSName("isModal")
   def isModal_MSelection(): scala.Boolean = js.native
   /**
-       * Selection needs the items, call this method to set them. If the set
-       * of items is the same, this will re-evaluate selection and index maps.
-       * Otherwise, shouldClear should be set to true, so that selection is
-       * cleared.
-       */
+    * Selection needs the items, call this method to set them. If the set
+    * of items is the same, this will re-evaluate selection and index maps.
+    * Otherwise, shouldClear should be set to true, so that selection is
+    * cleared.
+    */
   def setItems(
     items: js.Array[
       officeDashUiDashFabricDashReactLib.libUtilitiesSelectionInterfacesMod.IObjectWithKey

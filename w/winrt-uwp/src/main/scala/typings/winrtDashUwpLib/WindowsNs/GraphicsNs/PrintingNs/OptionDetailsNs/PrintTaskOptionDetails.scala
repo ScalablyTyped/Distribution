@@ -31,24 +31,24 @@ abstract class PrintTaskOptionDetails () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[PrintTaskOptionDetails, PrintTaskOptionChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                       * Creates a custom list of items that allow the user to choose the page format.
-                       * @param optionId The ID for the custom item.
-                       * @param displayName The display name for the custom item.
-                       * @return The list of custom items.
-                       */
+    * Creates a custom list of items that allow the user to choose the page format.
+    * @param optionId The ID for the custom item.
+    * @param displayName The display name for the custom item.
+    * @return The list of custom items.
+    */
   def createItemListOption(optionId: java.lang.String, displayName: java.lang.String): PrintCustomItemListOptionDetails = js.native
   /**
-                       * Creates a CustomPrintTaskOptionText object to handle the display name and other parameters of the advanced print task option item.
-                       * @param optionId The ID of the print task option.
-                       * @param displayName The display name of the print task option.
-                       * @return The CustomPrintTaskOptionText object.
-                       */
+    * Creates a CustomPrintTaskOptionText object to handle the display name and other parameters of the advanced print task option item.
+    * @param optionId The ID of the print task option.
+    * @param displayName The display name of the print task option.
+    * @return The CustomPrintTaskOptionText object.
+    */
   def createTextOption(optionId: java.lang.String, displayName: java.lang.String): PrintCustomTextOptionDetails = js.native
   /**
-                       * Returns a PrintPageDescription object for the referenced page number.
-                       * @param jobPageNumber The page number.
-                       * @return The PrintPageDescription object.
-                       */
+    * Returns a PrintPageDescription object for the referenced page number.
+    * @param jobPageNumber The page number.
+    * @return The PrintPageDescription object.
+    */
   def getPageDescription(jobPageNumber: scala.Double): winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintPageDescription = js.native
   /** Raised when the print system begins a validation pass on the current state of the print ticket. */
   def onbeginvalidation(ev: js.Any with winrtDashUwpLib.WindowsNs.WinRTEvent[PrintTaskOptionDetails]): scala.Unit = js.native
@@ -74,10 +74,10 @@ abstract class PrintTaskOptionDetails () extends js.Object {
 @js.native
 object PrintTaskOptionDetails extends js.Object {
   /**
-                       * Used to retrieve the available options for a print task.
-                       * @param printTaskOptions Pointer to a PrintTaskOptions object.
-                       * @return Pointer to a PrintTaskOptionDetails object.
-                       */
+    * Used to retrieve the available options for a print task.
+    * @param printTaskOptions Pointer to a PrintTaskOptions object.
+    * @return Pointer to a PrintTaskOptionDetails object.
+    */
   def getFromPrintTaskOptions(printTaskOptions: winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintTaskOptions): winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.OptionDetailsNs.PrintTaskOptionDetails = js.native
 }
 

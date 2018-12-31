@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReturnStatement extends BaseNode {
   var argument: Expression | scala.Null
   @JSName("type")

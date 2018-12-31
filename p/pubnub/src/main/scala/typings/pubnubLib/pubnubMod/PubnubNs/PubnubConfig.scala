@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PubnubConfig extends js.Object {
   var authKey: js.UndefOr[java.lang.String] = js.undefined
   var cipherKey: js.UndefOr[java.lang.String] = js.undefined

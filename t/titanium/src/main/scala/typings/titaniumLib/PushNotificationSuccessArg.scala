@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A simple object passed to the
- * [registerForPushNotifications](Titanium.Network.registerForPushNotifications) success callback.
- */
-
+  * A simple object passed to the
+  * [registerForPushNotifications](Titanium.Network.registerForPushNotifications) success callback.
+  */
 trait PushNotificationSuccessArg extends js.Object {
   /**
   	 * Error code. Returns 0.

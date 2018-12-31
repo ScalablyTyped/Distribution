@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueriesResource extends js.Object {
   /** Creates a query. */
   def createquery(request: gapiDotClientDotDoubleclickbidmanagerLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Query]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DialogEvents extends js.Object {
   var beforeClose: js.UndefOr[DialogEvent] = js.undefined
   var close: js.UndefOr[DialogEvent] = js.undefined

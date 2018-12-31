@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class PlayReadySecureStopIterable protected () extends js.Object {
   /**
-                       * Initializes a new instance of the PlayReadySecureStopIterable class.
-                       * @param publisherCertBytes The raw binary body of the publisher certificate.
-                       */
+    * Initializes a new instance of the PlayReadySecureStopIterable class.
+    * @param publisherCertBytes The raw binary body of the publisher certificate.
+    */
   def this(publisherCertBytes: js.Array[scala.Double]) = this()
   /**
-                       * Returns an iterator that iterates over the items in the PlayReady secure stop collection.
-                       * @return The PlayReady secure stop iterator.
-                       */
+    * Returns an iterator that iterates over the items in the PlayReady secure stop collection.
+    * @return The PlayReady secure stop iterator.
+    */
   def first(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterator[IPlayReadySecureStopServiceRequest] = js.native
 }
 

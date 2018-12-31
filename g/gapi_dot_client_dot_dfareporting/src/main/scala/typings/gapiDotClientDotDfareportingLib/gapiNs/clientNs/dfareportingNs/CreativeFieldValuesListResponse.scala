@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreativeFieldValuesListResponse extends js.Object {
   /** Creative field value collection. */
   var creativeFieldValues: js.UndefOr[js.Array[CreativeFieldValue]] = js.undefined

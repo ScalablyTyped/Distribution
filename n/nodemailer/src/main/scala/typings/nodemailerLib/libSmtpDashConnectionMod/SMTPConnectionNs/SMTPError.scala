@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SMTPError
   extends nodeLib.NodeJSNs.ErrnoException {
   /** command which provoked an error */

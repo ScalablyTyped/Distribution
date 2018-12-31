@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation._
 
 package object xmlLib {
   type XmlAtom = java.lang.String | scala.Double | scala.Boolean
-  type XmlDesc = Anon_Attr | Anon_Cdata | Anon_CdataAttr | XmlAtom | js.Array[XmlAtom] | js.Any
-  type XmlObject = (org.scalablytyped.runtime.StringDictionary[js.Any | XmlDesc]) | XmlDesc
+  type XmlDesc = Anon_Attr | Anon_Cdata | Anon_CdataAttr | XmlAtom | js.Array[XmlAtom] | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify XmlDescArray */ js.Any)
+  type XmlObject = (org.scalablytyped.runtime.StringDictionary[
+    (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ElementObject */ js.Any) | XmlDesc
+  ]) | XmlDesc
 }

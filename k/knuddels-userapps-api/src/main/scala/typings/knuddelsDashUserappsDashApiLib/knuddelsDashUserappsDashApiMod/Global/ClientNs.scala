@@ -66,9 +66,6 @@ object ClientNs extends js.Object {
     			 * @see https://developer.knuddels.de/docs/classes/Client.HostFrame.html#method_setBackgroundColor
     			 */
     def setBackgroundColor(newColor: Color): scala.Unit = js.native
-    /**
-    			 * @see https://developer.knuddels.de/docs/classes/Client.HostFrame.html#method_setBackgroundColor
-    			 */
     def setBackgroundColor(newColor: Color, durationMillis: scala.Double): scala.Unit = js.native
     /**
     			 * @see https://developer.knuddels.de/docs/classes/Client.HostFrame.html#method_setIcons

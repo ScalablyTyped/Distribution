@@ -13,11 +13,11 @@ class WaveRenderer protected ()
   /* CompleteClass */
   override def fireEvent(eventName: java.lang.String, args: js.Any*): scala.Unit = js.native
   /* CompleteClass */
-  override def on(eventName: java.lang.String, callback: js.Function1[/* repeated */js.Any, scala.Unit]): wavesurferDotJsLib.wavesurferDotJsMod.WaveSurferNs.ListenerDescriptor = js.native
+  override def on(eventName: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): wavesurferDotJsLib.wavesurferDotJsMod.WaveSurferNs.ListenerDescriptor = js.native
   /* CompleteClass */
-  override def once(eventName: java.lang.String, callback: js.Function1[/* repeated */js.Any, scala.Unit]): wavesurferDotJsLib.wavesurferDotJsMod.WaveSurferNs.ListenerDescriptor = js.native
+  override def once(eventName: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): wavesurferDotJsLib.wavesurferDotJsMod.WaveSurferNs.ListenerDescriptor = js.native
   /* CompleteClass */
-  override def un(eventName: java.lang.String, callback: js.Function1[/* repeated */js.Any, scala.Unit]): scala.Unit = js.native
+  override def un(eventName: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
   /* CompleteClass */
   override def unAll(): scala.Unit = js.native
 }

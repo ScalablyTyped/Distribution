@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateTemplate extends js.Object {
   /** Content that will be used to construct a message  yes  For a full description, see the Content Attributes. Maximum length - 20 MBs */
   var content: js.UndefOr[CreateTemplateContent | sparkpostLib.Anon_Emailrfc822] = js.undefined

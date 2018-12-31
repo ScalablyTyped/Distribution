@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait seriesTypeBase extends js.Object {
   var fill: js.UndefOr[js.Any] = js.undefined
                 //boolean or number

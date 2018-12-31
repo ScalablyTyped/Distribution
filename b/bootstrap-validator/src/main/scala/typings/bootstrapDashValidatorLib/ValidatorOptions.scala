@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ValidatorOptions extends js.Object {
   var custom: js.UndefOr[js.Any] = js.undefined
   var delay: js.UndefOr[scala.Double] = js.undefined

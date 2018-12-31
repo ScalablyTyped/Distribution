@@ -8,18 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JQuery extends js.Object {
   /**
-       * Glide is responsive and touch-friendly jQuery slider.
-       * Based on CSS3 transitions with fallback to older broswers.
-       * It's simple, lightweight and fast. Designed to slide,
-       * no less, no more.
-       */
+    * Glide is responsive and touch-friendly jQuery slider.
+    * Based on CSS3 transitions with fallback to older broswers.
+    * It's simple, lightweight and fast. Designed to slide,
+    * no less, no more.
+    */
   def glide(): JQuery = js.native
-  /**
-       * Glide is responsive and touch-friendly jQuery slider.
-       * Based on CSS3 transitions with fallback to older broswers.
-       * It's simple, lightweight and fast. Designed to slide,
-       * no less, no more.
-       */
   def glide(options: glidejsLib.JQueryGlideNs.IGlideOptions): JQuery = js.native
 }
 

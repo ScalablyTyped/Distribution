@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageApi extends js.Object {
   def createImage(imageId: scala.Double): scala.Unit
   def getPixels(

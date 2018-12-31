@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Actrouter extends js.Object {
   var actrouter: js.UndefOr[senecaLib.senecaMod.SNSNs.UnknownType] = js.undefined
   var clientrouter: js.UndefOr[senecaLib.senecaMod.SNSNs.UnknownType] = js.undefined

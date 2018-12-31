@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Parent extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -27,16 +26,16 @@ trait Anon_Parent extends js.Object {
   /** Requested size of the next page of data. */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * Token identifying which result to start with; returned by a previous list
-                   * call.
-                   */
+    * Token identifying which result to start with; returned by a previous list
+    * call.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * List enabled services for the specified parent.
-                   *
-                   * An example valid parent would be:
-                   * - projects/my-project
-                   */
+    * List enabled services for the specified parent.
+    *
+    * An example valid parent would be:
+    * - projects/my-project
+    */
   var parent: java.lang.String
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

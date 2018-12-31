@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OptionsAllNothrow extends Options {
   @JSName("all")
   var all_OptionsAllNothrow: adoneLib.adoneLibNumbers.`true`

@@ -11,15 +11,12 @@ trait Mobile
   @JSName("config")
   var config_Mobile: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsMobileMod.MobileNs.ClientConfiguration = js.native
   /**
-     *  Creates an AWS Mobile Hub project. 
-     */
+    *  Creates an AWS Mobile Hub project. 
+    */
   def createProject(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMobileMod.MobileNs.CreateProjectResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     *  Creates an AWS Mobile Hub project. 
-     */
   def createProject(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -31,15 +28,12 @@ trait Mobile
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Creates an AWS Mobile Hub project. 
-     */
+    *  Creates an AWS Mobile Hub project. 
+    */
   def createProject(params: awsDashSdkLib.clientsMobileMod.MobileNs.CreateProjectRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMobileMod.MobileNs.CreateProjectResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     *  Creates an AWS Mobile Hub project. 
-     */
   def createProject(
     params: awsDashSdkLib.clientsMobileMod.MobileNs.CreateProjectRequest,
     callback: js.Function2[
@@ -52,15 +46,12 @@ trait Mobile
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Delets a project in AWS Mobile Hub. 
-     */
+    *  Delets a project in AWS Mobile Hub. 
+    */
   def deleteProject(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMobileMod.MobileNs.DeleteProjectResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     *  Delets a project in AWS Mobile Hub. 
-     */
   def deleteProject(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -72,15 +63,12 @@ trait Mobile
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Delets a project in AWS Mobile Hub. 
-     */
+    *  Delets a project in AWS Mobile Hub. 
+    */
   def deleteProject(params: awsDashSdkLib.clientsMobileMod.MobileNs.DeleteProjectRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMobileMod.MobileNs.DeleteProjectResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     *  Delets a project in AWS Mobile Hub. 
-     */
   def deleteProject(
     params: awsDashSdkLib.clientsMobileMod.MobileNs.DeleteProjectRequest,
     callback: js.Function2[
@@ -93,15 +81,12 @@ trait Mobile
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Get the bundle details for the requested bundle id. 
-     */
+    *  Get the bundle details for the requested bundle id. 
+    */
   def describeBundle(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMobileMod.MobileNs.DescribeBundleResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     *  Get the bundle details for the requested bundle id. 
-     */
   def describeBundle(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -113,15 +98,12 @@ trait Mobile
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Get the bundle details for the requested bundle id. 
-     */
+    *  Get the bundle details for the requested bundle id. 
+    */
   def describeBundle(params: awsDashSdkLib.clientsMobileMod.MobileNs.DescribeBundleRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMobileMod.MobileNs.DescribeBundleResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     *  Get the bundle details for the requested bundle id. 
-     */
   def describeBundle(
     params: awsDashSdkLib.clientsMobileMod.MobileNs.DescribeBundleRequest,
     callback: js.Function2[
@@ -134,15 +116,12 @@ trait Mobile
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Gets details about a project in AWS Mobile Hub. 
-     */
+    *  Gets details about a project in AWS Mobile Hub. 
+    */
   def describeProject(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMobileMod.MobileNs.DescribeProjectResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     *  Gets details about a project in AWS Mobile Hub. 
-     */
   def describeProject(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -154,15 +133,12 @@ trait Mobile
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Gets details about a project in AWS Mobile Hub. 
-     */
+    *  Gets details about a project in AWS Mobile Hub. 
+    */
   def describeProject(params: awsDashSdkLib.clientsMobileMod.MobileNs.DescribeProjectRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMobileMod.MobileNs.DescribeProjectResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     *  Gets details about a project in AWS Mobile Hub. 
-     */
   def describeProject(
     params: awsDashSdkLib.clientsMobileMod.MobileNs.DescribeProjectRequest,
     callback: js.Function2[
@@ -175,15 +151,12 @@ trait Mobile
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Generates customized software development kit (SDK) and or tool packages used to integrate mobile web or mobile app clients with backend AWS resources. 
-     */
+    *  Generates customized software development kit (SDK) and or tool packages used to integrate mobile web or mobile app clients with backend AWS resources. 
+    */
   def exportBundle(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMobileMod.MobileNs.ExportBundleResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     *  Generates customized software development kit (SDK) and or tool packages used to integrate mobile web or mobile app clients with backend AWS resources. 
-     */
   def exportBundle(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -195,15 +168,12 @@ trait Mobile
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Generates customized software development kit (SDK) and or tool packages used to integrate mobile web or mobile app clients with backend AWS resources. 
-     */
+    *  Generates customized software development kit (SDK) and or tool packages used to integrate mobile web or mobile app clients with backend AWS resources. 
+    */
   def exportBundle(params: awsDashSdkLib.clientsMobileMod.MobileNs.ExportBundleRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMobileMod.MobileNs.ExportBundleResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     *  Generates customized software development kit (SDK) and or tool packages used to integrate mobile web or mobile app clients with backend AWS resources. 
-     */
   def exportBundle(
     params: awsDashSdkLib.clientsMobileMod.MobileNs.ExportBundleRequest,
     callback: js.Function2[
@@ -216,15 +186,12 @@ trait Mobile
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Exports project configuration to a snapshot which can be downloaded and shared. Note that mobile app push credentials are encrypted in exported projects, so they can only be shared successfully within the same AWS account. 
-     */
+    *  Exports project configuration to a snapshot which can be downloaded and shared. Note that mobile app push credentials are encrypted in exported projects, so they can only be shared successfully within the same AWS account. 
+    */
   def exportProject(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMobileMod.MobileNs.ExportProjectResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     *  Exports project configuration to a snapshot which can be downloaded and shared. Note that mobile app push credentials are encrypted in exported projects, so they can only be shared successfully within the same AWS account. 
-     */
   def exportProject(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -236,15 +203,12 @@ trait Mobile
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Exports project configuration to a snapshot which can be downloaded and shared. Note that mobile app push credentials are encrypted in exported projects, so they can only be shared successfully within the same AWS account. 
-     */
+    *  Exports project configuration to a snapshot which can be downloaded and shared. Note that mobile app push credentials are encrypted in exported projects, so they can only be shared successfully within the same AWS account. 
+    */
   def exportProject(params: awsDashSdkLib.clientsMobileMod.MobileNs.ExportProjectRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMobileMod.MobileNs.ExportProjectResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     *  Exports project configuration to a snapshot which can be downloaded and shared. Note that mobile app push credentials are encrypted in exported projects, so they can only be shared successfully within the same AWS account. 
-     */
   def exportProject(
     params: awsDashSdkLib.clientsMobileMod.MobileNs.ExportProjectRequest,
     callback: js.Function2[
@@ -257,15 +221,12 @@ trait Mobile
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  List all available bundles. 
-     */
+    *  List all available bundles. 
+    */
   def listBundles(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMobileMod.MobileNs.ListBundlesResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     *  List all available bundles. 
-     */
   def listBundles(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -277,15 +238,12 @@ trait Mobile
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  List all available bundles. 
-     */
+    *  List all available bundles. 
+    */
   def listBundles(params: awsDashSdkLib.clientsMobileMod.MobileNs.ListBundlesRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMobileMod.MobileNs.ListBundlesResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     *  List all available bundles. 
-     */
   def listBundles(
     params: awsDashSdkLib.clientsMobileMod.MobileNs.ListBundlesRequest,
     callback: js.Function2[
@@ -298,15 +256,12 @@ trait Mobile
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Lists projects in AWS Mobile Hub. 
-     */
+    *  Lists projects in AWS Mobile Hub. 
+    */
   def listProjects(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMobileMod.MobileNs.ListProjectsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     *  Lists projects in AWS Mobile Hub. 
-     */
   def listProjects(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -318,15 +273,12 @@ trait Mobile
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Lists projects in AWS Mobile Hub. 
-     */
+    *  Lists projects in AWS Mobile Hub. 
+    */
   def listProjects(params: awsDashSdkLib.clientsMobileMod.MobileNs.ListProjectsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMobileMod.MobileNs.ListProjectsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     *  Lists projects in AWS Mobile Hub. 
-     */
   def listProjects(
     params: awsDashSdkLib.clientsMobileMod.MobileNs.ListProjectsRequest,
     callback: js.Function2[
@@ -339,15 +291,12 @@ trait Mobile
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Update an existing project. 
-     */
+    *  Update an existing project. 
+    */
   def updateProject(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMobileMod.MobileNs.UpdateProjectResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     *  Update an existing project. 
-     */
   def updateProject(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -359,15 +308,12 @@ trait Mobile
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Update an existing project. 
-     */
+    *  Update an existing project. 
+    */
   def updateProject(params: awsDashSdkLib.clientsMobileMod.MobileNs.UpdateProjectRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMobileMod.MobileNs.UpdateProjectResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     *  Update an existing project. 
-     */
   def updateProject(
     params: awsDashSdkLib.clientsMobileMod.MobileNs.UpdateProjectRequest,
     callback: js.Function2[

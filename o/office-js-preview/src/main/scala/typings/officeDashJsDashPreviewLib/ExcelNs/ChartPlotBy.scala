@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ChartPlotBy extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.8]
-     */
+  * [Api set: ExcelApi 1.8]
+  */
 @JSGlobal("Excel.ChartPlotBy")
 @js.native
 object ChartPlotBy extends js.Object {

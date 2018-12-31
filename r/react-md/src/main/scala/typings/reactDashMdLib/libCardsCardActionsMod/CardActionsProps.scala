@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CardActionsProps
   extends reactDashMdLib.libMod.Props {
   var centered: js.UndefOr[scala.Boolean] = js.undefined

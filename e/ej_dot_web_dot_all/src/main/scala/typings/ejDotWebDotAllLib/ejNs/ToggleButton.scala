@@ -16,12 +16,12 @@ class ToggleButton protected () extends Widget {
   @JSName("model")
   var model_ToggleButton: ejDotWebDotAllLib.ejNs.ToggleButtonNs.Model = js.native
   /** To disable the ToggleButton to prevent all user interactions.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def disable(): scala.Unit = js.native
   /** To enable the ToggleButton.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def enable(): scala.Unit = js.native
 }
 

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-                 * @mixin
-                 */
-
+  * @mixin
+  */
 trait IHasTarget extends js.Object {
   var el: js.UndefOr[js.Any] = js.undefined
   var passTargetToNext: js.UndefOr[scala.Boolean] = js.undefined

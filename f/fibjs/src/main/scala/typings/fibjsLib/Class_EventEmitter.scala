@@ -10,9 +10,14 @@ import scala.scalajs.js.annotation._
 	* @brief 事件触发对象，可用于建立观察者模式，支持事件触发的对象均继承于此，同一事件的同一函数只会产生一次回调
 	* @detail Event 对象可独立创建，以用于组建自定义的事件系统：,```JavaScript,var EventEmitter = require('events');,,var e = new EventEmitter();,```
 	*/
-
 @JSGlobal("Class_EventEmitter")
 @js.native
+/**
+	 * 
+	 * @brief 构造函数
+	 * 
+	 * 
+	 */
 class Class_EventEmitter () extends Class__object {
   /**
   	 * class prop 
@@ -219,15 +224,6 @@ class Class_EventEmitter () extends Class__object {
   	 * 
   	 */
   def removeAllListeners(): js.Object = js.native
-  /**
-  	 * 
-  	 * @brief 从对象处理队列中取消所有事件的所有监听器， 如果指定事件，则移除指定事件的所有监听器。
-  	 * @param evs 指定事件的名称
-  	 * @return 返回事件对象本身，便于链式调用
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def removeAllListeners(evs: js.Array[_]): js.Object = js.native
   /**
   	 * 

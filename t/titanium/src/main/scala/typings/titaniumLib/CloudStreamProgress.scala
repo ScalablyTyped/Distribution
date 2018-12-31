@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Argument passed to the callback as a request is transmitted or received.
- */
-
+  * Argument passed to the callback as a request is transmitted or received.
+  */
 trait CloudStreamProgress extends js.Object {
   /**
   	 * A value from 0.0-1.0 with the progress of the exchange.

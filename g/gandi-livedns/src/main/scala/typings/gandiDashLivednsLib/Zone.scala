@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Zone extends js.Object {
   var apex_alias: java.lang.String
   var email: java.lang.String

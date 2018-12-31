@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props extends js.Object {
   var evalScripts: js.UndefOr[
     reactDashSvgLib.reactDashSvgLibStrings.always | reactDashSvgLib.reactDashSvgLibStrings.once | reactDashSvgLib.reactDashSvgLibStrings.never

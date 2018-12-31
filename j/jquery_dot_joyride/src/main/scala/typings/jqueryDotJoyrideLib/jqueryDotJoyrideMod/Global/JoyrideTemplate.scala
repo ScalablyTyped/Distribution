@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * HTML segments for tip layout
 	 */
-
 trait JoyrideTemplate extends js.Object {
   /**
   		 * Button template

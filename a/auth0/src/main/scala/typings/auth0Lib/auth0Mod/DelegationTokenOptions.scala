@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DelegationTokenOptions extends js.Object {
   var api_type: java.lang.String
   var grant_type: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMediaCaptureInitializationSettings extends js.Object {
   var audioDeviceId: java.lang.String
   var photoCaptureSource: PhotoCaptureSource

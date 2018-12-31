@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RecycleBinEnabled extends js.Object {
   var BlogCategoryTitle: java.lang.String
   var BlogPostTitle: java.lang.String

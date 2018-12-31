@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait Wrapping extends js.Object
 
 /**
-       * Configuration options for text wrapping.
-      */
+  * Configuration options for text wrapping.
+  */
 @JSGlobal("sap.ui.core.Wrapping")
 @js.native
 object Wrapping extends js.Object {

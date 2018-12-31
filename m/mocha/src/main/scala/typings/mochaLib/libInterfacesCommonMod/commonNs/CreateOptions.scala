@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateOptions extends js.Object {
   /** Filepath where this Suite resides */
   var file: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Dot extends js.Object {
   var codeName: java.lang.String
   var dot: scala.Double

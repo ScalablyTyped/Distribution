@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExperimentsResource extends js.Object {
   /** Delete an experiment. */
   def delete(request: gapiDotClientDotAnalyticsLib.Anon_ProfileIdPrettyPrintAccountId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Size extends js.Object {
   var fixedWidth: js.UndefOr[scala.Boolean] = js.undefined
   var icon: js.UndefOr[java.lang.String | reactDashOnsenuiLib.reactDashOnsenuiMod.Modifiers_string] = js.undefined

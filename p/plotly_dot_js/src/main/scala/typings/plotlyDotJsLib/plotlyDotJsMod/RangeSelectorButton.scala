@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RangeSelectorButton extends js.Object {
   var count: scala.Double
   var label: java.lang.String

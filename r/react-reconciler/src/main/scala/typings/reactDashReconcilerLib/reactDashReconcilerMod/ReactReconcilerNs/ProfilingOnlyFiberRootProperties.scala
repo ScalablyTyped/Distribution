@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 // They enable interactions to be associated with their async work,
 // And expose interaction metadata to the React DevTools Profiler plugin.
 // Note that these attributes are only defined when the enableSchedulerTracing flag is enabled.
-
 trait ProfilingOnlyFiberRootProperties extends js.Object {
   var interactionThreadID: scala.Double
   var memoizedInteractions: stdLib.Set[Interaction]

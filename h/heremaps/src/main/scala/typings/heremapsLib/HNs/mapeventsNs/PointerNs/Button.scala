@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait Button extends js.Object
 
 /**
-             * Types of a button
-             */
+  * Types of a button
+  */
 @JSGlobal("H.mapevents.Pointer.Button")
 @js.native
 object Button extends js.Object {

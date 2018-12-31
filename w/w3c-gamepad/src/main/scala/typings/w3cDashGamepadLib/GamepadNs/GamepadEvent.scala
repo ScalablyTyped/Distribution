@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 trait GamepadEvent
   extends stdLib.Event {
   /**
-           * The single gamepad attribute provides access to the associated gamepad data for this event.
-           * @readonly
-           */
+    * The single gamepad attribute provides access to the associated gamepad data for this event.
+    * @readonly
+    */
   var gamepad: Gamepad = js.native
 }
 

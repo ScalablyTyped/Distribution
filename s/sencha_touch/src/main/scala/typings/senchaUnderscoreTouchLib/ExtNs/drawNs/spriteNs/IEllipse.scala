@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEllipse extends IPath {
   /** [Config Option] (Number) */
   var axisRotation: js.UndefOr[scala.Double] = js.undefined

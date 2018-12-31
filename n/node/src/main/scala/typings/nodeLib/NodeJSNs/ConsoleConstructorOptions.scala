@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConsoleConstructorOptions extends js.Object {
   var colorMode: js.UndefOr[scala.Boolean | nodeLib.nodeLibStrings.auto] = js.undefined
   var ignoreErrors: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListDataPointChangesResponse extends js.Object {
   /** The data stream ID of the data source with data point changes. */
   var dataSourceId: js.UndefOr[java.lang.String] = js.undefined

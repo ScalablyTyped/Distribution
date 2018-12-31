@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiagramLayoutGrid extends js.Object {
   var componentSpacingX: js.UndefOr[scala.Double] = js.undefined
   var componentSpacingY: js.UndefOr[scala.Double] = js.undefined

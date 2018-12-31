@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaginateOptions extends js.Object {
   var lean: js.UndefOr[scala.Boolean] = js.undefined
   var leanWithId: js.UndefOr[scala.Boolean] = js.undefined

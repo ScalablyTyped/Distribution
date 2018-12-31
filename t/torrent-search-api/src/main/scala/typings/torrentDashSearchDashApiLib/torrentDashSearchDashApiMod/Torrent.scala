@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Torrent extends js.Object {
   var desc: java.lang.String
   var magnet: java.lang.String

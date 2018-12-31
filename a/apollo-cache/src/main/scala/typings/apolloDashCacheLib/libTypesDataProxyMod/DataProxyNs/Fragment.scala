@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Fragment[TVariables] extends js.Object {
   var fragment: graphqlLib.languageAstMod.DocumentNode
   var fragmentName: js.UndefOr[java.lang.String] = js.undefined

@@ -12,43 +12,43 @@ sealed trait PullRequestAsyncStatus extends js.Object
 @js.native
 object PullRequestAsyncStatus extends js.Object {
   /**
-       * Pull request merge failed due to conflicts.
-       */
+    * Pull request merge failed due to conflicts.
+    */
   @js.native
   sealed trait Conflicts
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.PullRequestAsyncStatus
   
   /**
-       * Pull request merge failed.
-       */
+    * Pull request merge failed.
+    */
   @js.native
   sealed trait Failure
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.PullRequestAsyncStatus
   
   /**
-       * Status is not set. Default state.
-       */
+    * Status is not set. Default state.
+    */
   @js.native
   sealed trait NotSet
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.PullRequestAsyncStatus
   
   /**
-       * Pull request merge is queued.
-       */
+    * Pull request merge is queued.
+    */
   @js.native
   sealed trait Queued
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.PullRequestAsyncStatus
   
   /**
-       * Pull request merge rejected by policy.
-       */
+    * Pull request merge rejected by policy.
+    */
   @js.native
   sealed trait RejectedByPolicy
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.PullRequestAsyncStatus
   
   /**
-       * Pull request merge succeeded.
-       */
+    * Pull request merge succeeded.
+    */
   @js.native
   sealed trait Succeeded
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.PullRequestAsyncStatus

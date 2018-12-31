@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMessage extends js.Object {
   var button1_enabled: js.UndefOr[scala.Boolean] = js.undefined
   var button1_title: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MorphDomOptions extends js.Object {
   var childrenOnly: js.UndefOr[scala.Boolean] = js.undefined
   var getNodeKey: js.UndefOr[js.Function1[/* node */ stdLib.Node, _]] = js.undefined

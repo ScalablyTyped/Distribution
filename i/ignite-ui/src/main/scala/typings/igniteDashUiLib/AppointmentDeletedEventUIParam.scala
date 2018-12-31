@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AppointmentDeletedEventUIParam extends js.Object {
   /**
   	 * Gets the id of the deleted appointment.

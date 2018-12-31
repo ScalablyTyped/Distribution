@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EncryptionResult extends js.Object {
   var cipherText: nodeLib.Buffer
   var localPublicKey: java.lang.String

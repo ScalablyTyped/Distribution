@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IsArray extends js.Object {
   def blockParams(obj: js.Array[_], ids: js.Array[_]): js.Array[_]
   def createFrame(`object`: js.Any): js.Any

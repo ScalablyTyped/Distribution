@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Milliseconds extends js.Object {
   def days(days: scala.Double): scala.Double
   def hours(hours: scala.Double): scala.Double

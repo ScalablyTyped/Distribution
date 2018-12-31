@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class HeapDiff () extends js.Object {
   /**
-           * Compute the diff.
-           */
+    * Compute the diff.
+    */
   def end(): scala.Unit = js.native
 }
 

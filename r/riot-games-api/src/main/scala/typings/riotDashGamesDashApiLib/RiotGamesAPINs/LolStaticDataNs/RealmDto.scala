@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RealmDto extends js.Object {
   var cdn: java.lang.String
   var css: java.lang.String

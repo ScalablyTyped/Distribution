@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Auth0LockThemeButton extends js.Object {
   var displayName: java.lang.String
   var foregroundColor: js.UndefOr[java.lang.String] = js.undefined

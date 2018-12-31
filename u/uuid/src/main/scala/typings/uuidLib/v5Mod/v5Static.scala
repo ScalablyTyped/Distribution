@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait v5Static extends js.Object {
   // https://github.com/kelektiv/node-uuid/blob/master/v5.js#L47
   var DNS: java.lang.String

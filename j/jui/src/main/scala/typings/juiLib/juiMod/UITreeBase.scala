@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UITreeBase extends js.Object {
   def appendNode(args: js.Any*): UITreeNode
   def foldNode(index: java.lang.String): scala.Unit

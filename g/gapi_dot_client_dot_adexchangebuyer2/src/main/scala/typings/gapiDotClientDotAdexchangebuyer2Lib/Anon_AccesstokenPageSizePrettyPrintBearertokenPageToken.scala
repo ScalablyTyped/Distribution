@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPageSizePrettyPrintBearertokenPageToken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -29,18 +28,18 @@ trait Anon_AccesstokenPageSizePrettyPrintBearertokenPageToken extends js.Object 
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Requested page size. The server may return fewer results than requested.
-                   * If unspecified, the server will pick an appropriate default.
-                   */
+    * Requested page size. The server may return fewer results than requested.
+    * If unspecified, the server will pick an appropriate default.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * A token identifying a page of results the server should return.
-                   * Typically, this is the value of
-                   * ListBidResponsesWithoutBidsResponse.nextPageToken
-                   * returned from the previous call to the
-                   * accounts.filterSets.bidResponsesWithoutBids.list
-                   * method.
-                   */
+    * A token identifying a page of results the server should return.
+    * Typically, this is the value of
+    * ListBidResponsesWithoutBidsResponse.nextPageToken
+    * returned from the previous call to the
+    * accounts.filterSets.bidResponsesWithoutBids.list
+    * method.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

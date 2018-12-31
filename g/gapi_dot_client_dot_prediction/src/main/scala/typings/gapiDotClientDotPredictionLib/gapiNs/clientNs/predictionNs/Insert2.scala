@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Insert2 extends js.Object {
   /** Insert time of the model (as a RFC 3339 timestamp). */
   var created: js.UndefOr[java.lang.String] = js.undefined

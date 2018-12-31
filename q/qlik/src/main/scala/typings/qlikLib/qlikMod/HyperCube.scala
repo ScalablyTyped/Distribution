@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HyperCube extends js.Object {
   var qDataPages: js.Array[NxDataPage]
   var qDimensionInfo: js.Array[NxDimensionInfo]

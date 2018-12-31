@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IKeyStorageProviderNamesStatics extends js.Object {
   var platformKeyStorageProvider: java.lang.String
   var smartcardKeyStorageProvider: java.lang.String

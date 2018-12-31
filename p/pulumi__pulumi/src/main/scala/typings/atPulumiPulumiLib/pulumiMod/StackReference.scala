@@ -10,34 +10,16 @@ import scala.scalajs.js.annotation._
 class StackReference protected ()
   extends atPulumiPulumiLib.stackReferenceMod.StackReference {
   /**
-       * Create a StackReference resource with the given unique name, arguments, and options.
-       *
-       * If args is not specified, the name of the referenced stack will be the name of the StackReference resource.
-       *
-       * @param name The _unique_ name of the stack reference.
-       * @param args The arguments to use to populate this resource's properties.
-       * @Param opts A bag of options that control this resource's behavior.
-       */
+    * Create a StackReference resource with the given unique name, arguments, and options.
+    *
+    * If args is not specified, the name of the referenced stack will be the name of the StackReference resource.
+    *
+    * @param name The _unique_ name of the stack reference.
+    * @param args The arguments to use to populate this resource's properties.
+    * @Param opts A bag of options that control this resource's behavior.
+    */
   def this(name: java.lang.String) = this()
-  /**
-       * Create a StackReference resource with the given unique name, arguments, and options.
-       *
-       * If args is not specified, the name of the referenced stack will be the name of the StackReference resource.
-       *
-       * @param name The _unique_ name of the stack reference.
-       * @param args The arguments to use to populate this resource's properties.
-       * @Param opts A bag of options that control this resource's behavior.
-       */
   def this(name: java.lang.String, args: atPulumiPulumiLib.stackReferenceMod.StackReferenceArgs) = this()
-  /**
-       * Create a StackReference resource with the given unique name, arguments, and options.
-       *
-       * If args is not specified, the name of the referenced stack will be the name of the StackReference resource.
-       *
-       * @param name The _unique_ name of the stack reference.
-       * @param args The arguments to use to populate this resource's properties.
-       * @Param opts A bag of options that control this resource's behavior.
-       */
   def this(name: java.lang.String, args: atPulumiPulumiLib.stackReferenceMod.StackReferenceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 

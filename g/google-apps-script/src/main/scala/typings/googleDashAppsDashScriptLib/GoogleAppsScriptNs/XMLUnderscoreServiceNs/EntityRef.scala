@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EntityRef extends js.Object {
   def detach(): Content
   def getName(): java.lang.String

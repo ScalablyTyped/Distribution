@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ViewContentParameters
   extends facebookDashPixelLib.facebookNs.PixelNs.ViewContentParameters {
   @JSName("content_ids")

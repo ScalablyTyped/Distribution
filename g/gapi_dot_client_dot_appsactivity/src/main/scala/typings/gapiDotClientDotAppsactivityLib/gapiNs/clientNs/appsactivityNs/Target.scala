@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Target extends js.Object {
   /** The ID of the target. For example, in Google Drive, this is the file or folder ID. */
   var id: js.UndefOr[java.lang.String] = js.undefined

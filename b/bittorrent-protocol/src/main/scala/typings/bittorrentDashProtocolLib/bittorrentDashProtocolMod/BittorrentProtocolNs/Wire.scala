@@ -26,7 +26,6 @@ trait Wire
   val requests: js.Array[Request] = js.native
    // remote peer id (Buffer)
   val `type`: bittorrentDashProtocolLib.bittorrentDashProtocolLibStrings.webrtc | bittorrentDashProtocolLib.bittorrentDashProtocolLibStrings.tcpIncoming | bittorrentDashProtocolLib.bittorrentDashProtocolLibStrings.tcpOutgoing | bittorrentDashProtocolLib.bittorrentDashProtocolLibStrings.webSeed = js.native
-  // TODO: bitfield can be also a bitfield instance
   def bitfield(bitfield: js.Any): scala.Unit = js.native
   // TODO: bitfield can be also a bitfield instance
   def bitfield(bitfield: nodeLib.Buffer): scala.Unit = js.native

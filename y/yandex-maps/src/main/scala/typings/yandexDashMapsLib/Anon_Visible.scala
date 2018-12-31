@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Visible extends js.Object {
   var layout: js.UndefOr[
     java.lang.String | yandexDashMapsLib.ymapsNs.IClassConstructor[yandexDashMapsLib.ymapsNs.ISelectableControlLayout]

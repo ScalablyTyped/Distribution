@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EagerOptions extends js.Object {
   var aliases: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var minimize: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodeWrap extends js.Object {
   var children: js.Array[NodeWrap]
   var kind: typescriptLib.typescriptMod.tsNs.SyntaxKind

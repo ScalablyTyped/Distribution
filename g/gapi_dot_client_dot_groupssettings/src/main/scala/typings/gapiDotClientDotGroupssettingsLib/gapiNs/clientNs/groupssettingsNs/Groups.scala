@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Groups extends js.Object {
   /** Are external members allowed to join the group. */
   var allowExternalMembers: js.UndefOr[java.lang.String] = js.undefined
@@ -46,9 +45,9 @@ trait Groups extends js.Object {
   /** Primary language for the group. */
   var primaryLanguage: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Whome should the default reply to a message go to. Possible values are: REPLY_TO_CUSTOM REPLY_TO_SENDER REPLY_TO_LIST REPLY_TO_OWNER REPLY_TO_IGNORE
-               * REPLY_TO_MANAGERS
-               */
+    * Whome should the default reply to a message go to. Possible values are: REPLY_TO_CUSTOM REPLY_TO_SENDER REPLY_TO_LIST REPLY_TO_OWNER REPLY_TO_IGNORE
+    * REPLY_TO_MANAGERS
+    */
   var replyTo: js.UndefOr[java.lang.String] = js.undefined
   /** Should the member be notified if his message is denied by owner. */
   var sendMessageDenyNotification: js.UndefOr[java.lang.String] = js.undefined
@@ -59,9 +58,9 @@ trait Groups extends js.Object {
   /** Permissions to add members. Possible values are: ALL_MANAGERS_CAN_ADD ALL_MEMBERS_CAN_ADD NONE_CAN_ADD */
   var whoCanAdd: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Permission to contact owner of the group via web UI. Possible values are: ANYONE_CAN_CONTACT ALL_IN_DOMAIN_CAN_CONTACT ALL_MEMBERS_CAN_CONTACT
-               * ALL_MANAGERS_CAN_CONTACT
-               */
+    * Permission to contact owner of the group via web UI. Possible values are: ANYONE_CAN_CONTACT ALL_IN_DOMAIN_CAN_CONTACT ALL_MEMBERS_CAN_CONTACT
+    * ALL_MANAGERS_CAN_CONTACT
+    */
   var whoCanContactOwner: js.UndefOr[java.lang.String] = js.undefined
   /** Permissions to invite members. Possible values are: ALL_MEMBERS_CAN_INVITE ALL_MANAGERS_CAN_INVITE NONE_CAN_INVITE */
   var whoCanInvite: js.UndefOr[java.lang.String] = js.undefined
@@ -70,9 +69,9 @@ trait Groups extends js.Object {
   /** Permission to leave the group. Possible values are: ALL_MANAGERS_CAN_LEAVE ALL_MEMBERS_CAN_LEAVE NONE_CAN_LEAVE */
   var whoCanLeaveGroup: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Permissions to post messages to the group. Possible values are: NONE_CAN_POST ALL_MANAGERS_CAN_POST ALL_MEMBERS_CAN_POST ALL_OWNERS_CAN_POST
-               * ALL_IN_DOMAIN_CAN_POST ANYONE_CAN_POST
-               */
+    * Permissions to post messages to the group. Possible values are: NONE_CAN_POST ALL_MANAGERS_CAN_POST ALL_MEMBERS_CAN_POST ALL_OWNERS_CAN_POST
+    * ALL_IN_DOMAIN_CAN_POST ANYONE_CAN_POST
+    */
   var whoCanPostMessage: js.UndefOr[java.lang.String] = js.undefined
   /** Permissions to view group. Possible values are: ANYONE_CAN_VIEW ALL_IN_DOMAIN_CAN_VIEW ALL_MEMBERS_CAN_VIEW ALL_MANAGERS_CAN_VIEW */
   var whoCanViewGroup: js.UndefOr[java.lang.String] = js.undefined

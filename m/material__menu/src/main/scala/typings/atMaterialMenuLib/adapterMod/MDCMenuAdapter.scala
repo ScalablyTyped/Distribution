@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MDCMenuAdapter extends js.Object {
   def addClass(className: java.lang.String): scala.Unit
   def addClassForOptionAtIndex(index: scala.Double, className: java.lang.String): scala.Unit

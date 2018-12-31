@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /*
-     * Patch all instance method
-     */
+  * Patch all instance method
+  */
 @js.native
 trait Promise[T] extends js.Object {
   var all: js.Function0[bluebirdLib.bluebirdMod.Bluebird[bluebirdLib.IterableOrNever[T]]] = js.native
@@ -19,15 +19,13 @@ trait Promise[T] extends js.Object {
     /* callback */ js.Function2[/* err */ js.Any, /* value */ js.UndefOr[T], scala.Unit], 
     /* options */ bluebirdLib.bluebirdMod.BluebirdNs.SpreadOption, 
     this.type
-  ]) | (js.Function1[/* repeated */js.Any, this.type]) = js.native
+  ]) | (js.Function1[/* repeated */ js.Any, this.type]) = js.native
   var bind: js.Function1[/* thisArg */ js.Any, bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
   var call: js.Function2[
     /* propertyName */ java.lang.String, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     bluebirdLib.bluebirdMod.Bluebird[
-      stdLib.ReturnType[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(U))) */js.Any
-      ]
+      stdLib.ReturnType[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
     ]
   ] = js.native
   var cancel: js.Function0[scala.Unit] = js.native
@@ -542,9 +540,7 @@ trait Promise[T] extends js.Object {
   // finally: Bluebird<T>["finally"]; // Provided by lib.es2018.promise.d.ts
   var get: js.Function1[
     /* key */ java.lang.String, 
-    bluebirdLib.bluebirdMod.Bluebird[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(U))) */js.Any
-    ]
+    bluebirdLib.bluebirdMod.Bluebird[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   var isCancelled: js.Function0[scala.Boolean] = js.native
   var isFulfilled: js.Function0[scala.Boolean] = js.native
@@ -574,7 +570,7 @@ trait Promise[T] extends js.Object {
     /* callback */ js.Function2[/* err */ js.Any, /* value */ js.UndefOr[T], scala.Unit], 
     /* options */ bluebirdLib.bluebirdMod.BluebirdNs.SpreadOption, 
     this.type
-  ]) | (js.Function1[/* repeated */js.Any, this.type]) = js.native
+  ]) | (js.Function1[/* repeated */ js.Any, this.type]) = js.native
   var props: (js.ThisFunction0[
     /* this */ js.Thenable[stdLib.Map[_, bluebirdLib.Resolvable[_]]], 
     bluebirdLib.bluebirdMod.Bluebird[stdLib.Map[_, _]]
@@ -615,7 +611,7 @@ trait Promise[T] extends js.Object {
     bluebirdLib.bluebirdMod.Bluebird[bluebirdLib.IterableOrNever[T]]
   ] = js.native
   var spread: js.Function1[
-    /* fulfilledHandler */ js.Function1[/* repeated */bluebirdLib.IterableItem[T], bluebirdLib.Resolvable[_]], 
+    /* fulfilledHandler */ js.Function1[/* repeated */ bluebirdLib.IterableItem[T], bluebirdLib.Resolvable[_]], 
     bluebirdLib.bluebirdMod.Bluebird[_]
   ] = js.native
   var suppressUnhandledRejections: js.Function0[scala.Unit] = js.native
@@ -849,10 +845,10 @@ trait Promise[T] extends js.Object {
   var toString_FPromise: js.Function0[java.lang.String] = js.native
   var value: js.Function0[T] = js.native
   /*
-           * TypeScript disallows adding overrides via `catch: typeof Bluebird.prototype.catch`. Copy&paste them then.
-           *
-           * @todo Duplication of code is never ideal. See whether there's a better way of achieving this.
-           */
+    * TypeScript disallows adding overrides via `catch: typeof Bluebird.prototype.catch`. Copy&paste them then.
+    *
+    * @todo Duplication of code is never ideal. See whether there's a better way of achieving this.
+    */
   def `catch`(
     predicate: js.Function1[/* error */ js.Any, scala.Boolean],
     onReject: js.Function1[/* error */ js.Any, T | js.Thenable[T] | scala.Unit | js.Thenable[scala.Unit]]
@@ -880,71 +876,32 @@ trait Promise[T] extends js.Object {
   @JSName("catch")
   def catch_U[U](predicate: js.Object, onReject: js.Function1[/* error */ js.Any, U | js.Thenable[U]]): bluebirdLib.bluebirdMod.namespaced[U | T] = js.native
   /*
-           * See comments above `then` for the reason why this is needed. Taken from es2018.promise.d.ts.
-           *
-           * #std-lib-copy&paste-to-remove
-           *
-           * @todo See the comment near the top of the file about code marked with #std-lib-copy&paste-to-remove
-           */
+    * See comments above `then` for the reason why this is needed. Taken from es2018.promise.d.ts.
+    *
+    * #std-lib-copy&paste-to-remove
+    *
+    * @todo See the comment near the top of the file about code marked with #std-lib-copy&paste-to-remove
+    */
   def `finally`(): Promise[T] = js.native
-  /*
-           * See comments above `then` for the reason why this is needed. Taken from es2018.promise.d.ts.
-           *
-           * #std-lib-copy&paste-to-remove
-           *
-           * @todo See the comment near the top of the file about code marked with #std-lib-copy&paste-to-remove
-           */
   def `finally`(onfinally: js.Function0[scala.Unit]): Promise[T] = js.native
   /*
-           * Copy&paste ::then and ::catch from lib.es5.promise.d.ts, because Bluebird's typings are not
-           * in line with the standard lib.
-           *
-           * #std-lib-copy&paste-to-remove
-           *
-           * @todo See the comment near the top of the file about code marked with #std-lib-copy&paste-to-remove
-           */
+    * Copy&paste ::then and ::catch from lib.es5.promise.d.ts, because Bluebird's typings are not
+    * in line with the standard lib.
+    *
+    * #std-lib-copy&paste-to-remove
+    *
+    * @todo See the comment near the top of the file about code marked with #std-lib-copy&paste-to-remove
+    */
   def `then`[TResult1, TResult2](): Promise[TResult1 | TResult2] = js.native
-  /*
-           * Copy&paste ::then and ::catch from lib.es5.promise.d.ts, because Bluebird's typings are not
-           * in line with the standard lib.
-           *
-           * #std-lib-copy&paste-to-remove
-           *
-           * @todo See the comment near the top of the file about code marked with #std-lib-copy&paste-to-remove
-           */
   def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): Promise[TResult1 | TResult2] = js.native
-  /*
-           * Copy&paste ::then and ::catch from lib.es5.promise.d.ts, because Bluebird's typings are not
-           * in line with the standard lib.
-           *
-           * #std-lib-copy&paste-to-remove
-           *
-           * @todo See the comment near the top of the file about code marked with #std-lib-copy&paste-to-remove
-           */
   def `then`[TResult1, TResult2](
     onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
     onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
   ): Promise[TResult1 | TResult2] = js.native
-  /*
-           * Copy&paste ::then and ::catch from lib.es5.promise.d.ts, because Bluebird's typings are not
-           * in line with the standard lib.
-           *
-           * #std-lib-copy&paste-to-remove
-           *
-           * @todo See the comment near the top of the file about code marked with #std-lib-copy&paste-to-remove
-           */
   def `then`[TResult1, TResult2](
     onfulfilled: js.UndefOr[scala.Nothing],
     onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
   ): Promise[TResult1 | TResult2] = js.native
-  /*
-           * Copy&paste ::then and ::catch from lib.es5.promise.d.ts, because Bluebird's typings are not
-           * in line with the standard lib.
-           *
-           * #std-lib-copy&paste-to-remove
-           *
-           * @todo See the comment near the top of the file about code marked with #std-lib-copy&paste-to-remove
-           */
   def `then`[TResult1, TResult2](
     onfulfilled: scala.Null,
     onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]

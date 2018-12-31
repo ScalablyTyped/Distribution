@@ -7,51 +7,37 @@ import scala.scalajs.js.annotation._
 
 @JSImport("azure", "TableService")
 @js.native
+//#region Constructors
+/**
+  * Creates a new TableService object.
+  * Uses the AZURE_STORAGE_ACCOUNT and AZURE_STORAGE_ACCESS_KEY environment variables.
+  *
+  * @constructor
+  * @extends {ServiceClient}
+  */
 class TableService () extends BatchServiceClient {
   /**
-      * Creates a new TableService object.
-      * Uses a connectionString to connect
-      *
-      * @constructor
-      * @extends {ServiceClient}
-      * @param {string} connectionString The connection string.
-      */
+    * Creates a new TableService object.
+    * Uses a connectionString to connect
+    *
+    * @constructor
+    * @extends {ServiceClient}
+    * @param {string} connectionString The connection string.
+    */
   def this(connectionString: java.lang.String) = this()
   /**
-      * Creates a new TableService object.
-      * Uses a storage account and an access key.
-      *
-      * @constructor
-      * @extends {ServiceClient}
-      * @param {string} storageAccount                    The storage account or the connection string.
-      * @param {string} storageAccessKey                  The storage access key.
-      * @param {string} host                              The host address.
-      * @param {object} authenticationProvider            The authentication provider.
-      */
+    * Creates a new TableService object.
+    * Uses a storage account and an access key.
+    *
+    * @constructor
+    * @extends {ServiceClient}
+    * @param {string} storageAccount                    The storage account or the connection string.
+    * @param {string} storageAccessKey                  The storage access key.
+    * @param {string} host                              The host address.
+    * @param {object} authenticationProvider            The authentication provider.
+    */
   def this(storageAccount: java.lang.String, storageAccessKey: java.lang.String) = this()
-  /**
-      * Creates a new TableService object.
-      * Uses a storage account and an access key.
-      *
-      * @constructor
-      * @extends {ServiceClient}
-      * @param {string} storageAccount                    The storage account or the connection string.
-      * @param {string} storageAccessKey                  The storage access key.
-      * @param {string} host                              The host address.
-      * @param {object} authenticationProvider            The authentication provider.
-      */
   def this(storageAccount: java.lang.String, storageAccessKey: java.lang.String, host: java.lang.String) = this()
-  /**
-      * Creates a new TableService object.
-      * Uses a storage account and an access key.
-      *
-      * @constructor
-      * @extends {ServiceClient}
-      * @param {string} storageAccount                    The storage account or the connection string.
-      * @param {string} storageAccessKey                  The storage access key.
-      * @param {string} host                              The host address.
-      * @param {object} authenticationProvider            The authentication provider.
-      */
   def this(storageAccount: java.lang.String, storageAccessKey: java.lang.String, host: java.lang.String, authenticationProvider: java.lang.String) = this()
   def createTable(table: java.lang.String): scala.Unit = js.native
   def createTable(table: java.lang.String, callback: TableRequestCallback): scala.Unit = js.native
@@ -81,8 +67,6 @@ class TableService () extends BatchServiceClient {
   //#endregion
   //#region Table Methods
   def getTable(table: java.lang.String): scala.Unit = js.native
-  //#endregion
-  //#region Table Methods
   def getTable(table: java.lang.String, callback: TableRequestCallback): scala.Unit = js.native
   def getTable(table: java.lang.String, options: TimeoutIntervalOptions): scala.Unit = js.native
   def getTable(table: java.lang.String, options: TimeoutIntervalOptions, callback: TableRequestCallback): scala.Unit = js.native
@@ -129,8 +113,6 @@ class TableService () extends BatchServiceClient {
   //#endregion
   //#region Entities Methods
   def queryEntity(table: java.lang.String, partitionKey: java.lang.String, rowKey: java.lang.String): scala.Unit = js.native
-  //#endregion
-  //#region Entities Methods
   def queryEntity(
     table: java.lang.String,
     partitionKey: java.lang.String,

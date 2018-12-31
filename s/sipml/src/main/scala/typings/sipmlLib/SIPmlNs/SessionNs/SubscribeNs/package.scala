@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 package object SubscribeNs {
   /**
-           * Should be
-           *
-           * Session.EventSubscriptionType | "i_notify"
-           */
+    * Should be
+    *
+    * Session.EventSubscriptionType | "i_notify"
+    */
   type EventSubscriptionType = sipmlLib.SIPmlNs.SessionNs.EventSubscriptionType
 }

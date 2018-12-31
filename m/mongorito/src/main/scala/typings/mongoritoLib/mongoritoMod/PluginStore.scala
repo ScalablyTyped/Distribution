@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PluginStore extends js.Object {
   var model: js.UndefOr[Model] = js.undefined
   var modelClass: ModelClass

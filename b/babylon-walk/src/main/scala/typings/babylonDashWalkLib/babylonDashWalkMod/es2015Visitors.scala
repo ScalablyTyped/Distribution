@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait es2015Visitors[V] extends js.Object {
   var ArrayPattern: js.UndefOr[V] = js.undefined
   var ArrowFunctionExpression: js.UndefOr[V] = js.undefined

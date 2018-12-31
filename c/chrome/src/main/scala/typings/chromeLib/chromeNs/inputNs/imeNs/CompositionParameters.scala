@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompositionParameters extends js.Object {
   /** ID of the context where the composition text will be set */
   var contextID: scala.Double

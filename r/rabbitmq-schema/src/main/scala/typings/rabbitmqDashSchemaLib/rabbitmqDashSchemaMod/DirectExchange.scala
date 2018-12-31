@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DirectExchange extends Exchange {
   @JSName("bindings")
   var bindings_DirectExchange: js.Array[DirectBinding]

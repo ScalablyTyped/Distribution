@@ -9,37 +9,37 @@ import scala.scalajs.js.annotation._
 sealed trait OverlayHorizontalAlignment extends js.Object
 
 /**
-     *
-     * Represents the Horizontal Alignment of the Overlay relative to the shape.
-     *
-     * [Api set:  1.1]
-     */
+  *
+  * Represents the Horizontal Alignment of the Overlay relative to the shape.
+  *
+  * [Api set:  1.1]
+  */
 @JSGlobal("Visio.OverlayHorizontalAlignment")
 @js.native
 object OverlayHorizontalAlignment extends js.Object {
   /**
-           *
-           * center
-           *
-           */
+    *
+    * center
+    *
+    */
   @js.native
   sealed trait center
     extends officeDashJsLib.VisioNs.OverlayHorizontalAlignment
   
   /**
-           *
-           * left
-           *
-           */
+    *
+    * left
+    *
+    */
   @js.native
   sealed trait left
     extends officeDashJsLib.VisioNs.OverlayHorizontalAlignment
   
   /**
-           *
-           * right
-           *
-           */
+    *
+    * right
+    *
+    */
   @js.native
   sealed trait right
     extends officeDashJsLib.VisioNs.OverlayHorizontalAlignment

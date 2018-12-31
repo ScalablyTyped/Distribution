@@ -11,7 +11,7 @@ object cwiseDashCompilerModMembers extends js.Object {
   def apply(user_args: cwiseDashCompilerLib.cwiseDashCompilerMod.cwiseUnderscoreCompilerNs.UserArgs): js.Function3[
     /* a */ ndarrayLib.ndarrayMod.ndarray[scala.Double], 
     /* b */ ndarrayLib.ndarrayMod.ndarray[scala.Double], 
-    /* repeated */ndarrayLib.ndarrayMod.ndarray[scala.Double], 
+    /* repeated */ ndarrayLib.ndarrayMod.ndarray[scala.Double], 
     ndarrayLib.ndarrayMod.ndarray[scala.Double]
   ] = js.native
 }

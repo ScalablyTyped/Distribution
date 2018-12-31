@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when new participant joined the chat room
 		*/
-
 trait ChatRoomNewParticipant extends js.Object {
   /**
   			* User display name

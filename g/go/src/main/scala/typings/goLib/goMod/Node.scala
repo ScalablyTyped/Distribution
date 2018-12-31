@@ -6,28 +6,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * A Node is a Part that may connect to other nodes with Links,
-    * or that may be a member of a Group.
-    * Group inherits from Node,
-    * enabling nodes to logically contain other nodes and links.
-    */
+  * A Node is a Part that may connect to other nodes with Links,
+  * or that may be a member of a Group.
+  * Group inherits from Node,
+  * enabling nodes to logically contain other nodes and links.
+  */
 @JSImport("go", "Node")
 @js.native
+/**
+  * Constructs an empty Node.
+  * @param {EnumValue=} type if not supplied, the default Panel type is Panel.Position.
+  */
 class Node ()
   extends goLib.goMod.goNs.Node {
-  /**
-          * Constructs an empty Node.
-          * @param {EnumValue=} type if not supplied, the default Panel type is Panel.Position.
-          */
   def this(`type`: goLib.goMod.goNs.EnumValue) = this()
 }
 
 /**
-    * A Node is a Part that may connect to other nodes with Links,
-    * or that may be a member of a Group.
-    * Group inherits from Node,
-    * enabling nodes to logically contain other nodes and links.
-    */
+  * A Node is a Part that may connect to other nodes with Links,
+  * or that may be a member of a Group.
+  * Group inherits from Node,
+  * enabling nodes to logically contain other nodes and links.
+  */
 @JSImport("go", "Node")
 @js.native
 object Node extends js.Object {

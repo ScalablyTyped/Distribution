@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Meta data about the running user script.
- * @see {@link http://wiki.greasespot.net/GM_info}
- */
+  * Meta data about the running user script.
+  * @see {@link http://wiki.greasespot.net/GM_info}
+  */
 @JSGlobal("GM_info")
 @js.native
 object GM_info extends js.Object {

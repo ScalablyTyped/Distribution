@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TcpipRequestInfo extends js.Object {
   /** Destination IP address of outgoing connection. */
   var destIP: java.lang.String

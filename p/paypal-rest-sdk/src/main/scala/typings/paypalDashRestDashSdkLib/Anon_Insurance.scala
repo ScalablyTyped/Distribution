@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Insurance extends js.Object {
   var gift_wrap: js.UndefOr[java.lang.String] = js.undefined
   var handling_fee: js.UndefOr[java.lang.String] = js.undefined

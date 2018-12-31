@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OfferRecord extends Record {
   var amount: java.lang.String
   var buying: Asset

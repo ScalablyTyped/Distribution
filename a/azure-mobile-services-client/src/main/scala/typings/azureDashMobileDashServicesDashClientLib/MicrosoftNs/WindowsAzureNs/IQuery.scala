@@ -17,7 +17,7 @@ trait IQuery extends js.Object {
   def select(propNameSelected: java.lang.String*): IQuery = js.native
   def skip(n: scala.Double): IQuery = js.native
   def take(n: scala.Double): IQuery = js.native
-  def where(funcPredicateOnThis: js.Function1[/* repeated */js.Any, scala.Boolean], qValues: js.Any*): IQuery = js.native
+  def where(funcPredicateOnThis: js.Function1[/* repeated */ js.Any, scala.Boolean], qValues: js.Any*): IQuery = js.native
   def where(mapObjFilterCriteria: js.Any): IQuery = js.native
 }
 

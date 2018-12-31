@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPageSize extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -27,10 +26,10 @@ trait Anon_AccesstokenPageSize extends js.Object {
   /** The maximum number of resources to return. */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * The next_page_token value returned from a previous call to
-                   * [ListContactGroups](/people/api/rest/v1/contactgroups/list).
-                   * Requests the next page of resources.
-                   */
+    * The next_page_token value returned from a previous call to
+    * [ListContactGroups](/people/api/rest/v1/contactgroups/list).
+    * Requests the next page of resources.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined
@@ -39,9 +38,9 @@ trait Anon_AccesstokenPageSize extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * A sync token, returned by a previous call to `contactgroups.list`.
-                   * Only resources changed since the sync token was created will be returned.
-                   */
+    * A sync token, returned by a previous call to `contactgroups.list`.
+    * Only resources changed since the sync token was created will be returned.
+    */
   var syncToken: js.UndefOr[java.lang.String] = js.undefined
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

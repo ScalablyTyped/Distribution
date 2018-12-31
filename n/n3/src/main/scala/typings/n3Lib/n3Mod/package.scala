@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object n3Mod {
   type ErrorCallback = js.Function2[/* err */ nodeLib.Error, /* result */ js.Any, scala.Unit]
-  type Logger = js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */js.Any, scala.Unit]
+  type Logger = js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, scala.Unit]
   type OTerm = rdfDashJsLib.rdfDashJsMod.Term | java.lang.String | scala.Null
   type ParseCallback[Q /* <: BaseQuad */] = js.Function3[
     /* error */ nodeLib.Error, 

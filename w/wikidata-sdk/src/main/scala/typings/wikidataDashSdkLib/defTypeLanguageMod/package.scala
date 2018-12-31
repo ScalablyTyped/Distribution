@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object defTypeLanguageMod {
-  type WikidataLanguage = /* LimitUnionLength: was union type with length 448 */java.lang.String
+  type WikidataLanguage = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 448 */ java.lang.String
 }

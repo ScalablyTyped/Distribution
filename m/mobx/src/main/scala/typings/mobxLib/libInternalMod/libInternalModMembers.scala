@@ -19,8 +19,14 @@ object libInternalModMembers extends js.Object {
   val deepDecorator: mobxLib.libApiObservabledecoratorMod.IObservableDecorator = js.native
   val defaultCreateObservableOptions: mobxLib.libApiObservableMod.CreateObservableOptions = js.native
   var globalState: mobxLib.libCoreGlobalstateMod.MobXGlobals = js.native
-  var isObservableMap: js.Function1[/* thing */ js.Any, /* is ObservableMap */scala.Boolean] = js.native
-  var isObservableValue: js.Function1[/* x */ js.Any, /* is IObservableValue */scala.Boolean] = js.native
+  var isObservableMap: js.Function1[
+    /* thing */ js.Any, 
+    /* is mobx.mobx/lib/types/observablemap.ObservableMap<any, any> */ scala.Boolean
+  ] = js.native
+  var isObservableValue: js.Function1[
+    /* x */ js.Any, 
+    /* is mobx.mobx/lib/types/observablevalue.IObservableValue<any> */ scala.Boolean
+  ] = js.native
   val mobxDidRunLazyInitializersSymbol: js.Symbol = js.native
   val mobxPendingDecorators: js.Symbol = js.native
   val observable: mobxLib.libApiObservableMod.IObservableFactory with mobxLib.libApiObservableMod.IObservableFactories with mobxLib.Anon_Enhancer = js.native
@@ -67,7 +73,7 @@ object libInternalModMembers extends js.Object {
   def createInstanceofPredicate[T](
     name: java.lang.String,
     clazz: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]
-  ): js.Function1[/* x */ js.Any, /* is T */scala.Boolean] = js.native
+  ): js.Function1[/* x */ js.Any, /* is T */ scala.Boolean] = js.native
   def createObservableArray[T](initialValues: js.Array[_], enhancer: mobxLib.libTypesModifiersMod.IEnhancer[T]): mobxLib.libTypesObservablearrayMod.IObservableArray[T] = js.native
   def createObservableArray[T](
     initialValues: js.Array[_],
@@ -211,21 +217,21 @@ object libInternalModMembers extends js.Object {
   def invariant(check: mobxLib.mobxLibNumbers.`true`, message: scala.Boolean): scala.Unit = js.native
   def isAction(thing: js.Any): scala.Boolean = js.native
   def isArrayLike(x: js.Any): scala.Boolean = js.native
-  def isAtom(x: js.Any): /* is Atom */scala.Boolean = js.native
-  def isCaughtException(e: js.Any): /* is CaughtException */scala.Boolean = js.native
+  def isAtom(x: js.Any): /* is mobx.mobx/lib/core/atom.Atom */ scala.Boolean = js.native
+  def isCaughtException(e: js.Any): /* is mobx.mobx/lib/core/derivation.CaughtException */ scala.Boolean = js.native
   def isComputed(value: js.Any): scala.Boolean = js.native
   def isComputedProp(value: js.Any, propName: java.lang.String): scala.Boolean = js.native
-  def isComputedValue(x: js.Any): /* is ComputedValue */scala.Boolean = js.native
+  def isComputedValue(x: js.Any): /* is mobx.mobx/lib/core/computedvalue.ComputedValue<{}> */ scala.Boolean = js.native
   def isComputingDerivation(): scala.Boolean = js.native
   def isES6Map(thing: js.Any): scala.Boolean = js.native
   def isObject(value: js.Any): scala.Boolean = js.native
   def isObservable(value: js.Any): scala.Boolean = js.native
-  def isObservableArray(thing: js.Any): /* is IObservableArray */scala.Boolean = js.native
-  def isObservableObject(thing: js.Any): /* is IObservableObject */scala.Boolean = js.native
+  def isObservableArray(thing: js.Any): /* is mobx.mobx/lib/types/observablearray.IObservableArray<any> */ scala.Boolean = js.native
+  def isObservableObject(thing: js.Any): /* is mobx.mobx/lib/types/observableobject.IObservableObject */ scala.Boolean = js.native
   def isObservableProp(value: js.Any, propName: java.lang.String): scala.Boolean = js.native
   def isPlainObject(value: js.Any): scala.Boolean = js.native
   def isPropertyConfigurable(`object`: js.Any, prop: stdLib.PropertyKey): scala.Boolean = js.native
-  def isReaction(x: js.Any): /* is Reaction */scala.Boolean = js.native
+  def isReaction(x: js.Any): /* is mobx.mobx/lib/core/reaction.Reaction */ scala.Boolean = js.native
   def isSpyEnabled(): scala.Boolean = js.native
   def isolateGlobalState(): scala.Unit = js.native
   def keys[T](ar: mobxLib.libTypesObservablearrayMod.IObservableArray[T]): js.Array[scala.Double] = js.native
@@ -287,9 +293,7 @@ object libInternalModMembers extends js.Object {
     `object`: T,
     property: K,
     listener: js.Function1[
-      /* change */ mobxLib.libTypesObservablevalueMod.IValueDidChange[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-      ], 
+      /* change */ mobxLib.libTypesObservablevalueMod.IValueDidChange[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any], 
       scala.Unit
     ]
   ): mobxLib.libUtilsUtilsMod.Lambda = js.native
@@ -297,9 +301,7 @@ object libInternalModMembers extends js.Object {
     `object`: T,
     property: K,
     listener: js.Function1[
-      /* change */ mobxLib.libTypesObservablevalueMod.IValueDidChange[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-      ], 
+      /* change */ mobxLib.libTypesObservablevalueMod.IValueDidChange[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any], 
       scala.Unit
     ],
     fireImmediately: scala.Boolean

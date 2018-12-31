@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Linear extends js.Object {
   /** Must be greater than 0. */
   var numFiniteBuckets: js.UndefOr[scala.Double] = js.undefined

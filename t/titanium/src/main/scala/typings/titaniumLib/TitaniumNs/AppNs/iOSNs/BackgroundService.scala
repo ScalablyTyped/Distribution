@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 			 * A service that runs when the application is placed in the background.
 			 */
-
 trait BackgroundService
   extends titaniumLib.TitaniumNs.Proxy {
   /**

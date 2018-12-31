@@ -22,9 +22,9 @@ trait Static
   var version: java.lang.String = js.native
   def debug(namespace: java.lang.String): debugLib.debugMod.debugNs.IDebugger = js.native
   /**
-           * The returned object is a constructor function that works the same as PouchDB,
-           * except that whenever you invoke it (e.g. with new), the given options will be passed in by default.
-           */
+    * The returned object is a constructor function that works the same as PouchDB,
+    * except that whenever you invoke it (e.g. with new), the given options will be passed in by default.
+    */
   def defaults(options: pouchdbDashCoreLib.PouchDBNs.ConfigurationNs.DatabaseConfiguration): pouchdbDashCoreLib.Anon_Name = js.native
   def fetch(url: java.lang.String): js.Promise[stdLib.Response] = js.native
   def fetch(url: java.lang.String, opts: stdLib.RequestInit): js.Promise[stdLib.Response] = js.native

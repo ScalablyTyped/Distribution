@@ -14,7 +14,7 @@ trait BetterQueue[T, K]
   def getStats(): betterDashQueueLib.betterDashQueueMod.BetterQueueNs.QueueStats = js.native
   def on(
     event: betterDashQueueLib.betterDashQueueMod.BetterQueueNs.QueueEvent,
-    listener: js.Function1[/* repeated */js.Any, scala.Unit]
+    listener: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_task_failed(

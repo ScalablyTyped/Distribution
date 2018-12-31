@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestBodyDefinition extends PropertyBaseDefinition {
   var file: js.UndefOr[java.lang.String | postmanDashCollectionLib.Anon_Src] = js.undefined
   var formdata: js.UndefOr[js.Array[FormParamDefinition] | PropertyList[FormParam]] = js.undefined

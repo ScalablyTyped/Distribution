@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AadOauthTokenRequest extends js.Object {
   var refresh: scala.Boolean
   var resource: java.lang.String

@@ -16,143 +16,85 @@ class DropDownTree protected () extends Widget {
   @JSName("model")
   var model_DropDownTree: ejDotWebDotAllLib.ejNs.DropDownTreeNs.Model = js.native
   /** Checks all the nodes in the DropDownTree.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def checkAll(): scala.Unit = js.native
   /** Checks a node in the DropDownTree.
-           * @param {string|any|any[]}  ID of the DropDownTree node/object of the DropDownTree node/collection of the ID/object of the DropDownTree nodes.
-           * @returns {void}
-           */
+    * @param {string|any|any[]}  ID of the DropDownTree node/object of the DropDownTree node/collection of the ID/object of the DropDownTree nodes.
+    * @returns {void}
+    */
   def checkNode(element: java.lang.String): scala.Unit = js.native
-  /** Checks a node in the DropDownTree.
-           * @param {string|any|any[]}  ID of the DropDownTree node/object of the DropDownTree node/collection of the ID/object of the DropDownTree nodes.
-           * @returns {void}
-           */
   def checkNode(element: js.Any): scala.Unit = js.native
-  /** Checks a node in the DropDownTree.
-           * @param {string|any|any[]}  ID of the DropDownTree node/object of the DropDownTree node/collection of the ID/object of the DropDownTree nodes.
-           * @returns {void}
-           */
   def checkNode(element: js.Array[_]): scala.Unit = js.native
   /** Clears the text in the DropDownTree.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def clearText(): scala.Unit = js.native
   /** Returns the selected value.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def getValue(): scala.Unit = js.native
   /** Hides the popup in the DropDownTree.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def hidePopup(): scala.Unit = js.native
   /** Moves the DropDownTree node within the same DropDownTree. The new position of the given DropDownTree node will be based on destination node and index position.
-           * @param {string|any} ID of the DropDownTree node/object of the DropDownTree node.
-           * @param {string|any} ID of the DropDownTree node/object of the DropDownTree node.
-           * @param {number} New index position of the given source node.
-           * @returns {void}
-           */
+    * @param {string|any} ID of the DropDownTree node/object of the DropDownTree node.
+    * @param {string|any} ID of the DropDownTree node/object of the DropDownTree node.
+    * @param {number} New index position of the given source node.
+    * @returns {void}
+    */
   def moveNode(sourceNode: java.lang.String, destinationNode: java.lang.String, index: scala.Double): scala.Unit = js.native
-  /** Moves the DropDownTree node within the same DropDownTree. The new position of the given DropDownTree node will be based on destination node and index position.
-           * @param {string|any} ID of the DropDownTree node/object of the DropDownTree node.
-           * @param {string|any} ID of the DropDownTree node/object of the DropDownTree node.
-           * @param {number} New index position of the given source node.
-           * @returns {void}
-           */
   def moveNode(sourceNode: java.lang.String, destinationNode: js.Any, index: scala.Double): scala.Unit = js.native
-  /** Moves the DropDownTree node within the same DropDownTree. The new position of the given DropDownTree node will be based on destination node and index position.
-           * @param {string|any} ID of the DropDownTree node/object of the DropDownTree node.
-           * @param {string|any} ID of the DropDownTree node/object of the DropDownTree node.
-           * @param {number} New index position of the given source node.
-           * @returns {void}
-           */
   def moveNode(sourceNode: js.Any, destinationNode: java.lang.String, index: scala.Double): scala.Unit = js.native
-  /** Moves the DropDownTree node within the same DropDownTree. The new position of the given DropDownTree node will be based on destination node and index position.
-           * @param {string|any} ID of the DropDownTree node/object of the DropDownTree node.
-           * @param {string|any} ID of the DropDownTree node/object of the DropDownTree node.
-           * @param {number} New index position of the given source node.
-           * @returns {void}
-           */
   def moveNode(sourceNode: js.Any, destinationNode: js.Any, index: scala.Double): scala.Unit = js.native
   /** Removes all the nodes in the DropDownTree.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def removeAll(): scala.Unit = js.native
   /** Removes a node in the DropDownTree.
-           * @param {string|any|any[]}  ID of the DropDownTree node/object of the DropDownTree node/collectionof the ID/object of the DropDownTree nodes.
-           * @returns {void}
-           */
+    * @param {string|any|any[]}  ID of the DropDownTree node/object of the DropDownTree node/collectionof the ID/object of the DropDownTree nodes.
+    * @returns {void}
+    */
   def removeNode(element: java.lang.String): scala.Unit = js.native
-  /** Removes a node in the DropDownTree.
-           * @param {string|any|any[]}  ID of the DropDownTree node/object of the DropDownTree node/collectionof the ID/object of the DropDownTree nodes.
-           * @returns {void}
-           */
   def removeNode(element: js.Any): scala.Unit = js.native
-  /** Removes a node in the DropDownTree.
-           * @param {string|any|any[]}  ID of the DropDownTree node/object of the DropDownTree node/collectionof the ID/object of the DropDownTree nodes.
-           * @returns {void}
-           */
   def removeNode(element: js.Array[_]): scala.Unit = js.native
   /** Selects all the DropDownTree nodes when allowMultiSelection field is enabled in the treeViewSettings property.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def selectAll(): scala.Unit = js.native
   /** Selects a node in the DropDownTree control. To select the collection of nodes in the DropDownTree control, enable allowMultiSelection field of the treeViewSettings property.
-           * @param {string|any|any[]}  ID of the DropDownTree node/object of the DropDownTree node/ collection of I the D/object of the DropDownTree nodes.
-           * @returns {void}
-           */
+    * @param {string|any|any[]}  ID of the DropDownTree node/object of the DropDownTree node/ collection of I the D/object of the DropDownTree nodes.
+    * @returns {void}
+    */
   def selectNode(element: java.lang.String): scala.Unit = js.native
-  /** Selects a node in the DropDownTree control. To select the collection of nodes in the DropDownTree control, enable allowMultiSelection field of the treeViewSettings property.
-           * @param {string|any|any[]}  ID of the DropDownTree node/object of the DropDownTree node/ collection of I the D/object of the DropDownTree nodes.
-           * @returns {void}
-           */
   def selectNode(element: js.Any): scala.Unit = js.native
-  /** Selects a node in the DropDownTree control. To select the collection of nodes in the DropDownTree control, enable allowMultiSelection field of the treeViewSettings property.
-           * @param {string|any|any[]}  ID of the DropDownTree node/object of the DropDownTree node/ collection of I the D/object of the DropDownTree nodes.
-           * @returns {void}
-           */
   def selectNode(element: js.Array[_]): scala.Unit = js.native
   /** Shows the DropDownTree control with the popup.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def showPopup(): scala.Unit = js.native
   /** Unchecks all the nodes in the DropDownTree.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def unCheckAll(): scala.Unit = js.native
   /** Unchecks a node in the DropDownTree.
-           * @param {string|any|any[]} ID of the DropDownTree node/object of the DropDownTree node/collection of the ID/object of the DropDownTree nodes.
-           * @returns {void}
-           */
+    * @param {string|any|any[]} ID of the DropDownTree node/object of the DropDownTree node/collection of the ID/object of the DropDownTree nodes.
+    * @returns {void}
+    */
   def unCheckNode(element: java.lang.String): scala.Unit = js.native
-  /** Unchecks a node in the DropDownTree.
-           * @param {string|any|any[]} ID of the DropDownTree node/object of the DropDownTree node/collection of the ID/object of the DropDownTree nodes.
-           * @returns {void}
-           */
   def unCheckNode(element: js.Any): scala.Unit = js.native
-  /** Unchecks a node in the DropDownTree.
-           * @param {string|any|any[]} ID of the DropDownTree node/object of the DropDownTree node/collection of the ID/object of the DropDownTree nodes.
-           * @returns {void}
-           */
   def unCheckNode(element: js.Array[_]): scala.Unit = js.native
   /** Unselects all the DropDownTree nodes when allowMultiSelection field of the treeViewSettings property is enabled.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def unselectAll(): scala.Unit = js.native
   /** Unselects a node in the DropDownTree control. To unselect the collection of nodes in the DropDownTree control, enable allowMultiSelection field of the treeViewSettings property.
-           * @param {string|any|any[]}  ID of the DropDownTree node/object of the DropDownTree node/ collection of the ID/object of the DropDownTree nodes.
-           * @returns {void}
-           */
+    * @param {string|any|any[]}  ID of the DropDownTree node/object of the DropDownTree node/ collection of the ID/object of the DropDownTree nodes.
+    * @returns {void}
+    */
   def unselectNode(element: java.lang.String): scala.Unit = js.native
-  /** Unselects a node in the DropDownTree control. To unselect the collection of nodes in the DropDownTree control, enable allowMultiSelection field of the treeViewSettings property.
-           * @param {string|any|any[]}  ID of the DropDownTree node/object of the DropDownTree node/ collection of the ID/object of the DropDownTree nodes.
-           * @returns {void}
-           */
   def unselectNode(element: js.Any): scala.Unit = js.native
-  /** Unselects a node in the DropDownTree control. To unselect the collection of nodes in the DropDownTree control, enable allowMultiSelection field of the treeViewSettings property.
-           * @param {string|any|any[]}  ID of the DropDownTree node/object of the DropDownTree node/ collection of the ID/object of the DropDownTree nodes.
-           * @returns {void}
-           */
   def unselectNode(element: js.Array[_]): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModalDialogGroupingColumnEventUIParam extends js.Object {
   /**
   	 * The key of the column to be grouped.

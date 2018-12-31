@@ -29,11 +29,11 @@ abstract class PerceptionControlSession () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[PerceptionControlSession, _]
   ): scala.Unit = js.native
   /**
-                   * Creates a property change request. This request is asynchronously processed, and is not guaranteed to succeed. The property change result should be inspected to determine if the property change was actually accepted and, if it was not, the reason why the property change was not accepted.
-                   * @param name The name of the property to change.
-                   * @param value The new property value.
-                   * @return This method asynchronously returns the result of the property change request.
-                   */
+    * Creates a property change request. This request is asynchronously processed, and is not guaranteed to succeed. The property change result should be inspected to determine if the property change was actually accepted and, if it was not, the reason why the property change was not accepted.
+    * @param name The name of the property to change.
+    * @param value The new property value.
+    * @return This method asynchronously returns the result of the property change request.
+    */
   def trySetPropertyAsync(name: java.lang.String, value: js.Any): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[PerceptionFrameSourcePropertyChangeResult] = js.native
 }
 

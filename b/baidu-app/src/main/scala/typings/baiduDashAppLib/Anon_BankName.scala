@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BankName extends js.Object {
    // 银行名称
   var bankAccount: java.lang.String
@@ -23,7 +22,6 @@ trait Anon_BankName extends js.Object {
   var title: java.lang.String
   var `type`: java.lang.String
 }
-
 
 trait Anon_Bankname extends js.Object {
   // 返回结果

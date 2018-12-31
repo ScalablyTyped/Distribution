@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Ct extends js.Object {
   var alert: nodeDashHueDashApiLib.nodeDashHueDashApiMod.LightAlert
   var bri: scala.Double

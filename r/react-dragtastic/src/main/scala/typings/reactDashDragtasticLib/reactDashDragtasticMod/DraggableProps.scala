@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DraggableProps extends js.Object {
   /** Data of any type which will be passed to the onDrop function of any <Droppable/> which accepts this <Draggable/>'s type. */
   var data: js.UndefOr[js.Any] = js.undefined
@@ -20,9 +19,9 @@ trait DraggableProps extends js.Object {
   /** A function which will be called when the <Draggable/> zone is activated (The user started dragging). */
   var onDragStart: js.UndefOr[js.Function1[/* data */ js.Any, scala.Unit]] = js.undefined
   /**
-       * An optional array of strings. For performance reasons you can limit which keys in the dragState your component subscribes to.
-       * For example, you may pass ['type', 'data'] to only rerender if these keys change.
-       */
+    * An optional array of strings. For performance reasons you can limit which keys in the dragState your component subscribes to.
+    * For example, you may pass ['type', 'data'] to only rerender if these keys change.
+    */
   var subscribeTo: js.UndefOr[js.Array[java.lang.String] | scala.Null] = js.undefined
   /** A string, or array of strings, used to limit which droppable zones will accept <DragComponent/>'s attached to this draggable. */
   var `type`: js.UndefOr[Type] = js.undefined

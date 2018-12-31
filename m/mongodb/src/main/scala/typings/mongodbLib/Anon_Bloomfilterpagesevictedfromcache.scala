@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Bloomfilterpagesevictedfromcache extends js.Object {
   var `bloom filter false positives`: scala.Double
   var `bloom filter hits`: scala.Double

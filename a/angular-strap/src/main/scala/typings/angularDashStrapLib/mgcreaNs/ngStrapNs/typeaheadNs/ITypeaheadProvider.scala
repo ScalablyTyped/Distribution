@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITypeaheadProvider extends js.Object {
   var defaults: ITypeaheadOptions
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OSSubscriptionState extends js.Object {
   var pushToken: js.Any
   var subscribed: scala.Boolean

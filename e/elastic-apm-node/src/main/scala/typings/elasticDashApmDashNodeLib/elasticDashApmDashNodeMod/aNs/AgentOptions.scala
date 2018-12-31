@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AgentOptions extends js.Object {
   var abortedErrorThreshold: js.UndefOr[scala.Double] = js.undefined
   var active: js.UndefOr[scala.Boolean] = js.undefined

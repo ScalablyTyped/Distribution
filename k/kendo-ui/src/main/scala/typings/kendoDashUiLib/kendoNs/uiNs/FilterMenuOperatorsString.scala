@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilterMenuOperatorsString extends js.Object {
   var contains: js.UndefOr[java.lang.String] = js.undefined
   var doesnotcontain: js.UndefOr[java.lang.String] = js.undefined

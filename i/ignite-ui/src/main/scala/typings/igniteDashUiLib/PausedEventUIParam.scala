@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PausedEventUIParam extends js.Object {
   /**
   	 * Get the current time in the video at which the event was fired.

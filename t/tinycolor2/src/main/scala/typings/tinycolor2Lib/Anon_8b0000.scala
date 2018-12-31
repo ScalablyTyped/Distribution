@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_8b0000 extends js.Object {
   var `000`: tinycolor2Lib.tinycolor2LibStrings.black
   var `000080`: tinycolor2Lib.tinycolor2LibStrings.navy

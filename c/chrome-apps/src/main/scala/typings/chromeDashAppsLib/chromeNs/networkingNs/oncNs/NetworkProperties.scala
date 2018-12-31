@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NetworkProperties[M /* <: ManagedObject */, IF /* <: InterfaceType */]
   extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.underscoreInternalUnderscoreNs.NetworkConfigBase[M, IF, chromeDashAppsLib.chromeDashAppsLibStrings.getter] {
   /** Whether the network is connectable. */
@@ -37,9 +36,9 @@ trait NetworkProperties[M /* <: ManagedObject */, IF /* <: InterfaceType */]
     ]
   ] = js.undefined
   /**
-               * For a connected network, whether the network connectivity to the Internet is limited,
-               * e.g. if the network is behind a portal, or a cellular network is not activated.
-               */
+    * For a connected network, whether the network connectivity to the Internet is limited,
+    * e.g. if the network is behind a portal, or a cellular network is not activated.
+    */
   var RestrictedConnectivity: js.UndefOr[scala.Boolean] = js.undefined
   /** IP configuration that was received from the DHCP server before applying static IP configuration. */
   var SavedIPConfig: js.UndefOr[
@@ -52,10 +51,10 @@ trait NetworkProperties[M /* <: ManagedObject */, IF /* <: InterfaceType */]
     ]
   ] = js.undefined
   /**
-               * Indicates whether and how the network is configured.
-               * 'None' conflicts with extension code generation,
-               * so we must use a string for 'Source' instead of a SourceType enum.
-               */
+    * Indicates whether and how the network is configured.
+    * 'None' conflicts with extension code generation,
+    * so we must use a string for 'Source' instead of a SourceType enum.
+    */
   var Source: js.UndefOr[
     chromeDashAppsLib.chromeDashAppsLibStrings.Device | chromeDashAppsLib.chromeDashAppsLibStrings.DevicePolicy | chromeDashAppsLib.chromeDashAppsLibStrings.User | chromeDashAppsLib.chromeDashAppsLibStrings.UserPolicy | chromeDashAppsLib.chromeDashAppsLibStrings.None
   ] = js.undefined

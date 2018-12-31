@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @class Initial
-     * @augments Bacon.Event
-     * @description The initial (current) value of a [Property]{@link Bacon.Property}. Call [Event.isInitial]{@link Bacon.Event#isInitial} to distinguish from other events. Only sent immediately after subscription to a Property.
-     * */
+  * @class Initial
+  * @augments Bacon.Event
+  * @description The initial (current) value of a [Property]{@link Bacon.Property}. Call [Event.isInitial]{@link Bacon.Event#isInitial} to distinguish from other events. Only sent immediately after subscription to a Property.
+  * */
 @JSImport("baconjs", "Initial")
 @js.native
 class Initial[A] protected ()
   extends baconjsLib.BaconNs.Initial[A] {
   /**
-           * @constructor
-           * @constructs Bacon.Initial
-           * @param {A} value
-           * */
+    * @constructor
+    * @constructs Bacon.Initial
+    * @param {A} value
+    * */
   def this(value: A) = this()
 }
 

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object vscodeDashJsonrpcMod {
-  type GenericNotificationHandler = js.Function1[/* repeated */js.Any, scala.Unit]
-  type GenericRequestHandler[R, E] = js.Function1[/* repeated */js.Any, HandlerResult[R, E]]
+  type GenericNotificationHandler = js.Function1[/* repeated */ js.Any, scala.Unit]
+  type GenericRequestHandler[R, E] = js.Function1[/* repeated */ js.Any, HandlerResult[R, E]]
   type HandlerResult[R, E] = R | vscodeDashJsonrpcLib.libMessagesMod.ResponseError[E] | vscodeDashJsonrpcLib.Thenable[R] | vscodeDashJsonrpcLib.Thenable[vscodeDashJsonrpcLib.libMessagesMod.ResponseError[E]] | (vscodeDashJsonrpcLib.Thenable[R | vscodeDashJsonrpcLib.libMessagesMod.ResponseError[E]])
   type MessageQueue = vscodeDashJsonrpcLib.libLinkedMapMod.LinkedMap[java.lang.String, vscodeDashJsonrpcLib.libMessagesMod.Message]
   type NotificationHandler[P] = js.Function1[/* params */ P, scala.Unit]
@@ -141,7 +141,7 @@ package object vscodeDashJsonrpcMod {
     /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
     HandlerResult[R, E]
   ]
-  type StarNotificationHandler = js.Function2[/* method */ java.lang.String, /* repeated */js.Any, scala.Unit]
-  type StarRequestHandler = js.Function2[/* method */ java.lang.String, /* repeated */js.Any, HandlerResult[js.Any, js.Any]]
+  type StarNotificationHandler = js.Function2[/* method */ java.lang.String, /* repeated */ js.Any, scala.Unit]
+  type StarRequestHandler = js.Function2[/* method */ java.lang.String, /* repeated */ js.Any, HandlerResult[js.Any, js.Any]]
   type TraceValues = vscodeDashJsonrpcLib.vscodeDashJsonrpcLibStrings.off | vscodeDashJsonrpcLib.vscodeDashJsonrpcLibStrings.messages | vscodeDashJsonrpcLib.vscodeDashJsonrpcLibStrings.verbose
 }

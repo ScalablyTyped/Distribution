@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Slider //////////////////////////////////////////////////
-
 trait SliderOptions extends SliderEvents {
   var animate: js.UndefOr[js.Any] = js.undefined
   var classes: js.UndefOr[SliderClasses] = js.undefined

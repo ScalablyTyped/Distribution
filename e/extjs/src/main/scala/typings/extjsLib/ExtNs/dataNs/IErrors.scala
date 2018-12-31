@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IErrors
   extends extjsLib.ExtNs.utilNs.IMixedCollection {
   /** [Method] Returns all of the errors for the given field

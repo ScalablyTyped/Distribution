@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TeamDto extends js.Object {
   var createDate: scala.Double
   var fullId: java.lang.String

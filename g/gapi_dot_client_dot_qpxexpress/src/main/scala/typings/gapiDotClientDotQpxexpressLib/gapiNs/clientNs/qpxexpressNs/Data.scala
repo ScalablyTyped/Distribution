@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Data extends js.Object {
   /** The aircraft that is flying between an origin and destination. */
   var aircraft: js.UndefOr[js.Array[AircraftData]] = js.undefined
@@ -16,9 +15,9 @@ trait Data extends js.Object {
   /** The city that is either the origin or destination of part of a trip. */
   var city: js.UndefOr[js.Array[CityData]] = js.undefined
   /**
-               * Identifies this as QPX Express response resource, including a trip's airport, city, taxes, airline, and aircraft. Value: the fixed string
-               * qpxexpress#data.
-               */
+    * Identifies this as QPX Express response resource, including a trip's airport, city, taxes, airline, and aircraft. Value: the fixed string
+    * qpxexpress#data.
+    */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /** The taxes due for flying between an origin and a destination. */
   var tax: js.UndefOr[js.Array[TaxData]] = js.undefined

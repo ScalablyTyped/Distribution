@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocalHookOptions extends js.Object {
   var all: js.UndefOr[HookOptionValue] = js.undefined
   var find: js.UndefOr[HookOptionValue] = js.undefined

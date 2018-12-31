@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultsOnServer extends js.Object {
   val Count: scala.Double
   def GetVaultByGUID(GUID: java.lang.String): IVaultOnServer

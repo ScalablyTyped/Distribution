@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParseConfig extends js.Object {
    // default: undefined
   var beforeFirstChunk: js.UndefOr[js.Function1[/* chunk */ java.lang.String, java.lang.String | scala.Unit]] = js.undefined

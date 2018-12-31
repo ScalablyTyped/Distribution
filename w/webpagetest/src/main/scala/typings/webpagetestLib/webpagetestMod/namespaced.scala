@@ -7,16 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webpagetest", JSImport.Namespace)
 @js.native
+/**
+  * @param server The host of the WebPagetest server. Defaults to 'www.webpagetest.org'.
+  * @param key The API Key used for the instance. Can be left empty for public API.
+  */
 class namespaced () extends WebPageTest {
-  /**
-     * @param server The host of the WebPagetest server. Defaults to 'www.webpagetest.org'.
-     * @param key The API Key used for the instance. Can be left empty for public API.
-     */
   def this(server: java.lang.String) = this()
-  /**
-     * @param server The host of the WebPagetest server. Defaults to 'www.webpagetest.org'.
-     * @param key The API Key used for the instance. Can be left empty for public API.
-     */
   def this(server: java.lang.String, key: java.lang.String) = this()
 }
 

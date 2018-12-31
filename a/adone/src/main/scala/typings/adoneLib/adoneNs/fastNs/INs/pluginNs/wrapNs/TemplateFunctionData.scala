@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TemplateFunctionData[T]
   extends Options
      with /* custom */ org.scalablytyped.runtime.StringDictionary[js.Any] {

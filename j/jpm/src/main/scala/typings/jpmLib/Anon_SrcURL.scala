@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SrcURL extends js.Object {
   var documentType: java.lang.String
   var documentURL: java.lang.String

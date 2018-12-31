@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 class LocalObjectIdentifierValueBlock () extends LocalValueBlock {
   def this(params: LocalObjectIdentifierValueBlockParams) = this()
   /**
-                   * Create "LocalObjectIdentifierValueBlock" class from string
-                   *
-                   * @param string Input string to convert from
-                   */
+    * Create "LocalObjectIdentifierValueBlock" class from string
+    *
+    * @param string Input string to convert from
+    */
   def fromString(data: java.lang.String): scala.Boolean = js.native
 }
 

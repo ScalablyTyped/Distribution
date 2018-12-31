@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Geometry[T] extends js.Object {
   var data: T
   var geometry: threeLib.threeMod.Geometry

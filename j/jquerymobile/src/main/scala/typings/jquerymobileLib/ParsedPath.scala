@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParsedPath extends js.Object {
   var authority: java.lang.String
   var directory: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SurveyQuestionImage extends js.Object {
   /** The alt text property used in image tags is required for all images. */
   var altText: js.UndefOr[java.lang.String] = js.undefined

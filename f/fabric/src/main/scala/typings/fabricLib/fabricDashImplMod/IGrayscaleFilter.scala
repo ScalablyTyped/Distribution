@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGrayscaleFilter extends js.Object {
   /**
   	 * Applies filter to canvas element

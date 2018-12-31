@@ -16,12 +16,9 @@ trait Drop extends js.Object {
   def off(event: java.lang.String): scala.Unit = js.native
   def off(event: java.lang.String, handler: js.Function): scala.Unit = js.native
   /*
-       * Drop instances fire "open" and "close" events.
-       */
+    * Drop instances fire "open" and "close" events.
+    */
   def on(event: java.lang.String, handler: js.Function): scala.Unit = js.native
-  /*
-       * Drop instances fire "open" and "close" events.
-       */
   def on(event: java.lang.String, handler: js.Function, context: js.Any): scala.Unit = js.native
   def once(event: java.lang.String, handler: js.Function): scala.Unit = js.native
   def once(event: java.lang.String, handler: js.Function, context: js.Any): scala.Unit = js.native

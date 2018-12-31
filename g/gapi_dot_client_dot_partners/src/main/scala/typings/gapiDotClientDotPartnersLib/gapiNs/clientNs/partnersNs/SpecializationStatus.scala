@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpecializationStatus extends js.Object {
   /** The specialization this status is for. */
   var badgeSpecialization: js.UndefOr[java.lang.String] = js.undefined

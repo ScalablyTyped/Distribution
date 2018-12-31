@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISyndicationLink extends ISyndicationNode {
   var length: scala.Double
   var mediaType: java.lang.String

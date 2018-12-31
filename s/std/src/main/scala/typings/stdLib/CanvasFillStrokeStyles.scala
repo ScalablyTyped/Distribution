@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CanvasFillStrokeStyles extends js.Object {
   var fillStyle: java.lang.String | CanvasGradient | CanvasPattern
   var strokeStyle: java.lang.String | CanvasGradient | CanvasPattern

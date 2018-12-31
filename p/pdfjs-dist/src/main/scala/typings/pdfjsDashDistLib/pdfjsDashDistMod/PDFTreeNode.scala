@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PDFTreeNode extends js.Object {
   var bold: scala.Boolean
   var color: js.Array[scala.Double]

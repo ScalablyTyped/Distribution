@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Dynamics.Joints.b2JointDef")
 @js.native
+/**
+		* Constructor.
+		**/
 class b2JointDef () extends js.Object {
   /**
   		* The first attached body.

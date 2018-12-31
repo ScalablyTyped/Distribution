@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransformSummary extends js.Object {
   /** Transform-specific display data. */
   var displayData: js.UndefOr[js.Array[DisplayData]] = js.undefined

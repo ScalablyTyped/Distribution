@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class RecurrenceRule protected () extends js.Object {
   def this(year: js.UndefOr[RecurrenceSegment], month: js.UndefOr[RecurrenceSegment], date: js.UndefOr[RecurrenceSegment], dayOfWeek: js.UndefOr[RecurrenceSegment], hour: js.UndefOr[RecurrenceSegment], minute: js.UndefOr[RecurrenceSegment], second: js.UndefOr[RecurrenceSegment]) = this()
   /**
-       * Day of the month.
-       */
+    * Day of the month.
+    */
   var date: RecurrenceSegment = js.native
   var dayOfWeek: RecurrenceSegment = js.native
   var hour: RecurrenceSegment = js.native

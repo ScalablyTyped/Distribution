@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionContext extends js.Object {
   var initPromise: js.UndefOr[js.Promise[_]] = js.undefined
   var isLegacy: scala.Boolean

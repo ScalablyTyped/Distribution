@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectSocketOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 请求的参数 */

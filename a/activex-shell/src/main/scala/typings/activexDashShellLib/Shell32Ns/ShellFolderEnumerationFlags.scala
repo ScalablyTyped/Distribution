@@ -18,9 +18,9 @@ object ShellFolderEnumerationFlags extends js.Object {
     extends activexDashShellLib.Shell32Ns.ShellFolderEnumerationFlags
   
   /**
-           * **Windows Vista and later**. The calling application is monitoring for change notifications.This means that the enumerator does not have to return all results.
-           * Items can be reported through change notifications.
-           */
+    * **Windows Vista and later**. The calling application is monitoring for change notifications.This means that the enumerator does not have to return all results.
+    * Items can be reported through change notifications.
+    */
   @js.native
   sealed trait SHCONTF_ENABLE_ASYNC
     extends activexDashShellLib.Shell32Ns.ShellFolderEnumerationFlags
@@ -46,9 +46,9 @@ object ShellFolderEnumerationFlags extends js.Object {
     extends activexDashShellLib.Shell32Ns.ShellFolderEnumerationFlags
   
   /**
-           * **Windows 7 and later**. Include hidden system items in the enumeration. This value does not include hidden non-system items.
-           * (To include hidden non-system items, use SHCONTF_INCLUDEHIDDEN.)
-           */
+    * **Windows 7 and later**. Include hidden system items in the enumeration. This value does not include hidden non-system items.
+    * (To include hidden non-system items, use SHCONTF_INCLUDEHIDDEN.)
+    */
   @js.native
   sealed trait SHCONTF_INCLUDESUPERHIDDEN
     extends activexDashShellLib.Shell32Ns.ShellFolderEnumerationFlags

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FormCreateOption[T] extends js.Object {
   var mapPropsToFields: js.UndefOr[js.Function1[/* props */ T, scala.Unit]] = js.undefined
   var onFieldsChange: js.UndefOr[

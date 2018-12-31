@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Webp extends js.Object {
   var cairo: js.UndefOr[java.lang.String] = js.undefined
   var croco: js.UndefOr[java.lang.String] = js.undefined

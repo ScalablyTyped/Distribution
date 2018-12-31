@@ -9,143 +9,143 @@ import scala.scalajs.js.annotation._
 sealed trait SpecialCellValueType extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.SpecialCellValueType")
 @js.native
 object SpecialCellValueType extends js.Object {
   /**
-           *
-           * Cells that have errors, true/false, numeric, or a string value.
-           *
-           */
+    *
+    * Cells that have errors, true/false, numeric, or a string value.
+    *
+    */
   @js.native
   sealed trait all
     extends officeDashJsDashPreviewLib.ExcelNs.SpecialCellValueType
   
   /**
-           *
-           * Cells that have errors.
-           *
-           */
+    *
+    * Cells that have errors.
+    *
+    */
   @js.native
   sealed trait errors
     extends officeDashJsDashPreviewLib.ExcelNs.SpecialCellValueType
   
   /**
-           *
-           * Cells that have errors, or a true/false value.
-           *
-           */
+    *
+    * Cells that have errors, or a true/false value.
+    *
+    */
   @js.native
   sealed trait errorsLogical
     extends officeDashJsDashPreviewLib.ExcelNs.SpecialCellValueType
   
   /**
-           *
-           * Cells that have errors, true/false, or a numeric value.
-           *
-           */
+    *
+    * Cells that have errors, true/false, or a numeric value.
+    *
+    */
   @js.native
   sealed trait errorsLogicalNumber
     extends officeDashJsDashPreviewLib.ExcelNs.SpecialCellValueType
   
   /**
-           *
-           * Cells that have errors, true/false, or a string value.
-           *
-           */
+    *
+    * Cells that have errors, true/false, or a string value.
+    *
+    */
   @js.native
   sealed trait errorsLogicalText
     extends officeDashJsDashPreviewLib.ExcelNs.SpecialCellValueType
   
   /**
-           *
-           * Cells that have errors, numeric, or a string value.
-           *
-           */
+    *
+    * Cells that have errors, numeric, or a string value.
+    *
+    */
   @js.native
   sealed trait errorsNumberText
     extends officeDashJsDashPreviewLib.ExcelNs.SpecialCellValueType
   
   /**
-           *
-           * Cells that have errors, or a numeric value.
-           *
-           */
+    *
+    * Cells that have errors, or a numeric value.
+    *
+    */
   @js.native
   sealed trait errorsNumbers
     extends officeDashJsDashPreviewLib.ExcelNs.SpecialCellValueType
   
   /**
-           *
-           * Cells that have errors, or a string value.
-           *
-           */
+    *
+    * Cells that have errors, or a string value.
+    *
+    */
   @js.native
   sealed trait errorsText
     extends officeDashJsDashPreviewLib.ExcelNs.SpecialCellValueType
   
   /**
-           *
-           * Cells that have a true/false value.
-           *
-           */
+    *
+    * Cells that have a true/false value.
+    *
+    */
   @js.native
   sealed trait logical
     extends officeDashJsDashPreviewLib.ExcelNs.SpecialCellValueType
   
   /**
-           *
-           * Cells that have a true/false, or a numeric value.
-           *
-           */
+    *
+    * Cells that have a true/false, or a numeric value.
+    *
+    */
   @js.native
   sealed trait logicalNumbers
     extends officeDashJsDashPreviewLib.ExcelNs.SpecialCellValueType
   
   /**
-           *
-           * Cells that have a true/false, numeric, or a string value.
-           *
-           */
+    *
+    * Cells that have a true/false, numeric, or a string value.
+    *
+    */
   @js.native
   sealed trait logicalNumbersText
     extends officeDashJsDashPreviewLib.ExcelNs.SpecialCellValueType
   
   /**
-           *
-           * Cells that have a true/false, or a string value.
-           *
-           */
+    *
+    * Cells that have a true/false, or a string value.
+    *
+    */
   @js.native
   sealed trait logicalText
     extends officeDashJsDashPreviewLib.ExcelNs.SpecialCellValueType
   
   /**
-           *
-           * Cells that have a numeric value.
-           *
-           */
+    *
+    * Cells that have a numeric value.
+    *
+    */
   @js.native
   sealed trait numbers
     extends officeDashJsDashPreviewLib.ExcelNs.SpecialCellValueType
   
   /**
-           *
-           * Cells that have a numeric, or a string value.
-           *
-           */
+    *
+    * Cells that have a numeric, or a string value.
+    *
+    */
   @js.native
   sealed trait numbersText
     extends officeDashJsDashPreviewLib.ExcelNs.SpecialCellValueType
   
   /**
-           *
-           * Cells that have a string value.
-           *
-           */
+    *
+    * Cells that have a string value.
+    *
+    */
   @js.native
   sealed trait text
     extends officeDashJsDashPreviewLib.ExcelNs.SpecialCellValueType

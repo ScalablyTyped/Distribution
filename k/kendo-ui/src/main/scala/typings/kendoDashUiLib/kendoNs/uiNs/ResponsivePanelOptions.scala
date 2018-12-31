@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResponsivePanelOptions extends js.Object {
   var autoClose: js.UndefOr[scala.Boolean] = js.undefined
   var breakpoint: js.UndefOr[scala.Double] = js.undefined

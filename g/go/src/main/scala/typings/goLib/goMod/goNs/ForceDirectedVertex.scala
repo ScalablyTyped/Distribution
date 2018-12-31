@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This holds ForceDirectedLayout-specific information about Nodes.*/
-
 trait ForceDirectedVertex extends LayoutVertex {
   /**Gets or sets the electrical charge for this vertex.*/
   var charge: scala.Double

@@ -12,22 +12,22 @@ sealed trait delegationStrategy extends js.Object
 @js.native
 object delegationStrategy extends js.Object {
   /**
-     * Bubbling phase event delegation strategy.
-     */
+    * Bubbling phase event delegation strategy.
+    */
   @js.native
   sealed trait bubbling
     extends aureliaDashBindingLib.aureliaDashBindingMod.delegationStrategy
   
   /**
-     * Capturing phase event delegation strategy.
-     */
+    * Capturing phase event delegation strategy.
+    */
   @js.native
   sealed trait capturing
     extends aureliaDashBindingLib.aureliaDashBindingMod.delegationStrategy
   
   /**
-     * No event delegation.
-     */
+    * No event delegation.
+    */
   @js.native
   sealed trait none
     extends aureliaDashBindingLib.aureliaDashBindingMod.delegationStrategy

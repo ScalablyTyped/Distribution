@@ -5,137 +5,136 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReleaseEnvironment extends js.Object {
   /**
-       * Gets list of conditions.
-       */
+    * Gets list of conditions.
+    */
   var conditions: js.Array[ReleaseCondition]
   /**
-       * Gets date on which it got created.
-       */
+    * Gets date on which it got created.
+    */
   var createdOn: stdLib.Date
   /**
-       * Gets definition environment id.
-       */
+    * Gets definition environment id.
+    */
   var definitionEnvironmentId: scala.Double
   /**
-       * Gets demands.
-       */
+    * Gets demands.
+    */
   var demands: js.Array[_]
   /**
-       * Gets list of deploy phases snapshot.
-       */
+    * Gets list of deploy phases snapshot.
+    */
   var deployPhasesSnapshot: js.Array[DeployPhase]
   /**
-       * Gets deploy steps.
-       */
+    * Gets deploy steps.
+    */
   var deploySteps: js.Array[DeploymentAttempt]
   /**
-       * Gets environment options.
-       */
+    * Gets environment options.
+    */
   var environmentOptions: EnvironmentOptions
   /**
-       * Gets the unique identifier of this field.
-       */
+    * Gets the unique identifier of this field.
+    */
   var id: scala.Double
   /**
-       * Gets date on which it got modified.
-       */
+    * Gets date on which it got modified.
+    */
   var modifiedOn: stdLib.Date
   /**
-       * Gets name.
-       */
+    * Gets name.
+    */
   var name: java.lang.String
   /**
-       * Gets next scheduled UTC time.
-       */
+    * Gets next scheduled UTC time.
+    */
   var nextScheduledUtcTime: stdLib.Date
   /**
-       * Gets the identity who is owner for release environment.
-       */
+    * Gets the identity who is owner for release environment.
+    */
   var owner: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
   /**
-       * Gets list of post deploy approvals snapshot.
-       */
+    * Gets list of post deploy approvals snapshot.
+    */
   var postApprovalsSnapshot: ReleaseDefinitionApprovals
   /**
-       * Gets list of post deploy approvals.
-       */
+    * Gets list of post deploy approvals.
+    */
   var postDeployApprovals: js.Array[ReleaseApproval]
   var postDeploymentGatesSnapshot: ReleaseDefinitionGatesStep
   /**
-       * Gets list of pre deploy approvals snapshot.
-       */
+    * Gets list of pre deploy approvals snapshot.
+    */
   var preApprovalsSnapshot: ReleaseDefinitionApprovals
   /**
-       * Gets list of pre deploy approvals.
-       */
+    * Gets list of pre deploy approvals.
+    */
   var preDeployApprovals: js.Array[ReleaseApproval]
   var preDeploymentGatesSnapshot: ReleaseDefinitionGatesStep
   /**
-       * Gets process parameters.
-       */
+    * Gets process parameters.
+    */
   var processParameters: vsoDashNodeDashApiLib.interfacesDistributedTaskCommonInterfacesMod.ProcessParameters
   /**
-       * Gets queue id.
-       */
+    * Gets queue id.
+    */
   var queueId: scala.Double
   /**
-       * Gets rank.
-       */
+    * Gets rank.
+    */
   var rank: scala.Double
   /**
-       * Gets release reference which specifies the reference of the release to which this release environment is associated.
-       */
+    * Gets release reference which specifies the reference of the release to which this release environment is associated.
+    */
   var release: ReleaseShallowReference
   /**
-       * Gets the identity who created release.
-       */
+    * Gets the identity who created release.
+    */
   var releaseCreatedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
   /**
-       * Gets releaseDefinitionReference which specifies the reference of the release definition to which this release environment is associated.
-       */
+    * Gets releaseDefinitionReference which specifies the reference of the release definition to which this release environment is associated.
+    */
   var releaseDefinition: ReleaseDefinitionShallowReference
   /**
-       * Gets release description.
-       */
+    * Gets release description.
+    */
   var releaseDescription: java.lang.String
   /**
-       * Gets release id.
-       */
+    * Gets release id.
+    */
   var releaseId: scala.Double
   /**
-       * Gets schedule deployment time of release environment.
-       */
+    * Gets schedule deployment time of release environment.
+    */
   var scheduledDeploymentTime: stdLib.Date
   /**
-       * Gets list of schedules.
-       */
+    * Gets list of schedules.
+    */
   var schedules: js.Array[ReleaseSchedule]
   /**
-       * Gets environment status.
-       */
+    * Gets environment status.
+    */
   var status: EnvironmentStatus
   /**
-       * Gets time to deploy.
-       */
+    * Gets time to deploy.
+    */
   var timeToDeploy: scala.Double
   /**
-       * Gets trigger reason.
-       */
+    * Gets trigger reason.
+    */
   var triggerReason: java.lang.String
   /**
-       * Gets the list of variable groups.
-       */
+    * Gets the list of variable groups.
+    */
   var variableGroups: js.Array[VariableGroup]
   /**
-       * Gets the dictionary of variables.
-       */
+    * Gets the dictionary of variables.
+    */
   var variables: org.scalablytyped.runtime.StringDictionary[ConfigurationVariableValue]
   /**
-       * Gets list of workflow tasks.
-       */
+    * Gets list of workflow tasks.
+    */
   var workflowTasks: js.Array[WorkflowTask]
 }
 

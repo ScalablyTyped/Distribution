@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IView extends IAbstractView {
   /** [Method] Un highlights the currently highlighted item if any  */
   var clearHighlight: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

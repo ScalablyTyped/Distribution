@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IUtilityService extends js.Object {
   def endsWith(str: java.lang.String, suffix: java.lang.String): scala.Boolean
   def evalProperty(entity: js.Any, path: java.lang.String): js.Any

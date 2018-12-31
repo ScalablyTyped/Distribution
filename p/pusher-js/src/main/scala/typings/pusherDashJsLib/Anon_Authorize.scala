@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Authorize extends js.Object {
   var authorize: js.Function2[
     /* socketId */ java.lang.String, 

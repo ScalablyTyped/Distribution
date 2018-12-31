@@ -48,25 +48,25 @@ abstract class AllJoynAboutDataView () extends js.Object {
 @js.native
 object AllJoynAboutDataView extends js.Object {
   /**
-                   * Gets the About data for a session.
-                   * @param uniqueName The unique name.
-                   * @param busAttachment The bus attachment supporting the session.
-                   * @param sessionPort The port used to connect to the session.
-                   * @return An object containing About data for the session.
-                   */
+    * Gets the About data for a session.
+    * @param uniqueName The unique name.
+    * @param busAttachment The bus attachment supporting the session.
+    * @param sessionPort The port used to connect to the session.
+    * @return An object containing About data for the session.
+    */
   def getDataBySessionPortAsync(
     uniqueName: java.lang.String,
     busAttachment: winrtDashUwpLib.WindowsNs.DevicesNs.AllJoynNs.AllJoynBusAttachment,
     sessionPort: scala.Double
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.DevicesNs.AllJoynNs.AllJoynAboutDataView] = js.native
   /**
-                   * Gets the About data for a session in a particular language.
-                   * @param uniqueName The unique name.
-                   * @param busAttachment The bus attachment supporting the session.
-                   * @param sessionPort The port used to connect to the session.
-                   * @param language The language to return the descriptive data in.
-                   * @return An object containing About data for the session in the set language.
-                   */
+    * Gets the About data for a session in a particular language.
+    * @param uniqueName The unique name.
+    * @param busAttachment The bus attachment supporting the session.
+    * @param sessionPort The port used to connect to the session.
+    * @param language The language to return the descriptive data in.
+    * @return An object containing About data for the session in the set language.
+    */
   def getDataBySessionPortAsync(
     uniqueName: java.lang.String,
     busAttachment: winrtDashUwpLib.WindowsNs.DevicesNs.AllJoynNs.AllJoynBusAttachment,

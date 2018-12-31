@@ -48,11 +48,16 @@ package object buildSrcFileMod {
   ]
   type GetFileMetadataCallback = js.Function3[
     /* err */ nodeLib.Error | scala.Null, 
-    /* metadata */ js.UndefOr[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata], 
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Metadata */ /* metadata */ js.UndefOr[
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Metadata */ js.Any
+    ], 
     /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
     scala.Unit
   ]
-  type GetFileMetadataResponse = js.Tuple2[File, requestLib.requestMod.requestNs.Response]
+  type GetFileMetadataResponse = js.Tuple2[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Metadata */ js.Any, 
+    requestLib.requestMod.requestNs.Response
+  ]
   type GetFileResponse = js.Tuple2[File, requestLib.requestMod.requestNs.Response]
   type GetSignedPolicyCallback = js.Function2[
     /* err */ nodeLib.Error | scala.Null, 

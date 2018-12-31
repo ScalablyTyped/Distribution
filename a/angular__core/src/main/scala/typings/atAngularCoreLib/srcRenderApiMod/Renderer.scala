@@ -45,8 +45,8 @@ abstract class Renderer () extends js.Object {
   def selectRootElement(selectorOrNode: js.Any): js.Any = js.native
   def selectRootElement(selectorOrNode: js.Any, debugInfo: RenderDebugInfo): js.Any = js.native
   /**
-       * Used only in debug mode to serialize property changes to dom nodes as attributes.
-       */
+    * Used only in debug mode to serialize property changes to dom nodes as attributes.
+    */
   def setBindingDebugInfo(renderElement: js.Any, propertyName: java.lang.String, propertyValue: java.lang.String): scala.Unit = js.native
   def setElementAttribute(renderElement: js.Any, attributeName: java.lang.String): scala.Unit = js.native
   def setElementAttribute(renderElement: js.Any, attributeName: java.lang.String, attributeValue: java.lang.String): scala.Unit = js.native

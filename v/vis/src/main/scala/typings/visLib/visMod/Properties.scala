@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Properties extends js.Object {
   var edges: js.Array[java.lang.String]
   var event: js.Array[java.lang.String]

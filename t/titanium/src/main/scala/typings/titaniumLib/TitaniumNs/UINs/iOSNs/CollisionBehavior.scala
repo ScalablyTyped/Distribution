@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 			 * Dynamic behavior to support collisions between items and boundaries.
 			 */
-
 trait CollisionBehavior
   extends titaniumLib.TitaniumNs.Proxy {
   /**

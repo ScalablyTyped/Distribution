@@ -15,43 +15,43 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BluetoothRemoteGATTServer
   extends /**
-     * 
-     * @return  
-     */
+  * 
+  * @return  
+  */
 org.scalablytyped.runtime.Instantiable0[BluetoothRemoteGATTServer] {
   /**
-       * <p>Connect to a BLE device - returns a promise,
-       * the argument of which is the <code>BluetoothRemoteGATTServer</code> connection.</p>
-       * <p>See <a href="/Reference#l_NRF_requestDevice"><code>NRF.requestDevice</code></a> for usage examples.</p>
-       * <p><strong>Note:</strong> This is only available on some devices</p>
-       * 
-       * @return  
-       * @url http://www.espruino.com/Reference#l_BluetoothRemoteGATTServer_connect
-       */
+    * <p>Connect to a BLE device - returns a promise,
+    * the argument of which is the <code>BluetoothRemoteGATTServer</code> connection.</p>
+    * <p>See <a href="/Reference#l_NRF_requestDevice"><code>NRF.requestDevice</code></a> for usage examples.</p>
+    * <p><strong>Note:</strong> This is only available on some devices</p>
+    * 
+    * @return  
+    * @url http://www.espruino.com/Reference#l_BluetoothRemoteGATTServer_connect
+    */
   def connect(): js.Any = js.native
   /**
-       * <p>Disconnect from a previously connected BLE device connected with
-       * <code>NRF.connect</code> - this does not disconnect from something that has
-       * connected to the Espruino.</p>
-       * <p><strong>Note:</strong> This is only available on some devices</p>
-       * 
-       * @url http://www.espruino.com/Reference#l_BluetoothRemoteGATTServer_disconnect
-       */
+    * <p>Disconnect from a previously connected BLE device connected with
+    * <code>NRF.connect</code> - this does not disconnect from something that has
+    * connected to the Espruino.</p>
+    * <p><strong>Note:</strong> This is only available on some devices</p>
+    * 
+    * @url http://www.espruino.com/Reference#l_BluetoothRemoteGATTServer_disconnect
+    */
   def disconnect(): scala.Unit = js.native
   /**
-       * <p><strong>Note:</strong> This is only available on some devices</p>
-       * 
-       * @param service 
-       * @return  
-       * @url http://www.espruino.com/Reference#l_BluetoothRemoteGATTServer_getPrimaryService
-       */
+    * <p><strong>Note:</strong> This is only available on some devices</p>
+    * 
+    * @param service 
+    * @return  
+    * @url http://www.espruino.com/Reference#l_BluetoothRemoteGATTServer_getPrimaryService
+    */
   def getPrimaryService(service: js.Any): js.Any = js.native
   /**
-       * <p><strong>Note:</strong> This is only available on some devices</p>
-       * 
-       * @return  
-       * @url http://www.espruino.com/Reference#l_BluetoothRemoteGATTServer_getPrimaryServices
-       */
+    * <p><strong>Note:</strong> This is only available on some devices</p>
+    * 
+    * @return  
+    * @url http://www.espruino.com/Reference#l_BluetoothRemoteGATTServer_getPrimaryServices
+    */
   def getPrimaryServices(): js.Any = js.native
 }
 

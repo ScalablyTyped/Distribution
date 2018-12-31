@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaMetadataInit extends js.Object {
   // Media's album.
   var album: js.UndefOr[java.lang.String] = js.undefined

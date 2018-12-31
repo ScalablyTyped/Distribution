@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * Represents BSON Symbol type
-             */
+  * Represents BSON Symbol type
+  */
 @JSGlobal("adone.data.bson.Symbol")
 @js.native
 class Symbol protected ()

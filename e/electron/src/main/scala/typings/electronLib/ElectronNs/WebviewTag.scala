@@ -9,95 +9,95 @@ import scala.scalajs.js.annotation._
 trait WebviewTag
   extends stdLib.HTMLElement {
   /**
-       * When this attribute is present the guest page will be allowed to open new
-       * windows. Popups are disabled by default.
-       */
+    * When this attribute is present the guest page will be allowed to open new
+    * windows. Popups are disabled by default.
+    */
   var allowpopups: js.UndefOr[java.lang.String] = js.native
   /**
-       * When this attribute is present the webview container will automatically resize
-       * within the bounds specified by the attributes minwidth, minheight, maxwidth, and
-       * maxheight. These constraints do not impact the webview unless autosize is
-       * enabled. When autosize is enabled, the webview container size cannot be less
-       * than the minimum values or greater than the maximum.
-       */
+    * When this attribute is present the webview container will automatically resize
+    * within the bounds specified by the attributes minwidth, minheight, maxwidth, and
+    * maxheight. These constraints do not impact the webview unless autosize is
+    * enabled. When autosize is enabled, the webview container size cannot be less
+    * than the minimum values or greater than the maximum.
+    */
   var autosize: js.UndefOr[java.lang.String] = js.native
   /**
-       * A list of strings which specifies the blink features to be disabled separated by
-       * ,. The full list of supported feature strings can be found in the
-       * RuntimeEnabledFeatures.json5 file.
-       */
+    * A list of strings which specifies the blink features to be disabled separated by
+    * ,. The full list of supported feature strings can be found in the
+    * RuntimeEnabledFeatures.json5 file.
+    */
   var disableblinkfeatures: js.UndefOr[java.lang.String] = js.native
   /**
-       * When this attribute is present the guest page will have web security disabled.
-       * Web security is enabled by default.
-       */
+    * When this attribute is present the guest page will have web security disabled.
+    * Web security is enabled by default.
+    */
   var disablewebsecurity: js.UndefOr[java.lang.String] = js.native
   /**
-       * A list of strings which specifies the blink features to be enabled separated by
-       * ,. The full list of supported feature strings can be found in the
-       * RuntimeEnabledFeatures.json5 file.
-       */
+    * A list of strings which specifies the blink features to be enabled separated by
+    * ,. The full list of supported feature strings can be found in the
+    * RuntimeEnabledFeatures.json5 file.
+    */
   var enableblinkfeatures: js.UndefOr[java.lang.String] = js.native
   /**
-       * When this attribute is false the guest page in webview will not have access to
-       * the remote module. The remote module is avaiable by default.
-       */
+    * When this attribute is false the guest page in webview will not have access to
+    * the remote module. The remote module is avaiable by default.
+    */
   var enableremotemodule: js.UndefOr[java.lang.String] = js.native
   /**
-       * Sets the referrer URL for the guest page.
-       */
+    * Sets the referrer URL for the guest page.
+    */
   var httpreferrer: js.UndefOr[java.lang.String] = js.native
   /**
-       * When this attribute is present the guest page in webview will have node
-       * integration and can use node APIs like require and process to access low level
-       * system resources. Node integration is disabled by default in the guest page.
-       */
+    * When this attribute is present the guest page in webview will have node
+    * integration and can use node APIs like require and process to access low level
+    * system resources. Node integration is disabled by default in the guest page.
+    */
   var nodeintegration: js.UndefOr[java.lang.String] = js.native
   /**
-       * Sets the session used by the page. If partition starts with persist:, the page
-       * will use a persistent session available to all pages in the app with the same
-       * partition. if there is no persist: prefix, the page will use an in-memory
-       * session. By assigning the same partition, multiple pages can share the same
-       * session. If the partition is unset then default session of the app will be used.
-       * This value can only be modified before the first navigation, since the session
-       * of an active renderer process cannot change. Subsequent attempts to modify the
-       * value will fail with a DOM exception.
-       */
+    * Sets the session used by the page. If partition starts with persist:, the page
+    * will use a persistent session available to all pages in the app with the same
+    * partition. if there is no persist: prefix, the page will use an in-memory
+    * session. By assigning the same partition, multiple pages can share the same
+    * session. If the partition is unset then default session of the app will be used.
+    * This value can only be modified before the first navigation, since the session
+    * of an active renderer process cannot change. Subsequent attempts to modify the
+    * value will fail with a DOM exception.
+    */
   var partition: js.UndefOr[java.lang.String] = js.native
   /**
-       * When this attribute is present the guest page in webview will be able to use
-       * browser plugins. Plugins are disabled by default.
-       */
+    * When this attribute is present the guest page in webview will be able to use
+    * browser plugins. Plugins are disabled by default.
+    */
   var plugins: js.UndefOr[java.lang.String] = js.native
   /**
-       * Specifies a script that will be loaded before other scripts run in the guest
-       * page. The protocol of script's URL must be either file: or asar:, because it
-       * will be loaded by require in guest page under the hood. When the guest page
-       * doesn't have node integration this script will still have access to all Node
-       * APIs, but global objects injected by Node will be deleted after this script has
-       * finished executing. Note: This option will be appear as preloadURL (not preload)
-       * in the webPreferences specified to the will-attach-webview event.
-       */
+    * Specifies a script that will be loaded before other scripts run in the guest
+    * page. The protocol of script's URL must be either file: or asar:, because it
+    * will be loaded by require in guest page under the hood. When the guest page
+    * doesn't have node integration this script will still have access to all Node
+    * APIs, but global objects injected by Node will be deleted after this script has
+    * finished executing. Note: This option will be appear as preloadURL (not preload)
+    * in the webPreferences specified to the will-attach-webview event.
+    */
   var preload: js.UndefOr[java.lang.String] = js.native
   /**
-       * Returns the visible URL. Writing to this attribute initiates top-level
-       * navigation. Assigning src its own value will reload the current page. The src
-       * attribute can also accept data URLs, such as data:text/plain,Hello, world!.
-       */
+    * Returns the visible URL. Writing to this attribute initiates top-level
+    * navigation. Assigning src its own value will reload the current page. The src
+    * attribute can also accept data URLs, such as data:text/plain,Hello, world!.
+    */
   var src: js.UndefOr[java.lang.String] = js.native
   /**
-       * Sets the user agent for the guest page before the page is navigated to. Once the
-       * page is loaded, use the setUserAgent method to change the user agent.
-       */
+    * Sets the user agent for the guest page before the page is navigated to. Once the
+    * page is loaded, use the setUserAgent method to change the user agent.
+    */
   var useragent: js.UndefOr[java.lang.String] = js.native
   /**
-       * A list of strings which specifies the web preferences to be set on the webview,
-       * separated by ,. The full list of supported preference strings can be found in
-       * BrowserWindow. The string follows the same format as the features string in
-       * window.open. A name by itself is given a true boolean value. A preference can be
-       * set to another value by including an =, followed by the value. Special values
-       * yes and 1 are interpreted as true, while no and 0 are interpreted as false.
-       */
+    * A list of strings which specifies the web preferences to be set on the webview,
+    * separated by ,. The full list of supported preference strings can be found in
+    * BrowserWindow. The string follows the same format as the features string in
+    * window.open. A name by itself is given a true boolean value. A preference can be
+    * set to another value by including an =, followed by the value. Special values
+    * yes and 1 are interpreted as true, while no and 0 are interpreted as false.
+    */
   var webpreferences: js.UndefOr[java.lang.String] = js.native
   @JSName("addEventListener")
   def addEventListener_abort(
@@ -232,15 +232,11 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   /**
-       * Fired when the guest page attempts to close itself. The following example code
-       * navigates the webview to about:blank when the guest attempts to close itself.
-       */
+    * Fired when the guest page attempts to close itself. The following example code
+    * navigates the webview to about:blank when the guest attempts to close itself.
+    */
   @JSName("addEventListener")
   def addEventListener_close(event: electronLib.electronLibStrings.close, listener: js.Function1[/* event */ Event, scala.Unit]): this.type = js.native
-  /**
-       * Fired when the guest page attempts to close itself. The following example code
-       * navigates the webview to about:blank when the guest attempts to close itself.
-       */
   @JSName("addEventListener")
   def addEventListener_close(
     event: electronLib.electronLibStrings.close,
@@ -259,20 +255,15 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   /**
-       * Fired when the guest window logs a console message. The following example code
-       * forwards all log messages to the embedder's console without regard for log level
-       * or other properties.
-       */
+    * Fired when the guest window logs a console message. The following example code
+    * forwards all log messages to the embedder's console without regard for log level
+    * or other properties.
+    */
   @JSName("addEventListener")
   def `addEventListener_console-message`(
     event: electronLib.electronLibStrings.`console-message`,
     listener: js.Function1[/* event */ ConsoleMessageEvent, scala.Unit]
   ): this.type = js.native
-  /**
-       * Fired when the guest window logs a console message. The following example code
-       * forwards all log messages to the embedder's console without regard for log level
-       * or other properties.
-       */
   @JSName("addEventListener")
   def `addEventListener_console-message`(
     event: electronLib.electronLibStrings.`console-message`,
@@ -302,16 +293,13 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   /**
-       * Fired when the renderer process is crashed.
-       */
+    * Fired when the renderer process is crashed.
+    */
   @JSName("addEventListener")
   def addEventListener_crashed(
     event: electronLib.electronLibStrings.crashed,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
-  /**
-       * Fired when the renderer process is crashed.
-       */
   @JSName("addEventListener")
   def addEventListener_crashed(
     event: electronLib.electronLibStrings.crashed,
@@ -352,16 +340,13 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   /**
-       * Fired when the WebContents is destroyed.
-       */
+    * Fired when the WebContents is destroyed.
+    */
   @JSName("addEventListener")
   def addEventListener_destroyed(
     event: electronLib.electronLibStrings.destroyed,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
-  /**
-       * Fired when the WebContents is destroyed.
-       */
   @JSName("addEventListener")
   def addEventListener_destroyed(
     event: electronLib.electronLibStrings.destroyed,
@@ -369,16 +354,13 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): this.type = js.native
   /**
-       * Emitted when DevTools is closed.
-       */
+    * Emitted when DevTools is closed.
+    */
   @JSName("addEventListener")
   def `addEventListener_devtools-closed`(
     event: electronLib.electronLibStrings.`devtools-closed`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
-  /**
-       * Emitted when DevTools is closed.
-       */
   @JSName("addEventListener")
   def `addEventListener_devtools-closed`(
     event: electronLib.electronLibStrings.`devtools-closed`,
@@ -386,16 +368,13 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): this.type = js.native
   /**
-       * Emitted when DevTools is focused / opened.
-       */
+    * Emitted when DevTools is focused / opened.
+    */
   @JSName("addEventListener")
   def `addEventListener_devtools-focused`(
     event: electronLib.electronLibStrings.`devtools-focused`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
-  /**
-       * Emitted when DevTools is focused / opened.
-       */
   @JSName("addEventListener")
   def `addEventListener_devtools-focused`(
     event: electronLib.electronLibStrings.`devtools-focused`,
@@ -403,16 +382,13 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): this.type = js.native
   /**
-       * Emitted when DevTools is opened.
-       */
+    * Emitted when DevTools is opened.
+    */
   @JSName("addEventListener")
   def `addEventListener_devtools-opened`(
     event: electronLib.electronLibStrings.`devtools-opened`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
-  /**
-       * Emitted when DevTools is opened.
-       */
   @JSName("addEventListener")
   def `addEventListener_devtools-opened`(
     event: electronLib.electronLibStrings.`devtools-opened`,
@@ -420,18 +396,14 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): this.type = js.native
   /**
-       * Emitted when a page's theme color changes. This is usually due to encountering a
-       * meta tag:
-       */
+    * Emitted when a page's theme color changes. This is usually due to encountering a
+    * meta tag:
+    */
   @JSName("addEventListener")
   def `addEventListener_did-change-theme-color`(
     event: electronLib.electronLibStrings.`did-change-theme-color`,
     listener: js.Function1[/* event */ DidChangeThemeColorEvent, scala.Unit]
   ): this.type = js.native
-  /**
-       * Emitted when a page's theme color changes. This is usually due to encountering a
-       * meta tag:
-       */
   @JSName("addEventListener")
   def `addEventListener_did-change-theme-color`(
     event: electronLib.electronLibStrings.`did-change-theme-color`,
@@ -439,18 +411,14 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): this.type = js.native
   /**
-       * This event is like did-finish-load, but fired when the load failed or was
-       * cancelled, e.g. window.stop() is invoked.
-       */
+    * This event is like did-finish-load, but fired when the load failed or was
+    * cancelled, e.g. window.stop() is invoked.
+    */
   @JSName("addEventListener")
   def `addEventListener_did-fail-load`(
     event: electronLib.electronLibStrings.`did-fail-load`,
     listener: js.Function1[/* event */ DidFailLoadEvent, scala.Unit]
   ): this.type = js.native
-  /**
-       * This event is like did-finish-load, but fired when the load failed or was
-       * cancelled, e.g. window.stop() is invoked.
-       */
   @JSName("addEventListener")
   def `addEventListener_did-fail-load`(
     event: electronLib.electronLibStrings.`did-fail-load`,
@@ -458,18 +426,14 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): this.type = js.native
   /**
-       * Fired when the navigation is done, i.e. the spinner of the tab will stop
-       * spinning, and the onload event is dispatched.
-       */
+    * Fired when the navigation is done, i.e. the spinner of the tab will stop
+    * spinning, and the onload event is dispatched.
+    */
   @JSName("addEventListener")
   def `addEventListener_did-finish-load`(
     event: electronLib.electronLibStrings.`did-finish-load`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
-  /**
-       * Fired when the navigation is done, i.e. the spinner of the tab will stop
-       * spinning, and the onload event is dispatched.
-       */
   @JSName("addEventListener")
   def `addEventListener_did-finish-load`(
     event: electronLib.electronLibStrings.`did-finish-load`,
@@ -477,16 +441,13 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): this.type = js.native
   /**
-       * Fired when a frame has done navigation.
-       */
+    * Fired when a frame has done navigation.
+    */
   @JSName("addEventListener")
   def `addEventListener_did-frame-finish-load`(
     event: electronLib.electronLibStrings.`did-frame-finish-load`,
     listener: js.Function1[/* event */ DidFrameFinishLoadEvent, scala.Unit]
   ): this.type = js.native
-  /**
-       * Fired when a frame has done navigation.
-       */
   @JSName("addEventListener")
   def `addEventListener_did-frame-finish-load`(
     event: electronLib.electronLibStrings.`did-frame-finish-load`,
@@ -494,20 +455,15 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): this.type = js.native
   /**
-       * Emitted when a navigation is done. This event is not emitted for in-page
-       * navigations, such as clicking anchor links or updating the window.location.hash.
-       * Use did-navigate-in-page event for this purpose.
-       */
+    * Emitted when a navigation is done. This event is not emitted for in-page
+    * navigations, such as clicking anchor links or updating the window.location.hash.
+    * Use did-navigate-in-page event for this purpose.
+    */
   @JSName("addEventListener")
   def `addEventListener_did-navigate`(
     event: electronLib.electronLibStrings.`did-navigate`,
     listener: js.Function1[/* event */ DidNavigateEvent, scala.Unit]
   ): this.type = js.native
-  /**
-       * Emitted when a navigation is done. This event is not emitted for in-page
-       * navigations, such as clicking anchor links or updating the window.location.hash.
-       * Use did-navigate-in-page event for this purpose.
-       */
   @JSName("addEventListener")
   def `addEventListener_did-navigate`(
     event: electronLib.electronLibStrings.`did-navigate`,
@@ -515,22 +471,16 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): this.type = js.native
   /**
-       * Emitted when an in-page navigation happened. When in-page navigation happens,
-       * the page URL changes but does not cause navigation outside of the page. Examples
-       * of this occurring are when anchor links are clicked or when the DOM hashchange
-       * event is triggered.
-       */
+    * Emitted when an in-page navigation happened. When in-page navigation happens,
+    * the page URL changes but does not cause navigation outside of the page. Examples
+    * of this occurring are when anchor links are clicked or when the DOM hashchange
+    * event is triggered.
+    */
   @JSName("addEventListener")
   def `addEventListener_did-navigate-in-page`(
     event: electronLib.electronLibStrings.`did-navigate-in-page`,
     listener: js.Function1[/* event */ DidNavigateInPageEvent, scala.Unit]
   ): this.type = js.native
-  /**
-       * Emitted when an in-page navigation happened. When in-page navigation happens,
-       * the page URL changes but does not cause navigation outside of the page. Examples
-       * of this occurring are when anchor links are clicked or when the DOM hashchange
-       * event is triggered.
-       */
   @JSName("addEventListener")
   def `addEventListener_did-navigate-in-page`(
     event: electronLib.electronLibStrings.`did-navigate-in-page`,
@@ -538,16 +488,13 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): this.type = js.native
   /**
-       * Corresponds to the points in time when the spinner of the tab starts spinning.
-       */
+    * Corresponds to the points in time when the spinner of the tab starts spinning.
+    */
   @JSName("addEventListener")
   def `addEventListener_did-start-loading`(
     event: electronLib.electronLibStrings.`did-start-loading`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
-  /**
-       * Corresponds to the points in time when the spinner of the tab starts spinning.
-       */
   @JSName("addEventListener")
   def `addEventListener_did-start-loading`(
     event: electronLib.electronLibStrings.`did-start-loading`,
@@ -555,16 +502,13 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): this.type = js.native
   /**
-       * Corresponds to the points in time when the spinner of the tab stops spinning.
-       */
+    * Corresponds to the points in time when the spinner of the tab stops spinning.
+    */
   @JSName("addEventListener")
   def `addEventListener_did-stop-loading`(
     event: electronLib.electronLibStrings.`did-stop-loading`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
-  /**
-       * Corresponds to the points in time when the spinner of the tab stops spinning.
-       */
   @JSName("addEventListener")
   def `addEventListener_did-stop-loading`(
     event: electronLib.electronLibStrings.`did-stop-loading`,
@@ -572,16 +516,13 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): this.type = js.native
   /**
-       * Fired when document in the given frame is loaded.
-       */
+    * Fired when document in the given frame is loaded.
+    */
   @JSName("addEventListener")
   def `addEventListener_dom-ready`(
     event: electronLib.electronLibStrings.`dom-ready`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
-  /**
-       * Fired when document in the given frame is loaded.
-       */
   @JSName("addEventListener")
   def `addEventListener_dom-ready`(
     event: electronLib.electronLibStrings.`dom-ready`,
@@ -710,16 +651,13 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   /**
-       * Fired when page enters fullscreen triggered by HTML API.
-       */
+    * Fired when page enters fullscreen triggered by HTML API.
+    */
   @JSName("addEventListener")
   def `addEventListener_enter-html-full-screen`(
     event: electronLib.electronLibStrings.`enter-html-full-screen`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
-  /**
-       * Fired when page enters fullscreen triggered by HTML API.
-       */
   @JSName("addEventListener")
   def `addEventListener_enter-html-full-screen`(
     event: electronLib.electronLibStrings.`enter-html-full-screen`,
@@ -749,16 +687,13 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   /**
-       * Fired when a result is available for webview.findInPage request.
-       */
+    * Fired when a result is available for webview.findInPage request.
+    */
   @JSName("addEventListener")
   def `addEventListener_found-in-page`(
     event: electronLib.electronLibStrings.`found-in-page`,
     listener: js.Function1[/* event */ FoundInPageEvent, scala.Unit]
   ): this.type = js.native
-  /**
-       * Fired when a result is available for webview.findInPage request.
-       */
   @JSName("addEventListener")
   def `addEventListener_found-in-page`(
     event: electronLib.electronLibStrings.`found-in-page`,
@@ -799,16 +734,13 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   /**
-       * Fired when the gpu process is crashed.
-       */
+    * Fired when the gpu process is crashed.
+    */
   @JSName("addEventListener")
   def `addEventListener_gpu-crashed`(
     event: electronLib.electronLibStrings.`gpu-crashed`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
-  /**
-       * Fired when the gpu process is crashed.
-       */
   @JSName("addEventListener")
   def `addEventListener_gpu-crashed`(
     event: electronLib.electronLibStrings.`gpu-crashed`,
@@ -838,20 +770,15 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   /**
-       * Fired when the guest page has sent an asynchronous message to embedder page.
-       * With sendToHost method and ipc-message event you can communicate between guest
-       * page and embedder page:
-       */
+    * Fired when the guest page has sent an asynchronous message to embedder page.
+    * With sendToHost method and ipc-message event you can communicate between guest
+    * page and embedder page:
+    */
   @JSName("addEventListener")
   def `addEventListener_ipc-message`(
     event: electronLib.electronLibStrings.`ipc-message`,
     listener: js.Function1[/* event */ IpcMessageEvent, scala.Unit]
   ): this.type = js.native
-  /**
-       * Fired when the guest page has sent an asynchronous message to embedder page.
-       * With sendToHost method and ipc-message event you can communicate between guest
-       * page and embedder page:
-       */
   @JSName("addEventListener")
   def `addEventListener_ipc-message`(
     event: electronLib.electronLibStrings.`ipc-message`,
@@ -892,16 +819,13 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   /**
-       * Fired when page leaves fullscreen triggered by HTML API.
-       */
+    * Fired when page leaves fullscreen triggered by HTML API.
+    */
   @JSName("addEventListener")
   def `addEventListener_leave-html-full-screen`(
     event: electronLib.electronLibStrings.`leave-html-full-screen`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
-  /**
-       * Fired when page leaves fullscreen triggered by HTML API.
-       */
   @JSName("addEventListener")
   def `addEventListener_leave-html-full-screen`(
     event: electronLib.electronLibStrings.`leave-html-full-screen`,
@@ -921,21 +845,15 @@ trait WebviewTag
   ): scala.Unit = js.native
   // Docs: http://electronjs.org/docs/api/webview-tag
   /**
-       * Fired when a load has committed. This includes navigation within the current
-       * document as well as subframe document-level loads, but does not include
-       * asynchronous resource loads.
-       */
+    * Fired when a load has committed. This includes navigation within the current
+    * document as well as subframe document-level loads, but does not include
+    * asynchronous resource loads.
+    */
   @JSName("addEventListener")
   def `addEventListener_load-commit`(
     event: electronLib.electronLibStrings.`load-commit`,
     listener: js.Function1[/* event */ LoadCommitEvent, scala.Unit]
   ): this.type = js.native
-  // Docs: http://electronjs.org/docs/api/webview-tag
-  /**
-       * Fired when a load has committed. This includes navigation within the current
-       * document as well as subframe document-level loads, but does not include
-       * asynchronous resource loads.
-       */
   @JSName("addEventListener")
   def `addEventListener_load-commit`(
     event: electronLib.electronLibStrings.`load-commit`,
@@ -998,16 +916,13 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   /**
-       * Emitted when media is paused or done playing.
-       */
+    * Emitted when media is paused or done playing.
+    */
   @JSName("addEventListener")
   def `addEventListener_media-paused`(
     event: electronLib.electronLibStrings.`media-paused`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
-  /**
-       * Emitted when media is paused or done playing.
-       */
   @JSName("addEventListener")
   def `addEventListener_media-paused`(
     event: electronLib.electronLibStrings.`media-paused`,
@@ -1015,16 +930,13 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): this.type = js.native
   /**
-       * Emitted when media starts playing.
-       */
+    * Emitted when media starts playing.
+    */
   @JSName("addEventListener")
   def `addEventListener_media-started-playing`(
     event: electronLib.electronLibStrings.`media-started-playing`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
-  /**
-       * Emitted when media starts playing.
-       */
   @JSName("addEventListener")
   def `addEventListener_media-started-playing`(
     event: electronLib.electronLibStrings.`media-started-playing`,
@@ -1109,18 +1021,14 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   /**
-       * Fired when the guest page attempts to open a new browser window. The following
-       * example code opens the new url in system's default browser.
-       */
+    * Fired when the guest page attempts to open a new browser window. The following
+    * example code opens the new url in system's default browser.
+    */
   @JSName("addEventListener")
   def `addEventListener_new-window`(
     event: electronLib.electronLibStrings.`new-window`,
     listener: js.Function1[/* event */ NewWindowEvent, scala.Unit]
   ): this.type = js.native
-  /**
-       * Fired when the guest page attempts to open a new browser window. The following
-       * example code opens the new url in system's default browser.
-       */
   @JSName("addEventListener")
   def `addEventListener_new-window`(
     event: electronLib.electronLibStrings.`new-window`,
@@ -1128,16 +1036,13 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): this.type = js.native
   /**
-       * Fired when page receives favicon urls.
-       */
+    * Fired when page receives favicon urls.
+    */
   @JSName("addEventListener")
   def `addEventListener_page-favicon-updated`(
     event: electronLib.electronLibStrings.`page-favicon-updated`,
     listener: js.Function1[/* event */ PageFaviconUpdatedEvent, scala.Unit]
   ): this.type = js.native
-  /**
-       * Fired when page receives favicon urls.
-       */
   @JSName("addEventListener")
   def `addEventListener_page-favicon-updated`(
     event: electronLib.electronLibStrings.`page-favicon-updated`,
@@ -1145,18 +1050,14 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): this.type = js.native
   /**
-       * Fired when page title is set during navigation. explicitSet is false when title
-       * is synthesized from file url.
-       */
+    * Fired when page title is set during navigation. explicitSet is false when title
+    * is synthesized from file url.
+    */
   @JSName("addEventListener")
   def `addEventListener_page-title-updated`(
     event: electronLib.electronLibStrings.`page-title-updated`,
     listener: js.Function1[/* event */ PageTitleUpdatedEvent, scala.Unit]
   ): this.type = js.native
-  /**
-       * Fired when page title is set during navigation. explicitSet is false when title
-       * is synthesized from file url.
-       */
   @JSName("addEventListener")
   def `addEventListener_page-title-updated`(
     event: electronLib.electronLibStrings.`page-title-updated`,
@@ -1208,16 +1109,13 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   /**
-       * Fired when a plugin process is crashed.
-       */
+    * Fired when a plugin process is crashed.
+    */
   @JSName("addEventListener")
   def `addEventListener_plugin-crashed`(
     event: electronLib.electronLibStrings.`plugin-crashed`,
     listener: js.Function1[/* event */ PluginCrashedEvent, scala.Unit]
   ): this.type = js.native
-  /**
-       * Fired when a plugin process is crashed.
-       */
   @JSName("addEventListener")
   def `addEventListener_plugin-crashed`(
     event: electronLib.electronLibStrings.`plugin-crashed`,
@@ -1555,16 +1453,13 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   /**
-       * Emitted when mouse moves over a link or the keyboard moves the focus to a link.
-       */
+    * Emitted when mouse moves over a link or the keyboard moves the focus to a link.
+    */
   @JSName("addEventListener")
   def `addEventListener_update-target-url`(
     event: electronLib.electronLibStrings.`update-target-url`,
     listener: js.Function1[/* event */ UpdateTargetUrlEvent, scala.Unit]
   ): this.type = js.native
-  /**
-       * Emitted when mouse moves over a link or the keyboard moves the focus to a link.
-       */
   @JSName("addEventListener")
   def `addEventListener_update-target-url`(
     event: electronLib.electronLibStrings.`update-target-url`,
@@ -1605,28 +1500,19 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   /**
-       * Emitted when a user or the page wants to start navigation. It can happen when
-       * the window.location object is changed or a user clicks a link in the page. This
-       * event will not emit when the navigation is started programmatically with APIs
-       * like <webview>.loadURL and <webview>.back. It is also not emitted during in-page
-       * navigation, such as clicking anchor links or updating the window.location.hash.
-       * Use did-navigate-in-page event for this purpose. Calling event.preventDefault()
-       * does NOT have any effect.
-       */
+    * Emitted when a user or the page wants to start navigation. It can happen when
+    * the window.location object is changed or a user clicks a link in the page. This
+    * event will not emit when the navigation is started programmatically with APIs
+    * like <webview>.loadURL and <webview>.back. It is also not emitted during in-page
+    * navigation, such as clicking anchor links or updating the window.location.hash.
+    * Use did-navigate-in-page event for this purpose. Calling event.preventDefault()
+    * does NOT have any effect.
+    */
   @JSName("addEventListener")
   def `addEventListener_will-navigate`(
     event: electronLib.electronLibStrings.`will-navigate`,
     listener: js.Function1[/* event */ WillNavigateEvent, scala.Unit]
   ): this.type = js.native
-  /**
-       * Emitted when a user or the page wants to start navigation. It can happen when
-       * the window.location object is changed or a user clicks a link in the page. This
-       * event will not emit when the navigation is started programmatically with APIs
-       * like <webview>.loadURL and <webview>.back. It is also not emitted during in-page
-       * navigation, such as clicking anchor links or updating the window.location.hash.
-       * Use did-navigate-in-page event for this purpose. Calling event.preventDefault()
-       * does NOT have any effect.
-       */
   @JSName("addEventListener")
   def `addEventListener_will-navigate`(
     event: electronLib.electronLibStrings.`will-navigate`,
@@ -1637,120 +1523,106 @@ trait WebviewTag
   def canGoForward(): scala.Boolean = js.native
   def canGoToOffset(offset: scala.Double): scala.Boolean = js.native
   /**
-       * Captures a snapshot of the webview's page. Same as
-       * webContents.capturePage([rect, ]callback).
-       */
+    * Captures a snapshot of the webview's page. Same as
+    * webContents.capturePage([rect, ]callback).
+    */
   def capturePage(callback: js.Function1[/* image */ NativeImage, scala.Unit]): scala.Unit = js.native
   /**
-       * Captures a snapshot of the webview's page. Same as
-       * webContents.capturePage([rect, ]callback).
-       */
+    * Captures a snapshot of the webview's page. Same as
+    * webContents.capturePage([rect, ]callback).
+    */
   def capturePage(rect: Rectangle, callback: js.Function1[/* image */ NativeImage, scala.Unit]): scala.Unit = js.native
   /**
-       * Clears the navigation history.
-       */
+    * Clears the navigation history.
+    */
   def clearHistory(): scala.Unit = js.native
   /**
-       * Closes the DevTools window of guest page.
-       */
+    * Closes the DevTools window of guest page.
+    */
   def closeDevTools(): scala.Unit = js.native
   /**
-       * Executes editing command copy in page.
-       */
+    * Executes editing command copy in page.
+    */
   def copy(): scala.Unit = js.native
   /**
-       * Executes editing command cut in page.
-       */
+    * Executes editing command cut in page.
+    */
   def cut(): scala.Unit = js.native
   /**
-       * Executes editing command delete in page.
-       */
+    * Executes editing command delete in page.
+    */
   def delete(): scala.Unit = js.native
   /**
-       * Initiates a download of the resource at url without navigating.
-       */
+    * Initiates a download of the resource at url without navigating.
+    */
   def downloadURL(url: java.lang.String): scala.Unit = js.native
   /**
-       * Evaluates code in page. If userGesture is set, it will create the user gesture
-       * context in the page. HTML APIs like requestFullScreen, which require user
-       * action, can take advantage of this option for automation.
-       */
+    * Evaluates code in page. If userGesture is set, it will create the user gesture
+    * context in the page. HTML APIs like requestFullScreen, which require user
+    * action, can take advantage of this option for automation.
+    */
   def executeJavaScript(code: java.lang.String): scala.Unit = js.native
-  /**
-       * Evaluates code in page. If userGesture is set, it will create the user gesture
-       * context in the page. HTML APIs like requestFullScreen, which require user
-       * action, can take advantage of this option for automation.
-       */
   def executeJavaScript(code: java.lang.String, userGesture: scala.Boolean): scala.Unit = js.native
-  /**
-       * Evaluates code in page. If userGesture is set, it will create the user gesture
-       * context in the page. HTML APIs like requestFullScreen, which require user
-       * action, can take advantage of this option for automation.
-       */
   def executeJavaScript(
     code: java.lang.String,
     userGesture: scala.Boolean,
     callback: js.Function1[/* result */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   /**
-       * Starts a request to find all matches for the text in the web page. The result of
-       * the request can be obtained by subscribing to found-in-page event.
-       */
+    * Starts a request to find all matches for the text in the web page. The result of
+    * the request can be obtained by subscribing to found-in-page event.
+    */
   def findInPage(text: java.lang.String): scala.Double = js.native
-  /**
-       * Starts a request to find all matches for the text in the web page. The result of
-       * the request can be obtained by subscribing to found-in-page event.
-       */
   def findInPage(text: java.lang.String, options: FindInPageOptions): scala.Double = js.native
   def getTitle(): java.lang.String = js.native
   def getURL(): java.lang.String = js.native
   def getUserAgent(): java.lang.String = js.native
   /**
-       * It depends on the remote module, it is therefore not available when this module
-       * is disabled.
-       */
+    * It depends on the remote module, it is therefore not available when this module
+    * is disabled.
+    */
   def getWebContents(): WebContents = js.native
   /**
-       * Sends a request to get current zoom factor, the callback will be called with
-       * callback(zoomFactor).
-       */
+    * Sends a request to get current zoom factor, the callback will be called with
+    * callback(zoomFactor).
+    */
   def getZoomFactor(callback: js.Function1[/* zoomFactor */ scala.Double, scala.Unit]): scala.Unit = js.native
   /**
-       * Sends a request to get current zoom level, the callback will be called with
-       * callback(zoomLevel).
-       */
+    * Sends a request to get current zoom level, the callback will be called with
+    * callback(zoomLevel).
+    */
   def getZoomLevel(callback: js.Function1[/* zoomLevel */ scala.Double, scala.Unit]): scala.Unit = js.native
   /**
-       * Makes the guest page go back.
-       */
+    * Makes the guest page go back.
+    */
   def goBack(): scala.Unit = js.native
   /**
-       * Makes the guest page go forward.
-       */
+    * Makes the guest page go forward.
+    */
   def goForward(): scala.Unit = js.native
   /**
-       * Navigates to the specified absolute index.
-       */
+    * Navigates to the specified absolute index.
+    */
   def goToIndex(index: scala.Double): scala.Unit = js.native
   /**
-       * Navigates to the specified offset from the "current entry".
-       */
+    * Navigates to the specified offset from the "current entry".
+    */
   def goToOffset(offset: scala.Double): scala.Unit = js.native
   /**
-       * Injects CSS into the guest page.
-       */
+    * Injects CSS into the guest page.
+    */
   def insertCSS(css: java.lang.String): scala.Unit = js.native
   /**
-       * Inserts text to the focused element.
-       */
+    * Inserts text to the focused element.
+    */
   def insertText(text: java.lang.String): scala.Unit = js.native
   /**
-       * Starts inspecting element at position (x, y) of guest page.
-       */
+    * Starts inspecting element at position (x, y) of guest page.
+    */
   def inspectElement(x: scala.Double, y: scala.Double): scala.Unit = js.native
   /**
-       * Opens the DevTools for the service worker context present in the guest page.
-       */
+    * Opens the DevTools for the service worker context present in the guest page.
+    */
   def inspectServiceWorker(): scala.Unit = js.native
   def isAudioMuted(): scala.Boolean = js.native
   def isCrashed(): scala.Boolean = js.native
@@ -1761,54 +1633,47 @@ trait WebviewTag
   def isLoadingMainFrame(): scala.Boolean = js.native
   def isWaitingForResponse(): scala.Boolean = js.native
   /**
-       * Loads the url in the webview, the url must contain the protocol prefix, e.g. the
-       * http:// or file://.
-       */
+    * Loads the url in the webview, the url must contain the protocol prefix, e.g. the
+    * http:// or file://.
+    */
   def loadURL(url: java.lang.String): scala.Unit = js.native
-  /**
-       * Loads the url in the webview, the url must contain the protocol prefix, e.g. the
-       * http:// or file://.
-       */
   def loadURL(url: java.lang.String, options: LoadURLOptions): scala.Unit = js.native
   /**
-       * Opens a DevTools window for guest page.
-       */
+    * Opens a DevTools window for guest page.
+    */
   def openDevTools(): scala.Unit = js.native
   /**
-       * Executes editing command paste in page.
-       */
+    * Executes editing command paste in page.
+    */
   def paste(): scala.Unit = js.native
   /**
-       * Executes editing command pasteAndMatchStyle in page.
-       */
+    * Executes editing command pasteAndMatchStyle in page.
+    */
   def pasteAndMatchStyle(): scala.Unit = js.native
   /**
-       * Prints webview's web page. Same as webContents.print([options]).
-       */
+    * Prints webview's web page. Same as webContents.print([options]).
+    */
   def print(): scala.Unit = js.native
-  /**
-       * Prints webview's web page. Same as webContents.print([options]).
-       */
   def print(options: PrintOptions): scala.Unit = js.native
   /**
-       * Prints webview's web page as PDF, Same as webContents.printToPDF(options,
-       * callback).
-       */
+    * Prints webview's web page as PDF, Same as webContents.printToPDF(options,
+    * callback).
+    */
   def printToPDF(
     options: PrintToPDFOptions,
     callback: js.Function2[/* error */ nodeLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   /**
-       * Executes editing command redo in page.
-       */
+    * Executes editing command redo in page.
+    */
   def redo(): scala.Unit = js.native
   /**
-       * Reloads the guest page.
-       */
+    * Reloads the guest page.
+    */
   def reload(): scala.Unit = js.native
   /**
-       * Reloads the guest page and ignores cache.
-       */
+    * Reloads the guest page and ignores cache.
+    */
   def reloadIgnoringCache(): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_abort(
@@ -2937,87 +2802,81 @@ trait WebviewTag
     listener: js.Function1[/* event */ WillNavigateEvent, scala.Unit]
   ): this.type = js.native
   /**
-       * Executes editing command replace in page.
-       */
+    * Executes editing command replace in page.
+    */
   def replace(text: java.lang.String): scala.Unit = js.native
   /**
-       * Executes editing command replaceMisspelling in page.
-       */
+    * Executes editing command replaceMisspelling in page.
+    */
   def replaceMisspelling(text: java.lang.String): scala.Unit = js.native
   /**
-       * Executes editing command selectAll in page.
-       */
+    * Executes editing command selectAll in page.
+    */
   def selectAll(): scala.Unit = js.native
   /**
-       * Send an asynchronous message to renderer process via channel, you can also send
-       * arbitrary arguments. The renderer process can handle the message by listening to
-       * the channel event with the ipcRenderer module. See webContents.send for
-       * examples.
-       */
+    * Send an asynchronous message to renderer process via channel, you can also send
+    * arbitrary arguments. The renderer process can handle the message by listening to
+    * the channel event with the ipcRenderer module. See webContents.send for
+    * examples.
+    */
   def send(channel: java.lang.String, args: js.Any*): scala.Unit = js.native
   /**
-       * Sends an input event to the page. See webContents.sendInputEvent for detailed
-       * description of event object.
-       */
+    * Sends an input event to the page. See webContents.sendInputEvent for detailed
+    * description of event object.
+    */
   def sendInputEvent(event: js.Any): scala.Unit = js.native
   /**
-       * Set guest page muted.
-       */
+    * Set guest page muted.
+    */
   def setAudioMuted(muted: scala.Boolean): scala.Unit = js.native
   /**
-       * Sets the maximum and minimum layout-based (i.e. non-visual) zoom level.
-       */
+    * Sets the maximum and minimum layout-based (i.e. non-visual) zoom level.
+    */
   def setLayoutZoomLevelLimits(minimumLevel: scala.Double, maximumLevel: scala.Double): scala.Unit = js.native
   /**
-       * Overrides the user agent for the guest page.
-       */
+    * Overrides the user agent for the guest page.
+    */
   def setUserAgent(userAgent: java.lang.String): scala.Unit = js.native
   /**
-       * Sets the maximum and minimum pinch-to-zoom level.
-       */
+    * Sets the maximum and minimum pinch-to-zoom level.
+    */
   def setVisualZoomLevelLimits(minimumLevel: scala.Double, maximumLevel: scala.Double): scala.Unit = js.native
   /**
-       * Changes the zoom factor to the specified factor. Zoom factor is zoom percent
-       * divided by 100, so 300% = 3.0.
-       */
+    * Changes the zoom factor to the specified factor. Zoom factor is zoom percent
+    * divided by 100, so 300% = 3.0.
+    */
   def setZoomFactor(factor: scala.Double): scala.Unit = js.native
   /**
-       * Changes the zoom level to the specified level. The original size is 0 and each
-       * increment above or below represents zooming 20% larger or smaller to default
-       * limits of 300% and 50% of original size, respectively. The formula for this is
-       * scale := 1.2 ^ level.
-       */
+    * Changes the zoom level to the specified level. The original size is 0 and each
+    * increment above or below represents zooming 20% larger or smaller to default
+    * limits of 300% and 50% of original size, respectively. The formula for this is
+    * scale := 1.2 ^ level.
+    */
   def setZoomLevel(level: scala.Double): scala.Unit = js.native
   /**
-       * Shows pop-up dictionary that searches the selected word on the page.
-       */
+    * Shows pop-up dictionary that searches the selected word on the page.
+    */
   def showDefinitionForSelection(): scala.Unit = js.native
   /**
-       * Stops any pending navigation.
-       */
+    * Stops any pending navigation.
+    */
   def stop(): scala.Unit = js.native
-  /**
-       * Stops any findInPage request for the webview with the provided action.
-       */
   @JSName("stopFindInPage")
   def stopFindInPage_activateSelection(action: electronLib.electronLibStrings.activateSelection): scala.Unit = js.native
   /**
-       * Stops any findInPage request for the webview with the provided action.
-       */
+    * Stops any findInPage request for the webview with the provided action.
+    */
   @JSName("stopFindInPage")
   def stopFindInPage_clearSelection(action: electronLib.electronLibStrings.clearSelection): scala.Unit = js.native
-  /**
-       * Stops any findInPage request for the webview with the provided action.
-       */
   @JSName("stopFindInPage")
   def stopFindInPage_keepSelection(action: electronLib.electronLibStrings.keepSelection): scala.Unit = js.native
   /**
-       * Executes editing command undo in page.
-       */
+    * Executes editing command undo in page.
+    */
   def undo(): scala.Unit = js.native
   /**
-       * Executes editing command unselect in page.
-       */
+    * Executes editing command unselect in page.
+    */
   def unselect(): scala.Unit = js.native
 }
 

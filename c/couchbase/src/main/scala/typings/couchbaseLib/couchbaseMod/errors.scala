@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait errors extends js.Object
 
 /**
- * Enumeration of all error codes. See libcouchbase documentation for more details on what these errors represent.
- */
+  * Enumeration of all error codes. See libcouchbase documentation for more details on what these errors represent.
+  */
 @JSImport("couchbase", "errors")
 @js.native
 object errors extends js.Object {

@@ -20,8 +20,8 @@ trait Cloud[T /* <: d3DashCloudLib.d3Mod.layoutNs.cloudNs.Word */] extends js.Ob
   def fontWeight(weight: java.lang.String): Cloud[T] = js.native
   def fontWeight(weight: js.Function2[/* datum */ T, /* index */ scala.Double, java.lang.String | scala.Double]): Cloud[T] = js.native
   def fontWeight(weight: scala.Double): Cloud[T] = js.native
-  def on(`type`: java.lang.String): js.Function1[/* repeated */js.Any, scala.Unit] = js.native
-  def on(`type`: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): Cloud[T] = js.native
+  def on(`type`: java.lang.String): js.Function1[/* repeated */ js.Any, scala.Unit] = js.native
+  def on(`type`: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): Cloud[T] = js.native
   @JSName("on")
   def on_end(`type`: d3DashCloudLib.d3DashCloudLibStrings.end): js.Function2[/* tags */ js.Array[T], /* bounds */ js.Array[d3DashCloudLib.Anon_Y], scala.Unit] = js.native
   @JSName("on")

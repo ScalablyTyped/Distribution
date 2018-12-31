@@ -16,10 +16,10 @@ class Tile protected () extends Widget {
   @JSName("model")
   var model_Tile: ejDotWebDotAllLib.ejNs.TileNs.Model = js.native
   /** Update the image template of tile item to another one.
-           * @param {string} UpdateTemplate by using id
-           * @param {number} index of the tile
-           * @returns {void}
-           */
+    * @param {string} UpdateTemplate by using id
+    * @param {number} index of the tile
+    * @returns {void}
+    */
   def updateTemplate(id: java.lang.String, index: scala.Double): scala.Unit = js.native
 }
 

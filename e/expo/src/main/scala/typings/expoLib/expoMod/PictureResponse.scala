@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PictureResponse extends js.Object {
   var base64: java.lang.String
   var exif: java.lang.String

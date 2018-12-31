@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICategoryAxis
   extends extjsLib.ExtNs.chartNs.axisNs.IAxis {
   /** [Config Option] (Boolean) */

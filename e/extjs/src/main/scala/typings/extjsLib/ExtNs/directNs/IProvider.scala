@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IProvider
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Method] Abstract method for subclasses to implement  */

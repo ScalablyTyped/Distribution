@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INodeStore extends IStore {
   /** [Config Option] (Boolean) */
   var folderSort: js.UndefOr[scala.Boolean] = js.undefined

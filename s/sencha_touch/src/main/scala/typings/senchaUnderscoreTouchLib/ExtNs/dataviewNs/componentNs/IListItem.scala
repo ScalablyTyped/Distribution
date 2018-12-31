@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IListItem extends IDataItem {
   /** [Method] Returns the value of body
   		* @returns Object

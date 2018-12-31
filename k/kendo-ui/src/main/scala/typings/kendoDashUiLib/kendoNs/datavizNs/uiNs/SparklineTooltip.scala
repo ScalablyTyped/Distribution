@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SparklineTooltip extends js.Object {
   var background: js.UndefOr[java.lang.String] = js.undefined
   var border: js.UndefOr[SparklineTooltipBorder] = js.undefined

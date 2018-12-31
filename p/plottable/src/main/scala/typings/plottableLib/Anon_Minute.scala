@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Minute extends js.Object {
   var day: plottableLib.plottableLibStrings.day
   var hour: plottableLib.plottableLibStrings.hour

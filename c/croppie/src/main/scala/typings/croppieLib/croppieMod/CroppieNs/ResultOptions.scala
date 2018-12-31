@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResultOptions extends js.Object {
   var circle: js.UndefOr[scala.Boolean] = js.undefined
   var format: js.UndefOr[Format] = js.undefined

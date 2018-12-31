@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerAddr
   extends zipkinLib.zipkinMod.zipkinNs.IAnnotation {
   var host: zipkinLib.zipkinMod.zipkinNs.InetAddress

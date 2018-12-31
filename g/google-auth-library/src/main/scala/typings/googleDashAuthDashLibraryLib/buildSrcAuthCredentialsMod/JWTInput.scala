@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JWTInput extends js.Object {
   var client_email: js.UndefOr[java.lang.String] = js.undefined
   var client_id: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait fragParsingData extends js.Object {
   var endDTS: scala.Double
   var endPTS: scala.Double

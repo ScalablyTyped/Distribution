@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISlidingWindowSource extends js.Object {
   def fetchMoreItems(
     argument: js.Any,

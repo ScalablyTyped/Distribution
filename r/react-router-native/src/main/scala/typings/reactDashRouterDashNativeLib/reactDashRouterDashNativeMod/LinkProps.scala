@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinkProps
   extends /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[_]] = js.undefined

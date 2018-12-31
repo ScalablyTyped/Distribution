@@ -53,7 +53,6 @@ trait WikitudePlugin extends js.Object {
   def onBackButton(): scala.Unit = js.native
   def onPause(): scala.Unit = js.native
   /* Lifecycle updates */
-  
   def onResume(): scala.Unit = js.native
   def onWikitudeError(): scala.Unit = js.native
   def onWikitudeOK(): scala.Unit = js.native

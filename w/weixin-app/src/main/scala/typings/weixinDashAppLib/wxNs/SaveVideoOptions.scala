@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SaveVideoOptions
   extends BaseOptions[js.Any, js.Any] {
   var filePath: java.lang.String

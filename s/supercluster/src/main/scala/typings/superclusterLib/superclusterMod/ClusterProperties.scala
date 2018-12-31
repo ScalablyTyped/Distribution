@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClusterProperties
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var cluster: js.UndefOr[scala.Boolean] = js.undefined

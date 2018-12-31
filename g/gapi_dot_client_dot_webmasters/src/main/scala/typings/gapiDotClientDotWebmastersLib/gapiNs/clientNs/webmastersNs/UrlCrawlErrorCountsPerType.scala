@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UrlCrawlErrorCountsPerType extends js.Object {
   /** The crawl error type. */
   var category: js.UndefOr[java.lang.String] = js.undefined

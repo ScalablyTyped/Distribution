@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPluginInfo extends js.Object {
   var AssemblyName: java.lang.String
   var BridgeClassName: java.lang.String

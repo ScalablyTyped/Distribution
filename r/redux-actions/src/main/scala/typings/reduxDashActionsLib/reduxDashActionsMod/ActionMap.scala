@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActionMap[Payload, Meta]
   extends /* actionType */ org.scalablytyped.runtime.StringDictionary[
       js.UndefOr[

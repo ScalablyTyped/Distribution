@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SharedShapeOptions extends js.Object {
   var angle: js.UndefOr[scala.Double] = js.undefined
   var collisionGroup: js.UndefOr[scala.Double] = js.undefined

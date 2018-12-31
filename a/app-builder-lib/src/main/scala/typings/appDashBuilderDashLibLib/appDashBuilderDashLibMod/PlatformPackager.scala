@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("app-builder-lib", "PlatformPackager")
 @js.native
-abstract class PlatformPackager[DC /* <: js.Any */] protected ()
+abstract class PlatformPackager[DC /* <: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify PlatformSpecificBuildOptions */ js.Any */] protected ()
   extends appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[DC] {
-  protected def this(info: js.Any, platform: js.Any) = this()
+  protected def this(info: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Packager */ js.Any, platform: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Platform */ js.Any) = this()
 }
 
 @JSImport("app-builder-lib", "PlatformPackager")

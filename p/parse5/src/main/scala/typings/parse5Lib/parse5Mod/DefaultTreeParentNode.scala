@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DefaultTreeParentNode extends js.Object {
   /**
-       * Child nodes.
-       */
+    * Child nodes.
+    */
   var childNodes: js.Array[DefaultTreeNode]
 }
 

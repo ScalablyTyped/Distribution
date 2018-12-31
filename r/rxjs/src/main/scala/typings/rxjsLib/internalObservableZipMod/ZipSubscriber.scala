@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class ZipSubscriber[T, R] protected ()
   extends rxjsLib.internalSubscriberMod.Subscriber[T] {
   def this(destination: rxjsLib.internalSubscriberMod.Subscriber[R]) = this()
-  def this(destination: rxjsLib.internalSubscriberMod.Subscriber[R], resultSelector: js.Function1[/* repeated */js.Any, R]) = this()
-  def this(destination: rxjsLib.internalSubscriberMod.Subscriber[R], resultSelector: js.Function1[/* repeated */js.Any, R], values: js.Any) = this()
+  def this(destination: rxjsLib.internalSubscriberMod.Subscriber[R], resultSelector: js.Function1[/* repeated */ js.Any, R]) = this()
+  def this(destination: rxjsLib.internalSubscriberMod.Subscriber[R], resultSelector: js.Function1[/* repeated */ js.Any, R], values: js.Any) = this()
   var active: js.Any = js.native
   var iterators: js.Any = js.native
   var resultSelector: js.Any = js.native

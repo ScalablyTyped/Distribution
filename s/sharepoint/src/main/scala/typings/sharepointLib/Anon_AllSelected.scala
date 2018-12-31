@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AllSelected extends js.Object {
   var allSelected: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Header
   var allSelectedHover: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Header

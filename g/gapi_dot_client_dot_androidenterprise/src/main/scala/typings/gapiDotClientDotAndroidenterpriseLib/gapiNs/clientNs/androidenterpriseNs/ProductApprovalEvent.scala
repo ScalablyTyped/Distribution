@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProductApprovalEvent extends js.Object {
   /** Whether the product was approved or unapproved. This field will always be present. */
   var approved: js.UndefOr[java.lang.String] = js.undefined

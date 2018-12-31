@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableLayoutFunctions extends js.Object {
   var fillColor: js.UndefOr[js.Function2[/* i */ scala.Double, /* node */ js.Any, java.lang.String]] = js.undefined
   var hLineColor: js.UndefOr[js.Function2[/* i */ scala.Double, /* node */ js.Any, java.lang.String]] = js.undefined

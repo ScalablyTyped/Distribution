@@ -11,7 +11,7 @@ object jasmineDashDataDashProviderModMembers extends js.Object {
   def apply[T /* <: js.Array[_] */](
     values: jasmineDashDataDashProviderLib.jasmineDashDataDashProviderMod.usingNs.ValueType[js.Array[T]],
     func: js.Function1[
-      /* repeated */jasmineDashDataDashProviderLib.jasmineDashDataDashProviderMod.usingNs.ArrayFuncArgType[T], 
+      /* repeated */ jasmineDashDataDashProviderLib.jasmineDashDataDashProviderMod.usingNs.ArrayFuncArgType[T], 
       scala.Unit
     ]
   ): scala.Unit = js.native

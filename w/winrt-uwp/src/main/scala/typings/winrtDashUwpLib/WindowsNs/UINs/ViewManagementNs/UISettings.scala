@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Contains a set of common app user interface settings and operations. */
 @JSGlobal("Windows.UI.ViewManagement.UISettings")
 @js.native
+/** Creates a new default instance of the UISettings class. */
 class UISettings () extends js.Object {
   /** Gets whether animations are enabled for the user interface. */
   var animationsEnabled: scala.Boolean = js.native
@@ -53,10 +54,10 @@ class UISettings () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[UISettings, _]
   ): scala.Unit = js.native
   /**
-                   * Returns the color value of the specified color type.
-                   * @param desiredColor An enumeration value that specifies the type of color to get a value for.
-                   * @return The color value of the specified color type.
-                   */
+    * Returns the color value of the specified color type.
+    * @param desiredColor An enumeration value that specifies the type of color to get a value for.
+    * @return The color value of the specified color type.
+    */
   def getColorValue(desiredColor: UIColorType): winrtDashUwpLib.WindowsNs.UINs.Color = js.native
   /** Occurs when color values have changed. */
   def oncolorvalueschanged(ev: js.Any with winrtDashUwpLib.WindowsNs.WinRTEvent[UISettings]): scala.Unit = js.native
@@ -74,10 +75,10 @@ class UISettings () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[UISettings, _]
   ): scala.Unit = js.native
   /**
-                   * Gets the color used for a specific user interface element type, such as a button face or window text.
-                   * @param desiredElement The type of element for which the color will be obtained.
-                   * @return The color of the element type, expressed as a 32-bit color value.
-                   */
+    * Gets the color used for a specific user interface element type, such as a button face or window text.
+    * @param desiredElement The type of element for which the color will be obtained.
+    * @return The color of the element type, expressed as a 32-bit color value.
+    */
   def uiElementColor(desiredElement: UIElementType): winrtDashUwpLib.WindowsNs.UINs.Color = js.native
 }
 

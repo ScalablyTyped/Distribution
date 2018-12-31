@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnnotateImageRequest extends js.Object {
   /** Requested features. */
   var features: js.UndefOr[js.Array[Feature]] = js.undefined

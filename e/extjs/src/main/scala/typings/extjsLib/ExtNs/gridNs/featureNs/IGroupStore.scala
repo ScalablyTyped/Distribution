@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGroupStore
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Method] Get the index within the entire dataset

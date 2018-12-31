@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UrlMap extends js.Object {
   /** Uses API Endpoints to handle requests. */
   var apiEndpoint: js.UndefOr[ApiEndpointHandler] = js.undefined
@@ -22,9 +21,9 @@ trait UrlMap extends js.Object {
   /** Returns the contents of a file, such as an image, as the response. */
   var staticFiles: js.UndefOr[StaticFilesHandler] = js.undefined
   /**
-               * URL prefix. Uses regular expression syntax, which means regexp special characters must be escaped, but should not contain groupings. All URLs that
-               * begin with this prefix are handled by this handler, using the portion of the URL after the prefix as part of the file path.
-               */
+    * URL prefix. Uses regular expression syntax, which means regexp special characters must be escaped, but should not contain groupings. All URLs that
+    * begin with this prefix are handled by this handler, using the portion of the URL after the prefix as part of the file path.
+    */
   var urlRegex: js.UndefOr[java.lang.String] = js.undefined
 }
 

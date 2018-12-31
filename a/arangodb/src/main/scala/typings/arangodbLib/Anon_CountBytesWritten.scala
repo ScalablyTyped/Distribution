@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CountBytesWritten extends js.Object {
   var bytesRead: scala.Double
   var bytesWritten: scala.Double

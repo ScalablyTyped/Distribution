@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Metadata extends js.Object {
   var completed_in: js.UndefOr[scala.Double] = js.undefined
   var count: js.UndefOr[scala.Double] = js.undefined

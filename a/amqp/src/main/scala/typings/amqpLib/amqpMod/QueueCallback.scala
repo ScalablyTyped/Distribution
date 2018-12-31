@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueueCallback extends js.Object {
   var channel: scala.Double
   var consumerTagListeners: org.scalablytyped.runtime.StringDictionary[js.Any]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NestedResults extends Result {
   var description: java.lang.String
   var failedCount: scala.Double

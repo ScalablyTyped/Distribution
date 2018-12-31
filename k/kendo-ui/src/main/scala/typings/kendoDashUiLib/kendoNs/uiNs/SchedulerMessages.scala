@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SchedulerMessages extends js.Object {
   var allDay: js.UndefOr[java.lang.String] = js.undefined
   var ariaEventLabel: js.UndefOr[java.lang.String] = js.undefined

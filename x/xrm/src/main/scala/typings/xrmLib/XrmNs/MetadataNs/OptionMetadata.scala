@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Type to hold the optionset metadata as part of the EntityMetadata
-         */
-
+  * Type to hold the optionset metadata as part of the EntityMetadata
+  */
 trait OptionMetadata extends js.Object {
   var Color: java.lang.String
   var Description: Label

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccessPolicy extends js.Object {
   /** The value of allowed indicates whether the access to the policy is allowed or denied by default. */
   var allowed: js.UndefOr[scala.Boolean] = js.undefined

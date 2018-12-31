@@ -10,25 +10,25 @@ import scala.scalajs.js.annotation._
 @js.native
 class ContactField protected () extends js.Object {
   /**
-                   * Creates a new ContactField object.
-                   * @param value The value that the field contains.
-                   * @param type The type of contact data.
-                   */
+    * Creates a new ContactField object.
+    * @param value The value that the field contains.
+    * @param type The type of contact data.
+    */
   def this(value: java.lang.String, `type`: ContactFieldType) = this()
   /**
-                   * Creates a new ContactField object.
-                   * @param value The value for the contact field.
-                   * @param type The type of contact data.
-                   * @param category The category that the contact belongs to.
-                   */
+    * Creates a new ContactField object.
+    * @param value The value for the contact field.
+    * @param type The type of contact data.
+    * @param category The category that the contact belongs to.
+    */
   def this(value: java.lang.String, `type`: ContactFieldType, category: ContactFieldCategory) = this()
   /**
-                   * Creates a new ContactField object.
-                   * @param name The name of the field.
-                   * @param value The value the field contains.
-                   * @param type The type of field.
-                   * @param category The category the field belongs to.
-                   */
+    * Creates a new ContactField object.
+    * @param name The name of the field.
+    * @param value The value the field contains.
+    * @param type The type of field.
+    * @param category The category the field belongs to.
+    */
   def this(name: java.lang.String, value: java.lang.String, `type`: ContactFieldType, category: ContactFieldCategory) = this()
   /** Gets the category for the contact data. */
   var category: ContactFieldCategory = js.native

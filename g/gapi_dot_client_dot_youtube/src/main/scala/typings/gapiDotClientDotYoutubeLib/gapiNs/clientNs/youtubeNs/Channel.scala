@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Channel extends js.Object {
   /** The auditionDetails object encapsulates channel data that is relevant for YouTube Partners during the audition process. */
   var auditDetails: js.UndefOr[ChannelAuditDetails] = js.undefined

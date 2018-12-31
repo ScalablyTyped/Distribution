@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ProductListing () extends js.Object {
   var currencyCode: js.Any = js.native
-   /* unmapped type *//** Gets the description for the in-app product. */
+   /* unmapped type */ /** Gets the description for the in-app product. */
   var description: java.lang.String = js.native
   var formattedBasePrice: js.Any = js.native
-   /* unmapped type *//** Gets the purchase price for the in-app product with the appropriate formatting for the current market. */
+   /* unmapped type */ /** Gets the purchase price for the in-app product with the appropriate formatting for the current market. */
   var formattedPrice: java.lang.String = js.native
   /** Gets the URI of the image associated with the in-app product. */
   var imageUri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri = js.native
   var isOnSale: js.Any = js.native
-   /* unmapped type *//** Gets the list of keywords associated with the in-app product. These keywords are useful for filtering product lists by keyword, for example, when calling LoadListingInformationByKeywordsAsync . */
+   /* unmapped type */ /** Gets the list of keywords associated with the in-app product. These keywords are useful for filtering product lists by keyword, for example, when calling LoadListingInformationByKeywordsAsync . */
   var keywords: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String] = js.native
   /** Gets the descriptive name of the in-app product that is displayed customers in the current market. */
   var name: java.lang.String = js.native

@@ -10,35 +10,35 @@ import scala.scalajs.js.annotation._
 class default () extends RSASSAPSSParams {
   def this(params: js.Any) = this()
   /**
-           * Algorithms of hashing (DEFAULT sha1)
-           * 
-           * @type {AlgorithmIdentifier}
-           * @memberOf RSASSAPSSParams
-           */
+    * Algorithms of hashing (DEFAULT sha1)
+    * 
+    * @type {AlgorithmIdentifier}
+    * @memberOf RSASSAPSSParams
+    */
   /* CompleteClass */
   override var hashAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default = js.native
   /**
-           * Algorithm of "mask generaion function (MGF)" (DEFAULT mgf1SHA1)
-           * 
-           * @type {AlgorithmIdentifier}
-           * @memberOf RSASSAPSSParams
-           */
+    * Algorithm of "mask generaion function (MGF)" (DEFAULT mgf1SHA1)
+    * 
+    * @type {AlgorithmIdentifier}
+    * @memberOf RSASSAPSSParams
+    */
   /* CompleteClass */
   override var maskGenAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default = js.native
   /**
-           * Salt length (DEFAULT 20)
-           * 
-           * @type {number}
-           * @memberOf RSASSAPSSParams
-           */
+    * Salt length (DEFAULT 20)
+    * 
+    * @type {number}
+    * @memberOf RSASSAPSSParams
+    */
   /* CompleteClass */
   override var saltLength: scala.Double = js.native
   /**
-           * (DEFAULT 1)
-           * 
-           * @type {number}
-           * @memberOf RSASSAPSSParams
-           */
+    * (DEFAULT 1)
+    * 
+    * @type {number}
+    * @memberOf RSASSAPSSParams
+    */
   /* CompleteClass */
   override var trailerField: scala.Double = js.native
   /* CompleteClass */

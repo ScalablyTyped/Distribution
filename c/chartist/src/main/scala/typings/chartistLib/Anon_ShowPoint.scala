@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShowPoint extends js.Object {
   var areaBase: js.UndefOr[scala.Double] = js.undefined
   var lineSmooth: js.UndefOr[js.Function | scala.Boolean] = js.undefined

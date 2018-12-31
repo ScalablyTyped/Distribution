@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PositionGizmo extends js.Object {
   var boundingBoxGizmo: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.BoundingBoxGizmo]
   var positionGizmo: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.PositionGizmo]

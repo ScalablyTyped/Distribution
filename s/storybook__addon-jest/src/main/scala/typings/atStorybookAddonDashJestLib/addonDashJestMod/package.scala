@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object addonDashJestMod {
-  type SpecsFunction = js.Function1[/* repeated */java.lang.String, atStorybookReactLib.reactMod.StoryDecorator]
+  type SpecsFunction = js.Function1[/* repeated */ java.lang.String, atStorybookReactLib.reactMod.StoryDecorator]
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDragDropElement extends js.Object {
   /** [Method] Returns the X position of an html element
   		* @param el HTMLElement the element for which to get the position

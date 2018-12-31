@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExpressBusboyOptions
   extends connectDashBusboyLib.connectDashBusboyMod.connectBusboyNs.ConnectBusboyOptions {
   var allowedPath: js.UndefOr[

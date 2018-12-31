@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object languageVisitorMod {
   type ASTVisitor = Visitor[
     graphqlLib.languageAstMod.ASTKindToNode, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List())))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: graphql.graphql/language/ast.ASTKindToNode[keyof graphql.graphql/language/ast.ASTKindToNode] */ js.Any
   ]
   type EnterLeaveVisitor[KindToNode, Nodes] = EnterLeave[
     (VisitFn[Nodes, Nodes]) | (graphqlLib.graphqlLibStrings.EnterLeaveVisitor with KindToNode)

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PrinterInfo extends js.Object {
   /** Printer's human readable description. */
   var description: js.UndefOr[java.lang.String] = js.undefined

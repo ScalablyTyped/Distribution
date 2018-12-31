@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeploymentQueryParameters extends js.Object {
   var artifactSourceId: java.lang.String
   var artifactTypeId: java.lang.String

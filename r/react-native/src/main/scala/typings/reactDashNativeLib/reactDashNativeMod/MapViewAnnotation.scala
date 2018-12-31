@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapViewAnnotation extends js.Object {
   var animateDrop: js.UndefOr[scala.Boolean] = js.undefined
   var detailCalloutView: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined

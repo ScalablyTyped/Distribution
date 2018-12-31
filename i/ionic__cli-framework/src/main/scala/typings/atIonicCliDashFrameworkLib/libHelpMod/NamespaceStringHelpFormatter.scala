@@ -9,48 +9,48 @@ import scala.scalajs.js.annotation._
 @js.native
 class NamespaceStringHelpFormatter[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C, N, M, I, O] */, N /* <: atIonicCliDashFrameworkLib.definitionsMod.INamespace[C, N, M, I, O] */, M /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadata[I, O] */, I /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataInput */, O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */] () extends NamespaceHelpFormatter[C, N, M, I, O] {
   /**
-       * Insert text that appears after a commands's summary.
-       *
-       * @param meta: The metadata of the command.
-       */
+    * Insert text that appears after a commands's summary.
+    *
+    * @param meta: The metadata of the command.
+    */
   def formatAfterCommandSummary(meta: atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadata[C, N, M, I, O]): js.Promise[java.lang.String] = js.native
   /**
-       * Insert text that appears after a namespace's summary.
-       *
-       * @param meta The metadata of the namespace.
-       * @param commands An array of the metadata of the namespace's commands.
-       */
+    * Insert text that appears after a namespace's summary.
+    *
+    * @param meta The metadata of the namespace.
+    * @param commands An array of the metadata of the namespace's commands.
+    */
   def formatAfterNamespaceSummary(
     meta: atIonicCliDashFrameworkLib.definitionsMod.HydratedNamespaceMetadata[C, N, M, I, O],
     commands: js.Array[atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadata[C, N, M, I, O]]
   ): js.Promise[java.lang.String] = js.native
   /**
-       * Insert text after the namespace's summary.
-       *
-       * @param meta: The metadata of the namespace.
-       */
+    * Insert text after the namespace's summary.
+    *
+    * @param meta: The metadata of the namespace.
+    */
   def formatAfterSummary(meta: atIonicCliDashFrameworkLib.definitionsMod.NamespaceMetadata): js.Promise[java.lang.String] = js.native
   /**
-       * Insert text that appears before a commands's summary.
-       *
-       * @param meta: The metadata of the command.
-       */
+    * Insert text that appears before a commands's summary.
+    *
+    * @param meta: The metadata of the command.
+    */
   def formatBeforeCommandSummary(meta: atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadata[C, N, M, I, O]): js.Promise[java.lang.String] = js.native
   /**
-       * Insert text that appears before a namespace's summary.
-       *
-       * @param meta The metadata of the namespace.
-       * @param commands An array of the metadata of the namespace's commands.
-       */
+    * Insert text that appears before a namespace's summary.
+    *
+    * @param meta The metadata of the namespace.
+    * @param commands An array of the metadata of the namespace's commands.
+    */
   def formatBeforeNamespaceSummary(
     meta: atIonicCliDashFrameworkLib.definitionsMod.HydratedNamespaceMetadata[C, N, M, I, O],
     commands: js.Array[atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadata[C, N, M, I, O]]
   ): js.Promise[java.lang.String] = js.native
   /**
-       * Insert text before the namespace's summary.
-       *
-       * @param meta: The metadata of the namespace.
-       */
+    * Insert text before the namespace's summary.
+    *
+    * @param meta: The metadata of the namespace.
+    */
   def formatBeforeSummary(meta: atIonicCliDashFrameworkLib.definitionsMod.NamespaceMetadata): js.Promise[java.lang.String] = js.native
   def formatCommandGroup(
     title: java.lang.String,

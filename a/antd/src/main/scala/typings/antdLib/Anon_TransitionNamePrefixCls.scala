@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TransitionNamePrefixCls extends js.Object {
   var arrowPointAtCenter: scala.Boolean
   var autoAdjustOverflow: scala.Boolean

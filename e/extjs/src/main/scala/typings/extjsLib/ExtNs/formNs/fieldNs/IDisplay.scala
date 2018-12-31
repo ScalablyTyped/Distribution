@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDisplay extends IBase {
   /** [Config Option] (String) */
   var fieldBodyCls: js.UndefOr[java.lang.String] = js.undefined

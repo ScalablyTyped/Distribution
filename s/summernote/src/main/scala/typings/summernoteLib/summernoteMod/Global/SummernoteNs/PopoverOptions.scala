@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PopoverOptions extends js.Object {
   var air: js.UndefOr[popoverAirDef] = js.undefined
   var image: js.UndefOr[popoverImageDef] = js.undefined

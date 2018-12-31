@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick, @material-ui/core.@material-ui/core.StandardProps) */ 
-trait GridListTileBarProps
+- Lifted 3 members from Set(std.Pick<{}, std.Exclude<keyof {}, 'classes' | never>>, @material-ui/core.@material-ui/core.StandardProps<{}, @material-ui/core.@material-ui/core/GridListTileBar/GridListTileBar.GridListTileBarClassKey, never>) */ trait GridListTileBarProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[GridListTileBarClassKey] {
   var actionIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var actionPosition: js.UndefOr[

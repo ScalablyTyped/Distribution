@@ -9,9 +9,8 @@ import scala.scalajs.js.annotation._
 trait ServiceBusService
   extends azureDashSbLib.libServicebusservicebaseMod.namespaced {
   /*
-       * NotificationHub functions
-       */
-  
+    * NotificationHub functions
+    */
   def createNotificationHub(
     hubPath: java.lang.String,
     callback: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.ResultAndResponseCallback
@@ -22,9 +21,8 @@ trait ServiceBusService
     callback: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.ResultAndResponseCallback
   ): scala.Unit = js.native
   /*
-       * Queue Management functions
-       */
-  
+    * Queue Management functions
+    */
   def createQueue(
     queuePath: java.lang.String,
     callback: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.TypedResultAndResponseCallback[azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.ResultsNs.ModelsNs.Queue]
@@ -44,9 +42,8 @@ trait ServiceBusService
     callback: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.TypedResultAndResponseCallback[scala.Boolean]
   ): scala.Unit = js.native
   /*
-       * Rule functions
-       */
-  
+    * Rule functions
+    */
   def createRule(
     topicPath: java.lang.String,
     subscriptionPath: java.lang.String,
@@ -61,9 +58,8 @@ trait ServiceBusService
     callback: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.TypedResultAndResponseCallback[azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.ResultsNs.ModelsNs.Rule]
   ): scala.Unit = js.native
   /*
-       * Subscription functions
-       */
-  
+    * Subscription functions
+    */
   def createSubscription(
     topicPath: java.lang.String,
     subscriptionPath: java.lang.String,
@@ -80,9 +76,8 @@ trait ServiceBusService
     ]
   ): scala.Unit = js.native
   /*
-       * Topic Management functions
-       */
-  
+    * Topic Management functions
+    */
   def createTopic(
     topicPath: java.lang.String,
     callback: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.TypedResultAndResponseCallback[azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.ResultsNs.ModelsNs.Topic]

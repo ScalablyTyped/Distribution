@@ -7,13 +7,12 @@ import scala.scalajs.js.annotation._
 
 /*
 interface InAppBrowser {
-    addEventListener(eventname: string, callback): void;
-    removeEventListener(eventname: string, callback): void;
-    open(url?: string, target?: string, features?: string, replace?: boolean): Window;
-    close(): void;
+  addEventListener(eventname: string, callback): void;
+  removeEventListener(eventname: string, callback): void;
+  open(url?: string, target?: string, features?: string, replace?: boolean): Window;
+  close(): void;
 }
 */
-
 @js.native
 trait Media
   extends org.scalablytyped.runtime.Instantiable2[/* src */ java.lang.String, /* mediaSuccess */ js.Function, Media]

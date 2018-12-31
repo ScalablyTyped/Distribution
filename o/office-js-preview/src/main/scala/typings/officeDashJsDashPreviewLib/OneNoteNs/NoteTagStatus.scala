@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait NoteTagStatus extends js.Object
 
 /**
-     * [Api set: OneNoteApi 1.1]
-     */
+  * [Api set: OneNoteApi 1.1]
+  */
 @JSGlobal("OneNote.NoteTagStatus")
 @js.native
 object NoteTagStatus extends js.Object {

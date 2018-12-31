@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class AnimationDescription protected () extends js.Object {
   /**
-                       * Creates an AnimationDescription object with a specific animation and target.
-                       * @param effect The animation effect to apply to the target.
-                       * @param target The target of the animation effect.
-                       */
+    * Creates an AnimationDescription object with a specific animation and target.
+    * @param effect The animation effect to apply to the target.
+    * @param target The target of the animation effect.
+    */
   def this(effect: AnimationEffect, target: AnimationEffectTarget) = this()
   /** Gets the collection of animations that are associated with the AnimationDescription object. */
   var animations: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[IPropertyAnimation] = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GlobalizationNumberPattern extends js.Object {
   var decimal: java.lang.String
   var fraction: scala.Double

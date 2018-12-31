@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RowLegacy extends js.Object {
   var _aData: js.Any
   var _aSortData: js.Array[_]

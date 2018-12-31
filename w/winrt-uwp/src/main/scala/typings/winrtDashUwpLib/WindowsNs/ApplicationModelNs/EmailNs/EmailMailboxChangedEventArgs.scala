@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class EmailMailboxChangedEventArgs () extends js.Object {
   /**
-                   * Gets the deferral object.
-                   * @return The deferral object.
-                   */
+    * Gets the deferral object.
+    * @return The deferral object.
+    */
   def getDeferral(): EmailMailboxChangedDeferral = js.native
 }
 

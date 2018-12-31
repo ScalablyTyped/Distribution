@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IScheduler extends js.Object {
   def isScheduler(value: js.Any): scala.Boolean
   def now(): scala.Double

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * Options we can pass to the socket when connecting
 	 */
-
 trait ConnectOpts extends js.Object {
   /**
   		 * `http.Agent` to use, defaults to `false` (NodeJS only)

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * IGenericMeassureListNxInfo
-     */
-
+  * IGenericMeassureListNxInfo
+  */
 trait IGenericMeassureListNxInfo extends INxInfo {
   @JSName("qType")
   var qType_IGenericMeassureListNxInfo: qlikDashEngineapiLib.qlikDashEngineapiLibStrings.MeasureList

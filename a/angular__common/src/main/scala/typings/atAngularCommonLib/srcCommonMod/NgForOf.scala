@@ -16,11 +16,11 @@ class NgForOf[T] protected ()
 @js.native
 object NgForOf extends js.Object {
   /**
-       * Assert the correct type of the context for the template that `NgForOf` will render.
-       *
-       * The presence of this method is a signal to the Ivy template type check compiler that the
-       * `NgForOf` structural directive renders its template with a specific context type.
-       */
-  def ngTemplateContextGuard[T](dir: atAngularCommonLib.srcDirectivesNgUnderscoreForUnderscoreOfMod.NgForOf[T], ctx: js.Any): /* is NgForOfContext */scala.Boolean = js.native
+    * Assert the correct type of the context for the template that `NgForOf` will render.
+    *
+    * The presence of this method is a signal to the Ivy template type check compiler that the
+    * `NgForOf` structural directive renders its template with a specific context type.
+    */
+  def ngTemplateContextGuard[T](dir: atAngularCommonLib.srcDirectivesNgUnderscoreForUnderscoreOfMod.NgForOf[T], ctx: js.Any): /* is @angular/common.@angular/common/src/directives/ng_for_of.NgForOfContext<T> */ scala.Boolean = js.native
 }
 

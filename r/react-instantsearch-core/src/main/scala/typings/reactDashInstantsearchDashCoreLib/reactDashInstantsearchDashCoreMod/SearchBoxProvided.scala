@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SearchBoxProvided extends js.Object {
   /** the current query used */
   var currentRefinement: java.lang.String

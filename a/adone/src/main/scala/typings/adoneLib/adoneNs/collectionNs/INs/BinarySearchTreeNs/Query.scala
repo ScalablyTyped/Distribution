@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Query[K] extends js.Object {
   @JSName("$gt")
   var $gt: js.UndefOr[K] = js.undefined

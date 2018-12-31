@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * Events property
 	 */
-
 trait Events extends js.Object {
   var blur: js.UndefOr[EventApiFunc] = js.undefined
   var focus: js.UndefOr[EventApiFunc] = js.undefined

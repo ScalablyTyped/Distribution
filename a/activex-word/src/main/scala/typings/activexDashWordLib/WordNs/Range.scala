@@ -128,7 +128,6 @@ class Range protected () extends js.Object {
   def CheckSynonyms(): scala.Unit = js.native
   /** @param WdCollapseDirection [Direction=wdCollapseStart] */
   def Collapse(): scala.Unit = js.native
-  /** @param WdCollapseDirection [Direction=wdCollapseStart] */
   def Collapse(Direction: WdCollapseDirection): scala.Unit = js.native
   def ComputeStatistics(Statistic: WdStatistic): scala.Double = js.native
   def ConvertHangulAndHanja(): scala.Unit = js.native
@@ -200,17 +199,17 @@ class Range protected () extends js.Object {
   def Expand(): scala.Double = js.native
   def Expand(Unit: js.Any): scala.Double = js.native
   /**
-           * @param boolean [OpenAfterExport=false]
-           * @param Word.WdExportOptimizeFor [OptimizeFor=0]
-           * @param boolean [ExportCurrentPage=false]
-           * @param Word.WdExportItem [Item=0]
-           * @param boolean [IncludeDocProps=false]
-           * @param boolean [KeepIRM=true]
-           * @param Word.WdExportCreateBookmarks [CreateBookmarks=0]
-           * @param boolean [DocStructureTags=true]
-           * @param boolean [BitmapMissingFonts=true]
-           * @param boolean [UseISO19005_1=false]
-           */
+    * @param boolean [OpenAfterExport=false]
+    * @param Word.WdExportOptimizeFor [OptimizeFor=0]
+    * @param boolean [ExportCurrentPage=false]
+    * @param Word.WdExportItem [Item=0]
+    * @param boolean [IncludeDocProps=false]
+    * @param boolean [KeepIRM=true]
+    * @param Word.WdExportCreateBookmarks [CreateBookmarks=0]
+    * @param boolean [DocStructureTags=true]
+    * @param boolean [BitmapMissingFonts=true]
+    * @param boolean [UseISO19005_1=false]
+    */
   def ExportAsFixedFormat(
     OutputFileName: java.lang.String,
     ExportFormat: WdExportFormat,
@@ -253,7 +252,6 @@ class Range protected () extends js.Object {
   def GoToPrevious(What: WdGoToItem): Range = js.native
   /** @param boolean [MatchDestination=false] */
   def ImportFragment(FileName: java.lang.String): scala.Unit = js.native
-  /** @param boolean [MatchDestination=false] */
   def ImportFragment(FileName: java.lang.String, MatchDestination: scala.Boolean): scala.Unit = js.native
   def InRange(Range: Range): scala.Boolean = js.native
   def InStory(Range: Range): scala.Boolean = js.native
@@ -261,7 +259,6 @@ class Range protected () extends js.Object {
   def InsertAfter(Text: java.lang.String): scala.Unit = js.native
   /** @param number [RelativeTo=0] */
   def InsertAlignmentTab(Alignment: scala.Double): scala.Unit = js.native
-  /** @param number [RelativeTo=0] */
   def InsertAlignmentTab(Alignment: scala.Double, RelativeTo: scala.Double): scala.Unit = js.native
   def InsertAutoText(): scala.Unit = js.native
   def InsertBefore(Text: java.lang.String): scala.Unit = js.native
@@ -418,44 +415,20 @@ class Range protected () extends js.Object {
     IconLabel: js.UndefOr[js.Any]
   ): scala.Unit = js.native
   /**
-           * @param Word.WdPhoneticGuideAlignmentType [Alignment=-1]
-           * @param number [Raise=0]
-           * @param number [FontSize=0]
-           * @param string [FontName='']
-           */
+    * @param Word.WdPhoneticGuideAlignmentType [Alignment=-1]
+    * @param number [Raise=0]
+    * @param number [FontSize=0]
+    * @param string [FontName='']
+    */
   def PhoneticGuide(Text: java.lang.String): scala.Unit = js.native
-  /**
-           * @param Word.WdPhoneticGuideAlignmentType [Alignment=-1]
-           * @param number [Raise=0]
-           * @param number [FontSize=0]
-           * @param string [FontName='']
-           */
   def PhoneticGuide(Text: java.lang.String, Alignment: WdPhoneticGuideAlignmentType): scala.Unit = js.native
-  /**
-           * @param Word.WdPhoneticGuideAlignmentType [Alignment=-1]
-           * @param number [Raise=0]
-           * @param number [FontSize=0]
-           * @param string [FontName='']
-           */
   def PhoneticGuide(Text: java.lang.String, Alignment: WdPhoneticGuideAlignmentType, Raise: scala.Double): scala.Unit = js.native
-  /**
-           * @param Word.WdPhoneticGuideAlignmentType [Alignment=-1]
-           * @param number [Raise=0]
-           * @param number [FontSize=0]
-           * @param string [FontName='']
-           */
   def PhoneticGuide(
     Text: java.lang.String,
     Alignment: WdPhoneticGuideAlignmentType,
     Raise: scala.Double,
     FontSize: scala.Double
   ): scala.Unit = js.native
-  /**
-           * @param Word.WdPhoneticGuideAlignmentType [Alignment=-1]
-           * @param number [Raise=0]
-           * @param number [FontSize=0]
-           * @param string [FontName='']
-           */
   def PhoneticGuide(
     Text: java.lang.String,
     Alignment: WdPhoneticGuideAlignmentType,
@@ -517,28 +490,13 @@ class Range protected () extends js.Object {
   def SubscribeTo(Edition: java.lang.String): scala.Unit = js.native
   def SubscribeTo(Edition: java.lang.String, Format: js.Any): scala.Unit = js.native
   /**
-           * @param Word.WdTCSCConverterDirection [WdTCSCConverterDirection=2]
-           * @param boolean [CommonTerms=false]
-           * @param boolean [UseVariants=false]
-           */
+    * @param Word.WdTCSCConverterDirection [WdTCSCConverterDirection=2]
+    * @param boolean [CommonTerms=false]
+    * @param boolean [UseVariants=false]
+    */
   def TCSCConverter(): scala.Unit = js.native
-  /**
-           * @param Word.WdTCSCConverterDirection [WdTCSCConverterDirection=2]
-           * @param boolean [CommonTerms=false]
-           * @param boolean [UseVariants=false]
-           */
   def TCSCConverter(WdTCSCConverterDirection: WdTCSCConverterDirection): scala.Unit = js.native
-  /**
-           * @param Word.WdTCSCConverterDirection [WdTCSCConverterDirection=2]
-           * @param boolean [CommonTerms=false]
-           * @param boolean [UseVariants=false]
-           */
   def TCSCConverter(WdTCSCConverterDirection: WdTCSCConverterDirection, CommonTerms: scala.Boolean): scala.Unit = js.native
-  /**
-           * @param Word.WdTCSCConverterDirection [WdTCSCConverterDirection=2]
-           * @param boolean [CommonTerms=false]
-           * @param boolean [UseVariants=false]
-           */
   def TCSCConverter(
     WdTCSCConverterDirection: WdTCSCConverterDirection,
     CommonTerms: scala.Boolean,
@@ -547,7 +505,6 @@ class Range protected () extends js.Object {
   def WholeStory(): scala.Unit = js.native
   /** @param boolean [DataOnly=false] */
   def XML(): java.lang.String = js.native
-  /** @param boolean [DataOnly=false] */
   def XML(DataOnly: scala.Boolean): java.lang.String = js.native
 }
 

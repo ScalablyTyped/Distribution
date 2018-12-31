@@ -16,18 +16,18 @@ class UTCTime () extends VisibleString {
   var second: scala.Double = js.native
   var year: scala.Double = js.native
   /**
-               * Function converting "Date" object into ASN.1 internal string
-               *
-               * @param inputDate JavaScript "Date" object
-               */
+    * Function converting "Date" object into ASN.1 internal string
+    *
+    * @param inputDate JavaScript "Date" object
+    */
   def fromDate(inputDate: stdLib.Date): scala.Unit = js.native
   /**
-               * Function converting ASN.1 internal string into ArrayBuffer
-               */
+    * Function converting ASN.1 internal string into ArrayBuffer
+    */
   def toBuffer(): stdLib.ArrayBuffer = js.native
   /**
-               * Function converting ASN.1 internal string into "Date" object
-               */
+    * Function converting ASN.1 internal string into "Date" object
+    */
   def toDate(): stdLib.Date = js.native
 }
 

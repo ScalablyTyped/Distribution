@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * Cookie object used to manage the system cookie store and HTTP client cookie store.
 		 */
-
 trait Cookie
   extends titaniumLib.TitaniumNs.Proxy {
   /**

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TerminalModes
   extends /* mode */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Double]] {
   /** 7 bit mode. */

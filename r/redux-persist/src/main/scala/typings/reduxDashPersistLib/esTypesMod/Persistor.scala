@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Persistor extends js.Object {
   def dispatch(action: PersistorAction): PersistorAction
   def flush(): js.Promise[_]

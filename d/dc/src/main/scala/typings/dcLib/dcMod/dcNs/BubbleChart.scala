@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(dcLib.dcMod.dcNs.BubbleMixin because Would inherit conflicting mutable fields List(colorDomain_Original, colorCalculator_Original, colors_Original, colorAccessor_Original))*/
+/* RemoveMultipleInheritance: Dropped parents List(dcLib.dcMod.dcNs.BubbleMixin because Would inherit conflicting mutable fields List(colorAccessor_Original, colorCalculator_Original, colorDomain_Original, colors_Original))*/
 @js.native
 trait BubbleChart extends CoordinateGridMixin[BubbleChart] {
   @JSName("elasticRadius")

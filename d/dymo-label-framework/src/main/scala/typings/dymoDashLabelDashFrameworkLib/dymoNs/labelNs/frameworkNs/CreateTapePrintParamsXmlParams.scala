@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateTapePrintParamsXmlParams extends js.Object {
   /** The label alignment on the tape. Use the dymo.label.framework.TapeAlignment enumeration to specify the value. */
   var alignment: js.UndefOr[TapeAlignment] = js.undefined

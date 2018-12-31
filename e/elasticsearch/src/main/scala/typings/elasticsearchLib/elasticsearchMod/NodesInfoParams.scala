@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodesInfoParams extends GenericParams {
   var flatSettings: js.UndefOr[scala.Boolean] = js.undefined
   var human: js.UndefOr[scala.Boolean] = js.undefined

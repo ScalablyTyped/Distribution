@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Column extends js.Object {
   /** Column to perform the sort on. This can be a DoubleClick Search-defined column or a saved column. */
   var column: js.UndefOr[

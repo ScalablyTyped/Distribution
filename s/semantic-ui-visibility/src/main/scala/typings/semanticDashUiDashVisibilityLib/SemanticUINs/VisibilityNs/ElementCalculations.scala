@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ElementCalculations extends ElementPosition {
   var bottom: scala.Double
   var bottomPassed: scala.Boolean

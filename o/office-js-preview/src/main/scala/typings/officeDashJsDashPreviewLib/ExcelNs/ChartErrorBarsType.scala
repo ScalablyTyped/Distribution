@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 sealed trait ChartErrorBarsType extends js.Object
 
 /**
-     *
-     * Represents the range type for error bars.
-     *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  *
+  * Represents the range type for error bars.
+  *
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.ChartErrorBarsType")
 @js.native
 object ChartErrorBarsType extends js.Object {

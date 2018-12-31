@@ -11,18 +11,7 @@ object reduxDashSagaModMembers extends js.Object {
   val CANCEL: java.lang.String = js.native
   val END: END = js.native
   val buffers: reduxDashSagaLib.Anon_Sliding = js.native
-  val takeLatest: js.Function9[
-    /* channel */ Channel[js.Any], 
-    /* worker */ reduxDashSagaLib.HelperFunc6Rest[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any], 
-    /* arg1 */ js.Any, 
-    /* arg2 */ js.Any, 
-    /* arg3 */ js.Any, 
-    /* arg4 */ js.Any, 
-    /* arg5 */ js.Any, 
-    /* arg6 */ js.Any, 
-    /* repeated */js.Any, 
-    SagaIterator
-  ] = js.native
+  val takeLatest: reduxDashSagaLib.Anon_ChannelWorker = js.native
   def channel[T](): Channel[T] = js.native
   def channel[T](buffer: Buffer[T]): Channel[T] = js.native
   def default[C /* <: js.Object */](): SagaMiddleware[C] = js.native

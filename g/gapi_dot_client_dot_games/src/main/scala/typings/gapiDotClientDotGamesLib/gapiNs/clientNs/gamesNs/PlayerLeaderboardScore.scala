@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlayerLeaderboardScore extends js.Object {
   /** Uniquely identifies the type of this resource. Value is always the fixed string games#playerLeaderboardScore. */
   var kind: js.UndefOr[java.lang.String] = js.undefined
@@ -22,12 +21,12 @@ trait PlayerLeaderboardScore extends js.Object {
   /** The social rank of the score in this leaderboard. */
   var socialRank: js.UndefOr[LeaderboardScoreRank] = js.undefined
   /**
-               * The time span of this score.
-               * Possible values are:
-               * - "ALL_TIME" - The score is an all-time score.
-               * - "WEEKLY" - The score is a weekly score.
-               * - "DAILY" - The score is a daily score.
-               */
+    * The time span of this score.
+    * Possible values are:
+    * - "ALL_TIME" - The score is an all-time score.
+    * - "WEEKLY" - The score is a weekly score.
+    * - "DAILY" - The score is a daily score.
+    */
   var timeSpan: js.UndefOr[java.lang.String] = js.undefined
   /** The timestamp at which this score was recorded, in milliseconds since the epoch in UTC. */
   var writeTimestamp: js.UndefOr[java.lang.String] = js.undefined

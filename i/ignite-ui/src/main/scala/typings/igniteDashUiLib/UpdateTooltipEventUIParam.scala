@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateTooltipEventUIParam extends js.Object {
   /**
   	 * Used to obtain reference to jquery object which represents tooltip. Value of that member can be replaced by custom element.

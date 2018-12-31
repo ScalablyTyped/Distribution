@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GotOptions[E /* <: java.lang.String | scala.Null */]
   extends gotLib.gotMod.InternalRequestOptions {
   @JSName("agent")

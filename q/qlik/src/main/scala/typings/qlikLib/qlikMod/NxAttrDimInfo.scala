@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NxAttrDimInfo extends js.Object {
   var qCardinal: scala.Double
   var qError: NxValidationError

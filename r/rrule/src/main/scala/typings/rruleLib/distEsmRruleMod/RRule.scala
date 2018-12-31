@@ -61,41 +61,28 @@ trait RRule
   ): scala.Unit = js.native
   def _iter(iterResult: rruleLib.distEsmIterresultMod.default): stdLib.Date | js.Array[stdLib.Date] | scala.Null = js.native
   /**
-       * Returns the first recurrence after the given datetime instance.
-       * The inc keyword defines what happens if dt is an occurrence.
-       * With inc == True, if dt itself is an occurrence, it will be returned.
-       * @return Date or null
-       */
+    * Returns the first recurrence after the given datetime instance.
+    * The inc keyword defines what happens if dt is an occurrence.
+    * With inc == True, if dt itself is an occurrence, it will be returned.
+    * @return Date or null
+    */
   def after(dt: stdLib.Date): stdLib.Date = js.native
-  /**
-       * @param {Function} iterator - optional function that will be called
-       *                   on each date that is added. It can return false
-       *                   to stop the iteration.
-       * @return Array containing all recurrences.
-       */
   def all(iterator: js.Function2[/* d */ stdLib.Date, /* len */ scala.Double, scala.Boolean]): js.Array[stdLib.Date] = js.native
   /**
-       * Returns the last recurrence before the given datetime instance.
-       * The inc keyword defines what happens if dt is an occurrence.
-       * With inc == True, if dt itself is an occurrence, it will be returned.
-       * @return Date or null
-       */
+    * Returns the last recurrence before the given datetime instance.
+    * The inc keyword defines what happens if dt is an occurrence.
+    * With inc == True, if dt itself is an occurrence, it will be returned.
+    * @return Date or null
+    */
   def before(dt: stdLib.Date): stdLib.Date = js.native
   /**
-       * Returns all the occurrences of the rrule between after and before.
-       * The inc keyword defines what happens if after and/or before are
-       * themselves occurrences. With inc == True, they will be included in the
-       * list, if they are found in the recurrence set.
-       * @return Array
-       */
+    * Returns all the occurrences of the rrule between after and before.
+    * The inc keyword defines what happens if after and/or before are
+    * themselves occurrences. With inc == True, they will be included in the
+    * list, if they are found in the recurrence set.
+    * @return Array
+    */
   def between(after: stdLib.Date, before: stdLib.Date): js.Array[stdLib.Date] = js.native
-  /**
-       * Returns all the occurrences of the rrule between after and before.
-       * The inc keyword defines what happens if after and/or before are
-       * themselves occurrences. With inc == True, they will be included in the
-       * list, if they are found in the recurrence set.
-       * @return Array
-       */
   def between(
     after: stdLib.Date,
     before: stdLib.Date,
@@ -103,25 +90,17 @@ trait RRule
     iterator: js.Function2[/* d */ stdLib.Date, /* len */ scala.Double, scala.Boolean]
   ): js.Array[stdLib.Date] = js.native
   /**
-       * Returns the number of recurrences in this set. It will have go trough
-       * the whole recurrence, if this hasn't been done before.
-       */
+    * Returns the number of recurrences in this set. It will have go trough
+    * the whole recurrence, if this hasn't been done before.
+    */
   def count(): scala.Double = js.native
   def isFullyConvertibleToText(): scala.Boolean = js.native
   /**
-       * Will convert all rules described in nlp:ToText
-       * to text.
-       */
+    * Will convert all rules described in nlp:ToText
+    * to text.
+    */
   def toText(): java.lang.String = js.native
-  /**
-       * Will convert all rules described in nlp:ToText
-       * to text.
-       */
   def toText(gettext: rruleLib.distEsmNlpTotextMod.GetText): java.lang.String = js.native
-  /**
-       * Will convert all rules described in nlp:ToText
-       * to text.
-       */
   def toText(gettext: rruleLib.distEsmNlpTotextMod.GetText, language: rruleLib.distEsmNlpI18nMod.Language): java.lang.String = js.native
 }
 

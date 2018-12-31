@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Dynamics.b2DebugDraw")
 @js.native
+/**
+		* Constructor.
+		**/
 class b2DebugDraw () extends js.Object {
   /**
   		* Append flags to the current flags.

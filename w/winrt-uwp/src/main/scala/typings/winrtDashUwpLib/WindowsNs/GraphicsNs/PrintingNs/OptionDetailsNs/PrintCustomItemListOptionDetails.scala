@@ -24,16 +24,16 @@ abstract class PrintCustomItemListOptionDetails () extends js.Object {
   /** Gets or sets the value of the list of custom print tasks. */
   var value: js.Any = js.native
   /**
-                       * Sets the ID or display name of an item in the list of custom print task options.
-                       * @param itemId The ID of the option item.
-                       * @param displayName The display name of the option item.
-                       */
+    * Sets the ID or display name of an item in the list of custom print task options.
+    * @param itemId The ID of the option item.
+    * @param displayName The display name of the option item.
+    */
   def addItem(itemId: java.lang.String, displayName: java.lang.String): scala.Unit = js.native
   /**
-                       * Sets the value for the item ID or the display name of the custom item.
-                       * @param value Value for the item ID or the display name of the custom item.
-                       * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
-                       */
+    * Sets the value for the item ID or the display name of the custom item.
+    * @param value Value for the item ID or the display name of the custom item.
+    * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
+    */
   def trySetValue(value: js.Any): scala.Boolean = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ItemsUnit extends js.Object {
   var itemUnit: java.lang.String
   var itemsUnit: java.lang.String

@@ -16,40 +16,40 @@ class PivotGauge protected () extends Widget {
   @JSName("model")
   var model_PivotGauge: ejDotWebDotAllLib.ejNs.PivotGaugeNs.Model = js.native
   /** Performs an asynchronous HTTP (AJAX) request.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def doAjaxPost(): scala.Unit = js.native
   /** Returns the JSON records required to render the PivotGauge on performing any action with OLAP data source.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def getJSONData(): scala.Unit = js.native
   /** Returns the JSON records formed to render the control.
-           * @returns {any[]}
-           */
+    * @returns {any[]}
+    */
   def getJSONRecords(): js.Array[_] = js.native
   /** Returns the OlapReport string maintained along with the axis elements information.
-           * @returns {string}
-           */
+    * @returns {string}
+    */
   def getOlapReport(): java.lang.String = js.native
   /** This function is used to refresh the PivotGauge at client-side itself.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def refresh(): scala.Unit = js.native
   /** This function removes the KPI related images from PivotGauge on binding OLAP datasource.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def removeImg(): scala.Unit = js.native
   /** This function receives the JSON formatted datasource and renders the PivotGauge control.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def renderControlFromJSON(): scala.Unit = js.native
   /** Sets the JSON records to render the control.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def setJSONRecords(): scala.Unit = js.native
   /** Sets the OlapReport string along with the axis information and maintains it in a property.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def setOlapReport(): scala.Unit = js.native
 }
 

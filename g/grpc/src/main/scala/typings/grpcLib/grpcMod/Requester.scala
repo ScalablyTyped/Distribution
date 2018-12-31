@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Requester extends js.Object {
   var cancel: js.UndefOr[CancelRequester] = js.undefined
   var getPeer: js.UndefOr[GetPeerRequester] = js.undefined

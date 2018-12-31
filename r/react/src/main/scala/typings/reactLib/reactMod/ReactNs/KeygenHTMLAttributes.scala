@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeygenHTMLAttributes[T] extends HTMLAttributes[T] {
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var challenge: js.UndefOr[java.lang.String] = js.undefined

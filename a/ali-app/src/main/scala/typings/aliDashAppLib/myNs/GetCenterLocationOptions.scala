@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region 地图 https://docs.alipay.com/mini/api/ui-map
-
 trait GetCenterLocationOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")

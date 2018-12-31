@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChooseContactOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 选择类型，值为single（单选）或者 multi（多选） */

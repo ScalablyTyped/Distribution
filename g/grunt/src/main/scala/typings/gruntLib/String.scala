@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * {@link https://github.com/marak/colors.js/}
- */
-
+  * {@link https://github.com/marak/colors.js/}
+  */
 trait String extends js.Object {
   var blue: java.lang.String
   var cyan: java.lang.String

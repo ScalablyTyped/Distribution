@@ -26,8 +26,8 @@ class Console ()
   /* CompleteClass */
   override var formatWithStack: minilogLib.minilogMod.MinilogNs.Transform = js.native
   /**
-          * List of available formatters
-          */
+    * List of available formatters
+    */
   /* CompleteClass */
   override var formatters: js.Array[java.lang.String] = js.native
   /* CompleteClass */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Checked extends js.Object {
   var checked: js.UndefOr[scala.Boolean] = js.undefined
   var event: js.UndefOr[js.Any] = js.undefined

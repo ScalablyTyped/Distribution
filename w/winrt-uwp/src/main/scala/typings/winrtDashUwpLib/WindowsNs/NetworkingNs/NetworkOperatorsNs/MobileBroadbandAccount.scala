@@ -20,9 +20,9 @@ abstract class MobileBroadbandAccount () extends js.Object {
   /** The name of the network provider for the mobile broadband account. */
   var serviceProviderName: java.lang.String = js.native
   /**
-                   * Retrieves an array of ConnectionProfile objects that represent connections associated with the Mobile Broadband account.
-                   * @return An array of ConnectionProfile objects.
-                   */
+    * Retrieves an array of ConnectionProfile objects that represent connections associated with the Mobile Broadband account.
+    * @return An array of ConnectionProfile objects.
+    */
   def getConnectionProfiles(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.ConnectionProfile] = js.native
 }
 
@@ -33,10 +33,10 @@ object MobileBroadbandAccount extends js.Object {
   /** A list of all network account IDs for the network service provider. */
   var availableNetworkAccountIds: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String] = js.native
   /**
-                   * Creates a mobile broadband account for the mobile device associated with the supplied network account ID.
-                   * @param networkAccountId The network account ID to use to select the corresponding mobile broadband device to use for the account.
-                   * @return A mobile broadband account for the mobile device associated with the supplied network account ID.
-                   */
+    * Creates a mobile broadband account for the mobile device associated with the supplied network account ID.
+    * @param networkAccountId The network account ID to use to select the corresponding mobile broadband device to use for the account.
+    * @return A mobile broadband account for the mobile device associated with the supplied network account ID.
+    */
   def createFromNetworkAccountId(networkAccountId: java.lang.String): winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandAccount = js.native
 }
 

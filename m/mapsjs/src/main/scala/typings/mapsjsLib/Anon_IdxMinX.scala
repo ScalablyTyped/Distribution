@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IdxMinX extends js.Object {
   var endpointCollection: js.Array[java.lang.String]
   var idxMinX: scala.Double

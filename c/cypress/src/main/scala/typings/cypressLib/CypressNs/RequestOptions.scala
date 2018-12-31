@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-   * Full set of possible options for cy.request call
-   */
-
+  * Full set of possible options for cy.request call
+  */
 trait RequestOptions
   extends Loggable
      with Timeoutable {

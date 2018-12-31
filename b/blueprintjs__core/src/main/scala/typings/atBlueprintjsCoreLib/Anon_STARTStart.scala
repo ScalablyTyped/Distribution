@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_STARTStart extends js.Object {
   var END: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.end
   var FULL: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.full

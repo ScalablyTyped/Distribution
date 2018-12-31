@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // --- Browser ---
-
 trait BrowserOptions extends js.Object {
   var context: js.UndefOr[js.Any] = js.undefined
   var domain: js.UndefOr[js.Any] = js.undefined

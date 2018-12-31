@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ErrorDetails extends js.Object {
   /** Additional details about the error such as a JavaScript runtime error. */
   var details: java.lang.String

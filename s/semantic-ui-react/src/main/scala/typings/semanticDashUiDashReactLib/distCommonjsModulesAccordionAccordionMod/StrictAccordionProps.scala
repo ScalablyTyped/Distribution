@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictAccordionProps
   extends semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionAccordionMod.StrictAccordionAccordionProps {
   /** Format to take up the width of its container. */

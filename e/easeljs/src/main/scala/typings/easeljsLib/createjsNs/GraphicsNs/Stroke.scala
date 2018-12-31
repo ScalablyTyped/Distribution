@@ -14,7 +14,6 @@ class Stroke protected () extends js.Object {
   var style: js.Object = js.native
   // methods
   def bitmap(image: stdLib.HTMLImageElement): Stroke = js.native
-  // methods
   def bitmap(image: stdLib.HTMLImageElement, repetition: java.lang.String): Stroke = js.native
   def linearGradient(
     colors: js.Array[scala.Double],

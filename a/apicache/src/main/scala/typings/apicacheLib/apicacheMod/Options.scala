@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /** appendKey takes the req/res objects and returns a custom value to extend the cache key */
   var appendKey: js.UndefOr[js.Any] = js.undefined
@@ -18,12 +17,12 @@ trait Options extends js.Object {
   /** list of headers that should never be cached */
   var headerBlacklist: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-     * 'cache-control':  'no-cache' // example of header overwrite
-     */
+    * 'cache-control':  'no-cache' // example of header overwrite
+    */
   var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
-     * if provided, uses the [node-redis](https://github.com/NodeRedis/node_redis) client instead of [memory-cache](https://github.com/ptarjan/node-cache)
-     */
+    * if provided, uses the [node-redis](https://github.com/NodeRedis/node_redis) client instead of [memory-cache](https://github.com/ptarjan/node-cache)
+    */
   var redisClient: js.UndefOr[redisLib.redisMod.RedisClient] = js.undefined
   var statusCodes: js.UndefOr[apicacheLib.Anon_Exclude] = js.undefined
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EnvChannelRequest extends js.Object {
   var key: java.lang.String
   var recipient: scala.Double

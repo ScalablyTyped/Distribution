@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITracesReport extends js.Object {
   /** TracesReport header */
   var header: js.UndefOr[IReportHeader | scala.Null] = js.undefined

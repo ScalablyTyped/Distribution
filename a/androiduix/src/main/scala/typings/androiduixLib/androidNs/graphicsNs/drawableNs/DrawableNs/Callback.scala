@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Callback extends js.Object {
   var drawableSizeChange: js.UndefOr[
     js.Function1[/* who */ androiduixLib.androidNs.graphicsNs.drawableNs.Drawable, scala.Unit]

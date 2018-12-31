@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RenderOptions extends js.Object {
   var buildId: java.lang.String
   var distDir: java.lang.String

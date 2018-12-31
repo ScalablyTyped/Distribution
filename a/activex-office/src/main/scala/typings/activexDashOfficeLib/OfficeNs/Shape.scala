@@ -90,11 +90,9 @@ class Shape protected () extends js.Object {
   def RerouteConnections(): scala.Unit = js.native
   /** @param fScale [fScale=0] */
   def ScaleHeight(Factor: scala.Double, RelativeToOriginalSize: MsoTriState): scala.Unit = js.native
-  /** @param fScale [fScale=0] */
   def ScaleHeight(Factor: scala.Double, RelativeToOriginalSize: MsoTriState, fScale: MsoScaleFrom): scala.Unit = js.native
   /** @param fScale [fScale=0] */
   def ScaleWidth(Factor: scala.Double, RelativeToOriginalSize: MsoTriState): scala.Unit = js.native
-  /** @param fScale [fScale=0] */
   def ScaleWidth(Factor: scala.Double, RelativeToOriginalSize: MsoTriState, fScale: MsoScaleFrom): scala.Unit = js.native
   def Select(): scala.Unit = js.native
   def Select(Replace: js.Any): scala.Unit = js.native

@@ -17,11 +17,11 @@ class Subject[T] ()
   var observers: js.Array[rxjsLib.internalTypesMod.Observer[T]] = js.native
   var thrownError: js.Any = js.native
   /**
-       * Creates a new Observable with this Subject as the source. You can do this
-       * to create customize Observer-side logic of the Subject and conceal it from
-       * code that uses the Observable.
-       * @return {Observable} Observable that the Subject casts to
-       */
+    * Creates a new Observable with this Subject as the source. You can do this
+    * to create customize Observer-side logic of the Subject and conceal it from
+    * code that uses the Observable.
+    * @return {Observable} Observable that the Subject casts to
+    */
   def asObservable(): rxjsLib.internalObservableMod.Observable[T] = js.native
   def complete(): scala.Unit = js.native
   def error(err: js.Any): scala.Unit = js.native

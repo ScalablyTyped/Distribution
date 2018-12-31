@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlanEnvironment extends js.Object {
   var mask: js.Array[MaskHint]
   var options: org.scalablytyped.runtime.StringDictionary[JobOption]

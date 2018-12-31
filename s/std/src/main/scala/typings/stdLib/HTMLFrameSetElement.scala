@@ -10,13 +10,13 @@ trait HTMLFrameSetElement
   extends HTMLElement
      with WindowEventHandlers {
   /**
-       * Sets or retrieves the frame widths of the object.
-       */
+    * Sets or retrieves the frame widths of the object.
+    */
   /** @deprecated */
   var cols: java.lang.String = js.native
   /**
-       * Sets or retrieves the frame heights of the object.
-       */
+    * Sets or retrieves the frame heights of the object.
+    */
   /** @deprecated */
   var rows: java.lang.String = js.native
   /* InferMemberOverrides */

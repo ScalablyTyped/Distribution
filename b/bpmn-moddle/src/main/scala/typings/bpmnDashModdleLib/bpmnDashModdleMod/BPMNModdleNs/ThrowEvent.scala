@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThrowEvent extends Event {
   var dataInputAssociations: js.Array[DataInputAssociation]
   var dataInputs: js.Array[DataInput]

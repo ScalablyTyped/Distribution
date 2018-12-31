@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestDefinition extends PropertyDefinition {
   var auth: js.UndefOr[RequestAuthDefinition] = js.undefined
   var body: js.UndefOr[RequestBody] = js.undefined

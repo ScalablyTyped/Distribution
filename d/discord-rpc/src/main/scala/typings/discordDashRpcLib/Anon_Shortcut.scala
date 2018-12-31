@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Shortcut extends js.Object {
   var autoThreshold: scala.Boolean
   var delay: scala.Double

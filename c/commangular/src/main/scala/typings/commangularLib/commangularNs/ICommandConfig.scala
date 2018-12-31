@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 	 * Command creation configuration
 	 * see http://commangular.org/docs/#the-command-config-object
 	 */
-
 trait ICommandConfig extends js.Object {
   /**
   		 * This property instruct commangular to keep the value returned by the command in the value

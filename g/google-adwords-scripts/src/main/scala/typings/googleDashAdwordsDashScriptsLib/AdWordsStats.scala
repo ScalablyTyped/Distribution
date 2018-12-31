@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AdWordsStats extends js.Object {
   def getAverageCpc(): scala.Double
   def getAverageCpm(): scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WeAccessMidOption extends js.Object {
   var accessTokenUrl: js.UndefOr[java.lang.String] = js.undefined
   var appId: java.lang.String

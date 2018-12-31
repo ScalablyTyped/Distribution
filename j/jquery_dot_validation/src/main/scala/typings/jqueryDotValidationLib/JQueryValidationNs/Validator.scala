@@ -17,24 +17,24 @@ trait Validator extends js.Object {
   def elementValue(element: stdLib.Element): js.Any = js.native
   def focusInvalid(): scala.Unit = js.native
   /**
-           * Validates the form, returns true if it is valid, false otherwise.
-           */
+    * Validates the form, returns true if it is valid, false otherwise.
+    */
   def form(): scala.Boolean = js.native
   def hideErrors(): scala.Unit = js.native
   def invalidElements(): js.Array[stdLib.HTMLElement] = js.native
   /**
-           * Returns the number of invalid fields.
-           */
+    * Returns the number of invalid fields.
+    */
   def numberOfInvalids(): scala.Double = js.native
   /**
-           * Resets the controlled form.
-           */
+    * Resets the controlled form.
+    */
   def resetForm(): scala.Unit = js.native
   /**
-           * Show the specified messages.
-           *
-           * @param errors One or more key/value pairs of input names and messages.
-           */
+    * Show the specified messages.
+    *
+    * @param errors One or more key/value pairs of input names and messages.
+    */
   def showErrors(errors: js.Any): scala.Unit = js.native
   def size(): scala.Double = js.native
   def valid(): scala.Boolean = js.native

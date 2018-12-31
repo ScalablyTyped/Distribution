@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait AttributeRequiredLevel extends js.Object
 
 /**
-     * An enumeration for Attribute required level metadata
-     */
+  * An enumeration for Attribute required level metadata
+  */
 @JSGlobal("XrmEnum.AttributeRequiredLevel")
 @js.native
 object AttributeRequiredLevel extends js.Object {

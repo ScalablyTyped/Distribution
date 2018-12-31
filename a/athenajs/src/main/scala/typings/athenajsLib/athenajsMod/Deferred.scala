@@ -17,14 +17,10 @@ class Deferred () extends js.Object {
 @js.native
 object Deferred extends js.Object {
   /**
-       * Creates and immediately resolves a new deferred.
-       *
-       */
+    * Creates and immediately resolves a new deferred.
+    *
+    */
   def resolve(): athenajsLib.athenajsMod.Promise = js.native
-  /**
-       * Creates and immediately resolves a new deferred.
-       *
-       */
   def resolve(`val`: js.Any): athenajsLib.athenajsMod.Promise = js.native
 }
 

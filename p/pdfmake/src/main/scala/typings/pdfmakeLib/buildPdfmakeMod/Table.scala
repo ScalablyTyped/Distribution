@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Table extends js.Object {
   var body: js.Array[js.Array[Content]] | js.Array[js.Array[TableCell]]
   var headerRows: js.UndefOr[scala.Double] = js.undefined

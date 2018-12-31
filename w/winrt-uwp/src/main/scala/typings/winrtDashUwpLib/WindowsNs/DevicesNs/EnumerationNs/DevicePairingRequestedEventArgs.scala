@@ -18,14 +18,14 @@ abstract class DevicePairingRequestedEventArgs () extends js.Object {
   /** Accepts a PairingRequested event and pairs the device with the application. */
   def accept(): scala.Unit = js.native
   /**
-                   * Accepts a PairingRequested event and pairs the device with the application. Requires a pin for pairing purposes.
-                   * @param pin The pin to use for attempting to pair a device.
-                   */
+    * Accepts a PairingRequested event and pairs the device with the application. Requires a pin for pairing purposes.
+    * @param pin The pin to use for attempting to pair a device.
+    */
   def accept(pin: java.lang.String): scala.Unit = js.native
   /**
-                   * Requests a Deferral to support asynchronous operations.
-                   * @return The deferral necessary to support asynchronous actions.
-                   */
+    * Requests a Deferral to support asynchronous operations.
+    * @return The deferral necessary to support asynchronous actions.
+    */
   def getDeferral(): winrtDashUwpLib.WindowsNs.FoundationNs.Deferral = js.native
 }
 

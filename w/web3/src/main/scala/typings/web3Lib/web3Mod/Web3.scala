@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Web3 extends js.Object {
   var BatchRequest: org.scalablytyped.runtime.Instantiable0[web3Lib.ethTypesMod.BatchRequest]
    // TODO

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParsedOptions extends Options {
   @JSName("byhour")
   var byhour_ParsedOptions: js.Array[scala.Double]

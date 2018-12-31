@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NxPivotDimensioncell extends js.Object {
   var qAttrDims: js.Array[NxAttributeDimValues]
   var qAttrExps: js.Array[NxAttributeExpressionValues]

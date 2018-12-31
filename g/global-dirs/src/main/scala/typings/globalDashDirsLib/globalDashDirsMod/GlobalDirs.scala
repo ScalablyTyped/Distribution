@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GlobalDirs extends js.Object {
   var binaries: java.lang.String
   var packages: java.lang.String

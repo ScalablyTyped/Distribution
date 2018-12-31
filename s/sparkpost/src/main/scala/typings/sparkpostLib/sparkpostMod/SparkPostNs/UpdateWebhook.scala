@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateWebhook extends js.Object {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   /** Object containing credentials needed to make authorized POST requests to target */

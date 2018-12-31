@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IThemrOptions extends js.Object {
   /** @default "deeply" */
   var composeTheme: js.UndefOr[

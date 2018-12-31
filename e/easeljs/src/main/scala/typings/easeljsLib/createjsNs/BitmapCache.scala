@@ -31,7 +31,6 @@ class BitmapCache () extends js.Object {
 object BitmapCache extends js.Object {
   // methods
   def getFilterBounds(target: easeljsLib.createjsNs.DisplayObject): easeljsLib.createjsNs.Rectangle = js.native
-  // methods
   def getFilterBounds(target: easeljsLib.createjsNs.DisplayObject, output: easeljsLib.createjsNs.Rectangle): easeljsLib.createjsNs.Rectangle = js.native
 }
 

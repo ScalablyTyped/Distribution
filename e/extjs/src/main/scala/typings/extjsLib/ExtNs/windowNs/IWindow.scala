@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IWindow
   extends extjsLib.ExtNs.panelNs.IPanel {
   /** [Method] Invoked after the Panel is Collapsed  */

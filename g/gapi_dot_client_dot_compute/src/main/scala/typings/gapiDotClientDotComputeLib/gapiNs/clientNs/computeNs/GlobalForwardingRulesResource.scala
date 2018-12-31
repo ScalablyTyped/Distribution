@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GlobalForwardingRulesResource extends js.Object {
   /** Deletes the specified GlobalForwardingRule resource. */
   def delete(request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintForwardingRuleQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[Operation]

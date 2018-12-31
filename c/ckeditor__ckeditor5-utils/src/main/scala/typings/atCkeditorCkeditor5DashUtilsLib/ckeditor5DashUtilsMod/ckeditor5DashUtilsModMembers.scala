@@ -70,18 +70,18 @@ object ckeditor5DashUtilsModMembers extends js.Object {
   def isHighSurrogateHalf(character: java.lang.String): scala.Boolean = js.native
   def isInsideCombinedSymbol(string: java.lang.String, offset: scala.Double): scala.Boolean = js.native
   def isInsideSurrogatePair(string: java.lang.String, offset: scala.Double): scala.Boolean = js.native
-  def isIterable(value: js.Any): /* is Iterable */scala.Boolean = js.native
+  def isIterable(value: js.Any): /* is std.Iterable<any> */ scala.Boolean = js.native
   def isLowSurrogateHalf(character: java.lang.String): scala.Boolean = js.native
-  def isNode(obj: js.Any): /* is Node */scala.Boolean = js.native
-  def isRange(obj: js.Any): /* is Range */scala.Boolean = js.native
-  def isText(obj: js.Any): /* is Text */scala.Boolean = js.native
-  def isWindow(obj: js.Any): /* is Window */scala.Boolean = js.native
+  def isNode(obj: js.Any): /* is std.Node */ scala.Boolean = js.native
+  def isRange(obj: js.Any): /* is std.Range */ scala.Boolean = js.native
+  def isText(obj: js.Any): /* is std.Text */ scala.Boolean = js.native
+  def isWindow(obj: js.Any): /* is std.Window */ scala.Boolean = js.native
   def mapsEqual[K, V](mapsA: stdLib.Map[K, V], mapsB: stdLib.Map[K, V]): scala.Boolean = js.native
   def mix[T](baseClass: atCkeditorCkeditor5DashUtilsLib.Anon_P[T], mixins: stdLib.Partial[T]*): scala.Unit = js.native
   def nth[T](index: scala.Double, iterable: stdLib.Iterable[T]): T = js.native
   def objectToMap[T /* <: js.Object */](obj: T): stdLib.Map[
     java.lang.String, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
   def parseKeystroke(keystroke: java.lang.String): scala.Double = js.native
   def parseKeystroke(keystroke: js.Array[scala.Double | java.lang.String]): scala.Double = js.native
@@ -93,7 +93,7 @@ object ckeditor5DashUtilsModMembers extends js.Object {
   def spy(): atCkeditorCkeditor5DashUtilsLib.Anon_Called = js.native
   def toMap[T /* <: js.Object */](data: T): stdLib.Map[
     java.lang.String, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
   def toMap[K /* <: java.lang.String */, V](data: js.Array[js.Tuple2[K, V]]): stdLib.Map[K, V] = js.native
   def toMap[K, V](data: stdLib.Map[K, V]): stdLib.Map[K, V] = js.native

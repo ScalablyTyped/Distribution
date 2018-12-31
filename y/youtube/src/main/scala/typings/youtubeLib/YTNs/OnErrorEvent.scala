@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnErrorEvent extends PlayerEvent {
   /**
   		 * Which type of error occurred.

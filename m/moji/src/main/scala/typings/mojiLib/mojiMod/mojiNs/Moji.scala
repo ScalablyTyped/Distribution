@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Moji extends js.Object {
   def convert(beforeType: Mojisyu, afterType: Mojisyu): Moji
   def filter(`type`: Mojisyu): Moji

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPrettyPrintBearertoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -19,9 +18,9 @@ trait Anon_AccesstokenPrettyPrintBearertoken extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The type of environment that should be listed.
-                   * Required
-                   */
+    * The type of environment that should be listed.
+    * Required
+    */
   var environmentType: java.lang.String
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
@@ -34,9 +33,9 @@ trait Anon_AccesstokenPrettyPrintBearertoken extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * For authorization, the cloud project requesting the TestEnvironmentCatalog.
-                   * Optional
-                   */
+    * For authorization, the cloud project requesting the TestEnvironmentCatalog.
+    * Optional
+    */
   var projectId: js.UndefOr[java.lang.String] = js.undefined
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined

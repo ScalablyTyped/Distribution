@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(semanticDashUiDashReactLib.distCommonjsModulesCheckboxCheckboxMod.StrictCheckboxProps because Would inherit conflicting mutable fields List(label, as, className, disabled, `type`))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(semanticDashUiDashReactLib.distCommonjsModulesCheckboxCheckboxMod.StrictCheckboxProps because Would inherit conflicting mutable fields List(as, className, disabled, label, `type`))*/
 trait StrictFormCheckboxProps
   extends semanticDashUiDashReactLib.distCommonjsCollectionsFormFormFieldMod.StrictFormFieldProps {
   /** HTML input type, either checkbox or radio. */

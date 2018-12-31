@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILob extends js.Object {
   var chunkSize: scala.Double
   var length: scala.Double

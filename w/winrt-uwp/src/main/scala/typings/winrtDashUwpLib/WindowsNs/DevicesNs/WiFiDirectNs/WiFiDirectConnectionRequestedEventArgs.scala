@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class WiFiDirectConnectionRequestedEventArgs () extends js.Object {
   /**
-                   * Retrieves the WiFiDirectConnectionRequest received on a ConnectionRequested event by a WiFiDirectConnectionListener .
-                   * @return The Wi-FI Direct connection request.
-                   */
+    * Retrieves the WiFiDirectConnectionRequest received on a ConnectionRequested event by a WiFiDirectConnectionListener .
+    * @return The Wi-FI Direct connection request.
+    */
   def getConnectionRequest(): WiFiDirectConnectionRequest = js.native
 }
 

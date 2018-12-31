@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LineString[P /* <: Properties */] extends GeometryObjectA[P] {
   var arcs: ArcIndexes
   @JSName("type")

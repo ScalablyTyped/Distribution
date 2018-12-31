@@ -22,10 +22,10 @@ abstract class PrintDuplexOptionDetails () extends js.Object {
   /** Gets or sets the enumerated vlaue of the print duplex option. */
   var value: js.Any = js.native
   /**
-                       * Sets the value for the duplex option.
-                       * @param value Value for the duplex option.
-                       * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
-                       */
+    * Sets the value for the duplex option.
+    * @param value Value for the duplex option.
+    * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
+    */
   def trySetValue(value: js.Any): scala.Boolean = js.native
 }
 

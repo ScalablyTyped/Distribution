@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Thunk[TState, TKeys] extends js.Object {
   var enhancer: reduxLib.reduxMod.StoreEnhancer[js.Object, js.Object]
   var initialDispatch: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

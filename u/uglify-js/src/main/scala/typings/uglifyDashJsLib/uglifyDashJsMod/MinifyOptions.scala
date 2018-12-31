@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MinifyOptions extends js.Object {
   var compress: js.UndefOr[scala.Boolean | CompressOptions] = js.undefined
   var ie8: js.UndefOr[scala.Boolean] = js.undefined

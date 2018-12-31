@@ -19,9 +19,7 @@ trait LodashSampleSize extends js.Object {
     n: lodashLib.lodashMod.underscoreNs.`__`,
     collection: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]
   ): LodashSampleSize1x2[T] = js.native
-  def apply[T /* <: js.Object */](n: scala.Double, collection: T): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def apply[T /* <: js.Object */](n: scala.Double, collection: T): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def apply[T](n: scala.Double, collection: lodashLib.lodashMod.underscoreNs.Dictionary[T]): js.Array[T] = js.native
   def apply[T](n: scala.Double, collection: lodashLib.lodashMod.underscoreNs.List[T]): js.Array[T] = js.native
   def apply[T](n: scala.Double, collection: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): js.Array[T] = js.native

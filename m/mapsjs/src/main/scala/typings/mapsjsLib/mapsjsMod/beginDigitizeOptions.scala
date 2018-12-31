@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait beginDigitizeOptions extends js.Object {
   var circleEndAction: js.UndefOr[js.Function1[/* circle */ mapsjsLib.mapsjsMod.geometryNs.polygon, scala.Unit]] = js.undefined
   var envelopeEndAction: js.UndefOr[js.Function1[/* env */ envelope, scala.Unit]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatafeedstatusesResource extends js.Object {
   def custombatch(request: gapiDotClientDotContentLib.Anon_PrettyPrintQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[DatafeedstatusesCustomBatchResponse]
   /** Retrieves the status of a datafeed from your Merchant Center account. This method can only be called for non-multi-client accounts. */

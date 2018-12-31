@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait MessagerTypeEnum extends js.Object
 
 /**
- * messager
- */
+  * messager
+  */
 @JSGlobal("MessagerTypeEnum")
 @js.native
 object MessagerTypeEnum extends js.Object {

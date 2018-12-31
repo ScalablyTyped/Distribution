@@ -19,32 +19,32 @@ trait SignedXml
   /* protected */ def ApplySignOptions(signature: Signature, algorithm: stdLib.Algorithm, key: stdLib.CryptoKey, options: OptionsSign): js.Thenable[scala.Unit] = js.native
   /* protected */ def ApplyTransforms(transforms: Transforms, input: stdLib.Element): js.Any = js.native
   /**
-           * Copies namespaces from source element and its parents into destination element
-           */
+    * Copies namespaces from source element and its parents into destination element
+    */
   /* protected */ def CopyNamespaces(src: stdLib.Element, dst: stdLib.Element, ignoreDefault: scala.Boolean): scala.Unit = js.native
   /* protected */ def DigestReference(doc: stdLib.Element, reference: Reference, checkHmac: scala.Boolean): js.Promise[stdLib.Uint8Array] = js.native
   /* protected */ def DigestReferences(data: stdLib.Element): js.Promise[js.Array[scala.Unit]] = js.native
   /**
-           * Returns the public key of a signature.
-           */
+    * Returns the public key of a signature.
+    */
   /* protected */ def GetPublicKeys(): js.Thenable[js.Array[stdLib.CryptoKey]] = js.native
   /**
-           * Returns dictionary of namespaces used in signature
-           */
+    * Returns dictionary of namespaces used in signature
+    */
   /* protected */ def GetSignatureNamespaces(): xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.AssocArray[java.lang.String] = js.native
   /**
-           * Injects namespaces from dictionary to the target element
-           */
+    * Injects namespaces from dictionary to the target element
+    */
   /* protected */ def InjectNamespaces(
     namespaces: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     target: stdLib.Element,
     ignoreDefault: scala.Boolean
   ): scala.Unit = js.native
   /**
-           * Loads a SignedXml state from an XML element.
-           * @param  {Element | string} value The XML to load the SignedXml state from.
-           * @returns void
-           */
+    * Loads a SignedXml state from an XML element.
+    * @param  {Element | string} value The XML to load the SignedXml state from.
+    * @returns void
+    */
   def LoadXml(value: stdLib.Element): scala.Unit = js.native
   /* protected */ def ResolveTransform(transform: java.lang.String): Transform = js.native
   def Sign(algorithm: stdLib.Algorithm, key: stdLib.CryptoKey, data: stdLib.Document): js.Thenable[Signature] = js.native

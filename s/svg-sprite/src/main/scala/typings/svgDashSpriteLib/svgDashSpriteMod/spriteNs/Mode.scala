@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Mode
   extends /* customConfigName */ org.scalablytyped.runtime.StringDictionary[ModeConfig | scala.Boolean] {
   var css: js.UndefOr[CssAndViewSpecificModeConfig | scala.Boolean] = js.undefined

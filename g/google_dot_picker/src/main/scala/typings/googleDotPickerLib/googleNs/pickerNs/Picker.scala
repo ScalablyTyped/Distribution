@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Picker extends js.Object {
   def isVisible(): scala.Boolean
   def setCallback(method: js.Function): Picker

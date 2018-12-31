@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PageProtection extends js.Object {
   def addUser(email: java.lang.String): scala.Unit
   def getUsers(): js.Array[java.lang.String]

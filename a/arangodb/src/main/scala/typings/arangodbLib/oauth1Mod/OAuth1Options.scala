@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OAuth1Options extends js.Object {
   var accessTokenEndpoint: java.lang.String
   var activeUserEndpoint: js.UndefOr[java.lang.String] = js.undefined

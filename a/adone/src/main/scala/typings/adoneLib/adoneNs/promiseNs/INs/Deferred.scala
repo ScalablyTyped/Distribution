@@ -9,20 +9,14 @@ import scala.scalajs.js.annotation._
 trait Deferred[T] extends js.Object {
   var promise: js.Promise[T] = js.native
   /**
-                   * Rejects the promise
-                   */
+    * Rejects the promise
+    */
   def reject(): scala.Unit = js.native
-  /**
-                   * Rejects the promise
-                   */
   def reject(value: js.Any): scala.Unit = js.native
   /**
-                   * Resolves the promise
-                   */
+    * Resolves the promise
+    */
   def resolve(): scala.Unit = js.native
-  /**
-                   * Resolves the promise
-                   */
   def resolve(value: T): scala.Unit = js.native
 }
 

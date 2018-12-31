@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlaceResult extends js.Object {
   var address_components: js.Array[googlemapsLib.googleNs.mapsNs.GeocoderAddressComponent]
   var adr_address: java.lang.String

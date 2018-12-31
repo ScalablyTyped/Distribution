@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SwaggerVersionParams extends js.Object {
   var api: js.Any
   var apiDeclaration: js.Any

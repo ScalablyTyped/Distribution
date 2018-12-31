@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to metadata about a domain to which the current system is a member. */
-
 trait IPlayReadyDomain extends js.Object {
   /** Gets the current domain account identifier property. */
   var accountId: java.lang.String

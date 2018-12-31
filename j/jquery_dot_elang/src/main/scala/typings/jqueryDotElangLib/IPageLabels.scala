@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPageLabels extends js.Object {
   var lblAdd: js.UndefOr[java.lang.String] = js.undefined
   var lblEditHead: js.UndefOr[java.lang.String] = js.undefined

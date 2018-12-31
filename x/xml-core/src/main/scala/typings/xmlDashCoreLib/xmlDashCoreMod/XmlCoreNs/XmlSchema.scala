@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait XmlSchema extends js.Object {
   var items: js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[(XmlChildElementType[_] | XmlAttributeType[_]) with xmlDashCoreLib.Anon_Type]

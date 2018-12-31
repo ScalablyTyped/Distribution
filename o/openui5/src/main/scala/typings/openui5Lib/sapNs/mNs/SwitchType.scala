@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait SwitchType extends js.Object
 
 /**
-     * Enumaration for different switch types.
-    */
+  * Enumaration for different switch types.
+  */
 @JSGlobal("sap.m.SwitchType")
 @js.native
 object SwitchType extends js.Object {

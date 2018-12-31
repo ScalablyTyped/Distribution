@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListUserStatesResponse extends js.Object {
   /** Current response metadata. */
   var responseMetadata: js.UndefOr[ResponseMetadata] = js.undefined

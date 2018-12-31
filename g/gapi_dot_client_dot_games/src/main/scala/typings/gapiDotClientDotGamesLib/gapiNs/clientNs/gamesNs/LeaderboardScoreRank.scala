@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LeaderboardScoreRank extends js.Object {
   /** The number of scores in the leaderboard as a string. */
   var formattedNumScores: js.UndefOr[java.lang.String] = js.undefined

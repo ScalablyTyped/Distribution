@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CatRecoveryParams extends GenericParams {
   var bytes: js.UndefOr[CatBytes] = js.undefined
   var format: java.lang.String

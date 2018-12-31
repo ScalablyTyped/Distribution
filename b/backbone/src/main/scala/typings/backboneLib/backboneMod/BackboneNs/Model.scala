@@ -22,28 +22,21 @@ trait Model extends ModelBase {
   /* private */ def _validate(attributes: js.Any, options: js.Any): scala.Boolean = js.native
   def chain(): js.Any = js.native
   /**
-           * Return an object containing all the attributes that have changed, or
-           * false if there are no changed attributes. Useful for determining what
-           * parts of a view need to be updated and/or what attributes need to be
-           * persisted to the server. Unset attributes will be set to undefined.
-           * You can also pass an attributes object to diff against the model,
-           * determining if there *would be* a change. */
+    * Return an object containing all the attributes that have changed, or
+    * false if there are no changed attributes. Useful for determining what
+    * parts of a view need to be updated and/or what attributes need to be
+    * persisted to the server. Unset attributes will be set to undefined.
+    * You can also pass an attributes object to diff against the model,
+    * determining if there *would be* a change. */
   def changedAttributes(): js.Any = js.native
-  /**
-           * Return an object containing all the attributes that have changed, or
-           * false if there are no changed attributes. Useful for determining what
-           * parts of a view need to be updated and/or what attributes need to be
-           * persisted to the server. Unset attributes will be set to undefined.
-           * You can also pass an attributes object to diff against the model,
-           * determining if there *would be* a change. */
   def changedAttributes(attributes: js.Any): js.Any = js.native
   def clear(): js.Any = js.native
   def clear(options: Silenceable): js.Any = js.native
   /**
-          * Default attributes for the model. It can be an object hash or a method returning an object hash.
-          * For assigning an object hash, do it like this: this.defaults = <any>{ attribute: value, ... };
-          * That works only if you set it in the constructor or the initialize method.
-          **/
+    * Default attributes for the model. It can be an object hash or a method returning an object hash.
+    * For assigning an object hash, do it like this: this.defaults = <any>{ attribute: value, ... };
+    * That works only if you set it in the constructor or the initialize method.
+    **/
   def defaults(): ObjectHash = js.native
   def destroy(): js.Any = js.native
   def destroy(options: ModelDestroyOptions): js.Any = js.native
@@ -51,12 +44,12 @@ trait Model extends ModelBase {
   def fetch(): jqueryLib.JQueryXHR = js.native
   def fetch(options: ModelFetchOptions): jqueryLib.JQueryXHR = js.native
   /**
-          * For strongly-typed access to attributes, use the `get` method only privately in public getter properties.
-          * @example
-          * get name(): string {
-          *    return super.get("name");
-          * }
-          **/
+    * For strongly-typed access to attributes, use the `get` method only privately in public getter properties.
+    * @example
+    * get name(): string {
+    *    return super.get("name");
+    * }
+    **/
   /*private*/ def get(attributeName: java.lang.String): js.Any = js.native
   def has(attribute: java.lang.String): scala.Boolean = js.native
   def hasChanged(): scala.Boolean = js.native
@@ -85,29 +78,22 @@ trait Model extends ModelBase {
   def save(attributes: js.Any): js.Any = js.native
   def save(attributes: js.Any, options: ModelSaveOptions): js.Any = js.native
   /**
-          * For strongly-typed assignment of attributes, use the `set` method only privately in public setter properties.
-          * @example
-          * set name(value: string) {
-          *    super.set("name", value);
-          * }
-          **/
+    * For strongly-typed assignment of attributes, use the `set` method only privately in public setter properties.
+    * @example
+    * set name(value: string) {
+    *    super.set("name", value);
+    * }
+    **/
   /*private*/ def set(attributeName: java.lang.String, value: js.Any): Model = js.native
-  /**
-          * For strongly-typed assignment of attributes, use the `set` method only privately in public setter properties.
-          * @example
-          * set name(value: string) {
-          *    super.set("name", value);
-          * }
-          **/
-  /*private*/ def set(attributeName: java.lang.String, value: js.Any, options: ModelSetOptions): Model = js.native
+  def set(attributeName: java.lang.String, value: js.Any, options: ModelSetOptions): Model = js.native
   def set(obj: js.Any): Model = js.native
   def set(obj: js.Any, options: ModelSetOptions): Model = js.native
   def unset(attribute: java.lang.String): Model = js.native
   def unset(attribute: java.lang.String, options: Silenceable): Model = js.native
   /**
-           * Returns the relative URL where the model's resource would be located on the server.
-           * @memberof Model
-           */
+    * Returns the relative URL where the model's resource would be located on the server.
+    * @memberof Model
+    */
   def url(): java.lang.String = js.native
   def validate(attributes: js.Any): js.Any = js.native
   def validate(attributes: js.Any, options: js.Any): js.Any = js.native

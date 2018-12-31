@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridChildComponentProps extends js.Object {
   var columnIndex: scala.Double
   var rowIndex: scala.Double

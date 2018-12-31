@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AndroidAppInfo extends js.Object {
   /** The name of the app. Optional */
   var name: js.UndefOr[java.lang.String] = js.undefined

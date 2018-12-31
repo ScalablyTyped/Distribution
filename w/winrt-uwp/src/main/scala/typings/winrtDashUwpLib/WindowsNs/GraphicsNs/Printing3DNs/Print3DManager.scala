@@ -33,14 +33,14 @@ abstract class Print3DManager () extends js.Object {
 @js.native
 object Print3DManager extends js.Object {
   /**
-                   * Gets a 3D print manager.
-                   * @return The 3D print manager.
-                   */
+    * Gets a 3D print manager.
+    * @return The 3D print manager.
+    */
   def getForCurrentView(): winrtDashUwpLib.WindowsNs.GraphicsNs.Printing3DNs.Print3DManager = js.native
   /**
-                   * Programmatically initiates the 3D printing user interface.
-                   * @return true if the operation completes successfully; otherwise, false.
-                   */
+    * Programmatically initiates the 3D printing user interface.
+    * @return true if the operation completes successfully; otherwise, false.
+    */
   def showPrintUIAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
 }
 

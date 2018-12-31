@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Plugin extends js.Object {
   var defaultOptions: js.UndefOr[stdLib.Partial[RequiredOptions]] = js.undefined
   var languages: js.Array[SupportLanguage]

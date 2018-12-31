@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMediaControl extends js.Object {
   var albumArt: winrtLib.WindowsNs.FoundationNs.Uri
   var artistName: java.lang.String

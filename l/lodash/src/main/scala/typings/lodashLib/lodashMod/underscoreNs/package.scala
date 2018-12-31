@@ -38,7 +38,7 @@ package object underscoreNs {
   type Comparator2[T1, T2] = js.Function2[/* a */ T1, /* b */ T2, scala.Boolean]
   type CondPair[T, R] = js.Tuple2[js.Function1[/* val */ T, scala.Boolean], js.Function1[/* val */ T, R]]
   // conforms
-  type ConformsPredicateObject[T] = lodashLib.lodashLibStrings.ConformsPredicateObject with T
+  type ConformsPredicateObject[T] = /* import warning: ImportType.apply Failed type conversion: {typemapped, typemapped} */ js.Any
   type DictionaryIteratee[T] = ObjectIteratee[Dictionary[T]]
   type DictionaryIterator[T, TResult] = ObjectIterator[Dictionary[T], TResult]
   type DictionaryIteratorTypeGuard[T, S /* <: T */] = ObjectIteratorTypeGuard[Dictionary[T], S]
@@ -67,7 +67,7 @@ package object underscoreNs {
     /* value */ T, 
     /* index */ scala.Double, 
     /* collection */ List[T], 
-    /* is S */scala.Boolean
+    /* is S */ scala.Boolean
   ]
   type ListOfRecursiveArraysOrValues[T] = List[T | RecursiveArray[T]]
   type LoDashExplicitArrayWrapper[T] = LoDashExplicitWrapper[js.Array[T]]
@@ -139,33 +139,33 @@ package object underscoreNs {
     TResult
   ]
   type ObjectIteratee[TObject] = (ObjectIterator[TObject, NotVoid]) | (IterateeShorthand[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List())))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
   ])
   type ObjectIterateeCustom[TObject, TResult] = (ObjectIterator[TObject, TResult]) | (IterateeShorthand[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List())))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
   ])
   // Note: key should be string, not keyof T, because the actual object may contain extra properties that were not specified in the type.
   type ObjectIterator[TObject, TResult] = js.Function3[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List())))) *//* value */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ /* value */ js.Any, 
     /* key */ java.lang.String, 
     /* collection */ TObject, 
     TResult
   ]
-  type ObjectIteratorTypeGuard[TObject, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List())))) */js.Any */] = js.Function3[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List())))) *//* value */ js.Any, 
+  type ObjectIteratorTypeGuard[TObject, S /* <: /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any */] = js.Function3[
+    /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ /* value */ js.Any, 
     /* key */ java.lang.String, 
     /* collection */ TObject, 
-    /* is S */scala.Boolean
+    /* is S */ scala.Boolean
   ]
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[
     T, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeIntersect(List(TsTypeObject(List(TsMemberTypeMapped(NoComments,Default,false,TsIdentSimple(P),TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())),Noop,TsTypeRef(TsQIdent(List(TsIdentSimple(P))),List())))), TsTypeObject(List(TsMemberTypeMapped(NoComments,Default,false,TsIdentSimple(P),TsTypeRef(TsQIdent(List(TsIdentSimple(K))),List()),Noop,TsTypeRef(TsQIdent(List(TsIdentSimple(never))),List())))), TsTypeObject(List(TsMemberIndex(NoComments,false,Default,IndexingDict(TsIdentSimple(x),TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List())),false,TsTypeRef(TsQIdent(List(TsIdentSimple(never))),List())))))),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: lodash.Anon_X<T, K>[keyof T] */ js.Any
   ]
-  type PartialDeep[T] = lodashLib.lodashLibStrings.PartialDeep with T
+  type PartialDeep[T] = /* import warning: ImportType.apply Failed type conversion: {typemapped, typemapped} */ js.Any
   type PartialObject[T] = lodashLib.GlobalPartial[T]
   type PropertyName = java.lang.String | scala.Double | js.Symbol
   type PropertyPath = Many[PropertyName]
-  type ReplaceFunction = js.Function2[/* match */ java.lang.String, /* repeated */js.Any, java.lang.String]
+  type ReplaceFunction = js.Function2[/* match */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   // setWith
   type SetWithCustomizer[T] = js.Function3[/* nsValue */ js.Any, /* key */ java.lang.String, /* nsObject */ T, js.Any]
   type StringIterator[TResult] = js.Function3[
@@ -176,9 +176,9 @@ package object underscoreNs {
   ]
   type ValueIteratee[T] = (js.Function1[/* value */ T, NotVoid]) | IterateeShorthand[T]
   type ValueIterateeCustom[T, TResult] = (js.Function1[/* value */ T, TResult]) | IterateeShorthand[T]
-  type ValueIteratorTypeGuard[T, S /* <: T */] = js.Function1[/* value */ T, /* is S */scala.Boolean]
+  type ValueIteratorTypeGuard[T, S /* <: T */] = js.Function1[/* value */ T, /* is S */ scala.Boolean]
   type ValueKeyIteratee[T] = (js.Function2[/* value */ T, /* key */ java.lang.String, NotVoid]) | IterateeShorthand[T]
-  type ValueKeyIterateeTypeGuard[T, S /* <: T */] = js.Function2[/* value */ T, /* key */ java.lang.String, /* is S */scala.Boolean]
+  type ValueKeyIterateeTypeGuard[T, S /* <: T */] = js.Function2[/* value */ T, /* key */ java.lang.String, /* is S */ scala.Boolean]
   /** The placeholder, to be used in curried functions */
   type `__` = LoDashStatic
   // isMatch

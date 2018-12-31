@@ -8,23 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("deku", JSImport.Namespace)
 @js.native
 object dekuModMembers extends js.Object {
-  var h: js.Function3[
-    /* type */ dekuLib.Thunk, 
-    /* attributes */ js.Any, 
-    /* repeated */js.Any, 
-    dekuLib.dekuMod.dekuNs.VirtualElement
-  ] = js.native
+  var h: dekuLib.Anon_Type = js.native
   /**
   	 * Create a DOM renderer using a container element.
   	 * Everything will be rendered inside of that container.
   	 * Returns a function that accepts new state that can replace what is currently rendered.
   	 */
   def createApp(el: stdLib.HTMLElement): dekuLib.Render = js.native
-  /**
-  	 * Create a DOM renderer using a container element.
-  	 * Everything will be rendered inside of that container.
-  	 * Returns a function that accepts new state that can replace what is currently rendered.
-  	 */
   def createApp(el: stdLib.HTMLElement, dispatch: dekuLib.Dispatch): dekuLib.Render = js.native
   def element(`type`: dekuLib.Thunk): dekuLib.dekuMod.dekuNs.VirtualElement = js.native
   /**

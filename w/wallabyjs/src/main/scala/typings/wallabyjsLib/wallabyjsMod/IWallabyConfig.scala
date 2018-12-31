@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IWallabyConfig extends js.Object {
   var compilers: js.UndefOr[IWallabyCompilers] = js.undefined
   var debug: js.UndefOr[scala.Boolean] = js.undefined

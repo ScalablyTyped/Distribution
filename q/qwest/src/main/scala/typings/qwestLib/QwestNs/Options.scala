@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /** true (default) or false; used to make asynchronous or synchronous requests */
   var async: js.UndefOr[scala.Boolean] = js.undefined

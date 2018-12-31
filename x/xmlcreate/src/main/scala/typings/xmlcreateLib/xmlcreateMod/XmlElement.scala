@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 class XmlElement protected ()
   extends xmlcreateLib.libNodesXmlElementMod.default {
   /**
-       * Initializes a new instance of the {@link XmlElement} class.
-       *
-       * @param name The name of the element.
-       */
+    * Initializes a new instance of the {@link XmlElement} class.
+    *
+    * @param name The name of the element.
+    */
   def this(name: java.lang.String) = this()
 }
 

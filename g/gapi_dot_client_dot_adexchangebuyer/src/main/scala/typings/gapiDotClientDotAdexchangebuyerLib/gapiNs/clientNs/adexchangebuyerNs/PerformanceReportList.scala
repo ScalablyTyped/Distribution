@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PerformanceReportList extends js.Object {
   /** Resource type. */
   var kind: js.UndefOr[java.lang.String] = js.undefined

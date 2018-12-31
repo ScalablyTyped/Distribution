@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UnityMessagingIndicator extends js.Object {
   // This is suppose to be readonly, but i'm not sure how to do this
   // in a definition file.

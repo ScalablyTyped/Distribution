@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Count extends js.Object {
   /** The unit in which these products are counted. */
   var unit: js.UndefOr[java.lang.String] = js.undefined

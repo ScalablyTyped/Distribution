@@ -18,20 +18,20 @@ object MediaValuesNs extends js.Object {
   sealed trait Type extends js.Object
   
   /**
-       * List of possible item types.
-       */
+    * List of possible item types.
+    */
   @js.native
   object ImageType extends js.Object {
     /**
-             * Icon.
-             */
+      * Icon.
+      */
     @js.native
     sealed trait ICON
       extends actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.ImageType
     
     /**
-             * Large image.
-             */
+      * Large image.
+      */
     @js.native
     sealed trait LARGE
       extends actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.ImageType
@@ -45,20 +45,20 @@ object MediaValuesNs extends js.Object {
   }
   
   /**
-       * List of media control status' returned.
-       */
+    * List of media control status' returned.
+    */
   @js.native
   object Status extends js.Object {
     /**
-             * Finished.
-             */
+      * Finished.
+      */
     @js.native
     sealed trait FINISHED
       extends actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Status
     
     /**
-             * Unspecified.
-             */
+      * Unspecified.
+      */
     @js.native
     sealed trait UNSPECIFIED
       extends actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Status
@@ -72,20 +72,20 @@ object MediaValuesNs extends js.Object {
   }
   
   /**
-       * Type of the media within a MediaResponse.
-       */
+    * Type of the media within a MediaResponse.
+    */
   @js.native
   object Type extends js.Object {
     /**
-             * Audio stream.
-             */
+      * Audio stream.
+      */
     @js.native
     sealed trait AUDIO
       extends actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Type
     
     /**
-             * Unspecified.
-             */
+      * Unspecified.
+      */
     @js.native
     sealed trait MEDIA_TYPE_UNSPECIFIED
       extends actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Type

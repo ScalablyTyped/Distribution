@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ClientAwareness[TStore] extends js.Object {
   var clientAwareness: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
   var link: apolloDashLinkLib.apolloDashLinkMod.ApolloLink

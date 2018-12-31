@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Weight extends js.Object {
   /** The name of the variation. This field is required when creating an experiment. This field may not be changed for an experiment whose status is ENDED. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Status of the variation. Possible values: "ACTIVE", "INACTIVE". INACTIVE variations are not served. This field may not be changed for an experiment
-                   * whose status is ENDED.
-                   */
+    * Status of the variation. Possible values: "ACTIVE", "INACTIVE". INACTIVE variations are not served. This field may not be changed for an experiment
+    * whose status is ENDED.
+    */
   var status: js.UndefOr[java.lang.String] = js.undefined
   /** The URL of the variation. This field may not be changed for an experiment whose status is RUNNING or ENDED. */
   var url: js.UndefOr[java.lang.String] = js.undefined

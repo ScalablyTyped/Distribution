@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Collision.b2DynamicTree")
 @js.native
+/**
+		* Constructing the tree initializes the node pool.
+		**/
 class b2DynamicTree () extends js.Object {
   /**
   		* Create a proxy. Provide a tight fitting AABB and a userData.

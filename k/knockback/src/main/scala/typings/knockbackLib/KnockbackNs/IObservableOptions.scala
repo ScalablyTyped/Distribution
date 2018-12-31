@@ -18,7 +18,6 @@ import scala.scalajs.js.annotation._
 	factory (kb.Factory) — a factory used to create view models.
 	options (Object) — a set of options merge into these options using _.defaults. Useful for extending options when deriving classes rather than merging them by hand.
 	*/
-
 trait IObservableOptions extends js.Object {
   var args: js.UndefOr[js.Array[knockoutLib.KnockoutObservable[_]]] = js.undefined
   var default: js.UndefOr[js.Any] = js.undefined

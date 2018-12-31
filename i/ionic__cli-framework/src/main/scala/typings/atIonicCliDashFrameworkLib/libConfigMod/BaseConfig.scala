@@ -16,20 +16,13 @@ abstract class BaseConfig[T /* <: js.Object */] protected () extends js.Object {
   val file: js.Any = js.native
   val p: java.lang.String = js.native
   val pathPrefix: js.Array[java.lang.String] = js.native
-  def get[P /* <: java.lang.String */](property: P): /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.Any = js.native
+  def get[P /* <: java.lang.String */](property: P): /* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any = js.native
   def get[P /* <: java.lang.String */](
     property: P,
-    defaultValue: stdLib.NonNullable[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.Any
-    ]
-  ): stdLib.NonNullable[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.Any
-  ] = js.native
+    defaultValue: stdLib.NonNullable[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any]
+  ): stdLib.NonNullable[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.native
   def provideDefaults(c: stdLib.Partial[stdLib.Readonly[T]]): T = js.native
-  def set[P /* <: java.lang.String */](
-    property: P,
-    value: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.Any
-  ): scala.Unit = js.native
+  def set[P /* <: java.lang.String */](property: P, value: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any): scala.Unit = js.native
   def unset[P /* <: java.lang.String */](property: P): scala.Unit = js.native
 }
 

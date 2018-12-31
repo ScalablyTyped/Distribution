@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /////////////////////////////////////////
 // App.Property
 /////////////////////////////////////////
-
 trait PropertyPrototype extends js.Object {
   var creditcard: js.UndefOr[Validator] = js.undefined
   var date: js.UndefOr[Validator] = js.undefined

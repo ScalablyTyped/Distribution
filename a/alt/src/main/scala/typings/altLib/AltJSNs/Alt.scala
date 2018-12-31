@@ -14,7 +14,6 @@ class Alt () extends js.Object {
   def addActions(actionsName: java.lang.String, ActionsClass: ActionsClassConstructor): scala.Unit = js.native
   //Stores methods
   def addStore(name: java.lang.String, store: StoreModel[_]): scala.Unit = js.native
-  //Stores methods
   def addStore(name: java.lang.String, store: StoreModel[_], saveStore: scala.Boolean): scala.Unit = js.native
   def bootstrap(jsonData: java.lang.String): scala.Unit = js.native
   def createActions[T](ActionsClass: ActionsClassConstructor): T = js.native

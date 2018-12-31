@@ -20,8 +20,8 @@ trait ExoticComponent[P] extends js.Object {
   @JSName("$$typeof")
   val $$typeof: js.Symbol = js.native
   /**
-           * **NOTE**: Exotic components are not callable.
-           */
+    * **NOTE**: Exotic components are not callable.
+    */
   def apply(props: P): ReactElement[_] | scala.Null = js.native
 }
 

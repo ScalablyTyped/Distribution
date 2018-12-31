@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Accesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -31,11 +30,11 @@ trait Anon_Accesstoken extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Name of the service as specified in the service configuration. For example,
-                   * `"pubsub.googleapis.com"`.
-                   *
-                   * See google.api.Service for the definition of a service name.
-                   */
+    * Name of the service as specified in the service configuration. For example,
+    * `"pubsub.googleapis.com"`.
+    *
+    * See google.api.Service for the definition of a service name.
+    */
   var serviceName: java.lang.String
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

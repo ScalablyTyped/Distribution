@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventsResource extends js.Object {
   /** Deletes an event. */
   def delete(request: gapiDotClientDotCalendarLib.Anon_PrettyPrintEventIdQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

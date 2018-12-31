@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IConfigurableMapOptions extends js.Object {
   /** Initial map options. */
   var mapOptions: IMapOptions

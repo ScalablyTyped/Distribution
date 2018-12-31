@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait XmlAssertion
   extends chaiDashXmlLib.chaiDashXmlMod.Global.ChaiNs.Assertion {
   var and: XmlAssertion

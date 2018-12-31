@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 sealed trait ChartBinType extends js.Object
 
 /**
-     *
-     * Specifies the bins type of the Histogram chart series.
-     *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  *
+  * Specifies the bins type of the Histogram chart series.
+  *
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.ChartBinType")
 @js.native
 object ChartBinType extends js.Object {

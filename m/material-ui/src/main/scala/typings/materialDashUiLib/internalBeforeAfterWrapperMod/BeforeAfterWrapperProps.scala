@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BeforeAfterWrapperProps
   extends reactLib.reactMod.ReactNs.Props[BeforeAfterWrapper] {
   var afterElementType: js.UndefOr[java.lang.String] = js.undefined

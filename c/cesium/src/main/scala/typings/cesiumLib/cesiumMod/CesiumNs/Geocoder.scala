@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Geocoder extends js.Object {
   var container: stdLib.Element
   var viewModel: GeocoderViewModel

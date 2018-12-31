@@ -16,11 +16,11 @@ abstract class CommandHelpFormatter[C /* <: atIonicCliDashFrameworkLib.definitio
   val dotswidth: scala.Double = js.native
   val location: atIonicCliDashFrameworkLib.definitionsMod.NamespaceLocateResult[C, N, M, I, O] = js.native
   /**
-       * Given an option definition from command metadata, decide whether to keep
-       * or discard it.
-       *
-       * @return `true` to keep, `false` to discard
-       */
+    * Given an option definition from command metadata, decide whether to keep
+    * or discard it.
+    *
+    * @return `true` to keep, `false` to discard
+    */
   def filterOptionCallback(option: O): js.Promise[scala.Boolean] = js.native
   def getCommandFullName(): js.Promise[java.lang.String] = js.native
   def getCommandMetadata(): js.Promise[

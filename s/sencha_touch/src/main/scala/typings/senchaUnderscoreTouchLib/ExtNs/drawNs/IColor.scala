@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IColor
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Return a new color that is darker than this color

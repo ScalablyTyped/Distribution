@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictDimmerInnerProps extends js.Object {
   /** An active dimmer will dim its parent container. */
   var active: js.UndefOr[scala.Boolean] = js.undefined
@@ -22,11 +21,11 @@ trait StrictDimmerInnerProps extends js.Object {
   /** A dimmer can be formatted to have its colors inverted. */
   var inverted: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * Called when the dimmer is clicked.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called when the dimmer is clicked.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onClick: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
@@ -35,11 +34,11 @@ trait StrictDimmerInnerProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Handles click outside Dimmer's content, but inside Dimmer area.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Handles click outside Dimmer's content, but inside Dimmer area.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onClickOutside: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 

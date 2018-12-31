@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NumericMenuExposed extends js.Object {
   /** the name of the attribute in the records */
   var attribute: java.lang.String
@@ -15,6 +14,6 @@ trait NumericMenuExposed extends js.Object {
   /** List of options. With a text label, and upper and lower bounds. */
   var items: js.Array[reactDashInstantsearchDashCoreLib.Anon_LabelStart]
   /** (...args: any[]) => any to modify the items being displayed, e.g. for filtering or sorting them. Takes an items as parameter and expects it back in return. */
-  var transformItems: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var transformItems: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
 }
 

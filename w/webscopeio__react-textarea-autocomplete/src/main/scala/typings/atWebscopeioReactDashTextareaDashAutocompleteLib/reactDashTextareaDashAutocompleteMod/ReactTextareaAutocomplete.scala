@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
 trait ReactTextareaAutocomplete[TItem /* <: java.lang.String | js.Object */]
   extends reactLib.reactMod.Component[TextareaProps[TItem], TextareaState[TItem], js.Any] {
   /**
-       * Gets the current caret position in the textarea.
-       */
+    * Gets the current caret position in the textarea.
+    */
   def getCaretPosition(): scala.Double = js.native
   /**
-       * 	Returns currently selected word.
-       */
+    * 	Returns currently selected word.
+    */
   def getSelectedText(): js.UndefOr[java.lang.String] = js.native
   /**
-       * Returns selectionStart and selectionEnd of the textarea.
-       */
+    * Returns selectionStart and selectionEnd of the textarea.
+    */
   def getSelectionPosition(): atWebscopeioReactDashTextareaDashAutocompleteLib.Anon_SelectionStart = js.native
   /**
-       * Sets the caret position to the integer value passed as the argument.
-       * @param position caret position to set.
-       */
+    * Sets the caret position to the integer value passed as the argument.
+    * @param position caret position to set.
+    */
   def setCaretPosition(position: scala.Double): scala.Unit = js.native
 }
 

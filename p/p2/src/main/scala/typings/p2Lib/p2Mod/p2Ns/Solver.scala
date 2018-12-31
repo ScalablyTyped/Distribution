@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Solver extends EventEmitter {
   var equationSortFunction: Equation
   var equations: js.Array[Equation]

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Interface for the DateFormattingInfo.calendar field
-     */
-
+  * Interface for the DateFormattingInfo.calendar field
+  */
 trait Calendar extends js.Object {
   var AlgorithmType: scala.Double
   var CalendarType: scala.Double

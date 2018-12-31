@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FavicoJsOptions extends js.Object {
   var animation: js.UndefOr[java.lang.String] = js.undefined
   var bgColor: js.UndefOr[java.lang.String] = js.undefined

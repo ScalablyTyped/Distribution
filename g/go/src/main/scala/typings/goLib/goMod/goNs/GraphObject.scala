@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * This is the abstract base class for all graphical objects.
-    */
+  * This is the abstract base class for all graphical objects.
+  */
 @js.native
 trait GraphObject extends js.Object {
   /**This read-only property returns the bounds of this GraphObject in container coordinates.*/
@@ -129,9 +129,9 @@ trait GraphObject extends js.Object {
   /**Gets or sets the function to execute on a mouse-up event when this GraphObject's .isActionable is set to true.*/
   def actionUp(e: InputEvent, obj: GraphObject): scala.Unit = js.native
   /**
-          * Add a data-binding of a property on this GraphObject to a property on a data object.
-          * @param {Binding} binding
-          */
+    * Add a data-binding of a property on this GraphObject to a property on a data object.
+    * @param {Binding} binding
+    */
   def bind(binding: Binding): scala.Unit = js.native
   /**Gets or sets the function to execute when the user single-primary-clicks on this object.*/
   def click(e: InputEvent, obj: GraphObject): scala.Unit = js.native
@@ -140,53 +140,43 @@ trait GraphObject extends js.Object {
   /**Gets or sets the function to execute when the user single-secondary-clicks on this object.*/
   def contextClick(e: InputEvent, obj: GraphObject): scala.Unit = js.native
   /**
-          * Creates a deep copy of this GraphObject and returns it.
-          */
+    * Creates a deep copy of this GraphObject and returns it.
+    */
   def copy(): GraphObject = js.native
   /**Gets or sets the function to execute when the user double-primary-clicks on this object.*/
   def doubleClick(e: InputEvent, obj: GraphObject): scala.Unit = js.native
   /**
-          * Returns the effective angle that the object is drawn at, in document coordinates.
-          */
+    * Returns the effective angle that the object is drawn at, in document coordinates.
+    */
   def getDocumentAngle(): scala.Double = js.native
   /**
-          * Returns the Point in document coordinates for a given Spot in this object's bounds.
-          * @param {Spot} s a real Spot describing a location relative to the GraphObject.
-          * @param {Point=} result an optional Point that is modified and returned.
-          */
+    * Returns the Point in document coordinates for a given Spot in this object's bounds.
+    * @param {Spot} s a real Spot describing a location relative to the GraphObject.
+    * @param {Point=} result an optional Point that is modified and returned.
+    */
   def getDocumentPoint(s: Spot): Point = js.native
-  /**
-          * Returns the Point in document coordinates for a given Spot in this object's bounds.
-          * @param {Spot} s a real Spot describing a location relative to the GraphObject.
-          * @param {Point=} result an optional Point that is modified and returned.
-          */
   def getDocumentPoint(s: Spot, result: Point): Point = js.native
   /**
-          * Returns the total scale that the object is drawn at, in document coordinates.
-          */
+    * Returns the total scale that the object is drawn at, in document coordinates.
+    */
   def getDocumentScale(): scala.Double = js.native
   /**
-          * Given a Point in document coordinates, returns a new Point in local coordinates.
-          * @param {Point} p a Point in document coordinates.
-          * @param {Point=} result an optional Point that is modified and returned.
-          */
+    * Given a Point in document coordinates, returns a new Point in local coordinates.
+    * @param {Point} p a Point in document coordinates.
+    * @param {Point=} result an optional Point that is modified and returned.
+    */
   def getLocalPoint(p: Point): Point = js.native
-  /**
-          * Given a Point in document coordinates, returns a new Point in local coordinates.
-          * @param {Point} p a Point in document coordinates.
-          * @param {Point=} result an optional Point that is modified and returned.
-          */
   def getLocalPoint(p: Point, result: Point): Point = js.native
   /**
-          * This predicate is true if this object is an element, perhaps indirectly, of the given panel.
-          * @param {GraphObject} panel
-          * or if it is contained by another panel that is contained by the given panel,
-          * to any depth; false if the argument is null or is not a Panel.
-          */
+    * This predicate is true if this object is an element, perhaps indirectly, of the given panel.
+    * @param {GraphObject} panel
+    * or if it is contained by another panel that is contained by the given panel,
+    * to any depth; false if the argument is null or is not a Panel.
+    */
   def isContainedBy(panel: GraphObject): scala.Boolean = js.native
   /**
-          * This predicate is true if this object is .visible and each of its visual containing panels are also visible.
-          */
+    * This predicate is true if this object is .visible and each of its visual containing panels are also visible.
+    */
   def isVisibleObject(): scala.Boolean = js.native
   /**Gets or sets the function to execute when the user moves the mouse into this stationary object during a DraggingTool drag.*/
   def mouseDragEnter(e: InputEvent, obj: GraphObject, prev: GraphObject): scala.Unit = js.native
@@ -205,9 +195,9 @@ trait GraphObject extends js.Object {
   /**Gets or sets the function to execute when the user moves the mouse over this object without holding down any buttons.*/
   def mouseOver(e: InputEvent, obj: GraphObject): scala.Unit = js.native
   /**
-          * This method sets a collection of properties according to the property/value pairs that have been set on the given Object,
-          * in the same manner as GraphObject.make does when constructing a GraphObject with an argument that is a simple JavaScript Object.
-          */
+    * This method sets a collection of properties according to the property/value pairs that have been set on the given Object,
+    * in the same manner as GraphObject.make does when constructing a GraphObject with an argument that is a simple JavaScript Object.
+    */
   def setProperties(props: js.Object): scala.Unit = js.native
   def spanAllocation(obj: GraphObject, r: RowColumnDefinition, n: scala.Double): scala.Double = js.native
 }

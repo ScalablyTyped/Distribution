@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAsymmetricAlgorithmNamesStatics extends js.Object {
   var dsaSha1: java.lang.String
   var dsaSha256: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransformStream[I, O] extends js.Object {
   val readable: ReadableStream[O]
   val writable: WritableStream[I]

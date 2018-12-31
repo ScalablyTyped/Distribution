@@ -60,8 +60,8 @@ trait Consolidate extends js.Object {
   @JSName("react")
   var react_Original: RendererInterface = js.native
   /**
-           * expose the instance of the engine
-     */
+    * expose the instance of the engine
+    */
   var requires: js.Object = js.native
   @JSName("swig")
   var swig_Original: RendererInterface = js.native
@@ -79,7 +79,6 @@ trait Consolidate extends js.Object {
   def atpl(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
   // template engines
   def atpl(path: java.lang.String, fn: js.Function2[/* err */ nodeLib.Error, /* html */ java.lang.String, _]): js.Any = js.native
-  // template engines
   def atpl(path: java.lang.String, options: consolidateLib.Anon_OtherOptions): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
   // template engines
   def atpl(
@@ -88,10 +87,10 @@ trait Consolidate extends js.Object {
     fn: js.Function2[/* err */ nodeLib.Error, /* html */ java.lang.String, _]
   ): js.Any = js.native
   /**
-       * Clear the cache.
-       *
-       * @api public
-       */
+    * Clear the cache.
+    *
+    * @api public
+    */
   def clearCache(): scala.Unit = js.native
   def dot(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
   def dot(path: java.lang.String, fn: js.Function2[/* err */ nodeLib.Error, /* html */ java.lang.String, _]): js.Any = js.native
@@ -145,7 +144,6 @@ trait Consolidate extends js.Object {
   def hamlet(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
   // TODO figure out how to do haml-coffee
   def hamlet(path: java.lang.String, fn: js.Function2[/* err */ nodeLib.Error, /* html */ java.lang.String, _]): js.Any = js.native
-  // TODO figure out how to do haml-coffee
   def hamlet(path: java.lang.String, options: consolidateLib.Anon_OtherOptions): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
   // TODO figure out how to do haml-coffee
   def hamlet(

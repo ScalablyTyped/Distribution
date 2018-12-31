@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Project extends js.Object {
   /** User assigned unique identifier for the resource (output only). */
   var id: js.UndefOr[java.lang.String] = js.undefined

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class FileSystemCredentials protected ()
   extends awsDashSdkLib.awsDashSdkMod.FileSystemCredentials {
   /**
-       * Creates a new FileSystemCredentials object from a filename.
-       * @param {string} filename - The path on disk to the JSON file to load.
-       */
+    * Creates a new FileSystemCredentials object from a filename.
+    * @param {string} filename - The path on disk to the JSON file to load.
+    */
   def this(filename: java.lang.String) = this()
 }
 

@@ -22,12 +22,12 @@ class SuggestionsController[T] () extends js.Object {
   def getSuggestions(): js.Array[ISuggestionModel[T]] = js.native
   def hasSelectedSuggestion(): scala.Boolean = js.native
   /**
-       * Increments the suggestion index and gets the next suggestion in the list.
-       */
+    * Increments the suggestion index and gets the next suggestion in the list.
+    */
   def nextSuggestion(): scala.Boolean = js.native
   /**
-       * Decrements the suggestion index and gets the previous suggestion in the list.
-       */
+    * Decrements the suggestion index and gets the previous suggestion in the list.
+    */
   def previousSuggestion(): scala.Boolean = js.native
   def removeSuggestion(index: scala.Double): scala.Unit = js.native
   def setSelectedSuggestion(index: scala.Double): scala.Unit = js.native

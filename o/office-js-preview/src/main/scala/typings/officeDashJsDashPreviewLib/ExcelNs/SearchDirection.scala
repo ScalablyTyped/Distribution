@@ -9,29 +9,29 @@ import scala.scalajs.js.annotation._
 sealed trait SearchDirection extends js.Object
 
 /**
-     *
-     * Specifies the search direction.
-     *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  *
+  * Specifies the search direction.
+  *
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.SearchDirection")
 @js.native
 object SearchDirection extends js.Object {
   /**
-           *
-           * Search in reverse order.
-           *
-           */
+    *
+    * Search in reverse order.
+    *
+    */
   @js.native
   sealed trait backwards
     extends officeDashJsDashPreviewLib.ExcelNs.SearchDirection
   
   /**
-           *
-           * Search in forward order.
-           *
-           */
+    *
+    * Search in forward order.
+    *
+    */
   @js.native
   sealed trait forward
     extends officeDashJsDashPreviewLib.ExcelNs.SearchDirection

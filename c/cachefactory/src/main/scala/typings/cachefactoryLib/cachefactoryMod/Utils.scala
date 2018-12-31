@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Utils extends js.Object {
   var Promise: js.UndefOr[stdLib.PromiseConstructor] = js.undefined
   def equals(a: js.Any, b: js.Any): scala.Boolean

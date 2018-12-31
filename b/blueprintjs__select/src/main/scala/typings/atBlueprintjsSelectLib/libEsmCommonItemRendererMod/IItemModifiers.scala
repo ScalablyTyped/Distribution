@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IItemModifiers extends js.Object {
   /** Whether this is the "active" (focused) item, meaning keyboard interactions will act upon it. */
   var active: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHttpRequestConfigHeaders
   extends /* requestType */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var common: js.UndefOr[js.Any] = js.undefined

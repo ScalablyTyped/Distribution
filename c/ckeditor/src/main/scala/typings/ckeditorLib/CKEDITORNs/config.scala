@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // https://docs.com/ckeditor4/latest/api/CKEDITOR_config.html
-
 trait config extends js.Object {
   var allowedContent: js.UndefOr[scala.Boolean | ckeditorLib.CKEDITORNs.filterNs.allowedContentRules] = js.undefined
   var autoEmbed_widget: js.UndefOr[java.lang.String | (js.Function1[/* url */ java.lang.String, java.lang.String])] = js.undefined

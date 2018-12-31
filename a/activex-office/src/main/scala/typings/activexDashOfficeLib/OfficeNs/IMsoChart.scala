@@ -87,7 +87,6 @@ class IMsoChart protected () extends js.Object {
   def AutoFormat(rGallery: scala.Double, varFormat: js.Any): scala.Unit = js.native
   /** @param AxisGroup [AxisGroup=1] */
   def Axes(Type: js.Any): js.Any = js.native
-  /** @param AxisGroup [AxisGroup=1] */
   def Axes(Type: js.Any, AxisGroup: XlAxisGroup): js.Any = js.native
   def BarGroups(): js.Any = js.native
   def BarGroups(Index: js.Any): js.Any = js.native
@@ -113,28 +112,13 @@ class IMsoChart protected () extends js.Object {
   def ColumnGroups(Index: js.Any): js.Any = js.native
   def Copy(): js.Any = js.native
   /**
-           * @param Appearance [Appearance=1]
-           * @param Format [Format=-4147]
-           * @param Size [Size=2]
-           */
+    * @param Appearance [Appearance=1]
+    * @param Format [Format=-4147]
+    * @param Size [Size=2]
+    */
   def CopyPicture(): scala.Unit = js.native
-  /**
-           * @param Appearance [Appearance=1]
-           * @param Format [Format=-4147]
-           * @param Size [Size=2]
-           */
   def CopyPicture(Appearance: scala.Double): scala.Unit = js.native
-  /**
-           * @param Appearance [Appearance=1]
-           * @param Format [Format=-4147]
-           * @param Size [Size=2]
-           */
   def CopyPicture(Appearance: scala.Double, Format: scala.Double): scala.Unit = js.native
-  /**
-           * @param Appearance [Appearance=1]
-           * @param Format [Format=-4147]
-           * @param Size [Size=2]
-           */
   def CopyPicture(Appearance: scala.Double, Format: scala.Double, Size: scala.Double): scala.Unit = js.native
   def Delete(): js.Any = js.native
   def DeleteHiddenContent(): scala.Unit = js.native
@@ -169,19 +153,14 @@ class IMsoChart protected () extends js.Object {
   def Shapes(Index: js.Any): Shape = js.native
   /** @param fBackWall [fBackWall=true] */
   def Walls(): IMsoWalls = js.native
-  /** @param fBackWall [fBackWall=true] */
   def Walls(fBackWall: scala.Boolean): IMsoWalls = js.native
   def XYGroups(): js.Any = js.native
   def XYGroups(Index: js.Any): js.Any = js.native
   /** @param Type [Type=2] */
   def _ApplyDataLabels(): scala.Unit = js.native
-  /** @param Type [Type=2] */
   def _ApplyDataLabels(Type: XlDataLabelsType): scala.Unit = js.native
-  /** @param Type [Type=2] */
   def _ApplyDataLabels(Type: XlDataLabelsType, IMsoLegendKey: js.Any): scala.Unit = js.native
-  /** @param Type [Type=2] */
   def _ApplyDataLabels(Type: XlDataLabelsType, IMsoLegendKey: js.Any, AutoText: js.Any): scala.Unit = js.native
-  /** @param Type [Type=2] */
   def _ApplyDataLabels(Type: XlDataLabelsType, IMsoLegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): scala.Unit = js.native
 }
 

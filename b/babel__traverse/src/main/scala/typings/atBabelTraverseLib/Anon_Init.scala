@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Init extends js.Object {
   var id: atBabelTypesLib.typesMod.LVal
   var init: js.UndefOr[atBabelTypesLib.typesMod.Expression] = js.undefined

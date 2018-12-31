@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AuthenticationTypeOAuth2
   extends nodemailerLib.libXoauth2Mod.XOAuth2Ns.Options {
   /** indicates the authetication type, defaults to ‘login’, other option is ‘oauth2’ */

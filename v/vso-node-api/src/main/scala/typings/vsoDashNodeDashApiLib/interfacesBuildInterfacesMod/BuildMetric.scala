@@ -5,23 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BuildMetric extends js.Object {
   /**
-       * The date for the scope.
-       */
+    * The date for the scope.
+    */
   var date: stdLib.Date
   /**
-       * The value.
-       */
+    * The value.
+    */
   var intValue: scala.Double
   /**
-       * The name of the metric.
-       */
+    * The name of the metric.
+    */
   var name: java.lang.String
   /**
-       * The scope.
-       */
+    * The scope.
+    */
   var scope: java.lang.String
 }
 

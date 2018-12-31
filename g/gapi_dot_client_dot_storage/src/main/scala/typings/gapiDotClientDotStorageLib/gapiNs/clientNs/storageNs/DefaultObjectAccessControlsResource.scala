@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DefaultObjectAccessControlsResource extends js.Object {
   /** Permanently deletes the default object ACL entry for the specified entity on the specified bucket. */
   def delete(request: gapiDotClientDotStorageLib.Anon_PrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

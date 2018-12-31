@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Sink extends js.Object {
   /** The codec to use to encode data written to the sink. */
   var codec: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined

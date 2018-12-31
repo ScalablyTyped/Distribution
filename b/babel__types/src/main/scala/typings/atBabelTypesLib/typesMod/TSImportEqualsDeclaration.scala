@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TSImportEqualsDeclaration extends BaseNode {
   var id: Identifier
   var isExport: scala.Boolean | scala.Null

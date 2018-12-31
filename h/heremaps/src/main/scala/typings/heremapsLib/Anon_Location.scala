@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Location extends js.Object {
   var Location: Anon_Address
   var MatchLevel: java.lang.String

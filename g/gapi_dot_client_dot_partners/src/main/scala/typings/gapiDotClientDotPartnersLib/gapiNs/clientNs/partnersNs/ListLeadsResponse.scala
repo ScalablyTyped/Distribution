@@ -5,17 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListLeadsResponse extends js.Object {
   /** The list of leads. */
   var leads: js.UndefOr[js.Array[Lead]] = js.undefined
   /**
-               * A token to retrieve next page of results.
-               * Pass this value in the `ListLeadsRequest.page_token` field in the
-               * subsequent call to
-               * ListLeads to retrieve the
-               * next page of results.
-               */
+    * A token to retrieve next page of results.
+    * Pass this value in the `ListLeadsRequest.page_token` field in the
+    * subsequent call to
+    * ListLeads to retrieve the
+    * next page of results.
+    */
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Current response metadata. */
   var responseMetadata: js.UndefOr[ResponseMetadata] = js.undefined

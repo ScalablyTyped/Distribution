@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Project extends js.Object {
   var general_token: java.lang.String
   var glance: Glance

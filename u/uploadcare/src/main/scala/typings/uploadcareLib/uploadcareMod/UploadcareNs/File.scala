@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait File extends js.Object {
   var datetime_removed: java.lang.String | scala.Null
   var datetime_stored: java.lang.String

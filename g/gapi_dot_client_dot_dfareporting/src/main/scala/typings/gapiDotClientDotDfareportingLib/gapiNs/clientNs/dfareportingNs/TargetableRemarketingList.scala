@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TargetableRemarketingList extends js.Object {
   /** Account ID of this remarketing list. This is a read-only, auto-generated field that is only returned in GET requests. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined

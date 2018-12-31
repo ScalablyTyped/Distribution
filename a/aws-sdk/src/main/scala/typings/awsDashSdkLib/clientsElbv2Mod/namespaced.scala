@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("aws-sdk/clients/elbv2", JSImport.Namespace)
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class namespaced () extends ELBv2 {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ClientConfiguration) = this()
 }
 

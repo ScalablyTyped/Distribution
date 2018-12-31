@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigationDrawerProps
   extends reactDashMdLib.libDrawersDrawerMod.SharedDrawerProps {
   var constantDrawerType: js.UndefOr[scala.Boolean] = js.undefined
@@ -41,30 +40,30 @@ trait NavigationDrawerProps
   var mobileDrawerType: js.UndefOr[reactDashMdLib.libDrawersDrawerMod.MobileDrawerType] = js.undefined
   var mobileMinWidth: js.UndefOr[scala.Double] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var onVisibilityToggle: js.UndefOr[
     js.Function2[/* visible */ scala.Boolean, /* event */ reactLib.Event, scala.Unit]
   ] = js.undefined
   var persistentIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var persistentIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var persistentIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var tabletDrawerType: js.UndefOr[reactDashMdLib.libDrawersDrawerMod.DrawerType] = js.undefined
   var tabletMinWidth: js.UndefOr[scala.Double] = js.undefined
   var temporaryIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var temporaryIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var temporaryIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var toolbarActions: js.UndefOr[
     reactLib.reactMod.ReactNs.ReactElement[_] | js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]

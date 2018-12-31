@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RouteResolver[Attrs, State] extends js.Object {
   /** The onmatch hook is called when the router needs to find a component to render. */
   var onmatch: js.UndefOr[

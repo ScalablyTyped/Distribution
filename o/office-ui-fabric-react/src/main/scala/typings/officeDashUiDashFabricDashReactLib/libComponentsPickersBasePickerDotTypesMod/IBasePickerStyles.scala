@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBasePickerStyles extends js.Object {
   /** Refers to the input were to type new selections(picks). */
   var input: atUifabricMergeDashStylesLib.libIStyleMod.IStyle

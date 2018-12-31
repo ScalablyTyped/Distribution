@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageTabs extends js.Object {
   var PLTE: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var acTL: js.UndefOr[ImageTabACTL] = js.undefined

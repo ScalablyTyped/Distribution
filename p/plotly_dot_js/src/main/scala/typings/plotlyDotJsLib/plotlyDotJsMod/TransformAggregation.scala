@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransformAggregation extends js.Object {
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
   var func: js.UndefOr[

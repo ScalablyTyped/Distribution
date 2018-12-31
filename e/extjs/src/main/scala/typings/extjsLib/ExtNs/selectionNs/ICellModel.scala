@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICellModel extends IModel {
   /** [Method] Deselects a record instance by record instance or index
   		* @param record Object

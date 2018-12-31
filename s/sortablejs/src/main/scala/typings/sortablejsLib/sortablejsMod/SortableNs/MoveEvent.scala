@@ -12,8 +12,8 @@ trait MoveEvent
   var draggedRect: DOMRect = js.native
   var from: stdLib.HTMLElement = js.native
   /**
-           * element on which have guided
-           */
+    * element on which have guided
+    */
   var related: stdLib.HTMLElement = js.native
   var relatedRect: DOMRect = js.native
   var to: stdLib.HTMLElement = js.native

@@ -12,29 +12,29 @@ sealed trait ConnectedServiceKind extends js.Object
 @js.native
 object ConnectedServiceKind extends js.Object {
   /**
-       * Azure Subscription
-       */
+    * Azure Subscription
+    */
   @js.native
   sealed trait AzureSubscription
     extends vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.ConnectedServiceKind
   
   /**
-       * Chef Connection
-       */
+    * Chef Connection
+    */
   @js.native
   sealed trait Chef
     extends vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.ConnectedServiceKind
   
   /**
-       * Custom or unknown service
-       */
+    * Custom or unknown service
+    */
   @js.native
   sealed trait Custom
     extends vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.ConnectedServiceKind
   
   /**
-       * Generic Connection
-       */
+    * Generic Connection
+    */
   @js.native
   sealed trait Generic
     extends vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.ConnectedServiceKind

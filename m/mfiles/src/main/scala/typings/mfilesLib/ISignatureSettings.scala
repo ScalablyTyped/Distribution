@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISignatureSettings extends js.Object {
   var AdditionalInfo: java.lang.String
   var FreeFormTextPropertyID: scala.Double

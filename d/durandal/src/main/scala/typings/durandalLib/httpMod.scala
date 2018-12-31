@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Enables common http request scenarios.
- * @requires jquery
- * @requires knockout
- */
+  * Enables common http request scenarios.
+  * @requires jquery
+  * @requires knockout
+  */
 @JSImport("plugins/http", JSImport.Namespace)
 @js.native
 object httpMod extends js.Object {

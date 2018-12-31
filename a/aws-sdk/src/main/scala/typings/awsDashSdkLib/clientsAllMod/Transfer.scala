@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("aws-sdk/clients/all", "Transfer")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class Transfer ()
   extends awsDashSdkLib.clientsTransferMod.namespaced {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsTransferMod.TransferNs.ClientConfiguration) = this()
 }
 

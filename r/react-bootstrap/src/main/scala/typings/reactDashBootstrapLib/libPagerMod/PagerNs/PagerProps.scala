@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PagerProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libPagerMod.Pager] {
   @JSName("onSelect")

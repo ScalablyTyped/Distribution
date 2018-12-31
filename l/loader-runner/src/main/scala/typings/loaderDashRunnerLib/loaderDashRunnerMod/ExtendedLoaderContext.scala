@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExtendedLoaderContext extends js.Object {
   var async: js.Function0[js.UndefOr[js.Function0[scala.Unit]]] | scala.Null
   var callback: js.Function0[scala.Unit] | scala.Null

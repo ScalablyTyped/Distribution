@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PivotHeader extends js.Object {
   /** A single pivot section header. */
   var pivotHeaderEntries: js.UndefOr[js.Array[PivotHeaderEntry]] = js.undefined

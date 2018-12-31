@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DirectorySitesListResponse extends js.Object {
   /** Directory site collection. */
   var directorySites: js.UndefOr[js.Array[DirectorySite]] = js.undefined

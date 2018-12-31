@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FunctionTypeParam extends BaseNode {
   var name: Identifier | scala.Null
   var optional: scala.Boolean | scala.Null

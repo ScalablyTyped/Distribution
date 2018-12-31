@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GanttResizeEndEvent extends GanttEvent {
   var end: js.UndefOr[stdLib.Date] = js.undefined
   var start: js.UndefOr[stdLib.Date] = js.undefined

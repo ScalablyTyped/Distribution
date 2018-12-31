@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("plottable", "Plot")
 @js.native
+/**
+  * A Plot draws some visualization of the inputted Datasets.
+  *
+  * @constructor
+  */
 class Plot ()
   extends plottableLib.buildSrcPlotsPlotMod.Plot
 

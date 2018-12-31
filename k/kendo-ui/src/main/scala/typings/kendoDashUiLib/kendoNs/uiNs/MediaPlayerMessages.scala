@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaPlayerMessages extends js.Object {
   var fullscreen: js.UndefOr[java.lang.String] = js.undefined
   var mute: js.UndefOr[java.lang.String] = js.undefined

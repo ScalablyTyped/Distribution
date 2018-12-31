@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICalloutState extends js.Object {
   var calloutElementRect: js.UndefOr[stdLib.ClientRect] = js.undefined
   var heightOffset: js.UndefOr[scala.Double] = js.undefined

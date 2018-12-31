@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProxySettings[M, S, SL] extends js.Object {
   /** Domains and hosts for which manual proxy settings are excluded. */
   var ExcludeDomains: js.UndefOr[SL] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SideInputId extends js.Object {
   /** The step that receives and usually consumes this side input. */
   var declaringStepName: js.UndefOr[java.lang.String] = js.undefined

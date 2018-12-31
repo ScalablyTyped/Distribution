@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebGLRenderTargetOptions extends js.Object {
    // UnsignedByteType;
   var anisotropy: js.UndefOr[scala.Double] = js.undefined

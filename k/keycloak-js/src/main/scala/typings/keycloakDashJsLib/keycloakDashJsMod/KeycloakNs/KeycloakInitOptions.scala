@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeycloakInitOptions extends js.Object {
   /**
   		 * Allows to use different adapter:

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventUpdateRequest extends js.Object {
   /** The ID of the event being modified in this update. */
   var definitionId: js.UndefOr[java.lang.String] = js.undefined

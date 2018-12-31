@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GenericParams extends js.Object {
   var body: js.UndefOr[js.Any] = js.undefined
   var filterPath: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined

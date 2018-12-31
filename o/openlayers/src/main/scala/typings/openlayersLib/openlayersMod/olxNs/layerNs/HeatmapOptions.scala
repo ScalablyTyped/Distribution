@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeatmapOptions extends js.Object {
   var blur: js.UndefOr[scala.Double] = js.undefined
   var extent: js.UndefOr[openlayersLib.openlayersMod.Extent] = js.undefined

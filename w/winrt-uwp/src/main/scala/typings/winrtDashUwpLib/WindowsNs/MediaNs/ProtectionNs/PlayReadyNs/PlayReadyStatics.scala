@@ -35,10 +35,10 @@ object PlayReadyStatics extends js.Object {
   /** Gets the type of a PlayReady secure stop service request. */
   var secureStopServiceRequestType: java.lang.String = js.native
   /**
-                       * Queries whether the specified hardware digital rights management (DRM) feature is supported on the system.
-                       * @param hwdrmFeature The hardware DRM feature to query.
-                       * @return true if the hardware DRM feature is supported, otherwise false.
-                       */
+    * Queries whether the specified hardware digital rights management (DRM) feature is supported on the system.
+    * @param hwdrmFeature The hardware DRM feature to query.
+    * @return true if the hardware DRM feature is supported, otherwise false.
+    */
   def checkSupportedHardware(
     hwdrmFeature: winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.PlayReadyHardwareDRMFeatures
   ): scala.Boolean = js.native

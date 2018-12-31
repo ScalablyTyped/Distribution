@@ -38,9 +38,7 @@ trait FlashPath extends js.Object {
   def close(): js.Any = js.native
   /// Creates a shape on the Stage by using the current stroke and fill settings.
   def makeShape(): scala.Unit = js.native
-  /// Creates a shape on the Stage by using the current stroke and fill settings.
   def makeShape(bSupressFill: scala.Boolean): scala.Unit = js.native
-  /// Creates a shape on the Stage by using the current stroke and fill settings.
   def makeShape(bSupressFill: scala.Boolean, bSupressStroke: scala.Boolean): scala.Unit = js.native
   /// Starts a new contour in the path.
   def newContour(): scala.Unit = js.native

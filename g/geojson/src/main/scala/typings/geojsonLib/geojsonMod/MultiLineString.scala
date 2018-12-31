@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MultiLineString extends GeometryObject {
   var coordinates: js.Array[js.Array[Position]]
   @JSName("type")

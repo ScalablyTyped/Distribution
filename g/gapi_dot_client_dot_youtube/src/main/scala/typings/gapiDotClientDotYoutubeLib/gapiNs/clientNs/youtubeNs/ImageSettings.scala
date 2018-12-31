@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageSettings extends js.Object {
   /** The URL for the background image shown on the video watch page. The image should be 1200px by 615px, with a maximum file size of 128k. */
   var backgroundImageUrl: js.UndefOr[LocalizedProperty] = js.undefined
@@ -50,9 +49,9 @@ trait ImageSettings extends js.Object {
   /** The URL for a 1px by 1px tracking pixel that can be used to collect statistics for views of the channel or video pages. */
   var trackingImageUrl: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The URL for the image that appears above the top-left corner of the video player. This is a 25-pixel-high image with a flexible width that cannot
-               * exceed 170 pixels.
-               */
+    * The URL for the image that appears above the top-left corner of the video player. This is a 25-pixel-high image with a flexible width that cannot
+    * exceed 170 pixels.
+    */
   var watchIconImageUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 

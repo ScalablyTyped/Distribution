@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParticleSystems extends js.Object {
   var animationGroups: js.Array[babylonjsLib.BABYLONNs.AnimationGroup]
   var meshes: js.Array[babylonjsLib.BABYLONNs.AbstractMesh]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectFieldColumnProps
   extends reactDashMdLib.libSelectFieldsSelectFieldMod.SharedSelectFieldProps
      with reactDashMdLib.libTooltipsInjectTooltipMod.InjectedTooltipProps {
@@ -14,16 +13,16 @@ trait SelectFieldColumnProps
   var menuClassName: js.UndefOr[java.lang.String] = js.undefined
   var menuStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var scrollThreshold: js.UndefOr[scala.Double] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var wrapperClassName: js.UndefOr[java.lang.String] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var wrapperStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 

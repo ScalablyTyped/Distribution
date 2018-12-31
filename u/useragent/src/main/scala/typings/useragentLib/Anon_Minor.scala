@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Minor extends js.Object {
   var family: java.lang.String
   var major: js.UndefOr[java.lang.String]

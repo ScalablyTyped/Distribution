@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 class Input ()
   extends reactLib.reactMod.Component[InputProps, js.Object, js.Any] {
   /**
-     * Used to blur the input element.
-     */
+    * Used to blur the input element.
+    */
   def blur(): scala.Unit = js.native
   /**
-     * Used to focus the input element.
-     */
+    * Used to focus the input element.
+    */
   def focus(): scala.Unit = js.native
 }
 

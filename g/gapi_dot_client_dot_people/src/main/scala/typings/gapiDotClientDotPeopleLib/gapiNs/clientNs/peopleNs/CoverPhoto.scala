@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CoverPhoto extends js.Object {
   /**
-               * True if the cover photo is the default cover photo;
-               * false if the cover photo is a user-provided cover photo.
-               */
+    * True if the cover photo is the default cover photo;
+    * false if the cover photo is a user-provided cover photo.
+    */
   var default: js.UndefOr[scala.Boolean] = js.undefined
   /** Metadata about the cover photo. */
   var metadata: js.UndefOr[FieldMetadata] = js.undefined

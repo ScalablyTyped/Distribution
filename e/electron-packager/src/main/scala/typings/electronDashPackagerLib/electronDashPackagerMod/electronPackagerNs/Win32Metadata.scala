@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Object (also known as a "hash") of application metadata to embed into the executable
-     */
-
+  * Object (also known as a "hash") of application metadata to embed into the executable
+  */
 trait Win32Metadata extends js.Object {
   var CompanyName: js.UndefOr[java.lang.String] = js.undefined
   var FileDescription: js.UndefOr[java.lang.String] = js.undefined

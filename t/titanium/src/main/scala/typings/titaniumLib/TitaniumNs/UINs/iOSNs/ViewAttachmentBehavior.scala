@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 			 * Dynamic behavior to support connections between two items.
 			 */
-
 trait ViewAttachmentBehavior
   extends titaniumLib.TitaniumNs.Proxy {
   /**

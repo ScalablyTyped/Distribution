@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITree
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Method] Gets a node in this tree by its id

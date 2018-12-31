@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MaxForce extends js.Object {
   var disableRotationalLock: js.UndefOr[scala.Boolean] = js.undefined
   var localAnchorA: js.UndefOr[js.Array[scala.Double]] = js.undefined

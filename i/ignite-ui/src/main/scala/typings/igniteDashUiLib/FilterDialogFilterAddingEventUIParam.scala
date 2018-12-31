@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilterDialogFilterAddingEventUIParam extends js.Object {
   /**
   	 * Gets reference to filters table body DOM element.

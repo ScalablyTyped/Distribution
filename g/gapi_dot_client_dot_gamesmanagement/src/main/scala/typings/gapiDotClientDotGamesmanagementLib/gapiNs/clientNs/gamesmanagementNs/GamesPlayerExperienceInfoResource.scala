@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GamesPlayerExperienceInfoResource extends js.Object {
   /** The current number of experience points for the player. */
   var currentExperiencePoints: js.UndefOr[java.lang.String] = js.undefined

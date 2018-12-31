@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UnitDefinition extends js.Object {
   var aliases: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var definition: js.UndefOr[java.lang.String | Unit] = js.undefined

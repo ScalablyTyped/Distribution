@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Options for Model.upsert method
-     */
-
+  * Options for Model.upsert method
+  */
 trait UpsertOptions
   extends FieldsOptions
      with LoggingOptions

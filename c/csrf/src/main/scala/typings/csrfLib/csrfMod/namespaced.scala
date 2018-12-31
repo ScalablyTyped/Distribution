@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("csrf", JSImport.Namespace)
 @js.native
+/** Token generation/verification class. */
 class namespaced () extends Tokens {
-  /** Token generation/verification class. */
   def this(options: TokensOptions) = this()
 }
 

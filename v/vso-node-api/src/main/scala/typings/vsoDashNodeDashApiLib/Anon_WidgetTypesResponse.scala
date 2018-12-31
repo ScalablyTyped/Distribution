@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_WidgetTypesResponse extends js.Object {
   var DashboardGroup: js.Any
   var DashboardScope: Anon_EnumValuesAnonProjectTeam

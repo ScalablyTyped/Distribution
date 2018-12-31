@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConditionalRoot extends js.Object {
   var aliasSymbol: js.UndefOr[Symbol] = js.undefined
   var aliasTypeArguments: js.UndefOr[js.Array[Type]] = js.undefined

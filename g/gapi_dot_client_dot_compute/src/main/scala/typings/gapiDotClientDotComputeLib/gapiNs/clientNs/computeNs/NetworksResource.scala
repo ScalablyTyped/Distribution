@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NetworksResource extends js.Object {
   /** Adds a peering to the specified network. */
   def addPeering(request: gapiDotClientDotComputeLib.Anon_Network): gapiDotClientLib.gapiNs.clientNs.Request[Operation]

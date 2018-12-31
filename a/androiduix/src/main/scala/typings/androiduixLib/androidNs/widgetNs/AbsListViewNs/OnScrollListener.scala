@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnScrollListener extends js.Object {
   def onScroll(
     view: androiduixLib.androidNs.widgetNs.AbsListView,

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Providers extends js.Object {
   /** Include sites that the user has blocked from appearing on the Firefox new tab. */
   var includeBlocked: js.UndefOr[scala.Boolean] = js.undefined

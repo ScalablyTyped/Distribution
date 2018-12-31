@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // 位置-----查看位置
-
 trait OpenLocationOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 地址的详细说明 */

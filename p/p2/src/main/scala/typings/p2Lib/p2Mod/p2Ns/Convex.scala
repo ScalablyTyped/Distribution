@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Convex extends Shape {
   var axes: js.Array[js.Array[scala.Double]]
   var centerOfMass: js.Array[scala.Double]

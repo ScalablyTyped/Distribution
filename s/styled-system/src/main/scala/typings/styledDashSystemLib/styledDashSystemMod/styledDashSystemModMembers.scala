@@ -29,10 +29,10 @@ object styledDashSystemModMembers extends js.Object {
   def bottom(args: js.Any*): js.Any = js.native
   def boxShadow(arg: js.Any*): js.Any = js.native
   def buttonStyle(args: js.Any*): js.Any = js.native
-  def cloneFunc(fn: js.Function1[/* repeated */js.Any, _]): js.Function1[/* repeated */js.Any, _] = js.native
+  def cloneFunc(fn: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
   def color(args: js.Any*): js.Any = js.native
   def colorStyle(args: js.Any*): js.Any = js.native
-  def compose(funcs: (js.Function1[/* repeated */js.Any, _])*): js.Function1[/* repeated */js.Any, _] = js.native
+  def compose(funcs: (js.Function1[/* repeated */ js.Any, _])*): js.Function1[/* repeated */ js.Any, _] = js.native
   def createMediaQuery(n: java.lang.String): java.lang.String = js.native
   def createMediaQuery(n: scala.Double): java.lang.String = js.native
   def display(args: js.Any*): js.Any = js.native
@@ -89,7 +89,7 @@ object styledDashSystemModMembers extends js.Object {
   def themeGet(keys: java.lang.String): js.Any = js.native
   def themeGet(keys: java.lang.String, fallback: java.lang.String): js.Any = js.native
   def top(args: js.Any*): js.Any = js.native
-  def variant(props: VariantArgs): js.Function1[/* repeated */js.Any, _] = js.native
+  def variant(props: VariantArgs): js.Function1[/* repeated */ js.Any, _] = js.native
   def verticalAlign(args: js.Any*): js.Any = js.native
   def width(args: js.Any*): js.Any = js.native
   def zIndex(args: js.Any*): js.Any = js.native

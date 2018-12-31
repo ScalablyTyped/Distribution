@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StorageEventInit extends EventInit {
   var key: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var newValue: js.UndefOr[java.lang.String | scala.Null] = js.undefined

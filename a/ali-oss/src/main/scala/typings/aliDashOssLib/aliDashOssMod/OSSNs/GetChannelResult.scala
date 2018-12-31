@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetChannelResult extends js.Object {
   var Audio: js.UndefOr[js.Object] = js.undefined
   var ConnectedTime: js.UndefOr[java.lang.String] = js.undefined

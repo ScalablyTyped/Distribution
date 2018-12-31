@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Enable extends js.Object {
   var cssProps: js.UndefOr[js.Any] = js.undefined
   var domEvents: js.UndefOr[scala.Boolean] = js.undefined

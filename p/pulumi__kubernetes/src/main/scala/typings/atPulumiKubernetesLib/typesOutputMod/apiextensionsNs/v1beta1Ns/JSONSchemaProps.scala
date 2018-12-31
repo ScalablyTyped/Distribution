@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * JSONSchemaProps is a JSON-Schema following Specification Draft 4 (http://json-schema.org/).
-         */
-
+  * JSONSchemaProps is a JSON-Schema following Specification Draft 4 (http://json-schema.org/).
+  */
 trait JSONSchemaProps extends js.Object {
   @JSName("$ref")
   val $ref: java.lang.String

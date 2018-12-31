@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Base Playlist Object. Does not in itself exist in Spotify Web Api,
-     * but needs to be made since the tracks types vary in the Full and Simplified versions.
-     */
-
+  * Base Playlist Object. Does not in itself exist in Spotify Web Api,
+  * but needs to be made since the tracks types vary in the Full and Simplified versions.
+  */
 trait PlaylistBaseObject extends js.Object {
   var collaborative: scala.Boolean
   var external_urls: ExternalUrlObject

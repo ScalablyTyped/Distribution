@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFileInput extends IInput {
   /** [Method] Updated the capture attribute with the  ink capture configuration
   		* @param value Object

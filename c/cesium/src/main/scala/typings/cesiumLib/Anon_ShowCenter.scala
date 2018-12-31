@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShowCenter extends js.Object {
   var center: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Cartesian3] = js.undefined
   var debugShowBoundingVolume: js.UndefOr[scala.Boolean] = js.undefined

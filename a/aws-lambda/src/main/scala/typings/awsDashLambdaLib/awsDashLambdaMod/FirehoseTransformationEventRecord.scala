@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FirehoseTransformationEventRecord extends js.Object {
   var approximateArrivalTimestamp: scala.Double
   /** Base64 encoded */

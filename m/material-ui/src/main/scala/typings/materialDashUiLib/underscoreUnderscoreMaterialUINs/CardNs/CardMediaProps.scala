@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CardMediaProps extends js.Object {
   var actAsExpander: js.UndefOr[scala.Boolean] = js.undefined
   var expandable: js.UndefOr[scala.Boolean] = js.undefined

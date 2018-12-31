@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExpressionFilterClause extends js.Object {
   var fieldName: java.lang.String
   /**
-       * The order in which this clause appeared in the filter query
-       */
+    * The order in which this clause appeared in the filter query
+    */
   var index: scala.Double
   /**
-       * Logical Operator 'AND', 'OR' or NULL (only for the first clause in the filter)
-       */
+    * Logical Operator 'AND', 'OR' or NULL (only for the first clause in the filter)
+    */
   var logicalOperator: java.lang.String
   var operator: java.lang.String
   var value: java.lang.String

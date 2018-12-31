@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFieldSet extends IBody {
   /** [Method] Called before any calculation cycles to reset DOM values and prepare for calculation
   		* @param ownerContext Object

@@ -81,9 +81,7 @@ object ModuleNsMembers extends js.Object {
   ): webassemblyDashJsDashApiLib.WebAssemblyNs.Exports = js.native
   // Tools
   def intArrayFromString(stringy: java.lang.String): js.Array[scala.Double] = js.native
-  // Tools
   def intArrayFromString(stringy: java.lang.String, dontAddNull: scala.Boolean): js.Array[scala.Double] = js.native
-  // Tools
   def intArrayFromString(stringy: java.lang.String, dontAddNull: scala.Boolean, length: scala.Double): js.Array[scala.Double] = js.native
   def intArrayToString(array: js.Array[scala.Double]): java.lang.String = js.native
   def locateFile(url: java.lang.String): java.lang.String = js.native

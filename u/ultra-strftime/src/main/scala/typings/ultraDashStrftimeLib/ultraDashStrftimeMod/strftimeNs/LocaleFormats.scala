@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocaleFormats extends js.Object {
   /** equivalent to %m/%d/%y in en_US */
   var D: java.lang.String

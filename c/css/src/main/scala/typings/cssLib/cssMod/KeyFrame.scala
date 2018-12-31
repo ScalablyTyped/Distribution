@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeyFrame extends Node {
   /** Array of nodes with the types declaration and comment. */
   var declarations: js.UndefOr[js.Array[Declaration | Comment]] = js.undefined

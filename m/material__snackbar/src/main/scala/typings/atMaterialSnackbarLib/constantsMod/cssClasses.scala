@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait cssClasses
   extends atMaterialBaseLib.foundationMod.MDCStrings {
   var ACTION_BUTTON: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`mdc-snackbar__action-button`

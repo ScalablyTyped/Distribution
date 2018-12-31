@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SwipeableViewsState extends js.Object {
   var displaySameSlide: js.UndefOr[scala.Boolean] = js.undefined
   var heightLatest: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IKeyDerivationParametersStatics extends js.Object {
   def buildForPbkdf2(pbkdf2Salt: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, iterationCount: scala.Double): KeyDerivationParameters
   def buildForSP800108(

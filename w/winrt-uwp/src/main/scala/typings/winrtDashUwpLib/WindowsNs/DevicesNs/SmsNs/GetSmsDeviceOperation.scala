@@ -28,9 +28,9 @@ abstract class GetSmsDeviceOperation () extends js.Object {
     asyncStatus: winrtDashUwpLib.WindowsNs.FoundationNs.AsyncStatus
   ): scala.Unit = js.native
   /**
-                   * Gets the results of the asynchronous SmsDevice object retrieval operation.
-                   * @return A reference to an SmsDevice object.
-                   */
+    * Gets the results of the asynchronous SmsDevice object retrieval operation.
+    * @return A reference to an SmsDevice object.
+    */
   def getResults(): SmsDevice = js.native
 }
 

@@ -34,7 +34,7 @@ trait LodashReduceRight extends js.Object {
   ): TResult = js.native
   def apply[T /* <: js.Object */, TResult](
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCappedRight[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ],
     accumulator: TResult,
@@ -56,7 +56,7 @@ trait LodashReduceRight extends js.Object {
   ): LodashReduceRight1x5[TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCappedRight[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ],
     accumulator: lodashLib.lodashMod.underscoreNs.`__`,

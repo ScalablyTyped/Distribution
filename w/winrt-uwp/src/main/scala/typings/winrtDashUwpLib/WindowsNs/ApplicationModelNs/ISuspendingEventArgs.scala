@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for an app suspending event. */
-
 trait ISuspendingEventArgs extends js.Object {
   /** Gets the app suspending operation. */
   var suspendingOperation: SuspendingOperation

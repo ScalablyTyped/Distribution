@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ImplicitPartial extends js.Object {
   // catch-all
-  def apply(args: js.Any*): LoDashImplicitWrapper[js.Function1[/* repeated */_, _]] = js.native
+  def apply(args: js.Any*): LoDashImplicitWrapper[js.Function1[/* repeated */ _, _]] = js.native
   // arity 0
   def apply[R](`this`: LoDashImplicitWrapper[Function0[R]]): LoDashImplicitWrapper[Function0[R]] = js.native
   def apply[T1, R](`this`: LoDashImplicitWrapper[Function1[T1, R]], arg1: T1): LoDashImplicitWrapper[Function0[R]] = js.native

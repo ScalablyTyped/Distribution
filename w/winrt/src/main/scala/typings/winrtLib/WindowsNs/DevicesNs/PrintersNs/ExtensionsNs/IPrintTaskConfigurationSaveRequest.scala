@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPrintTaskConfigurationSaveRequest extends js.Object {
   var deadline: stdLib.Date
   def cancel(): scala.Unit

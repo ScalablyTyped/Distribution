@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_StrChromeVersion extends js.Object {
   var WSSession: scala.Double
   var WSVersion: java.lang.String

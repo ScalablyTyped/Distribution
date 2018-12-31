@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TakeSourceContent extends js.Object {
   var autoMerged: scala.Double
   var takeSourceContent: scala.Double

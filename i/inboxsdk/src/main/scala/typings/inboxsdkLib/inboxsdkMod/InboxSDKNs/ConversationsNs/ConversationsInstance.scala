@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConversationsInstance extends js.Object {
   def registerFileAttachmentCardViewHandler(handler: js.Function1[/* attachmentCardView */ AttachmentCardView, scala.Unit]): js.Function0[scala.Unit]
   def registerMessageViewHandler(handler: js.Function1[/* messageView */ MessageView, scala.Unit]): js.Function0[scala.Unit]

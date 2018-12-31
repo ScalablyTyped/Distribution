@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Returned object by {@link GM_xmlhttpRequest} in synchronouse mode.
- */
-
+  * Returned object by {@link GM_xmlhttpRequest} in synchronouse mode.
+  */
 trait GMXMLHttpRequestSyncResult extends js.Object {
   var finalUrl: java.lang.String
   var readyState: scala.Double

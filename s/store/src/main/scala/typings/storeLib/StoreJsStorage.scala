@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StoreJsStorage extends js.Object {
   var name: java.lang.String
   def clearAll(): scala.Unit

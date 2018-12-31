@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BADDATE extends js.Object {
   var BAD_DATE: java.lang.String
   var EXPECTED_TYPE: java.lang.String

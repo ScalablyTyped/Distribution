@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Annotations extends Label {
   /**
   	 * Sets the horizontal alignment of the `text` within the box.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Operation extends js.Object {
   var consumes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var deprecated: js.UndefOr[scala.Boolean] = js.undefined

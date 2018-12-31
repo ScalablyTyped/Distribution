@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Gutter extends js.Object {
   /**
-       *  Add a decoration that tracks a DisplayMarker. When the marker moves, is
-       *  invalidated, or is destroyed, the decoration will be updated to reflect
-       *  the marker's state.
-       */
+    *  Add a decoration that tracks a DisplayMarker. When the marker moves, is
+    *  invalidated, or is destroyed, the decoration will be updated to reflect
+    *  the marker's state.
+    */
   def decorateMarker(marker: DisplayMarker, decorationParams: DecorationOptions): Decoration
   // Gutter Destruction
   /** Destroys the gutter. */

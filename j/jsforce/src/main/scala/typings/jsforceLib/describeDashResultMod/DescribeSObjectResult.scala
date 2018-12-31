@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DescribeSObjectResult extends js.Object {
   var actionOverrides: js.UndefOr[maybe[js.Array[ActionOverride]]] = js.undefined
   var activateable: scala.Boolean

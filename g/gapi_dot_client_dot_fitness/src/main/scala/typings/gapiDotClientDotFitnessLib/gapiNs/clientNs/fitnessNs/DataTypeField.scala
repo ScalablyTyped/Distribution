@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataTypeField extends js.Object {
   /** The different supported formats for each field in a data type. */
   var format: js.UndefOr[java.lang.String] = js.undefined

@@ -8,13 +8,18 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Slider extends js.Object {
   def apply(
-    sel: d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _]
+    sel: d3DashSelectionLib.d3DashSelectionMod.Selection[
+      _, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+      d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+    ]
   ): scala.Unit = js.native
   def animate(): scala.Boolean | scala.Double = js.native
   def animate(`val`: scala.Boolean): Slider = js.native
   def animate(`val`: scala.Double): Slider = js.native
-  def axis(): scala.Boolean | js.Any = js.native
-  def axis(`val`: js.Any): Slider = js.native
+  def axis(): scala.Boolean | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify d3.svg.Axis */ js.Any) = js.native
+  def axis(`val`: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify d3.svg.Axis */ js.Any): Slider = js.native
   def axis(`val`: scala.Boolean): Slider = js.native
   def margin(): scala.Double = js.native
   def margin(`val`: scala.Double): Slider = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FormatCodeOptions extends EditorOptions {
   var InsertSpaceAfterCommaDelimiter: scala.Boolean
   var InsertSpaceAfterConstructor: js.UndefOr[scala.Boolean] = js.undefined

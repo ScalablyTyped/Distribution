@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CatTasksParams extends GenericParams {
   var actions: js.UndefOr[NameList] = js.undefined
   var detailed: js.UndefOr[scala.Boolean] = js.undefined

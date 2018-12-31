@@ -8,14 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("paypal-rest-sdk", "payment")
 @js.native
 object paymentNs extends js.Object {
-  
   trait AuthorizationResponse
     extends paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.AuthorizationResource
        with paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Response {
     /* InferMemberOverrides */
     override val create_time: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait CaptureResponse
     extends paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.CaptureResource
@@ -24,11 +22,9 @@ object paymentNs extends js.Object {
     override val create_time: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait ExecuteRequest extends js.Object {
     var payer_id: java.lang.String
   }
-  
   
   trait ListResponse
     extends paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Response {
@@ -38,14 +34,12 @@ object paymentNs extends js.Object {
     var payments: js.Array[paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Payment]
   }
   
-  
   trait RefundResponse
     extends paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.RefundResource
        with paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Response {
     /* InferMemberOverrides */
     override val create_time: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait SaleResponse
     extends paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.SaleResource

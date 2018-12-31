@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IContextualMenuClassNames extends js.Object {
   var container: java.lang.String
   var header: java.lang.String

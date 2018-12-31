@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IControlledProps extends js.Object {
   /** Initial value of the input, for uncontrolled usage. */
   var defaultValue: js.UndefOr[java.lang.String] = js.undefined

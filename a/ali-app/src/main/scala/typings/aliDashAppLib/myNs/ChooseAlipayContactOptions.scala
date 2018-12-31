@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChooseAlipayContactOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 单次最多选择联系人个数，默认 1，最大 10 */

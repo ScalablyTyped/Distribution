@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILauncherOptions extends js.Object {
   var contentType: java.lang.String
   var desiredRemainingView: winrtLib.WindowsNs.UINs.ViewManagementNs.ViewSizePreference

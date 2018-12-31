@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VibrationIOSStatic extends js.Object {
   /**
-       * @deprecated
-       */
+    * @deprecated
+    */
   def vibrate(): scala.Unit
 }
 

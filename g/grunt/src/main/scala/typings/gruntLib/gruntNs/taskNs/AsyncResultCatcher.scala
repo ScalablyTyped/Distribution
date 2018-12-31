@@ -11,9 +11,9 @@ trait AsyncResultCatcher extends js.Object {
   def apply(error: nodeLib.Error): scala.Unit = js.native
   def apply(result: js.Any): scala.Unit = js.native
   /**
-               * Either false or an Error object may be passed to the done function
-               * to instruct Grunt that the task has failed.
-               */
+    * Either false or an Error object may be passed to the done function
+    * to instruct Grunt that the task has failed.
+    */
   def apply(success: scala.Boolean): scala.Unit = js.native
 }
 

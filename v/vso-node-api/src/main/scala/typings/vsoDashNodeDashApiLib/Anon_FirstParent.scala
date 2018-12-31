@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FirstParent extends js.Object {
   var firstParent: scala.Double
   var none: scala.Double

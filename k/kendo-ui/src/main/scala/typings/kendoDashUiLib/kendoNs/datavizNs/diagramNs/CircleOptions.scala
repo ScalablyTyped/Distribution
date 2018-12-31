@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CircleOptions extends js.Object {
   var center: js.UndefOr[js.Any] = js.undefined
   var fill: js.UndefOr[java.lang.String | CircleFill] = js.undefined

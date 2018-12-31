@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartSeriesDefaultsOverlay extends js.Object {
   var gradient: js.UndefOr[java.lang.String] = js.undefined
 }

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait DocumentPropertyType extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.7]
-     */
+  * [Api set: ExcelApi 1.7]
+  */
 @JSGlobal("Excel.DocumentPropertyType")
 @js.native
 object DocumentPropertyType extends js.Object {

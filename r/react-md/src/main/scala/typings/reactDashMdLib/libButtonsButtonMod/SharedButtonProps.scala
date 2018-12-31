@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SharedButtonProps extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var flat: js.UndefOr[scala.Boolean] = js.undefined
@@ -19,8 +18,8 @@ trait SharedButtonProps extends js.Object {
   var iconClassName: js.UndefOr[java.lang.String] = js.undefined
   var iconEl: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var mini: js.UndefOr[scala.Boolean] = js.undefined
   var primary: js.UndefOr[scala.Boolean] = js.undefined

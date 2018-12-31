@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextFieldProps extends js.Object {
   var autoComplete: js.UndefOr[
     gestaltLib.gestaltLibStrings.`current-password` | gestaltLib.gestaltLibStrings.on | gestaltLib.gestaltLibStrings.off | gestaltLib.gestaltLibStrings.username

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GeoJSONEvent extends LeafletEvent {
   var geometryType: java.lang.String
   var id: java.lang.String

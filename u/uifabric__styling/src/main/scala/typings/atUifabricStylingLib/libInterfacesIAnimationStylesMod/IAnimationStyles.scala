@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAnimationStyles extends js.Object {
   var fadeIn100: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle
   var fadeIn200: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle

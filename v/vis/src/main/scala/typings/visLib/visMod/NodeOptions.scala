@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodeOptions extends js.Object {
   var borderWidth: js.UndefOr[scala.Double] = js.undefined
   var borderWidthSelected: js.UndefOr[scala.Double] = js.undefined

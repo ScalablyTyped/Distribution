@@ -14,9 +14,9 @@ trait LoDashExplicitSyncWrapper[TValue]
   @JSName("partial")
   var partial_Original: lodashLib.lodashMod.underscoreNs.ExplicitPartial = js.native
   def add(addend: scala.Double): LoDashExplicitSyncWrapper[scala.Double] = js.native
-  def after[TFunc /* <: js.Function1[/* repeated */js.Any, _] */](func: TFunc): LoDashExplicitSyncWrapper[TFunc] = js.native
-  def ary(): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, _]] = js.native
-  def ary(n: scala.Double): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, _]] = js.native
+  def after[TFunc /* <: js.Function1[/* repeated */ js.Any, _] */](func: TFunc): LoDashExplicitSyncWrapper[TFunc] = js.native
+  def ary(): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, _]] = js.native
+  def ary(n: scala.Double): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, _]] = js.native
   def assign(): LoDashExplicitSyncWrapper[TValue] = js.native
   def assign(otherArgs: js.Any*): LoDashExplicitSyncWrapper[_] = js.native
   def assign[TSource](source: TSource): LoDashExplicitSyncWrapper[TValue with TSource] = js.native
@@ -75,9 +75,7 @@ trait LoDashExplicitSyncWrapper[TValue]
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     props: lodashLib.lodashMod.underscoreNs.Many[java.lang.String]*
   ): LoDashExplicitSyncWrapper[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   @JSName("at")
   def at_T[T](
@@ -89,9 +87,9 @@ trait LoDashExplicitSyncWrapper[TValue]
     props: lodashLib.lodashMod.underscoreNs.PropertyPath*
   ): LoDashExplicitSyncWrapper[js.Array[T]] = js.native
   def attempt[TResult](args: js.Any*): LoDashExplicitSyncWrapper[TResult | stdLib.Error] = js.native
-  def before[TFunc /* <: js.Function1[/* repeated */js.Any, _] */](func: TFunc): LoDashExplicitSyncWrapper[TFunc] = js.native
-  def bind(thisArg: js.Any, partials: js.Any*): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, _]] = js.native
-  def bindKey(key: java.lang.String, partials: js.Any*): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, _]] = js.native
+  def before[TFunc /* <: js.Function1[/* repeated */ js.Any, _] */](func: TFunc): LoDashExplicitSyncWrapper[TFunc] = js.native
+  def bind(thisArg: js.Any, partials: js.Any*): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, _]] = js.native
+  def bindKey(key: java.lang.String, partials: js.Any*): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, _]] = js.native
   def camelCase(): LoDashExplicitSyncWrapper[java.lang.String] = js.native
   def capitalize(): LoDashExplicitSyncWrapper[java.lang.String] = js.native
   def castArray[T](`this`: LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.Many[T]]): LoDashExplicitSyncWrapper[js.Array[T]] = js.native
@@ -139,9 +137,7 @@ trait LoDashExplicitSyncWrapper[TValue]
   def countBy[T /* <: js.Object */](`this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]]): LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.Dictionary[scala.Double]] = js.native
   def countBy[T /* <: js.Object */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
-    iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ): LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.Dictionary[scala.Double]] = js.native
   @JSName("countBy")
   def countBy_T[T](
@@ -154,11 +150,11 @@ trait LoDashExplicitSyncWrapper[TValue]
   ): LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.Dictionary[scala.Double]] = js.native
   def create[U /* <: js.Object */](): LoDashExplicitSyncWrapper[TValue with U] = js.native
   def create[U /* <: js.Object */](properties: U): LoDashExplicitSyncWrapper[TValue with U] = js.native
-  def curry(): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, _]] = js.native
-  def curry(arity: scala.Double): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, _]] = js.native
+  def curry(): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, _]] = js.native
+  def curry(arity: scala.Double): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, _]] = js.native
   def curry[T1, R](`this`: LoDashExplicitSyncWrapper[js.Function1[/* t1 */ T1, R]]): LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.CurriedFunction1[T1, R]] = js.native
-  def curryRight(): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, _]] = js.native
-  def curryRight(arity: scala.Double): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, _]] = js.native
+  def curryRight(): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, _]] = js.native
+  def curryRight(arity: scala.Double): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, _]] = js.native
   def curryRight[T1, R](`this`: LoDashExplicitSyncWrapper[js.Function1[/* t1 */ T1, R]]): LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.RightCurriedFunction1[T1, R]] = js.native
   def curryRight[T1, R](`this`: LoDashExplicitSyncWrapper[js.Function1[/* t1 */ T1, R]], arity: scala.Double): LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.RightCurriedFunction1[T1, R]] = js.native
   @JSName("curryRight")
@@ -409,9 +405,7 @@ trait LoDashExplicitSyncWrapper[TValue]
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     predicate: lodashLib.lodashMod.underscoreNs.ObjectIterateeCustom[T, scala.Boolean]
   ): LoDashExplicitSyncWrapper[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   @JSName("filter")
   def filter_T[T](
@@ -424,12 +418,10 @@ trait LoDashExplicitSyncWrapper[TValue]
   ): LoDashExplicitSyncWrapper[js.Array[T]] = js.native
   @JSName("filter")
   def filter_TObject[T /* <: js.Object */](`this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]]): LoDashExplicitSyncWrapper[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   @JSName("filter")
-  def filter_TObjectSAny[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def filter_TObjectSAny[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     predicate: lodashLib.lodashMod.underscoreNs.ObjectIteratorTypeGuard[T, S]
   ): LoDashExplicitSyncWrapper[js.Array[S]] = js.native
@@ -439,32 +431,26 @@ trait LoDashExplicitSyncWrapper[TValue]
     predicate: lodashLib.lodashMod.underscoreNs.ListIteratorTypeGuard[T, S]
   ): LoDashExplicitSyncWrapper[js.Array[S]] = js.native
   def find[T /* <: js.Object */](`this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]]): LoDashExplicitSyncWrapper[
-    js.UndefOr[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def find[T /* <: js.Object */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     predicate: lodashLib.lodashMod.underscoreNs.ObjectIterateeCustom[T, scala.Boolean]
   ): LoDashExplicitSyncWrapper[
-    js.UndefOr[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def find[T /* <: js.Object */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     predicate: lodashLib.lodashMod.underscoreNs.ObjectIterateeCustom[T, scala.Boolean],
     fromIndex: scala.Double
   ): LoDashExplicitSyncWrapper[
-    js.UndefOr[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
-  def find[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def find[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     predicate: lodashLib.lodashMod.underscoreNs.ObjectIteratorTypeGuard[T, S]
   ): LoDashExplicitSyncWrapper[js.UndefOr[S]] = js.native
-  def find[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def find[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     predicate: lodashLib.lodashMod.underscoreNs.ObjectIteratorTypeGuard[T, S],
     fromIndex: scala.Double
@@ -487,32 +473,26 @@ trait LoDashExplicitSyncWrapper[TValue]
     predicate: lodashLib.lodashMod.underscoreNs.ObjectIteratee[T]
   ): LoDashExplicitSyncWrapper[js.UndefOr[java.lang.String]] = js.native
   def findLast[T /* <: js.Object */](`this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]]): LoDashExplicitSyncWrapper[
-    js.UndefOr[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def findLast[T /* <: js.Object */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     predicate: lodashLib.lodashMod.underscoreNs.ObjectIterateeCustom[T, scala.Boolean]
   ): LoDashExplicitSyncWrapper[
-    js.UndefOr[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def findLast[T /* <: js.Object */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     predicate: lodashLib.lodashMod.underscoreNs.ObjectIterateeCustom[T, scala.Boolean],
     fromIndex: scala.Double
   ): LoDashExplicitSyncWrapper[
-    js.UndefOr[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
-  def findLast[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def findLast[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     predicate: lodashLib.lodashMod.underscoreNs.ObjectIteratorTypeGuard[T, S]
   ): LoDashExplicitSyncWrapper[js.UndefOr[S]] = js.native
-  def findLast[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def findLast[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     predicate: lodashLib.lodashMod.underscoreNs.ObjectIteratorTypeGuard[T, S],
     fromIndex: scala.Double
@@ -709,9 +689,9 @@ trait LoDashExplicitSyncWrapper[TValue]
   def floor(): LoDashExplicitSyncWrapper[scala.Double] = js.native
   def floor(precision: scala.Double): LoDashExplicitSyncWrapper[scala.Double] = js.native
   def flow(
-    `this`: LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, _]],
+    `this`: LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, _]],
     funcs: js.Array[lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* a */ _, _]]]
-  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, _]] = js.native
+  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, _]] = js.native
   // 0-argument first function
   def flow[R1, R2](`this`: LoDashExplicitSyncWrapper[js.Function0[R1]], f2: js.Function1[/* a */ R1, R2]): LoDashExplicitSyncWrapper[js.Function0[R2]] = js.native
   def flow[R1, R2, R3](
@@ -767,19 +747,19 @@ trait LoDashExplicitSyncWrapper[TValue]
     f3: js.Function1[/* a */ js.Any, _],
     f2: js.Function1[/* a */ js.Any, _],
     f1: js.Function0[_],
-    funcs: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */_, _]])*
-  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, _]] = js.native
+    funcs: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, _]])*
+  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, _]] = js.native
   def flowRight(
     `this`: LoDashExplicitSyncWrapper[js.Function1[/* a */ _, _]],
-    funcs: js.Array[lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */_, _]]]
-  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, _]] = js.native
+    funcs: js.Array[lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, _]]]
+  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, _]] = js.native
   // 0-argument first function
   def flowRight[R2, R1](`this`: LoDashExplicitSyncWrapper[js.Function1[/* a */ R1, R2]], f1: js.Function0[R1]): LoDashExplicitSyncWrapper[js.Function0[R2]] = js.native
   // any-argument first function
   def flowRight[R2, R1](
     `this`: LoDashExplicitSyncWrapper[js.Function1[/* a */ R1, R2]],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, R2]] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, R2]] = js.native
   def flowRight[R3, R2, R1](
     `this`: LoDashExplicitSyncWrapper[js.Function1[/* a */ R2, R3]],
     f2: js.Function1[/* a */ R1, R2],
@@ -788,8 +768,8 @@ trait LoDashExplicitSyncWrapper[TValue]
   def flowRight[R3, R2, R1](
     `this`: LoDashExplicitSyncWrapper[js.Function1[/* a */ R1, R2]],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, R3]] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, R3]] = js.native
   // 2-argument first function
   def flowRight[A1, A2, R2, R1](
     `this`: LoDashExplicitSyncWrapper[js.Function1[/* a */ R1, R2]],
@@ -805,8 +785,8 @@ trait LoDashExplicitSyncWrapper[TValue]
     `this`: LoDashExplicitSyncWrapper[js.Function1[/* a */ R1, R2]],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, R4]] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, R4]] = js.native
   // 3-argument first function
   def flowRight[A1, A2, A3, R2, R1](
     `this`: LoDashExplicitSyncWrapper[js.Function1[/* a */ R1, R2]],
@@ -829,8 +809,8 @@ trait LoDashExplicitSyncWrapper[TValue]
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, R5]] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, R5]] = js.native
   // 4-argument first function
   def flowRight[A1, A2, A3, A4, R2, R1](
     `this`: LoDashExplicitSyncWrapper[js.Function1[/* a */ R1, R2]],
@@ -861,8 +841,8 @@ trait LoDashExplicitSyncWrapper[TValue]
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, R6]] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, R6]] = js.native
   def flowRight[A1, A2, A3, A4, R3, R2, R1](
     `this`: LoDashExplicitSyncWrapper[js.Function1[/* a */ R2, R3]],
     f2: js.Function1[/* a */ R1, R2],
@@ -897,8 +877,8 @@ trait LoDashExplicitSyncWrapper[TValue]
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, R7]] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, R7]] = js.native
   def flowRight[A1, A2, A3, A4, R4, R3, R2, R1](
     `this`: LoDashExplicitSyncWrapper[js.Function1[/* a */ R3, R4]],
     f3: js.Function1[/* a */ R2, R3],
@@ -1018,14 +998,14 @@ trait LoDashExplicitSyncWrapper[TValue]
   @JSName("flow")
   def flow_A1A2A3A4R1R2[A1, A2, A3, A4, R1, R2](
     `this`: LoDashExplicitSyncWrapper[
-      (js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R1]) | (js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */_, R1])
+      (js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R1]) | (js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ _, R1])
     ],
     f2: js.Function1[/* a */ R1, R2]
   ): LoDashExplicitSyncWrapper[js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R2]] = js.native
   @JSName("flow")
   def flow_A1A2A3A4R1R2R3[A1, A2, A3, A4, R1, R2, R3](
     `this`: LoDashExplicitSyncWrapper[
-      (js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R1]) | (js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */_, R1])
+      (js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R1]) | (js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ _, R1])
     ],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3]
@@ -1033,7 +1013,7 @@ trait LoDashExplicitSyncWrapper[TValue]
   @JSName("flow")
   def flow_A1A2A3A4R1R2R3R4[A1, A2, A3, A4, R1, R2, R3, R4](
     `this`: LoDashExplicitSyncWrapper[
-      (js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R1]) | (js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */_, R1])
+      (js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R1]) | (js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ _, R1])
     ],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
@@ -1042,7 +1022,7 @@ trait LoDashExplicitSyncWrapper[TValue]
   @JSName("flow")
   def flow_A1A2A3A4R1R2R3R4R5[A1, A2, A3, A4, R1, R2, R3, R4, R5](
     `this`: LoDashExplicitSyncWrapper[
-      (js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R1]) | (js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */_, R1])
+      (js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R1]) | (js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ _, R1])
     ],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
@@ -1052,7 +1032,7 @@ trait LoDashExplicitSyncWrapper[TValue]
   @JSName("flow")
   def flow_A1A2A3A4R1R2R3R4R5R6[A1, A2, A3, A4, R1, R2, R3, R4, R5, R6](
     `this`: LoDashExplicitSyncWrapper[
-      (js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R1]) | (js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */_, R1])
+      (js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R1]) | (js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ _, R1])
     ],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
@@ -1063,7 +1043,7 @@ trait LoDashExplicitSyncWrapper[TValue]
   @JSName("flow")
   def flow_A1A2A3A4R1R2R3R4R5R6R7[A1, A2, A3, A4, R1, R2, R3, R4, R5, R6, R7](
     `this`: LoDashExplicitSyncWrapper[
-      (js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R1]) | (js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */_, R1])
+      (js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R1]) | (js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ _, R1])
     ],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
@@ -1075,7 +1055,7 @@ trait LoDashExplicitSyncWrapper[TValue]
   @JSName("flow")
   def flow_A1A2A3A4R1R2R3R4R5R6R7[A1, A2, A3, A4, R1, R2, R3, R4, R5, R6, R7](
     `this`: LoDashExplicitSyncWrapper[
-      (js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R1]) | (js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */_, R1])
+      (js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R1]) | (js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ _, R1])
     ],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
@@ -1273,10 +1253,10 @@ trait LoDashExplicitSyncWrapper[TValue]
     path: lodashLib.lodashMod.underscoreNs.PropertyPath
   ): LoDashExplicitSyncWrapper[js.UndefOr[scala.Nothing]] = js.native
   def get[TKey /* <: java.lang.String */](path: TKey): LoDashExplicitSyncWrapper[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TValue))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TValue[TKey] */ js.Any
   ] = js.native
   def get[TKey /* <: java.lang.String */](path: js.Array[TKey]): LoDashExplicitSyncWrapper[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TValue))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TValue[TKey] */ js.Any
   ] = js.native
   def get[TDefault](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[scala.Null]],
@@ -1291,12 +1271,12 @@ trait LoDashExplicitSyncWrapper[TValue]
   ): LoDashExplicitSyncWrapper[T] = js.native
   def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */](`this`: LoDashExplicitSyncWrapper[js.UndefOr[TObject | scala.Null]], path: TKey): LoDashExplicitSyncWrapper[
     js.UndefOr[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
     ]
   ] = js.native
   def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */](`this`: LoDashExplicitSyncWrapper[js.UndefOr[TObject | scala.Null]], path: js.Array[TKey]): LoDashExplicitSyncWrapper[
     js.UndefOr[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
     ]
   ] = js.native
   def get[T, TDefault](
@@ -1309,32 +1289,26 @@ trait LoDashExplicitSyncWrapper[TValue]
     path: TKey,
     defaultValue: TDefault
   ): LoDashExplicitSyncWrapper[
-    (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault
+    (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault
   ] = js.native
   def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[TObject | scala.Null]],
     path: js.Array[TKey],
     defaultValue: TDefault
   ): LoDashExplicitSyncWrapper[
-    (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault
+    (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault
   ] = js.native
   def groupBy[T /* <: js.Object */](`this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]]): LoDashExplicitSyncWrapper[
     lodashLib.lodashMod.underscoreNs.Dictionary[
-      js.Array[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-      ]
+      js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
     ]
   ] = js.native
   def groupBy[T /* <: js.Object */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
-    iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ): LoDashExplicitSyncWrapper[
     lodashLib.lodashMod.underscoreNs.Dictionary[
-      js.Array[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-      ]
+      js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
     ]
   ] = js.native
   @JSName("groupBy")
@@ -1435,9 +1409,7 @@ trait LoDashExplicitSyncWrapper[TValue]
   def invertBy[T /* <: js.Object */](`this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]]): LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.Dictionary[js.Array[java.lang.String]]] = js.native
   def invertBy[T /* <: js.Object */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
-    interatee: lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    interatee: lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ): LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.Dictionary[js.Array[java.lang.String]]] = js.native
   @JSName("invertBy")
   def invertBy_T[T](
@@ -1458,7 +1430,7 @@ trait LoDashExplicitSyncWrapper[TValue]
   ): LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.Dictionary[js.Array[java.lang.String]]] = js.native
   def invoke(path: lodashLib.lodashMod.underscoreNs.PropertyPath, args: js.Any*): LoDashExplicitSyncWrapper[_] = js.native
   def invokeMap(methodName: java.lang.String, args: js.Any*): LoDashExplicitSyncWrapper[js.Array[_]] = js.native
-  def invokeMap[TResult](method: js.Function1[/* repeated */js.Any, TResult], args: js.Any*): LoDashExplicitSyncWrapper[js.Array[TResult]] = js.native
+  def invokeMap[TResult](method: js.Function1[/* repeated */ js.Any, TResult], args: js.Any*): LoDashExplicitSyncWrapper[js.Array[TResult]] = js.native
   def isArguments(): LoDashExplicitSyncWrapper[scala.Boolean] = js.native
   def isArray(): LoDashExplicitSyncWrapper[scala.Boolean] = js.native
   def isArrayBuffer(): LoDashExplicitSyncWrapper[scala.Boolean] = js.native
@@ -1497,25 +1469,21 @@ trait LoDashExplicitSyncWrapper[TValue]
   def isUndefined(): LoDashExplicitSyncWrapper[scala.Boolean] = js.native
   def isWeakMap(): LoDashExplicitSyncWrapper[scala.Boolean] = js.native
   def isWeakSet(): LoDashExplicitSyncWrapper[scala.Boolean] = js.native
-  def iteratee[TFunction /* <: js.Function1[/* repeated */js.Any, _] */](`this`: LoDashExplicitSyncWrapper[TFunction | java.lang.String | js.Object]): LoDashExplicitSyncWrapper[TFunction] = js.native
+  def iteratee[TFunction /* <: js.Function1[/* repeated */ js.Any, _] */](`this`: LoDashExplicitSyncWrapper[TFunction | java.lang.String | js.Object]): LoDashExplicitSyncWrapper[TFunction] = js.native
   def join(): LoDashExplicitSyncWrapper[java.lang.String] = js.native
   def join(separator: java.lang.String): LoDashExplicitSyncWrapper[java.lang.String] = js.native
   def kebabCase(): LoDashExplicitSyncWrapper[java.lang.String] = js.native
   def keyBy[T /* <: js.Object */](`this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]]): LoDashExplicitSyncWrapper[
-    lodashLib.lodashMod.underscoreNs.Dictionary[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def keyBy[T /* <: js.Object */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       lodashLib.lodashMod.underscoreNs.PropertyName
     ]
   ): LoDashExplicitSyncWrapper[
-    lodashLib.lodashMod.underscoreNs.Dictionary[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   @JSName("keyBy")
   def keyBy_T[T](
@@ -1580,26 +1548,20 @@ trait LoDashExplicitSyncWrapper[TValue]
     ],
     iteratee: K
   ): LoDashExplicitSyncWrapper[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
   ] = js.native
   def map[T /* <: js.Object */, TResult](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     iteratee: lodashLib.lodashMod.underscoreNs.ObjectIterator[T, TResult]
   ): LoDashExplicitSyncWrapper[js.Array[TResult]] = js.native
   def mapKeys[T /* <: js.Object */](`this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]]): LoDashExplicitSyncWrapper[
-    lodashLib.lodashMod.underscoreNs.Dictionary[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def mapKeys[T /* <: js.Object */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     iteratee: lodashLib.lodashMod.underscoreNs.ObjectIteratee[T]
   ): LoDashExplicitSyncWrapper[
-    lodashLib.lodashMod.underscoreNs.Dictionary[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   @JSName("mapKeys")
   def mapKeys_T[T](
@@ -1625,9 +1587,7 @@ trait LoDashExplicitSyncWrapper[TValue]
     ],
     iteratee: TKey
   ): LoDashExplicitSyncWrapper[
-    lodashLib.lodashMod.underscoreNs.Dictionary[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(TKey))) */js.Any
-    ]
+    lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any]
   ] = js.native
   @JSName("mapValues")
   def mapValues_T[T](
@@ -1699,7 +1659,7 @@ trait LoDashExplicitSyncWrapper[TValue]
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[T]
   ): LoDashExplicitSyncWrapper[scala.Double] = js.native
   def memoize(): LoDashExplicitSyncWrapper[TValue with lodashLib.lodashMod.underscoreNs.MemoizedFunction] = js.native
-  def memoize(resolver: js.Function1[/* repeated */js.Any, _]): LoDashExplicitSyncWrapper[TValue with lodashLib.lodashMod.underscoreNs.MemoizedFunction] = js.native
+  def memoize(resolver: js.Function1[/* repeated */ js.Any, _]): LoDashExplicitSyncWrapper[TValue with lodashLib.lodashMod.underscoreNs.MemoizedFunction] = js.native
   def merge(otherArgs: js.Any*): LoDashExplicitSyncWrapper[_] = js.native
   def merge[TSource](source: TSource): LoDashExplicitSyncWrapper[TValue with TSource] = js.native
   def merge[TSource1, TSource2](source1: TSource1, source2: TSource2): LoDashExplicitSyncWrapper[TValue with TSource1 with TSource2] = js.native
@@ -1739,14 +1699,14 @@ trait LoDashExplicitSyncWrapper[TValue]
   ): LoDashExplicitSyncWrapper[js.UndefOr[T]] = js.native
   def mixin(): LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.LoDashStatic] = js.native
   def mixin(options: lodashLib.lodashMod.underscoreNs.MixinOptions): LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.LoDashStatic] = js.native
-  def mixin(source: lodashLib.lodashMod.underscoreNs.Dictionary[js.Function1[/* repeated */_, _]]): this.type = js.native
+  def mixin(source: lodashLib.lodashMod.underscoreNs.Dictionary[js.Function1[/* repeated */ _, _]]): this.type = js.native
   def mixin(
-    source: lodashLib.lodashMod.underscoreNs.Dictionary[js.Function1[/* repeated */_, _]],
+    source: lodashLib.lodashMod.underscoreNs.Dictionary[js.Function1[/* repeated */ _, _]],
     options: lodashLib.lodashMod.underscoreNs.MixinOptions
   ): this.type = js.native
   def multiply(multiplicand: scala.Double): LoDashExplicitSyncWrapper[scala.Double] = js.native
   def negate(
-    `this`: LoDashExplicitSyncWrapper[js.Function0[scala.Boolean] | (js.Function1[/* repeated */_, _])]
+    `this`: LoDashExplicitSyncWrapper[js.Function0[scala.Boolean] | (js.Function1[/* repeated */ _, _])]
   ): LoDashExplicitSyncWrapper[js.Function0[scala.Boolean]] = js.native
   @JSName("negate")
   def negate_A1[A1](`this`: LoDashExplicitSyncWrapper[js.Function1[/* a1 */ A1, scala.Boolean]]): LoDashExplicitSyncWrapper[js.Function1[/* a1 */ A1, scala.Boolean]] = js.native
@@ -1762,7 +1722,7 @@ trait LoDashExplicitSyncWrapper[TValue]
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[lodashLib.lodashMod.underscoreNs.List[T] | scala.Null]],
     n: scala.Double
   ): LoDashExplicitSyncWrapper[js.UndefOr[T]] = js.native
-  def nthArg(): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, _]] = js.native
+  def nthArg(): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, _]] = js.native
   def omit[T /* <: lodashLib.lodashMod.underscoreNs.AnyKindOfDictionary */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     paths: lodashLib.lodashMod.underscoreNs.Many[lodashLib.lodashMod.underscoreNs.PropertyName]*
@@ -1776,9 +1736,7 @@ trait LoDashExplicitSyncWrapper[TValue]
   ): LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.Dictionary[T]] = js.native
   def omitBy[T /* <: js.Object */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
-    predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ): LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.PartialObject[T]] = js.native
   @JSName("omitBy")
   def omitBy_T[T](
@@ -1800,9 +1758,7 @@ trait LoDashExplicitSyncWrapper[TValue]
     paths: lodashLib.lodashMod.underscoreNs.Many[K]*
   ): LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.Omit[T, K]] = js.native
   def orderBy[T /* <: js.Object */](`this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]]): LoDashExplicitSyncWrapper[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def orderBy[T /* <: js.Object */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[scala.Null | T]],
@@ -1810,9 +1766,7 @@ trait LoDashExplicitSyncWrapper[TValue]
       lodashLib.lodashMod.underscoreNs.ObjectIteratee[T] | (lodashLib.lodashMod.underscoreNs.ObjectIterator[T, lodashLib.lodashMod.underscoreNs.NotVoid])
     ]
   ): LoDashExplicitSyncWrapper[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def orderBy[T /* <: js.Object */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[scala.Null | T]],
@@ -1821,9 +1775,7 @@ trait LoDashExplicitSyncWrapper[TValue]
     ],
     orders: lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lowdbLib.lowdbLibStrings.asc | lowdbLib.lowdbLibStrings.desc]
   ): LoDashExplicitSyncWrapper[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   @JSName("orderBy")
   def orderBy_T[T](
@@ -1845,12 +1797,16 @@ trait LoDashExplicitSyncWrapper[TValue]
     orders: lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lowdbLib.lowdbLibStrings.asc | lowdbLib.lowdbLibStrings.desc]
   ): LoDashExplicitSyncWrapper[js.Array[T]] = js.native
   def over[TResult](
-    `this`: LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */_, TResult]]],
-    iteratees: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */_, TResult]])*
-  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, js.Array[TResult]]] = js.native
-  def overArgs(transforms: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */_, _]])*): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, _]] = js.native
-  def overEvery[T](predicates: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */T, scala.Boolean]])*): LoDashExplicitSyncWrapper[js.Function1[/* repeated */T, scala.Boolean]] = js.native
-  def overSome[T](predicates: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */T, scala.Boolean]])*): LoDashExplicitSyncWrapper[js.Function1[/* repeated */T, scala.Boolean]] = js.native
+    `this`: LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, TResult]]],
+    iteratees: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, TResult]])*
+  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, js.Array[TResult]]] = js.native
+  def overArgs(transforms: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, _]])*): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, _]] = js.native
+  def overEvery[T](
+    predicates: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ T, scala.Boolean]])*
+  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ T, scala.Boolean]] = js.native
+  def overSome[T](
+    predicates: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ T, scala.Boolean]])*
+  ): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ T, scala.Boolean]] = js.native
   def pad(): LoDashExplicitSyncWrapper[java.lang.String] = js.native
   def pad(length: scala.Double): LoDashExplicitSyncWrapper[java.lang.String] = js.native
   def pad(length: scala.Double, chars: java.lang.String): LoDashExplicitSyncWrapper[java.lang.String] = js.native
@@ -1863,7 +1819,7 @@ trait LoDashExplicitSyncWrapper[TValue]
   def parseInt(): LoDashExplicitSyncWrapper[scala.Double] = js.native
   def parseInt(radix: scala.Double): LoDashExplicitSyncWrapper[scala.Double] = js.native
   // catch-all
-  def partial(args: js.Any*): lodashLib.lodashMod.underscoreNs.LoDashExplicitWrapper[js.Function1[/* repeated */_, _]] = js.native
+  def partial(args: js.Any*): lodashLib.lodashMod.underscoreNs.LoDashExplicitWrapper[js.Function1[/* repeated */ _, _]] = js.native
   // arity 0
   def partial[R](
     `this`: lodashLib.lodashMod.underscoreNs.LoDashExplicitWrapper[lodashLib.lodashMod.underscoreNs.Function0[R]]
@@ -1963,7 +1919,7 @@ trait LoDashExplicitSyncWrapper[TValue]
     arg4: T4
   ): lodashLib.lodashMod.underscoreNs.LoDashExplicitWrapper[lodashLib.lodashMod.underscoreNs.Function3[T1, T2, T3, R]] = js.native
   // catch-all
-  def partialRight(args: js.Any*): lodashLib.lodashMod.underscoreNs.LoDashExplicitWrapper[js.Function1[/* repeated */_, _]] = js.native
+  def partialRight(args: js.Any*): lodashLib.lodashMod.underscoreNs.LoDashExplicitWrapper[js.Function1[/* repeated */ _, _]] = js.native
   // arity 0
   def partialRight[R](
     `this`: lodashLib.lodashMod.underscoreNs.LoDashExplicitWrapper[lodashLib.lodashMod.underscoreNs.Function0[R]]
@@ -2239,7 +2195,7 @@ trait LoDashExplicitSyncWrapper[TValue]
   def partition[T](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[lodashLib.lodashMod.underscoreNs.List[T] | scala.Null | T]],
     callback: lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any) | T
+      (/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any) | T
     ]
   ): LoDashExplicitSyncWrapper[js.Tuple2[js.Array[T], js.Array[T]]] = js.native
   def pick[T /* <: js.Object */](
@@ -2249,9 +2205,7 @@ trait LoDashExplicitSyncWrapper[TValue]
   def pickBy[T /* <: js.Object */](`this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]]): LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.PartialObject[T]] = js.native
   def pickBy[T /* <: js.Object */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
-    predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ): LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.PartialObject[T]] = js.native
   def pickBy[T, S /* <: T */](
     `this`: LoDashExplicitSyncWrapper[
@@ -2306,23 +2260,21 @@ trait LoDashExplicitSyncWrapper[TValue]
   def rangeRight(): LoDashExplicitSyncWrapper[js.Array[scala.Double]] = js.native
   def rangeRight(end: scala.Double): LoDashExplicitSyncWrapper[js.Array[scala.Double]] = js.native
   def rangeRight(end: scala.Double, step: scala.Double): LoDashExplicitSyncWrapper[js.Array[scala.Double]] = js.native
-  def rearg(indexes: lodashLib.lodashMod.underscoreNs.Many[scala.Double]*): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, _]] = js.native
+  def rearg(indexes: lodashLib.lodashMod.underscoreNs.Many[scala.Double]*): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, _]] = js.native
   def reduce[T /* <: js.Object */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     callback: lodashLib.lodashMod.underscoreNs.MemoObjectIterator[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       T
     ]
   ): LoDashExplicitSyncWrapper[
-    js.UndefOr[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def reduce[T /* <: js.Object */, TResult](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     callback: lodashLib.lodashMod.underscoreNs.MemoObjectIterator[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult, 
       T
     ],
@@ -2331,19 +2283,17 @@ trait LoDashExplicitSyncWrapper[TValue]
   def reduceRight[T /* <: js.Object */](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     callback: lodashLib.lodashMod.underscoreNs.MemoObjectIterator[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       T
     ]
   ): LoDashExplicitSyncWrapper[
-    js.UndefOr[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def reduceRight[T /* <: js.Object */, TResult](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     callback: lodashLib.lodashMod.underscoreNs.MemoObjectIterator[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult, 
       T
     ],
@@ -2380,9 +2330,7 @@ trait LoDashExplicitSyncWrapper[TValue]
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     predicate: lodashLib.lodashMod.underscoreNs.ObjectIterateeCustom[T, scala.Boolean]
   ): LoDashExplicitSyncWrapper[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   @JSName("reject")
   def reject_T[T](
@@ -2395,9 +2343,7 @@ trait LoDashExplicitSyncWrapper[TValue]
   ): LoDashExplicitSyncWrapper[js.Array[T]] = js.native
   @JSName("reject")
   def reject_TObject[T /* <: js.Object */](`this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]]): LoDashExplicitSyncWrapper[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def remove[T](`this`: LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.List[T]]): LoDashExplicitSyncWrapper[js.Array[T]] = js.native
   def remove[T](
@@ -2412,30 +2358,24 @@ trait LoDashExplicitSyncWrapper[TValue]
   def replace(pattern: stdLib.RegExp, replacement: lodashLib.lodashMod.underscoreNs.ReplaceFunction): LoDashExplicitSyncWrapper[java.lang.String] = js.native
   def replace(replacement: java.lang.String): LoDashExplicitSyncWrapper[java.lang.String] = js.native
   def replace(replacement: lodashLib.lodashMod.underscoreNs.ReplaceFunction): LoDashExplicitSyncWrapper[java.lang.String] = js.native
-  def rest(): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, _]] = js.native
-  def rest(start: scala.Double): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, _]] = js.native
+  def rest(): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, _]] = js.native
+  def rest(start: scala.Double): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, _]] = js.native
   def result[TResult](path: lodashLib.lodashMod.underscoreNs.PropertyPath): LoDashExplicitSyncWrapper[TResult] = js.native
   def result[TResult](path: lodashLib.lodashMod.underscoreNs.PropertyPath, defaultValue: TResult): LoDashExplicitSyncWrapper[TResult] = js.native
   def result[TResult](
     path: lodashLib.lodashMod.underscoreNs.PropertyPath,
-    defaultValue: js.Function1[/* repeated */js.Any, TResult]
+    defaultValue: js.Function1[/* repeated */ js.Any, TResult]
   ): LoDashExplicitSyncWrapper[TResult] = js.native
   def round(): LoDashExplicitSyncWrapper[scala.Double] = js.native
   def round(precision: scala.Double): LoDashExplicitSyncWrapper[scala.Double] = js.native
   def sample[T /* <: js.Object */](`this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]]): LoDashExplicitSyncWrapper[
-    js.UndefOr[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def sampleSize[T /* <: js.Object */](`this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]]): LoDashExplicitSyncWrapper[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def sampleSize[T /* <: js.Object */](`this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]], n: scala.Double): LoDashExplicitSyncWrapper[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   @JSName("sampleSize")
   def sampleSize_T[T](
@@ -2483,9 +2423,7 @@ trait LoDashExplicitSyncWrapper[TValue]
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[lodashLib.lodashMod.underscoreNs.List[T] | scala.Null]]
   ): LoDashExplicitSyncWrapper[js.UndefOr[T]] = js.native
   def shuffle[T /* <: js.Object */](`this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]]): LoDashExplicitSyncWrapper[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   @JSName("shuffle")
   def shuffle_T[T](
@@ -2530,9 +2468,7 @@ trait LoDashExplicitSyncWrapper[TValue]
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
     iteratees: lodashLib.lodashMod.underscoreNs.Many[lodashLib.lodashMod.underscoreNs.ObjectIteratee[T]]*
   ): LoDashExplicitSyncWrapper[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   @JSName("sortBy")
   def sortBy_T[T](
@@ -2591,8 +2527,8 @@ trait LoDashExplicitSyncWrapper[TValue]
   def split(separator: java.lang.String, limit: scala.Double): LoDashExplicitSyncWrapper[js.Array[java.lang.String]] = js.native
   def split(separator: stdLib.RegExp): LoDashExplicitSyncWrapper[js.Array[java.lang.String]] = js.native
   def split(separator: stdLib.RegExp, limit: scala.Double): LoDashExplicitSyncWrapper[js.Array[java.lang.String]] = js.native
-  def spread[TResult](`this`: LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, TResult]]): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, TResult]] = js.native
-  def spread[TResult](`this`: LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, TResult]], start: scala.Double): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, TResult]] = js.native
+  def spread[TResult](`this`: LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, TResult]]): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, TResult]] = js.native
+  def spread[TResult](`this`: LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, TResult]], start: scala.Double): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, TResult]] = js.native
   def startCase(): LoDashExplicitSyncWrapper[java.lang.String] = js.native
   def startsWith(): LoDashExplicitSyncWrapper[scala.Boolean] = js.native
   def startsWith(target: java.lang.String): LoDashExplicitSyncWrapper[scala.Boolean] = js.native
@@ -2655,9 +2591,7 @@ trait LoDashExplicitSyncWrapper[TValue]
   def times(): LoDashExplicitSyncWrapper[js.Array[scala.Double]] = js.native
   def times[TResult](iteratee: js.Function1[/* num */ scala.Double, TResult]): LoDashExplicitSyncWrapper[js.Array[TResult]] = js.native
   def toArray[T /* <: js.Object */](`this`: lodashLib.lodashMod.underscoreNs.LoDashImplicitWrapper[T]): LoDashExplicitSyncWrapper[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def toArray[T](
     `this`: LoDashExplicitSyncWrapper[
@@ -2711,7 +2645,7 @@ trait LoDashExplicitSyncWrapper[TValue]
   def trimStart(chars: java.lang.String): LoDashExplicitSyncWrapper[java.lang.String] = js.native
   def truncate(): LoDashExplicitSyncWrapper[java.lang.String] = js.native
   def truncate(options: lodashLib.lodashMod.underscoreNs.TruncateOptions): LoDashExplicitSyncWrapper[java.lang.String] = js.native
-  def unary[T, TResult](`this`: LoDashExplicitSyncWrapper[js.Function2[/* arg1 */ T, /* repeated */_, TResult]]): LoDashExplicitSyncWrapper[js.Function1[/* arg1 */ T, TResult]] = js.native
+  def unary[T, TResult](`this`: LoDashExplicitSyncWrapper[js.Function2[/* arg1 */ T, /* repeated */ _, TResult]]): LoDashExplicitSyncWrapper[js.Function1[/* arg1 */ T, TResult]] = js.native
   def unescape(): LoDashExplicitSyncWrapper[java.lang.String] = js.native
   def union[T](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[lodashLib.lodashMod.underscoreNs.List[T] | scala.Null]],
@@ -2938,7 +2872,7 @@ trait LoDashExplicitSyncWrapper[TValue]
         lodashLib.lodashMod.underscoreNs.List[lodashLib.lodashMod.underscoreNs.List[T]] | scala.Null
       ]
     ],
-    iteratee: js.Function1[/* repeated */T, TResult]
+    iteratee: js.Function1[/* repeated */ T, TResult]
   ): LoDashExplicitSyncWrapper[js.Array[TResult]] = js.native
   def update(path: lodashLib.lodashMod.underscoreNs.PropertyPath, updater: js.Function1[/* value */ js.Any, _]): LoDashExplicitSyncWrapper[_] = js.native
   def updateWith(
@@ -2965,14 +2899,10 @@ trait LoDashExplicitSyncWrapper[TValue]
   def upperFirst(): LoDashExplicitSyncWrapper[java.lang.String] = js.native
   def values(): LoDashExplicitSyncWrapper[js.Array[_]] = js.native
   def values[T /* <: js.Object */](`this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]]): LoDashExplicitSyncWrapper[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def valuesIn[T /* <: js.Object */](`this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]]): LoDashExplicitSyncWrapper[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   @JSName("valuesIn")
   def valuesIn_T[T](
@@ -2997,9 +2927,9 @@ trait LoDashExplicitSyncWrapper[TValue]
   def words(): LoDashExplicitSyncWrapper[js.Array[java.lang.String]] = js.native
   def words(pattern: java.lang.String): LoDashExplicitSyncWrapper[js.Array[java.lang.String]] = js.native
   def words(pattern: stdLib.RegExp): LoDashExplicitSyncWrapper[js.Array[java.lang.String]] = js.native
-  def wrap[TResult](wrapper: js.Function2[/* value */ TValue, /* repeated */js.Any, TResult]): LoDashExplicitSyncWrapper[js.Function1[/* repeated */_, TResult]] = js.native
+  def wrap[TResult](wrapper: js.Function2[/* value */ TValue, /* repeated */ js.Any, TResult]): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ _, TResult]] = js.native
   @JSName("wrap")
-  def wrap_TArgsTResult[TArgs, TResult](wrapper: js.Function2[/* value */ TValue, /* repeated */TArgs, TResult]): LoDashExplicitSyncWrapper[js.Function1[/* repeated */TArgs, TResult]] = js.native
+  def wrap_TArgsTResult[TArgs, TResult](wrapper: js.Function2[/* value */ TValue, /* repeated */ TArgs, TResult]): LoDashExplicitSyncWrapper[js.Function1[/* repeated */ TArgs, TResult]] = js.native
   def write(): TValue = js.native
   def xor[T](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[lodashLib.lodashMod.underscoreNs.List[T] | scala.Null]],
@@ -3188,7 +3118,7 @@ trait LoDashExplicitSyncWrapper[TValue]
   def zipWith[T, TResult](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[lodashLib.lodashMod.underscoreNs.List[T] | scala.Null]],
     iteratee: (js.UndefOr[
-      (js.Function1[/* repeated */T, TResult]) | lodashLib.lodashMod.underscoreNs.List[T] | scala.Null
+      (js.Function1[/* repeated */ T, TResult]) | lodashLib.lodashMod.underscoreNs.List[T] | scala.Null
     ])*
   ): LoDashExplicitSyncWrapper[js.Array[TResult]] = js.native
   def zipWith[T, TResult](

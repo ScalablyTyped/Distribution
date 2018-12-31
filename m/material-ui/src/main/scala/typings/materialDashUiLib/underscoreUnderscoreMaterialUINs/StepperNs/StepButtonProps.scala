@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StepButtonProps
   extends materialDashUiLib.underscoreUnderscoreMaterialUINs.SharedEnhancedButtonProps[StepButton] {
   var active: js.UndefOr[scala.Boolean] = js.undefined

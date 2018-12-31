@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlaylistSnippet extends js.Object {
   /** The ID that YouTube uses to uniquely identify the channel that published the playlist. */
   var channelId: js.UndefOr[java.lang.String] = js.undefined
@@ -22,9 +21,9 @@ trait PlaylistSnippet extends js.Object {
   /** Keyword tags associated with the playlist. */
   var tags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-               * A map of thumbnail images associated with the playlist. For each object in the map, the key is the name of the thumbnail image, and the value is an
-               * object that contains other information about the thumbnail.
-               */
+    * A map of thumbnail images associated with the playlist. For each object in the map, the key is the name of the thumbnail image, and the value is an
+    * object that contains other information about the thumbnail.
+    */
   var thumbnails: js.UndefOr[ThumbnailDetails] = js.undefined
   /** The playlist's title. */
   var title: js.UndefOr[java.lang.String] = js.undefined

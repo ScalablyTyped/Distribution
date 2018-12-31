@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_JSON extends js.Object {
   var BLOB: java.lang.String
   var BUFFER: java.lang.String

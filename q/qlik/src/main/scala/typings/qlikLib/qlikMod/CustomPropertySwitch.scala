@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomPropertySwitch extends CustomPropertyCommon {
   var component: qlikLib.qlikLibStrings.switch
   var defaultValue: js.UndefOr[java.lang.String] = js.undefined

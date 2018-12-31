@@ -12,78 +12,78 @@ sealed trait ContributionPropertyType extends js.Object
 @js.native
 object ContributionPropertyType extends js.Object {
   /**
-       * Value is an array
-       */
+    * Value is an array
+    */
   @js.native
   sealed trait Array
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ContributionPropertyType
   
   /**
-       * Value is True or False
-       */
+    * Value is True or False
+    */
   @js.native
   sealed trait Boolean
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ContributionPropertyType
   
   /**
-       * Value is a DateTime object
-       */
+    * Value is a DateTime object
+    */
   @js.native
   sealed trait DateTime
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ContributionPropertyType
   
   /**
-       * Value is a generic Dictionary/JObject/property bag
-       */
+    * Value is a generic Dictionary/JObject/property bag
+    */
   @js.native
   sealed trait Dictionary
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ContributionPropertyType
   
   /**
-       * Value is a double
-       */
+    * Value is a double
+    */
   @js.native
   sealed trait Double
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ContributionPropertyType
   
   /**
-       * Value is a GUID
-       */
+    * Value is a GUID
+    */
   @js.native
   sealed trait Guid
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ContributionPropertyType
   
   /**
-       * Value is an integer
-       */
+    * Value is an integer
+    */
   @js.native
   sealed trait Integer
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ContributionPropertyType
   
   /**
-       * Value is an arbitrary/custom object
-       */
+    * Value is an arbitrary/custom object
+    */
   @js.native
   sealed trait Object
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ContributionPropertyType
   
   /**
-       * Value is a string
-       */
+    * Value is a string
+    */
   @js.native
   sealed trait String
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ContributionPropertyType
   
   /**
-       * Contribution type is unknown (value may be anything)
-       */
+    * Contribution type is unknown (value may be anything)
+    */
   @js.native
   sealed trait Unknown
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ContributionPropertyType
   
   /**
-       * Value is a Uri
-       */
+    * Value is a Uri
+    */
   @js.native
   sealed trait Uri
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ContributionPropertyType

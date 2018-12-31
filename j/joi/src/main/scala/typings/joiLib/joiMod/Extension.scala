@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Extension extends js.Object {
   var base: js.UndefOr[Schema] = js.undefined
   var coerce: js.UndefOr[

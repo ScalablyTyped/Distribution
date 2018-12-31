@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Route extends js.Object {
   var canActivate: js.UndefOr[js.Array[_]] = js.undefined
   var canActivateChild: js.UndefOr[js.Array[_]] = js.undefined

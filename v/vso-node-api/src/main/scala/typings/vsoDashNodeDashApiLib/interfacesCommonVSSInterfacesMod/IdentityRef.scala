@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IdentityRef extends js.Object {
   var directoryAlias: java.lang.String
   var displayName: java.lang.String

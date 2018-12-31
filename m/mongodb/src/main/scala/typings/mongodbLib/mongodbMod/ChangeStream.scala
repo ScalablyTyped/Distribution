@@ -26,7 +26,6 @@ class ChangeStream protected ()
   def next(callback: MongoCallback[_]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/ChangeStream.html#stream */
   def stream(): Cursor[mongodbLib.Default] = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/ChangeStream.html#stream */
   def stream(options: mongodbLib.Anon_Transform): Cursor[mongodbLib.Default] = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DynaTreeDataModel extends js.Object {
    // Use <span> instead of <a> tag for this node
   var activate: js.UndefOr[scala.Boolean] = js.undefined

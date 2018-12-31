@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MultiArgsOptions[T]
   extends pDashEventLib.pDashEventMod.pEventNs.Options[T] {
   @JSName("multiArgs")

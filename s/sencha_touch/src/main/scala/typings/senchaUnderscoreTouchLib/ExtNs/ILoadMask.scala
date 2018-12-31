@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILoadMask extends IMask {
   /** [Method] Changes the data store bound to this LoadMask
   		* @param store Ext.data.Store The store to bind to this LoadMask

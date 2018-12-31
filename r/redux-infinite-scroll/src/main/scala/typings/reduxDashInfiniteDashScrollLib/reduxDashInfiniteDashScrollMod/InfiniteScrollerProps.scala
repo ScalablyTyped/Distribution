@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InfiniteScrollerProps extends js.Object {
   var children: js.UndefOr[js.Array[reactLib.reactMod.Global.JSXNs.Element]] = js.undefined
   var containerHeight: js.UndefOr[scala.Double | java.lang.String] = js.undefined

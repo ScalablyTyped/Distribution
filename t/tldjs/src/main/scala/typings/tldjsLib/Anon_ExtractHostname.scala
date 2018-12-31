@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ExtractHostname extends js.Object {
   var extractHostname: js.UndefOr[
     stdLib.ReturnType[js.Function1[/* host */ java.lang.String, java.lang.String | scala.Null]]

@@ -20,9 +20,9 @@ abstract class AccountsSettingsPaneCommandsRequestedEventArgs () extends js.Obje
   /** Gets the WebAccountProviderCommand collection for the account settings pane. */
   var webAccountProviderCommands: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[WebAccountProviderCommand] = js.native
   /**
-                   * Gets the deferral object for the AccountCommandsRequested event.
-                   * @return The deferral object.
-                   */
+    * Gets the deferral object for the AccountCommandsRequested event.
+    * @return The deferral object.
+    */
   def getDeferral(): AccountsSettingsPaneEventDeferral = js.native
 }
 

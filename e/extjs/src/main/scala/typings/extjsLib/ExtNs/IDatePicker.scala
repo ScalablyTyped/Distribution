@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDatePicker extends IComponent {
   /** [Config Option] (String) */
   var ariaTitle: js.UndefOr[java.lang.String] = js.undefined

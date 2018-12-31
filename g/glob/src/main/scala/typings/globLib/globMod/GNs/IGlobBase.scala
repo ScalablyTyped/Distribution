@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGlobBase extends js.Object {
   var aborted: scala.Boolean
   var cache: org.scalablytyped.runtime.StringDictionary[

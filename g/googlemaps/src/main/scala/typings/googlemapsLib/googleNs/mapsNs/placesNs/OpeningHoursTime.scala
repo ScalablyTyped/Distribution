@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OpeningHoursTime extends js.Object {
   var day: scala.Double
   var hours: scala.Double

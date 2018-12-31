@@ -10,8 +10,8 @@ trait HTMLFontElement extends HTMLElement {
   /** @deprecated */
   var color: java.lang.String = js.native
   /**
-       * Sets or retrieves the current typeface family.
-       */
+    * Sets or retrieves the current typeface family.
+    */
   /** @deprecated */
   var face: java.lang.String = js.native
   /** @deprecated */

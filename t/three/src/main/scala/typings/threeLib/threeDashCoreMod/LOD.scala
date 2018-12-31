@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class LOD () extends Object3D {
   var levels: js.Array[threeLib.Anon_Object] = js.native
   /**
-       * @deprecated Use {@link LOD#levels .levels} instead.
-       */
+    * @deprecated Use {@link LOD#levels .levels} instead.
+    */
   var objects: js.Array[_] = js.native
   @JSName("type")
   var type_LOD: threeLib.threeLibStrings.LOD = js.native

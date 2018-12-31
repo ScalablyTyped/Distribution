@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BindingTypeEnum extends js.Object {
   var ConstantValue: BindingType
   var Constructor: BindingType

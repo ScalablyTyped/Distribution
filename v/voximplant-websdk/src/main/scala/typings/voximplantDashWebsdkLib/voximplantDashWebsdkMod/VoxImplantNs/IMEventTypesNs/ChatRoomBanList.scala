@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when info about banned chat room participants received
 		*/
-
 trait ChatRoomBanList extends js.Object {
   /**
   			* Participants list

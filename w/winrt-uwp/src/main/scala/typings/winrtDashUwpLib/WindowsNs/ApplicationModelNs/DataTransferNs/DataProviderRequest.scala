@@ -14,14 +14,14 @@ abstract class DataProviderRequest () extends js.Object {
   /** Specifies the format id. */
   var formatId: java.lang.String = js.native
   /**
-                   * Returns a DataProviderDeferral object.
-                   * @return An data provider deferral object.
-                   */
+    * Returns a DataProviderDeferral object.
+    * @return An data provider deferral object.
+    */
   def getDeferral(): DataProviderDeferral = js.native
   /**
-                   * Sets the content of the DataPackage to be shared with a target app.
-                   * @param value The object associated with a particular format in the DataPackage .
-                   */
+    * Sets the content of the DataPackage to be shared with a target app.
+    * @param value The object associated with a particular format in the DataPackage .
+    */
   def setData(value: js.Any): scala.Unit = js.native
 }
 

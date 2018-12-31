@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SwitchStatement extends Node {
   var cases: js.Array[SwitchCase]
   var discriminant: Expression

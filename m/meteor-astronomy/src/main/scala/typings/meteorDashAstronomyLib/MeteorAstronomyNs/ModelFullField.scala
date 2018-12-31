@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModelFullField[Field, Doc] extends js.Object {
   var default: js.UndefOr[js.Function0[Field]] = js.undefined
   var immutable: js.UndefOr[scala.Boolean] = js.undefined

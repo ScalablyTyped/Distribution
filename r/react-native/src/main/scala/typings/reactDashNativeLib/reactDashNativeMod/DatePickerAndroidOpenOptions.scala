@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatePickerAndroidOpenOptions extends js.Object {
   var date: js.UndefOr[stdLib.Date | scala.Double] = js.undefined
   var maxDate: js.UndefOr[stdLib.Date | scala.Double] = js.undefined

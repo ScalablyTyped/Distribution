@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Mute extends js.Object {
   var LONG: plugapiLib.plugapiLibStrings.l
   var MEDIUM: plugapiLib.plugapiLibStrings.m

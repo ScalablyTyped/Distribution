@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Endpoint extends js.Object {
   def isEmpty(): scala.Boolean
   def setIpv4(ipv4: java.lang.String): scala.Unit

@@ -28,18 +28,12 @@ object HttpUtils extends js.Object {
   ): requestLib.requestMod.requestNs.OptionsWithUrl = js.native
   def optionsSSL(options: requestLib.requestMod.requestNs.OptionsWithUrl, opt_ignoreSSL: scala.Boolean): requestLib.requestMod.requestNs.OptionsWithUrl = js.native
   /**
-       * Resolves proxy based on values set
-       * @param fileUrl The url to download the file.
-       * @param opt_proxy The proxy to connect to to download files.
-       * @return Either undefined or the proxy.
-       */
+    * Resolves proxy based on values set
+    * @param fileUrl The url to download the file.
+    * @param opt_proxy The proxy to connect to to download files.
+    * @return Either undefined or the proxy.
+    */
   def resolveProxy(fileUrl: java.lang.String): java.lang.String = js.native
-  /**
-       * Resolves proxy based on values set
-       * @param fileUrl The url to download the file.
-       * @param opt_proxy The proxy to connect to to download files.
-       * @return Either undefined or the proxy.
-       */
   def resolveProxy(fileUrl: java.lang.String, opt_proxy: java.lang.String): java.lang.String = js.native
 }
 

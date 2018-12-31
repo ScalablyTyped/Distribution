@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GeocoderResult extends js.Object {
   var address_components: js.Array[GeocoderAddressComponent]
   var formatted_address: java.lang.String

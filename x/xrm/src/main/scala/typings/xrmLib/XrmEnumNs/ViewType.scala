@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ViewType extends js.Object
 
 /**
-     * An enumeration for view types.
-     */
+  * An enumeration for view types.
+  */
 @JSGlobal("XrmEnum.ViewType")
 @js.native
 object ViewType extends js.Object {

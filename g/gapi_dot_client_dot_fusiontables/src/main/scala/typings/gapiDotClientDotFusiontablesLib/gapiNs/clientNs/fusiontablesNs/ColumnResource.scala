@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnResource extends js.Object {
   /** Deletes the specified column. */
   def delete(request: gapiDotClientDotFusiontablesLib.Anon_PrettyPrintColumnId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaginatorProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var currentPageReportTemplate: js.UndefOr[java.lang.String] = js.undefined

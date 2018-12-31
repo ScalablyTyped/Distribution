@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FieldNameSize extends js.Object {
   /** Max field name size (Default: 100 bytes) */
   var fieldNameSize: js.UndefOr[scala.Double] = js.undefined

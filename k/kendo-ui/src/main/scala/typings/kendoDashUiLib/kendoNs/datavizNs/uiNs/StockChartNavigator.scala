@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StockChartNavigator extends js.Object {
   var autoBind: js.UndefOr[scala.Boolean] = js.undefined
   var categoryAxis: js.UndefOr[StockChartNavigatorCategoryAxis] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactImageGalleryItem extends js.Object {
   var description: js.UndefOr[java.lang.String] = js.undefined
   var original: js.UndefOr[java.lang.String] = js.undefined

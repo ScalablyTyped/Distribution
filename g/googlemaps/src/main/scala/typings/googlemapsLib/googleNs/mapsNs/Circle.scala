@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("google.maps.Circle")
 @js.native
+/**
+  * Create a circle using the passed CircleOptions, which specify the
+  * center, radius, and style.
+  */
 class Circle () extends MVCObject {
-  /**
-       * Create a circle using the passed CircleOptions, which specify the
-       * center, radius, and style.
-       */
   def this(opts: CircleOptions) = this()
   /** Gets the LatLngBounds of this Circle. */
   def getBounds(): LatLngBounds = js.native
@@ -29,24 +29,19 @@ class Circle () extends MVCObject {
   def getVisible(): scala.Boolean = js.native
   /** Sets the center of this circle. */
   def setCenter(center: LatLng): scala.Unit = js.native
-  /** Sets the center of this circle. */
   def setCenter(center: LatLngLiteral): scala.Unit = js.native
   /** If set to true, the user can drag this circle over the map. */
   def setDraggable(draggable: scala.Boolean): scala.Unit = js.native
   /**
-       * If set to true, the user can edit this circle by dragging the control
-       * points shown at the center and around the circumference of the circle.
-       */
+    * If set to true, the user can edit this circle by dragging the control
+    * points shown at the center and around the circumference of the circle.
+    */
   def setEditable(editable: scala.Boolean): scala.Unit = js.native
-  /**
-       * Renders the circle on the specified map. If map is set to null, the
-       * circle will be removed.
-       */
   def setMap(): scala.Unit = js.native
   /**
-       * Renders the circle on the specified map. If map is set to null, the
-       * circle will be removed.
-       */
+    * Renders the circle on the specified map. If map is set to null, the
+    * circle will be removed.
+    */
   def setMap(map: Map): scala.Unit = js.native
   def setOptions(options: CircleOptions): scala.Unit = js.native
   /** Sets the radius of this circle (in meters). */

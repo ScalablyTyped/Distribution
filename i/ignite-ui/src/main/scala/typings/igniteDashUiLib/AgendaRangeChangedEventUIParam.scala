@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AgendaRangeChangedEventUIParam extends js.Object {
   /**
   	 * Gets a reference to the days to be shown in AgendaView mode.

@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Button Action
-     */
-
+  * Button Action
+  */
 trait IButtonAction extends js.Object
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPanelConfig extends js.Object {
    // default: false
   var animation: js.UndefOr[IPanelAnimation] = js.undefined
@@ -30,10 +29,10 @@ trait IPanelConfig extends js.Object {
   var locals: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var onCloseSuccess: js.UndefOr[js.Function2[/* panel */ IPanelRef, /* closeReason */ java.lang.String, _]] = js.undefined
    // default: false
-  var onDomAdded: js.UndefOr[js.Function1[/* repeated */js.Any, js.Thenable[scala.Unit] | scala.Unit]] = js.undefined
-  var onDomRemoved: js.UndefOr[js.Function1[/* repeated */js.Any, js.Thenable[scala.Unit] | scala.Unit]] = js.undefined
-  var onOpenComplete: js.UndefOr[js.Function1[/* repeated */js.Any, js.Thenable[scala.Unit] | scala.Unit]] = js.undefined
-  var onRemoving: js.UndefOr[js.Function1[/* repeated */js.Any, js.Thenable[scala.Unit] | scala.Unit]] = js.undefined
+  var onDomAdded: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[scala.Unit] | scala.Unit]] = js.undefined
+  var onDomRemoved: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[scala.Unit] | scala.Unit]] = js.undefined
+  var onOpenComplete: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[scala.Unit] | scala.Unit]] = js.undefined
+  var onRemoving: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[scala.Unit] | scala.Unit]] = js.undefined
   var origin: js.UndefOr[java.lang.String | angularLib.JQuery | stdLib.Element] = js.undefined
   var panelClass: js.UndefOr[java.lang.String] = js.undefined
    // default: 80

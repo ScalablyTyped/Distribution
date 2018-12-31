@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Defines a TimedTextStyle for a substring in a TimedTextLine . of the cue, which defines the style of the rendered text. */
 @JSGlobal("Windows.Media.Core.TimedTextSubformat")
 @js.native
+/** Initializes a new instance of the TimedTextSubformat class. */
 class TimedTextSubformat () extends js.Object {
   /** Gets or sets the length of the substring to which the SubformatStyle applies. */
   var length: scala.Double = js.native

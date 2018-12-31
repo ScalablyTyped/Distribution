@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RgbaColor extends js.Object {
   var alpha: scala.Double
   var blue: scala.Double

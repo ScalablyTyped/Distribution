@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Insert extends js.Object {
   var copy: js.Function1[
     /* parameters */ gapiDotDriveLib.gapiNs.clientNs.driveNs.CopyParameters, 

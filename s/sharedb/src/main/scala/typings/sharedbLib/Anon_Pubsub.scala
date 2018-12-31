@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Pubsub extends js.Object {
   var db: js.UndefOr[js.Any] = js.undefined
   var disableDocAction: js.UndefOr[scala.Boolean] = js.undefined

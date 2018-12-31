@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageDto extends js.Object {
   var full: java.lang.String
   var group: java.lang.String

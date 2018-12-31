@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_State extends js.Object {
   /** [Full-projection-only] Specifies the job configuration. */
   var configuration: js.UndefOr[gapiDotClientDotBigqueryLib.gapiNs.clientNs.bigqueryNs.JobConfiguration] = js.undefined

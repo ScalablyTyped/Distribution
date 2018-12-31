@@ -25,10 +25,6 @@ trait Server
   		 * Captures upgrade requests for a http.Server. In other words, makes a regular http.Server WebSocket-compatible.
   		 */
   def attach(http: nodeLib.httpMod.Server): this.type = js.native
-  /**
-  		 * Attach this Server instance to an http.Server
-  		 * Captures upgrade requests for a http.Server. In other words, makes a regular http.Server WebSocket-compatible.
-  		 */
   def attach(http: nodeLib.httpMod.Server, opts: AttachOptions): this.type = js.native
   /**
   		 * Closes all clients
@@ -55,9 +51,6 @@ trait Server
     ev: engineDotIoLib.engineDotIoLibStrings.connection,
     fn: js.Function1[/* socket */ Socket, scala.Unit]
   ): this.type = js.native
-  /**
-  		 * Fired when a new connection is established.
-  		 */
   @JSName("on")
   def on_drain(ev: engineDotIoLib.engineDotIoLibStrings.drain, fn: js.Function1[/* socket */ Socket, scala.Unit]): this.type = js.native
   @JSName("on")

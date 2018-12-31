@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options[T] extends js.Object {
   var keepDiacritics: js.UndefOr[scala.Boolean] = js.undefined
   var keys: js.UndefOr[

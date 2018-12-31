@@ -11,14 +11,14 @@ class AttrAst protected () extends TemplateAst {
   def this(name: java.lang.String, value: java.lang.String, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()
   var name: java.lang.String = js.native
   /**
-       * The source span from which this node was parsed.
-       */
+    * The source span from which this node was parsed.
+    */
   /* CompleteClass */
   override var sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan = js.native
   var value: java.lang.String = js.native
   /**
-       * Visit this node and possibly transform it.
-       */
+    * Visit this node and possibly transform it.
+    */
   /* CompleteClass */
   override def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
 }

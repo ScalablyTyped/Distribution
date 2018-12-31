@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RangeType extends js.Object {
   var endCol: scala.Double
   var endRow: scala.Double

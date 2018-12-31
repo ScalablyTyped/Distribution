@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConversionError extends js.Object {
   /** The error code. */
   var code: js.UndefOr[java.lang.String] = js.undefined

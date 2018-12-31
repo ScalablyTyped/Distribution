@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CanvasAction extends js.Object {
   /**
   		 * 创建一个颜色的渐变点。

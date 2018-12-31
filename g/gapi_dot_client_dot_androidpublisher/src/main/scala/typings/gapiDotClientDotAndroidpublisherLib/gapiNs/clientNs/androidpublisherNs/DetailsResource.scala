@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DetailsResource extends js.Object {
   /** Fetches app details for this edit. This includes the default language and developer support contact information. */
   def get(request: gapiDotClientDotAndroidpublisherLib.Anon_PrettyPrintPackageNameQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[AppDetails]

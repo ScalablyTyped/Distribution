@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick, @material-ui/core.@material-ui/core.StandardProps) */ 
-trait StepLabelProps
+- Lifted 3 members from Set(std.Pick<react.react.HTMLAttributes<react.HTMLDivElement>, std.Exclude<keyof react.react.HTMLAttributes<react.HTMLDivElement>, 'classes' | never>>, @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLDivElement>, @material-ui/core.@material-ui/core/StepLabel/StepLabel.StepLabelClasskey, never>) */ trait StepLabelProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[StepLabelClasskey] {
   var StepIconComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var StepIconProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.stepiconStepIconMod.StepIconProps]] = js.undefined

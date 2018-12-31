@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IErrors
   extends senchaUnderscoreTouchLib.ExtNs.utilNs.ICollection {
   /** [Method] Adds an item to the collection

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Log extends js.Object {
   var answer: java.lang.String
   var answer_code: scala.Double

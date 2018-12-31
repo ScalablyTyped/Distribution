@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenVariantSetIdPrettyPrint extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -31,15 +30,15 @@ trait Anon_AccesstokenVariantSetIdPrettyPrint extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * An optional mask specifying which fields to update. Supported fields:
-                   *
-                   * &#42; metadata.
-                   * &#42; name.
-                   * &#42; description.
-                   *
-                   * Leaving `updateMask` unset is equivalent to specifying all mutable
-                   * fields.
-                   */
+    * An optional mask specifying which fields to update. Supported fields:
+    *
+    * &#42; metadata.
+    * &#42; name.
+    * &#42; description.
+    *
+    * Leaving `updateMask` unset is equivalent to specifying all mutable
+    * fields.
+    */
   var updateMask: js.UndefOr[java.lang.String] = js.undefined
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParsedJID extends js.Object {
   var bare: java.lang.String
   var domain: java.lang.String

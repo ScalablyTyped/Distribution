@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimeStampReq extends js.Object {
   var certReq: js.UndefOr[scala.Boolean] = js.undefined
   var extensions: js.UndefOr[js.Array[pkijsLib.srcExtensionMod.default]] = js.undefined

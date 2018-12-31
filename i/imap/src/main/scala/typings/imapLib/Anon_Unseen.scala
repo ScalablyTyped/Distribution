@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Unseen extends js.Object {
   /** Number of messages in this mailbox having the Recent flag (this IMAP session is the first to see these messages). */
   var `new`: scala.Double

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Extends Tedious Connection with release function
-     */
+  * Extends Tedious Connection with release function
+  */
 @JSImport("tedious-connection-pool", "PooledConnection")
 @js.native
 class PooledConnection ()

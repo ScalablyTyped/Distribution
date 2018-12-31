@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Decoder[I, A] extends js.Object {
   val name: java.lang.String
   def decode(i: I): Validation[A]

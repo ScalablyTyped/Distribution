@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExecutionParams[TContext] extends js.Object {
   var callback: js.UndefOr[js.Function] = js.undefined
   var context: TContext

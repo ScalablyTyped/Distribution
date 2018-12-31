@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictSearchProps extends js.Object {
   // ------------------------------------
   // Style
@@ -20,11 +19,11 @@ trait StrictSearchProps extends js.Object {
   // Rendering
   // ------------------------------------
   /**
-     * Renders the SearchCategory contents.
-     *
-     * @param {object} props - The SearchCategory props object.
-     * @returns {*} - Renderable SearchCategory contents.
-     */
+    * Renders the SearchCategory contents.
+    *
+    * @param {object} props - The SearchCategory props object.
+    * @returns {*} - Renderable SearchCategory contents.
+    */
   var categoryRenderer: js.UndefOr[
     js.Function1[
       /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchCategoryMod.SearchCategoryProps, 
@@ -60,11 +59,11 @@ trait StrictSearchProps extends js.Object {
   // Callbacks
   // ------------------------------------
   /**
-     * Called on blur.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called on blur.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onBlur: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
@@ -73,11 +72,11 @@ trait StrictSearchProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called on focus.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called on focus.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onFocus: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
@@ -86,11 +85,11 @@ trait StrictSearchProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called on mousedown.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called on mousedown.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onMouseDown: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
@@ -99,11 +98,11 @@ trait StrictSearchProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called when a result is selected.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called when a result is selected.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onResultSelect: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
@@ -112,11 +111,11 @@ trait StrictSearchProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called on search input change.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props, includes current value of search input.
-     */
+    * Called on search input change.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props, includes current value of search input.
+    */
   var onSearchChange: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
@@ -125,11 +124,11 @@ trait StrictSearchProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called when the active selection index is changed.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called when the active selection index is changed.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onSelectionChange: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
@@ -140,11 +139,11 @@ trait StrictSearchProps extends js.Object {
   /** Controls whether or not the results menu is displayed. */
   var open: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * Renders the SearchResult contents.
-     *
-     * @param {object} props - The SearchResult props object.
-     * @returns {*} - Renderable SearchResult contents.
-     */
+    * Renders the SearchResult contents.
+    *
+    * @param {object} props - The SearchResult props object.
+    * @returns {*} - Renderable SearchResult contents.
+    */
   var resultRenderer: js.UndefOr[
     js.Function1[
       /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.SearchResultProps, 
@@ -152,10 +151,10 @@ trait StrictSearchProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * One of:
-     * - array of Search.Result props e.g. `{ title: '', description: '' }` or
-     * - object of categories e.g. `{ name: '', results: [{ title: '', description: '' }]`
-     */
+    * One of:
+    * - array of Search.Result props e.g. `{ title: '', description: '' }` or
+    * - object of categories e.g. `{ name: '', results: [{ title: '', description: '' }]`
+    */
   var results: js.UndefOr[js.Array[_] | js.Object] = js.undefined
   /** Whether the search should automatically select the first result after searching. */
   var selectFirstResult: js.UndefOr[scala.Boolean] = js.undefined

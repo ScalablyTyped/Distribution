@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait PhysicsRadialImpulseFalloff extends js.Object
 
 /**
-    * The strenght of the force in correspondence to the distance of the affected object
-    * @see https://doc.babylonjs.com/how_to/using_the_physics_engine
-    */
+  * The strenght of the force in correspondence to the distance of the affected object
+  * @see https://doc.babylonjs.com/how_to/using_the_physics_engine
+  */
 @JSGlobal("BABYLON.PhysicsRadialImpulseFalloff")
 @js.native
 object PhysicsRadialImpulseFalloff extends js.Object {

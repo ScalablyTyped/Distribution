@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ValidatorError
   extends nodeLib.Error {
   var bouncer: koaDashBouncerLib.Anon_Key

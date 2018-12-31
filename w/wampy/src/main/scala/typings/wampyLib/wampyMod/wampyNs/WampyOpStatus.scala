@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WampyOpStatus extends js.Object {
   var code: scala.Double
   var description: java.lang.String

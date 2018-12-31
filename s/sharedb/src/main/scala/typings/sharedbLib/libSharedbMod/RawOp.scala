@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RawOp extends js.Object {
   var c: java.lang.String
   var d: java.lang.String

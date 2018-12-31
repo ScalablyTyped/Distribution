@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IProximityDeviceStatics extends js.Object {
   def fromId(deviceInterfaceId: java.lang.String): ProximityDevice
   def getDefault(): ProximityDevice

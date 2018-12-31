@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick) */ 
-trait ProgressBarProps extends js.Object {
+- Lifted 1 members from Set(std.Pick<react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/ProgressBar.ProgressBar>, {typemapped, typemapped, indexed, indexed}[keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/ProgressBar.ProgressBar>]>) */ trait ProgressBarProps extends js.Object {
   // Optional
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var bsSize: js.UndefOr[reactDashBootstrapLib.reactDashBootstrapMod.Sizes] = js.undefined

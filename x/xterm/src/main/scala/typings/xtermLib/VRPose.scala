@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VRPose extends js.Object {
   val angularAcceleration: stdLib.Float32Array | scala.Null
   val angularVelocity: stdLib.Float32Array | scala.Null

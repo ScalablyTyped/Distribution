@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A simple object for specifying options when showing or dismissing a <Titanium.UI.iOS.DocumentViewer>.
- */
-
+  * A simple object for specifying options when showing or dismissing a <Titanium.UI.iOS.DocumentViewer>.
+  */
 trait DocumentViewerOptions extends js.Object {
   /**
   	 * Indicates whether to animate the transition.

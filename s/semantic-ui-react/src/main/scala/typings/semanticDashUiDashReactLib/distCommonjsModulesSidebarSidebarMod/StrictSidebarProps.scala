@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictSidebarProps extends js.Object {
   /** Animation style. */
   var animation: js.UndefOr[
@@ -26,11 +25,11 @@ trait StrictSidebarProps extends js.Object {
   /** Duration of sidebar animation. */
   var duration: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /**
-     * Called after a sidebar has finished animating out.
-     *
-     * @param {null}
-     * @param {object} data - All props.
-     */
+    * Called after a sidebar has finished animating out.
+    *
+    * @param {null}
+    * @param {object} data - All props.
+    */
   var onHidden: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
@@ -39,11 +38,11 @@ trait StrictSidebarProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called before a sidebar begins to animate out.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called before a sidebar begins to animate out.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onHide: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
@@ -52,11 +51,11 @@ trait StrictSidebarProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called when a sidebar has finished animating in.
-     *
-     * @param {null}
-     * @param {object} data - All props.
-     */
+    * Called when a sidebar has finished animating in.
+    *
+    * @param {null}
+    * @param {object} data - All props.
+    */
   var onShow: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
@@ -65,11 +64,11 @@ trait StrictSidebarProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called when a sidebar begins animating in.
-     *
-     * @param {null}
-     * @param {object} data - All props.
-     */
+    * Called when a sidebar begins animating in.
+    *
+    * @param {null}
+    * @param {object} data - All props.
+    */
   var onVisible: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LoadOptions extends js.Object {
   var async: js.UndefOr[scala.Boolean] = js.undefined
   var before: js.UndefOr[

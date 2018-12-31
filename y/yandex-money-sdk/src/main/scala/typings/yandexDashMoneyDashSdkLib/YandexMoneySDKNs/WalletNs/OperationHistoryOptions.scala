@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OperationHistoryOptions extends js.Object {
   var details: js.UndefOr[scala.Boolean] = js.undefined
   var from: js.UndefOr[java.lang.String | stdLib.Date] = js.undefined

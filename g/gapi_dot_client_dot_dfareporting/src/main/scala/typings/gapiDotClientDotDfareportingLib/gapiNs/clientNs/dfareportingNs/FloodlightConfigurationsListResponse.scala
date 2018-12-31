@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FloodlightConfigurationsListResponse extends js.Object {
   /** Floodlight configuration collection. */
   var floodlightConfigurations: js.UndefOr[js.Array[FloodlightConfiguration]] = js.undefined

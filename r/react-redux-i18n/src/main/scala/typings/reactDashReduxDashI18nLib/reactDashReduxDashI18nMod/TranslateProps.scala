@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TranslateProps
   extends /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var className: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Errors extends js.Object {
   var BadGateway: BadGateway
   var BadRequest: BadRequest

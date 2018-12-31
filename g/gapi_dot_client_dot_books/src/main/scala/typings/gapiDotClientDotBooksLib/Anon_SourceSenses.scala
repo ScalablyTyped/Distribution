@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SourceSenses extends js.Object {
   var derivatives: js.UndefOr[js.Array[Anon_Text]] = js.undefined
   var examples: js.UndefOr[js.Array[Anon_Text]] = js.undefined

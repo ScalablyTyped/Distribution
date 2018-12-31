@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapStore extends js.Object {
   var baseDir: java.lang.String | scala.Null
   var data: org.scalablytyped.runtime.StringDictionary[istanbulDashLibDashSourceDashMapsLib.Anon_Type]

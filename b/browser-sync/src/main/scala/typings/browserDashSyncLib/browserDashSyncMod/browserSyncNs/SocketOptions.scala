@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SocketOptions extends js.Object {
   var clientPath: js.UndefOr[java.lang.String] = js.undefined
   var clients: js.UndefOr[browserDashSyncLib.Anon_HeartbeatTimeout] = js.undefined

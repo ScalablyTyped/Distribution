@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TopbarOptions extends js.Object {
   var back_text: js.UndefOr[java.lang.String] = js.undefined
   var custom_back_text: js.UndefOr[scala.Boolean] = js.undefined

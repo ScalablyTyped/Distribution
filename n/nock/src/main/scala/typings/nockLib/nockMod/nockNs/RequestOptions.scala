@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestOptions extends js.Object {
   var `_https_`: js.UndefOr[scala.Boolean] = js.undefined
   var host: js.UndefOr[java.lang.String] = js.undefined

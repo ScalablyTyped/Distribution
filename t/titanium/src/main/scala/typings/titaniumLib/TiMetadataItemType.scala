@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * An abstract type to represent a metadata item inside the `metadata` event (iOS only).
- */
-
+  * An abstract type to represent a metadata item inside the `metadata` event (iOS only).
+  */
 trait TiMetadataItemType extends js.Object {
   /**
   	 * A dictionary of the additional attributes.

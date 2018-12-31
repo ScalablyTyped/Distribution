@@ -5,14 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MutationOptions extends js.Object {
   var forceFetch: js.UndefOr[scala.Boolean] = js.undefined
   var fragments: js.UndefOr[
     js.Array[typedDashGraphqlLib.graphqlMod.FragmentDefinition] | js.Array[js.Array[typedDashGraphqlLib.graphqlMod.FragmentDefinition]]
   ] = js.undefined
   var optimisticResponse: js.UndefOr[js.Object] = js.undefined
-  var resultBehaviors: js.UndefOr[js.Array[_]] = js.undefined
+  var resultBehaviors: js.UndefOr[
+    js.Array[
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify MutationBehavior */ _
+    ]
+  ] = js.undefined
   var updateQueries: js.UndefOr[
     apolloDashClientLib.coreTypesMod.MutationQueryReducersMap[org.scalablytyped.runtime.StringDictionary[_]]
   ] = js.undefined

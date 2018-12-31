@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ViterbiNode extends js.Object {
   var cost: scala.Double
   var left_id: scala.Double

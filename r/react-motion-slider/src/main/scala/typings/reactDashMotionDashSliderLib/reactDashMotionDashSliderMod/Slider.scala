@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait Slider
   extends reactLib.reactMod.Component[SliderProps, js.Object, js.Any] {
   /**
-           * Moves to next slide
-           */
+    * Moves to next slide
+    */
   def next(): scala.Unit = js.native
   /**
-           * Move to previous slide
-           */
+    * Move to previous slide
+    */
   def prev(): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParseMsResult extends js.Object {
   var days: scala.Double
   var hours: scala.Double

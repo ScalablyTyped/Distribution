@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Ocr extends js.Object {
   var language: java.lang.String
   var orientation: java.lang.String

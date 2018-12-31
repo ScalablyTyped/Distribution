@@ -23,9 +23,9 @@ abstract class SimpleOrientationSensor () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[SimpleOrientationSensor, SimpleOrientationSensorOrientationChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Gets the default simple orientation sensor.
-                   * @return The default simple orientation sensor.
-                   */
+    * Gets the default simple orientation sensor.
+    * @return The default simple orientation sensor.
+    */
   def getCurrentOrientation(): SimpleOrientation = js.native
   /** Occurs each time the simple orientation sensor reports a new sensor reading */
   def onorientationchanged(
@@ -44,9 +44,9 @@ abstract class SimpleOrientationSensor () extends js.Object {
 @js.native
 object SimpleOrientationSensor extends js.Object {
   /**
-                   * Gets the default simple orientation sensor.
-                   * @return The default simple orientation sensor or null if no simple orientation sensors are found.
-                   */
+    * Gets the default simple orientation sensor.
+    * @return The default simple orientation sensor or null if no simple orientation sensors are found.
+    */
   def getDefault(): winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.SimpleOrientationSensor = js.native
 }
 

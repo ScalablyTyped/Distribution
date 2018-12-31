@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // #endregion
 // #endregion
-
 trait TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget]
   extends /* type */ org.scalablytyped.runtime.StringDictionary[TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]] {
   // FocusEvent

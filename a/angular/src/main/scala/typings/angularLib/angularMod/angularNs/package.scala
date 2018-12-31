@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object angularNs {
-  type FilterFactory = js.Function1[/* repeated */js.Any, IFilterFunction]
+  type FilterFactory = js.Function1[/* repeated */ js.Any, IFilterFunction]
   type IAugmentedJQuery = angularLib.JQLite
   /**
-       * These interfaces are kept for compatibility with older versions of these type definitions.
-       * Actually, Angular doesn't create a special subclass of jQuery objects. It extends jQuery.prototype
-       * like jQuery plugins do, that's why all jQuery objects have these Angular-specific methods, not
-       * only those returned from angular.element.
-       * See: http://docs.angularjs.org/api/angular.element
-       */
+    * These interfaces are kept for compatibility with older versions of these type definitions.
+    * Actually, Angular doesn't create a special subclass of jQuery objects. It extends jQuery.prototype
+    * like jQuery plugins do, that's why all jQuery objects have these Angular-specific methods, not
+    * only those returned from angular.element.
+    * See: http://docs.angularjs.org/api/angular.element
+    */
   type IAugmentedJQueryStatic = angularLib.JQueryStatic
   type ICloneAttachFunction = js.Function2[
     /* clonedElement */ js.UndefOr[angularLib.JQLite], 
@@ -33,10 +33,10 @@ package object angularNs {
     ITemplateLinkingFunction
   ]
   /**
-       * Same as IController. Keeping it for compatibility with older versions of these type definitions.
-       */
+    * Same as IController. Keeping it for compatibility with older versions of these type definitions.
+    */
   type IComponentController = IController
-  type IControllerConstructor = (org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, IController]) | (js.Function1[/* repeated */js.Any, scala.Unit | IController])
+  type IControllerConstructor = (org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, IController]) | (js.Function1[/* repeated */ js.Any, scala.Unit | IController])
   type IDirectiveCompileFn[TScope /* <: IScope */, TElement /* <: angularLib.JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */] = js.Function3[
     /* templateElement */ TElement, 
     /* templateAttributes */ TAttributes, 
@@ -50,7 +50,7 @@ package object angularNs {
   ///////////////////////////////////////////////////////////////////////////
   type IDirectiveController = IController | js.Array[IController] | org.scalablytyped.runtime.StringDictionary[IController]
   type IDirectiveFactory[TScope /* <: IScope */, TElement /* <: angularLib.JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */] = js.Function1[
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     (IDirective[TScope, TElement, TAttributes, TController]) | (IDirectiveLinkFn[TScope, TElement, TAttributes, TController])
   ]
   type IDirectiveLinkFn[TScope /* <: IScope */, TElement /* <: angularLib.JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */] = js.Function5[
@@ -121,11 +121,11 @@ package object angularNs {
     /* withCredentials */ js.UndefOr[scala.Boolean], 
     scala.Unit
   ]
-  type IHttpInterceptorFactory = js.Function1[/* repeated */js.Any, IHttpInterceptor]
+  type IHttpInterceptorFactory = js.Function1[/* repeated */ js.Any, IHttpInterceptor]
   /**
-       * $http params serializer that converts objects to strings
-       * see https://docs.angularjs.org/api/ng/service/$httpParamSerializer
-       */
+    * $http params serializer that converts objects to strings
+    * see https://docs.angularjs.org/api/ng/service/$httpParamSerializer
+    */
   type IHttpParamSerializer = js.Function1[/* obj */ js.Object, java.lang.String]
   type IHttpPromise[T] = IPromise[IHttpResponse[T]]
   type IHttpPromiseCallback[T] = js.Function4[
@@ -149,7 +149,7 @@ package object angularNs {
   type IInterpolationFunction = js.Function1[/* context */ js.Any, java.lang.String]
   // We define this as separate interface so we can reopen it later for
   // the ngMock module.
-  type ILogCall = js.Function1[/* repeated */js.Any, scala.Unit]
+  type ILogCall = js.Function1[/* repeated */ js.Any, scala.Unit]
   type IModelFormatter = js.Function1[/* value */ js.Any, js.Any]
   type IModelParser = js.Function1[/* value */ js.Any, js.Any]
   type IModelViewChangeListener = js.Function0[scala.Unit]
@@ -172,7 +172,7 @@ package object angularNs {
   ///////////////////////////////////////////////////////////////////////////
   type IRootElementService = angularLib.JQLite
   type IScope = IRootScopeService
-  type IServiceProviderFactory = js.Function1[/* repeated */js.Any, IServiceProvider]
+  type IServiceProviderFactory = js.Function1[/* repeated */ js.Any, IServiceProvider]
   ///////////////////////////////////////////////////////////////////////////
   // TemplateCacheService
   // see http://docs.angularjs.org/api/ng.$templateCache
@@ -186,10 +186,10 @@ package object angularNs {
     angularLib.JQLite
   ]
   /**
-       * xhrFactory
-       * Replace or decorate this service to create your own custom XMLHttpRequest objects.
-       * see https://docs.angularjs.org/api/ng/service/$xhrFactory
-       */
+    * xhrFactory
+    * Replace or decorate this service to create your own custom XMLHttpRequest objects.
+    * see https://docs.angularjs.org/api/ng/service/$xhrFactory
+    */
   type IXhrFactory[T] = js.Function2[/* method */ java.lang.String, /* url */ java.lang.String, T]
   type Injectable[T /* <: angularLib.angularMod.Global.Function */] = T | (js.Array[java.lang.String | T])
 }

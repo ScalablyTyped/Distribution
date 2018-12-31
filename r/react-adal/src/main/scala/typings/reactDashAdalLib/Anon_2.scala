@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_2 extends js.Object {
   var `0`: reactDashAdalLib.reactDashAdalLibStrings.`ERROR:`
   var `1`: reactDashAdalLib.reactDashAdalLibStrings.`WARNING:`

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Options associated with a delete operation. */
-
 trait IDeleteOptions extends js.Object {
   /**
   	 * The entity tag associated with the resource.

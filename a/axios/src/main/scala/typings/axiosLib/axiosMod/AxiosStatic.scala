@@ -13,6 +13,6 @@ trait AxiosStatic extends AxiosInstance {
   def create(): AxiosInstance = js.native
   def create(config: AxiosRequestConfig): AxiosInstance = js.native
   def isCancel(value: js.Any): scala.Boolean = js.native
-  def spread[T, R](callback: js.Function1[/* repeated */T, R]): js.Function1[/* array */ js.Array[T], R] = js.native
+  def spread[T, R](callback: js.Function1[/* repeated */ T, R]): js.Function1[/* array */ js.Array[T], R] = js.native
 }
 

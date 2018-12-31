@@ -36,12 +36,18 @@ trait Eth extends js.Object {
   def estimateGas(tx: web3Lib.ethTypesMod.Tx, callback: web3Lib.typesMod.Callback[scala.Double]): js.Promise[scala.Double] = js.native
   def getAccounts(): js.Promise[js.Array[java.lang.String]] = js.native
   def getAccounts(cb: web3Lib.typesMod.Callback[js.Array[java.lang.String]]): js.Promise[js.Array[java.lang.String]] = js.native
-  def getBalance(address: java.lang.String): js.Promise[_] = js.native
-  def getBalance(address: java.lang.String, defaultBlock: web3Lib.ethTypesMod.BlockType): js.Promise[_] = js.native
+  def getBalance(address: java.lang.String): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BigNumber */ _
+  ] = js.native
+  def getBalance(address: java.lang.String, defaultBlock: web3Lib.ethTypesMod.BlockType): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BigNumber */ _
+  ] = js.native
   def getBalance(
     address: java.lang.String,
     defaultBlock: web3Lib.ethTypesMod.BlockType,
-    cb: web3Lib.typesMod.Callback[_]
+    cb: web3Lib.typesMod.Callback[
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BigNumber */ _
+    ]
   ): scala.Unit = js.native
   def getBlock(number: web3Lib.ethTypesMod.BlockType): js.Promise[web3Lib.ethTypesMod.Block] = js.native
   def getBlock(number: web3Lib.ethTypesMod.BlockType, returnTransactionObjects: scala.Boolean): js.Promise[web3Lib.ethTypesMod.Block] = js.native
@@ -79,11 +85,18 @@ trait Eth extends js.Object {
   def getPastLogs(options: web3Lib.Anon_FromBlock, cb: web3Lib.typesMod.Callback[js.Array[web3Lib.typesMod.Log]]): js.Promise[js.Array[web3Lib.typesMod.Log]] = js.native
   def getProtocolVersion(): js.Promise[java.lang.String] = js.native
   def getProtocolVersion(cb: web3Lib.typesMod.Callback[java.lang.String]): js.Promise[java.lang.String] = js.native
-  def getStorageAt(address: java.lang.String, position: js.Any): js.Promise[java.lang.String] = js.native
-  def getStorageAt(address: java.lang.String, position: js.Any, defaultBlock: web3Lib.ethTypesMod.BlockType): js.Promise[java.lang.String] = js.native
   def getStorageAt(
     address: java.lang.String,
-    position: js.Any,
+    position: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BigNumber */ js.Any
+  ): js.Promise[java.lang.String] = js.native
+  def getStorageAt(
+    address: java.lang.String,
+    position: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BigNumber */ js.Any,
+    defaultBlock: web3Lib.ethTypesMod.BlockType
+  ): js.Promise[java.lang.String] = js.native
+  def getStorageAt(
+    address: java.lang.String,
+    position: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BigNumber */ js.Any,
     defaultBlock: web3Lib.ethTypesMod.BlockType,
     cb: web3Lib.typesMod.Callback[java.lang.String]
   ): js.Promise[java.lang.String] = js.native

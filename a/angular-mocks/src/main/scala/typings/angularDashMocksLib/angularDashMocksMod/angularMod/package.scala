@@ -23,7 +23,7 @@ package object angularMod {
   // This interface extends http://docs.angularjs.org/api/ng.$controller
   ///////////////////////////////////////////////////////////////////////////
   type IControllerService = js.Function3[
-    /* controllerConstructor */ (org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any]) | (js.Function1[/* repeated */js.Any, js.Any]) | java.lang.String, 
+    /* controllerConstructor */ (org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any]) | (js.Function1[/* repeated */ js.Any, js.Any]) | java.lang.String, 
     /* locals */ js.UndefOr[js.Any], 
     /* bindings */ js.UndefOr[js.Any], 
     js.Any

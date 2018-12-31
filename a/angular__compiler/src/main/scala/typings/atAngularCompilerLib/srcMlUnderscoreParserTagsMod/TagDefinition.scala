@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TagDefinition extends js.Object {
   var canSelfClose: scala.Boolean
   var closedByParent: scala.Boolean

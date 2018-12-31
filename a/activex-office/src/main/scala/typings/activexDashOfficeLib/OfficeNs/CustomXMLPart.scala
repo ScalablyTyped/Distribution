@@ -24,49 +24,21 @@ class CustomXMLPart protected () extends js.Object {
   var SchemaCollection_Original: CustomXMLSchemaCollection = js.native
   val XML: java.lang.String = js.native
   /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NextSibling [NextSibling=0]
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           */
+    * @param Name [Name='']
+    * @param NamespaceURI [NamespaceURI='']
+    * @param NextSibling [NextSibling=0]
+    * @param NodeType [NodeType=1]
+    * @param NodeValue [NodeValue='']
+    */
   def AddNode(Parent: CustomXMLNode): scala.Unit = js.native
-  /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NextSibling [NextSibling=0]
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           */
   def AddNode(Parent: CustomXMLNode, Name: java.lang.String): scala.Unit = js.native
-  /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NextSibling [NextSibling=0]
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           */
   def AddNode(Parent: CustomXMLNode, Name: java.lang.String, NamespaceURI: java.lang.String): scala.Unit = js.native
-  /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NextSibling [NextSibling=0]
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           */
   def AddNode(
     Parent: CustomXMLNode,
     Name: java.lang.String,
     NamespaceURI: java.lang.String,
     NextSibling: CustomXMLNode
   ): scala.Unit = js.native
-  /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NextSibling [NextSibling=0]
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           */
   def AddNode(
     Parent: CustomXMLNode,
     Name: java.lang.String,
@@ -74,13 +46,6 @@ class CustomXMLPart protected () extends js.Object {
     NextSibling: CustomXMLNode,
     NodeType: MsoCustomXMLNodeType
   ): scala.Unit = js.native
-  /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NextSibling [NextSibling=0]
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           */
   def AddNode(
     Parent: CustomXMLNode,
     Name: java.lang.String,

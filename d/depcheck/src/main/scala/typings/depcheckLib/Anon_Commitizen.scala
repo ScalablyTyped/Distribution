@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Commitizen extends js.Object {
   var babel: depcheckLib.depcheckMod.depcheckNs.Parser
   var bin: depcheckLib.depcheckMod.depcheckNs.Parser

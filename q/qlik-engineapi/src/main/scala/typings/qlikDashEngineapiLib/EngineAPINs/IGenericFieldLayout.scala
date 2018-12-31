@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * GenericFieldLayout width extend GenericObjectLayout
-     */
-
+  * GenericFieldLayout width extend GenericObjectLayout
+  */
 trait IGenericFieldLayout extends IGenericBaseLayout {
   /**
-           * FieldListObject...
-           */
+    * FieldListObject...
+    */
   var qFieldListObject: IFieldList
 }
 

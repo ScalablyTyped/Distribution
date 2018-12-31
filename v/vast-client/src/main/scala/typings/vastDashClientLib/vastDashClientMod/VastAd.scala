@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VastAd extends js.Object {
   var advertiser: js.Any
   var creatives: js.Array[VastCreative]

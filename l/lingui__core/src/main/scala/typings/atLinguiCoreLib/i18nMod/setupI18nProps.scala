@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait setupI18nProps extends js.Object {
   var catalogs: js.UndefOr[Catalogs] = js.undefined
   var development: js.UndefOr[js.Object] = js.undefined

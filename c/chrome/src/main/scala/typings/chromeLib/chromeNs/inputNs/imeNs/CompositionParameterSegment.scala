@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompositionParameterSegment extends js.Object {
   /** Index of the character to end this segment after. */
   var end: scala.Double

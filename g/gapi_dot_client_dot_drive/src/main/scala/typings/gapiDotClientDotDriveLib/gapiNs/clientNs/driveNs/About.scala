@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait About extends js.Object {
   /** Whether the user has installed the requesting app. */
   var appInstalled: js.UndefOr[scala.Boolean] = js.undefined

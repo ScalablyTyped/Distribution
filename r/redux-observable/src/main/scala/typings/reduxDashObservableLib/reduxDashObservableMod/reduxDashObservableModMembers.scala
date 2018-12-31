@@ -15,6 +15,6 @@ object reduxDashObservableModMembers extends js.Object {
   def combineEpics_TActionOTSDEpic[T /* <: reduxLib.reduxMod.Action[_] */, O /* <: T */, S, D](epics: (Epic[T, O, S, D])*): Epic[T, O, S, D] = js.native
   def createEpicMiddleware[T /* <: reduxLib.reduxMod.Action[_] */, O /* <: T */, S, D](): EpicMiddleware[T, O, S, D] = js.native
   def createEpicMiddleware[T /* <: reduxLib.reduxMod.Action[_] */, O /* <: T */, S, D](options: Options[D]): EpicMiddleware[T, O, S, D] = js.native
-  def ofType[T /* <: reduxLib.reduxMod.Action[_] */, R /* <: T */, K /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(R))),List()),Left(TsIdentSimple(type))) */js.Any */](key: K*): js.Function1[/* source */ rxjsLib.rxjsMod.Observable[T], rxjsLib.rxjsMod.Observable[R]] = js.native
+  def ofType[T /* <: reduxLib.reduxMod.Action[_] */, R /* <: T */, K /* <: /* import warning: ImportType.apply Failed type conversion: R['type'] */ js.Any */](key: K*): js.Function1[/* source */ rxjsLib.rxjsMod.Observable[T], rxjsLib.rxjsMod.Observable[R]] = js.native
 }
 

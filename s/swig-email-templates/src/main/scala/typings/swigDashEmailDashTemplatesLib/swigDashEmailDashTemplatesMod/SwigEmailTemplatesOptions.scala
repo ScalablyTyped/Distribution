@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SwigEmailTemplatesOptions
   extends swigLib.swigMod.SwigOptions {
   var juice: js.UndefOr[js.Any] = js.undefined

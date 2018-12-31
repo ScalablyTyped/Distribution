@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectOptions extends js.Object {
   var abortOnIceServersTimeout: js.UndefOr[scala.Boolean] = js.undefined
   var audio: js.UndefOr[scala.Boolean | CreateLocalTrackOptions] = js.undefined

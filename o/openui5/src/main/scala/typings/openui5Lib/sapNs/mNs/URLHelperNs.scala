@@ -9,87 +9,39 @@ import scala.scalajs.js.annotation._
 @js.native
 object URLHelperNs extends js.Object {
   /**
-         * Adds an event registration for redirect.
-         * @param fnFunction The function to call, when the event occurs.
-         * @param oListener The object, that wants to be notified, when the event occurs.
-         * @returns sap.m.URLHelper instance
-        */
+    * Adds an event registration for redirect.
+    * @param fnFunction The function to call, when the event occurs.
+    * @param oListener The object, that wants to be notified, when the event occurs.
+    * @returns sap.m.URLHelper instance
+    */
   def attachRedirect(fnFunction: js.Any): js.Any = js.native
-  /**
-         * Adds an event registration for redirect.
-         * @param fnFunction The function to call, when the event occurs.
-         * @param oListener The object, that wants to be notified, when the event occurs.
-         * @returns sap.m.URLHelper instance
-        */
   def attachRedirect(fnFunction: js.Any, oListener: js.Any): js.Any = js.native
   /**
-         * Detach already registered redirect event.
-         * @param fnFunction The function to call, when the event occurs.
-         * @param oListener The object, that wants to be notified, when the event occurs.
-         * @returns sap.m.URLHelper instance
-        */
+    * Detach already registered redirect event.
+    * @param fnFunction The function to call, when the event occurs.
+    * @param oListener The object, that wants to be notified, when the event occurs.
+    * @returns sap.m.URLHelper instance
+    */
   def detachRedirect(fnFunction: js.Any): js.Any = js.native
-  /**
-         * Detach already registered redirect event.
-         * @param fnFunction The function to call, when the event occurs.
-         * @param oListener The object, that wants to be notified, when the event occurs.
-         * @returns sap.m.URLHelper instance
-        */
   def detachRedirect(fnFunction: js.Any, oListener: js.Any): js.Any = js.native
   /**
-         * Builds Email URI from given parameter.Trims spaces from email addresses.
-         * @param sEmail Destination email address
-         * @param sSubject Subject of the email address
-         * @param sBody Default message text
-         * @param sCC Carbon Copy email address
-         * @param sBCC Blind carbon copy email address
-         * @returns Email URI scheme
-        */
+    * Builds Email URI from given parameter.Trims spaces from email addresses.
+    * @param sEmail Destination email address
+    * @param sSubject Subject of the email address
+    * @param sBody Default message text
+    * @param sCC Carbon Copy email address
+    * @param sBCC Blind carbon copy email address
+    * @returns Email URI scheme
+    */
   def normalizeEmail(sEmail: java.lang.String): java.lang.String = js.native
-  /**
-         * Builds Email URI from given parameter.Trims spaces from email addresses.
-         * @param sEmail Destination email address
-         * @param sSubject Subject of the email address
-         * @param sBody Default message text
-         * @param sCC Carbon Copy email address
-         * @param sBCC Blind carbon copy email address
-         * @returns Email URI scheme
-        */
   def normalizeEmail(sEmail: java.lang.String, sSubject: java.lang.String): java.lang.String = js.native
-  /**
-         * Builds Email URI from given parameter.Trims spaces from email addresses.
-         * @param sEmail Destination email address
-         * @param sSubject Subject of the email address
-         * @param sBody Default message text
-         * @param sCC Carbon Copy email address
-         * @param sBCC Blind carbon copy email address
-         * @returns Email URI scheme
-        */
   def normalizeEmail(sEmail: java.lang.String, sSubject: java.lang.String, sBody: java.lang.String): java.lang.String = js.native
-  /**
-         * Builds Email URI from given parameter.Trims spaces from email addresses.
-         * @param sEmail Destination email address
-         * @param sSubject Subject of the email address
-         * @param sBody Default message text
-         * @param sCC Carbon Copy email address
-         * @param sBCC Blind carbon copy email address
-         * @returns Email URI scheme
-        */
   def normalizeEmail(
     sEmail: java.lang.String,
     sSubject: java.lang.String,
     sBody: java.lang.String,
     sCC: java.lang.String
   ): java.lang.String = js.native
-  /**
-         * Builds Email URI from given parameter.Trims spaces from email addresses.
-         * @param sEmail Destination email address
-         * @param sSubject Subject of the email address
-         * @param sBody Default message text
-         * @param sCC Carbon Copy email address
-         * @param sBCC Blind carbon copy email address
-         * @returns Email URI scheme
-        */
   def normalizeEmail(
     sEmail: java.lang.String,
     sSubject: java.lang.String,
@@ -98,86 +50,45 @@ object URLHelperNs extends js.Object {
     sBCC: java.lang.String
   ): java.lang.String = js.native
   /**
-         * Sanitizes the given telephone number and returns SMS URI scheme.
-         * @param sTel Telephone number
-         * @returns SMS URI scheme
-        */
+    * Sanitizes the given telephone number and returns SMS URI scheme.
+    * @param sTel Telephone number
+    * @returns SMS URI scheme
+    */
   def normalizeSms(sTel: java.lang.String): java.lang.String = js.native
   /**
-         * Sanitizes the given telephone number and returns a telephone URI scheme.
-         * @param sTel Telephone number
-         * @returns Telephone URI scheme
-        */
+    * Sanitizes the given telephone number and returns a telephone URI scheme.
+    * @param sTel Telephone number
+    * @returns Telephone URI scheme
+    */
   def normalizeTel(sTel: java.lang.String): java.lang.String = js.native
   /**
-         * Redirects to the given URL.This method fires "redirect" event before opening the URL.
-         * @param sURL Uniform resource locator
-         * @param bNewWindow Opens URL in a new browser window or tab. Please note that, opening a new
-         * window/tab can be ignored by browsers(e.g. on Windows Phone) or by popup blockers.NOTE: On Windows
-         * Phone the URL will be enforced to open in the same window if opening in a new window/tab fails
-         * (because of a known system restriction on cross-window communications). Use sap.m.Link instead (with
-         * blank target) if you necessarily need to open URL in a new window.
-        */
+    * Redirects to the given URL.This method fires "redirect" event before opening the URL.
+    * @param sURL Uniform resource locator
+    * @param bNewWindow Opens URL in a new browser window or tab. Please note that, opening a new
+    * window/tab can be ignored by browsers(e.g. on Windows Phone) or by popup blockers.NOTE: On Windows
+    * Phone the URL will be enforced to open in the same window if opening in a new window/tab fails
+    * (because of a known system restriction on cross-window communications). Use sap.m.Link instead (with
+    * blank target) if you necessarily need to open URL in a new window.
+    */
   def redirect(sURL: java.lang.String): scala.Unit = js.native
-  /**
-         * Redirects to the given URL.This method fires "redirect" event before opening the URL.
-         * @param sURL Uniform resource locator
-         * @param bNewWindow Opens URL in a new browser window or tab. Please note that, opening a new
-         * window/tab can be ignored by browsers(e.g. on Windows Phone) or by popup blockers.NOTE: On Windows
-         * Phone the URL will be enforced to open in the same window if opening in a new window/tab fails
-         * (because of a known system restriction on cross-window communications). Use sap.m.Link instead (with
-         * blank target) if you necessarily need to open URL in a new window.
-        */
   def redirect(sURL: java.lang.String, bNewWindow: scala.Boolean): scala.Unit = js.native
   /**
-         * Trigger email application to send email.Trims spaces from email addresses.
-         * @param sEmail Destination email address
-         * @param sSubject Subject of the email address
-         * @param sBody Default message text
-         * @param sCC Carbon Copy email address
-         * @param sBCC Blind carbon copy email address
-        */
+    * Trigger email application to send email.Trims spaces from email addresses.
+    * @param sEmail Destination email address
+    * @param sSubject Subject of the email address
+    * @param sBody Default message text
+    * @param sCC Carbon Copy email address
+    * @param sBCC Blind carbon copy email address
+    */
   def triggerEmail(sEmail: java.lang.String): scala.Unit = js.native
-  /**
-         * Trigger email application to send email.Trims spaces from email addresses.
-         * @param sEmail Destination email address
-         * @param sSubject Subject of the email address
-         * @param sBody Default message text
-         * @param sCC Carbon Copy email address
-         * @param sBCC Blind carbon copy email address
-        */
   def triggerEmail(sEmail: java.lang.String, sSubject: java.lang.String): scala.Unit = js.native
-  /**
-         * Trigger email application to send email.Trims spaces from email addresses.
-         * @param sEmail Destination email address
-         * @param sSubject Subject of the email address
-         * @param sBody Default message text
-         * @param sCC Carbon Copy email address
-         * @param sBCC Blind carbon copy email address
-        */
   def triggerEmail(sEmail: java.lang.String, sSubject: java.lang.String, sBody: java.lang.String): scala.Unit = js.native
-  /**
-         * Trigger email application to send email.Trims spaces from email addresses.
-         * @param sEmail Destination email address
-         * @param sSubject Subject of the email address
-         * @param sBody Default message text
-         * @param sCC Carbon Copy email address
-         * @param sBCC Blind carbon copy email address
-        */
   def triggerEmail(
     sEmail: java.lang.String,
     sSubject: java.lang.String,
     sBody: java.lang.String,
     sCC: java.lang.String
   ): scala.Unit = js.native
-  /**
-         * Trigger email application to send email.Trims spaces from email addresses.
-         * @param sEmail Destination email address
-         * @param sSubject Subject of the email address
-         * @param sBody Default message text
-         * @param sCC Carbon Copy email address
-         * @param sBCC Blind carbon copy email address
-        */
   def triggerEmail(
     sEmail: java.lang.String,
     sSubject: java.lang.String,
@@ -186,14 +97,14 @@ object URLHelperNs extends js.Object {
     sBCC: java.lang.String
   ): scala.Unit = js.native
   /**
-         * Trigger SMS application to send SMS to given telephone number.
-         * @param sTel Telephone number
-        */
+    * Trigger SMS application to send SMS to given telephone number.
+    * @param sTel Telephone number
+    */
   def triggerSms(sTel: java.lang.String): scala.Unit = js.native
   /**
-         * Trigger telephone to call given telephone number.
-         * @param sTel Telephone number
-        */
+    * Trigger telephone to call given telephone number.
+    * @param sTel Telephone number
+    */
   def triggerTel(sTel: java.lang.String): scala.Unit = js.native
 }
 

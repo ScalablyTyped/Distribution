@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait File extends js.Object {
   /** Textual Content. */
   var content: js.UndefOr[java.lang.String] = js.undefined

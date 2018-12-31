@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Index
   extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var created_at: scala.Double

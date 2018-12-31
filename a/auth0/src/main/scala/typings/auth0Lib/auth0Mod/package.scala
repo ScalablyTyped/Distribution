@@ -12,7 +12,7 @@ package object auth0Mod {
   type DeleteDeleteMultifactorParamsProvider = auth0Lib.auth0LibStrings.duo | auth0Lib.auth0LibStrings.`google-authenticator`
   type PasswordLessClientOptions = BaseClientOptions
   type SendType = auth0Lib.auth0LibStrings.link | auth0Lib.auth0LibStrings.code
-  type Strategy = /* LimitUnionLength: was union type with length 59 */java.lang.String
-  type UnlinkAccountsParamsProvider = /* LimitUnionLength: was union type with length 58 */java.lang.String
+  type Strategy = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 59 */ java.lang.String
+  type UnlinkAccountsParamsProvider = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 58 */ java.lang.String
   type UpdateClientGrant = stdLib.Pick[stdLib.Partial[CreateClientGrant], auth0Lib.auth0LibStrings.scope]
 }

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Interface used to describe a physics joint
-     */
-
+  * Interface used to describe a physics joint
+  */
 trait PhysicsImpostorJoint extends js.Object {
   /** Defines the impostor that is connected to the main impostor using this joint */
   var connectedImpostor: PhysicsImpostor

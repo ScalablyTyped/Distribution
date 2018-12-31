@@ -12,51 +12,51 @@ abstract class AsymmetricKeyAlgorithmProvider () extends js.Object {
   /** Gets the name of the open asymmetric algorithm. */
   var algorithmName: java.lang.String = js.native
   /**
-                       * Creates a public/private key pair.
-                       * @param keySize Size, in bits, of the key. Typical key sizes are 512, 1024, 2048, or 4096 bits.
-                       * @return Represents the asymmetric key pair.
-                       */
+    * Creates a public/private key pair.
+    * @param keySize Size, in bits, of the key. Typical key sizes are 512, 1024, 2048, or 4096 bits.
+    * @return Represents the asymmetric key pair.
+    */
   def createKeyPair(keySize: scala.Double): CryptographicKey = js.native
   /**
-                       * Creates a public/private key pair using a curve name.
-                       * @param curveName The name of the curve.
-                       * @return Represents the asymmetric key pair.
-                       */
+    * Creates a public/private key pair using a curve name.
+    * @param curveName The name of the curve.
+    * @return Represents the asymmetric key pair.
+    */
   def createKeyPairWithCurveName(curveName: java.lang.String): CryptographicKey = js.native
   /**
-                       * Creates a public/private key pair using curve parameters.
-                       * @param parameters The curve parameters.
-                       * @return Represents the asymmetric key pair.
-                       */
+    * Creates a public/private key pair using curve parameters.
+    * @param parameters The curve parameters.
+    * @return Represents the asymmetric key pair.
+    */
   def createKeyPairWithCurveParameters(parameters: js.Array[scala.Double]): CryptographicKey = js.native
   /**
-                       * Imports a public/private key pair from a buffer.
-                       * @param keyBlob Buffer that contains the key pair to import.
-                       * @return Represents the imported key pair.
-                       */
+    * Imports a public/private key pair from a buffer.
+    * @param keyBlob Buffer that contains the key pair to import.
+    * @return Represents the imported key pair.
+    */
   def importKeyPair(keyBlob: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer): CryptographicKey = js.native
   /**
-                       * Imports a public/private key pair from a buffer in the specified format.
-                       * @param keyBlob Buffer that contains the key pair to import.
-                       * @param BlobType A CryptographicPrivateKeyBlobType enumeration value that specifies information about the private key contained in the keyBlob buffer. The default value is Pkcs8RawPrivateKeyInfo.
-                       * @return Represents the imported key pair.
-                       */
+    * Imports a public/private key pair from a buffer in the specified format.
+    * @param keyBlob Buffer that contains the key pair to import.
+    * @param BlobType A CryptographicPrivateKeyBlobType enumeration value that specifies information about the private key contained in the keyBlob buffer. The default value is Pkcs8RawPrivateKeyInfo.
+    * @return Represents the imported key pair.
+    */
   def importKeyPair(
     keyBlob: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
     BlobType: CryptographicPrivateKeyBlobType
   ): CryptographicKey = js.native
   /**
-                       * Imports a public key into a buffer.
-                       * @param keyBlob Buffer that contains the key to import.
-                       * @return Represents the imported key.
-                       */
+    * Imports a public key into a buffer.
+    * @param keyBlob Buffer that contains the key to import.
+    * @return Represents the imported key.
+    */
   def importPublicKey(keyBlob: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer): CryptographicKey = js.native
   /**
-                       * Imports a public key into a buffer for a specified format.
-                       * @param keyBlob Buffer that contains the key to import.
-                       * @param BlobType A CryptographicPublicKeyBlobType enumeration value that specifies the format of the public key contained in the keyBlob buffer. The default value is X509SubjectPublicKeyInfo.
-                       * @return Represents the imported key.
-                       */
+    * Imports a public key into a buffer for a specified format.
+    * @param keyBlob Buffer that contains the key to import.
+    * @param BlobType A CryptographicPublicKeyBlobType enumeration value that specifies the format of the public key contained in the keyBlob buffer. The default value is X509SubjectPublicKeyInfo.
+    * @return Represents the imported key.
+    */
   def importPublicKey(
     keyBlob: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
     BlobType: CryptographicPublicKeyBlobType
@@ -68,10 +68,10 @@ abstract class AsymmetricKeyAlgorithmProvider () extends js.Object {
 @js.native
 object AsymmetricKeyAlgorithmProvider extends js.Object {
   /**
-                       * Creates an instance of the AsymmetricKeyAlgorithmProvider class and opens the specified algorithm for use.
-                       * @param algorithm Algorithm name.
-                       * @return Represents a public key algorithm provider.
-                       */
+    * Creates an instance of the AsymmetricKeyAlgorithmProvider class and opens the specified algorithm for use.
+    * @param algorithm Algorithm name.
+    * @return Represents a public key algorithm provider.
+    */
   def openAlgorithm(algorithm: java.lang.String): winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CoreNs.AsymmetricKeyAlgorithmProvider = js.native
 }
 

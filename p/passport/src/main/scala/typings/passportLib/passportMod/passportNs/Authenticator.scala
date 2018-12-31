@@ -8,36 +8,36 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Authenticator[InitializeRet, AuthenticateRet, AuthorizeRet, AuthorizeOptions] extends js.Object {
   def authenticate(strategy: java.lang.String): AuthenticateRet = js.native
-  def authenticate(strategy: java.lang.String, callback: js.Function1[/* repeated */js.Any, _]): AuthenticateRet = js.native
+  def authenticate(strategy: java.lang.String, callback: js.Function1[/* repeated */ js.Any, _]): AuthenticateRet = js.native
   def authenticate(strategy: java.lang.String, options: AuthenticateOptions): AuthenticateRet = js.native
   def authenticate(
     strategy: java.lang.String,
     options: AuthenticateOptions,
-    callback: js.Function1[/* repeated */js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, _]
   ): AuthenticateRet = js.native
   def authenticate(strategy: js.Array[java.lang.String]): AuthenticateRet = js.native
-  def authenticate(strategy: js.Array[java.lang.String], callback: js.Function1[/* repeated */js.Any, _]): AuthenticateRet = js.native
+  def authenticate(strategy: js.Array[java.lang.String], callback: js.Function1[/* repeated */ js.Any, _]): AuthenticateRet = js.native
   def authenticate(strategy: js.Array[java.lang.String], options: AuthenticateOptions): AuthenticateRet = js.native
   def authenticate(
     strategy: js.Array[java.lang.String],
     options: AuthenticateOptions,
-    callback: js.Function1[/* repeated */js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, _]
   ): AuthenticateRet = js.native
   def authorize(strategy: java.lang.String): AuthorizeRet = js.native
-  def authorize(strategy: java.lang.String, callback: js.Function1[/* repeated */js.Any, _]): AuthorizeRet = js.native
+  def authorize(strategy: java.lang.String, callback: js.Function1[/* repeated */ js.Any, _]): AuthorizeRet = js.native
   def authorize(strategy: java.lang.String, options: AuthorizeOptions): AuthorizeRet = js.native
   def authorize(
     strategy: java.lang.String,
     options: AuthorizeOptions,
-    callback: js.Function1[/* repeated */js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, _]
   ): AuthorizeRet = js.native
   def authorize(strategy: js.Array[java.lang.String]): AuthorizeRet = js.native
-  def authorize(strategy: js.Array[java.lang.String], callback: js.Function1[/* repeated */js.Any, _]): AuthorizeRet = js.native
+  def authorize(strategy: js.Array[java.lang.String], callback: js.Function1[/* repeated */ js.Any, _]): AuthorizeRet = js.native
   def authorize(strategy: js.Array[java.lang.String], options: AuthorizeOptions): AuthorizeRet = js.native
   def authorize(
     strategy: js.Array[java.lang.String],
     options: AuthorizeOptions,
-    callback: js.Function1[/* repeated */js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, _]
   ): AuthorizeRet = js.native
   def deserializeUser[TUser, TID](
     fn: js.Function2[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HandlerOptions extends js.Object {
   var autoDelete: js.UndefOr[scala.Boolean] = js.undefined
   var durable: js.UndefOr[scala.Boolean] = js.undefined

@@ -8,33 +8,47 @@ import scala.scalajs.js.annotation._
 @JSGlobal("adone")
 @js.native
 object adoneNsMembers extends js.Object {
-  val Date: js.Any = js.native
+  val Date: js.Function0[java.lang.String] with stdLib.DateConstructor = js.native
   val EMPTY_BUFFER: nodeLib.Buffer = js.native
   val ETC_PATH: java.lang.String = js.native
   val ROOT_PATH: java.lang.String = js.native
   val _null: js.Symbol = js.native
   val assert: adoneLib.adoneNs.assertionNs.INs.AssertFunction = js.native
-  val async: js.Any = js.native
+  val async: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof adone.adone/async */ js.Any = js.native
   val bad: adoneLib.adoneLibStrings.bad = js.native
-  val benchmark: js.Any = js.native
-  val clearImmediate: js.Any = js.native
-  val clearInterval: js.Any = js.native
-  val clearTimeout: js.Any = js.native
+  val benchmark: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof adone.adone/benchmark */ js.Any = js.native
+  val clearImmediate: js.Function1[/* immediateId */ nodeLib.NodeJSNs.Immediate, scala.Unit] = js.native
+  val clearInterval: js.Function1[/* intervalId */ nodeLib.NodeJSNs.Timeout, scala.Unit] = js.native
+  val clearTimeout: js.Function1[/* timeoutId */ nodeLib.NodeJSNs.Timeout, scala.Unit] = js.native
   val configuration: js.Object = js.native
   /**
-       * Creates a new datetime object
-       */
+    * Creates a new datetime object
+    */
   val datetime: adoneLib.adoneNs.INs.datetimeNs.DatetimeFunction = js.native
   val expect: adoneLib.adoneNs.assertionNs.INs.ExpectFunction = js.native
-  val hrtime: js.Any = js.native
+  val hrtime: nodeLib.NodeJSNs.Process = js.native
   val lodash: lodashLib.lodashMod.underscoreNs.LoDashStatic = js.native
   val ok: adoneLib.adoneLibStrings.ok = js.native
   val `package`: js.Object = js.native
   val runtime: adoneLib.adoneNs.INs.Runtime = js.native
-  val setImmediate: js.Any = js.native
-  val setInterval: js.Any = js.native
-  val setTimeout: js.Any = js.native
-  val std: js.Any = js.native
+  val setImmediate: js.Function2[
+    /* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], 
+    /* repeated */ js.Any, 
+    nodeLib.NodeJSNs.Immediate
+  ] = js.native
+  val setInterval: js.Function3[
+    /* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], 
+    /* ms */ scala.Double, 
+    /* repeated */ js.Any, 
+    nodeLib.NodeJSNs.Timeout
+  ] = js.native
+  val setTimeout: js.Function3[
+    /* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], 
+    /* ms */ scala.Double, 
+    /* repeated */ js.Any, 
+    nodeLib.NodeJSNs.Timeout
+  ] = js.native
+  val std: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof adone.adone/glosses/std */ js.Any = js.native
   val tag: adoneLib.adoneNs.INs.Tag = js.native
   def definePrivate(modules: js.Object, obj: js.Object): js.Object = js.native
   def falsely(): adoneLib.adoneLibNumbers.`false` = js.native

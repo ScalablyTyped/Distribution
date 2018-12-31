@@ -11,8 +11,7 @@ trait VueConstructor[V /* <: Vue */]
 org.scalablytyped.runtime.Instantiable0[
       CombinedVueInstance[V, js.Object, js.Object, js.Object, stdLib.Record[java.lang.String, js.Any]]
     ]
-     with // ideally, the return type should just contain Props, not Record<keyof Props, any>. But TS requires to have Base constructors with the same return type.
-org.scalablytyped.runtime.Instantiable1[
+     with org.scalablytyped.runtime.Instantiable1[
       (/* options */ vueLib.typesOptionsMod.ComponentOptions[
         V, 
         vueLib.typesOptionsMod.DefaultData[V], 

@@ -6,18 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * SecretReference represents a Secret Reference. It has enough information to retrieve secret
-         * in any namespace
-         */
-
+  * SecretReference represents a Secret Reference. It has enough information to retrieve secret
+  * in any namespace
+  */
 trait SecretReference extends js.Object {
   /**
-               * Name is unique within a namespace to reference a secret resource.
-               */
+    * Name is unique within a namespace to reference a secret resource.
+    */
   val name: java.lang.String
   /**
-               * Namespace defines the space within which the secret name must be unique.
-               */
+    * Namespace defines the space within which the secret name must be unique.
+    */
   val namespace: java.lang.String
 }
 

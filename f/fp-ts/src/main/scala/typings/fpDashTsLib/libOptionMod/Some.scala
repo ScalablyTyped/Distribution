@@ -28,8 +28,8 @@ class Some[A] protected () extends js.Object {
   def getOrElse(a: A): A = js.native
   def getOrElseL(f: js.Function0[A]): A = js.native
   def inspect(): java.lang.String = js.native
-  def isNone(): /* is None */scala.Boolean = js.native
-  def isSome(): /* is Some */scala.Boolean = js.native
+  def isNone(): /* is fp-ts.fp-ts/lib/Option.None<A> */ scala.Boolean = js.native
+  def isSome(): /* is fp-ts.fp-ts/lib/Option.Some<A> */ scala.Boolean = js.native
   def map[B](f: js.Function1[/* a */ A, B]): Option[B] = js.native
   def mapNullable[B](f: js.Function1[/* a */ A, js.UndefOr[B | scala.Null]]): Option[B] = js.native
   def orElse(fa: fpDashTsLib.libFunctionMod.Lazy[Option[A]]): Option[A] = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WordWrapOptions extends js.Object {
   var countAnsiEscapeCodes: js.UndefOr[scala.Boolean] = js.undefined
   var join: js.UndefOr[scala.Boolean] = js.undefined

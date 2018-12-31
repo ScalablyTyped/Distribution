@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEdgeGestureEventArgs extends js.Object {
   var kind: EdgeGestureKind
 }

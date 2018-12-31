@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinearOptimizationSolution extends js.Object {
   def getObjectiveValue(): stdLib.Number
   def getStatus(): Status

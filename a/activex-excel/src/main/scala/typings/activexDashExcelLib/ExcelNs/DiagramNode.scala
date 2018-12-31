@@ -20,19 +20,11 @@ class DiagramNode protected () extends js.Object {
   val Shape: Shape = js.native
   val TextShape: Shape = js.native
   /**
-           * @param pos [pos=2]
-           * @param nodeType [nodeType=1]
-           */
+    * @param pos [pos=2]
+    * @param nodeType [nodeType=1]
+    */
   def AddNode(): DiagramNode = js.native
-  /**
-           * @param pos [pos=2]
-           * @param nodeType [nodeType=1]
-           */
   def AddNode(pos: activexDashOfficeLib.OfficeNs.MsoRelativeNodePosition): DiagramNode = js.native
-  /**
-           * @param pos [pos=2]
-           * @param nodeType [nodeType=1]
-           */
   def AddNode(
     pos: activexDashOfficeLib.OfficeNs.MsoRelativeNodePosition,
     nodeType: activexDashOfficeLib.OfficeNs.MsoDiagramNodeType
@@ -40,7 +32,6 @@ class DiagramNode protected () extends js.Object {
   def Children(Index: js.Any): DiagramNode = js.native
   /** @param pos [pos=2] */
   def CloneNode(copyChildren: scala.Boolean, pTargetNode: DiagramNode): DiagramNode = js.native
-  /** @param pos [pos=2] */
   def CloneNode(
     copyChildren: scala.Boolean,
     pTargetNode: DiagramNode,
@@ -53,7 +44,6 @@ class DiagramNode protected () extends js.Object {
   def ReplaceNode(pTargetNode: DiagramNode): scala.Unit = js.native
   /** @param swapChildren [swapChildren=true] */
   def SwapNode(pTargetNode: DiagramNode): scala.Unit = js.native
-  /** @param swapChildren [swapChildren=true] */
   def SwapNode(pTargetNode: DiagramNode, swapChildren: scala.Boolean): scala.Unit = js.native
   def TransferChildren(pReceivingNode: DiagramNode): scala.Unit = js.native
 }

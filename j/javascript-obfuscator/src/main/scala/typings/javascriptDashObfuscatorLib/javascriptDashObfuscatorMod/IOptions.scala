@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOptions
   extends /* id */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var compact: js.UndefOr[scala.Boolean] = js.undefined

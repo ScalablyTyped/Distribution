@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DynatreeOptions extends js.Object {
    // 1:activate, 2:expand, 3:activate and expand
   var activeVisible: js.UndefOr[scala.Boolean] = js.undefined

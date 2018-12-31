@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MattersResource extends js.Object {
   var holds: HoldsResource
   /** Adds an account as a matter collaborator. */
@@ -13,10 +12,10 @@ trait MattersResource extends js.Object {
   /** Closes the specified matter. Returns matter with updated state. */
   def close(request: gapiDotClientDotVaultLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[CloseMatterResponse]
   /**
-               * Creates a new matter with the given name and description. The initial state
-               * is open, and the owner is the method caller. Returns the created matter
-               * with default view.
-               */
+    * Creates a new matter with the given name and description. The initial state
+    * is open, and the owner is the method caller. Returns the created matter
+    * with default view.
+    */
   def create(request: gapiDotClientDotVaultLib.Anon_AccesstokenPrettyPrintBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Matter]
   /** Deletes the specified matter. Returns matter with updated state. */
   def delete(request: gapiDotClientDotVaultLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Matter]
@@ -31,11 +30,11 @@ trait MattersResource extends js.Object {
   /** Undeletes the specified matter. Returns matter with updated state. */
   def undelete(request: gapiDotClientDotVaultLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Matter]
   /**
-               * Updates the specified matter.
-               * This updates only the name and description of the matter, identified by
-               * matter id. Changes to any other fields are ignored.
-               * Returns the default view of the matter.
-               */
+    * Updates the specified matter.
+    * This updates only the name and description of the matter, identified by
+    * matter id. Changes to any other fields are ignored.
+    * Returns the default view of the matter.
+    */
   def update(request: gapiDotClientDotVaultLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Matter]
 }
 

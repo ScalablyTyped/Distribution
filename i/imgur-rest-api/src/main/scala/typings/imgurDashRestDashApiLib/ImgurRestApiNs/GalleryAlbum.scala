@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GalleryAlbum extends GalleryItem {
   var cover: java.lang.String
   var cover_height: scala.Double

@@ -92,7 +92,6 @@ object htmlNs extends js.Object {
     def serialize(node: Node): java.lang.String = js.native
   }
   
-  
   trait Styles extends js.Object {
     def parse(css: java.lang.String): js.Object
     def serialize(styles: js.Object, elementName: java.lang.String): java.lang.String

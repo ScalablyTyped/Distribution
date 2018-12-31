@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseChain[T] extends js.Object {
   def beginsWith(value: js.Any): T
   def between(value1: js.Any, value2: js.Any): T

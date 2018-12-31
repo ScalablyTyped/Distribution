@@ -78,7 +78,6 @@ trait RestClient extends Client {
   def listSms(callback: RequestCallback): qLib.qMod.QNs.Promise[_] = js.native
   // Calls shorthand
   def makeCall(args: js.Any): qLib.qMod.QNs.Promise[_] = js.native
-  // Calls shorthand
   def makeCall(args: js.Any, callback: RequestCallback): qLib.qMod.QNs.Promise[_] = js.native
   // Calls shorthand
   def makeCall(callback: RequestCallback): qLib.qMod.QNs.Promise[_] = js.native
@@ -87,7 +86,6 @@ trait RestClient extends Client {
   def post(callback: RequestCallback): qLib.qMod.QNs.Promise[_] = js.native
   // Mixed-in Methods
   def put(args: js.Any): qLib.qMod.QNs.Promise[_] = js.native
-  // Mixed-in Methods
   def put(args: js.Any, callback: RequestCallback): qLib.qMod.QNs.Promise[_] = js.native
   // Mixed-in Methods
   def put(callback: RequestCallback): qLib.qMod.QNs.Promise[_] = js.native
@@ -99,7 +97,6 @@ trait RestClient extends Client {
   def sendMms(callback: RequestCallback): qLib.qMod.QNs.Promise[_] = js.native
   // Messaging shorthand
   def sendSms(args: js.Any): qLib.qMod.QNs.Promise[_] = js.native
-  // Messaging shorthand
   def sendSms(args: js.Any, callback: RequestCallback): qLib.qMod.QNs.Promise[_] = js.native
   // Messaging shorthand
   def sendSms(callback: RequestCallback): qLib.qMod.QNs.Promise[_] = js.native

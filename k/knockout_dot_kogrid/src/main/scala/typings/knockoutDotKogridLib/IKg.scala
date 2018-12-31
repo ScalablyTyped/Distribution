@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IKg extends js.Object {
   var domUtilityService: knockoutDotKogridLib.kgNs.DomUtilityService
   /** Default aggregate template */

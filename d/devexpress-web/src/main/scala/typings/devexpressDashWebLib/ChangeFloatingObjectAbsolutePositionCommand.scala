@@ -6,18 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A command to change a floating object's absolute position.
- */
-
+  * A command to change a floating object's absolute position.
+  */
 trait ChangeFloatingObjectAbsolutePositionCommand extends CommandBase {
   /**
-       * Executes the ChangeFloatingObjectAbsolutePositionCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-       * @param settings A FloatingObjectAbsolutePositionSettings object specifying object position settings.
-       */
+    * Executes the ChangeFloatingObjectAbsolutePositionCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * @param settings A FloatingObjectAbsolutePositionSettings object specifying object position settings.
+    */
   def execute(settings: FloatingObjectAbsolutePositionSettings): scala.Boolean
   /**
-       * Gets information about the command state.
-       */
+    * Gets information about the command state.
+    */
   def getState(): js.Any
 }
 

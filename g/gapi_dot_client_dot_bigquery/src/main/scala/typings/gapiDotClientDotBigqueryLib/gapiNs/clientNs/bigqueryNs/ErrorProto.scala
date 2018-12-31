@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ErrorProto extends js.Object {
   /** Debugging information. This property is internal to Google and should not be used. */
   var debugInfo: js.UndefOr[java.lang.String] = js.undefined

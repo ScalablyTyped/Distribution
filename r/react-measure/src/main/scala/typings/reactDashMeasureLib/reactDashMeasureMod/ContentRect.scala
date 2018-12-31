@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContentRect extends js.Object {
   var bounds: js.UndefOr[BoundingRect] = js.undefined
   var client: js.UndefOr[Rect] = js.undefined

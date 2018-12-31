@@ -10,18 +10,17 @@ import scala.scalajs.js.annotation._
 	* @brief ZeroMQ 套接口对象
 	* @detail 
 	*/
-
 @JSGlobal("Class_ZmqSocket")
 @js.native
+/**
+	 * 
+	 * @brief ZmqSocket 对象构造函数
+	 * @param type 指定 socket 类型，缺省为 zmq.PAIR
+	 * 
+	 * 
+	 * 
+	 */
 class Class_ZmqSocket () extends Class__object {
-  /**
-  	 * 
-  	 * @brief ZmqSocket 对象构造函数
-  	 * @param type 指定 socket 类型，缺省为 zmq.PAIR
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def this(`type`: scala.Double) = this()
   /**
   	 * class prop 

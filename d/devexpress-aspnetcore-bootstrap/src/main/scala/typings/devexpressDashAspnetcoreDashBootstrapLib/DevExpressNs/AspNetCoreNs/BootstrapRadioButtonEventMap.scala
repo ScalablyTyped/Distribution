@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootstrapRadioButtonEventMap extends BootstrapClientEditEventMap {
   var checkedChanged: ProcessingModeEventArgs
 }

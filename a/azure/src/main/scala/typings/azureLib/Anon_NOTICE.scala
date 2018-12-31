@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NOTICE extends js.Object {
   var ALERT: java.lang.String
   var CRITICAL: java.lang.String

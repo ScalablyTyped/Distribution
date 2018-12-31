@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RetentionSettings extends js.Object {
   var daysToKeepDeletedReleases: scala.Double
   var defaultEnvironmentRetentionPolicy: EnvironmentRetentionPolicy

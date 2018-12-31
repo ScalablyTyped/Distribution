@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait fragBufferedData extends js.Object {
   var frag: Fragment
   var id: java.lang.String

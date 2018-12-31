@@ -49,7 +49,7 @@ package object definitionsMod {
     PaginatorDeps[T, PaginatorState], 
     ionicLib.ionicLibStrings.reqgen | ionicLib.ionicLibStrings.guard | ionicLib.ionicLibStrings.state | ionicLib.ionicLibStrings.max
   ]
-  type PaginatorGuard[T /* <: Response[js.Array[js.Object]] */] = js.Function1[/* res */ APIResponseSuccess, /* is T */scala.Boolean]
+  type PaginatorGuard[T /* <: Response[js.Array[js.Object]] */] = js.Function1[/* res */ APIResponseSuccess, /* is T */ scala.Boolean]
   type PaginatorRequestGenerator = js.Function0[js.Promise[ionicLib.Anon_Req]]
   type ProjectFile = IProjectConfig | IMultiProjectConfig
   type ProjectType = ionicLib.ionicLibStrings.angular | ionicLib.ionicLibStrings.`ionic-angular` | ionicLib.ionicLibStrings.ionic1 | ionicLib.ionicLibStrings.custom | ionicLib.ionicLibStrings.bare

@@ -6,12 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Basic Functions
- * chayns
- * interfaces
- */
+  * Basic Functions
+  * chayns
+  * interfaces
+  */
 // chayns.getUser()
-
 trait GetUserConfig extends js.Object {
   var accessToken: js.UndefOr[java.lang.String] = js.undefined
   var fbId: js.UndefOr[java.lang.String] = js.undefined

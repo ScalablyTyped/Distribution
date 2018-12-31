@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reduxMod {
-  type ActionCreator[A] = js.Function1[/* repeated */js.Any, A]
+  type ActionCreator[A] = js.Function1[/* repeated */ js.Any, A]
   type DeepPartial[T] = reduxLib.reduxLibStrings.DeepPartial with js.Any
   type Dispatch[A /* <: Action[_] */] = js.Function1[/* action */ A, A]
   type Middleware[DispatchExt, S, D /* <: Dispatch[AnyAction] */] = js.Function1[

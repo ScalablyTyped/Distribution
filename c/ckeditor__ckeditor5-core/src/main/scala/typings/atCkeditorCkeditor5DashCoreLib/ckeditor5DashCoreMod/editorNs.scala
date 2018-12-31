@@ -32,7 +32,6 @@ object editorNs extends js.Object {
   }
   
   // core/editor/editorconfig
-  
   trait EditorConfig extends js.Object {
     var alignment: atCkeditorCkeditor5DashCoreLib.ckeditor5DashCoreMod.AlignmentConfig
     var autosave: atCkeditorCkeditor5DashCoreLib.ckeditor5DashCoreMod.AutosaveConfig
@@ -69,7 +68,6 @@ object editorNs extends js.Object {
   }
   
   // core/editor/editorwithui
-  
   trait EditorWithUI extends js.Object {
     val element: stdLib.HTMLElement | scala.Null
     val ui: EditorUI
@@ -86,12 +84,10 @@ object editorNs extends js.Object {
   @JSName("utils")
   @js.native
   object utilsNs extends js.Object {
-    
     trait DataApi extends js.Object {
       def getData(): java.lang.String
       def setData(data: java.lang.String): scala.Unit
     }
-    
     
     trait ElementApi extends js.Object {
       val sourceElement: stdLib.HTMLElement

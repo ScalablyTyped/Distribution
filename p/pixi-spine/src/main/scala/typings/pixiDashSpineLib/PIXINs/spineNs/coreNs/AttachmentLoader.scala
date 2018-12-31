@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AttachmentLoader extends js.Object {
   def newBoundingBoxAttachment(skin: Skin, name: java.lang.String): BoundingBoxAttachment
   def newClippingAttachment(skin: Skin, name: java.lang.String): ClippingAttachment

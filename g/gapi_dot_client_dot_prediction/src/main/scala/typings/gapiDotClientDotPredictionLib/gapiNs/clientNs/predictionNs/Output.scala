@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Output extends js.Object {
   /** The unique name for the predictive model. */
   var id: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReleaseArtifact extends js.Object {
   var artifactProvider: ArtifactProvider
   var artifactType: java.lang.String

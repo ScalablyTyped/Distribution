@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Groups parameters used to configure payload-based filtering of received Bluetooth LE advertisements. */
 @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFilter")
 @js.native
+/** Creates a new BluetoothLEAdvertisementFilter object. */
 class BluetoothLEAdvertisementFilter () extends js.Object {
   /** A BluetoothLEAdvertisement object that can be applied as filters to received Bluetooth LE advertisements. */
   var advertisement: BluetoothLEAdvertisement = js.native

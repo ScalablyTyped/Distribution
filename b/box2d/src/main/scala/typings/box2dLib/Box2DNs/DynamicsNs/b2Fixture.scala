@@ -39,11 +39,6 @@ class b2Fixture () extends js.Object {
   		* @return Mass data.
   		**/
   def GetMassData(): box2dLib.Box2DNs.CollisionNs.ShapesNs.b2MassData = js.native
-  /**
-  		* Get the mass data for this fixture. The mass data is based on the density and the shape. The rotational inertia is about the shape's origin. This operation may be expensive.
-  		* @param massData This is a reference to a valid b2MassData, if it is null a new b2MassData is allocated and then returned.  Default = null.
-  		* @return Mass data.
-  		**/
   def GetMassData(massData: box2dLib.Box2DNs.CollisionNs.ShapesNs.b2MassData): box2dLib.Box2DNs.CollisionNs.ShapesNs.b2MassData = js.native
   /**
   		* Get the next fixture in the parent body's fixture list.

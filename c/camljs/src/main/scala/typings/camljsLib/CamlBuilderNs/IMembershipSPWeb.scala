@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** DEPRECATED!! Please use UserField(...).IsInSPWeb* methods instead. This interface will be removed in the next release */
-
 trait IMembershipSPWeb extends js.Object {
   /** DEPRECATED. Please use UserField(...).IsInSPWebAllUsers() instead */
   def AllUsers(): IExpression

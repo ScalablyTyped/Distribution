@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGridPanel
   extends extjsLib.ExtNs.panelNs.ITable {
   /** [Method] Reconfigures the grid with a new store columns

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * An abstract datatype for specifying an attributed string attribute.
- */
-
+  * An abstract datatype for specifying an attributed string attribute.
+  */
 trait Attribute extends js.Object {
   /**
   	 * Attribute range.

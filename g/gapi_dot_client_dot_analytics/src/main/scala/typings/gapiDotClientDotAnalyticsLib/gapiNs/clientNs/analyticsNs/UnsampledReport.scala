@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UnsampledReport extends js.Object {
   /** Account ID to which this unsampled report belongs. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined
@@ -16,9 +15,9 @@ trait UnsampledReport extends js.Object {
   /** The dimensions for the unsampled report. */
   var dimensions: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The type of download you need to use for the report data file. Possible values include `GOOGLE_DRIVE` and `GOOGLE_CLOUD_STORAGE`. If the value is
-               * `GOOGLE_DRIVE`, see the `driveDownloadDetails` field. If the value is `GOOGLE_CLOUD_STORAGE`, see the `cloudStorageDownloadDetails` field.
-               */
+    * The type of download you need to use for the report data file. Possible values include `GOOGLE_DRIVE` and `GOOGLE_CLOUD_STORAGE`. If the value is
+    * `GOOGLE_DRIVE`, see the `driveDownloadDetails` field. If the value is `GOOGLE_CLOUD_STORAGE`, see the `cloudStorageDownloadDetails` field.
+    */
   var downloadType: js.UndefOr[java.lang.String] = js.undefined
   /** Download details for a file stored in Google Drive. */
   var driveDownloadDetails: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_DocumentId] = js.undefined

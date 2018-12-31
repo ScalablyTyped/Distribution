@@ -18,8 +18,8 @@ class ScrollbarThumb protected ()
   /* CompleteClass */
   override val element: stdLib.HTMLElement = js.native
   /**
-       * Thumb element
-       */
+    * Thumb element
+    */
   @JSName("element")
   val element_ScrollbarThumb: stdLib.HTMLDivElement = js.native
   /* CompleteClass */

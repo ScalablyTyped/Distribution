@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Deps extends js.Object {
   var deps: js.Array[_]
   var provide: atAngularCoreLib.srcDiMod.InjectionToken[java.lang.String]

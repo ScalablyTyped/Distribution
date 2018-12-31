@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlashVideoItem extends js.Object {
   var fileLastModifiedDate: java.lang.String
   var sourceFileExists: scala.Boolean

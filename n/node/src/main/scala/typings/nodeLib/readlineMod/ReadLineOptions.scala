@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReadLineOptions extends js.Object {
   var completer: js.UndefOr[Completer | AsyncCompleter] = js.undefined
   var crlfDelay: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INoiseFilter extends js.Object {
   /**
   	 * Applies filter to canvas element

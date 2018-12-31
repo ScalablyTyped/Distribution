@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocaleSpecification extends js.Object {
   var durationLabelTypes: js.UndefOr[js.Array[DurationLabelTypeDef]] = js.undefined
   var durationLabelsLong: js.UndefOr[DurationLabelDef] = js.undefined

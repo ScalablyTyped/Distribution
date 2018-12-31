@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaskOrchestrationContainer extends TaskOrchestrationItem {
   var children: js.Array[TaskOrchestrationItem]
   var continueOnError: scala.Boolean

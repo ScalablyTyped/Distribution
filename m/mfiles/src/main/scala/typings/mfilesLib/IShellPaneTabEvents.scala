@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IShellPaneTabEvents extends IEvents {
   var OnHideTab: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var OnShowTab: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

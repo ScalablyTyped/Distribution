@@ -9,37 +9,37 @@ import scala.scalajs.js.annotation._
 @js.native
 class KmlObject () extends GEEventEmitter {
   /**
-       * Test whether this object is the same as another object.
-       * Useful for Chrome and Safari, where the comparison a==b sometimes fails for plugin objects.
-       */
+    * Test whether this object is the same as another object.
+    * Useful for Chrome and Safari, where the comparison a==b sometimes fails for plugin objects.
+    */
   def equals(compareTo: KmlObject): scala.Boolean = js.native
   /**
-       * The unique ID of the KML object.
-       */
+    * The unique ID of the KML object.
+    */
   def getId(): java.lang.String = js.native
   /**
-       * The document that owns the KML object.
-       */
+    * The document that owns the KML object.
+    */
   def getOwnerDocument(): KmlDocument = js.native
   /**
-       * The parent node of the KML object.
-       */
+    * The parent node of the KML object.
+    */
   def getParentNode(): KmlObject = js.native
   /**
-       * The interface name (i.e. 'KmlPlacemark') of the object.
-       */
+    * The interface name (i.e. 'KmlPlacemark') of the object.
+    */
   def getType(): java.lang.String = js.native
   /**
-       * The unique URL of the KML object.
-       * This is the base address joined with the ID using the # character.
-       *
-       * For example: http://www.google.com/bar.kml#atlantis
-       */
+    * The unique URL of the KML object.
+    * This is the base address joined with the ID using the # character.
+    *
+    * For example: http://www.google.com/bar.kml#atlantis
+    */
   def getUrl(): java.lang.String = js.native
   /**
-       * Permanently deletes an object, allowing its ID to be reused.
-       * Attempting to access the object once it is released will result in an error.
-       */
+    * Permanently deletes an object, allowing its ID to be reused.
+    * Attempting to access the object once it is released will result in an error.
+    */
   def release(): scala.Unit = js.native
 }
 

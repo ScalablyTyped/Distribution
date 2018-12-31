@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseContollerOptions extends js.Object {
   var app: expressLib.expressMod.eNs.Express
   var endpoint: java.lang.String

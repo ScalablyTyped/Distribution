@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Fired when a load has begun.
-         */
+  * Fired when a load has begun.
+  */
 @js.native
 trait LoadStartEvent
   extends stdLib.Event {

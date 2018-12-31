@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeyValue extends js.Object {
   def setAuthorizationAction(action: AuthorizationAction): KeyValue
   def setBottomLabel(text: java.lang.String): KeyValue

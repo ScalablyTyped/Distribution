@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetMarkupFromTreeOptions extends js.Object {
   var context: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var renderFunction: js.UndefOr[

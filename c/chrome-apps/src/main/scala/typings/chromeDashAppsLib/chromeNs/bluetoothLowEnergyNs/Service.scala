@@ -5,18 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Service extends js.Object {
   /**
-               * The device address of the remote peripheral that the GATT service belongs to.
-               * Present, if this instance represents a remote service.
-               */
+    * The device address of the remote peripheral that the GATT service belongs to.
+    * Present, if this instance represents a remote service.
+    */
   var deviceAddress: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Returns the identifier assigned to this service.
-               * Use the instance ID to distinguish between services from a peripheral with the same UUID and to make function calls that take in a service identifier.
-               * Present, if this instance represents a remote service.
-               **/
+    * Returns the identifier assigned to this service.
+    * Use the instance ID to distinguish between services from a peripheral with the same UUID and to make function calls that take in a service identifier.
+    * Present, if this instance represents a remote service.
+    **/
   var instanceId: js.UndefOr[java.lang.String] = js.undefined
   /** Indicates whether the type of this service is primary or secondary. */
   var isPrimary: scala.Boolean

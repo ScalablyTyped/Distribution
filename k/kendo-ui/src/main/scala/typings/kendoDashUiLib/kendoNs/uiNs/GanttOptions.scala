@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GanttOptions extends js.Object {
   var add: js.UndefOr[js.Function1[/* e */ GanttAddEvent, scala.Unit]] = js.undefined
   var assignments: js.UndefOr[GanttAssignments] = js.undefined

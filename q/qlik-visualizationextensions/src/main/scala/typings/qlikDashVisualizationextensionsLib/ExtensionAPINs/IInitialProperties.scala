@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IInitialProperties extends js.Object {
    // IListObjectDef;
   var fixed: js.UndefOr[scala.Boolean] = js.undefined

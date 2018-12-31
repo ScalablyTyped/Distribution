@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Object describing a button bar or tabbed bar item.
- */
-
+  * Object describing a button bar or tabbed bar item.
+  */
 trait BarItemType extends js.Object {
   /**
   	 * A succint label associated with the bar item for the device's accessibility service.

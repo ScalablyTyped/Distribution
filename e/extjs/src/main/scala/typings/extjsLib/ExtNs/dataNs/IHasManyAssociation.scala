@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHasManyAssociation
   extends extjsLib.ExtNs.dataNs.associationNs.IAssociation {
   /** [Config Option] (Boolean) */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditorCommand extends js.Object {
   var bindKey: js.Any
   var exec: js.Function

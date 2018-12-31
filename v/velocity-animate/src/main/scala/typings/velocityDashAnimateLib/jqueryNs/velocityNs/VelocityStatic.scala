@@ -25,15 +25,7 @@ trait VelocityStatic extends js.Object {
   		 * It features the same API as $.css().
   		 */
   def hook(element: stdLib.HTMLElement, cssKey: java.lang.String, cssValue: java.lang.String): scala.Unit = js.native
-  /**
-  		 * Get a hook value. Hooks are the subvalues of multi-value CSS properties.
-  		 * It features the same API as $.css().
-  		 */
   def hook(element: velocityDashAnimateLib.JQuery, cssKey: java.lang.String): java.lang.String = js.native
-  /**
-  		 * Set a hook value. Hooks are the subvalues of multi-value CSS properties.
-  		 * It features the same API as $.css().
-  		 */
   def hook(element: velocityDashAnimateLib.JQuery, cssKey: java.lang.String, cssValue: java.lang.String): scala.Unit = js.native
 }
 

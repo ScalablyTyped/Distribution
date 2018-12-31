@@ -24,10 +24,10 @@ object printerProviderNsMembers extends js.Object {
     ]
   ] = js.native
   /**
-           * Event fired when print manager requests information about a USB device that may be a printer.
-           * Note: An application should not rely on this event being fired more than once per device. If a connected device is supported it should be returned in the onGetPrintersRequested event.
-           * @since Chrome 45.
-           */
+    * Event fired when print manager requests information about a USB device that may be a printer.
+    * Note: An application should not rely on this event being fired more than once per device. If a connected device is supported it should be returned in the onGetPrintersRequested event.
+    * @since Chrome 45.
+    */
   val onGetUsbPrinterInfoRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function2[
       /* device */ js.Any, 

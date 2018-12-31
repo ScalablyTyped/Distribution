@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AbstractIteratorOptions[K] extends AbstractOptions {
   var gt: js.UndefOr[K] = js.undefined
   var gte: js.UndefOr[K] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LoaderOptions extends js.Object {
   /** the loader(s) that should be used when the css is not extracted (i.e. in an additional chunk when `allChunks: false`) */
   var fallback: js.UndefOr[

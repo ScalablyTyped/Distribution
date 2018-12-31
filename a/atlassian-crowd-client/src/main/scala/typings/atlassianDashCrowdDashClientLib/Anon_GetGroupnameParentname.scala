@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_GetGroupnameParentname extends js.Object {
   var add: js.Function2[
     /* groupname */ java.lang.String, 

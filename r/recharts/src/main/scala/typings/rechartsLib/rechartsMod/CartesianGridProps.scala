@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial) */ 
-trait CartesianGridProps extends js.Object {
+- Lifted 1 members from Set(std.Partial<recharts.recharts.PresentationAttributes<number, number>>) */ trait CartesianGridProps extends js.Object {
   var chartHeight: js.UndefOr[scala.Double] = js.undefined
   var chartWidth: js.UndefOr[scala.Double] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined

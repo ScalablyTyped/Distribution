@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MSStream extends js.Object {
   val `type`: java.lang.String
   def msClose(): scala.Unit

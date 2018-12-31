@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DragAndDropOptions extends js.Object {
   var formatConstructors: js.UndefOr[
     js.Array[

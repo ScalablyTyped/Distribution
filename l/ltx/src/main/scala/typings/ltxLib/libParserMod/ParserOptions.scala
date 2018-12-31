@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParserOptions extends js.Object {
   var Element: js.UndefOr[
     org.scalablytyped.runtime.Instantiable2[

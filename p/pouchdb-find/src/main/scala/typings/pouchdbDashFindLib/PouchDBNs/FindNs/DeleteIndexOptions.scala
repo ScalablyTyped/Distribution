@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeleteIndexOptions extends js.Object {
   /** Design document name */
   var ddoc: java.lang.String

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Notification Item
-     */
-
+  * Notification Item
+  */
 trait INotificationItem extends js.Object {
   /*Collection of button actions to append (label, func, cssClass)*/
   var actions: js.Array[IButtonAction]

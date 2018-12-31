@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait detectIt extends js.Object {
   var deviceType: detectDashItLib.detectDashItLibStrings.hybrid | detectDashItLib.detectDashItLibStrings.mouseOnly | detectDashItLib.detectDashItLibStrings.touchOnly
   var hasMouse: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OffsetBlockEnd extends js.Object {
   var KhtmlBoxAlign: js.UndefOr[
     antdLib.antdLibStrings.start | antdLib.antdLibStrings.center | antdLib.antdLibStrings.end | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.stretch | antdLib.antdLibStrings.baseline
@@ -40,7 +39,9 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var MozAnimationName: js.UndefOr[java.lang.String] = js.undefined
   var MozAnimationPlayState: js.UndefOr[java.lang.String] = js.undefined
   var MozAnimationTimingFunction: js.UndefOr[java.lang.String] = js.undefined
-  var MozAppearance: js.UndefOr[/* LimitUnionLength: was union type with length 115 */java.lang.String] = js.undefined
+  var MozAppearance: js.UndefOr[
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ java.lang.String
+  ] = js.undefined
   var MozBackfaceVisibility: js.UndefOr[
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
@@ -217,7 +218,9 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var WebkitAnimationName: js.UndefOr[java.lang.String] = js.undefined
   var WebkitAnimationPlayState: js.UndefOr[java.lang.String] = js.undefined
   var WebkitAnimationTimingFunction: js.UndefOr[java.lang.String] = js.undefined
-  var WebkitAppearance: js.UndefOr[/* LimitUnionLength: was union type with length 53 */java.lang.String] = js.undefined
+  var WebkitAppearance: js.UndefOr[
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 53 */ java.lang.String
+  ] = js.undefined
   var WebkitBackdropFilter: js.UndefOr[java.lang.String] = js.undefined
   var WebkitBackfaceVisibility: js.UndefOr[
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset

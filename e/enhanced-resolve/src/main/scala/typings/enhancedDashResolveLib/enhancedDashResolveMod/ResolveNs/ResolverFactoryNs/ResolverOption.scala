@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResolverOption extends js.Object {
   var alias: js.UndefOr[
     js.Array[AliasItem] | enhancedDashResolveLib.libConcordMod.Dictionary[java.lang.String]

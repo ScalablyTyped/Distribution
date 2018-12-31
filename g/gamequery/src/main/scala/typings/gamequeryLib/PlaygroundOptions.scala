@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlaygroundOptions extends js.Object {
   var disableCollision: js.UndefOr[scala.Boolean] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined

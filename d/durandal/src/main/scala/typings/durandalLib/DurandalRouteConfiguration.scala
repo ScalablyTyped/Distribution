@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DurandalRouteConfiguration extends js.Object {
   var hasChildRoutes: js.UndefOr[scala.Boolean] = js.undefined
   var hash: js.UndefOr[java.lang.String] = js.undefined

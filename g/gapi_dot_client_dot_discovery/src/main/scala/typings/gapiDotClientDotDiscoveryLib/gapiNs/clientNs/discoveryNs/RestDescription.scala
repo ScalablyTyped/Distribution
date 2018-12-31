@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RestDescription extends js.Object {
   /** Authentication information. */
   var auth: js.UndefOr[gapiDotClientDotDiscoveryLib.Anon_Oauth2] = js.undefined
@@ -42,9 +41,9 @@ trait RestDescription extends js.Object {
   /** The name of this API. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The domain of the owner of this API. Together with the ownerName and a packagePath values, this can be used to generate a library for this API which
-               * would have a unique fully qualified name.
-               */
+    * The domain of the owner of this API. Together with the ownerName and a packagePath values, this can be used to generate a library for this API which
+    * would have a unique fully qualified name.
+    */
   var ownerDomain: js.UndefOr[java.lang.String] = js.undefined
   /** The name of the owner of this API. See ownerDomain. */
   var ownerName: js.UndefOr[java.lang.String] = js.undefined

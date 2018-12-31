@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SlackTransportOptions
   extends winstonDashTransportLib.winstonDashTransportMod.TransportStreamNs.TransportStreamOptions {
   var channel: java.lang.String

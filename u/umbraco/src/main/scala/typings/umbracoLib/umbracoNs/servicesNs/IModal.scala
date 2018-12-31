@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Modal
-    */
-
+  * Modal
+  */
 trait IModal extends js.Object
 

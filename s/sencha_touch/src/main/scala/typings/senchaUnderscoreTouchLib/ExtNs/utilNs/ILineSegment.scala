@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILineSegment
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Returns the point where two lines intersect

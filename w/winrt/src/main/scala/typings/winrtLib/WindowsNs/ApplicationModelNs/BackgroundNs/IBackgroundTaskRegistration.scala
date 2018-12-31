@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBackgroundTaskRegistration extends js.Object {
   var name: java.lang.String
   var oncompleted: js.Any

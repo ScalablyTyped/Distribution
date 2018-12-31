@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISpringOptions extends js.Object {
   var damping: js.UndefOr[scala.Double] = js.undefined
   var localAnchorA: js.UndefOr[Vec3] = js.undefined

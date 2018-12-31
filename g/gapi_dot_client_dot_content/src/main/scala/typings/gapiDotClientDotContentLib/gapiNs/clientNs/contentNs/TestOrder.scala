@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestOrder extends js.Object {
   /** The details of the customer who placed the order. */
   var customer: js.UndefOr[TestOrderCustomer] = js.undefined

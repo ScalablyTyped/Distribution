@@ -6,25 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * CalenderStrings...
-     */
-
+  * CalenderStrings...
+  */
 trait ICalenderStrings extends js.Object {
   /**
-           * List of short day names.
-           */
+    * List of short day names.
+    */
   var qDayNames: js.Array[java.lang.String]
   /**
-           * List of long day names.
-           */
+    * List of long day names.
+    */
   var qLongDayNames: js.Array[java.lang.String]
   /**
-           * List of long month names.
-           */
+    * List of long month names.
+    */
   var qLongMonthNames: js.Array[java.lang.String]
   /**
-           * List of short month names.
-           */
+    * List of short month names.
+    */
   var qMonthNames: js.Array[java.lang.String]
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AudioWorkletNodeOptions extends AudioNodeOptions {
   var numberOfInputs: js.UndefOr[scala.Double] = js.undefined
   var numberOfOutputs: js.UndefOr[scala.Double] = js.undefined

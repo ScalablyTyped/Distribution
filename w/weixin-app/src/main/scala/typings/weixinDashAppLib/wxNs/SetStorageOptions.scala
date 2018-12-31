@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // 数据缓存
-
 trait SetStorageOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 需要存储的内容 */

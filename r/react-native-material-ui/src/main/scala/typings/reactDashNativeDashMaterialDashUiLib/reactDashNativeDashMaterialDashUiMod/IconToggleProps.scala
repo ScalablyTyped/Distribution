@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IconToggleProps extends js.Object {
   var children: js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined

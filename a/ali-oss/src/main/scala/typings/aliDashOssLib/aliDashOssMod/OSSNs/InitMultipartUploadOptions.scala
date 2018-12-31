@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InitMultipartUploadOptions extends js.Object {
   var headers: js.UndefOr[js.Object] = js.undefined
    // Mime file type

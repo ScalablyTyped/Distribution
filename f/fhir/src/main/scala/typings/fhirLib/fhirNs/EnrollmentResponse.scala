@@ -6,57 +6,56 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * EnrollmentResponse resource
-     */
-
+  * EnrollmentResponse resource
+  */
 trait EnrollmentResponse extends DomainResource {
   /**
-           * Contains extended information for property 'created'.
-           */
+    * Contains extended information for property 'created'.
+    */
   var _created: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'disposition'.
-           */
+    * Contains extended information for property 'disposition'.
+    */
   var _disposition: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'status'.
-           */
+    * Contains extended information for property 'status'.
+    */
   var _status: js.UndefOr[Element] = js.undefined
   /**
-           * Creation date
-           */
+    * Creation date
+    */
   var created: js.UndefOr[dateTime] = js.undefined
   /**
-           * Disposition Message
-           */
+    * Disposition Message
+    */
   var disposition: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Business Identifier
-           */
+    * Business Identifier
+    */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   /**
-           * Insurer
-           */
+    * Insurer
+    */
   var organization: js.UndefOr[Reference] = js.undefined
   /**
-           * complete | error | partial
-           */
+    * complete | error | partial
+    */
   var outcome: js.UndefOr[CodeableConcept] = js.undefined
   /**
-           * Claim reference
-           */
+    * Claim reference
+    */
   var request: js.UndefOr[Reference] = js.undefined
   /**
-           * Responsible organization
-           */
+    * Responsible organization
+    */
   var requestOrganization: js.UndefOr[Reference] = js.undefined
   /**
-           * Responsible practitioner
-           */
+    * Responsible practitioner
+    */
   var requestProvider: js.UndefOr[Reference] = js.undefined
   /**
-           * active | cancelled | draft | entered-in-error
-           */
+    * active | cancelled | draft | entered-in-error
+    */
   var status: js.UndefOr[code] = js.undefined
 }
 

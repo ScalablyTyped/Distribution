@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDragZone extends IDragSource {
   /** [Config Option] (Object/Boolean) */
   var containerScroll: js.UndefOr[js.Any] = js.undefined

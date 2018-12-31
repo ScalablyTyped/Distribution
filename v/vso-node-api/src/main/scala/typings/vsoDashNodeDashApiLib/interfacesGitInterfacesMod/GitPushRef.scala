@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GitPushRef extends js.Object {
   var _links: js.Any
   var date: stdLib.Date

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PartialInput extends js.Object {
   var count: scala.Double
   var data: js.Any

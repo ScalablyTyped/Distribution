@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MetricHeader extends js.Object {
   /** Headers for the metrics in the response. */
   var metricHeaderEntries: js.UndefOr[js.Array[MetricHeaderEntry]] = js.undefined

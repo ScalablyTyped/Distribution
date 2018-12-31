@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Store extends js.Object {
   def getState(): js.Any
   def setState(partial: js.Object): scala.Unit
