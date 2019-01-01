@@ -15,7 +15,7 @@ class Plane () extends js.Object {
   def applyMatrix4(matrix: Matrix4): Plane = js.native
   def applyMatrix4(matrix: Matrix4, optionalNormalMatrix: Matrix3): Plane = js.native
   def coplanarPoint(target: Vector3): Vector3 = js.native
-  def copy(plane: this.type): this.type = js.native
+  def copy(plane: Plane): this.type = js.native
   def distanceToPoint(point: Vector3): scala.Double = js.native
   def distanceToSphere(sphere: Sphere): scala.Double = js.native
   def equals(plane: Plane): scala.Boolean = js.native

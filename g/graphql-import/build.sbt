@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "graphql-import"
-version := "0.7.1-df7513"
+version := "0.7.1-0af549"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "graphql" % "14.0-dt-20181016Z-ed78a4",
+  "org.scalablytyped" %%% "graphql" % "14.0-dt-20181231Z-54489a",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20181203Z-0a02fb",
   "org.scalablytyped" %%% "resolve-from" % "4.0-dt-20181212Z-bbdf79",
   "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff")

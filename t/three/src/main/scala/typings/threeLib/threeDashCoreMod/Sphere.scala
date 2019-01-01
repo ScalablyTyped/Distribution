@@ -15,7 +15,7 @@ class Sphere () extends js.Object {
   def applyMatrix4(matrix: Matrix4): Sphere = js.native
   def clampPoint(point: Vector3, target: Vector3): Vector3 = js.native
   def containsPoint(point: Vector3): scala.Boolean = js.native
-  def copy(sphere: this.type): this.type = js.native
+  def copy(sphere: Sphere): this.type = js.native
   def distanceToPoint(point: Vector3): scala.Double = js.native
   def empty(): scala.Boolean = js.native
   def equals(sphere: Sphere): scala.Boolean = js.native

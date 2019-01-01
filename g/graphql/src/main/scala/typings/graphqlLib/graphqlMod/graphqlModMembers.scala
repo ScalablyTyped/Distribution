@@ -388,11 +388,11 @@ object graphqlModMembers extends js.Object {
   ): graphqlLib.utilitiesIntrospectionQueryMod.IntrospectionQuery = js.native
   def isAbstractType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLAbstractType */ scala.Boolean = js.native
   def isCompositeType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLCompositeType */ scala.Boolean = js.native
-  def isDefinitionNode(node: graphqlLib.languageAstMod.ASTNode): scala.Boolean = js.native
+  def isDefinitionNode(node: graphqlLib.languageAstMod.ASTNode): /* is graphql.graphql/language/ast.DefinitionNode */ scala.Boolean = js.native
   def isDirective(directive: js.Any): /* is graphql.graphql/type/directives.GraphQLDirective */ scala.Boolean = js.native
   def isEnumType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLEnumType */ scala.Boolean = js.native
   def isEqualType(typeA: graphqlLib.typeDefinitionMod.GraphQLType, typeB: graphqlLib.typeDefinitionMod.GraphQLType): scala.Boolean = js.native
-  def isExecutableDefinitionNode(node: graphqlLib.languageAstMod.ASTNode): scala.Boolean = js.native
+  def isExecutableDefinitionNode(node: graphqlLib.languageAstMod.ASTNode): /* is graphql.graphql/language/ast.ExecutableDefinitionNode */ scala.Boolean = js.native
   def isInputObjectType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLInputObjectType */ scala.Boolean = js.native
   def isInputType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLInputType */ scala.Boolean = js.native
   def isInterfaceType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLInterfaceType */ scala.Boolean = js.native
@@ -408,20 +408,20 @@ object graphqlModMembers extends js.Object {
   def isRequiredInputField(field: graphqlLib.typeDefinitionMod.GraphQLInputField): scala.Boolean = js.native
   def isScalarType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLScalarType */ scala.Boolean = js.native
   def isSchema(schema: js.Any): /* is graphql.graphql/type/schema.GraphQLSchema */ scala.Boolean = js.native
-  def isSelectionNode(node: graphqlLib.languageAstMod.ASTNode): scala.Boolean = js.native
+  def isSelectionNode(node: graphqlLib.languageAstMod.ASTNode): /* is graphql.graphql/language/ast.SelectionNode */ scala.Boolean = js.native
   def isSpecifiedDirective(directive: graphqlLib.typeDirectivesMod.GraphQLDirective): scala.Boolean = js.native
   def isSpecifiedScalarType(`type`: graphqlLib.typeDefinitionMod.GraphQLScalarType): scala.Boolean = js.native
   def isType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLType */ scala.Boolean = js.native
-  def isTypeDefinitionNode(node: graphqlLib.languageAstMod.ASTNode): scala.Boolean = js.native
-  def isTypeExtensionNode(node: graphqlLib.languageAstMod.ASTNode): scala.Boolean = js.native
-  def isTypeNode(node: graphqlLib.languageAstMod.ASTNode): scala.Boolean = js.native
+  def isTypeDefinitionNode(node: graphqlLib.languageAstMod.ASTNode): /* is graphql.graphql/language/ast.TypeDefinitionNode */ scala.Boolean = js.native
+  def isTypeExtensionNode(node: graphqlLib.languageAstMod.ASTNode): /* is graphql.graphql/language/ast.TypeExtensionNode */ scala.Boolean = js.native
+  def isTypeNode(node: graphqlLib.languageAstMod.ASTNode): /* is graphql.graphql/language/ast.TypeNode */ scala.Boolean = js.native
   def isTypeSubTypeOf(
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     maybeSubType: graphqlLib.typeDefinitionMod.GraphQLType,
     superType: graphqlLib.typeDefinitionMod.GraphQLType
   ): scala.Boolean = js.native
-  def isTypeSystemDefinitionNode(node: graphqlLib.languageAstMod.ASTNode): scala.Boolean = js.native
-  def isTypeSystemExtensionNode(node: graphqlLib.languageAstMod.ASTNode): scala.Boolean = js.native
+  def isTypeSystemDefinitionNode(node: graphqlLib.languageAstMod.ASTNode): /* is graphql.graphql/language/ast.TypeSystemDefinitionNode */ scala.Boolean = js.native
+  def isTypeSystemExtensionNode(node: graphqlLib.languageAstMod.ASTNode): /* is graphql.graphql/language/ast.TypeSystemExtensionNode */ scala.Boolean = js.native
   def isUnionType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLUnionType */ scala.Boolean = js.native
   def isValidJSValue(value: js.Any, `type`: graphqlLib.typeDefinitionMod.GraphQLInputType): js.Array[java.lang.String] = js.native
   def isValidLiteralValue(
@@ -430,7 +430,7 @@ object graphqlModMembers extends js.Object {
   ): js.Array[graphqlLib.errorGraphQLErrorMod.GraphQLError] = js.native
   def isValidNameError(name: java.lang.String): js.UndefOr[graphqlLib.errorGraphQLErrorMod.GraphQLError] = js.native
   def isValidNameError(name: java.lang.String, node: graphqlLib.languageAstMod.ASTNode): js.UndefOr[graphqlLib.errorGraphQLErrorMod.GraphQLError] = js.native
-  def isValueNode(node: graphqlLib.languageAstMod.ASTNode): scala.Boolean = js.native
+  def isValueNode(node: graphqlLib.languageAstMod.ASTNode): /* is graphql.graphql/language/ast.ValueNode */ scala.Boolean = js.native
   def isWrappingType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLWrappingType */ scala.Boolean = js.native
   def lexicographicSortSchema(schema: graphqlLib.typeSchemaMod.GraphQLSchema): graphqlLib.typeSchemaMod.GraphQLSchema = js.native
   def parse(source: graphqlLib.languageSourceMod.Source): graphqlLib.languageAstMod.DocumentNode = js.native

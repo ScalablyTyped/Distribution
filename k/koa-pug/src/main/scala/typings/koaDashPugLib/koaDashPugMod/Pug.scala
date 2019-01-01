@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 /** main module */
 trait Pug extends js.Object {
   var locals: org.scalablytyped.runtime.StringDictionary[js.Any]
-  def use(app: koaLib.koaMod.namespaced): scala.Unit
+  def use(app: koaLib.koaMod.namespaced[_, js.Object]): scala.Unit
 }
 

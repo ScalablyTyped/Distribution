@@ -16,6 +16,7 @@ trait Slide extends js.Object {
   def getLines(): js.Array[Line] = js.native
   def getNotesPage(): NotesPage = js.native
   def getObjectId(): java.lang.String = js.native
+  def getPageElementById(id: java.lang.String): PageElement = js.native
   def getPageElements(): js.Array[PageElement] = js.native
   def getPageType(): PageType = js.native
   def getPlaceholder(placeholderType: PlaceholderType): PageElement = js.native
@@ -48,6 +49,7 @@ trait Slide extends js.Object {
     height: stdLib.Number
   ): Image = js.native
   def insertImage(image: Image): Image = js.native
+  def insertLine(lineCategory: LineCategory, startConnectionSite: ConnectionSite, endConnectionSite: ConnectionSite): Line = js.native
   def insertLine(
     lineCategory: LineCategory,
     startLeft: stdLib.Number,

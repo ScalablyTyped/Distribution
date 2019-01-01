@@ -20,6 +20,8 @@ class Mesh () extends Object3D {
   var material: Material | js.Array[Material] = js.native
   var morphTargetDictionary: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Double]] = js.native
   var morphTargetInfluences: js.UndefOr[js.Array[scala.Double]] = js.native
+  def copy(source: this.type): this.type = js.native
+  def copy(source: this.type, recursive: scala.Boolean): this.type = js.native
   def setDrawMode(drawMode: TrianglesDrawModes): scala.Unit = js.native
   def updateMorphTargets(): scala.Unit = js.native
 }

@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Keyv
+trait Keyv[TValue]
   extends nodeLib.NodeJSNs.EventEmitter {
-  /** Returns the namespace of a key */
-  def _getKeyPrefix(key: java.lang.String): java.lang.String = js.native
   /** Delete all entries in the current namespace. */
   def clear(): js.Promise[scala.Unit] = js.native
   /**
@@ -19,13 +17,13 @@ trait Keyv
     */
   def delete(key: java.lang.String): js.Promise[scala.Boolean] = js.native
   /** Returns the value. */
-  def get(key: java.lang.String): js.Promise[_] = js.native
+  def get(key: java.lang.String): js.Promise[js.UndefOr[TValue]] = js.native
   /**
     * Set a value.
     *
     * By default keys are persistent. You can set an expiry TTL in milliseconds.
     */
-  def set(key: java.lang.String, value: js.Any): js.UndefOr[js.Promise[scala.Boolean]] = js.native
-  def set(key: java.lang.String, value: js.Any, ttl: scala.Double): js.UndefOr[js.Promise[scala.Boolean]] = js.native
+  def set(key: java.lang.String, value: TValue): js.Promise[keyvLib.keyvLibNumbers.`true`] = js.native
+  def set(key: java.lang.String, value: TValue, ttl: scala.Double): js.Promise[keyvLib.keyvLibNumbers.`true`] = js.native
 }
 

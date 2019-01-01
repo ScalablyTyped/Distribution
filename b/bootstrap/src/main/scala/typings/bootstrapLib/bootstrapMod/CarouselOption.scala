@@ -19,9 +19,10 @@ trait CarouselOption extends js.Object {
     */
   var keyboard: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * If set to "hover", pauses the cycling of the carousel on mouseenter and resumes the cycling of the carousel on mouseleave.
+    * If set to "hover", pauses the cycling of the carousel on `mouseenter` and resumes the cycling of the carousel on `mouseleave`.
     * If set to false, hovering over the carousel won't pause it.
-    * On touch-enabled devices, when set to "hover", cycling will pause on touchend (once the user finished interacting with the carousel)
+    *
+    * On touch-enabled devices, when set to "hover", cycling will pause on `touchend` (once the user finished interacting with the carousel)
     * for two intervals, before automatically resuming. Note that this is in addition to the above mouse behavior.
     *
     * @default "hover"
@@ -38,6 +39,12 @@ trait CarouselOption extends js.Object {
   var slide: js.UndefOr[
     bootstrapLib.bootstrapLibStrings.next | bootstrapLib.bootstrapLibStrings.prev | bootstrapLib.bootstrapLibNumbers.`false`
   ] = js.undefined
+  /**
+    * Whether the carousel should support left/right swipe interactions on touchscreen devices.
+    *
+    * @default true
+    */
+  var touch: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Whether the carousel should cycle continuously or have hard stops.
     *

@@ -17,7 +17,7 @@ class Line3 () extends js.Object {
   def closestPointToPoint(point: Vector3, clampToLine: scala.Boolean, target: Vector3): Vector3 = js.native
   def closestPointToPointParameter(point: Vector3): scala.Double = js.native
   def closestPointToPointParameter(point: Vector3, clampToLine: scala.Boolean): scala.Double = js.native
-  def copy(line: this.type): this.type = js.native
+  def copy(line: Line3): this.type = js.native
   def delta(target: Vector3): Vector3 = js.native
   def distance(): scala.Double = js.native
   def distanceSq(): scala.Double = js.native

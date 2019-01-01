@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 trait Signature extends js.Object {
   var keyid: Keyid
   var valid: scala.Boolean
+  var verified: js.UndefOr[scala.Boolean] = js.undefined
 }
 

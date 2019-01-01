@@ -35,6 +35,7 @@ trait JWPlayer extends js.Object {
   def getRenderingMode(): java.lang.String = js.native
   def getSafeRegion(): Region = js.native
   def getState(): java.lang.String = js.native
+  def getVisualQuality(): js.UndefOr[QualityLevel] = js.native
   def getVolume(): scala.Double = js.native
   def getWidth(): scala.Double = js.native
   def load(playlist: java.lang.String): scala.Unit = js.native
@@ -344,6 +345,7 @@ trait JWPlayer extends js.Object {
   def removeButton(id: java.lang.String): scala.Unit = js.native
   def resize(width: scala.Double, height: scala.Double): scala.Unit = js.native
   def seek(position: scala.Double): scala.Unit = js.native
+  def setCaptions(options: CaptionOptions): scala.Unit = js.native
   def setControls(controls: scala.Boolean): scala.Unit = js.native
   def setCurrentAudioTrack(index: scala.Double): scala.Unit = js.native
   def setCurrentCaptions(index: scala.Double): scala.Unit = js.native

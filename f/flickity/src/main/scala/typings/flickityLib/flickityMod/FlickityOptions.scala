@@ -26,7 +26,7 @@ trait FlickityOptions extends js.Object {
     *
     * default: disabled
     */
-  var asNavFor: js.UndefOr[java.lang.String] = js.undefined
+  var asNavFor: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
   /**
     * Automatically advances to the next cell.
     *

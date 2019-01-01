@@ -13,6 +13,6 @@ trait ElementProps
   var onBlur: js.UndefOr[js.Function1[/* event */ ElementChangeResponse, scala.Unit]] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* event */ ElementChangeResponse, scala.Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* event */ ElementChangeResponse, scala.Unit]] = js.undefined
-  var onReady: js.UndefOr[js.Function1[/* el */ reactLib.HTMLElement, scala.Unit]] = js.undefined
+  var onReady: js.UndefOr[js.Function1[/* el */ HTMLStripeElement, scala.Unit]] = js.undefined
 }
 

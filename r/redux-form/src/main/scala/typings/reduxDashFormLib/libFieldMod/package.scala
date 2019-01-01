@@ -6,11 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libFieldMod {
-  type EventHandler[Event] = js.Function1[/* event */ Event, scala.Unit]
-  type EventWithDataHandler[Event] = js.Function3[
+  type EventHandler[Event] = js.Function2[/* event */ Event, /* name */ js.UndefOr[java.lang.String], scala.Unit]
+  type EventWithDataHandler[Event] = js.Function4[
     /* event */ js.UndefOr[Event], 
     /* newValue */ js.UndefOr[js.Any], 
     /* previousValue */ js.UndefOr[js.Any], 
+    /* name */ js.UndefOr[java.lang.String], 
     scala.Unit
   ]
   type Formatter = js.Function2[/* value */ js.Any, /* name */ java.lang.String, js.Any]

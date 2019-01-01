@@ -15,6 +15,6 @@ trait IChargeListOptions
     * A filter on the list based on the source of the charge. The value can be a
     * dictionary with the following options:
     */
-  var source: js.UndefOr[stripeLib.Anon_ObjectAll] = js.undefined
+  var source: js.UndefOr[stripeLib.Anon_Object] = js.undefined
 }
 

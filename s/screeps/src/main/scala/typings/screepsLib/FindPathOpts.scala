@@ -63,6 +63,10 @@ trait FindPathOpts extends js.Object {
     */
   var maxRooms: js.UndefOr[scala.Double] = js.undefined
   /**
+    * Cost for walking on plain positions. The default is 1.
+    */
+  var plainCost: js.UndefOr[scala.Double] = js.undefined
+  /**
     * Path to within (range) tiles of target tile. The default is to path to the tile that the target is on (0).
     */
   var range: js.UndefOr[scala.Double] = js.undefined
@@ -70,5 +74,9 @@ trait FindPathOpts extends js.Object {
     * If true, the result path will be serialized using Room.serializePath. The default is false.
     */
   var serialize: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Cost for walking on swamp positions. The default is 5.
+    */
+  var swampCost: js.UndefOr[scala.Double] = js.undefined
 }
 

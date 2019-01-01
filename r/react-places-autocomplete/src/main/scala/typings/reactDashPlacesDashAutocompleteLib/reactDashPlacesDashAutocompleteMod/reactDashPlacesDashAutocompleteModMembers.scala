@@ -9,23 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object reactDashPlacesDashAutocompleteModMembers extends js.Object {
   def geocodeByAddress(address: java.lang.String): js.Promise[js.Array[googlemapsLib.googleNs.mapsNs.GeocoderResult]] = js.native
-  def geocodeByAddress(
-    address: java.lang.String,
-    callback: js.Function2[
-      /* results */ js.Array[googlemapsLib.googleNs.mapsNs.GeocoderResult], 
-      /* status */ googlemapsLib.googleNs.mapsNs.GeocoderStatus, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
   def geocodeByPlaceId(placeId: java.lang.String): js.Promise[js.Array[googlemapsLib.googleNs.mapsNs.GeocoderResult]] = js.native
-  def geocodeByPlaceId(
-    placeId: java.lang.String,
-    callback: js.Function2[
-      /* results */ js.Array[googlemapsLib.googleNs.mapsNs.GeocoderResult], 
-      /* status */ googlemapsLib.googleNs.mapsNs.GeocoderStatus, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
   def getLatLng(results: googlemapsLib.googleNs.mapsNs.GeocoderResult): js.Promise[googlemapsLib.googleNs.mapsNs.LatLngLiteral] = js.native
 }
 

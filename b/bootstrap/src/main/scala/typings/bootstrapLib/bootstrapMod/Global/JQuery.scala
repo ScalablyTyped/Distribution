@@ -122,7 +122,7 @@ trait JQuery[TElement] extends js.Object {
   @JSName("modal")
   def modal_toggle(action: bootstrapLib.bootstrapLibStrings.toggle): this.type = js.native
   def on(
-    events: bootstrapLib.bootstrapMod.AlertEvent | bootstrapLib.bootstrapMod.CarouselEvent | bootstrapLib.bootstrapMod.CollapseEvent | bootstrapLib.bootstrapMod.DropdownEvent | bootstrapLib.bootstrapMod.ModalEvent | bootstrapLib.bootstrapMod.PopoverEvent | bootstrapLib.bootstrapMod.TapEvent | bootstrapLib.bootstrapMod.TooltipEvent,
+    events: bootstrapLib.bootstrapMod.AlertEvent | bootstrapLib.bootstrapMod.CarouselEvent | bootstrapLib.bootstrapMod.CollapseEvent | bootstrapLib.bootstrapMod.DropdownEvent | bootstrapLib.bootstrapMod.ModalEvent | bootstrapLib.bootstrapMod.PopoverEvent | bootstrapLib.bootstrapMod.TapEvent | bootstrapLib.bootstrapMod.ToastEvent | bootstrapLib.bootstrapMod.TooltipEvent,
     handler: (jqueryLib.JQueryNs.EventHandler[TElement, js.UndefOr[scala.Nothing]]) | (jqueryLib.JQueryNs.EventHandlerBase[
       TElement, 
       bootstrapLib.bootstrapMod.CarouselEventHandler[TElement] | bootstrapLib.bootstrapMod.DropdownsEventHandler[TElement] | bootstrapLib.bootstrapMod.ModalEventHandler[TElement] | bootstrapLib.bootstrapMod.TapEventHandler[TElement]
@@ -203,6 +203,25 @@ trait JQuery[TElement] extends js.Object {
     */
   @JSName("tab")
   def tab_show(action: bootstrapLib.bootstrapLibStrings.show): this.type = js.native
+  /**
+    * Attaches a toast handler to an element collection.
+    */
+  def toast(): this.type = js.native
+  def toast(options: bootstrapLib.bootstrapMod.ToastOption): this.type = js.native
+  @JSName("toast")
+  def toast_dispose(action: bootstrapLib.bootstrapLibStrings.dispose): this.type = js.native
+  @JSName("toast")
+  def toast_hide(action: bootstrapLib.bootstrapLibStrings.hide): this.type = js.native
+  /**
+    * Call a method on the toast element:
+    * * `show` – Reveals an element's toast. You have to manually call this method, instead your toast won't show.
+    * * `hide` – Hides an element's toast. You have to manually call this method if you made `autohide` to false.
+    * * `dispose` – Hides an element's toast. Your toast will remain on the DOM but won't show anymore.
+    *
+    * Returns to the caller before the toast has actually been shown or hidden (i.e. before the `shown.bs.toast` or `hidden.bs.toast` event occurs).
+    */
+  @JSName("toast")
+  def toast_show(action: bootstrapLib.bootstrapLibStrings.show): this.type = js.native
   /**
     * Attaches a tooltip handler to an element collection.
     */

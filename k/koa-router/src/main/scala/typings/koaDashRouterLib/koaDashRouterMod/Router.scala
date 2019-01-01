@@ -33,8 +33,8 @@ trait Router extends js.Object {
     * an `Allow` header containing the allowed methods, as well as responding
     * with `405 Method Not Allowed` and `501 Not Implemented` as appropriate.
     */
-  def allowedMethods(): koaLib.koaMod.ApplicationNs.Middleware = js.native
-  def allowedMethods(options: koaDashRouterLib.koaDashRouterMod.RouterNs.IRouterAllowedMethodsOptions): koaLib.koaMod.ApplicationNs.Middleware = js.native
+  def allowedMethods(): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
+  def allowedMethods(options: koaDashRouterLib.koaDashRouterMod.RouterNs.IRouterAllowedMethodsOptions): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
   /**
     * Alias for `router.delete()` because delete is a reserved word
     */
@@ -137,7 +137,7 @@ trait Router extends js.Object {
   /**
     * Returns router middleware which dispatches a route matching the request.
     */
-  def middleware(): koaLib.koaMod.ApplicationNs.Middleware = js.native
+  def middleware(): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
   /**
     * HTTP options method
     */
@@ -263,7 +263,7 @@ trait Router extends js.Object {
   /**
     * Returns router middleware which dispatches a route matching the request.
     */
-  def routes(): koaLib.koaMod.ApplicationNs.Middleware = js.native
+  def routes(): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
   /**
     * HTTP unlink method
     */

@@ -14,7 +14,7 @@ class Frustum protected () extends js.Object {
     */
   var planes: js.Array[Plane] = js.native
   def containsPoint(point: Vector3): scala.Boolean = js.native
-  def copy(frustum: this.type): this.type = js.native
+  def copy(frustum: Frustum): this.type = js.native
   def intersectsBox(box: Box3): scala.Boolean = js.native
   def intersectsObject(`object`: Object3D): scala.Boolean = js.native
   def intersectsObject(sprite: Sprite): scala.Boolean = js.native

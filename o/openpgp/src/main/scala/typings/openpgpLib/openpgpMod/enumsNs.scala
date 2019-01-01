@@ -27,6 +27,9 @@ object enumsNs extends js.Object {
   sealed trait publicKey extends js.Object
   
   @js.native
+  sealed trait reasonForRevocation extends js.Object
+  
+  @js.native
   sealed trait symmetric extends js.Object
   
   @js.native
@@ -283,6 +286,37 @@ object enumsNs extends js.Object {
     val rsa_sign: rsa_sign with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[openpgpLib.openpgpMod.enumsNs.publicKey with java.lang.String] = js.native
+  }
+  
+  @js.native
+  object reasonForRevocation extends js.Object {
+    @js.native
+    sealed trait key_compromised
+      extends openpgpLib.openpgpMod.enumsNs.reasonForRevocation
+    
+    @js.native
+    sealed trait key_retired
+      extends openpgpLib.openpgpMod.enumsNs.reasonForRevocation
+    
+    @js.native
+    sealed trait key_superseded
+      extends openpgpLib.openpgpMod.enumsNs.reasonForRevocation
+    
+    @js.native
+    sealed trait no_reason
+      extends openpgpLib.openpgpMod.enumsNs.reasonForRevocation
+    
+    @js.native
+    sealed trait userid_invalid
+      extends openpgpLib.openpgpMod.enumsNs.reasonForRevocation
+    
+    val key_compromised: key_compromised with java.lang.String = js.native
+    val key_retired: key_retired with java.lang.String = js.native
+    val key_superseded: key_superseded with java.lang.String = js.native
+    val no_reason: no_reason with java.lang.String = js.native
+    val userid_invalid: userid_invalid with java.lang.String = js.native
+    @JSBracketAccess
+    def apply(value: java.lang.String): js.UndefOr[openpgpLib.openpgpMod.enumsNs.reasonForRevocation with java.lang.String] = js.native
   }
   
   @js.native

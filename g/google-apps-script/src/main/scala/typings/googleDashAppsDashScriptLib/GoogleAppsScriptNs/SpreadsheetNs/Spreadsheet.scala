@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Spreadsheet extends js.Object {
+  def addDeveloperMetadata(key: java.lang.String): Spreadsheet = js.native
+  def addDeveloperMetadata(key: java.lang.String, value: java.lang.String): Spreadsheet = js.native
+  def addDeveloperMetadata(key: java.lang.String, value: java.lang.String, visibility: DeveloperMetadataVisibility): Spreadsheet = js.native
+  def addDeveloperMetadata(key: java.lang.String, visibility: DeveloperMetadataVisibility): Spreadsheet = js.native
   def addEditor(emailAddress: java.lang.String): Spreadsheet = js.native
   def addEditor(user: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.User): Spreadsheet = js.native
   def addEditors(emailAddresses: js.Array[java.lang.String]): Spreadsheet = js.native
@@ -17,6 +21,7 @@ trait Spreadsheet extends js.Object {
   def appendRow(rowContents: js.Array[js.Object]): Sheet = js.native
   def autoResizeColumn(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Sheet = js.native
   def copy(name: java.lang.String): Spreadsheet = js.native
+  def createDeveloperMetadataFinder(): DeveloperMetadataFinder = js.native
   def deleteActiveSheet(): Sheet = js.native
   def deleteColumn(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Sheet = js.native
   def deleteColumns(
@@ -40,11 +45,13 @@ trait Spreadsheet extends js.Object {
   def getColumnWidth(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getCurrentCell(): Range = js.native
   def getDataRange(): Range = js.native
+  def getDeveloperMetadata(): js.Array[DeveloperMetadata] = js.native
   def getEditors(): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.User] = js.native
   def getFormUrl(): java.lang.String = js.native
   def getFrozenColumns(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getFrozenRows(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getId(): java.lang.String = js.native
+  def getImages(): js.Array[OverGridImage] = js.native
   def getLastColumn(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getLastRow(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getName(): java.lang.String = js.native
@@ -88,26 +95,26 @@ trait Spreadsheet extends js.Object {
     blobSource: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.BlobSource,
     column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     row: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
-  ): scala.Unit = js.native
+  ): OverGridImage = js.native
   def insertImage(
     blobSource: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.BlobSource,
     column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     row: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     offsetX: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     offsetY: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
-  ): scala.Unit = js.native
+  ): OverGridImage = js.native
   def insertImage(
     url: java.lang.String,
     column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     row: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
-  ): scala.Unit = js.native
+  ): OverGridImage = js.native
   def insertImage(
     url: java.lang.String,
     column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     row: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     offsetX: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     offsetY: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
-  ): scala.Unit = js.native
+  ): OverGridImage = js.native
   def insertRowAfter(afterPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Sheet = js.native
   def insertRowBefore(beforePosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Sheet = js.native
   def insertRowsAfter(
@@ -132,6 +139,9 @@ trait Spreadsheet extends js.Object {
   ): Sheet = js.native
   def isAnonymousView(): scala.Boolean = js.native
   def isAnonymousWrite(): scala.Boolean = js.native
+  def isColumnHiddenByUser(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Boolean = js.native
+  def isRowHiddenByFilter(rowPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Boolean = js.native
+  def isRowHiddenByUser(rowPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Boolean = js.native
   def moveActiveSheet(pos: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Unit = js.native
   def removeEditor(emailAddress: java.lang.String): Spreadsheet = js.native
   def removeEditor(user: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.User): Spreadsheet = js.native

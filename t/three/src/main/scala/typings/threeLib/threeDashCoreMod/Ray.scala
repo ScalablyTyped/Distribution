@@ -15,7 +15,7 @@ class Ray () extends js.Object {
   def applyMatrix4(matrix4: Matrix4): Ray = js.native
   def at(t: scala.Double, target: Vector3): Vector3 = js.native
   def closestPointToPoint(point: Vector3, target: Vector3): Vector3 = js.native
-  def copy(ray: this.type): this.type = js.native
+  def copy(ray: Ray): this.type = js.native
   def distanceSqToPoint(point: Vector3): scala.Double = js.native
   def distanceSqToSegment(v0: Vector3, v1: Vector3): scala.Double = js.native
   def distanceSqToSegment(v0: Vector3, v1: Vector3, optionalPointOnRay: Vector3): scala.Double = js.native

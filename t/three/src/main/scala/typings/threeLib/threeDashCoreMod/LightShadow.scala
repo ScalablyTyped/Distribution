@@ -16,7 +16,7 @@ class LightShadow protected () extends js.Object {
   var matrix: Matrix4 = js.native
   var radius: scala.Double = js.native
   def clone(recursive: scala.Boolean): this.type = js.native
-  def copy(source: this.type): this.type = js.native
+  def copy(source: LightShadow): this.type = js.native
   def toJSON(): js.Any = js.native
 }
 

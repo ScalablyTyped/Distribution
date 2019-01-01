@@ -59,6 +59,6 @@ class Face3 protected () extends js.Object {
     * Array of 4 vertex normals.
     */
   var vertexNormals: js.Array[Vector3] = js.native
-  def copy(source: this.type): this.type = js.native
+  def copy(source: Face3): this.type = js.native
 }
 

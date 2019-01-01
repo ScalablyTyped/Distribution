@@ -126,20 +126,6 @@ object pluginsNs extends js.Object {
     var reviver: js.UndefOr[js.Function2[/* key */ js.Any, /* value */ js.Any, _]] = js.undefined
   }
   
-  trait MetricsCallback extends js.Object {
-    /**
-      *  An error if the request had an error
-      */
-    var err: nodeLib.Error
-    var metrics: MetricsCallbackOptions
-    var req: restifyLib.restifyMod.Request
-    var res: restifyLib.restifyMod.Response
-    /**
-      * The route obj that serviced the request
-      */
-    var route: restifyLib.restifyMod.Route
-  }
-  
   trait MetricsCallbackOptions extends js.Object {
     /**
       * If this value is set, err will be a corresponding `RequestCloseError` or `RequestAbortedError`.
@@ -361,13 +347,13 @@ object pluginsNs extends js.Object {
     * Listens to the server's after event and emits information about that request (5.x compatible only).
     *
     * ```
-    * server.on('after', plugins.metrics( (err, metrics) =>
+    * server.on('after', plugins.metrics({ server }, (err, metrics, req, res, route) =>
     * {
     *    // metrics is an object containing information about the request
     * }));
     * ```
     */
-  def metrics(opts: restifyLib.Anon_Server, callback: js.Function1[/* options */ MetricsCallback, _]): js.Function1[/* repeated */ js.Any, scala.Unit] = js.native
+  def metrics(opts: restifyLib.Anon_Server, callback: MetricsCallback): js.Function1[/* repeated */ js.Any, scala.Unit] = js.native
   /**
     * Parses JSONP callback
     */
@@ -466,6 +452,14 @@ object pluginsNs extends js.Object {
     /* route */ js.Any, 
     /* error */ js.Any, 
     js.Any
+  ]
+  type MetricsCallback = js.Function5[
+    /* err */ nodeLib.Error, 
+    /* metrics */ MetricsCallbackOptions, 
+    /* req */ restifyLib.restifyMod.Request, 
+    /* res */ restifyLib.restifyMod.Response, 
+    /* route */ restifyLib.restifyMod.Route, 
+    scala.Unit
   ]
   type TMetricsCallback = js.UndefOr[restifyLib.restifyLibStrings.close | restifyLib.restifyLibStrings.aborted]
 }

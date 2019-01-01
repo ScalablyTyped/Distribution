@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "antd"
-version := "3.11.6-f186fc"
+version := "3.11.6-39cc43"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -30,7 +30,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-8054fe",
   "org.scalablytyped" %%% "react-slick" % "0.23-dt-20180806Z-eeab4f",
   "org.scalablytyped" %%% "resize-observer-polyfill" % "1.5.1-590f83",
-  "org.scalablytyped" %%% "shallowequal" % "v0.2.2-dt-20180612Z-a96395",
+  "org.scalablytyped" %%% "shallowequal" % "1.1-dt-20181231Z-576b0e",
   "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff",
   "org.scalablytyped" %%% "warning" % "3.0.0-dt-20180214Z-292246")
 publishArtifact in packageDoc := false

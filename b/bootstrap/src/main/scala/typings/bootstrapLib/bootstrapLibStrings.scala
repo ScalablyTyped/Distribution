@@ -73,6 +73,9 @@ object bootstrapLibStrings {
   sealed trait hiddenDOTbsDOTtab extends js.Object
   
   @js.native
+  sealed trait hiddenDOTbsDOTtoast extends js.Object
+  
+  @js.native
   sealed trait hiddenDOTbsDOTtooltip extends js.Object
   
   @js.native
@@ -92,6 +95,9 @@ object bootstrapLibStrings {
   
   @js.native
   sealed trait hideDOTbsDOTtab extends js.Object
+  
+  @js.native
+  sealed trait hideDOTbsDOTtoast extends js.Object
   
   @js.native
   sealed trait hideDOTbsDOTtooltip extends js.Object
@@ -157,6 +163,9 @@ object bootstrapLibStrings {
   sealed trait showDOTbsDOTtab extends js.Object
   
   @js.native
+  sealed trait showDOTbsDOTtoast extends js.Object
+  
+  @js.native
   sealed trait showDOTbsDOTtooltip extends js.Object
   
   @js.native
@@ -173,6 +182,9 @@ object bootstrapLibStrings {
   
   @js.native
   sealed trait shownDOTbsDOTtab extends js.Object
+  
+  @js.native
+  sealed trait shownDOTbsDOTtoast extends js.Object
   
   @js.native
   sealed trait shownDOTbsDOTtooltip extends js.Object
@@ -220,6 +232,7 @@ object bootstrapLibStrings {
   def hiddenDOTbsDOTmodal: hiddenDOTbsDOTmodal = "hidden.bs.modal".asInstanceOf[hiddenDOTbsDOTmodal]
   def hiddenDOTbsDOTpopover: hiddenDOTbsDOTpopover = "hidden.bs.popover".asInstanceOf[hiddenDOTbsDOTpopover]
   def hiddenDOTbsDOTtab: hiddenDOTbsDOTtab = "hidden.bs.tab".asInstanceOf[hiddenDOTbsDOTtab]
+  def hiddenDOTbsDOTtoast: hiddenDOTbsDOTtoast = "hidden.bs.toast".asInstanceOf[hiddenDOTbsDOTtoast]
   def hiddenDOTbsDOTtooltip: hiddenDOTbsDOTtooltip = "hidden.bs.tooltip".asInstanceOf[hiddenDOTbsDOTtooltip]
   def hide: hide = "hide".asInstanceOf[hide]
   def hideDOTbsDOTcollapse: hideDOTbsDOTcollapse = "hide.bs.collapse".asInstanceOf[hideDOTbsDOTcollapse]
@@ -227,6 +240,7 @@ object bootstrapLibStrings {
   def hideDOTbsDOTmodal: hideDOTbsDOTmodal = "hide.bs.modal".asInstanceOf[hideDOTbsDOTmodal]
   def hideDOTbsDOTpopover: hideDOTbsDOTpopover = "hide.bs.popover".asInstanceOf[hideDOTbsDOTpopover]
   def hideDOTbsDOTtab: hideDOTbsDOTtab = "hide.bs.tab".asInstanceOf[hideDOTbsDOTtab]
+  def hideDOTbsDOTtoast: hideDOTbsDOTtoast = "hide.bs.toast".asInstanceOf[hideDOTbsDOTtoast]
   def hideDOTbsDOTtooltip: hideDOTbsDOTtooltip = "hide.bs.tooltip".asInstanceOf[hideDOTbsDOTtooltip]
   def hover: hover = "hover".asInstanceOf[hover]
   def `hover focus`: `hover focus` = "hover focus".asInstanceOf[`hover focus`]
@@ -248,12 +262,14 @@ object bootstrapLibStrings {
   def showDOTbsDOTmodal: showDOTbsDOTmodal = "show.bs.modal".asInstanceOf[showDOTbsDOTmodal]
   def showDOTbsDOTpopover: showDOTbsDOTpopover = "show.bs.popover".asInstanceOf[showDOTbsDOTpopover]
   def showDOTbsDOTtab: showDOTbsDOTtab = "show.bs.tab".asInstanceOf[showDOTbsDOTtab]
+  def showDOTbsDOTtoast: showDOTbsDOTtoast = "show.bs.toast".asInstanceOf[showDOTbsDOTtoast]
   def showDOTbsDOTtooltip: showDOTbsDOTtooltip = "show.bs.tooltip".asInstanceOf[showDOTbsDOTtooltip]
   def shownDOTbsDOTcollapse: shownDOTbsDOTcollapse = "shown.bs.collapse".asInstanceOf[shownDOTbsDOTcollapse]
   def shownDOTbsDOTdropdown: shownDOTbsDOTdropdown = "shown.bs.dropdown".asInstanceOf[shownDOTbsDOTdropdown]
   def shownDOTbsDOTmodal: shownDOTbsDOTmodal = "shown.bs.modal".asInstanceOf[shownDOTbsDOTmodal]
   def shownDOTbsDOTpopover: shownDOTbsDOTpopover = "shown.bs.popover".asInstanceOf[shownDOTbsDOTpopover]
   def shownDOTbsDOTtab: shownDOTbsDOTtab = "shown.bs.tab".asInstanceOf[shownDOTbsDOTtab]
+  def shownDOTbsDOTtoast: shownDOTbsDOTtoast = "shown.bs.toast".asInstanceOf[shownDOTbsDOTtoast]
   def shownDOTbsDOTtooltip: shownDOTbsDOTtooltip = "shown.bs.tooltip".asInstanceOf[shownDOTbsDOTtooltip]
   def slidDOTbsDOTcarousel: slidDOTbsDOTcarousel = "slid.bs.carousel".asInstanceOf[slidDOTbsDOTcarousel]
   def slideDOTbsDOTcarousel: slideDOTbsDOTcarousel = "slide.bs.carousel".asInstanceOf[slideDOTbsDOTcarousel]

@@ -42,8 +42,10 @@ object pemModMembers extends js.Object {
   def getPublicKey(certificate: java.lang.String, callback: Callback[pemLib.Anon_PublicKey]): scala.Unit = js.native
   def readCertificateInfo(callback: Callback[CertificateSubjectReadResult]): scala.Unit = js.native
   def readCertificateInfo(certificate: java.lang.String, callback: Callback[CertificateSubjectReadResult]): scala.Unit = js.native
-  def readPkcs12(bufferOrPath: java.lang.String, callback: Callback[pemLib.Anon_Pkcs12]): js.Any = js.native
-  def readPkcs12(bufferOrPath: java.lang.String, options: Pkcs12ReadOptions, callback: Callback[pemLib.Anon_Pkcs12]): js.Any = js.native
+  def readPkcs12(bufferOrPath: java.lang.String, callback: Callback[Pkcs12ReadResult]): js.Any = js.native
+  def readPkcs12(bufferOrPath: java.lang.String, options: Pkcs12ReadOptions, callback: Callback[Pkcs12ReadResult]): js.Any = js.native
+  def readPkcs12(bufferOrPath: nodeLib.Buffer, callback: Callback[Pkcs12ReadResult]): js.Any = js.native
+  def readPkcs12(bufferOrPath: nodeLib.Buffer, options: Pkcs12ReadOptions, callback: Callback[Pkcs12ReadResult]): js.Any = js.native
   def verifySigningChain(certificate: java.lang.String, ca: js.Array[java.lang.String], callback: Callback[scala.Boolean]): scala.Unit = js.native
 }
 

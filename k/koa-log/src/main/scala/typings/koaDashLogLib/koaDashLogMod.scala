@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("koa-log", JSImport.Namespace)
 @js.native
 object koaDashLogMod extends js.Object {
-  def apply(`type`: java.lang.String): koaLib.koaMod.ApplicationNs.Middleware = js.native
+  def apply(`type`: java.lang.String): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
   @JSName("morgan")
   @js.native
   object morganNs extends js.Object {

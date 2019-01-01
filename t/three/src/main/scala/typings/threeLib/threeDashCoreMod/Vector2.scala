@@ -64,7 +64,7 @@ class Vector2 () extends Vector {
   /**
     * Copies value of v to this vector.
     */
-  def copy(v: this.type): this.type = js.native
+  def copy(v: Vector2): this.type = js.native
   /**
     * @deprecated Use {@link Vector2#manhattanDistanceTo .manhattanDistanceTo()} instead.
     */

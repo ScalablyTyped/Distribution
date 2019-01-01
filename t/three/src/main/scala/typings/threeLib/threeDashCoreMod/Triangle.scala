@@ -16,7 +16,7 @@ class Triangle () extends js.Object {
   var c: Vector3 = js.native
   def closestPointToPoint(point: Vector3, target: Vector3): Vector3 = js.native
   def containsPoint(point: Vector3): scala.Boolean = js.native
-  def copy(triangle: this.type): this.type = js.native
+  def copy(triangle: Triangle): this.type = js.native
   def equals(triangle: Triangle): scala.Boolean = js.native
   def getArea(): scala.Double = js.native
   def getBarycoord(point: Vector3, target: Vector3): Vector3 = js.native

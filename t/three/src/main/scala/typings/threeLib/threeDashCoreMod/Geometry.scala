@@ -140,7 +140,7 @@ class Geometry () extends EventDispatcher {
     */
   def computeVertexNormals(): scala.Unit = js.native
   def computeVertexNormals(areaWeighted: scala.Boolean): scala.Unit = js.native
-  def copy(source: this.type): this.type = js.native
+  def copy(source: Geometry): this.type = js.native
   /**
     * Removes The object from memory.
     * Don't forget to call this method when you remove an geometry because it can cuase meomory leaks.

@@ -13,6 +13,8 @@ trait SpreadsheetApp extends js.Object {
   var BorderStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Spreadsheet.BorderStyle */ js.Any = js.native
   var CopyPasteType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Spreadsheet.CopyPasteType */ js.Any = js.native
   var DataValidationCriteria: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Spreadsheet.DataValidationCriteria */ js.Any = js.native
+  var DeveloperMetadataLocationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Spreadsheet.DeveloperMetadataLocationType */ js.Any = js.native
+  var DeveloperMetadataVisibility: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Spreadsheet.DeveloperMetadataVisibility */ js.Any = js.native
   var Dimension: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Spreadsheet.Dimension */ js.Any = js.native
   var Direction: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Spreadsheet.Direction */ js.Any = js.native
   var GroupControlTogglePosition: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Spreadsheet.GroupControlTogglePosition */ js.Any = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-places-autocomplete"
-version := "7.2-dt-20181212Z-c664b1"
+version := "7.2-dt-20181231Z-96ff1a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

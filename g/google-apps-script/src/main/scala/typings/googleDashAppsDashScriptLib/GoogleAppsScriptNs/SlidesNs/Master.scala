@@ -14,6 +14,7 @@ trait Master extends js.Object {
   def getLayouts(): js.Array[Layout] = js.native
   def getLines(): js.Array[Line] = js.native
   def getObjectId(): java.lang.String = js.native
+  def getPageElementById(id: java.lang.String): PageElement = js.native
   def getPageElements(): js.Array[PageElement] = js.native
   def getPageType(): PageType = js.native
   def getPlaceholder(placeholderType: PlaceholderType): PageElement = js.native
@@ -46,6 +47,7 @@ trait Master extends js.Object {
     height: stdLib.Number
   ): Image = js.native
   def insertImage(image: Image): Image = js.native
+  def insertLine(lineCategory: LineCategory, startConnectionSite: ConnectionSite, endConnectionSite: ConnectionSite): Line = js.native
   def insertLine(
     lineCategory: LineCategory,
     startLeft: stdLib.Number,

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 /**
   * @param opts The options object is also passed through to the storage adapter. Check your storage adapter docs for any extra options.
   */
-class namespaced () extends Keyv {
-  def this(opts: KeyvOptions) = this()
+class namespaced[TValue] () extends Keyv[TValue] {
+  def this(opts: keyvLib.keyvMod.KeyvNs.Options[TValue]) = this()
   def this(uri: java.lang.String) = this()
-  def this(uri: java.lang.String, opts: KeyvOptions) = this()
+  def this(uri: java.lang.String, opts: keyvLib.keyvMod.KeyvNs.Options[TValue]) = this()
 }
 

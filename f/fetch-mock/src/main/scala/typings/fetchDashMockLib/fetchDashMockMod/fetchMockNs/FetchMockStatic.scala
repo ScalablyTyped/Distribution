@@ -93,8 +93,11 @@ trait FetchMockStatic extends js.Object {
   /**
     * Returns a promise that resolves once all fetches handled by fetch-mock
     * have resolved.
+    * @param [waitForBody] Wait for all body parsing methods(res.json(),
+    * res.text(), etc.) to resolve too.
     */
   def flush(): js.Promise[js.Array[MockResponse]] = js.native
+  def flush(waitForBody: scala.Boolean): js.Promise[js.Array[MockResponse]] = js.native
   /**
     * Replaces fetch() with a stub which records its calls, grouped by
     * route, and optionally returns a mocked Response object or passes the

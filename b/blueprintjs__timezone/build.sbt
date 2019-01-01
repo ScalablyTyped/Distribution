@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blueprintjs__timezone"
-version := "3.1.0-e8101c"
+version := "3.1.0-ed262b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.5.8-a13970",
   "org.scalablytyped" %%% "dom4" % "v2.0-dt-20180806Z-1cc21f",
   "org.scalablytyped" %%% "moment" % "2.23.0-9a5931",
-  "org.scalablytyped" %%% "moment-timezone" % "0.5-dt-20180910Z-12e718",
+  "org.scalablytyped" %%% "moment-timezone" % "0.5-dt-20181231Z-10a1ce",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",
   "org.scalablytyped" %%% "popper_dot_js" % "1.14.6-1d30a6",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-89199d",

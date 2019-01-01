@@ -8,7 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WordArt extends js.Object {
   def alignOnPage(alignmentPosition: AlignmentPosition): WordArt = js.native
+  def bringForward(): WordArt = js.native
+  def bringToFront(): WordArt = js.native
   def duplicate(): PageElement = js.native
+  def getConnectionSites(): js.Array[ConnectionSite] = js.native
   def getDescription(): java.lang.String = js.native
   def getHeight(): stdLib.Number = js.native
   def getInherentHeight(): stdLib.Number = js.native
@@ -32,6 +35,9 @@ trait WordArt extends js.Object {
   def scaleWidth(ratio: stdLib.Number): WordArt = js.native
   def select(): scala.Unit = js.native
   def select(replace: scala.Boolean): scala.Unit = js.native
+  def sendBackward(): WordArt = js.native
+  def sendToBack(): WordArt = js.native
+  def setDescription(description: java.lang.String): WordArt = js.native
   def setHeight(height: stdLib.Number): WordArt = js.native
   def setLeft(left: stdLib.Number): WordArt = js.native
   def setLinkSlide(slideIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Link = js.native
@@ -39,6 +45,7 @@ trait WordArt extends js.Object {
   def setLinkSlide(slide: Slide): Link = js.native
   def setLinkUrl(url: java.lang.String): Link = js.native
   def setRotation(angle: stdLib.Number): WordArt = js.native
+  def setTitle(title: java.lang.String): WordArt = js.native
   def setTop(top: stdLib.Number): WordArt = js.native
   def setTransform(transform: AffineTransform): WordArt = js.native
   def setWidth(width: stdLib.Number): WordArt = js.native

@@ -34,7 +34,7 @@ class Vector4 () extends Vector {
   /**
     * Copies value of v to this vector.
     */
-  def copy(v: this.type): this.type = js.native
+  def copy(v: Vector4): this.type = js.native
   /**
     * Computes dot product of this vector and v.
     */

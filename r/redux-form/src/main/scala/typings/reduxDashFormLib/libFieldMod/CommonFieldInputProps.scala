@@ -15,7 +15,10 @@ trait CommonFieldInputProps extends js.Object {
   @JSName("onFocus")
   var onFocus_Original: EventHandler[reactLib.reactMod.ReactNs.FocusEvent[_]] = js.native
   def onDragStart(event: reactLib.reactMod.ReactNs.DragEvent[_]): scala.Unit = js.native
+  def onDragStart(event: reactLib.reactMod.ReactNs.DragEvent[_], name: java.lang.String): scala.Unit = js.native
   def onDrop(event: reactLib.reactMod.ReactNs.DragEvent[_]): scala.Unit = js.native
+  def onDrop(event: reactLib.reactMod.ReactNs.DragEvent[_], name: java.lang.String): scala.Unit = js.native
   def onFocus(event: reactLib.reactMod.ReactNs.FocusEvent[_]): scala.Unit = js.native
+  def onFocus(event: reactLib.reactMod.ReactNs.FocusEvent[_], name: java.lang.String): scala.Unit = js.native
 }
 

@@ -11,11 +11,12 @@ object googleDashAppsDashScriptLibMembers extends js.Object {
   var Browser: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Browser = js.native
   var CacheService: googleDashAppsDashScriptLib.GoogleAppsScriptNs.CacheNs.CacheService = js.native
   var CalendarApp: googleDashAppsDashScriptLib.GoogleAppsScriptNs.CalendarNs.CalendarApp = js.native
-  var CardService: googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardNs.CardService = js.native
+  var CardService: googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.CardService = js.native
   var Charset: googleDashAppsDashScriptLib.GoogleAppsScriptNs.UtilitiesNs.Charset = js.native
   var Charts: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.Charts = js.native
   var ContactsApp: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContactsNs.ContactsApp = js.native
   var ContentService: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContentNs.ContentService = js.native
+  var DataStudioApp: googleDashAppsDashScriptLib.GoogleAppsScriptNs.DataUnderscoreStudioNs.DataStudioApp = js.native
   var DigestAlgorithm: googleDashAppsDashScriptLib.GoogleAppsScriptNs.UtilitiesNs.DigestAlgorithm = js.native
   var DocumentApp: googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.DocumentApp = js.native
   var DriveApp: googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.DriveApp = js.native
@@ -32,6 +33,7 @@ object googleDashAppsDashScriptLibMembers extends js.Object {
   var MailApp: googleDashAppsDashScriptLib.GoogleAppsScriptNs.MailNs.MailApp = js.native
   var Maps: googleDashAppsDashScriptLib.GoogleAppsScriptNs.MapsNs.Maps = js.native
   var PropertiesService: googleDashAppsDashScriptLib.GoogleAppsScriptNs.PropertiesNs.PropertiesService = js.native
+  var RsaAlgorithm: googleDashAppsDashScriptLib.GoogleAppsScriptNs.UtilitiesNs.RsaAlgorithm = js.native
   var ScriptApp: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ScriptNs.ScriptApp = js.native
   var ScriptProperties: googleDashAppsDashScriptLib.GoogleAppsScriptNs.PropertiesNs.ScriptProperties = js.native
   // conflicts with MimeType in lib.d.ts
@@ -45,5 +47,6 @@ object googleDashAppsDashScriptLibMembers extends js.Object {
   var UserProperties: googleDashAppsDashScriptLib.GoogleAppsScriptNs.PropertiesNs.UserProperties = js.native
   var Utilities: googleDashAppsDashScriptLib.GoogleAppsScriptNs.UtilitiesNs.Utilities = js.native
   var XmlService: googleDashAppsDashScriptLib.GoogleAppsScriptNs.XMLUnderscoreServiceNs.XmlService = js.native
+  var console: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.console = js.native
 }
 

@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Sheet extends js.Object {
   def activate(): Sheet = js.native
+  def addDeveloperMetadata(key: java.lang.String): Sheet = js.native
+  def addDeveloperMetadata(key: java.lang.String, value: java.lang.String): Sheet = js.native
+  def addDeveloperMetadata(key: java.lang.String, value: java.lang.String, visibility: DeveloperMetadataVisibility): Sheet = js.native
+  def addDeveloperMetadata(key: java.lang.String, visibility: DeveloperMetadataVisibility): Sheet = js.native
   def appendRow(rowContents: js.Array[js.Object]): Sheet = js.native
   def autoResizeColumn(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Sheet = js.native
   def autoResizeColumns(
@@ -27,6 +31,7 @@ trait Sheet extends js.Object {
   def collapseAllColumnGroups(): Sheet = js.native
   def collapseAllRowGroups(): Sheet = js.native
   def copyTo(spreadsheet: Spreadsheet): Sheet = js.native
+  def createDeveloperMetadataFinder(): DeveloperMetadataFinder = js.native
   def deleteColumn(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Sheet = js.native
   def deleteColumns(
     columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -56,10 +61,12 @@ trait Sheet extends js.Object {
   def getConditionalFormatRules(): js.Array[ConditionalFormatRule] = js.native
   def getCurrentCell(): Range = js.native
   def getDataRange(): Range = js.native
+  def getDeveloperMetadata(): js.Array[DeveloperMetadata] = js.native
   def getFilter(): Filter = js.native
   def getFormUrl(): java.lang.String = js.native
   def getFrozenColumns(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getFrozenRows(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
+  def getImages(): js.Array[OverGridImage] = js.native
   def getIndex(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getLastColumn(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getLastRow(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
@@ -139,26 +146,26 @@ trait Sheet extends js.Object {
     blobSource: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.BlobSource,
     column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     row: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
-  ): scala.Unit = js.native
+  ): OverGridImage = js.native
   def insertImage(
     blobSource: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.BlobSource,
     column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     row: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     offsetX: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     offsetY: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
-  ): scala.Unit = js.native
+  ): OverGridImage = js.native
   def insertImage(
     url: java.lang.String,
     column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     row: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
-  ): scala.Unit = js.native
+  ): OverGridImage = js.native
   def insertImage(
     url: java.lang.String,
     column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     row: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     offsetX: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     offsetY: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
-  ): scala.Unit = js.native
+  ): OverGridImage = js.native
   def insertRowAfter(afterPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Sheet = js.native
   def insertRowBefore(beforePosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Sheet = js.native
   def insertRows(rowIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Unit = js.native
@@ -174,7 +181,10 @@ trait Sheet extends js.Object {
     beforePosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     howMany: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): Sheet = js.native
+  def isColumnHiddenByUser(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Boolean = js.native
   def isRightToLeft(): scala.Boolean = js.native
+  def isRowHiddenByFilter(rowPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Boolean = js.native
+  def isRowHiddenByUser(rowPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Boolean = js.native
   def isSheetHidden(): scala.Boolean = js.native
   def moveColumns(columnSpec: Range, destinationIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Unit = js.native
   def moveRows(rowSpec: Range, destinationIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Unit = js.native

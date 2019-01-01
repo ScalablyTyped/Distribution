@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.omnibox")
 @js.native
 object omniboxNsMembers extends js.Object {
+  var onDeleteSuggestion: OmniboxSuggestionDeletedEvent = js.native
   var onInputCancelled: OmniboxInputCancelledEvent = js.native
   var onInputChanged: OmniboxInputChangedEvent = js.native
   var onInputEntered: OmniboxInputEnteredEvent = js.native

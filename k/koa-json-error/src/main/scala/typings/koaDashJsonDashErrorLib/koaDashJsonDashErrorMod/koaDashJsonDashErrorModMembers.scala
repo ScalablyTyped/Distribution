@@ -11,7 +11,7 @@ object koaDashJsonDashErrorModMembers extends js.Object {
   /**
     * Error handler for pure Koa 2.0.0+ JSON apps
     */
-  def apply(): koaLib.koaMod.ApplicationNs.Middleware = js.native
-  def apply(options: JSONErrorOptions): koaLib.koaMod.ApplicationNs.Middleware = js.native
+  def apply(): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
+  def apply(options: JSONErrorOptions): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
 }
 

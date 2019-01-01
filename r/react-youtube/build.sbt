@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-youtube"
-version := "7.4-dt-20180806Z-1f851f"
+version := "7.4-dt-20181231Z-238ea7"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

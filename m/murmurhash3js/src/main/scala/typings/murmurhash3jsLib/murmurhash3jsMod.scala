@@ -20,8 +20,8 @@ object murmurhash3jsMod extends js.Object {
   object x86Ns extends js.Object {
     def hash128(`val`: java.lang.String): java.lang.String = js.native
     def hash128(`val`: java.lang.String, seed: scala.Double): java.lang.String = js.native
-    def hash32(`val`: java.lang.String): java.lang.String = js.native
-    def hash32(`val`: java.lang.String, seed: scala.Double): java.lang.String = js.native
+    def hash32(`val`: java.lang.String): scala.Double = js.native
+    def hash32(`val`: java.lang.String, seed: scala.Double): scala.Double = js.native
   }
   
 }

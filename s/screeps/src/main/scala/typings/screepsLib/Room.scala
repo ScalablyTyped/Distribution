@@ -191,8 +191,8 @@ trait Room extends js.Object {
   /**
     * Returns an array of events happened on the previous tick in this room.
     */
-  def getEventLog(): js.Array[EventItem] = js.native
-  def getEventLog(raw: scala.Boolean): js.Array[EventItem] = js.native
+  def getEventLog(): js.Array[EventItem[EventConstant]] = js.native
+  def getEventLog(raw: scala.Boolean): js.Array[EventItem[EventConstant]] = js.native
   /**
     * Creates a RoomPosition object at the specified location.
     * @param x The X position.

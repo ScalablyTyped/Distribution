@@ -1,0 +1,12 @@
+package typings
+package typpyLib.typpyMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("typpy", JSImport.Namespace)
+@js.native
+object typpyModMembers
+  extends org.scalablytyped.runtime.TopLevel[typpyLib.typpyMod.TyppyNs.TyppyFn]
+

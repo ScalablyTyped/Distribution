@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_TypeEventDestroyType extends js.Object {
+  // EVENT_OBJECT_DESTORYED
   var `type`: EventDestroyType
 }
 

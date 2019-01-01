@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "shopify-prime"
-version := "2.12.0-d6d345"
+version := "2.12.0-5a966a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",
   "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20181119Z-3aadd3",
   "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff",
-  "org.scalablytyped" %%% "url-join" % "v0.8.3-dt-20180214Z-599738")
+  "org.scalablytyped" %%% "url-join" % "4.0-dt-20181231Z-e4d436")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

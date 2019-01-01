@@ -190,9 +190,6 @@ object nodeDashRsaLibStrings {
   sealed trait ripemd160 extends js.Object
   
   @js.native
-  sealed trait sha extends js.Object
-  
-  @js.native
   sealed trait sha1 extends js.Object
   
   @js.native
@@ -277,7 +274,6 @@ object nodeDashRsaLibStrings {
   def `pss-sha512`: `pss-sha512` = "pss-sha512".asInstanceOf[`pss-sha512`]
   def public: public = "public".asInstanceOf[public]
   def ripemd160: ripemd160 = "ripemd160".asInstanceOf[ripemd160]
-  def sha: sha = "sha".asInstanceOf[sha]
   def sha1: sha1 = "sha1".asInstanceOf[sha1]
   def sha224: sha224 = "sha224".asInstanceOf[sha224]
   def sha256: sha256 = "sha256".asInstanceOf[sha256]

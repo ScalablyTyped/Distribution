@@ -12,7 +12,13 @@ trait When extends js.Object {
   // due to no-unnecessary-generics lint rule, the generics have been replaced with 'any'
   // calledWith<T>(...matchers: any[]): PartialMockInstance<T>;
   // expectCalledWith<T>(...matchers: any[]): PartialMockInstance<T>;
-  def calledWith(matchers: js.Any*): PartialMockInstance[_] = js.native
-  def expectCalledWith(matchers: js.Any*): PartialMockInstance[_] = js.native
+  def calledWith(matchers: js.Any*): When = js.native
+  def expectCalledWith(matchers: js.Any*): When = js.native
+  def mockRejectedValue(value: js.Any): (js.Function1[/* value */ js.Any, jestLib.jestNs.Mock[_]]) with When = js.native
+  def mockRejectedValueOnce(value: js.Any): (js.Function1[/* value */ js.Any, jestLib.jestNs.Mock[_]]) with When = js.native
+  def mockResolvedValue(value: js.Any): (js.Function1[/* value */ js.Any, jestLib.jestNs.Mock[_]]) with When = js.native
+  def mockResolvedValueOnce(value: js.Any): (js.Function1[/* value */ js.Any, jestLib.jestNs.Mock[_]]) with When = js.native
+  def mockReturnValue(value: js.Any): (js.Function1[/* value */ js.Any, jestLib.jestNs.Mock[_]]) with When = js.native
+  def mockReturnValueOnce(value: js.Any): (js.Function1[/* value */ js.Any, jestLib.jestNs.Mock[_]]) with When = js.native
 }
 

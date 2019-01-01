@@ -8,27 +8,29 @@ import scala.scalajs.js.annotation._
 @JSImport("shallowequal", JSImport.Namespace)
 @js.native
 object shallowequalMod extends js.Object {
-  def apply(objA: js.Any, objB: js.Any): scala.Boolean = js.native
-  def apply(
+  def apply[TCtx](objA: js.Any, objB: js.Any): scala.Boolean = js.native
+  def apply[TCtx](
     objA: js.Any,
     objB: js.Any,
-    compare: js.Function3[
+    compare: js.ThisFunction3[
+      /* this */ TCtx, 
       /* objA */ js.Any, 
       /* objB */ js.Any, 
       /* indexOrKey */ js.UndefOr[scala.Double | java.lang.String], 
-      js.UndefOr[scala.Boolean]
+      scala.Boolean | scala.Unit
     ]
   ): scala.Boolean = js.native
-  def apply(
+  def apply[TCtx](
     objA: js.Any,
     objB: js.Any,
-    compare: js.Function3[
+    compare: js.ThisFunction3[
+      /* this */ TCtx, 
       /* objA */ js.Any, 
       /* objB */ js.Any, 
       /* indexOrKey */ js.UndefOr[scala.Double | java.lang.String], 
-      js.UndefOr[scala.Boolean]
+      scala.Boolean | scala.Unit
     ],
-    compareContext: js.Any
+    compareContext: TCtx
   ): scala.Boolean = js.native
 }
 

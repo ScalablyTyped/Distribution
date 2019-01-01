@@ -15,6 +15,7 @@ package object bootstrapMod {
   type PopoverEvent = bootstrapLib.bootstrapLibStrings.showDOTbsDOTpopover | bootstrapLib.bootstrapLibStrings.shownDOTbsDOTpopover | bootstrapLib.bootstrapLibStrings.hideDOTbsDOTpopover | bootstrapLib.bootstrapLibStrings.hiddenDOTbsDOTpopover | bootstrapLib.bootstrapLibStrings.insertedDOTbsDOTpopover
   type ScrollspyEvent = bootstrapLib.bootstrapLibStrings.activateDOTbsDOTscrollspy
   type TapEvent = bootstrapLib.bootstrapLibStrings.showDOTbsDOTtab | bootstrapLib.bootstrapLibStrings.shownDOTbsDOTtab | bootstrapLib.bootstrapLibStrings.hideDOTbsDOTtab | bootstrapLib.bootstrapLibStrings.hiddenDOTbsDOTtab
+  type ToastEvent = bootstrapLib.bootstrapLibStrings.showDOTbsDOTtoast | bootstrapLib.bootstrapLibStrings.shownDOTbsDOTtoast | bootstrapLib.bootstrapLibStrings.hideDOTbsDOTtoast | bootstrapLib.bootstrapLibStrings.hiddenDOTbsDOTtoast
   type TooltipEvent = bootstrapLib.bootstrapLibStrings.showDOTbsDOTtooltip | bootstrapLib.bootstrapLibStrings.shownDOTbsDOTtooltip | bootstrapLib.bootstrapLibStrings.hideDOTbsDOTtooltip | bootstrapLib.bootstrapLibStrings.hiddenDOTbsDOTtooltip | bootstrapLib.bootstrapLibStrings.insertedDOTbsDOTtooltip
   type Trigger = bootstrapLib.bootstrapLibStrings.click | bootstrapLib.bootstrapLibStrings.hover | bootstrapLib.bootstrapLibStrings.focus | bootstrapLib.bootstrapLibStrings.manual | (bootstrapLib.bootstrapLibStrings.`click hover`) | (bootstrapLib.bootstrapLibStrings.`click focus`) | (bootstrapLib.bootstrapLibStrings.`hover focus`) | (bootstrapLib.bootstrapLibStrings.`click hover focus`)
 }

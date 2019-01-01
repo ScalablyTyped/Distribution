@@ -16,7 +16,10 @@ trait PageElement extends js.Object {
   def asTable(): Table = js.native
   def asVideo(): Video = js.native
   def asWordArt(): WordArt = js.native
+  def bringForward(): PageElement = js.native
+  def bringToFront(): PageElement = js.native
   def duplicate(): PageElement = js.native
+  def getConnectionSites(): js.Array[ConnectionSite] = js.native
   def getDescription(): java.lang.String = js.native
   def getHeight(): stdLib.Number = js.native
   def getInherentHeight(): stdLib.Number = js.native
@@ -37,9 +40,13 @@ trait PageElement extends js.Object {
   def scaleWidth(ratio: stdLib.Number): PageElement = js.native
   def select(): scala.Unit = js.native
   def select(replace: scala.Boolean): scala.Unit = js.native
+  def sendBackward(): PageElement = js.native
+  def sendToBack(): PageElement = js.native
+  def setDescription(description: java.lang.String): PageElement = js.native
   def setHeight(height: stdLib.Number): PageElement = js.native
   def setLeft(left: stdLib.Number): PageElement = js.native
   def setRotation(angle: stdLib.Number): PageElement = js.native
+  def setTitle(title: java.lang.String): PageElement = js.native
   def setTop(top: stdLib.Number): PageElement = js.native
   def setTransform(transform: AffineTransform): PageElement = js.native
   def setWidth(width: stdLib.Number): PageElement = js.native

@@ -20,6 +20,14 @@ trait PushNotification extends js.Object {
     */
   def getBadgeCount(): scala.Double
   /**
+    * Gets the category string from the `aps` object
+    */
+  def getCategory(): java.lang.String
+  /**
+    * Gets the content-available number from the `aps` object
+    */
+  def getContentAvailable(): scala.Double
+  /**
     * Gets the data object on the notif
     */
   def getData(): js.Object

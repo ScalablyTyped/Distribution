@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Server protected ()
   extends koaDashWebsocketLib.koaDashWebsocketMod.KoaWebsocketNs.Server {
-  def this(app: koaLib.koaMod.namespaced) = this()
+  def this(app: koaLib.koaMod.namespaced[_, js.Object]) = this()
   /* CompleteClass */
   override var app: koaDashWebsocketLib.koaDashWebsocketMod.KoaWebsocketNs.App = js.native
   /* CompleteClass */

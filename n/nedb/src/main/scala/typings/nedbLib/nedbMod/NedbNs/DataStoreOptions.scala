@@ -30,7 +30,7 @@ trait DataStoreOptions extends js.Object {
   var nodeWebkitAppName: js.UndefOr[scala.Boolean] = js.undefined
    // Optional, defaults to false
   // Optional, if autoload is used this will be called after the load database with the error object as parameter. If you don't pass it the error will be thrown
-  var onload: js.UndefOr[js.Function1[/* error */ stdLib.Error, _]] = js.undefined
+  var onload: js.UndefOr[js.Function1[/* error */ nodeLib.Error, _]] = js.undefined
   // (optional, defaults to false)
   // timestamp the insertion and last update of all documents, with the fields createdAt and updatedAt. User-specified values override automatic generation, usually useful for testing.
   var timestampData: js.UndefOr[scala.Boolean] = js.undefined

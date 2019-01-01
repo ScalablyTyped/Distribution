@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("koa", JSImport.Namespace)
 @js.native
-class namespaced () extends Application
+class namespaced[StateT, CustomT] () extends Application[StateT, CustomT]
 

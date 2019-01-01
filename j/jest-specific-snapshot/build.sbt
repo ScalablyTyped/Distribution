@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "jest-specific-snapshot"
-version := "0.5-dt-20180803Z-80e238"
+version := "0.5-dt-20180803Z-67405f"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "jest" % "23.3-dt-20181126Z-0cd1fe",
+  "org.scalablytyped" %%% "jest" % "23.3-dt-20181231Z-7b9042",
   "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

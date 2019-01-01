@@ -18,6 +18,7 @@ class Matrix3 () extends Matrix {
   def applyToBuffer(buffer: BufferAttribute, offset: scala.Double): BufferAttribute = js.native
   def applyToBuffer(buffer: BufferAttribute, offset: scala.Double, length: scala.Double): BufferAttribute = js.native
   def applyToBufferAttribute(attribute: BufferAttribute): BufferAttribute = js.native
+  def copy(m: Matrix3): this.type = js.native
   /**
     * @deprecated Use {@link Matrix3#toArray .toArray()} instead.
     */

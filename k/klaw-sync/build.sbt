@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "klaw-sync"
-version := "5.0-dt-20180911Z-20f283"
+version := "6.0-dt-20181231Z-316ee3"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

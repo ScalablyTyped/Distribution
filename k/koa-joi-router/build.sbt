@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-joi-router"
-version := "5.1-dt-20181118Z-ec8d56"
+version := "5.1-dt-20181118Z-29f8f8"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,9 +15,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "http-assert" % "1.4-dt-20181225Z-0ee7fc",
   "org.scalablytyped" %%% "joi" % "14.0-dt-20181211Z-62be1d",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-905984",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20181106Z-ff1d58",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20181231Z-5dcdb2",
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20180214Z-852c3d",
-  "org.scalablytyped" %%% "koa-router" % "v7.x-dt-20181118Z-10660c",
+  "org.scalablytyped" %%% "koa-router" % "v7.x-dt-20181118Z-2cad42",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-b5dce1",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-5932ee",

@@ -71,7 +71,7 @@ class BufferGeometry () extends EventDispatcher {
     * Computes vertex normals by averaging face normals.
     */
   def computeVertexNormals(): scala.Unit = js.native
-  def copy(source: this.type): this.type = js.native
+  def copy(source: BufferGeometry): this.type = js.native
   /**
     * Disposes the object from memory.
     * You need to call this when you want the bufferGeometry removed while the application is running.

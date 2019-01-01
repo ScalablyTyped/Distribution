@@ -18,6 +18,9 @@ trait EncryptOptions extends js.Object {
   var returnSessionKey: js.UndefOr[scala.Boolean] = js.undefined
   var sessionKey: js.UndefOr[SessionKey] = js.undefined
   var signature: js.UndefOr[Signature] = js.undefined
+  var streaming: js.UndefOr[
+    openpgpLib.openpgpLibStrings.web | openpgpLib.openpgpLibStrings.node | openpgpLib.openpgpLibNumbers.`false`
+  ] = js.undefined
   var toUserId: js.UndefOr[UserId] = js.undefined
   var wildcard: js.UndefOr[scala.Boolean] = js.undefined
 }

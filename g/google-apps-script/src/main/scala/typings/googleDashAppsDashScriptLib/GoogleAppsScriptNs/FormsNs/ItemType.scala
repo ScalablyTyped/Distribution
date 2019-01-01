@@ -71,6 +71,10 @@ object ItemType extends js.Object {
   sealed trait TIME
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.FormsNs.ItemType
   
+  @js.native
+  sealed trait VIDEO
+    extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.FormsNs.ItemType
+  
   val CHECKBOX: CHECKBOX with java.lang.String = js.native
   val CHECKBOX_GRID: CHECKBOX_GRID with java.lang.String = js.native
   val DATE: DATE with java.lang.String = js.native
@@ -86,6 +90,7 @@ object ItemType extends js.Object {
   val SECTION_HEADER: SECTION_HEADER with java.lang.String = js.native
   val TEXT: TEXT with java.lang.String = js.native
   val TIME: TIME with java.lang.String = js.native
+  val VIDEO: VIDEO with java.lang.String = js.native
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[
     googleDashAppsDashScriptLib.GoogleAppsScriptNs.FormsNs.ItemType with java.lang.String

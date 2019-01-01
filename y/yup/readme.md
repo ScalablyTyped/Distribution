@@ -7,6 +7,7 @@
 //                 Sindre Seppola <https://github.com/sseppola>
 //                 Yash Kulshrestha <https://github.com/YashdalfTheGray>
 //                 Vincent Pizzo <https://github.com/vincentjames501>
+//                 Robert Bullen <https://github.com/robertbullen>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 ```

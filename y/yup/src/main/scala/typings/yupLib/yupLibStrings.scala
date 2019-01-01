@@ -10,10 +10,10 @@ object yupLibStrings {
   sealed trait LocaleObject extends js.Object
   
   @js.native
-  sealed trait ObjectSchema extends js.Object
+  sealed trait ObjectSchemaDefinition extends js.Object
   
   @js.native
-  sealed trait ObjectSchemaConstructor extends js.Object
+  sealed trait Shape extends js.Object
   
   @js.native
   sealed trait ceil extends js.Object
@@ -28,8 +28,8 @@ object yupLibStrings {
   sealed trait trunc extends js.Object
   
   def LocaleObject: LocaleObject = "LocaleObject".asInstanceOf[LocaleObject]
-  def ObjectSchema: ObjectSchema = "ObjectSchema".asInstanceOf[ObjectSchema]
-  def ObjectSchemaConstructor: ObjectSchemaConstructor = "ObjectSchemaConstructor".asInstanceOf[ObjectSchemaConstructor]
+  def ObjectSchemaDefinition: ObjectSchemaDefinition = "ObjectSchemaDefinition".asInstanceOf[ObjectSchemaDefinition]
+  def Shape: Shape = "Shape".asInstanceOf[Shape]
   def ceil: ceil = "ceil".asInstanceOf[ceil]
   def floor: floor = "floor".asInstanceOf[floor]
   def round: round = "round".asInstanceOf[round]

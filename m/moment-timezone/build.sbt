@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "moment-timezone"
-version := "0.5-dt-20180910Z-12e718"
+version := "0.5-dt-20181231Z-10a1ce"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -14,6 +14,7 @@ trait GmailAttachment extends js.Object {
   def getContentType(): java.lang.String = js.native
   def getDataAsString(): java.lang.String = js.native
   def getDataAsString(charset: java.lang.String): java.lang.String = js.native
+  def getHash(): java.lang.String = js.native
   def getName(): java.lang.String = js.native
   def getSize(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def isGoogleType(): scala.Boolean = js.native

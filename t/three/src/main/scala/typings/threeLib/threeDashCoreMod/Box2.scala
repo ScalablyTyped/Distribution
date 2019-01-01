@@ -15,7 +15,7 @@ class Box2 () extends js.Object {
   def clampPoint(point: Vector2, target: Vector2): Vector2 = js.native
   def containsBox(box: Box2): scala.Boolean = js.native
   def containsPoint(point: Vector2): scala.Boolean = js.native
-  def copy(box: this.type): this.type = js.native
+  def copy(box: Box2): this.type = js.native
   def distanceToPoint(point: Vector2): scala.Double = js.native
   /**
     * @deprecated Use {@link Box2#isEmpty .isEmpty()} instead.

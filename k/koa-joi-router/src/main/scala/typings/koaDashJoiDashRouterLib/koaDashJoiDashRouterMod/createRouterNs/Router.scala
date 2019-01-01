@@ -56,7 +56,7 @@ trait Router extends js.Object {
   def head(path: java.lang.String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
   def head(path: stdLib.RegExp, handlerOrConfig: js.Object, handlers: Handler*): Router = js.native
   def head(path: stdLib.RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
-  def middleware(): koaLib.koaMod.ApplicationNs.Middleware = js.native
+  def middleware(): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
   def options(path: java.lang.String, handlerOrConfig: js.Object, handlers: Handler*): Router = js.native
   def options(path: java.lang.String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
   def options(path: stdLib.RegExp, handlerOrConfig: js.Object, handlers: Handler*): Router = js.native

@@ -6,8 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Nedb extends js.Object {
+trait Nedb
+  extends nodeLib.eventsMod.EventEmitter {
   var persistence: nedbLib.nedbMod.NedbNs.Persistence = js.native
+  @JSName("addListener")
+  def addListener_compactiondone(event: nedbLib.nedbLibStrings.compactionDOTdone, listener: js.Function0[scala.Unit]): this.type = js.native
   /**
     * Add one or several document(s) to all indexes
     */
@@ -18,7 +21,7 @@ trait Nedb extends js.Object {
     * Count all documents matching the query
     * @param query MongoDB-style query
     */
-  def count(query: js.Any, callback: js.Function2[/* err */ stdLib.Error, /* n */ scala.Double, scala.Unit]): scala.Unit = js.native
+  def count(query: js.Any, callback: js.Function2[/* err */ nodeLib.Error, /* n */ scala.Double, scala.Unit]): scala.Unit = js.native
   /**
     * Ensure an index is kept for this field. Same parameters as lib/indexes
     * For now this function is synchronous, we need to test how much time it takes
@@ -28,7 +31,7 @@ trait Nedb extends js.Object {
   def ensureIndex(options: nedbLib.nedbMod.NedbNs.EnsureIndexOptions): scala.Unit = js.native
   def ensureIndex(
     options: nedbLib.nedbMod.NedbNs.EnsureIndexOptions,
-    cb: js.Function1[/* err */ stdLib.Error, scala.Unit]
+    cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def find[T](query: js.Any): nedbLib.nedbMod.NedbNs.Cursor[T] = js.native
   /**
@@ -38,7 +41,7 @@ trait Nedb extends js.Object {
     */
   def find[T](
     query: js.Any,
-    callback: js.Function2[/* err */ stdLib.Error, /* documents */ js.Array[T], scala.Unit]
+    callback: js.Function2[/* err */ nodeLib.Error, /* documents */ js.Array[T], scala.Unit]
   ): scala.Unit = js.native
   def find[T](query: js.Any, projection: T): nedbLib.nedbMod.NedbNs.Cursor[T] = js.native
   /**
@@ -50,13 +53,13 @@ trait Nedb extends js.Object {
   def find[T](
     query: js.Any,
     projection: T,
-    callback: js.Function2[/* err */ stdLib.Error, /* documents */ js.Array[T], scala.Unit]
+    callback: js.Function2[/* err */ nodeLib.Error, /* documents */ js.Array[T], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Find one document matching the query
     * @param query MongoDB-style query
     */
-  def findOne[T](query: js.Any, callback: js.Function2[/* err */ stdLib.Error, /* document */ T, scala.Unit]): scala.Unit = js.native
+  def findOne[T](query: js.Any, callback: js.Function2[/* err */ nodeLib.Error, /* document */ T, scala.Unit]): scala.Unit = js.native
   /**
     * Find one document matching the query
     * @param query MongoDB-style query
@@ -65,7 +68,7 @@ trait Nedb extends js.Object {
   def findOne[T](
     query: js.Any,
     projection: T,
-    callback: js.Function2[/* err */ stdLib.Error, /* document */ T, scala.Unit]
+    callback: js.Function2[/* err */ nodeLib.Error, /* document */ T, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Get an array of all the data in the database
@@ -86,14 +89,30 @@ trait Nedb extends js.Object {
     * @param cb Optional callback, signature: err, insertedDoc
     */
   def insert[T](newDoc: T): scala.Unit = js.native
-  def insert[T](newDoc: T, cb: js.Function2[/* err */ stdLib.Error, /* document */ T, scala.Unit]): scala.Unit = js.native
+  def insert[T](newDoc: T, cb: js.Function2[/* err */ nodeLib.Error, /* document */ T, scala.Unit]): scala.Unit = js.native
+  @JSName("listenerCount")
+  def listenerCount_compactiondone(`type`: nedbLib.nedbLibStrings.compactionDOTdone): scala.Double = js.native
+  @JSName("listeners")
+  def listeners_compactiondone(event: nedbLib.nedbLibStrings.compactionDOTdone): js.Array[js.Function0[scala.Unit]] = js.native
   /**
     * Load the database from the datafile, and trigger the execution of buffered commands if any
     */
   def loadDatabase(): scala.Unit = js.native
-  def loadDatabase(cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  def loadDatabase(cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  @JSName("off")
+  def off_compactiondone(event: nedbLib.nedbLibStrings.compactionDOTdone, listener: js.Function0[scala.Unit]): this.type = js.native
+  @JSName("on")
+  def on_compactiondone(event: nedbLib.nedbLibStrings.compactionDOTdone, listener: js.Function0[scala.Unit]): this.type = js.native
+  @JSName("once")
+  def once_compactiondone(event: nedbLib.nedbLibStrings.compactionDOTdone, listener: js.Function0[scala.Unit]): this.type = js.native
+  @JSName("prependListener")
+  def prependListener_compactiondone(event: nedbLib.nedbLibStrings.compactionDOTdone, listener: js.Function0[scala.Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  def prependOnceListener_compactiondone(event: nedbLib.nedbLibStrings.compactionDOTdone, listener: js.Function0[scala.Unit]): this.type = js.native
+  @JSName("rawListeners")
+  def rawListeners_compactiondone(event: nedbLib.nedbLibStrings.compactionDOTdone): js.Array[js.Function0[scala.Unit]] = js.native
   def remove(query: js.Any): scala.Unit = js.native
-  def remove(query: js.Any, cb: js.Function2[/* err */ stdLib.Error, /* n */ scala.Double, scala.Unit]): scala.Unit = js.native
+  def remove(query: js.Any, cb: js.Function2[/* err */ nodeLib.Error, /* n */ scala.Double, scala.Unit]): scala.Unit = js.native
   /**
     * Remove all docs matching the query
     * For now very naive implementation (similar to update)
@@ -107,7 +126,7 @@ trait Nedb extends js.Object {
   def remove(
     query: js.Any,
     options: nedbLib.nedbMod.NedbNs.RemoveOptions,
-    cb: js.Function2[/* err */ stdLib.Error, /* n */ scala.Double, scala.Unit]
+    cb: js.Function2[/* err */ nodeLib.Error, /* n */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Remove one or several document(s) from all indexes
@@ -119,7 +138,9 @@ trait Nedb extends js.Object {
     * @param cb Optional callback, signature: err
     */
   def removeIndex(fieldName: java.lang.String): scala.Unit = js.native
-  def removeIndex(fieldName: java.lang.String, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  def removeIndex(fieldName: java.lang.String, cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  @JSName("removeListener")
+  def removeListener_compactiondone(event: nedbLib.nedbLibStrings.compactionDOTdone, listener: js.Function0[scala.Unit]): this.type = js.native
   /**
     * Reset all currently defined indexes
     */
@@ -143,7 +164,7 @@ trait Nedb extends js.Object {
     updateQuery: js.Any,
     options: nedbLib.nedbMod.NedbNs.UpdateOptions,
     cb: js.Function3[
-      /* err */ stdLib.Error, 
+      /* err */ nodeLib.Error, 
       /* numberOfUpdated */ scala.Double, 
       /* upsert */ scala.Boolean, 
       scala.Unit
@@ -154,7 +175,7 @@ trait Nedb extends js.Object {
     updateQuery: js.Any,
     options: nedbLib.nedbMod.NedbNs.UpdateOptions,
     cb: js.Function4[
-      /* err */ stdLib.Error, 
+      /* err */ nodeLib.Error, 
       /* numberOfUpdated */ scala.Double, 
       /* affectedDocuments */ js.Any, 
       /* upsert */ scala.Boolean, 

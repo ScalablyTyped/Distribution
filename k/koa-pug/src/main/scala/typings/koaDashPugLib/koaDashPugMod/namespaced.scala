@@ -13,6 +13,6 @@ class namespaced () extends Pug {
   /* CompleteClass */
   override var locals: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /* CompleteClass */
-  override def use(app: koaLib.koaMod.namespaced): scala.Unit = js.native
+  override def use(app: koaLib.koaMod.namespaced[_, js.Object]): scala.Unit = js.native
 }
 

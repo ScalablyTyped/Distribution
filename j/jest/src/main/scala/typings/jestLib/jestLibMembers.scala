@@ -24,8 +24,8 @@ object jestLibMembers extends js.Object {
   /**
     * Fails a test when called within one.
     */
-  def fail(): scala.Unit = js.native
-  def fail(error: js.Any): scala.Unit = js.native
+  def fail(): scala.Nothing = js.native
+  def fail(error: js.Any): scala.Nothing = js.native
   /**
     * If you call the function pending anywhere in the spec body,
     * no matter the expectations, the spec will be marked pending.

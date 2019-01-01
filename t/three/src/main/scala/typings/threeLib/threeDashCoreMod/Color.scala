@@ -39,7 +39,7 @@ class Color () extends js.Object {
     * Copies given color.
     * @param color Color to copy.
     */
-  def copy(color: this.type): this.type = js.native
+  def copy(color: Color): this.type = js.native
   /**
     * Copies given color making conversion from gamma to linear space.
     * @param color Color to copy.

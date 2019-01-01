@@ -37,5 +37,15 @@ trait Options extends js.Object {
     * @default false
     */
   var nofile: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * @description traverse all subdirectories, regardless of `filter` option.
+    *
+    * When set to true, traverseAll produces similar behavior to the default
+    * behavior prior to `v4.0.0`. The current default of `traverseAll: false`
+    * is equivalent to the old `noRecurseOnFailedFilter: true`).
+    *
+    * @since v6.0.0
+    */
+  var traverseAll: js.UndefOr[scala.Boolean] = js.undefined
 }
 

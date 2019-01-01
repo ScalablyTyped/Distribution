@@ -16,7 +16,7 @@ trait Anon_OnStateChange extends js.Object {
   var onPlaybackRateChange: js.UndefOr[js.Function1[/* event */ Anon_Target, scala.Unit]] = js.undefined
   var onReady: js.UndefOr[js.Function1[/* event */ Anon_TargetAny, scala.Unit]] = js.undefined
   var onStateChange: js.UndefOr[js.Function1[/* event */ Anon_Target, scala.Unit]] = js.undefined
-  var opts: js.UndefOr[Anon_PlayerVars] = js.undefined
+  var opts: js.UndefOr[reactDashYoutubeLib.reactDashYoutubeMod.Options] = js.undefined
   var videoId: js.UndefOr[java.lang.String] = js.undefined
 }
 

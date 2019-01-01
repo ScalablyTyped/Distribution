@@ -8,8 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Shape extends js.Object {
   def alignOnPage(alignmentPosition: AlignmentPosition): Shape = js.native
+  def bringForward(): Shape = js.native
+  def bringToFront(): Shape = js.native
   def duplicate(): PageElement = js.native
   def getBorder(): Border = js.native
+  def getConnectionSites(): js.Array[ConnectionSite] = js.native
   def getContentAlignment(): ContentAlignment = js.native
   def getDescription(): java.lang.String = js.native
   def getFill(): Fill = js.native
@@ -45,7 +48,10 @@ trait Shape extends js.Object {
   def scaleWidth(ratio: stdLib.Number): Shape = js.native
   def select(): scala.Unit = js.native
   def select(replace: scala.Boolean): scala.Unit = js.native
+  def sendBackward(): Shape = js.native
+  def sendToBack(): Shape = js.native
   def setContentAlignment(contentAlignment: ContentAlignment): Shape = js.native
+  def setDescription(description: java.lang.String): Shape = js.native
   def setHeight(height: stdLib.Number): Shape = js.native
   def setLeft(left: stdLib.Number): Shape = js.native
   def setLinkSlide(slideIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Link = js.native
@@ -53,6 +59,7 @@ trait Shape extends js.Object {
   def setLinkSlide(slide: Slide): Link = js.native
   def setLinkUrl(url: java.lang.String): Link = js.native
   def setRotation(angle: stdLib.Number): Shape = js.native
+  def setTitle(title: java.lang.String): Shape = js.native
   def setTop(top: stdLib.Number): Shape = js.native
   def setTransform(transform: AffineTransform): Shape = js.native
   def setWidth(width: stdLib.Number): Shape = js.native

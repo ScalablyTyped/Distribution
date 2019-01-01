@@ -60,7 +60,7 @@ class WebGLRenderTarget protected () extends EventDispatcher {
     * @deprecated Use {@link Texture#wrapT texture.wrapT} instead.
     */
   var wrapT: js.Any = js.native
-  def copy(source: this.type): this.type = js.native
+  def copy(source: WebGLRenderTarget): this.type = js.native
   def dispose(): scala.Unit = js.native
   def setSize(width: scala.Double, height: scala.Double): scala.Unit = js.native
 }

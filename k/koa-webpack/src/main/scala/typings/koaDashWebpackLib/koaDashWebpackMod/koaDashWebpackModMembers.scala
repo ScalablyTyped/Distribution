@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object koaDashWebpackModMembers extends js.Object {
   def apply(): js.Promise[
-    koaLib.koaMod.ApplicationNs.Middleware with koaDashWebpackLib.koaDashWebpackMod.koaWebpackNs.CombinedWebpackMiddleware
+    (koaLib.koaMod.ApplicationNs.Middleware[_, js.Object]) with koaDashWebpackLib.koaDashWebpackMod.koaWebpackNs.CombinedWebpackMiddleware
   ] = js.native
   def apply(options: koaDashWebpackLib.koaDashWebpackMod.koaWebpackNs.Options): js.Promise[
-    koaLib.koaMod.ApplicationNs.Middleware with koaDashWebpackLib.koaDashWebpackMod.koaWebpackNs.CombinedWebpackMiddleware
+    (koaLib.koaMod.ApplicationNs.Middleware[_, js.Object]) with koaDashWebpackLib.koaDashWebpackMod.koaWebpackNs.CombinedWebpackMiddleware
   ] = js.native
 }
 

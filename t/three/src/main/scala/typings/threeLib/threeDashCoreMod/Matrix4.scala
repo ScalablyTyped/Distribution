@@ -19,6 +19,7 @@ class Matrix4 () extends Matrix {
     * Sets this matrix to the transformation composed of translation, rotation and scale.
     */
   def compose(translation: Vector3, rotation: Quaternion, scale: Vector3): Matrix4 = js.native
+  def copy(m: Matrix4): this.type = js.native
   def copyPosition(m: Matrix4): Matrix4 = js.native
   /**
     * @deprecated Use {@link Vector3#applyMatrix4 vector.applyMatrix4( matrix )} instead.

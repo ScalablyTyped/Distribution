@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "gulp-typedoc"
-version := "2.2.1-dd9ab2"
+version := "2.2.1-6f7b4b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "ansi-colors" % "1.0-dt-20180214Z-0137d0",
+  "org.scalablytyped" %%% "ansi-colors" % "3.2-dt-20181231Z-56784a",
   "org.scalablytyped" %%% "event-stream" % "v3.3.2-dt-20180510Z-fa2dad",
   "org.scalablytyped" %%% "fancy-log" % "1.3-dt-20180214Z-7ae8cc",
   "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20180706Z-31009f",

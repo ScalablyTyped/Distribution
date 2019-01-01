@@ -156,17 +156,21 @@ trait Static extends js.Object {
     */
   def ascend[T](fn: js.Function1[/* obj */ T, _], a: T, b: T): scala.Double = js.native
   def assoc[K /* <: java.lang.String */](prop: K): js.Function2[/* val */ js.Any, /* obj */ js.Any, (stdLib.Record[K, _]) with js.Any] = js.native
-  def assoc[T, K /* <: java.lang.String */](prop: K, `val`: T): js.Function1[/* obj */ js.Any, (stdLib.Record[K, T]) with js.Any] = js.native
   /**
     * Makes a shallow clone of an object, setting or overriding the specified property with the given value.
     */
+  def assoc[T, U](`__`: Placeholder, `val`: T, obj: U): js.Function1[/* prop */ java.lang.String, (stdLib.Record[java.lang.String, T]) with U] = js.native
+  def assoc[U, K /* <: java.lang.String */](prop: K, `__`: Placeholder, obj: U): js.Function1[/* val */ js.Any, (stdLib.Record[K, _]) with U] = js.native
+  def assoc[T, K /* <: java.lang.String */](prop: K, `val`: T): js.Function1[/* obj */ js.Any, (stdLib.Record[K, T]) with js.Any] = js.native
   def assoc[T, U, K /* <: java.lang.String */](prop: K, `val`: T, obj: U): (stdLib.Record[K, T]) with U = js.native
-  def assocPath[T, U](path: Path): CurriedFunction2[T, U, U] = js.native
-  def assocPath[T, U](path: Path, `val`: T): js.Function1[/* obj */ U, U] = js.native
   /**
     * Makes a shallow clone of an object, setting or overriding the nodes required to create the given path, and
     * placing the specific value at the tail end of that path.
     */
+  def assocPath[T, U](`__`: Placeholder, `val`: T, obj: U): js.Function1[/* path */ Path, U] = js.native
+  def assocPath[T, U](path: Path): CurriedFunction2[T, U, U] = js.native
+  def assocPath[T, U](path: Path, `__`: Placeholder, obj: U): js.Function1[/* val */ T, U] = js.native
+  def assocPath[T, U](path: Path, `val`: T): js.Function1[/* obj */ U, U] = js.native
   def assocPath[T, U](path: Path, `val`: T, obj: U): U = js.native
   /**
     * Wraps a function of any arity (including nullary) in a function that accepts exactly 2
@@ -1748,7 +1752,7 @@ trait Static extends js.Object {
   /**
     * Returns a new list by plucking the same named property off all objects in the list supplied.
     */
-  def pluck[P /* <: java.lang.String */, T](p: P, list: js.Array[stdLib.Record[P, T]]): js.Array[T] = js.native
+  def pluck[K /* <: java.lang.String */, T](p: K, list: js.Array[T]): js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
   def prepend[T](el: T): js.Function1[/* list */ js.Array[T], js.Array[T]] = js.native
   /**
     * Returns a new list with the given element at the front, followed by the contents of the
@@ -1764,10 +1768,14 @@ trait Static extends js.Object {
     * Reasonable analog to SQL `select` statement.
     */
   def project[T, U](props: js.Array[java.lang.String], objs: js.Array[T]): js.Array[U] = js.native
-  def prop[P /* <: java.lang.String */](p: P): js.Function1[/* obj */ stdLib.Record[P, _], _] = js.native
   /**
     * Returns a function that when supplied an object returns the indicated property of that object, if it exists.
     */
+  def prop[T](`__`: Placeholder, obj: T): js.Function1[
+    /* p */ java.lang.String, 
+    /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
+  def prop[P /* <: java.lang.String */](p: P): js.Function1[/* obj */ stdLib.Record[P, _], _] = js.native
   def prop[P /* <: java.lang.String */, T](p: P, obj: T): /* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any = js.native
   def propEq(name: java.lang.String): ramdaLib.Anon_Val = js.native
   def propEq(name: scala.Double): ramdaLib.Anon_Val = js.native

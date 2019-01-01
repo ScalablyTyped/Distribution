@@ -25,6 +25,9 @@ object chromeLibStrings {
   sealed trait csp_report extends js.Object
   
   @js.native
+  sealed trait currentTab extends js.Object
+  
+  @js.native
   sealed trait detect_important_content extends js.Object
   
   @js.native
@@ -47,6 +50,12 @@ object chromeLibStrings {
   
   @js.native
   sealed trait media extends js.Object
+  
+  @js.native
+  sealed trait newBackgroundTab extends js.Object
+  
+  @js.native
+  sealed trait newForegroundTab extends js.Object
   
   @js.native
   sealed trait normal extends js.Object
@@ -93,6 +102,7 @@ object chromeLibStrings {
   def block: block = "block".asInstanceOf[block]
   def complete: complete = "complete".asInstanceOf[complete]
   def csp_report: csp_report = "csp_report".asInstanceOf[csp_report]
+  def currentTab: currentTab = "currentTab".asInstanceOf[currentTab]
   def detect_important_content: detect_important_content = "detect_important_content".asInstanceOf[detect_important_content]
   def devtools: devtools = "devtools".asInstanceOf[devtools]
   def font: font = "font".asInstanceOf[font]
@@ -101,6 +111,8 @@ object chromeLibStrings {
   def loading: loading = "loading".asInstanceOf[loading]
   def main_frame: main_frame = "main_frame".asInstanceOf[main_frame]
   def media: media = "media".asInstanceOf[media]
+  def newBackgroundTab: newBackgroundTab = "newBackgroundTab".asInstanceOf[newBackgroundTab]
+  def newForegroundTab: newForegroundTab = "newForegroundTab".asInstanceOf[newForegroundTab]
   def normal: normal = "normal".asInstanceOf[normal]
   def `object`: `object` = "object".asInstanceOf[`object`]
   def other: other = "other".asInstanceOf[other]

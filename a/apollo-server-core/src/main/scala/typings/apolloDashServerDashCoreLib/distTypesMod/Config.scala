@@ -16,9 +16,7 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
   var extensions: js.UndefOr[
     apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
-      js.Function0[
-        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify GraphQLExtension */ _
-      ]
+      js.Function0[graphqlDashExtensionsLib.graphqlDashExtensionsMod.GraphQLExtension[_]]
     ]
   ] = js.undefined
   var introspection: js.UndefOr[scala.Boolean] = js.undefined

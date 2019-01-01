@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webpack-serve"
-version := "2.0-dt-20180712Z-14c86f"
+version := "2.0-dt-20180712Z-d02ca8"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180604Z-e60b5f",
   "org.scalablytyped" %%% "http-assert" % "1.4-dt-20181225Z-0ee7fc",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-905984",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20181106Z-ff1d58",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20181231Z-5dcdb2",
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20180214Z-852c3d",
   "org.scalablytyped" %%% "loglevel" % "1.5-dt-20180214Z-a907ed",
   "org.scalablytyped" %%% "memory-fs" % "0.3.0-dt-20180919Z-bb8d43",

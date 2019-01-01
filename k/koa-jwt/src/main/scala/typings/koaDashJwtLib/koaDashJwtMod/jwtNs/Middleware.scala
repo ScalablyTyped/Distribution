@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Middleware
-  extends koaDashComposeLib.koaDashComposeMod.composeNs.Middleware[koaLib.koaMod.ApplicationNs.Context] {
+  extends koaDashComposeLib.koaDashComposeMod.composeNs.Middleware[koaLib.koaMod.ApplicationNs.ParameterizedContext[js.Any, js.Object]] {
   def unless(): js.Any = js.native
   def unless(params: js.Any): js.Any = js.native
 }

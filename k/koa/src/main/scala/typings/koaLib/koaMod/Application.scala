@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Application
+trait Application[StateT, CustomT]
   extends nodeLib.eventsMod.EventEmitter {
-  var context: koaLib.koaMod.ApplicationNs.BaseContext = js.native
+  var context: koaLib.koaMod.ApplicationNs.BaseContext with CustomT = js.native
   var env: java.lang.String = js.native
   var keys: keygripLib.keygripMod.Keygrip | js.Array[java.lang.String] = js.native
-  var middleware: js.Array[koaLib.koaMod.ApplicationNs.Middleware] = js.native
+  var middleware: js.Array[koaLib.koaMod.ApplicationNs.Middleware[StateT, CustomT]] = js.native
   var proxy: scala.Boolean = js.native
   var request: koaLib.koaMod.ApplicationNs.BaseRequest = js.native
   var response: koaLib.koaMod.ApplicationNs.BaseResponse = js.native
@@ -31,7 +31,7 @@ trait Application
     *
     * @api private
     */
-  def createContext(req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse): koaLib.koaMod.ApplicationNs.Context = js.native
+  def createContext[StateT](req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse): koaLib.koaMod.ApplicationNs.ParameterizedContext[StateT, js.Object] = js.native
   /**
     * Return JSON representation.
     * We only bother showing settings.
@@ -82,6 +82,6 @@ trait Application
     *
     * Old-style middleware will be converted.
     */
-  def use(middleware: koaLib.koaMod.ApplicationNs.Middleware): this.type = js.native
+  def use[NewStateT, NewCustomT](middleware: koaLib.koaMod.ApplicationNs.Middleware[StateT with NewStateT, CustomT with NewCustomT]): Application[StateT with NewStateT, CustomT with NewCustomT] = js.native
 }
 

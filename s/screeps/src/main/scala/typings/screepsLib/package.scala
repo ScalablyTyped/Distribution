@@ -77,7 +77,6 @@ package object screepsLib {
   type EventConstant = EVENT_ATTACK | EVENT_OBJECT_DESTROYED | EVENT_ATTACK_CONTROLLER | EVENT_BUILD | EVENT_HARVEST | EVENT_HEAL | EVENT_REPAIR | EVENT_RESERVE_CONTROLLER | EVENT_UPGRADE_CONTROLLER | EVENT_EXIT
   type EventDestroyType = screepsLib.screepsLibStrings.creep | StructureConstant
   type EventHealType = EVENT_HEAL_TYPE_MELEE | EVENT_HEAL_TYPE_RANGED
-  type EventItem = Anon_Type | Anon_TypeData | Anon_TypeObjectId | Anon_TypeDataObjectId | Anon_TypeDataObjectIdEVENTHARVEST | Anon_TypeDataObjectIdEVENTHEAL | Anon_TypeDataObjectIdEVENTREPAIR | Anon_TypeDataObjectIdEVENTRESERVECONTROLLER | Anon_TypeDataObjectIdEVENTUPGRADECONTROLLER
   // Find Constants
   type ExitConstant = FIND_EXIT_TOP | FIND_EXIT_RIGHT | FIND_EXIT_BOTTOM | FIND_EXIT_LEFT
   type ExitKey = screepsLib.screepsLibStrings.`1` | screepsLib.screepsLibStrings.`3` | screepsLib.screepsLibStrings.`5` | screepsLib.screepsLibStrings.`7`
@@ -128,12 +127,12 @@ package object screepsLib {
   type LOOK_STRUCTURES = screepsLib.screepsLibStrings.structure
   type LOOK_TERRAIN = screepsLib.screepsLibStrings.terrain
   type LOOK_TOMBSTONES = screepsLib.screepsLibStrings.tombstone
-  type LookAtResult[K /* <: LookConstant */] = (stdLib.Pick[LookAtTypes, K]) with Anon_TypeK_1348365900[K]
+  type LookAtResult[K /* <: LookConstant */] = (stdLib.Pick[LookAtTypes, K]) with Anon_TypeK[K]
   type LookAtResultWithPos[K /* <: LookConstant */] = LookAtResult[K] with Anon_Y
   type LookAtTypes = stdLib.Partial[AllLookAtTypes]
   // Look Constants
   type LookConstant = LOOK_CREEPS | LOOK_ENERGY | LOOK_RESOURCES | LOOK_SOURCES | LOOK_MINERALS | LOOK_STRUCTURES | LOOK_FLAGS | LOOK_CONSTRUCTION_SITES | LOOK_NUKES | LOOK_TERRAIN | LOOK_TOMBSTONES
-  type LookForAtAreaResult[T, K /* <: java.lang.String */] = Anon_TypeK[K, T]
+  type LookForAtAreaResult[T, K /* <: java.lang.String */] = Anon_Type[K, T]
   type LookForAtAreaResultArray[T, K /* <: java.lang.String */] = js.Array[LookForAtAreaResultWithPos[T, K]]
   type LookForAtAreaResultWithPos[T, K /* <: java.lang.String */] = (LookForAtAreaResult[T, K]) with Anon_Y
   type MOVE = screepsLib.screepsLibStrings.move

@@ -51,7 +51,7 @@ object LocationNs extends js.Object {
     var passiveAvailable: js.UndefOr[scala.Boolean] = js.undefined
   }
   
-  def geocodeAsync(address: java.lang.String): js.Promise[Coords] = js.native
+  def geocodeAsync(address: java.lang.String): js.Promise[js.Array[Coords]] = js.native
   def getCurrentPositionAsync(options: LocationOptions): js.Promise[LocationData] = js.native
   def getHeadingAsync(): js.Promise[HeadingStatus] = js.native
   def getProviderStatusAsync(): js.Promise[ProviderStatus] = js.native

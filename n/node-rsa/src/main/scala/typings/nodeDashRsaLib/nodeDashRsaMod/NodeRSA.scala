@@ -94,9 +94,9 @@ trait NodeRSA extends js.Object {
     * @param bits Key size in bits. 2048 by default.
     * @param exponent public exponent. 65537 by default.
     */
-  def generateKeyPair(): scala.Unit = js.native
-  def generateKeyPair(bits: scala.Double): scala.Unit = js.native
-  def generateKeyPair(bits: scala.Double, exponent: scala.Double): scala.Unit = js.native
+  def generateKeyPair(): NodeRSA = js.native
+  def generateKeyPair(bits: scala.Double): NodeRSA = js.native
+  def generateKeyPair(bits: scala.Double, exponent: scala.Double): NodeRSA = js.native
   /**
     * Return key size in bits.
     */
@@ -108,11 +108,11 @@ trait NodeRSA extends js.Object {
   /**
     * Import key from PEM string, PEM/DER Buffer or components.
     */
-  def importKey(key: nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.Key): scala.Unit = js.native
+  def importKey(key: nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.Key): NodeRSA = js.native
   def importKey(
     key: nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.Key,
     format: nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.Format
-  ): scala.Unit = js.native
+  ): NodeRSA = js.native
   /**
     * Return true if key pair doesn't have any data.
     */

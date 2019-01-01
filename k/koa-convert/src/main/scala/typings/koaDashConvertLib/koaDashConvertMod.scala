@@ -14,6 +14,6 @@ object koaDashConvertMod extends js.Object {
       /* next */ js.Function0[js.Promise[_]], 
       stdLib.Generator
     ]
-  ): koaLib.koaMod.ApplicationNs.Middleware = js.native
+  ): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
 }
 

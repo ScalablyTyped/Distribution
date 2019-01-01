@@ -27,7 +27,7 @@ class Quaternion () extends js.Object {
   /**
     * Copies values of q to this quaternion.
     */
-  def copy(q: this.type): this.type = js.native
+  def copy(q: Quaternion): this.type = js.native
   def dot(v: Quaternion): scala.Double = js.native
   def equals(v: Quaternion): scala.Boolean = js.native
   def fromArray(n: js.Array[scala.Double]): Quaternion = js.native

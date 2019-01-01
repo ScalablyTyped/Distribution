@@ -11,6 +11,7 @@ trait NotesPage extends js.Object {
   def getImages(): js.Array[Image] = js.native
   def getLines(): js.Array[Line] = js.native
   def getObjectId(): java.lang.String = js.native
+  def getPageElementById(id: java.lang.String): PageElement = js.native
   def getPageElements(): js.Array[PageElement] = js.native
   def getPlaceholder(placeholderType: PlaceholderType): PageElement = js.native
   def getPlaceholder(

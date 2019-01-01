@@ -7,6 +7,7 @@
 //                 Andrew Goh Yisheng <https://github.com/9y5>
 //                 Thomas Chia <https://github.com/thchia>
 //                 Piotr Dabrowski <https://github.com/yhnavein>
+//                 Victor Irzak <https://github.com/virzak>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

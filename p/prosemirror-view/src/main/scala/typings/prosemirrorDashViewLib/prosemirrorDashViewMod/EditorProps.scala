@@ -18,7 +18,7 @@ trait EditorProps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
     */
   var attributes: js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[java.lang.String] | (js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EditorState<S> */ /* p */ js.Any, 
+      /* p */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
       js.UndefOr[
         org.scalablytyped.runtime.StringDictionary[java.lang.String] | scala.Null | scala.Unit
       ]
@@ -70,7 +70,7 @@ trait EditorProps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
       /* view */ EditorView[S], 
       /* anchor */ prosemirrorDashModelLib.prosemirrorDashModelMod.ResolvedPos[S], 
       /* head */ prosemirrorDashModelLib.prosemirrorDashModelMod.ResolvedPos[S], 
-      js.UndefOr[stdLib.Selection | scala.Null]
+      js.UndefOr[prosemirrorDashStateLib.prosemirrorDashStateMod.Selection[S] | scala.Null]
     ]) | scala.Null
   ] = js.undefined
   /**
@@ -79,7 +79,7 @@ trait EditorProps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
     */
   var decorations: js.UndefOr[
     (js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EditorState<S> */ /* state */ js.Any, 
+      /* state */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
       js.UndefOr[DecorationSet[S] | scala.Null]
     ]) | scala.Null
   ] = js.undefined
@@ -96,7 +96,7 @@ trait EditorProps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
     */
   var editable: js.UndefOr[
     (js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EditorState<S> */ /* state */ js.Any, 
+      /* state */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
       scala.Boolean
     ]) | scala.Null
   ] = js.undefined

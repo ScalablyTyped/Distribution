@@ -15,9 +15,21 @@ trait CommonFieldProps extends CommonFieldInputProps {
   def onBlur(event: reactLib.reactMod.ReactNs.FocusEvent[_]): scala.Unit = js.native
   def onBlur(event: reactLib.reactMod.ReactNs.FocusEvent[_], newValue: js.Any): scala.Unit = js.native
   def onBlur(event: reactLib.reactMod.ReactNs.FocusEvent[_], newValue: js.Any, previousValue: js.Any): scala.Unit = js.native
+  def onBlur(
+    event: reactLib.reactMod.ReactNs.FocusEvent[_],
+    newValue: js.Any,
+    previousValue: js.Any,
+    name: java.lang.String
+  ): scala.Unit = js.native
   def onChange(): scala.Unit = js.native
   def onChange(event: reactLib.reactMod.ReactNs.ChangeEvent[_]): scala.Unit = js.native
   def onChange(event: reactLib.reactMod.ReactNs.ChangeEvent[_], newValue: js.Any): scala.Unit = js.native
   def onChange(event: reactLib.reactMod.ReactNs.ChangeEvent[_], newValue: js.Any, previousValue: js.Any): scala.Unit = js.native
+  def onChange(
+    event: reactLib.reactMod.ReactNs.ChangeEvent[_],
+    newValue: js.Any,
+    previousValue: js.Any,
+    name: java.lang.String
+  ): scala.Unit = js.native
 }
 

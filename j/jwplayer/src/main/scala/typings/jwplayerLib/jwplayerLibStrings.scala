@@ -46,10 +46,16 @@ object jwplayerLibStrings {
   sealed trait adTime extends js.Object
   
   @js.native
+  sealed trait api extends js.Object
+  
+  @js.native
   sealed trait audioTrackChanged extends js.Object
   
   @js.native
   sealed trait audioTracks extends js.Object
+  
+  @js.native
+  sealed trait auto extends js.Object
   
   @js.native
   sealed trait beforeComplete extends js.Object
@@ -97,6 +103,9 @@ object jwplayerLibStrings {
   sealed trait idle extends js.Object
   
   @js.native
+  sealed trait `initial choice` extends js.Object
+  
+  @js.native
   sealed trait levels extends js.Object
   
   @js.native
@@ -104,6 +113,9 @@ object jwplayerLibStrings {
   
   @js.native
   sealed trait loading extends js.Object
+  
+  @js.native
+  sealed trait manual extends js.Object
   
   @js.native
   sealed trait meta extends js.Object
@@ -187,8 +199,10 @@ object jwplayerLibStrings {
   def adSkipped: adSkipped = "adSkipped".asInstanceOf[adSkipped]
   def adStarted: adStarted = "adStarted".asInstanceOf[adStarted]
   def adTime: adTime = "adTime".asInstanceOf[adTime]
+  def api: api = "api".asInstanceOf[api]
   def audioTrackChanged: audioTrackChanged = "audioTrackChanged".asInstanceOf[audioTrackChanged]
   def audioTracks: audioTracks = "audioTracks".asInstanceOf[audioTracks]
+  def auto: auto = "auto".asInstanceOf[auto]
   def beforeComplete: beforeComplete = "beforeComplete".asInstanceOf[beforeComplete]
   def beforePlay: beforePlay = "beforePlay".asInstanceOf[beforePlay]
   def buffer: buffer = "buffer".asInstanceOf[buffer]
@@ -204,9 +218,11 @@ object jwplayerLibStrings {
   def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
   def googima: googima = "googima".asInstanceOf[googima]
   def idle: idle = "idle".asInstanceOf[idle]
+  def `initial choice`: `initial choice` = "initial choice".asInstanceOf[`initial choice`]
   def levels: levels = "levels".asInstanceOf[levels]
   def levelsChanged: levelsChanged = "levelsChanged".asInstanceOf[levelsChanged]
   def loading: loading = "loading".asInstanceOf[loading]
+  def manual: manual = "manual".asInstanceOf[manual]
   def meta: meta = "meta".asInstanceOf[meta]
   def mid: mid = "mid".asInstanceOf[mid]
   def mute: mute = "mute".asInstanceOf[mute]

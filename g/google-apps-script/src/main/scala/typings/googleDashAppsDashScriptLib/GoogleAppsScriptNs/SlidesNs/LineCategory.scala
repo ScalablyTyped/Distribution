@@ -23,9 +23,14 @@ object LineCategory extends js.Object {
   sealed trait STRAIGHT
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.LineCategory
   
+  @js.native
+  sealed trait UNSUPPORTED
+    extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.LineCategory
+  
   val BENT: BENT with java.lang.String = js.native
   val CURVED: CURVED with java.lang.String = js.native
   val STRAIGHT: STRAIGHT with java.lang.String = js.native
+  val UNSUPPORTED: UNSUPPORTED with java.lang.String = js.native
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[
     googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.LineCategory with java.lang.String

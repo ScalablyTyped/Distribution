@@ -20,6 +20,8 @@ class Scene () extends Object3D {
   var overrideMaterial: Material | scala.Null = js.native
   @JSName("type")
   var type_Scene: threeLib.threeLibStrings.Scene = js.native
+  def copy(source: this.type): this.type = js.native
+  def copy(source: this.type, recursive: scala.Boolean): this.type = js.native
   def toJSON(meta: js.Any): js.Any = js.native
 }
 

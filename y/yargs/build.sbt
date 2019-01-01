@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "yargs"
-version := "12.0-dt-20181222Z-0294e0"
+version := "12.0-dt-20181231Z-7ae184"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

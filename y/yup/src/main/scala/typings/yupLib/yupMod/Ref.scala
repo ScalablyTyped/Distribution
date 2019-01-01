@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Ref
-  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
+@JSImport("yup", "Ref")
+@js.native
+class Ref protected () extends js.Object {
+  val __isYupRef: yupLib.yupLibNumbers.`true` = js.native
+}
 

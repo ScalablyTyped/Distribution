@@ -35,7 +35,7 @@ class Texture protected () extends EventDispatcher {
   var version: scala.Double = js.native
   var wrapS: Wrapping = js.native
   var wrapT: Wrapping = js.native
-  def copy(source: this.type): this.type = js.native
+  def copy(source: Texture): this.type = js.native
   def dispose(): scala.Unit = js.native
   def onUpdate(): scala.Unit = js.native
   def toJSON(meta: js.Any): js.Any = js.native

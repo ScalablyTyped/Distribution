@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 package object ReactStripeElementsNs {
   type ElementChangeResponse = stripeDashV3Lib.stripeNs.elementsNs.ElementChangeResponse
   type ElementsOptions = stripeDashV3Lib.stripeNs.elementsNs.ElementsOptions
+  type HTMLStripeElement = stripeDashV3Lib.stripeNs.elementsNs.Element
   /**
   	 * There's a bug in @types/stripe which defines the property as
   	 * `declined_code` (with a 'd') but it's in fact `decline_code`

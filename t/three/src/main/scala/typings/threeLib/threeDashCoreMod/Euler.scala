@@ -17,7 +17,7 @@ class Euler () extends js.Object {
   var x: scala.Double = js.native
   var y: scala.Double = js.native
   var z: scala.Double = js.native
-  def copy(euler: this.type): this.type = js.native
+  def copy(euler: Euler): this.type = js.native
   def equals(euler: Euler): scala.Boolean = js.native
   def fromArray(xyzo: js.Array[_]): Euler = js.native
   def onChange(callback: js.Function): this.type = js.native

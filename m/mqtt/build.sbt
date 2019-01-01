@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mqtt"
-version := "2.18.8-d4ca51"
+version := "2.18.8-202c30"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,6 +14,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "mqtt-packet" % "5.6.0-0ad955",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",
   "org.scalablytyped" %%% "pump" % "1.0-dt-20180214Z-3fb0a9",
+  "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20181231Z-967cc2",
   "org.scalablytyped" %%% "safe-buffer" % "5.1.2-dbd0d6",
   "org.scalablytyped" %%% "split2" % "2.1.0-dt-20180214Z-e2f6a1",
   "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff",

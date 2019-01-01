@@ -166,7 +166,7 @@ class Material () extends EventDispatcher {
     * Copy the parameters from the passed material into this material.
     * @param material
     */
-  def copy(material: this.type): this.type = js.native
+  def copy(material: Material): this.type = js.native
   /**
     * This disposes the material. Textures of a material don't get disposed. These needs to be disposed by {@link Texture}.
     */

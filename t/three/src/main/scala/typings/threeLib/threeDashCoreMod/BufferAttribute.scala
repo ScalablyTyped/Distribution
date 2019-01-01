@@ -25,7 +25,7 @@ class BufferAttribute protected () extends js.Object {
    // array parameter should be TypedArray.
   var uuid: java.lang.String = js.native
   var version: scala.Double = js.native
-  def copy(source: this.type): this.type = js.native
+  def copy(source: BufferAttribute): this.type = js.native
   def copyArray(array: stdLib.ArrayLike[scala.Double]): BufferAttribute = js.native
   def copyAt(index1: scala.Double, attribute: BufferAttribute, index2: scala.Double): BufferAttribute = js.native
   def copyColorsArray(colors: js.Array[threeLib.Anon_B]): BufferAttribute = js.native

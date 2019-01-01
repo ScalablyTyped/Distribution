@@ -42,7 +42,9 @@ trait PluginSpec[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
     * that are functions will be bound to have the plugin instance as
     * their `this` binding.
     */
-  var props: js.UndefOr[prosemirrorDashViewLib.prosemirrorDashViewMod.EditorProps[S] | scala.Null] = js.undefined
+  var props: js.UndefOr[
+    (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EditorProps<S> */ js.Any) | scala.Null
+  ] = js.undefined
   /**
     * Allows a plugin to define a [state field](#state.StateField), an
     * extra slot in the state object in which it can keep its own data.
@@ -58,7 +60,7 @@ trait PluginSpec[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
     */
   var view: js.UndefOr[
     (js.Function1[
-      /* p */ prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S], 
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EditorView<S> */ /* p */ js.Any, 
       prosemirrorDashStateLib.Anon_Update[S]
     ]) | scala.Null
   ] = js.undefined

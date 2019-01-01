@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation._
 trait Range extends js.Object {
   def activate(): Range = js.native
   def activateAsCurrentCell(): Range = js.native
+  def addDeveloperMetadata(key: java.lang.String): Range = js.native
+  def addDeveloperMetadata(key: java.lang.String, value: java.lang.String): Range = js.native
+  def addDeveloperMetadata(key: java.lang.String, value: java.lang.String, visibility: DeveloperMetadataVisibility): Range = js.native
+  def addDeveloperMetadata(key: java.lang.String, visibility: DeveloperMetadataVisibility): Range = js.native
   def applyColumnBanding(): Banding = js.native
   def applyColumnBanding(bandingTheme: BandingTheme): Banding = js.native
   def applyColumnBanding(bandingTheme: BandingTheme, showHeader: scala.Boolean, showFooter: scala.Boolean): Banding = js.native
@@ -57,6 +61,7 @@ trait Range extends js.Object {
     row: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     rowEnd: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): scala.Unit = js.native
+  def createDeveloperMetadataFinder(): DeveloperMetadataFinder = js.native
   def createFilter(): Filter = js.native
   def createPivotTable(sourceData: Range): PivotTable = js.native
   def deleteCells(shiftDimension: Dimension): scala.Unit = js.native
@@ -75,6 +80,7 @@ trait Range extends js.Object {
   def getDataTable(firstRowIsHeader: scala.Boolean): googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.DataTable = js.native
   def getDataValidation(): DataValidation = js.native
   def getDataValidations(): js.Array[js.Array[DataValidation]] = js.native
+  def getDeveloperMetadata(): js.Array[DeveloperMetadata] = js.native
   def getDisplayValue(): java.lang.String = js.native
   def getDisplayValues(): js.Array[js.Array[java.lang.String]] = js.native
   def getFilter(): Filter = js.native

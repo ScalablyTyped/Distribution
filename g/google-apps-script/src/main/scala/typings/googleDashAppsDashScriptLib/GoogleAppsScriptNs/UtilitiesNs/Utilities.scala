@@ -10,6 +10,7 @@ trait Utilities extends js.Object {
   var Charset: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Utilities.Charset */ js.Any = js.native
   var DigestAlgorithm: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Utilities.DigestAlgorithm */ js.Any = js.native
   var MacAlgorithm: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Utilities.MacAlgorithm */ js.Any = js.native
+  var RsaAlgorithm: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Utilities.RsaAlgorithm */ js.Any = js.native
   def base64Decode(encoded: java.lang.String): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Byte] = js.native
   def base64Decode(encoded: java.lang.String, charset: Charset): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Byte] = js.native
   def base64DecodeWebSafe(encoded: java.lang.String): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Byte] = js.native
@@ -36,8 +37,12 @@ trait Utilities extends js.Object {
     value: js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Byte],
     key: js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Byte]
   ): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Byte] = js.native
+  def computeRsaSha1Signature(value: java.lang.String, key: java.lang.String): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Byte] = js.native
+  def computeRsaSha1Signature(value: java.lang.String, key: java.lang.String, charset: Charset): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Byte] = js.native
   def computeRsaSha256Signature(value: java.lang.String, key: java.lang.String): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Byte] = js.native
   def computeRsaSha256Signature(value: java.lang.String, key: java.lang.String, charset: Charset): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Byte] = js.native
+  def computeRsaSignature(algorithm: RsaAlgorithm, value: java.lang.String, key: java.lang.String): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Byte] = js.native
+  def computeRsaSignature(algorithm: RsaAlgorithm, value: java.lang.String, key: java.lang.String, charset: Charset): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Byte] = js.native
   def formatDate(date: stdLib.Date, timeZone: java.lang.String, format: java.lang.String): java.lang.String = js.native
   def formatString(template: java.lang.String, args: js.Object*): java.lang.String = js.native
   def getUuid(): java.lang.String = js.native

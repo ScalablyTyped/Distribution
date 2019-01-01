@@ -14,5 +14,8 @@ trait DecryptOptions extends js.Object {
   var publicKeys: js.UndefOr[openpgpLib.openpgpMod.keyNs.Key | js.Array[openpgpLib.openpgpMod.keyNs.Key]] = js.undefined
   var sessionKeys: js.UndefOr[SessionKey | js.Array[SessionKey]] = js.undefined
   var signature: js.UndefOr[Signature] = js.undefined
+  var streaming: js.UndefOr[
+    openpgpLib.openpgpLibStrings.web | openpgpLib.openpgpLibStrings.node | openpgpLib.openpgpLibNumbers.`false`
+  ] = js.undefined
 }
 

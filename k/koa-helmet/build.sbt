@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-helmet"
-version := "3.1-dt-20180214Z-90e53d"
+version := "3.1-dt-20180214Z-2777a2"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "helmet" % "0.0-unknown-dt-20180924Z-1f28b0",
   "org.scalablytyped" %%% "http-assert" % "1.4-dt-20181225Z-0ee7fc",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-905984",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20181106Z-ff1d58",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20181231Z-5dcdb2",
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20180214Z-852c3d",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-b5dce1",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",

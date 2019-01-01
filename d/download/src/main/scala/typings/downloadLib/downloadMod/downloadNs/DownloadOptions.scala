@@ -17,6 +17,11 @@ trait DownloadOptions
     */
   var filename: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Request Headers
+    */
+  @JSName("headers")
+  var headers_DownloadOptions: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  /**
     * Proxy endpoint
     */
   var proxy: js.UndefOr[java.lang.String] = js.undefined

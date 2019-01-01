@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sinon-express-mock"
-version := "1.3-dt-20181212Z-517846"
+version := "1.3-dt-20181212Z-291531"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-5932ee",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-d30fee",
-  "org.scalablytyped" %%% "sinon" % "7.0-dt-20181214Z-67301c",
+  "org.scalablytyped" %%% "sinon" % "7.0-dt-20181231Z-67301c",
   "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
