@@ -16,13 +16,13 @@ trait DirectEditorProps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.
     */
   var dispatchTransaction: js.UndefOr[
     (js.Function1[
-      /* tr */ prosemirrorDashStateLib.prosemirrorDashStateMod.Transaction[S], 
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Transaction<S> */ /* tr */ js.Any, 
       scala.Unit
     ]) | scala.Null
   ] = js.undefined
   /**
     * The current state of the editor.
     */
-  var state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]
+  var state: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EditorState<S> */ js.Any
 }
 

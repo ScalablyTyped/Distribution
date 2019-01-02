@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "prosemirror-state"
-version := "1.2-dt-20180621Z-363a47"
+version := "1.2-dt-20180621Z-46c7c3"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,6 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "orderedmap" % "1.0-dt-20180214Z-57fcda",
   "org.scalablytyped" %%% "prosemirror-model" % "1.5-dt-20180621Z-e1ff56",
   "org.scalablytyped" %%% "prosemirror-transform" % "1.1-dt-20180621Z-3173c6",
+  "org.scalablytyped" %%% "prosemirror-view" % "1.3-dt-20180621Z-8dd21f",
   "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

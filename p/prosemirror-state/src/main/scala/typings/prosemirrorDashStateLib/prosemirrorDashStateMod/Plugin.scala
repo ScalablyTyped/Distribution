@@ -15,7 +15,7 @@ class Plugin[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _
   /**
     * The [props](#view.EditorProps) exported by this plugin.
     */
-  var props: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EditorProps<S> */ js.Any = js.native
+  var props: prosemirrorDashViewLib.prosemirrorDashViewMod.EditorProps[S] = js.native
   /**
     * The plugin's [spec object](#state.PluginSpec).
     */
