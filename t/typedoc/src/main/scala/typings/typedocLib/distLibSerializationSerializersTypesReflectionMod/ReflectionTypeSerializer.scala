@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ReflectionTypeSerializer ()
   extends typedocLib.distLibSerializationComponentsMod.TypeSerializerComponent[typedocLib.distLibModelsMod.ReflectionType] {
-  var declaration: js.Any = js.native
+  var declaration: js.UndefOr[js.Any] = js.native
 }
 

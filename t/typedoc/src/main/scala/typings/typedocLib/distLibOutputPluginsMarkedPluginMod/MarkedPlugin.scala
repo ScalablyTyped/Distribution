@@ -11,8 +11,8 @@ class MarkedPlugin ()
   extends typedocLib.distLibOutputComponentsMod.ContextAwareRendererComponent {
   var includePattern: js.Any = js.native
   var includeSource: java.lang.String = js.native
-  var includes: js.Any = js.native
-  var mediaDirectory: js.Any = js.native
+  var includes: js.UndefOr[js.Any] = js.native
+  var mediaDirectory: js.UndefOr[js.Any] = js.native
   var mediaPattern: js.Any = js.native
   var mediaSource: java.lang.String = js.native
   def getHighlighted(text: java.lang.String): java.lang.String = js.native

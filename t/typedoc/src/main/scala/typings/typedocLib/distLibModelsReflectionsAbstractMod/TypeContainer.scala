@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeContainer extends Reflection {
-  var `type`: typedocLib.distLibModelsTypesMod.Type = js.native
+  var `type`: js.UndefOr[typedocLib.distLibModelsTypesMod.Type] = js.native
 }
 

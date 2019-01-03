@@ -22,7 +22,7 @@ class Application ()
   var serializer: typedocLib.distLibSerializationMod.Serializer = js.native
   /* protected */ def bootstrap(): typedocLib.distLibUtilsOptionsOptionsMod.OptionsReadResult = js.native
   /* protected */ def bootstrap(options: js.Object): typedocLib.distLibUtilsOptionsOptionsMod.OptionsReadResult = js.native
-  def convert(src: js.Array[java.lang.String]): typedocLib.distLibModelsMod.ProjectReflection = js.native
+  def convert(src: js.Array[java.lang.String]): js.UndefOr[typedocLib.distLibModelsMod.ProjectReflection] = js.native
   def expandInputFiles(): js.Array[java.lang.String] = js.native
   def expandInputFiles(inputFiles: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def generateDocs(project: typedocLib.distLibModelsMod.ProjectReflection, out: java.lang.String): scala.Boolean = js.native

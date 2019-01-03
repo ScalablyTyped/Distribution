@@ -7,10 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("typedoc/dist/lib/models/types/type-parameter", "TypeParameterType")
 @js.native
-class TypeParameterType ()
+class TypeParameterType protected ()
   extends typedocLib.distLibModelsTypesAbstractMod.Type {
-  var constraint: typedocLib.distLibModelsTypesAbstractMod.Type = js.native
-  var name: java.lang.String = js.native
+  def this(name: java.lang.String) = this()
+  var constraint: js.UndefOr[typedocLib.distLibModelsTypesAbstractMod.Type] = js.native
+  val name: java.lang.String = js.native
   def equals(`type`: TypeParameterType): scala.Boolean = js.native
 }
 

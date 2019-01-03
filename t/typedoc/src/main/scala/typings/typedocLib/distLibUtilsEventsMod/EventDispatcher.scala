@@ -8,10 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/utils/events", "EventDispatcher")
 @js.native
 class EventDispatcher () extends js.Object {
-  var _events: js.Any = js.native
-  var _listenId: js.Any = js.native
-  var _listeners: js.Any = js.native
-  var _listeningTo: js.Any = js.native
+  var _events: js.UndefOr[js.Any] = js.native
+  val _listenId: js.Any = js.native
+  var _listeners: js.UndefOr[js.Any] = js.native
+  var _listeningTo: js.UndefOr[js.Any] = js.native
+  var _savedListenId: js.UndefOr[js.Any] = js.native
   var internalOn: js.Any = js.native
   def listenTo(obj: EventDispatcher, name: java.lang.String): this.type = js.native
   def listenTo(obj: EventDispatcher, name: java.lang.String, callback: EventCallback): this.type = js.native
@@ -23,11 +24,14 @@ class EventDispatcher () extends js.Object {
   def listenToOnce(obj: EventDispatcher, name: java.lang.String, callback: EventCallback): js.Any = js.native
   def listenToOnce(obj: EventDispatcher, name: java.lang.String, callback: EventCallback, priority: scala.Double): js.Any = js.native
   def off(): js.Any = js.native
+  def off(eventMap: js.UndefOr[scala.Nothing], context: js.Any): js.Any = js.native
   def off(eventMap: EventMap): js.Any = js.native
   def off(eventMap: EventMap, context: js.Any): js.Any = js.native
   def off(name: java.lang.String): js.Any = js.native
   def off(name: java.lang.String, callback: EventCallback): js.Any = js.native
   def off(name: java.lang.String, callback: EventCallback, context: js.Any): js.Any = js.native
+  def off(name: js.UndefOr[scala.Nothing], callback: EventCallback): js.Any = js.native
+  def off(name: js.UndefOr[scala.Nothing], callback: EventCallback, context: js.Any): js.Any = js.native
   def on(eventMap: EventMap): js.Any = js.native
   def on(eventMap: EventMap, callback: EventCallback): js.Any = js.native
   def on(eventMap: EventMap, callback: EventCallback, context: js.Any): js.Any = js.native

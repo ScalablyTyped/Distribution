@@ -10,21 +10,23 @@ import scala.scalajs.js.annotation._
 @js.native
 class DeclarationReflection ()
   extends typedocLib.distLibModelsReflectionsContainerMod.ContainerReflection {
-  var defaultValue: java.lang.String = js.native
-  var extendedBy: js.Array[typedocLib.distLibModelsTypesMod.Type] = js.native
-  var extendedTypes: js.Array[typedocLib.distLibModelsTypesMod.Type] = js.native
-  var getSignature: typedocLib.distLibModelsReflectionsSignatureMod.SignatureReflection = js.native
-  var implementationOf: typedocLib.distLibModelsTypesMod.Type = js.native
-  var implementedBy: js.Array[typedocLib.distLibModelsTypesMod.Type] = js.native
-  var implementedTypes: js.Array[typedocLib.distLibModelsTypesMod.Type] = js.native
-  var indexSignature: typedocLib.distLibModelsReflectionsSignatureMod.SignatureReflection = js.native
-  var inheritedFrom: typedocLib.distLibModelsTypesMod.Type = js.native
-  var overwrites: typedocLib.distLibModelsTypesMod.Type = js.native
-  var setSignature: typedocLib.distLibModelsReflectionsSignatureMod.SignatureReflection = js.native
-  var signatures: js.Array[typedocLib.distLibModelsReflectionsSignatureMod.SignatureReflection] = js.native
-  var `type`: typedocLib.distLibModelsTypesMod.Type = js.native
-  var typeHierarchy: DeclarationHierarchy = js.native
-  var typeParameters: js.Array[typedocLib.distLibModelsReflectionsTypeDashParameterMod.TypeParameterReflection] = js.native
+  var defaultValue: js.UndefOr[java.lang.String] = js.native
+  var extendedBy: js.UndefOr[js.Array[typedocLib.distLibModelsTypesMod.Type]] = js.native
+  var extendedTypes: js.UndefOr[js.Array[typedocLib.distLibModelsTypesMod.Type]] = js.native
+  var getSignature: js.UndefOr[typedocLib.distLibModelsReflectionsSignatureMod.SignatureReflection] = js.native
+  var implementationOf: js.UndefOr[typedocLib.distLibModelsTypesMod.Type] = js.native
+  var implementedBy: js.UndefOr[js.Array[typedocLib.distLibModelsTypesMod.Type]] = js.native
+  var implementedTypes: js.UndefOr[js.Array[typedocLib.distLibModelsTypesMod.Type]] = js.native
+  var indexSignature: js.UndefOr[typedocLib.distLibModelsReflectionsSignatureMod.SignatureReflection] = js.native
+  var inheritedFrom: js.UndefOr[typedocLib.distLibModelsTypesMod.Type] = js.native
+  var overwrites: js.UndefOr[typedocLib.distLibModelsTypesMod.Type] = js.native
+  var setSignature: js.UndefOr[typedocLib.distLibModelsReflectionsSignatureMod.SignatureReflection] = js.native
+  var signatures: js.UndefOr[js.Array[typedocLib.distLibModelsReflectionsSignatureMod.SignatureReflection]] = js.native
+  var `type`: js.UndefOr[typedocLib.distLibModelsTypesMod.Type] = js.native
+  var typeHierarchy: js.UndefOr[DeclarationHierarchy] = js.native
+  var typeParameters: js.UndefOr[
+    js.Array[typedocLib.distLibModelsReflectionsTypeDashParameterMod.TypeParameterReflection]
+  ] = js.native
   def getAllSignatures(): js.Array[typedocLib.distLibModelsReflectionsSignatureMod.SignatureReflection] = js.native
 }
 

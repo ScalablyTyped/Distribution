@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IPredictableGenerator[T] extends IGenerator[T] {
   /**
-  		 * Returns the nth element (starting 0).
+  		 * Returns the nth element (indexed from 0).
   		 */
   def nth(n: scala.Double): T
 }

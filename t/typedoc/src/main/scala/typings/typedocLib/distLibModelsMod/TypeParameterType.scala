@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("typedoc/dist/lib/models", "TypeParameterType")
 @js.native
-class TypeParameterType ()
-  extends typedocLib.distLibModelsTypesMod.TypeParameterType
+class TypeParameterType protected ()
+  extends typedocLib.distLibModelsTypesMod.TypeParameterType {
+  def this(name: java.lang.String) = this()
+}
 

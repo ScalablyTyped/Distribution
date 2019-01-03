@@ -14,10 +14,10 @@ class FunctionConverter ()
   def convert(
     context: typedocLib.distLibConverterContextMod.Context,
     node: typescriptLib.typescriptMod.tsNs.FunctionDeclaration
-  ): typedocLib.distLibModelsMod.Reflection = js.native
+  ): js.UndefOr[typedocLib.distLibModelsMod.Reflection] = js.native
   def convert(
     context: typedocLib.distLibConverterContextMod.Context,
     node: typescriptLib.typescriptMod.tsNs.MethodDeclaration
-  ): typedocLib.distLibModelsMod.Reflection = js.native
+  ): js.UndefOr[typedocLib.distLibModelsMod.Reflection] = js.native
 }
 

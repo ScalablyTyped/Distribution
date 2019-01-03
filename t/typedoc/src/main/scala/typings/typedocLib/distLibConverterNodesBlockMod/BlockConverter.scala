@@ -13,7 +13,7 @@ class BlockConverter ()
     ] {
   var convertSourceFile: js.Any = js.native
   var convertStatements: js.Any = js.native
-  var mode: scala.Double = js.native
+  var mode: SourceFileMode = js.native
   def convert(
     context: typedocLib.distLibConverterContextMod.Context,
     node: typescriptLib.typescriptMod.tsNs.Block

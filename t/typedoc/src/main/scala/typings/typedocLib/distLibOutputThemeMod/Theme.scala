@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("typedoc/dist/lib/output/theme", "Theme")
 @js.native
-class Theme protected ()
+abstract class Theme protected ()
   extends typedocLib.distLibOutputComponentsMod.RendererComponent {
   def this(renderer: typedocLib.distLibOutputRendererMod.Renderer, basePath: java.lang.String) = this()
   var basePath: java.lang.String = js.native

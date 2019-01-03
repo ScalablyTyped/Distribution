@@ -14,6 +14,5 @@ class ReflectionGroupSerializer ()
 @js.native
 object ReflectionGroupSerializer extends js.Object {
   var PRIORITY: scala.Double = js.native
-  /* protected */ def serializeGroup(instance: js.Any): scala.Boolean = js.native
 }
 

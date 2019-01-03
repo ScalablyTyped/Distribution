@@ -15,7 +15,7 @@ class ResourceOrigin[T /* <: Resource */] protected () extends js.Object {
   var resources: js.Any = js.native
   var stack: js.Any = js.native
   def getName(): java.lang.String = js.native
-  def getResource(name: java.lang.String): T = js.native
+  def getResource(name: java.lang.String): js.UndefOr[T] = js.native
   def hasResource(name: java.lang.String): scala.Boolean = js.native
   def mergeResources(target: ResourceMap[T]): scala.Unit = js.native
 }

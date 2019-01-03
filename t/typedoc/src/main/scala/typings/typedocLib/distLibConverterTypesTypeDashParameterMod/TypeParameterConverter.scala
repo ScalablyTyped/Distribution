@@ -11,10 +11,5 @@ class TypeParameterConverter ()
   extends typedocLib.distLibConverterComponentsMod.TypeNodeConverter[
       typescriptLib.typescriptMod.tsNs.Type, 
       typescriptLib.typescriptMod.tsNs.TypeReferenceNode
-    ] {
-  def convertNode(
-    context: typedocLib.distLibConverterContextMod.Context,
-    node: typescriptLib.typescriptMod.tsNs.TypeReferenceNode
-  ): typedocLib.distLibModelsTypesMod.Type = js.native
-}
+    ]
 

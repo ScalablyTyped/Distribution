@@ -13,16 +13,16 @@ class NavigationItem () extends js.Object {
   def this(title: java.lang.String, url: java.lang.String, parent: NavigationItem) = this()
   def this(title: java.lang.String, url: java.lang.String, parent: NavigationItem, cssClasses: java.lang.String) = this()
   def this(title: java.lang.String, url: java.lang.String, parent: NavigationItem, cssClasses: java.lang.String, reflection: typedocLib.distLibModelsReflectionsAbstractMod.Reflection) = this()
-  var children: js.Array[NavigationItem] = js.native
+  var children: js.UndefOr[js.Array[NavigationItem]] = js.native
   var cssClasses: java.lang.String = js.native
-  var dedicatedUrls: js.Array[java.lang.String] = js.native
-  var isCurrent: scala.Boolean = js.native
-  var isGlobals: scala.Boolean = js.native
-  var isInPath: scala.Boolean = js.native
-  var isLabel: scala.Boolean = js.native
-  var isVisible: scala.Boolean = js.native
-  var parent: NavigationItem = js.native
-  var reflection: typedocLib.distLibModelsReflectionsAbstractMod.Reflection = js.native
+  var dedicatedUrls: js.UndefOr[js.Array[java.lang.String]] = js.native
+  var isCurrent: js.UndefOr[scala.Boolean] = js.native
+  var isGlobals: js.UndefOr[scala.Boolean] = js.native
+  var isInPath: js.UndefOr[scala.Boolean] = js.native
+  var isLabel: js.UndefOr[scala.Boolean] = js.native
+  var isVisible: js.UndefOr[scala.Boolean] = js.native
+  var parent: js.UndefOr[NavigationItem] = js.native
+  var reflection: js.UndefOr[typedocLib.distLibModelsReflectionsAbstractMod.Reflection] = js.native
   var title: java.lang.String = js.native
   var url: java.lang.String = js.native
 }

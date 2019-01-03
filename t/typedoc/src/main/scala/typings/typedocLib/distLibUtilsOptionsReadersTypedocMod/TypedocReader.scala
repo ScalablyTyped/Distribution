@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation._
 class TypedocReader ()
   extends typedocLib.distLibUtilsOptionsOptionsMod.OptionsComponent {
   var options: java.lang.String = js.native
+  def findTypedocFile(): js.UndefOr[java.lang.String] = js.native
+  def findTypedocFile(path: java.lang.String): js.UndefOr[java.lang.String] = js.native
   def load(event: typedocLib.distLibUtilsOptionsOptionsMod.DiscoverEvent, optionFile: java.lang.String): scala.Unit = js.native
   def onDiscover(event: typedocLib.distLibUtilsOptionsOptionsMod.DiscoverEvent): scala.Unit = js.native
 }

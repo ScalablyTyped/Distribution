@@ -5,5 +5,6 @@
 //                 Zoltan Ujvary <https://github.com/ujvzolee>
 //                 Simon Colmer <https://github.com/workshop2>
 //                 XtrimSystems <https://github.com/xtrimsystems>
+//                 Marcin Obiedziński <https://github.com/marcinobiedz>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 ```

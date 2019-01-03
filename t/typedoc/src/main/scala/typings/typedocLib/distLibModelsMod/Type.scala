@@ -17,7 +17,7 @@ object Type extends js.Object {
     a: js.Array[typedocLib.distLibModelsTypesAbstractMod.Type],
     b: js.Array[typedocLib.distLibModelsTypesAbstractMod.Type]
   ): scala.Boolean = js.native
-  def isTypeListSimiliar(
+  def isTypeListSimilar(
     a: js.Array[typedocLib.distLibModelsTypesAbstractMod.Type],
     b: js.Array[typedocLib.distLibModelsTypesAbstractMod.Type]
   ): scala.Boolean = js.native

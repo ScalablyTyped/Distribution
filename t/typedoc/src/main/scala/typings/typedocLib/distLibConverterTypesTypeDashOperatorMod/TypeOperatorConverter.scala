@@ -11,10 +11,5 @@ class TypeOperatorConverter ()
   extends typedocLib.distLibConverterComponentsMod.TypeNodeConverter[
       typescriptLib.typescriptMod.tsNs.Type, 
       typescriptLib.typescriptMod.tsNs.TypeOperatorNode
-    ] {
-  def convertNode(
-    context: typedocLib.distLibConverterContextMod.Context,
-    node: typescriptLib.typescriptMod.tsNs.TypeOperatorNode
-  ): typedocLib.distLibModelsTypesMod.TypeOperatorType = js.native
-}
+    ]
 

@@ -15,7 +15,7 @@ class ArrayConverter ()
   def convertNode(
     context: typedocLib.distLibConverterContextMod.Context,
     node: typescriptLib.typescriptMod.tsNs.ArrayTypeNode
-  ): typedocLib.distLibModelsMod.Type = js.native
+  ): js.UndefOr[typedocLib.distLibModelsMod.Type] = js.native
   def supportsNode(
     context: typedocLib.distLibConverterContextMod.Context,
     node: typescriptLib.typescriptMod.tsNs.ArrayTypeNode

@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class ContainerReflection ()
   extends typedocLib.distLibModelsReflectionsAbstractMod.Reflection {
-  var categories: js.Array[typedocLib.distLibModelsReflectionCategoryMod.ReflectionCategory] = js.native
-  var children: js.Array[typedocLib.distLibModelsReflectionsDeclarationMod.DeclarationReflection] = js.native
-  var groups: js.Array[typedocLib.distLibModelsReflectionGroupMod.ReflectionGroup] = js.native
+  var categories: js.UndefOr[js.Array[typedocLib.distLibModelsReflectionCategoryMod.ReflectionCategory]] = js.native
+  var children: js.UndefOr[
+    js.Array[typedocLib.distLibModelsReflectionsDeclarationMod.DeclarationReflection]
+  ] = js.native
+  var groups: js.UndefOr[js.Array[typedocLib.distLibModelsReflectionGroupMod.ReflectionGroup]] = js.native
   def getChildrenByKind(kind: typedocLib.distLibModelsReflectionsAbstractMod.ReflectionKind): js.Array[typedocLib.distLibModelsReflectionsDeclarationMod.DeclarationReflection] = js.native
 }
 

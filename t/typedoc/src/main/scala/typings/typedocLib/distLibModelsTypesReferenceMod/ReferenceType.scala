@@ -12,9 +12,9 @@ class ReferenceType protected ()
   def this(name: java.lang.String, symbolID: scala.Double) = this()
   def this(name: java.lang.String, symbolID: scala.Double, reflection: typedocLib.distLibModelsReflectionsAbstractMod.Reflection) = this()
   var name: java.lang.String = js.native
-  var reflection: typedocLib.distLibModelsReflectionsAbstractMod.Reflection = js.native
+  var reflection: js.UndefOr[typedocLib.distLibModelsReflectionsAbstractMod.Reflection] = js.native
   var symbolID: scala.Double = js.native
-  var typeArguments: js.Array[typedocLib.distLibModelsTypesAbstractMod.Type] = js.native
+  var typeArguments: js.UndefOr[js.Array[typedocLib.distLibModelsTypesAbstractMod.Type]] = js.native
   def equals(`type`: ReferenceType): scala.Boolean = js.native
 }
 

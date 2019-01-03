@@ -7,29 +7,28 @@ import scala.scalajs.js.annotation._
 
 @JSImport("typedoc/dist/lib/models/reflections/abstract", "Reflection")
 @js.native
-abstract class Reflection () extends js.Object {
-  def this(parent: Reflection) = this()
-  def this(parent: Reflection, name: java.lang.String) = this()
-  def this(parent: Reflection, name: java.lang.String, kind: ReflectionKind) = this()
-  var _alias: js.Any = js.native
-  var _aliases: js.Any = js.native
-  var anchor: java.lang.String = js.native
-  var comment: typedocLib.distLibModelsCommentsCommentMod.Comment = js.native
-  var cssClasses: java.lang.String = js.native
-  var decorates: js.Array[typedocLib.distLibModelsTypesMod.Type] = js.native
-  var decorators: js.Array[Decorator] = js.native
+abstract class Reflection protected () extends js.Object {
+  def this(name: java.lang.String, kind: ReflectionKind) = this()
+  def this(name: java.lang.String, kind: ReflectionKind, parent: Reflection) = this()
+  var _alias: js.UndefOr[js.Any] = js.native
+  var _aliases: js.UndefOr[js.Any] = js.native
+  var anchor: js.UndefOr[java.lang.String] = js.native
+  var comment: js.UndefOr[typedocLib.distLibModelsCommentsCommentMod.Comment] = js.native
+  var cssClasses: js.UndefOr[java.lang.String] = js.native
+  var decorates: js.UndefOr[js.Array[typedocLib.distLibModelsTypesMod.Type]] = js.native
+  var decorators: js.UndefOr[js.Array[Decorator]] = js.native
   var flags: ReflectionFlags = js.native
-  var hasOwnDocument: scala.Boolean = js.native
+  var hasOwnDocument: js.UndefOr[scala.Boolean] = js.native
   var id: scala.Double = js.native
   var kind: ReflectionKind = js.native
-  var kindString: java.lang.String = js.native
+  var kindString: js.UndefOr[java.lang.String] = js.native
   var name: java.lang.String = js.native
   var originalName: java.lang.String = js.native
-  var parent: Reflection = js.native
-  var sources: js.Array[typedocLib.distLibModelsSourcesFileMod.SourceReference] = js.native
-  var url: java.lang.String = js.native
-  def findReflectionByName(name: java.lang.String): Reflection = js.native
-  def findReflectionByName(names: js.Array[java.lang.String]): Reflection = js.native
+  var parent: js.UndefOr[Reflection] = js.native
+  var sources: js.UndefOr[js.Array[typedocLib.distLibModelsSourcesFileMod.SourceReference]] = js.native
+  var url: js.UndefOr[java.lang.String] = js.native
+  def findReflectionByName(arg: java.lang.String): js.UndefOr[Reflection] = js.native
+  def findReflectionByName(arg: js.Array[java.lang.String]): js.UndefOr[Reflection] = js.native
   def getAlias(): java.lang.String = js.native
   def getChildByName(name: java.lang.String): Reflection = js.native
   def getChildByName(names: js.Array[java.lang.String]): Reflection = js.native

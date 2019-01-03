@@ -13,7 +13,7 @@ class ProjectReflection protected ()
   var directory: typedocLib.distLibModelsSourcesMod.SourceDirectory = js.native
   var files: js.Array[typedocLib.distLibModelsSourcesMod.SourceFile] = js.native
   var packageInfo: js.Any = js.native
-  var readme: java.lang.String = js.native
+  var readme: js.UndefOr[java.lang.String] = js.native
   var reflections: org.scalablytyped.runtime.NumberDictionary[typedocLib.distLibModelsReflectionsAbstractMod.Reflection] = js.native
   var symbolMapping: org.scalablytyped.runtime.NumberDictionary[scala.Double] = js.native
   def getReflectionsByKind(kind: typedocLib.distLibModelsReflectionsAbstractMod.ReflectionKind): js.Array[typedocLib.distLibModelsReflectionsAbstractMod.Reflection] = js.native

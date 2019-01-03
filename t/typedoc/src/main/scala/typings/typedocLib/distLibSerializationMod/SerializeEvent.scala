@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("typedoc/dist/lib/serialization", "SerializeEvent")
 @js.native
-class SerializeEvent ()
-  extends typedocLib.distLibSerializationEventsMod.SerializeEvent
+class SerializeEvent protected ()
+  extends typedocLib.distLibSerializationEventsMod.SerializeEvent {
+  def this(name: java.lang.String, project: typedocLib.distLibModelsMod.ProjectReflection) = this()
+}
 

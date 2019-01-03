@@ -10,5 +10,6 @@ import scala.scalajs.js.annotation._
 abstract class AbstractComponent[O /* <: typedocLib.distLibUtilsComponentMod.ComponentHost */] protected ()
   extends typedocLib.distLibUtilsComponentMod.AbstractComponent[O] {
   def this(owner: O) = this()
+  def this(owner: js.Symbol) = this()
 }
 

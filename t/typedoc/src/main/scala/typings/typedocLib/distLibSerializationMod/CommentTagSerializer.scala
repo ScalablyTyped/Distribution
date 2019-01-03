@@ -14,6 +14,5 @@ class CommentTagSerializer ()
 @js.native
 object CommentTagSerializer extends js.Object {
   var PRIORITY: scala.Double = js.native
-  /* protected */ def serializeGroup(instance: js.Any): scala.Boolean = js.native
 }
 

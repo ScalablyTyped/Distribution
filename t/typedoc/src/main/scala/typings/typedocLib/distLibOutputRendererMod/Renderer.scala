@@ -20,7 +20,7 @@ class Renderer ()
   var prepareOutputDirectory: js.Any = js.native
   var prepareTheme: js.Any = js.native
   var renderDocument: js.Any = js.native
-  var theme: typedocLib.distLibOutputThemeMod.Theme = js.native
+  var theme: js.UndefOr[typedocLib.distLibOutputThemeMod.Theme] = js.native
   var themeName: java.lang.String = js.native
   var toc: js.Array[java.lang.String] = js.native
   def render(

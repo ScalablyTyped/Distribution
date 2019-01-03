@@ -29,7 +29,7 @@ object DefaultTheme extends js.Object {
     reflection: typedocLib.distLibModelsReflectionsMod.DeclarationReflection,
     urls: js.Array[typedocLib.distLibOutputModelsUrlMappingMod.UrlMapping]
   ): js.Array[typedocLib.distLibOutputModelsUrlMappingMod.UrlMapping] = js.native
-  def getMapping(reflection: typedocLib.distLibModelsReflectionsMod.DeclarationReflection): typedocLib.distLibOutputThemesDefaultThemeMod.TemplateMapping = js.native
+  def getMapping(reflection: typedocLib.distLibModelsReflectionsMod.DeclarationReflection): js.UndefOr[typedocLib.distLibOutputThemesDefaultThemeMod.TemplateMapping] = js.native
   def getUrl(reflection: typedocLib.distLibModelsReflectionsMod.Reflection): java.lang.String = js.native
   def getUrl(
     reflection: typedocLib.distLibModelsReflectionsMod.Reflection,

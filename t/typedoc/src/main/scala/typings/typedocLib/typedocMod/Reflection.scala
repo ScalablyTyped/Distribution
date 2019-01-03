@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("typedoc", "Reflection")
 @js.native
-abstract class Reflection ()
+abstract class Reflection protected ()
   extends typedocLib.distLibModelsReflectionsMod.Reflection {
-  def this(parent: typedocLib.distLibModelsReflectionsAbstractMod.Reflection) = this()
-  def this(parent: typedocLib.distLibModelsReflectionsAbstractMod.Reflection, name: java.lang.String) = this()
-  def this(parent: typedocLib.distLibModelsReflectionsAbstractMod.Reflection, name: java.lang.String, kind: typedocLib.distLibModelsReflectionsAbstractMod.ReflectionKind) = this()
+  def this(name: java.lang.String, kind: typedocLib.distLibModelsReflectionsAbstractMod.ReflectionKind) = this()
+  def this(name: java.lang.String, kind: typedocLib.distLibModelsReflectionsAbstractMod.ReflectionKind, parent: typedocLib.distLibModelsReflectionsAbstractMod.Reflection) = this()
 }
 

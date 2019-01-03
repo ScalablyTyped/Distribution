@@ -10,12 +10,11 @@ import scala.scalajs.js.annotation._
 class Board () extends js.Object {
   def this(option: BoardOption) = this()
   var id: java.lang.String = js.native
-  var inject: Repl = js.native
   var io: js.Any = js.native
   var isReady: scala.Boolean = js.native
   var pins: js.Array[Pin] = js.native
   var port: java.lang.String = js.native
-  var repl: js.Any = js.native
+  var repl: Repl = js.native
   def analogRead(pin: scala.Double, cb: js.Function1[/* item */ scala.Double, scala.Unit]): scala.Unit = js.native
   def analogWrite(pin: scala.Double, value: scala.Double): scala.Unit = js.native
   def digitalRead(pin: scala.Double, cb: js.Function1[/* item */ scala.Double, scala.Unit]): scala.Unit = js.native

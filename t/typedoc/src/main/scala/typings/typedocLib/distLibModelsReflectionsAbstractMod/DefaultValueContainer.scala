@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DefaultValueContainer extends Reflection {
-  var defaultValue: java.lang.String = js.native
+  var defaultValue: js.UndefOr[java.lang.String] = js.native
 }
 

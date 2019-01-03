@@ -11,7 +11,9 @@ trait DeclarationOption extends js.Object {
   var defaultValue: js.UndefOr[js.Any] = js.undefined
   var help: java.lang.String
   var hint: js.UndefOr[ParameterHint] = js.undefined
-  var map: js.UndefOr[js.Object] = js.undefined
+  var map: js.UndefOr[
+    typedocLib.typedocLibStrings.`object` | (lodashLib.lodashMod.Global.Map[java.lang.String | scala.Double, _]) | org.scalablytyped.runtime.StringDictionary[js.Any]
+  ] = js.undefined
   var mapError: js.UndefOr[java.lang.String] = js.undefined
   var name: java.lang.String
   var scope: js.UndefOr[ParameterScope] = js.undefined

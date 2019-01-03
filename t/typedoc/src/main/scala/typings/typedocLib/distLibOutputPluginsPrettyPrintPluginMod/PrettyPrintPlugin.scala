@@ -15,7 +15,7 @@ class PrettyPrintPlugin ()
 @JSImport("typedoc/dist/lib/output/plugins/PrettyPrintPlugin", "PrettyPrintPlugin")
 @js.native
 object PrettyPrintPlugin extends js.Object {
-  var IGNORED_TAGS: js.Any = js.native
-  var PRE_TAGS: js.Any = js.native
+  var IGNORED_TAGS: typedocLib.Anon_Area = js.native
+  var PRE_TAGS: typedocLib.Anon_Pre = js.native
 }
 

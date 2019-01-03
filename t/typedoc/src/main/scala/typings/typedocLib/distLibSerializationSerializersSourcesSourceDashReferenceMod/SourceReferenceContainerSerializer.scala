@@ -16,7 +16,6 @@ class SourceReferenceContainerSerializer ()
     /* sourceReference */ typedocLib.distLibModelsSourcesFileMod.SourceReference, 
     typedocLib.distLibSerializationSerializersModelsSourceDashReferenceDashWrapperMod.SourceReferenceWrapper
   ] = js.native
-  def serializeGroup(instance: js.Any): scala.Boolean = js.native
 }
 
 @JSImport("typedoc/dist/lib/serialization/serializers/sources/source-reference", "SourceReferenceContainerSerializer")

@@ -11,10 +11,11 @@ abstract class AbstractComponent[O /* <: ComponentHost */] protected ()
   extends typedocLib.distLibUtilsEventsMod.EventDispatcher
      with ComponentHost {
   def this(owner: O) = this()
-  var _componentOptions: js.Any = js.native
+  def this(owner: js.Symbol) = this()
+  var _componentOptions: js.UndefOr[js.Any] = js.native
   var _componentOwner: js.Any = js.native
   /* CompleteClass */
-  override var application: typedocLib.distLibApplicationMod.Application = js.native
+  override val application: typedocLib.distLibApplicationMod.Application = js.native
   var componentName: java.lang.String = js.native
   val owner: O = js.native
   /* protected */ def bubble(name: java.lang.String, args: js.Any*): this.type = js.native

@@ -44,6 +44,10 @@ object ReflectionFlag extends js.Object {
     extends typedocLib.distLibModelsReflectionsAbstractMod.ReflectionFlag
   
   @js.native
+  sealed trait None
+    extends typedocLib.distLibModelsReflectionsAbstractMod.ReflectionFlag
+  
+  @js.native
   sealed trait Optional
     extends typedocLib.distLibModelsReflectionsAbstractMod.ReflectionFlag
   
@@ -75,6 +79,7 @@ object ReflectionFlag extends js.Object {
   /* 16 */ val Exported: Exported with scala.Double = js.native
   /* 64 */ val External: External with scala.Double = js.native
   /* 8192 */ val Let: Let with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
   /* 128 */ val Optional: Optional with scala.Double = js.native
   /* 1 */ val Private: Private with scala.Double = js.native
   /* 2 */ val Protected: Protected with scala.Double = js.native

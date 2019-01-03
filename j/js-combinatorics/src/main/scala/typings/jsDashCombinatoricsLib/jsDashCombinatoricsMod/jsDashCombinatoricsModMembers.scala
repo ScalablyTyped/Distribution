@@ -18,17 +18,17 @@ object jsDashCombinatoricsModMembers extends js.Object {
   	 */
   def P(m: scala.Double, n: scala.Double): scala.Double = js.native
   /**
-  	 * Generates n-digit "numbers" where each digit is an element in array.
+  	 * Generates `n`-digit "numbers" where each digit is an element in array.
   	 * Note this "number" is in the least significant order.
-  	 * When n is ommited, the length of the array is used.
+  	 * `n` defaults to the length of `a`.
   	 */
   def baseN[T](a: js.Array[T]): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IPredictableGenerator[js.Array[T]] = js.native
   def baseN[T](a: js.Array[T], n: scala.Double): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IPredictableGenerator[js.Array[T]] = js.native
   /**
-  	 * Generates the combination of array with n elements, which
+  	 * Generates the combination of `a` with `n` elements, which
   	 * also supports larger sets of elements.
-  	 * When n is ommited, the length of the array is used.
-  	 * Somewhat slower than combination()
+  	 * When `n` is ommited, the length of the array is used.
+  	 * Somewhat slower than `combination()`
   	 */
   def bigCombination[T](a: js.Array[T]): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IGenerator[js.Array[T]] = js.native
   def bigCombination[T](a: js.Array[T], n: scala.Double): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IGenerator[js.Array[T]] = js.native
@@ -92,13 +92,14 @@ object jsDashCombinatoricsModMembers extends js.Object {
     a10: js.Array[T10]
   ): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.ICartesianProductGenerator[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]] = js.native
   /**
-  	 * Generates the combination of array with n elements.
-  	 * When n is ommited, the length of the array is used.
+  	 * Generates the combination of `a` with `n` elements.
+  	 * `n` defaults to the length of `a`.
   	 */
   def combination[T](a: js.Array[T]): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IGenerator[js.Array[T]] = js.native
   def combination[T](a: js.Array[T], n: scala.Double): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IGenerator[js.Array[T]] = js.native
   /**
-  	 * Returns the factoradic representation of n in array, in least significant order.
+  	 * Returns the factoradic representation of `n` in an array, in
+    * least significant order.
   	 * See http://en.wikipedia.org/wiki/Factorial_number_system
   	 */
   def factoradic(n: scala.Double): js.Array[scala.Double] = js.native
@@ -107,18 +108,18 @@ object jsDashCombinatoricsModMembers extends js.Object {
   	 */
   def factorial(n: scala.Double): scala.Double = js.native
   /**
-  	 * Generates the permutation of array with n elements.
-  	 * When n is ommited, the length of the array is used.
+  	 * Generates the permutation of `a` with `n` elements.
+  	 * `n` defaults to the length of `a`.
   	 */
   def permutation[T](a: js.Array[T]): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IGenerator[js.Array[T]] = js.native
   def permutation[T](a: js.Array[T], n: scala.Double): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IGenerator[js.Array[T]] = js.native
   /**
-  	 * Generates the permutation of the combination of n.
-  	 * Equivalent to permutation(combination(a)), but more efficient.
+  	 * Generates the permutation of the combination of `a`.
+  	 * Equivalent to `permutation(combination(a))`, but more efficient.
   	 */
   def permutationCombination[T](a: js.Array[T]): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IGenerator[js.Array[T]] = js.native
   /**
-  	 * Generates the power set of array.
+  	 * Generates the power set of `a`.
   	 */
   def power[T](a: js.Array[T]): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IPredictableGenerator[js.Array[T]] = js.native
 }

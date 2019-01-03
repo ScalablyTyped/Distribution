@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "antd"
-version := "3.11.6-39cc43"
+version := "3.11.6-675128"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -18,6 +18,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "moment" % "2.23.0-9a5931",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-89199d",
+  "org.scalablytyped" %%% "raf" % "3.4-dt-20190103Z-cf66c1",
   "org.scalablytyped" %%% "rc-calendar" % "9.8.2-c88935",
   "org.scalablytyped" %%% "rc-dialog" % "7.2.1-8496a8",
   "org.scalablytyped" %%% "rc-progress" % "2.2-dt-20181116Z-99eb07",

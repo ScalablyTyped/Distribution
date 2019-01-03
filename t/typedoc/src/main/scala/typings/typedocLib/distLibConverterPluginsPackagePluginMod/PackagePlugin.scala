@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class PackagePlugin ()
   extends typedocLib.distLibConverterComponentsMod.ConverterComponent {
-  var noReadmeFile: js.Any = js.native
+  var noReadmeFile: js.UndefOr[js.Any] = js.native
   var onBegin: js.Any = js.native
   var onBeginDocument: js.Any = js.native
   var onBeginResolve: js.Any = js.native
-  var packageFile: js.Any = js.native
+  var packageFile: js.UndefOr[js.Any] = js.native
   var readme: java.lang.String = js.native
-  var readmeFile: js.Any = js.native
+  var readmeFile: js.UndefOr[js.Any] = js.native
   var visited: js.Any = js.native
 }
 

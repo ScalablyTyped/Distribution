@@ -10,5 +10,6 @@ import scala.scalajs.js.annotation._
 abstract class ChildableComponent[O /* <: typedocLib.distLibUtilsComponentMod.ComponentHost */, C /* <: typedocLib.distLibUtilsComponentMod.Component */] protected ()
   extends typedocLib.distLibUtilsComponentMod.ChildableComponent[O, C] {
   def this(owner: O) = this()
+  def this(owner: js.Symbol) = this()
 }
 

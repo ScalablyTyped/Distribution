@@ -10,13 +10,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class SignatureReflection ()
   extends typedocLib.distLibModelsReflectionsAbstractMod.TypeContainer {
-  var implementationOf: typedocLib.distLibModelsTypesMod.Type = js.native
-  var inheritedFrom: typedocLib.distLibModelsTypesMod.Type = js.native
-  var overwrites: typedocLib.distLibModelsTypesMod.Type = js.native
-  var parameters: js.Array[typedocLib.distLibModelsReflectionsParameterMod.ParameterReflection] = js.native
+  var implementationOf: js.UndefOr[typedocLib.distLibModelsTypesMod.Type] = js.native
+  var inheritedFrom: js.UndefOr[typedocLib.distLibModelsTypesMod.Type] = js.native
+  var overwrites: js.UndefOr[typedocLib.distLibModelsTypesMod.Type] = js.native
+  var parameters: js.UndefOr[js.Array[typedocLib.distLibModelsReflectionsParameterMod.ParameterReflection]] = js.native
   @JSName("parent")
-  var parent_SignatureReflection: typedocLib.distLibModelsReflectionsContainerMod.ContainerReflection = js.native
-  var typeParameters: js.Array[typedocLib.distLibModelsReflectionsTypeDashParameterMod.TypeParameterReflection] = js.native
+  var parent_SignatureReflection: js.UndefOr[typedocLib.distLibModelsReflectionsContainerMod.ContainerReflection] = js.native
+  var typeParameters: js.UndefOr[
+    js.Array[typedocLib.distLibModelsReflectionsTypeDashParameterMod.TypeParameterReflection]
+  ] = js.native
   def getParameterTypes(): js.Array[typedocLib.distLibModelsTypesMod.Type] = js.native
 }
 

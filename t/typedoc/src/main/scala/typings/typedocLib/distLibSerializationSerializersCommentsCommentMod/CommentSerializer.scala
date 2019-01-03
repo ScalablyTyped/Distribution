@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CommentSerializer ()
   extends typedocLib.distLibSerializationComponentsMod.SerializerComponent[typedocLib.distLibModelsMod.Comment] {
-  var serializeGroup: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CommentSerializer.serializeGroup */ js.Any = js.native
   @JSName("serializeGroupSymbol")
   var serializeGroupSymbol_CommentSerializer: org.scalablytyped.runtime.Instantiable2[
     /* shortText */ js.UndefOr[/* shortText */ java.lang.String], 
@@ -22,6 +21,5 @@ class CommentSerializer ()
 @js.native
 object CommentSerializer extends js.Object {
   var PRIORITY: scala.Double = js.native
-  /* protected */ def serializeGroup(instance: js.Any): scala.Boolean = js.native
 }
 

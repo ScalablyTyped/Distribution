@@ -7,12 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("typedoc/dist/lib/output/events", "RendererEvent")
 @js.native
-class RendererEvent ()
+class RendererEvent protected ()
   extends typedocLib.distLibUtilsEventsMod.Event {
-  var outputDirectory: java.lang.String = js.native
-  var project: typedocLib.distLibModelsReflectionsProjectMod.ProjectReflection = js.native
+  def this(name: java.lang.String, outputDirectory: java.lang.String, project: typedocLib.distLibModelsReflectionsProjectMod.ProjectReflection) = this()
+  val outputDirectory: java.lang.String = js.native
+  val project: typedocLib.distLibModelsReflectionsProjectMod.ProjectReflection = js.native
   var settings: js.Any = js.native
-  var urls: js.Array[typedocLib.distLibOutputModelsUrlMappingMod.UrlMapping] = js.native
+  var urls: js.UndefOr[js.Array[typedocLib.distLibOutputModelsUrlMappingMod.UrlMapping]] = js.native
   def createPageEvent(mapping: typedocLib.distLibOutputModelsUrlMappingMod.UrlMapping): PageEvent = js.native
 }
 

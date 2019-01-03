@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 class ParameterReflection ()
   extends typedocLib.distLibModelsReflectionsAbstractMod.DefaultValueContainer {
   @JSName("parent")
-  var parent_ParameterReflection: typedocLib.distLibModelsReflectionsSignatureMod.SignatureReflection = js.native
-  var `type`: typedocLib.distLibModelsTypesMod.Type = js.native
+  var parent_ParameterReflection: js.UndefOr[typedocLib.distLibModelsReflectionsSignatureMod.SignatureReflection] = js.native
+  var `type`: js.UndefOr[typedocLib.distLibModelsTypesMod.Type] = js.native
 }
 

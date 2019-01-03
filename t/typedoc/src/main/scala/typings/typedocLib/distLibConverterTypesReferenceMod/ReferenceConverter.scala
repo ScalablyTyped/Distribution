@@ -16,7 +16,7 @@ class ReferenceConverter ()
   def convertType(
     context: typedocLib.distLibConverterContextMod.Context,
     `type`: typescriptLib.typescriptMod.tsNs.TypeReference
-  ): typedocLib.distLibModelsTypesMod.Type = js.native
+  ): js.UndefOr[typedocLib.distLibModelsTypesMod.Type] = js.native
   def supportsType(
     context: typedocLib.distLibConverterContextMod.Context,
     `type`: typescriptLib.typescriptMod.tsNs.TypeReference

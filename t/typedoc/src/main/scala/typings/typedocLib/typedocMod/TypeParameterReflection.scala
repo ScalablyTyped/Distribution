@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("typedoc", "TypeParameterReflection")
 @js.native
-class TypeParameterReflection ()
+class TypeParameterReflection protected ()
   extends typedocLib.distLibModelsReflectionsMod.TypeParameterReflection {
-  def this(parent: typedocLib.distLibModelsReflectionsAbstractMod.Reflection) = this()
-  def this(parent: typedocLib.distLibModelsReflectionsAbstractMod.Reflection, `type`: typedocLib.distLibModelsTypesMod.TypeParameterType) = this()
+  def this(`type`: typedocLib.distLibModelsTypesMod.TypeParameterType) = this()
+  def this(`type`: typedocLib.distLibModelsTypesMod.TypeParameterType, parent: typedocLib.distLibModelsReflectionsAbstractMod.Reflection) = this()
 }
 
