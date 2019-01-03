@@ -14,14 +14,8 @@ trait ITransferListOptions
     */
   var destination: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Only return transfers for the recipient specified by this
-    * recipient ID.
+    * Only return transfers with the specified transfer group.
     */
-  var recipient: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * Only return transfers that have the given status:
-    * pending, paid, failed, in_transit, or canceled.
-    */
-  var status: Statuses
+  var transfer_group: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 

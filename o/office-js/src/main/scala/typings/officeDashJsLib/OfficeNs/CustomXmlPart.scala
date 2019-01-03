@@ -57,6 +57,11 @@ trait CustomXmlPart extends js.Object {
   def addHandlerAsync(
     eventType: EventType,
     handler: js.Function1[/* result */ js.Any, scala.Unit],
+    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
+  def addHandlerAsync(
+    eventType: EventType,
+    handler: js.Function1[/* result */ js.Any, scala.Unit],
     options: AsyncContextOptions
   ): scala.Unit = js.native
   def addHandlerAsync(
@@ -74,6 +79,7 @@ trait CustomXmlPart extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def deleteAsync(): scala.Unit = js.native
+  def deleteAsync(callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def deleteAsync(options: AsyncContextOptions): scala.Unit = js.native
   def deleteAsync(
     options: AsyncContextOptions,
@@ -90,6 +96,10 @@ trait CustomXmlPart extends js.Object {
     *                  The `value` property of the result is an array of CustomXmlNode objects that represent the nodes specified by the XPath expression passed to the xPath parameter.
     */
   def getNodesAsync(xPath: java.lang.String): scala.Unit = js.native
+  def getNodesAsync(
+    xPath: java.lang.String,
+    callback: js.Function1[/* result */ AsyncResult[js.Array[CustomXmlNode]], scala.Unit]
+  ): scala.Unit = js.native
   def getNodesAsync(xPath: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
   def getNodesAsync(
     xPath: java.lang.String,
@@ -106,6 +116,7 @@ trait CustomXmlPart extends js.Object {
     *                  The `value` property of the result is a string that contains the XML of the referenced CustomXmlPart object.
     */
   def getXmlAsync(): scala.Unit = js.native
+  def getXmlAsync(callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
   def getXmlAsync(options: AsyncContextOptions): scala.Unit = js.native
   def getXmlAsync(
     options: AsyncContextOptions,
@@ -124,6 +135,11 @@ trait CustomXmlPart extends js.Object {
     */
   def removeHandlerAsync(eventType: EventType): scala.Unit = js.native
   def removeHandlerAsync(eventType: EventType, handler: js.Function1[/* result */ js.Any, scala.Unit]): scala.Unit = js.native
+  def removeHandlerAsync(
+    eventType: EventType,
+    handler: js.Function1[/* result */ js.Any, scala.Unit],
+    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
     handler: js.Function1[/* result */ js.Any, scala.Unit],

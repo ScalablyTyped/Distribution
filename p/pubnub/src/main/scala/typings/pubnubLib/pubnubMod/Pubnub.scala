@@ -51,6 +51,14 @@ trait Pubnub extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
+  def history(
+    params: pubnubLib.pubnubMod.PubnubNs.HistoryParameters,
+    callback: js.Function2[
+      /* status */ pubnubLib.pubnubMod.PubnubNs.HistoryStatus, 
+      /* response */ pubnubLib.pubnubMod.PubnubNs.HistoryResponse, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
   def publish(params: pubnubLib.pubnubMod.PubnubNs.PublishParameters): js.Promise[pubnubLib.pubnubMod.PubnubNs.PublishResponse] = js.native
   def publish(
     params: pubnubLib.pubnubMod.PubnubNs.PublishParameters,

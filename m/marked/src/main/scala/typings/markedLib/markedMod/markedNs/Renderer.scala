@@ -12,7 +12,7 @@ trait Renderer extends js.Object {
   def codespan(code: java.lang.String): java.lang.String
   def del(text: java.lang.String): java.lang.String
   def em(text: java.lang.String): java.lang.String
-  def heading(text: java.lang.String, level: scala.Double, raw: java.lang.String): java.lang.String
+  def heading(text: java.lang.String, level: scala.Double, raw: java.lang.String, slugger: Slugger): java.lang.String
   def hr(): java.lang.String
   def html(html: java.lang.String): java.lang.String
   def image(href: java.lang.String, title: java.lang.String, text: java.lang.String): java.lang.String

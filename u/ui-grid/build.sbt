@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ui-grid"
-version := "0.0-unknown-dt-20180428Z-dcb0ef"
+version := "0.0-unknown-dt-20181227Z-53cdb6"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

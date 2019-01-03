@@ -68,6 +68,22 @@ trait Accounts
   ): js.Promise[
     stripeLib.stripeMod.StripeNs.cardsNs.ICard | stripeLib.stripeMod.StripeNs.bankAccountsNs.IBankAccount
   ] = js.native
+  /**
+    * Creates a single-use login link for an Express account to access their Stripe dashboard.
+    * You may only create login links for Express accounts connected to your platform.
+    * Returns a login link object if the call succeeded.
+    */
+  def createLoginLink(accId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.accountsNs.ILoginLink] = js.native
+  def createLoginLink(accId: java.lang.String, redirectUrl: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.accountsNs.ILoginLink] = js.native
+  def createLoginLink(
+    accId: java.lang.String,
+    redirectUrl: java.lang.String,
+    response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.accountsNs.ILoginLink]
+  ): js.Promise[stripeLib.stripeMod.StripeNs.accountsNs.ILoginLink] = js.native
+  def createLoginLink(
+    accId: java.lang.String,
+    response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.accountsNs.ILoginLink]
+  ): js.Promise[stripeLib.stripeMod.StripeNs.accountsNs.ILoginLink] = js.native
   def del(): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
   def del(id: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
   /**

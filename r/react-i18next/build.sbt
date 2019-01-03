@@ -1,12 +1,11 @@
 organization := "org.scalablytyped"
 name := "react-i18next"
-version := "9.0.0-b03ad3"
+version := "9.0.1-355dee"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "create-react-context" % "0.2.2-36e706",
   "org.scalablytyped" %%% "csstype" % "2.5.8-a13970",
   "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180806Z-0ae6f5",
   "org.scalablytyped" %%% "i18next" % "12.1-dt-20181126Z-dcabb3",

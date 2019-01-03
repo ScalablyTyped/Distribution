@@ -160,6 +160,11 @@ trait Document extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def addHandlerAsync(eventType: EventType, handler: js.Any): scala.Unit = js.native
+  def addHandlerAsync(
+    eventType: EventType,
+    handler: js.Any,
+    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   def addHandlerAsync(eventType: EventType, handler: js.Any, options: AsyncContextOptions): scala.Unit = js.native
   def addHandlerAsync(
     eventType: EventType,
@@ -196,6 +201,14 @@ trait Document extends js.Object {
     *                  such as Normal or Outline View. "read" corresponds to either Slide Show or Reading View.
     */
   def getActiveViewAsync(): scala.Unit = js.native
+  def getActiveViewAsync(
+    callback: js.Function1[
+      /* result */ AsyncResult[
+        officeDashJsLib.officeDashJsLibStrings.edit | officeDashJsLib.officeDashJsLibStrings.read
+      ], 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
   def getActiveViewAsync(options: AsyncContextOptions): scala.Unit = js.native
   def getActiveViewAsync(
     options: AsyncContextOptions,
@@ -250,6 +263,7 @@ trait Document extends js.Object {
     *                  The `value` property of the result is the File object.
     */
   def getFileAsync(fileType: FileType): scala.Unit = js.native
+  def getFileAsync(fileType: FileType, callback: js.Function1[/* result */ AsyncResult[File], scala.Unit]): scala.Unit = js.native
   def getFileAsync(fileType: FileType, options: GetFileOptions): scala.Unit = js.native
   def getFileAsync(
     fileType: FileType,
@@ -285,6 +299,7 @@ trait Document extends js.Object {
     *                  The `value` property of the result is the file's properties (with the URL found at `asyncResult.value.url`).
     */
   def getFilePropertiesAsync(): scala.Unit = js.native
+  def getFilePropertiesAsync(callback: js.Function1[/* result */ AsyncResult[FileProperties], scala.Unit]): scala.Unit = js.native
   def getFilePropertiesAsync(options: AsyncContextOptions): scala.Unit = js.native
   def getFilePropertiesAsync(
     options: AsyncContextOptions,
@@ -316,6 +331,7 @@ trait Document extends js.Object {
     *  </table>
     */
   def getMaxResourceIndexAsync(): scala.Unit = js.native
+  def getMaxResourceIndexAsync(callback: js.Function1[/* result */ AsyncResult[scala.Double], scala.Unit]): scala.Unit = js.native
   def getMaxResourceIndexAsync(options: AsyncContextOptions): scala.Unit = js.native
   def getMaxResourceIndexAsync(
     options: AsyncContextOptions,
@@ -347,6 +363,7 @@ trait Document extends js.Object {
     *  </table>
     */
   def getMaxTaskIndexAsync(): scala.Unit = js.native
+  def getMaxTaskIndexAsync(callback: js.Function1[/* result */ AsyncResult[scala.Double], scala.Unit]): scala.Unit = js.native
   def getMaxTaskIndexAsync(options: AsyncContextOptions): scala.Unit = js.native
   def getMaxTaskIndexAsync(
     options: AsyncContextOptions,
@@ -376,6 +393,7 @@ trait Document extends js.Object {
     *  </table>
     */
   def getProjectFieldAsync(fieldId: scala.Double): scala.Unit = js.native
+  def getProjectFieldAsync(fieldId: scala.Double, callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]): scala.Unit = js.native
   def getProjectFieldAsync(fieldId: scala.Double, options: AsyncContextOptions): scala.Unit = js.native
   def getProjectFieldAsync(
     fieldId: scala.Double,
@@ -409,6 +427,10 @@ trait Document extends js.Object {
     *  </table>
     */
   def getResourceByIndexAsync(resourceIndex: scala.Double): scala.Unit = js.native
+  def getResourceByIndexAsync(
+    resourceIndex: scala.Double,
+    callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]
+  ): scala.Unit = js.native
   def getResourceByIndexAsync(resourceIndex: scala.Double, options: AsyncContextOptions): scala.Unit = js.native
   def getResourceByIndexAsync(
     resourceIndex: scala.Double,
@@ -440,6 +462,11 @@ trait Document extends js.Object {
     *  </table>
     */
   def getResourceFieldAsync(resourceId: java.lang.String, fieldId: scala.Double): scala.Unit = js.native
+  def getResourceFieldAsync(
+    resourceId: java.lang.String,
+    fieldId: scala.Double,
+    callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]
+  ): scala.Unit = js.native
   def getResourceFieldAsync(resourceId: java.lang.String, fieldId: scala.Double, options: AsyncContextOptions): scala.Unit = js.native
   def getResourceFieldAsync(
     resourceId: java.lang.String,
@@ -538,10 +565,11 @@ trait Document extends js.Object {
     *                  This is returned in the data structure or format you specified with the coercionType parameter. 
     *                  (See Remarks for more information about data coercion.)
     */
-  def getSelectedDataAsync[T](coerciontype: CoercionType): scala.Unit = js.native
-  def getSelectedDataAsync[T](coerciontype: CoercionType, options: GetSelectedDataOptions): scala.Unit = js.native
+  def getSelectedDataAsync[T](coercionType: CoercionType): scala.Unit = js.native
+  def getSelectedDataAsync[T](coercionType: CoercionType, callback: js.Function1[/* result */ AsyncResult[T], scala.Unit]): scala.Unit = js.native
+  def getSelectedDataAsync[T](coercionType: CoercionType, options: GetSelectedDataOptions): scala.Unit = js.native
   def getSelectedDataAsync[T](
-    coerciontype: CoercionType,
+    coercionType: CoercionType,
     options: GetSelectedDataOptions,
     callback: js.Function1[/* result */ AsyncResult[T], scala.Unit]
   ): scala.Unit = js.native
@@ -568,6 +596,7 @@ trait Document extends js.Object {
     *  </table>
     */
   def getSelectedResourceAsync(): scala.Unit = js.native
+  def getSelectedResourceAsync(callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
   def getSelectedResourceAsync(options: AsyncContextOptions): scala.Unit = js.native
   def getSelectedResourceAsync(
     options: AsyncContextOptions,
@@ -596,6 +625,7 @@ trait Document extends js.Object {
     *  </table>
     */
   def getSelectedTaskAsync(): scala.Unit = js.native
+  def getSelectedTaskAsync(callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
   def getSelectedTaskAsync(options: AsyncContextOptions): scala.Unit = js.native
   def getSelectedTaskAsync(
     options: AsyncContextOptions,
@@ -626,6 +656,7 @@ trait Document extends js.Object {
     *  </table>
     */
   def getSelectedViewAsync(): scala.Unit = js.native
+  def getSelectedViewAsync(callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]): scala.Unit = js.native
   def getSelectedViewAsync(options: AsyncContextOptions): scala.Unit = js.native
   def getSelectedViewAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]): scala.Unit = js.native
   /**
@@ -655,6 +686,7 @@ trait Document extends js.Object {
     *  </table>
     */
   def getTaskAsync(taskId: java.lang.String): scala.Unit = js.native
+  def getTaskAsync(taskId: java.lang.String, callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]): scala.Unit = js.native
   def getTaskAsync(taskId: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
   def getTaskAsync(
     taskId: java.lang.String,
@@ -688,6 +720,10 @@ trait Document extends js.Object {
     *  </table>
     */
   def getTaskByIndexAsync(taskIndex: scala.Double): scala.Unit = js.native
+  def getTaskByIndexAsync(
+    taskIndex: scala.Double,
+    callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]
+  ): scala.Unit = js.native
   def getTaskByIndexAsync(taskIndex: scala.Double, options: AsyncContextOptions): scala.Unit = js.native
   def getTaskByIndexAsync(
     taskIndex: scala.Double,
@@ -719,6 +755,11 @@ trait Document extends js.Object {
     *  </table>
     */
   def getTaskFieldAsync(taskId: java.lang.String, fieldId: scala.Double): scala.Unit = js.native
+  def getTaskFieldAsync(
+    taskId: java.lang.String,
+    fieldId: scala.Double,
+    callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]
+  ): scala.Unit = js.native
   def getTaskFieldAsync(taskId: java.lang.String, fieldId: scala.Double, options: AsyncContextOptions): scala.Unit = js.native
   def getTaskFieldAsync(
     taskId: java.lang.String,
@@ -751,6 +792,7 @@ trait Document extends js.Object {
     *  </table>
     */
   def getWSSUrlAsync(): scala.Unit = js.native
+  def getWSSUrlAsync(callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]): scala.Unit = js.native
   def getWSSUrlAsync(options: AsyncContextOptions): scala.Unit = js.native
   def getWSSUrlAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]): scala.Unit = js.native
   /**
@@ -795,6 +837,11 @@ trait Document extends js.Object {
     *                  The `value` property of the result is the current view.
     */
   def goToByIdAsync(id: java.lang.String, goToType: GoToType): scala.Unit = js.native
+  def goToByIdAsync(
+    id: java.lang.String,
+    goToType: GoToType,
+    callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]
+  ): scala.Unit = js.native
   def goToByIdAsync(id: java.lang.String, goToType: GoToType, options: GoToByIdOptions): scala.Unit = js.native
   def goToByIdAsync(
     id: java.lang.String,
@@ -803,6 +850,11 @@ trait Document extends js.Object {
     callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]
   ): scala.Unit = js.native
   def goToByIdAsync(id: scala.Double, goToType: GoToType): scala.Unit = js.native
+  def goToByIdAsync(
+    id: scala.Double,
+    goToType: GoToType,
+    callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]
+  ): scala.Unit = js.native
   def goToByIdAsync(id: scala.Double, goToType: GoToType, options: GoToByIdOptions): scala.Unit = js.native
   def goToByIdAsync(
     id: scala.Double,
@@ -839,6 +891,7 @@ trait Document extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def removeHandlerAsync(eventType: EventType): scala.Unit = js.native
+  def removeHandlerAsync(eventType: EventType, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def removeHandlerAsync(eventType: EventType, options: RemoveHandlerOptions): scala.Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
@@ -877,6 +930,12 @@ trait Document extends js.Object {
     resourceId: java.lang.String,
     fieldId: scala.Double,
     fieldValue: java.lang.String,
+    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
+  def setResourceFieldAsync(
+    resourceId: java.lang.String,
+    fieldId: scala.Double,
+    fieldValue: java.lang.String,
     options: AsyncContextOptions
   ): scala.Unit = js.native
   def setResourceFieldAsync(
@@ -887,6 +946,12 @@ trait Document extends js.Object {
     callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   def setResourceFieldAsync(resourceId: java.lang.String, fieldId: scala.Double, fieldValue: js.Object): scala.Unit = js.native
+  def setResourceFieldAsync(
+    resourceId: java.lang.String,
+    fieldId: scala.Double,
+    fieldValue: js.Object,
+    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   def setResourceFieldAsync(
     resourceId: java.lang.String,
     fieldId: scala.Double,
@@ -905,6 +970,12 @@ trait Document extends js.Object {
     resourceId: java.lang.String,
     fieldId: scala.Double,
     fieldValue: scala.Boolean,
+    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
+  def setResourceFieldAsync(
+    resourceId: java.lang.String,
+    fieldId: scala.Double,
+    fieldValue: scala.Boolean,
     options: AsyncContextOptions
   ): scala.Unit = js.native
   def setResourceFieldAsync(
@@ -915,6 +986,12 @@ trait Document extends js.Object {
     callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   def setResourceFieldAsync(resourceId: java.lang.String, fieldId: scala.Double, fieldValue: scala.Double): scala.Unit = js.native
+  def setResourceFieldAsync(
+    resourceId: java.lang.String,
+    fieldId: scala.Double,
+    fieldValue: scala.Double,
+    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   def setResourceFieldAsync(
     resourceId: java.lang.String,
     fieldId: scala.Double,
@@ -1041,6 +1118,7 @@ trait Document extends js.Object {
     *                  The AsyncResult.value property always returns undefined because there is no object or data to retrieve.
     */
   def setSelectedDataAsync(data: java.lang.String): scala.Unit = js.native
+  def setSelectedDataAsync(data: java.lang.String, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def setSelectedDataAsync(data: java.lang.String, options: SetSelectedDataOptions): scala.Unit = js.native
   def setSelectedDataAsync(
     data: java.lang.String,
@@ -1048,6 +1126,10 @@ trait Document extends js.Object {
     callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   def setSelectedDataAsync(data: js.Array[js.Array[_]]): scala.Unit = js.native
+  def setSelectedDataAsync(
+    data: js.Array[js.Array[_]],
+    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   def setSelectedDataAsync(data: js.Array[js.Array[_]], options: SetSelectedDataOptions): scala.Unit = js.native
   def setSelectedDataAsync(
     data: js.Array[js.Array[_]],
@@ -1055,6 +1137,7 @@ trait Document extends js.Object {
     callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   def setSelectedDataAsync(data: TableData): scala.Unit = js.native
+  def setSelectedDataAsync(data: TableData, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def setSelectedDataAsync(data: TableData, options: SetSelectedDataOptions): scala.Unit = js.native
   def setSelectedDataAsync(
     data: TableData,
@@ -1093,6 +1176,12 @@ trait Document extends js.Object {
     taskId: java.lang.String,
     fieldId: scala.Double,
     fieldValue: java.lang.String,
+    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
+  def setTaskFieldAsync(
+    taskId: java.lang.String,
+    fieldId: scala.Double,
+    fieldValue: java.lang.String,
     options: AsyncContextOptions
   ): scala.Unit = js.native
   def setTaskFieldAsync(
@@ -1103,6 +1192,12 @@ trait Document extends js.Object {
     callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   def setTaskFieldAsync(taskId: java.lang.String, fieldId: scala.Double, fieldValue: js.Object): scala.Unit = js.native
+  def setTaskFieldAsync(
+    taskId: java.lang.String,
+    fieldId: scala.Double,
+    fieldValue: js.Object,
+    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   def setTaskFieldAsync(
     taskId: java.lang.String,
     fieldId: scala.Double,
@@ -1121,6 +1216,12 @@ trait Document extends js.Object {
     taskId: java.lang.String,
     fieldId: scala.Double,
     fieldValue: scala.Boolean,
+    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
+  def setTaskFieldAsync(
+    taskId: java.lang.String,
+    fieldId: scala.Double,
+    fieldValue: scala.Boolean,
     options: AsyncContextOptions
   ): scala.Unit = js.native
   def setTaskFieldAsync(
@@ -1131,6 +1232,12 @@ trait Document extends js.Object {
     callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   def setTaskFieldAsync(taskId: java.lang.String, fieldId: scala.Double, fieldValue: scala.Double): scala.Unit = js.native
+  def setTaskFieldAsync(
+    taskId: java.lang.String,
+    fieldId: scala.Double,
+    fieldValue: scala.Double,
+    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   def setTaskFieldAsync(
     taskId: java.lang.String,
     fieldId: scala.Double,

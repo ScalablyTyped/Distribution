@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait PropTypes extends js.Object {
   var debounce: js.UndefOr[scala.Double] = js.undefined
+  var googleCallbackName: js.UndefOr[java.lang.String] = js.undefined
   var highlightFirstSuggestion: js.UndefOr[scala.Boolean] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* value */ java.lang.String, scala.Unit]] = js.undefined
   var onError: js.UndefOr[

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "knockout_dot_rx"
-version := "1.0-dt-20180214Z-41f296"
+version := "1.0-dt-20180214Z-37158e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20181221Z-a26645",
+  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190102Z-014288",
   "org.scalablytyped" %%% "rx" % "4.1-dt-20180214Z-6fb779",
   "org.scalablytyped" %%% "rx-core" % "4.0-dt-20180214Z-db6a12",
   "org.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20180214Z-9e3b2f",

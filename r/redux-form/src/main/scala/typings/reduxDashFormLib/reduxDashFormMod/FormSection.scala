@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("redux-form", "FormSection")
 @js.native
-class FormSection ()
-  extends reduxDashFormLib.libFormSectionMod.FormSection
+class FormSection[P] ()
+  extends reduxDashFormLib.libFormSectionMod.FormSection[P]
 

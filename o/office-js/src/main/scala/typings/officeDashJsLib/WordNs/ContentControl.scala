@@ -136,7 +136,7 @@ class ContentControl ()
   val parentTableOrNullObject: Table = js.native
   /**
     *
-    * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+    * Gets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
     *
     * [Api set: WordApi 1.1]
     */
@@ -414,7 +414,7 @@ class ContentControl ()
   def insertOoxml_Start(ooxml: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.Start): Range = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
+    * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method is only supported if the content control encompasses one or more paragraphs in entirety.
     *
     * [Api set: WordApi 1.1]
     *
@@ -426,7 +426,7 @@ class ContentControl ()
   def insertParagraph_After(paragraphText: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.After): Paragraph = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
+    * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method is only supported if the content control encompasses one or more paragraphs in entirety.
     *
     * [Api set: WordApi 1.1]
     *

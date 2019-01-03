@@ -8,5 +8,5 @@
 //                 Timur Ramazanov <https://github.com/charlie-wasp>
 //                 Kalvis Kalniņš <https://github.com/Akuukis>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.4
+// TypeScript Version: 2.8
 ```

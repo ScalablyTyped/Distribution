@@ -1,7 +1,7 @@
 ```
-// Type definitions for sip.js 0.9
-// Project: http://sipjs.com
-// Definitions by: Kir Dergachev <https://github.com/decyrus>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
+// This is apparently EventEmitter from the "events" node module?
+// Or perhaps a copy of it? Same interface it seems.
+/**
+ * The SessionDescriptionHandler interface SIP.js is expecting.
+ */
 ```

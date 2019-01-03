@@ -238,6 +238,44 @@ object interactionNs extends js.Object {
   
   /**
     * @classdesc
+    * Allows the user to draw a vector box by clicking and dragging on the map.
+    * Once drawn, the vector box can be modified by dragging its vertices or edges.
+    * This interaction is only supported for mouse devices.
+    *
+    * @fires ol.interaction.Extent.Event
+    * @param options Options.
+    * @api stable
+    */
+  @js.native
+  class Extent protected () extends Pointer {
+    /**
+      * @fires ol.interaction.Extent.Event
+      * @param options Options.
+      * @api stable
+      */
+    def this(options: openlayersLib.openlayersMod.olxNs.interactionNs.ExtentOptions) = this()
+    /**
+      * Returns the current drawn extent in the view projection
+      *
+      * @return Drawn extent in the view projection.
+      * @api
+      */
+    def getExtent(): openlayersLib.openlayersMod.Extent = js.native
+    /**
+      * Manually sets the drawn extent, using the view projection.
+      *
+      * @param extent Extent
+      * @api
+      */
+    def setExtent(extent: openlayersLib.openlayersMod.Extent): scala.Unit = js.native
+    /**
+      * @inheritDoc
+      */
+    def setMap(map: openlayersLib.openlayersMod.Map): scala.Unit = js.native
+  }
+  
+  /**
+    * @classdesc
     * Abstract base class; normally only used for creating subclasses and not
     * instantiated in apps.
     * User actions that change the state of the map. Some are similar to controls,
@@ -852,6 +890,37 @@ object interactionNs extends js.Object {
     
   }
   
+  @JSName("Extent")
+  @js.native
+  object ExtentNs extends js.Object {
+    /**
+      * @classdesc
+      * Events emitted by {@link ol.interaction.Extent} instances are instances of
+      * this type.
+      *
+      * @param extent the new extent
+      */
+    @js.native
+    class Event protected ()
+      extends openlayersLib.openlayersMod.eventsNs.Event {
+      /**
+        * @classdesc
+        * Events emitted by {@link ol.interaction.Extent} instances are instances of
+        * this type.
+        *
+        * @param type Type.
+        * @param feature The feature drawn.
+        */
+      def this(`type`: openlayersLib.openlayersMod.interactionNs.ExtentEventType, extent: openlayersLib.openlayersMod.Extent) = this()
+      /**
+        * The current extent.
+        * @api stable
+        */
+      var extent: openlayersLib.openlayersMod.Extent = js.native
+    }
+    
+  }
+  
   /**
     * @classdesc
     * Allows the user to pan the map using keyboard arrows.
@@ -1113,6 +1182,7 @@ object interactionNs extends js.Object {
   type DragAndDropEventType = java.lang.String
   type DragBoxEventType = java.lang.String
   type DrawEventType = java.lang.String
+  type ExtentEventType = java.lang.String
   type TranslateEventType = java.lang.String
 }
 

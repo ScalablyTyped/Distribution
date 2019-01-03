@@ -82,6 +82,11 @@ trait Settings extends js.Object {
     *  </table>
     */
   def addHandlerAsync(eventType: EventType, handler: js.Any): scala.Unit = js.native
+  def addHandlerAsync(
+    eventType: EventType,
+    handler: js.Any,
+    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   def addHandlerAsync(eventType: EventType, handler: js.Any, options: AsyncContextOptions): scala.Unit = js.native
   def addHandlerAsync(
     eventType: EventType,
@@ -245,6 +250,7 @@ trait Settings extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def removeHandlerAsync(eventType: EventType): scala.Unit = js.native
+  def removeHandlerAsync(eventType: EventType, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def removeHandlerAsync(eventType: EventType, options: RemoveHandlerOptions): scala.Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
@@ -308,6 +314,7 @@ trait Settings extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def saveAsync(): scala.Unit = js.native
+  def saveAsync(callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def saveAsync(options: SaveSettingsOptions): scala.Unit = js.native
   def saveAsync(
     options: SaveSettingsOptions,

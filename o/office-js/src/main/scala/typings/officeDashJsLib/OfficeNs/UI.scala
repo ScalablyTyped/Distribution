@@ -129,6 +129,10 @@ trait UI extends js.Object {
     * @param callback - Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object.
     */
   def displayDialogAsync(startAddress: java.lang.String): scala.Unit = js.native
+  def displayDialogAsync(
+    startAddress: java.lang.String,
+    callback: js.Function1[/* result */ AsyncResult[Dialog], scala.Unit]
+  ): scala.Unit = js.native
   def displayDialogAsync(startAddress: java.lang.String, options: DialogOptions): scala.Unit = js.native
   def displayDialogAsync(
     startAddress: java.lang.String,

@@ -304,6 +304,9 @@ object stripeLibStrings {
   sealed trait list extends js.Object
   
   @js.native
+  sealed trait login_link extends js.Object
+  
+  @js.native
   sealed trait lost extends js.Object
   
   @js.native
@@ -666,6 +669,7 @@ object stripeLibStrings {
   def limited: limited = "limited".asInstanceOf[limited]
   def line_item: line_item = "line_item".asInstanceOf[line_item]
   def list: list = "list".asInstanceOf[list]
+  def login_link: login_link = "login_link".asInstanceOf[login_link]
   def lost: lost = "lost".asInstanceOf[lost]
   def lost_or_stolen_card: lost_or_stolen_card = "lost_or_stolen_card".asInstanceOf[lost_or_stolen_card]
   def manual: manual = "manual".asInstanceOf[manual]

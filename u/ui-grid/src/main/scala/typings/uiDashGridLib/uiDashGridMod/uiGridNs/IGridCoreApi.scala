@@ -54,10 +54,9 @@ trait IGridCoreApi[TEntity] extends js.Object {
   def clearRowInvisible(rowEntity: TEntity): scala.Unit = js.native
   /**
     * Returns all visible rows
-    * @param {IGridInstance} grid the grid you want to get visible rows from
     * @returns {Array<IGridRow>} an array of gridRow
     */
-  def getVisibleRows(grid: IGridInstanceOf[TEntity]): js.Array[IGridRowOf[TEntity]] = js.native
+  def getVisibleRows(): js.Array[IGridRowOf[TEntity]] = js.native
   /**
     * Trigger a grid resize, normally this would be picked
     * up by a watch on window size, but in some circumstances it is necessary

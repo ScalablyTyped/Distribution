@@ -78,6 +78,11 @@ trait Bindings extends js.Object {
     *                  The `value` property of the result is the Binding object that represents the specified named item.
     */
   def addFromNamedItemAsync(itemName: java.lang.String, bindingType: BindingType): scala.Unit = js.native
+  def addFromNamedItemAsync(
+    itemName: java.lang.String,
+    bindingType: BindingType,
+    callback: js.Function1[/* result */ AsyncResult[Binding], scala.Unit]
+  ): scala.Unit = js.native
   def addFromNamedItemAsync(itemName: java.lang.String, bindingType: BindingType, options: AddBindingFromNamedItemOptions): scala.Unit = js.native
   def addFromNamedItemAsync(
     itemName: java.lang.String,
@@ -116,6 +121,7 @@ trait Bindings extends js.Object {
     *                  The `value` property of the result is the Binding object that represents the selection specified by the user.
     */
   def addFromPromptAsync(bindingType: BindingType): scala.Unit = js.native
+  def addFromPromptAsync(bindingType: BindingType, callback: js.Function1[/* result */ AsyncResult[Binding], scala.Unit]): scala.Unit = js.native
   def addFromPromptAsync(bindingType: BindingType, options: AddBindingFromPromptOptions): scala.Unit = js.native
   def addFromPromptAsync(
     bindingType: BindingType,
@@ -158,6 +164,7 @@ trait Bindings extends js.Object {
     *                  The `value` property of the result is the Binding object that represents the selection specified by the user.
     */
   def addFromSelectionAsync(bindingType: BindingType): scala.Unit = js.native
+  def addFromSelectionAsync(bindingType: BindingType, callback: js.Function1[/* result */ AsyncResult[Binding], scala.Unit]): scala.Unit = js.native
   def addFromSelectionAsync(bindingType: BindingType, options: AddBindingFromSelectionOptions): scala.Unit = js.native
   def addFromSelectionAsync(
     bindingType: BindingType,
@@ -191,6 +198,7 @@ trait Bindings extends js.Object {
     *                  The `value` property of the result is an array that contains each binding created for the referenced Bindings object.
     */
   def getAllAsync(): scala.Unit = js.native
+  def getAllAsync(callback: js.Function1[/* result */ AsyncResult[js.Array[Binding]], scala.Unit]): scala.Unit = js.native
   def getAllAsync(options: AsyncContextOptions): scala.Unit = js.native
   def getAllAsync(
     options: AsyncContextOptions,
@@ -226,6 +234,7 @@ trait Bindings extends js.Object {
     *                  The `value` property of the result is the Binding object specified by the id in the call.
     */
   def getByIdAsync(id: java.lang.String): scala.Unit = js.native
+  def getByIdAsync(id: java.lang.String, callback: js.Function1[/* result */ AsyncResult[Binding], scala.Unit]): scala.Unit = js.native
   def getByIdAsync(id: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
   def getByIdAsync(
     id: java.lang.String,
@@ -261,6 +270,7 @@ trait Bindings extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def releaseByIdAsync(id: java.lang.String): scala.Unit = js.native
+  def releaseByIdAsync(id: java.lang.String, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def releaseByIdAsync(id: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
   def releaseByIdAsync(
     id: java.lang.String,

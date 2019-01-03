@@ -17,6 +17,5 @@ trait KnockoutComputed[T]
     * computed observable that has dependencies on observables that won’t be cleaned.
     */
   def dispose(): scala.Unit = js.native
-  def equalityComparer(a: js.UndefOr[scala.Nothing], b: T): scala.Boolean = js.native
 }
 

@@ -363,7 +363,7 @@ trait MessageCompose extends Message {
     * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     */
-  def getSelectedDataAsync(coerciontype: CoercionType, callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]): scala.Unit = js.native
+  def getSelectedDataAsync(coercionType: CoercionType, callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]): scala.Unit = js.native
   /**
     * Asynchronously returns selected data from the subject or body of a message.
     *
@@ -392,7 +392,7 @@ trait MessageCompose extends Message {
     *                 type Office.AsyncResult.
     */
   def getSelectedDataAsync(
-    coerciontype: CoercionType,
+    coercionType: CoercionType,
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]
   ): scala.Unit = js.native

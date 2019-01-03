@@ -7,12 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait DatePickerProps extends js.Object {
   var TouchableComponent: js.UndefOr[reactLib.reactMod.Component[js.Object, js.Object, _]] = js.undefined
+  var allowFontScaling: js.UndefOr[scala.Boolean] = js.undefined
   var androidMode: js.UndefOr[
     reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerLibStrings.default | reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerLibStrings.calendar | reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerLibStrings.spinner
   ] = js.undefined
+  var cancelBtnTestID: js.UndefOr[java.lang.String] = js.undefined
   var cancelBtnText: js.UndefOr[java.lang.String] = js.undefined
+  var confirmBtnTestID: js.UndefOr[java.lang.String] = js.undefined
   var confirmBtnText: js.UndefOr[java.lang.String] = js.undefined
-  var customStyles: js.UndefOr[js.Any] = js.undefined
+  var customStyles: js.UndefOr[DatePickerCustomStylesProps] = js.undefined
   var date: js.UndefOr[java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var duration: js.UndefOr[scala.Double] = js.undefined
@@ -37,6 +40,8 @@ trait DatePickerProps extends js.Object {
   var onPressMask: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var showIcon: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[js.Any] = js.undefined
+  var style: js.UndefOr[reactDashNativeLib.reactDashNativeMod.StyleProp[_]] = js.undefined
+  var testID: js.UndefOr[java.lang.String] = js.undefined
+  var timeZoneOffsetInMinutes: js.UndefOr[scala.Double] = js.undefined
 }
 

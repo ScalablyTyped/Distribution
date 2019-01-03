@@ -14,6 +14,9 @@ trait VastError extends js.Object {
     *      VAST error 302: Wrapper limit reached.
     *      VAST error 303: No VAST response after one or more Wrappers.
     */
-  var ERRORCODE: java.lang.String
+  var ERRORCODE: java.lang.String | scala.Double
+  var ERRORMESSAGE: js.UndefOr[java.lang.String] = js.undefined
+  var extensions: js.UndefOr[js.Array[VastAdExtension]] = js.undefined
+  var system: js.UndefOr[VastSystem | java.lang.String | scala.Null] = js.undefined
 }
 

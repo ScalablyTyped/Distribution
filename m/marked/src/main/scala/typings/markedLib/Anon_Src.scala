@@ -15,6 +15,7 @@ trait Anon_Src extends js.Object {
     /* options */ js.UndefOr[/* options */ markedLib.markedMod.markedNs.MarkedOptions], 
     markedLib.markedMod.markedNs.Renderer
   ] = js.native
+  var Slugger: org.scalablytyped.runtime.Instantiable0[markedLib.markedMod.markedNs.Slugger] = js.native
   def apply(src: java.lang.String): java.lang.String = js.native
   def apply(
     src: java.lang.String,

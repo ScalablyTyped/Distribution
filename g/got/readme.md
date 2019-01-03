@@ -1,5 +1,5 @@
 ```
-// Type definitions for got 9.2
+// Type definitions for got 9.3
 // Project: https://github.com/sindresorhus/got#readme
 // Definitions by: BendingBender <https://github.com/BendingBender>
 //                 Linus Unnebäck <https://github.com/LinusU>

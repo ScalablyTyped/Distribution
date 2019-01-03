@@ -871,12 +871,12 @@ object ioBrokerNs extends js.Object {
     def getForeignObjects(pattern: java.lang.String, `type`: ObjectType, options: js.Any, callback: GetObjectsCallback): scala.Unit = js.native
     // tslint:enable:unified-signatures
     /** Get foreign objects by pattern, by specific type and resolve their enums. */
-    def getForeignObjectsAsync(pattern: java.lang.String): js.Promise[CallbackReturnTypeOf[GetObjectCallback]] = js.native
-    def getForeignObjectsAsync(pattern: java.lang.String, options: js.Any): js.Promise[CallbackReturnTypeOf[GetObjectCallback]] = js.native
-    def getForeignObjectsAsync(pattern: java.lang.String, `type`: ObjectType): js.Promise[CallbackReturnTypeOf[GetObjectCallback]] = js.native
-    def getForeignObjectsAsync(pattern: java.lang.String, `type`: ObjectType, enums: EnumList): js.Promise[CallbackReturnTypeOf[GetObjectCallback]] = js.native
-    def getForeignObjectsAsync(pattern: java.lang.String, `type`: ObjectType, enums: EnumList, options: js.Any): js.Promise[CallbackReturnTypeOf[GetObjectCallback]] = js.native
-    def getForeignObjectsAsync(pattern: java.lang.String, `type`: ObjectType, options: js.Any): js.Promise[CallbackReturnTypeOf[GetObjectCallback]] = js.native
+    def getForeignObjectsAsync(pattern: java.lang.String): js.Promise[CallbackReturnTypeOf[GetObjectsCallback]] = js.native
+    def getForeignObjectsAsync(pattern: java.lang.String, options: js.Any): js.Promise[CallbackReturnTypeOf[GetObjectsCallback]] = js.native
+    def getForeignObjectsAsync(pattern: java.lang.String, `type`: ObjectType): js.Promise[CallbackReturnTypeOf[GetObjectsCallback]] = js.native
+    def getForeignObjectsAsync(pattern: java.lang.String, `type`: ObjectType, enums: EnumList): js.Promise[CallbackReturnTypeOf[GetObjectsCallback]] = js.native
+    def getForeignObjectsAsync(pattern: java.lang.String, `type`: ObjectType, enums: EnumList, options: js.Any): js.Promise[CallbackReturnTypeOf[GetObjectsCallback]] = js.native
+    def getForeignObjectsAsync(pattern: java.lang.String, `type`: ObjectType, options: js.Any): js.Promise[CallbackReturnTypeOf[GetObjectsCallback]] = js.native
     /** Read a value (which might not belong to this adapter) from the states DB. */
     def getForeignState(id: java.lang.String, callback: GetStateCallback): scala.Unit = js.native
     def getForeignState(id: java.lang.String, options: js.Any, callback: GetStateCallback): scala.Unit = js.native

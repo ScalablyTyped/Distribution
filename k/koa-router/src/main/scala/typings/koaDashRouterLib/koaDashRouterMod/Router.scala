@@ -286,21 +286,21 @@ trait Router extends js.Object {
   /**
     * Generate URL for route. Takes either map of named `params` or series of
     * arguments (for regular expression routes)
-    * 
+    *
     * router = new Router();
     * router.get('user', "/users/:id", ...
-    * 
+    *
     * router.url('user', { id: 3 });
     * // => "/users/3"
-    * 
+    *
     * Query can be generated from third argument:
-    * 
+    *
     * router.url('user', { id: 3 }, { query: { limit: 1 } });
     * // => "/users/3?limit=1"
-    * 
+    *
     * router.url('user', { id: 3 }, { query: "limit=1" });
     * // => "/users/3?limit=1"
-    * 
+    *
     */
   def url(name: java.lang.String, params: js.Any): java.lang.String = js.native
   def url(

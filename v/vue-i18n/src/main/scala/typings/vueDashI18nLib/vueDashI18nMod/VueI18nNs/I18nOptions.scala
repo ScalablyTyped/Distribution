@@ -16,6 +16,7 @@ trait I18nOptions extends js.Object {
   var missing: js.UndefOr[MissingHandler] = js.undefined
   var numberFormats: js.UndefOr[NumberFormats] = js.undefined
   var pluralizationRules: js.UndefOr[PluralizationRulesMap] = js.undefined
+  var preserveDirectiveContent: js.UndefOr[scala.Boolean] = js.undefined
   var silentTranslationWarn: js.UndefOr[scala.Boolean] = js.undefined
   var sync: js.UndefOr[scala.Boolean] = js.undefined
 }

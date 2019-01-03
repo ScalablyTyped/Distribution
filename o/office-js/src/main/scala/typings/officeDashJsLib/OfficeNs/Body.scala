@@ -36,7 +36,7 @@ trait Body extends js.Object {
     * 
     * In addition to this signature, this method also has the following signature:
     * 
-    * `getAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult<string>) => void): void;`
+    * `getAsync(coercionType: Office.CoercionType, callback: (result: AsyncResult<string>) => void): void;`
     * 
     * @param coercionType The format for the returned body.
     * @param options Optional. An object literal that contains one or more of the following properties:
@@ -44,7 +44,7 @@ trait Body extends js.Object {
     * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. 
     *                  The body is provided in the requested format in the asyncResult.value property.
     */
-  def getAsync(coerciontype: CoercionType): scala.Unit = js.native
+  def getAsync(coercionType: CoercionType): scala.Unit = js.native
   /**
     * Returns the current body in a specified format.
     *
@@ -66,12 +66,12 @@ trait Body extends js.Object {
     *                  The body is provided in the requested format in the asyncResult.value property.
     */
   def getAsync(
-    coerciontype: CoercionType,
+    coercionType: CoercionType,
     callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]
   ): scala.Unit = js.native
-  def getAsync(coerciontype: CoercionType, options: AsyncContextOptions): scala.Unit = js.native
+  def getAsync(coercionType: CoercionType, options: AsyncContextOptions): scala.Unit = js.native
   def getAsync(
-    coerciontype: CoercionType,
+    coercionType: CoercionType,
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]
   ): scala.Unit = js.native

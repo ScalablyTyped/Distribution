@@ -38,11 +38,36 @@ class Terminal ()
     */
   var textarea: xtermLib.HTMLTextAreaElement = js.native
   /**
+    * (EXPERIMENTAL) Adds a handler for CSI escape sequences.
+    * @param flag The flag should be one-character string, which specifies the
+    * final character (e.g "m" for SGR) of the CSI sequence.
+    * @param callback The function to handle the escape sequence. The callback
+    * is called with the numerical params, as well as the special characters
+    * (e.g. "$" for DECSCPP). Return true if the sequence was handled; false if
+    * we should try a previous handler (set by addCsiHandler or setCsiHandler).
+    * The most recently-added handler is tried first.
+    * @return An IDisposable you can call to remove this handler.
+    */
+  def addCsiHandler(
+    flag: java.lang.String,
+    callback: js.Function2[/* params */ js.Array[scala.Double], /* collect */ java.lang.String, scala.Boolean]
+  ): IDisposable = js.native
+  /**
     * (EXPERIMENTAL) Adds a marker to the normal buffer and returns it. If the
     * alt buffer is active, undefined is returned.
     * @param cursorYOffset The y position offset of the marker from the cursor.
     */
   def addMarker(cursorYOffset: scala.Double): IMarker = js.native
+  /**
+    * (EXPERIMENTAL) Adds a handler for OSC escape sequences.
+    * @param ident The number (first parameter) of the sequence.
+    * @param callback The function to handle the escape sequence. The callback
+    * is called with OSC data string. Return true if the sequence was handled;
+    * false if we should try a previous handler (set by addOscHandler or
+    * setOscHandler). The most recently-added handler is tried first.
+    * @return An IDisposable you can call to remove this handler.
+    */
+  def addOscHandler(ident: scala.Double, callback: js.Function1[/* data */ java.lang.String, scala.Boolean]): IDisposable = js.native
   /**
     * Attaches a custom key event handler which is run before keys are
     * processed, giving consumers of xterm.js ultimate control as to what keys

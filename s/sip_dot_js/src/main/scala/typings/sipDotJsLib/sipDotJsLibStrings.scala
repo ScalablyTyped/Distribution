@@ -7,16 +7,13 @@ import scala.scalajs.js.annotation._
 
 object sipDotJsLibStrings {
   @js.native
-  sealed trait Ringing extends js.Object
-  
-  @js.native
   sealed trait `SessionDescriptionHandler-created` extends js.Object
   
   @js.native
   sealed trait accepted extends js.Object
   
   @js.native
-  sealed trait addStream extends js.Object
+  sealed trait ack extends js.Object
   
   @js.native
   sealed trait addTrack extends js.Object
@@ -28,25 +25,13 @@ object sipDotJsLibStrings {
   sealed trait cancel extends js.Object
   
   @js.native
-  sealed trait connected extends js.Object
+  sealed trait confirmed extends js.Object
   
   @js.native
   sealed trait connecting extends js.Object
   
   @js.native
-  sealed trait dataChannel extends js.Object
-  
-  @js.native
-  sealed trait directionChanged extends js.Object
-  
-  @js.native
-  sealed trait disconnected extends js.Object
-  
-  @js.native
-  sealed trait dtmf extends js.Object
-  
-  @js.native
-  sealed trait ended extends js.Object
+  sealed trait dialog extends js.Object
   
   @js.native
   sealed trait failed extends js.Object
@@ -58,13 +43,13 @@ object sipDotJsLibStrings {
   sealed trait iceCandidate extends js.Object
   
   @js.native
+  sealed trait iceConectionClosed extends js.Object
+  
+  @js.native
   sealed trait iceConnection extends js.Object
   
   @js.native
   sealed trait iceConnectionChecking extends js.Object
-  
-  @js.native
-  sealed trait iceConnectionClosed extends js.Object
   
   @js.native
   sealed trait iceConnectionCompleted extends js.Object
@@ -85,25 +70,37 @@ object sipDotJsLibStrings {
   sealed trait iceGatheringComplete extends js.Object
   
   @js.native
-  sealed trait incoming extends js.Object
+  sealed trait invite extends js.Object
   
   @js.native
-  sealed trait invite extends js.Object
+  sealed trait inviteSent extends js.Object
   
   @js.native
   sealed trait message extends js.Object
   
   @js.native
-  sealed trait muted extends js.Object
+  sealed trait newTransaction extends js.Object
   
   @js.native
   sealed trait notify extends js.Object
   
   @js.native
-  sealed trait progress extends js.Object
+  sealed trait outOfDialogReferRequested extends js.Object
   
   @js.native
-  sealed trait refer extends js.Object
+  sealed trait `peerConnection-SetLocalDescriptionFailed` extends js.Object
+  
+  @js.native
+  sealed trait `peerConnection-createAnswerFailed` extends js.Object
+  
+  @js.native
+  sealed trait `peerConnection-createOfferFailed` extends js.Object
+  
+  @js.native
+  sealed trait `peerConnection-setRemoteDescriptionFailed` extends js.Object
+  
+  @js.native
+  sealed trait progress extends js.Object
   
   @js.native
   sealed trait referAccepted extends js.Object
@@ -136,25 +133,34 @@ object sipDotJsLibStrings {
   sealed trait reinvite extends js.Object
   
   @js.native
+  sealed trait reinviteAccepted extends js.Object
+  
+  @js.native
+  sealed trait reinviteFailed extends js.Object
+  
+  @js.native
   sealed trait rejected extends js.Object
+  
+  @js.native
+  sealed trait renegotiationError extends js.Object
   
   @js.native
   sealed trait replaced extends js.Object
   
   @js.native
-  sealed trait ringing extends js.Object
+  sealed trait setDescription extends js.Object
   
   @js.native
-  sealed trait setDescription extends js.Object
+  sealed trait setRemoteDescription extends js.Object
   
   @js.native
   sealed trait terminated extends js.Object
   
   @js.native
-  sealed trait trackAdded extends js.Object
+  sealed trait transactionDestroyed extends js.Object
   
   @js.native
-  sealed trait unmuted extends js.Object
+  sealed trait transportCreated extends js.Object
   
   @js.native
   sealed trait unregistered extends js.Object
@@ -168,38 +174,37 @@ object sipDotJsLibStrings {
   @js.native
   sealed trait userMediaRequest extends js.Object
   
-  def Ringing: Ringing = "Ringing".asInstanceOf[Ringing]
   def `SessionDescriptionHandler-created`: `SessionDescriptionHandler-created` = "SessionDescriptionHandler-created".asInstanceOf[`SessionDescriptionHandler-created`]
   def accepted: accepted = "accepted".asInstanceOf[accepted]
-  def addStream: addStream = "addStream".asInstanceOf[addStream]
+  def ack: ack = "ack".asInstanceOf[ack]
   def addTrack: addTrack = "addTrack".asInstanceOf[addTrack]
   def bye: bye = "bye".asInstanceOf[bye]
   def cancel: cancel = "cancel".asInstanceOf[cancel]
-  def connected: connected = "connected".asInstanceOf[connected]
+  def confirmed: confirmed = "confirmed".asInstanceOf[confirmed]
   def connecting: connecting = "connecting".asInstanceOf[connecting]
-  def dataChannel: dataChannel = "dataChannel".asInstanceOf[dataChannel]
-  def directionChanged: directionChanged = "directionChanged".asInstanceOf[directionChanged]
-  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
-  def dtmf: dtmf = "dtmf".asInstanceOf[dtmf]
-  def ended: ended = "ended".asInstanceOf[ended]
+  def dialog: dialog = "dialog".asInstanceOf[dialog]
   def failed: failed = "failed".asInstanceOf[failed]
   def getDescription: getDescription = "getDescription".asInstanceOf[getDescription]
   def iceCandidate: iceCandidate = "iceCandidate".asInstanceOf[iceCandidate]
+  def iceConectionClosed: iceConectionClosed = "iceConectionClosed".asInstanceOf[iceConectionClosed]
   def iceConnection: iceConnection = "iceConnection".asInstanceOf[iceConnection]
   def iceConnectionChecking: iceConnectionChecking = "iceConnectionChecking".asInstanceOf[iceConnectionChecking]
-  def iceConnectionClosed: iceConnectionClosed = "iceConnectionClosed".asInstanceOf[iceConnectionClosed]
   def iceConnectionCompleted: iceConnectionCompleted = "iceConnectionCompleted".asInstanceOf[iceConnectionCompleted]
   def iceConnectionConnected: iceConnectionConnected = "iceConnectionConnected".asInstanceOf[iceConnectionConnected]
   def iceConnectionDisconnected: iceConnectionDisconnected = "iceConnectionDisconnected".asInstanceOf[iceConnectionDisconnected]
   def iceConnectionFailed: iceConnectionFailed = "iceConnectionFailed".asInstanceOf[iceConnectionFailed]
   def iceGathering: iceGathering = "iceGathering".asInstanceOf[iceGathering]
   def iceGatheringComplete: iceGatheringComplete = "iceGatheringComplete".asInstanceOf[iceGatheringComplete]
-  def incoming: incoming = "incoming".asInstanceOf[incoming]
   def invite: invite = "invite".asInstanceOf[invite]
+  def inviteSent: inviteSent = "inviteSent".asInstanceOf[inviteSent]
   def message: message = "message".asInstanceOf[message]
-  def muted: muted = "muted".asInstanceOf[muted]
+  def newTransaction: newTransaction = "newTransaction".asInstanceOf[newTransaction]
+  def outOfDialogReferRequested: outOfDialogReferRequested = "outOfDialogReferRequested".asInstanceOf[outOfDialogReferRequested]
+  def `peerConnection-SetLocalDescriptionFailed`: `peerConnection-SetLocalDescriptionFailed` = "peerConnection-SetLocalDescriptionFailed".asInstanceOf[`peerConnection-SetLocalDescriptionFailed`]
+  def `peerConnection-createAnswerFailed`: `peerConnection-createAnswerFailed` = "peerConnection-createAnswerFailed".asInstanceOf[`peerConnection-createAnswerFailed`]
+  def `peerConnection-createOfferFailed`: `peerConnection-createOfferFailed` = "peerConnection-createOfferFailed".asInstanceOf[`peerConnection-createOfferFailed`]
+  def `peerConnection-setRemoteDescriptionFailed`: `peerConnection-setRemoteDescriptionFailed` = "peerConnection-setRemoteDescriptionFailed".asInstanceOf[`peerConnection-setRemoteDescriptionFailed`]
   def progress: progress = "progress".asInstanceOf[progress]
-  def refer: refer = "refer".asInstanceOf[refer]
   def referAccepted: referAccepted = "referAccepted".asInstanceOf[referAccepted]
   def referInviteSent: referInviteSent = "referInviteSent".asInstanceOf[referInviteSent]
   def referProgress: referProgress = "referProgress".asInstanceOf[referProgress]
@@ -210,13 +215,16 @@ object sipDotJsLibStrings {
   def registered: registered = "registered".asInstanceOf[registered]
   def registrationFailed: registrationFailed = "registrationFailed".asInstanceOf[registrationFailed]
   def reinvite: reinvite = "reinvite".asInstanceOf[reinvite]
+  def reinviteAccepted: reinviteAccepted = "reinviteAccepted".asInstanceOf[reinviteAccepted]
+  def reinviteFailed: reinviteFailed = "reinviteFailed".asInstanceOf[reinviteFailed]
   def rejected: rejected = "rejected".asInstanceOf[rejected]
+  def renegotiationError: renegotiationError = "renegotiationError".asInstanceOf[renegotiationError]
   def replaced: replaced = "replaced".asInstanceOf[replaced]
-  def ringing: ringing = "ringing".asInstanceOf[ringing]
   def setDescription: setDescription = "setDescription".asInstanceOf[setDescription]
+  def setRemoteDescription: setRemoteDescription = "setRemoteDescription".asInstanceOf[setRemoteDescription]
   def terminated: terminated = "terminated".asInstanceOf[terminated]
-  def trackAdded: trackAdded = "trackAdded".asInstanceOf[trackAdded]
-  def unmuted: unmuted = "unmuted".asInstanceOf[unmuted]
+  def transactionDestroyed: transactionDestroyed = "transactionDestroyed".asInstanceOf[transactionDestroyed]
+  def transportCreated: transportCreated = "transportCreated".asInstanceOf[transportCreated]
   def unregistered: unregistered = "unregistered".asInstanceOf[unregistered]
   def userMedia: userMedia = "userMedia".asInstanceOf[userMedia]
   def userMediaFailed: userMediaFailed = "userMediaFailed".asInstanceOf[userMediaFailed]

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "d3-fetch"
-version := "1.1-dt-20181219Z-a23a83"
+version := "1.1-dt-20181228Z-67b212"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "d3-dsv" % "1.0-dt-20181115Z-7da1f8",
+  "org.scalablytyped" %%% "d3-dsv" % "1.0-dt-20181228Z-6779a2",
   "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

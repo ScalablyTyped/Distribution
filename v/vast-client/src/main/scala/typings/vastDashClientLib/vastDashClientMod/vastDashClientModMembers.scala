@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("vast-client", JSImport.Namespace)
 @js.native
 object vastDashClientModMembers extends js.Object {
-  val client: VastClient = js.native
-  val parser: VastParser = js.native
+  def UrlHandlerCbType(err: nodeLib.Error): scala.Unit = js.native
+  def UrlHandlerCbType(err: scala.Null, xml: stdLib.XMLDocument): scala.Unit = js.native
 }
 

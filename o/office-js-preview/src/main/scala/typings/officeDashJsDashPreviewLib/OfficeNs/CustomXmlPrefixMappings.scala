@@ -40,6 +40,11 @@ trait CustomXmlPrefixMappings extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def addNamespaceAsync(prefix: java.lang.String, ns: java.lang.String): scala.Unit = js.native
+  def addNamespaceAsync(
+    prefix: java.lang.String,
+    ns: java.lang.String,
+    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   def addNamespaceAsync(prefix: java.lang.String, ns: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
   def addNamespaceAsync(
     prefix: java.lang.String,
@@ -61,6 +66,10 @@ trait CustomXmlPrefixMappings extends js.Object {
     *                  The `value` property of the result is a string that contains the namespace mapped to the specified prefix.
     */
   def getNamespaceAsync(prefix: java.lang.String): scala.Unit = js.native
+  def getNamespaceAsync(
+    prefix: java.lang.String,
+    callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]
+  ): scala.Unit = js.native
   def getNamespaceAsync(prefix: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
   def getNamespaceAsync(
     prefix: java.lang.String,
@@ -81,6 +90,10 @@ trait CustomXmlPrefixMappings extends js.Object {
     *                  The `value` property of the result is a string that contains the prefix of the specified namespace.
     */
   def getPrefixAsync(ns: java.lang.String): scala.Unit = js.native
+  def getPrefixAsync(
+    ns: java.lang.String,
+    callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]
+  ): scala.Unit = js.native
   def getPrefixAsync(ns: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
   def getPrefixAsync(
     ns: java.lang.String,

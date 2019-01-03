@@ -16,6 +16,12 @@ package object MithrilNs {
   type Children = Child | ChildArray
   /**
   	 * Components are a mechanism to encapsulate parts of a view to make code easier to organize and/or reuse.
+  	 * Any function that returns an object with a view method can be used as a Mithril component.
+  	 * Components can be consumed via the m() utility.
+  	 */
+  type ClosureComponent[A] = FactoryComponent[A]
+  /**
+  	 * Components are a mechanism to encapsulate parts of a view to make code easier to organize and/or reuse.
   	 * Any Javascript object that has a view method is a Mithril component. Components can be consumed via the m() utility.
   	 */
   type Comp[Attrs, State /* <: Lifecycle[Attrs, State] */] = (Component[Attrs, State]) with State

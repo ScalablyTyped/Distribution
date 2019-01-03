@@ -63,6 +63,11 @@ trait Binding extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def addHandlerAsync(eventType: EventType, handler: js.Any): scala.Unit = js.native
+  def addHandlerAsync(
+    eventType: EventType,
+    handler: js.Any,
+    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   def addHandlerAsync(eventType: EventType, handler: js.Any, options: AsyncContextOptions): scala.Unit = js.native
   def addHandlerAsync(
     eventType: EventType,
@@ -85,6 +90,7 @@ trait Binding extends js.Object {
     *                  If the `coercionType` parameter is specified (and the call is successful), the data is returned in the format described in the CoercionType enumeration topic.
     */
   def getDataAsync[T](): scala.Unit = js.native
+  def getDataAsync[T](callback: js.Function1[/* result */ AsyncResult[T], scala.Unit]): scala.Unit = js.native
   def getDataAsync[T](options: GetBindingDataOptions): scala.Unit = js.native
   def getDataAsync[T](options: GetBindingDataOptions, callback: js.Function1[/* result */ AsyncResult[T], scala.Unit]): scala.Unit = js.native
   /**
@@ -98,6 +104,7 @@ trait Binding extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def removeHandlerAsync(eventType: EventType): scala.Unit = js.native
+  def removeHandlerAsync(eventType: EventType, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def removeHandlerAsync(eventType: EventType, options: RemoveHandlerOptions): scala.Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
@@ -105,6 +112,7 @@ trait Binding extends js.Object {
     callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   def setDataAsync(data: js.Any): scala.Unit = js.native
+  def setDataAsync(data: js.Any, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def setDataAsync(data: js.Any, options: SetBindingDataOptions): scala.Unit = js.native
   def setDataAsync(
     data: js.Any,
@@ -242,6 +250,7 @@ trait Binding extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def setDataAsync(data: TableData): scala.Unit = js.native
+  def setDataAsync(data: TableData, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def setDataAsync(data: TableData, options: SetBindingDataOptions): scala.Unit = js.native
   def setDataAsync(
     data: TableData,

@@ -290,6 +290,14 @@ trait IEditSession extends OptionProvider {
   def getWrapLimitRange(): js.Any = js.native
   def highlight(text: java.lang.String): scala.Unit = js.native
   /**
+    * Highlight lines from `startRow` to `EndRow`.
+    * @param startRow Define the start line of the highlight
+    * @param endRow Define the end line of the highlight
+    * @param clazz Set the CSS class for the marker
+    * @param inFront Set to `true` to establish a front marker
+    **/
+  def highlightLines(startRow: scala.Double, endRow: scala.Double, clazz: java.lang.String, inFront: scala.Boolean): Range = js.native
+  /**
     * Indents all the rows, from `startRow` to `endRow` (inclusive), by prefixing each row with the token in `indentString`.
     * If `indentString` contains the `'\t'` character, it's replaced by whatever is defined by [[EditSession.getTabString `getTabString()`]].
     * @param startRow Starting row

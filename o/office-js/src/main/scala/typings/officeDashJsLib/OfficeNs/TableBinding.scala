@@ -99,6 +99,10 @@ trait TableBinding extends Binding {
     */
   var rowCount: scala.Double = js.native
   def addColumnsAsync(tableData: js.Array[js.Array[_]]): scala.Unit = js.native
+  def addColumnsAsync(
+    tableData: js.Array[js.Array[_]],
+    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   def addColumnsAsync(tableData: js.Array[js.Array[_]], options: AsyncContextOptions): scala.Unit = js.native
   def addColumnsAsync(
     tableData: js.Array[js.Array[_]],
@@ -148,6 +152,7 @@ trait TableBinding extends Binding {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def addColumnsAsync(tableData: TableData): scala.Unit = js.native
+  def addColumnsAsync(tableData: TableData, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def addColumnsAsync(tableData: TableData, options: AsyncContextOptions): scala.Unit = js.native
   def addColumnsAsync(
     tableData: TableData,
@@ -155,6 +160,10 @@ trait TableBinding extends Binding {
     callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   def addRowsAsync(rows: js.Array[js.Array[_]]): scala.Unit = js.native
+  def addRowsAsync(
+    rows: js.Array[js.Array[_]],
+    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   def addRowsAsync(rows: js.Array[js.Array[_]], options: AsyncContextOptions): scala.Unit = js.native
   def addRowsAsync(
     rows: js.Array[js.Array[_]],
@@ -201,6 +210,7 @@ trait TableBinding extends Binding {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def addRowsAsync(rows: TableData): scala.Unit = js.native
+  def addRowsAsync(rows: TableData, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def addRowsAsync(rows: TableData, options: AsyncContextOptions): scala.Unit = js.native
   def addRowsAsync(
     rows: TableData,
@@ -231,6 +241,7 @@ trait TableBinding extends Binding {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def clearFormatsAsync(): scala.Unit = js.native
+  def clearFormatsAsync(callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def clearFormatsAsync(options: AsyncContextOptions): scala.Unit = js.native
   def clearFormatsAsync(
     options: AsyncContextOptions,
@@ -263,6 +274,7 @@ trait TableBinding extends Binding {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def deleteAllDataValuesAsync(): scala.Unit = js.native
+  def deleteAllDataValuesAsync(callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def deleteAllDataValuesAsync(options: AsyncContextOptions): scala.Unit = js.native
   def deleteAllDataValuesAsync(
     options: AsyncContextOptions,
@@ -324,6 +336,11 @@ trait TableBinding extends Binding {
   def getFormatsAsync(): scala.Unit = js.native
   def getFormatsAsync(cellReference: js.Any): scala.Unit = js.native
   def getFormatsAsync(cellReference: js.Any, formats: js.Array[_]): scala.Unit = js.native
+  def getFormatsAsync(
+    cellReference: js.Any,
+    formats: js.Array[_],
+    callback: js.Function1[/* result */ AsyncResult[js.Array[officeDashJsLib.Anon_Cells]], scala.Unit]
+  ): scala.Unit = js.native
   def getFormatsAsync(cellReference: js.Any, formats: js.Array[_], options: AsyncContextOptions): scala.Unit = js.native
   def getFormatsAsync(
     cellReference: js.Any,
@@ -444,6 +461,7 @@ trait TableBinding extends Binding {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def setFormatsAsync(cellFormat: js.Array[_]): scala.Unit = js.native
+  def setFormatsAsync(cellFormat: js.Array[_], callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def setFormatsAsync(cellFormat: js.Array[_], options: AsyncContextOptions): scala.Unit = js.native
   def setFormatsAsync(
     cellFormat: js.Array[_],
@@ -503,6 +521,7 @@ trait TableBinding extends Binding {
     * 
     */
   def setTableOptionsAsync(tableOptions: js.Any): scala.Unit = js.native
+  def setTableOptionsAsync(tableOptions: js.Any, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def setTableOptionsAsync(tableOptions: js.Any, options: AsyncContextOptions): scala.Unit = js.native
   def setTableOptionsAsync(
     tableOptions: js.Any,

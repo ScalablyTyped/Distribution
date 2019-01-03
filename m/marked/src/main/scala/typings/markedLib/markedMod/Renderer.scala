@@ -23,7 +23,12 @@ class Renderer ()
   /* CompleteClass */
   override def em(text: java.lang.String): java.lang.String = js.native
   /* CompleteClass */
-  override def heading(text: java.lang.String, level: scala.Double, raw: java.lang.String): java.lang.String = js.native
+  override def heading(
+    text: java.lang.String,
+    level: scala.Double,
+    raw: java.lang.String,
+    slugger: markedLib.markedMod.markedNs.Slugger
+  ): java.lang.String = js.native
   /* CompleteClass */
   override def hr(): java.lang.String = js.native
   /* CompleteClass */

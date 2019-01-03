@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "openlayers"
-version := "4.6-dt-20181121Z-685907"
+version := "4.6-dt-20181226Z-07b330"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

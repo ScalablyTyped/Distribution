@@ -5,8 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IRouterContext
-  extends koaDashRouterLib.koaDashRouterMod.koaMod.Context {
+trait IRouterContext extends js.Object {
+  /**
+    * url params
+    */
+  var params: js.Any
   /**
     * the router instance
     */

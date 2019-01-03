@@ -3609,6 +3609,27 @@ object defaultNs extends js.Object {
     
     /**
       * @classdesc
+      * Allows the user to draw a vector box by clicking and dragging on the map.
+      * Once drawn, the vector box can be modified by dragging its vertices or edges.
+      * This interaction is only supported for mouse devices.
+      *
+      * @fires ol.interaction.Extent.Event
+      * @param options Options.
+      * @api stable
+      */
+    @js.native
+    class Extent protected ()
+      extends openlayersLib.openlayersMod.interactionNs.Extent {
+      /**
+        * @fires ol.interaction.Extent.Event
+        * @param options Options.
+        * @api stable
+        */
+      def this(options: openlayersLib.openlayersMod.olxNs.interactionNs.ExtentOptions) = this()
+    }
+    
+    /**
+      * @classdesc
       * Abstract base class; normally only used for creating subclasses and not
       * instantiated in apps.
       * User actions that change the state of the map. Some are similar to controls,
@@ -4124,6 +4145,32 @@ object defaultNs extends js.Object {
           * @param feature The feature drawn.
           */
         def this(`type`: openlayersLib.openlayersMod.interactionNs.DrawEventType, feature: openlayersLib.openlayersMod.Feature) = this()
+      }
+      
+    }
+    
+    @JSName("Extent")
+    @js.native
+    object ExtentNs extends js.Object {
+      /**
+        * @classdesc
+        * Events emitted by {@link ol.interaction.Extent} instances are instances of
+        * this type.
+        *
+        * @param extent the new extent
+        */
+      @js.native
+      class Event protected ()
+        extends openlayersLib.openlayersMod.interactionNs.ExtentNs.Event {
+        /**
+          * @classdesc
+          * Events emitted by {@link ol.interaction.Extent} instances are instances of
+          * this type.
+          *
+          * @param type Type.
+          * @param feature The feature drawn.
+          */
+        def this(`type`: openlayersLib.openlayersMod.interactionNs.ExtentEventType, extent: openlayersLib.openlayersMod.Extent) = this()
       }
       
     }

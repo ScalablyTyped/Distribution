@@ -59,6 +59,7 @@ trait CustomXmlNode extends js.Object {
     *                  The `value` property of the result is a string that contains the value of the referenced node.
     */
   def getNodeValueAsync(): scala.Unit = js.native
+  def getNodeValueAsync(callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
   def getNodeValueAsync(options: AsyncContextOptions): scala.Unit = js.native
   def getNodeValueAsync(
     options: AsyncContextOptions,
@@ -76,6 +77,10 @@ trait CustomXmlNode extends js.Object {
     *                  The `value` property of the result is an array of CustomXmlNode objects that represent the nodes specified by the XPath expression passed to the `xPath` parameter.
     */
   def getNodesAsync(xPath: java.lang.String): scala.Unit = js.native
+  def getNodesAsync(
+    xPath: java.lang.String,
+    callback: js.Function1[/* result */ AsyncResult[js.Array[this.type]], scala.Unit]
+  ): scala.Unit = js.native
   def getNodesAsync(xPath: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
   def getNodesAsync(
     xPath: java.lang.String,
@@ -93,6 +98,7 @@ trait CustomXmlNode extends js.Object {
     *                  The `value` property of the result is a string that contains the inner text of the referenced nodes.
     */
   def getTextAsync(): scala.Unit = js.native
+  def getTextAsync(callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
   def getTextAsync(options: AsyncContextOptions): scala.Unit = js.native
   def getTextAsync(
     options: AsyncContextOptions,
@@ -109,6 +115,7 @@ trait CustomXmlNode extends js.Object {
     *                  The `value` property of the result is a string that contains the XML of the referenced node.
     */
   def getXmlAsync(): scala.Unit = js.native
+  def getXmlAsync(callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
   def getXmlAsync(options: AsyncContextOptions): scala.Unit = js.native
   def getXmlAsync(
     options: AsyncContextOptions,
@@ -125,6 +132,7 @@ trait CustomXmlNode extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def setNodeValueAsync(value: java.lang.String): scala.Unit = js.native
+  def setNodeValueAsync(value: java.lang.String, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def setNodeValueAsync(value: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
   def setNodeValueAsync(
     value: java.lang.String,
@@ -144,6 +152,7 @@ trait CustomXmlNode extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def setTextAsync(text: java.lang.String): scala.Unit = js.native
+  def setTextAsync(text: java.lang.String, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def setTextAsync(text: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
   def setTextAsync(
     text: java.lang.String,
@@ -161,6 +170,7 @@ trait CustomXmlNode extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def setXmlAsync(xml: java.lang.String): scala.Unit = js.native
+  def setXmlAsync(xml: java.lang.String, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def setXmlAsync(xml: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
   def setXmlAsync(
     xml: java.lang.String,

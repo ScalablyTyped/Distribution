@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-i18next", JSImport.Namespace)
 @js.native
 object reactDashI18nextModMembers extends js.Object {
-  val I18nContext: createDashReactDashContextLib.createDashReactDashContextMod.Context[I18nContextValues] = js.native
+  val I18nContext: reactLib.reactMod.ReactNs.Context[I18nContextValues] = js.native
   val I18nextProvider: reactLib.reactMod.ReactNs.ComponentClass[I18nextProviderProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
   val NamespacesConsumer: reactLib.reactMod.ReactNs.ComponentClass[NamespacesConsumerProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
   val Trans: reactLib.reactMod.ReactNs.ComponentClass[TransProps, reactLib.reactMod.ReactNs.ComponentState] = js.native

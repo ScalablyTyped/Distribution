@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("redux-form/lib/FormSection", JSImport.Default)
 @js.native
-class default () extends FormSection
+class default[P] () extends FormSection[P]
 

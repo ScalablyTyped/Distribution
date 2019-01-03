@@ -9,10 +9,13 @@ package object axiosDashMockDashAdapterLib {
     /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify AxiosRequestConfig */ /* config */ js.Any, 
     js.Array[js.Any] | js.Promise[js.Array[js.Any]]
   ]
-  type RequestMatcherFunc = js.Function2[
+  type RequestMatcherFunc = js.Function3[
     /* matcher */ js.UndefOr[java.lang.String | stdLib.RegExp], 
     /* body */ js.UndefOr[
       java.lang.String | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify RequestDataMatcher */ js.Any)
+    ], 
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify HeadersMatcher */ /* headers */ js.UndefOr[
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify HeadersMatcher */ js.Any
     ], 
     /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify RequestHandler */ js.Any
   ]

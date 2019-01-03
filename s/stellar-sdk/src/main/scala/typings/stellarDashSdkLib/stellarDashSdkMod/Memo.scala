@@ -7,27 +7,26 @@ import scala.scalajs.js.annotation._
 
 @JSImport("stellar-sdk", "Memo")
 @js.native
-class Memo protected () extends js.Object {
-  def this(`type`: stellarDashSdkLib.stellarDashSdkLibStrings.none) = this()
-  def this(`type`: stellarDashSdkLib.stellarDashSdkLibStrings.`return`, value: java.lang.String) = this()
-  def this(`type`: stellarDashSdkLib.stellarDashSdkLibStrings.`return`, value: nodeLib.Buffer) = this()
-  def this(`type`: stellarDashSdkLib.stellarDashSdkLibStrings.hash, value: java.lang.String) = this()
-  def this(`type`: stellarDashSdkLib.stellarDashSdkLibStrings.hash, value: nodeLib.Buffer) = this()
-  def this(`type`: stellarDashSdkLib.stellarDashSdkLibStrings.id, value: java.lang.String) = this()
-  def this(`type`: stellarDashSdkLib.stellarDashSdkLibStrings.text, value: java.lang.String) = this()
-  var `type`: java.lang.String = js.native
-  var value: scala.Null | java.lang.String | nodeLib.Buffer = js.native
-  def toXDRObject(): stellarDashSdkLib.stellarDashSdkMod.xdrNs.Memo = js.native
+class Memo[T /* <: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.MemoNs.AnyType */] protected ()
+  extends stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Memo[T] {
+  def this(`type`: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.MemoNone) = this()
+  def this(`type`: T, value: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.MemoNs.AnyValue) = this()
+  def this(`type`: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.MemoHash, value: java.lang.String) = this()
+  def this(`type`: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.MemoHash, value: nodeLib.Buffer) = this()
+  def this(`type`: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.MemoID, value: java.lang.String) = this()
+  def this(`type`: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.MemoReturn, value: java.lang.String) = this()
+  def this(`type`: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.MemoReturn, value: nodeLib.Buffer) = this()
+  def this(`type`: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.MemoText, value: java.lang.String) = this()
 }
 
 @JSImport("stellar-sdk", "Memo")
 @js.native
 object Memo extends js.Object {
-  def fromXDRObject(memo: stellarDashSdkLib.stellarDashSdkMod.xdrNs.Memo): stellarDashSdkLib.stellarDashSdkMod.Memo = js.native
-  def hash(hash: java.lang.String): stellarDashSdkLib.stellarDashSdkMod.Memo = js.native
-  def id(id: java.lang.String): stellarDashSdkLib.stellarDashSdkMod.Memo = js.native
-  def none(): stellarDashSdkLib.stellarDashSdkMod.Memo = js.native
-  def `return`(hash: java.lang.String): stellarDashSdkLib.stellarDashSdkMod.Memo = js.native
-  def text(text: java.lang.String): stellarDashSdkLib.stellarDashSdkMod.Memo = js.native
+  def fromXDRObject(memo: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Memo): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Memo[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.MemoNs.AnyType] = js.native
+  def hash(hash: java.lang.String): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Memo[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.MemoHash] = js.native
+  def id(id: java.lang.String): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Memo[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.MemoID] = js.native
+  def none(): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Memo[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.MemoNone] = js.native
+  def `return`(hash: java.lang.String): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Memo[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.MemoReturn] = js.native
+  def text(text: java.lang.String): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Memo[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.MemoText] = js.native
 }
 

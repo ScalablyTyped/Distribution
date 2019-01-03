@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "axios-mock-adapter"
-version := "1.15.0-2974f7"
+version := "1.16.0-b07e81"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

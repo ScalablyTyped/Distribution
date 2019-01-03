@@ -6,18 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait VastAd extends js.Object {
-  var advertiser: js.Any
+  var advertiser: java.lang.String | scala.Null
   var creatives: js.Array[VastCreative]
-  var description: java.lang.String
+  var description: java.lang.String | scala.Null
   var errorURLTemplates: js.Array[java.lang.String]
   var extensions: js.Array[VastAdExtension]
-  var hasHLS: scala.Boolean
-  var id: java.lang.String
+  var id: java.lang.String | scala.Null
   var impressionURLTemplates: js.Array[java.lang.String]
-  var pricing: js.Any
-  var sequence: java.lang.String
-  var survey: js.Any
-  var system: VastSystem
-  var title: java.lang.String
+  var pricing: java.lang.String | scala.Null
+  var sequence: java.lang.String | scala.Null
+  var survey: java.lang.String | scala.Null
+  var system: VastSystem | java.lang.String | scala.Null
+  var title: java.lang.String | scala.Null
 }
 

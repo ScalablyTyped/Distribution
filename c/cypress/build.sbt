@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cypress"
-version := "3.1.4-8f5e0c"
+version := "3.1.4-94152b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -46,7 +46,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-a489b6",
   "org.scalablytyped" %%% "tmp" % "0.0-dt-20180214Z-2bceff",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20181015Z-a8bc3f",
-  "org.scalablytyped" %%% "yauzl" % "2.9-dt-20180226Z-d20fef")
+  "org.scalablytyped" %%% "yauzl" % "2.9-dt-20181229Z-bfdd3f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

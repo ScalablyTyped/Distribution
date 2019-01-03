@@ -16,7 +16,7 @@ trait Anon_ParsedQueryRequest[TContext] extends js.Object {
     apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request, 
     graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.url | graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.method | graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.headers
   ]
-  var requestContext: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify GraphQLRequestContext<TContext> */ js.Any
+  var requestContext: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLRequestContext[TContext]
   var variables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

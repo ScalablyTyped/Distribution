@@ -43,7 +43,8 @@ trait DSV extends js.Object {
     *
     * @param dsvString A string, which must be in the delimiter-separated values format with the appropriate delimiter.
     */
-  def parse(dsvString: java.lang.String): DSVParsedArray[DSVRowString] = js.native
+  // tslint:disable-next-line:no-unnecessary-generics
+  def parse[Columns /* <: java.lang.String */](dsvString: java.lang.String): DSVRowArray[Columns] = js.native
   /**
     * Parses the specified string, which must be in the delimiter-separated values format with the appropriate delimiter, returning an array of objects representing the parsed rows.
     *
@@ -58,12 +59,12 @@ trait DSV extends js.Object {
     * the row is skipped and will be omitted from the array returned by dsv.parse; otherwise, the returned value defines the corresponding row object.
     * In effect, row is similar to applying a map and filter operator to the returned rows.
     */
-  def parse[ParsedRow /* <: js.Object */](
+  def parse[ParsedRow /* <: js.Object */, Columns /* <: java.lang.String */](
     dsvString: java.lang.String,
     row: js.Function3[
-      /* rawRow */ DSVRowString, 
+      /* rawRow */ DSVRowString[Columns], 
       /* index */ scala.Double, 
-      /* columns */ js.Array[java.lang.String], 
+      /* columns */ js.Array[Columns], 
       js.UndefOr[ParsedRow | scala.Null]
     ]
   ): DSVParsedArray[ParsedRow] = js.native

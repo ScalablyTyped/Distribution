@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-notes"
-version := "4.0-dt-20181210Z-6da26f"
+version := "4.0-dt-20181210Z-253565"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.5.8-a13970",
-  "org.scalablytyped" %%% "marked" % "0.5-dt-20181204Z-c14d15",
+  "org.scalablytyped" %%% "marked" % "0.6-dt-20190102Z-9cbdc7",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-89199d",
   "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-3dff88",

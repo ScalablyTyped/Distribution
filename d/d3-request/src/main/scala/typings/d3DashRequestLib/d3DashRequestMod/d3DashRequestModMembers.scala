@@ -14,14 +14,14 @@ object d3DashRequestModMembers extends js.Object {
     callback: js.ThisFunction2[
       /* this */ DsvRequest, 
       /* error */ js.Any, 
-      /* d */ d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString], 
+      /* d */ d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString[java.lang.String]], 
       scala.Unit
     ]
   ): DsvRequest = js.native
   def csv[ParsedRow /* <: js.Object */](
     url: java.lang.String,
     row: js.Function3[
-      /* rawRow */ d3DashDsvLib.d3DashDsvMod.DSVRowString, 
+      /* rawRow */ d3DashDsvLib.d3DashDsvMod.DSVRowString[java.lang.String], 
       /* index */ scala.Double, 
       /* columns */ js.Array[java.lang.String], 
       ParsedRow
@@ -59,14 +59,14 @@ object d3DashRequestModMembers extends js.Object {
     callback: js.ThisFunction2[
       /* this */ DsvRequest, 
       /* error */ js.Any, 
-      /* d */ d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString], 
+      /* d */ d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString[java.lang.String]], 
       scala.Unit
     ]
   ): DsvRequest = js.native
   def tsv[ParsedRow /* <: js.Object */](
     url: java.lang.String,
     row: js.Function3[
-      /* rawRow */ d3DashDsvLib.d3DashDsvMod.DSVRowString, 
+      /* rawRow */ d3DashDsvLib.d3DashDsvMod.DSVRowString[java.lang.String], 
       /* index */ scala.Double, 
       /* columns */ js.Array[java.lang.String], 
       ParsedRow

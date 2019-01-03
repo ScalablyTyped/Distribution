@@ -253,6 +253,11 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
     */
   def geometry(`object`: mongooseLib.Anon_Coordinates): this.type = js.native
   /**
+    * Returns the current query options as a JSON object.
+    * @returns current query options
+    */
+  def getOptions(): js.Any = js.native
+  /**
     * Returns the current query conditions as a JSON object.
     * @returns current query conditions
     */

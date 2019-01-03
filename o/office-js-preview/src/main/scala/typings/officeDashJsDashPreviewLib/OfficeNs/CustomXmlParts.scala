@@ -36,6 +36,7 @@ trait CustomXmlParts extends js.Object {
     *                  The `value` property of the result is the newly created CustomXmlPart object.
     */
   def addAsync(xml: java.lang.String): scala.Unit = js.native
+  def addAsync(xml: java.lang.String, callback: js.Function1[/* result */ AsyncResult[CustomXmlPart], scala.Unit]): scala.Unit = js.native
   def addAsync(xml: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
   def addAsync(
     xml: java.lang.String,
@@ -52,6 +53,7 @@ trait CustomXmlParts extends js.Object {
     *                  If there is no custom XML part with the specified id, the method returns null.
     */
   def getByIdAsync(id: java.lang.String): scala.Unit = js.native
+  def getByIdAsync(id: java.lang.String, callback: js.Function1[/* result */ AsyncResult[CustomXmlPart], scala.Unit]): scala.Unit = js.native
   def getByIdAsync(id: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
   def getByIdAsync(
     id: java.lang.String,
@@ -67,6 +69,10 @@ trait CustomXmlParts extends js.Object {
     *                  The `value` property of the result is an array of CustomXmlPart objects that match the specified namespace.
     */
   def getByNamespaceAsync(ns: java.lang.String): scala.Unit = js.native
+  def getByNamespaceAsync(
+    ns: java.lang.String,
+    callback: js.Function1[/* result */ AsyncResult[js.Array[CustomXmlPart]], scala.Unit]
+  ): scala.Unit = js.native
   def getByNamespaceAsync(ns: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
   def getByNamespaceAsync(
     ns: java.lang.String,

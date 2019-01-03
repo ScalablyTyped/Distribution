@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "opossum"
-version := "1.9-dt-20181027Z-b3e90c"
+version := "1.9-dt-20181231Z-efb8dd"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
