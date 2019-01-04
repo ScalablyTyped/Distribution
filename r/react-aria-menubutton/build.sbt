@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-aria-menubutton"
-version := "5.1-dt-20180803Z-1af3ed"
+version := "6.1-dt-20190103Z-a6b0e4"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

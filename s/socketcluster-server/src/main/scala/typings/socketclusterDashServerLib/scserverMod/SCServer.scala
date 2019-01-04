@@ -85,9 +85,59 @@ trait SCServer
     ]
   ): scala.Unit = js.native
   @JSName("on")
+  def on_badSocketAuthToken(
+    event: socketclusterDashServerLib.socketclusterDashServerLibStrings.badSocketAuthToken,
+    listener: socketclusterDashServerLib.scserverMod.SCServerNs.badSocketAuthTokenListenerFunction
+  ): this.type = js.native
+  @JSName("on")
+  def on_closure(
+    event: socketclusterDashServerLib.socketclusterDashServerLibStrings.closure,
+    listener: socketclusterDashServerLib.scserverMod.SCServerNs.disconnectionListenerFunction
+  ): this.type = js.native
+  @JSName("on")
   def on_connection(
     event: socketclusterDashServerLib.socketclusterDashServerLibStrings.connection,
     listener: socketclusterDashServerLib.scserverMod.SCServerNs.connectionListenerFunction
+  ): this.type = js.native
+  @JSName("on")
+  def on_connectionAbort(
+    event: socketclusterDashServerLib.socketclusterDashServerLibStrings.connectionAbort,
+    listener: socketclusterDashServerLib.scserverMod.SCServerNs.disconnectionListenerFunction
+  ): this.type = js.native
+  @JSName("on")
+  def on_disconnection(
+    event: socketclusterDashServerLib.socketclusterDashServerLibStrings.disconnection,
+    listener: socketclusterDashServerLib.scserverMod.SCServerNs.disconnectionListenerFunction
+  ): this.type = js.native
+  @JSName("on")
+  def on_error(
+    event: socketclusterDashServerLib.socketclusterDashServerLibStrings.error,
+    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_handshake(
+    event: socketclusterDashServerLib.socketclusterDashServerLibStrings.handshake,
+    listener: socketclusterDashServerLib.scserverMod.SCServerNs.handshakeListenerFunction
+  ): this.type = js.native
+  @JSName("on")
+  def on_ready(
+    event: socketclusterDashServerLib.socketclusterDashServerLibStrings.ready,
+    listener: js.Function0[scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_subscription(
+    event: socketclusterDashServerLib.socketclusterDashServerLibStrings.subscription,
+    listener: socketclusterDashServerLib.scserverMod.SCServerNs.subscriptionListenerFunction
+  ): this.type = js.native
+  @JSName("on")
+  def on_unsubscription(
+    event: socketclusterDashServerLib.socketclusterDashServerLibStrings.unsubscription,
+    listener: socketclusterDashServerLib.scserverMod.SCServerNs.unsubscriptionListenerFunction
+  ): this.type = js.native
+  @JSName("on")
+  def on_warning(
+    event: socketclusterDashServerLib.socketclusterDashServerLibStrings.warning,
+    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
   ): this.type = js.native
   def setAuthEngine(authEngine: scDashAuthLib.scDashAuthMod.SCAuthEngine): scala.Unit = js.native
   def setCodecEngine(codecEngine: socketclusterDashServerLib.scserverMod.SCServerNs.SCCodecEngine): scala.Unit = js.native

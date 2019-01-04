@@ -1066,30 +1066,17 @@ object ioBrokerNs extends js.Object {
     def renameAsync(adapterName: scala.Null, oldName: java.lang.String, newName: java.lang.String, options: js.Any): js.Promise[scala.Unit] = js.native
     /** Restarts the adapter */
     def restart(): scala.Nothing = js.native
-    def sendTo(instanceName: java.lang.String, command: java.lang.String, message: java.lang.String): scala.Unit = js.native
+    def sendTo(instanceName: java.lang.String, command: java.lang.String, message: MessagePayload): scala.Unit = js.native
     def sendTo(
       instanceName: java.lang.String,
       command: java.lang.String,
-      message: java.lang.String,
+      message: MessagePayload,
       callback: MessageCallback
     ): scala.Unit = js.native
     def sendTo(
       instanceName: java.lang.String,
       command: java.lang.String,
-      message: java.lang.String,
-      callback: MessageCallbackInfo
-    ): scala.Unit = js.native
-    def sendTo(instanceName: java.lang.String, command: java.lang.String, message: js.Object): scala.Unit = js.native
-    def sendTo(
-      instanceName: java.lang.String,
-      command: java.lang.String,
-      message: js.Object,
-      callback: MessageCallback
-    ): scala.Unit = js.native
-    def sendTo(
-      instanceName: java.lang.String,
-      command: java.lang.String,
-      message: js.Object,
+      message: MessagePayload,
       callback: MessageCallbackInfo
     ): scala.Unit = js.native
     /**
@@ -1100,14 +1087,10 @@ object ioBrokerNs extends js.Object {
       * @param command (optional) Command name of the target instance. Default: "send"
       * @param message The message (e.g. params) to send.
       */
-    def sendTo(instanceName: java.lang.String, message: java.lang.String): scala.Unit = js.native
-    def sendTo(instanceName: java.lang.String, message: java.lang.String, callback: MessageCallback): scala.Unit = js.native
-    def sendTo(instanceName: java.lang.String, message: java.lang.String, callback: MessageCallbackInfo): scala.Unit = js.native
-    def sendTo(instanceName: java.lang.String, message: js.Object): scala.Unit = js.native
-    def sendTo(instanceName: java.lang.String, message: js.Object, callback: MessageCallback): scala.Unit = js.native
-    def sendTo(instanceName: java.lang.String, message: js.Object, callback: MessageCallbackInfo): scala.Unit = js.native
-    def sendToAsync(instanceName: java.lang.String, command: java.lang.String, message: java.lang.String): js.Promise[_] = js.native
-    def sendToAsync(instanceName: java.lang.String, command: java.lang.String, message: js.Object): js.Promise[_] = js.native
+    def sendTo(instanceName: java.lang.String, message: MessagePayload): scala.Unit = js.native
+    def sendTo(instanceName: java.lang.String, message: MessagePayload, callback: MessageCallback): scala.Unit = js.native
+    def sendTo(instanceName: java.lang.String, message: MessagePayload, callback: MessageCallbackInfo): scala.Unit = js.native
+    def sendToAsync(instanceName: java.lang.String, command: java.lang.String, message: MessagePayload): js.Promise[js.UndefOr[Message]] = js.native
     /**
       * Sends a message to a specific instance or all instances of some specific adapter.
       * @param instanceName The instance to send this message to.
@@ -1116,50 +1099,31 @@ object ioBrokerNs extends js.Object {
       * @param command (optional) Command name of the target instance. Default: "send"
       * @param message The message (e.g. params) to send.
       */
-    def sendToAsync(instanceName: java.lang.String, message: java.lang.String): js.Promise[_] = js.native
-    def sendToAsync(instanceName: java.lang.String, message: js.Object): js.Promise[_] = js.native
-    def sendToHost(hostName: java.lang.String, command: java.lang.String, message: java.lang.String): scala.Unit = js.native
+    def sendToAsync(instanceName: java.lang.String, message: MessagePayload): js.Promise[js.UndefOr[Message]] = js.native
+    def sendToHost(hostName: java.lang.String, command: java.lang.String, message: MessagePayload): scala.Unit = js.native
     def sendToHost(
       hostName: java.lang.String,
       command: java.lang.String,
-      message: java.lang.String,
+      message: MessagePayload,
       callback: MessageCallback
     ): scala.Unit = js.native
     def sendToHost(
       hostName: java.lang.String,
       command: java.lang.String,
-      message: java.lang.String,
-      callback: MessageCallbackInfo
-    ): scala.Unit = js.native
-    def sendToHost(hostName: java.lang.String, command: java.lang.String, message: js.Object): scala.Unit = js.native
-    def sendToHost(
-      hostName: java.lang.String,
-      command: java.lang.String,
-      message: js.Object,
-      callback: MessageCallback
-    ): scala.Unit = js.native
-    def sendToHost(
-      hostName: java.lang.String,
-      command: java.lang.String,
-      message: js.Object,
+      message: MessagePayload,
       callback: MessageCallbackInfo
     ): scala.Unit = js.native
     /**
       * Sends a message to a specific host or all hosts.
       */
-    def sendToHost(hostName: java.lang.String, message: java.lang.String): scala.Unit = js.native
-    def sendToHost(hostName: java.lang.String, message: java.lang.String, callback: MessageCallback): scala.Unit = js.native
-    def sendToHost(hostName: java.lang.String, message: java.lang.String, callback: MessageCallbackInfo): scala.Unit = js.native
-    def sendToHost(hostName: java.lang.String, message: js.Object): scala.Unit = js.native
-    def sendToHost(hostName: java.lang.String, message: js.Object, callback: MessageCallback): scala.Unit = js.native
-    def sendToHost(hostName: java.lang.String, message: js.Object, callback: MessageCallbackInfo): scala.Unit = js.native
-    def sendToHostAsync(hostName: java.lang.String, command: java.lang.String, message: java.lang.String): js.Promise[_] = js.native
-    def sendToHostAsync(hostName: java.lang.String, command: java.lang.String, message: js.Object): js.Promise[_] = js.native
+    def sendToHost(hostName: java.lang.String, message: MessagePayload): scala.Unit = js.native
+    def sendToHost(hostName: java.lang.String, message: MessagePayload, callback: MessageCallback): scala.Unit = js.native
+    def sendToHost(hostName: java.lang.String, message: MessagePayload, callback: MessageCallbackInfo): scala.Unit = js.native
+    def sendToHostAsync(hostName: java.lang.String, command: java.lang.String, message: MessagePayload): js.Promise[js.UndefOr[Message]] = js.native
     /**
       * Sends a message to a specific host or all hosts.
       */
-    def sendToHostAsync(hostName: java.lang.String, message: java.lang.String): js.Promise[_] = js.native
-    def sendToHostAsync(hostName: java.lang.String, message: js.Object): js.Promise[_] = js.native
+    def sendToHostAsync(hostName: java.lang.String, message: MessagePayload): js.Promise[js.UndefOr[Message]] = js.native
     // TODO: getHistoryAsync
     // MISSING:
     // pushFifo and similar https://github.com/ioBroker/ioBroker.js-controller/blob/master/lib/adapter.js#L4105
@@ -1991,7 +1955,7 @@ object ioBrokerNs extends js.Object {
     /** The source of this message */
     var from: java.lang.String
     /** The message payload */
-    var message: java.lang.String | js.Object
+    var message: MessagePayload
   }
   
   /** Callback information for a passed message */
@@ -2001,7 +1965,7 @@ object ioBrokerNs extends js.Object {
     /** ID of this callback */
     var id: scala.Double
     /** The original message payload */
-    var message: java.lang.String | js.Object
+    var message: MessagePayload
     /** Timestamp of this message */
     var time: scala.Double
   }
@@ -2970,8 +2934,9 @@ object ioBrokerNs extends js.Object {
   type Log = js.Any
   // end interface Objects
   type LogLevel = iobrokerLib.iobrokerLibStrings.silly | iobrokerLib.iobrokerLibStrings.debug | iobrokerLib.iobrokerLibStrings.info | iobrokerLib.iobrokerLibStrings.warn | iobrokerLib.iobrokerLibStrings.error
-  type MessageCallback = js.Function1[/* result */ js.UndefOr[js.Any], scala.Unit]
+  type MessageCallback = js.Function1[/* response */ js.UndefOr[Message], scala.Unit]
   type MessageHandler = js.Function1[/* obj */ Message, scala.Unit]
+  type MessagePayload = java.lang.String | (stdLib.Record[java.lang.String, js.Any])
   type Object = StateObject | ChannelObject | DeviceObject | OtherObject
   type ObjectChangeHandler = js.Function2[/* id */ java.lang.String, /* obj */ js.UndefOr[Object | scala.Null], scala.Unit]
   type ObjectType = iobrokerLib.iobrokerLibStrings.state | iobrokerLib.iobrokerLibStrings.channel | iobrokerLib.iobrokerLibStrings.device

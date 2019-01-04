@@ -18,7 +18,7 @@ trait LinkifyOptions extends js.Object {
     * (e.g., 'url', 'email', etc.) and returns the object.
     */
   var attributes: js.UndefOr[
-    PossiblyFuncOfHrefAndType[org.scalablytyped.runtime.StringDictionary[java.lang.String]] | scala.Null
+    PossiblyFuncOfHrefAndType[reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement]] | scala.Null
   ] = js.undefined
   /**
     * className

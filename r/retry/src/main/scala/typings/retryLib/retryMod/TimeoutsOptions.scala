@@ -5,11 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TimeoutsOptions extends js.Object {
-  var factor: js.UndefOr[scala.Double] = js.undefined
-  var maxTimeout: js.UndefOr[scala.Double] = js.undefined
-  var minTimeout: js.UndefOr[scala.Double] = js.undefined
-  var randomize: js.UndefOr[scala.Boolean] = js.undefined
+trait TimeoutsOptions extends CreateTimeoutOptions {
+  /**
+    * The maximum amount of times to retry the operation.
+    * @default 10
+    */
   var retries: js.UndefOr[scala.Double] = js.undefined
 }
 

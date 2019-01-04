@@ -151,7 +151,7 @@ trait IoTAnalytics
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates the content of a data set by applying a SQL action.
+    * Creates the content of a data set by applying a "queryAction" (a SQL query) or a "containerAction" (executing a containerized application).
     */
   def createDatasetContent(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatasetContentResponse, 
@@ -168,7 +168,7 @@ trait IoTAnalytics
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates the content of a data set by applying a SQL action.
+    * Creates the content of a data set by applying a "queryAction" (a SQL query) or a "containerAction" (executing a containerized application).
     */
   def createDatasetContent(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatasetContentRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatasetContentResponse, 

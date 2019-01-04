@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bytebuffer"
-version := "5.0.0-dt-20181220Z-43676f"
+version := "5.0.0-dt-20190103Z-e194e0"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

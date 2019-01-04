@@ -23,7 +23,7 @@ object xdrNs extends js.Object {
     extends stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Memo
   
   @js.native
-  class Operation[T /* <: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.Operation */] ()
+  class Operation[T /* <: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationType] */] ()
     extends stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[T]
   
   @js.native
@@ -55,7 +55,9 @@ object xdrNs extends js.Object {
   
   @js.native
   object Operation extends js.Object {
-    def fromXDR(xdr: nodeLib.Buffer): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.Operation] = js.native
+    def fromXDR(xdr: nodeLib.Buffer): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[
+        stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationType]
+      ] = js.native
   }
   
   @js.native

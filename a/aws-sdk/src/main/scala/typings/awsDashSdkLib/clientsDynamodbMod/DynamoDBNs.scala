@@ -952,27 +952,43 @@ object DynamoDBNs extends js.Object {
     /**
       * Atomically retrieves multiple items from one or more tables (but not from indexes) in a single account and region.
       */
-    def transactGet(params: TransactGetItemsInput): awsDashSdkLib.libRequestMod.Request[TransactGetItemsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def transactGet(
-      params: TransactGetItemsInput,
+      params: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TransactGetItemsInput
+    ): awsDashSdkLib.libRequestMod.Request[
+        awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TransactGetItemsOutput, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    def transactGet(
+      params: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TransactGetItemsInput,
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ TransactGetItemsOutput, 
+          /* data */ awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TransactGetItemsOutput, 
           scala.Unit
         ]
-    ): awsDashSdkLib.libRequestMod.Request[TransactGetItemsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    ): awsDashSdkLib.libRequestMod.Request[
+        awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TransactGetItemsOutput, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
     /**
       * Synchronous write operation that groups up to 10 action requests
       */
-    def transactWrite(params: TransactWriteItemsInput): awsDashSdkLib.libRequestMod.Request[TransactWriteItemsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def transactWrite(
-      params: TransactWriteItemsInput,
+      params: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TransactWriteItemsInput
+    ): awsDashSdkLib.libRequestMod.Request[
+        awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TransactWriteItemsOutput, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    def transactWrite(
+      params: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TransactWriteItemsInput,
       callback: js.Function2[
           /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ TransactWriteItemsOutput, 
+          /* data */ awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TransactWriteItemsOutput, 
           scala.Unit
         ]
-    ): awsDashSdkLib.libRequestMod.Request[TransactWriteItemsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    ): awsDashSdkLib.libRequestMod.Request[
+        awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TransactWriteItemsOutput, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
     /**
       * Edits an existing item's attributes, or adds a new item to the table if it does not already exist by delegating to AWS.DynamoDB.updateItem().
       */

@@ -5,33 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OperationOptions extends js.Object {
+trait OperationOptions extends TimeoutsOptions {
   /**
-    * The exponential factor to use.
-    * @default 2
-    */
-  var factor: js.UndefOr[scala.Double] = js.undefined
-  var forever: js.UndefOr[scala.Boolean] = js.undefined
-  /**
-    * The maximum number of milliseconds between two retries.
-    * @default Infinity
-    */
-  var maxTimeout: js.UndefOr[scala.Double] = js.undefined
-  /**
-    * The number of milliseconds before starting the first retry.
-    * @default 1000
-    */
-  var minTimeout: js.UndefOr[scala.Double] = js.undefined
-  /**
-    * Randomizes the timeouts by multiplying a factor between 1-2.
+    * Whether to retry forever.
     * @default false
     */
-  var randomize: js.UndefOr[scala.Boolean] = js.undefined
+  var forever: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * The maximum amount of times to retry the operation.
-    * @default 10
+    * The maximum time (in milliseconds) that the retried operation is allowed to run.
+    * @default Infinity
     */
-  var retries: js.UndefOr[scala.Double] = js.undefined
+  var maxRetryTime: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * Whether to [unref](https://nodejs.org/api/timers.html#timers_unref) the setTimeout's.
+    * @default false
+    */
   var unref: js.UndefOr[scala.Boolean] = js.undefined
 }
 

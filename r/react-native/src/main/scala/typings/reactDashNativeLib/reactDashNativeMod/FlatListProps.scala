@@ -41,6 +41,9 @@ trait FlatListProps[ItemT] extends VirtualizedListProps[ItemT] {
       reactDashNativeLib.Anon_Length
     ]
   ] = js.native
+  /**
+    * Uses legacy MetroListView instead of default VirtualizedSectionList
+    */
   var legacyImplementation: js.UndefOr[scala.Boolean] = js.native
   /**
     * Multiple columns can only be rendered with `horizontal={false}` and will zig-zag like a `flexWrap` layout.

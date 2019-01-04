@@ -47,7 +47,7 @@ object IoTAnalyticsNs extends js.Object {
       */
     var channelName: ChannelName
     /**
-      * The list of messages to be sent. Each message has format: '{ "messageId": "string", "payload": "string"}'.
+      * The list of messages to be sent. Each message has format: '{ "messageId": "string", "payload": "string"}'. Note that the field names of message payloads (data) that you send to AWS IoT Analytics:   Must contain only alphanumeric characters and undescores (_); no other special characters are allowed.   Must begin with an alphabetic character or single underscore (_).   Cannot contain hyphens (-).   In regular expression terms: "^[A-Za-z_]([A-Za-z0-9]*|[A-Za-z0-9][A-Za-z0-9_]*)$".    Cannot be greater than 255 characters.   Are case-insensitive. (Fields named "foo" and "FOO" in the same payload are considered duplicates.)   For example, {"temp_01": 29} or {"_temp_01": 29} are valid, but {"temp-01": 29}, {"01_temp": 29} or {"__temp_01": 29} are invalid in message payloads. 
       */
     var messages: Messages
   }
@@ -215,6 +215,9 @@ object IoTAnalyticsNs extends js.Object {
       * A list of actions that create the data set contents.
       */
     var actions: DatasetActions
+    /**
+      * When data set contents are created they are delivered to destinations specified here.
+      */
     var contentDeliveryRules: js.UndefOr[DatasetContentDeliveryRules] = js.undefined
     /**
       * The name of the data set.
@@ -314,6 +317,9 @@ object IoTAnalyticsNs extends js.Object {
       * The ARN of the data set.
       */
     var arn: js.UndefOr[DatasetArn] = js.undefined
+    /**
+      * When data set contents are created they are delivered to destinations specified here.
+      */
     var contentDeliveryRules: js.UndefOr[DatasetContentDeliveryRules] = js.undefined
     /**
       * When the data set was created.
@@ -351,7 +357,7 @@ object IoTAnalyticsNs extends js.Object {
       */
     var containerAction: js.UndefOr[ContainerDatasetAction] = js.undefined
     /**
-      * An "SqlQueryDatasetAction" object that contains the SQL query to modify the message.
+      * An "SqlQueryDatasetAction" object that uses an SQL query to automatically create data set contents.
       */
     var queryAction: js.UndefOr[SqlQueryDatasetAction] = js.undefined
   }
@@ -368,11 +374,20 @@ object IoTAnalyticsNs extends js.Object {
   }
   
   trait DatasetContentDeliveryDestination extends js.Object {
+    /**
+      * Configuration information for delivery of data set contents to AWS IoT Events.
+      */
     var iotEventsDestinationConfiguration: js.UndefOr[IotEventsDestinationConfiguration] = js.undefined
   }
   
   trait DatasetContentDeliveryRule extends js.Object {
+    /**
+      * The destination to which data set contents are delivered.
+      */
     var destination: DatasetContentDeliveryDestination
+    /**
+      * The name of the data set content delivery rules entry.
+      */
     var entryName: js.UndefOr[EntryName] = js.undefined
   }
   
@@ -408,7 +423,7 @@ object IoTAnalyticsNs extends js.Object {
   
   trait DatasetContentVersionValue extends js.Object {
     /**
-      * The name of the data set whose latest contents will be used as input to the notebook or application.
+      * The name of the data set whose latest contents are used as input to the notebook or application.
       */
     var datasetName: DatasetName
   }
@@ -453,7 +468,7 @@ object IoTAnalyticsNs extends js.Object {
   
   trait DatasetTrigger extends js.Object {
     /**
-      * The data set whose content creation will trigger the creation of this data set's contents.
+      * The data set whose content creation triggers the creation of this data set's contents.
       */
     var dataset: js.UndefOr[TriggeringDataset] = js.undefined
     /**
@@ -567,7 +582,7 @@ object IoTAnalyticsNs extends js.Object {
   
   trait DeltaTime extends js.Object {
     /**
-      * The number of seconds of estimated "in flight" lag time of message data.
+      * The number of seconds of estimated "in flight" lag time of message data. When you create data set contents using message data from a specified time frame, some message data may still be "in flight" when processing begins, and so will not arrive in time to be processed. Use this field to make allowances for the "in flight" time of your message data, so that data not processed from a previous time frame will be included with the next time frame. Without this, missed message data would be excluded from processing during the next time frame as well, because its timestamp places it within the previous time frame.
       */
     var offsetSeconds: OffsetSeconds
     /**
@@ -756,7 +771,13 @@ object IoTAnalyticsNs extends js.Object {
   }
   
   trait IotEventsDestinationConfiguration extends js.Object {
+    /**
+      * The name of the AWS IoT Events input to which data set contents are delivered.
+      */
     var inputName: IotEventsInputName
+    /**
+      * The ARN of the role which grants AWS IoT Analytics permission to deliver data set contents to an AWS IoT Events input.
+      */
     var roleArn: RoleArn
   }
   
@@ -814,6 +835,14 @@ object IoTAnalyticsNs extends js.Object {
       * The token for the next set of results.
       */
     var nextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+      * A filter to limit results to those data set contents whose creation is scheduled before the given time. See the field triggers.schedule in the CreateDataset request. (timestamp)
+      */
+    var scheduledBefore: js.UndefOr[Timestamp] = js.undefined
+    /**
+      * A filter to limit results to those data set contents whose creation is scheduled on or after the given time. See the field triggers.schedule in the CreateDataset request. (timestamp)
+      */
+    var scheduledOnOrAfter: js.UndefOr[Timestamp] = js.undefined
   }
   
   trait ListDatasetContentsResponse extends js.Object {
@@ -924,7 +953,7 @@ object IoTAnalyticsNs extends js.Object {
   
   trait MathActivity extends js.Object {
     /**
-      * The name of the attribute that will contain the result of the math operation.
+      * The name of the attribute that contains the result of the math operation.
       */
     var attribute: AttributeName
     /**
@@ -1057,7 +1086,7 @@ object IoTAnalyticsNs extends js.Object {
   
   trait QueryFilter extends js.Object {
     /**
-      * Used to limit data to that which has arrived since the last execution of the action. When you create data set contents using message data from a specified time frame, some message data may still be "in flight" when processing begins, and so will not arrive in time to be processed. Use this field to make allowances for the "in flight" time of you message data, so that data not processed from a previous time frame will be included with the next time frame. Without this, missed message data would be excluded from processing during the next time frame as well, because its timestamp places it within the previous time frame.
+      * Used to limit data to that which has arrived since the last execution of the action.
       */
     var deltaTime: js.UndefOr[DeltaTime] = js.undefined
   }
@@ -1230,7 +1259,7 @@ object IoTAnalyticsNs extends js.Object {
   
   trait TagResourceRequest extends js.Object {
     /**
-      * The ARN of the resource whose tags will be modified.
+      * The ARN of the resource whose tags you want to modify.
       */
     var resourceArn: ResourceArn
     /**
@@ -1243,7 +1272,7 @@ object IoTAnalyticsNs extends js.Object {
   
   trait TriggeringDataset extends js.Object {
     /**
-      * The name of the data set whose content generation will trigger the new data set content generation.
+      * The name of the data set whose content generation triggers the new data set content generation.
       */
     var name: DatasetName
   }
@@ -1346,7 +1375,7 @@ object IoTAnalyticsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateDatasetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates the content of a data set by applying a SQL action.
+      * Creates the content of a data set by applying a "queryAction" (a SQL query) or a "containerAction" (executing a containerized application).
       */
     def createDatasetContent(): awsDashSdkLib.libRequestMod.Request[CreateDatasetContentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createDatasetContent(
@@ -1357,7 +1386,7 @@ object IoTAnalyticsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateDatasetContentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates the content of a data set by applying a SQL action.
+      * Creates the content of a data set by applying a "queryAction" (a SQL query) or a "containerAction" (executing a containerized application).
       */
     def createDatasetContent(params: CreateDatasetContentRequest): awsDashSdkLib.libRequestMod.Request[CreateDatasetContentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createDatasetContent(
@@ -1959,11 +1988,11 @@ object IoTAnalyticsNs extends js.Object {
   
   trait UntagResourceRequest extends js.Object {
     /**
-      * The ARN of the resource whose tags will be removed.
+      * The ARN of the resource whose tags you want to remove.
       */
     var resourceArn: ResourceArn
     /**
-      * The keys of those tags which will be removed.
+      * The keys of those tags which you want to remove.
       */
     var tagKeys: TagKeyList
   }
@@ -1986,6 +2015,9 @@ object IoTAnalyticsNs extends js.Object {
       * A list of "DatasetAction" objects.
       */
     var actions: DatasetActions
+    /**
+      * When data set contents are created they are delivered to destinations specified here.
+      */
     var contentDeliveryRules: js.UndefOr[DatasetContentDeliveryRules] = js.undefined
     /**
       * The name of the data set to update.

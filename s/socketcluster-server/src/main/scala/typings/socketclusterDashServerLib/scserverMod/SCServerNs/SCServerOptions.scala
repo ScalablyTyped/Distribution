@@ -167,7 +167,7 @@ trait SCServerOptions
   // This can be the name of an npm module or a path to a Node.js module
   // to use as the WebSocket server engine.
   // You can now set this to 'sc-uws' for a massive speedup of at least 2x!
-  var wsEngine: js.UndefOr[java.lang.String] = js.undefined
+  var wsEngine: js.UndefOr[js.Any] = js.undefined
   var wsEngineServerOptions: js.UndefOr[wsLib.wsMod.WebSocketNs.ClientOptions] = js.undefined
 }
 

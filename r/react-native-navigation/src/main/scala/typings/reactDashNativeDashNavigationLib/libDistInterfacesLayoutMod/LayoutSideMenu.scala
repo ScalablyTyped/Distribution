@@ -9,7 +9,7 @@ trait LayoutSideMenu extends js.Object {
   /**
     * Set the center view
     */
-  var center: js.UndefOr[Layout[js.Object]] = js.undefined
+  var center: Layout[js.Object]
   /**
     * Set ID of the stack so you can use Navigation.mergeOptions to
     * update options

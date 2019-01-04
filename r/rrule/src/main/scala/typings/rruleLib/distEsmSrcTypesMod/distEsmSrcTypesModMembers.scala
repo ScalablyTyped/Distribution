@@ -1,0 +1,13 @@
+package typings
+package rruleLib.distEsmSrcTypesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("rrule/dist/esm/src/types", JSImport.Namespace)
+@js.native
+object distEsmSrcTypesModMembers extends js.Object {
+  def freqIsDailyOrGreater(freq: Frequency): scala.Boolean = js.native
+}
+

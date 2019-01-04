@@ -15,6 +15,10 @@ trait Layout[P] extends js.Object {
     */
   var component: js.UndefOr[LayoutComponent[P]] = js.undefined
   /**
+    * Set the external component
+    */
+  var externalComponent: js.UndefOr[ExternalComponent] = js.undefined
+  /**
     * Set the side menu
     */
   var sideMenu: js.UndefOr[LayoutSideMenu] = js.undefined
@@ -26,5 +30,9 @@ trait Layout[P] extends js.Object {
     * Set the stack
     */
   var stack: js.UndefOr[LayoutStack] = js.undefined
+  /**
+    * Set the top tabs
+    */
+  var topTabs: js.UndefOr[TopTabs] = js.undefined
 }
 

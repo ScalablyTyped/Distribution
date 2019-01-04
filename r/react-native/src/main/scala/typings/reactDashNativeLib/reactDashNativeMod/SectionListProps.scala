@@ -35,6 +35,10 @@ trait SectionListProps[ItemT] extends VirtualizedListWithoutRenderItemProps[Item
     ]
   ] = js.undefined
   /**
+    * Uses legacy MetroListView instead of default VirtualizedSectionList
+    */
+  var legacyImplementation: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Default renderer for every item in every section. Can be over-ridden on a per-section basis.
     */
   var renderItem: js.UndefOr[SectionListRenderItem[ItemT]] = js.undefined

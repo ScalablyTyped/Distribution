@@ -58,6 +58,11 @@ trait ByteBuffer extends js.Object {
   def append(source: java.lang.String, encoding: java.lang.String, offset: scala.Double): ByteBuffer = js.native
   def append(source: java.lang.String, encoding: scala.Double): ByteBuffer = js.native
   def append(source: java.lang.String, encoding: scala.Double, offset: scala.Double): ByteBuffer = js.native
+  def append(source: nodeLib.Buffer): ByteBuffer = js.native
+  def append(source: nodeLib.Buffer, encoding: java.lang.String): ByteBuffer = js.native
+  def append(source: nodeLib.Buffer, encoding: java.lang.String, offset: scala.Double): ByteBuffer = js.native
+  def append(source: nodeLib.Buffer, encoding: scala.Double): ByteBuffer = js.native
+  def append(source: nodeLib.Buffer, encoding: scala.Double, offset: scala.Double): ByteBuffer = js.native
   def append(source: stdLib.ArrayBuffer): ByteBuffer = js.native
   def append(source: stdLib.ArrayBuffer, encoding: java.lang.String): ByteBuffer = js.native
   def append(source: stdLib.ArrayBuffer, encoding: java.lang.String, offset: scala.Double): ByteBuffer = js.native
@@ -150,6 +155,11 @@ trait ByteBuffer extends js.Object {
   def prepend(source: java.lang.String, encoding: java.lang.String, offset: scala.Double): ByteBuffer = js.native
   def prepend(source: java.lang.String, encoding: scala.Double): ByteBuffer = js.native
   def prepend(source: java.lang.String, encoding: scala.Double, offset: scala.Double): ByteBuffer = js.native
+  def prepend(source: nodeLib.Buffer): ByteBuffer = js.native
+  def prepend(source: nodeLib.Buffer, encoding: java.lang.String): ByteBuffer = js.native
+  def prepend(source: nodeLib.Buffer, encoding: java.lang.String, offset: scala.Double): ByteBuffer = js.native
+  def prepend(source: nodeLib.Buffer, encoding: scala.Double): ByteBuffer = js.native
+  def prepend(source: nodeLib.Buffer, encoding: scala.Double, offset: scala.Double): ByteBuffer = js.native
   def prepend(source: stdLib.ArrayBuffer): ByteBuffer = js.native
   def prepend(source: stdLib.ArrayBuffer, encoding: java.lang.String): ByteBuffer = js.native
   def prepend(source: stdLib.ArrayBuffer, encoding: java.lang.String, offset: scala.Double): ByteBuffer = js.native
@@ -345,8 +355,8 @@ trait ByteBuffer extends js.Object {
   /**
     * Returns a copy of the backing buffer that contains this ByteBuffer's contents. Contents are the bytes between ByteBuffer#offset and ByteBuffer#limit. Will transparently ByteBuffer#flip this ByteBuffer if offset > limit but the actual offsets remain untouched.
     */
-  def toBuffer(): stdLib.ArrayBuffer = js.native
-  def toBuffer(forceCopy: scala.Boolean): stdLib.ArrayBuffer = js.native
+  def toBuffer(): nodeLib.Buffer = js.native
+  def toBuffer(forceCopy: scala.Boolean): nodeLib.Buffer = js.native
   /**
     *Encodes this ByteBuffer to a hex encoded string with marked offsets. Offset symbols are:
     *  < : offset,
@@ -388,6 +398,11 @@ trait ByteBuffer extends js.Object {
   def writeBytes(source: java.lang.String, encoding: java.lang.String, offset: scala.Double): ByteBuffer = js.native
   def writeBytes(source: java.lang.String, encoding: scala.Double): ByteBuffer = js.native
   def writeBytes(source: java.lang.String, encoding: scala.Double, offset: scala.Double): ByteBuffer = js.native
+  def writeBytes(source: nodeLib.Buffer): ByteBuffer = js.native
+  def writeBytes(source: nodeLib.Buffer, encoding: java.lang.String): ByteBuffer = js.native
+  def writeBytes(source: nodeLib.Buffer, encoding: java.lang.String, offset: scala.Double): ByteBuffer = js.native
+  def writeBytes(source: nodeLib.Buffer, encoding: scala.Double): ByteBuffer = js.native
+  def writeBytes(source: nodeLib.Buffer, encoding: scala.Double, offset: scala.Double): ByteBuffer = js.native
   def writeBytes(source: stdLib.ArrayBuffer): ByteBuffer = js.native
   def writeBytes(source: stdLib.ArrayBuffer, encoding: java.lang.String): ByteBuffer = js.native
   def writeBytes(source: stdLib.ArrayBuffer, encoding: java.lang.String, offset: scala.Double): ByteBuffer = js.native

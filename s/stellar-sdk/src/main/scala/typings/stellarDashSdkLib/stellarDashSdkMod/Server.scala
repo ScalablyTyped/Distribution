@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Server protected () extends js.Object {
   def this(serverURL: java.lang.String) = this()
-  def this(serverURL: java.lang.String, options: stellarDashSdkLib.stellarDashSdkMod.ServerNs.ServerOptions) = this()
+  def this(serverURL: java.lang.String, options: stellarDashSdkLib.stellarDashSdkMod.ServerNs.Options) = this()
   var serverURL: js.Any = js.native
   def accounts(): stellarDashSdkLib.stellarDashSdkMod.ServerNs.AccountCallBuilder = js.native
   def assets(): stellarDashSdkLib.stellarDashSdkMod.ServerNs.AssetsCallBuilder = js.native

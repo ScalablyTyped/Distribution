@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-lifecycle-component"
-version := "2.0-dt-20181122Z-92e1c7"
+version := "2.0-dt-20181122Z-33787a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.5.8-a13970",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-89199d",
   "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-3dff88",
-  "org.scalablytyped" %%% "react-redux" % "6.0-dt-20181127Z-e08b7c",
+  "org.scalablytyped" %%% "react-redux" % "6.0-dt-20181229Z-2b6ab0",
   "org.scalablytyped" %%% "redux" % "4.0.1-7cb6f2",
   "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-dc48cb")

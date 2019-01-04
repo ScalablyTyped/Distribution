@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "passport-local-mongoose"
-version := "4.0.0-dt-20181119Z-5bd0f6"
+version := "4.0.0-dt-20181119Z-ca2ce3"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180604Z-e60b5f",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-b5dce1",
   "org.scalablytyped" %%% "mongodb" % "v3.1-dt-20181223Z-9610e2",
-  "org.scalablytyped" %%% "mongoose" % "5.3.4-dt-20181231Z-9f0841",
+  "org.scalablytyped" %%% "mongoose" % "5.3.4-dt-20190103Z-9f0841",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",
   "org.scalablytyped" %%% "passport" % "1.0-dt-20181215Z-6cf330",
   "org.scalablytyped" %%% "passport-local" % "1.0.0-dt-20180328Z-66d8f3",

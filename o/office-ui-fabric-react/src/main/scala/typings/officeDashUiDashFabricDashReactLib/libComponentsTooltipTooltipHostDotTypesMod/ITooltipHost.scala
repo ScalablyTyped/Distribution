@@ -7,8 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait ITooltipHost extends js.Object {
   /**
-    * Dismisses the tooltip
+    * Dismisses the tooltip.
     */
   def dismiss(): scala.Unit
+  /**
+    * Shows the tooltip.
+    */
+  def show(): scala.Unit
 }
 

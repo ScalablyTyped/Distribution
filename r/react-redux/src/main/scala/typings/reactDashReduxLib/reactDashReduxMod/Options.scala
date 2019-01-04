@@ -37,6 +37,12 @@ trait Options[State, TStateProps, TOwnProps, TMergedProps] extends ConnectOption
     */
   var areStatesEqual: js.UndefOr[js.Function2[/* nextState */ State, /* prevState */ State, scala.Boolean]] = js.undefined
   /**
+    * If true, use React's forwardRef to expose a ref of the wrapped component
+    *
+    * @default false
+    */
+  var forwardRef: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * If true, implements shouldComponentUpdate and shallowly compares the result of mergeProps,
     * preventing unnecessary updates, assuming that the component is a “pure” component
     * and does not rely on any input or state other than its props and the selected Redux store’s state.

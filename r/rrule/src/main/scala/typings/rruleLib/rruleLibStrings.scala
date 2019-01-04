@@ -85,9 +85,6 @@ object rruleLibStrings {
   sealed trait freq extends js.Object
   
   @js.native
-  sealed trait getTime extends js.Object
-  
-  @js.native
   sealed trait interval extends js.Object
   
   @js.native
@@ -125,7 +122,6 @@ object rruleLibStrings {
   def count: count = "count".asInstanceOf[count]
   def dtstart: dtstart = "dtstart".asInstanceOf[dtstart]
   def freq: freq = "freq".asInstanceOf[freq]
-  def getTime: getTime = "getTime".asInstanceOf[getTime]
   def interval: interval = "interval".asInstanceOf[interval]
   def tzid: tzid = "tzid".asInstanceOf[tzid]
   def until: until = "until".asInstanceOf[until]

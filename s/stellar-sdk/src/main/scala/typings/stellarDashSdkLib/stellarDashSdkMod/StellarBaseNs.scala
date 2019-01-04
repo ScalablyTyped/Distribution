@@ -100,7 +100,9 @@ object StellarBaseNs extends js.Object {
     def this(sourceAccount: Account, options: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.TransactionBuilderNs.TransactionBuilderOptions) = this()
     def addMemo(memo: Memo[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.MemoNs.AnyType]): this.type = js.native
     def addOperation(
-      operation: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.Operation]
+      operation: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[
+          stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.Operation[OperationType]
+        ]
     ): this.type = js.native
     def build(): Transaction = js.native
   }
@@ -200,97 +202,94 @@ object StellarBaseNs extends js.Object {
   @JSName("Operation")
   @js.native
   object OperationNs extends js.Object {
-    trait AccountMerge extends Operation {
+    trait AccountMerge
+      extends Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationType] {
       var destination: java.lang.String
     }
     
-    trait AccountMergeOptions extends js.Object {
+    trait AccountMergeOptions extends OperationOptions {
       var destination: java.lang.String
-      var source: js.UndefOr[java.lang.String] = js.undefined
     }
     
-    trait AllowTrust extends Operation {
+    trait AllowTrust
+      extends Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationType] {
       var assetCode: java.lang.String
-      var authorize: scala.Boolean
+      var authorize: js.UndefOr[scala.Boolean]
       var trustor: java.lang.String
     }
     
-    trait AllowTrustOptions extends js.Object {
+    trait AllowTrustOptions extends OperationOptions {
       var assetCode: java.lang.String
-      var authorize: scala.Boolean
-      var source: js.UndefOr[java.lang.String] = js.undefined
+      var authorize: js.UndefOr[scala.Boolean] = js.undefined
       var trustor: java.lang.String
     }
     
     @js.native
     sealed trait AuthFlags extends js.Object
     
-    trait BumpSequence extends Operation {
+    trait BumpSequence
+      extends Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationType] {
       var bumpTo: java.lang.String
     }
     
-    trait BumpSequenceOptions extends js.Object {
+    trait BumpSequenceOptions extends OperationOptions {
       var bumpTo: java.lang.String
-      var source: js.UndefOr[java.lang.String] = js.undefined
     }
     
-    trait ChangeTrust extends Operation {
-      var limit: java.lang.String | scala.Double
+    trait ChangeTrust
+      extends Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationType] {
+      var limit: java.lang.String
       var line: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset
     }
     
-    trait ChangeTrustOptions extends js.Object {
+    trait ChangeTrustOptions extends OperationOptions {
       var asset: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset
       var limit: js.UndefOr[java.lang.String] = js.undefined
-      var source: js.UndefOr[java.lang.String] = js.undefined
     }
     
-    trait CreateAccount extends Operation {
+    trait CreateAccount
+      extends Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationType] {
       var destination: java.lang.String
-      @JSName("source")
-      var source_CreateAccount: java.lang.String
-      var startingBalance: java.lang.String | scala.Double
-    }
-    
-    trait CreateAccountOptions extends js.Object {
-      var destination: java.lang.String
-      var source: js.UndefOr[java.lang.String] = js.undefined
       var startingBalance: java.lang.String
     }
     
-    trait CreatePassiveOffer extends Operation {
-      var amount: java.lang.String | scala.Double
+    trait CreateAccountOptions extends OperationOptions {
+      var destination: java.lang.String
+      var startingBalance: java.lang.String
+    }
+    
+    trait CreatePassiveOffer
+      extends Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationType] {
+      var amount: java.lang.String
       var buying: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset
-      var price: java.lang.String | scala.Double
+      var price: java.lang.String
       var selling: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset
     }
     
-    trait CreatePassiveOfferOptions extends js.Object {
+    trait CreatePassiveOfferOptions extends OperationOptions {
       var amount: java.lang.String
       var buying: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset
       var price: scala.Double | java.lang.String | js.Object
       var selling: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset
-      var source: js.UndefOr[java.lang.String] = js.undefined
     }
     
-    trait Inflation extends Operation
-    
-    trait ManageData extends Operation {
+    trait ManageData
+      extends Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationType] {
       var name: java.lang.String
       var value: nodeLib.Buffer
     }
     
-    trait ManageDataOptions extends js.Object {
+    trait ManageDataOptions extends OperationOptions {
       var name: java.lang.String
-      var source: js.UndefOr[java.lang.String] = js.undefined
       var value: java.lang.String | nodeLib.Buffer
     }
     
-    trait ManageOffer extends Operation {
-      var amount: java.lang.String | scala.Double
+    trait ManageOffer
+      extends Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationType] {
+      var amount: java.lang.String
       var buying: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset
       var offerId: java.lang.String
-      var price: java.lang.String | scala.Double
+      var price: java.lang.String
       var selling: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset
     }
     
@@ -298,44 +297,61 @@ object StellarBaseNs extends js.Object {
       var offerId: js.UndefOr[scala.Double | java.lang.String] = js.undefined
     }
     
-    trait Operation extends js.Object {
-      var source: java.lang.String | scala.Null
-      var `type`: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationType
+    trait Operation[T /* <: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationType */] extends js.Object {
+      var source: js.UndefOr[java.lang.String] = js.undefined
+      var `type`: T
     }
     
-    trait PathPayment extends Operation {
-      var destAmount: java.lang.String | scala.Double
-      var destAsset: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset
-      var destination: java.lang.String
-      var path: js.Array[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset]
-      var sendAsset: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset
-      var sendMax: java.lang.String | scala.Double
+    trait OperationOptions extends js.Object {
+      var source: js.UndefOr[java.lang.String] = js.undefined
     }
     
-    trait PathPaymentOptions extends js.Object {
+    trait PathPayment
+      extends Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationType] {
       var destAmount: java.lang.String
       var destAsset: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset
       var destination: java.lang.String
       var path: js.Array[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset]
       var sendAsset: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset
       var sendMax: java.lang.String
-      var source: js.UndefOr[java.lang.String] = js.undefined
     }
     
-    trait Payment extends Operation {
-      var amount: java.lang.String | scala.Double
-      var asset: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset
+    trait PathPaymentOptions extends OperationOptions {
+      var destAmount: java.lang.String
+      var destAsset: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset
       var destination: java.lang.String
+      var path: js.UndefOr[js.Array[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset]] = js.undefined
+      var sendAsset: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset
+      var sendMax: java.lang.String
     }
     
-    trait PaymentOptions extends js.Object {
+    trait Payment
+      extends Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationType] {
       var amount: java.lang.String
       var asset: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset
       var destination: java.lang.String
-      var source: js.UndefOr[java.lang.String] = js.undefined
     }
     
-    trait SetOptions extends Operation {
+    trait PaymentOptions extends OperationOptions {
+      var amount: java.lang.String
+      var asset: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Asset
+      var destination: java.lang.String
+    }
+    
+    trait SetOptions[T /* <: SignerUnion */]
+      extends Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationType] {
+      var clearFlags: js.UndefOr[AuthFlags] = js.undefined
+      var highThreshold: js.UndefOr[scala.Double] = js.undefined
+      var homeDomain: js.UndefOr[java.lang.String] = js.undefined
+      var inflationDest: js.UndefOr[java.lang.String] = js.undefined
+      var lowThreshold: js.UndefOr[scala.Double] = js.undefined
+      var masterWeight: js.UndefOr[scala.Double] = js.undefined
+      var medThreshold: js.UndefOr[scala.Double] = js.undefined
+      var setFlags: js.UndefOr[AuthFlags] = js.undefined
+      var signer: SignerPreAuthTx | SignerSha256Hash | SignerEd25519PublicKey
+    }
+    
+    trait SetOptionsOptions[T /* <: SignerUnion */] extends OperationOptions {
       var clearFlags: js.UndefOr[AuthFlags] = js.undefined
       var highThreshold: js.UndefOr[scala.Double | java.lang.String] = js.undefined
       var homeDomain: js.UndefOr[java.lang.String] = js.undefined
@@ -344,26 +360,36 @@ object StellarBaseNs extends js.Object {
       var masterWeight: js.UndefOr[scala.Double | java.lang.String] = js.undefined
       var medThreshold: js.UndefOr[scala.Double | java.lang.String] = js.undefined
       var setFlags: js.UndefOr[AuthFlags] = js.undefined
-      var signer: js.UndefOr[Signer] = js.undefined
+      var signer: js.UndefOr[T] = js.undefined
     }
     
-    trait SetOptionsOptions extends js.Object {
-      var clearFlags: js.UndefOr[AuthFlags] = js.undefined
-      var highThreshold: js.UndefOr[scala.Double | java.lang.String] = js.undefined
-      var homeDomain: js.UndefOr[java.lang.String] = js.undefined
-      var inflationDest: js.UndefOr[java.lang.String] = js.undefined
-      var lowThreshold: js.UndefOr[scala.Double | java.lang.String] = js.undefined
-      var masterWeight: js.UndefOr[scala.Double | java.lang.String] = js.undefined
-      var medThreshold: js.UndefOr[scala.Double | java.lang.String] = js.undefined
-      var setFlags: js.UndefOr[AuthFlags] = js.undefined
-      var signer: js.UndefOr[Signer] = js.undefined
-      var source: js.UndefOr[java.lang.String] = js.undefined
+    trait SignerEd25519PublicKey extends js.Object {
+      var ed25519PublicKey: java.lang.String
+      var weight: js.UndefOr[scala.Double]
     }
     
-    trait Signer extends js.Object {
-      var ed25519PublicKey: js.UndefOr[java.lang.String] = js.undefined
-      var preAuthTx: js.UndefOr[nodeLib.Buffer | java.lang.String] = js.undefined
-      var sha256Hash: js.UndefOr[nodeLib.Buffer | java.lang.String] = js.undefined
+    trait SignerEd25519PublicKeyOptions extends js.Object {
+      var ed25519PublicKey: java.lang.String
+      var weight: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+    }
+    
+    trait SignerPreAuthTx extends js.Object {
+      var preAuthTx: nodeLib.Buffer
+      var weight: js.UndefOr[scala.Double]
+    }
+    
+    trait SignerPreAuthTxOptions extends js.Object {
+      var preAuthTx: nodeLib.Buffer | java.lang.String
+      var weight: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+    }
+    
+    trait SignerSha256Hash extends js.Object {
+      var sha256Hash: nodeLib.Buffer
+      var weight: js.UndefOr[scala.Double]
+    }
+    
+    trait SignerSha256HashOptions extends js.Object {
+      var sha256Hash: nodeLib.Buffer | java.lang.String
       var weight: js.UndefOr[scala.Double | java.lang.String] = js.undefined
     }
     
@@ -373,13 +399,13 @@ object StellarBaseNs extends js.Object {
     def changeTrust(options: ChangeTrustOptions): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[ChangeTrust] = js.native
     def createAccount(options: CreateAccountOptions): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[CreateAccount] = js.native
     def createPassiveOffer(options: CreatePassiveOfferOptions): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[CreatePassiveOffer] = js.native
-    def fromXDRObject[T /* <: Operation */](xdrOperation: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[T]): T = js.native
-    def inflation(options: stellarDashSdkLib.Anon_Source): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[Inflation] = js.native
+    def fromXDRObject[T /* <: Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationType] */](xdrOperation: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[T]): T = js.native
+    def inflation(options: InflationOptions): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[Inflation] = js.native
     def manageData(options: ManageDataOptions): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[ManageData] = js.native
     def manageOffer(options: ManageOfferOptions): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[ManageOffer] = js.native
     def pathPayment(options: PathPaymentOptions): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[PathPayment] = js.native
     def payment(options: PaymentOptions): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[Payment] = js.native
-    def setOptions(options: SetOptionsOptions): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[SetOptions] = js.native
+    def setOptions[T /* <: SignerUnion */](options: SetOptionsOptions[T]): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[SetOptions[T]] = js.native
     /*
       * Required = 1 << 0
       * Revocable = 1 << 1
@@ -408,6 +434,11 @@ object StellarBaseNs extends js.Object {
           ] = js.native
     }
     
+    type Inflation = Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationType]
+    type InflationOptions = OperationOptions
+    type Signer = SignerEd25519PublicKey | SignerSha256Hash | SignerPreAuthTx
+    type SignerOptions = SignerEd25519PublicKeyOptions | SignerSha256HashOptions | SignerPreAuthTxOptions
+    type SignerUnion = stellarDashSdkLib.Anon_Ed25519PublicKey | stellarDashSdkLib.Anon_Sha256Hash | stellarDashSdkLib.Anon_PreAuthTx | scala.Null
   }
   
   @js.native
@@ -523,7 +554,7 @@ object StellarBaseNs extends js.Object {
     class Memo () extends XDRStruct
     
     @js.native
-    class Operation[T /* <: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.Operation */] () extends XDRStruct
+    class Operation[T /* <: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationType] */] () extends XDRStruct
     
     @js.native
     class TransactionEnvelope () extends XDRStruct
@@ -556,7 +587,9 @@ object StellarBaseNs extends js.Object {
     
     @js.native
     object Operation extends js.Object {
-      def fromXDR(xdr: nodeLib.Buffer): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.Operation] = js.native
+      def fromXDR(xdr: nodeLib.Buffer): stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.Operation[
+            stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.Operation[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationType]
+          ] = js.native
     }
     
     @js.native
@@ -583,6 +616,6 @@ object StellarBaseNs extends js.Object {
   type MemoNone = stellarDashSdkLib.stellarDashSdkLibStrings.none
   type MemoReturn = stellarDashSdkLib.stellarDashSdkLibStrings.`return`
   type MemoText = stellarDashSdkLib.stellarDashSdkLibStrings.text
-  type TransactionOperation = stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.CreateAccount | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.Payment | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.PathPayment | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.CreatePassiveOffer | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.ManageOffer | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.SetOptions | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.ChangeTrust | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.AllowTrust | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.AccountMerge | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.Inflation | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.ManageData | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.BumpSequence
+  type TransactionOperation = stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.CreateAccount | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.Payment | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.PathPayment | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.CreatePassiveOffer | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.ManageOffer | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.SetOptions[scala.Nothing] | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.ChangeTrust | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.AllowTrust | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.AccountMerge | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.Inflation | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.ManageData | stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.OperationNs.BumpSequence
 }
 

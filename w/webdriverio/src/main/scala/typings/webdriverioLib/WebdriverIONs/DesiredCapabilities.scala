@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 trait DesiredCapabilities extends Capabilities {
   var acceptSslCerts: js.UndefOr[scala.Boolean] = js.undefined
   var addCustomRequestHeaders: js.UndefOr[scala.Boolean] = js.undefined
+  var app: js.UndefOr[java.lang.String] = js.undefined
   var applicationCacheEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  var automationName: js.UndefOr[java.lang.String] = js.undefined
   var avoidProxy: js.UndefOr[scala.Boolean] = js.undefined
   var browserAttachTimeout: js.UndefOr[scala.Double] = js.undefined
   var browserConnectionEnabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -63,6 +65,8 @@ trait DesiredCapabilities extends Capabilities {
   var pageLoadingStrategy: js.UndefOr[java.lang.String] = js.undefined
   var perfLoggingPrefs: js.UndefOr[webdriverioLib.Anon_EnablePage] = js.undefined
   var platform: js.UndefOr[java.lang.String] = js.undefined
+  // Appium specific
+  var platformVersion: js.UndefOr[java.lang.String] = js.undefined
   var profile: js.UndefOr[java.lang.String] = js.undefined
   var proxyEverything: js.UndefOr[scala.Boolean] = js.undefined
   var proxyRequired: js.UndefOr[scala.Boolean] = js.undefined

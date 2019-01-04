@@ -11,6 +11,6 @@ trait LayoutRoot extends js.Object {
   /**
     * Set the root
     */
-  var root: js.UndefOr[Layout[js.Object]] = js.undefined
+  var root: Layout[js.Object]
 }
 

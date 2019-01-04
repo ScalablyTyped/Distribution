@@ -1,9 +1,4 @@
 ```
-/**
- * General date-related utilities.
- * Also handles several incompatibilities between JavaScript and Python
- *
- */
 /*!
  * rrule.js - Library for working with recurrence rules for calendar dates.
  * https://github.com/jakubroztocil/rrule

@@ -100,25 +100,25 @@ object namespaced extends js.Object {
     */
   def concat(
     buffers: js.Array[
-      stdLib.ArrayBuffer | bytebufferLib.bytebufferMod.ByteBuffer | java.lang.String | stdLib.Uint8Array
+      stdLib.ArrayBuffer | nodeLib.Buffer | bytebufferLib.bytebufferMod.ByteBuffer | java.lang.String | stdLib.Uint8Array
     ]
   ): bytebufferLib.bytebufferMod.ByteBuffer = js.native
   def concat(
     buffers: js.Array[
-      bytebufferLib.bytebufferMod.ByteBuffer | stdLib.ArrayBuffer | stdLib.Uint8Array | java.lang.String
+      bytebufferLib.bytebufferMod.ByteBuffer | nodeLib.Buffer | stdLib.ArrayBuffer | stdLib.Uint8Array | java.lang.String
     ],
     encoding: java.lang.String
   ): bytebufferLib.bytebufferMod.ByteBuffer = js.native
   def concat(
     buffers: js.Array[
-      bytebufferLib.bytebufferMod.ByteBuffer | stdLib.ArrayBuffer | stdLib.Uint8Array | java.lang.String
+      bytebufferLib.bytebufferMod.ByteBuffer | nodeLib.Buffer | stdLib.ArrayBuffer | stdLib.Uint8Array | java.lang.String
     ],
     encoding: java.lang.String,
     litteEndian: scala.Boolean
   ): bytebufferLib.bytebufferMod.ByteBuffer = js.native
   def concat(
     buffers: js.Array[
-      bytebufferLib.bytebufferMod.ByteBuffer | stdLib.ArrayBuffer | stdLib.Uint8Array | java.lang.String
+      bytebufferLib.bytebufferMod.ByteBuffer | nodeLib.Buffer | stdLib.ArrayBuffer | stdLib.Uint8Array | java.lang.String
     ],
     encoding: java.lang.String,
     litteEndian: scala.Boolean,
@@ -126,20 +126,20 @@ object namespaced extends js.Object {
   ): bytebufferLib.bytebufferMod.ByteBuffer = js.native
   def concat(
     buffers: js.Array[
-      bytebufferLib.bytebufferMod.ByteBuffer | stdLib.ArrayBuffer | stdLib.Uint8Array | java.lang.String
+      bytebufferLib.bytebufferMod.ByteBuffer | nodeLib.Buffer | stdLib.ArrayBuffer | stdLib.Uint8Array | java.lang.String
     ],
     encoding: scala.Boolean
   ): bytebufferLib.bytebufferMod.ByteBuffer = js.native
   def concat(
     buffers: js.Array[
-      bytebufferLib.bytebufferMod.ByteBuffer | stdLib.ArrayBuffer | stdLib.Uint8Array | java.lang.String
+      bytebufferLib.bytebufferMod.ByteBuffer | nodeLib.Buffer | stdLib.ArrayBuffer | stdLib.Uint8Array | java.lang.String
     ],
     encoding: scala.Boolean,
     litteEndian: scala.Boolean
   ): bytebufferLib.bytebufferMod.ByteBuffer = js.native
   def concat(
     buffers: js.Array[
-      bytebufferLib.bytebufferMod.ByteBuffer | stdLib.ArrayBuffer | stdLib.Uint8Array | java.lang.String
+      bytebufferLib.bytebufferMod.ByteBuffer | nodeLib.Buffer | stdLib.ArrayBuffer | stdLib.Uint8Array | java.lang.String
     ],
     encoding: scala.Boolean,
     litteEndian: scala.Boolean,
@@ -215,6 +215,18 @@ object namespaced extends js.Object {
   def wrap(buffer: java.lang.String, enc: scala.Boolean): bytebufferLib.bytebufferMod.ByteBuffer = js.native
   def wrap(buffer: java.lang.String, enc: scala.Boolean, littleEndian: scala.Boolean): bytebufferLib.bytebufferMod.ByteBuffer = js.native
   def wrap(buffer: java.lang.String, enc: scala.Boolean, littleEndian: scala.Boolean, noAssert: scala.Boolean): bytebufferLib.bytebufferMod.ByteBuffer = js.native
+  def wrap(buffer: nodeLib.Buffer): bytebufferLib.bytebufferMod.ByteBuffer = js.native
+  def wrap(buffer: nodeLib.Buffer, enc: java.lang.String): bytebufferLib.bytebufferMod.ByteBuffer = js.native
+  def wrap(buffer: nodeLib.Buffer, enc: java.lang.String, littleEndian: scala.Boolean): bytebufferLib.bytebufferMod.ByteBuffer = js.native
+  def wrap(
+    buffer: nodeLib.Buffer,
+    enc: java.lang.String,
+    littleEndian: scala.Boolean,
+    noAssert: scala.Boolean
+  ): bytebufferLib.bytebufferMod.ByteBuffer = js.native
+  def wrap(buffer: nodeLib.Buffer, enc: scala.Boolean): bytebufferLib.bytebufferMod.ByteBuffer = js.native
+  def wrap(buffer: nodeLib.Buffer, enc: scala.Boolean, littleEndian: scala.Boolean): bytebufferLib.bytebufferMod.ByteBuffer = js.native
+  def wrap(buffer: nodeLib.Buffer, enc: scala.Boolean, littleEndian: scala.Boolean, noAssert: scala.Boolean): bytebufferLib.bytebufferMod.ByteBuffer = js.native
   def wrap(buffer: stdLib.ArrayBuffer): bytebufferLib.bytebufferMod.ByteBuffer = js.native
   def wrap(buffer: stdLib.ArrayBuffer, enc: java.lang.String): bytebufferLib.bytebufferMod.ByteBuffer = js.native
   def wrap(buffer: stdLib.ArrayBuffer, enc: java.lang.String, littleEndian: scala.Boolean): bytebufferLib.bytebufferMod.ByteBuffer = js.native

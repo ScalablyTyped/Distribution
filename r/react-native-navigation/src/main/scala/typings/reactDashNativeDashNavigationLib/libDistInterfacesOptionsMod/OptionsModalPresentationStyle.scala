@@ -43,17 +43,17 @@ object OptionsModalPresentationStyle extends js.Object {
   sealed trait popOver
     extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle
   
-  /* 4 */ val currentContext: currentContext with scala.Double = js.native
-  /* 0 */ val formSheet: formSheet with scala.Double = js.native
-  /* 6 */ val fullScreen: fullScreen with scala.Double = js.native
-  /* 7 */ val none: none with scala.Double = js.native
-  /* 3 */ val overCurrentContext: overCurrentContext with scala.Double = js.native
-  /* 2 */ val overFullScreen: overFullScreen with scala.Double = js.native
-  /* 1 */ val pageSheet: pageSheet with scala.Double = js.native
-  /* 5 */ val popOver: popOver with scala.Double = js.native
+  /* "currentContext" */ val currentContext: currentContext with java.lang.String = js.native
+  /* "formSheet" */ val formSheet: formSheet with java.lang.String = js.native
+  /* "fullScreen" */ val fullScreen: fullScreen with java.lang.String = js.native
+  /* "none" */ val none: none with java.lang.String = js.native
+  /* "overCurrentContext" */ val overCurrentContext: overCurrentContext with java.lang.String = js.native
+  /* "overFullScreen" */ val overFullScreen: overFullScreen with java.lang.String = js.native
+  /* "pageSheet" */ val pageSheet: pageSheet with java.lang.String = js.native
+  /* "popOver" */ val popOver: popOver with java.lang.String = js.native
   @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[
-    reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle with scala.Double
+  def apply(value: java.lang.String): js.UndefOr[
+    reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle with java.lang.String
   ] = js.native
 }
 

@@ -15,7 +15,8 @@ object retryModMembers extends js.Object {
   def timeouts(): js.Array[scala.Double] = js.native
   def timeouts(options: TimeoutsOptions): js.Array[scala.Double] = js.native
   def wrap(`object`: js.Object): scala.Unit = js.native
-  def wrap(`object`: js.Object, options: WrapOptions): scala.Unit = js.native
-  def wrap(`object`: js.Object, options: WrapOptions, methods: js.Array[java.lang.String]): scala.Unit = js.native
+  def wrap(`object`: js.Object, methods: js.Array[java.lang.String]): scala.Unit = js.native
+  def wrap(`object`: js.Object, options: OperationOptions): scala.Unit = js.native
+  def wrap(`object`: js.Object, options: OperationOptions, methods: js.Array[java.lang.String]): scala.Unit = js.native
 }
 

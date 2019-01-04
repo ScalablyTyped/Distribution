@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_TH extends js.Object {
-  var FR: rruleLib.distEsmWeekdayMod.Weekday
-  var MO: rruleLib.distEsmWeekdayMod.Weekday
-  var SA: rruleLib.distEsmWeekdayMod.Weekday
-  var SU: rruleLib.distEsmWeekdayMod.Weekday
-  var TH: rruleLib.distEsmWeekdayMod.Weekday
-  var TU: rruleLib.distEsmWeekdayMod.Weekday
-  var WE: rruleLib.distEsmWeekdayMod.Weekday
+  var FR: rruleLib.distEsmSrcWeekdayMod.Weekday
+  var MO: rruleLib.distEsmSrcWeekdayMod.Weekday
+  var SA: rruleLib.distEsmSrcWeekdayMod.Weekday
+  var SU: rruleLib.distEsmSrcWeekdayMod.Weekday
+  var TH: rruleLib.distEsmSrcWeekdayMod.Weekday
+  var TU: rruleLib.distEsmSrcWeekdayMod.Weekday
+  var WE: rruleLib.distEsmSrcWeekdayMod.Weekday
 }
 

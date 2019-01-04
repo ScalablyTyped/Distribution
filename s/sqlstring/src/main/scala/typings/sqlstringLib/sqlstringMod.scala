@@ -13,5 +13,6 @@ object sqlstringMod extends js.Object {
   def escapeId(value: js.Any, dotQualifier: scala.Boolean): java.lang.String = js.native
   def format(sql: java.lang.String, args: js.Array[_]): java.lang.String = js.native
   def format(sql: java.lang.String, args: js.Object): java.lang.String = js.native
+  def raw(sql: java.lang.String): sqlstringLib.Anon_ToSqlString = js.native
 }
 

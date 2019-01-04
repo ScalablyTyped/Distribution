@@ -9,6 +9,12 @@ trait WrapperProps[T /* <: reactLib.HTMLElement */]
   extends reactLib.reactMod.ReactNs.HTMLAttributes[T] {
   /**
   	 * By default, it does automatically close.
+  	 * If false, the menu will not automatically close when it
+  	 * blurs. Default: `true`.
+  	 */
+  var closeOnBlur: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  	 * By default, it does automatically close.
   	 * If false, the menu will not automatically close when a
   	 * selection is made. Default: `true`.
   	 */

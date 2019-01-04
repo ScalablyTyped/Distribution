@@ -6,8 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var delayAfter: js.UndefOr[scala.Double] = js.undefined
-  var delayMs: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * The funciton to handle requests once `max` is exceeded. It receives the request and response objects.
+    * The "next" param is available if you need to pass to the next middleware. The `req.rateLimit` object
+    * has `limit`, `current`, and `remaining` number of requests, and if the store provides it, a `resetTime`
+    * Date object.
+    * Default: `(req, res, next) => res.status(options.statusCode).send(options.message)`
+    */
   var handler: js.UndefOr[
     js.Function3[
       /* req */ expressLib.expressMod.eNs.Request, 
@@ -16,7 +21,15 @@ trait Options extends js.Object {
       _
     ]
   ] = js.undefined
+  /**
+    * Enable headers for request limit (`X-RateLimit-Limit`) and current usage (`X-RateLimit-Remaining`) on all
+    * responses andtime to wait before retrying (`Retry-After`) when `max` is exceeded. Defaults to `true`.
+    */
   var headers: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Function used to generate keys. Defaults to using `req.ip`.
+    * Default: `(req, res) => req.ip`
+    */
   var keyGenerator: js.UndefOr[
     js.Function2[
       /* req */ expressLib.expressMod.eNs.Request, 
@@ -24,8 +37,22 @@ trait Options extends js.Object {
       java.lang.String
     ]
   ] = js.undefined
-  var max: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * Max number of connections during `windowMs` before sending a 429 response. May be a `number` or
+    * a function that returns a `number` or a `Promise<number>`. Defaults to `5`. Set to `0` to disable.
+    */
+  var max: js.UndefOr[scala.Double | MaxValueFn] = js.undefined
+  /**
+    * Error message sent to user when `max` is exceeded. May be a `string`, JSON object, or any other value
+    * that Express's `req.send()` supports. Defaults to `'Too many requests, please try again later.'`.
+    */
   var message: js.UndefOr[java.lang.String | nodeLib.Buffer | Message] = js.undefined
+  /**
+    * Function that is called the first time `max` is exceeded. The `req.rateLimit` object has `limit`, `current`,
+    * and `remaining` number of requests and, if the store provides it, a `resetTime` Date object. Default is
+    * an empty function.
+    * Default: `(req, res, opts) => {}`
+    */
   var onLimitReached: js.UndefOr[
     js.Function3[
       /* req */ expressLib.expressMod.eNs.Request, 
@@ -34,6 +61,11 @@ trait Options extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
+  /**
+    * Function used to skip requests. Returning `true` from the function will skip limiting for that request. Defaults to
+    * always `false` (count all requests).
+    * Default: `(req, res) => false`
+    */
   var skip: js.UndefOr[
     js.Function2[
       /* req */ expressLib.expressMod.eNs.Request, 
@@ -41,9 +73,25 @@ trait Options extends js.Object {
       scala.Boolean
     ]
   ] = js.undefined
+  /**
+    * When set to `true`, failed requests (status >= 400, request canceled or errored) won't be counted. Defaults to `false`.
+    */
   var skipFailedRequests: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * When set to `true`, successful requests (status < 400) won't be counted. Defaults to `false`.
+    */
+  var skipSuccessfulRequests: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * HTTP status code returned when `max` is exceeded. Defaults to `429`.
+    */
   var statusCode: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * The storage to use when persisting rate limit attempts.
+    */
   var store: js.UndefOr[Store] = js.undefined
+  /**
+    * How long in milliseconds to keep records of requests in memory. Defaults to `60000` (1 minute).
+    */
   var windowMs: js.UndefOr[scala.Double] = js.undefined
 }
 

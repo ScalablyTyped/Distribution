@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "retry"
-version := "0.10-dt-20180214Z-e84d06"
+version := "0.12-dt-20181229Z-b0c65d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

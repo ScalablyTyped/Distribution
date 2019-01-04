@@ -43,7 +43,7 @@ trait ConnectOptions extends js.Object {
     */
   var storeKey: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * If true, stores a ref to the wrapped component instance and makes it available via getWrappedInstance() method.
+    * @deprecated Use forwardRef
     *
     * @default false
     */

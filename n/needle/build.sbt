@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "needle"
-version := "2.0-dt-20180214Z-04ceda"
+version := "2.0-dt-20190103Z-13f46c"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

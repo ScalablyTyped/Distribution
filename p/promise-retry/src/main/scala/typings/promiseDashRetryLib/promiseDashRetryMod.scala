@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object promiseDashRetryMod extends js.Object {
   def apply[ResolutionType](
-    options: retryLib.retryMod.WrapOptions,
+    options: retryLib.retryMod.OperationOptions,
     retryableFn: promiseDashRetryLib.RetryableFn[ResolutionType]
   ): js.Promise[ResolutionType] = js.native
   /**
@@ -22,7 +22,7 @@ object promiseDashRetryMod extends js.Object {
   def apply[ResolutionType](retryableFn: promiseDashRetryLib.RetryableFn[ResolutionType]): js.Promise[ResolutionType] = js.native
   def apply[ResolutionType](
     retryableFn: promiseDashRetryLib.RetryableFn[ResolutionType],
-    options: retryLib.retryMod.WrapOptions
+    options: retryLib.retryMod.OperationOptions
   ): js.Promise[ResolutionType] = js.native
 }
 

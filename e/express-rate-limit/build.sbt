@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-rate-limit"
-version := "2.9-dt-20181224Z-5e526b"
+version := "3.3-dt-20190103Z-a7256e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

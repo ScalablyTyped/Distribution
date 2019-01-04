@@ -308,6 +308,10 @@ object ServerNs extends js.Object {
     def forTransaction(transactionId: java.lang.String): this.type = js.native
   }
   
+  trait Options extends js.Object {
+    var allowHttp: scala.Boolean
+  }
+  
   @js.native
   abstract class OrderbookCallBuilder () extends CallBuilder[OrderbookRecord]
   
@@ -398,10 +402,6 @@ object ServerNs extends js.Object {
   trait RecordLink extends js.Object {
     var href: java.lang.String
     var templated: js.UndefOr[scala.Boolean] = js.undefined
-  }
-  
-  trait ServerOptions extends js.Object {
-    var allowHttp: scala.Boolean
   }
   
   @js.native

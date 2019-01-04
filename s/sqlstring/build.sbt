@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sqlstring"
-version := "2.2-dt-20180214Z-ba439e"
+version := "2.2-dt-20190103Z-2ce1b2"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

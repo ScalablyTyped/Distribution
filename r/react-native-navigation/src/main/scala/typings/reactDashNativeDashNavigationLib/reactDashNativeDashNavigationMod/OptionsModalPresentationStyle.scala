@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-navigation", "OptionsModalPresentationStyle")
 @js.native
 object OptionsModalPresentationStyle extends js.Object {
-  /* 4 */ val currentContext: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.currentContext with scala.Double = js.native
-  /* 0 */ val formSheet: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.formSheet with scala.Double = js.native
-  /* 6 */ val fullScreen: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.fullScreen with scala.Double = js.native
-  /* 7 */ val none: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.none with scala.Double = js.native
-  /* 3 */ val overCurrentContext: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.overCurrentContext with scala.Double = js.native
-  /* 2 */ val overFullScreen: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.overFullScreen with scala.Double = js.native
-  /* 1 */ val pageSheet: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.pageSheet with scala.Double = js.native
-  /* 5 */ val popOver: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.popOver with scala.Double = js.native
+  /* "currentContext" */ val currentContext: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.currentContext with java.lang.String = js.native
+  /* "formSheet" */ val formSheet: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.formSheet with java.lang.String = js.native
+  /* "fullScreen" */ val fullScreen: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.fullScreen with java.lang.String = js.native
+  /* "none" */ val none: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.none with java.lang.String = js.native
+  /* "overCurrentContext" */ val overCurrentContext: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.overCurrentContext with java.lang.String = js.native
+  /* "overFullScreen" */ val overFullScreen: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.overFullScreen with java.lang.String = js.native
+  /* "pageSheet" */ val pageSheet: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.pageSheet with java.lang.String = js.native
+  /* "popOver" */ val popOver: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.popOver with java.lang.String = js.native
   @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[
-    reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle with scala.Double
+  def apply(value: java.lang.String): js.UndefOr[
+    reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle with java.lang.String
   ] = js.native
 }
 
