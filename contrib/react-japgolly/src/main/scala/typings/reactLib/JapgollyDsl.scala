@@ -13,5 +13,5 @@ import scala.scalajs.{js, LinkingInfo}
 object JapgollyDsl {
   import japgolly.scalajs.react.raw.JsNumber
 
-  type Dom[T] = ReactDsl.Dom[T]
+  type Test = dsl.type
 }
