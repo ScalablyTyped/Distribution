@@ -13,7 +13,7 @@ class default () extends BreadcrumbItem
 @js.native
 object default extends js.Object {
   var __ANT_BREADCRUMB_ITEM: scala.Boolean = js.native
-  var defaultProps: antdLib.Anon_PrefixClsSeparator = js.native
-  var propTypes: antdLib.Anon_PrefixClsHrefSeparator = js.native
+  var defaultProps: antdLib.Anon_Separator = js.native
+  var propTypes: antdLib.Anon_PrefixClsHref = js.native
 }
 

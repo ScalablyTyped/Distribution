@@ -12,7 +12,7 @@ class default () extends Rate
 @JSImport("antd/lib/rate", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: antdLib.Anon_PrefixClsCharacterString = js.native
+  var defaultProps: antdLib.Anon_Character = js.native
   var propTypes: antdLib.Anon_PrefixClsCharacter = js.native
 }
 

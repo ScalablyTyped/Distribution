@@ -10,9 +10,3 @@ import scala.scalajs.js.annotation._
 class Comment ()
   extends antdLib.libCommentMod.default
 
-@JSImport("antd", "Comment")
-@js.native
-object Comment extends js.Object {
-  var defaultProps: antdLib.Anon_PrefixClsString = js.native
-}
-

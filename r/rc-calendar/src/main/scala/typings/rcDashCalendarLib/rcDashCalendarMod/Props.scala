@@ -16,8 +16,12 @@ trait Props extends js.Object {
     ]
   ] = js.undefined
   var defaultValue: js.UndefOr[momentLib.momentMod.momentNs.Moment] = js.undefined
-  var disabledDate: js.UndefOr[js.Function1[/* current */ momentLib.momentMod.momentNs.Moment, scala.Boolean]] = js.undefined
-  var disabledTime: js.UndefOr[js.Function1[/* current */ momentLib.momentMod.momentNs.Moment, js.Object]] = js.undefined
+  var disabledDate: js.UndefOr[
+    js.Function1[/* current */ js.UndefOr[momentLib.momentMod.momentNs.Moment], scala.Boolean]
+  ] = js.undefined
+  var disabledTime: js.UndefOr[
+    js.Function1[/* current */ js.UndefOr[momentLib.momentMod.momentNs.Moment], js.Object]
+  ] = js.undefined
   var locale: js.UndefOr[js.Object] = js.undefined
   var mode: js.UndefOr[Mode] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* date */ momentLib.momentMod.momentNs.Moment, scala.Unit]] = js.undefined

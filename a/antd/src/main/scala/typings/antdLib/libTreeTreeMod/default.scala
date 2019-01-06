@@ -17,6 +17,6 @@ object default extends js.Object {
     antdLib.libTreeDirectoryTreeMod.default
   ] = js.native
   var TreeNode: reactLib.reactMod.ReactNs.ComponentClass[antdLib.libTreeTreeMod.AntTreeNodeProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  var defaultProps: antdLib.Anon_PrefixClsCheckable = js.native
+  var defaultProps: antdLib.Anon_Checkable = js.native
 }
 

@@ -12,6 +12,6 @@ class default () extends Header
 @JSImport("antd/lib/calendar/Header", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: antdLib.Anon_PrefixClsYearSelectOffset = js.native
+  var defaultProps: antdLib.Anon_YearSelectOffset = js.native
 }
 

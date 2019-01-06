@@ -11,6 +11,5 @@ trait Anon_OnChange extends js.Object {
   var onChange: js.Function0[scala.Null]
   var onPanelChange: js.Function0[scala.Null]
   var onSelect: js.Function0[scala.Null]
-  var prefixCls: java.lang.String
 }
 

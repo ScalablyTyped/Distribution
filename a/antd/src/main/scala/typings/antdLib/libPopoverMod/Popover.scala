@@ -9,8 +9,9 @@ import scala.scalajs.js.annotation._
 trait Popover
   extends reactLib.reactMod.Component[PopoverProps, js.Object, js.Any] {
   var tooltip: js.Any = js.native
-  def getOverlay(): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def getOverlay(prefixCls: java.lang.String): reactLib.reactMod.Global.JSXNs.Element = js.native
   def getPopupDomNode(): js.Any = js.native
+  def renderPopover(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def saveTooltip(node: js.Any): scala.Unit = js.native
 }
 

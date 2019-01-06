@@ -14,7 +14,7 @@ class Steps ()
 @js.native
 object Steps extends js.Object {
   var Step: js.Any = js.native
-  var defaultProps: antdLib.Anon_PrefixClsIconPrefix = js.native
+  var defaultProps: antdLib.Anon_Current = js.native
   var propTypes: antdLib.Anon_PrefixCls = js.native
 }
 

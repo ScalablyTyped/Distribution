@@ -13,6 +13,6 @@ class Popover ()
 @JSImport("antd", "Popover")
 @js.native
 object Popover extends js.Object {
-  var defaultProps: antdLib.Anon_TransitionNamePrefixClsMouseLeaveDelay = js.native
+  var defaultProps: antdLib.Anon_TransitionNameMouseLeaveDelayPlacement = js.native
 }
 

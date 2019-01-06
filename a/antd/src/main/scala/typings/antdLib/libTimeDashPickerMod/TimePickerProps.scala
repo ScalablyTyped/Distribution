@@ -31,6 +31,9 @@ trait TimePickerProps extends js.Object {
   var hourStep: js.UndefOr[scala.Double] = js.undefined
   var inputReadOnly: js.UndefOr[scala.Boolean] = js.undefined
   var minuteStep: js.UndefOr[scala.Double] = js.undefined
+  var onAmPmChange: js.UndefOr[
+    js.Function1[/* ampm */ antdLib.antdLibStrings.AM | antdLib.antdLibStrings.PM, scala.Unit]
+  ] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
       /* time */ momentLib.momentMod.momentNs.Moment, 
@@ -42,6 +45,7 @@ trait TimePickerProps extends js.Object {
   var open: js.UndefOr[scala.Boolean] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var popupClassName: js.UndefOr[java.lang.String] = js.undefined
+  var popupStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var secondStep: js.UndefOr[scala.Double] = js.undefined
   var size: js.UndefOr[

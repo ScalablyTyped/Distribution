@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Indeterminate extends js.Object {
   var indeterminate: scala.Boolean
-  var prefixCls: java.lang.String
 }
 

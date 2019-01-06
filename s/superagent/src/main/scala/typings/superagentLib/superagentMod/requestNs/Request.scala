@@ -65,6 +65,8 @@ trait Request
   def serialize(serializer: superagentLib.Serializer): this.type = js.native
   def set(field: java.lang.String, `val`: java.lang.String): this.type = js.native
   def set(field: js.Object): this.type = js.native
+  @JSName("set")
+  def set_Cookie(field: superagentLib.superagentLibStrings.Cookie, `val`: js.Array[java.lang.String]): this.type = js.native
   def timeout(ms: scala.Double): this.type = js.native
   def timeout(ms: superagentLib.Anon_Deadline): this.type = js.native
   def `type`(`val`: java.lang.String): this.type = js.native

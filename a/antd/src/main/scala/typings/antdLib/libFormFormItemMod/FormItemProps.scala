@@ -17,8 +17,8 @@ trait FormItemProps extends js.Object {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var validateStatus: /* import warning: ImportType.apply Failed type conversion: ['success', 'warning', 'error', 'validating'][number] */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: ['success', 'warning', 'error', 'validating'][number] */ js.Any
+  var validateStatus: /* import warning: ImportType.apply Failed type conversion: ['success', 'warning', 'error', 'validating', ''][number] */ js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: ['success', 'warning', 'error', 'validating', ''][number] */ js.Any
   ] = js.undefined
   var wrapperCol: js.UndefOr[antdLib.libGridColMod.ColProps] = js.undefined
 }

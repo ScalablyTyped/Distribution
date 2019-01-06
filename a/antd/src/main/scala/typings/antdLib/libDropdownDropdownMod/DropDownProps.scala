@@ -13,8 +13,9 @@ trait DropDownProps extends js.Object {
   var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ reactLib.Element, reactLib.HTMLElement]] = js.undefined
   var mouseEnterDelay: js.UndefOr[scala.Double] = js.undefined
   var mouseLeaveDelay: js.UndefOr[scala.Double] = js.undefined
-  var onVisibleChange: js.UndefOr[js.Function1[/* visible */ js.UndefOr[scala.Boolean], scala.Unit]] = js.undefined
-  var overlay: reactLib.reactMod.ReactNs.ReactNode
+  var onVisibleChange: js.UndefOr[js.Function1[/* visible */ scala.Boolean, scala.Unit]] = js.undefined
+  var openClassName: js.UndefOr[java.lang.String] = js.undefined
+  var overlay: reactLib.reactMod.ReactNs.ReactNode | OverlayFunc
   var overlayClassName: js.UndefOr[java.lang.String] = js.undefined
   var overlayStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var placement: js.UndefOr[Placement] = js.undefined

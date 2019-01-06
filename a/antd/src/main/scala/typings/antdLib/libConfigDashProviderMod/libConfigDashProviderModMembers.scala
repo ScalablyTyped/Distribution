@@ -9,9 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object libConfigDashProviderModMembers extends js.Object {
   val ConfigConsumer: reactLib.reactMod.ReactNs.ComponentClass[
-    createDashReactDashContextLib.createDashReactDashContextMod.ConsumerProps[ConfigProviderProps | scala.Null], 
+    createDashReactDashContextLib.createDashReactDashContextMod.ConsumerProps[ConfigConsumerProps | scala.Null], 
     js.Any
   ] = js.native
-  val default: reactLib.reactMod.ReactNs.SFC[ConfigProviderProps] = js.native
+  def withConfigConsumer[ExportProps /* <: BasicExportProps */](config: ConsumerConfig): js.Function1[
+    /* Component */ IReactComponent[_], 
+    reactLib.reactMod.ReactNs.FunctionComponent[ExportProps]
+  ] = js.native
 }
 

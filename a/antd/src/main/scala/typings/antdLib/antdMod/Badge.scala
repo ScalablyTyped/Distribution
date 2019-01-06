@@ -13,7 +13,7 @@ class Badge ()
 @JSImport("antd", "Badge")
 @js.native
 object Badge extends js.Object {
-  var defaultProps: antdLib.Anon_Dot = js.native
+  var defaultProps: antdLib.Anon_CountOverflowCount = js.native
   var propTypes: antdLib.Anon_Count = js.native
 }
 

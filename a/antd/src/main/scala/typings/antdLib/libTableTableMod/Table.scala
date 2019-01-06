@@ -73,18 +73,21 @@ trait Table[T]
   def isSameColumn(a: antdLib.libTableInterfaceMod.ColumnProps[T], b: antdLib.libTableInterfaceMod.ColumnProps[T]): js.Any = js.native
   def isSameColumn(a: scala.Null, b: antdLib.libTableInterfaceMod.ColumnProps[T]): js.Any = js.native
   def isSortColumn(column: antdLib.libTableInterfaceMod.ColumnProps[T]): scala.Boolean = js.native
-  def onRow(record: T, index: scala.Double): js.Any = js.native
+  def onRow(prefixCls: java.lang.String, record: T, index: scala.Double): js.Any = js.native
   def prepareParamsArguments(state: js.Any): antdLib.libTableInterfaceMod.PrepareParamsArgumentsReturn[T] = js.native
   def recursiveSort(data: js.Array[T], sorterFn: js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double]): js.Array[T] = js.native
   def renderColumnTitle(): reactLib.reactMod.ReactNs.ReactNode = js.native
   def renderColumnTitle(title: js.Function1[/* options */ antdLib.Anon_Filters, reactLib.reactMod.ReactNs.ReactNode]): reactLib.reactMod.ReactNs.ReactNode = js.native
   def renderColumnTitle(title: reactLib.reactMod.ReactNs.ReactNode): reactLib.reactMod.ReactNs.ReactNode = js.native
   def renderColumnsDropdown(
+    prefixCls: java.lang.String,
+    dropdownPrefixCls: java.lang.String,
     columns: js.Array[antdLib.libTableInterfaceMod.ColumnProps[T]],
     locale: antdLib.libTableInterfaceMod.TableLocale
   ): js.Array[_] = js.native
-  def renderPagination(paginationPosition: java.lang.String): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
-  def renderRowSelection(locale: antdLib.libTableInterfaceMod.TableLocale): js.Array[antdLib.libTableInterfaceMod.ColumnProps[T]] = js.native
+  def renderComponent(hasGetPrefixClsRenderEmpty: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderPagination(prefixCls: java.lang.String, paginationPosition: java.lang.String): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
+  def renderRowSelection(prefixCls: java.lang.String, locale: antdLib.libTableInterfaceMod.TableLocale): js.Array[antdLib.libTableInterfaceMod.ColumnProps[T]] = js.native
   def renderSelectionBox(): js.Function3[
     /* _ */ js.Any, 
     /* record */ T, 
@@ -105,7 +108,16 @@ trait Table[T]
     /* index */ scala.Double, 
     reactLib.reactMod.Global.JSXNs.Element
   ] = js.native
-  def renderTable(contextLocale: antdLib.libTableInterfaceMod.TableLocale, loading: antdLib.libSpinMod.SpinProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderTable(
+    prefixCls: java.lang.String,
+    renderEmpty: js.Function1[
+      /* componentName */ js.UndefOr[java.lang.String], 
+      reactLib.reactMod.ReactNs.ReactNode
+    ],
+    dropdownPrefixCls: java.lang.String,
+    contextLocale: antdLib.libTableInterfaceMod.TableLocale,
+    loading: antdLib.libSpinMod.SpinProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def setSelectedRowKeys(
     selectedRowKeys: js.Array[java.lang.String],
     selectionInfo: antdLib.libTableInterfaceMod.SelectionInfo[T]

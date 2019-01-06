@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-jwt"
-version := "0.0-unknown-dt-20180409Z-430e09"
+version := "0.0-unknown-dt-20181211Z-5e639a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

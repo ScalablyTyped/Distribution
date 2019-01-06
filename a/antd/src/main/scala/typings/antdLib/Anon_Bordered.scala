@@ -11,10 +11,10 @@ trait Anon_Bordered extends js.Object {
   var dataSource: js.Array[scala.Nothing]
   var indentSize: scala.Double
   var loading: scala.Boolean
-  var prefixCls: java.lang.String
   var rowKey: java.lang.String
   var showHeader: scala.Boolean
   var size: antdLib.libTableInterfaceMod.TableSize
+  var sortDirections: js.Array[java.lang.String]
   var useFixedHeader: scala.Boolean
 }
 

@@ -18,6 +18,6 @@ object default extends js.Object {
     antdLib.libRadioGroupMod.default
   ] = js.native
   var contextTypes: antdLib.Anon_RadioGroup = js.native
-  var defaultProps: antdLib.Anon_PrefixClsType = js.native
+  var defaultProps: antdLib.Anon_Type = js.native
 }
 

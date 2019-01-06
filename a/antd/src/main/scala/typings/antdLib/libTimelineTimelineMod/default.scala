@@ -12,7 +12,13 @@ class default () extends Timeline
 @JSImport("antd/lib/timeline/Timeline", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Item: reactLib.reactMod.ReactNs.ClassicComponentClass[antdLib.libTimelineTimelineItemMod.TimeLineItemProps] = js.native
-  var defaultProps: antdLib.Anon_PrefixClsMode = js.native
+  @JSName("Item")
+  var Item_Original: reactLib.reactMod.ReactNs.SFC[antdLib.libTimelineTimelineItemMod.TimeLineItemProps] = js.native
+  var defaultProps: antdLib.Anon_Mode = js.native
+  def Item(props: antdLib.libTimelineTimelineItemMod.TimeLineItemProps with reactLib.Anon_Children): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def Item(
+    props: antdLib.libTimelineTimelineItemMod.TimeLineItemProps with reactLib.Anon_Children,
+    context: js.Any
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }
 

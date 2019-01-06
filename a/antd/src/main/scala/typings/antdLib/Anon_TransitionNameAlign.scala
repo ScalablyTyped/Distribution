@@ -14,7 +14,6 @@ trait Anon_TransitionNameAlign extends js.Object {
   var focusOnOpen: scala.Boolean
   var hideDisabledOptions: scala.Boolean
   var placement: java.lang.String
-  var prefixCls: java.lang.String
   var transitionName: java.lang.String
 }
 

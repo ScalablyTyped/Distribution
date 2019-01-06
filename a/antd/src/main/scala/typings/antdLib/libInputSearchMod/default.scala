@@ -12,6 +12,6 @@ class default () extends Search
 @JSImport("antd/lib/input/Search", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: antdLib.Anon_PrefixClsEnterButton = js.native
+  var defaultProps: antdLib.Anon_EnterButton = js.native
 }
 

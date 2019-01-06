@@ -13,7 +13,6 @@ trait Anon_BeforeUpload extends js.Object {
   var disabled: scala.Boolean
   var listType: antdLib.libUploadInterfaceMod.UploadListType
   var multiple: scala.Boolean
-  var prefixCls: java.lang.String
   var showUploadList: scala.Boolean
   var supportServerRender: scala.Boolean
   var `type`: antdLib.libUploadInterfaceMod.UploadType

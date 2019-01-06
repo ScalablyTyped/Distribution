@@ -12,6 +12,6 @@ class default () extends Avatar
 @JSImport("antd/lib/avatar", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: antdLib.Anon_PrefixClsSize = js.native
+  var defaultProps: antdLib.Anon_Size = js.native
 }
 

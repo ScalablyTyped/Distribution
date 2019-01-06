@@ -16,7 +16,9 @@ trait PickerProps extends js.Object {
     ]
   ] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var disabledDate: js.UndefOr[js.Function1[/* current */ momentLib.momentMod.momentNs.Moment, scala.Boolean]] = js.undefined
+  var disabledDate: js.UndefOr[
+    js.Function1[/* current */ js.UndefOr[momentLib.momentMod.momentNs.Moment], scala.Boolean]
+  ] = js.undefined
   var dropdownClassName: js.UndefOr[java.lang.String] = js.undefined
   var format: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var getCalendarContainer: js.UndefOr[js.Function1[/* triggerNode */ reactLib.Element, reactLib.HTMLElement]] = js.undefined

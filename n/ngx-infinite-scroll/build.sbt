@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ngx-infinite-scroll"
-version := "7.0.0-7a2e1a"
+version := "7.0.1-7a2e1a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

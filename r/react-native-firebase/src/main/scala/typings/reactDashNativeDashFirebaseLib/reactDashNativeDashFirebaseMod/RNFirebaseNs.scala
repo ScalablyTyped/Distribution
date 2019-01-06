@@ -657,6 +657,10 @@ object RNFirebaseNs extends js.Object {
         */
       def crash(): scala.Unit
       /**
+        * Enable Crashlytics reporting. Only avaliable when disabled automatic initialization
+        */
+      def enableCrashlyticsCollection(): scala.Unit
+      /**
         * Logs a message that will appear in any subsequent crash reports.
         */
       def log(message: java.lang.String): scala.Unit
@@ -971,9 +975,9 @@ object RNFirebaseNs extends js.Object {
   object firestoreNs extends js.Object {
     @js.native
     class Blob () extends js.Object {
-      var toUint8Array: stdLib.Uint8Array = js.native
       def isEqual(other: Blob): scala.Boolean = js.native
       def toBase64(): java.lang.String = js.native
+      def toUint8Array(): stdLib.Uint8Array = js.native
     }
     
     @js.native
@@ -1799,6 +1803,11 @@ object RNFirebaseNs extends js.Object {
     
     @js.native
     trait Messaging extends js.Object {
+      /**
+        * Returns firebase.messaging.IOSMessaging that gets the
+        *  iOS specific methods and properties of messaging.
+        */
+      var ios: IOSMessaging = js.native
       def deleteToken(): js.Promise[scala.Unit] = js.native
       def deleteToken(authorizedEntity: java.lang.String): js.Promise[scala.Unit] = js.native
       def deleteToken(authorizedEntity: java.lang.String, scope: java.lang.String): js.Promise[scala.Unit] = js.native
@@ -1824,7 +1833,7 @@ object RNFirebaseNs extends js.Object {
       /**
         * Requests app notification permissions in an Alert dialog.
         */
-      def requestPermission(): js.Promise[scala.Boolean] = js.native
+      def requestPermission(): js.Promise[scala.Unit] = js.native
       /**
         * Send an upstream message
         */
@@ -1841,7 +1850,6 @@ object RNFirebaseNs extends js.Object {
     
     trait MessagingStatics extends js.Object {
       var RemoteMessage: org.scalablytyped.runtime.Instantiable0[RemoteMessage]
-      var ios: IOSMessaging
     }
     
     @js.native

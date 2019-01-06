@@ -9,7 +9,7 @@ trait DrawerProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var closable: js.UndefOr[scala.Boolean] = js.undefined
   var destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined
-  var getContainer: js.UndefOr[java.lang.String | reactLib.HTMLElement | getContainerfunc] = js.undefined
+  var getContainer: js.UndefOr[java.lang.String | reactLib.HTMLElement | getContainerFunc] = js.undefined
   var height: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var mask: js.UndefOr[scala.Boolean] = js.undefined
   var maskClosable: js.UndefOr[scala.Boolean] = js.undefined

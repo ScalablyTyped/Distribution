@@ -28,6 +28,8 @@ trait Props extends js.Object {
   var htmlOpenClassName: js.UndefOr[java.lang.String] = js.undefined
   /* Boolean describing if the modal should be shown or not. Defaults to false. */
   var isOpen: scala.Boolean
+  /* Function that will be run after the modal has closed. */
+  var onAfterClose: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /* Function that will be run after the modal has opened. */
   var onAfterOpen: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /* Function that will be run when the modal is requested to be closed, prior to actually closing. */

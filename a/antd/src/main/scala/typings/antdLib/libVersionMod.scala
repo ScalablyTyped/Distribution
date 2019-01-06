@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/version", JSImport.Namespace)
 @js.native
 object libVersionMod extends js.Object {
-  var default: antdLib.antdLibStrings.`3DOT11DOT6` = js.native
+  var default: antdLib.antdLibStrings.`3DOT12DOT0` = js.native
 }
 

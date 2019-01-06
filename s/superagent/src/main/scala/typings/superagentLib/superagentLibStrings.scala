@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 object superagentLibStrings {
   @js.native
+  sealed trait Cookie extends js.Object
+  
+  @js.native
+  sealed trait `Set-Cookie` extends js.Object
+  
+  @js.native
   sealed trait auto extends js.Object
   
   @js.native
@@ -27,6 +33,8 @@ object superagentLibStrings {
   @js.native
   sealed trait upload extends js.Object
   
+  def Cookie: Cookie = "Cookie".asInstanceOf[Cookie]
+  def `Set-Cookie`: `Set-Cookie` = "Set-Cookie".asInstanceOf[`Set-Cookie`]
   def auto: auto = "auto".asInstanceOf[auto]
   def basic: basic = "basic".asInstanceOf[basic]
   def bearer: bearer = "bearer".asInstanceOf[bearer]

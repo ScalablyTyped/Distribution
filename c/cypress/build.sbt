@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cypress"
-version := "3.1.4-94152b"
+version := "3.1.4-ee7382"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-d86840",
   "org.scalablytyped" %%% "chai" % "4.1-dt-20181019Z-db823b",
   "org.scalablytyped" %%% "chai-jquery" % "1.1.1-dt-20181023Z-917d72",
-  "org.scalablytyped" %%% "chalk" % "2.4.1-b06515",
+  "org.scalablytyped" %%% "chalk" % "2.4.2-b06515",
   "org.scalablytyped" %%% "check-more-types" % "2.24.0-c90072",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-a35d04",
   "org.scalablytyped" %%% "commander" % "2.19.0-30fe69",

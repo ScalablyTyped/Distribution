@@ -12,5 +12,6 @@ trait BackTopProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var target: js.UndefOr[js.Function0[reactLib.HTMLElement | stdLib.Window]] = js.undefined
   var visibilityHeight: js.UndefOr[scala.Double] = js.undefined
+  var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 

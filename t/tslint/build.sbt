@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tslint"
-version := "5.12.0-c465e2"
+version := "5.12.0-7d7e37"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-25ff53",
   "org.scalablytyped" %%% "babel-code-frame" % "6.20-dt-20180214Z-465e28",
   "org.scalablytyped" %%% "builtin-modules" % "2.0-dt-20180214Z-2a2ba1",
-  "org.scalablytyped" %%% "chalk" % "2.4.1-b06515",
+  "org.scalablytyped" %%% "chalk" % "2.4.2-b06515",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-a35d04",
   "org.scalablytyped" %%% "commander" % "2.19.0-30fe69",
   "org.scalablytyped" %%% "diff" % "3.5-dt-20181102Z-47e6cf",

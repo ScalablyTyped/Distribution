@@ -15,6 +15,6 @@ class Slider protected ()
 @JSImport("antd", "Slider")
 @js.native
 object Slider extends js.Object {
-  var defaultProps: antdLib.Anon_PrefixClsTooltipPrefixCls = js.native
+  var defaultProps: antdLib.Anon_TipFormatter = js.native
 }
 

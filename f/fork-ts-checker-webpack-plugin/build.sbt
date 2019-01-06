@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fork-ts-checker-webpack-plugin"
-version := "0.5.2-e30504"
+version := "0.5.2-d32a09"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "babel-code-frame" % "6.20-dt-20180214Z-465e28",
   "org.scalablytyped" %%% "braces" % "2.3-dt-20180214Z-f2c1f2",
   "org.scalablytyped" %%% "builtin-modules" % "2.0-dt-20180214Z-2a2ba1",
-  "org.scalablytyped" %%% "chalk" % "2.4.1-b06515",
+  "org.scalablytyped" %%% "chalk" % "2.4.2-b06515",
   "org.scalablytyped" %%% "chokidar" % "1.7-dt-20180226Z-45865a",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-a35d04",
   "org.scalablytyped" %%% "commander" % "2.19.0-30fe69",
@@ -29,7 +29,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-a489b6",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180713Z-48ad47",
   "org.scalablytyped" %%% "tslib" % "1.9.3-5f911d",
-  "org.scalablytyped" %%% "tslint" % "5.12.0-c465e2",
+  "org.scalablytyped" %%% "tslint" % "5.12.0-7d7e37",
   "org.scalablytyped" %%% "tsutils" % "2.29.0-75e175",
   "org.scalablytyped" %%% "typescript" % "3.2.2-aeda64",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-8b616d",

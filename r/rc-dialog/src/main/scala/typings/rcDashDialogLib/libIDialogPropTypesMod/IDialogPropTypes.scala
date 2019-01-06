@@ -16,6 +16,7 @@ trait IDialogPropTypes extends js.Object {
   var closeIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined
   var footer: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var forceRender: js.UndefOr[scala.Boolean] = js.undefined
   var getContainer: js.UndefOr[js.Function0[reactLib.HTMLElement]] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var keyboard: js.UndefOr[scala.Boolean] = js.undefined

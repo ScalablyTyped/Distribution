@@ -19,6 +19,7 @@ trait Carousel
   def next(): scala.Unit = js.native
   def onWindowResized(): scala.Unit = js.native
   def prev(): scala.Unit = js.native
+  def renderCarousel(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def saveSlick(node: js.Any): scala.Unit = js.native
 }
 

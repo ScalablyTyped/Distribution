@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "protractor"
-version := "5.4.2-e90a16"
+version := "5.4.2-939c03"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-25ff53",
   "org.scalablytyped" %%% "blocking-proxy" % "1.0.1-de822c",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-d86840",
-  "org.scalablytyped" %%% "chalk" % "2.4.1-b06515",
+  "org.scalablytyped" %%% "chalk" % "2.4.2-b06515",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-a35d04",
   "org.scalablytyped" %%% "del" % "3.0-dt-20180311Z-7d7efd",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-4eeb6b",
@@ -33,7 +33,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-a489b6",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20181015Z-a8bc3f",
   "org.scalablytyped" %%% "webdriver-js-extender" % "2.1.0-8eb937",
-  "org.scalablytyped" %%% "webdriver-manager" % "12.1.0-428be6",
+  "org.scalablytyped" %%% "webdriver-manager" % "12.1.0-10cfae",
   "org.scalablytyped" %%% "xml2js" % "0.4-dt-20180606Z-710734")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -9,7 +9,10 @@ trait DatePickerProps
   extends PickerProps
      with SinglePickerProps {
   var disabledTime: js.UndefOr[
-    js.Function1[/* current */ momentLib.momentMod.momentNs.Moment, antdLib.Anon_DisabledHours]
+    js.Function1[
+      /* current */ js.UndefOr[momentLib.momentMod.momentNs.Moment], 
+      antdLib.Anon_DisabledHours
+    ]
   ] = js.undefined
   var onOk: js.UndefOr[js.Function1[/* selectedTime */ RangePickerValue, scala.Unit]] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "react-toolbox"
-version := "2.0.0-beta.13-8d2727"
+version := "2.0.0-beta.13-3f7147"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "classnames" % "2.2-dt-20180721Z-b84a90",
+  "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-b84a90",
   "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-ec75e2",
   "org.scalablytyped" %%% "csstype" % "2.5.8-a13970",
   "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180806Z-0ae6f5",

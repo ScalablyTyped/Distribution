@@ -11,10 +11,10 @@ trait Select[T]
   var rcSelect: js.Any = js.native
   def blur(): scala.Unit = js.native
   def focus(): scala.Unit = js.native
-  def getNotFoundContent(locale: SelectLocale): js.UndefOr[js.Object | scala.Null] = js.native
+  def getNotFoundContent(renderEmpty: antdLib.libConfigDashProviderRenderEmptyMod.RenderEmptyHandler): js.UndefOr[js.Object | scala.Null] = js.native
   def isCombobox(): scala.Boolean = js.native
-  def renderSelect(locale: SelectLocale): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def renderSuffixIcon(): js.Object = js.native
+  def renderSelect(hasGetPopupContainerGetPrefixClsRenderEmpty: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderSuffixIcon(prefixCls: java.lang.String): js.Object = js.native
   def saveSelect(node: js.Any): scala.Unit = js.native
 }
 

@@ -31,6 +31,7 @@ trait Upload
   def onProgress(e: antdLib.Anon_Percent, file: antdLib.libUploadInterfaceMod.UploadFile): scala.Unit = js.native
   def onStart(file: antdLib.libUploadInterfaceMod.RcFile): scala.Unit = js.native
   def onSuccess(response: js.Any, file: antdLib.libUploadInterfaceMod.UploadFile): scala.Unit = js.native
+  def renderUpload(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def renderUploadList(locale: antdLib.libUploadInterfaceMod.UploadLocale): reactLib.reactMod.Global.JSXNs.Element = js.native
   def saveUpload(node: js.Any): scala.Unit = js.native
 }

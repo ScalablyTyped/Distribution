@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "promisify-supertest"
-version := "v1.0.0-dt-20180214Z-80c998"
+version := "v1.0.0-dt-20180214Z-7fde04"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -16,7 +16,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-5932ee",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-d30fee",
   "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff",
-  "org.scalablytyped" %%% "superagent" % "3.8-dt-20181204Z-6d79cb")
+  "org.scalablytyped" %%% "superagent" % "3.8-dt-20181230Z-7e4788")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

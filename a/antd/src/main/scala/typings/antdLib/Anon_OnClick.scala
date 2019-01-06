@@ -18,8 +18,6 @@ trait Anon_OnClick extends js.Object {
   var size: propDashTypesLib.propDashTypesMod.Requireable[
     antdLib.antdLibStrings.small | antdLib.antdLibStrings.default | antdLib.antdLibStrings.large
   ]
-  var `type`: propDashTypesLib.propDashTypesMod.Requireable[
-    antdLib.antdLibStrings.default | antdLib.antdLibStrings.dashed | antdLib.antdLibStrings.primary | antdLib.antdLibStrings.ghost | antdLib.antdLibStrings.danger
-  ]
+  var `type`: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
 }
 

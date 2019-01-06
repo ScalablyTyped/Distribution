@@ -18,9 +18,7 @@ import scala.scalajs.js.annotation._
   var max: js.UndefOr[scala.Double] = js.undefined
   var min: js.UndefOr[scala.Double] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var onChange: js.UndefOr[
-    js.Function1[/* value */ js.UndefOr[scala.Double | java.lang.String], scala.Unit]
-  ] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[scala.Double], scala.Unit]] = js.undefined
   var parser: js.UndefOr[js.Function1[/* displayValue */ js.UndefOr[java.lang.String], scala.Double]] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var precision: js.UndefOr[scala.Double] = js.undefined

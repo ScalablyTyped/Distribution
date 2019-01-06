@@ -14,6 +14,6 @@ class default ()
 @js.native
 object default extends js.Object {
   var Button: org.scalablytyped.runtime.Instantiable0[antdLib.libDropdownDropdownDashButtonMod.default] = js.native
-  var defaultProps: antdLib.Anon_PrefixClsPlacement = js.native
+  var defaultProps: antdLib.Anon_Placement = js.native
 }
 

@@ -14,7 +14,7 @@ class Breadcrumb ()
 @js.native
 object Breadcrumb extends js.Object {
   var Item: org.scalablytyped.runtime.Instantiable0[antdLib.libBreadcrumbBreadcrumbItemMod.default] = js.native
-  var defaultProps: antdLib.Anon_PrefixClsSeparator = js.native
+  var defaultProps: antdLib.Anon_Separator = js.native
   var propTypes: antdLib.Anon_Routes = js.native
 }
 

@@ -12,6 +12,6 @@ class default () extends DialogWrap
 @JSImport("rc-dialog", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: rcDashDialogLib.Anon_Visible = js.native
+  var defaultProps: rcDashDialogLib.Anon_ForceRender = js.native
 }
 

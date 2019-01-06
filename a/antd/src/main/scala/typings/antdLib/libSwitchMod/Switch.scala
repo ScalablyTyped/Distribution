@@ -11,6 +11,7 @@ trait Switch
   var rcSwitch: js.Any = js.native
   def blur(): scala.Unit = js.native
   def focus(): scala.Unit = js.native
+  def renderSwitch(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def saveSwitch(node: js.Any): scala.Unit = js.native
 }
 

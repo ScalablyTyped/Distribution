@@ -16,5 +16,6 @@ trait Tabs
     targetKey: java.lang.String,
     e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.MouseEvent]
   ): scala.Unit = js.native
+  def renderTabs(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

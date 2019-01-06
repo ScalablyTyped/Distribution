@@ -28,7 +28,7 @@ trait PopconfirmProps
   @JSName("onVisibleChange")
   var onVisibleChange_PopconfirmProps: js.UndefOr[
     js.Function2[
-      /* visible */ js.UndefOr[scala.Boolean], 
+      /* visible */ scala.Boolean, 
       /* e */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]], 
       scala.Unit
     ]

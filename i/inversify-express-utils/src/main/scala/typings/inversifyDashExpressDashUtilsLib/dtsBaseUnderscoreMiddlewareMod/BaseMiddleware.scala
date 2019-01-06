@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("inversify-express-utils/dts/base_middleware", "BaseMiddleware")
 @js.native
 abstract class BaseMiddleware () extends js.Object {
-  val _container: js.Any = js.native
   val httpContext: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.HttpContext = js.native
   /* protected */ def bind[T](
     serviceIdentifier: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify inversifyInterfaces.ServiceIdentifier<T> */ js.Any

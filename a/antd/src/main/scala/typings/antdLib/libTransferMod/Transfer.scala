@@ -11,7 +11,13 @@ trait Transfer
   var separatedDataSource: antdLib.Anon_RightDataSource | scala.Null = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MTransfer(nextProps: TransferProps): scala.Unit = js.native
-  def getLocale(transferLocale: TransferLocale): antdLib.Anon_ItemsUnit = js.native
+  def getLocale(
+    transferLocale: TransferLocale,
+    renderEmpty: js.Function1[
+      /* componentName */ js.UndefOr[java.lang.String], 
+      reactLib.reactMod.ReactNs.ReactNode
+    ]
+  ): antdLib.Anon_ItemsUnit = js.native
   def getSelectedKeysName(direction: TransferDirection): antdLib.antdLibStrings.sourceSelectedKeys | antdLib.antdLibStrings.targetSelectedKeys = js.native
   def getTitles(transferLocale: TransferLocale): js.Array[java.lang.String] = js.native
   @JSName("handleClear")

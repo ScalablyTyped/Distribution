@@ -16,6 +16,7 @@ trait Avatar
   @JSName("componentDidUpdate")
   def componentDidUpdate_MAvatar(prevProps: AvatarProps, prevState: AvatarState): scala.Unit = js.native
   def handleImgLoadError(): scala.Unit = js.native
+  def renderAvatar(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def setScale(): scala.Unit = js.native
 }
 

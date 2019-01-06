@@ -28,6 +28,7 @@ object Modal extends js.Object {
   @JSName("warning")
   var warning_Original: antdLib.libModalModalMod.ModalFunc = js.native
   def confirm(props: antdLib.libModalModalMod.ModalFuncProps): antdLib.Anon_Update = js.native
+  def destroyAll(): scala.Unit = js.native
   def error(props: antdLib.libModalModalMod.ModalFuncProps): antdLib.Anon_Update = js.native
   def info(props: antdLib.libModalModalMod.ModalFuncProps): antdLib.Anon_Update = js.native
   def success(props: antdLib.libModalModalMod.ModalFuncProps): antdLib.Anon_Update = js.native

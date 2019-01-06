@@ -17,5 +17,6 @@ trait AnchorLink
   @JSName("componentWillUnmount")
   def componentWillUnmount_MAnchorLink(): scala.Unit = js.native
   def handleClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.MouseEvent]): scala.Unit = js.native
+  def renderAnchorLink(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

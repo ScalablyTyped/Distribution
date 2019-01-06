@@ -14,7 +14,14 @@ trait List
   var state_List: antdLib.Anon_PaginationCurrent = js.native
   def getChildContext(): antdLib.Anon_GridListGridType = js.native
   def isSomethingAfterLastItem(): scala.Boolean = js.native
-  def renderEmpty(contextLocale: ListLocale): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderEmpty(
+    prefixCls: java.lang.String,
+    renderEmpty: js.Function1[
+      /* componentName */ js.UndefOr[java.lang.String], 
+      reactLib.reactMod.ReactNs.ReactNode
+    ]
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def renderItem(item: reactLib.reactMod.ReactNs.ReactElement[_], index: scala.Double): js.Any = js.native
+  def renderList(hasGetPrefixClsRenderEmpty: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

@@ -17,6 +17,7 @@ trait RateProps extends js.Object {
   var onHoverChange: js.UndefOr[js.Function1[/* value */ scala.Double, _]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var tooltips: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 

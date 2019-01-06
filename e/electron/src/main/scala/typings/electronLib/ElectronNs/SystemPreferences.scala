@@ -96,6 +96,7 @@ trait SystemPreferences extends EventEmitter {
   def isDarkMode(): scala.Boolean = js.native
   def isInvertedColorScheme(): scala.Boolean = js.native
   def isSwipeTrackingFromScrollEventsEnabled(): scala.Boolean = js.native
+  def isTrustedAccessibilityClient(prompt: scala.Boolean): scala.Boolean = js.native
   /**
     * NOTE: This event is only emitted after you have called
     * startAppLevelAppearanceTrackingOS

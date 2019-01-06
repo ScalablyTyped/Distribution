@@ -38,7 +38,7 @@ trait TableProps[T] extends js.Object {
   ] = js.undefined
   var indentSize: js.UndefOr[scala.Double] = js.undefined
   var loading: js.UndefOr[scala.Boolean | antdLib.libSpinMod.SpinProps] = js.undefined
-  var locale: js.UndefOr[js.Object] = js.undefined
+  var locale: js.UndefOr[antdLib.Anon_FilterConfirm] = js.undefined
   var onChange: js.UndefOr[
     js.Function3[
       /* pagination */ antdLib.libPaginationPaginationMod.PaginationConfig, 
@@ -73,6 +73,7 @@ trait TableProps[T] extends js.Object {
   var scroll: js.UndefOr[antdLib.Anon_Y] = js.undefined
   var showHeader: js.UndefOr[scala.Boolean] = js.undefined
   var size: js.UndefOr[TableSize] = js.undefined
+  var sortDirections: js.Array[SortOrder]
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var title: js.UndefOr[
     js.Function1[/* currentPageData */ js.Array[js.Object], reactLib.reactMod.ReactNs.ReactNode]

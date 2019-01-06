@@ -14,6 +14,5 @@ class Button ()
 @js.native
 object Button extends js.Object {
   var contextTypes: antdLib.Anon_RadioGroup = js.native
-  var defaultProps: antdLib.Anon_PrefixClsString = js.native
 }
 

@@ -21,6 +21,7 @@ trait Card
   def getCompatibleHoverable(): js.UndefOr[scala.Boolean] = js.native
   def isContainGrid(): js.UndefOr[scala.Nothing] = js.native
   def onTabChange(key: java.lang.String): scala.Unit = js.native
+  def renderCard(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def saveRef(node: reactLib.HTMLDivElement): scala.Unit = js.native
   def updateWiderPadding(): scala.Unit = js.native
 }

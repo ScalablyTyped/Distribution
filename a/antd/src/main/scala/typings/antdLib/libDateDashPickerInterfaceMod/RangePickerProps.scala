@@ -10,7 +10,7 @@ trait RangePickerProps extends PickerProps {
   var defaultValue: js.UndefOr[RangePickerValue] = js.undefined
   var disabledTime: js.UndefOr[
     js.Function2[
-      /* current */ momentLib.momentMod.momentNs.Moment, 
+      /* current */ js.UndefOr[momentLib.momentMod.momentNs.Moment], 
       /* type */ java.lang.String, 
       antdLib.Anon_DisabledHours
     ]

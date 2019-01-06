@@ -15,7 +15,7 @@ class Tooltip protected ()
 @JSImport("antd", "Tooltip")
 @js.native
 object Tooltip extends js.Object {
-  var defaultProps: antdLib.Anon_TransitionNamePrefixCls = js.native
+  var defaultProps: antdLib.Anon_TransitionNameMouseLeaveDelay = js.native
   def getDerivedStateFromProps(nextProps: antdLib.libTooltipMod.TooltipProps): antdLib.Anon_Visible | scala.Null = js.native
 }
 

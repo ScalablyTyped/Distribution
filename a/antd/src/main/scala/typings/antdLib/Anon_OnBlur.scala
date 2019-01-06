@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_OnBlur extends js.Object {
   var addonAfter: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike]
   var addonBefore: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike]
+  var allowClear: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
   var className: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   var defaultValue: propDashTypesLib.propDashTypesMod.Requireable[_]
   var disabled: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]

@@ -13,7 +13,6 @@ trait Anon_TransitionNameIcon extends js.Object {
   var placement: js.UndefOr[
     antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.top | antdLib.antdLibStrings.bottom | antdLib.antdLibStrings.bottomLeft | antdLib.antdLibStrings.bottomRight | antdLib.antdLibStrings.topLeft | antdLib.antdLibStrings.topRight | antdLib.antdLibStrings.leftTop | antdLib.antdLibStrings.leftBottom | antdLib.antdLibStrings.rightTop | antdLib.antdLibStrings.rightBottom
   ]
-  var prefixCls: java.lang.String
   var transitionName: java.lang.String
   var trigger: js.UndefOr[
     antdLib.antdLibStrings.click | antdLib.antdLibStrings.focus | antdLib.antdLibStrings.contextMenu | antdLib.antdLibStrings.hover

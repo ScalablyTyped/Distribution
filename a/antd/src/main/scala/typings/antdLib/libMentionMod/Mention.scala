@@ -16,5 +16,6 @@ trait Mention
   def onChange(editorState: js.Any): scala.Unit = js.native
   def onFocus(ev: reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLElement]): scala.Unit = js.native
   def onSearchChange(value: java.lang.String, prefix: java.lang.String): js.Any = js.native
+  def renderMention(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

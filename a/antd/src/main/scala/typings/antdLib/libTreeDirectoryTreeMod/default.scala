@@ -14,6 +14,6 @@ class default protected () extends DirectoryTree {
 @JSImport("antd/lib/tree/DirectoryTree", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: antdLib.Anon_PrefixClsShowIcon = js.native
+  var defaultProps: antdLib.Anon_ShowIcon = js.native
 }
 

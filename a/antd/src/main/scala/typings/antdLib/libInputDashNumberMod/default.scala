@@ -12,6 +12,6 @@ class default () extends InputNumber
 @JSImport("antd/lib/input-number", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: antdLib.Anon_PrefixClsStep = js.native
+  var defaultProps: antdLib.Anon_Step = js.native
 }
 

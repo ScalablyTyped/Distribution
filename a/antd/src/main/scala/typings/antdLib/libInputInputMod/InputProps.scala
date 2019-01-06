@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 - Lifted 1 members from Set(std.Pick<react.react.InputHTMLAttributes<react.HTMLInputElement>, std.Exclude<keyof react.react.InputHTMLAttributes<react.HTMLInputElement>, 'size' | 'prefix'>>) */ trait InputProps extends js.Object {
   var addonAfter: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var addonBefore: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var allowClear: js.UndefOr[scala.Boolean] = js.undefined
   var onPressEnter: js.UndefOr[reactLib.reactMod.ReactNs.KeyboardEventHandler[reactLib.HTMLInputElement]] = js.undefined
   var prefix: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined

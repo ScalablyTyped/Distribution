@@ -10,9 +10,3 @@ import scala.scalajs.js.annotation._
 class default ()
   extends antdLib.libPaginationPaginationMod.default
 
-@JSImport("antd/lib/pagination", JSImport.Default)
-@js.native
-object default extends js.Object {
-  var defaultProps: antdLib.Anon_PrefixClsSelectPrefixCls = js.native
-}
-

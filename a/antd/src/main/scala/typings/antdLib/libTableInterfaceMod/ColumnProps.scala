@@ -39,6 +39,7 @@ trait ColumnProps[T] extends js.Object {
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.undefined
+  var sortDirections: js.UndefOr[js.Array[SortOrder]] = js.undefined
   var sortOrder: js.UndefOr[SortOrder] = js.undefined
   var sorter: js.UndefOr[scala.Boolean | CompareFn[T]] = js.undefined
   var title: js.UndefOr[

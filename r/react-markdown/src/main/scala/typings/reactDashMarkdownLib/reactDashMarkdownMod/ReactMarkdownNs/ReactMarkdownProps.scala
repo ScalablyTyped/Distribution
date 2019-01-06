@@ -23,7 +23,9 @@ trait ReactMarkdownProps extends js.Object {
   val linkTarget: js.UndefOr[java.lang.String | LinkTargetResolver] = js.undefined
   val plugins: js.UndefOr[js.Array[_] | js.Function0[scala.Unit]] = js.undefined
   val rawSourcePos: js.UndefOr[scala.Boolean] = js.undefined
-  val renderers: js.UndefOr[reactDashMarkdownLib.reactDashMarkdownLibStrings.ReactMarkdownProps with js.Any] = js.undefined
+  val renderers: js.UndefOr[
+    org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactType[_]]
+  ] = js.undefined
   val skipHtml: js.UndefOr[scala.Boolean] = js.undefined
   val source: js.UndefOr[java.lang.String] = js.undefined
   val sourcePos: js.UndefOr[scala.Boolean] = js.undefined

@@ -32,5 +32,7 @@ trait Response
   var unauthorized: scala.Boolean = js.native
   var xhr: stdLib.XMLHttpRequest = js.native
   def get(header: java.lang.String): java.lang.String = js.native
+  @JSName("get")
+  def `get_Set-Cookie`(header: superagentLib.superagentLibStrings.`Set-Cookie`): js.Array[java.lang.String] = js.native
 }
 

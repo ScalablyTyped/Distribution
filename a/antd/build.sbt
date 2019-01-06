@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "antd"
-version := "3.11.6-675128"
+version := "3.12.0-ae435c"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ant-design__icons" % "1.1.16-e54412",
   "org.scalablytyped" %%% "ant-design__icons-react" % "1.1.2-44a578",
   "org.scalablytyped" %%% "array-tree-filter" % "2.1.0-d4cfdd",
-  "org.scalablytyped" %%% "classnames" % "2.2-dt-20180721Z-b84a90",
+  "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-b84a90",
   "org.scalablytyped" %%% "create-react-class" % "15.6-dt-20180806Z-da0e58",
   "org.scalablytyped" %%% "create-react-context" % "0.2.2-36e706",
   "org.scalablytyped" %%% "csstype" % "2.5.8-a13970",
@@ -19,8 +19,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-89199d",
   "org.scalablytyped" %%% "raf" % "3.4-dt-20190103Z-cf66c1",
-  "org.scalablytyped" %%% "rc-calendar" % "9.8.2-c88935",
-  "org.scalablytyped" %%% "rc-dialog" % "7.2.1-8496a8",
+  "org.scalablytyped" %%% "rc-calendar" % "9.10.4-f6118b",
+  "org.scalablytyped" %%% "rc-dialog" % "7.3.0-f2117b",
   "org.scalablytyped" %%% "rc-progress" % "2.2-dt-20181116Z-99eb07",
   "org.scalablytyped" %%% "rc-select" % "v5.9.0-dt-20180823Z-9232b8",
   "org.scalablytyped" %%% "rc-slider" % "8.6-dt-20180822Z-b36c8c",

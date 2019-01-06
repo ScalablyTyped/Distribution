@@ -6,8 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RollupWarning extends RollupLogProps {
-  @JSName("code")
-  var code_RollupWarning: java.lang.String
   var exportName: js.UndefOr[java.lang.String] = js.undefined
   var exporter: js.UndefOr[java.lang.String] = js.undefined
   var guess: js.UndefOr[java.lang.String] = js.undefined

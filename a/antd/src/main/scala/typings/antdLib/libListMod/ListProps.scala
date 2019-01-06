@@ -18,7 +18,7 @@ trait ListProps extends js.Object {
   var itemLayout: js.UndefOr[java.lang.String] = js.undefined
   var loadMore: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var loading: js.UndefOr[scala.Boolean | antdLib.libSpinMod.SpinProps] = js.undefined
-  var locale: js.UndefOr[js.Object] = js.undefined
+  var locale: js.UndefOr[ListLocale] = js.undefined
   var pagination: js.UndefOr[
     antdLib.libPaginationPaginationMod.PaginationConfig | antdLib.antdLibNumbers.`false`
   ] = js.undefined

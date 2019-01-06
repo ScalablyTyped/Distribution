@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typescript-optional"
-version := "1.8.0-d2161b"
+version := "2.0.1-da170c"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -22,6 +22,7 @@ trait Affix
   def componentWillReceiveProps_MAffix(nextProps: AffixProps): scala.Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MAffix(): scala.Unit = js.native
+  def renderAffix(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def saveFixedNode(node: reactLib.HTMLDivElement): scala.Unit = js.native
   def savePlaceholderNode(node: reactLib.HTMLDivElement): scala.Unit = js.native
   def setAffixStyle(e: reactLib.Event): scala.Unit = js.native

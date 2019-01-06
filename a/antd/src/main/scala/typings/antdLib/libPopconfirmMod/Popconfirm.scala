@@ -13,7 +13,8 @@ trait Popconfirm
   def onCancel(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.MouseEvent]): scala.Unit = js.native
   def onConfirm(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.MouseEvent]): scala.Unit = js.native
   def onVisibleChange(visible: scala.Boolean): scala.Unit = js.native
-  def renderOverlay(popconfirmLocale: PopconfirmLocale): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderConfirm(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderOverlay(prefixCls: java.lang.String, popconfirmLocale: PopconfirmLocale): reactLib.reactMod.Global.JSXNs.Element = js.native
   def saveTooltip(node: js.Any): scala.Unit = js.native
   def setVisible(visible: scala.Boolean): scala.Unit = js.native
   def setVisible(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-tslint"
-version := "8.1.3-1a8378"
+version := "8.1.3-509142"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-25ff53",
   "org.scalablytyped" %%% "babel-code-frame" % "6.20-dt-20180214Z-465e28",
   "org.scalablytyped" %%% "builtin-modules" % "2.0-dt-20180214Z-2a2ba1",
-  "org.scalablytyped" %%% "chalk" % "2.4.1-b06515",
+  "org.scalablytyped" %%% "chalk" % "2.4.2-b06515",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-a35d04",
   "org.scalablytyped" %%% "commander" % "2.19.0-30fe69",
   "org.scalablytyped" %%% "diff" % "3.5-dt-20181102Z-47e6cf",
@@ -26,7 +26,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-a489b6",
   "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20180214Z-f71070",
   "org.scalablytyped" %%% "tslib" % "1.9.3-5f911d",
-  "org.scalablytyped" %%% "tslint" % "5.12.0-c465e2",
+  "org.scalablytyped" %%% "tslint" % "5.12.0-7d7e37",
   "org.scalablytyped" %%% "tsutils" % "2.29.0-75e175",
   "org.scalablytyped" %%% "typescript" % "3.2.2-aeda64")
 publishArtifact in packageDoc := false

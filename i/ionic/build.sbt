@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ionic"
-version := "4.6.0-6fc075"
+version := "4.6.0-49643f"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-25ff53",
-  "org.scalablytyped" %%% "chalk" % "2.4.1-b06515",
+  "org.scalablytyped" %%% "chalk" % "2.4.2-b06515",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-a35d04",
   "org.scalablytyped" %%% "cookiejar" % "2.1-dt-20180706Z-bb0cb7",
   "org.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-2025c9",
@@ -16,7 +16,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-4eeb6b",
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-ef1d9b",
   "org.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20180808Z-673ec9",
-  "org.scalablytyped" %%% "ionic__cli-framework" % "1.5.1-1724ab",
+  "org.scalablytyped" %%% "ionic__cli-framework" % "1.5.1-01d70d",
   "org.scalablytyped" %%% "ionic__discover" % "1.0.9-d35c64",
   "org.scalablytyped" %%% "ionic__utils-fs" % "0.0.6-e28736",
   "org.scalablytyped" %%% "ionic__utils-network" % "0.0.5-9627d0",
@@ -49,7 +49,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff",
   "org.scalablytyped" %%% "string-width" % "2.0-dt-20180530Z-7c6ff8",
   "org.scalablytyped" %%% "strip-ansi" % "3.0-dt-20180214Z-3fde37",
-  "org.scalablytyped" %%% "superagent" % "3.8-dt-20181204Z-6d79cb",
+  "org.scalablytyped" %%% "superagent" % "3.8-dt-20181230Z-7e4788",
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-a489b6",
   "org.scalablytyped" %%% "tar" % "4.0-dt-20180214Z-da4f40",
   "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20180214Z-f71070",

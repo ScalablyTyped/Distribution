@@ -11,6 +11,7 @@ trait Checkbox
   var rcCheckbox: js.Any = js.native
   def blur(): scala.Unit = js.native
   def focus(): scala.Unit = js.native
+  def renderCheckbox(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def saveCheckbox(node: js.Any): scala.Unit = js.native
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MCheckbox(

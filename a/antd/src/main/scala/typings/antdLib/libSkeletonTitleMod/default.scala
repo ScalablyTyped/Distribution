@@ -9,9 +9,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Title
 
-@JSImport("antd/lib/skeleton/Title", JSImport.Default)
-@js.native
-object default extends js.Object {
-  var defaultProps: stdLib.Partial[antdLib.libSkeletonTitleMod.SkeletonTitleProps] = js.native
-}
-

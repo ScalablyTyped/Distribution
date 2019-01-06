@@ -22,7 +22,7 @@ trait Menu
   def handleMouseEnter(e: reactLib.MouseEvent): scala.Unit = js.native
   def handleOpenChange(openKeys: js.Array[java.lang.String]): scala.Unit = js.native
   def handleTransitionEnd(e: reactLib.TransitionEvent): scala.Unit = js.native
-  def renderMenu(hasGetPopupContainer: antdLib.libConfigDashProviderMod.ConfigProviderProps): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
+  def renderMenu(hasGetPopupContainerGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   def restoreModeVerticalFromInline(): scala.Unit = js.native
   def setOpenKeys(openKeys: js.Array[java.lang.String]): scala.Unit = js.native
 }

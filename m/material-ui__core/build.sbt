@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "material-ui__core"
-version := "3.8.1-f716a1"
+version := "3.8.1-c2a792"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "classnames" % "2.2-dt-20180721Z-b84a90",
+  "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-b84a90",
   "org.scalablytyped" %%% "csstype" % "2.5.8-a13970",
   "org.scalablytyped" %%% "debounce" % "1.2-dt-20181201Z-02072a",
   "org.scalablytyped" %%% "deepmerge" % "3.0.0-6da049",

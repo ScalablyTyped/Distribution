@@ -424,7 +424,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var backgroundAttachment: js.UndefOr[java.lang.String] = js.undefined
   var backgroundBlendMode: js.UndefOr[java.lang.String] = js.undefined
   var backgroundClip: js.UndefOr[java.lang.String] = js.undefined
-  var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
+  var backgroundColor: js.UndefOr[java.lang.String]
   var backgroundImage: js.UndefOr[java.lang.String] = js.undefined
   var backgroundOrigin: js.UndefOr[java.lang.String] = js.undefined
   var backgroundPosition: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -1048,7 +1048,6 @@ trait Anon_OffsetBlockEnd extends js.Object {
     scala.Double | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var strokeWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties]
   var tabSize: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var tableLayout: js.UndefOr[
     antdLib.antdLibStrings.fixed | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
@@ -1097,7 +1096,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var textUnderlinePosition: js.UndefOr[java.lang.String] = js.undefined
   var top: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var touchAction: js.UndefOr[java.lang.String] = js.undefined
-  var transform: js.UndefOr[java.lang.String]
+  var transform: js.UndefOr[java.lang.String] = js.undefined
   var transformBox: js.UndefOr[
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`border-box` | antdLib.antdLibStrings.`fill-box` | antdLib.antdLibStrings.`view-box`
   ] = js.undefined
@@ -1142,7 +1141,9 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var writingMode: js.UndefOr[
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`horizontal-tb` | antdLib.antdLibStrings.`sideways-lr` | antdLib.antdLibStrings.`sideways-rl` | antdLib.antdLibStrings.`vertical-lr` | antdLib.antdLibStrings.`vertical-rl`
   ] = js.undefined
-  var zIndex: js.UndefOr[scala.Double]
+  var zIndex: js.UndefOr[
+    scala.Double | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+  ] = js.undefined
   var zoom: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 

@@ -44,20 +44,10 @@ trait ContentTracing extends EventEmitter {
     * Start recording on all processes. Recording begins immediately locally and
     * asynchronously on child processes as soon as they receive the EnableRecording
     * request. The callback will be called once all child processes have acknowledged
-    * the startRecording request. categoryFilter is a filter to control what category
-    * groups should be traced. A filter can have an optional - prefix to exclude
-    * category groups that contain a matching category. Having both included and
-    * excluded category patterns in the same list is not supported. Examples:
-    * traceOptions controls what kind of tracing is enabled, it is a comma-delimited
-    * list. Possible options are: The first 3 options are trace recording modes and
-    * hence mutually exclusive. If more than one trace recording modes appear in the
-    * traceOptions string, the last one takes precedence. If none of the trace
-    * recording modes are specified, recording mode is record-until-full. The trace
-    * option will first be reset to the default option (record_mode set to
-    * record-until-full, enable_sampling and enable_systrace set to false) before
-    * options parsed from traceOptions are applied on it.
+    * the startRecording request.
     */
-  def startRecording(options: StartRecordingOptions, callback: js.Function): scala.Unit = js.native
+  def startRecording(options: TraceCategoriesAndOptions, callback: js.Function): scala.Unit = js.native
+  def startRecording(options: TraceConfig, callback: js.Function): scala.Unit = js.native
   /**
     * Stop monitoring on all processes. Once all child processes have acknowledged the
     * stopMonitoring request the callback is called.

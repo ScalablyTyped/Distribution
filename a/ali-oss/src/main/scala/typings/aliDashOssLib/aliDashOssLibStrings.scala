@@ -34,7 +34,7 @@ object aliDashOssLibStrings {
   sealed trait Standard extends js.Object
   
   @js.native
-  sealed trait `and private` extends js.Object
+  sealed trait `private` extends js.Object
   
   @js.native
   sealed trait `public-read` extends js.Object
@@ -51,7 +51,7 @@ object aliDashOssLibStrings {
   def POST: POST = "POST".asInstanceOf[POST]
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   def Standard: Standard = "Standard".asInstanceOf[Standard]
-  def `and private`: `and private` = "and private".asInstanceOf[`and private`]
+  def `private`: `private` = "private".asInstanceOf[`private`]
   def `public-read`: `public-read` = "public-read".asInstanceOf[`public-read`]
   def `public-read-write`: `public-read-write` = "public-read-write".asInstanceOf[`public-read-write`]
 }

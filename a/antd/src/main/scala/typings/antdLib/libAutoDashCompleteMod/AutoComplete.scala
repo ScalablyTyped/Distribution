@@ -12,6 +12,7 @@ trait AutoComplete
   def blur(): scala.Unit = js.native
   def focus(): scala.Unit = js.native
   def getInputElement(): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderAutoComplete(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def saveSelect(node: js.Any): scala.Unit = js.native
 }
 

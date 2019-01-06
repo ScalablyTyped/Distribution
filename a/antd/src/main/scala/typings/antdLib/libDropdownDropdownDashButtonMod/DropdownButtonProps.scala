@@ -10,6 +10,7 @@ trait DropdownButtonProps
   extends antdLib.libButtonButtonDashGroupMod.ButtonGroupProps {
   var children: js.UndefOr[js.Any] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
+  var href: js.UndefOr[java.lang.String] = js.undefined
   var htmlType: js.UndefOr[antdLib.libButtonButtonMod.ButtonHTMLType] = js.undefined
   var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLButtonElement]] = js.undefined
   var `type`: js.UndefOr[DropdownButtonType] = js.undefined

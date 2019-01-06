@@ -13,6 +13,6 @@ class Avatar ()
 @JSImport("antd", "Avatar")
 @js.native
 object Avatar extends js.Object {
-  var defaultProps: antdLib.Anon_PrefixClsSize = js.native
+  var defaultProps: antdLib.Anon_Size = js.native
 }
 

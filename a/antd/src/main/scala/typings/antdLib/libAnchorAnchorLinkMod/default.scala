@@ -13,6 +13,6 @@ class default () extends AnchorLink
 @js.native
 object default extends js.Object {
   var contextTypes: antdLib.Anon_AntAnchorRequireable = js.native
-  var defaultProps: antdLib.Anon_PrefixClsHref = js.native
+  var defaultProps: antdLib.Anon_HrefString = js.native
 }
 

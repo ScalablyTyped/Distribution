@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "react-themeable-ts"
-version := "1.0.0-f37561"
+version := "1.0.0-121a05"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "classnames" % "2.2-dt-20180721Z-b84a90",
+  "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-b84a90",
   "org.scalablytyped" %%% "csstype" % "2.5.8-a13970",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20181203Z-0a02fb",
   "org.scalablytyped" %%% "lodash_dot_get" % "4.4-dt-20180723Z-02d3af",

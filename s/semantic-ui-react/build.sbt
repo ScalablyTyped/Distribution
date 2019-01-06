@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-react"
-version := "0.84.0-76e133"
+version := "0.84.0-c1e698"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "classnames" % "2.2-dt-20180721Z-b84a90",
+  "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-b84a90",
   "org.scalablytyped" %%% "csstype" % "2.5.8-a13970",
   "org.scalablytyped" %%% "exenv" % "1.2-dt-20180321Z-a6fca3",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20181203Z-0a02fb",

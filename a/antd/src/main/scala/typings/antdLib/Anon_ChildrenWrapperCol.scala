@@ -20,7 +20,7 @@ trait Anon_ChildrenWrapperCol extends js.Object {
   var labelCol: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
   var prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   var validateStatus: propDashTypesLib.propDashTypesMod.Requireable[
-    antdLib.antdLibStrings.error | antdLib.antdLibStrings.success | antdLib.antdLibStrings.warning | antdLib.antdLibStrings.validating
+    antdLib.antdLibStrings.Empty | antdLib.antdLibStrings.error | antdLib.antdLibStrings.success | antdLib.antdLibStrings.warning | antdLib.antdLibStrings.validating
   ]
   var wrapperCol: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
 }

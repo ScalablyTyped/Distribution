@@ -14,6 +14,7 @@ trait TemplateCompileOptions extends js.Object {
   var optimizeSSR: js.UndefOr[scala.Boolean] = js.undefined
   var preprocessLang: js.UndefOr[java.lang.String] = js.undefined
   var preprocessOptions: js.UndefOr[js.Any] = js.undefined
+  var prettify: js.UndefOr[scala.Boolean] = js.undefined
   var source: java.lang.String
   var transformAssetUrls: js.UndefOr[
     atVueComponentDashCompilerDashUtilsLib.distTemplateCompilerModulesAssetUrlMod.AssetURLOptions | scala.Boolean

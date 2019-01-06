@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait MentionProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
+  var defaultSuggestions: js.UndefOr[js.Array[_]] = js.undefined
   var defaultValue: js.UndefOr[js.Any] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var getSuggestionContainer: js.UndefOr[js.Function1[/* triggerNode */ reactLib.Element, reactLib.HTMLElement]] = js.undefined

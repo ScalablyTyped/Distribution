@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chalk"
-version := "2.4.1-b06515"
+version := "2.4.2-b06515"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

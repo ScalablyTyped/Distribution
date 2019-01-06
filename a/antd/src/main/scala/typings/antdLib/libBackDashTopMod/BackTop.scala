@@ -15,6 +15,7 @@ trait BackTop
   def componentWillUnmount_MBackTop(): scala.Unit = js.native
   def getCurrentScrollTop(): scala.Double = js.native
   def handleScroll(): scala.Unit = js.native
+  def renderBackTop(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def scrollToTop(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.MouseEvent]): scala.Unit = js.native
   def setScrollTop(value: scala.Double): scala.Unit = js.native
 }

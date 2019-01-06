@@ -12,7 +12,6 @@ trait Anon_BorderedLoading extends js.Object {
   var pagination: js.UndefOr[
     antdLib.antdLibNumbers.`false` | antdLib.libPaginationPaginationMod.PaginationConfig
   ]
-  var prefixCls: java.lang.String
   var split: scala.Boolean
 }
 

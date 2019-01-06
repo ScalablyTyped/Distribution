@@ -11,6 +11,8 @@ trait Options extends js.Object {
   var accessKeySecret: java.lang.String
    // used by temporary authorization
   var bucket: js.UndefOr[java.lang.String] = js.undefined
+   // instance level timeout for all operations, default is 60s
+  var cname: js.UndefOr[scala.Boolean] = js.undefined
    //  the default bucket you want to access If you don't have any bucket, please use putBucket() create one first.
   var endpoint: js.UndefOr[java.lang.String] = js.undefined
    // the bucket data region location, please see Data Regions, default is oss-cn-hangzhou.

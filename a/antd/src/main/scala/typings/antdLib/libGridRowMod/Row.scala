@@ -15,5 +15,6 @@ trait Row
   @JSName("componentWillUnmount")
   def componentWillUnmount_MRow(): scala.Unit = js.native
   def getGutter(): js.UndefOr[scala.Double] = js.native
+  def renderRow(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

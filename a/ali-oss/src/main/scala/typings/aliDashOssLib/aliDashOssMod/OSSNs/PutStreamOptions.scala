@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait PutStreamOptions extends js.Object {
   var callback: ObjectCallback
   var contentLength: js.UndefOr[scala.Double] = js.undefined
+  var headers: js.UndefOr[js.Object] = js.undefined
    // custom mime, will send with Content-Type entity header
   var meta: UserMeta
    // the operation timeout

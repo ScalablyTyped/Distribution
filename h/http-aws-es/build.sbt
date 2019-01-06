@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "http-aws-es"
-version := "1.1-dt-20180214Z-cb59ec"
+version := "1.1-dt-20180214Z-85f47f"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "aws-sdk" % "2.383.0-3dae02",
+  "org.scalablytyped" %%% "aws-sdk" % "2.384.0-3eecf0",
   "org.scalablytyped" %%% "elasticsearch" % "5.0-dt-20181127Z-7ea75b",
   "org.scalablytyped" %%% "events" % "1.2-dt-20180226Z-794124",
   "org.scalablytyped" %%% "jmespath" % "0.15-dt-20180214Z-bbea6c",

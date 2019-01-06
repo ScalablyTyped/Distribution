@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactDashMarkdownLibStrings {
   @js.native
-  sealed trait ReactMarkdownProps extends js.Object
-  
-  @js.native
   sealed trait blockquote extends js.Object
   
   @js.native
@@ -105,7 +102,6 @@ object reactDashMarkdownLibStrings {
   @js.native
   sealed trait virtualHtml extends js.Object
   
-  def ReactMarkdownProps: ReactMarkdownProps = "ReactMarkdownProps".asInstanceOf[ReactMarkdownProps]
   def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   def break: break = "break".asInstanceOf[break]
   def center: center = "center".asInstanceOf[center]

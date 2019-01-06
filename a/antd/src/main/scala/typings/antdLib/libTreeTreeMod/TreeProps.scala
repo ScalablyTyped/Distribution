@@ -69,15 +69,11 @@ trait TreeProps extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
-  /** dragenter 触发时调用 */
+  var onDragEnd: js.UndefOr[js.Function1[/* options */ AntTreeNodeMouseEvent, scala.Unit]] = js.undefined
   var onDragEnter: js.UndefOr[js.Function1[/* options */ AntTreeNodeMouseEvent, scala.Unit]] = js.undefined
-  /** dragleave 触发时调用 */
   var onDragLeave: js.UndefOr[js.Function1[/* options */ AntTreeNodeMouseEvent, scala.Unit]] = js.undefined
-  /** dragover 触发时调用 */
   var onDragOver: js.UndefOr[js.Function1[/* options */ AntTreeNodeMouseEvent, scala.Unit]] = js.undefined
-  /** 开始拖拽时调用 */
   var onDragStart: js.UndefOr[js.Function1[/* options */ AntTreeNodeMouseEvent, scala.Unit]] = js.undefined
-  /** drop 触发时调用 */
   var onDrop: js.UndefOr[js.Function1[/* options */ AntTreeNodeDropEvent, scala.Unit]] = js.undefined
   /** 展开/收起节点时触发 */
   var onExpand: js.UndefOr[
@@ -111,5 +107,6 @@ trait TreeProps extends js.Object {
   var showIcon: js.UndefOr[scala.Boolean] = js.undefined
   var showLine: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var switcherIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
 }
 

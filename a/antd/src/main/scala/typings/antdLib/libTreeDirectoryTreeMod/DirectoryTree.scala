@@ -33,6 +33,7 @@ trait DirectoryTree
   ): scala.Unit = js.native
   def onExpand(expandedKeys: js.Array[java.lang.String], info: antdLib.libTreeTreeMod.AntTreeNodeExpandedEvent): scala.Unit | js.Thenable[_] = js.native
   def onSelect(keys: js.Array[java.lang.String], event: antdLib.libTreeTreeMod.AntTreeNodeSelectedEvent): scala.Unit = js.native
+  def renderDirectoryTree(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def setTreeRef(node: antdLib.libTreeTreeMod.default): scala.Unit = js.native
   def setUncontrolledState(state: DirectoryTreeState): scala.Unit = js.native
 }
