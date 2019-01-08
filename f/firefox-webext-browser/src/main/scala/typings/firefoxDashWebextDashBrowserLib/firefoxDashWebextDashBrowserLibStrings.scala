@@ -538,6 +538,9 @@ object firefoxDashWebextDashBrowserLibStrings {
   sealed trait jpeg extends js.Object
   
   @js.native
+  sealed trait jstracer extends js.Object
+  
+  @js.native
   sealed trait keyword extends js.Object
   
   @js.native
@@ -1051,6 +1054,9 @@ object firefoxDashWebextDashBrowserLibStrings {
   sealed trait win extends js.Object
   
   @js.native
+  sealed trait windowLength extends js.Object
+  
+  @js.native
   sealed trait wtai extends js.Object
   
   @js.native
@@ -1251,6 +1257,7 @@ object firefoxDashWebextDashBrowserLibStrings {
   def isarticle: isarticle = "isarticle".asInstanceOf[isarticle]
   def java: java = "java".asInstanceOf[java]
   def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
+  def jstracer: jstracer = "jstracer".asInstanceOf[jstracer]
   def keyword: keyword = "keyword".asInstanceOf[keyword]
   def keyword_generated: keyword_generated = "keyword_generated".asInstanceOf[keyword_generated]
   def launcher: launcher = "launcher".asInstanceOf[launcher]
@@ -1422,6 +1429,7 @@ object firefoxDashWebextDashBrowserLibStrings {
   def webcal: webcal = "webcal".asInstanceOf[webcal]
   def websocket: websocket = "websocket".asInstanceOf[websocket]
   def win: win = "win".asInstanceOf[win]
+  def windowLength: windowLength = "windowLength".asInstanceOf[windowLength]
   def wtai: wtai = "wtai".asInstanceOf[wtai]
   def `x86-32`: `x86-32` = "x86-32".asInstanceOf[`x86-32`]
   def `x86-64`: `x86-64` = "x86-64".asInstanceOf[`x86-64`]

@@ -13,7 +13,7 @@ object srcMetadataNgUnderscoreModuleModMembers extends js.Object {
   val NgModule: NgModuleDecorator = js.native
   val `SWITCH_COMPILE_NGMODULE__POST_R3__`: js.Function2[
     /* moduleType */ atAngularCoreLib.srcTypeMod.Type[js.Any], 
-    /* ngModule */ NgModule, 
+    /* ngModule */ js.UndefOr[NgModule], 
     scala.Unit
   ] = js.native
 }

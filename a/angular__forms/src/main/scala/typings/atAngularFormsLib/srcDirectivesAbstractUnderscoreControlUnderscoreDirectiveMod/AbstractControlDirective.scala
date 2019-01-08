@@ -111,18 +111,66 @@ abstract class AbstractControlDirective () extends js.Object {
   /**
     * @description
     * Reports error data for the control with the given path.
-    * If the control is not present, null is returned.
+    *
+    * @param errorCode The code of the error to check
+    * @param path A list of control names that designates how to move from the current control
+    * to the control that should be queried for errors.
+    *
+    * @usageNotes
+    * For example, for the following `FormGroup`:
+    *
+    * ```
+    * form = new FormGroup({
+    *   address: new FormGroup({ street: new FormControl() })
+    * });
+    * ```
+    *
+    * The path to the 'street' control from the root form would be 'address' -> 'street'.
+    *
+    * It can be provided to this method in one of two formats:
+    *
+    * 1. An array of string control names, e.g. `['address', 'street']`
+    * 1. A period-delimited list of control names in one string, e.g. `'address.street'`
+    *
+    * @returns error data for that particular error. If the control or error is not present,
+    * null is returned.
     */
   def getError(errorCode: java.lang.String): js.Any = js.native
-  def getError(errorCode: java.lang.String, path: js.Array[java.lang.String]): js.Any = js.native
+  def getError(errorCode: java.lang.String, path: java.lang.String): js.Any = js.native
+  def getError(errorCode: java.lang.String, path: js.Array[java.lang.String | scala.Double]): js.Any = js.native
   /**
     * @description
     * Reports whether the control with the given path has the error specified.
-    * If no path is given, it checks for the error on the present control.
+    *
+    * @param errorCode The code of the error to check
+    * @param path A list of control names that designates how to move from the current control
+    * to the control that should be queried for errors.
+    *
+    * @usageNotes
+    * For example, for the following `FormGroup`:
+    *
+    * ```
+    * form = new FormGroup({
+    *   address: new FormGroup({ street: new FormControl() })
+    * });
+    * ```
+    *
+    * The path to the 'street' control from the root form would be 'address' -> 'street'.
+    *
+    * It can be provided to this method in one of two formats:
+    *
+    * 1. An array of string control names, e.g. `['address', 'street']`
+    * 1. A period-delimited list of control names in one string, e.g. `'address.street'`
+    *
+    * If no path is given, this method checks for the error on the current control.
+    *
+    * @returns whether the given error is present in the control at the given path.
+    *
     * If the control is not present, false is returned.
     */
   def hasError(errorCode: java.lang.String): scala.Boolean = js.native
-  def hasError(errorCode: java.lang.String, path: js.Array[java.lang.String]): scala.Boolean = js.native
+  def hasError(errorCode: java.lang.String, path: java.lang.String): scala.Boolean = js.native
+  def hasError(errorCode: java.lang.String, path: js.Array[java.lang.String | scala.Double]): scala.Boolean = js.native
   /**
     * @description
     * Resets the control with the provided value if the control is present.

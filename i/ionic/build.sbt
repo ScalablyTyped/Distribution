@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ionic"
-version := "4.6.0-49643f"
+version := "4.7.0-11f2cb"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -16,10 +16,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-4eeb6b",
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-ef1d9b",
   "org.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20180808Z-673ec9",
-  "org.scalablytyped" %%% "ionic__cli-framework" % "1.5.1-01d70d",
-  "org.scalablytyped" %%% "ionic__discover" % "1.0.9-d35c64",
-  "org.scalablytyped" %%% "ionic__utils-fs" % "0.0.6-e28736",
-  "org.scalablytyped" %%% "ionic__utils-network" % "0.0.5-9627d0",
+  "org.scalablytyped" %%% "ionic__cli-framework" % "1.5.2-9e7974",
+  "org.scalablytyped" %%% "ionic__discover" % "1.0.10-d35c64",
+  "org.scalablytyped" %%% "ionic__utils-fs" % "0.0.7-e28736",
+  "org.scalablytyped" %%% "ionic__utils-network" % "0.0.6-9627d0",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20181203Z-0a02fb",
   "org.scalablytyped" %%% "log-update" % "2.0-dt-20180214Z-1ee537",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-753f08",

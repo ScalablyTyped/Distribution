@@ -11,10 +11,14 @@ trait R3ComponentMetadata extends R3DirectiveMetadata {
     */
   var animations: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression | scala.Null
   /**
-    * A map of directive selectors to an expression referencing the directive type which are in the
+    * Strategy used for detecting changes in the component.
+    */
+  var changeDetection: js.UndefOr[atAngularCompilerLib.srcCoreMod.ChangeDetectionStrategy] = js.undefined
+  /**
+    * A list of directive selectors and an expression referencing the directive type which are in the
     * scope of the compilation.
     */
-  var directives: stdLib.Map[java.lang.String, atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression]
+  var directives: js.Array[atAngularCompilerLib.Anon_ExpressionSelector]
   /**
     * An encapsulation policy for the template and CSS styles. One of:
     * - `ViewEncapsulation.Native`: Use shadow roots. This works only if natively available on the
@@ -26,10 +30,25 @@ trait R3ComponentMetadata extends R3DirectiveMetadata {
     */
   var encapsulation: atAngularCompilerLib.srcCoreMod.ViewEncapsulation
   /**
+    * Whether translation variable name should contain external message id
+    * (used by Closure Compiler's output of `goog.getMsg` for transition period).
+    */
+  var i18nUseExternalIds: scala.Boolean
+  /**
+    * Overrides the default interpolation start and end delimiters ({{ and }}).
+    */
+  var interpolation: atAngularCompilerLib.srcMlUnderscoreParserInterpolationUnderscoreConfigMod.InterpolationConfig
+  /**
     * A map of pipe names to an expression referencing the pipe type which are in the scope of the
     * compilation.
     */
   var pipes: stdLib.Map[java.lang.String, atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression]
+  /**
+    * Path to the .ts file in which this template's generated code will be included, relative to
+    * the compilation root. This will be used to generate identifiers that need to be globally
+    * unique in certain contexts (such as g3).
+    */
+  var relativeContextFilePath: java.lang.String
   /**
     * A collection of styling data that will be applied and scoped to the component.
     */
@@ -37,7 +56,7 @@ trait R3ComponentMetadata extends R3DirectiveMetadata {
   /**
     * Information about the component's template.
     */
-  var template: atAngularCompilerLib.Anon_Nodes
+  var template: atAngularCompilerLib.Anon_NodesArray
   /**
     * The list of view providers defined in the component.
     */

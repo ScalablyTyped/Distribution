@@ -21,7 +21,7 @@ object By extends js.Object {
     *
     * {@example platform-browser/dom/debug/ts/by/by.ts region='by_all'}
     */
-  def all(): atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.Predicate[atAngularCoreLib.coreMod.DebugElement] = js.native
+  def all(): atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.Predicate[atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugElement] = js.native
   /**
     * Match elements by the given CSS selector.
     *
@@ -30,7 +30,7 @@ object By extends js.Object {
     *
     * {@example platform-browser/dom/debug/ts/by/by.ts region='by_css'}
     */
-  def css(selector: java.lang.String): atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.Predicate[atAngularCoreLib.coreMod.DebugElement] = js.native
+  def css(selector: java.lang.String): atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.Predicate[atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugElement] = js.native
   /**
     * Match elements that have the given directive present.
     *
@@ -39,6 +39,6 @@ object By extends js.Object {
     *
     * {@example platform-browser/dom/debug/ts/by/by.ts region='by_directive'}
     */
-  def directive(`type`: atAngularCoreLib.srcTypeMod.Type[_]): atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.Predicate[atAngularCoreLib.coreMod.DebugElement] = js.native
+  def directive(`type`: atAngularCoreLib.srcTypeMod.Type[_]): atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.Predicate[atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugElement] = js.native
 }
 

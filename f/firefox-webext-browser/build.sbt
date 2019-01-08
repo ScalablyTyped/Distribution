@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firefox-webext-browser"
-version := "64.0-dt-20181117Z-054192"
+version := "65.0-dt-20190106Z-909f42"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

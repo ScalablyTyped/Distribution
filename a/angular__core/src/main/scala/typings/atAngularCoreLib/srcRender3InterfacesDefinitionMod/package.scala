@@ -15,7 +15,7 @@ package object srcRender3InterfacesDefinitionMod {
     DirectiveDef[js.Any] | ComponentDef[js.Any] | atAngularCoreLib.srcTypeMod.Type[js.Any]
   ]
   type DirectiveTypesOrFactory = js.Function0[DirectiveTypeList] | DirectiveTypeList
-  type HostBindingsFunction = js.Function2[/* directiveIndex */ scala.Double, /* elementIndex */ scala.Double, scala.Unit]
+  type HostBindingsFunction[T] = js.Function3[/* rf */ RenderFlags, /* ctx */ T, /* elementIndex */ scala.Double, scala.Unit]
   type PipeDefList = js.Array[PipeDef[js.Any]]
   type PipeDefListOrFactory = js.Function0[PipeDefList] | PipeDefList
   type PipeDefWithMeta[T, Name /* <: java.lang.String */] = PipeDef[T]

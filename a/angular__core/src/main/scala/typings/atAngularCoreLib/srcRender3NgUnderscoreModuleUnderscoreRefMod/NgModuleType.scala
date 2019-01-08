@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NgModuleType extends js.Object {
-  var ngModuleDef: atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.NgModuleDef[_]
+@js.native
+trait NgModuleType[T]
+  extends atAngularCoreLib.srcTypeMod.Type[T] {
+  var ngModuleDef: atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.NgModuleDef[T] = js.native
 }
 

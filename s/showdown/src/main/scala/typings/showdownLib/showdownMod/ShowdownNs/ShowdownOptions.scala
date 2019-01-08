@@ -13,6 +13,12 @@ trait ShowdownOptions extends js.Object {
     */
   var backslashEscapesHTMLTags: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Outputs a complete html document, including `<html>`, `<head>` and `<body>` tags
+    *
+    * @default false
+    */
+  var completeHTMLDocument: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Use text in curly braces as header id.
     *
     * @default false
@@ -25,6 +31,12 @@ trait ShowdownOptions extends js.Object {
     * @default false
     */
   var disableForced4SpacesIndentedSublists: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Enable emoji support. Ex: `this is a :smile: emoji.
+    *
+    * @default false
+    */
+  var emoji: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * This option excludes trailing punctuation from autolinking urls.
     * Punctuation excluded: . ! ? ( ). Only applies if simplifiedAutoLink option is set to true.
@@ -87,6 +99,12 @@ trait ShowdownOptions extends js.Object {
     * @default false
     */
   var literalMidWordUnderscores: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Outputs a complete html document, including `<html>`, `<head>` and `<body>` tags
+    *
+    * @default false
+    */
+  var metadata: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Disable the automatic generation of header ids. Setting to true overrides <strong>prefixHeaderId</strong>.
     *
@@ -163,6 +181,12 @@ trait ShowdownOptions extends js.Object {
     */
   var smoothLivePreview: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Split adjacent blockquote blocks
+    *
+    * @default false
+    */
+  var splitAdjacentBlockquotes: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Enable support for strikethrough syntax.
     * `~~strikethrough~~` as `<del>strikethrough</del>`.
     *
@@ -197,5 +221,12 @@ trait ShowdownOptions extends js.Object {
     * @default false
     */
   var tasklists: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Enable support for underline. Syntax is double or triple underscores: `__underline word__`. With this option enabled,
+    * underscores no longer parses into `<em>` and `<strong>`
+    *
+    * @default false
+    */
+  var underline: js.UndefOr[scala.Boolean] = js.undefined
 }
 

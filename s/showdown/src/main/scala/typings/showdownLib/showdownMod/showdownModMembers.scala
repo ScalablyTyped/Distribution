@@ -61,12 +61,21 @@ object showdownModMembers extends js.Object {
     * Reset options.
     */
   def resetOptions(): scala.Unit = js.native
+  @JSName("setFlavor")
+  def setFlavor_allOn(name: showdownLib.showdownLibStrings.allOn): scala.Unit = js.native
+  @JSName("setFlavor")
+  def setFlavor_ghost(name: showdownLib.showdownLibStrings.ghost): scala.Unit = js.native
   /**
     * Setting a "global" flavor affects all instances of showdown
     *
     * @param name
     */
-  def setFlavor(name: java.lang.String): scala.Unit = js.native
+  @JSName("setFlavor")
+  def setFlavor_github(name: showdownLib.showdownLibStrings.github): scala.Unit = js.native
+  @JSName("setFlavor")
+  def setFlavor_original(name: showdownLib.showdownLibStrings.original): scala.Unit = js.native
+  @JSName("setFlavor")
+  def setFlavor_vanilla(name: showdownLib.showdownLibStrings.vanilla): scala.Unit = js.native
   /**
     * Setting a "global" option affects all instances of showdown
     * 

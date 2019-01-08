@@ -89,5 +89,6 @@ trait ComponentsPropsList extends js.Object {
   var MuiTooltip: atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipProps
   var MuiTouchRipple: atMaterialDashUiCoreLib.buttonbaseTouchRippleMod.TouchRippleProps
   var MuiTypography: atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps
+  var MuiWithWidth: atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidthOptions
 }
 

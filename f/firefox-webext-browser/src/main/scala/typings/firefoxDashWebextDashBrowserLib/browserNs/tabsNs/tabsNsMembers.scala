@@ -17,7 +17,7 @@ object tabsNsMembers extends js.Object {
     */
   val onActivated: firefoxDashWebextDashBrowserLib.WebExtEvent[
     js.Function1[
-      /* activeInfo */ firefoxDashWebextDashBrowserLib.Anon_WindowIdTabIdNumber, 
+      /* activeInfo */ firefoxDashWebextDashBrowserLib.Anon_WindowIdPreviousTabId, 
       scala.Unit
     ]
   ] = js.native
@@ -263,6 +263,23 @@ object tabsNsMembers extends js.Object {
     * @param tabIds The tab or list of tabs to move.
     */
   def move(tabIds: scala.Double, moveProperties: firefoxDashWebextDashBrowserLib.Anon_WindowIdIndex): js.Promise[js.UndefOr[Tab | js.Array[Tab]]] = js.native
+  /**
+    * Removes an array of tabs from their lines of succession and prepends or appends them in a chain to another tab.
+    * @param tabIds An array of tab IDs to move in the line of succession. For each tab in the array, the tab's
+    *     current predecessors will have their successor set to the tab's current successor, and each tab will then be
+    *     set to be the successor of the previous tab in the array. Any tabs not in the same window as the tab
+    *     indicated by the second argument (or the first tab in the array, if no second argument) will be skipped.
+    * @param [tabId] The ID of a tab to set as the successor of the last tab in the array, or `tabs.TAB_ID_NONE` to
+    *     leave the last tab without a successor. If options.append is true, then this tab is made the predecessor of
+    *     the first tab in the array instead.
+    */
+  def moveInSuccession(tabIds: js.Array[scala.Double]): js.Promise[_] = js.native
+  def moveInSuccession(tabIds: js.Array[scala.Double], tabId: scala.Double): js.Promise[_] = js.native
+  def moveInSuccession(
+    tabIds: js.Array[scala.Double],
+    tabId: scala.Double,
+    options: firefoxDashWebextDashBrowserLib.Anon_Insert
+  ): js.Promise[_] = js.native
   /** Prints page in active tab. */
   def print(): scala.Unit = js.native
   /** Shows print preview for page in active tab. */

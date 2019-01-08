@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CompileTemplateMetadata protected ()
   extends atAngularCompilerLib.srcCompilerMod.CompileTemplateMetadata {
-  def this(hasEncapsulationTemplateTemplateUrlHtmlAstStylesStyleUrlsExternalStylesheetsAnimationsNgContentSelectorsInterpolationIsInlinePreserveWhitespaces: atAngularCompilerLib.Anon_PreserveWhitespacesExternalStylesheets) = this()
+  def this(hasEncapsulationTemplateTemplateUrlHtmlAstStylesStyleUrlsExternalStylesheetsAnimationsNgContentSelectorsInterpolationIsInlinePreserveWhitespaces: atAngularCompilerLib.Anon_PreserveWhitespaces) = this()
 }
 

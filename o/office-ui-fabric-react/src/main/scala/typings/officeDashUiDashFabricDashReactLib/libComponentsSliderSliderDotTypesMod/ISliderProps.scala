@@ -94,6 +94,10 @@ trait ISliderProps
     */
   var value: js.UndefOr[scala.Double] = js.undefined
   /**
+    * Optional function to format the slider value.
+    */
+  var valueFormat: js.UndefOr[js.Function1[/* value */ scala.Double, java.lang.String]] = js.undefined
+  /**
     * Optional flag to render the slider vertically. Defaults to rendering horizontal.
     */
   var vertical: js.UndefOr[scala.Boolean] = js.undefined

@@ -15,7 +15,7 @@ class NodeInjectorFactory protected () extends js.Object {
       /* this */ NodeInjectorFactory, 
       /* _ */ scala.Null, 
       /* tData */ atAngularCoreLib.srcRender3InterfacesViewMod.TData, 
-      /* lData */ atAngularCoreLib.srcRender3InterfacesViewMod.LViewData, 
+      /* lView */ atAngularCoreLib.srcRender3InterfacesViewMod.LView, 
       /* tNode */ atAngularCoreLib.srcRender3InterfacesNodeMod.TElementNode, 
       _
     ], /**
@@ -29,7 +29,7 @@ class NodeInjectorFactory protected () extends js.Object {
       /* this */ NodeInjectorFactory, 
       /* _ */ scala.Null, 
       /* tData */ atAngularCoreLib.srcRender3InterfacesViewMod.TData, 
-      /* lData */ atAngularCoreLib.srcRender3InterfacesViewMod.LViewData, 
+      /* lView */ atAngularCoreLib.srcRender3InterfacesViewMod.LView, 
       /* tNode */ atAngularCoreLib.srcRender3InterfacesNodeMod.TElementNode, 
       _
     ], /**
@@ -133,7 +133,7 @@ class NodeInjectorFactory protected () extends js.Object {
     * array where existing instances of injectables are stored. This is used in case
     * of multi shadow is needed. See `multi` field documentation.
     */
-  lData: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData,
+  lView: atAngularCoreLib.srcRender3InterfacesViewMod.LView,
     /**
     * The TNode of the same element injector.
     */

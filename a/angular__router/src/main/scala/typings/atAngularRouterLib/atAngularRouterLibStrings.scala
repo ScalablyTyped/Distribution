@@ -61,6 +61,9 @@ object atAngularRouterLibStrings {
   sealed trait pathParamsChange extends js.Object
   
   @js.native
+  sealed trait pathParamsOrQueryParamsChange extends js.Object
+  
+  @js.native
   sealed trait popstate extends js.Object
   
   @js.native
@@ -90,6 +93,7 @@ object atAngularRouterLibStrings {
   def paramsChange: paramsChange = "paramsChange".asInstanceOf[paramsChange]
   def paramsOrQueryParamsChange: paramsOrQueryParamsChange = "paramsOrQueryParamsChange".asInstanceOf[paramsOrQueryParamsChange]
   def pathParamsChange: pathParamsChange = "pathParamsChange".asInstanceOf[pathParamsChange]
+  def pathParamsOrQueryParamsChange: pathParamsOrQueryParamsChange = "pathParamsOrQueryParamsChange".asInstanceOf[pathParamsOrQueryParamsChange]
   def popstate: popstate = "popstate".asInstanceOf[popstate]
   def preserve: preserve = "preserve".asInstanceOf[preserve]
   def reload: reload = "reload".asInstanceOf[reload]

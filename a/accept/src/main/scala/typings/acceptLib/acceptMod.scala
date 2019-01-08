@@ -23,6 +23,9 @@ object acceptMod extends js.Object {
   def language(languageHeader: java.lang.String, preferences: js.Array[java.lang.String]): java.lang.String = js.native
   def languages(): js.Array[java.lang.String] = js.native
   def languages(languageHeader: java.lang.String): js.Array[java.lang.String] = js.native
+  def mediaType(): java.lang.String = js.native
+  def mediaType(mediaTypeHeader: java.lang.String): java.lang.String = js.native
+  def mediaType(mediaTypeHeader: java.lang.String, preferences: js.Array[java.lang.String]): java.lang.String = js.native
   def mediaTypes(): js.Array[java.lang.String] = js.native
   def mediaTypes(mediaTypeHeader: java.lang.String): js.Array[java.lang.String] = js.native
   def parseAll(

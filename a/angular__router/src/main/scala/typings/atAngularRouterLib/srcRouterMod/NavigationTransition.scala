@@ -19,8 +19,8 @@ trait NavigationTransition extends js.Object {
   var rawUrl: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree
   var reject: js.Any
   var resolve: js.Any
+  var restoredState: RestoredState | scala.Null
   var source: atAngularRouterLib.srcEventsMod.NavigationTrigger
-  var state: atAngularRouterLib.Anon_NavigationId | scala.Null
   var targetRouterState: atAngularRouterLib.srcRouterUnderscoreStateMod.RouterState | scala.Null
   var targetSnapshot: atAngularRouterLib.srcRouterUnderscoreStateMod.RouterStateSnapshot | scala.Null
   var urlAfterRedirects: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree

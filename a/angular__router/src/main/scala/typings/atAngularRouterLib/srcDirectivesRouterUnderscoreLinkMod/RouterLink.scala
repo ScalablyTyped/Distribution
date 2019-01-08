@@ -24,6 +24,7 @@ class RouterLink protected () extends js.Object {
   var router: js.Any = js.native
   var routerLink: js.Array[_] | java.lang.String = js.native
   var skipLocationChange: scala.Boolean = js.native
+  var state: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   val urlTree: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree = js.native
   def onClick(): scala.Boolean = js.native
 }

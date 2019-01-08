@@ -15,7 +15,7 @@ trait ComponentDef[T] extends DirectiveDef[T] {
   /**
     * The number of nodes, local refs, and pipes in this component template.
     *
-    * Used to calculate the length of the component's LViewData array, so we
+    * Used to calculate the length of the component's LView array, so we
     * can pre-fill the array and set the binding start index.
     */
   val consts: scala.Double = js.native
@@ -67,7 +67,7 @@ trait ComponentDef[T] extends DirectiveDef[T] {
   /**
     * The number of bindings in this component template (including pure fn bindings).
     *
-    * Used to calculate the length of the component's LViewData array, so we
+    * Used to calculate the length of the component's LView array, so we
     * can pre-fill the array and set the host binding start index.
     */
   val vars: scala.Double = js.native

@@ -12,10 +12,6 @@ sealed trait RelativeInjectorLocationFlags extends js.Object
 @js.native
 object RelativeInjectorLocationFlags extends js.Object {
   @js.native
-  sealed trait AcrossHostBoundary
-    extends atAngularCoreLib.srcRender3InterfacesInjectorMod.RelativeInjectorLocationFlags
-  
-  @js.native
   sealed trait InjectorIndexMask
     extends atAngularCoreLib.srcRender3InterfacesInjectorMod.RelativeInjectorLocationFlags
   
@@ -27,7 +23,6 @@ object RelativeInjectorLocationFlags extends js.Object {
   sealed trait ViewOffsetShift
     extends atAngularCoreLib.srcRender3InterfacesInjectorMod.RelativeInjectorLocationFlags
   
-  /* 32768 */ val AcrossHostBoundary: AcrossHostBoundary with scala.Double = js.native
   /* 32767 */ val InjectorIndexMask: InjectorIndexMask with scala.Double = js.native
   /* -1 */ val NO_PARENT: NO_PARENT with scala.Double = js.native
   /* 16 */ val ViewOffsetShift: ViewOffsetShift with scala.Double = js.native

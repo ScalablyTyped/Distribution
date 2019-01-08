@@ -27,6 +27,10 @@ trait Anon_UrlSelected extends js.Object {
     * @deprecated Please use _highlighted_.
     */
   var selected: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * The ID of this tab's successor. If specified, the successor tab must be in the same window as this tab.
+    */
+  var successorTabId: js.UndefOr[scala.Double] = js.undefined
   /** A URL to navigate the tab to. */
   var url: js.UndefOr[java.lang.String] = js.undefined
 }

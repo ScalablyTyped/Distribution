@@ -65,6 +65,8 @@ trait Tab extends js.Object {
   var sharingState: js.UndefOr[SharingState] = js.undefined
   /** Either _loading_ or _complete_. */
   var status: js.UndefOr[java.lang.String] = js.undefined
+  /** The ID of this tab's successor, if any; `tabs.TAB_ID_NONE` otherwise. */
+  var successorTabId: js.UndefOr[scala.Double] = js.undefined
   /**
     * The title of the tab. This property is only present if the extension's manifest includes the `"tabs"`
     * permission.

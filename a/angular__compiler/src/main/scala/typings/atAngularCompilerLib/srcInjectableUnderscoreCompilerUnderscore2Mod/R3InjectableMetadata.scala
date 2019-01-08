@@ -10,6 +10,7 @@ trait R3InjectableMetadata extends js.Object {
   var name: java.lang.String
   var providedIn: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression
   var `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression
+  var typeArgumentCount: scala.Double
   var useClass: js.UndefOr[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression] = js.undefined
   var useExisting: js.UndefOr[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression] = js.undefined
   var useFactory: js.UndefOr[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression] = js.undefined

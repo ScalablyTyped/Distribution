@@ -28,6 +28,9 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
     officeDashUiDashFabricDashReactLib.libComponentsDialogDialogDotTypesMod.IDialogProps
   ] = js.native
   val DirectionalHint: officeDashUiDashFabricDashReactLib.Anon_LeftTopEdge8 = js.native
+  val FocusTrapCallout: reactLib.reactMod.ReactNs.StatelessComponent[
+    officeDashUiDashFabricDashReactLib.libComponentsCalloutFocusTrapCalloutDotTypesMod.IFocusTrapCalloutProps
+  ] = js.native
   val FocusZoneTabbableElements: officeDashUiDashFabricDashReactLib.Anon_None = js.native
   val HighContrastSelector: /* @media screen and (-ms-high-contrast: active) */ java.lang.String = js.native
   val HighContrastSelectorBlack: /* @media screen and (-ms-high-contrast: white-on-black) */ java.lang.String = js.native

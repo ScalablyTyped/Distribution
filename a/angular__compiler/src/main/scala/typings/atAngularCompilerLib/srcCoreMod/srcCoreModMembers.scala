@@ -31,6 +31,7 @@ object srcCoreModMembers extends js.Object {
   val createSkipSelf: MetadataFactory[js.Object] = js.native
   val createViewChild: MetadataFactory[Query] = js.native
   val createViewChildren: MetadataFactory[Query] = js.native
+  def parseSelectorToR3Selector(): R3CssSelectorList = js.native
   def parseSelectorToR3Selector(selector: java.lang.String): R3CssSelectorList = js.native
 }
 

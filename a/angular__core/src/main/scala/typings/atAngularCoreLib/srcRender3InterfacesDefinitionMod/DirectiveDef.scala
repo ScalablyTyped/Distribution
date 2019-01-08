@@ -34,14 +34,7 @@ trait DirectiveDef[T] extends BaseDef[T] {
     */
   val features: js.Array[DirectiveDefFeature] | scala.Null = js.native
   /** Refreshes host bindings on the associated directive. */
-  var hostBindings: HostBindingsFunction | scala.Null = js.native
-  /**
-    * The number of host bindings (including pure fn bindings) in this directive/component.
-    *
-    * Used to calculate the length of the LViewData array for the *parent* component
-    * of this directive/component.
-    */
-  val hostVars: scala.Double = js.native
+  var hostBindings: HostBindingsFunction[T] | scala.Null = js.native
   var onDestroy: js.Function0[scala.Unit] | scala.Null = js.native
   var onInit: js.Function0[scala.Unit] | scala.Null = js.native
   /** Function that resolves providers and publishes them into the DI system. */

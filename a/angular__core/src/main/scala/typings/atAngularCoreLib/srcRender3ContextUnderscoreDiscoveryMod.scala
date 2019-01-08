@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object srcRender3ContextUnderscoreDiscoveryMod extends js.Object {
   def attachPatchData(target: js.Any, data: atAngularCoreLib.srcRender3InterfacesContextMod.LContext): scala.Unit = js.native
-  def attachPatchData(target: js.Any, data: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData): scala.Unit = js.native
-  def discoverLocalRefs(lViewData: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData, nodeIndex: scala.Double): org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Null = js.native
-  def getComponentAtNodeIndex(nodeIndex: scala.Double, lViewData: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData): js.Object | scala.Null = js.native
-  def getComponentViewByInstance(componentInstance: js.Object): atAngularCoreLib.srcRender3InterfacesViewMod.LViewData = js.native
-  def getContext(target: js.Any): atAngularCoreLib.srcRender3InterfacesContextMod.LContext | scala.Null = js.native
+  def attachPatchData(target: js.Any, data: atAngularCoreLib.srcRender3InterfacesViewMod.LView): scala.Unit = js.native
+  def discoverLocalRefs(lView: atAngularCoreLib.srcRender3InterfacesViewMod.LView, nodeIndex: scala.Double): org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Null = js.native
+  def getComponentAtNodeIndex(nodeIndex: scala.Double, lView: atAngularCoreLib.srcRender3InterfacesViewMod.LView): js.Object | scala.Null = js.native
+  def getComponentViewByInstance(componentInstance: js.Object): atAngularCoreLib.srcRender3InterfacesViewMod.LView = js.native
   def getDirectivesAtNodeIndex(
     nodeIndex: scala.Double,
-    lViewData: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData,
+    lView: atAngularCoreLib.srcRender3InterfacesViewMod.LView,
     includeComponents: scala.Boolean
   ): js.Array[_] | scala.Null = js.native
+  def getLContext(target: js.Any): atAngularCoreLib.srcRender3InterfacesContextMod.LContext | scala.Null = js.native
   def isComponentInstance(instance: js.Any): scala.Boolean = js.native
   def isDirectiveInstance(instance: js.Any): scala.Boolean = js.native
 }

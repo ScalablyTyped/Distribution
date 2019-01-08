@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-simple-maps"
-version := "0.12-dt-20181231Z-b2fc1e"
+version := "0.12-dt-20190106Z-a43ddc"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

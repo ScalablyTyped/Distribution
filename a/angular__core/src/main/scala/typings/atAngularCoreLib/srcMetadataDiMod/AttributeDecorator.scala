@@ -45,7 +45,7 @@ trait AttributeDecorator
     * ]
     * ```
     *
-    *
+    * @publicApi
     */
   def apply(name: java.lang.String): js.Any = js.native
 }

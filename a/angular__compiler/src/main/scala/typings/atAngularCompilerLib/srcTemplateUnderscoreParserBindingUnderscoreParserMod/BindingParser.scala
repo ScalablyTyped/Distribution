@@ -31,6 +31,7 @@ class BindingParser protected () extends js.Object {
     */
   var _validatePropertyOrAttributeName: js.Any = js.native
   var errors: js.Array[atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseError] = js.native
+  val interpolationConfig: atAngularCompilerLib.srcMlUnderscoreParserInterpolationUnderscoreConfigMod.InterpolationConfig = js.native
   var pipesByName: (stdLib.Map[
     java.lang.String, 
     atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompilePipeSummary

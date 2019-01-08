@@ -339,7 +339,7 @@
  * found in the LICENSE file at https://angular.io/license
  */
 /**
- * Manages the scroll position.
+ * Defines a scroll position manager. Implemented by `BrowserViewportScroller`.
  *
  * @publicApi
  */

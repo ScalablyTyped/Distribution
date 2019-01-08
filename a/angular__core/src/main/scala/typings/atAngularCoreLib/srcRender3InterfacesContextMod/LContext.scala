@@ -17,7 +17,7 @@ trait LContext extends js.Object {
   /**
     * The component's parent view data.
     */
-  var lViewData: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
+  var lView: atAngularCoreLib.srcRender3InterfacesViewMod.LView
   /**
     * The map of local references (local reference name => element or directive instance) that exist
     * on this element.

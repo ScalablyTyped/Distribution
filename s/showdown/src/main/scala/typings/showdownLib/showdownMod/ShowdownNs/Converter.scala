@@ -22,6 +22,18 @@ trait Converter extends js.Object {
     */
   def getAllExtensions(): ConverterExtensions = js.native
   /**
+    * Get the metadata of the previously parsed document
+    * @param raw
+    * @returns {string|{}}
+    */
+  def getMetadata(): java.lang.String | Metadata = js.native
+  def getMetadata(raw: scala.Boolean): java.lang.String | Metadata = js.native
+  /**
+    * Get the metadata format of the previously parsed document
+    * @returns {string}
+    */
+  def getMetadataFormat(): java.lang.String = js.native
+  /**
     * Get the option of this Converter instance.
     *
     * @param optionKey
@@ -38,11 +50,12 @@ trait Converter extends js.Object {
   def makeHtml(text: java.lang.String): java.lang.String = js.native
   /**
     * Converts an HTML string into a markdown string
-    * 
-    * @param src The input text (HTML)
-    * @returns The output markdown
+    * @param src
+    * @param [HTMLParser] A WHATWG DOM and HTML parser, such as JSDOM. If none is supplied, window.document will be used.
+    * @returns {string}
     */
   def makeMarkdown(src: java.lang.String): java.lang.String = js.native
+  def makeMarkdown(src: java.lang.String, HTMLParser: js.Any): java.lang.String = js.native
   /**
     * Remove an extension from THIS converter.
     *
@@ -53,12 +66,21 @@ trait Converter extends js.Object {
     */
   def removeExtension(extensions: js.Array[ShowdownExtension]): scala.Unit = js.native
   def removeExtension(extensions: ShowdownExtension): scala.Unit = js.native
+  @JSName("setFlavor")
+  def setFlavor_allOn(name: showdownLib.showdownLibStrings.allOn): scala.Unit = js.native
+  @JSName("setFlavor")
+  def setFlavor_ghost(name: showdownLib.showdownLibStrings.ghost): scala.Unit = js.native
   /**
     * Set a "local" flavor for THIS Converter instance
     *
     * @param flavor name
     */
-  def setFlavor(name: java.lang.String): scala.Unit = js.native
+  @JSName("setFlavor")
+  def setFlavor_github(name: showdownLib.showdownLibStrings.github): scala.Unit = js.native
+  @JSName("setFlavor")
+  def setFlavor_original(name: showdownLib.showdownLibStrings.original): scala.Unit = js.native
+  @JSName("setFlavor")
+  def setFlavor_vanilla(name: showdownLib.showdownLibStrings.vanilla): scala.Unit = js.native
   /**
     * Setting a "local" option only affects the specified Converter object.
     *

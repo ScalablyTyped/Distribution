@@ -13,6 +13,7 @@ trait AotCompilerOptions extends js.Object {
   var enableSummariesForJit: js.UndefOr[scala.Boolean] = js.undefined
   var fullTemplateTypeCheck: js.UndefOr[scala.Boolean] = js.undefined
   var i18nFormat: js.UndefOr[java.lang.String] = js.undefined
+  var i18nUseExternalIds: js.UndefOr[scala.Boolean] = js.undefined
   var locale: js.UndefOr[java.lang.String] = js.undefined
   var missingTranslation: js.UndefOr[atAngularCompilerLib.srcCoreMod.MissingTranslationStrategy] = js.undefined
   var preserveWhitespaces: js.UndefOr[scala.Boolean] = js.undefined

@@ -34,6 +34,6 @@ object srcRender3ViewCompilerModMembers extends js.Object {
     reflector: atAngularCompilerLib.srcCompileUnderscoreReflectorMod.CompileReflector,
     bindingParser: atAngularCompilerLib.srcTemplateUnderscoreParserBindingUnderscoreParserMod.BindingParser
   ): scala.Unit = js.native
-  def parseHostBindings(host: org.scalablytyped.runtime.StringDictionary[java.lang.String]): atAngularCompilerLib.Anon_AttributesKey = js.native
+  def parseHostBindings(host: org.scalablytyped.runtime.StringDictionary[java.lang.String]): atAngularCompilerLib.Anon_Attributes = js.native
 }
 

@@ -43,6 +43,17 @@ object LViewFlags extends js.Object {
   sealed trait Dirty
     extends atAngularCoreLib.srcRender3InterfacesViewMod.LViewFlags
   
+  /**
+    * Whether or not this LView instance is on its first processing pass.
+    *
+    * An LView instance is considered to be on its "first pass" until it
+    * has completed one creation mode run and one update mode run. At this
+    * time, the flag is turned off.
+    */
+  @js.native
+  sealed trait FirstLViewPass
+    extends atAngularCoreLib.srcRender3InterfacesViewMod.LViewFlags
+  
   /** Whether or not this view is the root view */
   @js.native
   sealed trait IsRoot
@@ -59,13 +70,14 @@ object LViewFlags extends js.Object {
   sealed trait RunInit
     extends atAngularCoreLib.srcRender3InterfacesViewMod.LViewFlags
   
-  /* 8 */ val Attached: Attached with scala.Double = js.native
-  /* 2 */ val CheckAlways: CheckAlways with scala.Double = js.native
+  /* 16 */ val Attached: Attached with scala.Double = js.native
+  /* 4 */ val CheckAlways: CheckAlways with scala.Double = js.native
   /* 1 */ val CreationMode: CreationMode with scala.Double = js.native
-  /* 32 */ val Destroyed: Destroyed with scala.Double = js.native
-  /* 4 */ val Dirty: Dirty with scala.Double = js.native
-  /* 64 */ val IsRoot: IsRoot with scala.Double = js.native
-  /* 16 */ val RunInit: RunInit with scala.Double = js.native
+  /* 64 */ val Destroyed: Destroyed with scala.Double = js.native
+  /* 8 */ val Dirty: Dirty with scala.Double = js.native
+  /* 2 */ val FirstLViewPass: FirstLViewPass with scala.Double = js.native
+  /* 128 */ val IsRoot: IsRoot with scala.Double = js.native
+  /* 32 */ val RunInit: RunInit with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[atAngularCoreLib.srcRender3InterfacesViewMod.LViewFlags with scala.Double] = js.native
 }

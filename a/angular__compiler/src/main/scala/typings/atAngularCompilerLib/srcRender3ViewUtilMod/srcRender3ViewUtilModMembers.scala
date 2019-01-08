@@ -16,6 +16,10 @@ object srcRender3ViewUtilModMembers extends js.Object {
   val TEMPORARY_NAME: /* _t */ java.lang.String = js.native
   def asLiteral(value: js.Any): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
   def conditionallyCreateMapObjectLiteral(keys: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression | scala.Null = js.native
+  def conditionallyCreateMapObjectLiteral(
+    keys: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]],
+    keepDeclared: scala.Boolean
+  ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression | scala.Null = js.native
   def getAttrsForDirectiveMatching(elOrTpl: atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Element): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def getAttrsForDirectiveMatching(elOrTpl: atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Template): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def getQueryPredicate(
@@ -25,8 +29,6 @@ object srcRender3ViewUtilModMembers extends js.Object {
   def invalid[T](arg: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression): scala.Nothing = js.native
   def invalid[T](arg: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement): scala.Nothing = js.native
   def invalid[T](arg: atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Node): scala.Nothing = js.native
-  def mapToExpression(map: org.scalablytyped.runtime.StringDictionary[js.Any]): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
-  def mapToExpression(map: org.scalablytyped.runtime.StringDictionary[js.Any], quoted: scala.Boolean): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
   def noop(): scala.Unit = js.native
   def temporaryAllocator(
     statements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement],

@@ -106,5 +106,17 @@ trait NavigationExtras extends js.Object {
     * ```
     */
   var skipLocationChange: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * State passed to any navigation. This value will be accessible through the `extras` object
+    * returned from `router.getCurrentNavigation()` while a navigation is executing. Once a
+    * navigation completes, this value will be written to `history.state` when the `location.go`
+    * or `location.replaceState` method is called before activating of this route. Note that
+    * `history.state` will not pass an object equality test because the `navigationId` will be
+    * added to the state before being written.
+    *
+    * While `history.state` can accept any type of value, because the router adds the `navigationId`
+    * on each navigation, the `state` must always be an object.
+    */
+  var state: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "uifabric__icons"
-version := "6.3.0-55791c"
+version := "6.3.0-4f0d93"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.5.8-a13970",
-  "org.scalablytyped" %%% "microsoft__load-themed-styles" % "1.8.51-dd0374",
+  "org.scalablytyped" %%% "microsoft__load-themed-styles" % "1.8.52-dd0374",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-89199d",
   "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-3dff88",
@@ -16,7 +16,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "tslib" % "1.9.3-5f911d",
   "org.scalablytyped" %%% "uifabric__merge-styles" % "6.15.0-c0ce38",
   "org.scalablytyped" %%% "uifabric__set-version" % "1.1.3-debd14",
-  "org.scalablytyped" %%% "uifabric__styling" % "6.39.0-b6b05a",
+  "org.scalablytyped" %%% "uifabric__styling" % "6.39.0-79cf28",
   "org.scalablytyped" %%% "uifabric__utilities" % "6.27.1-8b38fe")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

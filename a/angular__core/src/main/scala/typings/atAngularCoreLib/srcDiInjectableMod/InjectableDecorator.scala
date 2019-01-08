@@ -25,7 +25,7 @@ trait InjectableDecorator
     * {@example core/di/ts/metadata_spec.ts region='InjectableThrows'}
     *
     */
-  def apply(): js.Any = js.native
-  def apply(options: atAngularCoreLib.Anon_ProvidedIn with InjectableProvider): js.Any = js.native
+  def apply(): atAngularCoreLib.srcUtilDecoratorsMod.TypeDecorator = js.native
+  def apply(options: atAngularCoreLib.Anon_ProvidedIn with InjectableProvider): atAngularCoreLib.srcUtilDecoratorsMod.TypeDecorator = js.native
 }
 

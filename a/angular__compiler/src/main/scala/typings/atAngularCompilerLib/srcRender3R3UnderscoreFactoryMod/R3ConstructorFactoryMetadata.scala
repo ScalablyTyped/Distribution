@@ -14,13 +14,6 @@ trait R3ConstructorFactoryMetadata extends js.Object {
     */
   var deps: js.Array[R3DependencyMetadata] | scala.Null
   /**
-    * Function that allows extra statements to be inserted into factory function.
-    */
-  var extraStatementFn: (js.Function1[
-    /* instance */ atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression, 
-    js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement]
-  ]) | scala.Null
-  /**
     * An expression for the function which will be used to inject dependencies. The API of this
     * function could be different, and other options control how it will be invoked.
     */

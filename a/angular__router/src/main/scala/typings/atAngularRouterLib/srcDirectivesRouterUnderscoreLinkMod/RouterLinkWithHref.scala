@@ -25,6 +25,7 @@ class RouterLinkWithHref protected ()
   var router: js.Any = js.native
   var routerLink: js.Array[_] | java.lang.String = js.native
   var skipLocationChange: scala.Boolean = js.native
+  var state: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   var subscription: js.Any = js.native
   var target: java.lang.String = js.native
   var updateTargetUrlAndHref: js.Any = js.native

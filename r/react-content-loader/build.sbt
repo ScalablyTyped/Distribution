@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-content-loader"
-version := "3.1-dt-20180803Z-6587bb"
+version := "3.1-dt-20190106Z-c90eb2"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

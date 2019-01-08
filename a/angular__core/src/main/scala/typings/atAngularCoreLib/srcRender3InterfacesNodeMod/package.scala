@@ -10,7 +10,7 @@ package object srcRender3InterfacesNodeMod {
   type InitialInputs = js.Array[java.lang.String]
   type LocalRefExtractor = js.Function2[
     /* tNode */ TNodeWithLocalRefs, 
-    /* currentView */ atAngularCoreLib.srcRender3InterfacesViewMod.LViewData, 
+    /* currentView */ atAngularCoreLib.srcRender3InterfacesViewMod.LView, 
     js.Any
   ]
   type PropertyAliasValue = js.Array[scala.Double | java.lang.String]

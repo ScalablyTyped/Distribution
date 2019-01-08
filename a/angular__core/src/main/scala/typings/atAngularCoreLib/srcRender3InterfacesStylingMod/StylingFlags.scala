@@ -12,6 +12,10 @@ sealed trait StylingFlags extends js.Object
 @js.native
 object StylingFlags extends js.Object {
   @js.native
+  sealed trait BindingAllocationLocked
+    extends atAngularCoreLib.srcRender3InterfacesStylingMod.StylingFlags
+  
+  @js.native
   sealed trait BitCountSize
     extends atAngularCoreLib.srcRender3InterfacesStylingMod.StylingFlags
   
@@ -43,8 +47,9 @@ object StylingFlags extends js.Object {
   sealed trait Sanitize
     extends atAngularCoreLib.srcRender3InterfacesStylingMod.StylingFlags
   
-  /* 5 */ val BitCountSize: BitCountSize with scala.Double = js.native
-  /* 31 */ val BitMask: BitMask with scala.Double = js.native
+  /* 32 */ val BindingAllocationLocked: BindingAllocationLocked with scala.Double = js.native
+  /* 6 */ val BitCountSize: BitCountSize with scala.Double = js.native
+  /* 63 */ val BitMask: BitMask with scala.Double = js.native
   /* 2 */ val Class: Class with scala.Double = js.native
   /* 1 */ val Dirty: Dirty with scala.Double = js.native
   /* 0 */ val None: None with scala.Double = js.native

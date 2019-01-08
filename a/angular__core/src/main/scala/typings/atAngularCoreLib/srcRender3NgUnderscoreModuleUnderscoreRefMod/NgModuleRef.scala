@@ -10,7 +10,16 @@ import scala.scalajs.js.annotation._
 class NgModuleRef[T] protected ()
   extends atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.InternalNgModuleRef[T] {
   def this(ngModuleType: atAngularCoreLib.srcTypeMod.Type[T]) = this()
-  def this(ngModuleType: atAngularCoreLib.srcTypeMod.Type[T], parentInjector: atAngularCoreLib.srcDiInjectorMod.Injector) = this()
+  def this(ngModuleType: atAngularCoreLib.srcTypeMod.Type[T], _parent: atAngularCoreLib.srcDiInjectorMod.Injector) = this()
+  var _parent: atAngularCoreLib.srcDiInjectorMod.Injector | scala.Null = js.native
+  var _r3Injector: atAngularCoreLib.srcDiInjectorMod.Injector = js.native
   var destroyCbs: js.Array[js.Function0[scala.Unit]] | scala.Null = js.native
+  def get(token: js.Any): js.Any = js.native
+  def get(token: js.Any, notFoundValue: js.Any): js.Any = js.native
+  def get(
+    token: js.Any,
+    notFoundValue: js.Any,
+    injectFlags: atAngularCoreLib.srcDiInjectorUnderscoreCompatibilityMod.InjectFlags
+  ): js.Any = js.native
 }
 

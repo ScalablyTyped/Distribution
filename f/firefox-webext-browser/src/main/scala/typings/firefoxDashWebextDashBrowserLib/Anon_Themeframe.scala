@@ -11,6 +11,7 @@ trait Anon_Themeframe extends js.Object {
       firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ImageDataOrExtensionURL
     ]
   ] = js.undefined
+  /** @deprecated Please use _theme.images.theme_frame_, this alias will be removed in Firefox 69. */
   var headerURL: js.UndefOr[
     firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ImageDataOrExtensionURL
   ] = js.undefined

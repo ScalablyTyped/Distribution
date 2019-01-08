@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 trait Anon_Imageurl extends js.Object {
   /** @deprecated Unsupported on Firefox at this time. */
   var alternate_urls: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /** Encoding of the search term. */
+  var encoding: js.UndefOr[java.lang.String] = js.undefined
   var favicon_url: js.UndefOr[java.lang.String] = js.undefined
   /** @deprecated Unsupported on Firefox at this time. */
   var image_url: js.UndefOr[java.lang.String] = js.undefined

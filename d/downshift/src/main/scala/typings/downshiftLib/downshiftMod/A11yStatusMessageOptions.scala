@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait A11yStatusMessageOptions[Item] extends js.Object {
   var highlightedIndex: scala.Double | scala.Null
+  var highlightedItem: Item
   var inputValue: java.lang.String
   var isOpen: scala.Boolean
   var previousResultCount: scala.Double

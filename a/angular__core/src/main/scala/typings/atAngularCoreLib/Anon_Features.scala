@@ -40,16 +40,7 @@ trait Anon_Features[T] extends js.Object {
   /**
     * Function executed by the parent template to allow child directive to apply host bindings.
     */
-  var hostBindings: js.UndefOr[
-    js.Function2[/* directiveIndex */ scala.Double, /* elementIndex */ scala.Double, scala.Unit]
-  ] = js.undefined
-  /**
-    * The number of host bindings (including pure fn bindings) in this directive.
-    *
-    * Used to calculate the length of the LViewData array for the *parent* component
-    * of this directive.
-    */
-  var hostVars: js.UndefOr[scala.Double] = js.undefined
+  var hostBindings: js.UndefOr[atAngularCoreLib.srcRender3InterfacesDefinitionMod.HostBindingsFunction[T]] = js.undefined
   /**
     * A map of input names.
     *

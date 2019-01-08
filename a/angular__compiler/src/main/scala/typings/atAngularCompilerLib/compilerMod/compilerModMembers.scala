@@ -102,22 +102,19 @@ object compilerModMembers extends js.Object {
     preStatements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement]
   ): js.Any = js.native
   def makeBindingParser(): atAngularCompilerLib.srcTemplateUnderscoreParserBindingUnderscoreParserMod.BindingParser = js.native
+  def makeBindingParser(
+    interpolationConfig: atAngularCompilerLib.srcMlUnderscoreParserInterpolationUnderscoreConfigMod.InterpolationConfig
+  ): atAngularCompilerLib.srcTemplateUnderscoreParserBindingUnderscoreParserMod.BindingParser = js.native
   def mergeAnalyzedFiles(analyzedFiles: js.Array[atAngularCompilerLib.srcAotCompilerMod.NgAnalyzedFile]): atAngularCompilerLib.srcAotCompilerMod.NgAnalyzedModules = js.native
   def mergeNsAndName(prefix: java.lang.String, localName: java.lang.String): java.lang.String = js.native
   def ngModuleJitUrl(moduleMeta: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileNgModuleMetadata): java.lang.String = js.native
-  def parseHostBindings(host: org.scalablytyped.runtime.StringDictionary[java.lang.String]): atAngularCompilerLib.Anon_AttributesKey = js.native
+  def parseHostBindings(host: org.scalablytyped.runtime.StringDictionary[java.lang.String]): atAngularCompilerLib.Anon_Attributes = js.native
+  def parseTemplate(template: java.lang.String, templateUrl: java.lang.String): atAngularCompilerLib.Anon_Nodes = js.native
   def parseTemplate(
     template: java.lang.String,
     templateUrl: java.lang.String,
-    options: atAngularCompilerLib.Anon_PreserveWhitespaces,
-    relativeContextFilePath: java.lang.String
-  ): atAngularCompilerLib.Anon_RelativeContextFilePath = js.native
-  def parseTemplate(
-    template: java.lang.String,
-    templateUrl: java.lang.String,
-    options: js.UndefOr[scala.Nothing],
-    relativeContextFilePath: java.lang.String
-  ): atAngularCompilerLib.Anon_RelativeContextFilePath = js.native
+    options: atAngularCompilerLib.Anon_InterpolationConfig
+  ): atAngularCompilerLib.Anon_Nodes = js.native
   def preserveWhitespacesDefault(): scala.Boolean = js.native
   def preserveWhitespacesDefault(preserveWhitespacesOption: scala.Boolean): scala.Boolean = js.native
   def preserveWhitespacesDefault(preserveWhitespacesOption: scala.Boolean, defaultSetting: scala.Boolean): scala.Boolean = js.native

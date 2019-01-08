@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "angular__animations"
-version := "7.1.4-c827d9"
+version := "7.2.0-848529"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "angular__core" % "7.1.4-ba9c01",
+  "org.scalablytyped" %%% "angular__core" % "7.2.0-657956",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",
   "org.scalablytyped" %%% "rxjs" % "6.3.3-04e169",
   "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff",

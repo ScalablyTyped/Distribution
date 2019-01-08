@@ -96,6 +96,14 @@ trait Master extends js.Object {
     height: stdLib.Number
   ): Table = js.native
   def insertTable(table: Table): Table = js.native
+  def insertTextBox(text: java.lang.String): Shape = js.native
+  def insertTextBox(
+    text: java.lang.String,
+    left: stdLib.Number,
+    top: stdLib.Number,
+    width: stdLib.Number,
+    height: stdLib.Number
+  ): Shape = js.native
   def insertVideo(videoUrl: java.lang.String): Video = js.native
   def insertVideo(
     videoUrl: java.lang.String,

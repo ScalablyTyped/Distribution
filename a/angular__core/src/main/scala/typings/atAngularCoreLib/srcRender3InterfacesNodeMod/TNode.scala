@@ -34,17 +34,19 @@ trait TNode extends js.Object {
     */
   var detached: scala.Boolean | scala.Null
   /**
-    * This number stores two values using its bits:
-    *
-    * - the number of directives on that node (first 12 bits)
-    * - the starting index of the node's directives in the directives array (last 20 bits).
-    *
-    * These two values are necessary so DI can effectively search the directives associated
-    * with a node without searching the whole directives array.
+    * Stores final exclusive index of the directives.
+    */
+  var directiveEnd: scala.Double
+  /**
+    * Stores starting index of the directives.
+    */
+  var directiveStart: scala.Double
+  /**
+    * Stores if Node isComponent, isProjected, hasContentQuery and hasClassInput
     */
   var flags: TNodeFlags
   /**
-    * Index of the TNode in TView.data and corresponding native element in LViewData.
+    * Index of the TNode in TView.data and corresponding native element in LView.
     *
     * This is necessary to get from any TNode to its corresponding native element when
     * traversing the node tree.
@@ -55,7 +57,7 @@ trait TNode extends js.Object {
   /** Information about input properties that need to be set once from attribute data. */
   var initialInputs: js.UndefOr[InitialInputData | scala.Null]
   /**
-    * The index of the closest injector in this node's LViewData.
+    * The index of the closest injector in this node's LView.
     *
     * If the index === -1, there is no injector on this node or any ancestor node in this view.
     *

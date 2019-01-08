@@ -86,6 +86,16 @@ object jestNsMembers extends js.Object {
   def mock(moduleName: java.lang.String, factory: js.Any): jestLib.Anon_UseRealTimers = js.native
   def mock(moduleName: java.lang.String, factory: js.Any, options: MockOptions): jestLib.Anon_UseRealTimers = js.native
   /**
+    * Returns the actual module instead of a mock, bypassing all checks on
+    * whether the module should receive a mock implementation or not.
+    */
+  def requireActual(moduleName: java.lang.String): js.Any = js.native
+  /**
+    * Returns a mock module instead of the actual module, bypassing all checks
+    * on whether the module should be required normally or not.
+    */
+  def requireMock(moduleName: java.lang.String): js.Any = js.native
+  /**
     * Clears the mock.calls and mock.instances properties of all mocks.
     * Equivalent to calling .mockClear() on every mocked function.
     */

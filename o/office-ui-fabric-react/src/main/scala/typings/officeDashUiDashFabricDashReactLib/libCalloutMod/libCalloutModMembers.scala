@@ -9,5 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libCalloutModMembers extends js.Object {
   val DirectionalHint: officeDashUiDashFabricDashReactLib.Anon_LeftTopEdge = js.native
+  val FocusTrapCallout: reactLib.reactMod.ReactNs.StatelessComponent[
+    officeDashUiDashFabricDashReactLib.libComponentsCalloutFocusTrapCalloutDotTypesMod.IFocusTrapCalloutProps
+  ] = js.native
 }
 

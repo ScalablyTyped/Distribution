@@ -31,6 +31,7 @@ object coreNs extends js.Object {
   val createSkipSelf: atAngularCompilerLib.srcCoreMod.MetadataFactory[js.Object] = js.native
   val createViewChild: atAngularCompilerLib.srcCoreMod.MetadataFactory[atAngularCompilerLib.srcCoreMod.Query] = js.native
   val createViewChildren: atAngularCompilerLib.srcCoreMod.MetadataFactory[atAngularCompilerLib.srcCoreMod.Query] = js.native
+  def parseSelectorToR3Selector(): atAngularCompilerLib.srcCoreMod.R3CssSelectorList = js.native
   def parseSelectorToR3Selector(selector: java.lang.String): atAngularCompilerLib.srcCoreMod.R3CssSelectorList = js.native
   @js.native
   object ArgumentType extends js.Object {
@@ -42,8 +43,10 @@ object coreNs extends js.Object {
   
   @js.native
   object AttributeMarker extends js.Object {
+    /* 1 */ val Classes: atAngularCompilerLib.srcCoreMod.AttributeMarker.Classes with scala.Double = js.native
     /* 0 */ val NamespaceURI: atAngularCompilerLib.srcCoreMod.AttributeMarker.NamespaceURI with scala.Double = js.native
-    /* 1 */ val SelectOnly: atAngularCompilerLib.srcCoreMod.AttributeMarker.SelectOnly with scala.Double = js.native
+    /* 3 */ val SelectOnly: atAngularCompilerLib.srcCoreMod.AttributeMarker.SelectOnly with scala.Double = js.native
+    /* 2 */ val Styles: atAngularCompilerLib.srcCoreMod.AttributeMarker.Styles with scala.Double = js.native
     @JSBracketAccess
     def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.AttributeMarker with scala.Double] = js.native
   }
@@ -79,13 +82,6 @@ object coreNs extends js.Object {
     /* 8 */ val Value: atAngularCompilerLib.srcCoreMod.DepFlags.Value with scala.Double = js.native
     @JSBracketAccess
     def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.DepFlags with scala.Double] = js.native
-  }
-  
-  @js.native
-  object InitialStylingFlags extends js.Object {
-    /* 1 */ val VALUES_MODE: atAngularCompilerLib.srcCoreMod.InitialStylingFlags.VALUES_MODE with scala.Double = js.native
-    @JSBracketAccess
-    def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.InitialStylingFlags with scala.Double] = js.native
   }
   
   @js.native
@@ -224,7 +220,6 @@ object coreNs extends js.Object {
   type BindingFlags = atAngularCompilerLib.srcCoreMod.BindingFlags
   type ChangeDetectionStrategy = atAngularCompilerLib.srcCoreMod.ChangeDetectionStrategy
   type DepFlags = atAngularCompilerLib.srcCoreMod.DepFlags
-  type InitialStylingFlags = atAngularCompilerLib.srcCoreMod.InitialStylingFlags
   type InjectFlags = atAngularCompilerLib.srcCoreMod.InjectFlags
   type MissingTranslationStrategy = atAngularCompilerLib.srcCoreMod.MissingTranslationStrategy
   type NodeFlags = atAngularCompilerLib.srcCoreMod.NodeFlags

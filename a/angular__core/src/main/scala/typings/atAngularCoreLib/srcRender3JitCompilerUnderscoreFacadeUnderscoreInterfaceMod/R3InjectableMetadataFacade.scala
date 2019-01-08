@@ -10,6 +10,7 @@ trait R3InjectableMetadataFacade extends js.Object {
   var name: java.lang.String
   var providedIn: js.Any
   var `type`: js.Any
+  var typeArgumentCount: scala.Double
   var useClass: js.UndefOr[js.Any] = js.undefined
   var useExisting: js.UndefOr[js.Any] = js.undefined
   var useFactory: js.UndefOr[js.Any] = js.undefined

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait R3InjectorMetadataFacade extends js.Object {
   var deps: js.Array[R3DependencyMetadataFacade] | scala.Null
-  var imports: js.Any
+  var imports: js.Array[_]
   var name: java.lang.String
-  var providers: js.Any
+  var providers: js.Array[_]
   var `type`: js.Any
 }
 

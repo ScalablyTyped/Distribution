@@ -23,7 +23,7 @@ trait Anon_Directives[T] extends js.Object {
   /**
     * The number of nodes, local refs, and pipes in this component template.
     *
-    * Used to calculate the length of this component's LViewData array, so we
+    * Used to calculate the length of this component's LView array, so we
     * can pre-fill the array and set the binding start index.
     */
   var consts: scala.Double
@@ -74,16 +74,7 @@ trait Anon_Directives[T] extends js.Object {
   /**
     * Function executed by the parent template to allow child directive to apply host bindings.
     */
-  var hostBindings: js.UndefOr[
-    js.Function2[/* directiveIndex */ scala.Double, /* elementIndex */ scala.Double, scala.Unit]
-  ] = js.undefined
-  /**
-    * The number of host bindings (including pure fn bindings) in this component.
-    *
-    * Used to calculate the length of the LViewData array for the *parent* component
-    * of this component.
-    */
-  var hostVars: js.UndefOr[scala.Double] = js.undefined
+  var hostBindings: js.UndefOr[atAngularCoreLib.srcRender3InterfacesDefinitionMod.HostBindingsFunction[T]] = js.undefined
   /**
     * A map of input names.
     *
@@ -104,7 +95,7 @@ trait Anon_Directives[T] extends js.Object {
     * ```
     * {
     *   publicInput1: 'publicInput1',
-    *   declaredInput2: ['declaredInput2', 'publicInput2'],
+    *   declaredInput2: ['publicInput2', 'declaredInput2'],
     * }
     * ```
     *
@@ -112,7 +103,7 @@ trait Anon_Directives[T] extends js.Object {
     * ```
     * {
     *   minifiedPublicInput1: 'publicInput1',
-    *   minifiedDeclaredInput2: [ 'publicInput2', 'declaredInput2'],
+    *   minifiedDeclaredInput2: ['publicInput2', 'declaredInput2'],
     * }
     * ```
     *
@@ -121,7 +112,7 @@ trait Anon_Directives[T] extends js.Object {
     *
     * NOTE:
     *  - Because declared and public name are usually same we only generate the array
-    *    `['declared', 'public']` format when they differ.
+    *    `['public', 'declared']` format when they differ.
     *  - The reason why this API and `outputs` API is not the same is that `NgOnChanges` has
     *    inconsistent behavior in that it uses declared names rather than minified or public. For
     *    this reason `NgOnChanges` will be deprecated and removed in future version and this
@@ -191,7 +182,7 @@ trait Anon_Directives[T] extends js.Object {
   /**
     * The number of bindings in this component template (including pure fn bindings).
     *
-    * Used to calculate the length of this component's LViewData array, so we
+    * Used to calculate the length of this component's LView array, so we
     * can pre-fill the array and set the host binding start index.
     */
   var vars: scala.Double

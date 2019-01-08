@@ -36,7 +36,7 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
   var value: js.Any
   var variant: js.UndefOr[
-    atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.scrollable | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.fullWidth
+    atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.scrollable | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.fullWidth
   ] = js.undefined
   var width: js.UndefOr[java.lang.String] = js.undefined
 }

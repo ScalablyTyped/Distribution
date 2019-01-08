@@ -28,16 +28,16 @@ class NavigationStart protected ()
   id: scala.Double, /** @docsNotRequired */
   url: java.lang.String, /** @docsNotRequired */
   navigationTrigger: atAngularRouterLib.atAngularRouterLibStrings.hashchange, /** @docsNotRequired */
-  restoredState: atAngularRouterLib.Anon_NavigationId) = this()
+  restoredState: atAngularRouterLib.Anon_K) = this()
   def this(/** @docsNotRequired */
   id: scala.Double, /** @docsNotRequired */
   url: java.lang.String, /** @docsNotRequired */
   navigationTrigger: atAngularRouterLib.atAngularRouterLibStrings.imperative, /** @docsNotRequired */
-  restoredState: atAngularRouterLib.Anon_NavigationId) = this()
+  restoredState: atAngularRouterLib.Anon_K) = this()
   def this(/** @docsNotRequired */
   id: scala.Double, /** @docsNotRequired */
   url: java.lang.String, /** @docsNotRequired */
   navigationTrigger: atAngularRouterLib.atAngularRouterLibStrings.popstate, /** @docsNotRequired */
-  restoredState: atAngularRouterLib.Anon_NavigationId) = this()
+  restoredState: atAngularRouterLib.Anon_K) = this()
 }
 

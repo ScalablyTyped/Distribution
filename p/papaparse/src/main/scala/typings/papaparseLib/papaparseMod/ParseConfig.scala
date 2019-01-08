@@ -38,7 +38,7 @@ trait ParseConfig extends js.Object {
                 // default: "\r\n"
   var quoteChar: js.UndefOr[java.lang.String] = js.undefined
               // default: false
-  var skipEmptyLines: js.UndefOr[scala.Boolean] = js.undefined
+  var skipEmptyLines: js.UndefOr[scala.Boolean | papaparseLib.papaparseLibStrings.greedy] = js.undefined
        // default: undefined
   // Callbacks
   var step: js.UndefOr[js.Function2[/* results */ ParseResult, /* parser */ Parser, scala.Unit]] = js.undefined

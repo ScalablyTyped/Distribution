@@ -13,6 +13,7 @@ package object publicUnderscoreApiMod {
   type SecurityContext = atAngularCoreLib.srcSanitizationSecurityMod.SecurityContext
   type ViewEncapsulation = atAngularCoreLib.srcMetadataViewMod.ViewEncapsulation
   type ɵArgumentType = atAngularCoreLib.srcViewTypesMod.ArgumentType
+  type ɵAttributeMarker = atAngularCoreLib.srcRender3InterfacesNodeMod.AttributeMarker
   type ɵBindingFlags = atAngularCoreLib.srcViewTypesMod.BindingFlags
   type ɵChangeDetectorStatus = atAngularCoreLib.srcChangeUnderscoreDetectionConstantsMod.ChangeDetectorStatus
   type ɵDepFlags = atAngularCoreLib.srcViewTypesMod.DepFlags

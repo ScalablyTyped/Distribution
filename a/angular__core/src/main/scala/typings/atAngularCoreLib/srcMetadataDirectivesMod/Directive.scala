@@ -30,11 +30,6 @@ trait Directive extends js.Object {
     * ```
     *
     */
-  /**
-    * The name or names that can be used in the template to assign this directive to a variable.
-    * For multiple names, use a comma-separated string.
-    *
-    */
   var exportAs: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Maps class properties to host element bindings for properties,
@@ -133,21 +128,7 @@ trait Directive extends js.Object {
     * ```
     *
     */
-  /**
-    * The set of event-bound output properties.
-    * When an output property emits an event, an event handler attached
-    * to that event in the template is invoked.
-    *
-    * Each output property maps a `directiveProperty` to a `bindingProperty`:
-    * - `directiveProperty` specifies the component property that emits events.
-    * - `bindingProperty` specifies the HTML attribute the event handler is attached to.
-    *
-    */
   var outputs: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /**
-    * A set of injection tokens that allow the DI system to
-    * provide a dependency to this directive or component.
-    */
   /**
     * Configures the [injector](guide/glossary#injector) of this
     * directive or component with a [token](guide/glossary#di-token)
@@ -192,41 +173,7 @@ trait Directive extends js.Object {
     *
     * @Annotation
     */
-  /**
-    * Configures the queries that will be injected into the directive.
-    *
-    * Content queries are set before the `ngAfterContentInit` callback is called.
-    * View queries are set before the `ngAfterViewInit` callback is called.
-    *
-    */
-  var queries: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.Any
-  ] = js.undefined
-  /**
-    * The CSS selector that triggers the instantiation of a directive.
-    *
-    * Declare as one of the following:
-    *
-    * - `element-name`: select by element name.
-    * - `.class`: select by class name.
-    * - `[attribute]`: select by attribute name.
-    * - `[attribute=value]`: select by attribute name and value.
-    * - `:not(sub_selector)`: select only if the element does not match the `sub_selector`.
-    * - `selector1, selector2`: select if either `selector1` or `selector2` matches.
-    *
-    * Angular only allows directives to trigger on CSS selectors that do not cross element
-    * boundaries. For example, consider a directive with an `input[type=text]` selector.
-    * For the following HTML, the directive is instantiated only on the
-    * `<input type="text">` element.
-    *
-    * ```html
-    * <form>
-    *   <input type="text">
-    *   <input type="radio">
-    * <form>
-    * ```
-    *
-    */
+  var queries: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
     * The CSS selector that identifies this directive in a template
     * and triggers instantiation of the directive.

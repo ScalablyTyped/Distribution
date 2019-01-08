@@ -17,6 +17,7 @@ trait Presentation extends js.Object {
   def appendSlide(layout: Layout): Slide = js.native
   def appendSlide(predefinedLayout: PredefinedLayout): Slide = js.native
   def appendSlide(slide: Slide): Slide = js.native
+  def appendSlide(slide: Slide, linkingMode: SlideLinkingMode): Slide = js.native
   def getEditors(): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.User] = js.native
   def getId(): java.lang.String = js.native
   def getLayouts(): js.Array[Layout] = js.native
@@ -40,6 +41,11 @@ trait Presentation extends js.Object {
     predefinedLayout: PredefinedLayout
   ): Slide = js.native
   def insertSlide(insertionIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, slide: Slide): Slide = js.native
+  def insertSlide(
+    insertionIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    slide: Slide,
+    linkingMode: SlideLinkingMode
+  ): Slide = js.native
   def removeEditor(emailAddress: java.lang.String): Presentation = js.native
   def removeEditor(user: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.User): Presentation = js.native
   def removeViewer(emailAddress: java.lang.String): Presentation = js.native

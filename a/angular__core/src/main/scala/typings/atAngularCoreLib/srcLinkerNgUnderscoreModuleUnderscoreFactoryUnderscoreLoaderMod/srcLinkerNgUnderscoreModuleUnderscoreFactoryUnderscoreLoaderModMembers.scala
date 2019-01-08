@@ -10,9 +10,15 @@ import scala.scalajs.js.annotation._
 object srcLinkerNgUnderscoreModuleUnderscoreFactoryUnderscoreLoaderModMembers extends js.Object {
   def clearModulesForTest(): scala.Unit = js.native
   def getModuleFactory(id: java.lang.String): atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[_] = js.native
+  def `getModuleFactory__POST_R3__`(id: java.lang.String): atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[_] = js.native
+  def `getModuleFactory__PRE_R3__`(id: java.lang.String): atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[_] = js.native
   def registerModuleFactory(
     id: java.lang.String,
     factory: atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[_]
+  ): scala.Unit = js.native
+  def registerNgModuleType(
+    id: java.lang.String,
+    ngModuleType: atAngularCoreLib.srcRender3NgUnderscoreModuleUnderscoreRefMod.NgModuleType[_]
   ): scala.Unit = js.native
 }
 

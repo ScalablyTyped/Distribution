@@ -9,23 +9,24 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ViewportScroller () extends js.Object {
   /**
-    * Returns the current scroll position.
+    * Retrieves the current scroll position.
+    * @returns A position in screen coordinates (a tuple with x and y values).
     */
   def getScrollPosition(): js.Tuple2[scala.Double, scala.Double] = js.native
   /**
-    * Scrolls to the provided anchor.
+    * Scrolls to an anchor element.
+    * @param anchor The ID of the anchor element.
     */
   def scrollToAnchor(anchor: java.lang.String): scala.Unit = js.native
   /**
-    * Sets the scroll position.
+    * Scrolls to a specified position.
+    * @param position A position in screen coordinates (a tuple with x and y values).
     */
   def scrollToPosition(position: js.Tuple2[scala.Double, scala.Double]): scala.Unit = js.native
   /**
-    *
     * Disables automatic scroll restoration provided by the browser.
-    *
     * See also [window.history.scrollRestoration
-    * info](https://developers.google.com/web/updates/2015/09/history-api-scroll-restoration)
+    * info](https://developers.google.com/web/updates/2015/09/history-api-scroll-restoration).
     */
   @JSName("setHistoryScrollRestoration")
   def setHistoryScrollRestoration_auto(scrollRestoration: atAngularCommonLib.atAngularCommonLibStrings.auto): scala.Unit = js.native
@@ -34,10 +35,9 @@ abstract class ViewportScroller () extends js.Object {
   def setOffset(offset: js.Function0[js.Tuple2[scala.Double, scala.Double]]): scala.Unit = js.native
   /**
     * Configures the top offset used when scrolling to an anchor.
+    * @param offset A position in screen coordinates (a tuple with x and y values)
+    * or a function that returns the top offset position.
     *
-    * When given a tuple with two number, the service will always use the numbers.
-    * When given a function, the service will invoke the function every time it restores scroll
-    * position.
     */
   def setOffset(offset: js.Tuple2[scala.Double, scala.Double]): scala.Unit = js.native
 }

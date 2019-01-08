@@ -12,6 +12,6 @@ class CodegenComponentFactoryResolver protected () extends ComponentFactoryResol
   var _factories: js.Any = js.native
   var _ngModule: js.Any = js.native
   var _parent: js.Any = js.native
-  def resolveComponentFactory[T](component: atAngularCoreLib.Anon_ArgsAny[T]): atAngularCoreLib.srcLinkerComponentUnderscoreFactoryMod.ComponentFactory[T] = js.native
+  def resolveComponentFactory[T](component: atAngularCoreLib.Anon_ArgsAnyT[T]): atAngularCoreLib.srcLinkerComponentUnderscoreFactoryMod.ComponentFactory[T] = js.native
 }
 

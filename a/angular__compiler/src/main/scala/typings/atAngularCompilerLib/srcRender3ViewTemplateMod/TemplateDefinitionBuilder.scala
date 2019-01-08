@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class TemplateDefinitionBuilder protected ()
   extends atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Visitor[scala.Unit]
      with atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.LocalResolver {
-  def this(constantPool: atAngularCompilerLib.srcConstantUnderscorePoolMod.ConstantPool, parentBindingScope: BindingScope, level: scala.Double, contextName: java.lang.String | scala.Null, i18nContext: atAngularCompilerLib.srcRender3ViewI18nContextMod.I18nContext | scala.Null, templateIndex: scala.Double | scala.Null, templateName: java.lang.String | scala.Null, viewQueries: js.Array[atAngularCompilerLib.srcRender3ViewApiMod.R3QueryMetadata], directiveMatcher: atAngularCompilerLib.srcSelectorMod.SelectorMatcher[_] | scala.Null, directives: stdLib.Set[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression], pipeTypeByName: stdLib.Map[java.lang.String, atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression], pipes: stdLib.Set[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression], _namespace: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference, relativeContextFilePath: java.lang.String) = this()
+  def this(constantPool: atAngularCompilerLib.srcConstantUnderscorePoolMod.ConstantPool, parentBindingScope: BindingScope, level: scala.Double, contextName: java.lang.String | scala.Null, i18nContext: atAngularCompilerLib.srcRender3ViewI18nContextMod.I18nContext | scala.Null, templateIndex: scala.Double | scala.Null, templateName: java.lang.String | scala.Null, viewQueries: js.Array[atAngularCompilerLib.srcRender3ViewApiMod.R3QueryMetadata], directiveMatcher: atAngularCompilerLib.srcSelectorMod.SelectorMatcher[_] | scala.Null, directives: stdLib.Set[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression], pipeTypeByName: stdLib.Map[java.lang.String, atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression], pipes: stdLib.Set[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression], _namespace: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference, relativeContextFilePath: java.lang.String, i18nUseExternalIds: scala.Boolean) = this()
   var _bindingContext: js.Any = js.native
   /**
     * This scope contains local variables declared in the update mode block of the template.
@@ -25,6 +25,7 @@ class TemplateDefinitionBuilder protected ()
     */
   var _creationCodeFns: js.Any = js.native
   var _dataIndex: js.Any = js.native
+  var _hasNgContent: js.Any = js.native
   var _namespace: js.Any = js.native
   /**
     * List of callbacks to build nested templates. Nested templates must not be visited until
@@ -33,6 +34,8 @@ class TemplateDefinitionBuilder protected ()
     * are defined after the template declaration.
     */
   var _nestedTemplateFns: js.Any = js.native
+  var _ngContentSelectors: js.Any = js.native
+  var _ngContentSelectorsOffset: js.Any = js.native
   var _prefixCode: js.Any = js.native
   var _pureFunctionSlots: js.Any = js.native
   /** Temporary variable declarations generated from visiting pipes, literals, etc. */
@@ -59,6 +62,7 @@ class TemplateDefinitionBuilder protected ()
   var fileBasedI18nSuffix: js.Any = js.native
   var i18n: js.Any = js.native
   var i18nContext: js.Any = js.native
+  var i18nUseExternalIds: js.Any = js.native
   var instructionFn: js.Any = js.native
   var level: js.Any = js.native
   var matchDirectives: js.Any = js.native
@@ -66,6 +70,23 @@ class TemplateDefinitionBuilder protected ()
   var pipes: js.Any = js.native
   var prepareListenerParameter: js.Any = js.native
   var prepareRefsParameter: js.Any = js.native
+  /**
+    * Prepares all attribute expression values for the `TAttributes` array.
+    *
+    * The purpose of this function is to properly construct an attributes array that
+    * is passed into the `elementStart` (or just `element`) functions. Because there
+    * are many different types of attributes, the array needs to be constructed in a
+    * special way so that `elementStart` can properly evaluate them.
+    *
+    * The format looks like this:
+    *
+    * ```
+    * attrs = [prop, value, prop2, value2,
+    *   CLASSES, class1, class2,
+    *   STYLES, style1, value1, style2, value2,
+    *   SELECT_ONLY, name1, name2, name2, ...]
+    * ```
+    */
   var prepareSyntheticAndSelectOnlyAttrs: js.Any = js.native
   var processStylingInstruction: js.Any = js.native
   var relativeContextFilePath: js.Any = js.native
@@ -85,19 +106,12 @@ class TemplateDefinitionBuilder protected ()
   def buildTemplateFunction(
     nodes: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Node],
     variables: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Variable],
-    hasNgContent: scala.Boolean
+    ngContentSelectorsOffset: scala.Double
   ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.FunctionExpr = js.native
   def buildTemplateFunction(
     nodes: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Node],
     variables: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Variable],
-    hasNgContent: scala.Boolean,
-    ngContentSelectors: js.Array[java.lang.String]
-  ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.FunctionExpr = js.native
-  def buildTemplateFunction(
-    nodes: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Node],
-    variables: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Variable],
-    hasNgContent: scala.Boolean,
-    ngContentSelectors: js.Array[java.lang.String],
+    ngContentSelectorsOffset: scala.Double,
     i18n: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.AST
   ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.FunctionExpr = js.native
   def getConstCount(): scala.Double = js.native
@@ -106,7 +120,7 @@ class TemplateDefinitionBuilder protected ()
   def getNamespaceInstruction(): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native
   def getNamespaceInstruction(namespaceKey: java.lang.String): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native
   def getVarCount(): scala.Double = js.native
-  def i18nAllocateRef(): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr = js.native
+  def i18nAllocateRef(messageId: java.lang.String): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr = js.native
   def i18nAppendBindings(expressions: js.Array[atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST]): scala.Unit = js.native
   def i18nBindProps(
     props: org.scalablytyped.runtime.StringDictionary[
@@ -138,16 +152,16 @@ class TemplateDefinitionBuilder protected ()
     meta: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.AST,
     selfClosing: scala.Boolean
   ): scala.Unit = js.native
-  def i18nTranslate(message: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.Message): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
+  def i18nTranslate(message: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.Message): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr = js.native
   def i18nTranslate(
     message: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.Message,
     params: org.scalablytyped.runtime.StringDictionary[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression]
-  ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
+  ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr = js.native
   def i18nTranslate(
     message: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.Message,
     params: org.scalablytyped.runtime.StringDictionary[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression],
     ref: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr
-  ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
+  ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr = js.native
   def i18nTranslate(
     message: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.Message,
     params: org.scalablytyped.runtime.StringDictionary[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression],
@@ -156,7 +170,7 @@ class TemplateDefinitionBuilder protected ()
       /* raw */ atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr, 
       atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression
     ]
-  ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
+  ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr = js.native
   def i18nUpdateRef(context: atAngularCompilerLib.srcRender3ViewI18nContextMod.I18nContext): scala.Unit = js.native
   def registerContextVariables(variable: atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Variable): scala.Unit = js.native
   /* CompleteClass */

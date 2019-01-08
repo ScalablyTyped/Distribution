@@ -11,7 +11,8 @@ class ChoiceGroupBase protected ()
   extends officeDashUiDashFabricDashReactLib.libUtilitiesMod.BaseComponent[
       officeDashUiDashFabricDashReactLib.libComponentsChoiceGroupChoiceGroupDotTypesMod.IChoiceGroupProps, 
       IChoiceGroupState
-    ] {
+    ]
+     with officeDashUiDashFabricDashReactLib.libComponentsChoiceGroupChoiceGroupDotTypesMod.IChoiceGroup {
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsChoiceGroupChoiceGroupDotTypesMod.IChoiceGroupProps) = this()
   var _id: js.Any = js.native
   var _inputElement: js.Any = js.native
@@ -26,7 +27,11 @@ class ChoiceGroupBase protected ()
   def componentWillReceiveProps_MChoiceGroupBase(
     newProps: officeDashUiDashFabricDashReactLib.libComponentsChoiceGroupChoiceGroupDotTypesMod.IChoiceGroupProps
   ): scala.Unit = js.native
-  def focus(): scala.Unit = js.native
+  /**
+    * Sets focus to the choiceGroup.
+    */
+  /* CompleteClass */
+  override def focus(): scala.Unit = js.native
 }
 
 @JSImport("office-ui-fabric-react/lib/components/ChoiceGroup/ChoiceGroup.base", "ChoiceGroupBase")

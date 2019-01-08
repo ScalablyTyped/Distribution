@@ -12,7 +12,7 @@ sealed trait ChangeDetectorStatus extends js.Object
 @js.native
 object ChangeDetectorStatus extends js.Object {
   /**
-    * A state in which change detection continues automatically until explictly
+    * A state in which change detection continues automatically until explicitly
     * deactivated.
     */
   @js.native

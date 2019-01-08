@@ -10,12 +10,6 @@ import scala.scalajs.js.annotation._
 object srcRender3ComponentUnderscoreRefModMembers extends js.Object {
   val ROOT_CONTEXT: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[atAngularCoreLib.srcRender3InterfacesViewMod.RootContext] = js.native
   val SCHEDULER: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[js.Function1[/* fn */ js.Function0[scala.Unit], scala.Unit]] = js.native
-  val WRAP_RENDERER_FACTORY2: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[
-    js.Function1[
-      /* rf */ atAngularCoreLib.srcRenderApiMod.RendererFactory2, 
-      atAngularCoreLib.srcRenderApiMod.RendererFactory2
-    ]
-  ] = js.native
   def injectComponentFactoryResolver(): atAngularCoreLib.srcLinkerComponentUnderscoreFactoryUnderscoreResolverMod.ComponentFactoryResolver = js.native
 }
 

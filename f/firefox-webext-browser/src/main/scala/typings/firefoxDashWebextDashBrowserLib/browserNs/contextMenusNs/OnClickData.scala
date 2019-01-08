@@ -15,6 +15,8 @@ trait OnClickData extends js.Object {
   var checked: js.UndefOr[scala.Boolean] = js.undefined
   /** A flag indicating whether the element is editable (text input, textarea, etc.). */
   var editable: scala.Boolean
+  /** The id of the frame of the element where the context menu was clicked. */
+  var frameId: js.UndefOr[scala.Double] = js.undefined
   /** The URL of the frame of the element where the context menu was clicked, if it was in a frame. */
   var frameUrl: js.UndefOr[java.lang.String] = js.undefined
   /** If the element is a link, the text of that link. */

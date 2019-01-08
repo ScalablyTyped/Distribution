@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class ɵRender3NgModuleRef[T] protected ()
   extends atAngularCoreLib.srcRender3Mod.NgModuleRef[T] {
   def this(ngModuleType: atAngularCoreLib.srcTypeMod.Type[T]) = this()
-  def this(ngModuleType: atAngularCoreLib.srcTypeMod.Type[T], parentInjector: atAngularCoreLib.srcDiInjectorMod.Injector) = this()
+  def this(ngModuleType: atAngularCoreLib.srcTypeMod.Type[T], _parent: atAngularCoreLib.srcDiInjectorMod.Injector) = this()
 }
 

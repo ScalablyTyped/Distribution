@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-simple-maps", "ZoomableGlobe")
 @js.native
 class ZoomableGlobe ()
-  extends reactLib.reactMod.Component[ZoomableProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[ZoomableGlobeProps, js.Object, js.Any]
 

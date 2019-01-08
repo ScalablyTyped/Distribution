@@ -22,5 +22,11 @@ object srcDiR3UnderscoreInjectorModMembers extends js.Object {
   ): atAngularCoreLib.srcDiInjectorMod.Injector = js.native
   def isTypeProvider(value: SingleProvider): /* is @angular/core.@angular/core/src/di/provider.TypeProvider */ scala.Boolean = js.native
   def providerToFactory(provider: SingleProvider): js.Function0[_] = js.native
+  def providerToFactory(provider: SingleProvider, ngModuleType: atAngularCoreLib.srcDiDefsMod.InjectorType[_]): js.Function0[_] = js.native
+  def providerToFactory(
+    provider: SingleProvider,
+    ngModuleType: atAngularCoreLib.srcDiDefsMod.InjectorType[_],
+    providers: js.Array[_]
+  ): js.Function0[_] = js.native
 }
 

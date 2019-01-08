@@ -12,7 +12,11 @@ package object srcConfigMod {
   ]
   type QueryParamsHandling = atAngularRouterLib.atAngularRouterLibStrings.merge | atAngularRouterLib.atAngularRouterLibStrings.preserve | atAngularRouterLib.atAngularRouterLibStrings.Empty
   type Routes = js.Array[Route]
-  type RunGuardsAndResolvers = atAngularRouterLib.atAngularRouterLibStrings.pathParamsChange | atAngularRouterLib.atAngularRouterLibStrings.paramsChange | atAngularRouterLib.atAngularRouterLibStrings.paramsOrQueryParamsChange | atAngularRouterLib.atAngularRouterLibStrings.always
+  type RunGuardsAndResolvers = atAngularRouterLib.atAngularRouterLibStrings.pathParamsChange | atAngularRouterLib.atAngularRouterLibStrings.pathParamsOrQueryParamsChange | atAngularRouterLib.atAngularRouterLibStrings.paramsChange | atAngularRouterLib.atAngularRouterLibStrings.paramsOrQueryParamsChange | atAngularRouterLib.atAngularRouterLibStrings.always | (js.Function2[
+    /* from */ atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot, 
+    /* to */ atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot, 
+    scala.Boolean
+  ])
   type UrlMatcher = js.Function3[
     /* segments */ js.Array[atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlSegment], 
     /* group */ atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlSegmentGroup, 

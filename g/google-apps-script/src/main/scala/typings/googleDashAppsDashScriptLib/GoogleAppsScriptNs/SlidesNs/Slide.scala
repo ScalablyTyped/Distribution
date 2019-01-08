@@ -27,6 +27,9 @@ trait Slide extends js.Object {
   def getPlaceholders(): js.Array[PageElement] = js.native
   def getShapes(): js.Array[Shape] = js.native
   def getSheetsCharts(): js.Array[SheetsChart] = js.native
+  def getSlideLinkingMode(): SlideLinkingMode = js.native
+  def getSourcePresentationId(): java.lang.String = js.native
+  def getSourceSlideObjectId(): java.lang.String = js.native
   def getTables(): js.Array[Table] = js.native
   def getVideos(): js.Array[Video] = js.native
   def getWordArts(): js.Array[WordArt] = js.native
@@ -98,6 +101,14 @@ trait Slide extends js.Object {
     height: stdLib.Number
   ): Table = js.native
   def insertTable(table: Table): Table = js.native
+  def insertTextBox(text: java.lang.String): Shape = js.native
+  def insertTextBox(
+    text: java.lang.String,
+    left: stdLib.Number,
+    top: stdLib.Number,
+    width: stdLib.Number,
+    height: stdLib.Number
+  ): Shape = js.native
   def insertVideo(videoUrl: java.lang.String): Video = js.native
   def insertVideo(
     videoUrl: java.lang.String,
@@ -109,9 +120,11 @@ trait Slide extends js.Object {
   def insertVideo(video: Video): Video = js.native
   def insertWordArt(wordArt: WordArt): WordArt = js.native
   def move(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Unit = js.native
+  def refreshSlide(): scala.Unit = js.native
   def remove(): scala.Unit = js.native
   def replaceAllText(findText: java.lang.String, replaceText: java.lang.String): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def replaceAllText(findText: java.lang.String, replaceText: java.lang.String, matchCase: scala.Boolean): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def selectAsCurrentPage(): scala.Unit = js.native
+  def unlink(): scala.Unit = js.native
 }
 

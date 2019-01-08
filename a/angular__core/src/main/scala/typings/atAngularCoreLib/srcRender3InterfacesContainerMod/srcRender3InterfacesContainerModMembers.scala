@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object srcRender3InterfacesContainerModMembers extends js.Object {
   val ACTIVE_INDEX: /* 0 */ scala.Double = js.native
+  val LCONTAINER_LENGTH: /* 8 */ scala.Double = js.native
   val NATIVE: /* 6 */ scala.Double = js.native
   val RENDER_PARENT: /* 7 */ scala.Double = js.native
   val VIEWS: /* 1 */ scala.Double = js.native

@@ -49,6 +49,7 @@ trait ProceduralRenderer3 extends js.Object {
     value: js.Any,
     flags: atAngularCoreLib.srcRenderApiMod.RendererStyleFlags2
   ): scala.Unit = js.native
+  def setValue(node: RComment, value: java.lang.String): scala.Unit = js.native
   def setValue(node: RText, value: java.lang.String): scala.Unit = js.native
 }
 

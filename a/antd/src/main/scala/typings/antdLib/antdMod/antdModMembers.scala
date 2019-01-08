@@ -16,6 +16,6 @@ object antdModMembers extends js.Object {
   val Layout: (reactLib.reactMod.ReactNs.ComponentClass[antdLib.libLayoutLayoutMod.BasicProps, reactLib.reactMod.ReactNs.ComponentState]) with antdLib.Anon_Content = js.native
   val message: antdLib.libMessageMod.MessageApi = js.native
   val notification: antdLib.libNotificationMod.NotificationApi = js.native
-  var version: antdLib.antdLibStrings.`3DOT12DOT0` = js.native
+  var version: antdLib.antdLibStrings.`3DOT12DOT1` = js.native
 }
 

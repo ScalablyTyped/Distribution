@@ -5,9 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// interface Segment {}
-// interface TimeRange {}
-// interface SubtitleTracks {}
 trait Config extends js.Object {
   /**
     * (default: 0.8)
@@ -113,7 +110,7 @@ trait Config extends js.Object {
     * setting config.debug = true; will turn on debug logs on JS console.
     * a logger object could also be provided for custom logging: config.debug = customLogger;
     */
-  var debug: scala.Boolean
+  var debug: scala.Boolean | CustomLoggerObject
   /**
     * (default: undefined)
     * if audio codec is not signaled in variant manifest, or if only a stream manifest is provided, hls.js tries to guess audio codec by parsing audio sampling rate in ADTS header.
@@ -225,6 +222,14 @@ trait Config extends js.Object {
     * It is up to the application to catch this event and treat it as needed.
     */
   var levelLoadingTimeOut: scala.Double
+  /**
+    * (default: Infinity)
+    * Sets the maximum length of the buffer, in seconds, to keep during a live stream. Any video
+    * buffered past this time will be evicted. Infinity means no restriction on back buffer length;
+    * 0 keeps the minimum amount. The minimum amount is equal to the target duration of a segment
+    * to ensure that current playback is not interrupted.
+    */
+  var liveBackBufferLength: scala.Double
   /**
     * (default: false)
     * Override current Media Source duration to Infinity for a live broadcast. Useful, if you are building a player which relies

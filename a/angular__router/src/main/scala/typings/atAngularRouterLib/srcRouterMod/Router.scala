@@ -16,6 +16,7 @@ class Router protected () extends js.Object {
   var config: atAngularRouterLib.srcConfigMod.Routes = js.native
   var configLoader: js.Any = js.native
   var console: js.Any = js.native
+  var currentNavigation: js.Any = js.native
   var currentUrlTree: js.Any = js.native
   /**
     * Error handler that is invoked when a navigation errors.
@@ -28,6 +29,7 @@ class Router protected () extends js.Object {
   var getTransition: js.Any = js.native
   var isNgZoneEnabled: js.Any = js.native
   var lastSuccessfulId: js.Any = js.native
+  var lastSuccessfulNavigation: js.Any = js.native
   var location: js.Any = js.native
   var locationSubscription: js.Any = js.native
   /**
@@ -142,6 +144,8 @@ class Router protected () extends js.Object {
     * See `ErrorHandler` for more information.
     */
   def errorHandler(error: js.Any): js.Any = js.native
+  /** The current Navigation object if one exists */
+  def getCurrentNavigation(): Navigation | scala.Null = js.native
   /**
     * Sets up the location change listener and performs the initial navigation.
     */
@@ -182,6 +186,11 @@ class Router protected () extends js.Object {
     * The first parameter of `navigate()` is a delta to be applied to the current URL
     * or the one provided in the `relativeTo` property of the second parameter (the
     * `NavigationExtras`).
+    *
+    * In order to affect this browser's `history.state` entry, the `state`
+    * parameter can be passed. This must be an object because the router
+    * will add the `navigationId` property to this object before creating
+    * the new history item.
     */
   def navigate(commands: js.Array[_]): js.Promise[scala.Boolean] = js.native
   def navigate(commands: js.Array[_], extras: NavigationExtras): js.Promise[scala.Boolean] = js.native

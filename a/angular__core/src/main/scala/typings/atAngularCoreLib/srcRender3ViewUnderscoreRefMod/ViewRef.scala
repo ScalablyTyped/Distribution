@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 class ViewRef[T] protected ()
   extends atAngularCoreLib.srcLinkerViewUnderscoreRefMod.EmbeddedViewRef[T]
      with atAngularCoreLib.srcLinkerViewUnderscoreRefMod.InternalViewRef {
-  def this(_view: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData, _context: T, _componentIndex: scala.Double) = this()
-  def this(_view: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData, _context: scala.Null, _componentIndex: scala.Double) = this()
+  def this(_lView: atAngularCoreLib.srcRender3InterfacesViewMod.LView, _context: T, _componentIndex: scala.Double) = this()
+  def this(_lView: atAngularCoreLib.srcRender3InterfacesViewMod.LView, _context: scala.Null, _componentIndex: scala.Double) = this()
   var _appRef: js.Any = js.native
   var _componentIndex: js.Any = js.native
   var _context: js.Any = js.native

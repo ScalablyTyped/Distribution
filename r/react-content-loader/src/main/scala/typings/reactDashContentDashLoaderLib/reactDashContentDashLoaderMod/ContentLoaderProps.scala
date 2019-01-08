@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ContentLoaderProps extends js.Object {
   var animate: js.UndefOr[scala.Boolean] = js.undefined
+  var ariaLabel: js.UndefOr[java.lang.String] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var preserveAspectRatio: js.UndefOr[

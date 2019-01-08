@@ -85,6 +85,16 @@ trait Anon_UseRealTimers extends js.Object {
   def mock(moduleName: java.lang.String, factory: js.Any): /* import warning: ImportType.apply Failed type conversion: typeof jest.jest */ js.Any = js.native
   def mock(moduleName: java.lang.String, factory: js.Any, options: jestLib.jestNs.MockOptions): /* import warning: ImportType.apply Failed type conversion: typeof jest.jest */ js.Any = js.native
   /**
+    * Returns the actual module instead of a mock, bypassing all checks on
+    * whether the module should receive a mock implementation or not.
+    */
+  def requireActual(moduleName: java.lang.String): js.Any = js.native
+  /**
+    * Returns a mock module instead of the actual module, bypassing all checks
+    * on whether the module should be required normally or not.
+    */
+  def requireMock(moduleName: java.lang.String): js.Any = js.native
+  /**
     * Clears the mock.calls and mock.instances properties of all mocks.
     * Equivalent to calling .mockClear() on every mocked function.
     */

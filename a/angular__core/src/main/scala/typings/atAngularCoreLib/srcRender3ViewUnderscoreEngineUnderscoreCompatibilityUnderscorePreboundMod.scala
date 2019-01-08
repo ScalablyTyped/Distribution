@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityUnderscorePreboundMod extends js.Object {
   def templateRefExtractor(
     tNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,
-    currentView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
+    currentView: atAngularCoreLib.srcRender3InterfacesViewMod.LView
   ): atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Object] | scala.Null = js.native
 }
 

@@ -150,7 +150,7 @@ class FormBuilder () extends js.Object {
     * @param controlsConfig A collection of child controls. The key for each child is the name
     * under which it is registered.
     *
-    * @param legacyOrOpts Configuration options object for the `FormGroup`. The object can
+    * @param options Configuration options object for the `FormGroup`. The object can
     * have two shapes:
     *
     * 1) `AbstractControlOptions` object (preferred), which consists of:
@@ -167,7 +167,11 @@ class FormBuilder () extends js.Object {
   def group(controlsConfig: org.scalablytyped.runtime.StringDictionary[js.Any]): atAngularFormsLib.srcModelMod.FormGroup = js.native
   def group(
     controlsConfig: org.scalablytyped.runtime.StringDictionary[js.Any],
-    legacyOrOpts: org.scalablytyped.runtime.StringDictionary[js.Any]
+    options: atAngularFormsLib.srcModelMod.AbstractControlOptions
+  ): atAngularFormsLib.srcModelMod.FormGroup = js.native
+  def group(
+    controlsConfig: org.scalablytyped.runtime.StringDictionary[js.Any],
+    options: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): atAngularFormsLib.srcModelMod.FormGroup = js.native
 }
 

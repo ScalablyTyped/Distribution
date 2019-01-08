@@ -33,7 +33,7 @@ object geckoProfilerNsMembers extends js.Object {
   def resume(): js.Promise[_] = js.native
   /* geckoProfiler functions */
   /** Starts the profiler with the specified settings. */
-  def start(settings: firefoxDashWebextDashBrowserLib.Anon_Threads): js.Promise[_] = js.native
+  def start(settings: firefoxDashWebextDashBrowserLib.Anon_Features): js.Promise[_] = js.native
   /** Stops the profiler and discards any captured profile data. */
   def stop(): js.Promise[_] = js.native
 }

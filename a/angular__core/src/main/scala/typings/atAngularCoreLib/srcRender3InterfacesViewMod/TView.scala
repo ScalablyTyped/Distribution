@@ -14,10 +14,10 @@ trait TView extends js.Object {
     */
   var bindingStartIndex: scala.Double
   /**
-    * This is a blueprint used to generate LViewData instances for this TView. Copying this
-    * blueprint is faster than creating a new LViewData from scratch.
+    * This is a blueprint used to generate LView instances for this TView. Copying this
+    * blueprint is faster than creating a new LView from scratch.
     */
-  var blueprint: LViewData
+  var blueprint: LView
   /**
     * Array of ngDoCheck hooks that should be executed for this view in update mode.
     *
@@ -43,19 +43,25 @@ trait TView extends js.Object {
     * saves on memory (70 bytes per array) and on a few bytes of code size (for two
     * separate for loops).
     *
-    * If it's a native DOM listener being stored:
-    * 1st index is: event name to remove
-    * 2nd index is: index of native element in LView.data[]
-    * 3rd index is: index of wrapped listener function in LView.cleanupInstances[]
-    * 4th index is: useCapture boolean
+    * If it's a native DOM listener or output subscription being stored:
+    * 1st index is: event name  `name = tView.cleanup[i+0]`
+    * 2nd index is: index of native element `element = lView[tView.cleanup[i+1]]`
+    * 3rd index is: index of listener function `listener = lView[CLEANUP][tView.cleanup[i+2]]`
+    * 4th index is: `useCaptureOrIndx = tView.cleanup[i+3]`
+    *    `typeof useCaptureOrIndx == 'boolean' : useCapture boolean
+    *    `typeof useCaptureOrIndx == 'number':
+    *         `useCaptureOrIndx >= 0` `removeListener = LView[CLEANUP][useCaptureOrIndx]`
+    *         `useCaptureOrIndx <  0` `subscription = LView[CLEANUP][-useCaptureOrIndx]`
     *
     * If it's a renderer2 style listener or ViewRef destroy hook being stored:
     * 1st index is: index of the cleanup function in LView.cleanupInstances[]
-    * 2nd index is: null
+    * 2nd index is: `null`
+    *               `lView[CLEANUP][tView.cleanup[i+0]]()`
     *
     * If it's an output subscription or query list destroy hook:
     * 1st index is: output unsubscribe function / query list destroy function
     * 2nd index is: index of function context in LView.cleanupInstances[]
+    *               `tView.cleanup[i+0].call(lView[CLEANUP][tView.cleanup[i+1]])`
     */
   var cleanup: js.Array[_] | scala.Null
   /**
@@ -110,12 +116,12 @@ trait TView extends js.Object {
     * See VIEW_DATA.md for more information.
     */
   var expandoInstructions: (js.Array[
-    scala.Double | atAngularCoreLib.srcRender3InterfacesDefinitionMod.HostBindingsFunction
+    scala.Double | atAngularCoreLib.srcRender3InterfacesDefinitionMod.HostBindingsFunction[_] | scala.Null
   ]) | scala.Null
   /**
-    * The index where the "expando" section of `LViewData` begins. The expando
+    * The index where the "expando" section of `LView` begins. The expando
     * section contains injectors, directive instances, and host binding values.
-    * Unlike the "consts" and "vars" sections of `LViewData`, the length of this
+    * Unlike the "consts" and "vars" sections of `LView`, the length of this
     * section cannot be calculated at compile-time because directives are matched
     * at runtime to preserve locality.
     *
@@ -148,7 +154,7 @@ trait TView extends js.Object {
   /**
     * Pointer to the `TNode` that represents the root of the view.
     *
-    * If this is a `TNode` for an `LViewNode`, this is an embedded view of a container.
+    * If this is a `TViewNode` for an `LViewNode`, this is an embedded view of a container.
     * We need this pointer to be able to efficiently find this node when inserting the view
     * into an anchor.
     *
